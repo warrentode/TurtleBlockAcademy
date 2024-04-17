@@ -12,6 +12,8 @@ out
 *.iws
 *.iml
 .idea
+.gitignore
+.gitattributes
 
 # gradle
 build
@@ -24,3 +26,4 @@ run
 # Files from Forge MDK
 forge*changelog.txt
 /run-data/
+/src/generated/resources/.cache/

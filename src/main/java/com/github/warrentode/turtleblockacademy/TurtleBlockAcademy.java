@@ -1,11 +1,15 @@
 package com.github.warrentode.turtleblockacademy;
 
 import com.github.warrentode.turtleblockacademy.blocks.ModBlocks;
+import com.github.warrentode.turtleblockacademy.items.ModItems;
 import net.minecraft.client.Minecraft;
+import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.level.block.SoundType;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.event.server.ServerStartingEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.ModLoadingContext;
@@ -13,7 +17,6 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.config.ModConfig;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
-import net.minecraftforge.event.server.ServerStartingEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -21,7 +24,7 @@ import org.jetbrains.annotations.NotNull;
 
 @Mod(TurtleBlockAcademy.MODID)
 public class TurtleBlockAcademy {
-    public static final String MODID = "assets/turtleblockacademy";
+    public static final String MODID = "turtleblockacademy";
     public static final Logger LOGGER = LogManager.getLogger();
 
     public TurtleBlockAcademy() {
@@ -32,8 +35,14 @@ public class TurtleBlockAcademy {
         MinecraftForge.EVENT_BUS.register(this);
 
         ModBlocks.register(modEventBus);
+        ModItems.register(modEventBus);
     }
 
+    @SuppressWarnings("deprecation")
+    public static SoundType CERTIFICATE = new SoundType(1.0F, 1.0F,
+            SoundEvents.ITEM_FRAME_BREAK, SoundEvents.ITEM_FRAME_ADD_ITEM,
+            SoundEvents.ITEM_FRAME_PLACE, SoundEvents.ITEM_FRAME_BREAK,
+            SoundEvents.ITEM_FRAME_BREAK);
 
     public static final CreativeModeTab TAB = new CreativeModeTab(MODID) {
         @Override
