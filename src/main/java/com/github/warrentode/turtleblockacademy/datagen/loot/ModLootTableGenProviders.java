@@ -1,4 +1,4 @@
-package com.github.warrentode.turtleblockacademy.datagen;
+package com.github.warrentode.turtleblockacademy.datagen.loot;
 
 import com.google.common.collect.ImmutableList;
 import com.mojang.datafixers.util.Pair;

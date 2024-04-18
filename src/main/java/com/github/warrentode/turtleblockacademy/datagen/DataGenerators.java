@@ -1,5 +1,7 @@
 package com.github.warrentode.turtleblockacademy.datagen;
 
+import com.github.warrentode.turtleblockacademy.datagen.lang.ModLangGen;
+import com.github.warrentode.turtleblockacademy.datagen.loot.ModLootTableGenProviders;
 import net.minecraft.data.DataGenerator;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.data.event.GatherDataEvent;
@@ -16,6 +18,7 @@ public class DataGenerators {
         DataGenerator generator = event.getGenerator();
         ExistingFileHelper helper = event.getExistingFileHelper();
 
+        generator.addProvider(event.includeClient(), new ModLangGen(generator, MODID, "en_us"));
         generator.addProvider(event.includeServer(), new ModLootTableGenProviders(generator));
     }
 }
