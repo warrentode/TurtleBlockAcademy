@@ -1,10 +1,14 @@
 package com.github.warrentode.turtleblockacademy.blocks;
 
 import com.github.warrentode.turtleblockacademy.TurtleBlockAcademy;
+import com.github.warrentode.turtleblockacademy.util.PlayerUtil;
+import net.minecraft.ChatFormatting;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
+import net.minecraft.network.chat.Component;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.LevelAccessor;
@@ -18,6 +22,8 @@ import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.VoxelShape;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
+
+import java.util.List;
 
 public class CertificateBlock extends Block {
     public static final DirectionProperty FACING = BlockStateProperties.HORIZONTAL_FACING;
@@ -97,5 +103,16 @@ public class CertificateBlock extends Block {
         }
 
         return buffer[0];
+    }
+
+    @Override
+    public void appendHoverText(@NotNull ItemStack stack, @Nullable BlockGetter getter, @NotNull List<Component> tooltips, @NotNull TooltipFlag flag) {
+        if (stack.getTag() != null && !stack.getTag().getString(PlayerUtil.PLAYER_NAME_TAG).isEmpty()) {
+            String braceletMakerName = stack.getTag().getString(PlayerUtil.PLAYER_NAME_TAG);
+            tooltips.add(Component.translatable("tooltips.turtleblockacademy.certificate_awarded").append(braceletMakerName).withStyle(ChatFormatting.GOLD).withStyle(ChatFormatting.BOLD));
+        }
+        else {
+            tooltips.add(Component.translatable("tooltips.turtleblockacademy.certificate_blank").withStyle(ChatFormatting.GRAY));
+        }
     }
 }

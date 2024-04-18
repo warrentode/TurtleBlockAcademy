@@ -1,4 +1,11 @@
 {
+  "academy.advancement.explore_end": "Final Tour Before Retirement",
+  "academy.advancement.explore_end.desc": "Visit All of the End Biomes",
+  "academy.advancement.root": "Turtle Block Academy",
+  "academy.advancement.root.desc": "Principal Herobrine welcomes you!",
   "block.turtleblockacademy.certificate_block": "Certificate of Completion",
-  "itemGroup.turtleblockacademy": "Turtle Block Academy Tab"
+  "block.turtleblockacademy.certificate_block.turtleblockacademy:playerNameTag": "§cLinked player§r %s",
+  "itemGroup.turtleblockacademy": "Turtle Block Academy Tab",
+  "tooltips.turtleblockacademy.certificate_awarded": "This certificate is awarded to:",
+  "tooltips.turtleblockacademy.certificate_blank": "Certificates are awarded upon completion of academy tasks"
 }

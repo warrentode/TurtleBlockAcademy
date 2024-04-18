@@ -1,0 +1,29 @@
+{
+  "criteria": {
+    "tick": {
+      "conditions": {},
+      "trigger": "minecraft:tick"
+    }
+  },
+  "display": {
+    "announce_to_chat": false,
+    "background": "minecraft:textures/block/calcite.png",
+    "description": {
+      "translate": "academy.advancement.root.desc"
+    },
+    "frame": "challenge",
+    "hidden": false,
+    "icon": {
+      "item": "turtleblockacademy:certificate_block"
+    },
+    "show_toast": false,
+    "title": {
+      "translate": "academy.advancement.root"
+    }
+  },
+  "requirements": [
+    [
+      "tick"
+    ]
+  ]
+}
