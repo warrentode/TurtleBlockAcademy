@@ -1,0 +1,22 @@
+{
+  "values": [
+    "#forge:is_dry/nether",
+    "#forge:is_hot/nether",
+    {
+      "id": "#forge:is_cold/nether",
+      "required": false
+    },
+    {
+      "id": "#forge:is_dense/nether",
+      "required": false
+    },
+    {
+      "id": "#forge:is_wet/nether",
+      "required": false
+    },
+    {
+      "id": "#forge:is_sparse/nether",
+      "required": false
+    }
+  ]
+}

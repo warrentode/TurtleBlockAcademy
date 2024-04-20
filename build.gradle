@@ -87,6 +87,9 @@ repositories {
             includeGroup "curse.maven"
         }
     }
+    maven {
+        url = 'https://dl.cloudsmith.io/public/geckolib3/geckolib/maven/'
+    }
 }
 
 dependencies {
@@ -99,8 +102,64 @@ dependencies {
     implementation 'org.apache.logging.log4j:log4j-core:2.17.1'
     implementation 'org.apache.commons:commons-compress:1.26.1'
 
-    // optional dependency for seasonal events
+    // serene seasons
     implementation fg.deobf("curse.maven:serene-seasons-291874:4037228")
+
+    // curios
+    implementation fg.deobf("curse.maven:curios-309927:5066842")
+
+    // loot bags
+    implementation fg.deobf("curse.maven:resourceful-lib-570073:4477753")
+    implementation fg.deobf("curse.maven:resourceful-lootbags-687082:4112026")
+
+    // storage and backpacks
+    implementation fg.deobf("curse.maven:sophisticated-backpacks-422301:5194759")
+    implementation fg.deobf("curse.maven:sophisticated-core-618298:5194752")
+    implementation fg.deobf("curse.maven:refined-storage-243076:4861827")
+
+    // auto farming
+    implementation fg.deobf("curse.maven:cagerium-709608:4517775")
+    implementation fg.deobf("curse.maven:golden-hopper-374736:3874175")
+
+    // biomes and dimensions mods set
+    implementation fg.deobf("curse.maven:dimensional-dungeons-352222:4750034")
+    implementation fg.deobf("curse.maven:terrablender-563928:4618490")
+    implementation fg.deobf("curse.maven:biomes-o-plenty-220318:4473556")
+    implementation fg.deobf("curse.maven:ecologics-570463:4171285")
+    implementation fg.deobf("curse.maven:unusual-end-617757:4549776")
+    implementation fg.deobf("curse.maven:phantasm-565254:4398465")
+    implementation fg.deobf("curse.maven:aether-255308:4950449")
+    implementation fg.deobf("curse.maven:advanced-mining-dimension-332640:4973553")
+
+    // delight and food mod set
+    implementation fg.deobf("curse.maven:farmers-delight-398521:4679318")
+    implementation fg.deobf("curse.maven:farmers-respite-551453:4081312")
+    implementation fg.deobf("curse.maven:delightful-637529:4541459")
+    implementation fg.deobf("curse.maven:festive-delight-711672:4954520")
+    implementation fg.deobf("curse.maven:fastfood-delight-714075:4121540")
+    implementation fg.deobf("curse.maven:chefs-delight-forge-832983:4517363")
+    implementation fg.deobf("curse.maven:oceans-delight-841262:4652058")
+    implementation fg.deobf("curse.maven:ends-delight-662675:4675407")
+    implementation fg.deobf("curse.maven:nethers-delight-496394:3971576")
+    implementation fg.deobf("curse.maven:crabbers-delight-892827:4762750")
+    implementation fg.deobf("curse.maven:decoration-delight-687475:4689700")
+    implementation fg.deobf("curse.maven:crate-delight-forge-958291:5183632")
+    implementation fg.deobf("curse.maven:storage-delight-forge-979761:5211383")
+
+    implementation fg.deobf('software.bernie.geckolib:geckolib-forge-1.19:3.1.40')
+    implementation fg.deobf("curse.maven:kawaii-dishes-694309:4644365")
+    implementation fg.deobf("curse.maven:drink-beer-refill-729120:4572768")
+    implementation fg.deobf("curse.maven:salt-832006:4988711")
+
+    // moonlight lib mod set
+    implementation fg.deobf("curse.maven:selene-499980:4758015")
+    implementation fg.deobf("curse.maven:supplementaries-412082:4713347")
+    implementation fg.deobf("curse.maven:advancement-frames-556795:3948167")
+    implementation fg.deobf("curse.maven:haunted-harvest-541753:4567840")
+    implementation fg.deobf("curse.maven:snowy-spirit-566142:4479536")
+
+    // wares
+    implementation fg.deobf("curse.maven:wares-839158:5275496")
 
     // sponge mixin
     annotationProcessor 'org.spongepowered:mixin:0.8.5:processor'
@@ -112,7 +171,8 @@ tasks.named('processResources', ProcessResources).configure {
             forge_version: forge_version, forge_version_range: forge_version_range,
             loader_version_range: loader_version_range,
             mod_id: mod_id, mod_name: mod_name, mod_license: mod_license, mod_version: mod_version,
-            mod_authors: mod_authors, mod_description: mod_description,
+            mod_authors      : mod_authors, mod_description: mod_description, version_gamestages: version_gamestages,
+            version_bookshelf: version_bookshelf,
     ]
     inputs.properties replaceProperties
 

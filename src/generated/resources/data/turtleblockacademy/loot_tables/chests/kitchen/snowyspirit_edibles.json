@@ -1,0 +1,81 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "bonus_rolls": 1.0,
+      "conditions": [
+        {
+          "condition": "turtleblockacademy:modloaded_condition",
+          "modid": "snowyspirit"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "turtleblockacademy:seasonal_condition",
+              "season": "false"
+            }
+          ],
+          "functions": [
+            {
+              "add": false,
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 4.0,
+                "min": 1.0
+              },
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "snowyspirit:candy_cane",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "turtleblockacademy:seasonal_condition",
+              "season": "false"
+            }
+          ],
+          "functions": [
+            {
+              "add": false,
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 4.0,
+                "min": 1.0
+              },
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "snowyspirit:gingerbread_cookie",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "minecraft:alternative",
+              "terms": [
+                {
+                  "condition": "turtleblockacademy:seasonal_condition",
+                  "season": "false"
+                },
+                {
+                  "condition": "turtleblockacademy:seasonal_condition",
+                  "season": "false"
+                }
+              ]
+            }
+          ],
+          "name": "snowyspirit:eggnog",
+          "weight": 10
+        }
+      ],
+      "rolls": 1.0
+    }
+  ]
+}

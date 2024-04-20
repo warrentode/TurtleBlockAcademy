@@ -1,4 +1,4 @@
-package com.github.warrentode.turtleblockacademy.datagen.loot;
+package com.github.warrentode.turtleblockacademy.datagen.loot.tables;
 
 import com.github.warrentode.turtleblockacademy.blocks.ModBlocks;
 import net.minecraft.core.Registry;

@@ -1,0 +1,42 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "bonus_rolls": 1.0,
+      "conditions": [
+        {
+          "condition": "turtleblockacademy:modloaded_condition",
+          "modid": "unusualend"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "unusualend:chorus_pie",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "unusualend:chorus_juice",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "unusualend:chorus_tea",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "unusualend:ender_stew",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "unusualend:wandering_stew",
+          "weight": 10
+        }
+      ],
+      "rolls": 1.0
+    }
+  ]
+}
