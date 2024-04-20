@@ -25,5 +25,8 @@
     [
       "tick"
     ]
-  ]
+  ],
+  "rewards": {
+    "function": "turtleblockacademy:give_student_card"
+  }
 }

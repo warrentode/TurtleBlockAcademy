@@ -1,8 +1,8 @@
 package com.github.warrentode.turtleblockacademy;
 
 import com.github.warrentode.turtleblockacademy.blocks.ModBlocks;
+import com.github.warrentode.turtleblockacademy.config.AcademyConfig;
 import com.github.warrentode.turtleblockacademy.items.ModItems;
-import net.minecraft.client.Minecraft;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
@@ -28,10 +28,9 @@ public class TurtleBlockAcademy {
     public static final Logger LOGGER = LogManager.getLogger();
 
     public TurtleBlockAcademy() {
-        // Register our mod's ForgeConfigSpec so that Forge can create and load the config file for us
-        ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, Config.SPEC);
+        ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, AcademyConfig.SPEC,
+                "turtleblockacademy_config.toml");
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
-        modEventBus.addListener(this::commonSetup);
         MinecraftForge.EVENT_BUS.register(this);
 
         ModBlocks.register(modEventBus);
@@ -39,7 +38,7 @@ public class TurtleBlockAcademy {
     }
 
     @SuppressWarnings("deprecation")
-    public static SoundType CERTIFICATE = new SoundType(1.0F, 1.0F,
+    public static final SoundType CERTIFICATE = new SoundType(1.0F, 1.0F,
             SoundEvents.ITEM_FRAME_BREAK, SoundEvents.ITEM_FRAME_ADD_ITEM,
             SoundEvents.ITEM_FRAME_PLACE, SoundEvents.ITEM_FRAME_BREAK,
             SoundEvents.ITEM_FRAME_BREAK);
@@ -52,28 +51,19 @@ public class TurtleBlockAcademy {
     };
 
     private void commonSetup(final FMLCommonSetupEvent event) {
-        Config.items.forEach((item) -> LOGGER.info("These currencies " +
-                "have been added: >> {}", item.toString()));
-
-        LOGGER.info(Config.currency1_name, "equals", Config.currency1_Value);
-        LOGGER.info(Config.currency2_name, "equals", Config.currency2_Value);
+        // reserved for later use
     }
 
-    // You can use SubscribeEvent and let the Event Bus discover methods to call
     @SubscribeEvent
     public void onServerStarting(ServerStartingEvent event) {
-        // Do something when the server starts
-        LOGGER.info("HELLO from server starting");
+        // reserved for later use
     }
 
-    // You can use EventBusSubscriber to automatically register all static methods in the class annotated with @SubscribeEvent
     @Mod.EventBusSubscriber(modid = MODID, bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
     public static class ClientModEvents {
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
-            // Some client setup code
-            LOGGER.info("HELLO FROM CLIENT SETUP");
-            LOGGER.info("MINECRAFT NAME >> {}", Minecraft.getInstance().getUser().getName());
+            // reserved for later use
         }
     }
 }

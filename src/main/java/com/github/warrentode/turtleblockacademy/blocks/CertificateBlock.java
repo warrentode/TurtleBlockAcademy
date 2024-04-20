@@ -1,7 +1,7 @@
 package com.github.warrentode.turtleblockacademy.blocks;
 
 import com.github.warrentode.turtleblockacademy.TurtleBlockAcademy;
-import com.github.warrentode.turtleblockacademy.util.PlayerUtil;
+import com.github.warrentode.turtleblockacademy.util.AcademyUtil;
 import net.minecraft.ChatFormatting;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -107,9 +107,11 @@ public class CertificateBlock extends Block {
 
     @Override
     public void appendHoverText(@NotNull ItemStack stack, @Nullable BlockGetter getter, @NotNull List<Component> tooltips, @NotNull TooltipFlag flag) {
-        if (stack.getTag() != null && !stack.getTag().getString(PlayerUtil.PLAYER_NAME_TAG).isEmpty()) {
-            String braceletMakerName = stack.getTag().getString(PlayerUtil.PLAYER_NAME_TAG);
-            tooltips.add(Component.translatable("tooltips.turtleblockacademy.certificate_awarded").append(braceletMakerName).withStyle(ChatFormatting.GOLD).withStyle(ChatFormatting.BOLD));
+        if (stack.getTag() != null && !stack.getTag().getString(AcademyUtil.ACADEMIC_NAME_KEY).isEmpty() && !stack.getTag().getString(AcademyUtil.ACADEMIC_YEAR_KEY).isEmpty()) {
+            String academicNameTag = stack.getTag().getString(AcademyUtil.ACADEMIC_NAME_KEY);
+            String academicYearTag = stack.getTag().getString(AcademyUtil.ACADEMIC_YEAR_KEY);
+            tooltips.add(Component.literal(academicNameTag + " " + academicYearTag)
+                    .withStyle(ChatFormatting.GOLD).withStyle(ChatFormatting.BOLD));
         }
         else {
             tooltips.add(Component.translatable("tooltips.turtleblockacademy.certificate_blank").withStyle(ChatFormatting.GRAY));

@@ -1,9 +1,11 @@
 package com.github.warrentode.turtleblockacademy.datagen.lang;
 
 import com.github.warrentode.turtleblockacademy.blocks.ModBlocks;
-import com.github.warrentode.turtleblockacademy.util.PlayerUtil;
+import com.github.warrentode.turtleblockacademy.items.ModItems;
 import net.minecraft.data.DataGenerator;
 import net.minecraftforge.common.data.LanguageProvider;
+
+import static com.github.warrentode.turtleblockacademy.TurtleBlockAcademy.MODID;
 
 public class ModLangGen extends LanguageProvider {
     public ModLangGen(DataGenerator generator, String modid, String locale) {
@@ -13,9 +15,20 @@ public class ModLangGen extends LanguageProvider {
     @Override
     protected void addTranslations() {
         addItemGroups();
+        addItems();
         addBlocks();
         addTooltips();
         addAdvancements();
+        addCommands();
+        addMessages();
+    }
+
+    private void addMessages() {
+        add(MODID + ".registered", "You are now registered as a student of Turtle Block Academy");
+    }
+
+    private void addCommands() {
+        add("command.exception.turtleblockacademy.command_failure", "Command failed to execute");
     }
 
     private void addAdvancements() {
@@ -30,13 +43,16 @@ public class ModLangGen extends LanguageProvider {
     }
 
     private void addTooltips() {
-        add(ModBlocks.CERTIFICATE_BLOCK.get().getDescriptionId() + "." + PlayerUtil.PLAYER_NAME_TAG, "§cLinked player§r %s");
-        fillTooltipKeys("certificate_awarded", "This certificate is awarded to:");
-        fillTooltipKeys("certificate_blank", "Certificates are awarded upon completion of academy tasks");
+        fillTooltipKeys("student_card_blank", "Blank Student Card - Use to Register as Student");
+        fillTooltipKeys("certificate_blank", "Blank Certificate");
     }
 
     private void fillTooltipKeys(String key, String name) {
         add("tooltips.turtleblockacademy." + key, name);
+    }
+
+    private void addItems() {
+        add(ModItems.STUDENT_CARD.get(), "Turtle Block Academy Student ID");
     }
 
     private void addBlocks() {

@@ -92,6 +92,7 @@ public class AcademyAdvancementsGen extends AdvancementProvider {
                             null, frame, showToast, announceToChat, hidden);
         }
 
+        @SuppressWarnings("unused")
         @Override
         public void accept(Consumer<Advancement> consumer) {
             Advancement root = createParentAdvancement(ModBlocks.CERTIFICATE_BLOCK.get(),
@@ -99,6 +100,7 @@ public class AcademyAdvancementsGen extends AdvancementProvider {
                     FrameType.CHALLENGE, false, false, false)
                     .addCriterion("tick", new PlayerTrigger.TriggerInstance(CriteriaTriggers.TICK.getId(),
                             EntityPredicate.Composite.ANY))
+                    .rewards(AdvancementRewards.Builder.function(new ResourceLocation("turtleblockacademy:give_student_card")))
                     .save(consumer, getPath("root"));
             Advancement unlock_recipes = createSecretAdvancement()
                     .addCriterion("tick", new PlayerTrigger.TriggerInstance(CriteriaTriggers.TICK.getId(),
@@ -116,6 +118,7 @@ public class AcademyAdvancementsGen extends AdvancementProvider {
                     .save(consumer, getPath("explore_end"));
         }
 
+        @SuppressWarnings("SameParameterValue")
         protected static Advancement.Builder addBiomes(Advancement.Builder builder, @NotNull List<ResourceKey<Biome>> biomes) {
             for (ResourceKey<Biome> resourcekey : biomes) {
                 builder.addCriterion(resourcekey.location().toString(),

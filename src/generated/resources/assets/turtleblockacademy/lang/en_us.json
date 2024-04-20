@@ -4,8 +4,10 @@
   "academy.advancement.root": "Turtle Block Academy",
   "academy.advancement.root.desc": "Principal Herobrine welcomes you!",
   "block.turtleblockacademy.certificate_block": "Certificate of Completion",
-  "block.turtleblockacademy.certificate_block.turtleblockacademy:playerNameTag": "§cLinked player§r %s",
+  "command.exception.turtleblockacademy.command_failure": "Command failed to execute",
+  "item.turtleblockacademy.student_card": "Turtle Block Academy Student ID",
   "itemGroup.turtleblockacademy": "Turtle Block Academy Tab",
-  "tooltips.turtleblockacademy.certificate_awarded": "This certificate is awarded to:",
-  "tooltips.turtleblockacademy.certificate_blank": "Certificates are awarded upon completion of academy tasks"
+  "tooltips.turtleblockacademy.certificate_blank": "Blank Certificate",
+  "tooltips.turtleblockacademy.student_card_blank": "Blank Student Card - Use to Register as Student",
+  "turtleblockacademy.registered": "You are now registered as a student of Turtle Block Academy"
 }
