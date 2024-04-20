@@ -3,6 +3,8 @@ package com.github.warrentode.turtleblockacademy;
 import com.github.warrentode.turtleblockacademy.blocks.ModBlocks;
 import com.github.warrentode.turtleblockacademy.config.AcademyConfig;
 import com.github.warrentode.turtleblockacademy.items.ModItems;
+import com.github.warrentode.turtleblockacademy.loot.serializers.ModLootItemConditions;
+import com.github.warrentode.turtleblockacademy.loot.serializers.ModLootModifiers;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
@@ -35,6 +37,9 @@ public class TurtleBlockAcademy {
 
         ModBlocks.register(modEventBus);
         ModItems.register(modEventBus);
+
+        ModLootModifiers.register(modEventBus);
+        ModLootItemConditions.register(modEventBus);
     }
 
     @SuppressWarnings("deprecation")
