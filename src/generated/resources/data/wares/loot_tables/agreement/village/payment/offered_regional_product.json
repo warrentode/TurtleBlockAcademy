@@ -1,0 +1,1698 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "conditions": [
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:location_check",
+                "predicate": {
+                  "dimension": "aether:the_aether"
+                }
+              }
+            }
+          ],
+          "name": "wares:agreement/village/regional_products/aether_products"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "conditions": [
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:location_check",
+                "predicate": {
+                  "biome": "biomesoplenty:woodland"
+                }
+              }
+            }
+          ],
+          "name": "wares:agreement/village/regional_products/woodland_products"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "conditions": [
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:location_check",
+                "predicate": {
+                  "biome": "biomesoplenty:wooded_scrubland"
+                }
+              }
+            }
+          ],
+          "name": "wares:agreement/village/regional_products/wooded_scrubland_products"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "conditions": [
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:location_check",
+                "predicate": {
+                  "biome": "biomesoplenty:wetland"
+                }
+              }
+            }
+          ],
+          "name": "wares:agreement/village/regional_products/wetland_products"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "conditions": [
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:location_check",
+                "predicate": {
+                  "biome": "biomesoplenty:wooded_wasteland"
+                }
+              }
+            }
+          ],
+          "name": "wares:agreement/village/regional_products/wooded_wasteland_products"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "conditions": [
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:location_check",
+                "predicate": {
+                  "biome": "biomesoplenty:wasteland"
+                }
+              }
+            }
+          ],
+          "name": "wares:agreement/village/regional_products/wasteland_products"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "conditions": [
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:location_check",
+                "predicate": {
+                  "biome": "biomesoplenty:volcano"
+                }
+              }
+            }
+          ],
+          "name": "wares:agreement/village/regional_products/volcano_products"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "conditions": [
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:location_check",
+                "predicate": {
+                  "biome": "biomesoplenty:volcanic_plains"
+                }
+              }
+            }
+          ],
+          "name": "wares:agreement/village/regional_products/volcanic_plains_products"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "conditions": [
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:location_check",
+                "predicate": {
+                  "biome": "biomesoplenty:tundra"
+                }
+              }
+            }
+          ],
+          "name": "wares:agreement/village/regional_products/tundra_products"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "conditions": [
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:location_check",
+                "predicate": {
+                  "biome": "biomesoplenty:tropics"
+                }
+              }
+            }
+          ],
+          "name": "wares:agreement/village/regional_products/tropics_products"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "conditions": [
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:location_check",
+                "predicate": {
+                  "biome": "biomesoplenty:spider_nest"
+                }
+              }
+            }
+          ],
+          "name": "wares:agreement/village/regional_products/spider_nest_products"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "conditions": [
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:location_check",
+                "predicate": {
+                  "biome": "biomesoplenty:snowy_maple_woods"
+                }
+              }
+            }
+          ],
+          "name": "wares:agreement/village/regional_products/snowy_maple_woods_products"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "conditions": [
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:location_check",
+                "predicate": {
+                  "biome": "biomesoplenty:snowy_fir_clearing"
+                }
+              }
+            }
+          ],
+          "name": "wares:agreement/village/regional_products/snowy_fir_clearing_products"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "conditions": [
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:location_check",
+                "predicate": {
+                  "biome": "biomesoplenty:snowy_coniferous_forest"
+                }
+              }
+            }
+          ],
+          "name": "wares:agreement/village/regional_products/snowy_coniferous_forest_products"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "conditions": [
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:location_check",
+                "predicate": {
+                  "biome": "biomesoplenty:rocky_shrubland"
+                }
+              }
+            }
+          ],
+          "name": "wares:agreement/village/regional_products/rocky_shrubland_products"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "conditions": [
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:location_check",
+                "predicate": {
+                  "biome": "biomesoplenty:redwood_forest"
+                }
+              }
+            }
+          ],
+          "name": "wares:agreement/village/regional_products/redwood_forest_products"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "conditions": [
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:location_check",
+                "predicate": {
+                  "biome": "biomesoplenty:rocky_rainforest"
+                }
+              }
+            }
+          ],
+          "name": "wares:agreement/village/regional_products/rocky_rainforest_products"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "conditions": [
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:location_check",
+                "predicate": {
+                  "biome": "biomesoplenty:rainforest"
+                }
+              }
+            }
+          ],
+          "name": "wares:agreement/village/regional_products/rainforest_products"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "conditions": [
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:location_check",
+                "predicate": {
+                  "biome": "biomesoplenty:prairie"
+                }
+              }
+            }
+          ],
+          "name": "wares:agreement/village/regional_products/prairie_products"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "conditions": [
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:location_check",
+                "predicate": {
+                  "biome": "biomesoplenty:pasture"
+                }
+              }
+            }
+          ],
+          "name": "wares:agreement/village/regional_products/pasture_products"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "conditions": [
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:location_check",
+                "predicate": {
+                  "biome": "biomesoplenty:origin_valley"
+                }
+              }
+            }
+          ],
+          "name": "wares:agreement/village/regional_products/origin_valley_products"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "conditions": [
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:location_check",
+                "predicate": {
+                  "biome": "biomesoplenty:orchard"
+                }
+              }
+            }
+          ],
+          "name": "wares:agreement/village/regional_products/orchard_products"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "conditions": [
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:location_check",
+                "predicate": {
+                  "biome": "biomesoplenty:ominous_woods"
+                }
+              }
+            }
+          ],
+          "name": "wares:agreement/village/regional_products/ominous_woods_products"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "conditions": [
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:location_check",
+                "predicate": {
+                  "biome": "biomesoplenty:old_growth_woodland"
+                }
+              }
+            }
+          ],
+          "name": "wares:agreement/village/regional_products/old_growth_woodland_products"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "conditions": [
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:location_check",
+                "predicate": {
+                  "biome": "biomesoplenty:muskeg"
+                }
+              }
+            }
+          ],
+          "name": "wares:agreement/village/regional_products/muskeg_products"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "conditions": [
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:location_check",
+                "predicate": {
+                  "biome": "biomesoplenty:mystic_grove"
+                }
+              }
+            }
+          ],
+          "name": "wares:agreement/village/regional_products/mystic_grove_products"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "conditions": [
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:location_check",
+                "predicate": {
+                  "biome": "biomesoplenty:mediterranean_forest"
+                }
+              }
+            }
+          ],
+          "name": "wares:agreement/village/regional_products/mediterranean_forest_products"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "conditions": [
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:location_check",
+                "predicate": {
+                  "biome": "biomesoplenty:marsh"
+                }
+              }
+            }
+          ],
+          "name": "wares:agreement/village/regional_products/marsh_products"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "conditions": [
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:location_check",
+                "predicate": {
+                  "biome": "biomesoplenty:lush_savanna"
+                }
+              }
+            }
+          ],
+          "name": "wares:agreement/village/regional_products/lush_savanna_products"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "conditions": [
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:location_check",
+                "predicate": {
+                  "biome": "biomesoplenty:lavender_forest"
+                }
+              }
+            }
+          ],
+          "name": "wares:agreement/village/regional_products/lavender_forest_products"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "conditions": [
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:location_check",
+                "predicate": {
+                  "biome": "biomesoplenty:lavender_field"
+                }
+              }
+            }
+          ],
+          "name": "wares:agreement/village/regional_products/lavender_field_products"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "conditions": [
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:location_check",
+                "predicate": {
+                  "biome": "biomesoplenty:jade_cliffs"
+                }
+              }
+            }
+          ],
+          "name": "wares:agreement/village/regional_products/jade_cliffs_products"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "conditions": [
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:location_check",
+                "predicate": {
+                  "biome": "biomesoplenty:highland_moor"
+                }
+              }
+            }
+          ],
+          "name": "wares:agreement/village/regional_products/highland_moor_products"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "conditions": [
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:location_check",
+                "predicate": {
+                  "biome": "biomesoplenty:highland"
+                }
+              }
+            }
+          ],
+          "name": "wares:agreement/village/regional_products/highland_products"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "conditions": [
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:location_check",
+                "predicate": {
+                  "biome": "biomesoplenty:glowing_grotto"
+                }
+              }
+            }
+          ],
+          "name": "wares:agreement/village/regional_products/glowing_grotto_products"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "conditions": [
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:location_check",
+                "predicate": {
+                  "biome": "biomesoplenty:fungal_jungle"
+                }
+              }
+            }
+          ],
+          "name": "wares:agreement/village/regional_products/fungal_jungle_products"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "conditions": [
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:location_check",
+                "predicate": {
+                  "biome": "biomesoplenty:forested_field"
+                }
+              }
+            }
+          ],
+          "name": "wares:agreement/village/regional_products/forested_field_products"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "conditions": [
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:location_check",
+                "predicate": {
+                  "biome": "biomesoplenty:floodplain"
+                }
+              }
+            }
+          ],
+          "name": "wares:agreement/village/regional_products/floodplain_products"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "conditions": [
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:location_check",
+                "predicate": {
+                  "biome": "biomesoplenty:fir_clearing"
+                }
+              }
+            }
+          ],
+          "name": "wares:agreement/village/regional_products/fir_clearing_products"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "conditions": [
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:location_check",
+                "predicate": {
+                  "biome": "biomesoplenty:pumpkin_patch"
+                }
+              }
+            }
+          ],
+          "name": "wares:agreement/village/regional_products/pumpkin_patch_products"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "conditions": [
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:location_check",
+                "predicate": {
+                  "biome": "biomesoplenty:seasonal_orchard"
+                }
+              }
+            }
+          ],
+          "name": "wares:agreement/village/regional_products/seasonal_orchard_products"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "conditions": [
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:location_check",
+                "predicate": {
+                  "biome": "biomesoplenty:seasonal_forest"
+                }
+              }
+            }
+          ],
+          "name": "wares:agreement/village/regional_products/seasonal_forest_products"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "conditions": [
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:location_check",
+                "predicate": {
+                  "biome": "biomesoplenty:maple_woods"
+                }
+              }
+            }
+          ],
+          "name": "wares:agreement/village/regional_products/maple_woods_products"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "conditions": [
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:location_check",
+                "predicate": {
+                  "biome": "biomesoplenty:field"
+                }
+              }
+            }
+          ],
+          "name": "wares:agreement/village/regional_products/field_products"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "conditions": [
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:location_check",
+                "predicate": {
+                  "biome": "biomesoplenty:scrubland"
+                }
+              }
+            }
+          ],
+          "name": "wares:agreement/village/regional_products/scrubland_products"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "conditions": [
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:location_check",
+                "predicate": {
+                  "biome": "biomesoplenty:shrubland"
+                }
+              }
+            }
+          ],
+          "name": "wares:agreement/village/regional_products/shrubland_products"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "conditions": [
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:location_check",
+                "predicate": {
+                  "biome": "biomesoplenty:dune_beach"
+                }
+              }
+            }
+          ],
+          "name": "wares:agreement/village/regional_products/dune_beach_products"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "conditions": [
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:location_check",
+                "predicate": {
+                  "biome": "biomesoplenty:lush_desert"
+                }
+              }
+            }
+          ],
+          "name": "wares:agreement/village/regional_products/lush_desert_products"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "conditions": [
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:location_check",
+                "predicate": {
+                  "biome": "biomesoplenty:dryland"
+                }
+              }
+            }
+          ],
+          "name": "wares:agreement/village/regional_products/dryland_products"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "conditions": [
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:location_check",
+                "predicate": {
+                  "biome": "biomesoplenty:old_growth_dead_forest"
+                }
+              }
+            }
+          ],
+          "name": "wares:agreement/village/regional_products/old_growth_dead_forest_products"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "conditions": [
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:location_check",
+                "predicate": {
+                  "biome": "biomesoplenty:dead_forest"
+                }
+              }
+            }
+          ],
+          "name": "wares:agreement/village/regional_products/dead_forest_products"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "conditions": [
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:location_check",
+                "predicate": {
+                  "biome": "biomesoplenty:crag"
+                }
+              }
+            }
+          ],
+          "name": "wares:agreement/village/regional_products/crag_products"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "conditions": [
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:location_check",
+                "predicate": {
+                  "biome": "biomesoplenty:coniferous_forest"
+                }
+              }
+            }
+          ],
+          "name": "wares:agreement/village/regional_products/coniferous_forest_products"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "conditions": [
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:location_check",
+                "predicate": {
+                  "biome": "biomesoplenty:cold_desert"
+                }
+              }
+            }
+          ],
+          "name": "wares:agreement/village/regional_products/cold_desert_products"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "conditions": [
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:location_check",
+                "predicate": {
+                  "biome": "biomesoplenty:grassland"
+                }
+              }
+            }
+          ],
+          "name": "wares:agreement/village/regional_products/grassland_products"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "conditions": [
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:location_check",
+                "predicate": {
+                  "biome": "biomesoplenty:clover_patch"
+                }
+              }
+            }
+          ],
+          "name": "wares:agreement/village/regional_products/clover_patch_products"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "conditions": [
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:location_check",
+                "predicate": {
+                  "biome": "biomesoplenty:bog"
+                }
+              }
+            }
+          ],
+          "name": "wares:agreement/village/regional_products/bog_products"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "conditions": [
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:location_check",
+                "predicate": {
+                  "biome": "biomesoplenty:bayou"
+                }
+              }
+            }
+          ],
+          "name": "wares:agreement/village/regional_products/bayou_products"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "conditions": [
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:location_check",
+                "predicate": {
+                  "biome": "biomesoplenty:cherry_blossom_grove"
+                }
+              }
+            }
+          ],
+          "name": "wares:agreement/village/regional_products/cherry_blossom_grove_products"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "conditions": [
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:location_check",
+                "predicate": {
+                  "biome": "biomesoplenty:bamboo_grove"
+                }
+              }
+            }
+          ],
+          "name": "wares:agreement/village/regional_products/bamboo_grove_products"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "conditions": [
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:location_check",
+                "predicate": {
+                  "biome": "biomesoplenty:auroral_garden"
+                }
+              }
+            }
+          ],
+          "name": "wares:agreement/village/regional_products/auroral_garden_products"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "conditions": [
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:location_check",
+                "predicate": {
+                  "biome": "minecraft:small_end_islands"
+                }
+              }
+            }
+          ],
+          "name": "wares:agreement/village/regional_products/small_end_islands_products"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "conditions": [
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:location_check",
+                "predicate": {
+                  "biome": "minecraft:end_barrens"
+                }
+              }
+            }
+          ],
+          "name": "wares:agreement/village/regional_products/end_barrens_products"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "conditions": [
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:location_check",
+                "predicate": {
+                  "biome": "minecraft:end_midlands"
+                }
+              }
+            }
+          ],
+          "name": "wares:agreement/village/regional_products/end_midlands_products"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "conditions": [
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:location_check",
+                "predicate": {
+                  "biome": "minecraft:end_highlands"
+                }
+              }
+            }
+          ],
+          "name": "wares:agreement/village/regional_products/end_highlands_products"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "conditions": [
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:location_check",
+                "predicate": {
+                  "biome": "minecraft:the_end"
+                }
+              }
+            }
+          ],
+          "name": "wares:agreement/village/regional_products/the_end_products"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "conditions": [
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:location_check",
+                "predicate": {
+                  "biome": "biomesoplenty:withered_abyss"
+                }
+              }
+            }
+          ],
+          "name": "wares:agreement/village/regional_products/withered_abyss_products"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "conditions": [
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:location_check",
+                "predicate": {
+                  "biome": "biomesoplenty:visceral_heap"
+                }
+              }
+            }
+          ],
+          "name": "wares:agreement/village/regional_products/visceral_heap_products"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "conditions": [
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:location_check",
+                "predicate": {
+                  "biome": "biomesoplenty:undergrowth"
+                }
+              }
+            }
+          ],
+          "name": "wares:agreement/village/regional_products/undergrowth_products"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "conditions": [
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:location_check",
+                "predicate": {
+                  "biome": "biomesoplenty:erupting_inferno"
+                }
+              }
+            }
+          ],
+          "name": "wares:agreement/village/regional_products/erupting_inferno_products"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "conditions": [
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:location_check",
+                "predicate": {
+                  "biome": "biomesoplenty:crystalline_chasm"
+                }
+              }
+            }
+          ],
+          "name": "wares:agreement/village/regional_products/crystalline_chasm_products"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "conditions": [
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:location_check",
+                "predicate": {
+                  "biome": "minecraft:basalt_deltas"
+                }
+              }
+            }
+          ],
+          "name": "wares:agreement/village/regional_products/basalt_deltas_products"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "conditions": [
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:location_check",
+                "predicate": {
+                  "biome": "minecraft:warped_forest"
+                }
+              }
+            }
+          ],
+          "name": "wares:agreement/village/regional_products/warped_forest_products"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "conditions": [
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:location_check",
+                "predicate": {
+                  "biome": "minecraft:crimson_forest"
+                }
+              }
+            }
+          ],
+          "name": "wares:agreement/village/regional_products/crimson_forest_products"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "conditions": [
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:location_check",
+                "predicate": {
+                  "biome": "minecraft:soul_sand_valley"
+                }
+              }
+            }
+          ],
+          "name": "wares:agreement/village/regional_products/soul_valley_products"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "conditions": [
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:location_check",
+                "predicate": {
+                  "biome": "minecraft:nether_wastes"
+                }
+              }
+            }
+          ],
+          "name": "wares:agreement/village/regional_products/nether_wastes_products"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "conditions": [
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:location_check",
+                "predicate": {
+                  "biome": "minecraft:dark_forest"
+                }
+              }
+            }
+          ],
+          "name": "wares:agreement/village/regional_products/dark_forest_products"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "conditions": [
+            {
+              "condition": "minecraft:alternative",
+              "terms": [
+                {
+                  "condition": "minecraft:inverted",
+                  "term": {
+                    "condition": "minecraft:location_check",
+                    "predicate": {
+                      "structure": "minecraft:village_desert"
+                    }
+                  }
+                },
+                {
+                  "condition": "minecraft:inverted",
+                  "term": {
+                    "condition": "minecraft:location_check",
+                    "predicate": {
+                      "biome": "minecraft:desert"
+                    }
+                  }
+                }
+              ]
+            }
+          ],
+          "name": "wares:agreement/village/regional_products/desert_products"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "conditions": [
+            {
+              "condition": "minecraft:alternative",
+              "terms": [
+                {
+                  "condition": "minecraft:inverted",
+                  "term": {
+                    "condition": "minecraft:location_check",
+                    "predicate": {
+                      "biome": "minecraft:badlands"
+                    }
+                  }
+                },
+                {
+                  "condition": "minecraft:inverted",
+                  "term": {
+                    "condition": "minecraft:location_check",
+                    "predicate": {
+                      "biome": "minecraft:wooded_badlands"
+                    }
+                  }
+                },
+                {
+                  "condition": "minecraft:inverted",
+                  "term": {
+                    "condition": "minecraft:location_check",
+                    "predicate": {
+                      "biome": "minecraft:eroded_badlands"
+                    }
+                  }
+                }
+              ]
+            }
+          ],
+          "name": "wares:agreement/village/regional_products/badlands_products"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "conditions": [
+            {
+              "condition": "minecraft:alternative",
+              "terms": [
+                {
+                  "condition": "minecraft:inverted",
+                  "term": {
+                    "condition": "minecraft:location_check",
+                    "predicate": {
+                      "biome": "minecraft:forest"
+                    }
+                  }
+                },
+                {
+                  "condition": "minecraft:inverted",
+                  "term": {
+                    "condition": "minecraft:location_check",
+                    "predicate": {
+                      "biome": "minecraft:flower_forest"
+                    }
+                  }
+                },
+                {
+                  "condition": "minecraft:inverted",
+                  "term": {
+                    "condition": "minecraft:location_check",
+                    "predicate": {
+                      "biome": "minecraft:birch_forest"
+                    }
+                  }
+                },
+                {
+                  "condition": "minecraft:inverted",
+                  "term": {
+                    "condition": "minecraft:location_check",
+                    "predicate": {
+                      "biome": "minecraft:old_growth_birch_forest"
+                    }
+                  }
+                }
+              ]
+            }
+          ],
+          "name": "wares:agreement/village/regional_products/forest_products"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "conditions": [
+            {
+              "condition": "minecraft:alternative",
+              "terms": [
+                {
+                  "condition": "minecraft:inverted",
+                  "term": {
+                    "condition": "minecraft:location_check",
+                    "predicate": {
+                      "biome": "minecraft:jungle"
+                    }
+                  }
+                },
+                {
+                  "condition": "minecraft:inverted",
+                  "term": {
+                    "condition": "minecraft:location_check",
+                    "predicate": {
+                      "biome": "minecraft:bamboo_jungle"
+                    }
+                  }
+                },
+                {
+                  "condition": "minecraft:inverted",
+                  "term": {
+                    "condition": "minecraft:location_check",
+                    "predicate": {
+                      "biome": "minecraft:sparse_jungle"
+                    }
+                  }
+                }
+              ]
+            }
+          ],
+          "name": "wares:agreement/village/regional_products/jungle_products"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "conditions": [
+            {
+              "condition": "minecraft:alternative",
+              "terms": [
+                {
+                  "condition": "minecraft:inverted",
+                  "term": {
+                    "condition": "minecraft:location_check",
+                    "predicate": {
+                      "biome": "minecraft:ocean"
+                    }
+                  }
+                },
+                {
+                  "condition": "minecraft:inverted",
+                  "term": {
+                    "condition": "minecraft:location_check",
+                    "predicate": {
+                      "biome": "minecraft:deep_ocean"
+                    }
+                  }
+                },
+                {
+                  "condition": "minecraft:inverted",
+                  "term": {
+                    "condition": "minecraft:location_check",
+                    "predicate": {
+                      "biome": "minecraft:stony_shore"
+                    }
+                  }
+                },
+                {
+                  "condition": "minecraft:inverted",
+                  "term": {
+                    "condition": "minecraft:location_check",
+                    "predicate": {
+                      "biome": "minecraft:beach"
+                    }
+                  }
+                },
+                {
+                  "condition": "minecraft:inverted",
+                  "term": {
+                    "condition": "minecraft:location_check",
+                    "predicate": {
+                      "biome": "minecraft:frozen_ocean"
+                    }
+                  }
+                },
+                {
+                  "condition": "minecraft:inverted",
+                  "term": {
+                    "condition": "minecraft:location_check",
+                    "predicate": {
+                      "biome": "minecraft:deep_frozen_ocean"
+                    }
+                  }
+                },
+                {
+                  "condition": "minecraft:inverted",
+                  "term": {
+                    "condition": "minecraft:location_check",
+                    "predicate": {
+                      "biome": "minecraft:cold_ocean"
+                    }
+                  }
+                },
+                {
+                  "condition": "minecraft:inverted",
+                  "term": {
+                    "condition": "minecraft:location_check",
+                    "predicate": {
+                      "biome": "minecraft:deep_cold_ocean"
+                    }
+                  }
+                },
+                {
+                  "condition": "minecraft:inverted",
+                  "term": {
+                    "condition": "minecraft:location_check",
+                    "predicate": {
+                      "biome": "minecraft:lukewarm_ocean"
+                    }
+                  }
+                },
+                {
+                  "condition": "minecraft:inverted",
+                  "term": {
+                    "condition": "minecraft:location_check",
+                    "predicate": {
+                      "biome": "minecraft:deep_lukewarm_ocean"
+                    }
+                  }
+                },
+                {
+                  "condition": "minecraft:inverted",
+                  "term": {
+                    "condition": "minecraft:location_check",
+                    "predicate": {
+                      "biome": "minecraft:warm_ocean"
+                    }
+                  }
+                }
+              ]
+            }
+          ],
+          "name": "wares:agreement/village/regional_products/ocean_products"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "conditions": [
+            {
+              "condition": "minecraft:alternative",
+              "terms": [
+                {
+                  "condition": "minecraft:inverted",
+                  "term": {
+                    "condition": "minecraft:location_check",
+                    "predicate": {
+                      "structure": "minecraft:village_savanna"
+                    }
+                  }
+                },
+                {
+                  "condition": "minecraft:inverted",
+                  "term": {
+                    "condition": "minecraft:location_check",
+                    "predicate": {
+                      "biome": "minecraft:savanna"
+                    }
+                  }
+                },
+                {
+                  "condition": "minecraft:inverted",
+                  "term": {
+                    "condition": "minecraft:location_check",
+                    "predicate": {
+                      "biome": "minecraft:savanna_plateau"
+                    }
+                  }
+                },
+                {
+                  "condition": "minecraft:inverted",
+                  "term": {
+                    "condition": "minecraft:location_check",
+                    "predicate": {
+                      "biome": "minecraft:windswept_savanna"
+                    }
+                  }
+                }
+              ]
+            }
+          ],
+          "name": "wares:agreement/village/regional_products/savanna_products"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "conditions": [
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:location_check",
+                "predicate": {
+                  "biome": "minecraft:stony_peaks"
+                }
+              }
+            }
+          ],
+          "name": "wares:agreement/village/regional_products/stony_peaks_products"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "conditions": [
+            {
+              "condition": "minecraft:alternative",
+              "terms": [
+                {
+                  "condition": "minecraft:inverted",
+                  "term": {
+                    "condition": "minecraft:location_check",
+                    "predicate": {
+                      "biome": "minecraft:swamp"
+                    }
+                  }
+                },
+                {
+                  "condition": "minecraft:inverted",
+                  "term": {
+                    "condition": "minecraft:location_check",
+                    "predicate": {
+                      "biome": "minecraft:mangrove_swamp"
+                    }
+                  }
+                }
+              ]
+            }
+          ],
+          "name": "wares:agreement/village/regional_products/swamp_products"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "conditions": [
+            {
+              "condition": "minecraft:alternative",
+              "terms": [
+                {
+                  "condition": "minecraft:inverted",
+                  "term": {
+                    "condition": "minecraft:location_check",
+                    "predicate": {
+                      "structure": "minecraft:village_taiga"
+                    }
+                  }
+                },
+                {
+                  "condition": "minecraft:inverted",
+                  "term": {
+                    "condition": "minecraft:location_check",
+                    "predicate": {
+                      "biome": "minecraft:taiga"
+                    }
+                  }
+                },
+                {
+                  "condition": "minecraft:inverted",
+                  "term": {
+                    "condition": "minecraft:location_check",
+                    "predicate": {
+                      "biome": "minecraft:old_growth_pine_taiga"
+                    }
+                  }
+                },
+                {
+                  "condition": "minecraft:inverted",
+                  "term": {
+                    "condition": "minecraft:location_check",
+                    "predicate": {
+                      "biome": "minecraft:old_growth_spruce_taiga"
+                    }
+                  }
+                },
+                {
+                  "condition": "minecraft:inverted",
+                  "term": {
+                    "condition": "minecraft:location_check",
+                    "predicate": {
+                      "biome": "minecraft:windswept_forest"
+                    }
+                  }
+                },
+                {
+                  "condition": "minecraft:inverted",
+                  "term": {
+                    "condition": "minecraft:location_check",
+                    "predicate": {
+                      "biome": "minecraft:windswept_hills"
+                    }
+                  }
+                },
+                {
+                  "condition": "minecraft:inverted",
+                  "term": {
+                    "condition": "minecraft:location_check",
+                    "predicate": {
+                      "biome": "minecraft:windswept_gravelly_hills"
+                    }
+                  }
+                }
+              ]
+            }
+          ],
+          "name": "wares:agreement/village/regional_products/taiga_products"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "conditions": [
+            {
+              "condition": "minecraft:alternative",
+              "terms": [
+                {
+                  "condition": "minecraft:inverted",
+                  "term": {
+                    "condition": "minecraft:location_check",
+                    "predicate": {
+                      "structure": "minecraft:village_snowy"
+                    }
+                  }
+                },
+                {
+                  "condition": "minecraft:inverted",
+                  "term": {
+                    "condition": "minecraft:location_check",
+                    "predicate": {
+                      "biome": "minecraft:snowy_taiga"
+                    }
+                  }
+                },
+                {
+                  "condition": "minecraft:inverted",
+                  "term": {
+                    "condition": "minecraft:location_check",
+                    "predicate": {
+                      "biome": "minecraft:snowy_slopes"
+                    }
+                  }
+                },
+                {
+                  "condition": "minecraft:inverted",
+                  "term": {
+                    "condition": "minecraft:location_check",
+                    "predicate": {
+                      "biome": "minecraft:ice_spikes"
+                    }
+                  }
+                },
+                {
+                  "condition": "minecraft:inverted",
+                  "term": {
+                    "condition": "minecraft:location_check",
+                    "predicate": {
+                      "biome": "minecraft:snowy_plains"
+                    }
+                  }
+                },
+                {
+                  "condition": "minecraft:inverted",
+                  "term": {
+                    "condition": "minecraft:location_check",
+                    "predicate": {
+                      "biome": "minecraft:jagged_peaks"
+                    }
+                  }
+                },
+                {
+                  "condition": "minecraft:inverted",
+                  "term": {
+                    "condition": "minecraft:location_check",
+                    "predicate": {
+                      "biome": "minecraft:grove"
+                    }
+                  }
+                },
+                {
+                  "condition": "minecraft:inverted",
+                  "term": {
+                    "condition": "minecraft:location_check",
+                    "predicate": {
+                      "biome": "minecraft:frozen_peaks"
+                    }
+                  }
+                },
+                {
+                  "condition": "minecraft:inverted",
+                  "term": {
+                    "condition": "minecraft:location_check",
+                    "predicate": {
+                      "biome": "minecraft:snowy_beach"
+                    }
+                  }
+                },
+                {
+                  "condition": "minecraft:inverted",
+                  "term": {
+                    "condition": "minecraft:location_check",
+                    "predicate": {
+                      "biome": "minecraft:frozen_river"
+                    }
+                  }
+                }
+              ]
+            }
+          ],
+          "name": "wares:agreement/village/regional_products/snowy_products"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "wares:agreement/village/regional_products/plains_products"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ]
+}

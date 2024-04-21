@@ -1,0 +1,163 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "conditions": [
+            {
+              "condition": "turtleblockacademy:seasonal_condition",
+              "season": "false"
+            }
+          ],
+          "name": "lootbags:loot_bags/trick_or_treat_lootbag"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "conditions": [
+            {
+              "condition": "turtleblockacademy:seasonal_condition",
+              "season": "false"
+            }
+          ],
+          "name": "lootbags:loot_bags/birthday_lootbag"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "conditions": [
+            {
+              "condition": "turtleblockacademy:seasonal_condition",
+              "season": "false"
+            }
+          ],
+          "name": "lootbags:loot_bags/christmas_lootbag"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "conditions": [
+            {
+              "condition": "turtleblockacademy:seasonal_condition",
+              "season": "false"
+            }
+          ],
+          "name": "lootbags:loot_bags/easter_lootbag"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "conditions": [
+            {
+              "condition": "turtleblockacademy:seasonal_condition",
+              "season": "false"
+            }
+          ],
+          "name": "lootbags:loot_bags/anniversary_lootbag"
+        },
+        {
+          "type": "minecraft:tag",
+          "conditions": [
+            {
+              "condition": "turtleblockacademy:seasonal_condition",
+              "season": "false"
+            }
+          ],
+          "expand": true,
+          "name": "snowyspirit:sleds"
+        },
+        {
+          "type": "minecraft:tag",
+          "conditions": [
+            {
+              "condition": "minecraft:alternative",
+              "terms": [
+                {
+                  "condition": "turtleblockacademy:seasonal_condition",
+                  "season": "false"
+                },
+                {
+                  "condition": "turtleblockacademy:seasonal_condition",
+                  "season": "false"
+                }
+              ]
+            }
+          ],
+          "expand": true,
+          "name": "justoutdoorstuffs:garden_items"
+        },
+        {
+          "type": "minecraft:tag",
+          "conditions": [
+            {
+              "condition": "minecraft:alternative",
+              "terms": [
+                {
+                  "condition": "turtleblockacademy:seasonal_condition",
+                  "season": "false"
+                },
+                {
+                  "condition": "turtleblockacademy:seasonal_condition",
+                  "season": "false"
+                },
+                {
+                  "condition": "turtleblockacademy:seasonal_condition",
+                  "season": "false"
+                }
+              ]
+            }
+          ],
+          "expand": true,
+          "name": "justoutdoorstuffs:patio_items"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "turtleblockacademy:chests/kitchen"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "turtleblockacademy:chests/bath_deco"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "turtleblockacademy:chests/plushies"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "conditions": [
+            {
+              "condition": "minecraft:alternative",
+              "terms": [
+                {
+                  "condition": "turtleblockacademy:seasonal_condition",
+                  "season": "false"
+                },
+                {
+                  "condition": "turtleblockacademy:seasonal_condition",
+                  "season": "false"
+                },
+                {
+                  "condition": "turtleblockacademy:seasonal_condition",
+                  "season": "false"
+                },
+                {
+                  "condition": "turtleblockacademy:seasonal_condition",
+                  "season": "false"
+                },
+                {
+                  "condition": "turtleblockacademy:seasonal_condition",
+                  "season": "false"
+                },
+                {
+                  "condition": "turtleblockacademy:seasonal_condition",
+                  "season": "false"
+                }
+              ]
+            }
+          ],
+          "name": "turtleblockacademy:chests/holiday_deco"
+        }
+      ],
+      "rolls": 6.0
+    }
+  ]
+}
