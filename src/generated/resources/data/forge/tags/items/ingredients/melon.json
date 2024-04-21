@@ -1,0 +1,14 @@
+{
+  "values": [
+    {
+      "id": "delightful:cantaloupe_slice",
+      "required": false
+    },
+    {
+      "id": "delightful:cantaloupe",
+      "required": false
+    },
+    "minecraft:melon_slice",
+    "minecraft:melon"
+  ]
+}

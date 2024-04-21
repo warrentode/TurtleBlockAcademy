@@ -282,3 +282,142 @@ mandatory = true
 versionRange = "[1.19.2-2.1.10,)"
 ordering = "NONE"
 side = "BOTH"
+
+[[dependencies.${ mod_id }]]
+modId = "moa_decor_toys"
+mandatory = true
+versionRange = "[1.19.2,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.${ mod_id }]]
+modId = "moa_decor_bath"
+mandatory = true
+versionRange = "[1.19.2,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.${ mod_id }]]
+modId = "moa_decor_holidays"
+mandatory = true
+versionRange = "[1.19.1,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.${ mod_id }]]
+modId = "moa_decor_art"
+mandatory = true
+versionRange = "[1.19.2,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.${ mod_id }]]
+modId = "moa_decor_cookery"
+mandatory = true
+versionRange = "[1.19.2,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.${ mod_id }]]
+modId = "moa_decor_garden_"
+mandatory = true
+versionRange = "[1.19.1,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.${ mod_id }]]
+modId = "plushies"
+mandatory = true
+versionRange = "[1.2,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.${ mod_id }]]
+modId = "mcwlights"
+mandatory = true
+versionRange = "[1.0.6,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.${ mod_id }]]
+modId = "mcwpaths"
+mandatory = true
+versionRange = "[1.0.3,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.${ mod_id }]]
+modId = "additional_lights"
+mandatory = true
+versionRange = "[2.1.6,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.${ mod_id }]]
+modId = "justoutdoorstuffs"
+mandatory = true
+versionRange = "[1.0.0,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.${ mod_id }]]
+modId = "chimes"
+mandatory = true
+versionRange = "[2.0.1,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.${ mod_id }]]
+modId = "friendsandfoes"
+mandatory = true
+versionRange = "[2.0.10,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.${ mod_id }]]
+modId = "guardvillagers"
+mandatory = true
+versionRange = "[1.19.2-1.5.7,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.${ mod_id }]]
+modId = "beautify"
+mandatory = true
+versionRange = "[1.4.3,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.${ mod_id }]]
+modId = "mantle"
+mandatory = true
+versionRange = "[1.10.24,)"
+ordering = "NONE"
+side = "BOTH"
+[[dependencies.${ mod_id }]]
+modId = "tconstruct"
+mandatory = true
+versionRange = "[3.8.1.16,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.${ mod_id }]]
+modId = "mcwdoors"
+mandatory = true
+versionRange = "[1.1.0,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.${ mod_id }]]
+modId = "mcwtrpdoors"
+mandatory = true
+versionRange = "[1.1.1,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.${ mod_id }]]
+modId = "artifacts"
+mandatory = true
+versionRange = "[1.19.2-5.0.5,)"
+ordering = "NONE"
+side = "BOTH"

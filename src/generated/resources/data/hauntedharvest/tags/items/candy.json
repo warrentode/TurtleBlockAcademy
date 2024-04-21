@@ -1,0 +1,13 @@
+{
+  "values": [
+    "#supplementaries:chocolate_bars",
+    {
+      "id": "festive_delight:sugar_cane",
+      "required": false
+    },
+    {
+      "id": "delightful:rock_candy",
+      "required": false
+    }
+  ]
+}

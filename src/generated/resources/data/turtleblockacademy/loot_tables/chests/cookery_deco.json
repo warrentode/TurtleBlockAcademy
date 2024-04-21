@@ -1,0 +1,631 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_cookery:plato"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_cookery:platos"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_cookery:platosypinzas"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_cookery:sandwich"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_cookery:hotdog"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_cookery:hamburguesa"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_cookery:pavo"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_cookery:langosta"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_cookery:pandemuerto"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_cookery:tacos"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_cookery:bolsadesemillas"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_cookery:fideos"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_cookery:sarten"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_cookery:sartenconhuevo"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_cookery:tazon"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_cookery:sopabetabel"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_cookery:sopaconejo"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_cookery:sopahongos"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_cookery:tazonazucar"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_cookery:donas"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_cookery:tabladecortar"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_cookery:sushi"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_cookery:queso"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_cookery:manzana"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_cookery:manzanacortada"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_cookery:manzanadorada"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_cookery:manzanadoradacortada"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_cookery:zanahoria"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_cookery:zanahoriacortada"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_cookery:zanahoriadorada"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_cookery:zanahoriadoradacortada"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_cookery:hongos"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_cookery:hongoscortados"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_cookery:betabel"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_cookery:betabelcortado"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_cookery:papa"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_cookery:sandia"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_cookery:pan"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_cookery:pancortado"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_cookery:litrodeleche"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_cookery:olla"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_cookery:ollabetabel"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_cookery:ollaconejo"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_cookery:ollahongos"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_cookery:paydecalabaza"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_cookery:paydemanzana"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_cookery:pasteldechocolate"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_cookery:rodilloymasa"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_cookery:tetera"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_cookery:taza"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_cookery:tazadecafe"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_cookery:tarro"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_cookery:tarrodecerveza"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_cookery:pastelgrande"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_cookery:frasco"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_cookery:frascogalletas"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_cookery:frascocafe"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_cookery:frascoazucar"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_cookery:frascosemillas"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_cookery:mermelada"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_cookery:botelladevino"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_cookery:botelladetequila"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_cookery:molcajete"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_cookery:cafetera"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_cookery:salypimienta"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_cookery:latadeatun"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_cookery:latasdeatun"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_cookery:bandeja"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_cookery:bandejadegalletas"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_cookery:ketchupymostaza"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_cookery:tostador"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_cookery:licuadora"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_cookery:waffles"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_cookery:pizza"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_cookery:cajadepizza"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_cookery:cajadepizzaabierta"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_cookery:cajasdepizza"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_cookery:soportetazas"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_cookery:soporteinstrumentos"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_cookery:soportedelantal"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_cookery:microondas"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_cookery:estufa"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_cookery:refrigerador"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_cookery:c_roble"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_cookery:c_abeto"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_cookery:cabedul"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_cookery:cjungla"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_cookery:cacacia"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_cookery:crobleosc"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_cookery:ccarmesi"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_cookery:cdistorsionado"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_cookery:croblesc"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_cookery:cabetosc"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_cookery:cabedulsc"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_cookery:cjunglasc"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_cookery:cacaciasc"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_cookery:ccarmesisc"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_cookery:cdistorsionadosc"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_cookery:crobleoscuro_sc"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_cookery:froble"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_cookery:fabeto"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_cookery:fabedul"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_cookery:fjungla"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_cookery:facacia"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_cookery:frobleosc"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_cookery:fcarmesi"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_cookery:fdistorsionado"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_cookery:froblesc"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_cookery:fabetosc"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_cookery:fabedulsc"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_cookery:fjunglasc"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_cookery:facaciasc"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_cookery:fcarmesisc"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_cookery:fdistorsionadosc"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_cookery:frobleoscsc"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_cookery:aroble"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_cookery:aabeto"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_cookery:aabedul"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_cookery:ajungla"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_cookery:aacacia"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_cookery:arobleosc"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_cookery:acarmesi"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_cookery:adistorsionado"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_cookery:aroblesc"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_cookery:aabetosc"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_cookery:aabedulsc"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_cookery:ajunglasc"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_cookery:aacaciasc"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_cookery:arobleoscsc"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_cookery:acarmesisc"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_cookery:adistorsionadosc"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_cookery:calabaza"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_cookery:barril"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_cookery:barrilmanzana"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_cookery:barrilmanzanadorada"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_cookery:barrilzanahoria"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_cookery:barrilzanahoriadorada"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_cookery:barrilpapa"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_cookery:barrilbetabel"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_cookery:cestadepicnic"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_cookery:barrilcerrado"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_cookery:barrilacostado"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_cookery:barrica"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_cookery:copa"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_cookery:copadevino"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_cookery:botelladeleche"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_cookery:escurridordeplatos"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_cookery:estufaabierta"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_cookery:estufapay"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_cookery:c_mangle"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_cookery:cmanglesc"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_cookery:fmangle"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_cookery:fmanglesc"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_cookery:amangle"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_cookery:amanglesc"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ]
+}

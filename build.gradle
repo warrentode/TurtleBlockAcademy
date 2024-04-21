@@ -108,6 +108,9 @@ dependencies {
     // curios
     implementation fg.deobf("curse.maven:curios-309927:5066842")
 
+    // artifacts
+    implementation fg.deobf("curse.maven:artifacts-312353:5102238")
+
     // loot bags
     implementation fg.deobf("curse.maven:resourceful-lib-570073:4477753")
     implementation fg.deobf("curse.maven:resourceful-lootbags-687082:4112026")
@@ -161,6 +164,32 @@ dependencies {
     // wares
     implementation fg.deobf("curse.maven:wares-839158:5275496")
 
+    // decor
+    implementation fg.deobf("curse.maven:moa-decor-toys-701524:4516288")
+    implementation fg.deobf("curse.maven:moa-decor-bath-853639:4516296")
+    implementation fg.deobf("curse.maven:moa-decor-holidays-920001:4784140")
+    implementation fg.deobf("curse.maven:moa-decor-art-701473:4516278")
+    implementation fg.deobf("curse.maven:moa-decor-cookery-701502:4516273")
+    implementation fg.deobf("curse.maven:moa-decor-garden-908847:4733291")
+    implementation fg.deobf("curse.maven:moa-decor-science-701517:4516285")
+    implementation fg.deobf("curse.maven:plushie-mod-544197:4095395")
+    implementation fg.deobf("curse.maven:macaws-lights-and-lamps-502372:4618179")
+    implementation fg.deobf("curse.maven:macaws-paths-and-pavings-629153:4585116")
+    implementation fg.deobf("curse.maven:additional-lights-384991:4410874")
+    implementation fg.deobf("curse.maven:just-outdoor-stuffs-896219:4691715")
+    implementation fg.deobf("curse.maven:chimes-350464:4671793")
+    implementation fg.deobf("curse.maven:macaws-doors-378646:4649906")
+    implementation fg.deobf("curse.maven:macaws-trapdoors-400933:4608580")
+
+    // additional mobs and villagers
+    implementation fg.deobf("curse.maven:friends-and-foes-forge-602059:5184433")
+    implementation fg.deobf("curse.maven:guard-villagers-360203:4701400")
+    implementation fg.deobf("curse.maven:beautify-decorate-633252:4036351")
+
+    // tinker mod set
+    implementation fg.deobf("curse.maven:mantle-74924:5245271")
+    implementation fg.deobf("curse.maven:tinkers-construct-74072:5245284")
+
     // sponge mixin
     annotationProcessor 'org.spongepowered:mixin:0.8.5:processor'
 }
@@ -171,8 +200,7 @@ tasks.named('processResources', ProcessResources).configure {
             forge_version: forge_version, forge_version_range: forge_version_range,
             loader_version_range: loader_version_range,
             mod_id: mod_id, mod_name: mod_name, mod_license: mod_license, mod_version: mod_version,
-            mod_authors      : mod_authors, mod_description: mod_description, version_gamestages: version_gamestages,
-            version_bookshelf: version_bookshelf,
+            mod_authors: mod_authors, mod_description: mod_description,
     ]
     inputs.properties replaceProperties
 

@@ -1,0 +1,173 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "decoration": "target_point",
+              "destination": "todeville:worldgen/structure/desert_poi",
+              "function": "minecraft:exploration_map",
+              "search_radius": 100
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "text": "Desert Exploration Map"
+              }
+            }
+          ],
+          "name": "minecraft:map"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "decoration": "target_point",
+              "destination": "todeville:worldgen/structure/ocean_poi",
+              "function": "minecraft:exploration_map",
+              "search_radius": 100
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "text": "Ocean Exploration Map"
+              }
+            }
+          ],
+          "name": "minecraft:map"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "decoration": "target_point",
+              "destination": "todeville:worldgen/structure/pillager_poi",
+              "function": "minecraft:exploration_map",
+              "search_radius": 100
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "text": "Pillager Scouting Map"
+              }
+            }
+          ],
+          "name": "minecraft:map"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "decoration": "blue_marker",
+              "destination": "todeville:worldgen/structure/settlement",
+              "function": "minecraft:exploration_map",
+              "search_radius": 100
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "text": "Settlement Exploration Map"
+              }
+            }
+          ],
+          "name": "minecraft:map"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "decoration": "target_point",
+              "destination": "todeville:worldgen/structure/underground_poi",
+              "function": "minecraft:exploration_map",
+              "search_radius": 100
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "text": "Underground Exploration Map"
+              }
+            }
+          ],
+          "name": "minecraft:map"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "decoration": "target_point",
+              "destination": "todeville:worldgen/structure/witch_sighting",
+              "function": "minecraft:exploration_map",
+              "search_radius": 100
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "text": "Swamp Exploration Map"
+              }
+            }
+          ],
+          "name": "minecraft:map"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "decoration": "target_x",
+              "destination": "todeville:worldgen/structure/treasure_poi",
+              "function": "minecraft:exploration_map",
+              "search_radius": 100
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "text": "Treasure Map"
+              }
+            }
+          ],
+          "name": "minecraft:map"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "decoration": "target_point",
+              "destination": "todeville:worldgen/structure/misc_poi",
+              "function": "minecraft:exploration_map",
+              "search_radius": 100
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "text": "Exploration Map"
+              }
+            }
+          ],
+          "name": "minecraft:map"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "decoration": "target_point",
+              "destination": "todeville:worldgen/structure/jungle_poi",
+              "function": "minecraft:exploration_map",
+              "search_radius": 100
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "text": "Jungle Exploration Map"
+              }
+            }
+          ],
+          "name": "minecraft:map"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "values": [
+    {
+      "id": "nethersdelight:propelpearl",
+      "required": false
+    },
+    "#forge:crops/berries",
+    "#forge:crops/cocoa",
+    "#forge:crops/coconut",
+    "#forge:crops/melon",
+    "#forge:crops/pumpkin",
+    "#forge:crops/coffee",
+    "#forge:crops/apples"
+  ]
+}

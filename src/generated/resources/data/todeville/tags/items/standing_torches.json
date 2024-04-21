@@ -1,0 +1,92 @@
+{
+  "values": [
+    {
+      "id": "additional_lights:standing_torch_s_cobblestone",
+      "required": false
+    },
+    {
+      "id": "additional_lights:standing_torch_s_mossy_cobblestone",
+      "required": false
+    },
+    {
+      "id": "additional_lights:standing_torch_s_stone",
+      "required": false
+    },
+    {
+      "id": "additional_lights:standing_torch_s_stone_bricks",
+      "required": false
+    },
+    {
+      "id": "additional_lights:standing_torch_s_mossy_stone_bricks",
+      "required": false
+    },
+    {
+      "id": "additional_lights:standing_torch_s_smooth_stone",
+      "required": false
+    },
+    {
+      "id": "additional_lights:standing_torch_s_polished_andesite",
+      "required": false
+    },
+    {
+      "id": "additional_lights:standing_torch_s_polished_diorite",
+      "required": false
+    },
+    {
+      "id": "additional_lights:standing_torch_s_polished_granite",
+      "required": false
+    },
+    {
+      "id": "additional_lights:standing_torch_s_sandstone",
+      "required": false
+    },
+    {
+      "id": "additional_lights:standing_torch_s_cut_sandstone",
+      "required": false
+    },
+    {
+      "id": "additional_lights:standing_torch_s_end_stone",
+      "required": false
+    },
+    {
+      "id": "additional_lights:standing_torch_s_end_stone_bricks",
+      "required": false
+    },
+    {
+      "id": "additional_lights:standing_torch_s_nether_bricks",
+      "required": false
+    },
+    {
+      "id": "additional_lights:standing_torch_s_red_nether_bricks",
+      "required": false
+    },
+    {
+      "id": "additional_lights:standing_torch_s_polished_blackstone",
+      "required": false
+    },
+    {
+      "id": "additional_lights:standing_torch_s_iron_block",
+      "required": false
+    },
+    {
+      "id": "additional_lights:standing_torch_s_gold_block",
+      "required": false
+    },
+    {
+      "id": "additional_lights:standing_torch_s_diamond_block",
+      "required": false
+    },
+    {
+      "id": "additional_lights:standing_torch_s_packed_ice",
+      "required": false
+    },
+    {
+      "id": "additional_lights:standing_torch_s_pink_wool",
+      "required": false
+    },
+    {
+      "id": "additional_lights:standing_torch_s_magenta_wool",
+      "required": false
+    }
+  ]
+}

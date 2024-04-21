@@ -1,0 +1,24 @@
+{
+  "values": [
+    {
+      "id": "todecoins:copper_coin_bag",
+      "required": false
+    },
+    {
+      "id": "todecoins:iron_coin_bag",
+      "required": false
+    },
+    {
+      "id": "todecoins:gold_coin_bag",
+      "required": false
+    },
+    {
+      "id": "todecoins:nether_gold_coin_bag",
+      "required": false
+    },
+    {
+      "id": "todecoins:endonian_coin_bag",
+      "required": false
+    }
+  ]
+}

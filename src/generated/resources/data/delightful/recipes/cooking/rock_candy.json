@@ -1,0 +1,46 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "delightful"
+        },
+        {
+          "type": "forge:item_exists",
+          "item": "delightful:rock_candy"
+        },
+        {
+          "type": "forge:not",
+          "value": {
+            "type": "forge:tag_empty",
+            "tag": "forge:gems/gem_shards"
+          }
+        }
+      ],
+      "recipe": {
+        "type": "farmersdelight:cooking",
+        "container": {
+          "item": "minecraft:stick"
+        },
+        "cookingtime": 200,
+        "experience": 0.35,
+        "ingredients": [
+          {
+            "tag": "forge:gems/gem_shards"
+          },
+          {
+            "tag": "forge:gems/gem_shards"
+          },
+          {
+            "tag": "forge:sugar"
+          }
+        ],
+        "result": {
+          "item": "delightful:rock_candy"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "values": [
+    {
+      "id": "snowyspirit:gingerbread_frosted",
+      "required": false
+    },
+    {
+      "id": "snowyspirit:gingerbread",
+      "required": false
+    },
+    {
+      "id": "festive_delight:gingerbread_block",
+      "required": false
+    },
+    {
+      "id": "festive_delight:gingerbread_block_creeper",
+      "required": false
+    },
+    {
+      "id": "festive_delight:gingerbread_block_diamond",
+      "required": false
+    },
+    {
+      "id": "festive_delight:gingerbread_block_decorations",
+      "required": false
+    },
+    {
+      "id": "festive_delight:gingerbread_block_snow",
+      "required": false
+    },
+    {
+      "id": "festive_delight:gingerbread_pillar",
+      "required": false
+    },
+    {
+      "id": "festive_delight:polished_gingerbread_block",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "name": "turtleblockacademy:chests/holiday_deco"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "turtleblockacademy:chests/plushies"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "turtleblockacademy:chests/bath_deco"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "conditions": [
+            {
+              "condition": "minecraft:alternative",
+              "terms": [
+                {
+                  "condition": "turtleblockacademy:seasonal_condition",
+                  "season": "false"
+                },
+                {
+                  "condition": "turtleblockacademy:seasonal_condition",
+                  "season": "false"
+                }
+              ]
+            }
+          ],
+          "name": "turtleblockacademy:chests/science_deco"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "conditions": [
+            {
+              "condition": "minecraft:alternative",
+              "terms": [
+                {
+                  "condition": "turtleblockacademy:seasonal_condition",
+                  "season": "false"
+                },
+                {
+                  "condition": "turtleblockacademy:seasonal_condition",
+                  "season": "false"
+                }
+              ]
+            }
+          ],
+          "name": "turtleblockacademy:chests/art_deco"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "turtleblockacademy:chests/cookery_deco"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "conditions": [
+            {
+              "condition": "minecraft:alternative",
+              "terms": [
+                {
+                  "condition": "turtleblockacademy:seasonal_condition",
+                  "season": "false"
+                },
+                {
+                  "condition": "turtleblockacademy:seasonal_condition",
+                  "season": "false"
+                }
+              ]
+            }
+          ],
+          "name": "turtleblockacademy:chests/garden_deco"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "turtleblockacademy:chests/misc_deco"
+        }
+      ],
+      "name": "dimdungeons:kit_decor",
+      "rolls": 27.0
+    }
+  ]
+}

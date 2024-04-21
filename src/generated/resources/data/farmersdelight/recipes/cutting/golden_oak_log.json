@@ -1,0 +1,25 @@
+{
+  "type": "farmersdelight:cutting",
+  "ingredients": [
+    {
+      "item": "aether:golden_oak_log"
+    }
+  ],
+  "result": [
+    {
+      "item": "aether:stripped_skyroot_log"
+    },
+    {
+      "item": "farmersdelight:tree_bark"
+    },
+    {
+      "chance": 0.1,
+      "item": "aether:ambrosium_shard"
+    }
+  ],
+  "sound": "minecraft:item.axe.strip",
+  "tool": {
+    "type": "farmersdelight:tool_action",
+    "action": "axe_strip"
+  }
+}

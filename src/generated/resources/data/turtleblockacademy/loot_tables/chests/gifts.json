@@ -1,0 +1,113 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "chance": 0.01,
+              "condition": "minecraft:random_chance"
+            }
+          ],
+          "name": "aether:life_shard"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "chance": 0.1,
+              "condition": "minecraft:random_chance"
+            }
+          ],
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{theme:3}"
+            }
+          ],
+          "name": "dimdungeons:item_blank_theme_key"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "chance": 0.1,
+              "condition": "minecraft:random_chance"
+            }
+          ],
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{theme:4}"
+            }
+          ],
+          "name": "dimdungeons:item_blank_theme_key"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "chance": 0.1,
+              "condition": "minecraft:random_chance"
+            }
+          ],
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{theme:5}"
+            }
+          ],
+          "name": "dimdungeons:item_blank_theme_key"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "chance": 0.1,
+              "condition": "minecraft:random_chance"
+            }
+          ],
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{theme:6}"
+            }
+          ],
+          "name": "dimdungeons:item_blank_theme_key"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "conditions": [
+            {
+              "chance": 0.1,
+              "condition": "minecraft:random_chance"
+            }
+          ],
+          "name": "lootbags:loot_bags/refined_storage_gifts"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "conditions": [
+            {
+              "chance": 0.5,
+              "condition": "minecraft:random_chance"
+            }
+          ],
+          "name": "turtleblockacademy:chests/plushies"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "todeville:cagerium/chests/gifts"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "turtleblockacademy:chests/holiday_deco"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "type": "farmersdelight:cutting",
+  "ingredients": [
+    {
+      "item": "minecraft:sand"
+    }
+  ],
+  "result": [
+    {
+      "item": "minecraft:sand"
+    },
+    {
+      "chance": 0.1,
+      "item": "minecraft:quartz"
+    },
+    {
+      "chance": 0.05,
+      "item": "minecraft:bone"
+    },
+    {
+      "chance": 0.05,
+      "item": "ecologics:seashell"
+    }
+  ],
+  "tool": {
+    "type": "farmersdelight:tool_action",
+    "action": "shovel_dig"
+  }
+}

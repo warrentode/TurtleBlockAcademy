@@ -1,0 +1,28 @@
+{
+  "values": [
+    {
+      "id": "xercamod:item_tea_leaf",
+      "required": false
+    },
+    {
+      "id": "xercamod:item_tea_dried",
+      "required": false
+    },
+    {
+      "id": "farmersrespite:green_tea_leaves",
+      "required": false
+    },
+    {
+      "id": "farmersrespite:yellow_tea_leaves",
+      "required": false
+    },
+    {
+      "id": "farmersrespite:black_tea_leaves",
+      "required": false
+    },
+    {
+      "id": "delightful:green_tea_leaf",
+      "required": false
+    }
+  ]
+}

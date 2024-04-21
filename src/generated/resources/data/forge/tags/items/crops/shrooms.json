@@ -1,0 +1,44 @@
+{
+  "values": [
+    "minecraft:red_mushroom",
+    "minecraft:brown_mushroom",
+    "minecraft:crimson_fungus",
+    "minecraft:warped_fungus",
+    {
+      "id": "phantasm:putac_shroom",
+      "required": false
+    },
+    {
+      "id": "unusualend:chorus_fungus",
+      "required": false
+    },
+    {
+      "id": "nethersdelight:crimson_fungus_colony",
+      "required": false
+    },
+    {
+      "id": "nethersdelight:warped_fungus_colony",
+      "required": false
+    },
+    {
+      "id": "farmersdelight:red_mushroom_colony",
+      "required": false
+    },
+    {
+      "id": "farmersdelight:brown_mushroom_colony",
+      "required": false
+    },
+    {
+      "id": "biomesoplenty:glowshroom",
+      "required": false
+    },
+    {
+      "id": "biomesoplenty:toadstool",
+      "required": false
+    },
+    {
+      "id": "unusualend:chorus_fungus",
+      "required": false
+    }
+  ]
+}

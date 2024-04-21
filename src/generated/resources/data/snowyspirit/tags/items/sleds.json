@@ -1,0 +1,12 @@
+{
+  "values": [
+    {
+      "id": "snowyspirit:sled_sand",
+      "required": false
+    },
+    {
+      "id": "snowyspirit:sled_snow",
+      "required": false
+    }
+  ]
+}

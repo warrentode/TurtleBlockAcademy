@@ -1,0 +1,104 @@
+{
+  "values": [
+    {
+      "id": "justoutdoorstuffs:garden_gnome_3",
+      "required": false
+    },
+    {
+      "id": "justoutdoorstuffs:garden_gnome_2",
+      "required": false
+    },
+    {
+      "id": "justoutdoorstuffs:garden_gnome_1",
+      "required": false
+    },
+    {
+      "id": "justoutdoorstuffs:garden_flamingo",
+      "required": false
+    },
+    {
+      "id": "justoutdoorstuffs:garden_birdbath",
+      "required": false
+    },
+    {
+      "id": "justoutdoorstuffs:garden_bucket",
+      "required": false
+    },
+    {
+      "id": "justoutdoorstuffs:garden_pitchfork",
+      "required": false
+    },
+    {
+      "id": "justoutdoorstuffs:garden_spade",
+      "required": false
+    },
+    {
+      "id": "justoutdoorstuffs:garden_shovel",
+      "required": false
+    },
+    {
+      "id": "justoutdoorstuffs:garden_rake",
+      "required": false
+    },
+    {
+      "id": "justoutdoorstuffs:garden_hoe",
+      "required": false
+    },
+    {
+      "id": "justoutdoorstuffs:garden_tools",
+      "required": false
+    },
+    {
+      "id": "justoutdoorstuffs:garden_bag_fertilizers",
+      "required": false
+    },
+    {
+      "id": "justoutdoorstuffs:garden_step_stool",
+      "required": false
+    },
+    {
+      "id": "justoutdoorstuffs:garden_watering_can",
+      "required": false
+    },
+    {
+      "id": "justoutdoorstuffs:garden_hose",
+      "required": false
+    },
+    {
+      "id": "justoutdoorstuffs:garden_wheelbarrow",
+      "required": false
+    },
+    {
+      "id": "justoutdoorstuffs:garden_lawn_mower",
+      "required": false
+    },
+    {
+      "id": "justoutdoorstuffs:garden_planter",
+      "required": false
+    },
+    {
+      "id": "justoutdoorstuffs:garden_table_large",
+      "required": false
+    },
+    {
+      "id": "justoutdoorstuffs:garden_table_wide",
+      "required": false
+    },
+    {
+      "id": "justoutdoorstuffs:garden_table_small",
+      "required": false
+    },
+    {
+      "id": "justoutdoorstuffs:garden_bench",
+      "required": false
+    },
+    {
+      "id": "justoutdoorstuffs:garden_chair",
+      "required": false
+    },
+    {
+      "id": "justoutdoorstuffs:garden_stool",
+      "required": false
+    }
+  ]
+}

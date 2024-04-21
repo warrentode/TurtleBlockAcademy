@@ -1,0 +1,12 @@
+{
+  "values": [
+    {
+      "id": "#todeville:lanterns",
+      "required": false
+    },
+    {
+      "id": "supplementaries:quiver",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,631 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_bath:papelhigienico"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_bath:portapapelhigienico"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_bath:rollospapelhigienico"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_bath:inodoro"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_bath:mingitorio"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_bath:regadera"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_bath:llavesderegadera"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_bath:llavesdebanera"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_bath:banera"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_bath:broble"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_bath:babeto"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_bath:babedul"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_bath:bjungla"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_bath:bacacia"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_bath:brobleosc"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_bath:bcarmesi"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_bath:bdistorsionado"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_bath:broblesc"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_bath:babetosc"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_bath:babedulsc"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_bath:bjunglasc"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_bath:bacaciasc"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_bath:brobleoscsc"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_bath:bcarmesisc"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_bath:bdistorsionadosc"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_bath:lavabo"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_bath:lavaboconpedestal"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_bath:lroble"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_bath:labeto"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_bath:labedul"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_bath:ljungla"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_bath:lacacia"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_bath:lrobleosc"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_bath:lcarmesi"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_bath:ldistorsionado"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_bath:lroblesc"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_bath:labetosc"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_bath:labedulsc"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_bath:ljunglasc"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_bath:lacaciasc"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_bath:lrobleoscsc"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_bath:lcarmesisc"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_bath:ldistorsionadosc"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_bath:esponjadebano"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_bath:jabon"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_bath:soporteparajabon"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_bath:jabonera"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_bath:jaboneradepared"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_bath:barradebanohorizontal"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_bath:barradebanovertical"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_bath:toallablancacolg"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_bath:toallagrisclaracolg"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_bath:toallagriscolg"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_bath:toallanegracolg"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_bath:toallacafecolg"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_bath:toallarojacolg"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_bath:toallanaranjacolg"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_bath:toallaamarillacolg"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_bath:toallaverdelimacolg"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_bath:toallaverdecolg"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_bath:toallaciancolg"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_bath:toallazulclaracolg"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_bath:toallaazulcolg"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_bath:toallamoradacolg"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_bath:toallamagentacolg"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_bath:toallarosacolg"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_bath:batablanca"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_bath:batagrisclara"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_bath:batagris"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_bath:batanegra"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_bath:batacafe"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_bath:bataroja"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_bath:batanaranja"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_bath:bataamarilla"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_bath:bataverdelima"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_bath:bataverde"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_bath:batacian"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_bath:bataazulclara"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_bath:bataazul"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_bath:batamorada"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_bath:batamagenta"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_bath:batarosa"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_bath:lavadora"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_bath:lavadoraabierta"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_bath:toallasblancas"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_bath:toallasgrisesclaras"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_bath:toallasgrises"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_bath:toallasnegras"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_bath:toallascafes"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_bath:toallasrojas"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_bath:toallasnaranjas"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_bath:toallasamarillas"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_bath:toallasverdeslima"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_bath:toallasverdes"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_bath:toallascian"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_bath:toallaszulesclaras"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_bath:toallasazules"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_bath:toallasmoradas"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_bath:toallasmagentas"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_bath:toallasrosas"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_bath:c_tblancas"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_bath:c_tgrisesclaras"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_bath:c_tgrises"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_bath:c_tnegras"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_bath:c_tcafes"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_bath:c_trojas"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_bath:c_tnaranjas"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_bath:c_tamarillas"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_bath:c_tverdeslima"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_bath:c_tverdes"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_bath:c_tcian"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_bath:c_tazulesclaras"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_bath:c_tazules"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_bath:c_tmoradas"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_bath:c_tmoradas"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_bath:c_tmagentas"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_bath:c_trosas"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_bath:l_bhombres"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_bath:l_bmujeres"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_bath:l_bdiscapacitados"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_bath:lb_bhombres"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_bath:lb_bmujeres"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_bath:lb_bdiscapacitados"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_bath:tabladeplanchar"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_bath:tendederoconropamasculina"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_bath:tendederoconropafemenina"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_bath:tendederoconsabanas"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_bath:vasocepillosdedientes"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_bath:cubetadeagua"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_bath:secadormanos"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_bath:destapador"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_bath:esco"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_bath:trap"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_bath:planch"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_bath:esp_b"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_bath:esp_n"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_bath:esp_c"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_bath:esp_d"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_bath:esp_bizq"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_bath:esp_bder"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_bath:esp_bcent"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_bath:esp_nizq"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_bath:esp_nder"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_bath:esp_ncent"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_bath:esp_cizq"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_bath:esp_cder"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_bath:esp_ccent"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_bath:esp_dizq"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_bath:esp_dder"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_bath:esp_dcent"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_bath:letreropisomojado"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_bath:bmanglar"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_bath:bmanglarsc"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_bath:lmangle"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_bath:lmanglesc"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "values": [
+    {
+      "id": "todecoins:netherite_coin",
+      "required": false
+    },
+    {
+      "id": "todecoins:emerald_quarter_bank_note",
+      "required": false
+    },
+    {
+      "id": "todecoins:emerald_half_bank_note",
+      "required": false
+    },
+    {
+      "id": "todecoins:emerald_bank_note",
+      "required": false
+    },
+    {
+      "id": "todecoins:lucky_coin",
+      "required": false
+    },
+    {
+      "id": "todecoins:server_token_coin",
+      "required": false
+    }
+  ]
+}

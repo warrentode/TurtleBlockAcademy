@@ -1,0 +1,22 @@
+{
+  "values": [
+    "minecraft:nautilus_shell",
+    {
+      "id": "crabbersdelight:nautilus_shell_block",
+      "required": false
+    },
+    {
+      "id": "ecologics:seashell",
+      "required": false
+    },
+    {
+      "id": "ecologics:seashell_block",
+      "required": false
+    },
+    {
+      "id": "ends_delight:dragon_egg_shell",
+      "required": false
+    },
+    "minecraft:shulker_shell"
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "type": "lootbags:loot",
+  "color": "white",
+  "name": "Loot Bag (Common)",
+  "output": {
+    "table": "lootbags:loot_bags/common_lootbag"
+  },
+  "rarity": "COMMON"
+}

@@ -1,0 +1,14 @@
+{
+  "values": [
+    {
+      "id": "delightful:salmonberries",
+      "required": false
+    },
+    "minecraft:glow_berries",
+    "#wildberries:edibles",
+    {
+      "id": "aether:blue_berry",
+      "required": false
+    }
+  ]
+}

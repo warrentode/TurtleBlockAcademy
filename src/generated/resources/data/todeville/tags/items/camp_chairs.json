@@ -1,0 +1,40 @@
+{
+  "values": [
+    {
+      "id": "campchair:oak_camp_chair",
+      "required": false
+    },
+    {
+      "id": "campchair:spruce_camp_chair",
+      "required": false
+    },
+    {
+      "id": "campchair:birch_camp_chair",
+      "required": false
+    },
+    {
+      "id": "campchair:jungle_camp_chair",
+      "required": false
+    },
+    {
+      "id": "campchair:acacia_camp_chair",
+      "required": false
+    },
+    {
+      "id": "campchair:dark_oak_camp_chair",
+      "required": false
+    },
+    {
+      "id": "campchair:crimson_camp_chair",
+      "required": false
+    },
+    {
+      "id": "campchair:warped_camp_chair",
+      "required": false
+    },
+    {
+      "id": "campchair:mangrove_camp_chair",
+      "required": false
+    }
+  ]
+}

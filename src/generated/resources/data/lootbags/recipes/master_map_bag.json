@@ -1,0 +1,9 @@
+{
+  "type": "lootbags:loot",
+  "color": "white",
+  "name": "Map Bag",
+  "output": {
+    "table": "lootbags:loot_bags/master_map_sale"
+  },
+  "rarity": "COMMON"
+}

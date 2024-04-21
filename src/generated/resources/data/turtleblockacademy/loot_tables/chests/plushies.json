@@ -1,0 +1,739 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_toys:zorro"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_toys:zorroblanco"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_toys:lobo"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_toys:vaca"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_toys:ovejablanca"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_toys:ovejagrisclara"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_toys:ovejagris"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_toys:ovejanegra"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_toys:ovejacafe"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_toys:ovejaroja"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_toys:ovejanaranja"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_toys:ovejaamarilla"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_toys:ovejaverdelima"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_toys:ovejaverde"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_toys:ovejacian"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_toys:ovejaazulclara"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_toys:ovejaazul"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_toys:ovejamorada"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_toys:ovejamagenta"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_toys:ovejarosa"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_toys:gallina"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_toys:cerdo"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_toys:ajoloteazul"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_toys:ajolotecafe"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_toys:ajolotecian"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_toys:ajolotedorado"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_toys:ajoloterosa"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_toys:tortugamarina"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_toys:osopolar"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_toys:panda"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_toys:ocelote"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_toys:gatoatigrado"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_toys:gatoblanco"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_toys:gatobritanico"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_toys:gatocalico"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_toys:gatojellie"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_toys:gatonegro"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_toys:gatopersa"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_toys:gatoragdoll"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_toys:gatosiames"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_toys:gatotabby"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_toys:gatotuxedo"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_toys:murcielago"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_toys:loroazul"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_toys:lorocian"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_toys:lorogris"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_toys:lororojo"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_toys:loroverde"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_toys:conejoblancoynegro"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_toys:conejoblanco"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_toys:conejocafe"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_toys:conejocastano"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_toys:conejodorado"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_toys:conejonegro"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_toys:champivaca"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_toys:calamar"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_toys:calamarbrillante"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_toys:caballoblanco"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_toys:caballocafe"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_toys:caballocafeosc"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_toys:caballocastano"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_toys:caballocrema"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_toys:caballogris"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_toys:caballonegro"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_toys:caballocafe_r"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_toys:caballocafeosc_r"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_toys:caballocastano_r"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_toys:caballocrema_r"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_toys:caballogris_r"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_toys:caballonegro_r"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_toys:caballocafe_m"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_toys:caballocafeosc_m_1"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_toys:caballocastano_m"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_toys:caballocrema_m"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_toys:caballogris_m"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_toys:caballonegro_m"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_toys:caballoblanco_h"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_toys:caballocafe_h"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_toys:caballocafeosc_h"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_toys:caballocastano_h"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_toys:caballocrema_h"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_toys:caballogris_h"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_toys:caballonegro_h"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_toys:caballocafe_c"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_toys:caballocafeosc_c"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_toys:caballocrema_c"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_toys:caballogris_c"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_toys:caballonegro_c"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_toys:caballoesqueleto"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_toys:burro"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_toys:mula"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_toys:llamablanca"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_toys:llamacrema"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_toys:llamagris"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_toys:llamacafe"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_toys:delfin"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_toys:cabra"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_toys:abeja"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_toys:aldeano"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_toys:aldeanodesierto"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_toys:aldeanosabana"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_toys:aldeanojungla"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_toys:aldeanoinvierno"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_toys:aldeanotaiga"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_toys:aldeanopantano"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_toys:vendedorambulante"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_toys:golemdenieve"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_toys:lavagante"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_toys:arana"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_toys:aranadelascuevas"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_toys:enderman"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_toys:golemdehierro"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_toys:piglin"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_toys:piglinbruto"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_toys:piglinzombie"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_toys:zombie"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_toys:zombiemomificado"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_toys:zombieahogado"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_toys:aleanozombie"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_toys:bruja"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_toys:vindicador"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_toys:invocador"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_toys:vex"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_toys:saqueador"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_toys:devastador"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_toys:slime"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_toys:cubodemagma"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_toys:creeper"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_toys:esqueleto"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_toys:esqueletoglacial"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_toys:esqueletowither"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_toys:shulker"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_toys:blaze"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_toys:fantasma"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_toys:endermite"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_toys:lepisma"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_toys:ghast"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_toys:guardian"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_toys:guardiananciano"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_toys:hoglin"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_toys:zoglin"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_toys:wither"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_toys:dragondelender"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_toys:allay"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_toys:ranatemplada"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_toys:ranacalida"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_toys:ranahelada"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_toys:warden"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_toys:lavaganteypiglinzombie"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_toys:devastadorysaqueador"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_toys:gallinayzombie"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_toys:gallinayzombiemomificado"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_toys:gallinayahogado"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_toys:gallinayjinetealdeanozombie"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_toys:gallinaypiglinzombie"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_toys:aranayesqueleto"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_toys:caballoesqueletoyesqueleto"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_toys:steve"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_toys:alex"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_toys:camello"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_toys:sniffer"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "plushies:snow_golem"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "plushies:axolotl"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "plushies:bee"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "plushies:cat"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "plushies:cow"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "plushies:dolphin"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "plushies:dragon"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "plushies:enderman"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "plushies:frog"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "plushies:goat"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "plushies:llama"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "plushies:slime"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "plushies:magma_cube"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "plushies:mooshroom"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "plushies:panda"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "plushies:parrot"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "plushies:red_fox"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "plushies:white_fox"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "plushies:warden"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "plushies:sheep"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "plushies:turtle"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ]
+}

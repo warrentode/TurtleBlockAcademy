@@ -1,0 +1,611 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_art:paletadepintura"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_art:pinturablanca"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_art:pinturagrisclara"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_art:pinturagris"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_art:pinturanegra"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_art:pinturacafe"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_art:pinturaroja"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_art:pinturanaranja"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_art:pinturaamarilla"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_art:pinturaverdelima"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_art:pinturaverde"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_art:pinturacian"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_art:pinturaazulclara"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_art:pinturaazul"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_art:pinturamorada"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_art:pinturamagenta"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_art:pinturarosa"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_art:aerosolblanco"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_art:aerosolgrisclaro"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_art:aerosolgris"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_art:aerosolnegro"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_art:aerosolcafe"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_art:aerosolrojo"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_art:aerosolnaranja"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_art:aerosolamarillo"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_art:aerosolverdelima"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_art:aerosolverde"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_art:aerosolcian"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_art:aerosolazulclaro"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_art:aerosolazul"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_art:aerosolmorado"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_art:aerosolmagenta"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_art:aerosolrosa"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_art:lienzo"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_art:pelgrito"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_art:pgoticoestadounidense"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_art:plajovendelaperla"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_art:planocheestrellada"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_art:plamonalisa"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_art:pserenatamexicana"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_art:caballete"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_art:caballetelienzo"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_art:caballeteelgrito"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_art:caballetegoticoestadounidense"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_art:caballetelajovendelaperla"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_art:caballetelanocheestrellada"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_art:caballeteconlamonalisa"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_art:caballeteserenatamexicana"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_art:microfono"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_art:microfonoenpedestal"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_art:guitarra"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_art:banyo"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_art:violin"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_art:guitarraelectricablanca"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_art:guitarraelectricagrisclara"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_art:guitarraelectricagris"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_art:guitarraelectricanegra"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_art:guitarraelectricacafe"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_art:guitarraelectricaroja"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_art:guitarraelectricanaranja"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_art:guitarraelectricaamarilla"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_art:guitarraelectricaverdelima"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_art:guitarraelectricaverde"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_art:guitarraelectricacian"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_art:guitarraelectricaazulclara"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_art:guitarraelectricaazul"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_art:guitarraelectricamorada"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_art:guitarraelectricamagenta"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_art:guitarraelectricarosa"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_art:tamborblanco"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_art:tamborgrisclaro"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_art:tamborgris"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_art:tambornegro"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_art:tamborcafe"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_art:tamborrojo"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_art:tambornaranja"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_art:tamboramarillo"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_art:tamborverdelima"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_art:tamborverde"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_art:tamborcian"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_art:tamborazulclaro"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_art:tamborazul"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_art:tambormorado"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_art:tambormagenta"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_art:tamborrosa"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_art:bateriablanca"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_art:bateriagrisclaro"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_art:bateriagris"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_art:baterianegra"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_art:bateriacafe"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_art:baterianaranja"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_art:bateriaroja"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_art:bateriaamarilla"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_art:bateriaverdelima"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_art:bateriaverde"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_art:bateriacian"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_art:bateriaazulclara"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_art:bateriaazul"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_art:bateriamorada"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_art:bateriamagenta"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_art:bateriarosa"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_art:tecladomusical"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_art:pianodecola"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_art:arpa"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_art:amplificador"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_art:mezcladordj"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_art:fonografo"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_art:tocadiscos"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_art:maquinadediscos"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_art:premiogrammy"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_art:acuarelas"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_art:pincelesenagua"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_art:martilloycincel"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_art:esculturaeldavid"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_art:esculturaelpensador"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_art:esculturaeldiscobolo"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_art:esculturavenusdemilo"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_art:esculturalavictoriodesamotracia"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_art:esculturamujerconjarra"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_art:esculturadragonchino"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_art:esculturachacmool"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_art:esculturabuda"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_art:esculturajesuscrucificado"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_art:rollodepelicula"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_art:rollosdepelicula"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_art:camaradecine"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_art:claqueta"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_art:silladedirector"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_art:reflector"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_art:gafas_3d"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_art:premiooscar"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_art:maquinadecoser"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_art:maniqui"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_art:tijeras"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_art:hiloblanco"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_art:hilogrisclaro"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_art:hilogris"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_art:hilonegro"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_art:hilocafe"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_art:hilorojo"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_art:hilonaranja"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_art:hiloamarillo"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_art:hiloverdelima"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_art:hiloverde"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_art:hilocian"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_art:hiloazulclaro"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_art:hiloazul"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_art:hilomorado"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_art:hilomagenta"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_art:hilorosa"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ]
+}

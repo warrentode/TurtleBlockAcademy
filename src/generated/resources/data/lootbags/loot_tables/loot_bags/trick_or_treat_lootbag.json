@@ -1,0 +1,37 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "name": "turtleblockacademy:chests/holiday_deco"
+        }
+      ],
+      "rolls": 3.0
+    },
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:tag",
+          "expand": true,
+          "name": "hauntedharvest:sweets"
+        },
+        {
+          "type": "minecraft:tag",
+          "conditions": [
+            {
+              "chance": 0.1,
+              "condition": "minecraft:random_chance"
+            }
+          ],
+          "expand": true,
+          "name": "todeville:tricks"
+        }
+      ],
+      "rolls": 3.0
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "values": [
+    {
+      "id": "dungeons_mobs:royal_guard",
+      "required": false
+    },
+    {
+      "id": "dungeons_mobs:mountaineer",
+      "required": false
+    }
+  ]
+}

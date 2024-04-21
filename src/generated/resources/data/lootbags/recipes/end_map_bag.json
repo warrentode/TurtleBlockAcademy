@@ -1,0 +1,9 @@
+{
+  "type": "lootbags:loot",
+  "color": "white",
+  "name": "End Map Bag",
+  "output": {
+    "table": "lootbags:loot_bags/end_map_sale"
+  },
+  "rarity": "COMMON"
+}

@@ -1,0 +1,10 @@
+{
+  "values": [
+    {
+      "id": "ends_delight:non_hatchable_dragon_egg",
+      "required": false
+    },
+    "minecraft:egg",
+    "minecraft:turtle_egg"
+  ]
+}

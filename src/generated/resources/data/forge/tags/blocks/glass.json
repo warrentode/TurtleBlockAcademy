@@ -1,0 +1,16 @@
+{
+  "values": [
+    {
+      "id": "unusualend:chiseled_glass",
+      "required": false
+    },
+    {
+      "id": "phantasm:crystal_framed_glass",
+      "required": false
+    },
+    {
+      "id": "phantasm:void_crystal_framed_glass",
+      "required": false
+    }
+  ]
+}

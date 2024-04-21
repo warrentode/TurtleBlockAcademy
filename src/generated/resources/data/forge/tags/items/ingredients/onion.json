@@ -1,0 +1,13 @@
+{
+  "values": [
+    "minecraft:allium",
+    {
+      "id": "farmersdelight:wild_onion",
+      "required": false
+    },
+    {
+      "id": "farmersdelight:onion",
+      "required": false
+    }
+  ]
+}

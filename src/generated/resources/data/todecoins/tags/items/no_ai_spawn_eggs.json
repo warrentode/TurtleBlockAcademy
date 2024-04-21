@@ -1,0 +1,76 @@
+{
+  "values": [
+    {
+      "id": "aether:aechor_plant_spawn_egg",
+      "required": false
+    },
+    {
+      "id": "aether:cockatrice_spawn_egg",
+      "required": false
+    },
+    {
+      "id": "aether:fire_minion_spawn_egg",
+      "required": false
+    },
+    {
+      "id": "aether:sentry_spawn_egg",
+      "required": false
+    },
+    {
+      "id": "aether:blue_swet_spawn_egg",
+      "required": false
+    },
+    {
+      "id": "aether:golden_swet_spawn_egg",
+      "required": false
+    },
+    {
+      "id": "aether:whirlwind_spawn_egg",
+      "required": false
+    },
+    {
+      "id": "aether:evil_whirlwind_spawn_egg",
+      "required": false
+    },
+    {
+      "id": "aether:valkyrie_spawn_egg",
+      "required": false
+    },
+    {
+      "id": "aether:valkyrie_queen_spawn_egg",
+      "required": false
+    },
+    {
+      "id": "aether:slider_spawn_egg",
+      "required": false
+    },
+    {
+      "id": "aether:sun_spirit_spawn_egg",
+      "required": false
+    },
+    {
+      "id": "aether:zephyr_spawn_egg",
+      "required": false
+    },
+    {
+      "id": "unusualend:dragling_spawn_egg",
+      "required": false
+    },
+    {
+      "id": "unusualend:endstone_golem_spawn_egg",
+      "required": false
+    },
+    {
+      "id": "unusualend:ender_blob_spawn_egg",
+      "required": false
+    },
+    {
+      "id": "unusualend:undead_enderling_spawn_egg",
+      "required": false
+    },
+    {
+      "id": "unusualend:endstone_trapper_spawn_egg",
+      "required": false
+    }
+  ]
+}

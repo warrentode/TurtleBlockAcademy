@@ -1,0 +1,45 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "name": "turtleblockacademy:chests/gifts"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "turtleblockacademy:chests/holiday_deco"
+        }
+      ],
+      "rolls": 2.0
+    },
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:tag",
+          "expand": true,
+          "name": "supplementaries:chocolate_bars"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "turtleblockacademy:chests/kitchen/festivedelight_edibles"
+        }
+      ],
+      "rolls": 2.0
+    },
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:tag",
+          "expand": true,
+          "name": "forge:eggs"
+        }
+      ],
+      "rolls": 2.0
+    }
+  ]
+}

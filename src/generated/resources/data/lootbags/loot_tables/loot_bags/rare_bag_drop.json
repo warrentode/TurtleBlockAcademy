@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Color:16766720,Loot:\"lootbags:rare_bag\",Name:\"Loot Bag (Rare)\",Type:\"RARE\"}"
+            }
+          ],
+          "name": "lootbags:loot_bag"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ]
+}

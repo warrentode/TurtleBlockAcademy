@@ -1,0 +1,8 @@
+{
+  "values": [
+    "minecraft:seagrass",
+    "#forge:crops/cabbage",
+    "#forge:crops/cactus",
+    "#forge:clover"
+  ]
+}

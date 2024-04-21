@@ -1,0 +1,9 @@
+{
+  "type": "lootbags:loot",
+  "color": "gold",
+  "name": "Loot Bag (Rare)",
+  "output": {
+    "table": "lootbags:loot_bags/rare_lootbag"
+  },
+  "rarity": "RARE"
+}

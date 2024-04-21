@@ -5,7 +5,9 @@ import com.github.warrentode.turtleblockacademy.datagen.lang.ModLangGen;
 import com.github.warrentode.turtleblockacademy.datagen.loot.ModLootProviders;
 import com.github.warrentode.turtleblockacademy.datagen.models.ModItemModelProvider;
 import com.github.warrentode.turtleblockacademy.datagen.recipes.RecipesGen;
-import com.github.warrentode.turtleblockacademy.datagen.tags.BiomeTagGen;
+import com.github.warrentode.turtleblockacademy.datagen.recipes.recipe.CookingRecipesGen;
+import com.github.warrentode.turtleblockacademy.datagen.recipes.recipe.SpawnEggRecipesGen;
+import com.github.warrentode.turtleblockacademy.datagen.tags.*;
 import net.minecraft.data.DataGenerator;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.data.event.GatherDataEvent;
@@ -22,9 +24,18 @@ public class DataGenerators {
         DataGenerator generator = event.getGenerator();
         ExistingFileHelper helper = event.getExistingFileHelper();
 
+        BlockTagsGen blockTagsGen = new BlockTagsGen(generator, MODID, helper);
+        generator.addProvider(event.includeServer(), blockTagsGen);
+
+        generator.addProvider(event.includeServer(), new ItemTagsGen(generator, blockTagsGen, MODID, helper));
+        generator.addProvider(event.includeServer(), new EntityTypeTagsGen(generator, MODID, helper));
+        generator.addProvider(event.includeServer(), new StructureTagsGen(generator, MODID, helper));
         generator.addProvider(event.includeServer(), new BiomeTagGen(generator, MODID, helper));
 
+        generator.addProvider(event.includeServer(), new SpawnEggRecipesGen(generator));
+        generator.addProvider(event.includeServer(), new CookingRecipesGen(generator));
         generator.addProvider(event.includeServer(), new RecipesGen(generator));
+
         generator.addProvider(event.includeServer(), new ModItemModelProvider(generator, MODID, helper));
         generator.addProvider(event.includeServer(), new AcademyAdvancementsGen(generator, helper));
         generator.addProvider(event.includeClient(), new ModLangGen(generator, MODID, "en_us"));

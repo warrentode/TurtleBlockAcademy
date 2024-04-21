@@ -1,0 +1,24 @@
+{
+  "values": [
+    "minecraft:quartz",
+    "minecraft:amethyst_shard",
+    "biomesoplenty:rose_quartz_shard",
+    {
+      "id": "aether:life_shard",
+      "required": false
+    },
+    {
+      "id": "unusualend:ancient_shard",
+      "required": false
+    },
+    {
+      "id": "phantasm:crystal_spike_tip",
+      "required": false
+    },
+    {
+      "id": "phantasm:void_crystal_spike_tip",
+      "required": false
+    },
+    "minecraft:echo_shard"
+  ]
+}

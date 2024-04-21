@@ -1,0 +1,28 @@
+{
+  "values": [
+    {
+      "id": "chimes:bamboo_chimes",
+      "required": false
+    },
+    {
+      "id": "chimes:carved_bamboo_chimes",
+      "required": false
+    },
+    {
+      "id": "chimes:iron_chimes",
+      "required": false
+    },
+    {
+      "id": "chimes:copper_chimes",
+      "required": false
+    },
+    {
+      "id": "chimes:amethyst_chimes",
+      "required": false
+    },
+    {
+      "id": "chimes:glass_bells",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "values": [
+    {
+      "id": "phantasm:stellium_nugget",
+      "required": false
+    },
+    {
+      "id": "phantasm:stardust",
+      "required": false
+    }
+  ]
+}

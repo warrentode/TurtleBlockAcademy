@@ -1,0 +1,9 @@
+{
+  "type": "lootbags:loot",
+  "color": "limegreen",
+  "name": "Loot Bag (Legendary)",
+  "output": {
+    "table": "lootbags:loot_bags/legendary_lootbag"
+  },
+  "rarity": "LEGENDARY"
+}

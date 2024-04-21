@@ -1,0 +1,17 @@
+{
+  "values": [
+    {
+      "id": "aether:life_shard",
+      "required": false
+    },
+    {
+      "id": "unusualend:ancient_shard",
+      "required": false
+    },
+    {
+      "id": "cagerium:binding_gemstone",
+      "required": false
+    },
+    "minecraft:echo_shard"
+  ]
+}

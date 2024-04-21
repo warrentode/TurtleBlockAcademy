@@ -1,0 +1,48 @@
+{
+  "values": [
+    {
+      "id": "mcwtrpdoors:print_tropical",
+      "required": false
+    },
+    {
+      "id": "mcwtrpdoors:print_paper",
+      "required": false
+    },
+    {
+      "id": "mcwtrpdoors:print_four_panel",
+      "required": false
+    },
+    {
+      "id": "mcwtrpdoors:print_cottage",
+      "required": false
+    },
+    {
+      "id": "mcwtrpdoors:print_classic",
+      "required": false
+    },
+    {
+      "id": "mcwtrpdoors:print_blossom",
+      "required": false
+    },
+    {
+      "id": "mcwtrpdoors:print_beach",
+      "required": false
+    },
+    {
+      "id": "mcwtrpdoors:print_barred",
+      "required": false
+    },
+    {
+      "id": "mcwtrpdoors:print_swamp",
+      "required": false
+    },
+    {
+      "id": "mcwtrpdoors:print_mystic",
+      "required": false
+    },
+    {
+      "id": "mcwtrpdoors:print_bamboo",
+      "required": false
+    }
+  ]
+}

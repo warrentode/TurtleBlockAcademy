@@ -1,0 +1,12 @@
+{
+  "values": [
+    {
+      "id": "kawaiidishes:coffee_fruit",
+      "required": false
+    },
+    {
+      "id": "farmersrespite:coffee_berries",
+      "required": false
+    }
+  ]
+}

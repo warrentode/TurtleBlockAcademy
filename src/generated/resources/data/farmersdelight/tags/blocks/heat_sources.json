@@ -1,0 +1,31 @@
+{
+  "values": [
+    "minecraft:magma_block",
+    "minecraft:lava_cauldron",
+    "#farmersdelight:tray_heat_sources",
+    {
+      "id": "moa_decor_cookery:estufa",
+      "required": false
+    },
+    {
+      "id": "moa_decor_cookery:estufaabierta",
+      "required": false
+    },
+    {
+      "id": "moa_decor_cookery:estufapay",
+      "required": false
+    },
+    {
+      "id": "nfm:oven_light",
+      "required": false
+    },
+    {
+      "id": "nfm:oven_dark",
+      "required": false
+    },
+    {
+      "id": "handcrafted:oven",
+      "required": false
+    }
+  ]
+}

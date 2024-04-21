@@ -1,0 +1,12 @@
+{
+  "values": [
+    {
+      "id": "create:chute",
+      "required": false
+    },
+    {
+      "id": "goldenhopper:golden_hopper",
+      "required": false
+    }
+  ]
+}

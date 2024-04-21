@@ -1,0 +1,12 @@
+{
+  "values": [
+    {
+      "id": "farmersdelight:rice",
+      "required": false
+    },
+    {
+      "id": "xercamod:rice",
+      "required": false
+    }
+  ]
+}

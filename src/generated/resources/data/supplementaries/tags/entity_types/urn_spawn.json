@@ -1,0 +1,14 @@
+{
+  "values": [
+    {
+      "id": "unusualend:ender_blob",
+      "required": false
+    },
+    {
+      "id": "unusualend:ender_firefly",
+      "required": false
+    },
+    "minecraft:silverfish",
+    "minecraft:endermite"
+  ]
+}

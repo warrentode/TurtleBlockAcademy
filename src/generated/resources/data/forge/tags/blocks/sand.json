@@ -1,0 +1,22 @@
+{
+  "values": [
+    {
+      "id": "biomesoplenty:white_sand",
+      "required": false
+    },
+    {
+      "id": "biomesoplenty:rooted_sand",
+      "required": false
+    },
+    {
+      "id": "biomesoplenty:orange_sand",
+      "required": false
+    },
+    {
+      "id": "biomesoplenty:black_sand",
+      "required": false
+    },
+    "minecraft:sand",
+    "minecraft:red_sand"
+  ]
+}

@@ -1,0 +1,611 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_science:lupa"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_science:microscopio"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_science:telescopio"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_science:globoterraqueo"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_science:matrazb"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_science:matrazbblanco"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_science:matrazbgrisclaro"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_science:matrazbgris"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_science:matrazbnegro"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_science:matrazbcafe"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_science:matrazbrojo"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_science:matrazbnaranja"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_science:matrazbamarillo"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_science:matrazbverdelima"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_science:matrazbverde"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_science:matrazbcian"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_science:matrazbazulclaro"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_science:matrazbazul"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_science:matrazbmorado"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_science:matrazbmagenta"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_science:matrazbrosa"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_science:brujula"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_science:mapadeltesoro"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_science:libro"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_science:libroabierto"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_science:libroytintero"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_science:tintero"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_science:libros"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_science:librosapilados"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_science:pizarra"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_science:pizarramatematicas"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_science:pizarraabecedario"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_science:pizarravolumenes"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_science:pizarraadn"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_science:calculadora"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_science:bascula"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_science:veneno"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_science:documento"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_science:documentos"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_science:portapapeles"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_science:pergamino"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_science:pergaminoenrollado"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_science:pergaminos"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_science:barriltoxico"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_science:barriltoxicoderramado"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_science:barrilinflamable"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_science:barrilinflamablederramado"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_science:frascodepildoras"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_science:frascodepildorasabierto"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_science:botiquindepared"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_science:tuboensayo"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_science:tuboensayoblanco"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_science:tuboensayogrisclaro"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_science:tuboensayogris"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_science:tuboensayonegro"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_science:tuboensayocafe"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_science:tuboensayorojo"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_science:tuboensayonaranja"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_science:tuboensayoamarillo"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_science:tuboensayoverdelima"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_science:tuboensayoverde"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_science:tuboensayocian"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_science:tuboensayoazulclaro"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_science:tuboensayoazul"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_science:tuboensayomorado"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_science:tuboensayomagenta"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_science:tuboensayorosa"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_science:tubosensayo"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_science:tubosensayoblanco"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_science:tubosensayogrisclaro"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_science:tubosensayogris"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_science:tubosensayonegro"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_science:tubosensayocafe"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_science:tubosensayorojo"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_science:tubosensayonaranja"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_science:tubosensayoamarillo"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_science:tubosensayoverdelima"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_science:tubosensayoverde"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_science:tubosensayocian"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_science:tubosensayoazulclaro"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_science:tubosensayoazul"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_science:tubosensayomorado"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_science:tubosensayomagenta"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_science:tubosensayorosa"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_science:jeringa"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_science:jeringablanca"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_science:jeringagrisclara"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_science:jeringagris"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_science:jeringanegra"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_science:jeringacafe"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_science:jeringaroja"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_science:jeringanaranja"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_science:jeringaamarilla"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_science:jeringaverdelima"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_science:jeringaverde"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_science:jeringacian"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_science:jeringaazulclara"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_science:jeringaazul"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_science:jeringamorada"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_science:jeringamagenta"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_science:jeringarosa"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_science:camahblanca"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_science:camahgrisclara"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_science:camahgris"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_science:camahnegra"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_science:camahcafe"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_science:camahroja"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_science:camahnaranja"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_science:camahamarilla"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_science:camahverdelima"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_science:camahverde"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_science:camahcian"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_science:camahazulclara"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_science:camahazul"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_science:camahmorada"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_science:camahmagenta"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_science:camahrosa"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_science:biombomblanco"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_science:biombomgrisclaro"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_science:biombomgris"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_science:biombomnegro"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_science:biombomcafe"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_science:biombomrojo"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_science:biombomnaranja"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_science:biombomamarillo"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_science:biombomverdelima"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_science:biombomverde"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_science:biombomcian"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_science:biombomazulclaro"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_science:biombomazul"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_science:biombommorado"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_science:biombommagenta"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_science:biombomrosa"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_science:sueroblanco"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_science:suerogrisclaro"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_science:suerogris"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_science:sueronegro"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_science:suerocafe"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_science:sueronaranja"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_science:suerorojo"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_science:sueroamarillo"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_science:sueroverdelima"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_science:sueroverde"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_science:suerocian"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_science:sueroazulclaro"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_science:sueroazul"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_science:sueromorado"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_science:sueromagenta"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_science:suerorosa"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_science:lectordesignosvitales"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ]
+}

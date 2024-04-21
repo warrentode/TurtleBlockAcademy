@@ -1,0 +1,12 @@
+{
+  "values": [
+    {
+      "id": "friendsandfoes:glare",
+      "required": false
+    },
+    "minecraft:fox",
+    "minecraft:frog",
+    "minecraft:axolotl",
+    "minecraft:rabbit"
+  ]
+}

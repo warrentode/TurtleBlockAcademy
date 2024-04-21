@@ -1,0 +1,20 @@
+{
+  "values": [
+    "#forge:crops/cocoa",
+    "#forge:crops/coffee",
+    "#forge:crops/tea",
+    "#forge:crops/berries",
+    "#forge:crops/vegetables",
+    "#forge:crops/greens",
+    "#forge:crops/fruits",
+    "#forge:crops/onion",
+    "#forge:crops/cactus",
+    "#forge:crops/coconut",
+    "#forge:crops/melon",
+    "#forge:crops/pumpkin",
+    "#forge:crops/tomato",
+    "#forge:crops/cabbage",
+    "#forge:crops/rice",
+    "#forge:crops/shrooms"
+  ]
+}

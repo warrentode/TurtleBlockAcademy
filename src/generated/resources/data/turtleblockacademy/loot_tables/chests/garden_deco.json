@@ -1,0 +1,685 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_garden_:asador"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_garden_:buzon"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_garden_:podadora_cesped"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_garden_:carretilla"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_garden_:carretilla_tierra"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_garden_:carretilla_arena"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_garden_:carretilla_arena_roja"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_garden_:carretilla_grava"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_garden_:tazon_comida_m"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_garden_:tazon_agua_m"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_garden_:casa_p_roble"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_garden_:casa_p_abeto"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_garden_:casa_p_abedul"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_garden_:casa_p_jungla"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_garden_:casa_p_acacia"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_garden_:casa_p_roble_osc"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_garden_:casa_mangle"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_garden_:casa_p_cerezo"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_garden_:cama_m_blanca"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_garden_:casa_pt_carmesi"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_garden_:casa_pt_distorsionado"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_garden_:cama_m_gris_clara"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_garden_:cama_m_gris"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_garden_:cama_m_negro"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_garden_:cama_m_cafe"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_garden_:cama_m_rojo"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_garden_:cama_m_naranja"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_garden_:cama_m_amarillo"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_garden_:cama_m_verde_lima"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_garden_:cama_m_verde"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_garden_:cama_m_cian"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_garden_:cama_m_azul_claro"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_garden_:cama_m_azul"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_garden_:cama_m_morado"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_garden_:cama_m_magenta"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_garden_:cama_m_rosa"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_garden_:macetero_m"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_garden_:bebedero"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_garden_:comedero_trigo"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_garden_:comedero_verduras"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_garden_:florero_b"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_garden_:florero_tdientedeleon"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_garden_:florero_tamapola"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_garden_:florero_torquidiaazul"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_garden_:florero_tallium"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_garden_:florero_trubiacea"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_garden_:florero_ttulipanrojo"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_garden_:florero_ttulipannaranja"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_garden_:florero_ttulipanblanco"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_garden_:florero_ttulipanrosa"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_garden_:florero_tmargarita"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_garden_:florero_taciano"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_garden_:florero_tliriodelvalle"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_garden_:florero_twitherrose"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_garden_:florero_tflorantorcha"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_garden_:florero_tarbustoseco"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_garden_:florero_tpasto"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_garden_:florero_thelecho"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_garden_:florero_traizcarmesi"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_garden_:florero_traizdistorsionado"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_garden_:florero_thongocafe"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_garden_:florero_thongorojo"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_garden_:florero_thongocarmesi"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_garden_:florero_thongodistorsionado"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_garden_:roblejoven"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_garden_:abetojoven"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_garden_:abedul"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_garden_:jungla"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_garden_:acacia"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_garden_:robleosc"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_garden_:azalea"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_garden_:mangle"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_garden_:cerezo"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_garden_:hongorojo"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_garden_:hongocafe"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_garden_:hongocarmesi"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_garden_:hongodistorsionado"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_garden_:maceta_t"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_garden_:maceta_tgirasol"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_garden_:maceta_tlila"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_garden_:maceta_trosal"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_garden_:maceta_tpeonia"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_garden_:maceta_tarbustoseco"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_garden_:maceta_tazalea"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_garden_:maceta_tazaleaflorecida"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_garden_:maceta_tbayasdulces"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_garden_:maceta_tpastoalto"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_garden_:maceta_thelechoalto"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_garden_:maceta_tcactus"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_garden_:casa_mroble"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_garden_:casa_mabeto"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_garden_:casa_mabedul"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_garden_:casa_mjungla"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_garden_:casa_macacia"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_garden_:casa_mrobleosc"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_garden_:casa_mmangle"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_garden_:casa_mcerezo"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_garden_:casa_mtallocarmesi"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_garden_:casa_mtallodistorsionado"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_garden_:gnomodejardin"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_garden_:jaula_pnegra"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_garden_:jaula_pgris"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_garden_:jaula_pdorada"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_garden_:jaula_pblanca"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_garden_:nido"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_garden_:nidoconhuevos"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_garden_:pala_ctierra"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_garden_:pala_cgrava"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_garden_:pala_carena"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_garden_:pala_carenaroja"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_garden_:hachaclavada"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_garden_:regaderajardin"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_garden_:piedras"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_garden_:caminodepiedra"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_garden_:hongorojo_2"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_garden_:hongocafe_2"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_garden_:hongocarmesi_2"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_garden_:hongodistorsionado_2"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_garden_:hongocafemuro"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_garden_:hongodistorsionadomuro"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_garden_:apiario"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_garden_:m_proble"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_garden_:m_pabeto"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_garden_:m_pabedul"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_garden_:m_pjungla"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_garden_:m_pacacia"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_garden_:m_probleosc"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_garden_:m_pmangle"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_garden_:m_pcerezo"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_garden_:m_ptallocarmesi"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_garden_:m_ptallodistorsionado"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_garden_:camastroroble"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_garden_:camastroabeto"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_garden_:camastroabedul"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_garden_:camastrojungla"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_garden_:camastroacacia"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_garden_:camastrorobleosc"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_garden_:camastromangle"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_garden_:camastrocerezo"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_garden_:camastrotallocarmesi"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_garden_:camastrotallodistorsionado"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_garden_:sombrilalgrisclara"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_garden_:sombrillagris"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_garden_:sombrillanegra"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_garden_:sombrillacafe"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_garden_:sombrillaroja"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_garden_:sombrillanaranja"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_garden_:sombrillaamarilla"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_garden_:sombrillaverdelima"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_garden_:sombrillaverde"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_garden_:sombrillacian"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_garden_:sombrillaazulclara"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_garden_:sombrillaazul"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_garden_:sombrillamorada"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_garden_:sombrillamagenta"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_garden_:sombrillarosa"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_garden_:bancaroble"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_garden_:bancaabeto"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_garden_:bancaabedul"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_garden_:bancajungla"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_garden_:bancaacacia"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_garden_:bancarobleosc"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_garden_:bancamangle"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_garden_:bancacerezo"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_garden_:bancatallocarmesi"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_garden_:bancatallodistorsionado"
+        },
+        {
+          "type": "minecraft:tag",
+          "expand": true,
+          "name": "justoutdoorstuffs:patio_items"
+        },
+        {
+          "type": "minecraft:tag",
+          "expand": true,
+          "name": "justoutdoorstuffs:garden_items"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ]
+}

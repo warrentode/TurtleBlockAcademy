@@ -1,0 +1,23 @@
+{
+  "values": [
+    "#forge:cranberries",
+    "#forge:raspberries",
+    "#forge:blackberries",
+    "#forge:blueberries",
+    "minecraft:chorus_fruit",
+    {
+      "id": "phantasm:oblifruit",
+      "required": false
+    },
+    {
+      "id": "phantasm:pream_berry",
+      "required": false
+    },
+    "minecraft:sweet_berries",
+    "minecraft:glow_berries",
+    {
+      "id": "delightful:salmonberries",
+      "required": false
+    }
+  ]
+}

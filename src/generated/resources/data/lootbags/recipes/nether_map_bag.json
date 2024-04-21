@@ -1,0 +1,9 @@
+{
+  "type": "lootbags:loot",
+  "color": "white",
+  "name": "Nether Map Bag",
+  "output": {
+    "table": "lootbags:loot_bags/nether_map_sale"
+  },
+  "rarity": "COMMON"
+}

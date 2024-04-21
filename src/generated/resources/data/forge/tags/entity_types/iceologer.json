@@ -1,0 +1,12 @@
+{
+  "values": [
+    {
+      "id": "friendsandfoes:iceologer",
+      "required": false
+    },
+    {
+      "id": "dungeons_mobs:iceologer",
+      "required": false
+    }
+  ]
+}

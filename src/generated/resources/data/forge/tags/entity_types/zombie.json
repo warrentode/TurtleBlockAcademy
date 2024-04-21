@@ -1,0 +1,12 @@
+{
+  "values": [
+    {
+      "id": "dungeons_mobs:frozen_zombie",
+      "required": false
+    },
+    {
+      "id": "dungeons_mobs:jungle_zombie",
+      "required": false
+    }
+  ]
+}

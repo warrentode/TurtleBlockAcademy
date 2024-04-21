@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "conditions": [
+            {
+              "chance": 0.1,
+              "condition": "minecraft:random_chance"
+            }
+          ],
+          "name": "minecraft:cagerium/gameplay/hero_of_the_village/weaponsmith_gift"
+        },
+        {
+          "type": "minecraft:tag",
+          "expand": true,
+          "name": "minecraft:piglin_food"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "values": [
+    "#forge:clover",
+    {
+      "id": "delightful:chopped_clover",
+      "required": false
+    }
+  ]
+}

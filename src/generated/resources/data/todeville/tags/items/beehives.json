@@ -1,0 +1,37 @@
+{
+  "values": [
+    {
+      "id": "friendsandfoes:acacia_beehive",
+      "required": false
+    },
+    {
+      "id": "friendsandfoes:birch_beehive",
+      "required": false
+    },
+    {
+      "id": "friendsandfoes:crimson_beehive",
+      "required": false
+    },
+    {
+      "id": "friendsandfoes:dark_oak_beehive",
+      "required": false
+    },
+    {
+      "id": "friendsandfoes:jungle_beehive",
+      "required": false
+    },
+    {
+      "id": "friendsandfoes:mangrove_beehive",
+      "required": false
+    },
+    {
+      "id": "friendsandfoes:spruce_beehive",
+      "required": false
+    },
+    {
+      "id": "friendsandfoes:warped_beehive",
+      "required": false
+    },
+    "minecraft:beehive"
+  ]
+}

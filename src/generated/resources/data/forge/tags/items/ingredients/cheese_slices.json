@@ -1,0 +1,16 @@
+{
+  "values": [
+    {
+      "id": "tofucraft:soy_cheese",
+      "required": false
+    },
+    {
+      "id": "fastfooddelight:cheese",
+      "required": false
+    },
+    {
+      "id": "xercamod:cheese_slice",
+      "required": false
+    }
+  ]
+}

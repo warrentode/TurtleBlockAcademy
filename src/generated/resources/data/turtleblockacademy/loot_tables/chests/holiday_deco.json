@@ -1,0 +1,2605 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "turtleblockacademy:seasonal_condition",
+              "season": "false"
+            }
+          ],
+          "name": "snowyspirit:wreath"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "turtleblockacademy:seasonal_condition",
+              "season": "false"
+            }
+          ],
+          "name": "snowyspirit:snow_globe"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "turtleblockacademy:seasonal_condition",
+              "season": "false"
+            }
+          ],
+          "name": "snowyspirit:gumdrop_white"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "turtleblockacademy:seasonal_condition",
+              "season": "false"
+            }
+          ],
+          "name": "snowyspirit:gumdrop_orange"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "turtleblockacademy:seasonal_condition",
+              "season": "false"
+            }
+          ],
+          "name": "snowyspirit:gumdrop_magenta"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "turtleblockacademy:seasonal_condition",
+              "season": "false"
+            }
+          ],
+          "name": "snowyspirit:gumdrop_light_blue"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "turtleblockacademy:seasonal_condition",
+              "season": "false"
+            }
+          ],
+          "name": "snowyspirit:gumdrop_yellow"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "turtleblockacademy:seasonal_condition",
+              "season": "false"
+            }
+          ],
+          "name": "snowyspirit:gumdrop_lime"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "turtleblockacademy:seasonal_condition",
+              "season": "false"
+            }
+          ],
+          "name": "snowyspirit:gumdrop_pink"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "turtleblockacademy:seasonal_condition",
+              "season": "false"
+            }
+          ],
+          "name": "snowyspirit:gumdrop_gray"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "turtleblockacademy:seasonal_condition",
+              "season": "false"
+            }
+          ],
+          "name": "snowyspirit:gumdrop_light_gray"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "turtleblockacademy:seasonal_condition",
+              "season": "false"
+            }
+          ],
+          "name": "snowyspirit:gumdrop_cyan"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "turtleblockacademy:seasonal_condition",
+              "season": "false"
+            }
+          ],
+          "name": "snowyspirit:gumdrop_purple"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "turtleblockacademy:seasonal_condition",
+              "season": "false"
+            }
+          ],
+          "name": "snowyspirit:gumdrop_blue"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "turtleblockacademy:seasonal_condition",
+              "season": "false"
+            }
+          ],
+          "name": "snowyspirit:gumdrop_brown"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "turtleblockacademy:seasonal_condition",
+              "season": "false"
+            }
+          ],
+          "name": "snowyspirit:gumdrop_green"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "turtleblockacademy:seasonal_condition",
+              "season": "false"
+            }
+          ],
+          "name": "snowyspirit:gumdrop_red"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "turtleblockacademy:seasonal_condition",
+              "season": "false"
+            }
+          ],
+          "name": "snowyspirit:gumdrop_black"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "turtleblockacademy:seasonal_condition",
+              "season": "false"
+            }
+          ],
+          "name": "snowyspirit:glow_lights_prismatic"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "turtleblockacademy:seasonal_condition",
+              "season": "false"
+            }
+          ],
+          "name": "snowyspirit:glow_lights_white"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "turtleblockacademy:seasonal_condition",
+              "season": "false"
+            }
+          ],
+          "name": "snowyspirit:glow_lights_orange"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "turtleblockacademy:seasonal_condition",
+              "season": "false"
+            }
+          ],
+          "name": "snowyspirit:glow_lights_magenta"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "turtleblockacademy:seasonal_condition",
+              "season": "false"
+            }
+          ],
+          "name": "snowyspirit:glow_lights_light_blue"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "turtleblockacademy:seasonal_condition",
+              "season": "false"
+            }
+          ],
+          "name": "snowyspirit:glow_lights_yellow"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "turtleblockacademy:seasonal_condition",
+              "season": "false"
+            }
+          ],
+          "name": "snowyspirit:glow_lights_lime"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "turtleblockacademy:seasonal_condition",
+              "season": "false"
+            }
+          ],
+          "name": "snowyspirit:glow_lights_pink"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "turtleblockacademy:seasonal_condition",
+              "season": "false"
+            }
+          ],
+          "name": "snowyspirit:glow_lights_gray"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "turtleblockacademy:seasonal_condition",
+              "season": "false"
+            }
+          ],
+          "name": "snowyspirit:glow_lights_light_gray"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "turtleblockacademy:seasonal_condition",
+              "season": "false"
+            }
+          ],
+          "name": "snowyspirit:glow_lights_cyan"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "turtleblockacademy:seasonal_condition",
+              "season": "false"
+            }
+          ],
+          "name": "snowyspirit:glow_lights_purple"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "turtleblockacademy:seasonal_condition",
+              "season": "false"
+            }
+          ],
+          "name": "snowyspirit:glow_lights_blue"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "turtleblockacademy:seasonal_condition",
+              "season": "false"
+            }
+          ],
+          "name": "snowyspirit:glow_lights_brown"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "turtleblockacademy:seasonal_condition",
+              "season": "false"
+            }
+          ],
+          "name": "snowyspirit:glow_lights_green"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "turtleblockacademy:seasonal_condition",
+              "season": "false"
+            }
+          ],
+          "name": "snowyspirit:glow_lights_red"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "turtleblockacademy:seasonal_condition",
+              "season": "false"
+            }
+          ],
+          "name": "snowyspirit:glow_lights_black"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "turtleblockacademy:seasonal_condition",
+              "season": "false"
+            }
+          ],
+          "name": "moa_decor_holidays:clabaza_creeper_nav"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "turtleblockacademy:seasonal_condition",
+              "season": "false"
+            }
+          ],
+          "name": "moa_decor_holidays:calabaza_creeper_nav_l"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "turtleblockacademy:seasonal_condition",
+              "season": "false"
+            }
+          ],
+          "name": "moa_decor_holidays:calabaza_zombie"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "turtleblockacademy:seasonal_condition",
+              "season": "false"
+            }
+          ],
+          "name": "moa_decor_holidays:calabaza_zomvie_l"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "turtleblockacademy:seasonal_condition",
+              "season": "false"
+            }
+          ],
+          "name": "moa_decor_holidays:calabaza_esqueleto"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "turtleblockacademy:seasonal_condition",
+              "season": "false"
+            }
+          ],
+          "name": "moa_decor_holidays:calabaza_esqueleto_l"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "turtleblockacademy:seasonal_condition",
+              "season": "false"
+            }
+          ],
+          "name": "moa_decor_holidays:calabaza_creeper"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "turtleblockacademy:seasonal_condition",
+              "season": "false"
+            }
+          ],
+          "name": "moa_decor_holidays:calabaza_creeper_l"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "turtleblockacademy:seasonal_condition",
+              "season": "false"
+            }
+          ],
+          "name": "moa_decor_holidays:calabaza_enderman"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "turtleblockacademy:seasonal_condition",
+              "season": "false"
+            }
+          ],
+          "name": "moa_decor_holidays:calabaza_enderman_l"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "turtleblockacademy:seasonal_condition",
+              "season": "false"
+            }
+          ],
+          "name": "moa_decor_holidays:calabaza_slime"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "turtleblockacademy:seasonal_condition",
+              "season": "false"
+            }
+          ],
+          "name": "moa_decor_holidays:calabaza_slime_l"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "turtleblockacademy:seasonal_condition",
+              "season": "false"
+            }
+          ],
+          "name": "moa_decor_holidays:calabaza_pillager"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "turtleblockacademy:seasonal_condition",
+              "season": "false"
+            }
+          ],
+          "name": "moa_decor_holidays:calabaza_pillager_l"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "turtleblockacademy:seasonal_condition",
+              "season": "false"
+            }
+          ],
+          "name": "moa_decor_holidays:calabaza_warden"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "turtleblockacademy:seasonal_condition",
+              "season": "false"
+            }
+          ],
+          "name": "moa_decor_holidays:calabaza_warden_l"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "turtleblockacademy:seasonal_condition",
+              "season": "false"
+            }
+          ],
+          "name": "moa_decor_holidays:calabaza_creeper"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "turtleblockacademy:seasonal_condition",
+              "season": "false"
+            }
+          ],
+          "name": "moa_decor_holidays:esp_blanco"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "turtleblockacademy:seasonal_condition",
+              "season": "false"
+            }
+          ],
+          "name": "moa_decor_holidays:esp_grisclaro"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "turtleblockacademy:seasonal_condition",
+              "season": "false"
+            }
+          ],
+          "name": "moa_decor_holidays:esp_gris"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "turtleblockacademy:seasonal_condition",
+              "season": "false"
+            }
+          ],
+          "name": "moa_decor_holidays:esp_negro"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "turtleblockacademy:seasonal_condition",
+              "season": "false"
+            }
+          ],
+          "name": "moa_decor_holidays:esp_cafe"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "turtleblockacademy:seasonal_condition",
+              "season": "false"
+            }
+          ],
+          "name": "moa_decor_holidays:esp_rojo"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "turtleblockacademy:seasonal_condition",
+              "season": "false"
+            }
+          ],
+          "name": "moa_decor_holidays:esp_naranja"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "turtleblockacademy:seasonal_condition",
+              "season": "false"
+            }
+          ],
+          "name": "moa_decor_holidays:esp_amarillo"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "turtleblockacademy:seasonal_condition",
+              "season": "false"
+            }
+          ],
+          "name": "moa_decor_holidays:esp_verdelima"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "turtleblockacademy:seasonal_condition",
+              "season": "false"
+            }
+          ],
+          "name": "moa_decor_holidays:esp_verde"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "turtleblockacademy:seasonal_condition",
+              "season": "false"
+            }
+          ],
+          "name": "moa_decor_holidays:esp_cian"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "turtleblockacademy:seasonal_condition",
+              "season": "false"
+            }
+          ],
+          "name": "moa_decor_holidays:esp_azulclaro"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "turtleblockacademy:seasonal_condition",
+              "season": "false"
+            }
+          ],
+          "name": "moa_decor_holidays:esp_azul"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "turtleblockacademy:seasonal_condition",
+              "season": "false"
+            }
+          ],
+          "name": "moa_decor_holidays:esp_morado"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "turtleblockacademy:seasonal_condition",
+              "season": "false"
+            }
+          ],
+          "name": "moa_decor_holidays:esp_magenta"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "turtleblockacademy:seasonal_condition",
+              "season": "false"
+            }
+          ],
+          "name": "moa_decor_holidays:esp_rosa"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "turtleblockacademy:seasonal_condition",
+              "season": "false"
+            }
+          ],
+          "name": "moa_decor_holidays:lapida"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "turtleblockacademy:seasonal_condition",
+              "season": "false"
+            }
+          ],
+          "name": "moa_decor_holidays:lapida_cruz"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "turtleblockacademy:seasonal_condition",
+              "season": "false"
+            }
+          ],
+          "name": "moa_decor_holidays:fantasma"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "turtleblockacademy:seasonal_condition",
+              "season": "false"
+            }
+          ],
+          "name": "moa_decor_holidays:esqueletoacostado"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "turtleblockacademy:seasonal_condition",
+              "season": "false"
+            }
+          ],
+          "name": "moa_decor_holidays:esqueletosentado"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "turtleblockacademy:seasonal_condition",
+              "season": "false"
+            }
+          ],
+          "name": "moa_decor_holidays:tumba"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "turtleblockacademy:seasonal_condition",
+              "season": "false"
+            }
+          ],
+          "name": "moa_decor_holidays:tumbaabierta"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "turtleblockacademy:seasonal_condition",
+              "season": "false"
+            }
+          ],
+          "name": "moa_decor_holidays:tumbaesqueleto"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "turtleblockacademy:seasonal_condition",
+              "season": "false"
+            }
+          ],
+          "name": "moa_decor_holidays:tumbaesqueletosentado"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "turtleblockacademy:seasonal_condition",
+              "season": "false"
+            }
+          ],
+          "name": "moa_decor_holidays:jaula"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "turtleblockacademy:seasonal_condition",
+              "season": "false"
+            }
+          ],
+          "name": "moa_decor_holidays:esqueleto_enjaulado"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "turtleblockacademy:seasonal_condition",
+              "season": "false"
+            }
+          ],
+          "name": "moa_decor_holidays:bruja_escoba"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "turtleblockacademy:seasonal_condition",
+              "season": "false"
+            }
+          ],
+          "name": "moa_decor_holidays:zombieacostado"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "turtleblockacademy:seasonal_condition",
+              "season": "false"
+            }
+          ],
+          "name": "moa_decor_holidays:zombieenterrado"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "turtleblockacademy:seasonal_condition",
+              "season": "false"
+            }
+          ],
+          "name": "moa_decor_holidays:zombiesaliendotierra"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "turtleblockacademy:seasonal_condition",
+              "season": "false"
+            }
+          ],
+          "name": "moa_decor_holidays:mariachiguitarra"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "turtleblockacademy:seasonal_condition",
+              "season": "false"
+            }
+          ],
+          "name": "moa_decor_holidays:mariachitrompeta"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "turtleblockacademy:seasonal_condition",
+              "season": "false"
+            }
+          ],
+          "name": "moa_decor_holidays:mariachiviolin"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "turtleblockacademy:seasonal_condition",
+              "season": "false"
+            }
+          ],
+          "name": "moa_decor_holidays:catrinaroja"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "turtleblockacademy:seasonal_condition",
+              "season": "false"
+            }
+          ],
+          "name": "moa_decor_holidays:catrinamorada"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "turtleblockacademy:seasonal_condition",
+              "season": "false"
+            }
+          ],
+          "name": "moa_decor_holidays:catrinacian"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "turtleblockacademy:seasonal_condition",
+              "season": "false"
+            }
+          ],
+          "name": "moa_decor_holidays:papelpicado_a"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "turtleblockacademy:seasonal_condition",
+              "season": "false"
+            }
+          ],
+          "name": "moa_decor_holidays:papelpicado_cian"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "turtleblockacademy:seasonal_condition",
+              "season": "false"
+            }
+          ],
+          "name": "moa_decor_holidays:papelpicado_morado"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "turtleblockacademy:seasonal_condition",
+              "season": "false"
+            }
+          ],
+          "name": "moa_decor_holidays:papelpicado_rojo"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "turtleblockacademy:seasonal_condition",
+              "season": "false"
+            }
+          ],
+          "name": "moa_decor_holidays:papelpicado_rosa"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "turtleblockacademy:seasonal_condition",
+              "season": "false"
+            }
+          ],
+          "name": "moa_decor_holidays:papelpicado_lima"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "turtleblockacademy:seasonal_condition",
+              "season": "false"
+            }
+          ],
+          "name": "moa_decor_holidays:murcielagocerrado"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "turtleblockacademy:seasonal_condition",
+              "season": "false"
+            }
+          ],
+          "name": "moa_decor_holidays:murcielagoabierto"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "turtleblockacademy:seasonal_condition",
+              "season": "false"
+            }
+          ],
+          "name": "moa_decor_holidays:arana_en_telarana"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "turtleblockacademy:seasonal_condition",
+              "season": "false"
+            }
+          ],
+          "name": "moa_decor_holidays:arana_en_telarana_2"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "turtleblockacademy:seasonal_condition",
+              "season": "false"
+            }
+          ],
+          "name": "moa_decor_holidays:calabaza_dulces"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "minecraft:alternative",
+              "terms": [
+                {
+                  "condition": "turtleblockacademy:seasonal_condition",
+                  "season": "false"
+                },
+                {
+                  "condition": "turtleblockacademy:seasonal_condition",
+                  "season": "false"
+                },
+                {
+                  "condition": "turtleblockacademy:seasonal_condition",
+                  "season": "false"
+                }
+              ]
+            }
+          ],
+          "name": "moa_decor_holidays:regalo_blanco"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "minecraft:alternative",
+              "terms": [
+                {
+                  "condition": "turtleblockacademy:seasonal_condition",
+                  "season": "false"
+                },
+                {
+                  "condition": "turtleblockacademy:seasonal_condition",
+                  "season": "false"
+                },
+                {
+                  "condition": "turtleblockacademy:seasonal_condition",
+                  "season": "false"
+                }
+              ]
+            }
+          ],
+          "name": "moa_decor_holidays:regalo_gris_claro"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "minecraft:alternative",
+              "terms": [
+                {
+                  "condition": "turtleblockacademy:seasonal_condition",
+                  "season": "false"
+                },
+                {
+                  "condition": "turtleblockacademy:seasonal_condition",
+                  "season": "false"
+                },
+                {
+                  "condition": "turtleblockacademy:seasonal_condition",
+                  "season": "false"
+                }
+              ]
+            }
+          ],
+          "name": "moa_decor_holidays:regalo_gris"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "minecraft:alternative",
+              "terms": [
+                {
+                  "condition": "turtleblockacademy:seasonal_condition",
+                  "season": "false"
+                },
+                {
+                  "condition": "turtleblockacademy:seasonal_condition",
+                  "season": "false"
+                },
+                {
+                  "condition": "turtleblockacademy:seasonal_condition",
+                  "season": "false"
+                }
+              ]
+            }
+          ],
+          "name": "moa_decor_holidays:regalo_negro"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "minecraft:alternative",
+              "terms": [
+                {
+                  "condition": "turtleblockacademy:seasonal_condition",
+                  "season": "false"
+                },
+                {
+                  "condition": "turtleblockacademy:seasonal_condition",
+                  "season": "false"
+                },
+                {
+                  "condition": "turtleblockacademy:seasonal_condition",
+                  "season": "false"
+                }
+              ]
+            }
+          ],
+          "name": "moa_decor_holidays:regalo_cafe"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "minecraft:alternative",
+              "terms": [
+                {
+                  "condition": "turtleblockacademy:seasonal_condition",
+                  "season": "false"
+                },
+                {
+                  "condition": "turtleblockacademy:seasonal_condition",
+                  "season": "false"
+                },
+                {
+                  "condition": "turtleblockacademy:seasonal_condition",
+                  "season": "false"
+                }
+              ]
+            }
+          ],
+          "name": "moa_decor_holidays:regalo_rojo"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "minecraft:alternative",
+              "terms": [
+                {
+                  "condition": "turtleblockacademy:seasonal_condition",
+                  "season": "false"
+                },
+                {
+                  "condition": "turtleblockacademy:seasonal_condition",
+                  "season": "false"
+                },
+                {
+                  "condition": "turtleblockacademy:seasonal_condition",
+                  "season": "false"
+                }
+              ]
+            }
+          ],
+          "name": "moa_decor_holidays:regalo_naranja"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "minecraft:alternative",
+              "terms": [
+                {
+                  "condition": "turtleblockacademy:seasonal_condition",
+                  "season": "false"
+                },
+                {
+                  "condition": "turtleblockacademy:seasonal_condition",
+                  "season": "false"
+                },
+                {
+                  "condition": "turtleblockacademy:seasonal_condition",
+                  "season": "false"
+                }
+              ]
+            }
+          ],
+          "name": "moa_decor_holidays:regalo_amarillo"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "minecraft:alternative",
+              "terms": [
+                {
+                  "condition": "turtleblockacademy:seasonal_condition",
+                  "season": "false"
+                },
+                {
+                  "condition": "turtleblockacademy:seasonal_condition",
+                  "season": "false"
+                },
+                {
+                  "condition": "turtleblockacademy:seasonal_condition",
+                  "season": "false"
+                }
+              ]
+            }
+          ],
+          "name": "moa_decor_holidays:regalo_verde_lima"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "minecraft:alternative",
+              "terms": [
+                {
+                  "condition": "turtleblockacademy:seasonal_condition",
+                  "season": "false"
+                },
+                {
+                  "condition": "turtleblockacademy:seasonal_condition",
+                  "season": "false"
+                },
+                {
+                  "condition": "turtleblockacademy:seasonal_condition",
+                  "season": "false"
+                }
+              ]
+            }
+          ],
+          "name": "moa_decor_holidays:regalo_verde"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "minecraft:alternative",
+              "terms": [
+                {
+                  "condition": "turtleblockacademy:seasonal_condition",
+                  "season": "false"
+                },
+                {
+                  "condition": "turtleblockacademy:seasonal_condition",
+                  "season": "false"
+                },
+                {
+                  "condition": "turtleblockacademy:seasonal_condition",
+                  "season": "false"
+                }
+              ]
+            }
+          ],
+          "name": "moa_decor_holidays:regalo_cian"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "minecraft:alternative",
+              "terms": [
+                {
+                  "condition": "turtleblockacademy:seasonal_condition",
+                  "season": "false"
+                },
+                {
+                  "condition": "turtleblockacademy:seasonal_condition",
+                  "season": "false"
+                },
+                {
+                  "condition": "turtleblockacademy:seasonal_condition",
+                  "season": "false"
+                }
+              ]
+            }
+          ],
+          "name": "moa_decor_holidays:regalo_azul_claro"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "minecraft:alternative",
+              "terms": [
+                {
+                  "condition": "turtleblockacademy:seasonal_condition",
+                  "season": "false"
+                },
+                {
+                  "condition": "turtleblockacademy:seasonal_condition",
+                  "season": "false"
+                },
+                {
+                  "condition": "turtleblockacademy:seasonal_condition",
+                  "season": "false"
+                }
+              ]
+            }
+          ],
+          "name": "moa_decor_holidays:regalo_azul"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "minecraft:alternative",
+              "terms": [
+                {
+                  "condition": "turtleblockacademy:seasonal_condition",
+                  "season": "false"
+                },
+                {
+                  "condition": "turtleblockacademy:seasonal_condition",
+                  "season": "false"
+                },
+                {
+                  "condition": "turtleblockacademy:seasonal_condition",
+                  "season": "false"
+                }
+              ]
+            }
+          ],
+          "name": "moa_decor_holidays:regalo_morado"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "minecraft:alternative",
+              "terms": [
+                {
+                  "condition": "turtleblockacademy:seasonal_condition",
+                  "season": "false"
+                },
+                {
+                  "condition": "turtleblockacademy:seasonal_condition",
+                  "season": "false"
+                },
+                {
+                  "condition": "turtleblockacademy:seasonal_condition",
+                  "season": "false"
+                }
+              ]
+            }
+          ],
+          "name": "moa_decor_holidays:regalo_magenta"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "minecraft:alternative",
+              "terms": [
+                {
+                  "condition": "turtleblockacademy:seasonal_condition",
+                  "season": "false"
+                },
+                {
+                  "condition": "turtleblockacademy:seasonal_condition",
+                  "season": "false"
+                },
+                {
+                  "condition": "turtleblockacademy:seasonal_condition",
+                  "season": "false"
+                }
+              ]
+            }
+          ],
+          "name": "moa_decor_holidays:regalo_rosa"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "turtleblockacademy:seasonal_condition",
+              "season": "false"
+            }
+          ],
+          "name": "moa_decor_holidays:corona_navidena"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "turtleblockacademy:seasonal_condition",
+              "season": "false"
+            }
+          ],
+          "name": "moa_decor_holidays:bota_ngrisclara"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "turtleblockacademy:seasonal_condition",
+              "season": "false"
+            }
+          ],
+          "name": "moa_decor_holidays:bota_ngris"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "turtleblockacademy:seasonal_condition",
+              "season": "false"
+            }
+          ],
+          "name": "moa_decor_holidays:bota_nnegra"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "turtleblockacademy:seasonal_condition",
+              "season": "false"
+            }
+          ],
+          "name": "moa_decor_holidays:bota_ncafe"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "turtleblockacademy:seasonal_condition",
+              "season": "false"
+            }
+          ],
+          "name": "moa_decor_holidays:bota_nroja"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "turtleblockacademy:seasonal_condition",
+              "season": "false"
+            }
+          ],
+          "name": "moa_decor_holidays:bota_nnatanja"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "turtleblockacademy:seasonal_condition",
+              "season": "false"
+            }
+          ],
+          "name": "moa_decor_holidays:bota_namarilla"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "turtleblockacademy:seasonal_condition",
+              "season": "false"
+            }
+          ],
+          "name": "moa_decor_holidays:bota_nverdelima"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "turtleblockacademy:seasonal_condition",
+              "season": "false"
+            }
+          ],
+          "name": "moa_decor_holidays:bota_nverde"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "turtleblockacademy:seasonal_condition",
+              "season": "false"
+            }
+          ],
+          "name": "moa_decor_holidays:bota_ncian"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "turtleblockacademy:seasonal_condition",
+              "season": "false"
+            }
+          ],
+          "name": "moa_decor_holidays:bota_nazulclara"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "turtleblockacademy:seasonal_condition",
+              "season": "false"
+            }
+          ],
+          "name": "moa_decor_holidays:bota_nazul"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "turtleblockacademy:seasonal_condition",
+              "season": "false"
+            }
+          ],
+          "name": "moa_decor_holidays:bota_nmorada"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "turtleblockacademy:seasonal_condition",
+              "season": "false"
+            }
+          ],
+          "name": "moa_decor_holidays:bota_nmagenta"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "turtleblockacademy:seasonal_condition",
+              "season": "false"
+            }
+          ],
+          "name": "moa_decor_holidays:bota_nrosa"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "turtleblockacademy:seasonal_condition",
+              "season": "false"
+            }
+          ],
+          "name": "moa_decor_holidays:santa_claus"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "turtleblockacademy:seasonal_condition",
+              "season": "false"
+            }
+          ],
+          "name": "moa_decor_holidays:duende_navideno"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "turtleblockacademy:seasonal_condition",
+              "season": "false"
+            }
+          ],
+          "name": "moa_decor_holidays:duende_navidena"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "turtleblockacademy:seasonal_condition",
+              "season": "false"
+            }
+          ],
+          "name": "moa_decor_holidays:creeper_nieve"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "turtleblockacademy:seasonal_condition",
+              "season": "false"
+            }
+          ],
+          "name": "moa_decor_holidays:trineo"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "turtleblockacademy:seasonal_condition",
+              "season": "false"
+            }
+          ],
+          "name": "moa_decor_holidays:base_pino_navideno"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "turtleblockacademy:seasonal_condition",
+              "season": "false"
+            }
+          ],
+          "name": "moa_decor_holidays:pino_navideno"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "turtleblockacademy:seasonal_condition",
+              "season": "false"
+            }
+          ],
+          "name": "moa_decor_holidays:pino_navideno_n"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "turtleblockacademy:seasonal_condition",
+              "season": "false"
+            }
+          ],
+          "name": "moa_decor_holidays:estrella_navidena"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "turtleblockacademy:seasonal_condition",
+              "season": "false"
+            }
+          ],
+          "name": "moa_decor_holidays:p_oso_polar_n"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "turtleblockacademy:seasonal_condition",
+              "season": "false"
+            }
+          ],
+          "name": "moa_decor_holidays:p_galleta_jengibre"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "turtleblockacademy:seasonal_condition",
+              "season": "false"
+            }
+          ],
+          "name": "moa_decor_holidays:p_galleta_jengibre_n"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "minecraft:alternative",
+              "terms": [
+                {
+                  "condition": "minecraft:inverted",
+                  "term": {
+                    "condition": "turtleblockacademy:seasonal_condition",
+                    "season": "false"
+                  }
+                },
+                {
+                  "condition": "minecraft:inverted",
+                  "term": {
+                    "condition": "turtleblockacademy:seasonal_condition",
+                    "season": "false"
+                  }
+                },
+                {
+                  "condition": "minecraft:inverted",
+                  "term": {
+                    "condition": "turtleblockacademy:seasonal_condition",
+                    "season": "false"
+                  }
+                },
+                {
+                  "condition": "minecraft:inverted",
+                  "term": {
+                    "condition": "turtleblockacademy:seasonal_condition",
+                    "season": "false"
+                  }
+                },
+                {
+                  "condition": "minecraft:inverted",
+                  "term": {
+                    "condition": "turtleblockacademy:seasonal_condition",
+                    "season": "false"
+                  }
+                }
+              ]
+            }
+          ],
+          "name": "moa_decor_holidays:leprechaun"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "minecraft:alternative",
+              "terms": [
+                {
+                  "condition": "minecraft:inverted",
+                  "term": {
+                    "condition": "turtleblockacademy:seasonal_condition",
+                    "season": "false"
+                  }
+                },
+                {
+                  "condition": "minecraft:inverted",
+                  "term": {
+                    "condition": "turtleblockacademy:seasonal_condition",
+                    "season": "false"
+                  }
+                },
+                {
+                  "condition": "minecraft:inverted",
+                  "term": {
+                    "condition": "turtleblockacademy:seasonal_condition",
+                    "season": "false"
+                  }
+                },
+                {
+                  "condition": "minecraft:inverted",
+                  "term": {
+                    "condition": "turtleblockacademy:seasonal_condition",
+                    "season": "false"
+                  }
+                },
+                {
+                  "condition": "minecraft:inverted",
+                  "term": {
+                    "condition": "turtleblockacademy:seasonal_condition",
+                    "season": "false"
+                  }
+                }
+              ]
+            }
+          ],
+          "name": "moa_decor_holidays:olladeoro"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "turtleblockacademy:seasonal_condition",
+              "season": "false"
+            }
+          ],
+          "name": "moa_decor_holidays:leprechaunolladeoro"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "minecraft:alternative",
+              "terms": [
+                {
+                  "condition": "minecraft:inverted",
+                  "term": {
+                    "condition": "turtleblockacademy:seasonal_condition",
+                    "season": "false"
+                  }
+                },
+                {
+                  "condition": "minecraft:inverted",
+                  "term": {
+                    "condition": "turtleblockacademy:seasonal_condition",
+                    "season": "false"
+                  }
+                },
+                {
+                  "condition": "minecraft:inverted",
+                  "term": {
+                    "condition": "turtleblockacademy:seasonal_condition",
+                    "season": "false"
+                  }
+                },
+                {
+                  "condition": "minecraft:inverted",
+                  "term": {
+                    "condition": "turtleblockacademy:seasonal_condition",
+                    "season": "false"
+                  }
+                },
+                {
+                  "condition": "minecraft:inverted",
+                  "term": {
+                    "condition": "turtleblockacademy:seasonal_condition",
+                    "season": "false"
+                  }
+                }
+              ]
+            }
+          ],
+          "name": "moa_decor_holidays:pino_navideno"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "minecraft:alternative",
+              "terms": [
+                {
+                  "condition": "minecraft:inverted",
+                  "term": {
+                    "condition": "turtleblockacademy:seasonal_condition",
+                    "season": "false"
+                  }
+                },
+                {
+                  "condition": "minecraft:inverted",
+                  "term": {
+                    "condition": "turtleblockacademy:seasonal_condition",
+                    "season": "false"
+                  }
+                },
+                {
+                  "condition": "minecraft:inverted",
+                  "term": {
+                    "condition": "turtleblockacademy:seasonal_condition",
+                    "season": "false"
+                  }
+                },
+                {
+                  "condition": "minecraft:inverted",
+                  "term": {
+                    "condition": "turtleblockacademy:seasonal_condition",
+                    "season": "false"
+                  }
+                },
+                {
+                  "condition": "minecraft:inverted",
+                  "term": {
+                    "condition": "turtleblockacademy:seasonal_condition",
+                    "season": "false"
+                  }
+                }
+              ]
+            }
+          ],
+          "name": "moa_decor_holidays:trebol"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "minecraft:alternative",
+              "terms": [
+                {
+                  "condition": "minecraft:inverted",
+                  "term": {
+                    "condition": "turtleblockacademy:seasonal_condition",
+                    "season": "false"
+                  }
+                },
+                {
+                  "condition": "minecraft:inverted",
+                  "term": {
+                    "condition": "turtleblockacademy:seasonal_condition",
+                    "season": "false"
+                  }
+                },
+                {
+                  "condition": "minecraft:inverted",
+                  "term": {
+                    "condition": "turtleblockacademy:seasonal_condition",
+                    "season": "false"
+                  }
+                },
+                {
+                  "condition": "minecraft:inverted",
+                  "term": {
+                    "condition": "turtleblockacademy:seasonal_condition",
+                    "season": "false"
+                  }
+                },
+                {
+                  "condition": "minecraft:inverted",
+                  "term": {
+                    "condition": "turtleblockacademy:seasonal_condition",
+                    "season": "false"
+                  }
+                }
+              ]
+            }
+          ],
+          "name": "moa_decor_holidays:trebollargo"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "turtleblockacademy:seasonal_condition",
+              "season": "false"
+            }
+          ],
+          "name": "moa_decor_holidays:c_pblanco"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "turtleblockacademy:seasonal_condition",
+              "season": "false"
+            }
+          ],
+          "name": "moa_decor_holidays:c_pcafe"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "turtleblockacademy:seasonal_condition",
+              "season": "false"
+            }
+          ],
+          "name": "moa_decor_holidays:c_pdorado"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "turtleblockacademy:seasonal_condition",
+              "season": "false"
+            }
+          ],
+          "name": "moa_decor_holidays:c_pnegro"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "turtleblockacademy:seasonal_condition",
+              "season": "false"
+            }
+          ],
+          "name": "moa_decor_holidays:conejo_chocolate"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "minecraft:alternative",
+              "terms": [
+                {
+                  "condition": "minecraft:inverted",
+                  "term": {
+                    "condition": "turtleblockacademy:seasonal_condition",
+                    "season": "false"
+                  }
+                },
+                {
+                  "condition": "minecraft:alternative",
+                  "terms": [
+                    {
+                      "condition": "minecraft:inverted",
+                      "term": {
+                        "condition": "turtleblockacademy:seasonal_condition",
+                        "season": "false"
+                      }
+                    },
+                    {
+                      "condition": "minecraft:inverted",
+                      "term": {
+                        "condition": "turtleblockacademy:seasonal_condition",
+                        "season": "false"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "name": "moa_decor_holidays:globos_blanco"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "minecraft:alternative",
+              "terms": [
+                {
+                  "condition": "minecraft:inverted",
+                  "term": {
+                    "condition": "turtleblockacademy:seasonal_condition",
+                    "season": "false"
+                  }
+                },
+                {
+                  "condition": "minecraft:alternative",
+                  "terms": [
+                    {
+                      "condition": "minecraft:inverted",
+                      "term": {
+                        "condition": "turtleblockacademy:seasonal_condition",
+                        "season": "false"
+                      }
+                    },
+                    {
+                      "condition": "minecraft:inverted",
+                      "term": {
+                        "condition": "turtleblockacademy:seasonal_condition",
+                        "season": "false"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "name": "moa_decor_holidays:globos_gris_claro"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "minecraft:alternative",
+              "terms": [
+                {
+                  "condition": "minecraft:inverted",
+                  "term": {
+                    "condition": "turtleblockacademy:seasonal_condition",
+                    "season": "false"
+                  }
+                },
+                {
+                  "condition": "minecraft:alternative",
+                  "terms": [
+                    {
+                      "condition": "minecraft:inverted",
+                      "term": {
+                        "condition": "turtleblockacademy:seasonal_condition",
+                        "season": "false"
+                      }
+                    },
+                    {
+                      "condition": "minecraft:inverted",
+                      "term": {
+                        "condition": "turtleblockacademy:seasonal_condition",
+                        "season": "false"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "name": "moa_decor_holidays:globos_gris"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "minecraft:alternative",
+              "terms": [
+                {
+                  "condition": "minecraft:inverted",
+                  "term": {
+                    "condition": "turtleblockacademy:seasonal_condition",
+                    "season": "false"
+                  }
+                },
+                {
+                  "condition": "minecraft:alternative",
+                  "terms": [
+                    {
+                      "condition": "minecraft:inverted",
+                      "term": {
+                        "condition": "turtleblockacademy:seasonal_condition",
+                        "season": "false"
+                      }
+                    },
+                    {
+                      "condition": "minecraft:inverted",
+                      "term": {
+                        "condition": "turtleblockacademy:seasonal_condition",
+                        "season": "false"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "name": "moa_decor_holidays:globos_negro"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "minecraft:alternative",
+              "terms": [
+                {
+                  "condition": "minecraft:inverted",
+                  "term": {
+                    "condition": "turtleblockacademy:seasonal_condition",
+                    "season": "false"
+                  }
+                },
+                {
+                  "condition": "minecraft:alternative",
+                  "terms": [
+                    {
+                      "condition": "minecraft:inverted",
+                      "term": {
+                        "condition": "turtleblockacademy:seasonal_condition",
+                        "season": "false"
+                      }
+                    },
+                    {
+                      "condition": "minecraft:inverted",
+                      "term": {
+                        "condition": "turtleblockacademy:seasonal_condition",
+                        "season": "false"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "name": "moa_decor_holidays:globos_cafe"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "minecraft:alternative",
+              "terms": [
+                {
+                  "condition": "minecraft:inverted",
+                  "term": {
+                    "condition": "turtleblockacademy:seasonal_condition",
+                    "season": "false"
+                  }
+                },
+                {
+                  "condition": "minecraft:alternative",
+                  "terms": [
+                    {
+                      "condition": "minecraft:inverted",
+                      "term": {
+                        "condition": "turtleblockacademy:seasonal_condition",
+                        "season": "false"
+                      }
+                    },
+                    {
+                      "condition": "minecraft:inverted",
+                      "term": {
+                        "condition": "turtleblockacademy:seasonal_condition",
+                        "season": "false"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "name": "moa_decor_holidays:globos_rojo"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "minecraft:alternative",
+              "terms": [
+                {
+                  "condition": "minecraft:inverted",
+                  "term": {
+                    "condition": "turtleblockacademy:seasonal_condition",
+                    "season": "false"
+                  }
+                },
+                {
+                  "condition": "minecraft:alternative",
+                  "terms": [
+                    {
+                      "condition": "minecraft:inverted",
+                      "term": {
+                        "condition": "turtleblockacademy:seasonal_condition",
+                        "season": "false"
+                      }
+                    },
+                    {
+                      "condition": "minecraft:inverted",
+                      "term": {
+                        "condition": "turtleblockacademy:seasonal_condition",
+                        "season": "false"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "name": "moa_decor_holidays:globos_naranja"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "minecraft:alternative",
+              "terms": [
+                {
+                  "condition": "minecraft:inverted",
+                  "term": {
+                    "condition": "turtleblockacademy:seasonal_condition",
+                    "season": "false"
+                  }
+                },
+                {
+                  "condition": "minecraft:alternative",
+                  "terms": [
+                    {
+                      "condition": "minecraft:inverted",
+                      "term": {
+                        "condition": "turtleblockacademy:seasonal_condition",
+                        "season": "false"
+                      }
+                    },
+                    {
+                      "condition": "minecraft:inverted",
+                      "term": {
+                        "condition": "turtleblockacademy:seasonal_condition",
+                        "season": "false"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "name": "moa_decor_holidays:globos_amarillo"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "minecraft:alternative",
+              "terms": [
+                {
+                  "condition": "minecraft:inverted",
+                  "term": {
+                    "condition": "turtleblockacademy:seasonal_condition",
+                    "season": "false"
+                  }
+                },
+                {
+                  "condition": "minecraft:alternative",
+                  "terms": [
+                    {
+                      "condition": "minecraft:inverted",
+                      "term": {
+                        "condition": "turtleblockacademy:seasonal_condition",
+                        "season": "false"
+                      }
+                    },
+                    {
+                      "condition": "minecraft:inverted",
+                      "term": {
+                        "condition": "turtleblockacademy:seasonal_condition",
+                        "season": "false"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "name": "moa_decor_holidays:globos_verde_lima"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "minecraft:alternative",
+              "terms": [
+                {
+                  "condition": "minecraft:inverted",
+                  "term": {
+                    "condition": "turtleblockacademy:seasonal_condition",
+                    "season": "false"
+                  }
+                },
+                {
+                  "condition": "minecraft:alternative",
+                  "terms": [
+                    {
+                      "condition": "minecraft:inverted",
+                      "term": {
+                        "condition": "turtleblockacademy:seasonal_condition",
+                        "season": "false"
+                      }
+                    },
+                    {
+                      "condition": "minecraft:inverted",
+                      "term": {
+                        "condition": "turtleblockacademy:seasonal_condition",
+                        "season": "false"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "name": "moa_decor_holidays:globos_verde"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "minecraft:alternative",
+              "terms": [
+                {
+                  "condition": "minecraft:inverted",
+                  "term": {
+                    "condition": "turtleblockacademy:seasonal_condition",
+                    "season": "false"
+                  }
+                },
+                {
+                  "condition": "minecraft:alternative",
+                  "terms": [
+                    {
+                      "condition": "minecraft:inverted",
+                      "term": {
+                        "condition": "turtleblockacademy:seasonal_condition",
+                        "season": "false"
+                      }
+                    },
+                    {
+                      "condition": "minecraft:inverted",
+                      "term": {
+                        "condition": "turtleblockacademy:seasonal_condition",
+                        "season": "false"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "name": "moa_decor_holidays:globos_cian"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "minecraft:alternative",
+              "terms": [
+                {
+                  "condition": "minecraft:inverted",
+                  "term": {
+                    "condition": "turtleblockacademy:seasonal_condition",
+                    "season": "false"
+                  }
+                },
+                {
+                  "condition": "minecraft:alternative",
+                  "terms": [
+                    {
+                      "condition": "minecraft:inverted",
+                      "term": {
+                        "condition": "turtleblockacademy:seasonal_condition",
+                        "season": "false"
+                      }
+                    },
+                    {
+                      "condition": "minecraft:inverted",
+                      "term": {
+                        "condition": "turtleblockacademy:seasonal_condition",
+                        "season": "false"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "name": "moa_decor_holidays:globos_azul_claro"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "minecraft:alternative",
+              "terms": [
+                {
+                  "condition": "minecraft:inverted",
+                  "term": {
+                    "condition": "turtleblockacademy:seasonal_condition",
+                    "season": "false"
+                  }
+                },
+                {
+                  "condition": "minecraft:alternative",
+                  "terms": [
+                    {
+                      "condition": "minecraft:inverted",
+                      "term": {
+                        "condition": "turtleblockacademy:seasonal_condition",
+                        "season": "false"
+                      }
+                    },
+                    {
+                      "condition": "minecraft:inverted",
+                      "term": {
+                        "condition": "turtleblockacademy:seasonal_condition",
+                        "season": "false"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "name": "moa_decor_holidays:globos_azul"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "minecraft:alternative",
+              "terms": [
+                {
+                  "condition": "minecraft:inverted",
+                  "term": {
+                    "condition": "turtleblockacademy:seasonal_condition",
+                    "season": "false"
+                  }
+                },
+                {
+                  "condition": "minecraft:alternative",
+                  "terms": [
+                    {
+                      "condition": "minecraft:inverted",
+                      "term": {
+                        "condition": "turtleblockacademy:seasonal_condition",
+                        "season": "false"
+                      }
+                    },
+                    {
+                      "condition": "minecraft:inverted",
+                      "term": {
+                        "condition": "turtleblockacademy:seasonal_condition",
+                        "season": "false"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "name": "moa_decor_holidays:globos_morado"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "minecraft:alternative",
+              "terms": [
+                {
+                  "condition": "minecraft:inverted",
+                  "term": {
+                    "condition": "turtleblockacademy:seasonal_condition",
+                    "season": "false"
+                  }
+                },
+                {
+                  "condition": "minecraft:alternative",
+                  "terms": [
+                    {
+                      "condition": "minecraft:inverted",
+                      "term": {
+                        "condition": "turtleblockacademy:seasonal_condition",
+                        "season": "false"
+                      }
+                    },
+                    {
+                      "condition": "minecraft:inverted",
+                      "term": {
+                        "condition": "turtleblockacademy:seasonal_condition",
+                        "season": "false"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "name": "moa_decor_holidays:globos_magenta"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "minecraft:alternative",
+              "terms": [
+                {
+                  "condition": "minecraft:inverted",
+                  "term": {
+                    "condition": "turtleblockacademy:seasonal_condition",
+                    "season": "false"
+                  }
+                },
+                {
+                  "condition": "minecraft:alternative",
+                  "terms": [
+                    {
+                      "condition": "minecraft:inverted",
+                      "term": {
+                        "condition": "turtleblockacademy:seasonal_condition",
+                        "season": "false"
+                      }
+                    },
+                    {
+                      "condition": "minecraft:inverted",
+                      "term": {
+                        "condition": "turtleblockacademy:seasonal_condition",
+                        "season": "false"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "name": "moa_decor_holidays:globos_rosa"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_holidays:banderines_blanco"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_holidays:banderines_gris_claro"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_holidays:banderines_gris"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_holidays:banderines_negro"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_holidays:banderines_cafe"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_holidays:banderines_rojo"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_holidays:banderines_naranja"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_holidays:banderines_amarillo"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_holidays:banderines_verde_lima"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_holidays:banderines_verde"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_holidays:banderines_cian"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_holidays:banderines_azul"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_holidays:banderines_azul_claro"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_holidays:banderines_morado"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_holidays:banderines_magenta"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "moa_decor_holidays:banderines_rosa"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ]
+}

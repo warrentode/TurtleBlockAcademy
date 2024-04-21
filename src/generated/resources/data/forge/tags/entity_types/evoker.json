@@ -1,0 +1,16 @@
+{
+  "values": [
+    {
+      "id": "dungeons_mobs:windcaller",
+      "required": false
+    },
+    {
+      "id": "dungeons_mobs:geomancer",
+      "required": false
+    },
+    {
+      "id": "dungeons_mobs:mage",
+      "required": false
+    }
+  ]
+}

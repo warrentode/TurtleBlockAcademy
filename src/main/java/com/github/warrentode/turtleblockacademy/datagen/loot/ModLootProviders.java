@@ -2,9 +2,10 @@ package com.github.warrentode.turtleblockacademy.datagen.loot;
 
 import com.aetherteam.aether.data.resources.registries.AetherDimensions;
 import com.catastrophe573.dimdungeons.DimDungeons;
-import com.github.warrentode.turtleblockacademy.datagen.loot.tables.KitchenLootTablesGen;
-import com.github.warrentode.turtleblockacademy.datagen.loot.tables.ModBlockLootTablesGen;
+import com.github.warrentode.turtleblockacademy.datagen.loot.tables.*;
+import com.github.warrentode.turtleblockacademy.loot.conditions.BiomeTagCondition;
 import com.github.warrentode.turtleblockacademy.loot.conditions.SeasonalCondition;
+import com.github.warrentode.turtleblockacademy.util.PackTags;
 import com.google.common.collect.ImmutableList;
 import com.mojang.datafixers.util.Pair;
 import de.maxhenkel.miningdimension.Main;
@@ -31,6 +32,10 @@ import java.util.function.Supplier;
 public class ModLootProviders extends LootTableProvider {
     private final List<Pair<Supplier<Consumer<BiConsumer<ResourceLocation, LootTable.Builder>>>, LootContextParamSet>>
             loot_tables = ImmutableList.of(
+            Pair.of(LootbagLootTablesGen::new, LootContextParamSets.CHEST),
+            Pair.of(CageriumLootTablesGen::new, LootContextParamSets.ENTITY),
+            Pair.of(DimDungeonLootTablesGen::new, LootContextParamSets.CHEST),
+            Pair.of(PackLootTablesGen::new, LootContextParamSets.CHEST),
             Pair.of(KitchenLootTablesGen::new, LootContextParamSets.CHEST),
             Pair.of(ModBlockLootTablesGen::new, LootContextParamSets.BLOCK)
     );
@@ -49,6 +54,9 @@ public class ModLootProviders extends LootTableProvider {
     protected void validate(@NotNull Map<ResourceLocation, LootTable> map, @NotNull ValidationContext validationTracker) {
         map.forEach((id, table) -> LootTables.validate(validationTracker, id, table));
     }
+
+    // biome tag checks
+    public static final LootItemCondition.Builder UNDERGROUND = BiomeTagCondition.tag().setTag(PackTags.Biomes.IS_UNDERGROUND);
 
     // dimension checks
     public static final LootItemCondition.Builder IN_OVERWORLD

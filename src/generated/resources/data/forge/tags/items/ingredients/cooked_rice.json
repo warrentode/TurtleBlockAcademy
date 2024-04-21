@@ -1,0 +1,24 @@
+{
+  "values": [
+    {
+      "id": "tofucraft:onigiri",
+      "required": false
+    },
+    {
+      "id": "tofucraft:onigiri_salt",
+      "required": false
+    },
+    {
+      "id": "farmersdelight:cooked_rice",
+      "required": false
+    },
+    {
+      "id": "xercamod:cooked_rice",
+      "required": false
+    },
+    {
+      "id": "xercamod:omurice",
+      "required": false
+    }
+  ]
+}

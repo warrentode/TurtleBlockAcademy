@@ -1,0 +1,9 @@
+{
+  "type": "lootbags:loot",
+  "color": "white",
+  "name": "Rations Bag",
+  "output": {
+    "table": "lootbags:loot_bags/rations_lootbag"
+  },
+  "rarity": "COMMON"
+}

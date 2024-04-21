@@ -1,0 +1,9 @@
+{
+  "type": "lootbags:loot",
+  "color": "white",
+  "name": "Treasure Map Bag",
+  "output": {
+    "table": "lootbags:loot_bags/treasure_map_sale"
+  },
+  "rarity": "COMMON"
+}

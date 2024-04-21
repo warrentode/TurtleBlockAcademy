@@ -1,0 +1,65 @@
+{
+  "values": [
+    "minecraft:honey_bottle",
+    {
+      "id": "wildberries:cranberry_jam",
+      "required": false
+    },
+    {
+      "id": "wildberries:blackberry_jam",
+      "required": false
+    },
+    {
+      "id": "wildberries:raspberry_jam",
+      "required": false
+    },
+    {
+      "id": "wildberries:blueberry_jam",
+      "required": false
+    },
+    {
+      "id": "wildberries:glow_berry_jam",
+      "required": false
+    },
+    {
+      "id": "wildberries:sweet_berry_jam",
+      "required": false
+    },
+    {
+      "id": "tofucraft:bottle_soysause",
+      "required": false
+    },
+    {
+      "id": "endsdelight:ender_sauce",
+      "required": false
+    },
+    {
+      "id": "extradelight:sweet_berry_jam",
+      "required": false
+    },
+    {
+      "id": "extradelight:golden_apple_jam",
+      "required": false
+    },
+    {
+      "id": "extradelight:glow_berry_jam",
+      "required": false
+    },
+    {
+      "id": "extradelight:carrot_jam",
+      "required": false
+    },
+    {
+      "id": "delightful:glow_jelly_bottle",
+      "required": false
+    },
+    {
+      "id": "delightful:jelly_bottle",
+      "required": false
+    },
+    {
+      "id": "handcrafted:berry_jam_jar",
+      "required": false
+    }
+  ]
+}

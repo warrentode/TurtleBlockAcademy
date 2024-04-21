@@ -1,0 +1,64 @@
+{
+  "values": [
+    {
+      "id": "aether:aechor_plant",
+      "required": false
+    },
+    {
+      "id": "aether:cockatrice",
+      "required": false
+    },
+    {
+      "id": "aether:fire_minion",
+      "required": false
+    },
+    {
+      "id": "aether:sentry",
+      "required": false
+    },
+    {
+      "id": "aether:blue_swet",
+      "required": false
+    },
+    {
+      "id": "aether:golden_swet",
+      "required": false
+    },
+    {
+      "id": "aether:whirlwind",
+      "required": false
+    },
+    {
+      "id": "aether:evil_whirlwind",
+      "required": false
+    },
+    {
+      "id": "aether:valkyrie",
+      "required": false
+    },
+    {
+      "id": "aether:zephyr",
+      "required": false
+    },
+    {
+      "id": "unusualend:bolok",
+      "required": false
+    },
+    {
+      "id": "unusualend:dragling",
+      "required": false
+    },
+    {
+      "id": "unusualend:ender_blob",
+      "required": false
+    },
+    {
+      "id": "unusualend:undead_enderling",
+      "required": false
+    },
+    {
+      "id": "unusualend:endstone_trapper",
+      "required": false
+    }
+  ]
+}

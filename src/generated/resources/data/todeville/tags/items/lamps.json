@@ -1,0 +1,96 @@
+{
+  "values": [
+    {
+      "id": "additional_lights:al_lamp_magenta_wool",
+      "required": false
+    },
+    {
+      "id": "additional_lights:al_lamp_pink_wool",
+      "required": false
+    },
+    {
+      "id": "additional_lights:al_lamp_packed_ice",
+      "required": false
+    },
+    {
+      "id": "additional_lights:al_lamp_diamond_block",
+      "required": false
+    },
+    {
+      "id": "additional_lights:al_lamp_gold_block",
+      "required": false
+    },
+    {
+      "id": "additional_lights:al_lamp_iron_block",
+      "required": false
+    },
+    {
+      "id": "additional_lights:al_lamp_glass",
+      "required": false
+    },
+    {
+      "id": "additional_lights:al_lamp_blackstone",
+      "required": false
+    },
+    {
+      "id": "additional_lights:al_lamp_red_nether_bricks",
+      "required": false
+    },
+    {
+      "id": "additional_lights:al_lamp_nether_bricks",
+      "required": false
+    },
+    {
+      "id": "additional_lights:al_lamp_end_stone",
+      "required": false
+    },
+    {
+      "id": "additional_lights:al_lamp_sandstone",
+      "required": false
+    },
+    {
+      "id": "additional_lights:al_lamp_stone",
+      "required": false
+    },
+    {
+      "id": "additional_lights:al_lamp_mossy_cobblestone",
+      "required": false
+    },
+    {
+      "id": "additional_lights:al_lamp_cobblestone",
+      "required": false
+    },
+    {
+      "id": "additional_lights:al_lamp_warped_planks",
+      "required": false
+    },
+    {
+      "id": "additional_lights:al_lamp_crimson_planks",
+      "required": false
+    },
+    {
+      "id": "additional_lights:al_lamp_jungle_planks",
+      "required": false
+    },
+    {
+      "id": "additional_lights:al_lamp_spruce_planks",
+      "required": false
+    },
+    {
+      "id": "additional_lights:al_lamp_dark_oak_planks",
+      "required": false
+    },
+    {
+      "id": "additional_lights:al_lamp_oak_planks",
+      "required": false
+    },
+    {
+      "id": "additional_lights:al_lamp_birch_planks",
+      "required": false
+    },
+    {
+      "id": "additional_lights:al_lamp_acacia_planks",
+      "required": false
+    }
+  ]
+}

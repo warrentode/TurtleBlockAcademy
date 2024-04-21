@@ -1,0 +1,104 @@
+{
+  "values": [
+    {
+      "id": "justoutdoorstuffs:patio_bbq_grill",
+      "required": false
+    },
+    {
+      "id": "justoutdoorstuffs:patio_checkers_set",
+      "required": false
+    },
+    {
+      "id": "justoutdoorstuffs:patio_tea_set",
+      "required": false
+    },
+    {
+      "id": "justoutdoorstuffs:patio_coffee_table_glass",
+      "required": false
+    },
+    {
+      "id": "justoutdoorstuffs:patio_coffee_table",
+      "required": false
+    },
+    {
+      "id": "justoutdoorstuffs:patio_side_table",
+      "required": false
+    },
+    {
+      "id": "justoutdoorstuffs:patio_lounge_chair",
+      "required": false
+    },
+    {
+      "id": "justoutdoorstuffs:patio_bench",
+      "required": false
+    },
+    {
+      "id": "justoutdoorstuffs:patio_sofa_stool",
+      "required": false
+    },
+    {
+      "id": "justoutdoorstuffs:patio_sofa_chaise",
+      "required": false
+    },
+    {
+      "id": "justoutdoorstuffs:patio_sofa_corner",
+      "required": false
+    },
+    {
+      "id": "justoutdoorstuffs:patio_sofa_right",
+      "required": false
+    },
+    {
+      "id": "justoutdoorstuffs:patio_sofa_mid",
+      "required": false
+    },
+    {
+      "id": "justoutdoorstuffs:patio_sofa_left",
+      "required": false
+    },
+    {
+      "id": "justoutdoorstuffs:patio_armchair",
+      "required": false
+    },
+    {
+      "id": "justoutdoorstuffs:patio_iron_rocking_chair",
+      "required": false
+    },
+    {
+      "id": "justoutdoorstuffs:patio_modern_planter_white",
+      "required": false
+    },
+    {
+      "id": "justoutdoorstuffs:patio_modern_planter_black",
+      "required": false
+    },
+    {
+      "id": "justoutdoorstuffs:patio_iron_planter",
+      "required": false
+    },
+    {
+      "id": "justoutdoorstuffs:patio_iron_table_wide",
+      "required": false
+    },
+    {
+      "id": "justoutdoorstuffs:patio_iron_table_large",
+      "required": false
+    },
+    {
+      "id": "justoutdoorstuffs:patio_iron_table_small",
+      "required": false
+    },
+    {
+      "id": "justoutdoorstuffs:patio_iron_bench",
+      "required": false
+    },
+    {
+      "id": "justoutdoorstuffs:patio_iron_stool",
+      "required": false
+    },
+    {
+      "id": "justoutdoorstuffs:patio_iron_chair",
+      "required": false
+    }
+  ]
+}

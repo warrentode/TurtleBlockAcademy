@@ -1,0 +1,20 @@
+{
+  "values": [
+    {
+      "id": "dungeons_mobs:snareling",
+      "required": false
+    },
+    {
+      "id": "dungeons_mobs:watchling",
+      "required": false
+    },
+    {
+      "id": "dungeons_mobs:blastling",
+      "required": false
+    },
+    {
+      "id": "dungeons_mobs:endersent",
+      "required": false
+    }
+  ]
+}

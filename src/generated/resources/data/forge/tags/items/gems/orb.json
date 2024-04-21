@@ -1,0 +1,24 @@
+{
+  "values": [
+    {
+      "id": "unusualend:golem_orb",
+      "required": false
+    },
+    {
+      "id": "unusualend:nether_orb",
+      "required": false
+    },
+    {
+      "id": "unusualend:wither_orb",
+      "required": false
+    },
+    {
+      "id": "unusualend:shulker_orb",
+      "required": false
+    },
+    {
+      "id": "unusualend:shiny_gloopstone",
+      "required": false
+    }
+  ]
+}

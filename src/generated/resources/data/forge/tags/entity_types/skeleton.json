@@ -1,0 +1,24 @@
+{
+  "values": [
+    {
+      "id": "dungeons_mobs:sunken_skeleton",
+      "required": false
+    },
+    {
+      "id": "dungeons_mobs:drowned_necromancer",
+      "required": false
+    },
+    {
+      "id": "dungeons_mobs:necromancer",
+      "required": false
+    },
+    {
+      "id": "dungeons_mobs:mossy_skeleton",
+      "required": false
+    },
+    {
+      "id": "dungeons_mobs:skeleton_vanguard",
+      "required": false
+    }
+  ]
+}

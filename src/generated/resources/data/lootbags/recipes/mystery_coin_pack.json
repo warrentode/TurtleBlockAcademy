@@ -1,0 +1,9 @@
+{
+  "type": "lootbags:loot",
+  "color": "purple",
+  "name": "Mystery Coin Pack",
+  "output": {
+    "table": "lootbags:loot_bags/mystery_coin_pack"
+  },
+  "rarity": "EPIC"
+}

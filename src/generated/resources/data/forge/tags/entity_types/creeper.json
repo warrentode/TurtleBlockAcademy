@@ -1,0 +1,36 @@
+{
+  "values": [
+    {
+      "id": "dungeons_mobs:poison_anemone",
+      "required": false
+    },
+    {
+      "id": "dungeons_mobs:quick_growing_kelp",
+      "required": false
+    },
+    {
+      "id": "dungeons_mobs:wavewhisperer",
+      "required": false
+    },
+    {
+      "id": "dungeons_mobs:whisperer",
+      "required": false
+    },
+    {
+      "id": "dungeons_mobs:leapleaf",
+      "required": false
+    },
+    {
+      "id": "dungeons_mobs:quick_growing_vine",
+      "required": false
+    },
+    {
+      "id": "dungeons_mobs:poison_quill_vine",
+      "required": false
+    },
+    {
+      "id": "dungeons_mobs:icy_creeper",
+      "required": false
+    }
+  ]
+}

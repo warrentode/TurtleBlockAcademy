@@ -1,0 +1,48 @@
+{
+  "values": [
+    {
+      "id": "mcwdoors:print_waffle",
+      "required": false
+    },
+    {
+      "id": "mcwdoors:print_swamp",
+      "required": false
+    },
+    {
+      "id": "mcwdoors:print_spruce",
+      "required": false
+    },
+    {
+      "id": "mcwdoors:print_oak",
+      "required": false
+    },
+    {
+      "id": "mcwdoors:print_nether",
+      "required": false
+    },
+    {
+      "id": "mcwdoors:print_dark_oak",
+      "required": false
+    },
+    {
+      "id": "mcwdoors:print_mystic",
+      "required": false
+    },
+    {
+      "id": "mcwdoors:print_jungle",
+      "required": false
+    },
+    {
+      "id": "mcwdoors:print_birch",
+      "required": false
+    },
+    {
+      "id": "mcwdoors:print_bamboo",
+      "required": false
+    },
+    {
+      "id": "mcwdoors:print_acacia",
+      "required": false
+    }
+  ]
+}

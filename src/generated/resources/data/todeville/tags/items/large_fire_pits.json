@@ -1,0 +1,92 @@
+{
+  "values": [
+    {
+      "id": "additional_lights:fire_pit_l_cobblestone",
+      "required": false
+    },
+    {
+      "id": "additional_lights:fire_pit_l_mossy_cobblestone",
+      "required": false
+    },
+    {
+      "id": "additional_lights:fire_pit_l_stone",
+      "required": false
+    },
+    {
+      "id": "additional_lights:fire_pit_l_stone_bricks",
+      "required": false
+    },
+    {
+      "id": "additional_lights:fire_pit_l_mossy_stone_bricks",
+      "required": false
+    },
+    {
+      "id": "additional_lights:fire_pit_l_smooth_stone",
+      "required": false
+    },
+    {
+      "id": "additional_lights:fire_pit_l_polished_andesite",
+      "required": false
+    },
+    {
+      "id": "additional_lights:fire_pit_l_polished_diorite",
+      "required": false
+    },
+    {
+      "id": "additional_lights:fire_pit_l_polished_granite",
+      "required": false
+    },
+    {
+      "id": "additional_lights:fire_pit_l_sandstone",
+      "required": false
+    },
+    {
+      "id": "additional_lights:fire_pit_l_cut_sandstone",
+      "required": false
+    },
+    {
+      "id": "additional_lights:fire_pit_l_end_stone",
+      "required": false
+    },
+    {
+      "id": "additional_lights:fire_pit_l_end_stone_bricks",
+      "required": false
+    },
+    {
+      "id": "additional_lights:fire_pit_l_nether_bricks",
+      "required": false
+    },
+    {
+      "id": "additional_lights:fire_pit_l_red_nether_bricks",
+      "required": false
+    },
+    {
+      "id": "additional_lights:fire_pit_l_polished_blackstone",
+      "required": false
+    },
+    {
+      "id": "additional_lights:fire_pit_l_iron_block",
+      "required": false
+    },
+    {
+      "id": "additional_lights:fire_pit_l_gold_block",
+      "required": false
+    },
+    {
+      "id": "additional_lights:fire_pit_l_diamond_block",
+      "required": false
+    },
+    {
+      "id": "additional_lights:fire_pit_l_packed_ice",
+      "required": false
+    },
+    {
+      "id": "additional_lights:fire_pit_l_pink_wool",
+      "required": false
+    },
+    {
+      "id": "additional_lights:fire_pit_l_magenta_wool",
+      "required": false
+    }
+  ]
+}

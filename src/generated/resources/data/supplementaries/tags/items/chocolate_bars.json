@@ -1,0 +1,20 @@
+{
+  "values": [
+    {
+      "id": "kawaiidishes:dark_chocolate_bar",
+      "required": false
+    },
+    {
+      "id": "kawaiidishes:milk_chocolate_bar",
+      "required": false
+    },
+    {
+      "id": "kawaiidishes:white_chocolate_bar",
+      "required": false
+    },
+    {
+      "id": "#supplementaries:chocolate_bars",
+      "required": false
+    }
+  ]
+}

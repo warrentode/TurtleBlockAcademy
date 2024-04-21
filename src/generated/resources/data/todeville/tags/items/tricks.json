@@ -1,0 +1,20 @@
+{
+  "values": [
+    {
+      "id": "domesticationinnovation:rotten_apple",
+      "required": false
+    },
+    {
+      "id": "domesticationinnovation:sinister_carrot",
+      "required": false
+    },
+    {
+      "id": "hauntedharvest:grim_apple",
+      "required": false
+    },
+    {
+      "id": "hauntedharvest:rotten_apple",
+      "required": false
+    }
+  ]
+}

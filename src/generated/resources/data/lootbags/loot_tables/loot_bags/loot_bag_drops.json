@@ -1,0 +1,210 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "conditions": [
+            {
+              "chance": 0.01,
+              "condition": "minecraft:random_chance"
+            }
+          ],
+          "name": "lootbags:loot_bags/legendary_bag_drop",
+          "quality": 6
+        },
+        {
+          "type": "minecraft:loot_table",
+          "conditions": [
+            {
+              "condition": "turtleblockacademy:seasonal_condition",
+              "season": "false"
+            },
+            {
+              "chance": 0.02,
+              "condition": "minecraft:random_chance"
+            }
+          ],
+          "name": "lootbags:loot_bags/birthday_bag_drop",
+          "quality": 5
+        },
+        {
+          "type": "minecraft:loot_table",
+          "conditions": [
+            {
+              "condition": "turtleblockacademy:seasonal_condition",
+              "season": "false"
+            },
+            {
+              "chance": 0.02,
+              "condition": "minecraft:random_chance"
+            }
+          ],
+          "name": "lootbags:loot_bags/halloween_bag_drop",
+          "quality": 5
+        },
+        {
+          "type": "minecraft:loot_table",
+          "conditions": [
+            {
+              "condition": "turtleblockacademy:seasonal_condition",
+              "season": "false"
+            },
+            {
+              "chance": 0.02,
+              "condition": "minecraft:random_chance"
+            }
+          ],
+          "name": "lootbags:loot_bags/christmas_bag_drop",
+          "quality": 5
+        },
+        {
+          "type": "minecraft:loot_table",
+          "conditions": [
+            {
+              "condition": "turtleblockacademy:seasonal_condition",
+              "season": "false"
+            },
+            {
+              "chance": 0.02,
+              "condition": "minecraft:random_chance"
+            }
+          ],
+          "name": "lootbags:loot_bags/anniversary_bag_drop",
+          "quality": 5
+        },
+        {
+          "type": "minecraft:loot_table",
+          "conditions": [
+            {
+              "condition": "turtleblockacademy:seasonal_condition",
+              "season": "false"
+            },
+            {
+              "chance": 0.02,
+              "condition": "minecraft:random_chance"
+            }
+          ],
+          "name": "lootbags:loot_bags/easter_bag_drop",
+          "quality": 5
+        },
+        {
+          "type": "minecraft:loot_table",
+          "conditions": [
+            {
+              "condition": "turtleblockacademy:seasonal_condition",
+              "season": "false"
+            },
+            {
+              "chance": 0.02,
+              "condition": "minecraft:random_chance"
+            }
+          ],
+          "name": "lootbags:loot_bags/new_year_bag_drop",
+          "quality": 5
+        },
+        {
+          "type": "minecraft:loot_table",
+          "conditions": [
+            {
+              "chance": 0.03,
+              "condition": "minecraft:random_chance"
+            }
+          ],
+          "name": "lootbags:loot_bags/epic_bag_drop",
+          "quality": 4,
+          "weight": 2
+        },
+        {
+          "type": "minecraft:loot_table",
+          "conditions": [
+            {
+              "chance": 0.04,
+              "condition": "minecraft:random_chance"
+            }
+          ],
+          "name": "lootbags:loot_bags/rare_bag_drop",
+          "quality": 3,
+          "weight": 3
+        },
+        {
+          "type": "minecraft:loot_table",
+          "conditions": [
+            {
+              "chance": 0.04,
+              "condition": "minecraft:random_chance"
+            }
+          ],
+          "name": "lootbags:loot_bags/lucky_lootbag_drop",
+          "quality": 3,
+          "weight": 3
+        },
+        {
+          "type": "minecraft:loot_table",
+          "conditions": [
+            {
+              "chance": 0.05,
+              "condition": "minecraft:random_chance"
+            }
+          ],
+          "name": "lootbags:loot_bags/uncommon_bag_drop",
+          "quality": 2,
+          "weight": 4
+        },
+        {
+          "type": "minecraft:loot_table",
+          "conditions": [
+            {
+              "condition": "minecraft:alternative",
+              "terms": [
+                {
+                  "condition": "minecraft:location_check",
+                  "predicate": {}
+                },
+                {
+                  "condition": "turtleblockacademy:biometag_condition",
+                  "tag": "forge:is_underground"
+                }
+              ]
+            },
+            {
+              "chance": 0.06,
+              "condition": "minecraft:random_chance"
+            }
+          ],
+          "name": "lootbags:loot_bags/common_bag_drop",
+          "quality": 1,
+          "weight": 5
+        },
+        {
+          "type": "minecraft:loot_table",
+          "conditions": [
+            {
+              "condition": "minecraft:alternative",
+              "terms": [
+                {
+                  "condition": "minecraft:location_check",
+                  "predicate": {}
+                },
+                {
+                  "condition": "turtleblockacademy:biometag_condition",
+                  "tag": "forge:is_underground"
+                }
+              ]
+            },
+            {
+              "chance": 0.06,
+              "condition": "minecraft:random_chance"
+            }
+          ],
+          "name": "lootbags:loot_bags/rations_bag_drop",
+          "quality": 1,
+          "weight": 5
+        }
+      ],
+      "rolls": 1.0
+    }
+  ]
+}

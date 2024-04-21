@@ -1,0 +1,12 @@
+{
+  "values": [
+    {
+      "id": "unusualend:ancient_shard",
+      "required": false
+    },
+    {
+      "id": "aether:life_shard",
+      "required": false
+    }
+  ]
+}

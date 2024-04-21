@@ -1,0 +1,12 @@
+{
+  "values": [
+    {
+      "id": "ecologics:coconut",
+      "required": false
+    },
+    {
+      "id": "ecologics:coconut_slice",
+      "required": false
+    }
+  ]
+}

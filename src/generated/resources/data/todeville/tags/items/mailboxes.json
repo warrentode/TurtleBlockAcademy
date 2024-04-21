@@ -1,0 +1,40 @@
+{
+  "values": [
+    {
+      "id": "mighty_mail:oak_mail_box",
+      "required": false
+    },
+    {
+      "id": "mighty_mail:spruce_mail_box",
+      "required": false
+    },
+    {
+      "id": "mighty_mail:birch_mail_box",
+      "required": false
+    },
+    {
+      "id": "mighty_mail:jungle_mail_box",
+      "required": false
+    },
+    {
+      "id": "mighty_mail:acacia_mail_box",
+      "required": false
+    },
+    {
+      "id": "mighty_mail:dark_oak_mail_box",
+      "required": false
+    },
+    {
+      "id": "mighty_mail:crimson_mail_box",
+      "required": false
+    },
+    {
+      "id": "mighty_mail:warped_mail_box",
+      "required": false
+    },
+    {
+      "id": "mighty_mail:mangrove_mail_box",
+      "required": false
+    }
+  ]
+}

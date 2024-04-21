@@ -1,0 +1,24 @@
+{
+  "values": [
+    {
+      "id": "dungeons_mobs:endersent",
+      "required": false
+    },
+    {
+      "id": "aether:sun_spirit",
+      "required": false
+    },
+    {
+      "id": "aether:slider",
+      "required": false
+    },
+    {
+      "id": "aether:valkyrie_queen",
+      "required": false
+    },
+    {
+      "id": "unusualend:endstone_golem",
+      "required": false
+    }
+  ]
+}

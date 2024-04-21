@@ -1,0 +1,16 @@
+{
+  "values": [
+    {
+      "id": "dungeons_mobs:redstone_cube",
+      "required": false
+    },
+    {
+      "id": "dungeons_mobs:squall_golem",
+      "required": false
+    },
+    {
+      "id": "dungeons_mobs:redstone_golem",
+      "required": false
+    }
+  ]
+}

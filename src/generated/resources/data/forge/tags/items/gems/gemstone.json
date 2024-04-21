@@ -1,0 +1,32 @@
+{
+  "values": [
+    {
+      "id": "moa_decor_bath:gemadbano",
+      "required": false
+    },
+    {
+      "id": "moa_decor_art:gemadearte",
+      "required": false
+    },
+    {
+      "id": "moa_decor_cookery:gemadecocina",
+      "required": false
+    },
+    {
+      "id": "moa_decor_garden_:gemadejardin",
+      "required": false
+    },
+    {
+      "id": "moa_decor_science:gemadeciencia",
+      "required": false
+    },
+    {
+      "id": "moa_decor_toys:gemadejuguetes",
+      "required": false
+    },
+    {
+      "id": "moa_decor_holidays:gema_festividades",
+      "required": false
+    }
+  ]
+}

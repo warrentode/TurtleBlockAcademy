@@ -1,0 +1,16 @@
+{
+  "values": [
+    {
+      "id": "phantasm:crystal_spike_tip",
+      "required": false
+    },
+    {
+      "id": "phantasm:void_crystal_spike_tip",
+      "required": false
+    },
+    {
+      "id": "unusualend:shiny_crystal",
+      "required": false
+    }
+  ]
+}

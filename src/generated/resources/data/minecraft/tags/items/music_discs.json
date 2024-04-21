@@ -1,0 +1,52 @@
+{
+  "values": [
+    {
+      "id": "aether:music_disc_aether_tune",
+      "required": false
+    },
+    {
+      "id": "aether:music_disc_high",
+      "required": false
+    },
+    {
+      "id": "aether:music_disc_chinchilla",
+      "required": false
+    },
+    {
+      "id": "aether:music_disc_ascending_dawn",
+      "required": false
+    },
+    {
+      "id": "supplementaries:pancake",
+      "required": false
+    },
+    {
+      "id": "ecologics:music_disc_coconut",
+      "required": false
+    },
+    {
+      "id": "biomesoplenty:music_disc_wanderer",
+      "required": false
+    },
+    {
+      "id": "snowyspirit:winter_disc",
+      "required": false
+    },
+    {
+      "id": "unusualend:music_disc_flying_ships",
+      "required": false
+    },
+    {
+      "id": "unusualend:music_disc_endstone_golem_theme",
+      "required": false
+    },
+    {
+      "id": "todevillagers:chakra_dream_music_disc",
+      "required": false
+    },
+    {
+      "id": "decoration_delight:cookin_disc",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:dragon_egg"
+        }
+      ],
+      "rolls": 1.0
+    },
+    {
+      "bonus_rolls": 1.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:dragon_head"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:dragon_breath"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "ends_delight:dragon_tooth"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "ends_delight:dragon_egg_shell"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "ends_delight:non_hatchable_dragon_egg"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "ends_delight:dragon_leg_with_sauce_block"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "ends_delight:dragon_tooth"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "ends_delight:raw_dragon_meat"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "ends_delight:dragon_tooth"
+        }
+      ],
+      "rolls": {
+        "type": "minecraft:uniform",
+        "max": 2.0,
+        "min": 1.0
+      }
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "values": [
+    {
+      "id": "supplementaries:stone_lamp",
+      "required": false
+    },
+    {
+      "id": "supplementaries:blackstone_lamp",
+      "required": false
+    },
+    {
+      "id": "supplementaries:deepslate_lamp",
+      "required": false
+    },
+    {
+      "id": "supplementaries:end_stone_lamp",
+      "required": false
+    }
+  ]
+}
