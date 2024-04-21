@@ -89,6 +89,9 @@ public class LootbagLootTablesGen implements Consumer<BiConsumer<ResourceLocatio
                         .add(LootItem.lootTableItem(Objects.requireNonNull(TinkerFluids.blazingBlood.getBucket()))
                                 .when(LootItemRandomChanceCondition.randomChance(0.1F))
                                 .apply(SetItemCountFunction.setCount(UniformGenerator.between(1, 4))))
+                        .add(LootTableReference.lootTableReference(LootbagLootTables.ARTIFACTS_GIFTS)
+                                .when(LootItemRandomChanceCondition.randomChance(0.01F))
+                                .apply(SetItemCountFunction.setCount(ConstantValue.exactly(1))))
                 ));
 
         //noinspection deprecation

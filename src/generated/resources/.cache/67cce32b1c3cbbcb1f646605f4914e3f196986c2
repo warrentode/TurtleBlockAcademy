@@ -1,4 +1,4 @@
-// 1.19.2	2024-04-21T17:38:19.9048915	LootTables
+// 1.19.2	2024-04-21T18:03:56.6640364	LootTables
 87a0cbf6a892b17ac0de9da47bde823b2367a6cc data/dimdungeons/loot_tables/chests/kit_blackstone.json
 533d2aa87558096bd71d1450da535454b8f7f929 data/dimdungeons/loot_tables/chests/kit_brick_set.json
 d297fc4885d818c44a6dcbe76a13fd827f547bb2 data/dimdungeons/loot_tables/chests/kit_christmas_blocks.json
@@ -32,6 +32,7 @@ c730f5e17cd921455c137578beafacbf6324a47d data/friendsandfoes/loot_tables/cageriu
 c0728dcd41efff247224a0332843672f740dbd68 data/friendsandfoes/loot_tables/cagerium/wildfire.json
 80acae163148dea59a1024a6d5cfdd9c5af65e9a data/lootbags/loot_tables/loot_bags/anniversary_bag_drop.json
 70e0cca7ec20a56e211b0f651e481ef9ffa70b8f data/lootbags/loot_tables/loot_bags/anniversary_lootbag.json
+73a6ba02ddd1f384ed4cf7ba6d42a68c877e2c35 data/lootbags/loot_tables/loot_bags/artifacts_gifts.json
 9d4bf28d8aa70bc220d65af75a9407f57fb064ab data/lootbags/loot_tables/loot_bags/birthday_bag_drop.json
 0f0c6b0e0c8d998abde76a9233c3714d6d475bb7 data/lootbags/loot_tables/loot_bags/birthday_lootbag.json
 bfe53d62f136cd4b8ccd3f70b19c366ddb889122 data/lootbags/loot_tables/loot_bags/christmas_bag_drop.json
@@ -42,7 +43,7 @@ e28febb090c03d1368adf05a1036aa9848311277 data/lootbags/loot_tables/loot_bags/eas
 a3fa7d964e857a725651f36071747d7a9d9201a2 data/lootbags/loot_tables/loot_bags/easter_lootbag.json
 0c0441a19d7dbac88bfa56e2278c7a551563c7bf data/lootbags/loot_tables/loot_bags/end_map_sale.json
 5ac5a7d7688c4c4bfc28a5d4ecc7420f803be472 data/lootbags/loot_tables/loot_bags/epic_bag_drop.json
-ab476c875b61c6c4ef6119d068050fedd8effafd data/lootbags/loot_tables/loot_bags/epic_lootbag.json
+6317d4fdf2a6f36b91ae03fe1773907dfd0582ce data/lootbags/loot_tables/loot_bags/epic_lootbag.json
 49fe866af53d1f265719607de862632811d93984 data/lootbags/loot_tables/loot_bags/halloween_bag_drop.json
 6924e2bd8be3750cd854623fe7d517dfa17a42aa data/lootbags/loot_tables/loot_bags/jungle_map_sale.json
 72ee509467ac5abacd2c4b55af5d46d864012e07 data/lootbags/loot_tables/loot_bags/legendary_bag_drop.json

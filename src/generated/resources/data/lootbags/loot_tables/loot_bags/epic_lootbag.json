@@ -78,6 +78,23 @@
             }
           ],
           "name": "tconstruct:blazing_blood_bucket"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "conditions": [
+            {
+              "chance": 0.01,
+              "condition": "minecraft:random_chance"
+            }
+          ],
+          "functions": [
+            {
+              "add": false,
+              "count": 1.0,
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "lootbags:loot_bags/artifacts_gifts"
         }
       ],
       "rolls": 1.0
