@@ -1,0 +1,19 @@
+{
+  "name": "Kettle",
+  "sortnum": 2,
+  "icon": "farmersrespite:kettle",
+  "category": "turtleblockacademy:equipment_category",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "A kettle needs to be filled with water before you can start brewing with it.",
+      "anchor": "kettle"
+    },
+    {
+      "type": "patchouli:crafting",
+      "title": "Kettle Recipe",
+      "recipe": "farmersrespite:kettle",
+      "text": "You can craft this using the crafting table or workbench."
+    }
+  ]
+}

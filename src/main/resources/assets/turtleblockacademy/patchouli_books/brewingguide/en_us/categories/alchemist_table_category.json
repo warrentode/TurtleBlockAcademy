@@ -1,0 +1,6 @@
+{
+  "name": "Alchemist Brewing Guide",
+  "sortnum": 5,
+  "description": "This section is for brewing with the Alchemist Table.$(br2)With this table you have a 1 in 3 chance of converting one potion into 3 new potions.$(br2)BUT BEWARE: you also have a 2 in 3 chance of it exploding instead.",
+  "icon": "villagersplus:alchemist_table"
+}

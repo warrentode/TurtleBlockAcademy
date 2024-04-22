@@ -1,0 +1,62 @@
+{
+  "name": "Keg Recipes",
+  "sortnum": 1,
+  "icon": "drinkbeer:beer_mug",
+  "category": "turtleblockacademy:keg_category",
+  "pages": [
+    {
+      "type": "spotlight",
+      "item": "drinkbeer:beer_mug",
+      "text": "$(li)Base: Empty Beer Mug x4$(li)Ingredients:$(li2)Water Bucket$(li2)Wheat x3",
+      "anchor": "beer_mug"
+    },
+    {
+      "type": "spotlight",
+      "item": "drinkbeer:beer_mug_apple_lambic",
+      "text": "$(li)Base: Empty Beer Mug x4$(li)Ingredients:$(li2)Water Bucket$(li2)Wheat x2$(li2)Apple",
+      "anchor": "beer_mug_apple_lambic"
+    },
+    {
+      "type": "spotlight",
+      "item": "drinkbeer:beer_mug_blaze_stout",
+      "text": "$(li)Base: Empty Beer Mug x4$(li)Ingredients:$(li2)Water Bucket$(li2)Wheat x2$(li2)Blaze Powder",
+      "anchor": "beer_mug_blaze_stout"
+    },
+    {
+      "type": "spotlight",
+      "item": "drinkbeer:beer_mug_blaze_milk_stout",
+      "text": "$(li)Base: Empty Beer Mug x4$(li)Ingredients:$(li2)Water Bucket$(li2)Wheat$(li2)Blaze Powder$(li2)Sugar",
+      "anchor": "beer_mug_blaze_milk_stout"
+    },
+    {
+      "type": "spotlight",
+      "item": "drinkbeer:beer_mug_frothy_pink_eggnog",
+      "text": "$(li)Base: Empty Beer Mug x4$(li)Ingredients:$(li2)Milk Bucket$(li2)Wheat$(li2)Beetroot$(li2)Egg",
+      "anchor": "beer_mug_frothy_pink_eggnog"
+    },
+    {
+      "type": "spotlight",
+      "item": "drinkbeer:beer_mug_haars_icey_pale_lager",
+      "text": "$(li)Base: Empty Beer Mug x4$(li)Ingredients:$(li2)Ice Block -OR- Packed Ice -OR- Blue Ice$(li2)Wheat x3",
+      "anchor": "beer_mug_haars_icey_pale_lager"
+    },
+    {
+      "type": "spotlight",
+      "item": "drinkbeer:beer_mug_night_howl_kvass",
+      "text": "$(li)Base: Empty Beer Mug x4$(li)Ingredients:$(li2)Water Bucket$(li2)Bread x2$(li2)Bone",
+      "anchor": "beer_mug_night_howl_kvass"
+    },
+    {
+      "type": "spotlight",
+      "item": "drinkbeer:beer_mug_pumpkin_kvass",
+      "text": "$(li)Base: Empty Beer Mug x4$(li)Ingredients:$(li2)Water Bucket$(li2)Bread x2$(li2)Pumpkin",
+      "anchor": "beer_mug_pumpkin_kvass"
+    },
+    {
+      "type": "spotlight",
+      "item": "drinkbeer:beer_mug_sweet_berry_kriek",
+      "text": "$(li)Base: Empty Beer Mug x4$(li)Ingredients:$(li2)Water Bucket$(li2)Wheat x2$(li2)Sweet Berries",
+      "anchor": "beer_mug_sweet_berry_kriek"
+    }
+  ]
+}

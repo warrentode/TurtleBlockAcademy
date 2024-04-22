@@ -1,0 +1,38 @@
+{
+  "name": "Base Potions",
+  "sortnum": 3,
+  "icon": "minecraft:potion{Potion: \"minecraft:water\"}",
+  "category": "turtleblockacademy:brewing_stand_category",
+  "pages": [
+    {
+      "type": "spotlight",
+      "item": "minecraft:potion{Potion: \"minecraft:water\"}",
+      "text": "$(li)Base: Glass Bottle$(li)Ingredient: Just Fill with Water$(li)Modifiers:$(li2)$(l:modifiers#gunpowder)Gunpowder$(/l)$(li2)$(l:modifiers#dragon_breath)Dragon's Breath$(/l)",
+      "anchor": "water"
+    },
+    {
+      "type": "spotlight",
+      "item": "minecraft:potion{Potion: \"minecraft:awkward\"}",
+      "text": "$(li)Base: Water Bottle$(li)Ingredient: Nether Wart",
+      "anchor": "awkward"
+    },
+    {
+      "type": "spotlight",
+      "item": "minecraft:potion{Potion: \"minecraft:mundane\"}",
+      "text": "$(li)Base: Water Bottle$(li)Ingredient: Any of:$(li2)Spider Eye$(li2)Ghast Tear$(li2)Rabbit's Foot$(li2)Blaze Powder$(li2)Glistering Melon$(li2)Sugar$(li2)Magma Cream$(li2)Redstone Dust",
+      "anchor": "mundane"
+    },
+    {
+      "type": "spotlight",
+      "item": "minecraft:potion{Potion: \"minecraft:thick\"}",
+      "text": "$(li)Base: Water Bottle$(li)Ingredient: Glowstone Dust",
+      "anchor": "thick"
+    },
+    {
+      "type": "spotlight",
+      "item": "minecraft:potion{Potion: \"minecraft:weakness\"}",
+      "text": "$(li)Base: Water Bottle$(li)Ingredient: Fermented Spider Eye$(li)Modifiers:$(li2)$(l:modifiers#gunpowder)Gunpowder$(/l)$(li2)$(l:modifiers#dragon_breath)Dragon's Breath$(/l)$(li2)$(l:base_potions#redstone)Redstone Dust$(/l)",
+      "anchor": "weakness"
+    }
+  ]
+}

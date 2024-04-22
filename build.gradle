@@ -131,7 +131,7 @@ dependencies {
     implementation fg.deobf("curse.maven:ecologics-570463:4171285")
     implementation fg.deobf("curse.maven:unusual-end-617757:4549776")
     implementation fg.deobf("curse.maven:phantasm-565254:4398465")
-    implementation fg.deobf("curse.maven:aether-255308:4950449")
+    implementation fg.deobf("curse.maven:aether-255308:5263399")
     implementation fg.deobf("curse.maven:advanced-mining-dimension-332640:4973553")
 
     // delight and food mod set
@@ -185,10 +185,14 @@ dependencies {
     implementation fg.deobf("curse.maven:friends-and-foes-forge-602059:5184433")
     implementation fg.deobf("curse.maven:guard-villagers-360203:4701400")
     implementation fg.deobf("curse.maven:beautify-decorate-633252:4036351")
+    implementation fg.deobf("curse.maven:villagersplus-forge-817272:4370425")
 
     // tinker mod set
     implementation fg.deobf("curse.maven:mantle-74924:5245271")
     implementation fg.deobf("curse.maven:tinkers-construct-74072:5245284")
+
+    // patchouli
+    implementation fg.deobf("curse.maven:patchouli-306770:4031402")
 
     // sponge mixin
     annotationProcessor 'org.spongepowered:mixin:0.8.5:processor'

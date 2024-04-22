@@ -1,0 +1,26 @@
+{
+  "name": "Glass Bottle",
+  "sortnum": 9,
+  "icon": "minecraft:glass_bottle",
+  "category": "turtleblockacademy:equipment_category",
+  "pages": [
+    {
+      "type": "spotlight",
+      "item": "minecraft:glass_bottle",
+      "text": "Use this to hold water or to hold your potions and other brewed beverages.",
+      "anchor": "glass_bottle"
+    },
+    {
+      "type": "patchouli:crafting",
+      "title": "Glass Bottle Recipe",
+      "recipe": "minecraft:glass_bottle",
+      "text": "You can craft this using the crafting table or workbench."
+    },
+    {
+      "type": "patchouli:smelting",
+      "title": "Glass Bottle Recipe",
+      "recipe": "minecraft:glass_bottle_from_smelting_any_glass_block",
+      "text": "You can also craft this by smelting or blasting any one glass block."
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "name": "Keg Brewing Guide",
+  "sortnum": 4,
+  "description": "This section is for brewing with the keg.$(br2)Each beer has potion-like effects, so be sure to check out the recipes on the right for more information.$(br2)Keep in mind that brewing these take much longer than other brewing methods.$(br2)These beverages will give you the drunk effect!",
+  "icon": "drinkbeer:beer_barrel"
+}

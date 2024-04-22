@@ -1,0 +1,19 @@
+{
+  "name": "Keg",
+  "sortnum": 3,
+  "icon": "drinkbeer:beer_barrel",
+  "category": "turtleblockacademy:equipment_category",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "The keg is used to brew beer.",
+      "anchor": "keg"
+    },
+    {
+      "type": "patchouli:crafting",
+      "title": "Keg Recipe",
+      "recipe": "drinkbeer:beer_barrel",
+      "text": "You can craft this using the crafting table or workbench."
+    }
+  ]
+}

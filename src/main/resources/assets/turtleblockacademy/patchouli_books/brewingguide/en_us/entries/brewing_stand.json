@@ -1,0 +1,19 @@
+{
+  "name": "Brewing Stand",
+  "sortnum": 1,
+  "icon": "minecraft:brewing_stand",
+  "category": "turtleblockacademy:equipment_category",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "First, you need to either have access to a brewing stand or have one of your own.$(br2)To obtain one, you can either steal it from a village, or craft it for yourself.$(br2)Once you have that, you'll need Blaze Powder, Glass Bottles, and access to Water.",
+      "anchor": "brewing_stand"
+    },
+    {
+      "type": "patchouli:crafting",
+      "title": "Brewing Stand Recipe",
+      "recipe": "minecraft:brewing_stand",
+      "text": "You can craft this using the crafting table or workbench."
+    }
+  ]
+}

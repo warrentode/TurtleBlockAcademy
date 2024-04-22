@@ -1,0 +1,14 @@
+{
+  "name": "Alchemy Recipes",
+  "sortnum": 1,
+  "icon": "minecraft:gunpowder",
+  "category": "turtleblockacademy:alchemist_table_category",
+  "pages": [
+    {
+      "type": "spotlight",
+      "item": "minecraft:potion",
+      "text": "$(li)Base: Bottle of Water x3$(li)Ingredients:$(li2)Any One Potion",
+      "anchor": "random_potion"
+    }
+  ]
+}

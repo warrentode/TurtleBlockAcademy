@@ -108,7 +108,8 @@ side = "BOTH"
 [[dependencies.${ mod_id }]]
 modId = "aether"
 mandatory = true
-versionRange = "[1.19.2-1.0.0-beta.2.1-forge,)"
+versionRange = "[1.19.2-1.4.0-forge,)"
+versionRange = "[1.19.2-1.4.0-forge,)"
 ordering = "NONE"
 side = "BOTH"
 
@@ -419,5 +420,19 @@ side = "BOTH"
 modId = "artifacts"
 mandatory = true
 versionRange = "[1.19.2-5.0.5,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.${ mod_id }]]
+modId = "patchouli"
+mandatory = true
+versionRange = "[1.19.2-77,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.${ mod_id }]]
+modId = "villagersplus"
+mandatory = true
+versionRange = "[1.2,)"
 ordering = "NONE"
 side = "BOTH"

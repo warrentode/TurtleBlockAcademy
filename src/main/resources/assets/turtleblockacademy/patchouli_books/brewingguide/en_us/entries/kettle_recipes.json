@@ -1,0 +1,218 @@
+{
+  "name": "Kettle Recipes",
+  "sortnum": 1,
+  "icon": "farmersrespite:black_tea",
+  "category": "turtleblockacademy:kettle_category",
+  "pages": [
+    {
+      "type": "spotlight",
+      "item": "farmersdelight:apple_cider",
+      "text": "$(li)Base: Glass Bottle$(li)Ingredients:$(li2)Apple$(li2)Sugar",
+      "anchor": "apple_cider"
+    },
+    {
+      "type": "spotlight",
+      "item": "farmersrespite:long_apple_cider",
+      "text": "$(li)Base: Glass Bottle$(li)Ingredients:$(li2)$(l:kettle_recipes#apple_cider)Apple Cider$(/l)$(li2)Any Milk",
+      "anchor": "long_apple_cider"
+    },
+    {
+      "type": "spotlight",
+      "item": "farmersrespite:strong_apple_cider",
+      "text": "$(li)Base: Glass Bottle$(li)Ingredients:$(li2)$(l:kettle_recipes#apple_cider)Apple Cider$(/l)$(li2)Bottle of Honey",
+      "anchor": "strong_apple_cider"
+    },
+    {
+      "type": "spotlight",
+      "item": "farmersrespite:black_tea",
+      "text": "$(li)Base: Glass Bottle$(li)Ingredients:$(li2)Black Tea Leaves x2",
+      "anchor": "black_tea"
+    },
+    {
+      "type": "spotlight",
+      "item": "farmersrespite:long_black_tea",
+      "text": "$(li)Base: Glass Bottle$(li)Ingredients:$(li2)$(l:kettle_recipes#black_tea)Black Tea$(/l)$(li2)Any Milk",
+      "anchor": "long_black_tea"
+    },
+    {
+      "type": "spotlight",
+      "item": "farmersrespite:strong_black_tea",
+      "text": "$(li)Base: Glass Bottle$(li)Ingredients:$(li2)$(l:kettle_recipes#black_tea)Black Tea$(/l)$(li2)Bottle of Honey",
+      "anchor": "strong_black_tea"
+    },
+    {
+      "type": "spotlight",
+      "item": "ends_delight:bubble_tea",
+      "text": "$(li)Base: Glass Bottle$(li)Ingredients:$(li2)$(l:kettle_recipes#chorus_fruit_milk_tea)Chorus Fruit Milk Tea$(/l)$(li2)Ender Pearl Grain",
+      "anchor": "bubble_tea"
+    },
+    {
+      "type": "spotlight",
+      "item": "ends_delight:chorus_flower_tea",
+      "text": "$(li)Base: Glass Bottle$(li)Ingredients:$(li2)Ghast Tear$(li2)Dried Chorus Flower",
+      "anchor": "chorus_flower_tea"
+    },
+    {
+      "type": "spotlight",
+      "item": "ends_delight:chorus_fruit_milk_tea",
+      "text": "$(li)Base: Glass Bottle$(li)Ingredients:$(li2)Any Milk$(li2)Chorus Fruit",
+      "anchor": "chorus_fruit_milk_tea"
+    },
+    {
+      "type": "spotlight",
+      "item": "farmersrespite:coffee",
+      "text": "$(li)Base: Glass Bottle$(li)Ingredients:$(li2)Coffee Beans x2",
+      "anchor": "coffee"
+    },
+    {
+      "type": "spotlight",
+      "item": "farmersrespite:long_coffee",
+      "text": "$(li)Base: Glass Bottle$(li)Ingredients:$(li2)$(l:kettle_recipes#coffee)Coffee$(/l)$(li2)Any Milk",
+      "anchor": "long_coffee"
+    },
+    {
+      "type": "spotlight",
+      "item": "farmersrespite:strong_coffee",
+      "text": "$(li)Base: Glass Bottle$(li)Ingredients:$(li2)$(l:kettle_recipes#coffee)Coffee$(/l)$(li2)Bottle of Honey",
+      "anchor": "strong_coffee"
+    },
+    {
+      "type": "spotlight",
+      "item": "farmersrespite:dandelion_tea",
+      "text": "$(li)Base: Glass Bottle$(li)Ingredients:$(li2)Dandelion$(li2)Any Tea Leaves",
+      "anchor": "dandelion_tea"
+    },
+    {
+      "type": "spotlight",
+      "item": "farmersrespite:long_dandelion_tea",
+      "text": "$(li)Base: Glass Bottle$(li)Ingredients:$(li2)$(l:kettle_recipes#dandelion_tea)Dandelion Tea$(/l)$(li2)Any Milk",
+      "anchor": "long_dandelion_tea"
+    },
+    {
+      "type": "spotlight",
+      "item": "farmersrespite:gamblers_tea",
+      "text": "$(li)Base: Glass Bottle$(li)Ingredients:$(li2)Coffee Berries$(li2)Glow Berries",
+      "anchor": "dandelion_tea"
+    },
+    {
+      "type": "spotlight",
+      "item": "farmersrespite:long_gamblers_tea",
+      "text": "$(li)Base: Glass Bottle$(li)Ingredients:$(li2)$(l:kettle_recipes#gamblers_tea)Gamblers Tea$(/l)$(li2)Any Milk",
+      "anchor": "long_gamblers_tea"
+    },
+    {
+      "type": "spotlight",
+      "item": "farmersrespite:strong_gamblers_tea",
+      "text": "$(li)Base: Glass Bottle$(li)Ingredients:$(li2)$(l:kettle_recipes#gamblers_tea)Gamblers Tea$(/l)$(li2)Bottle of Honey",
+      "anchor": "strong_gamblers_tea"
+    },
+    {
+      "type": "spotlight",
+      "item": "farmersrespite:green_tea",
+      "text": "$(li)Base: Glass Bottle$(li)Ingredients:$(li2)Green Tea Leaves x2$(br)OR$(li2)Green Tea Leaf x2$(br)OR$(li2)Matcha x2",
+      "anchor": "green_tea"
+    },
+    {
+      "type": "spotlight",
+      "item": "farmersrespite:long_green_tea",
+      "text": "$(li)Base: Glass Bottle$(li)Ingredients:$(li2)$(l:kettle_recipes#gamblers_tea)Gamblers Tea$(/l)$(li2)Any Milk",
+      "anchor": "long_green_tea"
+    },
+    {
+      "type": "spotlight",
+      "item": "farmersrespite:strong_green_tea",
+      "text": "$(li)Base: Glass Bottle$(li)Ingredients:$(li2)$(l:kettle_recipes#gamblers_tea)Gamblers Tea$(/l)$(li2)Bottle of Honey",
+      "anchor": "strong_green_tea"
+    },
+    {
+      "type": "spotlight",
+      "item": "farmersdelight:hot_cocoa",
+      "text": "$(li)Base: Glass Bottle$(li)Ingredients:$(li2)Cocoa Beans$(li2)Sugar",
+      "anchor": "hot_cocoa"
+    },
+    {
+      "type": "spotlight",
+      "item": "farmersrespite:strong_hot_cocoa",
+      "text": "$(li)Base: Glass Bottle$(li)Ingredients:$(li2)$(l:kettle_recipes#hot_cocoa)Strong Hot Cocoa$(/l)$(li2)Bottle of Honey",
+      "anchor": "strong_hot_cocoa"
+    },
+    {
+      "type": "spotlight",
+      "item": "farmersrespite:purulent_tea",
+      "text": "$(li)Base: Glass Bottle$(li)Ingredients:$(li2)Nether Wart$(li2)Fermented Spider Eye",
+      "anchor": "purulent_tea"
+    },
+    {
+      "type": "spotlight",
+      "item": "farmersrespite:long_purulent_tea",
+      "text": "$(li)Base: Glass Bottle$(li)Ingredients:$(li2)$(l:kettle_recipes#purulent_tea)Purulent Tea$(/l)$(li2)Any Milk",
+      "anchor": "long_purulent_tea"
+    },
+    {
+      "type": "spotlight",
+      "item": "farmersrespite:strong_purulent_tea",
+      "text": "$(li)Base: Glass Bottle$(li)Ingredients:$(li2)$(l:kettle_recipes#purulent_tea)Purulent Tea$(/l)$(li2)Bottle of Honey",
+      "anchor": "strong_purulent_tea"
+    },
+    {
+      "type": "spotlight",
+      "item": "farmersrespite:rose_hip_tea",
+      "text": "$(li)Base: Glass Bottle$(li)Ingredients:$(li2)Rose Hips x2",
+      "anchor": "rose_hip_tea"
+    },
+    {
+      "type": "spotlight",
+      "item": "farmersrespite:long_rose_hip_tea",
+      "text": "$(li)Base: Glass Bottle$(li)Ingredients:$(li2)$(l:kettle_recipes#rose_hip_tea)Rose Hip Tea$(/l)$(li2)Any Milk",
+      "anchor": "long_rose_hip_tea"
+    },
+    {
+      "type": "spotlight",
+      "item": "farmersrespite:strong_rose_hip_tea",
+      "text": "$(li)Base: Glass Bottle$(li)Ingredients:$(li2)$(l:kettle_recipes#rose_hip_tea)Rose Hip Tea$(/l)$(li2)Bottle of Honey",
+      "anchor": "strong_rose_hip_tea"
+    },
+    {
+      "type": "spotlight",
+      "item": "farmersrespite:yellow_tea",
+      "text": "$(li)Base: Glass Bottle$(li)Ingredients:$(li2)Yellow Tea Leaves x2",
+      "anchor": "yellow_tea"
+    },
+    {
+      "type": "spotlight",
+      "item": "farmersrespite:long_yellow_tea",
+      "text": "$(li)Base: Glass Bottle$(li)Ingredients:$(li2)$(l:kettle_recipes#yellow_tea)Yellow Tea$(/l)$(li2)Any Milk",
+      "anchor": "long_yellow_tea"
+    },
+    {
+      "type": "spotlight",
+      "item": "farmersrespite:strong_yellow_tea",
+      "text": "$(li)Base: Glass Bottle$(li)Ingredients:$(li2)$(l:kettle_recipes#yellow_tea)Yellow Tea$(/l)$(li2)Bottle of Honey",
+      "anchor": "strong_yellow_tea"
+    },
+    {
+      "type": "spotlight",
+      "item": "farmersdelight:melon_juice",
+      "text": "$(li)Base: Glass Bottle$(li)Ingredients:$(li2)Melon Slice$(li2)Sugar",
+      "anchor": "melon_juice"
+    },
+    {
+      "type": "spotlight",
+      "item": "farmersrespite:strong_melon_juice",
+      "text": "$(li)Base: Glass Bottle$(li)Ingredients:$(li2)$(l:kettle_recipes#melon_juice)Melon Juice$(/l)$(li2)Bottle of Honey",
+      "anchor": "strong_melon_juice"
+    },
+    {
+      "type": "spotlight",
+      "item": "delightful:azalea_tea",
+      "text": "$(li)Base: Glass Bottle$(li)Ingredients:$(li2)Azalea Flower$(li2)Any Tea Leaves",
+      "anchor": "azalea_tea"
+    },
+    {
+      "type": "spotlight",
+      "item": "delightful:lavender_tea",
+      "text": "$(li)Base: Glass Bottle$(li)Ingredients:$(li2)Lavender$(li2)Any Tea Leaves",
+      "anchor": "lavender_tea"
+    }
+  ]
+}

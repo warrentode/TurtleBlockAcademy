@@ -1,0 +1,19 @@
+{
+  "name": "Alchemist Table",
+  "sortnum": 4,
+  "icon": "villagersplus:alchemist_table",
+  "category": "turtleblockacademy:equipment_category",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "The alchemy table uses gunpowder for fuel and with it you have a 1 in 3 chance of converting one potion into 3 new potions.",
+      "anchor": "alchemy_table"
+    },
+    {
+      "type": "patchouli:crafting",
+      "title": "Alchemy Table Recipe",
+      "recipe": "villagersplus:alchemist_table",
+      "text": "You can craft this using the crafting table or workbench."
+    }
+  ]
+}

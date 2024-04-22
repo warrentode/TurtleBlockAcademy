@@ -1,0 +1,134 @@
+{
+  "name": "Advanced Potions",
+  "sortnum": 4,
+  "icon": "minecraft:potion{Potion: \"minecraft:water\"}",
+  "category": "turtleblockacademy:brewing_stand_category",
+  "pages": [
+    {
+      "type": "spotlight",
+      "item": "minecraft:potion{Potion: \"minecraft:healing\"}",
+      "text": "$(li)Base: $(l:base_potions#awkward)Awkward Potion$(/l)$(li)Ingredient: Glistering Melon$(li)Modifiers:$(li2)$(l:modifiers#gunpowder)Gunpowder$(/l)$(li2)$(l:modifiers#dragon_breath)Dragon's Breath$(/l)$(li2)$(l:modifiers#glowstone)Glowstone Dust$(/l)$(li2)$(l:modifiers#fermented_spider_eye)Fermented Spider Eye$(/l) for $(l:advanced_potions#harm)Harming Potion$(/l)",
+      "anchor": "healing"
+    },
+    {
+      "type": "spotlight",
+      "item": "minecraft:potion{Potion: \"minecraft:fire_resistance\"}",
+      "text": "$(li)Base: $(l:base_potions#awkward)Awkward Potion$(/l)$(li)Ingredient: Magma Cream$(li)Modifiers:$(li2)$(l:modifiers#gunpowder)Gunpowder$(/l)$(li2)$(l:modifiers#dragon_breath)Dragon's Breath$(/l)$(li2)$(l:modifiers#redstone)Redstone Dust$(/l)",
+      "anchor": "fire_resistance"
+    },
+    {
+      "type": "spotlight",
+      "item": "minecraft:potion{Potion: \"minecraft:regeneration\"}",
+      "text": "$(li)Base: $(l:base_potions#awkward)Awkward Potion$(/l)$(li)Ingredient: Ghast Tear$(li)Modifiers:$(li2)$(l:modifiers#gunpowder)Gunpowder$(/l)$(li2)$(l:modifiers#dragon_breath)Dragon's Breath$(/l)$(li2)$(l:modifiers#redstone)Redstone Dust$(/l)$(li2)$(l:modifiers#glowstone)Glowstone Dust$(/l)",
+      "anchor": "regen"
+    },
+    {
+      "type": "spotlight",
+      "item": "minecraft:potion{Potion: \"minecraft:strength\"}",
+      "text": "$(li)Base: $(l:base_potions#awkward)Awkward Potion$(/l)$(li)Ingredient: Blaze Powder$(li)Modifiers:$(li2)$(l:modifiers#gunpowder)Gunpowder$(/l)$(li2)$(l:modifiers#dragon_breath)Dragon's Breath$(/l)$(li2)$(l:modifiers#redstone)Redstone Dust$(/l)$(li2)$(l:modifiers#glowstone)Glowstone Dust$(/l)",
+      "anchor": "strength"
+    },
+    {
+      "type": "spotlight",
+      "item": "minecraft:potion{Potion: \"minecraft:swiftness\"}",
+      "text": "$(li)Base: $(l:base_potions#awkward)Awkward Potion$(/l)$(li)Ingredient: Sugar$(li)Modifiers:$(li2)$(l:modifiers#gunpowder)Gunpowder$(/l)$(li2)$(l:modifiers#dragon_breath)Dragon's Breath$(/l)$(li2)$(l:modifiers#redstone)Redstone Dust$(/l)$(li2)$(l:modifiers#glowstone)Glowstone Dust$(/l)$(li2)$(l:modifiers#fermented_spider_eye)Fermented Spider Eye$(/l) for $(l:advanced_potions#slowness)Slowness Potion$(/l)",
+      "anchor": "swift"
+    },
+    {
+      "type": "spotlight",
+      "item": "minecraft:potion{Potion: \"minecraft:night_vision\"}",
+      "text": "$(li)Base: $(l:base_potions#awkward)Awkward Potion$(/l)$(li)Ingredient: Golden Carrot$(li)Modifiers:$(li2)$(l:modifiers#gunpowder)Gunpowder$(/l)$(li2)$(l:modifiers#dragon_breath)Dragon's Breath$(/l)$(li2)$(l:modifiers#redstone)Redstone Dust$(/l)$(li2)$(l:modifiers#fermented_spider_eye)Fermented Spider Eye$(/l) for $(l:advanced_potions#invis)Invisibility Potion$(/l)",
+      "anchor": "night"
+    },
+    {
+      "type": "spotlight",
+      "item": "minecraft:potion{Potion: \"minecraft:water_breathing\"}",
+      "text": "$(li)Base: $(l:base_potions#awkward)Awkward Potion$(/l)$(li)Ingredient: Pufferfish$(li)Modifiers:$(li2)$(l:modifiers#gunpowder)Gunpowder$(/l)$(li2)$(l:modifiers#dragon_breath)Dragon's Breath$(/l)$(li2)$(l:modifiers#redstone)Redstone Dust$(/l)",
+      "anchor": "breath"
+    },
+    {
+      "type": "spotlight",
+      "item": "minecraft:potion{Potion: \"minecraft:leaping\"}",
+      "text": "$(li)Base: $(l:base_potions#awkward)Awkward Potion$(/l)$(li)Ingredient: Rabbit's Foot$(li)Modifiers:$(li2)$(l:modifiers#gunpowder)Gunpowder$(/l)$(li2)$(l:modifiers#dragon_breath)Dragon's Breath$(/l)$(li2)$(l:modifiers#redstone)Redstone Dust$(/l)$(li2)$(l:modifiers#glowstone)Glowstone Dust$(/l)$(li2)$(l:modifiers#fermented_spider_eye)Fermented Spider Eye$(/l) for $(l:advanced_potions#slowness)Slowness Potion$(/l)",
+      "anchor": "leap"
+    },
+    {
+      "type": "spotlight",
+      "item": "minecraft:potion{Potion: \"minecraft:slow_falling\"}",
+      "text": "$(li)Base: $(l:base_potions#awkward)Awkward Potion$(/l)$(li)Ingredient: Phantom Membrane$(li)Modifiers:$(li2)$(l:modifiers#gunpowder)Gunpowder$(/l)$(li2)$(l:modifiers#dragon_breath)Dragon's Breath$(/l)$(li2)$(l:modifiers#redstone)Redstone Dust$(/l)",
+      "anchor": "slow_fall"
+    },
+    {
+      "type": "spotlight",
+      "item": "minecraft:potion{Potion: \"minecraft:poison\"}",
+      "text": "$(li)Base:$(li2)$(l:base_potions#awkward)Awkward Potion$(/l)$(li)Ingredient: Spider Eye$(li)Modifiers:$(li2)$(l:modifiers#gunpowder)Gunpowder$(/l)$(li2)$(l:modifiers#dragon_breath)Dragon's Breath$(/l)$(li2)$(l:modifiers#redstone)Redstone Dust$(/l)$(li2)$(l:modifiers#glowstone)Glowstone Dust$(/l)$(li2)$(l:modifiers#fermented_spider_eye)Fermented Spider Eye$(/l) for $(l:advanced_potions#harm)Harming Potion$(/l)",
+      "anchor": "poison"
+    },
+    {
+      "type": "spotlight",
+      "item": "minecraft:potion{Potion: \"minecraft:turtle_master\"}",
+      "text": "$(li)Base:$(li2)$(l:base_potions#awkward)Awkward Potion$(/l)$(li)Ingredient: Turtle Shell$(li)Modifiers:$(li2)$(l:modifiers#gunpowder)Gunpowder$(/l)$(li2)$(l:modifiers#dragon_breath)Dragon's Breath$(/l)$(li2)$(l:modifiers#redstone)Redstone Dust$(/l)$(li2)$(l:modifiers#glowstone)Glowstone Dust$(/l)",
+      "anchor": "turtle_master"
+    },
+    {
+      "type": "spotlight",
+      "item": "minecraft:potion{Potion: \"minecraft:harming\"}",
+      "text": "$(li)Base Potion Options:$(li2)$(l:advanced_potions#healing)Healing Potion$(/l)$(li2)$(l:advanced_potions#poison)Poison Potion$(/l)$(li)Ingredient: $(l:modifiers#fermented_spider_eye)Fermented Spider Eye$(/l)$(li)Modifiers:$(li2)$(l:modifiers#gunpowder)Gunpowder$(/l)$(li2)$(l:modifiers#dragon_breath)Dragon's Breath$(/l)$(li2)$(l:modifiers#redstone)Redstone Dust$(/l)$(li2)$(l:modifiers#glowstone)Glowstone Dust$(/l)",
+      "anchor": "harm"
+    },
+    {
+      "type": "spotlight",
+      "item": "minecraft:potion{Potion: \"minecraft:slowness\"}",
+      "text": "$(li)Base Potion Options:$(li2)$(l:advanced_potions#swift)Swift Potion$(/l)$(li2)$(l:advanced_potions#leap)Leaping Potion$(/l)$(li)Ingredient: $(l:modifiers#fermented_spider_eye)Fermented Spider Eye$(/l)$()$(li)Modifiers:$(li2)$(l:modifiers#gunpowder)Gunpowder$(/l)$(li2)$(l:modifiers#dragon_breath)Dragon's Breath$(/l)$(li2)$(l:modifiers#redstone)Redstone Dust$(/l)$(li2)$(l:modifiers#glowstone)Glowstone Dust$(/l)",
+      "anchor": "slowness"
+    },
+    {
+      "type": "spotlight",
+      "item": "minecraft:potion{Potion: \"minecraft:invisibility\"}",
+      "text": "$(li)Base: $(l:base_potions#night)Night Vision Potion$(/l)$(li)Ingredient: $(l:modifiers#fermented_spider_eye)Fermented Spider Eye$(/l)$(li)Modifiers:$(li2)$(l:modifiers#gunpowder)Gunpowder$(/l)$(li2)$(l:modifiers#dragon_breath)Dragon's Breath$(/l)$(li2)$(l:modifiers#redstone)Redstone Dust$(/l)",
+      "anchor": "invis"
+    },
+    {
+      "type": "spotlight",
+      "item": "minecraft:potion{Potion: \"unusualend:levitation\"}",
+      "text": "$(li)Base: $(l:base_potions#awkward)Awkward Potion$(/l)$(li)Ingredient: Bottled Shulker Bullet$(li)Modifiers:$(li2)$(l:modifiers#gunpowder)Gunpowder$(/l)$(li2)$(l:modifiers#dragon_breath)Dragon's Breath$(/l)$(li2)$(l:modifiers#redstone)Redstone Dust$(/l)",
+      "anchor": "levitation"
+    },
+    {
+      "type": "spotlight",
+      "item": "minecraft:potion{Potion: \"unusualend:end_infection\"}",
+      "text": "$(li)Base: $(l:base_potions#awkward)Awkward Potion$(/l)$(li)Ingredient: End Blob$(li)Modifiers:$(li2)$(l:modifiers#gunpowder)Gunpowder$(/l)$(li2)$(l:modifiers#dragon_breath)Dragon's Breath$(/l)",
+      "anchor": "end_infection"
+    },
+    {
+      "type": "spotlight",
+      "item": "minecraft:potion{Potion: \"unusualend:building_potion\"}",
+      "text": "$(li)Base: $(l:base_potions#awkward)Awkward Potion$(/l)$(li)Ingredient: Bolok Scale$(li)Modifiers:$(li2)$(l:modifiers#gunpowder)Gunpowder$(/l)$(li2)$(l:modifiers#dragon_breath)Dragon's Breath$(/l)",
+      "anchor": "building_inability"
+    },
+    {
+      "type": "spotlight",
+      "item": "minecraft:potion{Potion: \"unusualend:regeneration_ii\"}",
+      "text": "$(li)Base: $(l:base_potions#regen)Strong Regen Potion$(/l)$(li)Ingredient: Shiny Crystal Block$(li)Modifiers:$(li2)$(l:modifiers#gunpowder)Gunpowder$(/l)$(li2)$(l:modifiers#dragon_breath)Dragon's Breath$(/l)$(br2)Any upgraded regen potion can have its effect boosted by the Shiny Crystal Block. The result depends on the effect of the potion.",
+      "anchor": "regen_boosted"
+    },
+    {
+      "type": "spotlight",
+      "item": "unusualend:warped_potion",
+      "text": "$(li)Base: Bottled Water$(li)Ingredient: Warped Wart",
+      "anchor": "warped"
+    },
+    {
+      "type": "spotlight",
+      "item": "minecraft:potion{Potion: \"unusualend:resistance\"}",
+      "text": "$(li)Base: $(l:base_potions#warped)Warped Potion$(/l)$(li)Ingredient: Bolok Scale$(li)Modifiers:$(li2)$(l:modifiers#gunpowder)Gunpowder$(/l)$(li2)$(l:modifiers#dragon_breath)Dragon's Breath$(/l)",
+      "anchor": "resistance"
+    },
+    {
+      "type": "spotlight",
+      "item": "minecraft:potion{Potion: \"unusualend:health_boost\"}",
+      "text": "$(li)Base: $(l:base_potions#warped)Warped Potion$(/l)$(li)Ingredient: Shiny Crystal Block$(li)Modifiers:$(li2)$(l:modifiers#gunpowder)Gunpowder$(/l)$(li2)$(l:modifiers#dragon_breath)Dragon's Breath$(/l)",
+      "anchor": "health_boost"
+    }
+  ]
+}

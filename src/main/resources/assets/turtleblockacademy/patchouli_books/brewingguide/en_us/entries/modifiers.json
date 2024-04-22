@@ -1,0 +1,44 @@
+{
+  "name": "Modifier Ingredients",
+  "sortnum": 2,
+  "icon": "minecraft:redstone",
+  "category": "turtleblockacademy:brewing_stand_category",
+  "pages": [
+    {
+      "type": "spotlight",
+      "item": "minecraft:nether_wart",
+      "text": "Used to create $(l:base_potions#awkward)Awkward Potion$(/l), which in turn serves as the base for most potions.",
+      "anchor": "nether_wart"
+    },
+    {
+      "type": "spotlight",
+      "item": "minecraft:redstone",
+      "text": "Add Redstone Dust to a potion to extend its duration.$(br2)$(o)Not all potions can be extended.$()",
+      "anchor": "redstone"
+    },
+    {
+      "type": "spotlight",
+      "item": "minecraft:glowstone_dust",
+      "text": "Add Glowstone Dust to a potion to enhance its potency.$(br2)$(o)Not all potions can be enhanced.$()",
+      "anchor": "glowstone"
+    },
+    {
+      "type": "spotlight",
+      "item": "minecraft:fermented_spider_eye",
+      "text": "Used to create $(l:base_potions#weakness)Potion of Weakness$(/l), which is needed to cure Zombie Villagers.$(br2)Add Fermented Spider Eye to a potion to corrupt its effect.$(br2)$(o)Not all potions can be corrupted.$()",
+      "anchor": "fermented_spider_eye"
+    },
+    {
+      "type": "spotlight",
+      "item": "minecraft:gunpowder",
+      "text": "Add Gunpowder to a potion to create a splash version of it.",
+      "anchor": "gunpowder"
+    },
+    {
+      "type": "spotlight",
+      "item": "minecraft:dragon_breath",
+      "text": "Add Dragon's Breath to a splash potion to create a lingering version of it.",
+      "anchor": "dragon_breath"
+    }
+  ]
+}

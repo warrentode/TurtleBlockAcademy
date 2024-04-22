@@ -1,0 +1,20 @@
+{
+  "name": "Beer Mug",
+  "sortnum": 10,
+  "icon": "drinkbeer:empty_beer_mug",
+  "category": "turtleblockacademy:equipment_category",
+  "pages": [
+    {
+      "type": "spotlight",
+      "item": "drinkbeer:empty_beer_mug",
+      "text": "Use this to hold or mix beer. It can also be placed on blocks as decoration.",
+      "anchor": "glass_bottle"
+    },
+    {
+      "type": "patchouli:crafting",
+      "title": "Bucket Recipe",
+      "recipe": "drinkbeer:empty_beer_mug",
+      "text": "You can craft this using the crafting table or workbench."
+    }
+  ]
+}

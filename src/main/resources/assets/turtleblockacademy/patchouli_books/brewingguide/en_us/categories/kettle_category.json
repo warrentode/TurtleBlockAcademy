@@ -1,0 +1,6 @@
+{
+  "name": "Kettle Brewing Guide",
+  "sortnum": 3,
+  "description": "This section is for brewing with the kettle.$(br2)Teas have potion-like effects, so be sure to check out the recipes on the right for more information.$(br2)Make sure your kettle has water before you start!",
+  "icon": "farmersrespite:kettle"
+}

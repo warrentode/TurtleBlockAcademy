@@ -793,7 +793,7 @@ public class RecipesGen extends RecipeProvider implements IConditionBuilder {
                         .unlockedBy("has_cauldron", has(Blocks.CAULDRON))
                         ::save)
                 .build(consumer, new ResourceLocation("decoration_delight",
-                        DecorationDelightModBlocks.SINK.get().asItem().toString()));
+                        DecorationDelightModBlocks.SINK.get().asItem() + "_alt"));
     }
 
     private void dimdungeonsRecipes(Consumer<FinishedRecipe> consumer) {

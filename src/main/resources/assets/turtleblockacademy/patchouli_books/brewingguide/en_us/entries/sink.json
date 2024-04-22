@@ -1,0 +1,20 @@
+{
+  "name": "Sink",
+  "sortnum": 8,
+  "icon": "decoration_delight:sink",
+  "category": "turtleblockacademy:equipment_category",
+  "pages": [
+    {
+      "type": "spotlight",
+      "item": "decoration_delight:sink",
+      "text": "This sink is an infinite water source. All you need to do is craft it and place it.$(br2)It's a must have for the serious brewer!",
+      "anchor": "sink"
+    },
+    {
+      "type": "patchouli:crafting",
+      "title": "Sink Recipe",
+      "recipe": "decoration_delight:sink_alt",
+      "text": "You can craft this using the crafting table or workbench."
+    }
+  ]
+}

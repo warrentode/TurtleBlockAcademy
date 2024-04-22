@@ -1,0 +1,20 @@
+{
+  "name": "Bucket",
+  "sortnum": 6,
+  "icon": "minecraft:bucket",
+  "category": "turtleblockacademy:equipment_category",
+  "pages": [
+    {
+      "type": "spotlight",
+      "item": "minecraft:bucket",
+      "text": "Yes, you will need a bucket to carry water, especially if you plan to brew with the kettle.",
+      "anchor": "bucket"
+    },
+    {
+      "type": "patchouli:crafting",
+      "title": "Bucket Recipe",
+      "recipe": "minecraft:bucket",
+      "text": "You can craft this using the crafting table or workbench."
+    }
+  ]
+}

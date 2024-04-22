@@ -1,0 +1,20 @@
+{
+  "name": "Cauldron",
+  "sortnum": 7,
+  "icon": "minecraft:cauldron",
+  "category": "turtleblockacademy:equipment_category",
+  "pages": [
+    {
+      "type": "spotlight",
+      "item": "minecraft:cauldron",
+      "text": "A cauldron can be used to hold water and fill a $(l:bucket#bucket)bucket$(/l) once, or fill 3 $(l:glass_bottle#glass_bottle)glass bottles(/l).",
+      "anchor": "cauldron"
+    },
+    {
+      "type": "patchouli:crafting",
+      "title": "Bucket Recipe",
+      "recipe": "minecraft:cauldron",
+      "text": "You can craft this using the crafting table or workbench."
+    }
+  ]
+}

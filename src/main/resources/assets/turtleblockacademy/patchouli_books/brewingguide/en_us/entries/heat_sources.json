@@ -1,0 +1,33 @@
+{
+  "name": "Heat Sources",
+  "sortnum": 5,
+  "icon": "minecraft:blaze_powder",
+  "category": "turtleblockacademy:equipment_category",
+  "pages": [
+    {
+      "type": "spotlight",
+      "item": "minecraft:blaze_powder",
+      "text": "Blaze powder is needed to heat a $(l:brewing_stand#brewing_stand)brewing stand$(/l).$(br2)A kettle needs to be placed on top of a heat source. You can set it on top of a campfire or stove.$(br2)You can craft these using the crafting table or workbench.",
+      "anchor": "blaze_powder"
+    },
+    {
+      "type": "patchouli:crafting",
+      "title": "Campfire and Stove",
+      "recipe": "minecraft:campfire",
+      "recipe2": "farmersdelight:stove",
+      "text": ""
+    },
+    {
+      "type": "spotlight",
+      "item": "minecraft:magma_block",
+      "text": "The magma block can also be used as a heat source for the Kettle.",
+      "anchor": "magma_block"
+    },
+    {
+      "type": "patchouli:crafting",
+      "title": "Magma Block Recipe",
+      "recipe": "minecraft:magma_block",
+      "text": "You can craft this using the crafting table or workbench."
+    }
+  ]
+}
