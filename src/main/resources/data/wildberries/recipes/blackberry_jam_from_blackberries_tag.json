@@ -1,0 +1,22 @@
+{
+  "group": "berry_jam",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "forge:blackberries"
+    },
+    {
+      "item": "minecraft:sugar"
+    },
+    {
+      "tag": "forge:blackberries"
+    },
+    {
+      "item": "minecraft:glass_bottle"
+    }
+  ],
+  "result": {
+    "item": "wildberries:blackberry_jam",
+    "count": 1
+  }
+}

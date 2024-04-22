@@ -1,0 +1,42 @@
+{
+  "parent": "curios:equip_light_source",
+  "criteria": {
+    "equip_wallet": {
+      "conditions": {
+        "curios:slot": {
+          "slots": [
+            "belt"
+          ]
+        },
+        "item": {
+          "tag": "todecoins:wallets"
+        },
+        "location": {}
+      },
+      "trigger": "curios:equip_curio"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancement.turtleblockacademy.equip_wallet.desc"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "minecraft:bundle"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancement.turtleblockacademy.equip_wallet"
+    }
+  },
+  "requirements": [
+    [
+      "equip_wallet"
+    ]
+  ],
+  "rewards": {
+    "function": "turtleblockacademy:add_belt_slot"
+  }
+}

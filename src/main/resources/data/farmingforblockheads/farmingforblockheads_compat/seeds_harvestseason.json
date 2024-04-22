@@ -1,0 +1,17 @@
+{
+  "modId": "hauntedharvest",
+  "group": {
+    "name": "Haunted Harvest Seeds",
+    "enabledByDefault": true,
+    "defaultPayment": {
+      "item": "minecraft:emerald",
+      "count": 1
+    },
+    "defaultCategory": "farmingforblockheads:seeds"
+  },
+  "customEntries": [
+    {
+      "output": "hauntedharvest:kernels"
+    }
+  ]
+}

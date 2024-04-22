@@ -1,0 +1,1070 @@
+{
+  "modId": "todecoins",
+  "group": {
+    "name": "Currency Exchange Rates",
+    "enabledByDefault": true,
+    "defaultCategory": "bank"
+  },
+  "customEntries": [
+    {
+      "output": {
+        "item": "todecoins:copper_coin",
+        "count": 2
+      },
+      "payment": {
+        "item": "todecoins:iron_coin"
+      }
+    },
+    {
+      "output": {
+        "item": "todecoins:copper_coin",
+        "count": 3
+      },
+      "payment": {
+        "item": "todecoins:gold_coin"
+      }
+    },
+    {
+      "output": {
+        "item": "todecoins:copper_coin_bag",
+        "count": 10
+      },
+      "payment": {
+        "item": "todecoins:iron_coin_bag",
+        "count": 8
+      }
+    },
+    {
+      "output": {
+        "item": "todecoins:copper_coin_bag",
+        "count": 10
+      },
+      "payment": {
+        "item": "todecoins:gold_coin_bag",
+        "count": 6
+      }
+    },
+    {
+      "output": {
+        "item": "todecoins:copper_coin_bag",
+        "count": 6
+      },
+      "payment": {
+        "item": "todecoins:nether_gold_coin"
+      }
+    },
+    {
+      "output": {
+        "item": "todecoins:copper_coin_bag",
+        "count": 18
+      },
+      "payment": {
+        "item": "minecraft:emerald"
+      }
+    },
+    {
+      "output": {
+        "item": "todecoins:copper_coin_bag",
+        "count": 18
+      },
+      "payment": {
+        "item": "todecoins:endonian_coin"
+      }
+    },
+    {
+      "output": {
+        "item": "todecoins:iron_coin"
+      },
+      "payment": {
+        "item": "todecoins:copper_coin",
+        "count": 2
+      }
+    },
+    {
+      "output": {
+        "item": "todecoins:iron_coin",
+        "count": 2
+      },
+      "payment": {
+        "item": "todecoins:gold_coin"
+      }
+    },
+    {
+      "output": {
+        "item": "todecoins:iron_coin_bag",
+        "count": 8
+      },
+      "payment": {
+        "item": "todecoins:copper_coin_bag",
+        "count": 10
+      }
+    },
+    {
+      "output": {
+        "item": "todecoins:iron_coin_bag",
+        "count": 8
+      },
+      "payment": {
+        "item": "todecoins:gold_coin_bag",
+        "count": 6
+      }
+    },
+    {
+      "output": {
+        "item": "todecoins:iron_coin_bag",
+        "count": 8
+      },
+      "payment": {
+        "item": "todecoins:nether_gold_coin",
+        "count": 3
+      }
+    },
+    {
+      "output": {
+        "item": "todecoins:iron_coin_bag",
+        "count": 8
+      },
+      "payment": {
+        "item": "minecraft:emerald"
+      }
+    },
+    {
+      "output": {
+        "item": "todecoins:iron_coin_bag",
+        "count": 8
+      },
+      "payment": {
+        "item": "todecoins:endonian_coin"
+      }
+    },
+    {
+      "output": {
+        "item": "todecoins:gold_coin"
+      },
+      "payment": {
+        "item": "todecoins:copper_coin",
+        "count": 3
+      }
+    },
+    {
+      "output": {
+        "item": "todecoins:gold_coin"
+      },
+      "payment": {
+        "item": "todecoins:iron_coin",
+        "count": 2
+      }
+    },
+    {
+      "output": {
+        "item": "todecoins:gold_coin_bag",
+        "count": 6
+      },
+      "payment": {
+        "item": "todecoins:copper_coin_bag",
+        "count": 10
+      }
+    },
+    {
+      "output": {
+        "item": "todecoins:gold_coin_bag",
+        "count": 6
+      },
+      "payment": {
+        "item": "todecoins:iron_coin_bag",
+        "count": 8
+      }
+    },
+    {
+      "output": {
+        "item": "todecoins:gold_coin_bag",
+        "count": 6
+      },
+      "payment": {
+        "item": "todecoins:nether_gold_coin",
+        "count": 3
+      }
+    },
+    {
+      "output": {
+        "item": "todecoins:gold_coin_bag",
+        "count": 6
+      },
+      "payment": {
+        "item": "minecraft:emerald"
+      }
+    },
+    {
+      "output": {
+        "item": "todecoins:gold_coin_bag",
+        "count": 6
+      },
+      "payment": {
+        "item": "todecoins:endonian_coin"
+      }
+    },
+    {
+      "output": {
+        "item": "todecoins:pot_of_gold",
+        "count": 6
+      },
+      "payment": {
+        "item": "todecoins:nether_gold_coin_bag"
+      }
+    },
+    {
+      "output": {
+        "item": "todecoins:pot_of_gold",
+        "count": 11
+      },
+      "payment": {
+        "item": "todecoins:emerald_quarter_bank_note"
+      }
+    },
+    {
+      "output": {
+        "item": "todecoins:pot_of_gold",
+        "count": 21
+      },
+      "payment": {
+        "item": "todecoins:emerald_half_bank_note"
+      }
+    },
+    {
+      "output": {
+        "item": "todecoins:pot_of_gold",
+        "count": 42
+      },
+      "payment": {
+        "item": "todecoins:emerald_bank_note"
+      }
+    },
+    {
+      "output": {
+        "item": "todecoins:nether_gold_coin"
+      },
+      "payment": {
+        "item": "todecoins:copper_coin_bag",
+        "count": 6
+      }
+    },
+    {
+      "output": {
+        "item": "todecoins:nether_gold_coin",
+        "count": 3
+      },
+      "payment": {
+        "item": "todecoins:iron_coin_bag",
+        "count": 8
+      }
+    },
+    {
+      "output": {
+        "item": "todecoins:nether_gold_coin",
+        "count": 3
+      },
+      "payment": {
+        "item": "todecoins:gold_coin_bag",
+        "count": 6
+      }
+    },
+    {
+      "output": {
+        "item": "todecoins:nether_gold_coin",
+        "count": 3
+      },
+      "payment": {
+        "item": "minecraft:emerald"
+      }
+    },
+    {
+      "output": {
+        "item": "todecoins:nether_gold_coin",
+        "count": 3
+      },
+      "payment": {
+        "item": "todecoins:endonian_coin"
+      }
+    },
+    {
+      "output": {
+        "item": "todecoins:nether_gold_coin",
+        "count": 48
+      },
+      "payment": {
+        "item": "todecoins:emerald_quarter_bank_note"
+      }
+    },
+    {
+      "output": {
+        "item": "todecoins:nether_gold_coin_bag"
+      },
+      "payment": {
+        "item": "todecoins:gold_coin_bag",
+        "count": 18
+      }
+    },
+    {
+      "output": {
+        "item": "todecoins:nether_gold_coin_bag",
+        "count": 3
+      },
+      "payment": {
+        "item": "minecraft:emerald_block"
+      }
+    },
+    {
+      "output": {
+        "item": "todecoins:nether_gold_coin_bag",
+        "count": 3
+      },
+      "payment": {
+        "item": "todecoins:endonian_coin_bag"
+      }
+    },
+    {
+      "output": {
+        "item": "todecoins:nether_gold_coin_bag",
+        "count": 48
+      },
+      "payment": {
+        "item": "todecoins:emerald_quarter_bank_note_bag"
+      }
+    },
+    {
+      "output": {
+        "item": "todecoins:nether_gold_coin_bag",
+        "count": 11
+      },
+      "payment": {
+        "item": "todecoins:netherite_coin"
+      }
+    },
+    {
+      "output": {
+        "item": "todecoins:nether_gold_coin_bag",
+        "count": 11
+      },
+      "payment": {
+        "item": "todecoins:emerald_half_bank_note"
+      }
+    },
+    {
+      "output": {
+        "item": "todecoins:nether_gold_coin_bag",
+        "count": 21
+      },
+      "payment": {
+        "item": "todecoins:emerald_bank_note_bag"
+      }
+    },
+    {
+      "output": {
+        "item": "minecraft:emerald"
+      },
+      "payment": {
+        "item": "todecoins:copper_coin_bag",
+        "count": 18
+      }
+    },
+    {
+      "output": {
+        "item": "minecraft:emerald"
+      },
+      "payment": {
+        "item": "todecoins:iron_coin_bag",
+        "count": 8
+      }
+    },
+    {
+      "output": {
+        "item": "minecraft:emerald"
+      },
+      "payment": {
+        "item": "todecoins:gold_coin_bag",
+        "count": 6
+      }
+    },
+    {
+      "output": {
+        "item": "minecraft:emerald",
+        "count": 3
+      },
+      "payment": {
+        "item": "todecoins:pot_of_gold",
+        "count": 2
+      }
+    },
+    {
+      "output": {
+        "item": "minecraft:emerald"
+      },
+      "payment": {
+        "item": "todecoins:nether_gold_coin",
+        "count": 3
+      }
+    },
+    {
+      "output": {
+        "item": "minecraft:emerald"
+      },
+      "payment": {
+        "item": "todecoins:endonian_coin"
+      }
+    },
+    {
+      "output": {
+        "item": "minecraft:emerald",
+        "count": 16
+      },
+      "payment": {
+        "item": "todecoins:emerald_quarter_bank_note"
+      }
+    },
+    {
+      "output": {
+        "item": "minecraft:emerald",
+        "count": 32
+      },
+      "payment": {
+        "item": "todecoins:netherite_coin"
+      }
+    },
+    {
+      "output": {
+        "item": "minecraft:emerald",
+        "count": 32
+      },
+      "payment": {
+        "item": "todecoins:emerald_half_bank_note"
+      }
+    },
+    {
+      "output": {
+        "item": "minecraft:emerald",
+        "count": 64
+      },
+      "payment": {
+        "item": "todecoins:emerald_bank_note"
+      }
+    },
+    {
+      "output": {
+        "item": "minecraft:emerald_block"
+      },
+      "payment": {
+        "item": "todecoins:nether_gold_coin_bag",
+        "count": 3
+      }
+    },
+    {
+      "output": {
+        "item": "minecraft:emerald_block"
+      },
+      "payment": {
+        "item": "todecoins:endonian_coin_bag"
+      }
+    },
+    {
+      "output": {
+        "item": "minecraft:emerald_block",
+        "count": 16
+      },
+      "payment": {
+        "item": "todecoins:emerald_quarter_bank_note_bag"
+      }
+    },
+    {
+      "output": {
+        "item": "minecraft:emerald_block",
+        "count": 32
+      },
+      "payment": {
+        "item": "todecoins:emerald_half_bank_note_bag"
+      }
+    },
+    {
+      "output": {
+        "item": "minecraft:emerald_block",
+        "count": 64
+      },
+      "payment": {
+        "item": "todecoins:emerald_bank_note_bag"
+      }
+    },
+    {
+      "output": {
+        "item": "todecoins:endonian_coin"
+      },
+      "payment": {
+        "item": "todecoins:copper_coin_bag",
+        "count": 18
+      }
+    },
+    {
+      "output": {
+        "item": "todecoins:endonian_coin"
+      },
+      "payment": {
+        "item": "todecoins:iron_coin_bag",
+        "count": 8
+      }
+    },
+    {
+      "output": {
+        "item": "todecoins:endonian_coin"
+      },
+      "payment": {
+        "item": "todecoins:gold_coin_bag",
+        "count": 6
+      }
+    },
+    {
+      "output": {
+        "item": "todecoins:endonian_coin",
+        "count": 3
+      },
+      "payment": {
+        "item": "todecoins:pot_of_gold",
+        "count": 2
+      }
+    },
+    {
+      "output": {
+        "item": "todecoins:endonian_coin"
+      },
+      "payment": {
+        "item": "todecoins:nether_gold_coin",
+        "count": 3
+      }
+    },
+    {
+      "output": {
+        "item": "todecoins:endonian_coin"
+      },
+      "payment": {
+        "item": "todecoins:endonian_coin"
+      }
+    },
+    {
+      "output": {
+        "item": "todecoins:endonian_coin",
+        "count": 16
+      },
+      "payment": {
+        "item": "todecoins:emerald_quarter_bank_note"
+      }
+    },
+    {
+      "output": {
+        "item": "todecoins:endonian_coin",
+        "count": 32
+      },
+      "payment": {
+        "item": "todecoins:netherite_coin"
+      }
+    },
+    {
+      "output": {
+        "item": "todecoins:endonian_coin",
+        "count": 32
+      },
+      "payment": {
+        "item": "todecoins:emerald_half_bank_note"
+      }
+    },
+    {
+      "output": {
+        "item": "todecoins:endonian_coin",
+        "count": 64
+      },
+      "payment": {
+        "item": "todecoins:emerald_bank_note"
+      }
+    },
+    {
+      "output": {
+        "item": "todecoins:endonian_coin_bag"
+      },
+      "payment": {
+        "item": "todecoins:nether_gold_coin_bag",
+        "count": 3
+      }
+    },
+    {
+      "output": {
+        "item": "todecoins:endonian_coin_bag"
+      },
+      "payment": {
+        "item": "todecoins:endonian_coin_bag"
+      }
+    },
+    {
+      "output": {
+        "item": "todecoins:endonian_coin_bag",
+        "count": 16
+      },
+      "payment": {
+        "item": "todecoins:emerald_quarter_bank_note_bag"
+      }
+    },
+    {
+      "output": {
+        "item": "todecoins:endonian_coin_bag",
+        "count": 32
+      },
+      "payment": {
+        "item": "todecoins:emerald_half_bank_note_bag"
+      }
+    },
+    {
+      "output": {
+        "item": "todecoins:endonian_coin",
+        "count": 64
+      },
+      "payment": {
+        "item": "todecoins:emerald_bank_note"
+      }
+    },
+    {
+      "output": {
+        "item": "todecoins:emerald_bank_note_bag"
+      },
+      "payment": {
+        "item": "todecoins:lucky_coin",
+        "count": 3
+      }
+    },
+    {
+      "output": {
+        "item": "todecoins:emerald_quarter_bank_note"
+      },
+      "payment": {
+        "item": "todecoins:pot_of_gold",
+        "count": 11
+      }
+    },
+    {
+      "output": {
+        "item": "todecoins:emerald_quarter_bank_note"
+      },
+      "payment": {
+        "item": "todecoins:nether_gold_coin",
+        "count": 48
+      }
+    },
+    {
+      "output": {
+        "item": "todecoins:emerald_quarter_bank_note"
+      },
+      "payment": {
+        "item": "minecraft:emerald",
+        "count": 16
+      }
+    },
+    {
+      "output": {
+        "item": "todecoins:emerald_quarter_bank_note"
+      },
+      "payment": {
+        "item": "todecoins:endonian_coin",
+        "count": 16
+      }
+    },
+    {
+      "output": {
+        "item": "todecoins:emerald_quarter_bank_note",
+        "count": 2
+      },
+      "payment": {
+        "item": "todecoins:netherite_coin"
+      }
+    },
+    {
+      "output": {
+        "item": "todecoins:emerald_quarter_bank_note",
+        "count": 2
+      },
+      "payment": {
+        "item": "todecoins:emerald_half_bank_note"
+      }
+    },
+    {
+      "output": {
+        "item": "todecoins:emerald_quarter_bank_note",
+        "count": 4
+      },
+      "payment": {
+        "item": "todecoins:emerald_bank_note"
+      }
+    },
+    {
+      "output": {
+        "item": "todecoins:emerald_quarter_bank_note_bag"
+      },
+      "payment": {
+        "item": "todecoins:nether_gold_coin_bag",
+        "count": 48
+      }
+    },
+    {
+      "output": {
+        "item": "todecoins:emerald_quarter_bank_note_bag"
+      },
+      "payment": {
+        "item": "minecraft:emerald_block",
+        "count": 16
+      }
+    },
+    {
+      "output": {
+        "item": "todecoins:emerald_quarter_bank_note_bag"
+      },
+      "payment": {
+        "item": "todecoins:endonian_coin_bag",
+        "count": 16
+      }
+    },
+    {
+      "output": {
+        "item": "todecoins:emerald_quarter_bank_note_bag",
+        "count": 2
+      },
+      "payment": {
+        "item": "todecoins:emerald_half_bank_note_bag"
+      }
+    },
+    {
+      "output": {
+        "item": "todecoins:emerald_quarter_bank_note_bag",
+        "count": 4
+      },
+      "payment": {
+        "item": "todecoins:emerald_bank_note_bag"
+      }
+    },
+    {
+      "output": {
+        "item": "todecoins:netherite_coin"
+      },
+      "payment": {
+        "item": "todecoins:pot_of_gold",
+        "count": 21
+      }
+    },
+    {
+      "output": {
+        "item": "todecoins:netherite_coin"
+      },
+      "payment": {
+        "item": "todecoins:nether_gold_coin_bag",
+        "count": 11
+      }
+    },
+    {
+      "output": {
+        "item": "todecoins:netherite_coin"
+      },
+      "payment": {
+        "item": "minecraft:emerald",
+        "count": 32
+      }
+    },
+    {
+      "output": {
+        "item": "todecoins:netherite_coin"
+      },
+      "payment": {
+        "item": "todecoins:endonian_coin",
+        "count": 32
+      }
+    },
+    {
+      "output": {
+        "item": "todecoins:netherite_coin"
+      },
+      "payment": {
+        "item": "todecoins:emerald_quarter_bank_note",
+        "count": 2
+      }
+    },
+    {
+      "output": {
+        "item": "todecoins:netherite_coin",
+        "count": 1
+      },
+      "payment": {
+        "item": "todecoins:emerald_half_bank_note"
+      }
+    },
+    {
+      "output": {
+        "item": "todecoins:netherite_coin",
+        "count": 2
+      },
+      "payment": {
+        "item": "todecoins:emerald_bank_note"
+      }
+    },
+    {
+      "output": {
+        "item": "todecoins:netherite_coin",
+        "count": 6
+      },
+      "payment": {
+        "item": "todecoins:lucky_coin"
+      }
+    },
+    {
+      "output": {
+        "item": "todecoins:emerald_half_bank_note"
+      },
+      "payment": {
+        "item": "todecoins:pot_of_gold",
+        "count": 21
+      }
+    },
+    {
+      "output": {
+        "item": "todecoins:emerald_half_bank_note"
+      },
+      "payment": {
+        "item": "todecoins:nether_gold_coin_bag",
+        "count": 11
+      }
+    },
+    {
+      "output": {
+        "item": "todecoins:emerald_half_bank_note"
+      },
+      "payment": {
+        "item": "minecraft:emerald",
+        "count": 32
+      }
+    },
+    {
+      "output": {
+        "item": "todecoins:emerald_half_bank_note"
+      },
+      "payment": {
+        "item": "todecoins:endonian_coin",
+        "count": 32
+      }
+    },
+    {
+      "output": {
+        "item": "todecoins:emerald_half_bank_note"
+      },
+      "payment": {
+        "item": "todecoins:emerald_quarter_bank_note",
+        "count": 2
+      }
+    },
+    {
+      "output": {
+        "item": "todecoins:emerald_half_bank_note"
+      },
+      "payment": {
+        "item": "todecoins:netherite_coin",
+        "count": 1
+      }
+    },
+    {
+      "output": {
+        "item": "todecoins:emerald_half_bank_note",
+        "count": 2
+      },
+      "payment": {
+        "item": "todecoins:emerald_bank_note"
+      }
+    },
+    {
+      "output": {
+        "item": "todecoins:emerald_half_bank_note",
+        "count": 6
+      },
+      "payment": {
+        "item": "todecoins:lucky_coin"
+      }
+    },
+    {
+      "output": {
+        "item": "todecoins:emerald_half_bank_note_bag"
+      },
+      "payment": {
+        "item": "minecraft:emerald_block",
+        "count": 32
+      }
+    },
+    {
+      "output": {
+        "item": "todecoins:emerald_half_bank_note_bag"
+      },
+      "payment": {
+        "item": "todecoins:endonian_coin_bag",
+        "count": 32
+      }
+    },
+    {
+      "output": {
+        "item": "todecoins:emerald_half_bank_note_bag"
+      },
+      "payment": {
+        "item": "todecoins:emerald_quarter_bank_note_bag",
+        "count": 2
+      }
+    },
+    {
+      "output": {
+        "item": "todecoins:emerald_half_bank_note_bag",
+        "count": 2
+      },
+      "payment": {
+        "item": "todecoins:emerald_bank_note_bag"
+      }
+    },
+    {
+      "output": {
+        "item": "todecoins:emerald_bank_note"
+      },
+      "payment": {
+        "item": "todecoins:pot_of_gold",
+        "count": 42
+      }
+    },
+    {
+      "output": {
+        "item": "todecoins:emerald_bank_note"
+      },
+      "payment": {
+        "item": "todecoins:nether_gold_coin_bag",
+        "count": 21
+      }
+    },
+    {
+      "output": {
+        "item": "todecoins:emerald_bank_note"
+      },
+      "payment": {
+        "item": "minecraft:emerald",
+        "count": 64
+      }
+    },
+    {
+      "output": {
+        "item": "todecoins:emerald_bank_note"
+      },
+      "payment": {
+        "item": "todecoins:endonian_coin",
+        "count": 64
+      }
+    },
+    {
+      "output": {
+        "item": "todecoins:emerald_bank_note"
+      },
+      "payment": {
+        "item": "todecoins:emerald_quarter_bank_note",
+        "count": 4
+      }
+    },
+    {
+      "output": {
+        "item": "todecoins:emerald_bank_note"
+      },
+      "payment": {
+        "item": "todecoins:netherite_coin",
+        "count": 2
+      }
+    },
+    {
+      "output": {
+        "item": "todecoins:emerald_bank_note"
+      },
+      "payment": {
+        "item": "todecoins:emerald_half_bank_note",
+        "count": 2
+      }
+    },
+    {
+      "output": {
+        "item": "todecoins:emerald_bank_note",
+        "count": 3
+      },
+      "payment": {
+        "item": "todecoins:lucky_coin"
+      }
+    },
+    {
+      "output": {
+        "item": "todecoins:emerald_bank_note_bag"
+      },
+      "payment": {
+        "item": "minecraft:emerald_block",
+        "count": 64
+      }
+    },
+    {
+      "output": {
+        "item": "todecoins:emerald_bank_note_bag"
+      },
+      "payment": {
+        "item": "todecoins:endonian_coin_bag"
+      }
+    },
+    {
+      "output": {
+        "item": "todecoins:emerald_bank_note_bag"
+      },
+      "payment": {
+        "item": "todecoins:emerald_quarter_bank_note_bag",
+        "count": 4
+      }
+    },
+    {
+      "output": {
+        "item": "todecoins:emerald_bank_note_bag"
+      },
+      "payment": {
+        "item": "todecoins:emerald_half_bank_note_bag",
+        "count": 2
+      }
+    },
+    {
+      "output": {
+        "item": "todecoins:lucky_coin"
+      },
+      "payment": {
+        "item": "todecoins:netherite_coin",
+        "count": 6
+      }
+    },
+    {
+      "output": {
+        "item": "todecoins:lucky_coin"
+      },
+      "payment": {
+        "item": "todecoins:emerald_half_bank_note",
+        "count": 6
+      }
+    },
+    {
+      "output": {
+        "item": "todecoins:lucky_coin"
+      },
+      "payment": {
+        "item": "todecoins:emerald_bank_note",
+        "count": 3
+      }
+    },
+    {
+      "output": {
+        "item": "todecoins:lucky_coin",
+        "count": 3
+      },
+      "payment": {
+        "item": "todecoins:emerald_bank_note_bag"
+      }
+    }
+  ]
+}

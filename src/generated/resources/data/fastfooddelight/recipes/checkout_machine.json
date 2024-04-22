@@ -1,0 +1,35 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "fastfooddelight"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "key": {
+          "G": {
+            "tag": "forge:nuggets/gold"
+          },
+          "I": {
+            "tag": "forge:ingots/iron"
+          },
+          "R": {
+            "item": "minecraft:redstone"
+          }
+        },
+        "pattern": [
+          " I ",
+          "IRI",
+          "GGG"
+        ],
+        "result": {
+          "item": "fastfooddelight:checkout_machine"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "modId": "farmersdelight",
+  "group": {
+    "name": "FarmersDelight Seeds and Mushrooms",
+    "enabledByDefault": true,
+    "defaultPayment": {
+      "item": "minecraft:emerald",
+      "count": 1
+    },
+    "defaultCategory": "farmingforblockheads:seeds"
+  },
+  "customEntries": [
+    {
+      "output": "farmersdelight:cabbage_seeds"
+    },
+    {
+      "output": "farmersdelight:rice"
+    },
+    {
+      "output": "farmersdelight:tomato_seeds"
+    },
+    {
+      "output": {
+        "item": "farmersdelight:brown_mushroom_colony"
+      },
+      "payment": {
+        "item": "minecraft:emerald",
+        "count": 6
+      }
+    },
+    {
+      "output": {
+        "item": "farmersdelight:red_mushroom_colony"
+      },
+      "payment": {
+        "item": "minecraft:emerald",
+        "count": 6
+      }
+    }
+  ]
+}

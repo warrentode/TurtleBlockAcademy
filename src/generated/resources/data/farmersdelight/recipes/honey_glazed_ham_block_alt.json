@@ -1,0 +1,48 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "farmersdelight"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shapeless",
+        "ingredients": [
+          {
+            "tag": "forge:crops/berries"
+          },
+          {
+            "tag": "forge:crops/berries"
+          },
+          {
+            "tag": "forge:crops/berries"
+          },
+          {
+            "tag": "forge:crops/berries"
+          },
+          {
+            "tag": "forge:ingredients/glazes"
+          },
+          {
+            "item": "farmersdelight:smoked_ham"
+          },
+          {
+            "tag": "forge:ingredients/cooked_rice"
+          },
+          {
+            "tag": "forge:ingredients/cooked_rice"
+          },
+          {
+            "item": "minecraft:bowl"
+          }
+        ],
+        "result": {
+          "item": "farmersdelight:honey_glazed_ham_block"
+        }
+      }
+    }
+  ]
+}

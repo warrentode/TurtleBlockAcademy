@@ -1,0 +1,48 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "farmersdelight"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shapeless",
+        "ingredients": [
+          {
+            "item": "minecraft:baked_potato"
+          },
+          {
+            "item": "minecraft:baked_potato"
+          },
+          {
+            "tag": "forge:milk"
+          },
+          {
+            "tag": "forge:ingredients/cooked_mutton"
+          },
+          {
+            "tag": "forge:ingredients/cooked_mutton"
+          },
+          {
+            "tag": "forge:ingredients/cooked_mutton"
+          },
+          {
+            "tag": "forge:ingredients/onion"
+          },
+          {
+            "tag": "forge:ingredients/onion"
+          },
+          {
+            "item": "minecraft:bowl"
+          }
+        ],
+        "result": {
+          "item": "farmersdelight:shepherds_pie_block"
+        }
+      }
+    }
+  ]
+}

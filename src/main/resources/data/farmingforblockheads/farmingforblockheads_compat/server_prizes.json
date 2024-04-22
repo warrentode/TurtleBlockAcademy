@@ -1,0 +1,255 @@
+{
+  "modId": "todecoins",
+  "group": {
+    "name": "Server Prizes",
+    "enabledByDefault": true,
+    "defaultCategory": "prizes"
+  },
+  "customEntries": [
+    {
+      "output": {
+        "item": "lootbags:loot_bag",
+        "nbt": "{Color: 8388736, Loot: \"lootbags:mystery_coin_pack\", Name: \"Mystery Coin Pack\", Type: \"EPIC\"}"
+      },
+      "payment": {
+        "item": "todecoins:collectible_coin_scholar_owl",
+        "count": 1
+      }
+    },
+    {
+      "output": {
+        "item": "lootbags:loot_bag",
+        "nbt": "{Color: 8388736, Loot: \"lootbags:mystery_coin_pack\", Name: \"Mystery Coin Pack\", Type: \"EPIC\"}"
+      },
+      "payment": {
+        "item": "todecoins:collectible_coin_tuxedo_cat",
+        "count": 1
+      }
+    },
+    {
+      "output": {
+        "item": "lootbags:loot_bag",
+        "nbt": "{Color: 8388736, Loot: \"lootbags:mystery_coin_pack\", Name: \"Mystery Coin Pack\", Type: \"EPIC\"}"
+      },
+      "payment": {
+        "item": "todecoins:collectible_coin_little_bear",
+        "count": 1
+      }
+    },
+    {
+      "output": {
+        "item": "lootbags:loot_bag",
+        "nbt": "{Color: 8388736, Loot: \"lootbags:mystery_coin_pack\", Name: \"Mystery Coin Pack\", Type: \"EPIC\"}"
+      },
+      "payment": {
+        "item": "todecoins:server_token_coin",
+        "count": 1
+      }
+    },
+    {
+      "output": {
+        "item": "lootbags:loot_bag",
+        "nbt": "{Color: 8388736, Loot: \"lootbags:epic_bag\", Name: \"Loot Bag (Epic)\", Type: \"EPIC\"}"
+      },
+      "payment": {
+        "item": "todecoins:collectible_coin_scholar_owl",
+        "count": 1
+      }
+    },
+    {
+      "output": {
+        "item": "lootbags:loot_bag",
+        "nbt": "{Color: 8388736, Loot: \"lootbags:epic_bag\", Name: \"Loot Bag (Epic)\", Type: \"EPIC\"}"
+      },
+      "payment": {
+        "item": "todecoins:collectible_coin_tuxedo_cat",
+        "count": 1
+      }
+    },
+    {
+      "output": {
+        "item": "lootbags:loot_bag",
+        "nbt": "{Color: 8388736, Loot: \"lootbags:epic_bag\", Name: \"Loot Bag (Epic)\", Type: \"EPIC\"}"
+      },
+      "payment": {
+        "item": "todecoins:collectible_coin_little_bear",
+        "count": 1
+      }
+    },
+    {
+      "output": {
+        "item": "lootbags:loot_bag",
+        "nbt": "{Color: 8388736, Loot: \"lootbags:epic_bag\", Name: \"Loot Bag (Epic)\", Type: \"EPIC\"}"
+      },
+      "payment": {
+        "item": "todecoins:server_token_coin",
+        "count": 1
+      }
+    },
+    {
+      "output": {
+        "item": "lootbags:loot_bag",
+        "nbt": "{Color: 3329330, Loot: \"lootbags:legendary_bag\", Name: \"Loot Bag (Legendary)\", Type: \"LEGENDARY\"}"
+      },
+      "payment": {
+        "item": "todecoins:collectible_coin_scholar_owl",
+        "count": 1
+      }
+    },
+    {
+      "output": {
+        "item": "lootbags:loot_bag",
+        "nbt": "{Color: 3329330, Loot: \"lootbags:legendary_bag\", Name: \"Loot Bag (Legendary)\", Type: \"LEGENDARY\"}"
+      },
+      "payment": {
+        "item": "todecoins:collectible_coin_tuxedo_cat",
+        "count": 1
+      }
+    },
+    {
+      "output": {
+        "item": "lootbags:loot_bag",
+        "nbt": "{Color: 3329330, Loot: \"lootbags:legendary_bag\", Name: \"Loot Bag (Legendary)\", Type: \"LEGENDARY\"}"
+      },
+      "payment": {
+        "item": "todecoins:collectible_coin_little_bear",
+        "count": 1
+      }
+    },
+    {
+      "output": {
+        "item": "lootbags:loot_bag",
+        "nbt": "{Color: 3329330, Loot: \"lootbags:legendary_bag\", Name: \"Loot Bag (Legendary)\", Type: \"LEGENDARY\"}"
+      },
+      "payment": {
+        "item": "todecoins:server_token_coin",
+        "count": 1
+      }
+    },
+    {
+      "output": {
+        "item": "lootbags:loot_bag",
+        "nbt": "{Color: 12632256, Loot: \"lootbags:anniversary_bag\", Name: \"Anniversary Bag\", Type: \"LEGENDARY\"}"
+      },
+      "payment": {
+        "item": "todecoins:collectible_coin_carnation_marshall_nash",
+        "count": 1
+      }
+    },
+    {
+      "output": {
+        "item": "lootbags:loot_bag",
+        "nbt": "{Color: 12632256, Loot: \"lootbags:anniversary_bag\", Name: \"Anniversary Bag\", Type: \"LEGENDARY\"}"
+      },
+      "payment": {
+        "item": "todecoins:collectible_coin_cosmos_marshall_nash",
+        "count": 1
+      }
+    },
+    {
+      "output": {
+        "item": "lootbags:loot_bag",
+        "nbt": "{Color: 12632256, Loot: \"lootbags:anniversary_bag\", Name: \"Anniversary Bag\", Type: \"LEGENDARY\"}"
+      },
+      "payment": {
+        "item": "todecoins:collectible_coin_carnation_trevor_brannigan",
+        "count": 1
+      }
+    },
+    {
+      "output": {
+        "item": "lootbags:loot_bag",
+        "nbt": "{Color: 12632256, Loot: \"lootbags:anniversary_bag\", Name: \"Anniversary Bag\", Type: \"LEGENDARY\"}"
+      },
+      "payment": {
+        "item": "todecoins:collectible_coin_cosmos_trevor_brannigan",
+        "count": 1
+      }
+    },
+    {
+      "output": {
+        "item": "lootbags:loot_bag",
+        "nbt": "{Color: 16753920, Loot: \"lootbags:trick_or_treat_bag\", Name: \"Trick or Treat Bag\", Type: \"LEGENDARY\"}"
+      },
+      "payment": {
+        "item": "todecoins:collectible_coin_halloween_2023",
+        "count": 1
+      }
+    },
+    {
+      "output": {
+        "item": "lootbags:loot_bag",
+        "nbt": "{Color: 8388564, Loot: \"lootbags:birthday_bag\", Name: \"Birthday Bag\", Type: \"LEGENDARY\"}"
+      },
+      "payment": {
+        "item": "todecoins:collectible_coin_birthday_2023",
+        "count": 1
+      }
+    },
+    {
+      "output": {
+        "item": "lootbags:loot_bag",
+        "nbt": "{Color: 65535, Loot: \"lootbags:christmas_bag\", Name: \"Christmas Bag\", Type: \"LEGENDARY\"}"
+      },
+      "payment": {
+        "item": "todecoins:collectible_coin_christmas_2023",
+        "count": 1
+      }
+    },
+    {
+      "output": {
+        "item": "lootbags:loot_bag",
+        "nbt": "{Color: 15132410, Loot: \"lootbags:easter_bag\", Name: \"Easter Bag\", Type: \"LEGENDARY\"}"
+      },
+      "payment": {
+        "item": "todecoins:collectible_coin_easter_2023",
+        "count": 1
+      }
+    },
+    {
+      "output": {
+        "item": "refinedstorage:1k_storage_disk"
+      },
+      "payment": {
+        "item": "todecoins:server_token_coin",
+        "count": 1
+      }
+    },
+    {
+      "output": {
+        "item": "refinedstorage:4k_storage_disk"
+      },
+      "payment": {
+        "item": "todecoins:server_token_coin",
+        "count": 4
+      }
+    },
+    {
+      "output": {
+        "item": "refinedstorage:16k_storage_disk"
+      },
+      "payment": {
+        "item": "todecoins:server_token_coin",
+        "count": 8
+      }
+    },
+    {
+      "output": {
+        "item": "refinedstorage:64k_storage_disk"
+      },
+      "payment": {
+        "item": "todecoins:server_token_coin",
+        "count": 12
+      }
+    },
+    {
+      "output": {
+        "item": "refinedstorage:creative_storage_disk"
+      },
+      "payment": {
+        "item": "todecoins:server_token_coin",
+        "count": 64
+      }
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "group": "berry_pie",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "forge:blackberries"
+    },
+    {
+      "item": "minecraft:sugar"
+    },
+    {
+      "tag": "forge:blackberries"
+    },
+    {
+      "item": "minecraft:egg"
+    }
+  ],
+  "result": {
+    "item": "wildberries:blackberry_pie",
+    "count": 1
+  }
+}

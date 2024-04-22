@@ -9,7 +9,7 @@
           "functions": [
             {
               "decoration": "target_x",
-              "destination": "todeville:worldgen/structure/treasure_poi",
+              "destination": "turtleblockacademy:worldgen/structure/treasure_poi",
               "function": "minecraft:exploration_map",
               "search_radius": 100
             },

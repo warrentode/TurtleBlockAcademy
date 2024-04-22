@@ -1,0 +1,29 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "unusualend"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "key": {
+          "X": {
+            "item": "unusualend:warped_wart"
+          }
+        },
+        "pattern": [
+          "XXX",
+          "XXX",
+          "XXX"
+        ],
+        "result": {
+          "item": "minecraft:warped_wart_block"
+        }
+      }
+    }
+  ]
+}

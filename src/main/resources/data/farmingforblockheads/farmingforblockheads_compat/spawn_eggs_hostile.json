@@ -1,0 +1,377 @@
+{
+  "modId": "minecraft",
+  "group": {
+    "name": "Spawn Eggs - Hostile",
+    "enabledByDefault": true,
+    "defaultPayment": {
+      "item": "todecoins:emerald_bank_note",
+      "count": 1
+    },
+    "defaultCategory": "spawn_egg"
+  },
+  "customEntries": [
+    {
+      "output": {
+        "item": "minecraft:blaze_spawn_egg",
+        "nbt": {
+          "EntityTag": {
+            "NoAI": 1
+          },
+          "lore": "Spawns without AI"
+        }
+      }
+    },
+    {
+      "output": {
+        "item": "minecraft:cave_spider_spawn_egg",
+        "nbt": {
+          "EntityTag": {
+            "NoAI": 1
+          },
+          "lore": "Spawns without AI"
+        }
+      }
+    },
+    {
+      "output": {
+        "item": "minecraft:creeper_spawn_egg",
+        "nbt": {
+          "EntityTag": {
+            "NoAI": 1
+          },
+          "lore": "Spawns without AI"
+        }
+      }
+    },
+    {
+      "output": {
+        "item": "minecraft:drowned_spawn_egg",
+        "nbt": {
+          "EntityTag": {
+            "NoAI": 1
+          },
+          "lore": "Spawns without AI"
+        }
+      }
+    },
+    {
+      "output": {
+        "item": "minecraft:enderman_spawn_egg",
+        "nbt": {
+          "EntityTag": {
+            "NoAI": 1
+          },
+          "lore": "Spawns without AI"
+        }
+      }
+    },
+    {
+      "output": {
+        "item": "minecraft:endermite_spawn_egg",
+        "nbt": {
+          "EntityTag": {
+            "NoAI": 1
+          },
+          "lore": "Spawns without AI"
+        }
+      }
+    },
+    {
+      "output": {
+        "item": "minecraft:evoker_spawn_egg",
+        "nbt": {
+          "EntityTag": {
+            "NoAI": 1
+          },
+          "lore": "Spawns without AI"
+        }
+      }
+    },
+    {
+      "output": {
+        "item": "minecraft:ghast_spawn_egg",
+        "nbt": {
+          "EntityTag": {
+            "NoAI": 1
+          },
+          "lore": "Spawns without AI"
+        }
+      }
+    },
+    {
+      "output": {
+        "item": "minecraft:guardian_spawn_egg",
+        "nbt": {
+          "EntityTag": {
+            "NoAI": 1
+          },
+          "lore": "Spawns without AI"
+        }
+      }
+    },
+    {
+      "output": {
+        "item": "minecraft:hoglin_spawn_egg",
+        "nbt": {
+          "EntityTag": {
+            "NoAI": 1
+          },
+          "lore": "Spawns without AI"
+        }
+      }
+    },
+    {
+      "output": {
+        "item": "minecraft:husk_spawn_egg",
+        "nbt": {
+          "EntityTag": {
+            "NoAI": 1
+          },
+          "lore": "Spawns without AI"
+        }
+      }
+    },
+    {
+      "output": {
+        "item": "minecraft:magma_cube_spawn_egg",
+        "nbt": {
+          "EntityTag": {
+            "NoAI": 1
+          },
+          "lore": "Spawns without AI"
+        }
+      }
+    },
+    {
+      "output": {
+        "item": "minecraft:phantom_spawn_egg",
+        "nbt": {
+          "EntityTag": {
+            "NoAI": 1
+          },
+          "lore": "Spawns without AI"
+        }
+      }
+    },
+    {
+      "output": {
+        "item": "minecraft:piglin_spawn_egg",
+        "nbt": {
+          "EntityTag": {
+            "NoAI": 1
+          },
+          "lore": "Spawns without AI"
+        }
+      }
+    },
+    {
+      "output": {
+        "item": "minecraft:piglin_brute_spawn_egg",
+        "nbt": {
+          "EntityTag": {
+            "NoAI": 1
+          },
+          "lore": "Spawns without AI"
+        }
+      }
+    },
+    {
+      "output": {
+        "item": "minecraft:pillager_spawn_egg",
+        "nbt": {
+          "EntityTag": {
+            "NoAI": 1
+          },
+          "lore": "Spawns without AI"
+        }
+      }
+    },
+    {
+      "output": {
+        "item": "minecraft:ravager_spawn_egg",
+        "nbt": {
+          "EntityTag": {
+            "NoAI": 1
+          },
+          "lore": "Spawns without AI"
+        }
+      }
+    },
+    {
+      "output": {
+        "item": "minecraft:shulker_spawn_egg",
+        "nbt": {
+          "EntityTag": {
+            "NoAI": 1
+          },
+          "lore": "Spawns without AI"
+        }
+      }
+    },
+    {
+      "output": {
+        "item": "minecraft:silverfish_spawn_egg",
+        "nbt": {
+          "EntityTag": {
+            "NoAI": 1
+          },
+          "lore": "Spawns without AI"
+        }
+      }
+    },
+    {
+      "output": {
+        "item": "minecraft:skeleton_spawn_egg",
+        "nbt": {
+          "EntityTag": {
+            "NoAI": 1
+          },
+          "lore": "Spawns without AI"
+        }
+      }
+    },
+    {
+      "output": {
+        "item": "minecraft:slime_spawn_egg",
+        "nbt": {
+          "EntityTag": {
+            "NoAI": 1
+          },
+          "lore": "Spawns without AI"
+        }
+      }
+    },
+    {
+      "output": {
+        "item": "minecraft:spider_spawn_egg",
+        "nbt": {
+          "EntityTag": {
+            "NoAI": 1
+          },
+          "lore": "Spawns without AI"
+        }
+      }
+    },
+    {
+      "output": {
+        "item": "minecraft:stray_spawn_egg",
+        "nbt": {
+          "EntityTag": {
+            "NoAI": 1
+          },
+          "lore": "Spawns without AI"
+        }
+      }
+    },
+    {
+      "output": {
+        "item": "minecraft:vex_spawn_egg",
+        "nbt": {
+          "EntityTag": {
+            "NoAI": 1
+          },
+          "lore": "Spawns without AI"
+        }
+      }
+    },
+    {
+      "output": {
+        "item": "minecraft:vindicator_spawn_egg",
+        "nbt": {
+          "EntityTag": {
+            "NoAI": 1
+          },
+          "lore": "Spawns without AI"
+        }
+      }
+    },
+    {
+      "output": {
+        "item": "minecraft:witch_spawn_egg",
+        "nbt": {
+          "EntityTag": {
+            "NoAI": 1
+          },
+          "lore": "Spawns without AI"
+        }
+      }
+    },
+    {
+      "output": {
+        "item": "minecraft:wither_skeleton_spawn_egg",
+        "nbt": {
+          "EntityTag": {
+            "NoAI": 1
+          },
+          "lore": "Spawns without AI"
+        }
+      }
+    },
+    {
+      "output": {
+        "item": "minecraft:zoglin_spawn_egg",
+        "nbt": {
+          "EntityTag": {
+            "NoAI": 1
+          },
+          "lore": "Spawns without AI"
+        }
+      }
+    },
+    {
+      "output": {
+        "item": "minecraft:zombie_spawn_egg",
+        "nbt": {
+          "EntityTag": {
+            "NoAI": 1
+          },
+          "lore": "Spawns without AI"
+        }
+      }
+    },
+    {
+      "output": {
+        "item": "minecraft:zombie_villager_spawn_egg",
+        "nbt": {
+          "EntityTag": {
+            "NoAI": 1
+          },
+          "lore": "Spawns without AI"
+        }
+      }
+    },
+    {
+      "output": {
+        "item": "minecraft:zombified_piglin_spawn_egg",
+        "nbt": {
+          "EntityTag": {
+            "NoAI": 1
+          },
+          "lore": "Spawns without AI"
+        }
+      }
+    },
+    {
+      "output": {
+        "item": "friendsandfoes:iceologer_spawn_egg",
+        "nbt": {
+          "EntityTag": {
+            "NoAI": 1
+          },
+          "lore": "Spawns without AI"
+        }
+      }
+    },
+    {
+      "output": {
+        "item": "friendsandfoes:illusioner_spawn_egg",
+        "nbt": {
+          "EntityTag": {
+            "NoAI": 1
+          },
+          "lore": "Spawns without AI"
+        }
+      }
+    }
+  ]
+}

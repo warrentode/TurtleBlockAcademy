@@ -1,0 +1,17 @@
+{
+  "modId": "ecologics",
+  "group": {
+    "name": "Ecologics Flowers",
+    "enabledByDefault": true,
+    "defaultPayment": {
+      "item": "minecraft:emerald",
+      "count": 1
+    },
+    "defaultCategory": "farmingforblockheads:flowers"
+  },
+  "customEntries": [
+    {
+      "output": "ecologics:azalea_flower"
+    }
+  ]
+}

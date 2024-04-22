@@ -1,0 +1,28 @@
+{
+  "bookshelf:load_conditions": [
+    {
+      "type": "bookshelf:item_exists",
+      "values": [
+        "phantasm:crystalily"
+      ]
+    }
+  ],
+  "type": "botanypots:crop",
+  "seed": {
+    "item": "phantasm:crystalily"
+  },
+  "categories": ["vivid_nihilium"],
+  "growthTicks": 1200,
+  "display": {
+    "type": "botanypots:aging",
+    "block": "phantasm:crystalily"
+  },
+  "drops": [
+    {
+      "chance": 0.5,
+      "output": {
+        "item": "phantasm:crystal_spike_tip"
+      }
+    }
+  ]
+}

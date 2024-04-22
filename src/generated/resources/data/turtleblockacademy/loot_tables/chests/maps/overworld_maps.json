@@ -9,7 +9,7 @@
           "functions": [
             {
               "decoration": "target_point",
-              "destination": "todeville:worldgen/structure/desert_poi",
+              "destination": "turtleblockacademy:worldgen/structure/desert_poi",
               "function": "minecraft:exploration_map",
               "search_radius": 100
             },
@@ -27,7 +27,7 @@
           "functions": [
             {
               "decoration": "target_point",
-              "destination": "todeville:worldgen/structure/ocean_poi",
+              "destination": "turtleblockacademy:worldgen/structure/ocean_poi",
               "function": "minecraft:exploration_map",
               "search_radius": 100
             },
@@ -45,7 +45,7 @@
           "functions": [
             {
               "decoration": "target_point",
-              "destination": "todeville:worldgen/structure/pillager_poi",
+              "destination": "turtleblockacademy:worldgen/structure/pillager_poi",
               "function": "minecraft:exploration_map",
               "search_radius": 100
             },
@@ -63,7 +63,7 @@
           "functions": [
             {
               "decoration": "blue_marker",
-              "destination": "todeville:worldgen/structure/settlement",
+              "destination": "turtleblockacademy:worldgen/structure/settlement",
               "function": "minecraft:exploration_map",
               "search_radius": 100
             },
@@ -81,7 +81,7 @@
           "functions": [
             {
               "decoration": "target_point",
-              "destination": "todeville:worldgen/structure/underground_poi",
+              "destination": "turtleblockacademy:worldgen/structure/underground_poi",
               "function": "minecraft:exploration_map",
               "search_radius": 100
             },
@@ -99,7 +99,7 @@
           "functions": [
             {
               "decoration": "target_point",
-              "destination": "todeville:worldgen/structure/witch_sighting",
+              "destination": "turtleblockacademy:worldgen/structure/witch_sighting",
               "function": "minecraft:exploration_map",
               "search_radius": 100
             },
@@ -117,7 +117,7 @@
           "functions": [
             {
               "decoration": "target_x",
-              "destination": "todeville:worldgen/structure/treasure_poi",
+              "destination": "turtleblockacademy:worldgen/structure/treasure_poi",
               "function": "minecraft:exploration_map",
               "search_radius": 100
             },
@@ -135,7 +135,7 @@
           "functions": [
             {
               "decoration": "target_point",
-              "destination": "todeville:worldgen/structure/misc_poi",
+              "destination": "turtleblockacademy:worldgen/structure/misc_poi",
               "function": "minecraft:exploration_map",
               "search_radius": 100
             },
@@ -153,7 +153,7 @@
           "functions": [
             {
               "decoration": "target_point",
-              "destination": "todeville:worldgen/structure/jungle_poi",
+              "destination": "turtleblockacademy:worldgen/structure/jungle_poi",
               "function": "minecraft:exploration_map",
               "search_radius": 100
             },

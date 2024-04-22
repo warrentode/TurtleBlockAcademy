@@ -1,0 +1,20 @@
+{
+  "modId": "festive_delight",
+  "group": {
+    "name": "Festive Delight Saplings",
+    "enabledByDefault": true,
+    "defaultPayment": {
+      "item": "minecraft:emerald",
+      "count": 5
+    },
+    "defaultCategory": "farmingforblockheads:saplings"
+  },
+  "customEntries": [
+    {
+      "output": {
+        "item": "festive_delight:cinnamon_bush",
+        "count": 1
+      }
+    }
+  ]
+}

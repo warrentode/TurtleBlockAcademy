@@ -1,0 +1,20 @@
+{
+  "id": "farmersdelight:hot_cocoa",
+  "containers": [
+    {
+      "filled": [
+        "farmersdelight:hot_cocoa"
+      ],
+      "empty": "minecraft:glass_bottle",
+      "capacity": 1
+    }
+  ],
+  "flowing_texture": "moonlight:soft_fluids/potion_flow",
+  "still_texture": "moonlight:soft_fluids/soup_liquid",
+  "food": {
+    "divider": 1,
+    "item": "farmersdelight:hot_cocoa"
+  },
+  "color": "#D2691E",
+  "translation_key": "item.farmersdelight.hot_cocoa"
+}

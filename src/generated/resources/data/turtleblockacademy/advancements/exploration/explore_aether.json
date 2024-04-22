@@ -1,0 +1,102 @@
+{
+  "parent": "turtleblockacademy:exploration/explore_end",
+  "criteria": {
+    "aether:skyroot_forest": {
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "biome": "aether:skyroot_forest"
+              }
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:location"
+    },
+    "aether:skyroot_grove": {
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "biome": "aether:skyroot_grove"
+              }
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:location"
+    },
+    "aether:skyroot_meadow": {
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "biome": "aether:skyroot_meadow"
+              }
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:location"
+    },
+    "aether:skyroot_woodland": {
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "biome": "aether:skyroot_woodland"
+              }
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:location"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancement.turtleblockacademy.explore_aether.desc"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "aether:golden_parachute",
+      "nbt": "{Damage:0}"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancement.turtleblockacademy.explore_aether"
+    }
+  },
+  "requirements": [
+    [
+      "aether:skyroot_grove"
+    ],
+    [
+      "aether:skyroot_forest"
+    ],
+    [
+      "aether:skyroot_meadow"
+    ],
+    [
+      "aether:skyroot_woodland"
+    ]
+  ],
+  "rewards": {
+    "experience": 500
+  }
+}

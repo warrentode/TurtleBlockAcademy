@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "I": {
+      "tag": "forge:ingots/iron"
+    },
+    "P": {
+      "item": "minecraft:paper"
+    },
+    "S": {
+      "tag": "forge:textiles/string"
+    }
+  },
+  "pattern": [
+    "S  ",
+    " I ",
+    "  P"
+  ],
+  "result": {
+    "item": "minecraft:name_tag"
+  }
+}

@@ -27,6 +27,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraftforge.common.Tags;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import org.jetbrains.annotations.Nullable;
 import umpaz.farmersrespite.common.registry.FRItems;
@@ -49,8 +50,32 @@ public class ItemTagsGen extends ItemTagsProvider {
     }
 
     private void registerPackTags() {
+        tag(Tags.Items.LEATHER)
+                .add(Items.LEATHER)
+                .add(Items.RABBIT_HIDE)
+                .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("nethersdelight:hoglin_hide")));
+        tag(PackTags.Items.SAND)
+                .addOptional(BOPBlocks.WHITE_SAND.getId())
+                .addOptional(BOPBlocks.ROOTED_SAND.getId())
+                .addOptional(BOPBlocks.ORANGE_SAND.getId())
+                .addOptional(BOPBlocks.BLACK_SAND.getId())
+                .add(Blocks.SAND.asItem())
+                .add(Blocks.RED_SAND.asItem());
+        tag(PackTags.Items.STRAW_FIBERS)
+                .add(Items.WHEAT)
+                .addOptional(BOPBlocks.BARLEY.getId())
+                .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("farmersdelight:rice_panicle")))
+                .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("supplementaries:flax")))
+                .addOptional(ModItems.STRAW.getId());
         tag(PackTags.Items.FLOWER_BOX_PLANTABLE);
         tag(PackTags.Items.PIGLIN_BARTER_ITEMS);
+        tag(PackTags.Items.BUNDLES)
+                .add(Items.BUNDLE)
+                .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("bagofholding:leather_bag_of_holding")))
+                .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("bagofholding:iron_bag_of_holding")))
+                .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("bagofholding:golden_bag_of_holding")));
+        tag(PackTags.Items.WALLETS)
+                .addTag(PackTags.Items.BUNDLES);
         tag(PackTags.Items.SUGAR)
                 .add(Items.SUGAR)
                 .add(Items.HONEY_BOTTLE);
@@ -699,10 +724,22 @@ public class ItemTagsGen extends ItemTagsProvider {
                 .add(Items.PINK_CARPET)
                 .add(Items.MAGENTA_CARPET)
                 .add(Items.PURPLE_CARPET);
-        tag(PackTags.Items.NUGGETS);
+        tag(PackTags.Items.NUGGETS)
+                .addTag(PackTags.Items.IRON_NUGGET)
+                .addTag(PackTags.Items.GOLD_NUGGET)
+                .addTag(PackTags.Items.NETHERITE_NUGGET);
         tag(PackTags.Items.NETHERITE_NUGGET)
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("todecoins:netherite_nugget")));
-        tag(PackTags.Items.INGOTS);
+        tag(PackTags.Items.INGOTS)
+                .addTag(PackTags.Items.IRON_INGOT)
+                .addTag(PackTags.Items.NETHERITE_INGOT)
+                .addTag(PackTags.Items.ENDONIAN_INGOT);
+        tag(PackTags.Items.GOLD_NUGGET)
+                .add(Items.GOLD_NUGGET);
+        tag(PackTags.Items.IRON_NUGGET)
+                .add(Items.IRON_NUGGET);
+        tag(PackTags.Items.IRON_INGOT)
+                .add(Items.IRON_INGOT);
         tag(PackTags.Items.NETHERITE_INGOT)
                 .add(Items.NETHERITE_INGOT);
         tag(PackTags.Items.BACKPACKS)
@@ -870,6 +907,12 @@ public class ItemTagsGen extends ItemTagsProvider {
                 .addOptional(com.mcwtrpdoors.kikoz.init.ItemInit.PRINT_SWAMP.getId())
                 .addOptional(com.mcwtrpdoors.kikoz.init.ItemInit.PRINT_MYSTIC.getId())
                 .addOptional(com.mcwtrpdoors.kikoz.init.ItemInit.PRINT_BAMBOO.getId());
+        tag(PackTags.Items.COOKED_CHICKEN)
+                .add(Items.COOKED_CHICKEN)
+                .addOptional(ModItems.COOKED_CHICKEN_CUTS.getId());
+        tag(PackTags.Items.COOKED_MUTTON)
+                .add(Items.COOKED_MUTTON)
+                .addOptional(ModItems.COOKED_MUTTON_CHOPS.getId());
         tag(PackTags.Items.BREAD)
                 .add(Items.BREAD)
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("tofucraft:steamed_bread")))

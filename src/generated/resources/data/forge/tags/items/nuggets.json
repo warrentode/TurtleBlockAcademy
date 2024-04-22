@@ -1,3 +1,7 @@
 {
-  "values": []
+  "values": [
+    "#forge:nuggets/iron",
+    "#forge:nuggets/gold",
+    "#forge:nuggets/netherite"
+  ]
 }

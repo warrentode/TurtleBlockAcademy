@@ -1,0 +1,21 @@
+{
+  "values": [
+    "minecraft:wheat",
+    {
+      "id": "biomesoplenty:barley",
+      "required": false
+    },
+    {
+      "id": "farmersdelight:rice_panicle",
+      "required": false
+    },
+    {
+      "id": "supplementaries:flax",
+      "required": false
+    },
+    {
+      "id": "farmersdelight:straw",
+      "required": false
+    }
+  ]
+}

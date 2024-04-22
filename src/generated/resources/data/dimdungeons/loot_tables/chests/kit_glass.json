@@ -333,7 +333,7 @@
               "function": "minecraft:set_count"
             }
           ],
-          "name": "todeville:glass/infused"
+          "name": "turtleblockacademy:glass/infused"
         },
         {
           "type": "minecraft:tag",
@@ -349,7 +349,7 @@
               "function": "minecraft:set_count"
             }
           ],
-          "name": "todeville:glass/reinforced"
+          "name": "turtleblockacademy:glass/reinforced"
         },
         {
           "type": "minecraft:tag",
@@ -365,7 +365,7 @@
               "function": "minecraft:set_count"
             }
           ],
-          "name": "todeville:glass/glowing"
+          "name": "turtleblockacademy:glass/glowing"
         },
         {
           "type": "minecraft:tag",
@@ -381,7 +381,7 @@
               "function": "minecraft:set_count"
             }
           ],
-          "name": "todeville:glass/shifting"
+          "name": "turtleblockacademy:glass/shifting"
         },
         {
           "type": "minecraft:item",

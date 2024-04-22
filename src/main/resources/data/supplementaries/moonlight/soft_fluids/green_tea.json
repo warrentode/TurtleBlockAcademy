@@ -1,0 +1,20 @@
+{
+  "id": "farmersrespite:green_tea",
+  "containers": [
+    {
+      "filled": [
+        "farmersrespite:green_tea"
+      ],
+      "empty": "minecraft:glass_bottle",
+      "capacity": 1
+    }
+  ],
+  "flowing_texture": "moonlight:soft_fluids/potion_flow",
+  "still_texture": "moonlight:soft_fluids/soup_liquid",
+  "food": {
+    "divider": 1,
+    "item": "farmersrespite:green_tea"
+  },
+  "color": "#F0FFF0",
+  "translation_key": "item.farmersrespite.green_tea"
+}

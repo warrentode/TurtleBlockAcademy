@@ -10,6 +10,8 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.levelgen.structure.Structure;
 import org.jetbrains.annotations.NotNull;
 
+import static com.github.warrentode.turtleblockacademy.TurtleBlockAcademy.MODID;
+
 public class PackTags {
     public static class Blocks {
         public static final TagKey<Block> DROPS_FOUR_LEAF_CLOVER = packBlockTag("todecoins", "drops_four_leaf_clover");
@@ -32,6 +34,10 @@ public class PackTags {
     }
 
     public static class Items {
+        public static final TagKey<Item> SAND = packItemTag("forge", "sand");
+        public static final TagKey<Item> WALLETS = packItemTag("todecoins", "wallets");
+        public static final TagKey<Item> BUNDLES = packItemTag("todecoins", "bundles");
+
         public static final TagKey<Item> GARDEN_ITEMS = packItemTag("justoutdoorstuffs", "garden_items");
         public static final TagKey<Item> PATIO_ITEMS = packItemTag("justoutdoorstuffs", "patio_items");
         public static final TagKey<Item> SLEDS = packItemTag("snowyspirit", "sleds");
@@ -40,7 +46,7 @@ public class PackTags {
         public static final TagKey<Item> LAPIS_BRICKS = packItemTag("supplementaries", "lapis_bricks");
         public static final TagKey<Item> ASH_BRICKS = packItemTag("supplementaries", "lapis_bricks");
 
-        public static final TagKey<Item> BACKPACKS = packItemTag("todeville", "backpacks");
+        public static final TagKey<Item> BACKPACKS = packItemTag(MODID, "backpacks");
 
         public static final TagKey<Item> BELT = packItemTag("curios", "belt");
         public static final TagKey<Item> HANDS = packItemTag("curios", "hands");
@@ -50,21 +56,25 @@ public class PackTags {
 
         public static final TagKey<Item> ENDONIAN_INGOT = packItemTag("todecoins", "endonian_ingot");
 
-        public static final TagKey<Item> TOOLS_CARVING = packItemTag("todeville", "tools/carving");
+        public static final TagKey<Item> TOOLS_CARVING = packItemTag(MODID, "tools/carving");
         public static final TagKey<Item> TOOLS_KNIVES = packItemTag("forge", "tools/knives");
-        public static final TagKey<Item> SOUL_BINDER = packItemTag("todeville", "soul_binder");
+        public static final TagKey<Item> SOUL_BINDER = packItemTag(MODID, "soul_binder");
 
         public static final TagKey<Item> NETHERITE_NUGGET = packItemTag("forge", "nuggets/netherite");
         public static final TagKey<Item> NETHERITE_INGOT = packItemTag("forge", "ingots/netherite");
 
-        public static final TagKey<Item> WALLS = packItemTag("todeville", "walls");
-        public static final TagKey<Item> LANTERNS = packItemTag("todeville", "lanterns");
-        public static final TagKey<Item> CURIO_LIGHT_SOURCE = packItemTag("todeville", "curio_light_source");
+        public static final TagKey<Item> IRON_NUGGET = packItemTag("forge", "nuggets/iron");
+        public static final TagKey<Item> IRON_INGOT = packItemTag("forge", "ingots/iron");
+        public static final TagKey<Item> GOLD_NUGGET = packItemTag("forge", "nuggets/gold");
 
-        public static final TagKey<Item> SHULKER_BOXES = packItemTag("todeville", "shulker_boxes");
-        public static final TagKey<Item> BACKPACK_UPGRADES = packItemTag("todeville", "backpack_upgrades");
-        public static final TagKey<Item> DOOR_PATTERNS = packItemTag("todeville", "door_patterns");
-        public static final TagKey<Item> TRAPDOOR_PATTERNS = packItemTag("todeville", "trapdoor_patterns");
+        public static final TagKey<Item> WALLS = packItemTag(MODID, "walls");
+        public static final TagKey<Item> LANTERNS = packItemTag(MODID, "lanterns");
+        public static final TagKey<Item> CURIO_LIGHT_SOURCE = packItemTag(MODID, "curio_light_source");
+
+        public static final TagKey<Item> SHULKER_BOXES = packItemTag(MODID, "shulker_boxes");
+        public static final TagKey<Item> BACKPACK_UPGRADES = packItemTag(MODID, "backpack_upgrades");
+        public static final TagKey<Item> DOOR_PATTERNS = packItemTag(MODID, "door_patterns");
+        public static final TagKey<Item> TRAPDOOR_PATTERNS = packItemTag(MODID, "trapdoor_patterns");
 
         public static final TagKey<Item> GEMS = packItemTag("forge", "gems");
         public static final TagKey<Item> GEM_SHARDS = packItemTag("forge", "gems/gem_shards");
@@ -117,42 +127,45 @@ public class PackTags {
         public static final TagKey<Item> SPICES = packItemTag("forge", "ingredients/spices");
         public static final TagKey<Item> CHEESE_SLICES = packItemTag("forge", "ingredients/cheese_slices");
         public static final TagKey<Item> BREAD = packItemTag("forge", "ingredients/bread");
+        public static final TagKey<Item> COOKED_CHICKEN = packItemTag("forge", "ingredients/cooked_chicken");
+        public static final TagKey<Item> COOKED_MUTTON = packItemTag("forge", "ingredients/cooked_mutton");
         public static final TagKey<Item> SWEETENED_CHUNK = packItemTag("rottenleather", "sweetened_chunk");
 
         public static final TagKey<Item> GLAZES = packItemTag("forge", "ingredients/glazes");
+        public static final TagKey<Item> STRAW_FIBERS = packItemTag(MODID, "straw_fibers");
 
-        public static final TagKey<Item> JAR_PLACEABLE = packItemTag("todeville", "jar_placeable");
+        public static final TagKey<Item> JAR_PLACEABLE = packItemTag(MODID, "jar_placeable");
         public static final TagKey<Item> COOKIES = packItemTag("supplementaries", "cookies");
         public static final TagKey<Item> CHOCOLATE = packItemTag("supplementaries", "chocolate_bars");
         public static final TagKey<Item> CANDY = packItemTag("hauntedharvest", "candy");
         public static final TagKey<Item> SWEETS = packItemTag("hauntedharvest", "sweets");
-        public static final TagKey<Item> TRICKS = packItemTag("todeville", "tricks");
+        public static final TagKey<Item> TRICKS = packItemTag(MODID, "tricks");
         public static final TagKey<Item> CAKES = packItemTag("forge", "cakes");
         public static final TagKey<Item> CAKE_SLICES = packItemTag("forge", "cake_slices");
         public static final TagKey<Item> FLOWER_BOX_PLANTABLE = packItemTag("supplementaries", "flower_box_plantable");
 
-        public static final TagKey<Item> CANDELABRA = packItemTag("todeville", "candelabras");
-        public static final TagKey<Item> LAMPS = packItemTag("todeville", "lamps");
-        public static final TagKey<Item> FIRE_PITS = packItemTag("todeville", "fire_pits");
-        public static final TagKey<Item> LARGE_FIRE_PITS = packItemTag("todeville", "large_fire_pits");
-        public static final TagKey<Item> STANDING_TORCHES = packItemTag("todeville", "standing_torches");
-        public static final TagKey<Item> TALL_STANDING_TORCHES = packItemTag("todeville", "tall_standing_torches");
-        public static final TagKey<Item> WALL_TORCHES = packItemTag("todeville", "wall_torches");
+        public static final TagKey<Item> CANDELABRA = packItemTag(MODID, "candelabras");
+        public static final TagKey<Item> LAMPS = packItemTag(MODID, "lamps");
+        public static final TagKey<Item> FIRE_PITS = packItemTag(MODID, "fire_pits");
+        public static final TagKey<Item> LARGE_FIRE_PITS = packItemTag(MODID, "large_fire_pits");
+        public static final TagKey<Item> STANDING_TORCHES = packItemTag(MODID, "standing_torches");
+        public static final TagKey<Item> TALL_STANDING_TORCHES = packItemTag(MODID, "tall_standing_torches");
+        public static final TagKey<Item> WALL_TORCHES = packItemTag(MODID, "wall_torches");
 
-        public static final TagKey<Item> BLINDS = packItemTag("todeville", "blinds");
-        public static final TagKey<Item> PICTURE_FRAMES = packItemTag("todeville", "picture_frames");
-        public static final TagKey<Item> TRELLIS = packItemTag("todeville", "trellis");
+        public static final TagKey<Item> BLINDS = packItemTag(MODID, "blinds");
+        public static final TagKey<Item> PICTURE_FRAMES = packItemTag(MODID, "picture_frames");
+        public static final TagKey<Item> TRELLIS = packItemTag(MODID, "trellis");
 
-        public static final TagKey<Item> BEEHIVES = packItemTag("todeville", "beehives");
-        public static final TagKey<Item> CAMP_CHAIRS = packItemTag("todeville", "camp_chairs");
-        public static final TagKey<Item> CHIMES = packItemTag("todeville", "chimes");
-        public static final TagKey<Item> MAILBOXES = packItemTag("todeville", "mailboxes");
-        public static final TagKey<Item> NEEDLES = packItemTag("todeville", "needles");
-        public static final TagKey<Item> STONE_LAMPS = packItemTag("todeville", "stone_lamps");
-        public static final TagKey<Item> WAYSTONES = packItemTag("todeville", "waystones");
+        public static final TagKey<Item> BEEHIVES = packItemTag(MODID, "beehives");
+        public static final TagKey<Item> CAMP_CHAIRS = packItemTag(MODID, "camp_chairs");
+        public static final TagKey<Item> CHIMES = packItemTag(MODID, "chimes");
+        public static final TagKey<Item> MAILBOXES = packItemTag(MODID, "mailboxes");
+        public static final TagKey<Item> NEEDLES = packItemTag(MODID, "needles");
+        public static final TagKey<Item> STONE_LAMPS = packItemTag(MODID, "stone_lamps");
+        public static final TagKey<Item> WAYSTONES = packItemTag(MODID, "waystones");
 
-        public static final TagKey<Item> LOOTBAG_CURRENCY = packItemTag("todeville", "lootbag_currency");
-        public static final TagKey<Item> LOOTBAG_SPECIAL_CURRENCY = packItemTag("todeville", "lootbag_special_currency");
+        public static final TagKey<Item> LOOTBAG_CURRENCY = packItemTag(MODID, "lootbag_currency");
+        public static final TagKey<Item> LOOTBAG_SPECIAL_CURRENCY = packItemTag(MODID, "lootbag_special_currency");
         public static final TagKey<Item> CURRENCY = packItemTag("forge", "currency");
         public static final TagKey<Item> PIGLIN_BARTER_ITEMS = packItemTag("forge", "piglin_barter_items");
 
@@ -168,16 +181,16 @@ public class PackTags {
         public static final TagKey<Item> INGOTS = packItemTag("forge", "ingots");
         public static final TagKey<Item> GLASS = packItemTag("forge", "glass");
 
-        public static final TagKey<Item> GLASS_INFUSED = packItemTag("todeville", "glass/infused");
-        public static final TagKey<Item> GLASS_REINFORCED = packItemTag("todeville", "glass/reinforced");
-        public static final TagKey<Item> GLASS_GLOWING = packItemTag("todeville", "glass/glowing");
-        public static final TagKey<Item> GLASS_SHIFTING = packItemTag("todeville", "glass/shifting");
+        public static final TagKey<Item> GLASS_INFUSED = packItemTag(MODID, "glass/infused");
+        public static final TagKey<Item> GLASS_REINFORCED = packItemTag(MODID, "glass/reinforced");
+        public static final TagKey<Item> GLASS_GLOWING = packItemTag(MODID, "glass/glowing");
+        public static final TagKey<Item> GLASS_SHIFTING = packItemTag(MODID, "glass/shifting");
 
         public static final TagKey<Item> CARPETS = packItemTag("minecraft", "carpets");
 
         public static final TagKey<Item> NO_AI_EGGS = packItemTag("todecoins", "no_ai_spawn_eggs");
 
-        public static final TagKey<Item> FATS = packItemTag("todeville", "fat");
+        public static final TagKey<Item> FATS = packItemTag(MODID, "fat");
         public static final TagKey<Item> ASH = packItemTag("forge", "ash");
     }
 
@@ -230,20 +243,20 @@ public class PackTags {
         TagKey<Structure> ON_VILLAGE_EXPLORER_MAPS = packStructureTag("forge", "worldgen/structure/village");
         TagKey<Structure> ON_TREASURE_MAPS = packStructureTag("forge", "worldgen/structure/treasure");
 
-        TagKey<Structure> OVERWORLD_END_POI = packStructureTag("todeville", "worldgen/structure/overworld_end_poi");
-        TagKey<Structure> OVERWORLD_NETHER_POI = packStructureTag("todeville", "worldgen/structure/overworld_nether_poi");
+        TagKey<Structure> OVERWORLD_END_POI = packStructureTag(MODID, "worldgen/structure/overworld_end_poi");
+        TagKey<Structure> OVERWORLD_NETHER_POI = packStructureTag(MODID, "worldgen/structure/overworld_nether_poi");
 
-        TagKey<Structure> DESERT_POI = packStructureTag("todeville", "worldgen/structure/desert_poi");
-        TagKey<Structure> JUNGLE_POI = packStructureTag("todeville", "worldgen/structure/jungle_poi");
-        TagKey<Structure> OCEAN_POI = packStructureTag("todeville", "worldgen/structure/ocean_poi");
-        TagKey<Structure> PILLAGER_POI = packStructureTag("todeville", "worldgen/structure/pillager_poi");
-        TagKey<Structure> MISC_POI = packStructureTag("todeville", "worldgen/structure/misc_poi");
-        TagKey<Structure> TREASURE_POI = packStructureTag("todeville", "worldgen/structure/treasure_poi");
-        TagKey<Structure> UNDERGROUND_POI = packStructureTag("todeville", "worldgen/structure/underground_poi");
-        TagKey<Structure> NETHER_POI = packStructureTag("todeville", "worldgen/structure/nether_poi");
-        TagKey<Structure> END_POI = packStructureTag("todeville", "worldgen/structure/end_poi");
-        TagKey<Structure> SETTLEMENT = packStructureTag("todeville", "worldgen/structure/settlement");
-        TagKey<Structure> WITCH_SIGHTING = packStructureTag("todeville", "worldgen/structure/witch_sighting");
+        TagKey<Structure> DESERT_POI = packStructureTag(MODID, "worldgen/structure/desert_poi");
+        TagKey<Structure> JUNGLE_POI = packStructureTag(MODID, "worldgen/structure/jungle_poi");
+        TagKey<Structure> OCEAN_POI = packStructureTag(MODID, "worldgen/structure/ocean_poi");
+        TagKey<Structure> PILLAGER_POI = packStructureTag(MODID, "worldgen/structure/pillager_poi");
+        TagKey<Structure> MISC_POI = packStructureTag(MODID, "worldgen/structure/misc_poi");
+        TagKey<Structure> TREASURE_POI = packStructureTag(MODID, "worldgen/structure/treasure_poi");
+        TagKey<Structure> UNDERGROUND_POI = packStructureTag(MODID, "worldgen/structure/underground_poi");
+        TagKey<Structure> NETHER_POI = packStructureTag(MODID, "worldgen/structure/nether_poi");
+        TagKey<Structure> END_POI = packStructureTag(MODID, "worldgen/structure/end_poi");
+        TagKey<Structure> SETTLEMENT = packStructureTag(MODID, "worldgen/structure/settlement");
+        TagKey<Structure> WITCH_SIGHTING = packStructureTag(MODID, "worldgen/structure/witch_sighting");
         TagKey<Structure> WAY_SIGN_DESTINATIONS = packStructureTag("supplementaries", "worldgen/structure/way_sign_destinations");
     }
 

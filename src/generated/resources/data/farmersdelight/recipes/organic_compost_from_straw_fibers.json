@@ -1,0 +1,48 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "farmersdelight"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shapeless",
+        "ingredients": [
+          {
+            "item": "minecraft:dirt"
+          },
+          {
+            "tag": "turtleblockacademy:straw_fibers"
+          },
+          {
+            "tag": "turtleblockacademy:straw_fibers"
+          },
+          {
+            "item": "minecraft:bone_meal"
+          },
+          {
+            "item": "minecraft:bone_meal"
+          },
+          {
+            "item": "farmersdelight:tree_bark"
+          },
+          {
+            "item": "farmersdelight:tree_bark"
+          },
+          {
+            "item": "farmersdelight:tree_bark"
+          },
+          {
+            "item": "farmersdelight:tree_bark"
+          }
+        ],
+        "result": {
+          "item": "farmersdelight:organic_compost"
+        }
+      }
+    }
+  ]
+}

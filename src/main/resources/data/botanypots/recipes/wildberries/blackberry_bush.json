@@ -1,0 +1,37 @@
+{
+  "bookshelf:load_conditions": [
+    {
+      "type": "bookshelf:item_exists",
+      "values": [
+        "wildberries:blackberry"
+      ]
+    }
+  ],
+  "type": "botanypots:crop",
+  "seed": {
+    "item": "wildberries:blackberry"
+  },
+  "categories": [
+    "dirt"
+  ],
+  "growthTicks": 1200,
+  "lightLevel": 14,
+  "display": {
+    "type": "botanypots:aging",
+    "block": "wildberries:blackberry_bush_stage_3"
+  },
+  "drops": [
+    {
+      "chance": 1.00,
+      "output": {
+        "item": "wildberries:blackberry"
+      }
+    },
+    {
+      "chance": 0.05,
+      "output": {
+        "item": "wildberries:blackberry"
+      }
+    }
+  ]
+}

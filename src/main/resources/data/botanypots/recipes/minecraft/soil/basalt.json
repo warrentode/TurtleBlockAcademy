@@ -1,0 +1,15 @@
+{
+  "type": "botanypots:soil",
+  "input": {
+    "item": "minecraft:basalt"
+  },
+  "display": {
+    "block": "minecraft:basalt"
+  },
+  "categories": [
+    "stone",
+    "mushroom",
+    "basalt"
+  ],
+  "growthModifier": 1
+}

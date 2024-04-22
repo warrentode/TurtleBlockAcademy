@@ -1,3 +1,7 @@
 {
-  "values": []
+  "values": [
+    "#forge:ingots/iron",
+    "#forge:ingots/netherite",
+    "#todecoins:endonian_ingot"
+  ]
 }

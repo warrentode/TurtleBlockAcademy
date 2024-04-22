@@ -1,0 +1,25 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "unusualend"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shapeless",
+        "ingredients": [
+          {
+            "item": "minecraft:warped_wart_block"
+          }
+        ],
+        "result": {
+          "count": 9,
+          "item": "unusualend:warped_wart"
+        }
+      }
+    }
+  ]
+}

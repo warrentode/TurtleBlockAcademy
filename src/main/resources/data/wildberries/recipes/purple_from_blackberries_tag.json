@@ -1,0 +1,19 @@
+{
+  "group": "purple_dye",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01"
+  ],
+  "key": {
+    "0": {
+      "tag": "forge:blackberries"
+    },
+    "1": {
+      "tag": "forge:blackberries"
+    }
+  },
+  "result": {
+    "item": "minecraft:purple_dye",
+    "count": 1
+  }
+}

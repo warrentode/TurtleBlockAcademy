@@ -1,0 +1,20 @@
+{
+  "id": "delightful:prickly_pear_juice",
+  "containers": [
+    {
+      "filled": [
+        "delightful:prickly_pear_juice"
+      ],
+      "empty": "minecraft:glass_bottle",
+      "capacity": 1
+    }
+  ],
+  "flowing_texture": "moonlight:soft_fluids/potion_flow",
+  "still_texture": "moonlight:soft_fluids/soup_liquid",
+  "food": {
+    "divider": 1,
+    "item": "delightful:prickly_pear_juice"
+  },
+  "color": "#C71585",
+  "translation_key": "item.delightful.prickly_pear_juice"
+}

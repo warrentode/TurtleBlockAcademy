@@ -1,0 +1,32 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "farmersrespite"
+        },
+        {
+          "type": "forge:mod_loaded",
+          "modid": "delightful"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shapeless",
+        "group": "green_tea",
+        "ingredients": [
+          {
+            "item": "delightful:green_tea_leaf"
+          },
+          {
+            "item": "delightful:green_tea_leaf"
+          }
+        ],
+        "result": {
+          "item": "farmersrespite:green_tea"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "type": "botanypots:crop",
+  "seed": {
+    "item": "snowyspirit:ginger_flower"
+  },
+  "categories": [
+    "dirt",
+    "farmland"
+  ],
+  "growthTicks": 1200,
+  "display": {
+    "type": "botanypots:transitional",
+    "phases": [
+      {
+        "block": "snowyspirit:ginger",
+        "properties": {
+          "age": 0
+        }
+      },
+      {
+        "block": "snowyspirit:ginger",
+        "properties": {
+          "age": 1
+        }
+      },
+      {
+        "block": "snowyspirit:ginger",
+        "properties": {
+          "age": 2
+        }
+      },
+      {
+        "block": "snowyspirit:ginger",
+        "properties": {
+          "age": 3
+        }
+      },
+      {
+        "block": "snowyspirit:ginger",
+        "properties": {
+          "age": 4
+        }
+      },
+      {
+        "block": "snowyspirit:ginger",
+        "properties": {
+          "age": 5
+        }
+      },
+      {
+        "block": "snowyspirit:ginger",
+        "properties": {
+          "age": 6
+        }
+      },
+      {
+        "block": "snowyspirit:ginger",
+        "properties": {
+          "age": 7
+        }
+      }
+    ]
+  },
+  "drops": [
+    {
+      "chance": 1.00,
+      "output": {
+        "item": "snowyspirit:ginger"
+      },
+      "minRolls": 1,
+      "maxRolls": 2
+    },
+    {
+      "chance": 0.05,
+      "output": {
+        "item": "snowyspirit:ginger_flower"
+      },
+      "minRolls": 1,
+      "maxRolls": 2
+    }
+  ]
+}

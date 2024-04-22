@@ -6,6 +6,8 @@ import net.minecraft.resources.ResourceLocation;
 import java.util.Collections;
 import java.util.Set;
 
+import static com.github.warrentode.turtleblockacademy.TurtleBlockAcademy.MODID;
+
 public class CageriumLootTables {
     private static final Set<ResourceLocation> LOCATIONS = Sets.newHashSet();
     private static final Set<ResourceLocation> IMMUTABLE_LOCATIONS = Collections.unmodifiableSet(LOCATIONS);
@@ -125,7 +127,7 @@ public class CageriumLootTables {
     public static final ResourceLocation CRYSTIE = register("phantasm", "crystie");
 
     // misc tables
-    public static final ResourceLocation GIFTS = register("todeville", "chests/gifts");
+    public static final ResourceLocation GIFTS = register(MODID, "chests/gifts");
     public static final ResourceLocation PIGLIN_BARTERING = register("minecraft", "gameplay/piglin_bartering");
     public static final ResourceLocation FISHING_FISH = register("minecraft", "gameplay/fishing/fish");
     public static final ResourceLocation CAT_MORNING_GIFT = register("minecraft", "gameplay/cat_morning_gift");

@@ -1,0 +1,38 @@
+{
+  "modId": "supplementaries",
+  "silent": true,
+  "group": {
+    "name": "Supplementaries Bank Supplies",
+    "enabledByDefault": true,
+    "defaultCategory": "bank"
+  },
+  "customEntries": [
+    {
+      "output": {
+        "item": "supplementaries:key"
+      },
+      "payment": {
+        "item": "minecraft:emerald",
+        "count": 1
+      }
+    },
+    {
+      "output": {
+        "item": "supplementaries:safe"
+      },
+      "payment": {
+        "item": "minecraft:emerald",
+        "count": 64
+      }
+    },
+    {
+      "output": {
+        "item": "supplementaries:lock_block"
+      },
+      "payment": {
+        "item": "minecraft:emerald",
+        "count": 32
+      }
+    }
+  ]
+}

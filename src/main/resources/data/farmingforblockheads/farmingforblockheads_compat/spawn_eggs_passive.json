@@ -1,0 +1,50 @@
+{
+  "modId": "minecraft",
+  "group": {
+    "name": "Spawn Eggs - Passive",
+    "enabledByDefault": true,
+    "defaultPayment": {
+      "item": "todecoins:pot_of_gold",
+      "count": 21
+    },
+    "defaultCategory": "spawn_egg"
+  },
+  "customEntries": [
+    {
+      "output": "guardvillagers:guard_spawn_egg"
+    },
+    {
+      "output": "minecraft:villager_spawn_egg"
+    },
+    {
+      "output": "friendsandfoes:copper_golem_spawn_egg"
+    },
+    {
+      "output": "friendsandfoes:tuff_golem_spawn_egg"
+    },
+    {
+      "output": "guardvillagers:snow_golem_spawn_egg"
+    },
+    {
+      "output": "minecraft:allay_spawn_egg"
+    },
+    {
+      "output": "minecraft:wandering_trader_spawn_egg"
+    },
+    {
+      "output": "cagerium:iron_golem_spawn_egg"
+    },
+    {
+      "output": "todepiglins:todepiglinmerchant_spawn_egg"
+    },
+    {
+      "output": "goblintraders:goblin_trader_spawn_egg"
+    },
+    {
+      "output": "goblintraders:vein_goblin_trader_spawn_egg"
+    },
+    {
+      "output": "todecoins:numismatist_spawn_egg"
+    }
+  ]
+}

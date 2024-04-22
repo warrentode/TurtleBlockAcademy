@@ -1,0 +1,18 @@
+{
+  "modId": "snowyspirit",
+  "silent": true,
+  "group": {
+    "name": "Snowy Spirit Seeds",
+    "enabledByDefault": true,
+    "defaultPayment": {
+      "item": "minecraft:emerald",
+      "count": 1
+    },
+    "defaultCategory": "farmingforblockheads:seeds"
+  },
+  "customEntries": [
+    {
+      "output": "snowyspirit:ginger_flower"
+    }
+  ]
+}

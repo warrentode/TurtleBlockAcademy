@@ -89,6 +89,19 @@ public class ModLootProviders extends LootTableProvider {
     public static final LootItemCondition.Builder SPRING = SeasonalCondition.season().setSeason(Boolean.valueOf("SPRING"));
     public static final LootItemCondition.Builder SUMMER = SeasonalCondition.season().setSeason(Boolean.valueOf("SUMMER"));
     public static final LootItemCondition.Builder WINTER = SeasonalCondition.season().setSeason(Boolean.valueOf("WINTER"));
+
+    // structure checks
+    public static final LootItemCondition.Builder IN_VILLAGE_SNOWY = LocationCheck.checkLocation(LocationPredicate.Builder.location()
+            .setStructure(Structures.VILLAGE_SNOWY.unwrapKey().orElseThrow()));
+    public static final LootItemCondition.Builder IN_VILLAGE_TAIGA = LocationCheck.checkLocation(LocationPredicate.Builder.location()
+            .setStructure(Structures.VILLAGE_TAIGA.unwrapKey().orElseThrow()));
+    public static final LootItemCondition.Builder IN_VILLAGE_PLAINS = LocationCheck.checkLocation(LocationPredicate.Builder.location()
+            .setStructure(Structures.VILLAGE_PLAINS.unwrapKey().orElseThrow()));
+    public static final LootItemCondition.Builder IN_VILLAGE_SAVANNA = LocationCheck.checkLocation(LocationPredicate.Builder.location()
+            .setStructure(Structures.VILLAGE_SAVANNA.unwrapKey().orElseThrow()));
+    public static final LootItemCondition.Builder IN_VILLAGE_DESERT = LocationCheck.checkLocation(LocationPredicate.Builder.location()
+            .setStructure(Structures.VILLAGE_DESERT.unwrapKey().orElseThrow()));
+
     // individual biome checks
     // BOP BIOMES
     // overworld biomes
@@ -251,8 +264,6 @@ public class ModLootProviders extends LootTableProvider {
 
     // OVERWORLD VANILLA BIOMES
     // arctic biomes
-    public static final LootItemCondition.Builder IN_VILLAGE_SNOWY = LocationCheck.checkLocation(LocationPredicate.Builder.location()
-            .setStructure(Structures.VILLAGE_SNOWY.unwrapKey().orElseThrow()));
     public static final LootItemCondition.Builder IN_FROZEN_OCEAN = LocationCheck.checkLocation(LocationPredicate.Builder.location()
             .setBiome(Biomes.FROZEN_OCEAN));
     public static final LootItemCondition.Builder IN_DEEP_FROZEN_OCEAN = LocationCheck.checkLocation(LocationPredicate.Builder.location()
@@ -276,8 +287,6 @@ public class ModLootProviders extends LootTableProvider {
     public static final LootItemCondition.Builder IN_ICE_SPIKES = LocationCheck.checkLocation(LocationPredicate.Builder.location()
             .setBiome(Biomes.ICE_SPIKES));
     // cold biomes
-    public static final LootItemCondition.Builder IN_VILLAGE_TAIGA = LocationCheck.checkLocation(LocationPredicate.Builder.location()
-            .setStructure(Structures.VILLAGE_TAIGA.unwrapKey().orElseThrow()));
     public static final LootItemCondition.Builder IN_COLD_OCEAN = LocationCheck.checkLocation(LocationPredicate.Builder.location()
             .setBiome(Biomes.COLD_OCEAN));
     public static final LootItemCondition.Builder IN_DEEP_COLD_OCEAN = LocationCheck.checkLocation(LocationPredicate.Builder.location()
@@ -301,8 +310,6 @@ public class ModLootProviders extends LootTableProvider {
     public static final LootItemCondition.Builder IN_STONY_SHORE = LocationCheck.checkLocation(LocationPredicate.Builder.location()
             .setBiome(Biomes.STONY_SHORE));
     // temperate biomes
-    public static final LootItemCondition.Builder IN_VILLAGE_PLAINS = LocationCheck.checkLocation(LocationPredicate.Builder.location()
-            .setStructure(Structures.VILLAGE_PLAINS.unwrapKey().orElseThrow()));
     public static final LootItemCondition.Builder IN_OCEAN = LocationCheck.checkLocation(LocationPredicate.Builder.location()
             .setBiome(Biomes.OCEAN));
     public static final LootItemCondition.Builder IN_DEEP_OCEAN = LocationCheck.checkLocation(LocationPredicate.Builder.location()
@@ -343,8 +350,6 @@ public class ModLootProviders extends LootTableProvider {
     public static final LootItemCondition.Builder IN_MANGROVE_SWAMP = LocationCheck.checkLocation(LocationPredicate.Builder.location()
             .setBiome(Biomes.MANGROVE_SWAMP));
     // warm biomes
-    public static final LootItemCondition.Builder IN_VILLAGE_SAVANNA = LocationCheck.checkLocation(LocationPredicate.Builder.location()
-            .setStructure(Structures.VILLAGE_SAVANNA.unwrapKey().orElseThrow()));
     public static final LootItemCondition.Builder IN_WARM_OCEAN = LocationCheck.checkLocation(LocationPredicate.Builder.location()
             .setBiome(Biomes.WARM_OCEAN));
     public static final LootItemCondition.Builder IN_SAVANNA = LocationCheck.checkLocation(LocationPredicate.Builder.location()
@@ -354,8 +359,6 @@ public class ModLootProviders extends LootTableProvider {
     public static final LootItemCondition.Builder IN_WINDSWEPT_SAVANNA = LocationCheck.checkLocation(LocationPredicate.Builder.location()
             .setBiome(Biomes.WINDSWEPT_SAVANNA));
     // arid biomes
-    public static final LootItemCondition.Builder IN_VILLAGE_DESERT = LocationCheck.checkLocation(LocationPredicate.Builder.location()
-            .setStructure(Structures.VILLAGE_DESERT.unwrapKey().orElseThrow()));
     public static final LootItemCondition.Builder IN_DESERT = LocationCheck.checkLocation(LocationPredicate.Builder.location()
             .setBiome(Biomes.DESERT));
     public static final LootItemCondition.Builder IN_BADLANDS = LocationCheck.checkLocation(LocationPredicate.Builder.location()

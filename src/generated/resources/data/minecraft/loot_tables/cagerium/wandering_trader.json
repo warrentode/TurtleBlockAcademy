@@ -12,7 +12,7 @@
               "condition": "minecraft:random_chance"
             }
           ],
-          "name": "todeville:cagerium/chests/gifts"
+          "name": "turtleblockacademy:cagerium/chests/gifts"
         }
       ],
       "rolls": 1.0

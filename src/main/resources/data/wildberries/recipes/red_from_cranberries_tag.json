@@ -1,0 +1,19 @@
+{
+  "group": "red_dye",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01"
+  ],
+  "key": {
+    "0": {
+      "tag": "forge:cranberries"
+    },
+    "1": {
+      "tag": "forge:cranberries"
+    }
+  },
+  "result": {
+    "item": "minecraft:red_dye",
+    "count": 1
+  }
+}

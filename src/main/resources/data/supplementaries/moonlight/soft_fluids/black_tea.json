@@ -1,0 +1,20 @@
+{
+  "id": "farmersrespite:black_tea",
+  "containers": [
+    {
+      "filled": [
+        "farmersrespite:black_tea"
+      ],
+      "empty": "minecraft:glass_bottle",
+      "capacity": 1
+    }
+  ],
+  "flowing_texture": "moonlight:soft_fluids/potion_flow",
+  "still_texture": "moonlight:soft_fluids/soup_liquid",
+  "food": {
+    "divider": 1,
+    "item": "farmersrespite:black_tea"
+  },
+  "color": "#A0522D",
+  "translation_key": "item.farmersrespite.black_tea"
+}

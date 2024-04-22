@@ -1,0 +1,42 @@
+{
+  "bookshelf:load_conditions": [
+    {
+      "type": "bookshelf:item_exists",
+      "values": [
+        "tofucraft:sapling_apricot"
+      ]
+    }
+  ],
+  "type": "botanypots:crop",
+  "seed": {
+    "item": "sapling_apricot"
+  },
+  "categories": [
+    "water"
+  ],
+  "growthTicks": 1200,
+  "display": {
+    "type": "botanypots:aging",
+    "block": "tofucraft:tofu_tree"
+  },
+  "drops": [
+    {
+      "chance": 1.00,
+      "output": {
+        "item": "minecraft:oak_log"
+      }
+    },
+    {
+      "chance": 0.25,
+      "output": {
+        "item": "tofucraft:apricot"
+      }
+    },
+    {
+      "chance": 0.05,
+      "output": {
+        "item": "tofucraft:sapling_apricot"
+      }
+    }
+  ]
+}

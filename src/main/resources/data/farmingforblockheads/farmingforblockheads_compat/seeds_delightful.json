@@ -1,0 +1,19 @@
+{
+  "modId": "delightful",
+  "group": {
+    "name": "Delightful for Berries",
+    "enabledByDefault": true,
+    "defaultCategory": "farmingforblockheads:seeds"
+  },
+  "customEntries": [
+    {
+      "output": {
+        "item": "delightful:salmonberry_pips"
+      },
+      "payment": {
+        "item": "minecraft:emerald",
+        "count": 1
+      }
+    }
+  ]
+}

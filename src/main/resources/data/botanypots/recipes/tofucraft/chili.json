@@ -1,0 +1,36 @@
+{
+  "bookshelf:load_conditions": [
+    {
+      "type": "bookshelf:item_exists",
+      "values": [
+        "tofucraft:seeds_chili"
+      ]
+    }
+  ],
+  "type": "botanypots:crop",
+  "seed": {
+    "item": "tofucraft:chili_crop"
+  },
+  "categories": [
+    "water"
+  ],
+  "growthTicks": 1200,
+  "display": {
+    "type": "botanypots:aging",
+    "block": "tofucraft:chili_crop"
+  },
+  "drops": [
+    {
+      "chance": 1.00,
+      "output": {
+        "item": "tofucraft:chili"
+      }
+    },
+    {
+      "chance": 0.05,
+      "output": {
+        "item": "tofucraft:seeds_chili"
+      }
+    }
+  ]
+}

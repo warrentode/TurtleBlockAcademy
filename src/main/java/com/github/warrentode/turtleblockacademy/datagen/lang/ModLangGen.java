@@ -19,27 +19,31 @@ public class ModLangGen extends LanguageProvider {
         addBlocks();
         addTooltips();
         addAdvancements();
-        addCommands();
         addMessages();
     }
 
     private void addMessages() {
-        add(MODID + ".registered", "You are now registered as a student of Turtle Block Academy");
-    }
-
-    private void addCommands() {
-        add("command.exception.turtleblockacademy.command_failure", "Command failed to execute");
+        add("message." + MODID + ".registered", "You are now registered as a student of Turtle Block Academy");
     }
 
     private void addAdvancements() {
         fillAdvancementKeys("root", "Turtle Block Academy", "Principal Herobrine welcomes you!");
-        fillAdvancementKeys("explore_end", "Final Tour Before Retirement",
-                "Visit All of the End Biomes");
+
+        fillAdvancementKeys("exploration_track", "Gone Adventuring", "It's Tourist Season!");
+        fillAdvancementKeys("explore_overworld", "Grand Tour of the World", "Visit All of the Overworld Biomes");
+        fillAdvancementKeys("explore_nether", "Tour in the Hot Seat", "Visit All of the Nether Biomes");
+        fillAdvancementKeys("explore_end", "Final Tour Before Retirement?", "Visit All of the End Biomes");
+        fillAdvancementKeys("explore_aether", "Hostile Tour of the Heavens", "Visit All of the Aether Biomes");
+
+        fillAdvancementKeys("curios_track", "Oh, How Very Curious this Curio", "A Strange or Interesting Collectible Object Indeed");
+        fillAdvancementKeys("equip_light_source", "Let There Be Light", "Equip a Light Source");
+        fillAdvancementKeys("equip_wallet", "Cash on Hand", "Equip a Wallet");
+        fillAdvancementKeys("equip_quiver", "An Archer's Best Friend", "Equip a Quiver");
     }
 
     private void fillAdvancementKeys(String name, String title, String subtitle) {
-        add("academy.advancement." + name, title);
-        add("academy.advancement." + name + ".desc", subtitle);
+        add("advancement." + MODID + "." + name, title);
+        add("advancement." + MODID + "." + name + ".desc", subtitle);
     }
 
     private void addTooltips() {

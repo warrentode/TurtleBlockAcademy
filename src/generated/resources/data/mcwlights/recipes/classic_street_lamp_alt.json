@@ -1,0 +1,36 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "mcwlights"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "key": {
+          "F": {
+            "tag": "forge:fences"
+          },
+          "L": {
+            "tag": "turtleblockacademy:lanterns"
+          },
+          "W": {
+            "tag": "turtleblockacademy:walls"
+          }
+        },
+        "pattern": [
+          " L ",
+          " F ",
+          " W "
+        ],
+        "result": {
+          "count": 3,
+          "item": "mcwlights:classic_street_lamp"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "supplementaries"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shapeless",
+        "ingredients": [
+          {
+            "item": "minecraft:water_bucket"
+          },
+          {
+            "tag": "forge:ash"
+          },
+          {
+            "tag": "forge:ash"
+          },
+          {
+            "tag": "forge:ash"
+          },
+          {
+            "tag": "forge:ash"
+          },
+          {
+            "tag": "turtleblockacademy:fat"
+          }
+        ],
+        "result": {
+          "count": 6,
+          "item": "supplementaries:soap"
+        }
+      }
+    }
+  ]
+}

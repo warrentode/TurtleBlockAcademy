@@ -25,6 +25,18 @@ public class BlockTagsGen extends BlockTagsProvider {
     @Override
     protected void addTags() {
         this.registerPackTags();
+        this.registerMinecraftTags();
+        this.registerBlockMineables();
+    }
+
+    private void registerMinecraftTags() {
+        tag(PackTags.Blocks.NEEDS_NETHERITE_TOOL)
+                .add(Blocks.REINFORCED_DEEPSLATE);
+    }
+
+    private void registerBlockMineables() {
+        tag(net.minecraft.tags.BlockTags.MINEABLE_WITH_PICKAXE)
+                .add(Blocks.REINFORCED_DEEPSLATE);
     }
 
     protected void registerPackTags() {

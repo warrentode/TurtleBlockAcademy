@@ -9,7 +9,7 @@
           "functions": [
             {
               "decoration": "target_point",
-              "destination": "todeville:worldgen/structure/overworld_nether_poi",
+              "destination": "turtleblockacademy:worldgen/structure/overworld_nether_poi",
               "function": "minecraft:exploration_map",
               "search_radius": 100
             },

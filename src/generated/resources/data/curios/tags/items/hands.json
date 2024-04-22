@@ -1,7 +1,7 @@
 {
   "values": [
     {
-      "id": "#todeville:lanterns",
+      "id": "#turtleblockacademy:lanterns",
       "required": false
     },
     "minecraft:soul_torch",

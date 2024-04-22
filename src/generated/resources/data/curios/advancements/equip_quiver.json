@@ -1,0 +1,44 @@
+{
+  "parent": "curios:equip_wallet",
+  "criteria": {
+    "equip_quiver": {
+      "conditions": {
+        "curios:slot": {
+          "slots": [
+            "belt"
+          ]
+        },
+        "item": {
+          "items": [
+            "supplementaries:quiver"
+          ]
+        },
+        "location": {}
+      },
+      "trigger": "curios:equip_curio"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancement.turtleblockacademy.equip_quiver.desc"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "supplementaries:quiver"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancement.turtleblockacademy.equip_quiver"
+    }
+  },
+  "requirements": [
+    [
+      "equip_quiver"
+    ]
+  ],
+  "rewards": {
+    "experience": 500
+  }
+}

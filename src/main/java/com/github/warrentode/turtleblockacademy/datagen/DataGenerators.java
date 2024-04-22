@@ -5,7 +5,6 @@ import com.github.warrentode.turtleblockacademy.datagen.lang.ModLangGen;
 import com.github.warrentode.turtleblockacademy.datagen.loot.ModLootProviders;
 import com.github.warrentode.turtleblockacademy.datagen.models.ModItemModelProvider;
 import com.github.warrentode.turtleblockacademy.datagen.recipes.RecipesGen;
-import com.github.warrentode.turtleblockacademy.datagen.recipes.recipe.CookingRecipesGen;
 import com.github.warrentode.turtleblockacademy.datagen.recipes.recipe.SpawnEggRecipesGen;
 import com.github.warrentode.turtleblockacademy.datagen.tags.*;
 import net.minecraft.data.DataGenerator;
@@ -33,7 +32,6 @@ public class DataGenerators {
         generator.addProvider(event.includeServer(), new BiomeTagGen(generator, MODID, helper));
 
         generator.addProvider(event.includeServer(), new SpawnEggRecipesGen(generator));
-        generator.addProvider(event.includeServer(), new CookingRecipesGen(generator));
         generator.addProvider(event.includeServer(), new RecipesGen(generator));
 
         generator.addProvider(event.includeServer(), new ModItemModelProvider(generator, MODID, helper));

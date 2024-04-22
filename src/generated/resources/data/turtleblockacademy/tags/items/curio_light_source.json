@@ -1,0 +1,10 @@
+{
+  "values": [
+    "minecraft:soul_torch",
+    "minecraft:torch",
+    {
+      "id": "#turtleblockacademy:lanterns",
+      "required": false
+    }
+  ]
+}

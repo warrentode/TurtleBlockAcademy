@@ -1,0 +1,43 @@
+{
+  "parent": "turtleblockacademy:curios_track",
+  "criteria": {
+    "equip_light_source": {
+      "conditions": {
+        "curios:slot": {
+          "slots": [
+            "hands",
+            "belt"
+          ]
+        },
+        "item": {
+          "tag": "turtleblockacademy:curio_light_source"
+        },
+        "location": {}
+      },
+      "trigger": "curios:equip_curio"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancement.turtleblockacademy.equip_light_source.desc"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "minecraft:lantern"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancement.turtleblockacademy.equip_light_source"
+    }
+  },
+  "requirements": [
+    [
+      "equip_light_source"
+    ]
+  ],
+  "rewards": {
+    "experience": 500
+  }
+}

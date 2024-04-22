@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "minecraft:loot_table",
-          "name": "todeville:cagerium/chests/gifts"
+          "name": "turtleblockacademy:cagerium/chests/gifts"
         }
       ],
       "rolls": 1.0

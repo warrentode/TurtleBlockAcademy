@@ -1,0 +1,13 @@
+{
+  "type": "botanypots:soil",
+  "input": {
+    "item": "phantasm:vivid_nihilium"
+  },
+  "display": {
+    "block": "phantasm:vivid_nihilium"
+  },
+  "categories": [
+    "vivid_nihilium"
+  ],
+  "growthModifier": 1
+}

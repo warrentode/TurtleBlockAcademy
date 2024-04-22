@@ -1,0 +1,110 @@
+{
+  "modId": "wares",
+  "group": {
+    "name": "Packaging Services",
+    "enabledByDefault": true,
+    "defaultCategory": "shipping"
+  },
+  "customEntries": [
+    {
+      "output": {
+        "item": "wares:cardboard_box",
+        "count": 36
+      },
+      "payment": {
+        "item": "minecraft:emerald",
+        "count": 3
+      }
+    },
+    {
+      "output": {
+        "item": "wares:sealed_delivery_agreement",
+        "nbt": "{experience:{max:30},ordered:{max:16,min:3,step:4},sealTooltip:\u0027{\"text\":\"Todeville Barracks\"}\u0027,buyerName:\u0027{\"color\":\"#008000\",\"text\":\"Captain of the Guard\"}\u0027,buyerAddress:\u0027{\"obfuscated\":false,\"text\":\"Todeville\"}\u0027,title:\u0027{\"color\":\"#006400\",\"text\":\"Bounty Order\"}\u0027,backsideMessage:\u0027{\"text\":\"Serving and Protect the People of Todeville!\"}\u0027,message:\u0027{\"text\":\"This is current bounty order. Send in the required proof to receive payment on delivery.\"}\u0027,payment:\"wares:agreement/village/currency\",requested:\"wares:agreement/village/bounties\"}"
+      },
+      "payment": {
+        "item": "minecraft:emerald",
+        "count": 1
+      }
+    },
+    {
+      "output": {
+        "item": "wares:sealed_delivery_agreement",
+        "nbt": "{experience:{max:30},ordered:{max:16,min:3,step:4},sealTooltip:\u0027{\"text\":\"Todeville Gardens\"}\u0027,buyerName:\u0027{\"color\":\"#008000\",\"text\":\"Farmer Dell\"}\u0027,buyerAddress:\u0027{\"obfuscated\":false,\"text\":\"Todeville\"}\u0027,title:\u0027{\"color\":\"#006400\",\"text\":\"Shipping Order\"}\u0027,backsideMessage:\u0027{\"text\":\"Shipping the Freshest Crops to Villages Around the World!\"}\u0027,message:\u0027{\"text\":\"These crops need to be shipped out as soon as possible. Payment given for each package sent out on time.\"}\u0027,payment:\"wares:agreement/village/currency\",requested:\"wares:agreement/village/crops\"}"
+      },
+      "payment": {
+        "item": "minecraft:emerald",
+        "count": 1
+      }
+    },
+    {
+      "output": {
+        "item": "wares:sealed_delivery_agreement",
+        "nbt": "{experience:{max:30},ordered:{max:16,min:3,step:4},sealTooltip:\u0027{\"text\":\"Todeville Gardens\"}\u0027,buyerName:\u0027{\"color\":\"#008000\",\"text\":\"Farmer Dell\"}\u0027,buyerAddress:\u0027{\"obfuscated\":false,\"text\":\"Todeville\"}\u0027,title:\u0027{\"color\":\"#006400\",\"text\":\"Shipping Order\"}\u0027,backsideMessage:\u0027{\"text\":\"Fresh Crops on Demand!\"}\u0027,message:\u0027{\"text\":\"Have our fresh crops delivered straight to you!\"}\u0027,payment:\"wares:agreement/village/crops\",requested:\"wares:agreement/village/currency\"}"
+      },
+      "payment": {
+        "item": "minecraft:emerald",
+        "count": 1
+      }
+    },
+    {
+      "output": {
+        "item": "wares:sealed_delivery_agreement",
+        "nbt": "{experience:{max:30},ordered:{max:16,min:3,step:4},sealTooltip:\u0027{\"text\":\"Wares R US\"}\u0027,buyerName:\u0027{\"color\":\"#008000\",\"text\":\"Warehouse Manager\"}\u0027,buyerAddress:\u0027{\"obfuscated\":false,\"text\":\"Wares R US HQ\"}\u0027,title:\u0027{\"color\":\"#006400\",\"text\":\"Supply Order\"}\u0027,backsideMessage:\u0027{\"text\":\"Wares R US Shipping \n Supply Goods to Villagers Around the World!\"}\u0027,message:\u0027{\"text\":\"We have an order here for these supplies to ship out to another village and could use your help in getting them in time. You will be paid of course for each package sent.\"}\u0027,payment:\"wares:agreement/village/currency\",requested:\"wares:agreement/village/requested_regional_product\"}"
+      },
+      "payment": {
+        "item": "minecraft:emerald",
+        "count": 1
+      }
+    },
+    {
+      "output": {
+        "item": "wares:sealed_delivery_agreement",
+        "nbt": "{experience:{max:30},ordered:{max:16,min:3,step:4},sealTooltip:\u0027{\"text\":\"V-Bay Wares Inc.\"}\u0027,buyerName:\u0027{\"color\":\"#0000FF\",\"text\":\"Guild Master Trader\"}\u0027,buyerAddress:\u0027{\"obfuscated\":false,\"text\":\"V-Bay Wares HQ\"}\u0027,title:\u0027{\"color\":\"#B22222\",\"text\":\"V-Bay Special Offer\"}\u0027,backsideMessage:\u0027{\"text\":\"V-Bay Traders Catalogue \n Bringing ALL Your Dreams of Distant Items To You Today!\"}\u0027,message:\u0027{\"text\":\"LIMITED Timed Sale Now on Display!\nWhat A Sweet Deal Today!\nDo NOT Delay!\nSend the Funds Our Way!\nWe WILL Ship the Goods Right Away!\"}\u0027,payment:\"wares:agreement/village/offered_regional_product\",requested:\"wares:agreement/village/currency\"}"
+      },
+      "payment": {
+        "item": "minecraft:emerald",
+        "count": 1
+      }
+    },
+    {
+      "output": {
+        "item": "wares:sealed_delivery_agreement",
+        "nbt": "{experience:{max:30},ordered:{max:16,min:3,step:4},sealTooltip:\u0027{\"text\":\"Farmers Market\"}\u0027,buyerName:\u0027{\"color\":\"#0000FF\",\"text\":\"Farmers Union\"}\u0027,buyerAddress:\u0027{\"obfuscated\":false,\"text\":\"Farmers Market Square\"}\u0027,title:\u0027{\"color\":\"#B22222\",\"text\":\"Seasonal Special Offer\"}\u0027,backsideMessage:\u0027{\"text\":\"Guaranteed Fresh!\"}\u0027,message:\u0027{\"text\":\"Fast tasty edibles brought straight to your door!\"}\u0027,payment:\"wares:agreement/village/food_supply_list\",requested:\"wares:agreement/village/regular_market_currency\"}"
+      },
+      "payment": {
+        "item": "minecraft:emerald",
+        "count": 1
+      }
+    },
+    {
+      "output": {
+        "item": "wares:sealed_delivery_agreement",
+        "nbt": "{experience:{max:30},ordered:{max:16,min:3,step:4},sealTooltip:\u0027{\"text\":\"Pillager Express\"}\u0027,buyerName:\u0027{\"color\":\"#0000FF\",\"text\":\"Johnny\"}\u0027,buyerAddress:\u0027{\"obfuscated\":true,\"text\":\"A Pillager Outpost Near You\"}\u0027,title:\u0027{\"color\":\"#B22222\",\"text\":\"Black Market Goods\"}\u0027,backsideMessage:\u0027{\"text\":\"Do Not Ask...\nDo Not Tell...\"}\u0027,message:\u0027{\"text\":\"Some n00b lost this chest...\n Want it? Goes to the first wiling buyer.\"}\u0027,payment:\"wares:agreement/village/gift_supply_list\",requested:\"wares:agreement/village/regular_market_currency\"}"
+      },
+      "payment": {
+        "item": "minecraft:emerald",
+        "count": 1
+      }
+    },
+    {
+      "output": {
+        "item": "wares:sealed_delivery_agreement",
+        "nbt": "{experience:{max:30},ordered:{max:16,min:3,step:4},sealTooltip:\u0027{\"text\":\"Frosted Express\"}\u0027,buyerName:\u0027{\"color\":\"#0000FF\",\"text\":\"Iceologer Jack\"}\u0027,buyerAddress:\u0027{\"obfuscated\":true,\"text\":\"Somewhere Very, Very Cold\"}\u0027,title:\u0027{\"color\":\"#B22222\",\"text\":\"A Deal So Cool,\nIt Gives You Goosebumps!\"}\u0027,backsideMessage:\u0027{\"text\":\"Feels Like Christmas Year Round Here!\"}\u0027,message:\u0027{\"text\":\"Here is what I got, so what do you say?\nYou buying or not?\"}\u0027,payment:\"wares:agreement/village/gift_supply_list\",requested:\"wares:agreement/village/regular_market_currency\"}"
+      },
+      "payment": {
+        "item": "minecraft:emerald",
+        "count": 1
+      }
+    },
+    {
+      "output": {
+        "item": "wares:sealed_delivery_agreement",
+        "nbt": "{experience:{max:30},ordered:{max:16,min:3,step:4},sealTooltip:\u0027{\"text\":\"Mystery Market Square\"}\u0027,buyerName:\u0027{\"color\":\"#0000FF\",\"text\":\"Piglin Merchant\"}\u0027,buyerAddress:\u0027{\"obfuscated\":true,\"text\":\"The Nether, Where Else?\"}\u0027,title:\u0027{\"color\":\"#B22222\",\"text\":\"Hot New Offer!\"}\u0027,backsideMessage:\u0027{\"text\":\"Nothing better than this!\"}\u0027,message:\u0027{\"text\":\"Straight from the fiery depths into your home!\"}\u0027,payment:\"wares:agreement/village/regular_barter_list\",requested:\"wares:agreement/village/regular_barter_currency\"}"
+      },
+      "payment": {
+        "item": "minecraft:emerald",
+        "count": 1
+      }
+    }
+  ]
+}

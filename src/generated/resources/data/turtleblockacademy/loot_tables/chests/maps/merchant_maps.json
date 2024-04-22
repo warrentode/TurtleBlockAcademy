@@ -9,7 +9,7 @@
           "functions": [
             {
               "decoration": "red_marker",
-              "destination": "todeville:worldgen/structure/pillager_poi",
+              "destination": "turtleblockacademy:worldgen/structure/pillager_poi",
               "function": "minecraft:exploration_map",
               "search_radius": 100
             },
@@ -27,7 +27,7 @@
           "functions": [
             {
               "decoration": "blue_marker",
-              "destination": "todeville:worldgen/structure/settlement",
+              "destination": "turtleblockacademy:worldgen/structure/settlement",
               "function": "minecraft:exploration_map",
               "search_radius": 100
             },

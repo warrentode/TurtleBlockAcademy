@@ -1,0 +1,20 @@
+{
+  "id": "farmersrespite:dandelion_tea",
+  "containers": [
+    {
+      "filled": [
+        "farmersrespite:dandelion_tea"
+      ],
+      "empty": "minecraft:glass_bottle",
+      "capacity": 1
+    }
+  ],
+  "flowing_texture": "moonlight:soft_fluids/potion_flow",
+  "still_texture": "moonlight:soft_fluids/soup_liquid",
+  "food": {
+    "divider": 1,
+    "item": "farmersrespite:dandelion_tea"
+  },
+  "color": "#FFFF00",
+  "translation_key": "item.farmersrespite.dandelion_tea"
+}

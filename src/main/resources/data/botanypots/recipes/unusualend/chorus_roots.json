@@ -1,0 +1,36 @@
+{
+  "bookshelf:load_conditions": [
+    {
+      "type": "bookshelf:item_exists",
+      "values": [
+        "unusualend:chorus_roots"
+      ]
+    }
+  ],
+  "type": "botanypots:crop",
+  "seed": {
+    "item": "unusualend:chorus_roots"
+  },
+  "categories": [
+    "end_stone"
+  ],
+  "growthTicks": 1200,
+  "display": {
+    "type": "botanypots:aging",
+    "block": "unusualend:chorus_roots"
+  },
+  "drops": [
+    {
+      "chance": 1.00,
+      "output": {
+        "item": "unusualend:chorus_roots"
+      }
+    },
+    {
+      "chance": 0.05,
+      "output": {
+        "item": "unusualend:chorus_roots"
+      }
+    }
+  ]
+}

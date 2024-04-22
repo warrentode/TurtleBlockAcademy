@@ -1,0 +1,100 @@
+{
+  "modId": "dimdungeons",
+  "group": {
+    "name": "Dimensional Dungeons Supplies",
+    "enabledByDefault": true,
+    "defaultCategory": "dungeons"
+  },
+  "customEntries": [
+    {
+      "output": {
+        "item": "dimdungeons:item_homeward_pearl"
+      },
+      "payment": {
+        "item": "todecoins:endonian_coin",
+        "count": 8
+      }
+    },
+    {
+      "output": {
+        "item": "dimdungeons:item_blank_teleporter_key"
+      },
+      "payment": {
+        "item": "todecoins:endonian_coin",
+        "count": 32
+      }
+    },
+    {
+      "output": {
+        "item": "dimdungeons:item_portal_key"
+      },
+      "payment": {
+        "item": "todecoins:endonian_coin",
+        "count": 16
+      }
+    },
+    {
+      "output": {
+        "item": "dimdungeons:block_key_charger"
+      },
+      "payment": {
+        "item": "todecoins:endonian_coin",
+        "count": 32
+      }
+    },
+    {
+      "output": {
+        "item": "dimdungeons:block_gilded_portal"
+      },
+      "payment": {
+        "item": "todecoins:endonian_coin",
+        "count": 16
+      }
+    },
+    {
+      "output": {
+        "item": "dimdungeons:block_portal_keyhole"
+      },
+      "payment": {
+        "item": "todecoins:endonian_coin",
+        "count": 16
+      }
+    },
+    {
+      "output": {
+        "item": "dimdungeons:item_blank_theme_key"
+      },
+      "payment": {
+        "item": "todecoins:endonian_coin",
+        "count": 32
+      }
+    },
+    {
+      "output": {
+        "item": "dimdungeons:item_blank_advanced_key"
+      },
+      "payment": {
+        "item": "todecoins:endonian_coin",
+        "count": 32
+      }
+    },
+    {
+      "output": {
+        "item": "dimdungeons:block_portal_crown"
+      },
+      "payment": {
+        "item": "todecoins:endonian_coin",
+        "count": 16
+      }
+    },
+    {
+      "output": {
+        "item": "dimdungeons:item_secret_bell"
+      },
+      "payment": {
+        "item": "todecoins:endonian_coin",
+        "count": 50
+      }
+    }
+  ]
+}

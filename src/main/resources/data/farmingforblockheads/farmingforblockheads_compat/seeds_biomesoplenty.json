@@ -1,0 +1,17 @@
+{
+  "modId": "biomesoplenty",
+  "group": {
+    "name": "BiomesOPlenty Mushrooms",
+    "enabledByDefault": true,
+    "defaultPayment": {
+      "item": "minecraft:emerald",
+      "count": 1
+    },
+    "defaultCategory": "farmingforblockheads:seeds"
+  },
+  "customEntries": [
+    {
+      "output": "biomesoplenty:glowshroom"
+    }
+  ]
+}

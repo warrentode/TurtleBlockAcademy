@@ -1,0 +1,25 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "supplementaries"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shapeless",
+        "ingredients": [
+          {
+            "tag": "supplementaries:lapis_bricks"
+          }
+        ],
+        "result": {
+          "count": 4,
+          "item": "minecraft:lapis_lazuli"
+        }
+      }
+    }
+  ]
+}

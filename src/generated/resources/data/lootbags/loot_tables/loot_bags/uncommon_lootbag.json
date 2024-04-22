@@ -15,12 +15,12 @@
         {
           "type": "minecraft:tag",
           "expand": true,
-          "name": "todeville:door_patterns"
+          "name": "turtleblockacademy:door_patterns"
         },
         {
           "type": "minecraft:tag",
           "expand": true,
-          "name": "todeville:trapdoor_patterns"
+          "name": "turtleblockacademy:trapdoor_patterns"
         },
         {
           "type": "minecraft:tag",
@@ -31,7 +31,7 @@
             }
           ],
           "expand": true,
-          "name": "todeville:backpack_upgrades"
+          "name": "turtleblockacademy:backpack_upgrades"
         },
         {
           "type": "minecraft:tag",
@@ -48,7 +48,7 @@
             }
           ],
           "expand": true,
-          "name": "todeville:shulker_boxes"
+          "name": "turtleblockacademy:shulker_boxes"
         },
         {
           "type": "minecraft:loot_table",

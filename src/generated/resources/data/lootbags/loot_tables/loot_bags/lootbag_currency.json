@@ -7,7 +7,7 @@
         {
           "type": "minecraft:tag",
           "expand": true,
-          "name": "todeville:lootbag_currency"
+          "name": "turtleblockacademy:lootbag_currency"
         }
       ],
       "rolls": {

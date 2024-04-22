@@ -1,0 +1,45 @@
+{
+  "modId": "minecraft",
+  "group": {
+    "name": "Minecraft Soil and Bone Meal",
+    "enabledByDefault": true,
+    "defaultPayment": {
+      "item": "minecraft:emerald",
+      "count": 1
+    },
+    "defaultCategory": "farmingforblockheads:other"
+  },
+  "customEntries": [
+    {
+      "output": {
+        "item": "minecraft:bone_meal",
+        "count": 3
+      }
+    },
+    {
+      "output": "minecraft:grass_block"
+    },
+    {
+      "output": "minecraft:podzol"
+    },
+    {
+      "output": "minecraft:rooted_dirt"
+    },
+    {
+      "output": "minecraft:mycelium"
+    },
+    {
+      "output": "minecraft:warped_nylium"
+    },
+    {
+      "output": "minecraft:crimson_nylium"
+    },
+    {
+      "output": "minecraft:soul_sand"
+    },
+    {
+      "output": "minecraft:sand",
+      "count": 8
+    }
+  ]
+}

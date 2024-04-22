@@ -1,0 +1,36 @@
+{
+  "bookshelf:load_conditions": [
+    {
+      "type": "bookshelf:item_exists",
+      "values": [
+        "tofucraft:seeds_soybean_nether"
+      ]
+    }
+  ],
+  "type": "botanypots:crop",
+  "seed": {
+    "item": "tofucraft:soybean_nether"
+  },
+  "categories": [
+    "water"
+  ],
+  "growthTicks": 1200,
+  "display": {
+    "type": "botanypots:aging",
+    "block": "tofucraft:soybean_nether"
+  },
+  "drops": [
+    {
+      "chance": 1.00,
+      "output": {
+        "item": "tofucraft:soybean_nether"
+      }
+    },
+    {
+      "chance": 0.05,
+      "output": {
+        "item": "tofucraft:seeds_soybean_nether"
+      }
+    }
+  ]
+}

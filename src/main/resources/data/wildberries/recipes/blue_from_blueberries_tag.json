@@ -1,0 +1,19 @@
+{
+  "group": "blue_dye",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01"
+  ],
+  "key": {
+    "0": {
+      "tag": "forge:blueberries"
+    },
+    "1": {
+      "tag": "forge:blueberries"
+    }
+  },
+  "result": {
+    "item": "minecraft:blue_dye",
+    "count": 1
+  }
+}
