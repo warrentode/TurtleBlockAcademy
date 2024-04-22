@@ -1,0 +1,20 @@
+{
+  "type": "turtleblockacademy:add_loot_table",
+  "addChance": 0.5,
+  "conditions": [
+    {
+      "condition": "minecraft:alternative",
+      "terms": [
+        {
+          "condition": "forge:loot_table_id",
+          "loot_table_id": "minecraft:blocks/gravel"
+        },
+        {
+          "condition": "turtleblockacademy:blocktag_condition",
+          "tag": "forge:sand"
+        }
+      ]
+    }
+  ],
+  "lootTable": "turtleblockacademy:chests/bonus_sand_drops"
+}

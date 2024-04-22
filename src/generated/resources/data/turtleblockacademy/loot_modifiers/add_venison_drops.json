@@ -1,0 +1,20 @@
+{
+  "type": "turtleblockacademy:add_item",
+  "addChance": 0.1,
+  "conditions": [
+    {
+      "condition": "minecraft:killed_by_player"
+    },
+    {
+      "condition": "turtleblockacademy:modloaded_condition",
+      "modid": "delightful"
+    },
+    {
+      "condition": "turtleblockacademy:entity_type_tag_condition",
+      "tag": "forge:wild_game"
+    }
+  ],
+  "item": "delightful:venison_chops",
+  "maxAmount": 2,
+  "minAmount": 1
+}

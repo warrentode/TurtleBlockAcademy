@@ -1,0 +1,14 @@
+{
+  "type": "turtleblockacademy:add_loot_table",
+  "addChance": 0.1,
+  "conditions": [
+    {
+      "condition": "minecraft:killed_by_player"
+    },
+    {
+      "condition": "turtleblockacademy:biometag_condition",
+      "tag": "forge:is_underground"
+    }
+  ],
+  "lootTable": "lootbags:loot_bags/rations_bag_drop"
+}

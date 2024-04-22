@@ -16,6 +16,7 @@ import net.minecraft.world.level.storage.loot.parameters.LootContextParam;
 import net.minecraft.world.level.storage.loot.parameters.LootContextParams;
 import net.minecraft.world.level.storage.loot.predicates.LootItemCondition;
 import net.minecraft.world.level.storage.loot.predicates.LootItemConditionType;
+import org.jetbrains.annotations.Contract;
 import org.jetbrains.annotations.NotNull;
 
 import java.util.Set;
@@ -25,10 +26,6 @@ public class BlockTagCondition implements LootItemCondition {
 
     public BlockTagCondition(TagKey<Block> blockTag) {
         this.blockTag = blockTag;
-    }
-
-    public static BlockTagCondition isTag(TagKey<Block> tag) {
-        return new BlockTagCondition(tag);
     }
 
     public @NotNull LootItemConditionType getType() {
@@ -44,14 +41,15 @@ public class BlockTagCondition implements LootItemCondition {
         return blockstate != null && blockstate.is(this.blockTag);
     }
 
-    public static Builder tag() {
+    @Contract(value = " -> new", pure = true)
+    public static @NotNull Builder tag() {
         return new Builder();
     }
 
     public static class Builder implements LootItemCondition.Builder {
         TagKey<Block> blockTag;
 
-        public Builder setTag(TagKey<Block> blockTag) {
+        public Builder set(TagKey<Block> blockTag) {
             this.blockTag = blockTag;
             return this;
         }

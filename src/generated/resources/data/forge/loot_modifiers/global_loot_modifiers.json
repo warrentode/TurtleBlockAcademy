@@ -1,0 +1,15 @@
+{
+  "entries": [
+    "turtleblockacademy:additional_sand_drops",
+    "turtleblockacademy:add_extra_collectible_entity_coin_drops",
+    "turtleblockacademy:add_extra_loot_currency_drops",
+    "turtleblockacademy:add_venison_drops",
+    "turtleblockacademy:add_extra_collectible_boss_coin_drops",
+    "turtleblockacademy:add_extra_loot_boss_currency_drops",
+    "turtleblockacademy:add_bonus_dungeon_loot",
+    "turtleblockacademy:add_bonus_end_city_loot",
+    "turtleblockacademy:add_ration_bag_drops",
+    "turtleblockacademy:add_extra_collectible_holiday_coin_drops"
+  ],
+  "replace": false
+}

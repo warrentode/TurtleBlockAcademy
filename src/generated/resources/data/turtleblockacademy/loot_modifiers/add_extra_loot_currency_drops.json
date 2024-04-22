@@ -1,0 +1,95 @@
+{
+  "type": "turtleblockacademy:add_loot_table",
+  "addChance": 1.0,
+  "conditions": [
+    {
+      "condition": "turtleblockacademy:modloaded_condition",
+      "modid": "todecoins"
+    },
+    {
+      "condition": "minecraft:killed_by_player"
+    },
+    {
+      "condition": "minecraft:alternative",
+      "terms": [
+        {
+          "condition": "forge:loot_table_id",
+          "loot_table_id": "aether:sentry"
+        },
+        {
+          "condition": "forge:loot_table_id",
+          "loot_table_id": "aether:entities/aechor_plant"
+        },
+        {
+          "condition": "forge:loot_table_id",
+          "loot_table_id": "aether:entities/cockatrice"
+        },
+        {
+          "condition": "forge:loot_table_id",
+          "loot_table_id": "aether:entities/fire_minion"
+        },
+        {
+          "condition": "forge:loot_table_id",
+          "loot_table_id": "aether:entities/sentry"
+        },
+        {
+          "condition": "forge:loot_table_id",
+          "loot_table_id": "aether:entities/blue_swet"
+        },
+        {
+          "condition": "forge:loot_table_id",
+          "loot_table_id": "aether:entities/golden_swet"
+        },
+        {
+          "condition": "forge:loot_table_id",
+          "loot_table_id": "aether:entities/whirlwind"
+        },
+        {
+          "condition": "forge:loot_table_id",
+          "loot_table_id": "aether:entities/evil_whirlwind"
+        },
+        {
+          "condition": "forge:loot_table_id",
+          "loot_table_id": "aether:entities/valkyrie"
+        },
+        {
+          "condition": "forge:loot_table_id",
+          "loot_table_id": "aether:entities/zephyr"
+        },
+        {
+          "condition": "forge:loot_table_id",
+          "loot_table_id": "unusualend:bolok"
+        },
+        {
+          "condition": "forge:loot_table_id",
+          "loot_table_id": "unusualend:dragling"
+        },
+        {
+          "condition": "forge:loot_table_id",
+          "loot_table_id": "unusualend:ender_blob"
+        },
+        {
+          "condition": "forge:loot_table_id",
+          "loot_table_id": "unusualend:undead_enderling"
+        },
+        {
+          "condition": "forge:loot_table_id",
+          "loot_table_id": "unusualend:endstone_trapper"
+        },
+        {
+          "condition": "forge:loot_table_id",
+          "loot_table_id": "phantasm:entities/crystie"
+        },
+        {
+          "condition": "forge:loot_table_id",
+          "loot_table_id": "friendsandfoes:entities/iceologer"
+        },
+        {
+          "condition": "forge:loot_table_id",
+          "loot_table_id": "aether:entities/mimic"
+        }
+      ]
+    }
+  ],
+  "lootTable": "todecoins:entity/todecoins_currency_drops"
+}

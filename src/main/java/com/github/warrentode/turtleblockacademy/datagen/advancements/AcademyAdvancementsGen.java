@@ -126,6 +126,7 @@ public class AcademyAdvancementsGen extends AdvancementProvider {
             return Advancement.Builder.advancement();
         }
 
+        @SuppressWarnings("SameParameterValue")
         protected static @NotNull Advancement.Builder createAdvancement(Advancement parent, ItemLike display, String name, FrameType frame, boolean showToast, boolean announceToChat, boolean hidden) {
             return Advancement.Builder.advancement()
                     .parent(parent).display(display,

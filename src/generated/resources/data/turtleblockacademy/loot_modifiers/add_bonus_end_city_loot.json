@@ -1,0 +1,16 @@
+{
+  "type": "turtleblockacademy:add_loot_table",
+  "addChance": 1.0,
+  "conditions": [
+    {
+      "condition": "minecraft:alternative",
+      "terms": [
+        {
+          "condition": "forge:loot_table_id",
+          "loot_table_id": "minecraft:chests/end_city_treasure"
+        }
+      ]
+    }
+  ],
+  "lootTable": "turtleblockacademy:chests/ufo"
+}

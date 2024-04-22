@@ -15,6 +15,7 @@ import net.minecraft.world.level.storage.loot.parameters.LootContextParam;
 import net.minecraft.world.level.storage.loot.parameters.LootContextParams;
 import net.minecraft.world.level.storage.loot.predicates.LootItemCondition;
 import net.minecraft.world.level.storage.loot.predicates.LootItemConditionType;
+import org.jetbrains.annotations.Contract;
 import org.jetbrains.annotations.NotNull;
 
 import java.util.Objects;
@@ -25,10 +26,6 @@ public class EntityTypeTagCondition implements LootItemCondition {
 
     public EntityTypeTagCondition(TagKey<EntityType<?>> entityTypeTag) {
         this.entityTypeTag = entityTypeTag;
-    }
-
-    public static EntityTypeTagCondition isTag(TagKey<EntityType<?>> tag) {
-        return new EntityTypeTagCondition(tag);
     }
 
     public @NotNull LootItemConditionType getType() {
@@ -45,15 +42,17 @@ public class EntityTypeTagCondition implements LootItemCondition {
         return entityType != null && entityType.is(this.entityTypeTag);
     }
 
-    public Builder build() {
-        return new Builder(this.entityTypeTag);
+    @Contract(value = " -> new", pure = true)
+    public static EntityTypeTagCondition.@NotNull Builder tag() {
+        return new EntityTypeTagCondition.Builder();
     }
 
     public static class Builder implements LootItemCondition.Builder {
-        final TagKey<EntityType<?>> entityTypeTag;
+        TagKey<EntityType<?>> entityTypeTag;
 
-        public Builder(TagKey<EntityType<?>> entityTypeTag) {
+        public EntityTypeTagCondition.Builder set(TagKey<EntityType<?>> entityTypeTag) {
             this.entityTypeTag = entityTypeTag;
+            return this;
         }
 
         public @NotNull EntityTypeTagCondition build() {

@@ -31,6 +31,7 @@ public class AcademyCommands {
                         ));
     }
 
+    @SuppressWarnings("SameReturnValue")
     private static int giveStudentCard(@NotNull CommandContext<CommandSourceStack> context) throws CommandSyntaxException {
         ServerPlayer serverPlayer = context.getSource().getPlayerOrException();
 
@@ -46,6 +47,7 @@ public class AcademyCommands {
         return 0;
     }
 
+    @SuppressWarnings("SameReturnValue")
     private static int giveAwardCertificate(@NotNull CommandContext<CommandSourceStack> context)
             throws CommandSyntaxException {
         ServerPlayer serverPlayer = context.getSource().getPlayerOrException();

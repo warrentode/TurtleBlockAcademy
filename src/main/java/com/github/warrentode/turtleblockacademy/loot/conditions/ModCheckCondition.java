@@ -4,7 +4,6 @@ import com.github.warrentode.turtleblockacademy.loot.serializers.ModLootItemCond
 import com.google.gson.JsonDeserializationContext;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonSerializationContext;
-import net.minecraft.server.level.ServerLevel;
 import net.minecraft.util.GsonHelper;
 import net.minecraft.world.level.storage.loot.LootContext;
 import net.minecraft.world.level.storage.loot.predicates.LootItemCondition;
@@ -16,7 +15,7 @@ import javax.annotation.Nullable;
 
 public class ModCheckCondition implements LootItemCondition {
     @Nullable
-    String modid;
+    final String modid;
 
     ModCheckCondition(@Nullable String modid) {
         this.modid = modid;
@@ -27,7 +26,6 @@ public class ModCheckCondition implements LootItemCondition {
     }
 
     public boolean test(@NotNull LootContext context) {
-        ServerLevel level = context.getLevel();
         return ModList.get().isLoaded(this.modid);
     }
 

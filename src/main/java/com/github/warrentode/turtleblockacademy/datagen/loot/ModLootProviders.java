@@ -60,7 +60,7 @@ public class ModLootProviders extends LootTableProvider {
     }
 
     // biome tag checks
-    public static final LootItemCondition.Builder UNDERGROUND = BiomeTagCondition.tag().setTag(PackTags.Biomes.IS_UNDERGROUND);
+    public static final LootItemCondition.Builder UNDERGROUND = BiomeTagCondition.tag().set(PackTags.Biomes.IS_UNDERGROUND);
 
     // dimension checks
     public static final LootItemCondition.Builder IN_OVERWORLD
@@ -77,18 +77,18 @@ public class ModLootProviders extends LootTableProvider {
             LocationCheck.checkLocation(LocationPredicate.Builder.location().setDimension(DimDungeons.DUNGEON_DIMENSION));
 
     // holiday checks
-    public static final LootItemCondition.Builder BIRTHDAY_EVENT = SeasonalCondition.season().setSeason(Boolean.valueOf("BIRTHDAY"));
-    public static final LootItemCondition.Builder HALLOWEEN_EVENT = SeasonalCondition.season().setSeason(Boolean.valueOf("HALLOWEEN"));
-    public static final LootItemCondition.Builder CHRISTMAS_EVENT = SeasonalCondition.season().setSeason(Boolean.valueOf("CHRISTMAS"));
-    public static final LootItemCondition.Builder ANNIVERSARY_EVENT = SeasonalCondition.season().setSeason(Boolean.valueOf("ANNIVERSARY"));
-    public static final LootItemCondition.Builder EASTER_EVENT = SeasonalCondition.season().setSeason(Boolean.valueOf("EASTER"));
-    public static final LootItemCondition.Builder NEW_YEAR_EVENT = SeasonalCondition.season().setSeason(Boolean.valueOf("NEW_YEAR"));
+    public static final LootItemCondition.Builder BIRTHDAY_EVENT = SeasonalCondition.season().set(Boolean.valueOf("BIRTHDAY"));
+    public static final LootItemCondition.Builder HALLOWEEN_EVENT = SeasonalCondition.season().set(Boolean.valueOf("HALLOWEEN"));
+    public static final LootItemCondition.Builder CHRISTMAS_EVENT = SeasonalCondition.season().set(Boolean.valueOf("CHRISTMAS"));
+    public static final LootItemCondition.Builder ANNIVERSARY_EVENT = SeasonalCondition.season().set(Boolean.valueOf("ANNIVERSARY"));
+    public static final LootItemCondition.Builder EASTER_EVENT = SeasonalCondition.season().set(Boolean.valueOf("EASTER"));
+    public static final LootItemCondition.Builder NEW_YEAR_EVENT = SeasonalCondition.season().set(Boolean.valueOf("NEW_YEAR"));
 
     // season checks
-    public static final LootItemCondition.Builder AUTUMN = SeasonalCondition.season().setSeason(Boolean.valueOf("AUTUMN"));
-    public static final LootItemCondition.Builder SPRING = SeasonalCondition.season().setSeason(Boolean.valueOf("SPRING"));
-    public static final LootItemCondition.Builder SUMMER = SeasonalCondition.season().setSeason(Boolean.valueOf("SUMMER"));
-    public static final LootItemCondition.Builder WINTER = SeasonalCondition.season().setSeason(Boolean.valueOf("WINTER"));
+    public static final LootItemCondition.Builder AUTUMN = SeasonalCondition.season().set(Boolean.valueOf("AUTUMN"));
+    public static final LootItemCondition.Builder SPRING = SeasonalCondition.season().set(Boolean.valueOf("SPRING"));
+    public static final LootItemCondition.Builder SUMMER = SeasonalCondition.season().set(Boolean.valueOf("SUMMER"));
+    public static final LootItemCondition.Builder WINTER = SeasonalCondition.season().set(Boolean.valueOf("WINTER"));
 
     // structure checks
     public static final LootItemCondition.Builder IN_VILLAGE_SNOWY = LocationCheck.checkLocation(LocationPredicate.Builder.location()

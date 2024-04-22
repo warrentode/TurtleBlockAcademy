@@ -42,7 +42,7 @@ public class SeasonalCondition implements LootItemCondition {
         @Nullable
         Boolean SEASON;
 
-        public SeasonalCondition.Builder setSeason(@Nullable Boolean SEASON) {
+        public SeasonalCondition.Builder set(@Nullable Boolean SEASON) {
             this.SEASON = SEASON;
             return this;
         }

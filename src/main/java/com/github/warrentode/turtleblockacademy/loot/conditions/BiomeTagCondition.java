@@ -30,11 +30,6 @@ public class BiomeTagCondition implements LootItemCondition {
         this.biomeTag = biomeTag;
     }
 
-    @Contract(value = "_ -> new", pure = true)
-    public static @NotNull BiomeTagCondition isTag(TagKey<Biome> tag) {
-        return new BiomeTagCondition(tag);
-    }
-
     public @NotNull LootItemConditionType getType() {
         return ModLootItemConditions.BIOMETAG_CONDITION.get();
     }
@@ -52,14 +47,15 @@ public class BiomeTagCondition implements LootItemCondition {
         return false;
     }
 
-    public static Builder tag() {
+    @Contract(value = " -> new", pure = true)
+    public static @NotNull Builder tag() {
         return new Builder();
     }
 
     public static class Builder implements LootItemCondition.Builder {
         TagKey<Biome> biomeTag;
 
-        public Builder setTag(TagKey<Biome> biomeTag) {
+        public Builder set(TagKey<Biome> biomeTag) {
             this.biomeTag = biomeTag;
             return this;
         }
