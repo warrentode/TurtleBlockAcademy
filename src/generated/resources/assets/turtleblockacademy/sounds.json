@@ -1,0 +1,23 @@
+{
+  "block.turtleblockacademy..desk.close": {
+    "sounds": [
+      {
+        "name": "block/barrel/close",
+        "pitch": 2.0
+      }
+    ],
+    "subtitle": "subtitles.turtleblockacademy.desk_close"
+  },
+  "block.turtleblockacademy..desk.open": {
+    "sounds": [
+      {
+        "name": "block/barrel/open1",
+        "pitch": 2.0
+      }, {
+        "name": "block/barrel/open2",
+        "pitch": 2.0
+      }
+    ],
+    "subtitle": "subtitles.turtleblockacademy.desk_open"
+  }
+}

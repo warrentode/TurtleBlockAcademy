@@ -28,6 +28,21 @@ public class ModBlockEntities {
                                     ModBlocks.SCHOOL_DESK_WARPED.get())
                             .build(null));
 
+    @SuppressWarnings("DataFlowIssue")
+    public static final RegistryObject<BlockEntityType<SchoolDeskCabinetBlockEntity>> SCHOOL_DESK_CABINET_ENTITY =
+            BLOCK_ENTITIES.register("school_desk_cabinet_entity",
+                    () -> BlockEntityType.Builder.of(SchoolDeskCabinetBlockEntity::new,
+                                    ModBlocks.SCHOOL_DESK_CABINET_OAK.get(),
+                                    ModBlocks.SCHOOL_DESK_CABINET_BIRCH.get(),
+                                    ModBlocks.SCHOOL_DESK_CABINET_SPRUCE.get(),
+                                    ModBlocks.SCHOOL_DESK_CABINET_JUNGLE.get(),
+                                    ModBlocks.SCHOOL_DESK_CABINET_ACACIA.get(),
+                                    ModBlocks.SCHOOL_DESK_CABINET_DARK_OAK.get(),
+                                    ModBlocks.SCHOOL_DESK_CABINET_MANGROVE.get(),
+                                    ModBlocks.SCHOOL_DESK_CABINET_CRIMSON.get(),
+                                    ModBlocks.SCHOOL_DESK_CABINET_WARPED.get())
+                            .build(null));
+
     public static void register(IEventBus eventBus) {
         BLOCK_ENTITIES.register(eventBus);
     }

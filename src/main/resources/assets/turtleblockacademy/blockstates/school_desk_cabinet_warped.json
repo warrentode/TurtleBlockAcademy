@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "turtleblockacademy:block/school_desk_cabinet_warped"
+    },
+    "facing=east": {
+      "model": "turtleblockacademy:block/school_desk_cabinet_warped",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "turtleblockacademy:block/school_desk_cabinet_warped",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "turtleblockacademy:block/school_desk_cabinet_warped",
+      "y": 270
+    }
+  }
+}

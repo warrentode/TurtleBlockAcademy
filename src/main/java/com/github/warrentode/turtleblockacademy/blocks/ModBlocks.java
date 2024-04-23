@@ -25,6 +25,7 @@ public class ModBlocks {
             () -> new CertificateBlock(BlockBehaviour.Properties.of(Material.PLANT)
                     .sound(TurtleBlockAcademy.CERTIFICATE).instabreak().noOcclusion()));
 
+
     public static final RegistryObject<Block> SCHOOL_DESK_OAK = registerBlock("school_desk_oak",
             () -> new SchoolDeskBlock(BlockBehaviour.Properties.of(Material.WOOD)
                     .sound(SoundType.WOOD).instabreak().noOcclusion()));
@@ -60,6 +61,44 @@ public class ModBlocks {
     public static final RegistryObject<Block> SCHOOL_DESK_WARPED = registerBlock("school_desk_warped",
             () -> new SchoolDeskBlock(BlockBehaviour.Properties.of(Material.WOOD)
                     .sound(SoundType.WOOD).instabreak().noOcclusion()));
+
+
+    public static final RegistryObject<Block> SCHOOL_DESK_CABINET_OAK = registerBlock("school_desk_cabinet_oak",
+            () -> new SchoolDeskCabinetBlock(BlockBehaviour.Properties.of(Material.WOOD)
+                    .sound(SoundType.WOOD).instabreak().noOcclusion()));
+
+    public static final RegistryObject<Block> SCHOOL_DESK_CABINET_BIRCH = registerBlock("school_desk_cabinet_birch",
+            () -> new SchoolDeskCabinetBlock(BlockBehaviour.Properties.of(Material.WOOD)
+                    .sound(SoundType.WOOD).instabreak().noOcclusion()));
+
+    public static final RegistryObject<Block> SCHOOL_DESK_CABINET_SPRUCE = registerBlock("school_desk_cabinet_spruce",
+            () -> new SchoolDeskCabinetBlock(BlockBehaviour.Properties.of(Material.WOOD)
+                    .sound(SoundType.WOOD).instabreak().noOcclusion()));
+
+    public static final RegistryObject<Block> SCHOOL_DESK_CABINET_JUNGLE = registerBlock("school_desk_cabinet_jungle",
+            () -> new SchoolDeskCabinetBlock(BlockBehaviour.Properties.of(Material.WOOD)
+                    .sound(SoundType.WOOD).instabreak().noOcclusion()));
+
+    public static final RegistryObject<Block> SCHOOL_DESK_CABINET_ACACIA = registerBlock("school_desk_cabinet_acacia",
+            () -> new SchoolDeskCabinetBlock(BlockBehaviour.Properties.of(Material.WOOD)
+                    .sound(SoundType.WOOD).instabreak().noOcclusion()));
+
+    public static final RegistryObject<Block> SCHOOL_DESK_CABINET_DARK_OAK = registerBlock("school_desk_cabinet_dark_oak",
+            () -> new SchoolDeskCabinetBlock(BlockBehaviour.Properties.of(Material.WOOD)
+                    .sound(SoundType.WOOD).instabreak().noOcclusion()));
+
+    public static final RegistryObject<Block> SCHOOL_DESK_CABINET_MANGROVE = registerBlock("school_desk_cabinet_mangrove",
+            () -> new SchoolDeskCabinetBlock(BlockBehaviour.Properties.of(Material.WOOD)
+                    .sound(SoundType.WOOD).instabreak().noOcclusion()));
+
+    public static final RegistryObject<Block> SCHOOL_DESK_CABINET_CRIMSON = registerBlock("school_desk_cabinet_crimson",
+            () -> new SchoolDeskCabinetBlock(BlockBehaviour.Properties.of(Material.WOOD)
+                    .sound(SoundType.WOOD).instabreak().noOcclusion()));
+
+    public static final RegistryObject<Block> SCHOOL_DESK_CABINET_WARPED = registerBlock("school_desk_cabinet_warped",
+            () -> new SchoolDeskCabinetBlock(BlockBehaviour.Properties.of(Material.WOOD)
+                    .sound(SoundType.WOOD).instabreak().noOcclusion()));
+
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

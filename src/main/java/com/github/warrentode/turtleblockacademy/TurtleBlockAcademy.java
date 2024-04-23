@@ -8,6 +8,7 @@ import com.github.warrentode.turtleblockacademy.config.AcademyConfig;
 import com.github.warrentode.turtleblockacademy.items.ModItems;
 import com.github.warrentode.turtleblockacademy.loot.serializers.ModLootItemConditions;
 import com.github.warrentode.turtleblockacademy.loot.serializers.ModLootModifiers;
+import com.github.warrentode.turtleblockacademy.util.ModSounds;
 import net.minecraft.client.gui.screens.MenuScreens;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.item.CreativeModeTab;
@@ -38,6 +39,8 @@ public class TurtleBlockAcademy {
                 "turtleblockacademy_config.toml");
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
         MinecraftForge.EVENT_BUS.register(this);
+
+        ModSounds.SOUNDS.register(modEventBus);
 
         ModBlocks.register(modEventBus);
         ModBlockEntities.register(modEventBus);
