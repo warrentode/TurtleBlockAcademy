@@ -14,6 +14,8 @@ import static com.github.warrentode.turtleblockacademy.TurtleBlockAcademy.MODID;
 
 public class PackTags {
     public static class Blocks {
+        public static final TagKey<Block> SCHOOL_DESKS = packBlockTag(MODID, "school_desks");
+
         public static final TagKey<Block> DROPS_FOUR_LEAF_CLOVER = packBlockTag("todecoins", "drops_four_leaf_clover");
 
         public static final TagKey<Block> NEEDS_NETHERITE_TOOL = packBlockTag("minecraft", "needs_netherite_tool");

@@ -109,7 +109,6 @@ side = "BOTH"
 modId = "aether"
 mandatory = true
 versionRange = "[1.19.2-1.4.0-forge,)"
-versionRange = "[1.19.2-1.4.0-forge,)"
 ordering = "NONE"
 side = "BOTH"
 
