@@ -1,10 +1,14 @@
 package com.github.warrentode.turtleblockacademy;
 
 import com.github.warrentode.turtleblockacademy.blocks.ModBlocks;
+import com.github.warrentode.turtleblockacademy.blocks.entity.ModBlockEntities;
+import com.github.warrentode.turtleblockacademy.blocks.gui.ModMenuTypes;
+import com.github.warrentode.turtleblockacademy.blocks.gui.SchoolDeskScreen;
 import com.github.warrentode.turtleblockacademy.config.AcademyConfig;
 import com.github.warrentode.turtleblockacademy.items.ModItems;
 import com.github.warrentode.turtleblockacademy.loot.serializers.ModLootItemConditions;
 import com.github.warrentode.turtleblockacademy.loot.serializers.ModLootModifiers;
+import net.minecraft.client.gui.screens.MenuScreens;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
@@ -36,6 +40,9 @@ public class TurtleBlockAcademy {
         MinecraftForge.EVENT_BUS.register(this);
 
         ModBlocks.register(modEventBus);
+        ModBlockEntities.register(modEventBus);
+        ModMenuTypes.register(modEventBus);
+
         ModItems.register(modEventBus);
 
         ModLootModifiers.register(modEventBus);
@@ -67,8 +74,10 @@ public class TurtleBlockAcademy {
     @Mod.EventBusSubscriber(modid = MODID, bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
     public static class ClientModEvents {
         @SubscribeEvent
-        public static void onClientSetup(FMLClientSetupEvent event) {
-            // reserved for later use
+        public static void onClientSetup(@NotNull FMLClientSetupEvent event) {
+            event.enqueueWork(() ->
+                    MenuScreens.register(ModMenuTypes.SCHOOL_DESK_MENU.get(),
+                            SchoolDeskScreen::new));
         }
     }
 }

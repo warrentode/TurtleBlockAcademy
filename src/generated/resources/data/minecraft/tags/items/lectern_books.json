@@ -1,0 +1,11 @@
+{
+  "values": [
+    {
+      "id": "#forge:books",
+      "required": false
+    }, {
+      "id": "#patchouli:books",
+      "required": false
+    }
+  ]
+}

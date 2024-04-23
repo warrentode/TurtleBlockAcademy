@@ -36,6 +36,9 @@ public class PackTags {
     }
 
     public static class Items {
+        public static final TagKey<Item> FORGE_BOOKS = packItemTag("forge", "books");
+        public static final TagKey<Item> PATCHOULI_BOOKS = packItemTag("patchouli", "books");
+        public static final TagKey<Item> LECTERN_BOOKS = packItemTag("minecraft", "lectern_books");
         public static final TagKey<Item> SAND = packItemTag("forge", "sand");
         public static final TagKey<Item> WALLETS = packItemTag("todecoins", "wallets");
         public static final TagKey<Item> BUNDLES = packItemTag("todecoins", "bundles");

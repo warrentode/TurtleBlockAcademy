@@ -24,7 +24,6 @@ import net.minecraft.data.DataGenerator;
 import net.minecraft.data.tags.BlockTagsProvider;
 import net.minecraft.data.tags.ItemTagsProvider;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.tags.ItemTags;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.common.Tags;
@@ -684,7 +683,13 @@ public class ItemTagsGen extends ItemTagsProvider {
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("todevillagers:chakra_dream_music_disc")))
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("decoration_delight:cookin_disc")));
         tag(PackTags.Items.BOOKSHELF_BOOKS)
-                .addTag(ItemTags.LECTERN_BOOKS);
+                .addTag(PackTags.Items.LECTERN_BOOKS);
+        tag(PackTags.Items.LECTERN_BOOKS)
+                .addOptionalTag(PackTags.Items.FORGE_BOOKS.location())
+                .addOptionalTag(PackTags.Items.PATCHOULI_BOOKS.location());
+        tag(PackTags.Items.PATCHOULI_BOOKS)
+                .addOptionalTag(Objects.requireNonNull(ResourceLocation.tryParse("patchouli:guide_book")))
+                .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("turtleblockacademy:brewingguide")));
         tag(PackTags.Items.TEXTILES)
                 .addTag(PackTags.Items.BARK)
                 .addTag(PackTags.Items.STRING);

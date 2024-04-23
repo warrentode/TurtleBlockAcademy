@@ -29,6 +29,7 @@
   "block.turtleblockacademy.school_desk_oak": "Oak School Desk",
   "block.turtleblockacademy.school_desk_spruce": "Spruce School Desk",
   "block.turtleblockacademy.school_desk_warped": "Warped School Desk",
+  "container.turtleblockacademy.desk": "School Desk",
   "item.turtleblockacademy.student_card": "Turtle Block Academy Student ID",
   "itemGroup.turtleblockacademy": "Turtle Block Academy Tab",
   "message.turtleblockacademy.registered": "You are now registered as a student of Turtle Block Academy",

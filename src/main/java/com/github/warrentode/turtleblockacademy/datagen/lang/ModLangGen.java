@@ -20,6 +20,11 @@ public class ModLangGen extends LanguageProvider {
         addTooltips();
         addAdvancements();
         addMessages();
+        addContainers();
+    }
+
+    private void addContainers() {
+        add("container.turtleblockacademy.desk", "School Desk");
     }
 
     private void addMessages() {
@@ -65,8 +70,8 @@ public class ModLangGen extends LanguageProvider {
         add(ModBlocks.SCHOOL_DESK_OAK.get(), "Oak School Desk");
         add(ModBlocks.SCHOOL_DESK_BIRCH.get(), "Birch School Desk");
         add(ModBlocks.SCHOOL_DESK_SPRUCE.get(), "Spruce School Desk");
-        add(ModBlocks.SCHOOL_DESK_ACACIA.get(), "Acacia School Desk");
         add(ModBlocks.SCHOOL_DESK_JUNGLE.get(), "Jungle School Desk");
+        add(ModBlocks.SCHOOL_DESK_ACACIA.get(), "Acacia School Desk");
         add(ModBlocks.SCHOOL_DESK_DARK_OAK.get(), "Dark Oak School Desk");
         add(ModBlocks.SCHOOL_DESK_MANGROVE.get(), "Mangrove School Desk");
         add(ModBlocks.SCHOOL_DESK_CRIMSON.get(), "Crimson School Desk");

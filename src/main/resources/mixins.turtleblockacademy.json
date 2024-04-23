@@ -1,0 +1,12 @@
+{
+  "required": true,
+  "package": "com.github.warrentode.turtleblockacademy.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "refmap": "mixins.turtleblockacademy.refmap.json",
+  "mixins": [
+    "WritableBookItemUseOnMixin", "WrittenBookItemUseOnMixin"
+  ],
+  "client": [
+  ],
+  "minVersion": "0.8"
+}
