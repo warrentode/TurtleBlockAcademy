@@ -1,0 +1,9 @@
+{
+  "parent": "turtleblockacademy:block/park_bench",
+  "texture_size": [128, 128],
+  "textures": {
+    "1": "minecraft:block/jungle_planks",
+    "2": "minecraft:block/jungle_log",
+    "particle": "minecraft:block/jungle_planks"
+  }
+}

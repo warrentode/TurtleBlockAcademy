@@ -1,90 +1,68 @@
 package com.github.warrentode.turtleblockacademy.blocks;
 
-import com.github.warrentode.turtleblockacademy.blocks.entity.SchoolStorageEntity;
+import com.github.warrentode.turtleblockacademy.blocks.entity.SeatEntity;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
-import net.minecraft.server.level.ServerLevel;
-import net.minecraft.util.RandomSource;
-import net.minecraft.world.Container;
-import net.minecraft.world.Containers;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
-import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.Level;
-import net.minecraft.world.level.block.*;
-import net.minecraft.world.level.block.entity.BlockEntity;
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Mirror;
+import net.minecraft.world.level.block.RenderShape;
+import net.minecraft.world.level.block.Rotation;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
-import net.minecraft.world.level.block.state.properties.BooleanProperty;
 import net.minecraft.world.level.block.state.properties.DirectionProperty;
 import net.minecraft.world.phys.BlockHitResult;
+import net.minecraft.world.phys.shapes.BooleanOp;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.VoxelShape;
 import org.jetbrains.annotations.NotNull;
-import org.jetbrains.annotations.Nullable;
 
 import java.util.EnumMap;
 import java.util.Map;
+import java.util.stream.Stream;
 
-public class SchoolLockerBlock extends BaseEntityBlock {
+public class ParkBenchBlock extends Block {
     public static final DirectionProperty FACING = BlockStateProperties.HORIZONTAL_FACING;
-    public static final BooleanProperty OPEN = BlockStateProperties.OPEN;
 
     private static final Map<Direction, VoxelShape> SHAPES = new EnumMap<>(Direction.class);
 
-    public final static VoxelShape SHAPE = Block.box(0, 0, 16, 16, 16, 17);
+    public final static VoxelShape SHAPE = Stream.of(
+            Block.box(0, 6, 9, 16, 8, 13),
+            Block.box(0, 6, 3, 16, 8, 7),
+            Block.box(7, 0, 7, 9, 8, 9),
+            Block.box(2, 6, 7, 4, 8, 9),
+            Block.box(12, 6, 7, 14, 8, 9),
+            Block.box(12, 5.5, 4, 14, 6, 12),
+            Block.box(2, 5.5, 4, 4, 6, 12),
+            Block.box(0, 9, 12, 16, 13, 14),
+            Block.box(0, 14, 12, 16, 18, 14),
+            Block.box(2, 6, 13, 4, 9, 14.5),
+            Block.box(12, 6, 13, 14, 9, 14.5),
+            Block.box(12, 13, 13, 14, 14, 14),
+            Block.box(2, 13, 13, 4, 14, 14),
+            Block.box(2, 9, 14, 4, 18, 14.5),
+            Block.box(12, 9, 14, 14, 18, 14.5)
+    ).reduce((v1, v2) -> Shapes.join(v1, v2, BooleanOp.OR)).get();
 
-    protected SchoolLockerBlock(Properties properties) {
+    public static final VoxelShape COLLISION_SHAPE = Shapes.or(SHAPE);
+
+    public ParkBenchBlock(Properties properties) {
         super(properties);
         this.registerDefaultState(this.stateDefinition.any()
-                .setValue(FACING, Direction.NORTH)
-                .setValue(OPEN, false));
+                .setValue(FACING, Direction.NORTH));
         runCalculation();
-    }
-
-    @SuppressWarnings("deprecation")
-    @Override
-    public @NotNull InteractionResult use(@NotNull BlockState state, @NotNull Level level, @NotNull BlockPos pos, @NotNull Player player, @NotNull InteractionHand hand, @NotNull BlockHitResult hit) {
-        if (!level.isClientSide) {
-            BlockEntity blockEntity = level.getBlockEntity(pos);
-            if (blockEntity instanceof SchoolStorageEntity) {
-                player.openMenu((SchoolStorageEntity) blockEntity);
-            }
-        }
-        return InteractionResult.SUCCESS;
-    }
-
-    @SuppressWarnings("deprecation")
-    @Override
-    public void onRemove(@NotNull BlockState state, @NotNull Level level, @NotNull BlockPos pos, @NotNull BlockState newState, boolean isMoving) {
-        if (state.getBlock() != newState.getBlock()) {
-            BlockEntity blockEntity = level.getBlockEntity(pos);
-            if (blockEntity instanceof Container) {
-                Containers.dropContents(level, pos, (Container) blockEntity);
-                level.updateNeighbourForOutputSignal(pos, this);
-            }
-            super.onRemove(state, level, pos, newState, isMoving);
-        }
-    }
-
-    @SuppressWarnings("deprecation")
-    @Override
-    public void tick(@NotNull BlockState state, @NotNull ServerLevel level, @NotNull BlockPos pos, @NotNull RandomSource random) {
-        BlockEntity blockEntity = level.getBlockEntity(pos);
-        if (blockEntity instanceof SchoolStorageEntity) {
-            ((SchoolStorageEntity) blockEntity).recheckOpen();
-        }
     }
 
     @Override
     protected void createBlockStateDefinition(@NotNull StateDefinition.Builder<Block, BlockState> builder) {
-        builder.add(FACING, OPEN);
+        builder.add(FACING);
     }
 
     @SuppressWarnings("deprecation")
@@ -99,19 +77,9 @@ public class SchoolLockerBlock extends BaseEntityBlock {
                 context.getHorizontalDirection().getOpposite());
     }
 
-    @Override
-    public void setPlacedBy(@NotNull Level level, @NotNull BlockPos pos, @NotNull BlockState state, @Nullable LivingEntity placer, @NotNull ItemStack stack) {
-        if (stack.hasCustomHoverName()) {
-            BlockEntity blockEntity = level.getBlockEntity(pos);
-            if (blockEntity instanceof SchoolStorageEntity) {
-                ((SchoolStorageEntity) blockEntity).setCustomName(stack.getHoverName());
-            }
-        }
-    }
-
     protected void runCalculation() {
         for (Direction direction : Direction.values()) {
-            SHAPES.put(direction, calculateShapes(direction, SchoolLockerBlock.SHAPE));
+            SHAPES.put(direction, calculateShapes(direction, ParkBenchBlock.SHAPE));
         }
     }
 
@@ -144,9 +112,14 @@ public class SchoolLockerBlock extends BaseEntityBlock {
         return RenderShape.MODEL;
     }
 
-    @Nullable
+    @SuppressWarnings("deprecation")
+    public @NotNull VoxelShape getCollisionShape(@NotNull BlockState state, @NotNull BlockGetter getter, @NotNull BlockPos pos, @NotNull CollisionContext context) {
+        return COLLISION_SHAPE;
+    }
+
+    @SuppressWarnings("deprecation")
     @Override
-    public BlockEntity newBlockEntity(@NotNull BlockPos pos, @NotNull BlockState state) {
-        return new SchoolStorageEntity(pos, state);
+    public @NotNull InteractionResult use(@NotNull BlockState state, @NotNull Level level, @NotNull BlockPos pos, @NotNull Player player, @NotNull InteractionHand hand, @NotNull BlockHitResult result) {
+        return SeatEntity.create(level, pos, 0.4, player, state.getValue(FACING));
     }
 }

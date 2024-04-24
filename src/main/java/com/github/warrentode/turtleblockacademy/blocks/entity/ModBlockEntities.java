@@ -29,9 +29,9 @@ public class ModBlockEntities {
                             .build(null));
 
     @SuppressWarnings("DataFlowIssue")
-    public static final RegistryObject<BlockEntityType<SchoolDeskCabinetBlockEntity>> SCHOOL_DESK_CABINET_ENTITY =
-            BLOCK_ENTITIES.register("school_desk_cabinet_entity",
-                    () -> BlockEntityType.Builder.of(SchoolDeskCabinetBlockEntity::new,
+    public static final RegistryObject<BlockEntityType<SchoolStorageEntity>> SCHOOL_STORAGE_ENTITY =
+            BLOCK_ENTITIES.register("school_storage_entity",
+                    () -> BlockEntityType.Builder.of(SchoolStorageEntity::new,
                                     ModBlocks.SCHOOL_DESK_CABINET_OAK.get(),
                                     ModBlocks.SCHOOL_DESK_CABINET_BIRCH.get(),
                                     ModBlocks.SCHOOL_DESK_CABINET_SPRUCE.get(),
@@ -40,7 +40,16 @@ public class ModBlockEntities {
                                     ModBlocks.SCHOOL_DESK_CABINET_DARK_OAK.get(),
                                     ModBlocks.SCHOOL_DESK_CABINET_MANGROVE.get(),
                                     ModBlocks.SCHOOL_DESK_CABINET_CRIMSON.get(),
-                                    ModBlocks.SCHOOL_DESK_CABINET_WARPED.get())
+                                    ModBlocks.SCHOOL_DESK_CABINET_WARPED.get(),
+                                    ModBlocks.LOCKER_OAK.get(),
+                                    ModBlocks.LOCKER_BIRCH.get(),
+                                    ModBlocks.LOCKER_SPRUCE.get(),
+                                    ModBlocks.LOCKER_JUNGLE.get(),
+                                    ModBlocks.LOCKER_ACACIA.get(),
+                                    ModBlocks.LOCKER_DARK_OAK.get(),
+                                    ModBlocks.LOCKER_MANGROVE.get(),
+                                    ModBlocks.LOCKER_CRIMSON.get(),
+                                    ModBlocks.LOCKER_WARPED.get())
                             .build(null));
 
     public static void register(IEventBus eventBus) {

@@ -55,6 +55,26 @@ public class ModBlockLootTablesGen extends BlockLoot {
         this.dropSelf(ModBlocks.LOCKER_DARK_OAK.get());
         this.dropSelf(ModBlocks.LOCKER_JUNGLE.get());
         this.dropSelf(ModBlocks.LOCKER_ACACIA.get());
+
+        this.dropSelf(ModBlocks.PARK_BENCH_WARPED.get());
+        this.dropSelf(ModBlocks.PARK_BENCH_CRIMSON.get());
+        this.dropSelf(ModBlocks.PARK_BENCH_MANGROVE.get());
+        this.dropSelf(ModBlocks.PARK_BENCH_OAK.get());
+        this.dropSelf(ModBlocks.PARK_BENCH_BIRCH.get());
+        this.dropSelf(ModBlocks.PARK_BENCH_SPRUCE.get());
+        this.dropSelf(ModBlocks.PARK_BENCH_DARK_OAK.get());
+        this.dropSelf(ModBlocks.PARK_BENCH_JUNGLE.get());
+        this.dropSelf(ModBlocks.PARK_BENCH_ACACIA.get());
+
+        this.dropSelf(ModBlocks.TABLE_WARPED.get());
+        this.dropSelf(ModBlocks.TABLE_CRIMSON.get());
+        this.dropSelf(ModBlocks.TABLE_MANGROVE.get());
+        this.dropSelf(ModBlocks.TABLE_OAK.get());
+        this.dropSelf(ModBlocks.TABLE_BIRCH.get());
+        this.dropSelf(ModBlocks.TABLE_SPRUCE.get());
+        this.dropSelf(ModBlocks.TABLE_DARK_OAK.get());
+        this.dropSelf(ModBlocks.TABLE_JUNGLE.get());
+        this.dropSelf(ModBlocks.TABLE_ACACIA.get());
     }
 
     @Override

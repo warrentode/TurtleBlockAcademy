@@ -1,6 +1,7 @@
 package com.github.warrentode.turtleblockacademy.blocks.entity;
 
 import com.github.warrentode.turtleblockacademy.blocks.SchoolDeskCabinetBlock;
+import com.github.warrentode.turtleblockacademy.blocks.SchoolLockerBlock;
 import com.github.warrentode.turtleblockacademy.util.ModSounds;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.NonNullList;
@@ -22,18 +23,30 @@ import net.minecraft.world.level.block.entity.RandomizableContainerBlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
 import org.jetbrains.annotations.NotNull;
 
-public class SchoolLockerBlockEntity extends RandomizableContainerBlockEntity {
+public class SchoolStorageEntity extends RandomizableContainerBlockEntity {
     private NonNullList<ItemStack> contents = NonNullList.withSize(27, ItemStack.EMPTY);
 
     private final ContainerOpenersCounter openersCounter = new ContainerOpenersCounter() {
         protected void onOpen(@NotNull Level level, @NotNull BlockPos pos, @NotNull BlockState state) {
-            SchoolLockerBlockEntity.this.playSound(state, ModSounds.BLOCK_LOCKER_OPEN.get());
-            SchoolLockerBlockEntity.this.updateBlockState(state, true);
+            if (state.getBlock() instanceof SchoolDeskCabinetBlock) {
+                SchoolStorageEntity.this.playSound(state, ModSounds.BLOCK_DESK_OPEN.get());
+                SchoolStorageEntity.this.updateBlockState(state, true);
+            }
+            else if (state.getBlock() instanceof SchoolLockerBlock) {
+                SchoolStorageEntity.this.playSound(state, ModSounds.BLOCK_LOCKER_OPEN.get());
+                SchoolStorageEntity.this.updateBlockState(state, true);
+            }
         }
 
         protected void onClose(@NotNull Level level, @NotNull BlockPos pos, @NotNull BlockState state) {
-            SchoolLockerBlockEntity.this.playSound(state, ModSounds.BLOCK_LOCKER_CLOSE.get());
-            SchoolLockerBlockEntity.this.updateBlockState(state, false);
+            if (state.getBlock() instanceof SchoolDeskCabinetBlock) {
+                SchoolStorageEntity.this.playSound(state, ModSounds.BLOCK_DESK_CLOSE.get());
+                SchoolStorageEntity.this.updateBlockState(state, true);
+            }
+            else if (state.getBlock() instanceof SchoolLockerBlock) {
+                SchoolStorageEntity.this.playSound(state, ModSounds.BLOCK_LOCKER_CLOSE.get());
+                SchoolStorageEntity.this.updateBlockState(state, false);
+            }
         }
 
         protected void openerCountChanged(@NotNull Level level, @NotNull BlockPos pos, @NotNull BlockState state, int count, int openCount) {
@@ -42,7 +55,7 @@ public class SchoolLockerBlockEntity extends RandomizableContainerBlockEntity {
         protected boolean isOwnContainer(@NotNull Player player) {
             if (player.containerMenu instanceof ChestMenu) {
                 Container container = ((ChestMenu) player.containerMenu).getContainer();
-                return container == SchoolLockerBlockEntity.this;
+                return container == SchoolStorageEntity.this;
             }
             else {
                 return false;
@@ -50,8 +63,8 @@ public class SchoolLockerBlockEntity extends RandomizableContainerBlockEntity {
         }
     };
 
-    public SchoolLockerBlockEntity(BlockPos pos, BlockState state) {
-        super(ModBlockEntities.SCHOOL_DESK_CABINET_ENTITY.get(), pos, state);
+    public SchoolStorageEntity(BlockPos pos, BlockState state) {
+        super(ModBlockEntities.SCHOOL_STORAGE_ENTITY.get(), pos, state);
     }
 
     @Override
@@ -88,7 +101,7 @@ public class SchoolLockerBlockEntity extends RandomizableContainerBlockEntity {
 
     @Override
     protected @NotNull Component getDefaultName() {
-        return Component.translatable("container.turtleblockacademy.school_locker");
+        return Component.translatable("container.turtleblockacademy.storage");
     }
 
     @Override
@@ -116,7 +129,12 @@ public class SchoolLockerBlockEntity extends RandomizableContainerBlockEntity {
 
     void updateBlockState(BlockState state, boolean open) {
         if (level != null) {
-            this.level.setBlock(this.getBlockPos(), state.setValue(SchoolDeskCabinetBlock.OPEN, open), 3);
+            if (state.getBlock() instanceof SchoolDeskCabinetBlock) {
+                this.level.setBlock(this.getBlockPos(), state.setValue(SchoolDeskCabinetBlock.OPEN, open), 3);
+            }
+            else if (state.getBlock() instanceof SchoolLockerBlock) {
+                this.level.setBlock(this.getBlockPos(), state.setValue(SchoolLockerBlock.OPEN, open), 3);
+            }
         }
     }
 

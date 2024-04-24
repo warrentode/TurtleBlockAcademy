@@ -27,12 +27,13 @@ public class ModLangGen extends LanguageProvider {
     private void addSubtitles() {
         add("subtitles.turtleblockacademy.desk_open", "Desk Drawer Opens");
         add("subtitles.turtleblockacademy.desk_close", "Desk Drawer Closes");
+        add("subtitles.turtleblockacademy.locker_open", "Locker Opens");
+        add("subtitles.turtleblockacademy.locker_close", "Locker Closes");
     }
 
     private void addContainers() {
         add("container.turtleblockacademy.desk", "School Desk");
-        add("container.turtleblockacademy.desk_cabinet", "School Desk Cabinet");
-        add("container.turtleblockacademy.school_locker", "School Locker");
+        add("container.turtleblockacademy.storage", "Storage");
     }
 
     private void addMessages() {
@@ -114,6 +115,26 @@ public class ModLangGen extends LanguageProvider {
         add(ModBlocks.LOCKER_MANGROVE.get(), "Mangrove Locker");
         add(ModBlocks.LOCKER_CRIMSON.get(), "Crimson Locker");
         add(ModBlocks.LOCKER_WARPED.get(), "Warped Locker");
+
+        add(ModBlocks.PARK_BENCH_OAK.get(), "Oak Park Bench");
+        add(ModBlocks.PARK_BENCH_BIRCH.get(), "Birch Park Bench");
+        add(ModBlocks.PARK_BENCH_SPRUCE.get(), "Spruce Park Bench");
+        add(ModBlocks.PARK_BENCH_JUNGLE.get(), "Jungle Park Bench");
+        add(ModBlocks.PARK_BENCH_ACACIA.get(), "Acacia Park Bench");
+        add(ModBlocks.PARK_BENCH_DARK_OAK.get(), "Dark Oak Park Bench");
+        add(ModBlocks.PARK_BENCH_MANGROVE.get(), "Mangrove Park Bench");
+        add(ModBlocks.PARK_BENCH_CRIMSON.get(), "Crimson Park Bench");
+        add(ModBlocks.PARK_BENCH_WARPED.get(), "Warped Park Bench");
+
+        add(ModBlocks.TABLE_OAK.get(), "Oak Table");
+        add(ModBlocks.TABLE_BIRCH.get(), "Birch Table");
+        add(ModBlocks.TABLE_SPRUCE.get(), "Spruce Table");
+        add(ModBlocks.TABLE_JUNGLE.get(), "Jungle Table");
+        add(ModBlocks.TABLE_ACACIA.get(), "Acacia Table");
+        add(ModBlocks.TABLE_DARK_OAK.get(), "Dark Oak Table");
+        add(ModBlocks.TABLE_MANGROVE.get(), "Mangrove Table");
+        add(ModBlocks.TABLE_CRIMSON.get(), "Crimson Table");
+        add(ModBlocks.TABLE_WARPED.get(), "Warped Table");
     }
 
     private void addItemGroups() {

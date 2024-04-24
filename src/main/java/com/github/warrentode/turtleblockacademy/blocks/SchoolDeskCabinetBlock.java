@@ -1,6 +1,6 @@
 package com.github.warrentode.turtleblockacademy.blocks;
 
-import com.github.warrentode.turtleblockacademy.blocks.entity.SchoolDeskCabinetBlockEntity;
+import com.github.warrentode.turtleblockacademy.blocks.entity.SchoolStorageEntity;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.server.level.ServerLevel;
@@ -62,8 +62,8 @@ public class SchoolDeskCabinetBlock extends BaseEntityBlock {
     public @NotNull InteractionResult use(@NotNull BlockState state, @NotNull Level level, @NotNull BlockPos pos, @NotNull Player player, @NotNull InteractionHand hand, @NotNull BlockHitResult hit) {
         if (!level.isClientSide) {
             BlockEntity blockEntity = level.getBlockEntity(pos);
-            if (blockEntity instanceof SchoolDeskCabinetBlockEntity) {
-                player.openMenu((SchoolDeskCabinetBlockEntity) blockEntity);
+            if (blockEntity instanceof SchoolStorageEntity) {
+                player.openMenu((SchoolStorageEntity) blockEntity);
             }
         }
         return InteractionResult.SUCCESS;
@@ -86,8 +86,8 @@ public class SchoolDeskCabinetBlock extends BaseEntityBlock {
     @Override
     public void tick(@NotNull BlockState state, @NotNull ServerLevel level, @NotNull BlockPos pos, @NotNull RandomSource random) {
         BlockEntity blockEntity = level.getBlockEntity(pos);
-        if (blockEntity instanceof SchoolDeskCabinetBlockEntity) {
-            ((SchoolDeskCabinetBlockEntity) blockEntity).recheckOpen();
+        if (blockEntity instanceof SchoolStorageEntity) {
+            ((SchoolStorageEntity) blockEntity).recheckOpen();
         }
     }
 
@@ -112,8 +112,8 @@ public class SchoolDeskCabinetBlock extends BaseEntityBlock {
     public void setPlacedBy(@NotNull Level level, @NotNull BlockPos pos, @NotNull BlockState state, @Nullable LivingEntity placer, @NotNull ItemStack stack) {
         if (stack.hasCustomHoverName()) {
             BlockEntity blockEntity = level.getBlockEntity(pos);
-            if (blockEntity instanceof SchoolDeskCabinetBlockEntity) {
-                ((SchoolDeskCabinetBlockEntity) blockEntity).setCustomName(stack.getHoverName());
+            if (blockEntity instanceof SchoolStorageEntity) {
+                ((SchoolStorageEntity) blockEntity).setCustomName(stack.getHoverName());
             }
         }
     }
@@ -156,6 +156,6 @@ public class SchoolDeskCabinetBlock extends BaseEntityBlock {
     @Nullable
     @Override
     public BlockEntity newBlockEntity(@NotNull BlockPos pos, @NotNull BlockState state) {
-        return new SchoolDeskCabinetBlockEntity(pos, state);
+        return new SchoolStorageEntity(pos, state);
     }
 }
