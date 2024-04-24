@@ -87,6 +87,16 @@ public class ModLangGen extends LanguageProvider {
         add(ModBlocks.SCHOOL_DESK_CABINET_MANGROVE.get(), "Mangrove School Desk Cabinet");
         add(ModBlocks.SCHOOL_DESK_CABINET_CRIMSON.get(), "Crimson School Desk Cabinet");
         add(ModBlocks.SCHOOL_DESK_CABINET_WARPED.get(), "Warped School Desk Cabinet");
+
+        add(ModBlocks.DESK_CHAIR_OAK.get(), "Oak Desk Chair");
+        add(ModBlocks.DESK_CHAIR_BIRCH.get(), "Birch Desk Chair");
+        add(ModBlocks.DESK_CHAIR_SPRUCE.get(), "Spruce Desk Chair");
+        add(ModBlocks.DESK_CHAIR_JUNGLE.get(), "Jungle Desk Chair");
+        add(ModBlocks.DESK_CHAIR_ACACIA.get(), "Acacia Desk Chair");
+        add(ModBlocks.DESK_CHAIR_DARK_OAK.get(), "Dark Oak Desk Chair");
+        add(ModBlocks.DESK_CHAIR_MANGROVE.get(), "Mangrove Desk Chair");
+        add(ModBlocks.DESK_CHAIR_CRIMSON.get(), "Crimson Desk Chair");
+        add(ModBlocks.DESK_CHAIR_WARPED.get(), "Warped Desk Chair");
     }
 
     private void addItemGroups() {

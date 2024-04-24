@@ -5,11 +5,14 @@ import com.github.warrentode.turtleblockacademy.blocks.entity.ModBlockEntities;
 import com.github.warrentode.turtleblockacademy.blocks.gui.ModMenuTypes;
 import com.github.warrentode.turtleblockacademy.blocks.gui.SchoolDeskScreen;
 import com.github.warrentode.turtleblockacademy.config.AcademyConfig;
+import com.github.warrentode.turtleblockacademy.entity.ModEntityTypes;
+import com.github.warrentode.turtleblockacademy.entity.renderer.SeatEntityRenderer;
 import com.github.warrentode.turtleblockacademy.items.ModItems;
 import com.github.warrentode.turtleblockacademy.loot.serializers.ModLootItemConditions;
 import com.github.warrentode.turtleblockacademy.loot.serializers.ModLootModifiers;
 import com.github.warrentode.turtleblockacademy.util.ModSounds;
 import net.minecraft.client.gui.screens.MenuScreens;
+import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
@@ -46,6 +49,8 @@ public class TurtleBlockAcademy {
         ModBlockEntities.register(modEventBus);
         ModMenuTypes.register(modEventBus);
 
+        ModEntityTypes.register(modEventBus);
+
         ModItems.register(modEventBus);
 
         ModLootModifiers.register(modEventBus);
@@ -81,6 +86,7 @@ public class TurtleBlockAcademy {
             event.enqueueWork(() ->
                     MenuScreens.register(ModMenuTypes.SCHOOL_DESK_MENU.get(),
                             SchoolDeskScreen::new));
+            EntityRenderers.register(ModEntityTypes.SEAT_ENTITY.get(), SeatEntityRenderer::new);
         }
     }
 }
