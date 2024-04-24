@@ -24,5 +24,14 @@ public class SoundsFileGen extends SoundDefinitionsProvider {
                 .subtitle("subtitles.turtleblockacademy.desk_close")
                 .with(sound(new ResourceLocation(modid, "block/barrel/close")).pitch(2))
         );
+
+        this.add(ModSounds.BLOCK_LOCKER_OPEN, definition()
+                .subtitle("subtitles.turtleblockacademy.locker_open")
+                .with(sound(new ResourceLocation(modid, "block/chest/open")).pitch(2))
+        );
+        this.add(ModSounds.BLOCK_LOCKER_CLOSE, definition()
+                .subtitle("subtitles.turtleblockacademy.locker_close")
+                .with(sound(new ResourceLocation(modid, "block/chest/close")).pitch(2))
+        );
     }
 }

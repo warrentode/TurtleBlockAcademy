@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "turtleblockacademy:block/locker_spruce"
+    },
+    "facing=east": {
+      "model": "turtleblockacademy:block/locker_spruce",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "turtleblockacademy:block/locker_spruce",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "turtleblockacademy:block/locker_spruce",
+      "y": 270
+    }
+  }
+}

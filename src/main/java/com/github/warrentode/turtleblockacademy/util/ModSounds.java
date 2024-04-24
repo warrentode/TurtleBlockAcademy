@@ -13,7 +13,12 @@ public class ModSounds {
             DeferredRegister.create(ForgeRegistries.SOUND_EVENTS, MODID);
 
     public static final RegistryObject<SoundEvent> BLOCK_DESK_OPEN = SOUNDS.register("block.turtleblockacademy.desk.open",
-            () -> new SoundEvent(new ResourceLocation(MODID, "block.turtleblockacademy..desk.open")));
-    public static final RegistryObject<SoundEvent> BLOCK_DESK_CLOSE = SOUNDS.register("block.turtleblockacademy..desk.close",
-            () -> new SoundEvent(new ResourceLocation(MODID, "block.turtleblockacademy..desk.close")));
+            () -> new SoundEvent(new ResourceLocation(MODID, "block.turtleblockacademy.desk.open")));
+    public static final RegistryObject<SoundEvent> BLOCK_DESK_CLOSE = SOUNDS.register("block.turtleblockacademy.desk.close",
+            () -> new SoundEvent(new ResourceLocation(MODID, "block.turtleblockacademy.desk.close")));
+
+    public static final RegistryObject<SoundEvent> BLOCK_LOCKER_OPEN = SOUNDS.register("block.turtleblockacademy.locker.open",
+            () -> new SoundEvent(new ResourceLocation(MODID, "block.turtleblockacademy.locker.open")));
+    public static final RegistryObject<SoundEvent> BLOCK_LOCKER_CLOSE = SOUNDS.register("block.turtleblockacademy.locker.close",
+            () -> new SoundEvent(new ResourceLocation(MODID, "block.turtleblockacademy.locker.close")));
 }

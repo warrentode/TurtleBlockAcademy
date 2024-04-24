@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "turtleblockacademy:block/locker_mangrove"
+    },
+    "facing=east": {
+      "model": "turtleblockacademy:block/locker_mangrove",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "turtleblockacademy:block/locker_mangrove",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "turtleblockacademy:block/locker_mangrove",
+      "y": 270
+    }
+  }
+}

@@ -21,11 +21,18 @@ public class ModLangGen extends LanguageProvider {
         addAdvancements();
         addMessages();
         addContainers();
+        addSubtitles();
+    }
+
+    private void addSubtitles() {
+        add("subtitles.turtleblockacademy.desk_open", "Desk Drawer Opens");
+        add("subtitles.turtleblockacademy.desk_close", "Desk Drawer Closes");
     }
 
     private void addContainers() {
         add("container.turtleblockacademy.desk", "School Desk");
         add("container.turtleblockacademy.desk_cabinet", "School Desk Cabinet");
+        add("container.turtleblockacademy.school_locker", "School Locker");
     }
 
     private void addMessages() {
@@ -97,6 +104,16 @@ public class ModLangGen extends LanguageProvider {
         add(ModBlocks.DESK_CHAIR_MANGROVE.get(), "Mangrove Desk Chair");
         add(ModBlocks.DESK_CHAIR_CRIMSON.get(), "Crimson Desk Chair");
         add(ModBlocks.DESK_CHAIR_WARPED.get(), "Warped Desk Chair");
+
+        add(ModBlocks.LOCKER_OAK.get(), "Oak Locker");
+        add(ModBlocks.LOCKER_BIRCH.get(), "Birch Locker");
+        add(ModBlocks.LOCKER_SPRUCE.get(), "Spruce Locker");
+        add(ModBlocks.LOCKER_JUNGLE.get(), "Jungle Locker");
+        add(ModBlocks.LOCKER_ACACIA.get(), "Acacia Locker");
+        add(ModBlocks.LOCKER_DARK_OAK.get(), "Dark Oak Locker");
+        add(ModBlocks.LOCKER_MANGROVE.get(), "Mangrove Locker");
+        add(ModBlocks.LOCKER_CRIMSON.get(), "Crimson Locker");
+        add(ModBlocks.LOCKER_WARPED.get(), "Warped Locker");
     }
 
     private void addItemGroups() {

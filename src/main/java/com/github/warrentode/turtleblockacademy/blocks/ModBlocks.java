@@ -137,6 +137,43 @@ public class ModBlocks {
                     .sound(SoundType.WOOD).instabreak().noOcclusion()));
 
 
+    public static final RegistryObject<Block> LOCKER_OAK = registerBlock("locker_oak",
+            () -> new SchoolLockerBlock(BlockBehaviour.Properties.of(Material.WOOD)
+                    .sound(SoundType.WOOD).instabreak().noOcclusion()));
+
+    public static final RegistryObject<Block> LOCKER_BIRCH = registerBlock("locker_birch",
+            () -> new SchoolLockerBlock(BlockBehaviour.Properties.of(Material.WOOD)
+                    .sound(SoundType.WOOD).instabreak().noOcclusion()));
+
+    public static final RegistryObject<Block> LOCKER_SPRUCE = registerBlock("locker_spruce",
+            () -> new SchoolLockerBlock(BlockBehaviour.Properties.of(Material.WOOD)
+                    .sound(SoundType.WOOD).instabreak().noOcclusion()));
+
+    public static final RegistryObject<Block> LOCKER_JUNGLE = registerBlock("locker_jungle",
+            () -> new SchoolLockerBlock(BlockBehaviour.Properties.of(Material.WOOD)
+                    .sound(SoundType.WOOD).instabreak().noOcclusion()));
+
+    public static final RegistryObject<Block> LOCKER_ACACIA = registerBlock("locker_acacia",
+            () -> new SchoolLockerBlock(BlockBehaviour.Properties.of(Material.WOOD)
+                    .sound(SoundType.WOOD).instabreak().noOcclusion()));
+
+    public static final RegistryObject<Block> LOCKER_DARK_OAK = registerBlock("locker_dark_oak",
+            () -> new SchoolLockerBlock(BlockBehaviour.Properties.of(Material.WOOD)
+                    .sound(SoundType.WOOD).instabreak().noOcclusion()));
+
+    public static final RegistryObject<Block> LOCKER_MANGROVE = registerBlock("locker_mangrove",
+            () -> new SchoolLockerBlock(BlockBehaviour.Properties.of(Material.WOOD)
+                    .sound(SoundType.WOOD).instabreak().noOcclusion()));
+
+    public static final RegistryObject<Block> LOCKER_CRIMSON = registerBlock("locker_crimson",
+            () -> new SchoolLockerBlock(BlockBehaviour.Properties.of(Material.WOOD)
+                    .sound(SoundType.WOOD).instabreak().noOcclusion()));
+
+    public static final RegistryObject<Block> LOCKER_WARPED = registerBlock("locker_warped",
+            () -> new SchoolLockerBlock(BlockBehaviour.Properties.of(Material.WOOD)
+                    .sound(SoundType.WOOD).instabreak().noOcclusion()));
+
+
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
         registerBlockItem(name, toReturn);

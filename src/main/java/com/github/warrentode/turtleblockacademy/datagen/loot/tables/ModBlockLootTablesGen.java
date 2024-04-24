@@ -45,6 +45,16 @@ public class ModBlockLootTablesGen extends BlockLoot {
         this.dropSelf(ModBlocks.DESK_CHAIR_DARK_OAK.get());
         this.dropSelf(ModBlocks.DESK_CHAIR_JUNGLE.get());
         this.dropSelf(ModBlocks.DESK_CHAIR_ACACIA.get());
+
+        this.dropSelf(ModBlocks.LOCKER_WARPED.get());
+        this.dropSelf(ModBlocks.LOCKER_CRIMSON.get());
+        this.dropSelf(ModBlocks.LOCKER_MANGROVE.get());
+        this.dropSelf(ModBlocks.LOCKER_OAK.get());
+        this.dropSelf(ModBlocks.LOCKER_BIRCH.get());
+        this.dropSelf(ModBlocks.LOCKER_SPRUCE.get());
+        this.dropSelf(ModBlocks.LOCKER_DARK_OAK.get());
+        this.dropSelf(ModBlocks.LOCKER_JUNGLE.get());
+        this.dropSelf(ModBlocks.LOCKER_ACACIA.get());
     }
 
     @Override

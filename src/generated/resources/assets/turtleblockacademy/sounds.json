@@ -1,5 +1,5 @@
 {
-  "block.turtleblockacademy..desk.close": {
+  "block.turtleblockacademy.desk.close": {
     "sounds": [
       {
         "name": "block/barrel/close",
@@ -8,7 +8,7 @@
     ],
     "subtitle": "subtitles.turtleblockacademy.desk_close"
   },
-  "block.turtleblockacademy..desk.open": {
+  "block.turtleblockacademy.desk.open": {
     "sounds": [
       {
         "name": "block/barrel/open1",
@@ -19,5 +19,23 @@
       }
     ],
     "subtitle": "subtitles.turtleblockacademy.desk_open"
+  },
+  "block.turtleblockacademy.locker.close": {
+    "sounds": [
+      {
+        "name": "block/chest/close",
+        "pitch": 2.0
+      }
+    ],
+    "subtitle": "subtitles.turtleblockacademy.locker_close"
+  },
+  "block.turtleblockacademy.locker.open": {
+    "sounds": [
+      {
+        "name": "block/chest/open",
+        "pitch": 2.0
+      }
+    ],
+    "subtitle": "subtitles.turtleblockacademy.locker_open"
   }
 }
