@@ -38,7 +38,7 @@ public class SchoolLockerBlock extends BaseEntityBlock {
 
     private static final Map<Direction, VoxelShape> SHAPES = new EnumMap<>(Direction.class);
 
-    public final static VoxelShape SHAPE = Block.box(0, 0, 16, 16, 16, 17);
+    public final static VoxelShape SHAPE = Block.box(0, 0, 1, 16, 16, 17);
 
     protected SchoolLockerBlock(Properties properties) {
         super(properties);
