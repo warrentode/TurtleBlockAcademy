@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "tables",
+  "key": {
+    "#": {
+      "item": "biomesoplenty:dead_slab"
+    },
+    "L": {
+      "item": "biomesoplenty:dead_log"
+    },
+    "S": {
+      "item": "biomesoplenty:stripped_dead_log"
+    }
+  },
+  "pattern": [
+    "###", " S ", " L "
+  ],
+  "result": {
+    "count": 2,
+    "item": "turtleblockacademy:table_dead"
+  }
+}

@@ -2,7 +2,7 @@
   "parent": "turtleblockacademy:block/school_desk_cabinet",
   "textures": {
     "1": "minecraft:block/acacia_planks",
-    "2": "minecraft:block/acacia_log",
+    "2": "minecraft:block/stripped_acacia_log",
     "particle": "minecraft:block/acacia_planks"
   }
 }

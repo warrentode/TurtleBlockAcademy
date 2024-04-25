@@ -2,7 +2,7 @@
   "parent": "turtleblockacademy:block/park_bench",
   "textures": {
     "1": "minecraft:block/jungle_planks",
-    "2": "minecraft:block/jungle_log",
+    "2": "minecraft:block/stripped_jungle_log",
     "particle": "minecraft:block/jungle_planks"
   }
 }

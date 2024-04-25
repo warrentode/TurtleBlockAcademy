@@ -75,6 +75,83 @@ public class ModBlockLootTablesGen extends BlockLoot {
         this.dropSelf(ModBlocks.TABLE_DARK_OAK.get());
         this.dropSelf(ModBlocks.TABLE_JUNGLE.get());
         this.dropSelf(ModBlocks.TABLE_ACACIA.get());
+
+        this.dropSelf(ModBlocks.SCHOOL_DESK_FIR.get());
+        this.dropSelf(ModBlocks.SCHOOL_DESK_CABINET_FIR.get());
+        this.dropSelf(ModBlocks.DESK_CHAIR_FIR.get());
+        this.dropSelf(ModBlocks.LOCKER_FIR.get());
+        this.dropSelf(ModBlocks.PARK_BENCH_FIR.get());
+        this.dropSelf(ModBlocks.TABLE_FIR.get());
+
+        this.dropSelf(ModBlocks.SCHOOL_DESK_REDWOOD.get());
+        this.dropSelf(ModBlocks.SCHOOL_DESK_CABINET_REDWOOD.get());
+        this.dropSelf(ModBlocks.DESK_CHAIR_REDWOOD.get());
+        this.dropSelf(ModBlocks.LOCKER_REDWOOD.get());
+        this.dropSelf(ModBlocks.PARK_BENCH_REDWOOD.get());
+        this.dropSelf(ModBlocks.TABLE_REDWOOD.get());
+
+        this.dropSelf(ModBlocks.SCHOOL_DESK_CHERRY.get());
+        this.dropSelf(ModBlocks.SCHOOL_DESK_CABINET_CHERRY.get());
+        this.dropSelf(ModBlocks.DESK_CHAIR_CHERRY.get());
+        this.dropSelf(ModBlocks.LOCKER_CHERRY.get());
+        this.dropSelf(ModBlocks.PARK_BENCH_CHERRY.get());
+        this.dropSelf(ModBlocks.TABLE_CHERRY.get());
+
+        this.dropSelf(ModBlocks.SCHOOL_DESK_MAHOGANY.get());
+        this.dropSelf(ModBlocks.SCHOOL_DESK_CABINET_MAHOGANY.get());
+        this.dropSelf(ModBlocks.DESK_CHAIR_MAHOGANY.get());
+        this.dropSelf(ModBlocks.LOCKER_MAHOGANY.get());
+        this.dropSelf(ModBlocks.PARK_BENCH_MAHOGANY.get());
+        this.dropSelf(ModBlocks.TABLE_MAHOGANY.get());
+
+        this.dropSelf(ModBlocks.SCHOOL_DESK_JACARANDA.get());
+        this.dropSelf(ModBlocks.SCHOOL_DESK_CABINET_JACARANDA.get());
+        this.dropSelf(ModBlocks.DESK_CHAIR_JACARANDA.get());
+        this.dropSelf(ModBlocks.LOCKER_JACARANDA.get());
+        this.dropSelf(ModBlocks.PARK_BENCH_JACARANDA.get());
+        this.dropSelf(ModBlocks.TABLE_JACARANDA.get());
+
+        this.dropSelf(ModBlocks.SCHOOL_DESK_PALM.get());
+        this.dropSelf(ModBlocks.SCHOOL_DESK_CABINET_PALM.get());
+        this.dropSelf(ModBlocks.DESK_CHAIR_PALM.get());
+        this.dropSelf(ModBlocks.LOCKER_PALM.get());
+        this.dropSelf(ModBlocks.PARK_BENCH_PALM.get());
+        this.dropSelf(ModBlocks.TABLE_PALM.get());
+
+        this.dropSelf(ModBlocks.SCHOOL_DESK_WILLOW.get());
+        this.dropSelf(ModBlocks.SCHOOL_DESK_CABINET_WILLOW.get());
+        this.dropSelf(ModBlocks.DESK_CHAIR_WILLOW.get());
+        this.dropSelf(ModBlocks.LOCKER_WILLOW.get());
+        this.dropSelf(ModBlocks.PARK_BENCH_WILLOW.get());
+        this.dropSelf(ModBlocks.TABLE_WILLOW.get());
+
+        this.dropSelf(ModBlocks.SCHOOL_DESK_DEAD.get());
+        this.dropSelf(ModBlocks.SCHOOL_DESK_CABINET_DEAD.get());
+        this.dropSelf(ModBlocks.DESK_CHAIR_DEAD.get());
+        this.dropSelf(ModBlocks.LOCKER_DEAD.get());
+        this.dropSelf(ModBlocks.PARK_BENCH_DEAD.get());
+        this.dropSelf(ModBlocks.TABLE_DEAD.get());
+
+        this.dropSelf(ModBlocks.SCHOOL_DESK_MAGIC.get());
+        this.dropSelf(ModBlocks.SCHOOL_DESK_CABINET_MAGIC.get());
+        this.dropSelf(ModBlocks.DESK_CHAIR_MAGIC.get());
+        this.dropSelf(ModBlocks.LOCKER_MAGIC.get());
+        this.dropSelf(ModBlocks.PARK_BENCH_MAGIC.get());
+        this.dropSelf(ModBlocks.TABLE_MAGIC.get());
+
+        this.dropSelf(ModBlocks.SCHOOL_DESK_UMBRAN.get());
+        this.dropSelf(ModBlocks.SCHOOL_DESK_CABINET_UMBRAN.get());
+        this.dropSelf(ModBlocks.DESK_CHAIR_UMBRAN.get());
+        this.dropSelf(ModBlocks.LOCKER_UMBRAN.get());
+        this.dropSelf(ModBlocks.PARK_BENCH_UMBRAN.get());
+        this.dropSelf(ModBlocks.TABLE_UMBRAN.get());
+
+        this.dropSelf(ModBlocks.SCHOOL_DESK_HELLBARK.get());
+        this.dropSelf(ModBlocks.SCHOOL_DESK_CABINET_HELLBARK.get());
+        this.dropSelf(ModBlocks.DESK_CHAIR_HELLBARK.get());
+        this.dropSelf(ModBlocks.LOCKER_HELLBARK.get());
+        this.dropSelf(ModBlocks.PARK_BENCH_HELLBARK.get());
+        this.dropSelf(ModBlocks.TABLE_HELLBARK.get());
     }
 
     @Override

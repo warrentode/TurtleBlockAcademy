@@ -1,0 +1,34 @@
+{
+  "variants": {
+    "facing=east,has_book=false": {
+      "model": "turtleblockacademy:block/school_desk_willow",
+      "y": 90
+    },
+    "facing=east,has_book=true": {
+      "model": "turtleblockacademy:block/school_desk_willow",
+      "y": 90
+    },
+    "facing=north,has_book=false": {
+      "model": "turtleblockacademy:block/school_desk_willow"
+    },
+    "facing=north,has_book=true": {
+      "model": "turtleblockacademy:block/school_desk_willow"
+    },
+    "facing=south,has_book=false": {
+      "model": "turtleblockacademy:block/school_desk_willow",
+      "y": 180
+    },
+    "facing=south,has_book=true": {
+      "model": "turtleblockacademy:block/school_desk_willow",
+      "y": 180
+    },
+    "facing=west,has_book=false": {
+      "model": "turtleblockacademy:block/school_desk_willow",
+      "y": 270
+    },
+    "facing=west,has_book=true": {
+      "model": "turtleblockacademy:block/school_desk_willow",
+      "y": 270
+    }
+  }
+}

@@ -193,6 +193,215 @@ public class ModBlocks {
             () -> new TableBlock(BlockBehaviour.Properties.of(Material.WOOD)
                     .sound(SoundType.WOOD).instabreak().noOcclusion()));
 
+    public static final RegistryObject<Block> SCHOOL_DESK_FIR = registerBlock("school_desk_fir",
+            () -> new SchoolDeskBlock(BlockBehaviour.Properties.of(Material.WOOD)
+                    .sound(SoundType.WOOD).instabreak().noOcclusion()));
+    public static final RegistryObject<Block> SCHOOL_DESK_CABINET_FIR = registerBlock("school_desk_cabinet_fir",
+            () -> new SchoolDeskCabinetBlock(BlockBehaviour.Properties.of(Material.WOOD)
+                    .sound(SoundType.WOOD).instabreak().noOcclusion()));
+    public static final RegistryObject<Block> DESK_CHAIR_FIR = registerBlock("desk_chair_fir",
+            () -> new DeskChairBlock(BlockBehaviour.Properties.of(Material.WOOD)
+                    .sound(SoundType.WOOD).instabreak().noOcclusion()));
+    public static final RegistryObject<Block> LOCKER_FIR = registerBlock("locker_fir",
+            () -> new SchoolLockerBlock(BlockBehaviour.Properties.of(Material.WOOD)
+                    .sound(SoundType.WOOD).instabreak().noOcclusion()));
+    public static final RegistryObject<Block> PARK_BENCH_FIR = registerBlock("park_bench_fir",
+            () -> new ParkBenchBlock(BlockBehaviour.Properties.of(Material.WOOD)
+                    .sound(SoundType.WOOD).instabreak().noOcclusion()));
+    public static final RegistryObject<Block> TABLE_FIR = registerBlock("table_fir",
+            () -> new TableBlock(BlockBehaviour.Properties.of(Material.WOOD)
+                    .sound(SoundType.WOOD).instabreak().noOcclusion()));
+
+    public static final RegistryObject<Block> SCHOOL_DESK_REDWOOD = registerBlock("school_desk_redwood",
+            () -> new SchoolDeskBlock(BlockBehaviour.Properties.of(Material.WOOD)
+                    .sound(SoundType.WOOD).instabreak().noOcclusion()));
+    public static final RegistryObject<Block> SCHOOL_DESK_CABINET_REDWOOD = registerBlock("school_desk_cabinet_redwood",
+            () -> new SchoolDeskCabinetBlock(BlockBehaviour.Properties.of(Material.WOOD)
+                    .sound(SoundType.WOOD).instabreak().noOcclusion()));
+    public static final RegistryObject<Block> DESK_CHAIR_REDWOOD = registerBlock("desk_chair_redwood",
+            () -> new DeskChairBlock(BlockBehaviour.Properties.of(Material.WOOD)
+                    .sound(SoundType.WOOD).instabreak().noOcclusion()));
+    public static final RegistryObject<Block> LOCKER_REDWOOD = registerBlock("locker_redwood",
+            () -> new SchoolLockerBlock(BlockBehaviour.Properties.of(Material.WOOD)
+                    .sound(SoundType.WOOD).instabreak().noOcclusion()));
+    public static final RegistryObject<Block> PARK_BENCH_REDWOOD = registerBlock("park_bench_redwood",
+            () -> new ParkBenchBlock(BlockBehaviour.Properties.of(Material.WOOD)
+                    .sound(SoundType.WOOD).instabreak().noOcclusion()));
+    public static final RegistryObject<Block> TABLE_REDWOOD = registerBlock("table_redwood",
+            () -> new TableBlock(BlockBehaviour.Properties.of(Material.WOOD)
+                    .sound(SoundType.WOOD).instabreak().noOcclusion()));
+
+    public static final RegistryObject<Block> SCHOOL_DESK_CHERRY = registerBlock("school_desk_cherry",
+            () -> new SchoolDeskBlock(BlockBehaviour.Properties.of(Material.WOOD)
+                    .sound(SoundType.WOOD).instabreak().noOcclusion()));
+    public static final RegistryObject<Block> SCHOOL_DESK_CABINET_CHERRY = registerBlock("school_desk_cabinet_cherry",
+            () -> new SchoolDeskCabinetBlock(BlockBehaviour.Properties.of(Material.WOOD)
+                    .sound(SoundType.WOOD).instabreak().noOcclusion()));
+    public static final RegistryObject<Block> DESK_CHAIR_CHERRY = registerBlock("desk_chair_cherry",
+            () -> new DeskChairBlock(BlockBehaviour.Properties.of(Material.WOOD)
+                    .sound(SoundType.WOOD).instabreak().noOcclusion()));
+    public static final RegistryObject<Block> LOCKER_CHERRY = registerBlock("locker_cherry",
+            () -> new SchoolLockerBlock(BlockBehaviour.Properties.of(Material.WOOD)
+                    .sound(SoundType.WOOD).instabreak().noOcclusion()));
+    public static final RegistryObject<Block> PARK_BENCH_CHERRY = registerBlock("park_bench_cherry",
+            () -> new ParkBenchBlock(BlockBehaviour.Properties.of(Material.WOOD)
+                    .sound(SoundType.WOOD).instabreak().noOcclusion()));
+    public static final RegistryObject<Block> TABLE_CHERRY = registerBlock("table_cherry",
+            () -> new TableBlock(BlockBehaviour.Properties.of(Material.WOOD)
+                    .sound(SoundType.WOOD).instabreak().noOcclusion()));
+
+    public static final RegistryObject<Block> SCHOOL_DESK_MAHOGANY = registerBlock("school_desk_mahogany",
+            () -> new SchoolDeskBlock(BlockBehaviour.Properties.of(Material.WOOD)
+                    .sound(SoundType.WOOD).instabreak().noOcclusion()));
+    public static final RegistryObject<Block> SCHOOL_DESK_CABINET_MAHOGANY = registerBlock("school_desk_cabinet_mahogany",
+            () -> new SchoolDeskCabinetBlock(BlockBehaviour.Properties.of(Material.WOOD)
+                    .sound(SoundType.WOOD).instabreak().noOcclusion()));
+    public static final RegistryObject<Block> DESK_CHAIR_MAHOGANY = registerBlock("desk_chair_mahogany",
+            () -> new DeskChairBlock(BlockBehaviour.Properties.of(Material.WOOD)
+                    .sound(SoundType.WOOD).instabreak().noOcclusion()));
+    public static final RegistryObject<Block> LOCKER_MAHOGANY = registerBlock("locker_mahogany",
+            () -> new SchoolLockerBlock(BlockBehaviour.Properties.of(Material.WOOD)
+                    .sound(SoundType.WOOD).instabreak().noOcclusion()));
+    public static final RegistryObject<Block> PARK_BENCH_MAHOGANY = registerBlock("park_bench_mahogany",
+            () -> new ParkBenchBlock(BlockBehaviour.Properties.of(Material.WOOD)
+                    .sound(SoundType.WOOD).instabreak().noOcclusion()));
+    public static final RegistryObject<Block> TABLE_MAHOGANY = registerBlock("table_mahogany",
+            () -> new TableBlock(BlockBehaviour.Properties.of(Material.WOOD)
+                    .sound(SoundType.WOOD).instabreak().noOcclusion()));
+
+    public static final RegistryObject<Block> SCHOOL_DESK_JACARANDA = registerBlock("school_desk_jacaranda",
+            () -> new SchoolDeskBlock(BlockBehaviour.Properties.of(Material.WOOD)
+                    .sound(SoundType.WOOD).instabreak().noOcclusion()));
+    public static final RegistryObject<Block> SCHOOL_DESK_CABINET_JACARANDA = registerBlock("school_desk_cabinet_jacaranda",
+            () -> new SchoolDeskCabinetBlock(BlockBehaviour.Properties.of(Material.WOOD)
+                    .sound(SoundType.WOOD).instabreak().noOcclusion()));
+    public static final RegistryObject<Block> DESK_CHAIR_JACARANDA = registerBlock("desk_chair_jacaranda",
+            () -> new DeskChairBlock(BlockBehaviour.Properties.of(Material.WOOD)
+                    .sound(SoundType.WOOD).instabreak().noOcclusion()));
+    public static final RegistryObject<Block> LOCKER_JACARANDA = registerBlock("locker_jacaranda",
+            () -> new SchoolLockerBlock(BlockBehaviour.Properties.of(Material.WOOD)
+                    .sound(SoundType.WOOD).instabreak().noOcclusion()));
+    public static final RegistryObject<Block> PARK_BENCH_JACARANDA = registerBlock("park_bench_jacaranda",
+            () -> new ParkBenchBlock(BlockBehaviour.Properties.of(Material.WOOD)
+                    .sound(SoundType.WOOD).instabreak().noOcclusion()));
+    public static final RegistryObject<Block> TABLE_JACARANDA = registerBlock("table_jacaranda",
+            () -> new TableBlock(BlockBehaviour.Properties.of(Material.WOOD)
+                    .sound(SoundType.WOOD).instabreak().noOcclusion()));
+
+    public static final RegistryObject<Block> SCHOOL_DESK_PALM = registerBlock("school_desk_palm",
+            () -> new SchoolDeskBlock(BlockBehaviour.Properties.of(Material.WOOD)
+                    .sound(SoundType.WOOD).instabreak().noOcclusion()));
+    public static final RegistryObject<Block> SCHOOL_DESK_CABINET_PALM = registerBlock("school_desk_cabinet_palm",
+            () -> new SchoolDeskCabinetBlock(BlockBehaviour.Properties.of(Material.WOOD)
+                    .sound(SoundType.WOOD).instabreak().noOcclusion()));
+    public static final RegistryObject<Block> DESK_CHAIR_PALM = registerBlock("desk_chair_palm",
+            () -> new DeskChairBlock(BlockBehaviour.Properties.of(Material.WOOD)
+                    .sound(SoundType.WOOD).instabreak().noOcclusion()));
+    public static final RegistryObject<Block> LOCKER_PALM = registerBlock("locker_palm",
+            () -> new SchoolLockerBlock(BlockBehaviour.Properties.of(Material.WOOD)
+                    .sound(SoundType.WOOD).instabreak().noOcclusion()));
+    public static final RegistryObject<Block> PARK_BENCH_PALM = registerBlock("park_bench_palm",
+            () -> new ParkBenchBlock(BlockBehaviour.Properties.of(Material.WOOD)
+                    .sound(SoundType.WOOD).instabreak().noOcclusion()));
+    public static final RegistryObject<Block> TABLE_PALM = registerBlock("table_palm",
+            () -> new TableBlock(BlockBehaviour.Properties.of(Material.WOOD)
+                    .sound(SoundType.WOOD).instabreak().noOcclusion()));
+
+    public static final RegistryObject<Block> SCHOOL_DESK_WILLOW = registerBlock("school_desk_willow",
+            () -> new SchoolDeskBlock(BlockBehaviour.Properties.of(Material.WOOD)
+                    .sound(SoundType.WOOD).instabreak().noOcclusion()));
+    public static final RegistryObject<Block> SCHOOL_DESK_CABINET_WILLOW = registerBlock("school_desk_cabinet_willow",
+            () -> new SchoolDeskCabinetBlock(BlockBehaviour.Properties.of(Material.WOOD)
+                    .sound(SoundType.WOOD).instabreak().noOcclusion()));
+    public static final RegistryObject<Block> DESK_CHAIR_WILLOW = registerBlock("desk_chair_willow",
+            () -> new DeskChairBlock(BlockBehaviour.Properties.of(Material.WOOD)
+                    .sound(SoundType.WOOD).instabreak().noOcclusion()));
+    public static final RegistryObject<Block> LOCKER_WILLOW = registerBlock("locker_willow",
+            () -> new SchoolLockerBlock(BlockBehaviour.Properties.of(Material.WOOD)
+                    .sound(SoundType.WOOD).instabreak().noOcclusion()));
+    public static final RegistryObject<Block> PARK_BENCH_WILLOW = registerBlock("park_bench_willow",
+            () -> new ParkBenchBlock(BlockBehaviour.Properties.of(Material.WOOD)
+                    .sound(SoundType.WOOD).instabreak().noOcclusion()));
+    public static final RegistryObject<Block> TABLE_WILLOW = registerBlock("table_willow",
+            () -> new TableBlock(BlockBehaviour.Properties.of(Material.WOOD)
+                    .sound(SoundType.WOOD).instabreak().noOcclusion()));
+
+    public static final RegistryObject<Block> SCHOOL_DESK_DEAD = registerBlock("school_desk_dead",
+            () -> new SchoolDeskBlock(BlockBehaviour.Properties.of(Material.WOOD)
+                    .sound(SoundType.WOOD).instabreak().noOcclusion()));
+    public static final RegistryObject<Block> SCHOOL_DESK_CABINET_DEAD = registerBlock("school_desk_cabinet_dead",
+            () -> new SchoolDeskCabinetBlock(BlockBehaviour.Properties.of(Material.WOOD)
+                    .sound(SoundType.WOOD).instabreak().noOcclusion()));
+    public static final RegistryObject<Block> DESK_CHAIR_DEAD = registerBlock("desk_chair_dead",
+            () -> new DeskChairBlock(BlockBehaviour.Properties.of(Material.WOOD)
+                    .sound(SoundType.WOOD).instabreak().noOcclusion()));
+    public static final RegistryObject<Block> LOCKER_DEAD = registerBlock("locker_dead",
+            () -> new SchoolLockerBlock(BlockBehaviour.Properties.of(Material.WOOD)
+                    .sound(SoundType.WOOD).instabreak().noOcclusion()));
+    public static final RegistryObject<Block> PARK_BENCH_DEAD = registerBlock("park_bench_dead",
+            () -> new ParkBenchBlock(BlockBehaviour.Properties.of(Material.WOOD)
+                    .sound(SoundType.WOOD).instabreak().noOcclusion()));
+    public static final RegistryObject<Block> TABLE_DEAD = registerBlock("table_dead",
+            () -> new TableBlock(BlockBehaviour.Properties.of(Material.WOOD)
+                    .sound(SoundType.WOOD).instabreak().noOcclusion()));
+
+    public static final RegistryObject<Block> SCHOOL_DESK_MAGIC = registerBlock("school_desk_magic",
+            () -> new SchoolDeskBlock(BlockBehaviour.Properties.of(Material.WOOD)
+                    .sound(SoundType.WOOD).instabreak().noOcclusion()));
+    public static final RegistryObject<Block> SCHOOL_DESK_CABINET_MAGIC = registerBlock("school_desk_cabinet_magic",
+            () -> new SchoolDeskCabinetBlock(BlockBehaviour.Properties.of(Material.WOOD)
+                    .sound(SoundType.WOOD).instabreak().noOcclusion()));
+    public static final RegistryObject<Block> DESK_CHAIR_MAGIC = registerBlock("desk_chair_magic",
+            () -> new DeskChairBlock(BlockBehaviour.Properties.of(Material.WOOD)
+                    .sound(SoundType.WOOD).instabreak().noOcclusion()));
+    public static final RegistryObject<Block> LOCKER_MAGIC = registerBlock("locker_magic",
+            () -> new SchoolLockerBlock(BlockBehaviour.Properties.of(Material.WOOD)
+                    .sound(SoundType.WOOD).instabreak().noOcclusion()));
+    public static final RegistryObject<Block> PARK_BENCH_MAGIC = registerBlock("park_bench_magic",
+            () -> new ParkBenchBlock(BlockBehaviour.Properties.of(Material.WOOD)
+                    .sound(SoundType.WOOD).instabreak().noOcclusion()));
+    public static final RegistryObject<Block> TABLE_MAGIC = registerBlock("table_magic",
+            () -> new TableBlock(BlockBehaviour.Properties.of(Material.WOOD)
+                    .sound(SoundType.WOOD).instabreak().noOcclusion()));
+
+    public static final RegistryObject<Block> SCHOOL_DESK_UMBRAN = registerBlock("school_desk_umbran",
+            () -> new SchoolDeskBlock(BlockBehaviour.Properties.of(Material.WOOD)
+                    .sound(SoundType.WOOD).instabreak().noOcclusion()));
+    public static final RegistryObject<Block> SCHOOL_DESK_CABINET_UMBRAN = registerBlock("school_desk_cabinet_umbran",
+            () -> new SchoolDeskCabinetBlock(BlockBehaviour.Properties.of(Material.WOOD)
+                    .sound(SoundType.WOOD).instabreak().noOcclusion()));
+    public static final RegistryObject<Block> DESK_CHAIR_UMBRAN = registerBlock("desk_chair_umbran",
+            () -> new DeskChairBlock(BlockBehaviour.Properties.of(Material.WOOD)
+                    .sound(SoundType.WOOD).instabreak().noOcclusion()));
+    public static final RegistryObject<Block> LOCKER_UMBRAN = registerBlock("locker_umbran",
+            () -> new SchoolLockerBlock(BlockBehaviour.Properties.of(Material.WOOD)
+                    .sound(SoundType.WOOD).instabreak().noOcclusion()));
+    public static final RegistryObject<Block> PARK_BENCH_UMBRAN = registerBlock("park_bench_umbran",
+            () -> new ParkBenchBlock(BlockBehaviour.Properties.of(Material.WOOD)
+                    .sound(SoundType.WOOD).instabreak().noOcclusion()));
+    public static final RegistryObject<Block> TABLE_UMBRAN = registerBlock("table_umbran",
+            () -> new TableBlock(BlockBehaviour.Properties.of(Material.WOOD)
+                    .sound(SoundType.WOOD).instabreak().noOcclusion()));
+
+    public static final RegistryObject<Block> SCHOOL_DESK_HELLBARK = registerBlock("school_desk_hellbark",
+            () -> new SchoolDeskBlock(BlockBehaviour.Properties.of(Material.WOOD)
+                    .sound(SoundType.WOOD).instabreak().noOcclusion()));
+    public static final RegistryObject<Block> SCHOOL_DESK_CABINET_HELLBARK = registerBlock("school_desk_cabinet_hellbark",
+            () -> new SchoolDeskCabinetBlock(BlockBehaviour.Properties.of(Material.WOOD)
+                    .sound(SoundType.WOOD).instabreak().noOcclusion()));
+    public static final RegistryObject<Block> DESK_CHAIR_HELLBARK = registerBlock("desk_chair_hellbark",
+            () -> new DeskChairBlock(BlockBehaviour.Properties.of(Material.WOOD)
+                    .sound(SoundType.WOOD).instabreak().noOcclusion()));
+    public static final RegistryObject<Block> LOCKER_HELLBARK = registerBlock("locker_hellbark",
+            () -> new SchoolLockerBlock(BlockBehaviour.Properties.of(Material.WOOD)
+                    .sound(SoundType.WOOD).instabreak().noOcclusion()));
+    public static final RegistryObject<Block> PARK_BENCH_HELLBARK = registerBlock("park_bench_hellbark",
+            () -> new ParkBenchBlock(BlockBehaviour.Properties.of(Material.WOOD)
+                    .sound(SoundType.WOOD).instabreak().noOcclusion()));
+    public static final RegistryObject<Block> TABLE_HELLBARK = registerBlock("table_hellbark",
+            () -> new TableBlock(BlockBehaviour.Properties.of(Material.WOOD)
+                    .sound(SoundType.WOOD).instabreak().noOcclusion()));
+
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
         registerBlockItem(name, toReturn);

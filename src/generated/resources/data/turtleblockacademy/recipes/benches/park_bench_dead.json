@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "benches",
+  "key": {
+    "#": {
+      "item": "biomesoplenty:dead_slab"
+    },
+    "L": {
+      "item": "biomesoplenty:dead_log"
+    }
+  },
+  "pattern": [
+    "  #", "###", "L L"
+  ],
+  "result": {
+    "count": 2,
+    "item": "turtleblockacademy:park_bench_dead"
+  }
+}

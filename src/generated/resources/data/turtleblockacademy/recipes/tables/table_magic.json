@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "tables",
+  "key": {
+    "#": {
+      "item": "biomesoplenty:magic_slab"
+    },
+    "L": {
+      "item": "biomesoplenty:magic_log"
+    },
+    "S": {
+      "item": "biomesoplenty:stripped_magic_log"
+    }
+  },
+  "pattern": [
+    "###", " S ", " L "
+  ],
+  "result": {
+    "count": 2,
+    "item": "turtleblockacademy:table_magic"
+  }
+}

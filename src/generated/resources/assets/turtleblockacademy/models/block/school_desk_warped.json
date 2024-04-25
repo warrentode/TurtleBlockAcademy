@@ -2,7 +2,7 @@
   "parent": "turtleblockacademy:block/school_desk",
   "textures": {
     "1": "minecraft:block/warped_planks",
-    "2": "minecraft:block/warped_stem",
+    "2": "minecraft:block/stripped_warped_stem",
     "particle": "minecraft:block/warped_planks"
   }
 }

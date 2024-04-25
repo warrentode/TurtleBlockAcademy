@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "benches",
+  "key": {
+    "#": {
+      "item": "biomesoplenty:jacaranda_slab"
+    },
+    "L": {
+      "item": "biomesoplenty:jacaranda_log"
+    }
+  },
+  "pattern": [
+    "  #", "###", "L L"
+  ],
+  "result": {
+    "count": 2,
+    "item": "turtleblockacademy:park_bench_jacaranda"
+  }
+}

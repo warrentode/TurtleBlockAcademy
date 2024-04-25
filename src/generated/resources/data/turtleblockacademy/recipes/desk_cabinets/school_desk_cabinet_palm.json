@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "desk_cabinets",
+  "key": {
+    "C": {
+      "item": "minecraft:chest"
+    },
+    "L": {
+      "item": "biomesoplenty:palm_log"
+    },
+    "P": {
+      "item": "biomesoplenty:palm_planks"
+    }
+  },
+  "pattern": [
+    "PPP", "LCL", "PPP"
+  ],
+  "result": {
+    "item": "turtleblockacademy:school_desk_cabinet_palm"
+  }
+}

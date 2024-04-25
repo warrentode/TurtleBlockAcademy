@@ -1,0 +1,8 @@
+{
+  "parent": "turtleblockacademy:item/plate",
+  "textures": {
+    "1": "turtleblockacademy:item/plate_white_glazed",
+    "2": "turtleblockacademy:item/plate_white_glazed",
+    "3": "turtleblockacademy:item/plate_white_glazed"
+  }
+}

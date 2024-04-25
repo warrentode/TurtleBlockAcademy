@@ -1,5 +1,5 @@
 {
-  "parent": "turtleblockacademy:block/locker",
+  "parent": "turtleblockacademy:block/desk_chair",
   "textures": {
     "1": "minecraft:block/warped_planks",
     "2": "minecraft:block/stripped_warped_stem",

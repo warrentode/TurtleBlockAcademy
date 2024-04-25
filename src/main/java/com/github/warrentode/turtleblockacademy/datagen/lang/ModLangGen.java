@@ -135,6 +135,83 @@ public class ModLangGen extends LanguageProvider {
         add(ModBlocks.TABLE_MANGROVE.get(), "Mangrove Table");
         add(ModBlocks.TABLE_CRIMSON.get(), "Crimson Table");
         add(ModBlocks.TABLE_WARPED.get(), "Warped Table");
+
+        add(ModBlocks.SCHOOL_DESK_FIR.get(), "Fir School Desk");
+        add(ModBlocks.SCHOOL_DESK_CABINET_FIR.get(), "Fir School Desk Cabinet");
+        add(ModBlocks.DESK_CHAIR_FIR.get(), "Fir Desk Chair");
+        add(ModBlocks.LOCKER_FIR.get(), "Fir Locker");
+        add(ModBlocks.PARK_BENCH_FIR.get(), "Fir Park Bench");
+        add(ModBlocks.TABLE_FIR.get(), "Fir Table");
+
+        add(ModBlocks.SCHOOL_DESK_REDWOOD.get(), "Redwood School Desk");
+        add(ModBlocks.SCHOOL_DESK_CABINET_REDWOOD.get(), "Redwood School Desk Cabinet");
+        add(ModBlocks.DESK_CHAIR_REDWOOD.get(), "Redwood Desk Chair");
+        add(ModBlocks.LOCKER_REDWOOD.get(), "Redwood Locker");
+        add(ModBlocks.PARK_BENCH_REDWOOD.get(), "Redwood Park Bench");
+        add(ModBlocks.TABLE_REDWOOD.get(), "Redwood Table");
+
+        add(ModBlocks.SCHOOL_DESK_CHERRY.get(), "Cherry School Desk");
+        add(ModBlocks.SCHOOL_DESK_CABINET_CHERRY.get(), "Cherry School Desk Cabinet");
+        add(ModBlocks.DESK_CHAIR_CHERRY.get(), "Cherry Desk Chair");
+        add(ModBlocks.LOCKER_CHERRY.get(), "Cherry Locker");
+        add(ModBlocks.PARK_BENCH_CHERRY.get(), "Cherry Park Bench");
+        add(ModBlocks.TABLE_CHERRY.get(), "Cherry Table");
+
+        add(ModBlocks.SCHOOL_DESK_MAHOGANY.get(), "Mahogany School Desk");
+        add(ModBlocks.SCHOOL_DESK_CABINET_MAHOGANY.get(), "Mahogany School Desk Cabinet");
+        add(ModBlocks.DESK_CHAIR_MAHOGANY.get(), "Mahogany Desk Chair");
+        add(ModBlocks.LOCKER_MAHOGANY.get(), "Mahogany Locker");
+        add(ModBlocks.PARK_BENCH_MAHOGANY.get(), "Mahogany Park Bench");
+        add(ModBlocks.TABLE_MAHOGANY.get(), "Mahogany Table");
+
+        add(ModBlocks.SCHOOL_DESK_JACARANDA.get(), "Jacaranda School Desk");
+        add(ModBlocks.SCHOOL_DESK_CABINET_JACARANDA.get(), "Jacaranda School Desk Cabinet");
+        add(ModBlocks.DESK_CHAIR_JACARANDA.get(), "Jacaranda Desk Chair");
+        add(ModBlocks.LOCKER_JACARANDA.get(), "Jacaranda Locker");
+        add(ModBlocks.PARK_BENCH_JACARANDA.get(), "Jacaranda Park Bench");
+        add(ModBlocks.TABLE_JACARANDA.get(), "Jacaranda Table");
+
+        add(ModBlocks.SCHOOL_DESK_PALM.get(), "Palm School Desk");
+        add(ModBlocks.SCHOOL_DESK_CABINET_PALM.get(), "Palm School Desk Cabinet");
+        add(ModBlocks.DESK_CHAIR_PALM.get(), "Palm Desk Chair");
+        add(ModBlocks.LOCKER_PALM.get(), "Palm Locker");
+        add(ModBlocks.PARK_BENCH_PALM.get(), "Palm Park Bench");
+        add(ModBlocks.TABLE_PALM.get(), "Palm Table");
+
+        add(ModBlocks.SCHOOL_DESK_WILLOW.get(), "Willow School Desk");
+        add(ModBlocks.SCHOOL_DESK_CABINET_WILLOW.get(), "Willow School Desk Cabinet");
+        add(ModBlocks.DESK_CHAIR_WILLOW.get(), "Willow Desk Chair");
+        add(ModBlocks.LOCKER_WILLOW.get(), "Willow Locker");
+        add(ModBlocks.PARK_BENCH_WILLOW.get(), "Willow Park Bench");
+        add(ModBlocks.TABLE_WILLOW.get(), "Willow Table");
+
+        add(ModBlocks.SCHOOL_DESK_DEAD.get(), "Dead School Desk");
+        add(ModBlocks.SCHOOL_DESK_CABINET_DEAD.get(), "Dead School Desk Cabinet");
+        add(ModBlocks.DESK_CHAIR_DEAD.get(), "Dead Desk Chair");
+        add(ModBlocks.LOCKER_DEAD.get(), "Dead Locker");
+        add(ModBlocks.PARK_BENCH_DEAD.get(), "Dead Park Bench");
+        add(ModBlocks.TABLE_DEAD.get(), "Dead Table");
+
+        add(ModBlocks.SCHOOL_DESK_MAGIC.get(), "Magic School Desk");
+        add(ModBlocks.SCHOOL_DESK_CABINET_MAGIC.get(), "Magic School Desk Cabinet");
+        add(ModBlocks.DESK_CHAIR_MAGIC.get(), "Magic Desk Chair");
+        add(ModBlocks.LOCKER_MAGIC.get(), "Magic Locker");
+        add(ModBlocks.PARK_BENCH_MAGIC.get(), "Magic Park Bench");
+        add(ModBlocks.TABLE_MAGIC.get(), "Magic Table");
+
+        add(ModBlocks.SCHOOL_DESK_UMBRAN.get(), "Umbran School Desk");
+        add(ModBlocks.SCHOOL_DESK_CABINET_UMBRAN.get(), "Umbran School Desk Cabinet");
+        add(ModBlocks.DESK_CHAIR_UMBRAN.get(), "Umbran Desk Chair");
+        add(ModBlocks.LOCKER_UMBRAN.get(), "Umbran Locker");
+        add(ModBlocks.PARK_BENCH_UMBRAN.get(), "Umbran Park Bench");
+        add(ModBlocks.TABLE_UMBRAN.get(), "Umbran Table");
+
+        add(ModBlocks.SCHOOL_DESK_HELLBARK.get(), "Hellbark School Desk");
+        add(ModBlocks.SCHOOL_DESK_CABINET_HELLBARK.get(), "Hellbark School Desk Cabinet");
+        add(ModBlocks.DESK_CHAIR_HELLBARK.get(), "Hellbark Desk Chair");
+        add(ModBlocks.LOCKER_HELLBARK.get(), "Hellbark Locker");
+        add(ModBlocks.PARK_BENCH_HELLBARK.get(), "Hellbark Park Bench");
+        add(ModBlocks.TABLE_HELLBARK.get(), "Hellbark Table");
     }
 
     private void addItemGroups() {

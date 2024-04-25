@@ -25,7 +25,22 @@ public class ModBlockEntities {
                                     ModBlocks.SCHOOL_DESK_DARK_OAK.get(),
                                     ModBlocks.SCHOOL_DESK_MANGROVE.get(),
                                     ModBlocks.SCHOOL_DESK_CRIMSON.get(),
-                                    ModBlocks.SCHOOL_DESK_WARPED.get())
+                                    ModBlocks.SCHOOL_DESK_WARPED.get(),
+                                    ModBlocks.SCHOOL_DESK_FIR.get(),
+                                    ModBlocks.SCHOOL_DESK_REDWOOD.get(),
+                                    ModBlocks.SCHOOL_DESK_CHERRY.get(),
+                                    ModBlocks.SCHOOL_DESK_MAHOGANY.get(),
+                                    ModBlocks.SCHOOL_DESK_CABINET_MAHOGANY.get(),
+                                    ModBlocks.LOCKER_MAHOGANY.get(),
+                                    ModBlocks.SCHOOL_DESK_JACARANDA.get(),
+                                    ModBlocks.SCHOOL_DESK_PALM.get(),
+                                    ModBlocks.SCHOOL_DESK_WILLOW.get(),
+                                    ModBlocks.SCHOOL_DESK_DEAD.get(),
+                                    ModBlocks.SCHOOL_DESK_MAGIC.get(),
+                                    ModBlocks.SCHOOL_DESK_UMBRAN.get(),
+                                    ModBlocks.SCHOOL_DESK_HELLBARK.get()
+
+                            )
                             .build(null));
 
     @SuppressWarnings("DataFlowIssue")
@@ -41,6 +56,9 @@ public class ModBlockEntities {
                                     ModBlocks.SCHOOL_DESK_CABINET_MANGROVE.get(),
                                     ModBlocks.SCHOOL_DESK_CABINET_CRIMSON.get(),
                                     ModBlocks.SCHOOL_DESK_CABINET_WARPED.get(),
+                                    ModBlocks.SCHOOL_DESK_CABINET_FIR.get(),
+                                    ModBlocks.SCHOOL_DESK_CABINET_REDWOOD.get(),
+                                    ModBlocks.SCHOOL_DESK_CABINET_CHERRY.get(),
                                     ModBlocks.LOCKER_OAK.get(),
                                     ModBlocks.LOCKER_BIRCH.get(),
                                     ModBlocks.LOCKER_SPRUCE.get(),
@@ -49,7 +67,25 @@ public class ModBlockEntities {
                                     ModBlocks.LOCKER_DARK_OAK.get(),
                                     ModBlocks.LOCKER_MANGROVE.get(),
                                     ModBlocks.LOCKER_CRIMSON.get(),
-                                    ModBlocks.LOCKER_WARPED.get())
+                                    ModBlocks.LOCKER_WARPED.get(),
+                                    ModBlocks.LOCKER_FIR.get(),
+                                    ModBlocks.LOCKER_REDWOOD.get(),
+                                    ModBlocks.LOCKER_CHERRY.get(),
+                                    ModBlocks.SCHOOL_DESK_CABINET_JACARANDA.get(),
+                                    ModBlocks.LOCKER_JACARANDA.get(),
+                                    ModBlocks.SCHOOL_DESK_CABINET_PALM.get(),
+                                    ModBlocks.LOCKER_PALM.get(),
+                                    ModBlocks.SCHOOL_DESK_CABINET_WILLOW.get(),
+                                    ModBlocks.LOCKER_WILLOW.get(),
+                                    ModBlocks.SCHOOL_DESK_CABINET_DEAD.get(),
+                                    ModBlocks.LOCKER_DEAD.get(),
+                                    ModBlocks.SCHOOL_DESK_CABINET_MAGIC.get(),
+                                    ModBlocks.LOCKER_MAGIC.get(),
+                                    ModBlocks.SCHOOL_DESK_CABINET_UMBRAN.get(),
+                                    ModBlocks.LOCKER_UMBRAN.get(),
+                                    ModBlocks.SCHOOL_DESK_CABINET_HELLBARK.get(),
+                                    ModBlocks.LOCKER_HELLBARK.get()
+                            )
                             .build(null));
 
     public static void register(IEventBus eventBus) {

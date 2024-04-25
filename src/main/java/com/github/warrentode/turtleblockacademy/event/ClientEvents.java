@@ -2,6 +2,9 @@ package com.github.warrentode.turtleblockacademy.event;
 
 import com.github.warrentode.turtleblockacademy.blocks.entity.ModBlockEntities;
 import com.github.warrentode.turtleblockacademy.blocks.renderer.SchoolDeskRenderer;
+import com.github.warrentode.turtleblockacademy.entity.ModEntityTypes;
+import com.github.warrentode.turtleblockacademy.entity.renderer.PlateRenderer;
+import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.client.event.EntityRenderersEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -19,6 +22,8 @@ public class ClientEvents {
         public static void registerRenderers(final EntityRenderersEvent.@NotNull RegisterRenderers event) {
             event.registerBlockEntityRenderer(ModBlockEntities.SCHOOL_DESK_ENTITY.get(),
                     SchoolDeskRenderer::new);
+            event.registerEntityRenderer(ModEntityTypes.PLATE_ENTITY.get(),
+                    PlateRenderer::new);
         }
     }
 }

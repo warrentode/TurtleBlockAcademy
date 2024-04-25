@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "tables",
+  "key": {
+    "#": {
+      "item": "biomesoplenty:palm_slab"
+    },
+    "L": {
+      "item": "biomesoplenty:palm_log"
+    },
+    "S": {
+      "item": "biomesoplenty:stripped_palm_log"
+    }
+  },
+  "pattern": [
+    "###", " S ", " L "
+  ],
+  "result": {
+    "count": 2,
+    "item": "turtleblockacademy:table_palm"
+  }
+}

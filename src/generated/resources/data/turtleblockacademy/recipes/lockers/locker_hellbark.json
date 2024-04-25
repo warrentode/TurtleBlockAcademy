@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "lockers",
+  "key": {
+    "#": {
+      "item": "biomesoplenty:hellbark_slab"
+    },
+    "C": {
+      "item": "minecraft:chest"
+    },
+    "L": {
+      "item": "biomesoplenty:hellbark_log"
+    }
+  },
+  "pattern": [
+    "###", "LCL", "###"
+  ],
+  "result": {
+    "item": "turtleblockacademy:locker_hellbark"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "parent": "turtleblockacademy:block/locker",
+  "textures": {
+    "1": "biomesoplenty:block/magic_planks",
+    "2": "biomesoplenty:block/stripped_magic_log",
+    "3": "biomesoplenty:block/magic_log",
+    "particle": "biomesoplenty:block/magic_planks"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "tables",
+  "key": {
+    "#": {
+      "item": "biomesoplenty:mahogany_slab"
+    },
+    "L": {
+      "item": "biomesoplenty:mahogany_log"
+    },
+    "S": {
+      "item": "biomesoplenty:stripped_mahogany_log"
+    }
+  },
+  "pattern": [
+    "###", " S ", " L "
+  ],
+  "result": {
+    "count": 2,
+    "item": "turtleblockacademy:table_mahogany"
+  }
+}

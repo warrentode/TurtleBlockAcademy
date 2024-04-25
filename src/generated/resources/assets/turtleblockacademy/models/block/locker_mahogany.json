@@ -1,0 +1,9 @@
+{
+  "parent": "turtleblockacademy:block/locker",
+  "textures": {
+    "1": "biomesoplenty:block/mahogany_planks",
+    "2": "biomesoplenty:block/stripped_mahogany_log",
+    "3": "biomesoplenty:block/mahogany_log",
+    "particle": "biomesoplenty:block/mahogany_planks"
+  }
+}

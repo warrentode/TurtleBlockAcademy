@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "desks",
+  "key": {
+    "#": {
+      "item": "biomesoplenty:jacaranda_slab"
+    },
+    "P": {
+      "item": "biomesoplenty:jacaranda_planks"
+    }
+  },
+  "pattern": [
+    "###", "P P"
+  ],
+  "result": {
+    "count": 2,
+    "item": "turtleblockacademy:school_desk_jacaranda"
+  }
+}
