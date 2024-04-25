@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "lockers",
+  "key": {
+    "#": {
+      "item": "aether:skyroot_slab"
+    },
+    "C": {
+      "item": "minecraft:chest"
+    },
+    "L": {
+      "item": "aether:skyroot_log"
+    }
+  },
+  "pattern": [
+    "###", "LCL", "###"
+  ],
+  "result": {
+    "item": "turtleblockacademy:locker_aether_skyroot"
+  }
+}

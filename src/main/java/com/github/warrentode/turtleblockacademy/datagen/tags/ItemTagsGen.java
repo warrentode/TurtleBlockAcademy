@@ -49,6 +49,38 @@ public class ItemTagsGen extends ItemTagsProvider {
     }
 
     private void registerPackTags() {
+        tag(PackTags.Items.BLOODSHROOM_LOG)
+                .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("tconstruct:bloodshroom_log")));
+        tag(PackTags.Items.BLOODSHROOM_STRIPPED_LOG)
+                .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("tconstruct:stripped_bloodshroom_log")));
+        tag(PackTags.Items.BLOODSHROOM_PLANKS)
+                .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("tconstruct:bloodshroom_planks")));
+        tag(PackTags.Items.BLOODSHROOM_SLAB)
+                .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("tconstruct:bloodshroom_planks_slab")));
+        tag(PackTags.Items.ENDERBARK_LOG)
+                .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("tconstruct:enderbark_log")));
+        tag(PackTags.Items.ENDERBARK_STRIPPED_LOG)
+                .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("tconstruct:stripped_enderbark_log")));
+        tag(PackTags.Items.ENDERBARK_PLANKS)
+                .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("tconstruct:enderbark_planks")));
+        tag(PackTags.Items.ENDERBARK_SLAB)
+                .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("tconstruct:enderbark_planks_slab")));
+        tag(PackTags.Items.GREENHEART_LOG)
+                .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("tconstruct:greenheart_log")));
+        tag(PackTags.Items.GREENHEART_STRIPPED_LOG)
+                .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("tconstruct:stripped_greenheart_log")));
+        tag(PackTags.Items.GREENHEART_PLANKS)
+                .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("tconstruct:greenheart_planks")));
+        tag(PackTags.Items.GREENHEART_SLAB)
+                .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("tconstruct:greenheart_planks_slab")));
+        tag(PackTags.Items.TINKER_SKYROOT_LOG)
+                .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("tconstruct:skyroot_log")));
+        tag(PackTags.Items.TINKER_SKYROOT_STRIPPED_LOG)
+                .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("tconstruct:stripped_skyroot_log")));
+        tag(PackTags.Items.TINKER_SKYROOT_PLANKS)
+                .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("tconstruct:skyroot_planks")));
+        tag(PackTags.Items.TINKER_SKYROOT_SLAB)
+                .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("tconstruct:skyroot_planks_slab")));
         tag(Tags.Items.LEATHER)
                 .add(Items.LEATHER)
                 .add(Items.RABBIT_HIDE)

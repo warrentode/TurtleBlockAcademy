@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "lockers",
+  "key": {
+    "#": {
+      "tag": "tconstruct:greenheart_slab"
+    },
+    "C": {
+      "item": "minecraft:chest"
+    },
+    "L": {
+      "tag": "tconstruct:greenheart_log"
+    }
+  },
+  "pattern": [
+    "###", "LCL", "###"
+  ],
+  "result": {
+    "item": "turtleblockacademy:locker_greenheart"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "parent": "turtleblockacademy:block/locker",
+  "textures": {
+    "1": "ecologics:block/coconut_planks",
+    "2": "ecologics:block/stripped_coconut_log",
+    "3": "ecologics:block/coconut_log",
+    "particle": "ecologics:block/coconut_planks"
+  }
+}

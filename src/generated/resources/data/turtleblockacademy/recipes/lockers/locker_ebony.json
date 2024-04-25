@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "lockers",
+  "key": {
+    "#": {
+      "item": "phantasm:ebony_slab"
+    },
+    "C": {
+      "item": "minecraft:chest"
+    },
+    "L": {
+      "item": "phantasm:ebony_wood"
+    }
+  },
+  "pattern": [
+    "###", "LCL", "###"
+  ],
+  "result": {
+    "item": "turtleblockacademy:locker_ebony"
+  }
+}

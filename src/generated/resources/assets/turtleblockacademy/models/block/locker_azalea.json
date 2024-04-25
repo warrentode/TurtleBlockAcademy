@@ -1,0 +1,9 @@
+{
+  "parent": "turtleblockacademy:block/locker",
+  "textures": {
+    "1": "ecologics:block/azalea_planks",
+    "2": "ecologics:block/stripped_azalea_log",
+    "3": "ecologics:block/azalea_log",
+    "particle": "ecologics:block/azalea_planks"
+  }
+}

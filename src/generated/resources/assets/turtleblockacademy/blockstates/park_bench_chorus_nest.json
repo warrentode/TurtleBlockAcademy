@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "turtleblockacademy:block/park_bench_chorus_nest",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "turtleblockacademy:block/park_bench_chorus_nest"
+    },
+    "facing=south": {
+      "model": "turtleblockacademy:block/park_bench_chorus_nest",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "turtleblockacademy:block/park_bench_chorus_nest",
+      "y": 270
+    }
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "parent": "turtleblockacademy:block/school_desk_cabinet",
+  "textures": {
+    "1": "tconstruct:block/greenheart/planks",
+    "2": "tconstruct:block/greenheart/stripped_log",
+    "particle": "tconstruct:block/greenheart/planks"
+  }
+}

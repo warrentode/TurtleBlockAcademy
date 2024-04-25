@@ -152,6 +152,97 @@ public class ModBlockLootTablesGen extends BlockLoot {
         this.dropSelf(ModBlocks.LOCKER_HELLBARK.get());
         this.dropSelf(ModBlocks.PARK_BENCH_HELLBARK.get());
         this.dropSelf(ModBlocks.TABLE_HELLBARK.get());
+
+        this.dropSelf(ModBlocks.SCHOOL_DESK_COCONUT.get());
+        this.dropSelf(ModBlocks.SCHOOL_DESK_CABINET_COCONUT.get());
+        this.dropSelf(ModBlocks.DESK_CHAIR_COCONUT.get());
+        this.dropSelf(ModBlocks.LOCKER_COCONUT.get());
+        this.dropSelf(ModBlocks.PARK_BENCH_COCONUT.get());
+        this.dropSelf(ModBlocks.TABLE_COCONUT.get());
+
+        this.dropSelf(ModBlocks.SCHOOL_DESK_WALNUT.get());
+        this.dropSelf(ModBlocks.SCHOOL_DESK_CABINET_WALNUT.get());
+        this.dropSelf(ModBlocks.DESK_CHAIR_WALNUT.get());
+        this.dropSelf(ModBlocks.LOCKER_WALNUT.get());
+        this.dropSelf(ModBlocks.PARK_BENCH_WALNUT.get());
+        this.dropSelf(ModBlocks.TABLE_WALNUT.get());
+
+        this.dropSelf(ModBlocks.SCHOOL_DESK_AZALEA.get());
+        this.dropSelf(ModBlocks.SCHOOL_DESK_CABINET_AZALEA.get());
+        this.dropSelf(ModBlocks.DESK_CHAIR_AZALEA.get());
+        this.dropSelf(ModBlocks.LOCKER_AZALEA.get());
+        this.dropSelf(ModBlocks.PARK_BENCH_AZALEA.get());
+        this.dropSelf(ModBlocks.TABLE_AZALEA.get());
+
+        this.dropSelf(ModBlocks.SCHOOL_DESK_FLOWERING_AZALEA.get());
+        this.dropSelf(ModBlocks.SCHOOL_DESK_CABINET_FLOWERING_AZALEA.get());
+        this.dropSelf(ModBlocks.DESK_CHAIR_FLOWERING_AZALEA.get());
+        this.dropSelf(ModBlocks.LOCKER_FLOWERING_AZALEA.get());
+        this.dropSelf(ModBlocks.PARK_BENCH_FLOWERING_AZALEA.get());
+        this.dropSelf(ModBlocks.TABLE_FLOWERING_AZALEA.get());
+
+        this.dropSelf(ModBlocks.SCHOOL_DESK_GOLDEN_OAK.get());
+        this.dropSelf(ModBlocks.SCHOOL_DESK_CABINET_GOLDEN_OAK.get());
+        this.dropSelf(ModBlocks.DESK_CHAIR_GOLDEN_OAK.get());
+        this.dropSelf(ModBlocks.LOCKER_GOLDEN_OAK.get());
+        this.dropSelf(ModBlocks.PARK_BENCH_GOLDEN_OAK.get());
+        this.dropSelf(ModBlocks.TABLE_GOLDEN_OAK.get());
+
+        this.dropSelf(ModBlocks.SCHOOL_DESK_AETHER_SKYROOT.get());
+        this.dropSelf(ModBlocks.SCHOOL_DESK_CABINET_AETHER_SKYROOT.get());
+        this.dropSelf(ModBlocks.DESK_CHAIR_AETHER_SKYROOT.get());
+        this.dropSelf(ModBlocks.LOCKER_AETHER_SKYROOT.get());
+        this.dropSelf(ModBlocks.PARK_BENCH_AETHER_SKYROOT.get());
+        this.dropSelf(ModBlocks.TABLE_AETHER_SKYROOT.get());
+
+        this.dropSelf(ModBlocks.SCHOOL_DESK_PREAM.get());
+        this.dropSelf(ModBlocks.SCHOOL_DESK_CABINET_PREAM.get());
+        this.dropSelf(ModBlocks.DESK_CHAIR_PREAM.get());
+        this.dropSelf(ModBlocks.LOCKER_PREAM.get());
+        this.dropSelf(ModBlocks.PARK_BENCH_PREAM.get());
+        this.dropSelf(ModBlocks.TABLE_PREAM.get());
+
+        this.dropSelf(ModBlocks.SCHOOL_DESK_EBONY.get());
+        this.dropSelf(ModBlocks.SCHOOL_DESK_CABINET_EBONY.get());
+        this.dropSelf(ModBlocks.DESK_CHAIR_EBONY.get());
+        this.dropSelf(ModBlocks.LOCKER_EBONY.get());
+        this.dropSelf(ModBlocks.PARK_BENCH_EBONY.get());
+        this.dropSelf(ModBlocks.TABLE_EBONY.get());
+
+        this.dropSelf(ModBlocks.SCHOOL_DESK_CHORUS_NEST.get());
+        this.dropSelf(ModBlocks.SCHOOL_DESK_CABINET_CHORUS_NEST.get());
+        this.dropSelf(ModBlocks.DESK_CHAIR_CHORUS_NEST.get());
+        this.dropSelf(ModBlocks.LOCKER_CHORUS_NEST.get());
+        this.dropSelf(ModBlocks.PARK_BENCH_CHORUS_NEST.get());
+        this.dropSelf(ModBlocks.TABLE_CHORUS_NEST.get());
+
+        this.dropSelf(ModBlocks.SCHOOL_DESK_BLOODSHROOM.get());
+        this.dropSelf(ModBlocks.SCHOOL_DESK_CABINET_BLOODSHROOM.get());
+        this.dropSelf(ModBlocks.DESK_CHAIR_BLOODSHROOM.get());
+        this.dropSelf(ModBlocks.LOCKER_BLOODSHROOM.get());
+        this.dropSelf(ModBlocks.PARK_BENCH_BLOODSHROOM.get());
+        this.dropSelf(ModBlocks.TABLE_BLOODSHROOM.get());
+
+        this.dropSelf(ModBlocks.SCHOOL_DESK_ENDERBARK.get());
+        this.dropSelf(ModBlocks.SCHOOL_DESK_CABINET_ENDERBARK.get());
+        this.dropSelf(ModBlocks.DESK_CHAIR_ENDERBARK.get());
+        this.dropSelf(ModBlocks.LOCKER_ENDERBARK.get());
+        this.dropSelf(ModBlocks.PARK_BENCH_ENDERBARK.get());
+        this.dropSelf(ModBlocks.TABLE_ENDERBARK.get());
+
+        this.dropSelf(ModBlocks.SCHOOL_DESK_GREENHEART.get());
+        this.dropSelf(ModBlocks.SCHOOL_DESK_CABINET_GREENHEART.get());
+        this.dropSelf(ModBlocks.DESK_CHAIR_GREENHEART.get());
+        this.dropSelf(ModBlocks.LOCKER_GREENHEART.get());
+        this.dropSelf(ModBlocks.PARK_BENCH_GREENHEART.get());
+        this.dropSelf(ModBlocks.TABLE_GREENHEART.get());
+
+        this.dropSelf(ModBlocks.SCHOOL_DESK_TINKER_SKYROOT.get());
+        this.dropSelf(ModBlocks.SCHOOL_DESK_CABINET_TINKER_SKYROOT.get());
+        this.dropSelf(ModBlocks.DESK_CHAIR_TINKER_SKYROOT.get());
+        this.dropSelf(ModBlocks.LOCKER_TINKER_SKYROOT.get());
+        this.dropSelf(ModBlocks.PARK_BENCH_TINKER_SKYROOT.get());
+        this.dropSelf(ModBlocks.TABLE_TINKER_SKYROOT.get());
     }
 
     @Override

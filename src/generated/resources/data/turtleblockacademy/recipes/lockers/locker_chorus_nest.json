@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "lockers",
+  "key": {
+    "#": {
+      "item": "unusualend:chorus_nest_slab"
+    },
+    "C": {
+      "item": "minecraft:chest"
+    },
+    "L": {
+      "item": "unusualend:chorus_nest_planks"
+    }
+  },
+  "pattern": [
+    "###", "LCL", "###"
+  ],
+  "result": {
+    "item": "turtleblockacademy:locker_chorus_nest"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "tables",
+  "key": {
+    "#": {
+      "item": "aether:skyroot_slab"
+    },
+    "L": {
+      "item": "aether:golden_oak_log"
+    },
+    "S": {
+      "item": "aether:stripped_skyroot_log"
+    }
+  },
+  "pattern": [
+    "###", " S ", " L "
+  ],
+  "result": {
+    "count": 2,
+    "item": "turtleblockacademy:table_golden_oak"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "desk_cabinets",
+  "key": {
+    "C": {
+      "item": "minecraft:chest"
+    },
+    "L": {
+      "item": "ecologics:flowering_azalea_log"
+    },
+    "P": {
+      "item": "ecologics:flowering_azalea_planks"
+    }
+  },
+  "pattern": [
+    "PPP", "LCL", "PPP"
+  ],
+  "result": {
+    "item": "turtleblockacademy:school_desk_cabinet_flowering_azalea"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "chairs",
+  "key": {
+    "#": {
+      "tag": "tconstruct:enderbark_slab"
+    },
+    "L": {
+      "tag": "tconstruct:enderbark_log"
+    },
+    "S": {
+      "tag": "tconstruct:stripped_enderbark_log"
+    }
+  },
+  "pattern": [
+    "  #", "#S#", "L L"
+  ],
+  "result": {
+    "count": 2,
+    "item": "turtleblockacademy:desk_chair_enderbark"
+  }
+}

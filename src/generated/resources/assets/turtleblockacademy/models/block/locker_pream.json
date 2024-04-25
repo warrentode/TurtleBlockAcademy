@@ -1,0 +1,9 @@
+{
+  "parent": "turtleblockacademy:block/locker",
+  "textures": {
+    "1": "phantasm:block/pream_planks",
+    "2": "phantasm:block/stripped_pream_log_side",
+    "3": "phantasm:block/pream_log_side",
+    "particle": "phantasm:block/pream_planks"
+  }
+}

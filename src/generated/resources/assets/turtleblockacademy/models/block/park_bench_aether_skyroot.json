@@ -1,0 +1,8 @@
+{
+  "parent": "turtleblockacademy:block/park_bench",
+  "textures": {
+    "1": "aether:block/skyroot_planks",
+    "2": "aether:block/stripped_skyroot_log",
+    "particle": "aether:block/skyroot_planks"
+  }
+}

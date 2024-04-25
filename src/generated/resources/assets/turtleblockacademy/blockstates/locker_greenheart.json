@@ -1,0 +1,34 @@
+{
+  "variants": {
+    "facing=east,open=false": {
+      "model": "turtleblockacademy:block/locker_greenheart",
+      "y": 90
+    },
+    "facing=east,open=true": {
+      "model": "turtleblockacademy:block/locker_greenheart",
+      "y": 90
+    },
+    "facing=north,open=false": {
+      "model": "turtleblockacademy:block/locker_greenheart"
+    },
+    "facing=north,open=true": {
+      "model": "turtleblockacademy:block/locker_greenheart"
+    },
+    "facing=south,open=false": {
+      "model": "turtleblockacademy:block/locker_greenheart",
+      "y": 180
+    },
+    "facing=south,open=true": {
+      "model": "turtleblockacademy:block/locker_greenheart",
+      "y": 180
+    },
+    "facing=west,open=false": {
+      "model": "turtleblockacademy:block/locker_greenheart",
+      "y": 270
+    },
+    "facing=west,open=true": {
+      "model": "turtleblockacademy:block/locker_greenheart",
+      "y": 270
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "chairs",
+  "key": {
+    "#": {
+      "item": "phantasm:ebony_slab"
+    },
+    "L": {
+      "item": "phantasm:ebony_wood"
+    },
+    "S": {
+      "item": "phantasm:stripped_ebony_wood"
+    }
+  },
+  "pattern": [
+    "  #", "#S#", "L L"
+  ],
+  "result": {
+    "count": 2,
+    "item": "turtleblockacademy:desk_chair_ebony"
+  }
+}

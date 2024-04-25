@@ -1,0 +1,7 @@
+{
+  "parent": "turtleblockacademy:block/table_center",
+  "textures": {
+    "1": "tconstruct:block/greenheart/planks",
+    "particle": "tconstruct:block/greenheart/planks"
+  }
+}

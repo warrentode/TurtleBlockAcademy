@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "desks",
+  "key": {
+    "#": {
+      "item": "ecologics:walnut_slab"
+    },
+    "P": {
+      "item": "ecologics:walnut_planks"
+    }
+  },
+  "pattern": [
+    "###", "P P"
+  ],
+  "result": {
+    "count": 2,
+    "item": "turtleblockacademy:school_desk_walnut"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "benches",
+  "key": {
+    "#": {
+      "tag": "tconstruct:enderbark_slab"
+    },
+    "L": {
+      "tag": "tconstruct:enderbark_log"
+    }
+  },
+  "pattern": [
+    "  #", "###", "L L"
+  ],
+  "result": {
+    "count": 2,
+    "item": "turtleblockacademy:park_bench_enderbark"
+  }
+}

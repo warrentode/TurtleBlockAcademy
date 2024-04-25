@@ -1,0 +1,7 @@
+{
+  "parent": "turtleblockacademy:block/table_center",
+  "textures": {
+    "1": "unusualend:block/chorus_nest_planks",
+    "particle": "unusualend:block/chorus_nest_planks"
+  }
+}

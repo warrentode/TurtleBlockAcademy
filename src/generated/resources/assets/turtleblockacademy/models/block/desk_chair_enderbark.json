@@ -1,0 +1,9 @@
+{
+  "parent": "turtleblockacademy:block/desk_chair",
+  "textures": {
+    "1": "tconstruct:block/enderbark/planks",
+    "2": "tconstruct:block/enderbark/stripped_log",
+    "3": "tconstruct:block/enderbark/log",
+    "particle": "tconstruct:block/enderbark/planks"
+  }
+}

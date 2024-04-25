@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "tables",
+  "key": {
+    "#": {
+      "tag": "tconstruct:skyroot_slab"
+    },
+    "L": {
+      "tag": "tconstruct:skyroot_log"
+    },
+    "S": {
+      "tag": "tconstruct:stripped_skyroot_log"
+    }
+  },
+  "pattern": [
+    "###", " S ", " L "
+  ],
+  "result": {
+    "count": 2,
+    "item": "turtleblockacademy:table_tinker_skyroot"
+  }
+}

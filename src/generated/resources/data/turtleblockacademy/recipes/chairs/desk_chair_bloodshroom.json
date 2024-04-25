@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "chairs",
+  "key": {
+    "#": {
+      "tag": "tconstruct:bloodshroom_slab"
+    },
+    "L": {
+      "tag": "tconstruct:bloodshroom_log"
+    },
+    "S": {
+      "tag": "tconstruct:stripped_bloodshroom_log"
+    }
+  },
+  "pattern": [
+    "  #", "#S#", "L L"
+  ],
+  "result": {
+    "count": 2,
+    "item": "turtleblockacademy:desk_chair_bloodshroom"
+  }
+}

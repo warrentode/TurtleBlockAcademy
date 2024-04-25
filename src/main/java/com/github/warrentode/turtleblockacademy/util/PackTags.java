@@ -36,6 +36,23 @@ public class PackTags {
     }
 
     public static class Items {
+        public static final TagKey<Item> BLOODSHROOM_LOG = packItemTag("tconstruct", "bloodshroom_log");
+        public static final TagKey<Item> BLOODSHROOM_STRIPPED_LOG = packItemTag("tconstruct", "stripped_bloodshroom_log");
+        public static final TagKey<Item> BLOODSHROOM_PLANKS = packItemTag("tconstruct", "bloodshroom_planks");
+        public static final TagKey<Item> BLOODSHROOM_SLAB = packItemTag("tconstruct", "bloodshroom_slab");
+        public static final TagKey<Item> ENDERBARK_LOG = packItemTag("tconstruct", "enderbark_log");
+        public static final TagKey<Item> ENDERBARK_STRIPPED_LOG = packItemTag("tconstruct", "stripped_enderbark_log");
+        public static final TagKey<Item> ENDERBARK_PLANKS = packItemTag("tconstruct", "enderbark_planks");
+        public static final TagKey<Item> ENDERBARK_SLAB = packItemTag("tconstruct", "enderbark_slab");
+        public static final TagKey<Item> GREENHEART_LOG = packItemTag("tconstruct", "greenheart_log");
+        public static final TagKey<Item> GREENHEART_STRIPPED_LOG = packItemTag("tconstruct", "stripped_greenheart_log");
+        public static final TagKey<Item> GREENHEART_PLANKS = packItemTag("tconstruct", "greenheart_planks");
+        public static final TagKey<Item> GREENHEART_SLAB = packItemTag("tconstruct", "greenheart_slab");
+        public static final TagKey<Item> TINKER_SKYROOT_LOG = packItemTag("tconstruct", "skyroot_log");
+        public static final TagKey<Item> TINKER_SKYROOT_STRIPPED_LOG = packItemTag("tconstruct", "stripped_skyroot_log");
+        public static final TagKey<Item> TINKER_SKYROOT_PLANKS = packItemTag("tconstruct", "skyroot_planks");
+        public static final TagKey<Item> TINKER_SKYROOT_SLAB = packItemTag("tconstruct", "skyroot_slab");
+
         public static final TagKey<Item> FORGE_BOOKS = packItemTag("forge", "books");
         public static final TagKey<Item> PATCHOULI_BOOKS = packItemTag("patchouli", "books");
         public static final TagKey<Item> LECTERN_BOOKS = packItemTag("minecraft", "lectern_books");

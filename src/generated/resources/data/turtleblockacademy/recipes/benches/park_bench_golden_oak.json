@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "benches",
+  "key": {
+    "#": {
+      "item": "aether:skyroot_slab"
+    },
+    "L": {
+      "item": "aether:golden_oak_log"
+    }
+  },
+  "pattern": [
+    "  #", "###", "L L"
+  ],
+  "result": {
+    "count": 2,
+    "item": "turtleblockacademy:park_bench_golden_oak"
+  }
+}

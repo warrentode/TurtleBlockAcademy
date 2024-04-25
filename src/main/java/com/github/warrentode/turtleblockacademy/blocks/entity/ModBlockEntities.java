@@ -38,8 +38,20 @@ public class ModBlockEntities {
                                     ModBlocks.SCHOOL_DESK_DEAD.get(),
                                     ModBlocks.SCHOOL_DESK_MAGIC.get(),
                                     ModBlocks.SCHOOL_DESK_UMBRAN.get(),
-                                    ModBlocks.SCHOOL_DESK_HELLBARK.get()
-
+                                    ModBlocks.SCHOOL_DESK_HELLBARK.get(),
+                                    ModBlocks.SCHOOL_DESK_COCONUT.get(),
+                                    ModBlocks.SCHOOL_DESK_WALNUT.get(),
+                                    ModBlocks.SCHOOL_DESK_AZALEA.get(),
+                                    ModBlocks.SCHOOL_DESK_FLOWERING_AZALEA.get(),
+                                    ModBlocks.SCHOOL_DESK_GOLDEN_OAK.get(),
+                                    ModBlocks.SCHOOL_DESK_AETHER_SKYROOT.get(),
+                                    ModBlocks.SCHOOL_DESK_PREAM.get(),
+                                    ModBlocks.SCHOOL_DESK_EBONY.get(),
+                                    ModBlocks.SCHOOL_DESK_CHORUS_NEST.get(),
+                                    ModBlocks.SCHOOL_DESK_BLOODSHROOM.get(),
+                                    ModBlocks.SCHOOL_DESK_ENDERBARK.get(),
+                                    ModBlocks.SCHOOL_DESK_GREENHEART.get(),
+                                    ModBlocks.SCHOOL_DESK_TINKER_SKYROOT.get()
                             )
                             .build(null));
 
@@ -47,6 +59,24 @@ public class ModBlockEntities {
     public static final RegistryObject<BlockEntityType<SchoolStorageEntity>> SCHOOL_STORAGE_ENTITY =
             BLOCK_ENTITIES.register("school_storage_entity",
                     () -> BlockEntityType.Builder.of(SchoolStorageEntity::new,
+                                    ModBlocks.SCHOOL_DESK_CABINET_GREENHEART.get(),
+                                    ModBlocks.LOCKER_GREENHEART.get(),
+                                    ModBlocks.SCHOOL_DESK_CABINET_TINKER_SKYROOT.get(),
+                                    ModBlocks.LOCKER_TINKER_SKYROOT.get(),
+                                    ModBlocks.SCHOOL_DESK_CABINET_BLOODSHROOM.get(),
+                                    ModBlocks.LOCKER_BLOODSHROOM.get(),
+                                    ModBlocks.SCHOOL_DESK_CABINET_ENDERBARK.get(),
+                                    ModBlocks.LOCKER_ENDERBARK.get(),
+                                    ModBlocks.SCHOOL_DESK_CABINET_CHORUS_NEST.get(),
+                                    ModBlocks.LOCKER_CHORUS_NEST.get(),
+                                    ModBlocks.SCHOOL_DESK_CABINET_EBONY.get(),
+                                    ModBlocks.LOCKER_EBONY.get(),
+                                    ModBlocks.SCHOOL_DESK_CABINET_PREAM.get(),
+                                    ModBlocks.LOCKER_PREAM.get(),
+                                    ModBlocks.SCHOOL_DESK_CABINET_AETHER_SKYROOT.get(),
+                                    ModBlocks.LOCKER_AETHER_SKYROOT.get(),
+                                    ModBlocks.SCHOOL_DESK_CABINET_GOLDEN_OAK.get(),
+                                    ModBlocks.LOCKER_GOLDEN_OAK.get(),
                                     ModBlocks.SCHOOL_DESK_CABINET_OAK.get(),
                                     ModBlocks.SCHOOL_DESK_CABINET_BIRCH.get(),
                                     ModBlocks.SCHOOL_DESK_CABINET_SPRUCE.get(),
@@ -84,7 +114,15 @@ public class ModBlockEntities {
                                     ModBlocks.SCHOOL_DESK_CABINET_UMBRAN.get(),
                                     ModBlocks.LOCKER_UMBRAN.get(),
                                     ModBlocks.SCHOOL_DESK_CABINET_HELLBARK.get(),
-                                    ModBlocks.LOCKER_HELLBARK.get()
+                                    ModBlocks.LOCKER_HELLBARK.get(),
+                                    ModBlocks.SCHOOL_DESK_CABINET_COCONUT.get(),
+                                    ModBlocks.LOCKER_COCONUT.get(),
+                                    ModBlocks.SCHOOL_DESK_CABINET_WALNUT.get(),
+                                    ModBlocks.LOCKER_WALNUT.get(),
+                                    ModBlocks.SCHOOL_DESK_CABINET_AZALEA.get(),
+                                    ModBlocks.LOCKER_AZALEA.get(),
+                                    ModBlocks.SCHOOL_DESK_CABINET_FLOWERING_AZALEA.get(),
+                                    ModBlocks.LOCKER_FLOWERING_AZALEA.get()
                             )
                             .build(null));
 

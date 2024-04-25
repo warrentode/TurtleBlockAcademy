@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "desk_cabinets",
+  "key": {
+    "C": {
+      "item": "minecraft:chest"
+    },
+    "L": {
+      "item": "phantasm:pream_log"
+    },
+    "P": {
+      "item": "phantasm:pream_planks"
+    }
+  },
+  "pattern": [
+    "PPP", "LCL", "PPP"
+  ],
+  "result": {
+    "item": "turtleblockacademy:school_desk_cabinet_pream"
+  }
+}

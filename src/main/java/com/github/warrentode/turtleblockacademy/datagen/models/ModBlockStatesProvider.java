@@ -220,23 +220,174 @@ public class ModBlockStatesProvider extends BlockStateProvider {
                 ModBlocks.PARK_BENCH_HELLBARK.get(),
 
                 "biomesoplenty", "hellbark");
+        processVariants(
+                ModBlocks.DESK_CHAIR_COCONUT.get(),
+                ModBlocks.TABLE_COCONUT.get(),
+                ModBlocks.LOCKER_COCONUT.get(),
+                ModBlocks.SCHOOL_DESK_CABINET_COCONUT.get(),
+                ModBlocks.SCHOOL_DESK_COCONUT.get(),
+                ModBlocks.PARK_BENCH_COCONUT.get(),
+
+                "ecologics", "coconut");
+        processVariants(
+                ModBlocks.DESK_CHAIR_WALNUT.get(),
+                ModBlocks.TABLE_WALNUT.get(),
+                ModBlocks.LOCKER_WALNUT.get(),
+                ModBlocks.SCHOOL_DESK_CABINET_WALNUT.get(),
+                ModBlocks.SCHOOL_DESK_WALNUT.get(),
+                ModBlocks.PARK_BENCH_WALNUT.get(),
+
+                "ecologics", "walnut");
+        processVariants(
+                ModBlocks.DESK_CHAIR_AZALEA.get(),
+                ModBlocks.TABLE_AZALEA.get(),
+                ModBlocks.LOCKER_AZALEA.get(),
+                ModBlocks.SCHOOL_DESK_CABINET_AZALEA.get(),
+                ModBlocks.SCHOOL_DESK_AZALEA.get(),
+                ModBlocks.PARK_BENCH_AZALEA.get(),
+
+                "ecologics", "azalea");
+        processVariants(
+                ModBlocks.DESK_CHAIR_FLOWERING_AZALEA.get(),
+                ModBlocks.TABLE_FLOWERING_AZALEA.get(),
+                ModBlocks.LOCKER_FLOWERING_AZALEA.get(),
+                ModBlocks.SCHOOL_DESK_CABINET_FLOWERING_AZALEA.get(),
+                ModBlocks.SCHOOL_DESK_FLOWERING_AZALEA.get(),
+                ModBlocks.PARK_BENCH_FLOWERING_AZALEA.get(),
+
+                "ecologics", "flowering_azalea");
+        processVariants(
+                ModBlocks.DESK_CHAIR_GOLDEN_OAK.get(),
+                ModBlocks.TABLE_GOLDEN_OAK.get(),
+                ModBlocks.LOCKER_GOLDEN_OAK.get(),
+                ModBlocks.SCHOOL_DESK_CABINET_GOLDEN_OAK.get(),
+                ModBlocks.SCHOOL_DESK_GOLDEN_OAK.get(),
+                ModBlocks.PARK_BENCH_GOLDEN_OAK.get(),
+
+                "aether", "golden_oak");
+        processVariants(
+                ModBlocks.DESK_CHAIR_AETHER_SKYROOT.get(),
+                ModBlocks.TABLE_AETHER_SKYROOT.get(),
+                ModBlocks.LOCKER_AETHER_SKYROOT.get(),
+                ModBlocks.SCHOOL_DESK_CABINET_AETHER_SKYROOT.get(),
+                ModBlocks.SCHOOL_DESK_AETHER_SKYROOT.get(),
+                ModBlocks.PARK_BENCH_AETHER_SKYROOT.get(),
+
+                "aether", "skyroot");
+        processVariants(
+                ModBlocks.DESK_CHAIR_PREAM.get(),
+                ModBlocks.TABLE_PREAM.get(),
+                ModBlocks.LOCKER_PREAM.get(),
+                ModBlocks.SCHOOL_DESK_CABINET_PREAM.get(),
+                ModBlocks.SCHOOL_DESK_PREAM.get(),
+                ModBlocks.PARK_BENCH_PREAM.get(),
+
+                "phantasm", "pream");
+        processVariants(
+                ModBlocks.DESK_CHAIR_EBONY.get(),
+                ModBlocks.TABLE_EBONY.get(),
+                ModBlocks.LOCKER_EBONY.get(),
+                ModBlocks.SCHOOL_DESK_CABINET_EBONY.get(),
+                ModBlocks.SCHOOL_DESK_EBONY.get(),
+                ModBlocks.PARK_BENCH_EBONY.get(),
+
+                "phantasm", "ebony");
+        processVariants(
+                ModBlocks.DESK_CHAIR_CHORUS_NEST.get(),
+                ModBlocks.TABLE_CHORUS_NEST.get(),
+                ModBlocks.LOCKER_CHORUS_NEST.get(),
+                ModBlocks.SCHOOL_DESK_CABINET_CHORUS_NEST.get(),
+                ModBlocks.SCHOOL_DESK_CHORUS_NEST.get(),
+                ModBlocks.PARK_BENCH_CHORUS_NEST.get(),
+
+                "unusualend", "chorus_nest");
+        processVariants(
+                ModBlocks.DESK_CHAIR_BLOODSHROOM.get(),
+                ModBlocks.TABLE_BLOODSHROOM.get(),
+                ModBlocks.LOCKER_BLOODSHROOM.get(),
+                ModBlocks.SCHOOL_DESK_CABINET_BLOODSHROOM.get(),
+                ModBlocks.SCHOOL_DESK_BLOODSHROOM.get(),
+                ModBlocks.PARK_BENCH_BLOODSHROOM.get(),
+
+                "tconstruct", "bloodshroom");
+        processVariants(
+                ModBlocks.DESK_CHAIR_ENDERBARK.get(),
+                ModBlocks.TABLE_ENDERBARK.get(),
+                ModBlocks.LOCKER_ENDERBARK.get(),
+                ModBlocks.SCHOOL_DESK_CABINET_ENDERBARK.get(),
+                ModBlocks.SCHOOL_DESK_ENDERBARK.get(),
+                ModBlocks.PARK_BENCH_ENDERBARK.get(),
+
+                "tconstruct", "enderbark");
+        processVariants(
+                ModBlocks.DESK_CHAIR_GREENHEART.get(),
+                ModBlocks.TABLE_GREENHEART.get(),
+                ModBlocks.LOCKER_GREENHEART.get(),
+                ModBlocks.SCHOOL_DESK_CABINET_GREENHEART.get(),
+                ModBlocks.SCHOOL_DESK_GREENHEART.get(),
+                ModBlocks.PARK_BENCH_GREENHEART.get(),
+
+                "tconstruct", "greenheart");
+        processVariants(
+                ModBlocks.DESK_CHAIR_TINKER_SKYROOT.get(),
+                ModBlocks.TABLE_TINKER_SKYROOT.get(),
+                ModBlocks.LOCKER_TINKER_SKYROOT.get(),
+                ModBlocks.SCHOOL_DESK_CABINET_TINKER_SKYROOT.get(),
+                ModBlocks.SCHOOL_DESK_TINKER_SKYROOT.get(),
+                ModBlocks.PARK_BENCH_TINKER_SKYROOT.get(),
+
+                "tconstruct", "skyroot");
     }
 
     protected void processVariants(Block result1, Block result2,
                                    Block result3, Block result4,
                                    Block result5, Block result6,
                                    String modid, String woodType) {
+        String path_1;
         String path_2;
         String path_3;
 
-        String path_1 = "block/" + woodType + "_planks";
         if (Objects.equals(woodType, "crimson") || Objects.equals(woodType, "warped")) {
             path_2 = "block/stripped_" + woodType + "_stem";
             path_3 = "block/" + woodType + "_stem";
         }
+        else if (Objects.equals(woodType, "flowering_azalea")) {
+            path_2 = "block/stripped_azalea_log";
+            path_3 = "block/" + woodType + "_log";
+        }
         else {
             path_2 = "block/stripped_" + woodType + "_log";
             path_3 = "block/" + woodType + "_log";
+        }
+
+        if (Objects.equals(woodType, "golden_oak")) {
+            path_1 = "block/skyroot_planks";
+            path_2 = "block/stripped_skyroot_log";
+            path_3 = "block/" + woodType + "_log";
+        }
+        else if (Objects.equals(woodType, "pream")) {
+            path_1 = "block/" + woodType + "_planks";
+            path_2 = "block/stripped_" + woodType + "_log_side";
+            path_3 = "block/" + woodType + "_log_side";
+        }
+        else if (Objects.equals(woodType, "ebony")) {
+            path_1 = "block/" + woodType + "_planks";
+            path_2 = "block/" + woodType + "_stems_side_stripped";
+            path_3 = "block/" + woodType + "_stems_side";
+        }
+        else if (Objects.equals(woodType, "chorus_nest")) {
+            path_1 = "block/" + woodType + "_planks";
+            path_2 = "block/stripped_" + woodType + "_planks";
+            path_3 = "block/" + woodType + "_mosaic";
+        }
+        else if (Objects.equals(modid, "tconstruct") && (Objects.equals(woodType, "bloodshroom") || Objects.equals(woodType, "enderbark")
+                || Objects.equals(woodType, "greenheart") || Objects.equals(woodType, "skyroot"))) {
+            path_1 = "block/" + woodType + "/planks";
+            path_2 = "block/" + woodType + "/stripped_log";
+            path_3 = "block/" + woodType + "/log";
+        }
+        else {
+            path_1 = "block/" + woodType + "_planks";
         }
 
         threeTextureHorizontalVariant(result1, MODID + ":" + "block/desk_chair", modid, path_1, path_2, path_3);

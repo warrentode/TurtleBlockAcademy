@@ -212,6 +212,97 @@ public class ModLangGen extends LanguageProvider {
         add(ModBlocks.LOCKER_HELLBARK.get(), "Hellbark Locker");
         add(ModBlocks.PARK_BENCH_HELLBARK.get(), "Hellbark Park Bench");
         add(ModBlocks.TABLE_HELLBARK.get(), "Hellbark Table");
+
+        add(ModBlocks.SCHOOL_DESK_COCONUT.get(), "Coconut School Desk");
+        add(ModBlocks.SCHOOL_DESK_CABINET_COCONUT.get(), "Coconut School Desk Cabinet");
+        add(ModBlocks.DESK_CHAIR_COCONUT.get(), "Coconut Desk Chair");
+        add(ModBlocks.LOCKER_COCONUT.get(), "Coconut Locker");
+        add(ModBlocks.PARK_BENCH_COCONUT.get(), "Coconut Park Bench");
+        add(ModBlocks.TABLE_COCONUT.get(), "Coconut Table");
+
+        add(ModBlocks.SCHOOL_DESK_WALNUT.get(), "Walnut School Desk");
+        add(ModBlocks.SCHOOL_DESK_CABINET_WALNUT.get(), "Walnut School Desk Cabinet");
+        add(ModBlocks.DESK_CHAIR_WALNUT.get(), "Walnut Desk Chair");
+        add(ModBlocks.LOCKER_WALNUT.get(), "Walnut Locker");
+        add(ModBlocks.PARK_BENCH_WALNUT.get(), "Walnut Park Bench");
+        add(ModBlocks.TABLE_WALNUT.get(), "Walnut Table");
+
+        add(ModBlocks.SCHOOL_DESK_AZALEA.get(), "Azalea School Desk");
+        add(ModBlocks.SCHOOL_DESK_CABINET_AZALEA.get(), "Azalea School Desk Cabinet");
+        add(ModBlocks.DESK_CHAIR_AZALEA.get(), "Azalea Desk Chair");
+        add(ModBlocks.LOCKER_AZALEA.get(), "Azalea Locker");
+        add(ModBlocks.PARK_BENCH_AZALEA.get(), "Azalea Park Bench");
+        add(ModBlocks.TABLE_AZALEA.get(), "Azalea Table");
+
+        add(ModBlocks.SCHOOL_DESK_FLOWERING_AZALEA.get(), "Flowering Azalea School Desk");
+        add(ModBlocks.SCHOOL_DESK_CABINET_FLOWERING_AZALEA.get(), "Flowering Azalea School Desk Cabinet");
+        add(ModBlocks.DESK_CHAIR_FLOWERING_AZALEA.get(), "Flowering Azalea Desk Chair");
+        add(ModBlocks.LOCKER_FLOWERING_AZALEA.get(), "Flowering Azalea Locker");
+        add(ModBlocks.PARK_BENCH_FLOWERING_AZALEA.get(), "Flowering Azalea Park Bench");
+        add(ModBlocks.TABLE_FLOWERING_AZALEA.get(), "Flowering Azalea Table");
+
+        add(ModBlocks.SCHOOL_DESK_GOLDEN_OAK.get(), "Golden Oak School Desk");
+        add(ModBlocks.SCHOOL_DESK_CABINET_GOLDEN_OAK.get(), "Golden Oak School Desk Cabinet");
+        add(ModBlocks.DESK_CHAIR_GOLDEN_OAK.get(), "Golden Oak Desk Chair");
+        add(ModBlocks.LOCKER_GOLDEN_OAK.get(), "Golden Oak Locker");
+        add(ModBlocks.PARK_BENCH_GOLDEN_OAK.get(), "Golden Oak Park Bench");
+        add(ModBlocks.TABLE_GOLDEN_OAK.get(), "Golden Oak Table");
+
+        add(ModBlocks.SCHOOL_DESK_AETHER_SKYROOT.get(), "Aether Skyroot School Desk");
+        add(ModBlocks.SCHOOL_DESK_CABINET_AETHER_SKYROOT.get(), "Aether Skyroot School Desk Cabinet");
+        add(ModBlocks.DESK_CHAIR_AETHER_SKYROOT.get(), "Aether Skyroot Desk Chair");
+        add(ModBlocks.LOCKER_AETHER_SKYROOT.get(), "Aether Skyroot Locker");
+        add(ModBlocks.PARK_BENCH_AETHER_SKYROOT.get(), "Aether Skyroot Park Bench");
+        add(ModBlocks.TABLE_AETHER_SKYROOT.get(), "Aether Skyroot Table");
+
+        add(ModBlocks.SCHOOL_DESK_PREAM.get(), "Pream School Desk");
+        add(ModBlocks.SCHOOL_DESK_CABINET_PREAM.get(), "Pream School Desk Cabinet");
+        add(ModBlocks.DESK_CHAIR_PREAM.get(), "Pream Desk Chair");
+        add(ModBlocks.LOCKER_PREAM.get(), "Pream Locker");
+        add(ModBlocks.PARK_BENCH_PREAM.get(), "Pream Park Bench");
+        add(ModBlocks.TABLE_PREAM.get(), "Pream Table");
+
+        add(ModBlocks.SCHOOL_DESK_EBONY.get(), "Ebony School Desk");
+        add(ModBlocks.SCHOOL_DESK_CABINET_EBONY.get(), "Ebony School Desk Cabinet");
+        add(ModBlocks.DESK_CHAIR_EBONY.get(), "Ebony Desk Chair");
+        add(ModBlocks.LOCKER_EBONY.get(), "Ebony Locker");
+        add(ModBlocks.PARK_BENCH_EBONY.get(), "Ebony Park Bench");
+        add(ModBlocks.TABLE_EBONY.get(), "Ebony Table");
+
+        add(ModBlocks.SCHOOL_DESK_CHORUS_NEST.get(), "Chorus Nest School Desk");
+        add(ModBlocks.SCHOOL_DESK_CABINET_CHORUS_NEST.get(), "Chorus Nest School Desk Cabinet");
+        add(ModBlocks.DESK_CHAIR_CHORUS_NEST.get(), "Chorus Nest Desk Chair");
+        add(ModBlocks.LOCKER_CHORUS_NEST.get(), "Chorus Nest Locker");
+        add(ModBlocks.PARK_BENCH_CHORUS_NEST.get(), "Chorus Nest Park Bench");
+        add(ModBlocks.TABLE_CHORUS_NEST.get(), "Chorus Nest Table");
+
+        add(ModBlocks.SCHOOL_DESK_BLOODSHROOM.get(), "Bloodshroom School Desk");
+        add(ModBlocks.SCHOOL_DESK_CABINET_BLOODSHROOM.get(), "Bloodshroom School Desk Cabinet");
+        add(ModBlocks.DESK_CHAIR_BLOODSHROOM.get(), "Bloodshroom Desk Chair");
+        add(ModBlocks.LOCKER_BLOODSHROOM.get(), "Bloodshroom Locker");
+        add(ModBlocks.PARK_BENCH_BLOODSHROOM.get(), "Bloodshroom Park Bench");
+        add(ModBlocks.TABLE_BLOODSHROOM.get(), "Bloodshroom Table");
+
+        add(ModBlocks.SCHOOL_DESK_ENDERBARK.get(), "Enderbark School Desk");
+        add(ModBlocks.SCHOOL_DESK_CABINET_ENDERBARK.get(), "Enderbark School Desk Cabinet");
+        add(ModBlocks.DESK_CHAIR_ENDERBARK.get(), "Enderbark Desk Chair");
+        add(ModBlocks.LOCKER_ENDERBARK.get(), "Enderbark Locker");
+        add(ModBlocks.PARK_BENCH_ENDERBARK.get(), "Enderbark Park Bench");
+        add(ModBlocks.TABLE_ENDERBARK.get(), "Enderbark Table");
+
+        add(ModBlocks.SCHOOL_DESK_GREENHEART.get(), "Greenheart School Desk");
+        add(ModBlocks.SCHOOL_DESK_CABINET_GREENHEART.get(), "Greenheart School Desk Cabinet");
+        add(ModBlocks.DESK_CHAIR_GREENHEART.get(), "Greenheart Desk Chair");
+        add(ModBlocks.LOCKER_GREENHEART.get(), "Greenheart Locker");
+        add(ModBlocks.PARK_BENCH_GREENHEART.get(), "Greenheart Park Bench");
+        add(ModBlocks.TABLE_GREENHEART.get(), "Greenheart Table");
+
+        add(ModBlocks.SCHOOL_DESK_TINKER_SKYROOT.get(), "Tinker Skyroot School Desk");
+        add(ModBlocks.SCHOOL_DESK_CABINET_TINKER_SKYROOT.get(), "Tinker Skyroot School Desk Cabinet");
+        add(ModBlocks.DESK_CHAIR_TINKER_SKYROOT.get(), "Tinker Skyroot Desk Chair");
+        add(ModBlocks.LOCKER_TINKER_SKYROOT.get(), "Tinker Skyroot Locker");
+        add(ModBlocks.PARK_BENCH_TINKER_SKYROOT.get(), "Tinker Skyroot Park Bench");
+        add(ModBlocks.TABLE_TINKER_SKYROOT.get(), "Tinker Skyroot Table");
     }
 
     private void addItemGroups() {

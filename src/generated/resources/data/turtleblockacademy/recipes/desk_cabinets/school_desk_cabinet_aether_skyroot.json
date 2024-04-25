@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "desk_cabinets",
+  "key": {
+    "C": {
+      "item": "minecraft:chest"
+    },
+    "L": {
+      "item": "aether:skyroot_log"
+    },
+    "P": {
+      "item": "aether:skyroot_planks"
+    }
+  },
+  "pattern": [
+    "PPP", "LCL", "PPP"
+  ],
+  "result": {
+    "item": "turtleblockacademy:school_desk_cabinet_aether_skyroot"
+  }
+}

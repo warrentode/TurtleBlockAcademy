@@ -1,0 +1,8 @@
+{
+  "parent": "turtleblockacademy:block/school_desk",
+  "textures": {
+    "1": "phantasm:block/ebony_planks",
+    "2": "phantasm:block/ebony_stems_side_stripped",
+    "particle": "phantasm:block/ebony_planks"
+  }
+}

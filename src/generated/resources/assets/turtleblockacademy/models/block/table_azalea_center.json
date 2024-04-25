@@ -1,0 +1,7 @@
+{
+  "parent": "turtleblockacademy:block/table_center",
+  "textures": {
+    "1": "ecologics:block/azalea_planks",
+    "particle": "ecologics:block/azalea_planks"
+  }
+}
