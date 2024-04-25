@@ -1,0 +1,7 @@
+{
+  "parent": "turtleblockacademy:block/table_center",
+  "textures": {
+    "1": "minecraft:block/spruce_planks",
+    "particle": "minecraft:block/spruce_planks"
+  }
+}

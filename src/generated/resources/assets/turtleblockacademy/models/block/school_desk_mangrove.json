@@ -1,0 +1,8 @@
+{
+  "parent": "turtleblockacademy:block/school_desk",
+  "textures": {
+    "1": "minecraft:block/mangrove_planks",
+    "2": "minecraft:block/mangrove_log",
+    "particle": "minecraft:block/mangrove_planks"
+  }
+}

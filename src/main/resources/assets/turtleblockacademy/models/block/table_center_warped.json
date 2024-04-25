@@ -1,8 +1,0 @@
-{
-  "parent": "turtleblockacademy:block/table_center",
-  "texture_size": [128, 128],
-  "textures": {
-    "1": "minecraft:block/warped_planks",
-    "particle": "minecraft:block/warped_planks"
-  }
-}
