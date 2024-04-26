@@ -84,7 +84,9 @@ minecraft {
     }
 }
 
-sourceSets.main.resources { srcDir 'src/generated/resources' }
+sourceSets.main.resources {
+    srcDir 'src/generated/resources'
+}
 
 repositories {
     maven {
@@ -107,6 +109,10 @@ dependencies {
     implementation 'com.google.guava:guava:33.0.0-jre'
     implementation 'org.apache.logging.log4j:log4j-core:2.17.1'
     implementation 'org.apache.commons:commons-compress:1.26.1'
+
+    // gamestages set
+    implementation fg.deobf("curse.maven:bookshelf-228525:4556697")
+    implementation fg.deobf("curse.maven:game-stages-268655:5171200")
 
     // serene seasons
     implementation fg.deobf("curse.maven:serene-seasons-291874:4037228")
@@ -143,7 +149,6 @@ dependencies {
     // delight and food mod set
     implementation fg.deobf("curse.maven:farmers-delight-398521:4679318")
     implementation fg.deobf("curse.maven:farmers-respite-551453:4081312")
-    implementation fg.deobf("curse.maven:delightful-637529:4541459")
     implementation fg.deobf("curse.maven:festive-delight-711672:4954520")
     implementation fg.deobf("curse.maven:fastfood-delight-714075:4121540")
     implementation fg.deobf("curse.maven:chefs-delight-forge-832983:4517363")
@@ -154,6 +159,11 @@ dependencies {
     implementation fg.deobf("curse.maven:decoration-delight-687475:4689700")
     implementation fg.deobf("curse.maven:crate-delight-forge-958291:5183632")
     implementation fg.deobf("curse.maven:storage-delight-forge-979761:5211383")
+
+    // need this one on for runData
+    // implementation fg.deobf("curse.maven:delightful-637529:4541459")
+    // need this one on for runClient
+    compileOnly(fg.deobf("curse.maven:delightful-637529:4541459"))
 
     implementation fg.deobf('software.bernie.geckolib:geckolib-forge-1.19:3.1.40')
     implementation fg.deobf("curse.maven:kawaii-dishes-694309:4644365")

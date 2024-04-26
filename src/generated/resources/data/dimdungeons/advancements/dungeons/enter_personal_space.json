@@ -1,0 +1,34 @@
+{
+  "parent": "turtleblockacademy:exploration_track",
+  "criteria": {
+    "entered_space": {
+      "conditions": {
+        "to": "dimdungeons:build_dimension"
+      },
+      "trigger": "minecraft:changed_dimension"
+    }
+  },
+  "display": {
+    "announce_to_chat": false,
+    "description": {
+      "translate": "advancements.dimdungeons.dungeons.enter_personal_space.description"
+    },
+    "frame": "task",
+    "hidden": true,
+    "icon": {
+      "item": "minecraft:glowstone"
+    },
+    "show_toast": false,
+    "title": {
+      "translate": "advancements.dimdungeons.dungeons.enter_personal_space.title"
+    }
+  },
+  "requirements": [
+    [
+      "entered_space"
+    ]
+  ],
+  "rewards": {
+    "function": "turtleblockacademy:set_apartment_stage"
+  }
+}

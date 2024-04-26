@@ -1,7 +1,6 @@
 package com.github.warrentode.turtleblockacademy.datagen.loot.tables;
 
 import com.catastrophe573.dimdungeons.item.ItemRegistrar;
-import com.github.warrentode.turtleblockacademy.datagen.loot.ModLootProviders;
 import com.github.warrentode.turtleblockacademy.loot.tables.DimDungeonLootTables;
 import com.github.warrentode.turtleblockacademy.loot.tables.KitchenLootTables;
 import com.github.warrentode.turtleblockacademy.loot.tables.LootbagLootTables;
@@ -32,6 +31,8 @@ import java.util.Objects;
 import java.util.function.BiConsumer;
 import java.util.function.Consumer;
 
+import static com.github.warrentode.turtleblockacademy.datagen.loot.ModLootProviders.*;
+
 
 public class LootbagLootTablesGen implements Consumer<BiConsumer<ResourceLocation, LootTable.Builder>> {
     @Override
@@ -57,6 +58,7 @@ public class LootbagLootTablesGen implements Consumer<BiConsumer<ResourceLocatio
                         .add(LootItem.lootTableItem(ItemRegistrar.ITEM_SECRET_BELL.get())
                                 .apply(SetNbtFunction.setTag(Util.make(new CompoundTag(),
                                         (tag) -> tag.putInt("upgrade", 2))))
+                                .when(STAGE_DUNGEONS)
                                 .when(LootItemRandomChanceCondition.randomChance(0.1F)))
                         .add(LootTableReference.lootTableReference(LootbagLootTables.LOOTBAG_CURRENCY))
                         .add(TagEntry.expandTag(PackTags.Items.LOOTBAG_SPECIAL_CURRENCY)
@@ -67,12 +69,16 @@ public class LootbagLootTablesGen implements Consumer<BiConsumer<ResourceLocatio
                                 .apply(SetItemCountFunction.setCount(UniformGenerator.between(3, 5))))
                         .add(LootTableReference.lootTableReference(PackBuiltInLootTables.DUNGEON_REWARDS))
                         .add(LootItem.lootTableItem(Cagerium.CAGE_BASE.get()).setWeight(1)
+                                .when(STAGE_APARTMENT)
                                 .when(LootItemRandomChanceCondition.randomChance(0.1F)))
                         .add(LootItem.lootTableItem(Cagerium.TERRARIUM_BASE.get()).setWeight(1)
+                                .when(STAGE_APARTMENT)
                                 .when(LootItemRandomChanceCondition.randomChance(0.1F)))
                         .add(LootItem.lootTableItem(Cagerium.PLATE_GEM.get()).setWeight(1)
+                                .when(STAGE_APARTMENT)
                                 .when(LootItemRandomChanceCondition.randomChance(0.1F)))
                         .add(LootItem.lootTableItem(Cagerium.CAGE_KEY.get()).setWeight(1)
+                                .when(STAGE_APARTMENT)
                                 .apply(SetItemCountFunction.setCount(UniformGenerator.between(3, 5)))
                                 .when(LootItemRandomChanceCondition.randomChance(0.1F)))
                 ));
@@ -80,13 +86,13 @@ public class LootbagLootTablesGen implements Consumer<BiConsumer<ResourceLocatio
                 .withPool(LootPool.lootPool().setRolls(ConstantValue.exactly(1))
                         .add(LootTableReference.lootTableReference(PackBuiltInLootTables.GEMS)
                                 .apply(SetItemCountFunction.setCount(UniformGenerator.between(3, 5))))
-                        .add(LootTableReference.lootTableReference(PackBuiltInLootTables.UFO).when(ModLootProviders.IN_END))
+                        .add(LootTableReference.lootTableReference(PackBuiltInLootTables.UFO).when(IN_END.or(STAGE_END).or(STAGE_AETHER)))
                 )
                 .withPool(LootPool.lootPool().setRolls(ConstantValue.exactly(1))
                         .add(LootItem.lootTableItem(TinkerWorld.rawCobalt)
                                 .when(LootItemRandomChanceCondition.randomChance(0.1F))
                                 .apply(SetItemCountFunction.setCount(UniformGenerator.between(1, 4))))
-                        .add(LootItem.lootTableItem(Objects.requireNonNull(TinkerFluids.blazingBlood.getBucket()))
+                        .add(LootItem.lootTableItem(Objects.requireNonNull(TinkerFluids.blazingBlood.getBucket())).when(STAGE_NETHER)
                                 .when(LootItemRandomChanceCondition.randomChance(0.1F))
                                 .apply(SetItemCountFunction.setCount(UniformGenerator.between(1, 4))))
                         .add(LootTableReference.lootTableReference(LootbagLootTables.ARTIFACTS_GIFTS)
@@ -100,18 +106,22 @@ public class LootbagLootTablesGen implements Consumer<BiConsumer<ResourceLocatio
                         .add(LootTableReference.lootTableReference(PackBuiltInLootTables.GEMS)
                                 .apply(SetItemCountFunction.setCount(UniformGenerator.between(3, 5))))
                         .add(LootItem.lootTableItem(ItemRegistrar.ITEM_BLANK_THEME_KEY.get()).setWeight(1)
+                                .when(STAGE_DUNGEONS)
                                 .when(LootItemRandomChanceCondition.randomChance(0.01F))
                                 .apply(SetNbtFunction.setTag(Util.make(new CompoundTag(),
                                         (tag) -> tag.putInt("theme", 3)))))
                         .add(LootItem.lootTableItem(ItemRegistrar.ITEM_BLANK_THEME_KEY.get()).setWeight(1)
+                                .when(STAGE_DUNGEONS)
                                 .when(LootItemRandomChanceCondition.randomChance(0.01F))
                                 .apply(SetNbtFunction.setTag(Util.make(new CompoundTag(),
                                         (tag) -> tag.putInt("theme", 4)))))
                         .add(LootItem.lootTableItem(ItemRegistrar.ITEM_BLANK_THEME_KEY.get()).setWeight(1)
+                                .when(STAGE_DUNGEONS)
                                 .when(LootItemRandomChanceCondition.randomChance(0.01F))
                                 .apply(SetNbtFunction.setTag(Util.make(new CompoundTag(),
                                         (tag) -> tag.putInt("theme", 5)))))
                         .add(LootItem.lootTableItem(ItemRegistrar.ITEM_BLANK_THEME_KEY.get()).setWeight(1)
+                                .when(STAGE_DUNGEONS)
                                 .when(LootItemRandomChanceCondition.randomChance(0.01F))
                                 .apply(SetNbtFunction.setTag(Util.make(new CompoundTag(),
                                         (tag) -> tag.putInt("theme", 6)))))
@@ -128,7 +138,7 @@ public class LootbagLootTablesGen implements Consumer<BiConsumer<ResourceLocatio
                         .add(TagEntry.expandTag(PackTags.Items.TRAPDOOR_PATTERNS))
                         .add(TagEntry.expandTag(PackTags.Items.BACKPACK_UPGRADES)
                                 .when(LootItemRandomChanceCondition.randomChance(0.05F)))
-                        .add(TagEntry.expandTag(PackTags.Items.SHULKER_BOXES).when(ModLootProviders.IN_END)
+                        .add(TagEntry.expandTag(PackTags.Items.SHULKER_BOXES).when(IN_END.or(STAGE_END))
                                 .when(LootItemRandomChanceCondition.randomChance(0.05F)))
                         .add(LootTableReference.lootTableReference(PackBuiltInLootTables.GIFTS)
                                 .when(LootItemRandomChanceCondition.randomChance(0.25F)))
@@ -426,22 +436,22 @@ public class LootbagLootTablesGen implements Consumer<BiConsumer<ResourceLocatio
                         .add(LootTableReference.lootTableReference(LootbagLootTables.LEGENDARY_BAG_DROP).setWeight(1).setQuality(6)
                                 .when(LootItemRandomChanceCondition.randomChance(0.01F)))
                         .add(LootTableReference.lootTableReference(LootbagLootTables.BIRTHDAY_BAG_DROP).setWeight(1)
-                                .setQuality(5).when(ModLootProviders.BIRTHDAY_EVENT)
+                                .setQuality(5).when(BIRTHDAY_EVENT)
                                 .when(LootItemRandomChanceCondition.randomChance(0.02F)))
                         .add(LootTableReference.lootTableReference(LootbagLootTables.HALLOWEEN_BAG_DROP).setWeight(1)
-                                .setQuality(5).when(ModLootProviders.HALLOWEEN_EVENT)
+                                .setQuality(5).when(HALLOWEEN_EVENT)
                                 .when(LootItemRandomChanceCondition.randomChance(0.02F)))
                         .add(LootTableReference.lootTableReference(LootbagLootTables.CHRISTMAS_BAG_DROP).setWeight(1)
-                                .setQuality(5).when(ModLootProviders.CHRISTMAS_EVENT)
+                                .setQuality(5).when(CHRISTMAS_EVENT)
                                 .when(LootItemRandomChanceCondition.randomChance(0.02F)))
                         .add(LootTableReference.lootTableReference(LootbagLootTables.ANNIVERSARY_BAG_DROP).setWeight(1)
-                                .setQuality(5).when(ModLootProviders.ANNIVERSARY_EVENT)
+                                .setQuality(5).when(ANNIVERSARY_EVENT)
                                 .when(LootItemRandomChanceCondition.randomChance(0.02F)))
                         .add(LootTableReference.lootTableReference(LootbagLootTables.EASTER_BAG_DROP).setWeight(1)
-                                .setQuality(5).when(ModLootProviders.EASTER_EVENT)
+                                .setQuality(5).when(EASTER_EVENT)
                                 .when(LootItemRandomChanceCondition.randomChance(0.02F)))
                         .add(LootTableReference.lootTableReference(LootbagLootTables.NEW_YEAR_BAG_DROP).setWeight(1)
-                                .setQuality(5).when(ModLootProviders.NEW_YEAR_EVENT)
+                                .setQuality(5).when(NEW_YEAR_EVENT)
                                 .when(LootItemRandomChanceCondition.randomChance(0.02F)))
                         .add(LootTableReference.lootTableReference(LootbagLootTables.EPIC_BAG_DROP).setWeight(2).setQuality(4)
                                 .when(LootItemRandomChanceCondition.randomChance(0.03F)))
@@ -452,10 +462,10 @@ public class LootbagLootTablesGen implements Consumer<BiConsumer<ResourceLocatio
                         .add(LootTableReference.lootTableReference(LootbagLootTables.UNCOMMON_BAG_DROP).setWeight(4).setQuality(2)
                                 .when(LootItemRandomChanceCondition.randomChance(0.05F)))
                         .add(LootTableReference.lootTableReference(LootbagLootTables.COMMON_BAG_DROP).setWeight(5).setQuality(1)
-                                .when(ModLootProviders.IN_MINING.or(ModLootProviders.UNDERGROUND))
+                                .when(IN_MINING.or(UNDERGROUND))
                                 .when(LootItemRandomChanceCondition.randomChance(0.06F)))
                         .add(LootTableReference.lootTableReference(LootbagLootTables.RATIONS_BAG_DROP).setWeight(5).setQuality(1)
-                                .when(ModLootProviders.IN_MINING.or(ModLootProviders.UNDERGROUND))
+                                .when(IN_MINING.or(UNDERGROUND))
                                 .when(LootItemRandomChanceCondition.randomChance(0.06F)))
                 ));
         consumer.accept(LootbagLootTables.END_MAP_SALE, LootTable.lootTable()

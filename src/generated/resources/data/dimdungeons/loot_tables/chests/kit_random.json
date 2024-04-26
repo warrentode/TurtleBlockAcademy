@@ -65,6 +65,9 @@
                   "predicate": {
                     "dimension": "dimdungeons:dungeon_dimension"
                   }
+                }, {
+                  "condition": "turtleblockacademy:gamestage_condition",
+                  "stage": "false"
                 }
               ]
             }
@@ -92,6 +95,9 @@
                   }
                 },
                 {
+                  "condition": "turtleblockacademy:gamestage_condition",
+                  "stage": "false"
+                }, {
                   "condition": "minecraft:location_check",
                   "predicate": {
                     "dimension": "dimdungeons:dungeon_dimension"
@@ -115,6 +121,9 @@
                   }
                 },
                 {
+                  "condition": "turtleblockacademy:gamestage_condition",
+                  "stage": "false"
+                }, {
                   "condition": "minecraft:location_check",
                   "predicate": {
                     "dimension": "dimdungeons:dungeon_dimension"
@@ -138,6 +147,9 @@
                   }
                 },
                 {
+                  "condition": "turtleblockacademy:gamestage_condition",
+                  "stage": "false"
+                }, {
                   "condition": "minecraft:location_check",
                   "predicate": {
                     "dimension": "dimdungeons:dungeon_dimension"
@@ -165,6 +177,9 @@
                   }
                 },
                 {
+                  "condition": "turtleblockacademy:gamestage_condition",
+                  "stage": "false"
+                }, {
                   "condition": "minecraft:location_check",
                   "predicate": {
                     "dimension": "dimdungeons:dungeon_dimension"
@@ -196,6 +211,9 @@
                   "predicate": {
                     "dimension": "dimdungeons:dungeon_dimension"
                   }
+                }, {
+                  "condition": "turtleblockacademy:gamestage_condition",
+                  "stage": "false"
                 }
               ]
             }

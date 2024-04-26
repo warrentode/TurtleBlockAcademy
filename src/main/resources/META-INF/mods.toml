@@ -133,7 +133,7 @@ ordering = "NONE"
 side = "BOTH"
 [[dependencies.${ mod_id }]]
 modId = "delightful"
-mandatory = true
+mandatory = false
 versionRange = "[3.3,)"
 ordering = "NONE"
 side = "BOTH"
@@ -433,5 +433,18 @@ side = "BOTH"
 modId = "villagersplus"
 mandatory = true
 versionRange = "[1.2,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.${ mod_id }]]
+modId = "bookshelf"
+mandatory = true
+versionRange = "[16.3.20,)"
+ordering = "NONE"
+side = "BOTH"
+[[dependencies.${ mod_id }]]
+modId = "gamestages"
+mandatory = true
+versionRange = "[11.1.5,)"
 ordering = "NONE"
 side = "BOTH"

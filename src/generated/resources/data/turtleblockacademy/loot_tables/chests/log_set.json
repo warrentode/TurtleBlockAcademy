@@ -293,10 +293,8 @@
                   "predicate": {}
                 },
                 {
-                  "condition": "minecraft:location_check",
-                  "predicate": {
-                    "dimension": "minecraft:the_nether"
-                  }
+                  "condition": "turtleblockacademy:gamestage_condition",
+                  "stage": "false"
                 }
               ]
             }
@@ -337,10 +335,8 @@
                   "predicate": {}
                 },
                 {
-                  "condition": "minecraft:location_check",
-                  "predicate": {
-                    "dimension": "minecraft:the_nether"
-                  }
+                  "condition": "turtleblockacademy:gamestage_condition",
+                  "stage": "false"
                 }
               ]
             }
@@ -761,10 +757,8 @@
                   "predicate": {}
                 },
                 {
-                  "condition": "minecraft:location_check",
-                  "predicate": {
-                    "dimension": "minecraft:the_nether"
-                  }
+                  "condition": "turtleblockacademy:gamestage_condition",
+                  "stage": "false"
                 }
               ]
             }
@@ -957,10 +951,8 @@
                   "predicate": {}
                 },
                 {
-                  "condition": "minecraft:location_check",
-                  "predicate": {
-                    "dimension": "minecraft:the_end"
-                  }
+                  "condition": "turtleblockacademy:gamestage_condition",
+                  "stage": "false"
                 }
               ]
             }
@@ -1001,10 +993,8 @@
                   "predicate": {}
                 },
                 {
-                  "condition": "minecraft:location_check",
-                  "predicate": {
-                    "dimension": "minecraft:the_end"
-                  }
+                  "condition": "turtleblockacademy:gamestage_condition",
+                  "stage": "false"
                 }
               ]
             }
@@ -1045,10 +1035,8 @@
                   "predicate": {}
                 },
                 {
-                  "condition": "minecraft:location_check",
-                  "predicate": {
-                    "dimension": "minecraft:the_end"
-                  }
+                  "condition": "turtleblockacademy:gamestage_condition",
+                  "stage": "false"
                 }
               ]
             }
@@ -1089,10 +1077,8 @@
                   "predicate": {}
                 },
                 {
-                  "condition": "minecraft:location_check",
-                  "predicate": {
-                    "dimension": "minecraft:the_end"
-                  }
+                  "condition": "turtleblockacademy:gamestage_condition",
+                  "stage": "false"
                 }
               ]
             }
@@ -1133,10 +1119,8 @@
                   "predicate": {}
                 },
                 {
-                  "condition": "minecraft:location_check",
-                  "predicate": {
-                    "dimension": "aether:the_aether"
-                  }
+                  "condition": "turtleblockacademy:gamestage_condition",
+                  "stage": "false"
                 }
               ]
             }
@@ -1177,10 +1161,8 @@
                   "predicate": {}
                 },
                 {
-                  "condition": "minecraft:location_check",
-                  "predicate": {
-                    "dimension": "aether:the_aether"
-                  }
+                  "condition": "turtleblockacademy:gamestage_condition",
+                  "stage": "false"
                 }
               ]
             }

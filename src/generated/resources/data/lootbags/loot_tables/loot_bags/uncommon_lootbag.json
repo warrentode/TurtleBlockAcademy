@@ -37,10 +37,18 @@
           "type": "minecraft:tag",
           "conditions": [
             {
-              "condition": "minecraft:location_check",
-              "predicate": {
-                "dimension": "minecraft:the_end"
-              }
+              "condition": "minecraft:alternative",
+              "terms": [
+                {
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                    "dimension": "minecraft:the_end"
+                  }
+                }, {
+                  "condition": "turtleblockacademy:gamestage_condition",
+                  "stage": "false"
+                }
+              ]
             },
             {
               "chance": 0.05,

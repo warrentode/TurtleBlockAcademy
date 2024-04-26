@@ -2,7 +2,9 @@ package com.github.warrentode.turtleblockacademy.datagen.advancements;
 
 import biomesoplenty.api.biome.BOPBiomes;
 import com.aetherteam.aether.data.resources.registries.AetherBiomes;
+import com.aetherteam.aether.data.resources.registries.AetherDimensions;
 import com.aetherteam.aether.item.AetherItems;
+import com.catastrophe573.dimdungeons.DimDungeons;
 import com.github.warrentode.turtleblockacademy.TurtleBlockAcademy;
 import com.github.warrentode.turtleblockacademy.blocks.ModBlocks;
 import com.github.warrentode.turtleblockacademy.util.PackTags;
@@ -23,8 +25,10 @@ import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.ItemLike;
+import net.minecraft.world.level.Level;
 import net.minecraft.world.level.biome.Biome;
 import net.minecraft.world.level.biome.Biomes;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import org.jetbrains.annotations.Contract;
 import org.jetbrains.annotations.NotNull;
@@ -165,6 +169,54 @@ public class AcademyAdvancementsGen extends AdvancementProvider {
                     .addCriterion("tick", new PlayerTrigger.TriggerInstance(CriteriaTriggers.TICK.getId(),
                             EntityPredicate.Composite.ANY))
                     .save(consumer, getPath(MODID, "exploration_track"));
+
+            Advancement enteredNether = Advancement.Builder.advancement()
+                    .parent(exploration_track)
+                    .display(Items.FLINT_AND_STEEL,
+                            Component.translatable("advancements.story.enter_the_nether.title"),
+                            Component.translatable("advancements.story.enter_the_nether.description"),
+                            null, FrameType.TASK, false, false, true)
+                    .addCriterion("entered_nether", net.minecraft.advancements.critereon.ChangeDimensionTrigger.TriggerInstance.changedDimensionTo(Level.NETHER))
+                    .rewards(AdvancementRewards.Builder.function(new ResourceLocation("turtleblockacademy:set_nether_stage")))
+                    .save(consumer, getPath("minecraft", "story/enter_the_nether"));
+
+            Advancement enteredEnd = Advancement.Builder.advancement()
+                    .parent(exploration_track)
+                    .display(Blocks.END_STONE, Component.translatable("advancements.story.enter_the_end.title"), Component.translatable("advancements.story.enter_the_end.description"),
+                            null, FrameType.TASK, false, false, true)
+                    .addCriterion("entered_end", net.minecraft.advancements.critereon.ChangeDimensionTrigger.TriggerInstance.changedDimensionTo(Level.END))
+                    .rewards(AdvancementRewards.Builder.function(new ResourceLocation("turtleblockacademy:set_end_stage")))
+                    .save(consumer, getPath("minecraft", "story/enter_the_end"));
+
+            Advancement enteredAether = Advancement.Builder.advancement()
+                    .parent(exploration_track)
+                    .display(Blocks.GLOWSTONE,
+                            Component.translatable("advancement.aether.enter_aether"),
+                            Component.translatable("advancement.aether.enter_aether.desc"),
+                            null, FrameType.TASK, false, false, true)
+                    .addCriterion("enter_aether", net.minecraft.advancements.critereon.ChangeDimensionTrigger.TriggerInstance.changedDimensionTo(AetherDimensions.AETHER_LEVEL))
+                    .rewards(AdvancementRewards.Builder.function(new ResourceLocation("turtleblockacademy:set_aether_stage")))
+                    .save(consumer, getPath("aether", "enter_aether"));
+
+            Advancement enteredPersonalSpace = Advancement.Builder.advancement()
+                    .parent(exploration_track)
+                    .display(Blocks.GLOWSTONE,
+                            Component.translatable("advancements.dimdungeons.dungeons.enter_personal_space.title"),
+                            Component.translatable("advancements.dimdungeons.dungeons.enter_personal_space.description"),
+                            null, FrameType.TASK, false, false, true)
+                    .addCriterion("entered_space", net.minecraft.advancements.critereon.ChangeDimensionTrigger.TriggerInstance.changedDimensionTo(DimDungeons.BUILD_DIMENSION))
+                    .rewards(AdvancementRewards.Builder.function(new ResourceLocation("turtleblockacademy:set_apartment_stage")))
+                    .save(consumer, getPath("dimdungeons", "dungeons/enter_personal_space"));
+
+            Advancement enteredDungeons = Advancement.Builder.advancement()
+                    .parent(exploration_track)
+                    .display(Blocks.GLOWSTONE,
+                            Component.translatable("advancements.dimdungeons.dungeons.enter_basic_dungeon.title"),
+                            Component.translatable("advancements.dimdungeons.dungeons.enter_basic_dungeon.description"),
+                            null, FrameType.TASK, false, false, true)
+                    .addCriterion("entered_dungeon", net.minecraft.advancements.critereon.ChangeDimensionTrigger.TriggerInstance.changedDimensionTo(DimDungeons.DUNGEON_DIMENSION))
+                    .rewards(AdvancementRewards.Builder.function(new ResourceLocation("turtleblockacademy:set_dungeons_stage")))
+                    .save(consumer, getPath("dimdungeons", "dungeons/enter_basic_dungeon"));
 
             Advancement explore_overworld = addBiomes(Advancement.Builder.advancement(), EXPLORABLE_OVERWORLD_BIOMES)
                     .parent(exploration_track).display(Items.DIAMOND_BOOTS,

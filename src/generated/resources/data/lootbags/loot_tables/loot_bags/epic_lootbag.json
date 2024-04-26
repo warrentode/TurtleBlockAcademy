@@ -23,10 +23,21 @@
           "type": "minecraft:loot_table",
           "conditions": [
             {
-              "condition": "minecraft:location_check",
-              "predicate": {
-                "dimension": "minecraft:the_end"
-              }
+              "condition": "minecraft:alternative",
+              "terms": [
+                {
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                    "dimension": "minecraft:the_end"
+                  }
+                }, {
+                  "condition": "turtleblockacademy:gamestage_condition",
+                  "stage": "false"
+                }, {
+                  "condition": "turtleblockacademy:gamestage_condition",
+                  "stage": "false"
+                }
+              ]
             }
           ],
           "name": "turtleblockacademy:chests/ufo"
@@ -62,6 +73,9 @@
           "type": "minecraft:item",
           "conditions": [
             {
+              "condition": "turtleblockacademy:gamestage_condition",
+              "stage": "false"
+            }, {
               "chance": 0.1,
               "condition": "minecraft:random_chance"
             }

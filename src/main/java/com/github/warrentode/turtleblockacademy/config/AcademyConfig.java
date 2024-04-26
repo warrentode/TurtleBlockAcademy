@@ -31,6 +31,4 @@ public class AcademyConfig {
             return ACADEMIC_YEAR.get();
         }
     }
-
-
 }
