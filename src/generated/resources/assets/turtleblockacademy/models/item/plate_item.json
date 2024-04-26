@@ -1,8 +1,0 @@
-{
-  "parent": "turtleblockacademy:item/plate",
-  "textures": {
-    "1": "minecraft:block/chiseled_quartz_block",
-    "2": "minecraft:block/quartz_block_bottom",
-    "3": "minecraft:block/quartz_pillar_top"
-  }
-}
