@@ -5,7 +5,7 @@
       "conditions": {
         "items": [
           {
-            "tag": "forge:ingredients/cooked_chicken"
+            "tag": "forge:ingredients/raw_chicken"
           }
         ]
       },

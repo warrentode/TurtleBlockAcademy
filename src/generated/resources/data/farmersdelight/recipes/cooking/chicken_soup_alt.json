@@ -4,7 +4,7 @@
   "experience": 1.0,
   "ingredients": [
     {
-      "tag": "forge:ingredients/cooked_chicken"
+      "tag": "forge:ingredients/raw_chicken"
     }, {
       "item": "minecraft:carrot"
     }, {

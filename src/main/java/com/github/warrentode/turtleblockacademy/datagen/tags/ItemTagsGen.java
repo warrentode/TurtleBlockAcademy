@@ -962,6 +962,9 @@ public class ItemTagsGen extends ItemTagsProvider {
                 .addOptional(com.mcwtrpdoors.kikoz.init.ItemInit.PRINT_SWAMP.getId())
                 .addOptional(com.mcwtrpdoors.kikoz.init.ItemInit.PRINT_MYSTIC.getId())
                 .addOptional(com.mcwtrpdoors.kikoz.init.ItemInit.PRINT_BAMBOO.getId());
+        tag(PackTags.Items.RAW_CHICKEN)
+                .add(Items.CHICKEN)
+                .addOptional(ModItems.CHICKEN_CUTS.getId());
         tag(PackTags.Items.COOKED_CHICKEN)
                 .add(Items.COOKED_CHICKEN)
                 .addOptional(ModItems.COOKED_CHICKEN_CUTS.getId());

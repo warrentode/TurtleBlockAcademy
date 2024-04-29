@@ -156,6 +156,7 @@ public class PackTags {
         public static final TagKey<Item> SPICES = packItemTag("forge", "ingredients/spices");
         public static final TagKey<Item> CHEESE_SLICES = packItemTag("forge", "ingredients/cheese_slices");
         public static final TagKey<Item> BREAD = packItemTag("forge", "ingredients/bread");
+        public static final TagKey<Item> RAW_CHICKEN = packItemTag("forge", "ingredients/raw_chicken");
         public static final TagKey<Item> COOKED_CHICKEN = packItemTag("forge", "ingredients/cooked_chicken");
         public static final TagKey<Item> COOKED_MUTTON = packItemTag("forge", "ingredients/cooked_mutton");
         public static final TagKey<Item> SWEETENED_CHUNK = packItemTag("rottenleather", "sweetened_chunk");
