@@ -1,0 +1,11 @@
+{
+  "type": "patchouli:shapeless_book_recipe",
+  "ingredients": [
+    {
+      "item": "minecraft:glass_bottle"
+    }, {
+      "item": "minecraft:book"
+    }
+  ],
+  "book": "turtleblockacademy:brewingguide"
+}

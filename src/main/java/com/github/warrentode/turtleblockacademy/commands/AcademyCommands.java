@@ -25,8 +25,10 @@ public class AcademyCommands {
                                 .then(Commands.argument("targets", EntityArgument.players())
                                         .then(Commands.literal("studentCard")
                                                 .executes(AcademyCommands::giveStudentCard))
-                                        .then(Commands.literal("awardCertificate")
-                                                .executes(AcademyCommands::giveAwardCertificate))
+                                        .then(Commands.literal("awardGenericCertificate")
+                                                .executes(AcademyCommands::giveAwardGenericCertificate))
+                                        .then(Commands.literal("awardKitchenCertificate")
+                                                .executes(AcademyCommands::giveAwardKitchenCertificate))
                                 )
                         ));
     }
@@ -38,35 +40,60 @@ public class AcademyCommands {
         ItemStack newCard = new ItemStack(ModItems.STUDENT_CARD.get());
 
         if (serverPlayer.getMainHandItem().isEmpty()) {
-            serverPlayer.setItemInHand(InteractionHand.MAIN_HAND, addTags(serverPlayer, newCard));
+            serverPlayer.setItemInHand(InteractionHand.MAIN_HAND, addBasicTags(serverPlayer, newCard));
         }
-        else if (!serverPlayer.addItem(addTags(serverPlayer, newCard))) {
-            serverPlayer.drop(addTags(serverPlayer, newCard), false);
+        else if (!serverPlayer.addItem(addBasicTags(serverPlayer, newCard))) {
+            serverPlayer.drop(addBasicTags(serverPlayer, newCard), false);
         }
 
         return 0;
     }
 
     @SuppressWarnings("SameReturnValue")
-    private static int giveAwardCertificate(@NotNull CommandContext<CommandSourceStack> context)
+    private static int giveAwardGenericCertificate(@NotNull CommandContext<CommandSourceStack> context)
             throws CommandSyntaxException {
         ServerPlayer serverPlayer = context.getSource().getPlayerOrException();
 
         ItemStack newCertificate = new ItemStack(ModBlocks.CERTIFICATE_BLOCK.get().asItem());
 
         if (serverPlayer.getMainHandItem().isEmpty()) {
-            serverPlayer.setItemInHand(InteractionHand.MAIN_HAND, addTags(serverPlayer, newCertificate));
+            serverPlayer.setItemInHand(InteractionHand.MAIN_HAND, addBasicTags(serverPlayer, newCertificate));
         }
-        else if (!serverPlayer.addItem(addTags(serverPlayer, newCertificate))) {
-            serverPlayer.drop(addTags(serverPlayer, newCertificate), false);
+        else if (!serverPlayer.addItem(addBasicTags(serverPlayer, newCertificate))) {
+            serverPlayer.drop(addBasicTags(serverPlayer, newCertificate), false);
+        }
+
+        return 0;
+    }
+
+    @SuppressWarnings("SameReturnValue")
+    private static int giveAwardKitchenCertificate(@NotNull CommandContext<CommandSourceStack> context)
+            throws CommandSyntaxException {
+        ServerPlayer serverPlayer = context.getSource().getPlayerOrException();
+
+        ItemStack newCertificate = new ItemStack(ModBlocks.CERTIFICATE_BLOCK.get().asItem());
+
+        if (serverPlayer.getMainHandItem().isEmpty()) {
+            serverPlayer.setItemInHand(InteractionHand.MAIN_HAND, addKitchenTags(serverPlayer, newCertificate));
+        }
+        else if (!serverPlayer.addItem(addKitchenTags(serverPlayer, newCertificate))) {
+            serverPlayer.drop(addKitchenTags(serverPlayer, newCertificate), false);
         }
 
         return 0;
     }
 
     @Contract("_, _ -> param2")
-    private static @NotNull ItemStack addTags(ServerPlayer serverPlayer, @NotNull ItemStack stack) {
+    private static @NotNull ItemStack addBasicTags(ServerPlayer serverPlayer, @NotNull ItemStack stack) {
         final CompoundTag tag = stack.getOrCreateTag();
+        tag.putString(AcademyUtil.ACADEMIC_NAME_KEY, AcademyUtil.getAcademicStudent(serverPlayer));
+        tag.putString(AcademyUtil.ACADEMIC_YEAR_KEY, AcademyUtil.getAcademicYear());
+        return stack;
+    }
+
+    private static @NotNull ItemStack addKitchenTags(ServerPlayer serverPlayer, @NotNull ItemStack stack) {
+        final CompoundTag tag = stack.getOrCreateTag();
+        tag.putString(AcademyUtil.ACADEMIC_SUBJECT_KEY, "Kitchen Unit Study");
         tag.putString(AcademyUtil.ACADEMIC_NAME_KEY, AcademyUtil.getAcademicStudent(serverPlayer));
         tag.putString(AcademyUtil.ACADEMIC_YEAR_KEY, AcademyUtil.getAcademicYear());
         return stack;

@@ -1,1 +1,1 @@
-execute as @s at @s run academy give @s awardCertificate
+execute as @s at @s run academy give @s awardGenericCertificate

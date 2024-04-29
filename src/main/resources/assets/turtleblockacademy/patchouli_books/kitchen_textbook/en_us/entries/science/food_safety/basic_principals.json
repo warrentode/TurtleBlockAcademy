@@ -6,7 +6,7 @@
   "pages": [
     {
       "type": "patchouli:text",
-      "text": "$(l)The Four Basic Principals$()$(p)$(li)CLEAN$(li)SEPARATE$(li)COOK$(li)CHILL$()$(p)References:$(p)$(l:https://https://www.fsis.usda.gov/food-safety/safe-food-handling-and-preparation/food-safety-basics/steps-keep-food-safe)Keep Food Safe! Food Safety Basics$(/l)"
+      "text": "$(l)The Four Basic Principals$()$(p)$(li)CLEAN$(li)SEPARATE$(li)COOK$(li)CHILL$()$(p)$(l:https://youtu.be/nGKv7l3saK4?si=QJyiXHSXeqEWnEcR)Food Safety 101 Video$(/l)$(p)$(l:https://https://www.fsis.usda.gov/food-safety/safe-food-handling-and-preparation/food-safety-basics/steps-keep-food-safe)Keep Food Safe! Food Safety Basics$(/l)"
     }, {
       "type": "patchouli:text",
       "text": "$(l)CLEAN$()$(p)Wash your hands before, during, and after handling food.$(p)For example, this means washing your hands after touching meat before switching over to prepping vegetables."

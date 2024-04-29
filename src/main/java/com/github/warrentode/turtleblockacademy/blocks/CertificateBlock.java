@@ -107,10 +107,21 @@ public class CertificateBlock extends Block {
 
     @Override
     public void appendHoverText(@NotNull ItemStack stack, @Nullable BlockGetter getter, @NotNull List<Component> tooltips, @NotNull TooltipFlag flag) {
-        if (stack.getTag() != null && !stack.getTag().getString(AcademyUtil.ACADEMIC_NAME_KEY).isEmpty() && !stack.getTag().getString(AcademyUtil.ACADEMIC_YEAR_KEY).isEmpty()) {
+        if (stack.getTag() != null && !stack.getTag().getString(AcademyUtil.ACADEMIC_NAME_KEY).isEmpty()
+                && !stack.getTag().getString(AcademyUtil.ACADEMIC_YEAR_KEY).isEmpty()
+                && stack.getTag().getString(AcademyUtil.ACADEMIC_SUBJECT_KEY).isEmpty()) {
             String academicNameTag = stack.getTag().getString(AcademyUtil.ACADEMIC_NAME_KEY);
             String academicYearTag = stack.getTag().getString(AcademyUtil.ACADEMIC_YEAR_KEY);
             tooltips.add(Component.literal(academicNameTag + " " + academicYearTag)
+                    .withStyle(ChatFormatting.GOLD).withStyle(ChatFormatting.BOLD));
+        }
+        else if (stack.getTag() != null && !stack.getTag().getString(AcademyUtil.ACADEMIC_NAME_KEY).isEmpty()
+                && !stack.getTag().getString(AcademyUtil.ACADEMIC_YEAR_KEY).isEmpty()
+                && !stack.getTag().getString(AcademyUtil.ACADEMIC_SUBJECT_KEY).isEmpty()) {
+            String academicSubjectTag = stack.getTag().getString(AcademyUtil.ACADEMIC_SUBJECT_KEY);
+            String academicNameTag = stack.getTag().getString(AcademyUtil.ACADEMIC_NAME_KEY);
+            String academicYearTag = stack.getTag().getString(AcademyUtil.ACADEMIC_YEAR_KEY);
+            tooltips.add(Component.literal(academicSubjectTag + " " + academicNameTag + " " + academicYearTag)
                     .withStyle(ChatFormatting.GOLD).withStyle(ChatFormatting.BOLD));
         }
         else {

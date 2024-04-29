@@ -1,0 +1,12 @@
+{
+  "name": "Basic Principals",
+  "sortnum": 4,
+  "icon": "minecraft:writable_book",
+  "category": "turtleblockacademy:food_safety",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Speak to Principal Herobrine for a quick quiz to complete this chapter of the unit study."
+    }
+  ]
+}

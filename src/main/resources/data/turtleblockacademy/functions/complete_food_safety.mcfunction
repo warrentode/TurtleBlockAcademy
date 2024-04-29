@@ -1,0 +1,1 @@
+execute as @s at @s run advancement grant @s only turtleblockacademy:education/complete_food_safety

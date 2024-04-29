@@ -45,6 +45,7 @@ import java.util.Set;
 import java.util.function.Consumer;
 
 import static com.catastrophe573.dimdungeons.item.ItemRegistrar.*;
+import static com.github.Pandarix.beautify.core.init.ItemInit.BOOKSTACK_ITEM;
 import static com.github.warrentode.turtleblockacademy.TurtleBlockAcademy.MODID;
 import static de.maxhenkel.miningdimension.Main.MINING_DIMENSION;
 
@@ -291,6 +292,23 @@ public class AcademyAdvancementsGen extends AdvancementProvider {
                                     .build())
                     .rewards(AdvancementRewards.Builder.function(new ResourceLocation("turtleblockacademy:add_belt_slot")))
                     .requirements(RequirementsStrategy.OR).save(consumer, getPath("curios", "equip_quiver"));
+
+            Advancement education_track = createAdvancement(root, BOOKSTACK_ITEM.get(),
+                    "education_track",
+                    FrameType.GOAL, false, false, false)
+                    .addCriterion("tick", new PlayerTrigger.TriggerInstance(CriteriaTriggers.TICK.getId(),
+                            EntityPredicate.Composite.ANY))
+                    .save(consumer, getPath(MODID, "education_track"));
+
+            Advancement completeFoodSafety = Advancement.Builder.advancement()
+                    .parent(education_track)
+                    .display(ModBlocks.CERTIFICATE_BLOCK.get(),
+                            Component.translatable("advancement." + MODID + "." + "complete_food_safety"),
+                            Component.translatable("advancement." + MODID + "." + "complete_food_safety.desc"),
+                            null, FrameType.TASK, false, false, false)
+                    .addCriterion("completed_food_safety", net.minecraft.advancements.critereon.ChangeDimensionTrigger.TriggerInstance.changedDimensionTo(MINING_DIMENSION))
+                    .rewards(AdvancementRewards.Builder.function(new ResourceLocation("turtleblockacademy:give_kitchen_certificate")))
+                    .save(consumer, getPath(MODID, "education/complete_food_safety"));
         }
 
         @SuppressWarnings("SameParameterValue")

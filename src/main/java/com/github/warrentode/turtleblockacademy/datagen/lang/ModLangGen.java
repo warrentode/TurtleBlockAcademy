@@ -54,6 +54,8 @@ public class ModLangGen extends LanguageProvider {
         fillAdvancementKeys("equip_light_source", "Let There Be Light", "Equip a Light Source");
         fillAdvancementKeys("equip_wallet", "Cash on Hand", "Equip a Wallet");
         fillAdvancementKeys("equip_quiver", "An Archer's Best Friend", "Equip a Quiver");
+
+        fillAdvancementKeys("complete_food_safety", "Food Safety", "Learn the Basics");
     }
 
     private void fillAdvancementKeys(String name, String title, String subtitle) {

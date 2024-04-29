@@ -1,0 +1,29 @@
+{
+  "parent": "turtleblockacademy:root",
+  "criteria": {
+    "tick": {
+      "conditions": {},
+      "trigger": "minecraft:tick"
+    }
+  },
+  "display": {
+    "announce_to_chat": false,
+    "description": {
+      "translate": "advancement.turtleblockacademy.education_track.desc"
+    },
+    "frame": "goal",
+    "hidden": false,
+    "icon": {
+      "item": "beautify:bookstack"
+    },
+    "show_toast": false,
+    "title": {
+      "translate": "advancement.turtleblockacademy.education_track"
+    }
+  },
+  "requirements": [
+    [
+      "tick"
+    ]
+  ]
+}

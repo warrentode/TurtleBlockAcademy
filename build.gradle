@@ -159,11 +159,12 @@ dependencies {
     implementation fg.deobf("curse.maven:decoration-delight-687475:4689700")
     implementation fg.deobf("curse.maven:crate-delight-forge-958291:5183632")
     implementation fg.deobf("curse.maven:storage-delight-forge-979761:5211383")
+    implementation fg.deobf("curse.maven:miners-delight-plus-689630:4738272")
 
     // need this one on for runData
-    // implementation fg.deobf("curse.maven:delightful-637529:4541459")
+    implementation fg.deobf("curse.maven:delightful-637529:4541459")
     // need this one on for runClient
-    compileOnly(fg.deobf("curse.maven:delightful-637529:4541459"))
+    // compileOnly(fg.deobf("curse.maven:delightful-637529:4541459"))
 
     implementation fg.deobf('software.bernie.geckolib:geckolib-forge-1.19:3.1.40')
     implementation fg.deobf("curse.maven:kawaii-dishes-694309:4644365")
@@ -202,7 +203,6 @@ dependencies {
     implementation fg.deobf("curse.maven:guard-villagers-360203:4701400")
     implementation fg.deobf("curse.maven:beautify-decorate-633252:4036351")
     implementation fg.deobf("curse.maven:villagersplus-forge-817272:4370425")
-    implementation fg.deobf("curse.maven:easy-npc-559312:5274087")
 
     // tinker mod set
     implementation fg.deobf("curse.maven:mantle-74924:5245271")

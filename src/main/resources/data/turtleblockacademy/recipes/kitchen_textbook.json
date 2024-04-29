@@ -1,0 +1,11 @@
+{
+  "type": "patchouli:shapeless_book_recipe",
+  "ingredients": [
+    {
+      "item": "minecraft:egg"
+    }, {
+      "item": "minecraft:book"
+    }
+  ],
+  "book": "turtleblockacademy:brewingguide"
+}
