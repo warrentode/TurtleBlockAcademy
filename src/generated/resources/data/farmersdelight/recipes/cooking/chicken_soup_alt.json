@@ -1,10 +1,7 @@
 {
   "type": "farmersdelight:cooking",
-  "container": {
-    "item": "aether:skyroot_stick"
-  },
   "cookingtime": 200,
-  "experience": 0.35,
+  "experience": 1.0,
   "ingredients": [
     {
       "tag": "forge:ingredients/cooked_chicken"

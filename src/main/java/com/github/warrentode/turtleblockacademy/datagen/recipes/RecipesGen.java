@@ -1152,7 +1152,7 @@ public class RecipesGen extends RecipeProvider implements IConditionBuilder {
         ConditionalRecipe.builder()
                 .addCondition(modLoaded("farmersdelight"))
                 .addRecipe(finishedRecipeConsumer ->
-                        CookingPotRecipeBuilder.cookingPotRecipe(CHICKEN_SOUP.get(), 1, 200, 0.35F, AetherItems.SKYROOT_STICK.get())
+                        CookingPotRecipeBuilder.cookingPotRecipe(CHICKEN_SOUP.get(), 1, 200, 1.0F)
                                 .addIngredient(Ingredient.of(PackTags.Items.COOKED_CHICKEN))
                                 .addIngredient(Ingredient.of(Items.CARROT))
                                 .addIngredient(Ingredient.of(PackTags.Items.VEGETABLES))
