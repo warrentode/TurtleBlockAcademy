@@ -541,6 +541,8 @@ public class ItemTagsGen extends ItemTagsProvider {
                 .addOptional(AetherItems.BLUE_BERRY.getId())
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("wildberries:blueberries")));
         tag(PackTags.Items.GREENS)
+                .add(Items.DRIED_KELP)
+                .add(Items.KELP)
                 .add(Items.SEAGRASS)
                 .addTag(PackTags.Items.CABBAGE)
                 .addTag(PackTags.Items.CACTUS)
