@@ -1,5 +1,5 @@
 {
-  "parent": "curios:equip_wallet",
+  "parent": "turtleblockacademy:curios_track",
   "criteria": {
     "equip_quiver": {
       "conditions": {
@@ -39,6 +39,6 @@
     ]
   ],
   "rewards": {
-    "experience": 500
+    "function": "turtleblockacademy:add_belt_slot"
   }
 }

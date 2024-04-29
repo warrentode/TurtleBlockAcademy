@@ -1,0 +1,25 @@
+{
+  "modId": "recruits",
+  "group": {
+    "name": "Villager Recruit Blocks",
+    "enabledByDefault": true,
+    "defaultPayment": {
+      "item": "todecoins:emerald_quarter_bank_note",
+      "count": 1
+    },
+    "defaultCategory": "auto"
+  },
+  "customEntries": [
+    {
+      "output": {
+        "item": "recruits:recruit_block",
+        "count": 1
+      }
+    }, {
+      "output": {
+        "item": "recruits:recruit_shield_block",
+        "count": 1
+      }
+    }
+  ]
+}

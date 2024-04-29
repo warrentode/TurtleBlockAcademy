@@ -1,0 +1,18 @@
+{
+  "criteria": {
+    "tick": {
+      "conditions": {},
+      "trigger": "minecraft:tick"
+    }
+  },
+  "requirements": [
+    [
+      "tick"
+    ]
+  ],
+  "rewards": {
+    "loot": [
+      "turtleblockacademy:advancements/loot_tables/give_brewing_guide"
+    ]
+  }
+}

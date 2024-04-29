@@ -66,7 +66,11 @@ public class PackTags {
         public static final TagKey<Item> STONE_TILE = packItemTag("supplementaries", "stone_tile");
         public static final TagKey<Item> BLACKSTONE_TILE = packItemTag("supplementaries", "blackstone_tile");
         public static final TagKey<Item> LAPIS_BRICKS = packItemTag("supplementaries", "lapis_bricks");
-        public static final TagKey<Item> ASH_BRICKS = packItemTag("supplementaries", "lapis_bricks");
+        public static final TagKey<Item> ASH_BRICKS = packItemTag("supplementaries", "ash_bricks");
+
+        public static final TagKey<Item> BRICK = packItemTag(MODID, "brick");
+        public static final TagKey<Item> WATER_BUCKETS = packItemTag(MODID, "water_buckets");
+        public static final TagKey<Item> STICKS = packItemTag(MODID, "sticks");
 
         public static final TagKey<Item> BACKPACKS = packItemTag(MODID, "backpacks");
 
@@ -87,10 +91,13 @@ public class PackTags {
 
         public static final TagKey<Item> IRON_NUGGET = packItemTag("forge", "nuggets/iron");
         public static final TagKey<Item> IRON_INGOT = packItemTag("forge", "ingots/iron");
+
+        public static final TagKey<Item> COPPER_INGOT = packItemTag("forge", "ingots/copper");
+
         public static final TagKey<Item> GOLD_NUGGET = packItemTag("forge", "nuggets/gold");
 
         public static final TagKey<Item> WALLS = packItemTag(MODID, "walls");
-        public static final TagKey<Item> LANTERNS = packItemTag(MODID, "lanterns");
+        public static final TagKey<Item> LANTERNS = packItemTag("workshop_for_handsome_adventurer", "lanterns");
         public static final TagKey<Item> CURIO_LIGHT_SOURCE = packItemTag(MODID, "curio_light_source");
 
         public static final TagKey<Item> SHULKER_BOXES = packItemTag(MODID, "shulker_boxes");

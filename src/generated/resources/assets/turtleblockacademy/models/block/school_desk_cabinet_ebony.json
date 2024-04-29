@@ -3,6 +3,7 @@
   "textures": {
     "1": "phantasm:block/ebony_planks",
     "2": "phantasm:block/ebony_stems_side_stripped",
+    "3": "phantasm:block/ebony_stems_side",
     "particle": "phantasm:block/ebony_planks"
   }
 }

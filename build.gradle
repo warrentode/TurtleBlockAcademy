@@ -202,6 +202,7 @@ dependencies {
     implementation fg.deobf("curse.maven:guard-villagers-360203:4701400")
     implementation fg.deobf("curse.maven:beautify-decorate-633252:4036351")
     implementation fg.deobf("curse.maven:villagersplus-forge-817272:4370425")
+    implementation fg.deobf("curse.maven:easy-npc-559312:5274087")
 
     // tinker mod set
     implementation fg.deobf("curse.maven:mantle-74924:5245271")

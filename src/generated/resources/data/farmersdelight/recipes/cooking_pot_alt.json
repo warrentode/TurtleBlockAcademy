@@ -1,0 +1,36 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "farmersdelight"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shaped",
+        "key": {
+          "#": {
+            "tag": "forge:ingots/copper"
+          },
+          "B": {
+            "tag": "turtleblockacademy:brick"
+          },
+          "C": {
+            "tag": "turtleblockacademy:water_buckets"
+          },
+          "S": {
+            "tag": "forge:leather"
+          }
+        },
+        "pattern": [
+          "BSB", "#C#", "###"
+        ],
+        "result": {
+          "item": "farmersdelight:cooking_pot"
+        }
+      }
+    }
+  ]
+}

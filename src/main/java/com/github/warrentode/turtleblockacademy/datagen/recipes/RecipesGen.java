@@ -2,6 +2,7 @@ package com.github.warrentode.turtleblockacademy.datagen.recipes;
 
 import biomesoplenty.api.block.BOPBlocks;
 import com.aetherteam.aether.block.AetherBlocks;
+import com.aetherteam.aether.item.AetherItems;
 import com.catastrophe573.dimdungeons.block.BlockRegistrar;
 import com.github.warrentode.turtleblockacademy.datagen.recipes.recipe.CuttingRecipesGen;
 import com.github.warrentode.turtleblockacademy.datagen.recipes.recipe.LootBagRecipesGen;
@@ -34,15 +35,19 @@ import net.minecraftforge.common.crafting.ConditionalRecipe;
 import net.minecraftforge.common.crafting.conditions.IConditionBuilder;
 import org.jetbrains.annotations.NotNull;
 import umpaz.farmersrespite.common.registry.FRItems;
+import umpaz.farmersrespite.data.builder.KettleRecipeBuilder;
 import vectorwing.farmersdelight.common.registry.ModBlocks;
 import vectorwing.farmersdelight.data.builder.CookingPotRecipeBuilder;
 
 import java.util.Objects;
 import java.util.function.Consumer;
 
+import static com.catastrophe573.dimdungeons.item.ItemRegistrar.ITEM_HOMEWARD_PEARL;
+import static com.catastrophe573.dimdungeons.item.ItemRegistrar.ITEM_PORTAL_KEY;
 import static com.github.warrentode.turtleblockacademy.TurtleBlockAcademy.MODID;
 import static samebutdifferent.ecologics.registry.ModBlocks.SEASHELL;
 import static samebutdifferent.ecologics.registry.ModBlocks.SEASHELL_TILES;
+import static vectorwing.farmersdelight.common.registry.ModItems.CHICKEN_SOUP;
 
 public class RecipesGen extends RecipeProvider implements IConditionBuilder {
     public RecipesGen(DataGenerator generator) {
@@ -53,6 +58,7 @@ public class RecipesGen extends RecipeProvider implements IConditionBuilder {
     protected void buildCraftingRecipes(@NotNull Consumer<FinishedRecipe> consumer) {
         schoolSupplyRecipes(consumer);
         cookingPotRecipes(consumer);
+        kettleRecipes(consumer);
         mcwlightsRecipes(consumer);
         supplementariesRecipes(consumer);
         festive_delightRecipes(consumer);
@@ -68,6 +74,35 @@ public class RecipesGen extends RecipeProvider implements IConditionBuilder {
 
         LootBagRecipesGen.register(consumer);
         CuttingRecipesGen.register(consumer);
+    }
+
+    private void kettleRecipes(Consumer<FinishedRecipe> consumer) {
+        ConditionalRecipe.builder()
+                .addCondition(modLoaded("farmersrespite"))
+                .addCondition(modLoaded("delightful"))
+                .addRecipe(KettleRecipeBuilder.kettleRecipe(FRItems.GREEN_TEA.get(),
+                                1, 2400, true, 0.35F, Items.GLASS_BOTTLE)
+                        .group("green_tea")
+                        .addIngredient(DelightfulItems.MATCHA.get())
+                        .addIngredient(DelightfulItems.MATCHA.get())
+                        .unlockedBy("has_matcha",
+                                has(DelightfulItems.MATCHA.get()))
+                        ::build)
+                .build(consumer, new ResourceLocation("farmersrespite", "brewing/" +
+                        FRItems.GREEN_TEA.get() + "_from_" + DelightfulItems.MATCHA.get()));
+        ConditionalRecipe.builder()
+                .addCondition(modLoaded("farmersrespite"))
+                .addCondition(modLoaded("delightful"))
+                .addRecipe(KettleRecipeBuilder.kettleRecipe(FRItems.GREEN_TEA.get(),
+                                1, 2400, true, 0.35F, Items.GLASS_BOTTLE)
+                        .group("green_tea")
+                        .addIngredient(DelightfulItems.GREEN_TEA_LEAF.get())
+                        .addIngredient(DelightfulItems.GREEN_TEA_LEAF.get())
+                        .unlockedBy("has_green_tea_leaf",
+                                has(DelightfulItems.GREEN_TEA_LEAF.get()))
+                        ::build)
+                .build(consumer, new ResourceLocation("farmersrespite", "brewing/" +
+                        FRItems.GREEN_TEA.get() + "_from_" + DelightfulItems.GREEN_TEA_LEAF.get()));
     }
 
     private void minecraftRecipes(Consumer<FinishedRecipe> consumer) {
@@ -806,6 +841,16 @@ public class RecipesGen extends RecipeProvider implements IConditionBuilder {
     private void dimdungeonsRecipes(Consumer<FinishedRecipe> consumer) {
         ConditionalRecipe.builder()
                 .addCondition(modLoaded("dimdungeons"))
+                .addRecipe(ShapelessRecipeBuilder.shapeless(ITEM_HOMEWARD_PEARL.get())
+                        .requires(ITEM_PORTAL_KEY.get())
+                        .requires(Items.ENDER_PEARL)
+                        .requires(Items.EXPERIENCE_BOTTLE)
+                        .unlockedBy("has_portal_key", has(ITEM_PORTAL_KEY.get()))
+                        ::save)
+                .build(consumer, new ResourceLocation("dimdungeons",
+                        ITEM_HOMEWARD_PEARL.get().asItem().toString()));
+        ConditionalRecipe.builder()
+                .addCondition(modLoaded("dimdungeons"))
                 .addRecipe(ShapedRecipeBuilder.shaped(BlockRegistrar.BLOCK_CHARGER_FULL.get())
                         .pattern("PPP")
                         .pattern("EGE")
@@ -848,6 +893,21 @@ public class RecipesGen extends RecipeProvider implements IConditionBuilder {
     }
 
     private void farmersdelightRecipes(Consumer<FinishedRecipe> consumer) {
+        ConditionalRecipe.builder()
+                .addCondition(modLoaded("farmersdelight"))
+                .addRecipe(ShapedRecipeBuilder.shaped(ModBlocks.COOKING_POT.get())
+                        .pattern("BSB")
+                        .pattern("#C#")
+                        .pattern("###")
+                        .define('B', PackTags.Items.BRICK)
+                        .define('S', Tags.Items.LEATHER)
+                        .define('#', PackTags.Items.COPPER_INGOT)
+                        .define('C', PackTags.Items.WATER_BUCKETS)
+                        .unlockedBy("has_copper_ingot",
+                                has(PackTags.Items.COPPER_INGOT))
+                        ::save)
+                .build(consumer, new ResourceLocation("farmersdelight",
+                        ModBlocks.COOKING_POT.get().asItem() + "_alt"));
         ConditionalRecipe.builder()
                 .addCondition(modLoaded("farmersdelight"))
                 .addRecipe(ShapelessRecipeBuilder.shapeless(ModBlocks.SHEPHERDS_PIE_BLOCK.get())
@@ -938,28 +998,20 @@ public class RecipesGen extends RecipeProvider implements IConditionBuilder {
     private void farmersrespiteRecipes(Consumer<FinishedRecipe> consumer) {
         ConditionalRecipe.builder()
                 .addCondition(modLoaded("farmersrespite"))
-                .addCondition(modLoaded("delightful"))
-                .addRecipe(ShapelessRecipeBuilder.shapeless(FRItems.GREEN_TEA.get())
-                        .group("green_tea")
-                        .requires(DelightfulItems.MATCHA.get())
-                        .requires(DelightfulItems.MATCHA.get())
-                        .unlockedBy("has_matcha",
-                                has(DelightfulItems.MATCHA.get()))
+                .addCondition(modLoaded("miners_delight"))
+                .addRecipe(ShapedRecipeBuilder.shaped(FRItems.KETTLE.get())
+                        .pattern("SLS")
+                        .pattern("#C#")
+                        .pattern("###")
+                        .define('S', PackTags.Items.STICKS)
+                        .define('L', Tags.Items.LEATHER)
+                        .define('#', PackTags.Items.COPPER_INGOT)
+                        .define('C', PackTags.Items.WATER_BUCKETS)
+                        .unlockedBy("has_copper_ingot",
+                                has(PackTags.Items.COPPER_INGOT))
                         ::save)
-                .build(consumer, new ResourceLocation("farmersrespite", "brewing/" +
-                        FRItems.GREEN_TEA.get() + "_from_" + DelightfulItems.MATCHA.get()));
-        ConditionalRecipe.builder()
-                .addCondition(modLoaded("farmersrespite"))
-                .addCondition(modLoaded("delightful"))
-                .addRecipe(ShapelessRecipeBuilder.shapeless(FRItems.GREEN_TEA.get())
-                        .group("green_tea")
-                        .requires(DelightfulItems.GREEN_TEA_LEAF.get())
-                        .requires(DelightfulItems.GREEN_TEA_LEAF.get())
-                        .unlockedBy("has_green_tea_leaf",
-                                has(DelightfulItems.GREEN_TEA_LEAF.get()))
-                        ::save)
-                .build(consumer, new ResourceLocation("farmersrespite", "brewing/" +
-                        FRItems.GREEN_TEA.get() + "_from_" + DelightfulItems.GREEN_TEA_LEAF.get()));
+                .build(consumer, new ResourceLocation("farmersrespite",
+                        FRItems.KETTLE.get().asItem() + "_alt"));
     }
 
     private void festive_delightRecipes(Consumer<FinishedRecipe> consumer) {
@@ -1073,6 +1125,7 @@ public class RecipesGen extends RecipeProvider implements IConditionBuilder {
 
     private void cookingPotRecipes(Consumer<FinishedRecipe> consumer) {
         ConditionalRecipe.builder()
+                .addCondition(modLoaded("farmersdelight"))
                 .addCondition(modLoaded("delightful"))
                 .addCondition(this.itemExists(DelightfulItems.ROCK_CANDY.getId().getNamespace(), DelightfulItems.ROCK_CANDY.getId().getPath()))
                 .addCondition(this.not(this.tagEmpty(PackTags.Items.GEM_SHARDS)))
@@ -1081,7 +1134,31 @@ public class RecipesGen extends RecipeProvider implements IConditionBuilder {
                                 .addIngredient(Ingredient.of(PackTags.Items.GEM_SHARDS), 2)
                                 .addIngredient(PackTags.Items.SUGAR)
                                 .unlockedBy("has_gem_shards", has(PackTags.Items.GEM_SHARDS))
-                                .build(consumer, new ResourceLocation("delightful", "cooking/rock_candy"))
+                                .build(consumer, new ResourceLocation("delightful", "cooking/rock_candy_alt_1"))
+                );
+        ConditionalRecipe.builder()
+                .addCondition(modLoaded("farmersdelight"))
+                .addCondition(modLoaded("delightful"))
+                .addCondition(modLoaded("aether"))
+                .addCondition(this.itemExists(DelightfulItems.ROCK_CANDY.getId().getNamespace(), DelightfulItems.ROCK_CANDY.getId().getPath()))
+                .addCondition(this.not(this.tagEmpty(PackTags.Items.GEM_SHARDS)))
+                .addRecipe(finishedRecipeConsumer ->
+                        CookingPotRecipeBuilder.cookingPotRecipe(DelightfulItems.ROCK_CANDY.get(), 1, 200, 0.35F, AetherItems.SKYROOT_STICK.get())
+                                .addIngredient(Ingredient.of(PackTags.Items.GEM_SHARDS), 2)
+                                .addIngredient(PackTags.Items.SUGAR)
+                                .unlockedBy("has_gem_shards", has(PackTags.Items.GEM_SHARDS))
+                                .build(consumer, new ResourceLocation("delightful", "cooking/rock_candy_alt_2"))
+                );
+        ConditionalRecipe.builder()
+                .addCondition(modLoaded("farmersdelight"))
+                .addRecipe(finishedRecipeConsumer ->
+                        CookingPotRecipeBuilder.cookingPotRecipe(CHICKEN_SOUP.get(), 1, 200, 0.35F, AetherItems.SKYROOT_STICK.get())
+                                .addIngredient(Ingredient.of(PackTags.Items.COOKED_CHICKEN))
+                                .addIngredient(Ingredient.of(Items.CARROT))
+                                .addIngredient(Ingredient.of(PackTags.Items.VEGETABLES))
+                                .addIngredient(Ingredient.of(PackTags.Items.GREENS))
+                                .unlockedBy("has_chicken", has(PackTags.Items.COOKED_CHICKEN))
+                                .build(consumer, new ResourceLocation("farmersdelight", "cooking/" + CHICKEN_SOUP.get() + "_alt"))
                 );
     }
 

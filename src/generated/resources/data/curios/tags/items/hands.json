@@ -1,7 +1,7 @@
 {
   "values": [
     {
-      "id": "#turtleblockacademy:lanterns",
+      "id": "#workshop_for_handsome_adventurer:lanterns",
       "required": false
     },
     "minecraft:soul_torch",

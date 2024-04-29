@@ -3,10 +3,6 @@
     {
       "id": "supplementaries:lapis_bricks",
       "required": false
-    },
-    {
-      "id": "supplementaries:ash_bricks",
-      "required": false
     }
   ]
 }

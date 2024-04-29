@@ -49,7 +49,7 @@
               "function": "minecraft:set_count"
             }
           ],
-          "name": "supplementaries:lapis_bricks"
+          "name": "supplementaries:ash_bricks"
         },
         {
           "type": "minecraft:item",

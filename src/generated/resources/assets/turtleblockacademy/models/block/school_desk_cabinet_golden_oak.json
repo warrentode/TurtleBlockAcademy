@@ -3,6 +3,7 @@
   "textures": {
     "1": "aether:block/skyroot_planks",
     "2": "aether:block/stripped_skyroot_log",
+    "3": "aether:block/golden_oak_log",
     "particle": "aether:block/skyroot_planks"
   }
 }

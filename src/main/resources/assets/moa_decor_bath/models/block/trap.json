@@ -1,0 +1,10 @@
+{
+  "parent": "moa_decor_bath:custom/trap",
+  "textures": {
+    "all": "moa_decor_bath:blocks/trap1",
+    "particle": "moa_decor_bath:blocks/trap1",
+    "0": "moa_decor_bath:blocks/trap1",
+    "1": "moa_decor_bath:blocks/trap2"
+  },
+  "render_type": "translucent"
+}

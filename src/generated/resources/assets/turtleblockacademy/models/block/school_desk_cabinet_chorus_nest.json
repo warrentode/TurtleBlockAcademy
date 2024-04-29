@@ -3,6 +3,7 @@
   "textures": {
     "1": "unusualend:block/chorus_nest_planks",
     "2": "unusualend:block/stripped_chorus_nest_planks",
+    "3": "unusualend:block/chorus_nest_mosaic",
     "particle": "unusualend:block/chorus_nest_planks"
   }
 }

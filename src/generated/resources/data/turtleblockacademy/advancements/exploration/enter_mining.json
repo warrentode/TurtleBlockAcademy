@@ -1,0 +1,32 @@
+{
+  "parent": "turtleblockacademy:exploration_track",
+  "criteria": {
+    "entered_mining": {
+      "conditions": {},
+      "trigger": "minecraft:changed_dimension"
+    }
+  },
+  "display": {
+    "announce_to_chat": false,
+    "description": {
+      "translate": "advancement.turtleblockacademy.enter_mining.desc"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "mining_dimension:teleporter"
+    },
+    "show_toast": false,
+    "title": {
+      "translate": "advancement.turtleblockacademy.enter_mining"
+    }
+  },
+  "requirements": [
+    [
+      "entered_mining"
+    ]
+  ],
+  "rewards": {
+    "function": "turtleblockacademy:set_mining_stage"
+  }
+}

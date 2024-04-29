@@ -13,7 +13,12 @@
         }
       ],
       "recipe": {
-        "type": "minecraft:crafting_shapeless",
+        "type": "farmersrespite:brewing",
+        "container": {
+          "item": "minecraft:glass_bottle"
+        },
+        "cookingtime": 2400,
+        "experience": 0.35,
         "group": "green_tea",
         "ingredients": [
           {
@@ -23,6 +28,7 @@
             "item": "delightful:green_tea_leaf"
           }
         ],
+        "needwater": true,
         "result": {
           "item": "farmersrespite:green_tea"
         }

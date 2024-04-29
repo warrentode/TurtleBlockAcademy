@@ -44,6 +44,7 @@ public class ModLangGen extends LanguageProvider {
         fillAdvancementKeys("root", "Turtle Block Academy", "Principal Herobrine welcomes you!");
 
         fillAdvancementKeys("exploration_track", "Gone Adventuring", "It's Tourist Season!");
+        fillAdvancementKeys("enter_mining", "Underground World", "Enter the Mining Dimension");
         fillAdvancementKeys("explore_overworld", "Grand Tour of the World", "Visit All of the Overworld Biomes");
         fillAdvancementKeys("explore_nether", "Tour in the Hot Seat", "Visit All of the Nether Biomes");
         fillAdvancementKeys("explore_end", "Final Tour Before Retirement?", "Visit All of the End Biomes");

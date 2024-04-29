@@ -1,0 +1,33 @@
+{
+  "name": "Basic Principals",
+  "sortnum": 1,
+  "icon": "minecraft:writable_book",
+  "category": "turtleblockacademy:food_safety",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)The Four Basic Principals$()$(p)$(li)CLEAN$(li)SEPARATE$(li)COOK$(li)CHILL$()$(p)References:$(p)$(l:https://https://www.fsis.usda.gov/food-safety/safe-food-handling-and-preparation/food-safety-basics/steps-keep-food-safe)Keep Food Safe! Food Safety Basics$(/l)"
+    }, {
+      "type": "patchouli:text",
+      "text": "$(l)CLEAN$()$(p)Wash your hands before, during, and after handling food.$(p)For example, this means washing your hands after touching meat before switching over to prepping vegetables."
+    }, {
+      "type": "patchouli:text",
+      "text": "After prepping raw meats, wash the utensils, cutting board, and work area before switching tasks to prevent cross contamination.$(p)Remember: raw ground beef is famous for E. coli while raw chicken is famous for salmonella. You don't want this in your salad, fruit, or bread."
+    }, {
+      "type": "patchouli:text",
+      "text": "$(l)SEPARATE$()$(p)Keep raw meat separated from other foods. Store it in leak proof containers.$(p)It's also important to remember not to mix raw meats during storage. Keep your raw beef, pork, chicken, and fish apart from each other. This prevents ending up with something like salmonella in your fish, for example, where it's not normally found."
+    }, {
+      "type": "patchouli:text",
+      "text": "This also means not using utensils that were used to prep one type of raw meat to prep other types of food without washing them properly.$(p)Ideally, you should have designated cutting boards: one for bread, one for vegetables, and one for meats. If using a wooden cutting board for meats, wash it right away."
+    }, {
+      "type": "patchouli:text",
+      "text": "$(l)COOK$()$(p)Become familiar with the recommended food temperatures and follow those guidelines.$(p)Make a habit of using a food thermometer to check.$(p)$(l:https://www.fsis.usda.gov/food-safety/safe-food-handling-and-preparation/food-safety-basics/doneness-versus-safety)Doneness Versus Safety$(/l)"
+    }, {
+      "type": "patchouli:text",
+      "text": "Generally speaking, cold foods should be kept at 40 degrees Fahrenheit prior to serve while hot foods should be kept at 140 degrees or more before serving.$(p)This keeps food out of the danger zone.$(p)$(l:https://www.fsis.usda.gov/food-safety/safe-food-handling-and-preparation/food-safety-basics/danger-zone-40f-140f)Danger Zone$(/l)"
+    }, {
+      "type": "patchouli:text",
+      "text": "$(l)CHILL$()$(p)Handle leftover food quickly.$(p)Seriously, this is something I learned while working in nursing homes. If the food has been out for 2 hours or more, toss it.$(p)$(o)Bacteria grows exponentially.$() This is faster than most of us even think about - including me.$(p)$(l:https://www.fsis.usda.gov/food-safety/safe-food-handling-and-preparation/food-safety-basics/leftovers-and-food-safety)Leftovers and Food Safety$(/l)"
+    }
+  ]
+}

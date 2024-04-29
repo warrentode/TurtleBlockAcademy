@@ -11,6 +11,9 @@ import static com.github.warrentode.turtleblockacademy.TurtleBlockAcademy.MODID;
 public class PackBuiltInLootTables {
     private static final Set<ResourceLocation> LOCATIONS = Sets.newHashSet();
 
+
+    public static final ResourceLocation BREWING_GUIDE = register(MODID + ":" + "advancements/loot_tables/give_brewing_guide");
+
     // randomized map loot tables
     public static final ResourceLocation MASTER_MAPBOX = register(MODID + ":" + "chests/maps/master_mapbox");
     public static final ResourceLocation END_MAPBOX = register(MODID + ":" + "chests/maps/end_mapbox");

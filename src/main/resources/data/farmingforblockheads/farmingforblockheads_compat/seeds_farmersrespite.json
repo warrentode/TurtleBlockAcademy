@@ -12,8 +12,7 @@
   "customEntries": [
     {
       "output": "farmersrespite:coffee_beans"
-    },
-    {
+    }, {
       "output": "farmersrespite:tea_seeds"
     }
   ]

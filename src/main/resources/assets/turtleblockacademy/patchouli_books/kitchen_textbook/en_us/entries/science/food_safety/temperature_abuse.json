@@ -1,0 +1,18 @@
+{
+  "name": "Temperature Abuse",
+  "sortnum": 2,
+  "icon": "minecraft:writable_book",
+  "category": "turtleblockacademy:food_safety",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(l)What is temperature abuse?$()$(p)Simply put, this is allowing foods to reach the danger zone and then bringing it back to proper temperature.$(p)An easy example of this would be allowing a jug of milk to go over 40 degrees and then putting it back into your fridge for later."
+    }, {
+      "type": "patchouli:text",
+      "text": "Pathogens aside, doing this also damages the overall quality of the food - particularly meats.$(p)$(l:https://extension.umn.edu/food-service-industry/keep-food-safe-time-and-temperature-control)Keep food safe with time and temperature control$(/l)$(p)$(l:https://www.fsis.usda.gov/food-safety/safe-food-handling-and-preparation/food-safety-basics/how-temperatures-affect-food)How Temperatures Affect Food$(/l)$(p)$(o)Advanced Reading:$()$(p)$(l:https://www.food-safety.com/articles/4647-issues-in-time-and-temperature-abuse-of-refrigerated-foods#:~:text=It%20is%20affected%20by%20many,on%20food%20safety%20and%20quality.)Issues in Time and Temperature Abuse of Refrigerated Foods$(/l)"
+    }, {
+      "type": "patchouli:text",
+      "text": "$(l:https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8907796/)Effect of Temperature Abuse on Quality and Metabolites of Frozen/Thawed Beef Loins$(/l)$(p)Side Note:$()$(p)I'm well aware that the time recommendations for the danger zone varies depending on where you live.$(p)I've always chosen to follow the strictest recommendation I've heard, which is the 2 hour recommendation."
+    }
+  ]
+}

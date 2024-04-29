@@ -20,6 +20,7 @@ import net.mcreator.moadecortoys.init.MoaDecorToysModItems;
 import net.mcreator.phantasm.init.PhantasmModItems;
 import net.mcreator.unusualend.init.UnusualendModItems;
 import net.mehvahdjukaar.cagerium.Cagerium;
+import net.mehvahdjukaar.supplementaries.reg.ModRegistry;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.tags.BlockTagsProvider;
 import net.minecraft.data.tags.ItemTagsProvider;
@@ -49,6 +50,17 @@ public class ItemTagsGen extends ItemTagsProvider {
     }
 
     private void registerPackTags() {
+        tag(PackTags.Items.STICKS)
+                .addOptional(AetherItems.SKYROOT_STICK.getId())
+                .add(Items.STICK);
+        tag(PackTags.Items.BRICK)
+                .add(ModRegistry.ASH_BRICK_ITEM.get())
+                .add(Items.NETHER_BRICK)
+                .add(Items.BRICK);
+        tag(PackTags.Items.WATER_BUCKETS)
+                .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("miners_delight:water_cup")))
+                .addOptional(AetherItems.SKYROOT_WATER_BUCKET.getId())
+                .add(Items.WATER_BUCKET);
         tag(PackTags.Items.BLOODSHROOM_LOG)
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("tconstruct:bloodshroom_log")));
         tag(PackTags.Items.BLOODSHROOM_STRIPPED_LOG)
@@ -717,6 +729,7 @@ public class ItemTagsGen extends ItemTagsProvider {
         tag(PackTags.Items.BOOKSHELF_BOOKS)
                 .addTag(PackTags.Items.LECTERN_BOOKS);
         tag(PackTags.Items.LECTERN_BOOKS)
+                .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("corail_recycler:recycling_book")))
                 .addOptionalTag(PackTags.Items.FORGE_BOOKS.location())
                 .addOptionalTag(PackTags.Items.PATCHOULI_BOOKS.location());
         tag(PackTags.Items.PATCHOULI_BOOKS)
@@ -768,6 +781,7 @@ public class ItemTagsGen extends ItemTagsProvider {
         tag(PackTags.Items.NETHERITE_NUGGET)
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("todecoins:netherite_nugget")));
         tag(PackTags.Items.INGOTS)
+                .addTag(PackTags.Items.COPPER_INGOT)
                 .addTag(PackTags.Items.IRON_INGOT)
                 .addTag(PackTags.Items.NETHERITE_INGOT)
                 .addTag(PackTags.Items.ENDONIAN_INGOT);
@@ -777,6 +791,8 @@ public class ItemTagsGen extends ItemTagsProvider {
                 .add(Items.IRON_NUGGET);
         tag(PackTags.Items.IRON_INGOT)
                 .add(Items.IRON_INGOT);
+        tag(PackTags.Items.COPPER_INGOT)
+                .add(Items.COPPER_INGOT);
         tag(PackTags.Items.NETHERITE_INGOT)
                 .add(Items.NETHERITE_INGOT);
         tag(PackTags.Items.BACKPACKS)

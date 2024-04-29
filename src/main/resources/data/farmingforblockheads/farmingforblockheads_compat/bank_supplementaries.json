@@ -15,8 +15,7 @@
         "item": "minecraft:emerald",
         "count": 1
       }
-    },
-    {
+    }, {
       "output": {
         "item": "supplementaries:safe"
       },
@@ -24,8 +23,7 @@
         "item": "minecraft:emerald",
         "count": 64
       }
-    },
-    {
+    }, {
       "output": {
         "item": "supplementaries:lock_block"
       },

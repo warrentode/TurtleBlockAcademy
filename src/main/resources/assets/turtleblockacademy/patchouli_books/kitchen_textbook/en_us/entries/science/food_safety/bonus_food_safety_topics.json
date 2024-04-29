@@ -1,0 +1,12 @@
+{
+  "name": "Bonus Reading Topics",
+  "sortnum": 3,
+  "icon": "minecraft:writable_book",
+  "category": "turtleblockacademy:food_safety",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(li)$(l:https://www.cdc.gov/foodsafety/foodborne-germs.html)Foodborne Germs and Illnesses$(/l)$(li)$(l:https://www.cdc.gov/norovirus/about/index.html)Norovirus (Stomach Flu)$(/l)$(li)$(l:https://www.cdc.gov/salmonella/general/index.html)Salmonella$(/l)$(li)$(l:https://www.cdc.gov/foodsafety/diseases/clostridium-perfringens.html)$(o)Clostridium perfringens$()$(li)$(l:https://www.cdc.gov/campylobacter/faq.html)$(o)Campylobacter$()$(li)$(l:https://www.cdc.gov/foodsafety/diseases/staphylococcal.html)$(o)Staphylococcus aureus$()$(li)$(l:https://www.cdc.gov/parasites/toxoplasmosis/gen_info/faqs.html)$(o)Toxoplasma gondii$()$(li)$(l:https://www.cdc.gov/ecoli/general/index.html)E. coli$()$(li)$(l:https://www.cdc.gov/listeria/index.html)Listeria$()"
+    }
+  ]
+}

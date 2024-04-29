@@ -12,6 +12,11 @@
   "customEntries": [
     {
       "output": {
+        "item": "workers:farmer_block",
+        "count": 1
+      }
+    }, {
+      "output": {
         "item": "workers:miner_block",
         "count": 1
       }

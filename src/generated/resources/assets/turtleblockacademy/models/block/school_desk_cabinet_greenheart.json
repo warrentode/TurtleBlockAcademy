@@ -3,6 +3,7 @@
   "textures": {
     "1": "tconstruct:block/greenheart/planks",
     "2": "tconstruct:block/greenheart/stripped_log",
+    "3": "tconstruct:block/greenheart/log",
     "particle": "tconstruct:block/greenheart/planks"
   }
 }

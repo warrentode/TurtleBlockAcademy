@@ -19,7 +19,7 @@
     {
       "type": "patchouli:smelting",
       "title": "Glass Bottle Recipe",
-      "recipe": "minecraft:glass_bottle_from_smelting_any_glass_block",
+      "recipe": "minecraft:glass_bottle_from_smelting",
       "text": "You can also craft this by smelting or blasting any one glass block."
     }
   ]

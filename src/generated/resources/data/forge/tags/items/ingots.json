@@ -1,5 +1,6 @@
 {
   "values": [
+    "#forge:ingots/copper",
     "#forge:ingots/iron",
     "#forge:ingots/netherite",
     "#todecoins:endonian_ingot"

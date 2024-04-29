@@ -159,7 +159,7 @@ public class LootbagLootTablesGen implements Consumer<BiConsumer<ResourceLocatio
                         .add(LootTableReference.lootTableReference(KitchenLootTables.KITCHEN))
                 )
                 .withPool(LootPool.lootPool().setRolls(ConstantValue.exactly(1)).setBonusRolls(ConstantValue.exactly(0))
-                        .add(LootTableReference.lootTableReference(PackBuiltInLootTables.SPAWN_BONUS_CHEST)))
+                        .add(LootTableReference.lootTableReference(PackBuiltInLootTables.LOG_SET)))
                 .withPool(LootPool.lootPool().setRolls(ConstantValue.exactly(1)).setBonusRolls(ConstantValue.exactly(0))
                         .add(LootItem.lootTableItem(Items.STONE_PICKAXE))
                 )

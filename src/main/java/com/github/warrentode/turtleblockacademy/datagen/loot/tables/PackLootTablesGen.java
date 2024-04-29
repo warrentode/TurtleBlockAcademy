@@ -45,6 +45,7 @@ import net.minecraft.world.level.storage.loot.providers.number.UniformGenerator;
 import org.jetbrains.annotations.NotNull;
 import samebutdifferent.ecologics.registry.ModBlocks;
 import sereneseasons.api.SSItems;
+import vazkii.patchouli.common.item.PatchouliItems;
 
 import java.util.function.BiConsumer;
 import java.util.function.Consumer;
@@ -65,6 +66,14 @@ import static vectorwing.farmersdelight.common.registry.ModItems.CANVAS_RUG;
 public class PackLootTablesGen implements Consumer<BiConsumer<ResourceLocation, LootTable.Builder>> {
     @Override
     public void accept(@NotNull BiConsumer<ResourceLocation, LootTable.Builder> consumer) {
+        //noinspection deprecation
+        consumer.accept(PackBuiltInLootTables.BREWING_GUIDE, LootTable.lootTable()
+                .withPool(LootPool.lootPool().setRolls(ConstantValue.exactly(1))
+                        .add(LootItem.lootTableItem(PatchouliItems.BOOK)
+                                .apply(SetNbtFunction.setTag(Util.make(new CompoundTag(),
+                                        (tag) -> tag.putString("patchouli:book", "turtleblockacademy:brewingguide")))))
+                ));
+
         consumer.accept(LootbagLootTables.ARTIFACTS_GIFTS, LootTable.lootTable()
                 .withPool(LootPool.lootPool().setRolls(ConstantValue.exactly(1))
                         .add(LootItem.lootTableItem(artifacts.common.init.ModItems.UMBRELLA.get()))

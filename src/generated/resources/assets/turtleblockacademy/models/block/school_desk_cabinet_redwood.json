@@ -3,6 +3,7 @@
   "textures": {
     "1": "biomesoplenty:block/redwood_planks",
     "2": "biomesoplenty:block/stripped_redwood_log",
+    "3": "biomesoplenty:block/redwood_log",
     "particle": "biomesoplenty:block/redwood_planks"
   }
 }

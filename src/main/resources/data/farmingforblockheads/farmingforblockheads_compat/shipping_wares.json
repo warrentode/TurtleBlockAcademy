@@ -19,90 +19,131 @@
     {
       "output": {
         "item": "wares:sealed_delivery_agreement",
-        "nbt": "{experience:{max:30},ordered:{max:16,min:3,step:4},sealTooltip:\u0027{\"text\":\"Todeville Barracks\"}\u0027,buyerName:\u0027{\"color\":\"#008000\",\"text\":\"Captain of the Guard\"}\u0027,buyerAddress:\u0027{\"obfuscated\":false,\"text\":\"Todeville\"}\u0027,title:\u0027{\"color\":\"#006400\",\"text\":\"Bounty Order\"}\u0027,backsideMessage:\u0027{\"text\":\"Serving and Protect the People of Todeville!\"}\u0027,message:\u0027{\"text\":\"This is current bounty order. Send in the required proof to receive payment on delivery.\"}\u0027,payment:\"wares:agreement/village/currency\",requested:\"wares:agreement/village/bounties\"}"
+        "nbt": "{ordered:10,sealTooltip:\u0027{\"text\":\"Todeville Gardens\"}\u0027,buyerAddress:\u0027{\"obfuscated\":false,\"text\":\"02 Tierra Street, Todeville\"}\u0027,requested:\"wares:agreement/village/crops\",display:{Name:\u0027{\"text\":\"Todeville Gardens Shipping Order\"}\u0027},payment:\"wares:agreement/server_token_package\",experience:{max:30},buyerName:\u0027{\"color\":\"#008000\",\"text\":\"Farmer Dell\"}\u0027,title:\u0027{\"color\":\"#006400\",\"text\":\"Shipping Order\"}\u0027,backsideMessage:\u0027{\"text\":\"Shipping the Freshest Crops to Villages Around the World!\"}\u0027,message:\u0027{\"text\":\"These crops need to be shipped out as soon as possible. Payment given for each package sent.\"}\u0027}"
       },
       "payment": {
-        "item": "minecraft:emerald",
+        "item": "todecoins:server_token_coin",
+        "count": 1
+      }
+    }, {
+      "output": {
+        "item": "wares:sealed_delivery_agreement",
+        "nbt": "{sealTooltip:\u0027{\"text\":\"Todeville Gardens\"}\u0027,buyerAddress:\u0027{\"obfuscated\":false,\"text\":\"02 Tierra Street, Todeville\"}\u0027,requested:\"wares:agreement/village/currency\",display:{Name:\u0027{\"text\":\"Todeville Gardens Catalogue Offer\"}\u0027},payment:\"wares:agreement/village/crops_single\",experience:{max: 30},buyerName:\u0027{\"color\":\"#008000\",\"text\":\"Farmer Dell\"}\u0027,title:\u0027{\"color\":\"#006400\",\"text\":\"Catalogue Offer\"}\u0027,backsideMessage:\u0027{\"text\":\"Fresh Crops On Demand!\"}\u0027,message:\u0027{\"text\":\"You can get an unlimited supply of this preselected crop shipped right to you!\"}\u0027}"
+      },
+      "payment": {
+        "item": "todecoins:copper_coin",
+        "count": 1
+      }
+    }, {
+      "output": {
+        "item": "wares:sealed_delivery_agreement",
+        "nbt": "{ordered:{step:4,min:3,max:16},sealTooltip:\u0027{\"text\":\"Wares R US\"}\u0027,RepairCost:0,display:{Name:\u0027{\"text\":\"Wares R Us Shipping Order\"}\u0027},experience:{max:30},buyerName:\u0027{\"color\":\"#008000\",\"text\":\"Warehouse Manager\"}\u0027,title:\u0027{\"color\":\"#006400\",\"text\":\"Supply Order\"}\u0027,backsideMessage:\u0027{\"text\":\"Wares R US Shipping  Supply Goods to Villagers Around the World!\"}\u0027,message:\u0027{\"text\":\"We have an order here for these supplies to ship out to another village and could use your help in getting them in time. You will be paid of course for each package sent.\"}\u0027,buyerAddress:\u0027{\"obfuscated\":false,\"text\":\"Wares R US HQ\"}\u0027,requested:\"wares:agreement/village/request/requested_regional_product\",payment:\"wares:agreement/village/currency\"}"
+      },
+      "payment": {
+        "item": "todecoins:copper_coin",
+        "count": 1
+      }
+    }, {
+      "output": {
+        "item": "wares:sealed_delivery_agreement",
+        "nbt": "{sealTooltip:\u0027{\"text\":\"Wares R US\"}\u0027,buyerAddress:\u0027{\"obfuscated\":false,\"text\":\"Wares R US HQ\"}\u0027,requested:\"wares:agreement/village/request/requested_regional_product\",display:{Name:\u0027{\"text\":\"Endless Wares R US Shipping Order\"}\u0027},payment:\"wares:agreement/village/currency\",experience:{max:30},buyerName:\u0027{\"color\":\"#008000\",\"text\":\"Warehouse Manager\"}\u0027,title:\u0027{\"color\":\"#006400\",\"text\":\"Supply Order\"}\u0027,backsideMessage:\u0027{\"text\":\"Supplying Goods to Villagers Around the World!\"}\u0027,message:\u0027{\"text\":\"We have an order here for these supplies to ship out to another village and could use your help in getting them in time. You will be paid of course for each package sent.\"}\u0027}"
+      },
+      "payment": {
+        "item": "todecoins:server_token_coin",
+        "count": 1
+      }
+    }, {
+      "output": {
+        "item": "wares:sealed_delivery_agreement",
+        "nbt": "{ordered:{step:4,min:3,max:16},sealTooltip:\u0027{\"text\":\"V-Bay Wares Inc.\"}\u0027,RepairCost:0,display:{Name:\u0027{\"text\":\"V-Bay Catalogue\"}\u0027},experience:{max:30},buyerName:\u0027{\"color\":\"#0000FF\",\"text\":\"Guild Master Trader\"}\u0027,title:\u0027{\"color\":\"#B22222\",\"text\":\"V-Bay Special Offer\"}\u0027,backsideMessage:\u0027{\"text\":\"V-Bay Traders Catalogue Bringing ALL Your Dreams of Distant Items To You Today!\"}\u0027,message:\u0027{\"text\":\"LIMITED Timed Sale Now on Display! What A Sweet Deal Today! Do NOT Delay! Send the Funds Our Way! We WILL Ship the Goods Right Away!\"}\u0027,buyerAddress:\u0027{\"obfuscated\":false,\"text\":\"V-Bay Wares HQ\"}\u0027,requested:\"wares:agreement/village/currency\",payment:\"wares:agreement/village/payment/offered_regional_product\"}"
+      },
+      "payment": {
+        "item": "todecoins:copper_coin",
+        "count": 1
+      }
+    }, {
+      "output": {
+        "item": "wares:sealed_delivery_agreement",
+        "nbt": "{sealTooltip:\u0027{\"text\":\"V-Bay Wares Inc.\"}\u0027,buyerAddress:\u0027{\"obfuscated\":false,\"text\":\"V-Bay Wares HQ\"}\u0027,requested:\"wares:agreement/village/currency\",RepairCost:0,display:{Name:\u0027{\"text\":\"Endless V-Bay Catalogue Offer\"}\u0027},payment:\"wares:agreement/village/payment/offered_regional_product\",experience:{max:30},buyerName:\u0027{\"color\":\"#0000FF\",\"text\":\"Guild Master Trader\"}\u0027,title:\u0027{\"color\":\"#B22222\",\"text\":\"V-Bay Special Offer\"}\u0027,backsideMessage:\u0027{\"text\":\"V-Bay Traders Catalogue Bringing ALL Your Dreams of Distant Items To You Today!\"}\u0027,message:\u0027{\"text\":\"What A Sweet Deal! Do NOT Delay! Send the Funds Our Way! We WILL Ship the Goods Right Away!\"}\u0027}"
+      },
+      "payment": {
+        "item": "todecoins:server_token_coin",
         "count": 1
       }
     },
     {
       "output": {
         "item": "wares:sealed_delivery_agreement",
-        "nbt": "{experience:{max:30},ordered:{max:16,min:3,step:4},sealTooltip:\u0027{\"text\":\"Todeville Gardens\"}\u0027,buyerName:\u0027{\"color\":\"#008000\",\"text\":\"Farmer Dell\"}\u0027,buyerAddress:\u0027{\"obfuscated\":false,\"text\":\"Todeville\"}\u0027,title:\u0027{\"color\":\"#006400\",\"text\":\"Shipping Order\"}\u0027,backsideMessage:\u0027{\"text\":\"Shipping the Freshest Crops to Villages Around the World!\"}\u0027,message:\u0027{\"text\":\"These crops need to be shipped out as soon as possible. Payment given for each package sent out on time.\"}\u0027,payment:\"wares:agreement/village/currency\",requested:\"wares:agreement/village/crops\"}"
+        "nbt": "{ordered:10,sealTooltip:\u0027{\"text\":\"Todeville Solis Gate House\"}\u0027,buyerAddress:\u0027{\"obfuscated\":false,\"text\":\"23 Solis Street, Todeville\"}\u0027,requested:\"wares:agreement/village/bounties\",display:{Name:\u0027{\"text\":\"Todeville Solis Gate House Bounty Order\"}\u0027},payment:\"wares:agreement/server_token\",experience:{max:30},buyerName:\u0027{\"color\":\"#008000\",\"text\":\"Solis Gate Guard\"}\u0027,title:\u0027{\"color\":\"#006400\",\"text\":\"Bounty Order\"}\u0027,backsideMessage:\u0027{\"text\":\"To Serve and Protect the People of Todeville!\"}\u0027,message:\u0027{\"text\":\"This is the current bounty order. Send us proof to receive payment.\"}\u0027}"
       },
       "payment": {
-        "item": "minecraft:emerald",
+        "item": "todecoins:copper_coin",
         "count": 1
       }
     },
     {
       "output": {
         "item": "wares:sealed_delivery_agreement",
-        "nbt": "{experience:{max:30},ordered:{max:16,min:3,step:4},sealTooltip:\u0027{\"text\":\"Todeville Gardens\"}\u0027,buyerName:\u0027{\"color\":\"#008000\",\"text\":\"Farmer Dell\"}\u0027,buyerAddress:\u0027{\"obfuscated\":false,\"text\":\"Todeville\"}\u0027,title:\u0027{\"color\":\"#006400\",\"text\":\"Shipping Order\"}\u0027,backsideMessage:\u0027{\"text\":\"Fresh Crops on Demand!\"}\u0027,message:\u0027{\"text\":\"Have our fresh crops delivered straight to you!\"}\u0027,payment:\"wares:agreement/village/crops\",requested:\"wares:agreement/village/currency\"}"
+        "nbt": "{ordered:10,sealTooltip:\u0027{\"text\":\"Todeville Barros Gate House\"}\u0027,buyerAddress:\u0027{\"obfuscated\":false,\"text\":\"15 Barros Street, Todeville\"}\u0027,requested:\"wares:agreement/village/bounties\",display:{Name:\u0027{\"text\":\"Todeville Barros Gate House Bounty Order\"}\u0027},payment:\"wares:agreement/server_token\",experience:{max:30},buyerName:\u0027{\"color\":\"#008000\",\"text\":\"Barros Gate Guard\"}\u0027,title:\u0027{\"color\":\"#006400\",\"text\":\"Bounty Order\"}\u0027,backsideMessage:\u0027{\"text\":\"To Serve and Protect the People of Todeville!\"}\u0027,message:\u0027{\"text\":\"This is the current bounty order. Send us proof to receive payment.\"}\u0027}"
       },
       "payment": {
-        "item": "minecraft:emerald",
+        "item": "todecoins:copper_coin",
         "count": 1
       }
     },
     {
       "output": {
         "item": "wares:sealed_delivery_agreement",
-        "nbt": "{experience:{max:30},ordered:{max:16,min:3,step:4},sealTooltip:\u0027{\"text\":\"Wares R US\"}\u0027,buyerName:\u0027{\"color\":\"#008000\",\"text\":\"Warehouse Manager\"}\u0027,buyerAddress:\u0027{\"obfuscated\":false,\"text\":\"Wares R US HQ\"}\u0027,title:\u0027{\"color\":\"#006400\",\"text\":\"Supply Order\"}\u0027,backsideMessage:\u0027{\"text\":\"Wares R US Shipping \n Supply Goods to Villagers Around the World!\"}\u0027,message:\u0027{\"text\":\"We have an order here for these supplies to ship out to another village and could use your help in getting them in time. You will be paid of course for each package sent.\"}\u0027,payment:\"wares:agreement/village/currency\",requested:\"wares:agreement/village/requested_regional_product\"}"
+        "nbt": "{ordered:10,sealTooltip:\u0027{\"text\":\"Todeville Luna Gate House\"}\u0027,buyerAddress:\u0027{\"obfuscated\":false,\"text\":\"03 Luna Street, Todeville\"}\u0027,requested:\"wares:agreement/village/bounties\",display:{Name:\u0027{\"text\":\"Todeville Luna Gate House Bounty Order\"}\u0027},payment:\"wares:agreement/server_token\",experience:{max:30},buyerName:\u0027{\"color\":\"#008000\",\"text\":\"Luna Gate Guard\"}\u0027,title:\u0027{\"color\":\"#006400\",\"text\":\"Bounty Order\"}\u0027,backsideMessage:\u0027{\"text\":\"To Serve and Protect the People of Todeville!\"}\u0027,message:\u0027{\"text\":\"This is the current bounty order. Send us proof to receive payment.\"}\u0027}"
       },
       "payment": {
-        "item": "minecraft:emerald",
+        "item": "todecoins:copper_coin",
         "count": 1
       }
     },
     {
       "output": {
         "item": "wares:sealed_delivery_agreement",
-        "nbt": "{experience:{max:30},ordered:{max:16,min:3,step:4},sealTooltip:\u0027{\"text\":\"V-Bay Wares Inc.\"}\u0027,buyerName:\u0027{\"color\":\"#0000FF\",\"text\":\"Guild Master Trader\"}\u0027,buyerAddress:\u0027{\"obfuscated\":false,\"text\":\"V-Bay Wares HQ\"}\u0027,title:\u0027{\"color\":\"#B22222\",\"text\":\"V-Bay Special Offer\"}\u0027,backsideMessage:\u0027{\"text\":\"V-Bay Traders Catalogue \n Bringing ALL Your Dreams of Distant Items To You Today!\"}\u0027,message:\u0027{\"text\":\"LIMITED Timed Sale Now on Display!\nWhat A Sweet Deal Today!\nDo NOT Delay!\nSend the Funds Our Way!\nWe WILL Ship the Goods Right Away!\"}\u0027,payment:\"wares:agreement/village/offered_regional_product\",requested:\"wares:agreement/village/currency\"}"
+        "nbt": "{ordered:10,sealTooltip:\u0027{\"text\":\"Todeville Stella Gate House\"}\u0027,buyerAddress:\u0027{\"obfuscated\":false,\"text\":\"11 Stella Street, Todeville\"}\u0027,requested:\"wares:agreement/village/bounties\",display:{Name:\u0027{\"text\":\"Todeville Stella Gate House Bounty Order\"}\u0027},payment:\"wares:agreement/server_token\",experience:{max:30},buyerName:\u0027{\"color\":\"#008000\",\"text\":\"Stella Gate Guard\"}\u0027,title:\u0027{\"color\":\"#006400\",\"text\":\"Bounty Order\"}\u0027,backsideMessage:\u0027{\"text\":\"To Serve and Protect the People of Todeville!\"}\u0027,message:\u0027{\"text\":\"This is the current bounty order. Send us proof to receive payment.\"}\u0027}"
       },
       "payment": {
-        "item": "minecraft:emerald",
+        "item": "todecoins:copper_coin",
         "count": 1
       }
-    },
-    {
+    }, {
       "output": {
         "item": "wares:sealed_delivery_agreement",
-        "nbt": "{experience:{max:30},ordered:{max:16,min:3,step:4},sealTooltip:\u0027{\"text\":\"Farmers Market\"}\u0027,buyerName:\u0027{\"color\":\"#0000FF\",\"text\":\"Farmers Union\"}\u0027,buyerAddress:\u0027{\"obfuscated\":false,\"text\":\"Farmers Market Square\"}\u0027,title:\u0027{\"color\":\"#B22222\",\"text\":\"Seasonal Special Offer\"}\u0027,backsideMessage:\u0027{\"text\":\"Guaranteed Fresh!\"}\u0027,message:\u0027{\"text\":\"Fast tasty edibles brought straight to your door!\"}\u0027,payment:\"wares:agreement/village/food_supply_list\",requested:\"wares:agreement/village/regular_market_currency\"}"
+        "nbt": "{ordered:1,sealTooltip:\u0027{\"text\":\"Pillager Express\"}\u0027,RepairCost:0,display:{Name:\u0027{\"text\":\"Pillager Express\"}\u0027},experience:{max:30},buyerName:\u0027{\"color\":\"#0000FF\",\"text\":\"Johnny\"}\u0027,title:\u0027{\"color\":\"#B22222\",\"text\":\"Black Market Goods\"}\u0027,backsideMessage:\u0027{\"text\":\"Dont Ask... Dont Tell...\"}\u0027,message:\u0027{\"text\":\"Some n00b lost this chest... Want it? Goes to the first wiling buyer.\"}\u0027,buyerAddress:\u0027{\"obfuscated\":true,\"text\":\"A Pillager Outpost Near You\"}\u0027,requested:\"wares:agreement/village/currency\",payment:\"wares:agreement/village/spawn_supply_list\"}"
       },
       "payment": {
-        "item": "minecraft:emerald",
+        "item": "todecoins:copper_coin",
         "count": 1
       }
-    },
-    {
+    }, {
       "output": {
         "item": "wares:sealed_delivery_agreement",
-        "nbt": "{experience:{max:30},ordered:{max:16,min:3,step:4},sealTooltip:\u0027{\"text\":\"Pillager Express\"}\u0027,buyerName:\u0027{\"color\":\"#0000FF\",\"text\":\"Johnny\"}\u0027,buyerAddress:\u0027{\"obfuscated\":true,\"text\":\"A Pillager Outpost Near You\"}\u0027,title:\u0027{\"color\":\"#B22222\",\"text\":\"Black Market Goods\"}\u0027,backsideMessage:\u0027{\"text\":\"Do Not Ask...\nDo Not Tell...\"}\u0027,message:\u0027{\"text\":\"Some n00b lost this chest...\n Want it? Goes to the first wiling buyer.\"}\u0027,payment:\"wares:agreement/village/gift_supply_list\",requested:\"wares:agreement/village/regular_market_currency\"}"
+        "nbt": "{ordered:{step:4,min:3,max:16},sealTooltip:\u0027{\"text\":\"Frosted Express\"}\u0027,buyerAddress:\u0027{\"obfuscated\":true,\"text\":\"Somewhere Very, Very Cold\"}\u0027,requested:\"wares:agreement/village/currency\",display:{Name:\u0027{\"text\":\"Frosted Express\"}\u0027},payment:\"wares:agreement/village/gift_supply_list\",experience:{max:30},buyerName:\u0027{\"color\":\"#0000FF\",\"text\":\"Iceologer Jack\"}\u0027,title:\u0027{\"color\":\"#B22222\",\"text\":\"A Deal So Cool, It Gives You Goosebumps!\"}\u0027,backsideMessage:\u0027{\"text\":\"Feels Like Christmas Year Round Here!\"}\u0027,message:\u0027{\"text\":\"Here is what I got, so what do you say? You buying or not?\"}\u0027}"
       },
       "payment": {
-        "item": "minecraft:emerald",
+        "item": "todecoins:copper_coin",
         "count": 1
       }
-    },
-    {
+    }, {
       "output": {
         "item": "wares:sealed_delivery_agreement",
-        "nbt": "{experience:{max:30},ordered:{max:16,min:3,step:4},sealTooltip:\u0027{\"text\":\"Frosted Express\"}\u0027,buyerName:\u0027{\"color\":\"#0000FF\",\"text\":\"Iceologer Jack\"}\u0027,buyerAddress:\u0027{\"obfuscated\":true,\"text\":\"Somewhere Very, Very Cold\"}\u0027,title:\u0027{\"color\":\"#B22222\",\"text\":\"A Deal So Cool,\nIt Gives You Goosebumps!\"}\u0027,backsideMessage:\u0027{\"text\":\"Feels Like Christmas Year Round Here!\"}\u0027,message:\u0027{\"text\":\"Here is what I got, so what do you say?\nYou buying or not?\"}\u0027,payment:\"wares:agreement/village/gift_supply_list\",requested:\"wares:agreement/village/regular_market_currency\"}"
+        "nbt": "{ordered:{step:4,min:3,max:16},sealTooltip:\u0027{\"text\":\"Mystery Market Square\"}\u0027,RepairCost:0,display:{Name:\u0027{\"text\":\"Mystery Market Square Catalogue\"}\u0027},experience:{max:30},buyerName:\u0027{\"color\":\"#0000FF\",\"text\":\"Piglin Merchant\"}\u0027,title:\u0027{\"color\":\"#B22222\",\"text\":\"Hot New Offer!\"}\u0027,backsideMessage:\u0027{\"text\":\"Nothing better than this!\"}\u0027,message:\u0027{\"text\":\"Straight from the fiery depths into your home!\"}\u0027,buyerAddress:\u0027{\"obfuscated\":true,\"text\":\"The Nether, Where Else?\"}\u0027,requested:\"wares:agreement/village/regular_barter_currency\",payment:\"wares:agreement/village/regular_barter_list\"}"
       },
       "payment": {
-        "item": "minecraft:emerald",
+        "item": "todecoins:nether_gold_coin",
         "count": 1
       }
-    },
-    {
+    }, {
       "output": {
         "item": "wares:sealed_delivery_agreement",
-        "nbt": "{experience:{max:30},ordered:{max:16,min:3,step:4},sealTooltip:\u0027{\"text\":\"Mystery Market Square\"}\u0027,buyerName:\u0027{\"color\":\"#0000FF\",\"text\":\"Piglin Merchant\"}\u0027,buyerAddress:\u0027{\"obfuscated\":true,\"text\":\"The Nether, Where Else?\"}\u0027,title:\u0027{\"color\":\"#B22222\",\"text\":\"Hot New Offer!\"}\u0027,backsideMessage:\u0027{\"text\":\"Nothing better than this!\"}\u0027,message:\u0027{\"text\":\"Straight from the fiery depths into your home!\"}\u0027,payment:\"wares:agreement/village/regular_barter_list\",requested:\"wares:agreement/village/regular_barter_currency\"}"
+        "nbt": "{ordered:1,sealTooltip:\u0027{\"text\":\"Seasonal Shopper\"}\u0027,buyerAddress:\u0027{\"obfuscated\":false,\"text\":\"Corner of Sólida Avenue and Agua Lane, Todeville\"}\u0027,requested:\"wares:agreement/seasonal_shopper\",display:{Name:\u0027{\"text\":\"Seasonal Shopper Order\"}\u0027},payment:\"wares:agreement/server_token_package\",experience:{max:30},buyerName:\u0027{\"color\":\"#008000\",\"text\":\"Seasonal Shopper\"}\u0027,title:\u0027{\"color\":\"#006400\",\"text\":\"Catalogue Offer\"}\u0027,backsideMessage:\u0027{\"text\":\"Seasonal Items Needed!\"}\u0027,message:\u0027{\"text\":\"I need these items for the season. Payment on delivery!\"}\u0027}"
       },
       "payment": {
-        "item": "minecraft:emerald",
+        "item": "todecoins:copper_coin",
         "count": 1
       }
     }

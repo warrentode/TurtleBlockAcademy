@@ -53,6 +53,7 @@ public class SeatEntity extends Entity {
         }
     }
 
+    @SuppressWarnings("SameReturnValue")
     public static InteractionResult create(@NotNull Level level, BlockPos pos, double yOffset, Player player, Direction direction) {
         if (!level.isClientSide()) {
             List<SeatEntity> seats = level.getEntitiesOfClass(SeatEntity.class,

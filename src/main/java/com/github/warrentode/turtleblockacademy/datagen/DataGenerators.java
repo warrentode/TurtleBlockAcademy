@@ -36,7 +36,7 @@ public class DataGenerators {
         generator.addProvider(event.includeServer(), new SpawnEggRecipesGen(generator));
         generator.addProvider(event.includeServer(), new RecipesGen(generator));
 
-        generator.addProvider(event.includeClient(), new SoundsFileGen(generator, MODID, helper));
+        generator.addProvider(event.includeClient(), new SoundsFileGen(generator, helper));
         generator.addProvider(event.includeServer(), new ModBlockStatesProvider(generator, MODID, helper));
         generator.addProvider(event.includeServer(), new ModItemModelProvider(generator, MODID, helper));
         generator.addProvider(event.includeServer(), new AcademyAdvancementsGen(generator, helper));

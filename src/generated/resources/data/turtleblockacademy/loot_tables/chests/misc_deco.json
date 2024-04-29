@@ -405,7 +405,7 @@
               "function": "minecraft:set_count"
             }
           ],
-          "name": "turtleblockacademy:lanterns"
+          "name": "workshop_for_handsome_adventurer:lanterns"
         },
         {
           "type": "minecraft:tag",

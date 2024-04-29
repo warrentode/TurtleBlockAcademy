@@ -1,6 +1,9 @@
 {
   "values": [
     {
+      "id": "corail_recycler:recycling_book",
+      "required": false
+    }, {
       "id": "#forge:books",
       "required": false
     }, {

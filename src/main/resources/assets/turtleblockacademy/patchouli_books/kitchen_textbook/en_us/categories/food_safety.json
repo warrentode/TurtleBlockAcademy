@@ -1,0 +1,6 @@
+{
+  "name": "Food Safety",
+  "parent": "turtleblockacademy:science",
+  "description": "Prevent foodborne illness with these simple practices.",
+  "icon": "minecraft:writable_book"
+}

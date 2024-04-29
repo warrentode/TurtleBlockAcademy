@@ -12,14 +12,11 @@
   "customEntries": [
     {
       "output": "farmersdelight:cabbage_seeds"
-    },
-    {
+    }, {
       "output": "farmersdelight:rice"
-    },
-    {
+    }, {
       "output": "farmersdelight:tomato_seeds"
-    },
-    {
+    }, {
       "output": {
         "item": "farmersdelight:brown_mushroom_colony"
       },
@@ -27,8 +24,7 @@
         "item": "minecraft:emerald",
         "count": 6
       }
-    },
-    {
+    }, {
       "output": {
         "item": "farmersdelight:red_mushroom_colony"
       },

@@ -14,8 +14,7 @@
         "item": "minecraft:emerald",
         "count": 15
       }
-    },
-    {
+    }, {
       "output": {
         "item": "botanypots:orange_concrete_hopper_botany_pot"
       },
@@ -23,8 +22,7 @@
         "item": "minecraft:emerald",
         "count": 15
       }
-    },
-    {
+    }, {
       "output": {
         "item": "botanypots:magenta_concrete_hopper_botany_pot"
       },
@@ -32,8 +30,7 @@
         "item": "minecraft:emerald",
         "count": 15
       }
-    },
-    {
+    }, {
       "output": {
         "item": "botanypots:light_blue_concrete_hopper_botany_pot"
       },
@@ -41,8 +38,7 @@
         "item": "minecraft:emerald",
         "count": 15
       }
-    },
-    {
+    }, {
       "output": {
         "item": "botanypots:yellow_concrete_hopper_botany_pot"
       },
@@ -50,8 +46,7 @@
         "item": "minecraft:emerald",
         "count": 15
       }
-    },
-    {
+    }, {
       "output": {
         "item": "botanypots:lime_concrete_hopper_botany_pot"
       },
@@ -59,8 +54,7 @@
         "item": "minecraft:emerald",
         "count": 15
       }
-    },
-    {
+    }, {
       "output": {
         "item": "botanypots:pink_concrete_hopper_botany_pot"
       },
@@ -68,8 +62,7 @@
         "item": "minecraft:emerald",
         "count": 15
       }
-    },
-    {
+    }, {
       "output": {
         "item": "botanypots:gray_concrete_hopper_botany_pot"
       },
@@ -77,8 +70,7 @@
         "item": "minecraft:emerald",
         "count": 15
       }
-    },
-    {
+    }, {
       "output": {
         "item": "botanypots:light_gray_concrete_hopper_botany_pot"
       },
@@ -86,8 +78,7 @@
         "item": "minecraft:emerald",
         "count": 15
       }
-    },
-    {
+    }, {
       "output": {
         "item": "botanypots:cyan_concrete_hopper_botany_pot"
       },
@@ -95,8 +86,7 @@
         "item": "minecraft:emerald",
         "count": 15
       }
-    },
-    {
+    }, {
       "output": {
         "item": "botanypots:purple_concrete_hopper_botany_pot"
       },
@@ -104,8 +94,7 @@
         "item": "minecraft:emerald",
         "count": 15
       }
-    },
-    {
+    }, {
       "output": {
         "item": "botanypots:blue_concrete_hopper_botany_pot"
       },
@@ -113,8 +102,7 @@
         "item": "minecraft:emerald",
         "count": 15
       }
-    },
-    {
+    }, {
       "output": {
         "item": "botanypots:brown_concrete_hopper_botany_pot"
       },
@@ -122,8 +110,7 @@
         "item": "minecraft:emerald",
         "count": 15
       }
-    },
-    {
+    }, {
       "output": {
         "item": "botanypots:green_concrete_hopper_botany_pot"
       },
@@ -131,8 +118,7 @@
         "item": "minecraft:emerald",
         "count": 15
       }
-    },
-    {
+    }, {
       "output": {
         "item": "botanypots:red_concrete_hopper_botany_pot"
       },
@@ -140,8 +126,7 @@
         "item": "minecraft:emerald",
         "count": 15
       }
-    },
-    {
+    }, {
       "output": {
         "item": "botanypots:black_concrete_hopper_botany_pot"
       },
@@ -149,8 +134,7 @@
         "item": "minecraft:emerald",
         "count": 15
       }
-    },
-    {
+    }, {
       "output": {
         "item": "botanypots:terracotta_hopper_botany_pot"
       },
@@ -158,8 +142,7 @@
         "item": "minecraft:emerald",
         "count": 15
       }
-    },
-    {
+    }, {
       "output": {
         "item": "botanypots:white_terracotta_hopper_botany_pot"
       },
@@ -167,8 +150,7 @@
         "item": "minecraft:emerald",
         "count": 15
       }
-    },
-    {
+    }, {
       "output": {
         "item": "botanypots:orange_terracotta_hopper_botany_pot"
       },
@@ -176,8 +158,7 @@
         "item": "minecraft:emerald",
         "count": 15
       }
-    },
-    {
+    }, {
       "output": {
         "item": "botanypots:magenta_terracotta_hopper_botany_pot"
       },
@@ -185,8 +166,7 @@
         "item": "minecraft:emerald",
         "count": 15
       }
-    },
-    {
+    }, {
       "output": {
         "item": "botanypots:light_blue_terracotta_hopper_botany_pot"
       },
@@ -194,8 +174,7 @@
         "item": "minecraft:emerald",
         "count": 15
       }
-    },
-    {
+    }, {
       "output": {
         "item": "botanypots:yellow_terracotta_hopper_botany_pot"
       },
@@ -203,8 +182,7 @@
         "item": "minecraft:emerald",
         "count": 15
       }
-    },
-    {
+    }, {
       "output": {
         "item": "botanypots:lime_terracotta_hopper_botany_pot"
       },
@@ -212,8 +190,7 @@
         "item": "minecraft:emerald",
         "count": 15
       }
-    },
-    {
+    }, {
       "output": {
         "item": "botanypots:pink_terracotta_hopper_botany_pot"
       },
@@ -221,8 +198,7 @@
         "item": "minecraft:emerald",
         "count": 15
       }
-    },
-    {
+    }, {
       "output": {
         "item": "botanypots:gray_terracotta_hopper_botany_pot"
       },
@@ -230,8 +206,7 @@
         "item": "minecraft:emerald",
         "count": 15
       }
-    },
-    {
+    }, {
       "output": {
         "item": "botanypots:light_gray_terracotta_hopper_botany_pot"
       },
@@ -239,8 +214,7 @@
         "item": "minecraft:emerald",
         "count": 15
       }
-    },
-    {
+    }, {
       "output": {
         "item": "botanypots:cyan_terracotta_hopper_botany_pot"
       },
@@ -248,8 +222,7 @@
         "item": "minecraft:emerald",
         "count": 15
       }
-    },
-    {
+    }, {
       "output": {
         "item": "botanypots:purple_terracotta_hopper_botany_pot"
       },
@@ -257,8 +230,7 @@
         "item": "minecraft:emerald",
         "count": 15
       }
-    },
-    {
+    }, {
       "output": {
         "item": "botanypots:blue_terracotta_hopper_botany_pot"
       },
@@ -266,8 +238,7 @@
         "item": "minecraft:emerald",
         "count": 15
       }
-    },
-    {
+    }, {
       "output": {
         "item": "botanypots:brown_terracotta_hopper_botany_pot"
       },
@@ -275,8 +246,7 @@
         "item": "minecraft:emerald",
         "count": 15
       }
-    },
-    {
+    }, {
       "output": {
         "item": "botanypots:green_terracotta_hopper_botany_pot"
       },
@@ -284,8 +254,7 @@
         "item": "minecraft:emerald",
         "count": 15
       }
-    },
-    {
+    }, {
       "output": {
         "item": "botanypots:red_terracotta_hopper_botany_pot"
       },
@@ -293,8 +262,7 @@
         "item": "minecraft:emerald",
         "count": 15
       }
-    },
-    {
+    }, {
       "output": {
         "item": "botanypots:black_terracotta_hopper_botany_pot"
       },
@@ -302,8 +270,7 @@
         "item": "minecraft:emerald",
         "count": 15
       }
-    },
-    {
+    }, {
       "output": {
         "item": "botanypots:white_glazed_terracotta_hopper_botany_pot"
       },
@@ -311,8 +278,7 @@
         "item": "minecraft:emerald",
         "count": 15
       }
-    },
-    {
+    }, {
       "output": {
         "item": "botanypots:orange_glazed_terracotta_hopper_botany_pot"
       },
@@ -320,8 +286,7 @@
         "item": "minecraft:emerald",
         "count": 15
       }
-    },
-    {
+    }, {
       "output": {
         "item": "botanypots:magenta_glazed_terracotta_hopper_botany_pot"
       },
@@ -329,8 +294,7 @@
         "item": "minecraft:emerald",
         "count": 15
       }
-    },
-    {
+    }, {
       "output": {
         "item": "botanypots:light_blue_glazed_terracotta_hopper_botany_pot"
       },
@@ -338,8 +302,7 @@
         "item": "minecraft:emerald",
         "count": 15
       }
-    },
-    {
+    }, {
       "output": {
         "item": "botanypots:yellow_glazed_terracotta_hopper_botany_pot"
       },
@@ -347,8 +310,7 @@
         "item": "minecraft:emerald",
         "count": 15
       }
-    },
-    {
+    }, {
       "output": {
         "item": "botanypots:lime_glazed_terracotta_hopper_botany_pot"
       },
@@ -356,8 +318,7 @@
         "item": "minecraft:emerald",
         "count": 15
       }
-    },
-    {
+    }, {
       "output": {
         "item": "botanypots:pink_glazed_terracotta_hopper_botany_pot"
       },
@@ -365,8 +326,7 @@
         "item": "minecraft:emerald",
         "count": 15
       }
-    },
-    {
+    }, {
       "output": {
         "item": "botanypots:gray_glazed_terracotta_hopper_botany_pot"
       },
@@ -374,8 +334,7 @@
         "item": "minecraft:emerald",
         "count": 15
       }
-    },
-    {
+    }, {
       "output": {
         "item": "botanypots:light_gray_glazed_terracotta_hopper_botany_pot"
       },
@@ -383,8 +342,7 @@
         "item": "minecraft:emerald",
         "count": 15
       }
-    },
-    {
+    }, {
       "output": {
         "item": "botanypots:cyan_glazed_terracotta_hopper_botany_pot"
       },
@@ -392,8 +350,7 @@
         "item": "minecraft:emerald",
         "count": 15
       }
-    },
-    {
+    }, {
       "output": {
         "item": "botanypots:purple_glazed_terracotta_hopper_botany_pot"
       },
@@ -401,8 +358,7 @@
         "item": "minecraft:emerald",
         "count": 15
       }
-    },
-    {
+    }, {
       "output": {
         "item": "botanypots:blue_glazed_terracotta_hopper_botany_pot"
       },
@@ -410,8 +366,7 @@
         "item": "minecraft:emerald",
         "count": 15
       }
-    },
-    {
+    }, {
       "output": {
         "item": "botanypots:brown_glazed_terracotta_hopper_botany_pot"
       },
@@ -419,8 +374,7 @@
         "item": "minecraft:emerald",
         "count": 15
       }
-    },
-    {
+    }, {
       "output": {
         "item": "botanypots:green_glazed_terracotta_hopper_botany_pot"
       },
@@ -428,8 +382,7 @@
         "item": "minecraft:emerald",
         "count": 15
       }
-    },
-    {
+    }, {
       "output": {
         "item": "botanypots:red_glazed_terracotta_hopper_botany_pot"
       },
@@ -437,8 +390,7 @@
         "item": "minecraft:emerald",
         "count": 15
       }
-    },
-    {
+    }, {
       "output": {
         "item": "botanypots:black_glazed_terracotta_hopper_botany_pot"
       },

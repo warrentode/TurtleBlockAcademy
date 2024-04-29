@@ -7,9 +7,11 @@ import com.aetherteam.aether.item.AetherItems;
 import com.catastrophe573.dimdungeons.DimDungeons;
 import com.github.warrentode.turtleblockacademy.TurtleBlockAcademy;
 import com.github.warrentode.turtleblockacademy.blocks.ModBlocks;
+import com.github.warrentode.turtleblockacademy.loot.tables.PackBuiltInLootTables;
 import com.github.warrentode.turtleblockacademy.util.PackTags;
 import com.google.common.collect.ImmutableList;
 import com.google.common.collect.Sets;
+import de.maxhenkel.miningdimension.Main;
 import net.mehvahdjukaar.supplementaries.reg.ModRegistry;
 import net.minecraft.advancements.*;
 import net.minecraft.advancements.critereon.EntityPredicate;
@@ -39,11 +41,12 @@ import top.theillusivec4.curios.api.SlotTypePreset;
 import java.io.IOException;
 import java.nio.file.Path;
 import java.util.List;
-import java.util.Objects;
 import java.util.Set;
 import java.util.function.Consumer;
 
+import static com.catastrophe573.dimdungeons.item.ItemRegistrar.*;
 import static com.github.warrentode.turtleblockacademy.TurtleBlockAcademy.MODID;
+import static de.maxhenkel.miningdimension.Main.MINING_DIMENSION;
 
 public class AcademyAdvancementsGen extends AdvancementProvider {
     private final Path PATH;
@@ -156,6 +159,12 @@ public class AcademyAdvancementsGen extends AdvancementProvider {
                     .rewards(AdvancementRewards.Builder.function(new ResourceLocation("turtleblockacademy:unlock_recipes")))
                     .save(consumer, getPath(MODID, "unlock_recipes"));
 
+            Advancement science_track = createSecretAdvancement()
+                    .addCriterion("tick", new PlayerTrigger.TriggerInstance(CriteriaTriggers.TICK.getId(),
+                            EntityPredicate.Composite.ANY))
+                    .rewards(AdvancementRewards.Builder.loot(new ResourceLocation(PackBuiltInLootTables.BREWING_GUIDE.toString())))
+                    .save(consumer, getPath(MODID, "give_brewing_guide"));
+
             Advancement curios_track = createAdvancement(root, Items.GLOW_ITEM_FRAME,
                     "curios_track",
                     FrameType.GOAL, false, false, false)
@@ -170,53 +179,63 @@ public class AcademyAdvancementsGen extends AdvancementProvider {
                             EntityPredicate.Composite.ANY))
                     .save(consumer, getPath(MODID, "exploration_track"));
 
-            Advancement enteredNether = Advancement.Builder.advancement()
+            Advancement enteredMining = Advancement.Builder.advancement()
                     .parent(exploration_track)
+                    .display(Main.TELEPORTER_ITEM.get(),
+                            Component.translatable("advancement." + MODID + "." + "enter_mining"),
+                            Component.translatable("advancement." + MODID + "." + "enter_mining.desc"),
+                            null, FrameType.TASK, false, false, false)
+                    .addCriterion("entered_mining", net.minecraft.advancements.critereon.ChangeDimensionTrigger.TriggerInstance.changedDimensionTo(MINING_DIMENSION))
+                    .rewards(AdvancementRewards.Builder.function(new ResourceLocation("turtleblockacademy:set_mining_stage")))
+                    .save(consumer, getPath(MODID, "exploration/enter_mining"));
+
+            Advancement enteredNether = Advancement.Builder.advancement()
+                    .parent(enteredMining)
                     .display(Items.FLINT_AND_STEEL,
                             Component.translatable("advancements.story.enter_the_nether.title"),
                             Component.translatable("advancements.story.enter_the_nether.description"),
-                            null, FrameType.TASK, false, false, true)
+                            null, FrameType.TASK, false, false, false)
                     .addCriterion("entered_nether", net.minecraft.advancements.critereon.ChangeDimensionTrigger.TriggerInstance.changedDimensionTo(Level.NETHER))
                     .rewards(AdvancementRewards.Builder.function(new ResourceLocation("turtleblockacademy:set_nether_stage")))
-                    .save(consumer, getPath("minecraft", "story/enter_the_nether"));
+                    .save(consumer, getPath(MODID, "exploration/enter_the_nether"));
 
             Advancement enteredEnd = Advancement.Builder.advancement()
-                    .parent(exploration_track)
+                    .parent(enteredNether)
                     .display(Blocks.END_STONE, Component.translatable("advancements.story.enter_the_end.title"), Component.translatable("advancements.story.enter_the_end.description"),
-                            null, FrameType.TASK, false, false, true)
+                            null, FrameType.TASK, false, false, false)
                     .addCriterion("entered_end", net.minecraft.advancements.critereon.ChangeDimensionTrigger.TriggerInstance.changedDimensionTo(Level.END))
                     .rewards(AdvancementRewards.Builder.function(new ResourceLocation("turtleblockacademy:set_end_stage")))
-                    .save(consumer, getPath("minecraft", "story/enter_the_end"));
+                    .save(consumer, getPath(MODID, "exploration/enter_the_end"));
 
             Advancement enteredAether = Advancement.Builder.advancement()
-                    .parent(exploration_track)
+                    .parent(enteredEnd)
                     .display(Blocks.GLOWSTONE,
                             Component.translatable("advancement.aether.enter_aether"),
                             Component.translatable("advancement.aether.enter_aether.desc"),
-                            null, FrameType.TASK, false, false, true)
+                            null, FrameType.TASK, false, false, false)
                     .addCriterion("enter_aether", net.minecraft.advancements.critereon.ChangeDimensionTrigger.TriggerInstance.changedDimensionTo(AetherDimensions.AETHER_LEVEL))
                     .rewards(AdvancementRewards.Builder.function(new ResourceLocation("turtleblockacademy:set_aether_stage")))
-                    .save(consumer, getPath("aether", "enter_aether"));
+                    .save(consumer, getPath(MODID, "exploration/enter_aether"));
 
             Advancement enteredPersonalSpace = Advancement.Builder.advancement()
-                    .parent(exploration_track)
-                    .display(Blocks.GLOWSTONE,
+                    .parent(enteredNether)
+                    .display(ITEM_BLANK_BUILD_KEY.get(),
                             Component.translatable("advancements.dimdungeons.dungeons.enter_personal_space.title"),
                             Component.translatable("advancements.dimdungeons.dungeons.enter_personal_space.description"),
-                            null, FrameType.TASK, false, false, true)
+                            null, FrameType.TASK, false, false, false)
                     .addCriterion("entered_space", net.minecraft.advancements.critereon.ChangeDimensionTrigger.TriggerInstance.changedDimensionTo(DimDungeons.BUILD_DIMENSION))
                     .rewards(AdvancementRewards.Builder.function(new ResourceLocation("turtleblockacademy:set_apartment_stage")))
-                    .save(consumer, getPath("dimdungeons", "dungeons/enter_personal_space"));
+                    .save(consumer, getPath(MODID, "exploration/enter_personal_space"));
 
             Advancement enteredDungeons = Advancement.Builder.advancement()
-                    .parent(exploration_track)
-                    .display(Blocks.GLOWSTONE,
+                    .parent(enteredPersonalSpace)
+                    .display(ITEM_PORTAL_KEY.get(),
                             Component.translatable("advancements.dimdungeons.dungeons.enter_basic_dungeon.title"),
                             Component.translatable("advancements.dimdungeons.dungeons.enter_basic_dungeon.description"),
-                            null, FrameType.TASK, false, false, true)
+                            null, FrameType.TASK, false, false, false)
                     .addCriterion("entered_dungeon", net.minecraft.advancements.critereon.ChangeDimensionTrigger.TriggerInstance.changedDimensionTo(DimDungeons.DUNGEON_DIMENSION))
                     .rewards(AdvancementRewards.Builder.function(new ResourceLocation("turtleblockacademy:set_dungeons_stage")))
-                    .save(consumer, getPath("dimdungeons", "dungeons/enter_basic_dungeon"));
+                    .save(consumer, getPath(MODID, "exploration/enter_basic_dungeon"));
 
             Advancement explore_overworld = addBiomes(Advancement.Builder.advancement(), EXPLORABLE_OVERWORLD_BIOMES)
                     .parent(exploration_track).display(Items.DIAMOND_BOOTS,
@@ -250,7 +269,6 @@ public class AcademyAdvancementsGen extends AdvancementProvider {
                     .rewards(AdvancementRewards.Builder.experience(500))
                     .save(consumer, getPath(MODID, "exploration/explore_aether"));
 
-            @SuppressWarnings("unused")
             Advancement equip_light_source = createAdvancement(curios_track, Items.LANTERN,
                     "equip_light_source", FrameType.TASK, true, true, false)
                     .addCriterion("equip_light_source",
@@ -263,19 +281,7 @@ public class AcademyAdvancementsGen extends AdvancementProvider {
                     .requirements(RequirementsStrategy.OR).save(consumer, getPath("curios", "equip_light_source"));
 
             @SuppressWarnings("unused")
-            Advancement equip_belt = createAdvancement(equip_light_source, Items.BUNDLE,
-                    "equip_wallet", FrameType.TASK, true, true, false)
-                    .addCriterion("equip_wallet",
-                            CuriosTriggers.equip()
-                                    .withItem(ItemPredicate.Builder.item().of(PackTags.Items.WALLETS))
-                                    .withSlot(SlotPredicate.Builder.slot().of(SlotTypePreset.BELT.getIdentifier()))
-                                    .withLocation(LocationPredicate.Builder.location())
-                                    .build())
-                    .rewards(AdvancementRewards.Builder.function(Objects.requireNonNull(ResourceLocation.tryParse("turtleblockacademy:add_belt_slot"))))
-                    .requirements(RequirementsStrategy.OR).save(consumer, getPath("curios", "equip_wallet"));
-
-            @SuppressWarnings("unused")
-            Advancement equip_quiver = createAdvancement(equip_belt, ModRegistry.QUIVER_ITEM.get(),
+            Advancement equip_quiver = createAdvancement(curios_track, ModRegistry.QUIVER_ITEM.get(),
                     "equip_quiver", FrameType.TASK, true, true, false)
                     .addCriterion("equip_quiver",
                             CuriosTriggers.equip()
@@ -283,7 +289,7 @@ public class AcademyAdvancementsGen extends AdvancementProvider {
                                     .withSlot(SlotPredicate.Builder.slot().of(SlotTypePreset.BELT.getIdentifier()))
                                     .withLocation(LocationPredicate.Builder.location())
                                     .build())
-                    .rewards(AdvancementRewards.Builder.experience(500))
+                    .rewards(AdvancementRewards.Builder.function(new ResourceLocation("turtleblockacademy:add_belt_slot")))
                     .requirements(RequirementsStrategy.OR).save(consumer, getPath("curios", "equip_quiver"));
         }
 

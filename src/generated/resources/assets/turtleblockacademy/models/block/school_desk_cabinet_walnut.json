@@ -3,6 +3,7 @@
   "textures": {
     "1": "ecologics:block/walnut_planks",
     "2": "ecologics:block/stripped_walnut_log",
+    "3": "ecologics:block/walnut_log",
     "particle": "ecologics:block/walnut_planks"
   }
 }

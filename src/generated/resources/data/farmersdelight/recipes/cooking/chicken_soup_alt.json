@@ -1,0 +1,22 @@
+{
+  "type": "farmersdelight:cooking",
+  "container": {
+    "item": "aether:skyroot_stick"
+  },
+  "cookingtime": 200,
+  "experience": 0.35,
+  "ingredients": [
+    {
+      "tag": "forge:ingredients/cooked_chicken"
+    }, {
+      "item": "minecraft:carrot"
+    }, {
+      "tag": "forge:crops/vegetables"
+    }, {
+      "tag": "forge:crops/greens"
+    }
+  ],
+  "result": {
+    "item": "farmersdelight:chicken_soup"
+  }
+}

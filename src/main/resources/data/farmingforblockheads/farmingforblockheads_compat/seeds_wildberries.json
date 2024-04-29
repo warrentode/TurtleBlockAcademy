@@ -1,0 +1,43 @@
+{
+  "modId": "wildberries",
+  "group": {
+    "name": "Wildberries for Berries",
+    "enabledByDefault": true,
+    "defaultCategory": "farmingforblockheads:seeds"
+  },
+  "customEntries": [
+    {
+      "output": {
+        "item": "wildberries:cranberries"
+      },
+      "payment": {
+        "item": "minecraft:emerald",
+        "count": 1
+      }
+    }, {
+      "output": {
+        "item": "wildberries:blackberry"
+      },
+      "payment": {
+        "item": "minecraft:emerald",
+        "count": 1
+      }
+    }, {
+      "output": {
+        "item": "wildberries:raspberry"
+      },
+      "payment": {
+        "item": "minecraft:emerald",
+        "count": 1
+      }
+    }, {
+      "output": {
+        "item": "wildberries:blueberries"
+      },
+      "payment": {
+        "item": "minecraft:emerald",
+        "count": 1
+      }
+    }
+  ]
+}

@@ -3,6 +3,7 @@
   "textures": {
     "1": "tconstruct:block/skyroot/planks",
     "2": "tconstruct:block/skyroot/stripped_log",
+    "3": "tconstruct:block/skyroot/log",
     "particle": "tconstruct:block/skyroot/planks"
   }
 }

@@ -71,6 +71,7 @@
         "item": "todecoins:endonian_coin"
       }
     },
+
     {
       "output": {
         "item": "todecoins:iron_coin"
@@ -543,7 +544,7 @@
         "item": "todecoins:endonian_coin"
       },
       "payment": {
-        "item": "todecoins:endonian_coin"
+        "item": "minecraft:emerald"
       }
     },
     {

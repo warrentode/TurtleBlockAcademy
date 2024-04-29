@@ -1,0 +1,19 @@
+{
+  "modId": "chunkymcchunkface",
+  "group": {
+    "name": "Chunk Loader",
+    "enabledByDefault": true,
+    "defaultCategory": "auto"
+  },
+  "customEntries": [
+    {
+      "output": {
+        "item": "chunkymcchunkface:chunk_loader"
+      },
+      "payment": {
+        "item": "todecoins:netherite_coin",
+        "count": 15
+      }
+    }
+  ]
+}

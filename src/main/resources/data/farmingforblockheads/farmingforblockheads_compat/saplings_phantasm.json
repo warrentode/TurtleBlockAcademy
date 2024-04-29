@@ -1,0 +1,25 @@
+{
+  "modId": "phantasm",
+  "group": {
+    "name": "Phantasm Saplings",
+    "enabledByDefault": false,
+    "defaultPayment": {
+      "item": "minecraft:emerald",
+      "count": 6
+    },
+    "defaultCategory": "farmingforblockheads:saplings"
+  },
+  "customEntries": [
+    {
+      "output": {
+        "item": "phantasm:pream_sapling",
+        "count": 1
+      }
+    }, {
+      "output": {
+        "item": "phantasm:putac_shroom",
+        "count": 1
+      }
+    }
+  ]
+}

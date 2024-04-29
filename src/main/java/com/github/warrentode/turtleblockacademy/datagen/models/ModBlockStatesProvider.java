@@ -392,8 +392,8 @@ public class ModBlockStatesProvider extends BlockStateProvider {
 
         threeTextureHorizontalVariant(result1, MODID + ":" + "block/desk_chair", modid, path_1, path_2, path_3);
         threeTextureHorizontalVariant(result3, MODID + ":" + "block/locker", modid, path_1, path_2, path_3);
+        threeTextureHorizontalVariant(result4, MODID + ":" + "block/school_desk_cabinet", modid, path_1, path_2, path_3);
 
-        twoTextureHorizontalVariant(result4, MODID + ":" + "block/school_desk_cabinet", modid, path_1, path_2);
         twoTextureHorizontalVariant(result6, MODID + ":" + "block/park_bench", modid, path_1, path_2);
         twoTextureHorizontalVariant(result5, MODID + ":" + "block/school_desk", modid, path_1, path_2);
 
