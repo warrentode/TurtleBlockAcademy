@@ -1,6 +1,9 @@
 {
   "values": [
     {
+      "id": "hauntedharvest:corn",
+      "required": false
+    }, {
       "id": "ends_delight:chorus_succulent",
       "required": false
     },

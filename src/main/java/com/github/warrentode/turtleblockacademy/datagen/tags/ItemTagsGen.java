@@ -562,6 +562,7 @@ public class ItemTagsGen extends ItemTagsProvider {
         tag(PackTags.Items.APPLES)
                 .add(Items.APPLE);
         tag(PackTags.Items.VEGETABLES)
+                .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("hauntedharvest:corn")))
                 .addOptional(ItemRegistry.ChorusSucculent.getId())
                 .addOptional(ItemRegistry.DriedChorusFlower.getId())
                 .addOptional(UnusualendModItems.CHORUS_PETAL.getId())

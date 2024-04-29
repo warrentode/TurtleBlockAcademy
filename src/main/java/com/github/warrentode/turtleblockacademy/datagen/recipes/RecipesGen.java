@@ -1154,7 +1154,7 @@ public class RecipesGen extends RecipeProvider implements IConditionBuilder {
                 .addRecipe(finishedRecipeConsumer ->
                         CookingPotRecipeBuilder.cookingPotRecipe(CHICKEN_SOUP.get(), 1, 200, 1.0F)
                                 .addIngredient(Ingredient.of(PackTags.Items.RAW_CHICKEN))
-                                .addIngredient(Ingredient.of(Items.CARROT))
+                                .addIngredient(Ingredient.of(PackTags.Items.VEGETABLES))
                                 .addIngredient(Ingredient.of(PackTags.Items.VEGETABLES))
                                 .addIngredient(Ingredient.of(PackTags.Items.GREENS))
                                 .unlockedBy("has_chicken", has(PackTags.Items.RAW_CHICKEN))
