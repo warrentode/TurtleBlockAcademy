@@ -6,11 +6,11 @@
     {
       "tag": "forge:ingredients/raw_chicken"
     }, {
-      "tag": "forge:crops/vegetables"
+      "tag": "forge:ingredients/carrot"
     }, {
       "tag": "forge:crops/vegetables"
     }, {
-      "tag": "forge:crops/greens"
+      "tag": "forge:ingredients/salad"
     }
   ],
   "result": {

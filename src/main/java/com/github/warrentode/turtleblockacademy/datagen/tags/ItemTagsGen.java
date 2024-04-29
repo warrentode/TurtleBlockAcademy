@@ -37,6 +37,7 @@ import vectorwing.farmersdelight.common.tag.ForgeTags;
 
 import java.util.Objects;
 
+import static com.sammy.minersdelight.setup.MDItems.CAVE_CARROT;
 import static net.p3pp3rf1y.sophisticatedbackpacks.init.ModItems.*;
 
 public class ItemTagsGen extends ItemTagsProvider {
@@ -540,8 +541,10 @@ public class ItemTagsGen extends ItemTagsProvider {
         tag(PackTags.Items.BLUEBERRIES)
                 .addOptional(AetherItems.BLUE_BERRY.getId())
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("wildberries:blueberries")));
+        tag(PackTags.Items.SALAD_INGREDIENTS)
+                .addTag(PackTags.Items.GREENS)
+                .add(Items.DRIED_KELP);
         tag(PackTags.Items.GREENS)
-                .add(Items.DRIED_KELP)
                 .add(Items.KELP)
                 .add(Items.SEAGRASS)
                 .addTag(PackTags.Items.CABBAGE)
@@ -589,6 +592,12 @@ public class ItemTagsGen extends ItemTagsProvider {
         tag(PackTags.Items.RICE)
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("farmersdelight:rice")))
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("xercamod:rice")));
+        tag(PackTags.Items.CARROTS)
+                .addOptional(CAVE_CARROT.getId())
+                .add(Items.CARROT);
+        tag(PackTags.Items.CARROT_INGREDIENTS)
+                .add(Items.GOLDEN_CARROT)
+                .addTag(PackTags.Items.CARROTS);
         tag(PackTags.Items.SHROOMS)
                 .add(Items.RED_MUSHROOM)
                 .add(Items.BROWN_MUSHROOM)

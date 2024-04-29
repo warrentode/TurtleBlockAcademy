@@ -117,6 +117,7 @@ public class PackTags {
 
         public static final TagKey<Item> CROPS = packItemTag("forge", "crops");
         public static final TagKey<Item> SHROOMS = packItemTag("forge", "crops/shrooms");
+        public static final TagKey<Item> CARROTS = packItemTag("forge", "crops/carrots");
         public static final TagKey<Item> RICE = packItemTag("forge", "crops/rice");
         public static final TagKey<Item> CABBAGE = packItemTag("forge", "crops/cabbage");
         public static final TagKey<Item> TOMATO = packItemTag("forge", "crops/tomato");
@@ -146,6 +147,8 @@ public class PackTags {
         public static final TagKey<Item> FOX_FOOD = packItemTag("minecraft", "fox_food");
 
         public static final TagKey<Item> INGREDIENTS = packItemTag("forge", "ingredients");
+        public static final TagKey<Item> SALAD_INGREDIENTS = packItemTag("forge", "ingredients/salad");
+        public static final TagKey<Item> CARROT_INGREDIENTS = packItemTag("forge", "ingredients/carrot");
         public static final TagKey<Item> CABBAGE_INGREDIENTS = packItemTag("forge", "ingredients/cabbage");
         public static final TagKey<Item> PUMPKIN_INGREDIENTS = packItemTag("forge", "ingredients/pumpkin");
         public static final TagKey<Item> MELON_INGREDIENTS = packItemTag("forge", "ingredients/melon");
