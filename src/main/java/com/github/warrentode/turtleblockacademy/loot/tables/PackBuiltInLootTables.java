@@ -11,8 +11,8 @@ import static com.github.warrentode.turtleblockacademy.TurtleBlockAcademy.MODID;
 public class PackBuiltInLootTables {
     private static final Set<ResourceLocation> LOCATIONS = Sets.newHashSet();
 
-
     public static final ResourceLocation BREWING_GUIDE = register(MODID + ":" + "advancements/loot_tables/give_brewing_guide");
+    public static final ResourceLocation KITCHEN_TEXTBOOK = register(MODID + ":" + "advancements/loot_tables/give_kitchen_textbook");
 
     // randomized map loot tables
     public static final ResourceLocation MASTER_MAPBOX = register(MODID + ":" + "chests/maps/master_mapbox");
@@ -47,6 +47,23 @@ public class PackBuiltInLootTables {
     public static final ResourceLocation HOLIDAY_DECO = register(MODID + ":" + "chests/holiday_deco");
     public static final ResourceLocation MISC_DECO = register(MODID + ":" + "chests/misc_deco");
     public static final ResourceLocation BONUS_SAND_DROPS = register(MODID + ":" + "chests/bonus_sand_drops");
+
+    // misc tables
+    public static final ResourceLocation PIGLIN_BARTERING = register("minecraft" + ":" + "gameplay/piglin_bartering");
+    public static final ResourceLocation CAT_MORNING_GIFT = register("minecraft" + ":" + "gameplay/cat_morning_gift");
+    public static final ResourceLocation ARMORER_GIFT = register("minecraft" + ":" + "gameplay/hero_of_the_village/armorer_gift");
+    public static final ResourceLocation BUTCHER_GIFT = register("minecraft" + ":" + "gameplay/hero_of_the_village/butcher_gift");
+    public static final ResourceLocation CARTOGRAPHER_GIFT = register("minecraft" + ":" + "gameplay/hero_of_the_village/cartographer_gift");
+    public static final ResourceLocation CLERIC_GIFT = register("minecraft" + ":" + "gameplay/hero_of_the_village/cleric_gift");
+    public static final ResourceLocation FARMER_GIFT = register("minecraft" + ":" + "gameplay/hero_of_the_village/farmer_gift");
+    public static final ResourceLocation FISHERMAN_GIFT = register("minecraft" + ":" + "gameplay/hero_of_the_village/fisherman_gift");
+    public static final ResourceLocation FLETCHER_GIFT = register("minecraft" + ":" + "gameplay/hero_of_the_village/fletcher_gift");
+    public static final ResourceLocation LEATHERWORKER_GIFT = register("minecraft" + ":" + "gameplay/hero_of_the_village/leatherworker_gift");
+    public static final ResourceLocation LIBRARIAN_GIFT = register("minecraft" + ":" + "gameplay/hero_of_the_village/librarian_gift");
+    public static final ResourceLocation MASON_GIFT = register("minecraft" + ":" + "gameplay/hero_of_the_village/mason_gift");
+    public static final ResourceLocation SHEPHERD_GIFT = register("minecraft" + ":" + "gameplay/hero_of_the_village/shepherd_gift");
+    public static final ResourceLocation TOOLSMITH_GIFT = register("minecraft" + ":" + "gameplay/hero_of_the_village/toolsmith_gift");
+    public static final ResourceLocation WEAPONSMITH_GIFT = register("minecraft" + ":" + "gameplay/hero_of_the_village/weaponsmith_gift");
 
     // modified entity loot tables
     public static final ResourceLocation ENDER_DRAGON = register("minecraft" + ":" + "entities/ender_dragon");

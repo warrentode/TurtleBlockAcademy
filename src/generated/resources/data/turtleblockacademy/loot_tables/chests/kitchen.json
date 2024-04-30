@@ -163,6 +163,23 @@
             }
           ],
           "name": "turtleblockacademy:chests/kitchen/aether_edibles"
+        }, {
+          "type": "minecraft:loot_table",
+          "conditions": [
+            {
+              "condition": "minecraft:alternative",
+              "terms": [
+                {
+                  "condition": "turtleblockacademy:biometag_condition",
+                  "tag": "forge:is_underground"
+                }, {
+                  "condition": "turtleblockacademy:gamestage_condition",
+                  "stage": "false"
+                }
+              ]
+            }
+          ],
+          "name": "turtleblockacademy:chests/kitchen/minersdelight_edibles"
         }
       ],
       "rolls": {

@@ -1,0 +1,8 @@
+{
+  "values": [
+    {
+      "id": "advancementframes:advancement_frame",
+      "required": false
+    }
+  ]
+}

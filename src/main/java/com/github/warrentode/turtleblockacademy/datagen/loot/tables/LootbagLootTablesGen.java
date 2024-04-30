@@ -7,7 +7,6 @@ import com.github.warrentode.turtleblockacademy.loot.tables.LootbagLootTables;
 import com.github.warrentode.turtleblockacademy.loot.tables.PackBuiltInLootTables;
 import com.github.warrentode.turtleblockacademy.util.PackTags;
 import net.mcreator.justoutdoorstuffs.init.JustoutdoorstuffsModItems;
-import net.mehvahdjukaar.cagerium.Cagerium;
 import net.minecraft.Util;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.resources.ResourceLocation;
@@ -68,18 +67,11 @@ public class LootbagLootTablesGen implements Consumer<BiConsumer<ResourceLocatio
                         .add(LootTableReference.lootTableReference(PackBuiltInLootTables.GEMS)
                                 .apply(SetItemCountFunction.setCount(UniformGenerator.between(3, 5))))
                         .add(LootTableReference.lootTableReference(PackBuiltInLootTables.DUNGEON_REWARDS))
-                        .add(LootItem.lootTableItem(Cagerium.CAGE_BASE.get()).setWeight(1)
+                        .add(TagEntry.expandTag(PackTags.Items.CAGERIUM_BLOCKS).setWeight(1)
                                 .when(STAGE_APARTMENT)
                                 .when(LootItemRandomChanceCondition.randomChance(0.1F)))
-                        .add(LootItem.lootTableItem(Cagerium.TERRARIUM_BASE.get()).setWeight(1)
+                        .add(TagEntry.expandTag(PackTags.Items.CAGERIUM_ITEMS).setWeight(1)
                                 .when(STAGE_APARTMENT)
-                                .when(LootItemRandomChanceCondition.randomChance(0.1F)))
-                        .add(LootItem.lootTableItem(Cagerium.PLATE_GEM.get()).setWeight(1)
-                                .when(STAGE_APARTMENT)
-                                .when(LootItemRandomChanceCondition.randomChance(0.1F)))
-                        .add(LootItem.lootTableItem(Cagerium.CAGE_KEY.get()).setWeight(1)
-                                .when(STAGE_APARTMENT)
-                                .apply(SetItemCountFunction.setCount(UniformGenerator.between(3, 5)))
                                 .when(LootItemRandomChanceCondition.randomChance(0.1F)))
                 ));
         consumer.accept(LootbagLootTables.EPIC, LootTable.lootTable()

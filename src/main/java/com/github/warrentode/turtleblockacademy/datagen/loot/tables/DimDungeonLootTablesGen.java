@@ -28,7 +28,6 @@ import java.util.function.Consumer;
 
 import static com.aetherteam.aether.block.AetherBlocks.*;
 import static com.github.warrentode.turtleblockacademy.datagen.loot.ModLootProviders.*;
-import static com.mrcrayfish.goldenhopper.init.ModBlocks.GOLDEN_HOPPER;
 import static com.refinedmods.refinedstorage.RSItems.*;
 import static decor.delight.init.DecorationDelightModItems.*;
 import static net.mcreator.phantasm.init.PhantasmModItems.*;
@@ -244,7 +243,7 @@ public class DimDungeonLootTablesGen implements Consumer<BiConsumer<ResourceLoca
                                 .apply(SetItemCountFunction.setCount(ConstantValue.exactly(1))))
                         .add(LootItem.lootTableItem(Items.STICKY_PISTON)
                                 .apply(SetItemCountFunction.setCount(ConstantValue.exactly(1))))
-                        .add(LootItem.lootTableItem(GOLDEN_HOPPER.get())
+                        .add(TagEntry.expandTag(PackTags.Items.GOLDEN_HOPPER)
                                 .apply(SetItemCountFunction.setCount(ConstantValue.exactly(1))))
                         .add(LootItem.lootTableItem(SSBlocks.SEASON_SENSOR.get())
                                 .apply(SetItemCountFunction.setCount(ConstantValue.exactly(1))))

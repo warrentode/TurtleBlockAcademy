@@ -44,7 +44,8 @@ import java.util.List;
 import java.util.Set;
 import java.util.function.Consumer;
 
-import static com.catastrophe573.dimdungeons.item.ItemRegistrar.*;
+import static com.catastrophe573.dimdungeons.item.ItemRegistrar.ITEM_BLANK_BUILD_KEY;
+import static com.catastrophe573.dimdungeons.item.ItemRegistrar.ITEM_PORTAL_KEY;
 import static com.github.Pandarix.beautify.core.init.ItemInit.BOOKSTACK_ITEM;
 import static com.github.warrentode.turtleblockacademy.TurtleBlockAcademy.MODID;
 import static de.maxhenkel.miningdimension.Main.MINING_DIMENSION;
@@ -160,11 +161,17 @@ public class AcademyAdvancementsGen extends AdvancementProvider {
                     .rewards(AdvancementRewards.Builder.function(new ResourceLocation("turtleblockacademy:unlock_recipes")))
                     .save(consumer, getPath(MODID, "unlock_recipes"));
 
-            Advancement science_track = createSecretAdvancement()
+            Advancement brewing_guide = createSecretAdvancement()
                     .addCriterion("tick", new PlayerTrigger.TriggerInstance(CriteriaTriggers.TICK.getId(),
                             EntityPredicate.Composite.ANY))
                     .rewards(AdvancementRewards.Builder.loot(new ResourceLocation(PackBuiltInLootTables.BREWING_GUIDE.toString())))
                     .save(consumer, getPath(MODID, "give_brewing_guide"));
+
+            Advancement kitchen_textbook = createSecretAdvancement()
+                    .addCriterion("tick", new PlayerTrigger.TriggerInstance(CriteriaTriggers.TICK.getId(),
+                            EntityPredicate.Composite.ANY))
+                    .rewards(AdvancementRewards.Builder.loot(new ResourceLocation(PackBuiltInLootTables.KITCHEN_TEXTBOOK.toString())))
+                    .save(consumer, getPath(MODID, "give_kitchen_textbook"));
 
             Advancement curios_track = createAdvancement(root, Items.GLOW_ITEM_FRAME,
                     "curios_track",

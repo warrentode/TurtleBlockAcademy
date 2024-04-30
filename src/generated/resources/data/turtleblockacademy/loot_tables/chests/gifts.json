@@ -100,11 +100,50 @@
         },
         {
           "type": "minecraft:loot_table",
-          "name": "turtleblockacademy:cagerium/chests/gifts"
+          "name": "turtleblockacademy:chests/holiday_deco"
+        }, {
+          "type": "minecraft:loot_table",
+          "name": "minecraft:gameplay/cat_morning_gift"
+        }, {
+          "type": "minecraft:loot_table",
+          "name": "minecraft:gameplay/hero_of_the_village/armorer_gift"
+        }, {
+          "type": "minecraft:loot_table",
+          "name": "minecraft:gameplay/hero_of_the_village/butcher_gift"
+        }, {
+          "type": "minecraft:loot_table",
+          "name": "minecraft:gameplay/hero_of_the_village/cartographer_gift"
+        }, {
+          "type": "minecraft:loot_table",
+          "name": "minecraft:gameplay/hero_of_the_village/cleric_gift"
+        }, {
+          "type": "minecraft:loot_table",
+          "name": "minecraft:gameplay/hero_of_the_village/farmer_gift"
         },
         {
           "type": "minecraft:loot_table",
-          "name": "turtleblockacademy:chests/holiday_deco"
+          "name": "minecraft:gameplay/hero_of_the_village/fisherman_gift"
+        }, {
+          "type": "minecraft:loot_table",
+          "name": "minecraft:gameplay/hero_of_the_village/fletcher_gift"
+        }, {
+          "type": "minecraft:loot_table",
+          "name": "minecraft:gameplay/hero_of_the_village/leatherworker_gift"
+        }, {
+          "type": "minecraft:loot_table",
+          "name": "minecraft:gameplay/hero_of_the_village/librarian_gift"
+        }, {
+          "type": "minecraft:loot_table",
+          "name": "minecraft:gameplay/hero_of_the_village/mason_gift"
+        }, {
+          "type": "minecraft:loot_table",
+          "name": "minecraft:gameplay/hero_of_the_village/shepherd_gift"
+        }, {
+          "type": "minecraft:loot_table",
+          "name": "minecraft:gameplay/hero_of_the_village/toolsmith_gift"
+        }, {
+          "type": "minecraft:loot_table",
+          "name": "minecraft:gameplay/hero_of_the_village/weaponsmith_gift"
         }
       ],
       "rolls": 1.0

@@ -7,7 +7,6 @@ import cn.foggyhillside.endsdelight.registry.ItemRegistry;
 import com.aetherteam.aether.item.AetherItems;
 import com.catastrophe573.dimdungeons.item.ItemRegistrar;
 import com.github.Pandarix.beautify.core.init.BlockInit;
-import com.github.warrentode.turtleblockacademy.loot.tables.CageriumLootTables;
 import com.github.warrentode.turtleblockacademy.loot.tables.LootbagLootTables;
 import com.github.warrentode.turtleblockacademy.loot.tables.PackBuiltInLootTables;
 import com.github.warrentode.turtleblockacademy.util.PackTags;
@@ -31,6 +30,7 @@ import net.minecraft.tags.ItemTags;
 import net.minecraft.world.item.DyeColor;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.alchemy.Potions;
+import net.minecraft.world.item.enchantment.Enchantments;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.saveddata.maps.MapDecoration;
 import net.minecraft.world.level.storage.loot.LootPool;
@@ -56,7 +56,6 @@ import static com.github.warrentode.turtleblockacademy.datagen.loot.ModLootProvi
 import static decor.delight.init.DecorationDelightModItems.*;
 import static net.mcreator.moadecorholidays.init.MoaDecorHolidaysModItems.*;
 import static net.mcreator.unusualend.init.UnusualendModItems.*;
-import static net.mehvahdjukaar.advframes.AdvFrames.ADVANCEMENT_FRAME_ITEM;
 import static net.mehvahdjukaar.snowyspirit.reg.ModRegistry.*;
 import static net.mehvahdjukaar.supplementaries.reg.ModRegistry.*;
 import static samebutdifferent.ecologics.registry.ModBlocks.POT;
@@ -72,6 +71,13 @@ public class PackLootTablesGen implements Consumer<BiConsumer<ResourceLocation, 
                         .add(LootItem.lootTableItem(PatchouliItems.BOOK)
                                 .apply(SetNbtFunction.setTag(Util.make(new CompoundTag(),
                                         (tag) -> tag.putString("patchouli:book", "turtleblockacademy:brewingguide")))))
+                ));
+        //noinspection deprecation
+        consumer.accept(PackBuiltInLootTables.KITCHEN_TEXTBOOK, LootTable.lootTable()
+                .withPool(LootPool.lootPool().setRolls(ConstantValue.exactly(1))
+                        .add(LootItem.lootTableItem(PatchouliItems.BOOK)
+                                .apply(SetNbtFunction.setTag(Util.make(new CompoundTag(),
+                                        (tag) -> tag.putString("patchouli:book", "turtleblockacademy:kitchen_textbook")))))
                 ));
 
         consumer.accept(LootbagLootTables.ARTIFACTS_GIFTS, LootTable.lootTable()
@@ -178,7 +184,7 @@ public class PackLootTablesGen implements Consumer<BiConsumer<ResourceLocation, 
                                 .apply(SetItemCountFunction.setCount(UniformGenerator.between(5, 9))))
                         .add(TagEntry.expandTag(PackTags.Items.PICTURE_FRAMES)
                                 .apply(SetItemCountFunction.setCount(UniformGenerator.between(5, 9))))
-                        .add(LootItem.lootTableItem(ADVANCEMENT_FRAME_ITEM.get())
+                        .add(TagEntry.expandTag(PackTags.Items.ADVANCEMENT_FRAME_ITEM)
                                 .apply(SetItemCountFunction.setCount(UniformGenerator.between(5, 9))))
                         .add(TagEntry.expandTag(ItemTags.CANDLES)
                                 .apply(SetItemCountFunction.setCount(UniformGenerator.between(5, 9))))
@@ -376,13 +382,15 @@ public class PackLootTablesGen implements Consumer<BiConsumer<ResourceLocation, 
                         .add(LootItem.lootTableItem(Items.DIAMOND).setWeight(5)
                                 .apply(SetItemCountFunction.setCount(ConstantValue.exactly(1))))
                         .add(TagEntry.expandTag(PackTags.Items.SOUL_BINDER).setWeight(1).setQuality(6)
+                                .when(STAGE_APARTMENT)
                                 .when(LootItemRandomChanceCondition.randomChance(0.001F)))
                         .add(LootItem.lootTableItem(Items.EMERALD).setWeight(5))
                         .add(LootItem.lootTableItem(ModItems.PEARL.get()).setWeight(1).setQuality(6)
                                 .apply(SetItemCountFunction.setCount(ConstantValue.exactly(1))))
                         .add(LootItem.lootTableItem(Items.ENDER_PEARL).setWeight(1).setQuality(6))
                         .add(LootItem.lootTableItem(Items.LAPIS_LAZULI).setWeight(5))
-                        .add(TagEntry.expandTag(PackTags.Items.STAR).setWeight(1).setQuality(6))
+                        .add(TagEntry.expandTag(PackTags.Items.STAR).setWeight(1).setQuality(6)
+                                .when(IN_END.or(STAGE_END)))
                         .add(LootItem.lootTableItem(Items.GHAST_TEAR).when(IN_NETHER.or(STAGE_NETHER))
                                 .setWeight(1).setQuality(6))
                         .add(LootItem.lootTableItem(Items.PRISMARINE_CRYSTALS).setWeight(1).setQuality(6)
@@ -399,7 +407,7 @@ public class PackLootTablesGen implements Consumer<BiConsumer<ResourceLocation, 
                                 .apply(SetItemCountFunction.setCount(ConstantValue.exactly(2))))
                         .add(TagEntry.expandTag(PackTags.Items.GEMSTONE).setWeight(1).setQuality(6))
                         .add(TagEntry.expandTag(PackTags.Items.SHELL).setWeight(1).setQuality(6))
-                        .add(TagEntry.expandTag(PackTags.Items.CRYSTAL).when(IN_END).setWeight(1).setQuality(6))
+                        .add(TagEntry.expandTag(PackTags.Items.CRYSTAL).when(IN_END.or(STAGE_END)).setWeight(1).setQuality(6))
                 )
         );
 
@@ -670,8 +678,21 @@ public class PackLootTablesGen implements Consumer<BiConsumer<ResourceLocation, 
                                 .when(LootItemRandomChanceCondition.randomChance(0.1F)))
                         .add(LootTableReference.lootTableReference(PackBuiltInLootTables.PLUSHIES)
                                 .when(LootItemRandomChanceCondition.randomChance(0.5F)))
-                        .add(LootTableReference.lootTableReference(CageriumLootTables.GIFTS))
                         .add(LootTableReference.lootTableReference(PackBuiltInLootTables.HOLIDAY_DECO))
+                        .add(LootTableReference.lootTableReference(PackBuiltInLootTables.CAT_MORNING_GIFT))
+                        .add(LootTableReference.lootTableReference(PackBuiltInLootTables.ARMORER_GIFT))
+                        .add(LootTableReference.lootTableReference(PackBuiltInLootTables.BUTCHER_GIFT))
+                        .add(LootTableReference.lootTableReference(PackBuiltInLootTables.CARTOGRAPHER_GIFT))
+                        .add(LootTableReference.lootTableReference(PackBuiltInLootTables.CLERIC_GIFT))
+                        .add(LootTableReference.lootTableReference(PackBuiltInLootTables.FARMER_GIFT))
+                        .add(LootTableReference.lootTableReference(PackBuiltInLootTables.FISHERMAN_GIFT))
+                        .add(LootTableReference.lootTableReference(PackBuiltInLootTables.FLETCHER_GIFT))
+                        .add(LootTableReference.lootTableReference(PackBuiltInLootTables.LEATHERWORKER_GIFT))
+                        .add(LootTableReference.lootTableReference(PackBuiltInLootTables.LIBRARIAN_GIFT))
+                        .add(LootTableReference.lootTableReference(PackBuiltInLootTables.MASON_GIFT))
+                        .add(LootTableReference.lootTableReference(PackBuiltInLootTables.SHEPHERD_GIFT))
+                        .add(LootTableReference.lootTableReference(PackBuiltInLootTables.TOOLSMITH_GIFT))
+                        .add(LootTableReference.lootTableReference(PackBuiltInLootTables.WEAPONSMITH_GIFT))
                 ));
 
         consumer.accept(PackBuiltInLootTables.PLUSHIES, LootTable.lootTable()
@@ -2018,5 +2039,163 @@ public class PackLootTablesGen implements Consumer<BiConsumer<ResourceLocation, 
                         .add(LootItem.lootTableItem(ItemRegistry.RawDragonMeat.get()))
                         .add(LootItem.lootTableItem(ItemRegistry.DragonLeg.get())))
         );
+
+        consumer.accept(PackBuiltInLootTables.CAT_MORNING_GIFT, LootTable.lootTable()
+                .withPool(LootPool.lootPool().setRolls(ConstantValue.exactly(1.0F))
+                        .add(LootItem.lootTableItem(Items.RABBIT_HIDE).setWeight(10))
+                        .add(LootItem.lootTableItem(Items.RABBIT_FOOT).setWeight(10))
+                        .add(LootItem.lootTableItem(Items.CHICKEN).setWeight(10))
+                        .add(LootItem.lootTableItem(Items.FEATHER).setWeight(10))
+                        .add(LootItem.lootTableItem(Items.ROTTEN_FLESH).setWeight(10))
+                        .add(LootItem.lootTableItem(Items.STRING).setWeight(10))
+                        .add(LootItem.lootTableItem(Items.PHANTOM_MEMBRANE).setWeight(2))));
+
+        consumer.accept(PackBuiltInLootTables.ARMORER_GIFT, LootTable.lootTable()
+                .withPool(LootPool.lootPool().setRolls(ConstantValue.exactly(1.0F))
+                        .add(LootItem.lootTableItem(Items.CHAINMAIL_HELMET))
+                        .add(LootItem.lootTableItem(Items.CHAINMAIL_CHESTPLATE))
+                        .add(LootItem.lootTableItem(Items.CHAINMAIL_LEGGINGS))
+                        .add(LootItem.lootTableItem(Items.CHAINMAIL_BOOTS))));
+        consumer.accept(PackBuiltInLootTables.BUTCHER_GIFT, LootTable.lootTable()
+                .withPool(LootPool.lootPool().setRolls(ConstantValue.exactly(1.0F))
+                        .add(LootItem.lootTableItem(Items.COOKED_RABBIT))
+                        .add(LootItem.lootTableItem(Items.COOKED_CHICKEN))
+                        .add(LootItem.lootTableItem(Items.COOKED_PORKCHOP))
+                        .add(LootItem.lootTableItem(Items.COOKED_BEEF))
+                        .add(LootItem.lootTableItem(Items.COOKED_MUTTON))));
+        consumer.accept(PackBuiltInLootTables.CARTOGRAPHER_GIFT, LootTable.lootTable()
+                .withPool(LootPool.lootPool().setRolls(ConstantValue.exactly(1.0F))
+                        .add(LootItem.lootTableItem(Items.MAP))
+                        .add(LootItem.lootTableItem(Items.PAPER))));
+        consumer.accept(PackBuiltInLootTables.CLERIC_GIFT, LootTable.lootTable()
+                .withPool(LootPool.lootPool().setRolls(ConstantValue.exactly(1.0F))
+                        .add(LootItem.lootTableItem(Items.REDSTONE))
+                        .add(LootItem.lootTableItem(Items.LAPIS_LAZULI))));
+        consumer.accept(PackBuiltInLootTables.FARMER_GIFT, LootTable.lootTable()
+                .withPool(LootPool.lootPool().setRolls(ConstantValue.exactly(1.0F))
+                        .add(LootItem.lootTableItem(Items.BREAD))
+                        .add(LootItem.lootTableItem(Items.PUMPKIN_PIE))
+                        .add(LootItem.lootTableItem(Items.COOKIE))));
+        consumer.accept(PackBuiltInLootTables.FISHERMAN_GIFT, LootTable.lootTable()
+                .withPool(LootPool.lootPool().setRolls(ConstantValue.exactly(1.0F))
+                        .add(LootItem.lootTableItem(Items.COD))
+                        .add(LootItem.lootTableItem(Items.SALMON))));
+        consumer.accept(PackBuiltInLootTables.FLETCHER_GIFT, LootTable.lootTable()
+                .withPool(LootPool.lootPool().setRolls(ConstantValue.exactly(1.0F))
+                        .add(LootItem.lootTableItem(Items.ARROW).setWeight(26))
+                        .add(LootItem.lootTableItem(Items.TIPPED_ARROW)
+                                .apply(SetItemCountFunction.setCount(UniformGenerator.between(0.0F, 1.0F)))
+                                .apply(SetPotionFunction.setPotion(Potions.SWIFTNESS)))
+                        .add(LootItem.lootTableItem(Items.TIPPED_ARROW)
+                                .apply(SetItemCountFunction.setCount(UniformGenerator.between(0.0F, 1.0F)))
+                                .apply(SetPotionFunction.setPotion(Potions.SLOWNESS)))
+                        .add(LootItem.lootTableItem(Items.TIPPED_ARROW)
+                                .apply(SetItemCountFunction.setCount(UniformGenerator.between(0.0F, 1.0F)))
+                                .apply(SetPotionFunction.setPotion(Potions.STRENGTH)))
+                        .add(LootItem.lootTableItem(Items.TIPPED_ARROW)
+                                .apply(SetItemCountFunction.setCount(UniformGenerator.between(0.0F, 1.0F)))
+                                .apply(SetPotionFunction.setPotion(Potions.HEALING)))
+                        .add(LootItem.lootTableItem(Items.TIPPED_ARROW)
+                                .apply(SetItemCountFunction.setCount(UniformGenerator.between(0.0F, 1.0F)))
+                                .apply(SetPotionFunction.setPotion(Potions.HARMING)))
+                        .add(LootItem.lootTableItem(Items.TIPPED_ARROW)
+                                .apply(SetItemCountFunction.setCount(UniformGenerator.between(0.0F, 1.0F)))
+                                .apply(SetPotionFunction.setPotion(Potions.LEAPING)))
+                        .add(LootItem.lootTableItem(Items.TIPPED_ARROW)
+                                .apply(SetItemCountFunction.setCount(UniformGenerator.between(0.0F, 1.0F)))
+                                .apply(SetPotionFunction.setPotion(Potions.REGENERATION)))
+                        .add(LootItem.lootTableItem(Items.TIPPED_ARROW)
+                                .apply(SetItemCountFunction.setCount(UniformGenerator.between(0.0F, 1.0F)))
+                                .apply(SetPotionFunction.setPotion(Potions.FIRE_RESISTANCE)))
+                        .add(LootItem.lootTableItem(Items.TIPPED_ARROW)
+                                .apply(SetItemCountFunction.setCount(UniformGenerator.between(0.0F, 1.0F)))
+                                .apply(SetPotionFunction.setPotion(Potions.WATER_BREATHING)))
+                        .add(LootItem.lootTableItem(Items.TIPPED_ARROW)
+                                .apply(SetItemCountFunction.setCount(UniformGenerator.between(0.0F, 1.0F)))
+                                .apply(SetPotionFunction.setPotion(Potions.INVISIBILITY)))
+                        .add(LootItem.lootTableItem(Items.TIPPED_ARROW)
+                                .apply(SetItemCountFunction.setCount(UniformGenerator.between(0.0F, 1.0F)))
+                                .apply(SetPotionFunction.setPotion(Potions.NIGHT_VISION)))
+                        .add(LootItem.lootTableItem(Items.TIPPED_ARROW)
+                                .apply(SetItemCountFunction.setCount(UniformGenerator.between(0.0F, 1.0F)))
+                                .apply(SetPotionFunction.setPotion(Potions.WEAKNESS)))
+                        .add(LootItem.lootTableItem(Items.TIPPED_ARROW)
+                                .apply(SetItemCountFunction.setCount(UniformGenerator.between(0.0F, 1.0F)))
+                                .apply(SetPotionFunction.setPotion(Potions.POISON)))));
+        consumer.accept(PackBuiltInLootTables.LEATHERWORKER_GIFT, LootTable.lootTable()
+                .withPool(LootPool.lootPool().setRolls(ConstantValue.exactly(1.0F))
+                        .add(LootItem.lootTableItem(Items.LEATHER))));
+        consumer.accept(PackBuiltInLootTables.LIBRARIAN_GIFT, LootTable.lootTable()
+                .withPool(LootPool.lootPool().setRolls(ConstantValue.exactly(1.0F))
+                        .add(LootItem.lootTableItem(Items.BOOK))));
+        consumer.accept(PackBuiltInLootTables.MASON_GIFT, LootTable.lootTable()
+                .withPool(LootPool.lootPool().setRolls(ConstantValue.exactly(1.0F))
+                        .add(LootItem.lootTableItem(Items.CLAY))));
+        consumer.accept(PackBuiltInLootTables.SHEPHERD_GIFT, LootTable.lootTable()
+                .withPool(LootPool.lootPool().setRolls(ConstantValue.exactly(1.0F))
+                        .add(LootItem.lootTableItem(Items.WHITE_WOOL))
+                        .add(LootItem.lootTableItem(Items.ORANGE_WOOL))
+                        .add(LootItem.lootTableItem(Items.MAGENTA_WOOL))
+                        .add(LootItem.lootTableItem(Items.LIGHT_BLUE_WOOL))
+                        .add(LootItem.lootTableItem(Items.YELLOW_WOOL))
+                        .add(LootItem.lootTableItem(Items.LIME_WOOL))
+                        .add(LootItem.lootTableItem(Items.PINK_WOOL))
+                        .add(LootItem.lootTableItem(Items.GRAY_WOOL))
+                        .add(LootItem.lootTableItem(Items.LIGHT_GRAY_WOOL))
+                        .add(LootItem.lootTableItem(Items.CYAN_WOOL))
+                        .add(LootItem.lootTableItem(Items.PURPLE_WOOL))
+                        .add(LootItem.lootTableItem(Items.BLUE_WOOL))
+                        .add(LootItem.lootTableItem(Items.BROWN_WOOL))
+                        .add(LootItem.lootTableItem(Items.GREEN_WOOL))
+                        .add(LootItem.lootTableItem(Items.RED_WOOL))
+                        .add(LootItem.lootTableItem(Items.BLACK_WOOL))));
+        consumer.accept(PackBuiltInLootTables.TOOLSMITH_GIFT, LootTable.lootTable()
+                .withPool(LootPool.lootPool().setRolls(ConstantValue.exactly(1.0F))
+                        .add(LootItem.lootTableItem(Items.STONE_PICKAXE))
+                        .add(LootItem.lootTableItem(Items.STONE_AXE))
+                        .add(LootItem.lootTableItem(Items.STONE_HOE))
+                        .add(LootItem.lootTableItem(Items.STONE_SHOVEL))));
+        consumer.accept(PackBuiltInLootTables.WEAPONSMITH_GIFT, LootTable.lootTable()
+                .withPool(LootPool.lootPool().setRolls(ConstantValue.exactly(1.0F))
+                        .add(LootItem.lootTableItem(Items.STONE_AXE))
+                        .add(LootItem.lootTableItem(Items.GOLDEN_AXE))
+                        .add(LootItem.lootTableItem(Items.IRON_AXE))));
+
+        consumer.accept(PackBuiltInLootTables.PIGLIN_BARTERING, LootTable.lootTable()
+                .withPool(LootPool.lootPool().setRolls(ConstantValue.exactly(1.0F))
+                        .add(LootItem.lootTableItem(Items.BOOK).setWeight(5)
+                                .apply((new EnchantRandomlyFunction.Builder()).withEnchantment(Enchantments.SOUL_SPEED)))
+                        .add(LootItem.lootTableItem(Items.IRON_BOOTS).setWeight(8)
+                                .apply((new EnchantRandomlyFunction.Builder()).withEnchantment(Enchantments.SOUL_SPEED)))
+                        .add(LootItem.lootTableItem(Items.POTION).setWeight(8)
+                                .apply(SetPotionFunction.setPotion(Potions.FIRE_RESISTANCE)))
+                        .add(LootItem.lootTableItem(Items.SPLASH_POTION).setWeight(8)
+                                .apply(SetPotionFunction.setPotion(Potions.FIRE_RESISTANCE)))
+                        .add(LootItem.lootTableItem(Items.POTION).setWeight(10)
+                                .apply(SetPotionFunction.setPotion(Potions.WATER)))
+                        .add(LootItem.lootTableItem(Items.IRON_NUGGET).setWeight(10)
+                                .apply(SetItemCountFunction.setCount(UniformGenerator.between(10.0F, 36.0F))))
+                        .add(LootItem.lootTableItem(Items.ENDER_PEARL).setWeight(10)
+                                .apply(SetItemCountFunction.setCount(UniformGenerator.between(2.0F, 4.0F))))
+                        .add(LootItem.lootTableItem(Items.STRING).setWeight(20)
+                                .apply(SetItemCountFunction.setCount(UniformGenerator.between(3.0F, 9.0F))))
+                        .add(LootItem.lootTableItem(Items.QUARTZ).setWeight(20)
+                                .apply(SetItemCountFunction.setCount(UniformGenerator.between(5.0F, 12.0F))))
+                        .add(LootItem.lootTableItem(Items.OBSIDIAN).setWeight(40))
+                        .add(LootItem.lootTableItem(Items.CRYING_OBSIDIAN).setWeight(40)
+                                .apply(SetItemCountFunction.setCount(UniformGenerator.between(1.0F, 3.0F))))
+                        .add(LootItem.lootTableItem(Items.FIRE_CHARGE).setWeight(40))
+                        .add(LootItem.lootTableItem(Items.LEATHER).setWeight(40)
+                                .apply(SetItemCountFunction.setCount(UniformGenerator.between(2.0F, 4.0F))))
+                        .add(LootItem.lootTableItem(Items.SOUL_SAND).setWeight(40)
+                                .apply(SetItemCountFunction.setCount(UniformGenerator.between(2.0F, 8.0F))))
+                        .add(LootItem.lootTableItem(Items.NETHER_BRICK).setWeight(40)
+                                .apply(SetItemCountFunction.setCount(UniformGenerator.between(2.0F, 8.0F))))
+                        .add(LootItem.lootTableItem(Items.SPECTRAL_ARROW).setWeight(40)
+                                .apply(SetItemCountFunction.setCount(UniformGenerator.between(6.0F, 12.0F))))
+                        .add(LootItem.lootTableItem(Items.GRAVEL).setWeight(40)
+                                .apply(SetItemCountFunction.setCount(UniformGenerator.between(8.0F, 16.0F))))
+                        .add(LootItem.lootTableItem(Items.BLACKSTONE).setWeight(40)
+                                .apply(SetItemCountFunction.setCount(UniformGenerator.between(8.0F, 16.0F))))));
     }
 }

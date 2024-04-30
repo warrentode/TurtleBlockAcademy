@@ -132,10 +132,6 @@ dependencies {
     implementation fg.deobf("curse.maven:sophisticated-core-618298:5194752")
     implementation fg.deobf("curse.maven:refined-storage-243076:4861827")
 
-    // auto farming
-    implementation fg.deobf("curse.maven:cagerium-709608:4517775")
-    implementation fg.deobf("curse.maven:golden-hopper-374736:3874175")
-
     // biomes and dimensions mods set
     implementation fg.deobf("curse.maven:dimensional-dungeons-352222:4750034")
     implementation fg.deobf("curse.maven:terrablender-563928:4618490")
@@ -174,12 +170,8 @@ dependencies {
     // moonlight lib mod set
     implementation fg.deobf("curse.maven:selene-499980:4758015")
     implementation fg.deobf("curse.maven:supplementaries-412082:4713347")
-    implementation fg.deobf("curse.maven:advancement-frames-556795:3948167")
     implementation fg.deobf("curse.maven:haunted-harvest-541753:4567840")
     implementation fg.deobf("curse.maven:snowy-spirit-566142:4479536")
-
-    // wares
-    implementation fg.deobf("curse.maven:wares-839158:5275496")
 
     // decor
     implementation fg.deobf("curse.maven:moa-decor-toys-701524:4516288")
@@ -200,7 +192,6 @@ dependencies {
 
     // additional mobs and villagers
     implementation fg.deobf("curse.maven:friends-and-foes-forge-602059:5184433")
-    implementation fg.deobf("curse.maven:guard-villagers-360203:4701400")
     implementation fg.deobf("curse.maven:beautify-decorate-633252:4036351")
     implementation fg.deobf("curse.maven:villagersplus-forge-817272:4370425")
 

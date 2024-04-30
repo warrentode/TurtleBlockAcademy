@@ -1,0 +1,20 @@
+{
+  "values": [
+    {
+      "id": "cagerium:burning_upgrade",
+      "required": false
+    }, {
+      "id": "cagerium:binding_wood_plate",
+      "required": false
+    }, {
+      "id": "cagerium:ominous_skull",
+      "required": false
+    }, {
+      "id": "cagerium:skeleton_key",
+      "required": false
+    }, {
+      "id": "cagerium:binding_gemstone",
+      "required": false
+    }
+  ]
+}

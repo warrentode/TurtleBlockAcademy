@@ -96,9 +96,11 @@ public class WaresLootTables {
     public static final ResourceLocation WARES_BARTER_SUPPLY = register("wares" + ":" + "agreement/village/regular_barter_list");
     public static final ResourceLocation WARES_GIFT_SUPPLY = register("wares" + ":" + "agreement/village/gift_supply_list");
     public static final ResourceLocation WARES_FOOD_SUPPLY = register("wares" + ":" + "agreement/village/food_supply_list");
+
     public static final ResourceLocation WARES_OFFER_REGION = register("wares" + ":" + "agreement/village/payment/offered_regional_product");
     public static final ResourceLocation WARES_REQUEST_REGION = register("wares" + ":" + "agreement/village/request/requested_regional_product");
     public static final ResourceLocation WARES_CURRENCY = register("wares" + ":" + "agreement/village/currency");
+
     public static final ResourceLocation WARES_DARK_FOREST_PRODUCTS = register("wares" + ":" + "agreement/village/regional_products/dark_forest_products");
     public static final ResourceLocation WARES_DESERT_PRODUCTS = register("wares" + ":" + "agreement/village/regional_products/desert_products");
     public static final ResourceLocation WARES_BADLANDS_PRODUCTS = register("wares" + ":" + "agreement/village/regional_products/badlands_products");
@@ -111,6 +113,12 @@ public class WaresLootTables {
     public static final ResourceLocation WARES_SWAMP_PRODUCTS = register("wares" + ":" + "agreement/village/regional_products/swamp_products");
     public static final ResourceLocation WARES_TAIGA_PRODUCTS = register("wares" + ":" + "agreement/village/regional_products/taiga_products");
     public static final ResourceLocation WARES_PLAINS_PRODUCTS = register("wares" + ":" + "agreement/village/regional_products/plains_products");
+    public static final ResourceLocation WARES_MEADOW_PRODUCTS = register("wares" + ":" + "agreement/village/regional_products/meadow_products");
+    public static final ResourceLocation WARES_SUNFLOWER_PLAINS_PRODUCTS = register("wares" + ":" + "agreement/village/regional_products/sunflower_plains_products");
+    public static final ResourceLocation WARES_MUSHROOM_FIELDS_PRODUCTS = register("wares" + ":" + "agreement/village/regional_products/mushroom_fields_products");
+    public static final ResourceLocation WARES_DEEP_DARK_PRODUCTS = register("wares" + ":" + "agreement/village/regional_products/deep_dark_products");
+    public static final ResourceLocation WARES_DRIPSTONE_CAVE_PRODUCTS = register("wares" + ":" + "agreement/village/regional_products/dripstone_cave_products");
+    public static final ResourceLocation WARES_LUSH_CAVE_PRODUCTS = register("wares" + ":" + "agreement/village/regional_products/lush_cave_products");
 
     private static ResourceLocation register(String path) {
         return register(new ResourceLocation(path));

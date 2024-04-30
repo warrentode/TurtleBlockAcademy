@@ -329,7 +329,8 @@
           "name": "turtleblockacademy:picture_frames"
         },
         {
-          "type": "minecraft:item",
+          "type": "minecraft:tag",
+          "expand": true,
           "functions": [
             {
               "add": false,

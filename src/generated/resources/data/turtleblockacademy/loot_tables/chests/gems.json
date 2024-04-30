@@ -32,6 +32,9 @@
           "type": "minecraft:tag",
           "conditions": [
             {
+              "condition": "turtleblockacademy:gamestage_condition",
+              "stage": "false"
+            }, {
               "chance": 0.001,
               "condition": "minecraft:random_chance"
             }
@@ -69,6 +72,22 @@
         },
         {
           "type": "minecraft:tag",
+          "conditions": [
+            {
+              "condition": "minecraft:alternative",
+              "terms": [
+                {
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                    "dimension": "minecraft:the_end"
+                  }
+                }, {
+                  "condition": "turtleblockacademy:gamestage_condition",
+                  "stage": "false"
+                }
+              ]
+            }
+          ],
           "expand": true,
           "name": "forge:gems/star",
           "quality": 6
@@ -230,10 +249,18 @@
           "type": "minecraft:tag",
           "conditions": [
             {
-              "condition": "minecraft:location_check",
-              "predicate": {
-                "dimension": "minecraft:the_end"
-              }
+              "condition": "minecraft:alternative",
+              "terms": [
+                {
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                    "dimension": "minecraft:the_end"
+                  }
+                }, {
+                  "condition": "turtleblockacademy:gamestage_condition",
+                  "stage": "false"
+                }
+              ]
             }
           ],
           "expand": true,

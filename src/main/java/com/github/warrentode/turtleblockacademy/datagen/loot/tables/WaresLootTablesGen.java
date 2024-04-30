@@ -5,7 +5,10 @@ import biomesoplenty.api.item.BOPItems;
 import cn.foggyhillside.endsdelight.registry.ItemRegistry;
 import com.aetherteam.aether.block.AetherBlocks;
 import com.aetherteam.aether.item.AetherItems;
-import com.github.warrentode.turtleblockacademy.loot.tables.*;
+import com.github.warrentode.turtleblockacademy.loot.tables.KitchenLootTables;
+import com.github.warrentode.turtleblockacademy.loot.tables.LootbagLootTables;
+import com.github.warrentode.turtleblockacademy.loot.tables.PackBuiltInLootTables;
+import com.github.warrentode.turtleblockacademy.loot.tables.WaresLootTables;
 import com.github.warrentode.turtleblockacademy.util.PackTags;
 import com.hakimen.kawaiidishes.registry.ItemRegister;
 import net.brnbrd.delightful.common.item.DelightfulItems;
@@ -13,6 +16,7 @@ import net.mcreator.phantasm.init.PhantasmModItems;
 import net.mcreator.unusualend.init.UnusualendModItems;
 import net.mehvahdjukaar.snowyspirit.reg.ModRegistry;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.tags.ItemTags;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.storage.loot.LootPool;
@@ -1140,6 +1144,77 @@ public class WaresLootTablesGen implements Consumer<BiConsumer<ResourceLocation,
                                 .apply(SetItemCountFunction.setCount(ConstantValue.exactly(6))))
                 )
         );
+        consumer.accept(WaresLootTables.WARES_SUNFLOWER_PLAINS_PRODUCTS, LootTable.lootTable()
+                .withPool(LootPool.lootPool().setRolls(ConstantValue.exactly(1))
+                        .add(LootItem.lootTableItem(Items.SUNFLOWER)
+                                .apply(SetItemCountFunction.setCount(ConstantValue.exactly(6))))
+                        .add(LootTableReference.lootTableReference(WaresLootTables.WARES_PLAINS_PRODUCTS))
+                )
+        );
+        consumer.accept(WaresLootTables.WARES_MUSHROOM_FIELDS_PRODUCTS, LootTable.lootTable()
+                .withPool(LootPool.lootPool().setRolls(ConstantValue.exactly(6))
+                        .add(LootItem.lootTableItem(Items.RED_MUSHROOM)
+                                .apply(SetItemCountFunction.setCount(ConstantValue.exactly(6))))
+                        .add(LootItem.lootTableItem(Items.BROWN_MUSHROOM)
+                                .apply(SetItemCountFunction.setCount(ConstantValue.exactly(6))))
+                        .add(LootItem.lootTableItem(Items.LEATHER)
+                                .apply(SetItemCountFunction.setCount(ConstantValue.exactly(6))))
+                        .add(LootItem.lootTableItem(Items.BEEF)
+                                .apply(SetItemCountFunction.setCount(ConstantValue.exactly(6))))
+                        .add(LootItem.lootTableItem(Items.MYCELIUM)
+                                .apply(SetItemCountFunction.setCount(ConstantValue.exactly(6))))
+                )
+        );
+        consumer.accept(WaresLootTables.WARES_DEEP_DARK_PRODUCTS, LootTable.lootTable()
+                .withPool(LootPool.lootPool().setRolls(ConstantValue.exactly(1))
+                        .add(LootItem.lootTableItem(Items.SCULK_CATALYST)
+                                .apply(SetItemCountFunction.setCount(ConstantValue.exactly(1))))
+                        .add(LootItem.lootTableItem(Items.SCULK_SENSOR)
+                                .apply(SetItemCountFunction.setCount(ConstantValue.exactly(1))))
+                        .add(LootItem.lootTableItem(Items.SCULK_SHRIEKER)
+                                .apply(SetItemCountFunction.setCount(ConstantValue.exactly(1))))
+                )
+        );
+        consumer.accept(WaresLootTables.WARES_DRIPSTONE_CAVE_PRODUCTS, LootTable.lootTable()
+                .withPool(LootPool.lootPool().setRolls(ConstantValue.exactly(1))
+                        .add(LootItem.lootTableItem(Items.POINTED_DRIPSTONE)
+                                .apply(SetItemCountFunction.setCount(ConstantValue.exactly(6))))
+                        .add(LootItem.lootTableItem(Items.DRIPSTONE_BLOCK)
+                                .apply(SetItemCountFunction.setCount(ConstantValue.exactly(6))))
+                        .add(LootItem.lootTableItem(Items.GLOW_LICHEN)
+                                .apply(SetItemCountFunction.setCount(ConstantValue.exactly(6))))
+                        .add(LootItem.lootTableItem(Items.RED_MUSHROOM)
+                                .apply(SetItemCountFunction.setCount(ConstantValue.exactly(6))))
+                        .add(LootItem.lootTableItem(Items.BROWN_MUSHROOM)
+                                .apply(SetItemCountFunction.setCount(ConstantValue.exactly(6))))
+                )
+        );
+        consumer.accept(WaresLootTables.WARES_LUSH_CAVE_PRODUCTS, LootTable.lootTable()
+                .withPool(LootPool.lootPool().setRolls(ConstantValue.exactly(1))
+                        .add(LootItem.lootTableItem(Items.CLAY)
+                                .apply(SetItemCountFunction.setCount(ConstantValue.exactly(6))))
+                        .add(LootItem.lootTableItem(Items.BIG_DRIPLEAF)
+                                .apply(SetItemCountFunction.setCount(ConstantValue.exactly(6))))
+                        .add(LootItem.lootTableItem(Items.SMALL_DRIPLEAF)
+                                .apply(SetItemCountFunction.setCount(ConstantValue.exactly(6))))
+                        .add(LootItem.lootTableItem(Items.GLOW_BERRIES)
+                                .apply(SetItemCountFunction.setCount(ConstantValue.exactly(6))))
+                        .add(LootItem.lootTableItem(Items.AZALEA)
+                                .apply(SetItemCountFunction.setCount(ConstantValue.exactly(6))))
+                        .add(LootItem.lootTableItem(Items.FLOWERING_AZALEA)
+                                .apply(SetItemCountFunction.setCount(ConstantValue.exactly(6))))
+                )
+        );
+        consumer.accept(WaresLootTables.WARES_MEADOW_PRODUCTS, LootTable.lootTable()
+                .withPool(LootPool.lootPool().setRolls(ConstantValue.exactly(6))
+                        .add(TagEntry.expandTag(ItemTags.FLOWERS))
+                        .add(LootItem.lootTableItem(Items.HONEY_BOTTLE)
+                                .apply(SetItemCountFunction.setCount(ConstantValue.exactly(4))))
+                        .add(LootItem.lootTableItem(Items.HONEYCOMB)
+                                .apply(SetItemCountFunction.setCount(ConstantValue.exactly(4))))
+                        .add(LootTableReference.lootTableReference(WaresLootTables.WARES_PLAINS_PRODUCTS))
+                )
+        );
         consumer.accept(WaresLootTables.WARES_FIELD_PRODUCTS, LootTable.lootTable()
                 .withPool(LootPool.lootPool().setRolls(ConstantValue.exactly(1))
                         .add(LootItem.lootTableItem(Items.HONEY_BOTTLE)
@@ -2041,7 +2116,7 @@ public class WaresLootTablesGen implements Consumer<BiConsumer<ResourceLocation,
                 ));
         consumer.accept(WaresLootTables.WARES_BARTER_SUPPLY, LootTable.lootTable()
                 .withPool(LootPool.lootPool().setRolls(ConstantValue.exactly(1))
-                        .add(LootTableReference.lootTableReference(CageriumLootTables.PIGLIN_BARTERING))
+                        .add(LootTableReference.lootTableReference(PackBuiltInLootTables.PIGLIN_BARTERING))
                 ));
         consumer.accept(WaresLootTables.WARES_GIFT_SUPPLY, LootTable.lootTable()
                 .withPool(LootPool.lootPool().setRolls(ConstantValue.exactly(1))
@@ -2233,7 +2308,7 @@ public class WaresLootTablesGen implements Consumer<BiConsumer<ResourceLocation,
                                         .or(IN_BEACH.invert()).or(IN_FROZEN_OCEAN.invert())
                                         .or(IN_DEEP_FROZEN_OCEAN.invert())
                                         .or(IN_COLD_OCEAN.invert()).or(IN_DEEP_COLD_OCEAN.invert())
-                                        .or(IN_LUKEWARM_OCEAN.invert())
+                                        .or(IN_LUKEWARM_OCEAN.invert()).or(IN_RIVER.invert())
                                         .or(IN_DEEP_LUKEWARM_OCEAN.invert()).or(IN_WARM_OCEAN.invert())))
                         .add(LootTableReference.lootTableReference(WaresLootTables.WARES_SAVANNA_PRODUCTS)
                                 .when(IN_VILLAGE_SAVANNA.invert().or(IN_SAVANNA.invert())
@@ -2254,6 +2329,18 @@ public class WaresLootTablesGen implements Consumer<BiConsumer<ResourceLocation,
                                         .or(IN_JAGGED_PEAKS.invert())
                                         .or(IN_GROVE.invert()).or(IN_FROZEN_PEAKS.invert()).or(IN_SNOWY_BEACH.invert())
                                         .or(IN_FROZEN_RIVER.invert())))
+                        .add(LootTableReference.lootTableReference(WaresLootTables.WARES_MEADOW_PRODUCTS)
+                                .when(IN_MEADOW.invert()))
+                        .add(LootTableReference.lootTableReference(WaresLootTables.WARES_SUNFLOWER_PLAINS_PRODUCTS)
+                                .when(IN_SUNFLOWER_PLAINS.invert()))
+                        .add(LootTableReference.lootTableReference(WaresLootTables.WARES_MUSHROOM_FIELDS_PRODUCTS)
+                                .when(IN_MUSHROOM_FIELDS.invert()))
+                        .add(LootTableReference.lootTableReference(WaresLootTables.WARES_DEEP_DARK_PRODUCTS)
+                                .when(IN_DEEP_DARK.invert()))
+                        .add(LootTableReference.lootTableReference(WaresLootTables.WARES_DRIPSTONE_CAVE_PRODUCTS)
+                                .when(IN_DRIPSTONE_CAVES.invert()))
+                        .add(LootTableReference.lootTableReference(WaresLootTables.WARES_LUSH_CAVE_PRODUCTS)
+                                .when(IN_LUSH_CAVES.invert()))
                         .add(LootTableReference.lootTableReference(WaresLootTables.WARES_PLAINS_PRODUCTS))
                 ));
 
@@ -2426,7 +2513,7 @@ public class WaresLootTablesGen implements Consumer<BiConsumer<ResourceLocation,
                                 .when(IN_OCEAN.or(IN_DEEP_OCEAN).or(IN_STONY_SHORE)
                                         .or(IN_BEACH).or(IN_FROZEN_OCEAN).or(IN_DEEP_FROZEN_OCEAN)
                                         .or(IN_COLD_OCEAN).or(IN_DEEP_COLD_OCEAN).or(IN_LUKEWARM_OCEAN)
-                                        .or(IN_DEEP_LUKEWARM_OCEAN).or(IN_WARM_OCEAN)))
+                                        .or(IN_DEEP_LUKEWARM_OCEAN).or(IN_WARM_OCEAN).or(IN_RIVER)))
                         .add(LootTableReference.lootTableReference(WaresLootTables.WARES_SAVANNA_PRODUCTS)
                                 .when(IN_VILLAGE_SAVANNA.or(IN_SAVANNA).or(IN_SAVANNA_PLATEAU)
                                         .or(IN_WINDSWEPT_SAVANNA)))
@@ -2443,6 +2530,18 @@ public class WaresLootTablesGen implements Consumer<BiConsumer<ResourceLocation,
                                         .or(IN_ICE_SPIKES).or(IN_SNOWY_PLAINS).or(IN_JAGGED_PEAKS)
                                         .or(IN_GROVE).or(IN_FROZEN_PEAKS).or(IN_SNOWY_BEACH)
                                         .or(IN_FROZEN_RIVER)))
+                        .add(LootTableReference.lootTableReference(WaresLootTables.WARES_MEADOW_PRODUCTS)
+                                .when(IN_MEADOW))
+                        .add(LootTableReference.lootTableReference(WaresLootTables.WARES_SUNFLOWER_PLAINS_PRODUCTS)
+                                .when(IN_SUNFLOWER_PLAINS))
+                        .add(LootTableReference.lootTableReference(WaresLootTables.WARES_MUSHROOM_FIELDS_PRODUCTS)
+                                .when(IN_MUSHROOM_FIELDS))
+                        .add(LootTableReference.lootTableReference(WaresLootTables.WARES_DEEP_DARK_PRODUCTS)
+                                .when(IN_DEEP_DARK))
+                        .add(LootTableReference.lootTableReference(WaresLootTables.WARES_DRIPSTONE_CAVE_PRODUCTS)
+                                .when(IN_DRIPSTONE_CAVES))
+                        .add(LootTableReference.lootTableReference(WaresLootTables.WARES_LUSH_CAVE_PRODUCTS)
+                                .when(IN_LUSH_CAVES))
                         .add(LootTableReference.lootTableReference(WaresLootTables.WARES_PLAINS_PRODUCTS))
                 ));
 

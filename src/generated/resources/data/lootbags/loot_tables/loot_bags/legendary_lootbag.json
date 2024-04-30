@@ -70,7 +70,7 @@
           "name": "turtleblockacademy:chests/dungeon_rewards"
         },
         {
-          "type": "minecraft:item",
+          "type": "minecraft:tag",
           "conditions": [
             {
               "condition": "turtleblockacademy:gamestage_condition",
@@ -80,10 +80,11 @@
               "condition": "minecraft:random_chance"
             }
           ],
-          "name": "cagerium:ominous_skull"
+          "expand": true,
+          "name": "cagerium:cagerium_blocks"
         },
         {
-          "type": "minecraft:item",
+          "type": "minecraft:tag",
           "conditions": [
             {
               "condition": "turtleblockacademy:gamestage_condition",
@@ -93,44 +94,8 @@
               "condition": "minecraft:random_chance"
             }
           ],
-          "name": "cagerium:binding_wood_plate"
-        },
-        {
-          "type": "minecraft:item",
-          "conditions": [
-            {
-              "condition": "turtleblockacademy:gamestage_condition",
-              "stage": "false"
-            }, {
-              "chance": 0.1,
-              "condition": "minecraft:random_chance"
-            }
-          ],
-          "name": "cagerium:binding_gemstone"
-        },
-        {
-          "type": "minecraft:item",
-          "conditions": [
-            {
-              "condition": "turtleblockacademy:gamestage_condition",
-              "stage": "false"
-            }, {
-              "chance": 0.1,
-              "condition": "minecraft:random_chance"
-            }
-          ],
-          "functions": [
-            {
-              "add": false,
-              "count": {
-                "type": "minecraft:uniform",
-                "max": 5.0,
-                "min": 3.0
-              },
-              "function": "minecraft:set_count"
-            }
-          ],
-          "name": "cagerium:skeleton_key"
+          "expand": true,
+          "name": "cagerium:cagerium_items"
         }
       ],
       "rolls": 1.0

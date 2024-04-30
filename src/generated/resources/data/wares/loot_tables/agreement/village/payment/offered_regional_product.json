@@ -1397,6 +1397,14 @@
                       "biome": "minecraft:lukewarm_ocean"
                     }
                   }
+                }, {
+                  "condition": "minecraft:inverted",
+                  "term": {
+                    "condition": "minecraft:location_check",
+                    "predicate": {
+                      "biome": "minecraft:river"
+                    }
+                  }
                 },
                 {
                   "condition": "minecraft:inverted",
@@ -1688,6 +1696,90 @@
           "name": "wares:agreement/village/regional_products/snowy_products"
         },
         {
+          "type": "minecraft:loot_table",
+          "conditions": [
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:location_check",
+                "predicate": {
+                  "biome": "minecraft:meadow"
+                }
+              }
+            }
+          ],
+          "name": "wares:agreement/village/regional_products/meadow_products"
+        }, {
+          "type": "minecraft:loot_table",
+          "conditions": [
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:location_check",
+                "predicate": {
+                  "biome": "minecraft:sunflower_plains"
+                }
+              }
+            }
+          ],
+          "name": "wares:agreement/village/regional_products/sunflower_plains_products"
+        }, {
+          "type": "minecraft:loot_table",
+          "conditions": [
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:location_check",
+                "predicate": {
+                  "biome": "minecraft:mushroom_fields"
+                }
+              }
+            }
+          ],
+          "name": "wares:agreement/village/regional_products/mushroom_fields_products"
+        }, {
+          "type": "minecraft:loot_table",
+          "conditions": [
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:location_check",
+                "predicate": {
+                  "biome": "minecraft:deep_dark"
+                }
+              }
+            }
+          ],
+          "name": "wares:agreement/village/regional_products/deep_dark_products"
+        }, {
+          "type": "minecraft:loot_table",
+          "conditions": [
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:location_check",
+                "predicate": {
+                  "biome": "minecraft:dripstone_caves"
+                }
+              }
+            }
+          ],
+          "name": "wares:agreement/village/regional_products/dripstone_cave_products"
+        }, {
+          "type": "minecraft:loot_table",
+          "conditions": [
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:location_check",
+                "predicate": {
+                  "biome": "minecraft:lush_caves"
+                }
+              }
+            }
+          ],
+          "name": "wares:agreement/village/regional_products/lush_cave_products"
+        }, {
           "type": "minecraft:loot_table",
           "name": "wares:agreement/village/regional_products/plains_products"
         }

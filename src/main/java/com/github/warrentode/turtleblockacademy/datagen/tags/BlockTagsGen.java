@@ -1,7 +1,6 @@
 package com.github.warrentode.turtleblockacademy.datagen.tags;
 
 import biomesoplenty.api.block.BOPBlocks;
-import com.github.warrentode.turtleblockacademy.blocks.ModBlocks;
 import com.github.warrentode.turtleblockacademy.util.PackTags;
 import net.mcreator.festivedelight.init.FestiveDelightModBlocks;
 import net.mcreator.moadecorcookery.init.MoaDecorCookeryModItems;
@@ -19,8 +18,8 @@ import org.jetbrains.annotations.Nullable;
 import java.util.Objects;
 
 public class BlockTagsGen extends BlockTagsProvider {
-    public BlockTagsGen(DataGenerator pGenerator, String modId, @Nullable ExistingFileHelper existingFileHelper) {
-        super(pGenerator, modId, existingFileHelper);
+    public BlockTagsGen(DataGenerator generator, String modid, @Nullable ExistingFileHelper helper) {
+        super(generator, modid, helper);
     }
 
     @Override
@@ -41,16 +40,6 @@ public class BlockTagsGen extends BlockTagsProvider {
     }
 
     protected void registerPackTags() {
-        tag(PackTags.Blocks.SCHOOL_DESKS)
-                .add(ModBlocks.SCHOOL_DESK_WARPED.get())
-                .add(ModBlocks.SCHOOL_DESK_CRIMSON.get())
-                .add(ModBlocks.SCHOOL_DESK_MANGROVE.get())
-                .add(ModBlocks.SCHOOL_DESK_DARK_OAK.get())
-                .add(ModBlocks.SCHOOL_DESK_ACACIA.get())
-                .add(ModBlocks.SCHOOL_DESK_JUNGLE.get())
-                .add(ModBlocks.SCHOOL_DESK_SPRUCE.get())
-                .add(ModBlocks.SCHOOL_DESK_BIRCH.get())
-                .add(ModBlocks.SCHOOL_DESK_OAK.get());
         tag(PackTags.Blocks.DROPS_FOUR_LEAF_CLOVER)
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("biomesoplenty:clover")))
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("biomesoplenty:huge_clover_petal")))

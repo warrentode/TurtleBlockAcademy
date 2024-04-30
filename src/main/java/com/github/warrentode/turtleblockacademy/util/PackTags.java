@@ -14,8 +14,6 @@ import static com.github.warrentode.turtleblockacademy.TurtleBlockAcademy.MODID;
 
 public class PackTags {
     public static class Blocks {
-        public static final TagKey<Block> SCHOOL_DESKS = packBlockTag(MODID, "school_desks");
-
         public static final TagKey<Block> DROPS_FOUR_LEAF_CLOVER = packBlockTag("todecoins", "drops_four_leaf_clover");
 
         public static final TagKey<Block> NEEDS_NETHERITE_TOOL = packBlockTag("minecraft", "needs_netherite_tool");
@@ -59,6 +57,11 @@ public class PackTags {
         public static final TagKey<Item> SAND = packItemTag("forge", "sand");
         public static final TagKey<Item> WALLETS = packItemTag("todecoins", "wallets");
         public static final TagKey<Item> BUNDLES = packItemTag("todecoins", "bundles");
+
+        public static final TagKey<Item> CAGERIUM_ITEMS = packItemTag("cagerium", "cagerium_items");
+        public static final TagKey<Item> CAGERIUM_BLOCKS = packItemTag("cagerium", "cagerium_blocks");
+        public static final TagKey<Item> GOLDEN_HOPPER = packItemTag("goldenhopper", "golden_hopper");
+        public static final TagKey<Item> ADVANCEMENT_FRAME_ITEM = packItemTag("advancementframes", "advancement_frame");
 
         public static final TagKey<Item> GARDEN_ITEMS = packItemTag("justoutdoorstuffs", "garden_items");
         public static final TagKey<Item> PATIO_ITEMS = packItemTag("justoutdoorstuffs", "patio_items");

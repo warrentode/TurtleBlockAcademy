@@ -1,0 +1,14 @@
+{
+  "values": [
+    {
+      "id": "cagerium:cage",
+      "required": false
+    }, {
+      "id": "cagerium:terrarium",
+      "required": false
+    }, {
+      "id": "cagerium:plate",
+      "required": false
+    }
+  ]
+}

@@ -38,7 +38,6 @@ public class ModLootProviders extends LootTableProvider {
             loot_tables = ImmutableList.of(
             Pair.of(WaresLootTablesGen::new, LootContextParamSets.CHEST),
             Pair.of(LootbagLootTablesGen::new, LootContextParamSets.CHEST),
-            Pair.of(CageriumLootTablesGen::new, LootContextParamSets.ENTITY),
             Pair.of(DimDungeonLootTablesGen::new, LootContextParamSets.CHEST),
             Pair.of(PackLootTablesGen::new, LootContextParamSets.CHEST),
             Pair.of(KitchenLootTablesGen::new, LootContextParamSets.CHEST),
@@ -66,6 +65,7 @@ public class ModLootProviders extends LootTableProvider {
     public static final LootItemCondition.Builder STAGE_AETHER = GameStageCondition.stage().set(Boolean.valueOf("aether"));
     public static final LootItemCondition.Builder STAGE_APARTMENT = GameStageCondition.stage().set(Boolean.valueOf("apartment"));
     public static final LootItemCondition.Builder STAGE_DUNGEONS = GameStageCondition.stage().set(Boolean.valueOf("dungeons"));
+    public static final LootItemCondition.Builder STAGE_MINING = GameStageCondition.stage().set(Boolean.valueOf("mining"));
 
     // biome tag checks
     public static final LootItemCondition.Builder UNDERGROUND = BiomeTagCondition.tag().set(PackTags.Biomes.IS_UNDERGROUND);

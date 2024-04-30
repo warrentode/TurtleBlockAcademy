@@ -19,7 +19,6 @@ import net.mcreator.moadecorscience.init.MoaDecorScienceModItems;
 import net.mcreator.moadecortoys.init.MoaDecorToysModItems;
 import net.mcreator.phantasm.init.PhantasmModItems;
 import net.mcreator.unusualend.init.UnusualendModItems;
-import net.mehvahdjukaar.cagerium.Cagerium;
 import net.mehvahdjukaar.supplementaries.reg.ModRegistry;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.tags.BlockTagsProvider;
@@ -51,6 +50,20 @@ public class ItemTagsGen extends ItemTagsProvider {
     }
 
     private void registerPackTags() {
+        tag(PackTags.Items.CAGERIUM_ITEMS)
+                .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("cagerium:burning_upgrade")))
+                .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("cagerium:binding_wood_plate")))
+                .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("cagerium:ominous_skull")))
+                .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("cagerium:skeleton_key")))
+                .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("cagerium:binding_gemstone")));
+        tag(PackTags.Items.CAGERIUM_BLOCKS)
+                .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("cagerium:cage")))
+                .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("cagerium:terrarium")))
+                .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("cagerium:plate")));
+        tag(PackTags.Items.ADVANCEMENT_FRAME_ITEM)
+                .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("advancementframes:advancement_frame")));
+        tag(PackTags.Items.GOLDEN_HOPPER)
+                .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("goldenhopper:golden_hopper")));
         tag(PackTags.Items.STICKS)
                 .addOptional(AetherItems.SKYROOT_STICK.getId())
                 .add(Items.STICK);
@@ -117,7 +130,7 @@ public class ItemTagsGen extends ItemTagsProvider {
                 .add(Items.BUNDLE)
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("bagofholding:leather_bag_of_holding")))
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("bagofholding:iron_bag_of_holding")))
-                .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("bagofholding:golden_bag_of_holding")));
+                .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("bagofholding:gold_bag_of_holding")));
         tag(PackTags.Items.WALLETS)
                 .addTag(PackTags.Items.BUNDLES);
         tag(PackTags.Items.SUGAR)
@@ -822,7 +835,7 @@ public class ItemTagsGen extends ItemTagsProvider {
         tag(PackTags.Items.SOUL_BINDER)
                 .addOptional(AetherItems.LIFE_SHARD.getId())
                 .addOptional(UnusualendModItems.ANCIENT_SHARD.getId())
-                .addOptional(Cagerium.PLATE_GEM.getId())
+                .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("cagerium:binding_gemstone")))
                 .add(Items.ECHO_SHARD);
         tag(PackTags.Items.BELT)
                 .addOptionalTag(PackTags.Items.LANTERNS.location())
