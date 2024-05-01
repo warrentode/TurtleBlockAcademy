@@ -1,5 +1,6 @@
 {
   "values": [
+    "#tconstruct:worldgen/structure/nether_slime_islands",
     {
       "id": "repurposed_structures:village_warped",
       "required": false

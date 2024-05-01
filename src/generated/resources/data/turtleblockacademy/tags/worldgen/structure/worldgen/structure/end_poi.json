@@ -1,5 +1,6 @@
 {
   "values": [
+    "#tconstruct:worldgen/structure/end_slime_islands",
     "#forge:worldgen/structure/end_city",
     {
       "id": "repurposed_structures:stronghold_end",

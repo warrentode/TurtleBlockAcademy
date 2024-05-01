@@ -34,6 +34,9 @@ public class EntityTypeTagsGen extends EntityTypeTagsProvider {
         tag(PackTags.EntityTypes.PIGLIN_TYPES)
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("dungeons_mobs:fungus_thrower")));
         tag(PackTags.EntityTypes.SLIME_TYPES)
+                .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("tconstruct:sky_slime")))
+                .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("tconstruct:ender_slime")))
+                .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("tconstruct:terracube")))
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("dungeons_mobs:conjured_slime")));
         tag(PackTags.EntityTypes.PHANTOM_TYPES)
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("dungeons_mobs:wraith")));

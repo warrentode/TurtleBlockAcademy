@@ -1,6 +1,18 @@
 {
   "values": [
     {
+      "id": "tconstruct:ichor_slime_crystal",
+      "required": false
+    }, {
+      "id": "tconstruct:earth_slime_crystal",
+      "required": false
+    }, {
+      "id": "tconstruct:sky_slime_crystal",
+      "required": false
+    }, {
+      "id": "tconstruct:ender_slime_crystal",
+      "required": false
+    }, {
       "id": "phantasm:crystal_spike_tip",
       "required": false
     },

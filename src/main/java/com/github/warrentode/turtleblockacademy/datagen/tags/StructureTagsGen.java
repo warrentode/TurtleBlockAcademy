@@ -22,6 +22,14 @@ public class StructureTagsGen extends StructureTagsProvider {
     }
 
     private void registerPackTags() {
+        tag(PackTags.StructureTags.END_SLIME_ISLANDS)
+                .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("tconstruct:end_slime_island")));
+        tag(PackTags.StructureTags.NETHER_SLIME_ISLANDS)
+                .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("tconstruct:blood_island")));
+        tag(PackTags.StructureTags.OVERWORLD_SLIME_ISLANDS)
+                .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("tconstruct:clay_island")))
+                .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("tconstruct:earth_slime_island")))
+                .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("tconstruct:sky_slime_island")));
         tag(PackTags.StructureTags.WAY_SIGN_DESTINATIONS)
                 .addTag(PackTags.StructureTags.SETTLEMENT);
         tag(PackTags.StructureTags.DESERT_POI)
@@ -238,6 +246,7 @@ public class StructureTagsGen extends StructureTagsProvider {
         tag(PackTags.StructureTags.TREASURE_POI)
                 .addTag(PackTags.StructureTags.ON_TREASURE_MAPS);
         tag(PackTags.StructureTags.MISC_POI)
+                .addTag(PackTags.StructureTags.OVERWORLD_SLIME_ISLANDS)
                 .addTag(PackTags.StructureTags.ON_OVERWORLD_RUINED_PORTAL_EXPLORER_MAPS)
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("repurposed_structures:temple_taiga")))
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("repurposed_structures:pyramid_dark_forest")))
@@ -278,6 +287,7 @@ public class StructureTagsGen extends StructureTagsProvider {
                 .addOptionalTag(Objects.requireNonNull(ResourceLocation.tryParse("morevillagers:on_jungle_temple_explorer_maps")))
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("additionalstructures:maya_temple")));
         tag(PackTags.StructureTags.NETHER_POI)
+                .addTag(PackTags.StructureTags.NETHER_SLIME_ISLANDS)
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("repurposed_structures:village_warped")))
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("repurposed_structures:village_crimson")))
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("repurposed_structures:temple_nether_wasteland")))
@@ -312,6 +322,7 @@ public class StructureTagsGen extends StructureTagsProvider {
                 .addTag(PackTags.StructureTags.ON_NETHER_FOSSIL_EXPLORER_MAPS)
                 .addTag(PackTags.StructureTags.ON_NETHER_RUINED_PORTAL_EXPLORER_MAPS);
         tag(PackTags.StructureTags.END_POI)
+                .addTag(PackTags.StructureTags.END_SLIME_ISLANDS)
                 .addTag(PackTags.StructureTags.ON_END_CITY_EXPLORER_MAPS)
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("repurposed_structures:stronghold_end")))
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("repurposed_structures:shipwreck_end")))

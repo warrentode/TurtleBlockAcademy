@@ -1,5 +1,6 @@
 {
   "values": [
+    "#tconstruct:worldgen/structure/overworld_slime_islands",
     "#forge:worldgen/structure/overworld_ruined_portal",
     {
       "id": "repurposed_structures:temple_taiga",

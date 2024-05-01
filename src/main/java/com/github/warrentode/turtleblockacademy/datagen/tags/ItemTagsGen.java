@@ -702,6 +702,10 @@ public class ItemTagsGen extends ItemTagsProvider {
                 .addOptional(MoaDecorToysModItems.GEMADEJUGUETES.getId())
                 .addOptional(MoaDecorHolidaysModItems.GEMA_FESTIVIDADES.getId());
         tag(PackTags.Items.CRYSTAL)
+                .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("tconstruct:ichor_slime_crystal")))
+                .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("tconstruct:earth_slime_crystal")))
+                .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("tconstruct:sky_slime_crystal")))
+                .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("tconstruct:ender_slime_crystal")))
                 .addOptional(PhantasmModItems.CRYSTAL_SPIKE_TIP.getId())
                 .addOptional(PhantasmModItems.VOID_CRYSTAL_SPIKE_TIP.getId())
                 .addOptional(UnusualendModItems.SHINY_CRYSTAL.getId());
@@ -710,6 +714,10 @@ public class ItemTagsGen extends ItemTagsProvider {
         tag(PackTags.Items.PEARL)
                 .addOptional(alabaster.crabbersdelight.common.registry.ModItems.PEARL.getId());
         tag(PackTags.Items.GEM_SHARDS)
+                .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("tconstruct:ichor_slime_crystal")))
+                .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("tconstruct:earth_slime_crystal")))
+                .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("tconstruct:sky_slime_crystal")))
+                .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("tconstruct:ender_slime_crystal")))
                 .add(Items.QUARTZ)
                 .add(Items.AMETHYST_SHARD)
                 .add(BOPItems.ROSE_QUARTZ_SHARD.get())

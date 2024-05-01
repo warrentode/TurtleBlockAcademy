@@ -294,6 +294,9 @@ public class PackTags {
         TagKey<Structure> SETTLEMENT = packStructureTag(MODID, "worldgen/structure/settlement");
         TagKey<Structure> WITCH_SIGHTING = packStructureTag(MODID, "worldgen/structure/witch_sighting");
         TagKey<Structure> WAY_SIGN_DESTINATIONS = packStructureTag("supplementaries", "worldgen/structure/way_sign_destinations");
+        TagKey<Structure> OVERWORLD_SLIME_ISLANDS = packStructureTag("tconstruct", "worldgen/structure/overworld_slime_islands");
+        TagKey<Structure> NETHER_SLIME_ISLANDS = packStructureTag("tconstruct", "worldgen/structure/nether_slime_islands");
+        TagKey<Structure> END_SLIME_ISLANDS = packStructureTag("tconstruct", "worldgen/structure/end_slime_islands");
     }
 
     public static class Biomes {
