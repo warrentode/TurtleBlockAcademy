@@ -17,6 +17,8 @@ import org.jetbrains.annotations.Nullable;
 
 import java.util.Objects;
 
+import static net.minecraft.tags.BlockTags.NEEDS_STONE_TOOL;
+
 public class BlockTagsGen extends BlockTagsProvider {
     public BlockTagsGen(DataGenerator generator, String modid, @Nullable ExistingFileHelper helper) {
         super(generator, modid, helper);
@@ -32,10 +34,13 @@ public class BlockTagsGen extends BlockTagsProvider {
     private void registerMinecraftTags() {
         tag(PackTags.Blocks.NEEDS_NETHERITE_TOOL)
                 .add(Blocks.REINFORCED_DEEPSLATE);
+        tag(NEEDS_STONE_TOOL)
+                .add(Blocks.BUDDING_AMETHYST);
     }
 
     private void registerBlockMineables() {
         tag(net.minecraft.tags.BlockTags.MINEABLE_WITH_PICKAXE)
+                .add(Blocks.BUDDING_AMETHYST)
                 .add(Blocks.REINFORCED_DEEPSLATE);
     }
 

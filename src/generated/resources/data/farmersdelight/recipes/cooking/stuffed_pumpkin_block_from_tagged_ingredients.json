@@ -1,0 +1,31 @@
+{
+  "type": "farmersdelight:cooking",
+  "container": {
+    "item": "minecraft:pumpkin"
+  },
+  "cookingtime": 400,
+  "experience": 2.0,
+  "ingredients": [
+    {
+      "tag": "forge:ingredients/starch"
+    },
+    {
+      "tag": "forge:ingredients/onion"
+    },
+    {
+      "tag": "forge:crops/shrooms"
+    },
+    {
+      "tag": "forge:ingredients/starch"
+    },
+    {
+      "tag": "forge:crops/berries"
+    },
+    {
+      "tag": "forge:crops/vegetables"
+    }
+  ],
+  "result": {
+    "item": "farmersdelight:stuffed_pumpkin_block"
+  }
+}

@@ -4,16 +4,22 @@
   "experience": 1.0,
   "ingredients": [
     {
-      "tag": "forge:ingredients/raw_chicken"
-    }, {
       "tag": "forge:ingredients/carrot"
-    }, {
-      "tag": "forge:crops/vegetables"
-    }, {
+    },
+    {
+      "tag": "forge:crops/shrooms"
+    },
+    {
+      "tag": "forge:pasta"
+    },
+    {
       "tag": "forge:ingredients/salad"
+    },
+    {
+      "tag": "forge:crops/vegetables"
     }
   ],
   "result": {
-    "item": "farmersdelight:chicken_soup"
+    "item": "farmersdelight:vegetable_noodles"
   }
 }

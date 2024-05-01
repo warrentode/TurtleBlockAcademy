@@ -1,5 +1,9 @@
 {
   "values": [
+    {
+      "id": "create:rose_quartz",
+      "required": false
+    },
     "biomesoplenty:rose_quartz_shard"
   ]
 }

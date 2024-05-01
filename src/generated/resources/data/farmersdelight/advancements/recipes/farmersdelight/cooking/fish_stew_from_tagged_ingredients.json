@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_chicken": {
+    "has_raw_fish": {
       "conditions": {
         "items": [
           {
-            "tag": "forge:ingredients/raw_chicken"
+            "tag": "forge:ingredients/raw_fishes"
           }
         ]
       },
@@ -13,19 +13,20 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "farmersdelight:cooking/chicken_soup_alt"
+        "recipe": "farmersdelight:cooking/fish_stew_from_tagged_ingredients"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
   },
   "requirements": [
     [
-      "has_chicken", "has_the_recipe"
+      "has_raw_fish",
+      "has_the_recipe"
     ]
   ],
   "rewards": {
     "recipes": [
-      "farmersdelight:cooking/chicken_soup_alt"
+      "farmersdelight:cooking/fish_stew_from_tagged_ingredients"
     ]
   }
 }

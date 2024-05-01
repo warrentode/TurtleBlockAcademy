@@ -139,6 +139,29 @@ public class PackTags {
         public static final TagKey<Item> COCOA = packItemTag("forge", "crops/cocoa");
         public static final TagKey<Item> GREENS = packItemTag("forge", "crops/greens");
 
+        public static final TagKey<Item> RAW_FISHES = packItemTag("forge", "ingredients/raw_fishes");
+        public static final TagKey<Item> RAW_SQUID = packItemTag("forge", "raw_fishes/raw_squid");
+        public static final TagKey<Item> RAW_GLOW_SQUID = packItemTag("forge", "raw_fishes/raw_glow_squid");
+        public static final TagKey<Item> RAW_CRAB = packItemTag("forge", "raw_fishes/raw_crab");
+        public static final TagKey<Item> RAW_CLAM = packItemTag("forge", "raw_fishes/raw_clam");
+        public static final TagKey<Item> RAW_SHRIMP = packItemTag("forge", "raw_fishes/raw_shrimp");
+        public static final TagKey<Item> RAW_CLAWSTER = packItemTag("forge", "raw_fishes/raw_clawster");
+        public static final TagKey<Item> RAW_GUARDIAN = packItemTag("forge", "raw_fishes/raw_guardian");
+        public static final TagKey<Item> RAW_ELDER_GUARDIAN = packItemTag("forge", "raw_fishes/raw_elder_guardian");
+
+        public static final TagKey<Item> RAW_MEATS = packItemTag("forge", "ingredients/raw_meats");
+        public static final TagKey<Item> RAW_BEEF = packItemTag("forge", "raw_meats/raw_beef");
+        public static final TagKey<Item> RAW_CHICKEN = packItemTag("forge", "raw_meats/raw_chicken");
+        public static final TagKey<Item> RAW_BACON = packItemTag("forge", "raw_pork/raw_bacon");
+        public static final TagKey<Item> RAW_PORK = packItemTag("forge", "raw_meats/raw_pork");
+        public static final TagKey<Item> RAW_MUTTON = packItemTag("forge", "raw_meats/raw_mutton");
+        public static final TagKey<Item> RAW_RABBIT = packItemTag("forge", "raw_meats/raw_rabbit");
+        public static final TagKey<Item> RAW_VENISON = packItemTag("forge", "raw_meats/raw_venison");
+        public static final TagKey<Item> RAW_GOAT = packItemTag("forge", "raw_meats/raw_goat");
+
+        public static final TagKey<Item> COOKED_CHICKEN = packItemTag("forge", "ingredients/cooked_chicken");
+        public static final TagKey<Item> COOKED_MUTTON = packItemTag("forge", "ingredients/cooked_mutton");
+
         public static final TagKey<Item> WILDBERRIES_EDIBLES = packItemTag("wildberries", "edibles");
 
         public static final TagKey<Item> BLUEBERRIES = packItemTag("forge", "blueberries");
@@ -151,6 +174,8 @@ public class PackTags {
 
         public static final TagKey<Item> INGREDIENTS = packItemTag("forge", "ingredients");
         public static final TagKey<Item> SALAD_INGREDIENTS = packItemTag("forge", "ingredients/salad");
+        public static final TagKey<Item> STARCH_INGREDIENTS = packItemTag("forge", "ingredients/starch");
+        public static final TagKey<Item> APPLE_INGREDIENTS = packItemTag("forge", "ingredients/apple");
         public static final TagKey<Item> CARROT_INGREDIENTS = packItemTag("forge", "ingredients/carrot");
         public static final TagKey<Item> CABBAGE_INGREDIENTS = packItemTag("forge", "ingredients/cabbage");
         public static final TagKey<Item> PUMPKIN_INGREDIENTS = packItemTag("forge", "ingredients/pumpkin");
@@ -162,9 +187,6 @@ public class PackTags {
         public static final TagKey<Item> SPICES = packItemTag("forge", "ingredients/spices");
         public static final TagKey<Item> CHEESE_SLICES = packItemTag("forge", "ingredients/cheese_slices");
         public static final TagKey<Item> BREAD = packItemTag("forge", "ingredients/bread");
-        public static final TagKey<Item> RAW_CHICKEN = packItemTag("forge", "ingredients/raw_chicken");
-        public static final TagKey<Item> COOKED_CHICKEN = packItemTag("forge", "ingredients/cooked_chicken");
-        public static final TagKey<Item> COOKED_MUTTON = packItemTag("forge", "ingredients/cooked_mutton");
         public static final TagKey<Item> SWEETENED_CHUNK = packItemTag("rottenleather", "sweetened_chunk");
 
         public static final TagKey<Item> GLAZES = packItemTag("forge", "ingredients/glazes");

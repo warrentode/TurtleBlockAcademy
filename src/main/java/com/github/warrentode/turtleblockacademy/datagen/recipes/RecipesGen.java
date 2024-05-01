@@ -37,17 +37,23 @@ import org.jetbrains.annotations.NotNull;
 import umpaz.farmersrespite.common.registry.FRItems;
 import umpaz.farmersrespite.data.builder.KettleRecipeBuilder;
 import vectorwing.farmersdelight.common.registry.ModBlocks;
+import vectorwing.farmersdelight.common.tag.ForgeTags;
 import vectorwing.farmersdelight.data.builder.CookingPotRecipeBuilder;
 
 import java.util.Objects;
 import java.util.function.Consumer;
+import java.util.stream.Stream;
 
 import static com.catastrophe573.dimdungeons.item.ItemRegistrar.ITEM_HOMEWARD_PEARL;
 import static com.catastrophe573.dimdungeons.item.ItemRegistrar.ITEM_PORTAL_KEY;
 import static com.github.warrentode.turtleblockacademy.TurtleBlockAcademy.MODID;
+import static net.brnbrd.delightful.common.item.DelightfulItems.GREEN_TEA_LEAF;
+import static net.brnbrd.delightful.common.item.DelightfulItems.MATCHA;
+import static net.minecraft.world.item.Items.MUSHROOM_STEW;
 import static samebutdifferent.ecologics.registry.ModBlocks.SEASHELL;
 import static samebutdifferent.ecologics.registry.ModBlocks.SEASHELL_TILES;
-import static vectorwing.farmersdelight.common.registry.ModItems.CHICKEN_SOUP;
+import static umpaz.farmersrespite.common.registry.FRItems.GREEN_TEA;
+import static vectorwing.farmersdelight.common.registry.ModItems.*;
 
 public class RecipesGen extends RecipeProvider implements IConditionBuilder {
     public RecipesGen(DataGenerator generator) {
@@ -80,7 +86,7 @@ public class RecipesGen extends RecipeProvider implements IConditionBuilder {
         ConditionalRecipe.builder()
                 .addCondition(modLoaded("farmersrespite"))
                 .addCondition(modLoaded("delightful"))
-                .addRecipe(KettleRecipeBuilder.kettleRecipe(FRItems.GREEN_TEA.get(),
+                .addRecipe(KettleRecipeBuilder.kettleRecipe(GREEN_TEA.get(),
                                 1, 2400, true, 0.35F, Items.GLASS_BOTTLE)
                         .group("green_tea")
                         .addIngredient(DelightfulItems.MATCHA.get())
@@ -89,20 +95,20 @@ public class RecipesGen extends RecipeProvider implements IConditionBuilder {
                                 has(DelightfulItems.MATCHA.get()))
                         ::build)
                 .build(consumer, new ResourceLocation("farmersrespite", "brewing/" +
-                        FRItems.GREEN_TEA.get() + "_from_" + DelightfulItems.MATCHA.get()));
+                        GREEN_TEA.get() + "_from_" + DelightfulItems.MATCHA.get()));
         ConditionalRecipe.builder()
                 .addCondition(modLoaded("farmersrespite"))
                 .addCondition(modLoaded("delightful"))
-                .addRecipe(KettleRecipeBuilder.kettleRecipe(FRItems.GREEN_TEA.get(),
+                .addRecipe(KettleRecipeBuilder.kettleRecipe(GREEN_TEA.get(),
                                 1, 2400, true, 0.35F, Items.GLASS_BOTTLE)
                         .group("green_tea")
-                        .addIngredient(DelightfulItems.GREEN_TEA_LEAF.get())
-                        .addIngredient(DelightfulItems.GREEN_TEA_LEAF.get())
+                        .addIngredient(GREEN_TEA_LEAF.get())
+                        .addIngredient(GREEN_TEA_LEAF.get())
                         .unlockedBy("has_green_tea_leaf",
-                                has(DelightfulItems.GREEN_TEA_LEAF.get()))
+                                has(GREEN_TEA_LEAF.get()))
                         ::build)
                 .build(consumer, new ResourceLocation("farmersrespite", "brewing/" +
-                        FRItems.GREEN_TEA.get() + "_from_" + DelightfulItems.GREEN_TEA_LEAF.get()));
+                        GREEN_TEA.get() + "_from_" + GREEN_TEA_LEAF.get()));
     }
 
     private void minecraftRecipes(Consumer<FinishedRecipe> consumer) {
@@ -1126,6 +1132,154 @@ public class RecipesGen extends RecipeProvider implements IConditionBuilder {
     private void cookingPotRecipes(Consumer<FinishedRecipe> consumer) {
         ConditionalRecipe.builder()
                 .addCondition(modLoaded("farmersdelight"))
+                .addCondition(modLoaded("farmersrespite"))
+                .addCondition(modLoaded("delightful"))
+                .addRecipe(finishedRecipeConsumer ->
+                        CookingPotRecipeBuilder.cookingPotRecipe(GREEN_TEA.get(),
+                                        1, 200, 1.0F)
+                                .addIngredient(MATCHA.get())
+                                .addIngredient(MATCHA.get())
+                                .unlockedBy("has_matcha",
+                                        has(MATCHA.get()))
+                                .build(consumer, new ResourceLocation("farmersdelight",
+                                        "cooking/" + GREEN_TEA.get() + "_from_matcha"))
+                );
+        ConditionalRecipe.builder()
+                .addCondition(modLoaded("farmersdelight"))
+                .addCondition(modLoaded("farmersrespite"))
+                .addCondition(modLoaded("delightful"))
+                .addRecipe(finishedRecipeConsumer ->
+                        CookingPotRecipeBuilder.cookingPotRecipe(GREEN_TEA.get(),
+                                        1, 200, 1.0F)
+                                .addIngredient(GREEN_TEA_LEAF.get())
+                                .addIngredient(GREEN_TEA_LEAF.get())
+                                .unlockedBy("has_green_tea_leaf",
+                                        has(GREEN_TEA_LEAF.get()))
+                                .build(consumer, new ResourceLocation("farmersdelight",
+                                        "cooking/" + GREEN_TEA.get()))
+                );
+        ConditionalRecipe.builder()
+                .addCondition(modLoaded("farmersdelight"))
+                .addRecipe(finishedRecipeConsumer ->
+                        CookingPotRecipeBuilder.cookingPotRecipe(FISH_STEW.get(),
+                                        1, 200, 1.0F)
+                                .addIngredient(PackTags.Items.RAW_FISHES)
+                                .addIngredient(TOMATO_SAUCE.get())
+                                .addIngredient(PackTags.Items.ONION_INGREDIENTS)
+                                .unlockedBy("has_raw_fish",
+                                        has(PackTags.Items.RAW_FISHES))
+                                .build(consumer, new ResourceLocation("farmersdelight",
+                                        "cooking/" + FISH_STEW.get() + "_from_tagged_ingredients"))
+                );
+        ConditionalRecipe.builder()
+                .addCondition(modLoaded("farmersdelight"))
+                .addRecipe(finishedRecipeConsumer ->
+                        CookingPotRecipeBuilder.cookingPotRecipe(DUMPLINGS.get(),
+                                        2, 200, 1.0F)
+                                .addIngredient(ForgeTags.DOUGH)
+                                .addIngredient(PackTags.Items.CABBAGE_INGREDIENTS)
+                                .addIngredient(PackTags.Items.ONION_INGREDIENTS)
+                                .addIngredient(Ingredient.fromValues(
+                                        Stream.of(new Ingredient.TagValue(PackTags.Items.RAW_MEATS),
+                                                new Ingredient.TagValue(PackTags.Items.SHROOMS))))
+                                .unlockedBy("has_dough", has(ForgeTags.DOUGH))
+                                .build(consumer, new ResourceLocation("farmersdelight",
+                                        "cooking/" + DUMPLINGS.get() + "_from_tagged_ingredients"))
+                );
+        ConditionalRecipe.builder()
+                .addCondition(modLoaded("farmersdelight"))
+                .addRecipe(finishedRecipeConsumer ->
+                        CookingPotRecipeBuilder.cookingPotRecipe(FRIED_RICE.get(),
+                                        2, 200, 1.0F)
+                                .addIngredient(PackTags.Items.RICE)
+                                .addIngredient(PackTags.Items.EGGS)
+                                .addIngredient(PackTags.Items.VEGETABLES)
+                                .addIngredient(PackTags.Items.VEGETABLES)
+                                .unlockedBy("has_rice", has(PackTags.Items.RICE))
+                                .build(consumer, new ResourceLocation("farmersdelight",
+                                        "cooking/" + FRIED_RICE.get() + "_from_tagged_ingredients"))
+                );
+        ConditionalRecipe.builder()
+                .addCondition(modLoaded("farmersdelight"))
+                .addRecipe(finishedRecipeConsumer ->
+                        CookingPotRecipeBuilder.cookingPotRecipe(NOODLE_SOUP.get(),
+                                        1, 200, 1.0F)
+                                .addIngredient(ForgeTags.PASTA)
+                                .addIngredient(ForgeTags.COOKED_EGGS)
+                                .addIngredient(Items.DRIED_KELP)
+                                .addIngredient(PackTags.Items.RAW_MEATS)
+                                .unlockedBy("has_pasta", has(ForgeTags.PASTA))
+                                .build(consumer, new ResourceLocation("farmersdelight",
+                                        "cooking/" + NOODLE_SOUP.get() + "_from_tagged_ingredients"))
+                );
+        ConditionalRecipe.builder()
+                .addCondition(modLoaded("farmersdelight"))
+                .addRecipe(finishedRecipeConsumer ->
+                        CookingPotRecipeBuilder.cookingPotRecipe(VEGETABLE_NOODLES.get(),
+                                        1, 200, 1.0F)
+                                .addIngredient(PackTags.Items.CARROT_INGREDIENTS)
+                                .addIngredient(PackTags.Items.SHROOMS)
+                                .addIngredient(ForgeTags.PASTA)
+                                .addIngredient(PackTags.Items.SALAD_INGREDIENTS)
+                                .addIngredient(PackTags.Items.VEGETABLES)
+                                .unlockedBy("has_pasta", has(ForgeTags.PASTA))
+                                .build(consumer, new ResourceLocation("farmersdelight",
+                                        "cooking/" + VEGETABLE_NOODLES.get() + "_from_tagged_ingredients"))
+                );
+        ConditionalRecipe.builder()
+                .addCondition(modLoaded("farmersdelight"))
+                .addRecipe(finishedRecipeConsumer ->
+                        CookingPotRecipeBuilder.cookingPotRecipe(VEGETABLE_SOUP.get(),
+                                        1, 200, 1.0F)
+                                .addIngredient(PackTags.Items.CARROT_INGREDIENTS)
+                                .addIngredient(PackTags.Items.STARCH_INGREDIENTS)
+                                .addIngredient(PackTags.Items.SALAD_INGREDIENTS)
+                                .addIngredient(PackTags.Items.VEGETABLES)
+                                .unlockedBy("has_pasta", has(ForgeTags.PASTA))
+                                .build(consumer, new ResourceLocation("farmersdelight",
+                                        "cooking/" + VEGETABLE_SOUP.get() + "_from_tagged_ingredients"))
+                );
+        ConditionalRecipe.builder()
+                .addCondition(modLoaded("farmersdelight"))
+                .addRecipe(finishedRecipeConsumer ->
+                        CookingPotRecipeBuilder.cookingPotRecipe(MUSHROOM_STEW,
+                                        1, 200, 1.0F)
+                                .addIngredient(PackTags.Items.SHROOMS)
+                                .addIngredient(PackTags.Items.SHROOMS)
+                                .unlockedBy("has_shrooms", has(PackTags.Items.SHROOMS))
+                                .build(consumer, new ResourceLocation("farmersdelight",
+                                        "cooking/" + MUSHROOM_STEW + "_from_tagged_ingredients"))
+                );
+        ConditionalRecipe.builder()
+                .addCondition(modLoaded("farmersdelight"))
+                .addRecipe(finishedRecipeConsumer ->
+                        CookingPotRecipeBuilder.cookingPotRecipe(MUSHROOM_RICE.get(),
+                                        1, 200, 1.0F)
+                                .addIngredient(PackTags.Items.SHROOMS)
+                                .addIngredient(PackTags.Items.SHROOMS)
+                                .addIngredient(PackTags.Items.RICE)
+                                .addIngredient(PackTags.Items.VEGETABLES)
+                                .unlockedBy("has_shrooms", has(PackTags.Items.SHROOMS))
+                                .build(consumer, new ResourceLocation("farmersdelight",
+                                        "cooking/" + MUSHROOM_RICE.get() + "_from_tagged_ingredients"))
+                );
+        ConditionalRecipe.builder()
+                .addCondition(modLoaded("farmersdelight"))
+                .addRecipe(finishedRecipeConsumer ->
+                        CookingPotRecipeBuilder.cookingPotRecipe(STUFFED_PUMPKIN_BLOCK.get(),
+                                1, 400, 2.0F, Items.PUMPKIN)
+                                .addIngredient(PackTags.Items.STARCH_INGREDIENTS)
+                                .addIngredient(PackTags.Items.ONION_INGREDIENTS)
+                                .addIngredient(PackTags.Items.SHROOMS)
+                                .addIngredient(PackTags.Items.STARCH_INGREDIENTS)
+                                .addIngredient(PackTags.Items.BERRIES)
+                                .addIngredient(PackTags.Items.VEGETABLES)
+                                .unlockedByItems("has_pumpkin", Blocks.PUMPKIN)
+                                .build(consumer, new ResourceLocation("farmersdelight",
+                                        "cooking/" + STUFFED_PUMPKIN_BLOCK.get() + "_from_tagged_ingredients"))
+                );
+        ConditionalRecipe.builder()
+                .addCondition(modLoaded("farmersdelight"))
                 .addCondition(modLoaded("delightful"))
                 .addCondition(this.itemExists(DelightfulItems.ROCK_CANDY.getId().getNamespace(), DelightfulItems.ROCK_CANDY.getId().getPath()))
                 .addCondition(this.not(this.tagEmpty(PackTags.Items.GEM_SHARDS)))
@@ -1158,7 +1312,7 @@ public class RecipesGen extends RecipeProvider implements IConditionBuilder {
                                 .addIngredient(Ingredient.of(PackTags.Items.VEGETABLES))
                                 .addIngredient(Ingredient.of(PackTags.Items.SALAD_INGREDIENTS))
                                 .unlockedBy("has_chicken", has(PackTags.Items.RAW_CHICKEN))
-                                .build(consumer, new ResourceLocation("farmersdelight", "cooking/" + CHICKEN_SOUP.get() + "_alt"))
+                                .build(consumer, new ResourceLocation("farmersdelight", "cooking/" + CHICKEN_SOUP.get() + "_from_tagged_ingredients"))
                 );
     }
 

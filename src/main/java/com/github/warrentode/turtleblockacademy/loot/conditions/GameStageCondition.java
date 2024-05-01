@@ -1,14 +1,16 @@
 package com.github.warrentode.turtleblockacademy.loot.conditions;
 
 import com.github.warrentode.turtleblockacademy.loot.serializers.ModLootItemConditions;
-import com.github.warrentode.turtleblockacademy.util.GameStageUtil;
 import com.google.gson.JsonDeserializationContext;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonSerializationContext;
+import net.darkhax.gamestages.GameStageHelper;
+import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.util.GsonHelper;
 import net.minecraft.world.level.storage.loot.LootContext;
 import net.minecraft.world.level.storage.loot.predicates.LootItemCondition;
 import net.minecraft.world.level.storage.loot.predicates.LootItemConditionType;
+import net.minecraftforge.fml.ModList;
 import org.jetbrains.annotations.NotNull;
 
 import javax.annotation.Nullable;
@@ -28,8 +30,9 @@ public class GameStageCondition implements LootItemCondition {
 
     @Override
     public boolean test(LootContext context) {
-        if (STAGE != null) {
-            return GameStageUtil.check(this.STAGE);
+        ServerPlayer player = context.getLevel().getServer().createCommandSourceStack().getPlayer();
+        if (STAGE != null && ModList.get().isLoaded("gamestages")) {
+                return GameStageHelper.hasStage(player, this.STAGE);
         }
         else {
             return false;

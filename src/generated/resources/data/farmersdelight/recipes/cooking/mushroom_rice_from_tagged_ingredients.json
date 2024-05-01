@@ -1,0 +1,22 @@
+{
+  "type": "farmersdelight:cooking",
+  "cookingtime": 200,
+  "experience": 1.0,
+  "ingredients": [
+    {
+      "tag": "forge:crops/shrooms"
+    },
+    {
+      "tag": "forge:crops/shrooms"
+    },
+    {
+      "tag": "forge:crops/rice"
+    },
+    {
+      "tag": "forge:crops/vegetables"
+    }
+  ],
+  "result": {
+    "item": "farmersdelight:mushroom_rice"
+  }
+}

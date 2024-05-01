@@ -1,0 +1,28 @@
+{
+  "type": "farmersdelight:cooking",
+  "cookingtime": 200,
+  "experience": 1.0,
+  "ingredients": [
+    {
+      "tag": "forge:dough"
+    },
+    {
+      "tag": "forge:ingredients/cabbage"
+    },
+    {
+      "tag": "forge:ingredients/onion"
+    },
+    [
+      {
+        "tag": "forge:ingredients/raw_meats"
+      },
+      {
+        "tag": "forge:crops/shrooms"
+      }
+    ]
+  ],
+  "result": {
+    "count": 2,
+    "item": "farmersdelight:dumplings"
+  }
+}

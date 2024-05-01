@@ -1,0 +1,19 @@
+{
+  "type": "farmersdelight:cooking",
+  "cookingtime": 200,
+  "experience": 1.0,
+  "ingredients": [
+    {
+      "tag": "forge:ingredients/raw_fishes"
+    },
+    {
+      "item": "farmersdelight:tomato_sauce"
+    },
+    {
+      "tag": "forge:ingredients/onion"
+    }
+  ],
+  "result": {
+    "item": "farmersdelight:fish_stew"
+  }
+}

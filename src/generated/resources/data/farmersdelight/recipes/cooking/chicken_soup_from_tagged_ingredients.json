@@ -1,0 +1,22 @@
+{
+  "type": "farmersdelight:cooking",
+  "cookingtime": 200,
+  "experience": 1.0,
+  "ingredients": [
+    {
+      "tag": "forge:raw_meats/raw_chicken"
+    },
+    {
+      "tag": "forge:ingredients/carrot"
+    },
+    {
+      "tag": "forge:crops/vegetables"
+    },
+    {
+      "tag": "forge:ingredients/salad"
+    }
+  ],
+  "result": {
+    "item": "farmersdelight:chicken_soup"
+  }
+}

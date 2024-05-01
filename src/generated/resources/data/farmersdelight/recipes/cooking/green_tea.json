@@ -1,0 +1,16 @@
+{
+  "type": "farmersdelight:cooking",
+  "cookingtime": 200,
+  "experience": 1.0,
+  "ingredients": [
+    {
+      "item": "delightful:green_tea_leaf"
+    },
+    {
+      "item": "delightful:green_tea_leaf"
+    }
+  ],
+  "result": {
+    "item": "farmersrespite:green_tea"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "type": "farmersdelight:cooking",
+  "cookingtime": 200,
+  "experience": 1.0,
+  "ingredients": [
+    {
+      "tag": "forge:crops/rice"
+    },
+    {
+      "tag": "forge:eggs"
+    },
+    {
+      "tag": "forge:crops/vegetables"
+    },
+    {
+      "tag": "forge:crops/vegetables"
+    }
+  ],
+  "result": {
+    "count": 2,
+    "item": "farmersdelight:fried_rice"
+  }
+}

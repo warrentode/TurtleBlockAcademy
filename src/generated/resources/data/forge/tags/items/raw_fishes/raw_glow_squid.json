@@ -1,19 +1,19 @@
 {
   "values": [
     {
-      "id": "tconstruct:cheese",
+      "id": "oceansdelight:cut_tentacles",
       "required": false
     },
     {
-      "id": "tofucraft:soy_cheese",
+      "id": "oceansdelight:tentacles",
       "required": false
     },
     {
-      "id": "fastfooddelight:cheese",
+      "id": "miners_delight:tentacles",
       "required": false
     },
     {
-      "id": "xercamod:cheese_slice",
+      "id": "miners_delight:glow_squid",
       "required": false
     }
   ]

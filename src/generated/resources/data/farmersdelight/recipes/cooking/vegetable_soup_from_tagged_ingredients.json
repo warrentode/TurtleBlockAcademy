@@ -1,0 +1,22 @@
+{
+  "type": "farmersdelight:cooking",
+  "cookingtime": 200,
+  "experience": 1.0,
+  "ingredients": [
+    {
+      "tag": "forge:ingredients/carrot"
+    },
+    {
+      "tag": "forge:ingredients/starch"
+    },
+    {
+      "tag": "forge:ingredients/salad"
+    },
+    {
+      "tag": "forge:crops/vegetables"
+    }
+  ],
+  "result": {
+    "item": "farmersdelight:vegetable_soup"
+  }
+}

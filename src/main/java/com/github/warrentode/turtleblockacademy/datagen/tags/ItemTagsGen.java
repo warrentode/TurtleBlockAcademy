@@ -7,6 +7,8 @@ import com.aetherteam.aether.item.AetherItems;
 import com.github.warrentode.turtleblockacademy.util.PackTags;
 import com.hakimen.kawaiidishes.registry.ItemRegister;
 import com.mcwdoors.kikoz.init.ItemInit;
+import com.sammy.minersdelight.setup.MDItems;
+import com.scouter.oceansdelight.items.ODItems;
 import net.brnbrd.delightful.common.item.DelightfulItems;
 import net.mcreator.festivedelight.init.FestiveDelightModItems;
 import net.mcreator.justoutdoorstuffs.init.JustoutdoorstuffsModItems;
@@ -36,8 +38,10 @@ import vectorwing.farmersdelight.common.tag.ForgeTags;
 
 import java.util.Objects;
 
+import static alabaster.crabbersdelight.common.registry.ModItems.*;
 import static com.sammy.minersdelight.setup.MDItems.CAVE_CARROT;
 import static net.p3pp3rf1y.sophisticatedbackpacks.init.ModItems.*;
+import static vectorwing.farmersdelight.common.registry.ModItems.*;
 
 public class ItemTagsGen extends ItemTagsProvider {
     public ItemTagsGen(DataGenerator pGenerator, BlockTagsProvider pBlockTagsProvider, String modId, @Nullable ExistingFileHelper existingFileHelper) {
@@ -473,6 +477,9 @@ public class ItemTagsGen extends ItemTagsProvider {
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("hauntedharvest:grim_apple")))
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("hauntedharvest:rotten_apple")));
         tag(PackTags.Items.INGREDIENTS)
+                .addTag(PackTags.Items.APPLE_INGREDIENTS)
+                .addTag(PackTags.Items.STARCH_INGREDIENTS)
+                .addTag(PackTags.Items.CARROT_INGREDIENTS)
                 .addTag(PackTags.Items.CABBAGE_INGREDIENTS)
                 .addTag(PackTags.Items.PUMPKIN_INGREDIENTS)
                 .addTag(PackTags.Items.MELON_INGREDIENTS)
@@ -485,6 +492,15 @@ public class ItemTagsGen extends ItemTagsProvider {
                 .addTag(PackTags.Items.CHEESE_SLICES)
                 .addTag(PackTags.Items.BREAD)
                 .addTag(PackTags.Items.EGGS);
+        tag(PackTags.Items.STARCH_INGREDIENTS)
+                .addTag(PackTags.Items.RICE)
+                .add(Items.POTATO);
+        tag(PackTags.Items.APPLE_INGREDIENTS)
+                .addTag(PackTags.Items.STARCH_INGREDIENTS)
+                .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("tconstruct:jeweled_apple")))
+                .addOptional(AetherItems.WHITE_APPLE.getId())
+                .add(Items.GOLDEN_APPLE)
+                .add(Items.APPLE);
         tag(PackTags.Items.ONION_INGREDIENTS)
                 .add(Items.ALLIUM)
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("farmersdelight:wild_onion")))
@@ -557,6 +573,69 @@ public class ItemTagsGen extends ItemTagsProvider {
         tag(PackTags.Items.SALAD_INGREDIENTS)
                 .addTag(PackTags.Items.GREENS)
                 .add(Items.DRIED_KELP);
+        tag(PackTags.Items.RAW_FISHES)
+                .addTag(PackTags.Items.RAW_ELDER_GUARDIAN)
+                .addTag(PackTags.Items.RAW_GUARDIAN)
+                .addTag(PackTags.Items.RAW_CLAWSTER)
+                .addTag(PackTags.Items.RAW_SHRIMP)
+                .addTag(PackTags.Items.RAW_CLAM)
+                .addTag(PackTags.Items.RAW_CRAB)
+                .addTag(PackTags.Items.RAW_SQUID)
+                .addTag(PackTags.Items.RAW_GLOW_SQUID);
+        tag(PackTags.Items.RAW_ELDER_GUARDIAN)
+                .addTag(PackTags.Items.RAW_GUARDIAN)
+                .addOptional(ODItems.ELDER_GUARDIAN_SLICE.getId())
+                .addOptional(ODItems.ELDER_GUARDIAN_SLAB.getId());
+        tag(PackTags.Items.RAW_GUARDIAN)
+                .addOptional(ODItems.GUARDIAN_TAIL.getId())
+                .addOptional(ODItems.GUARDIAN.getId());
+        tag(PackTags.Items.RAW_CLAWSTER)
+                .addOptional(RAW_CLAWSTER.getId());
+        tag(PackTags.Items.RAW_SHRIMP)
+                .addOptional(RAW_SHRIMP.getId());
+        tag(PackTags.Items.RAW_CLAM)
+                .addOptional(RAW_CLAM_MEAT.getId());
+        tag(PackTags.Items.RAW_CRAB)
+                .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("ecologics:crab_claw")))
+                .addOptional(RAW_CRAB.getId());
+        tag(PackTags.Items.RAW_SQUID)
+                .addOptional(ODItems.CUT_TENTACLES.getId())
+                .addOptional(ODItems.TENTACLES.getId())
+                .addOptional(MDItems.TENTACLES.getId())
+                .addOptional(MDItems.SQUID.getId());
+        tag(PackTags.Items.RAW_GLOW_SQUID)
+                .addOptional(ODItems.CUT_TENTACLES.getId())
+                .addOptional(ODItems.TENTACLES.getId())
+                .addOptional(MDItems.TENTACLES.getId())
+                .addOptional(MDItems.GLOW_SQUID.getId());
+        tag(PackTags.Items.RAW_BEEF)
+                .add(Items.BEEF)
+                .addOptional(MINCED_BEEF.getId());
+        tag(PackTags.Items.RAW_MUTTON)
+                .add(Items.MUTTON)
+                .addOptional(MUTTON_CHOPS.getId());
+        tag(PackTags.Items.RAW_GOAT)
+                .addOptional(DelightfulItems.RAW_GOAT.getId());
+        tag(PackTags.Items.RAW_VENISON)
+                .addOptional(DelightfulItems.VENISON_CHOPS.getId());
+        tag(PackTags.Items.RAW_RABBIT)
+                .add(Items.RABBIT);
+        tag(PackTags.Items.RAW_BACON)
+                .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("tconstruct:bacon")))
+                .addOptional(BACON.getId());
+        tag(PackTags.Items.RAW_PORK)
+                .addTag(PackTags.Items.RAW_BACON)
+                .addOptional(NDItems.HOGLIN_LOIN.getId())
+                .addOptional(HAM.getId())
+                .add(Items.PORKCHOP);
+        tag(PackTags.Items.RAW_MEATS)
+                .addTag(PackTags.Items.RAW_GOAT)
+                .addTag(PackTags.Items.RAW_VENISON)
+                .addTag(PackTags.Items.RAW_RABBIT)
+                .addTag(PackTags.Items.RAW_BEEF)
+                .addTag(PackTags.Items.RAW_CHICKEN)
+                .addTag(PackTags.Items.RAW_MUTTON)
+                .addTag(PackTags.Items.RAW_PORK);
         tag(PackTags.Items.GREENS)
                 .add(Items.KELP)
                 .add(Items.SEAGRASS)
@@ -710,6 +789,7 @@ public class ItemTagsGen extends ItemTagsProvider {
                 .addOptional(PhantasmModItems.VOID_CRYSTAL_SPIKE_TIP.getId())
                 .addOptional(UnusualendModItems.SHINY_CRYSTAL.getId());
         tag(PackTags.Items.ROSE_QUARTZ)
+                .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("create:rose_quartz")))
                 .add(BOPItems.ROSE_QUARTZ_SHARD.get());
         tag(PackTags.Items.PEARL)
                 .addOptional(alabaster.crabbersdelight.common.registry.ModItems.PEARL.getId());
@@ -1032,6 +1112,7 @@ public class ItemTagsGen extends ItemTagsProvider {
                 .add(Items.EGG)
                 .add(Items.TURTLE_EGG);
         tag(PackTags.Items.CHEESE_SLICES)
+                .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("tconstruct:cheese")))
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("tofucraft:soy_cheese")))
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("fastfooddelight:cheese")))
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("xercamod:cheese_slice")));

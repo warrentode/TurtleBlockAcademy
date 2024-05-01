@@ -1,5 +1,8 @@
 {
   "values": [
+    "#forge:ingredients/apple",
+    "#forge:ingredients/starch",
+    "#forge:ingredients/carrot",
     "#forge:ingredients/cabbage",
     "#forge:ingredients/pumpkin",
     "#forge:ingredients/melon",

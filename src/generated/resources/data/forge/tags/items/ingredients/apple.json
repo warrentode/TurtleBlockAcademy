@@ -1,0 +1,15 @@
+{
+  "values": [
+    "#forge:ingredients/starch",
+    {
+      "id": "tconstruct:jeweled_apple",
+      "required": false
+    },
+    {
+      "id": "aether:white_apple",
+      "required": false
+    },
+    "minecraft:golden_apple",
+    "minecraft:apple"
+  ]
+}
