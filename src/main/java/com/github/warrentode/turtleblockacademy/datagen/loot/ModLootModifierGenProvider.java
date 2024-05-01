@@ -33,6 +33,14 @@ public class ModLootModifierGenProvider extends GlobalLootModifierProvider {
 
     @Override
     protected void start() {
+        add("add_starter_bonus_loot", new AddLootTableModifier(
+                new LootItemCondition[]{
+                        AlternativeLootItemCondition
+                                .alternative(LootTableIdCondition.builder(BuiltInLootTables.SPAWN_BONUS_CHEST))
+                                .build()
+                },
+                PackBuiltInLootTables.SPAWN_STARTER_BONUS, 1.0F
+        ));
         add("add_ration_bag_drops", new AddLootTableModifier(
                 new LootItemCondition[]{
                         LootItemKilledByPlayerCondition.killedByPlayer().build(),

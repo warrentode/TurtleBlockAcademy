@@ -2112,7 +2112,7 @@ public class WaresLootTablesGen implements Consumer<BiConsumer<ResourceLocation,
                 ));
         consumer.accept(WaresLootTables.WARES_SPAWN_SUPPLY, LootTable.lootTable()
                 .withPool(LootPool.lootPool().setRolls(ConstantValue.exactly(1))
-                        .add(LootTableReference.lootTableReference(PackBuiltInLootTables.SPAWN_BONUS_CHEST))
+                        .add(LootTableReference.lootTableReference(PackBuiltInLootTables.SPAWN_STARTER_BONUS))
                 ));
         consumer.accept(WaresLootTables.WARES_BARTER_SUPPLY, LootTable.lootTable()
                 .withPool(LootPool.lootPool().setRolls(ConstantValue.exactly(1))

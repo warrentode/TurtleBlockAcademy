@@ -1,4 +1,4 @@
-// 1.19.2	2024-04-30T19:28:04.1384719	LootTables
+// 1.19.2	2024-05-01T00:49:20.889215	LootTables
 87a0cbf6a892b17ac0de9da47bde823b2367a6cc data/dimdungeons/loot_tables/chests/kit_blackstone.json
 729a3840556d99d848e13423abbe664193fa88d6 data/dimdungeons/loot_tables/chests/kit_brick_set.json
 d297fc4885d818c44a6dcbe76a13fd827f547bb2 data/dimdungeons/loot_tables/chests/kit_christmas_blocks.json
@@ -334,7 +334,7 @@ ef91b9e7a8d1f94e8c0214a5ca38139802919401 data/turtleblockacademy/loot_tables/che
 dea79b0600fa5980516d46e660f6b960d440d2d0 data/turtleblockacademy/loot_tables/chests/misc_deco.json
 5477ae7f37b048243d08818614dd00b0fc7be0e0 data/turtleblockacademy/loot_tables/chests/plushies.json
 6056a3ac0c3ff4b71a168141d71da0c29736354e data/turtleblockacademy/loot_tables/chests/science_deco.json
-ee5375ae6d2fb7bff8a6c822cdf0e96705a7b01c data/turtleblockacademy/loot_tables/chests/spawn_bonus_chest.json
+ee5375ae6d2fb7bff8a6c822cdf0e96705a7b01c data/turtleblockacademy/loot_tables/chests/starter_bonus_chest.json
 aa7fd39f52f44ed859996c04005defc98ce623f7 data/turtleblockacademy/loot_tables/chests/ufo.json
 7683f3077aa34aa28e765c5279a87d9bd768c56c data/wares/loot_tables/agreement/seasonal_shopper.json
 aed8dbe0372b11b4ad25f89d7ae5aa5e39e63e9c data/wares/loot_tables/agreement/village/bounties.json
@@ -441,4 +441,4 @@ b27630470f54dd379aa2dbffb73e445d401b0ea5 data/wares/loot_tables/agreement/villag
 7f30d545075cc2facc8136beeb053e3ff837deb5 data/wares/loot_tables/agreement/village/regular_barter_list.json
 8730fa004f8279f526a0bb6060898de16cf92944 data/wares/loot_tables/agreement/village/regular_market_currency.json
 1cd2a1f4a123679f818681e459eb87f4e48e5391 data/wares/loot_tables/agreement/village/request/requested_regional_product.json
-b027ac1e23d1db0073d22c86cfb221a15dc9df03 data/wares/loot_tables/agreement/village/spawn_supply_list.json
+4d99d16937ff9373f424a5b521edd3bc838f9712 data/wares/loot_tables/agreement/village/spawn_supply_list.json

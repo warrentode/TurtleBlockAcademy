@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "minecraft:loot_table",
-          "name": "turtleblockacademy:chests/spawn_bonus_chest"
+          "name": "turtleblockacademy:chests/starter_bonus_chest"
         }
       ],
       "rolls": 1.0

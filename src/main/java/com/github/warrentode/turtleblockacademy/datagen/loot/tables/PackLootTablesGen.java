@@ -601,7 +601,7 @@ public class PackLootTablesGen implements Consumer<BiConsumer<ResourceLocation, 
                 )
         );
 
-        consumer.accept(PackBuiltInLootTables.SPAWN_BONUS_CHEST, LootTable.lootTable()
+        consumer.accept(PackBuiltInLootTables.SPAWN_STARTER_BONUS, LootTable.lootTable()
                 .withPool(LootPool.lootPool().setRolls(ConstantValue.exactly(1.0F))
                         .add(LootTableReference.lootTableReference(LootbagLootTables.RATIONS_BAG_DROP)))
                 .withPool(LootPool.lootPool().setRolls(ConstantValue.exactly(1.0F))

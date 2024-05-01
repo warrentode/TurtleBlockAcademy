@@ -35,7 +35,7 @@ public class PackBuiltInLootTables {
     public static final ResourceLocation HERO_REWARDS = register(MODID + ":" + "chests/hero_rewards");
     public static final ResourceLocation DUNGEON_REWARDS = register(MODID + ":" + "chests/dungeon_rewards");
     public static final ResourceLocation UFO = register(MODID + ":" + "chests/ufo");
-    public static final ResourceLocation SPAWN_BONUS_CHEST = register(MODID + ":" + "chests/spawn_bonus_chest");
+    public static final ResourceLocation SPAWN_STARTER_BONUS = register(MODID + ":" + "chests/starter_bonus_chest");
     public static final ResourceLocation LOG_SET = register(MODID + ":" + "chests/log_set");
     public static final ResourceLocation GIFTS = register(MODID + ":" + "chests/gifts");
     public static final ResourceLocation PLUSHIES = register(MODID + ":" + "chests/plushies");

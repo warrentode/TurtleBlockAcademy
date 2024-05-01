@@ -1,0 +1,16 @@
+{
+  "type": "turtleblockacademy:add_loot_table",
+  "addChance": 1.0,
+  "conditions": [
+    {
+      "condition": "minecraft:alternative",
+      "terms": [
+        {
+          "condition": "forge:loot_table_id",
+          "loot_table_id": "minecraft:chests/spawn_bonus_chest"
+        }
+      ]
+    }
+  ],
+  "lootTable": "turtleblockacademy:chests/starter_bonus_chest"
+}

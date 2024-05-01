@@ -720,7 +720,7 @@ public class ItemTagsGen extends ItemTagsProvider {
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("tconstruct:ender_slime_crystal")))
                 .add(Items.QUARTZ)
                 .add(Items.AMETHYST_SHARD)
-                .add(BOPItems.ROSE_QUARTZ_SHARD.get())
+                .addOptional(BOPItems.ROSE_QUARTZ_SHARD.getId())
                 .addOptional(AetherItems.LIFE_SHARD.getId())
                 .addOptional(UnusualendModItems.ANCIENT_SHARD.getId())
                 .addOptional(PhantasmModItems.CRYSTAL_SPIKE_TIP.getId())
