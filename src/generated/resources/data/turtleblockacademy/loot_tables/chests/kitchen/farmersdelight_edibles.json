@@ -84,7 +84,7 @@
           "conditions": [
             {
               "condition": "turtleblockacademy:seasonal_condition",
-              "season": "false"
+              "season": "WINTER"
             }
           ],
           "name": "farmersdelight:hot_cocoa",
@@ -95,7 +95,7 @@
           "conditions": [
             {
               "condition": "turtleblockacademy:seasonal_condition",
-              "season": "false"
+              "season": "AUTUMN"
             }
           ],
           "name": "farmersdelight:apple_cider",
@@ -106,7 +106,7 @@
           "conditions": [
             {
               "condition": "turtleblockacademy:seasonal_condition",
-              "season": "false"
+              "season": "SUMMER"
             }
           ],
           "name": "farmersdelight:melon_juice",
@@ -647,7 +647,7 @@
           "conditions": [
             {
               "condition": "turtleblockacademy:seasonal_condition",
-              "season": "false"
+              "season": "AUTUMN"
             }
           ],
           "name": "farmersdelight:roast_chicken",
@@ -658,7 +658,7 @@
           "conditions": [
             {
               "condition": "turtleblockacademy:seasonal_condition",
-              "season": "false"
+              "season": "AUTUMN"
             }
           ],
           "name": "farmersdelight:stuffed_pumpkin",
@@ -669,7 +669,7 @@
           "conditions": [
             {
               "condition": "turtleblockacademy:seasonal_condition",
-              "season": "false"
+              "season": "EASTER"
             }
           ],
           "name": "farmersdelight:honey_glazed_ham",
@@ -680,7 +680,7 @@
           "conditions": [
             {
               "condition": "turtleblockacademy:seasonal_condition",
-              "season": "false"
+              "season": "SPRING"
             }
           ],
           "name": "farmersdelight:shepherds_pie",

@@ -7,7 +7,8 @@
         {
           "condition": "turtleblockacademy:modloaded_condition",
           "modid": "aether"
-        }, {
+        },
+        {
           "condition": "minecraft:alternative",
           "terms": [
             {
@@ -15,7 +16,8 @@
               "predicate": {
                 "dimension": "aether:the_aether"
               }
-            }, {
+            },
+            {
               "condition": "turtleblockacademy:gamestage_condition",
               "stage": "false"
             }
@@ -107,7 +109,7 @@
           "conditions": [
             {
               "condition": "turtleblockacademy:seasonal_condition",
-              "season": "false"
+              "season": "CHRISTMAS"
             }
           ],
           "functions": [
@@ -128,7 +130,7 @@
           "conditions": [
             {
               "condition": "turtleblockacademy:seasonal_condition",
-              "season": "false"
+              "season": "CHRISTMAS"
             }
           ],
           "functions": [

@@ -6,8 +6,43 @@
       "condition": "minecraft:killed_by_player"
     },
     {
-      "condition": "turtleblockacademy:biometag_condition",
-      "tag": "forge:is_underground"
+      "condition": "minecraft:alternative",
+      "terms": [
+        {
+          "condition": "minecraft:location_check",
+          "predicate": {
+            "biome": "minecraft:lush_caves"
+          }
+        },
+        {
+          "condition": "minecraft:location_check",
+          "predicate": {
+            "biome": "minecraft:dripstone_caves"
+          }
+        },
+        {
+          "condition": "minecraft:location_check",
+          "predicate": {
+            "biome": "minecraft:deep_dark"
+          }
+        },
+        {
+          "condition": "minecraft:location_check",
+          "predicate": {
+            "biome": "biomesoplenty:spider_nest"
+          }
+        },
+        {
+          "condition": "minecraft:location_check",
+          "predicate": {
+            "biome": "biomesoplenty:glowing_grotto"
+          }
+        },
+        {
+          "condition": "minecraft:location_check",
+          "predicate": {}
+        }
+      ]
     }
   ],
   "lootTable": "lootbags:loot_bags/rations_bag_drop"

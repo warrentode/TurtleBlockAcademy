@@ -39,7 +39,8 @@
                   "predicate": {
                     "dimension": "minecraft:the_end"
                   }
-                }, {
+                },
+                {
                   "condition": "turtleblockacademy:gamestage_condition",
                   "stage": "false"
                 }
@@ -59,7 +60,8 @@
                   "predicate": {
                     "dimension": "minecraft:the_nether"
                   }
-                }, {
+                },
+                {
                   "condition": "turtleblockacademy:gamestage_condition",
                   "stage": "false"
                 }
@@ -99,7 +101,8 @@
                   "predicate": {
                     "dimension": "minecraft:the_end"
                   }
-                }, {
+                },
+                {
                   "condition": "turtleblockacademy:gamestage_condition",
                   "stage": "false"
                 }
@@ -119,7 +122,8 @@
                   "predicate": {
                     "dimension": "minecraft:the_end"
                   }
-                }, {
+                },
+                {
                   "condition": "turtleblockacademy:gamestage_condition",
                   "stage": "false"
                 }
@@ -155,7 +159,8 @@
                   "predicate": {
                     "dimension": "aether:the_aether"
                   }
-                }, {
+                },
+                {
                   "condition": "turtleblockacademy:gamestage_condition",
                   "stage": "false"
                 }
@@ -163,16 +168,44 @@
             }
           ],
           "name": "turtleblockacademy:chests/kitchen/aether_edibles"
-        }, {
+        },
+        {
           "type": "minecraft:loot_table",
           "conditions": [
             {
               "condition": "minecraft:alternative",
               "terms": [
                 {
-                  "condition": "turtleblockacademy:biometag_condition",
-                  "tag": "forge:is_underground"
-                }, {
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                    "biome": "minecraft:lush_caves"
+                  }
+                },
+                {
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                    "biome": "minecraft:dripstone_caves"
+                  }
+                },
+                {
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                    "biome": "minecraft:deep_dark"
+                  }
+                },
+                {
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                    "biome": "biomesoplenty:spider_nest"
+                  }
+                },
+                {
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                    "biome": "biomesoplenty:glowing_grotto"
+                  }
+                },
+                {
                   "condition": "turtleblockacademy:gamestage_condition",
                   "stage": "false"
                 }

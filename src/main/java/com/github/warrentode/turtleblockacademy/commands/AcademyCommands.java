@@ -10,6 +10,7 @@ import net.minecraft.commands.CommandSourceStack;
 import net.minecraft.commands.Commands;
 import net.minecraft.commands.arguments.EntityArgument;
 import net.minecraft.nbt.CompoundTag;
+import net.minecraft.network.chat.Component;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.item.ItemStack;
@@ -88,6 +89,10 @@ public class AcademyCommands {
         final CompoundTag tag = stack.getOrCreateTag();
         tag.putString(AcademyUtil.ACADEMIC_NAME_KEY, AcademyUtil.getAcademicStudent(serverPlayer));
         tag.putString(AcademyUtil.ACADEMIC_YEAR_KEY, AcademyUtil.getAcademicYear());
+
+        stack.setHoverName(Component.literal(AcademyUtil.getAcademicStudent(serverPlayer) + "'s "
+                + AcademyUtil.getAcademicYear() + " ").append(Component.translatable(stack.getDescriptionId())));
+
         return stack;
     }
 
@@ -96,6 +101,10 @@ public class AcademyCommands {
         tag.putString(AcademyUtil.ACADEMIC_SUBJECT_KEY, "Kitchen Unit Study");
         tag.putString(AcademyUtil.ACADEMIC_NAME_KEY, AcademyUtil.getAcademicStudent(serverPlayer));
         tag.putString(AcademyUtil.ACADEMIC_YEAR_KEY, AcademyUtil.getAcademicYear());
+
+        stack.setHoverName(Component.literal(AcademyUtil.getAcademicStudent(serverPlayer) + "'s "
+                + AcademyUtil.getAcademicYear() + " Kitchen Unit Study").append(Component.translatable(stack.getDescriptionId())));
+
         return stack;
     }
 }

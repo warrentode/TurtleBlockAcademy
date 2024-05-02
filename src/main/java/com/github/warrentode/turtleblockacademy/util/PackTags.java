@@ -5,7 +5,6 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.level.biome.Biome;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.levelgen.structure.Structure;
 import org.jetbrains.annotations.NotNull;
@@ -34,6 +33,8 @@ public class PackTags {
     }
 
     public static class Items {
+        public static final TagKey<Item> SUPPLEMENTARIES_KEY = packItemTag("supplementaries", "key");
+
         public static final TagKey<Item> BLOODSHROOM_LOG = packItemTag("tconstruct", "bloodshroom_log");
         public static final TagKey<Item> BLOODSHROOM_STRIPPED_LOG = packItemTag("tconstruct", "stripped_bloodshroom_log");
         public static final TagKey<Item> BLOODSHROOM_PLANKS = packItemTag("tconstruct", "bloodshroom_planks");
@@ -77,6 +78,7 @@ public class PackTags {
 
         public static final TagKey<Item> BACKPACKS = packItemTag(MODID, "backpacks");
 
+        public static final TagKey<Item> CURIO = packItemTag("curios", "curio");
         public static final TagKey<Item> BELT = packItemTag("curios", "belt");
         public static final TagKey<Item> HANDS = packItemTag("curios", "hands");
         public static final TagKey<Item> WEBBING = packItemTag("forge", "webbing");
@@ -319,20 +321,6 @@ public class PackTags {
         TagKey<Structure> OVERWORLD_SLIME_ISLANDS = packStructureTag("tconstruct", "worldgen/structure/overworld_slime_islands");
         TagKey<Structure> NETHER_SLIME_ISLANDS = packStructureTag("tconstruct", "worldgen/structure/nether_slime_islands");
         TagKey<Structure> END_SLIME_ISLANDS = packStructureTag("tconstruct", "worldgen/structure/end_slime_islands");
-    }
-
-    public static class Biomes {
-        public static final TagKey<Biome> IS_THE_VOID = packBiomeTag("forge", "is_void");
-        public static final TagKey<Biome> IS_OVERWORLD = packBiomeTag("forge", "is_overworld");
-        public static final TagKey<Biome> IS_NETHER = packBiomeTag("forge", "is_nether");
-        public static final TagKey<Biome> IS_END = packBiomeTag("forge", "is_end");
-        public static final TagKey<Biome> IS_AETHER = packBiomeTag("forge", "is_aether");
-        public static final TagKey<Biome> IS_UNDERGROUND = packBiomeTag("forge", "is_underground");
-    }
-
-    @SuppressWarnings("SameParameterValue")
-    private static @NotNull TagKey<Biome> packBiomeTag(String id, String path) {
-        return TagKey.create(Registry.BIOME_REGISTRY, new ResourceLocation(id, path));
     }
 
     private static @NotNull TagKey<Block> packBlockTag(String id, String path) {

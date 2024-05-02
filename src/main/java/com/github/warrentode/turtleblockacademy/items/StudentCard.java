@@ -35,7 +35,10 @@ public class StudentCard extends Item {
             itemTag.putString(AcademyUtil.ACADEMIC_NAME_KEY, AcademyUtil.getAcademicStudent(playerUsing));
             itemTag.putString(AcademyUtil.ACADEMIC_YEAR_KEY, AcademyUtil.getAcademicYear());
 
-            playerUsing.sendSystemMessage(Component.translatable(MODID + ".registered")
+            stack.setHoverName(Component.literal(AcademyUtil.getAcademicStudent(playerUsing) + "'s "
+                    + AcademyUtil.getAcademicYear() + " ").append(Component.translatable(stack.getDescriptionId())));
+
+            playerUsing.sendSystemMessage(Component.translatable("message." + MODID + ".registered")
                     .withStyle(ChatFormatting.GOLD));
 
             return new InteractionResultHolder<>(InteractionResult.SUCCESS, stack);

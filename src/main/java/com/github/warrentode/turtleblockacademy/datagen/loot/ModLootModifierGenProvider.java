@@ -1,8 +1,8 @@
 package com.github.warrentode.turtleblockacademy.datagen.loot;
 
+import biomesoplenty.api.biome.BOPBiomes;
 import com.aetherteam.aether.entity.AetherEntityTypes;
 import com.faboslav.friendsandfoes.init.FriendsAndFoesEntityTypes;
-import com.github.warrentode.turtleblockacademy.loot.conditions.BiomeTagCondition;
 import com.github.warrentode.turtleblockacademy.loot.conditions.BlockTagCondition;
 import com.github.warrentode.turtleblockacademy.loot.conditions.EntityTypeTagCondition;
 import com.github.warrentode.turtleblockacademy.loot.conditions.ModCheckCondition;
@@ -14,17 +14,21 @@ import com.github.warrentode.turtleblockacademy.util.PackTags;
 import net.brnbrd.delightful.common.item.DelightfulItems;
 import net.mcreator.phantasm.init.PhantasmModEntities;
 import net.mcreator.unusualend.init.UnusualendModEntities;
+import net.minecraft.advancements.critereon.LocationPredicate;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.level.biome.Biomes;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.storage.loot.BuiltInLootTables;
 import net.minecraft.world.level.storage.loot.predicates.AlternativeLootItemCondition;
+import net.minecraft.world.level.storage.loot.predicates.LocationCheck;
 import net.minecraft.world.level.storage.loot.predicates.LootItemCondition;
 import net.minecraft.world.level.storage.loot.predicates.LootItemKilledByPlayerCondition;
 import net.minecraftforge.common.data.GlobalLootModifierProvider;
 import net.minecraftforge.common.loot.LootTableIdCondition;
 
 import static com.aetherteam.aether.entity.AetherEntityTypes.*;
+import static de.maxhenkel.miningdimension.Main.MINING_DIMENSION;
 
 public class ModLootModifierGenProvider extends GlobalLootModifierProvider {
     public ModLootModifierGenProvider(DataGenerator gen, String modid) {
@@ -44,7 +48,20 @@ public class ModLootModifierGenProvider extends GlobalLootModifierProvider {
         add("add_ration_bag_drops", new AddLootTableModifier(
                 new LootItemCondition[]{
                         LootItemKilledByPlayerCondition.killedByPlayer().build(),
-                        BiomeTagCondition.tag().set(PackTags.Biomes.IS_UNDERGROUND).build()
+                        AlternativeLootItemCondition
+                                .alternative(LocationCheck.checkLocation(
+                                        LocationPredicate.Builder.location().setBiome(Biomes.LUSH_CAVES)))
+                                .or(LocationCheck.checkLocation(
+                                        LocationPredicate.Builder.location().setBiome(Biomes.DRIPSTONE_CAVES)))
+                                .or(LocationCheck.checkLocation(
+                                        LocationPredicate.Builder.location().setBiome(Biomes.DEEP_DARK)))
+                                .or(LocationCheck.checkLocation(
+                                        LocationPredicate.Builder.location().setBiome(BOPBiomes.SPIDER_NEST)))
+                                .or(LocationCheck.checkLocation(
+                                        LocationPredicate.Builder.location().setBiome(BOPBiomes.GLOWING_GROTTO)))
+                                .or(LocationCheck.checkLocation(
+                                        LocationPredicate.Builder.location().setDimension(MINING_DIMENSION)))
+                                .build()
                 },
                 LootbagLootTables.RATIONS_BAG_DROP, 0.1F
         ));

@@ -18,15 +18,15 @@
               "terms": [
                 {
                   "condition": "turtleblockacademy:seasonal_condition",
-                  "season": "false"
+                  "season": "NEW_YEAR"
                 },
                 {
                   "condition": "turtleblockacademy:seasonal_condition",
-                  "season": "false"
+                  "season": "CHRISTMAS"
                 },
                 {
                   "condition": "turtleblockacademy:seasonal_condition",
-                  "season": "false"
+                  "season": "EASTER"
                 }
               ]
             }
@@ -49,7 +49,7 @@
           "conditions": [
             {
               "condition": "turtleblockacademy:seasonal_condition",
-              "season": "false"
+              "season": "CHRISTMAS"
             }
           ],
           "functions": [
@@ -70,7 +70,7 @@
           "conditions": [
             {
               "condition": "turtleblockacademy:seasonal_condition",
-              "season": "false"
+              "season": "CHRISTMAS"
             }
           ],
           "functions": [
@@ -91,7 +91,7 @@
           "conditions": [
             {
               "condition": "turtleblockacademy:seasonal_condition",
-              "season": "false"
+              "season": "CHRISTMAS"
             }
           ],
           "functions": [
@@ -112,7 +112,7 @@
           "conditions": [
             {
               "condition": "turtleblockacademy:seasonal_condition",
-              "season": "false"
+              "season": "CHRISTMAS"
             }
           ],
           "functions": [
@@ -133,7 +133,7 @@
           "conditions": [
             {
               "condition": "turtleblockacademy:seasonal_condition",
-              "season": "false"
+              "season": "CHRISTMAS"
             }
           ],
           "functions": [
@@ -154,7 +154,7 @@
           "conditions": [
             {
               "condition": "turtleblockacademy:seasonal_condition",
-              "season": "false"
+              "season": "CHRISTMAS"
             }
           ],
           "functions": [
@@ -175,7 +175,7 @@
           "conditions": [
             {
               "condition": "turtleblockacademy:seasonal_condition",
-              "season": "false"
+              "season": "CHRISTMAS"
             }
           ],
           "functions": [
@@ -196,7 +196,7 @@
           "conditions": [
             {
               "condition": "turtleblockacademy:seasonal_condition",
-              "season": "false"
+              "season": "NEW_YEAR"
             }
           ],
           "functions": [
@@ -217,7 +217,7 @@
           "conditions": [
             {
               "condition": "turtleblockacademy:seasonal_condition",
-              "season": "false"
+              "season": "NEW_YEAR"
             }
           ],
           "functions": [
@@ -238,7 +238,7 @@
           "conditions": [
             {
               "condition": "turtleblockacademy:seasonal_condition",
-              "season": "false"
+              "season": "NEW_YEAR"
             }
           ],
           "functions": [
@@ -259,7 +259,7 @@
           "conditions": [
             {
               "condition": "turtleblockacademy:seasonal_condition",
-              "season": "false"
+              "season": "HALLOWEEN"
             }
           ],
           "functions": [

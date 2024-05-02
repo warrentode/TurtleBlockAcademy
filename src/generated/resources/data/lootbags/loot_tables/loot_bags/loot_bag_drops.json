@@ -20,7 +20,7 @@
           "conditions": [
             {
               "condition": "turtleblockacademy:seasonal_condition",
-              "season": "false"
+              "season": "BIRTHDAY"
             },
             {
               "chance": 0.02,
@@ -35,7 +35,7 @@
           "conditions": [
             {
               "condition": "turtleblockacademy:seasonal_condition",
-              "season": "false"
+              "season": "HALLOWEEN"
             },
             {
               "chance": 0.02,
@@ -50,7 +50,7 @@
           "conditions": [
             {
               "condition": "turtleblockacademy:seasonal_condition",
-              "season": "false"
+              "season": "CHRISTMAS"
             },
             {
               "chance": 0.02,
@@ -65,7 +65,7 @@
           "conditions": [
             {
               "condition": "turtleblockacademy:seasonal_condition",
-              "season": "false"
+              "season": "ANNIVERSARY"
             },
             {
               "chance": 0.02,
@@ -80,7 +80,7 @@
           "conditions": [
             {
               "condition": "turtleblockacademy:seasonal_condition",
-              "season": "false"
+              "season": "EASTER"
             },
             {
               "chance": 0.02,
@@ -95,7 +95,7 @@
           "conditions": [
             {
               "condition": "turtleblockacademy:seasonal_condition",
-              "season": "false"
+              "season": "NEW_YEAR"
             },
             {
               "chance": 0.02,
@@ -161,11 +161,37 @@
               "terms": [
                 {
                   "condition": "minecraft:location_check",
-                  "predicate": {}
+                  "predicate": {
+                    "biome": "minecraft:lush_caves"
+                  }
                 },
                 {
-                  "condition": "turtleblockacademy:biometag_condition",
-                  "tag": "forge:is_underground"
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                    "biome": "minecraft:dripstone_caves"
+                  }
+                },
+                {
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                    "biome": "minecraft:deep_dark"
+                  }
+                },
+                {
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                    "biome": "biomesoplenty:spider_nest"
+                  }
+                },
+                {
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                    "biome": "biomesoplenty:glowing_grotto"
+                  }
+                },
+                {
+                  "condition": "turtleblockacademy:gamestage_condition",
+                  "stage": "false"
                 }
               ]
             },
@@ -186,11 +212,37 @@
               "terms": [
                 {
                   "condition": "minecraft:location_check",
-                  "predicate": {}
+                  "predicate": {
+                    "biome": "minecraft:lush_caves"
+                  }
                 },
                 {
-                  "condition": "turtleblockacademy:biometag_condition",
-                  "tag": "forge:is_underground"
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                    "biome": "minecraft:dripstone_caves"
+                  }
+                },
+                {
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                    "biome": "minecraft:deep_dark"
+                  }
+                },
+                {
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                    "biome": "biomesoplenty:spider_nest"
+                  }
+                },
+                {
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                    "biome": "biomesoplenty:glowing_grotto"
+                  }
+                },
+                {
+                  "condition": "turtleblockacademy:gamestage_condition",
+                  "stage": "false"
                 }
               ]
             },

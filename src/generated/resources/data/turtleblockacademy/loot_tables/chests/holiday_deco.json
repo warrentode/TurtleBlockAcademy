@@ -9,7 +9,7 @@
           "conditions": [
             {
               "condition": "turtleblockacademy:seasonal_condition",
-              "season": "false"
+              "season": "CHRISTMAS"
             }
           ],
           "name": "snowyspirit:wreath"
@@ -19,7 +19,7 @@
           "conditions": [
             {
               "condition": "turtleblockacademy:seasonal_condition",
-              "season": "false"
+              "season": "CHRISTMAS"
             }
           ],
           "name": "snowyspirit:snow_globe"
@@ -29,7 +29,7 @@
           "conditions": [
             {
               "condition": "turtleblockacademy:seasonal_condition",
-              "season": "false"
+              "season": "CHRISTMAS"
             }
           ],
           "name": "snowyspirit:gumdrop_white"
@@ -39,7 +39,7 @@
           "conditions": [
             {
               "condition": "turtleblockacademy:seasonal_condition",
-              "season": "false"
+              "season": "CHRISTMAS"
             }
           ],
           "name": "snowyspirit:gumdrop_orange"
@@ -49,7 +49,7 @@
           "conditions": [
             {
               "condition": "turtleblockacademy:seasonal_condition",
-              "season": "false"
+              "season": "CHRISTMAS"
             }
           ],
           "name": "snowyspirit:gumdrop_magenta"
@@ -59,7 +59,7 @@
           "conditions": [
             {
               "condition": "turtleblockacademy:seasonal_condition",
-              "season": "false"
+              "season": "CHRISTMAS"
             }
           ],
           "name": "snowyspirit:gumdrop_light_blue"
@@ -69,7 +69,7 @@
           "conditions": [
             {
               "condition": "turtleblockacademy:seasonal_condition",
-              "season": "false"
+              "season": "CHRISTMAS"
             }
           ],
           "name": "snowyspirit:gumdrop_yellow"
@@ -79,7 +79,7 @@
           "conditions": [
             {
               "condition": "turtleblockacademy:seasonal_condition",
-              "season": "false"
+              "season": "CHRISTMAS"
             }
           ],
           "name": "snowyspirit:gumdrop_lime"
@@ -89,7 +89,7 @@
           "conditions": [
             {
               "condition": "turtleblockacademy:seasonal_condition",
-              "season": "false"
+              "season": "CHRISTMAS"
             }
           ],
           "name": "snowyspirit:gumdrop_pink"
@@ -99,7 +99,7 @@
           "conditions": [
             {
               "condition": "turtleblockacademy:seasonal_condition",
-              "season": "false"
+              "season": "CHRISTMAS"
             }
           ],
           "name": "snowyspirit:gumdrop_gray"
@@ -109,7 +109,7 @@
           "conditions": [
             {
               "condition": "turtleblockacademy:seasonal_condition",
-              "season": "false"
+              "season": "CHRISTMAS"
             }
           ],
           "name": "snowyspirit:gumdrop_light_gray"
@@ -119,7 +119,7 @@
           "conditions": [
             {
               "condition": "turtleblockacademy:seasonal_condition",
-              "season": "false"
+              "season": "CHRISTMAS"
             }
           ],
           "name": "snowyspirit:gumdrop_cyan"
@@ -129,7 +129,7 @@
           "conditions": [
             {
               "condition": "turtleblockacademy:seasonal_condition",
-              "season": "false"
+              "season": "CHRISTMAS"
             }
           ],
           "name": "snowyspirit:gumdrop_purple"
@@ -139,7 +139,7 @@
           "conditions": [
             {
               "condition": "turtleblockacademy:seasonal_condition",
-              "season": "false"
+              "season": "CHRISTMAS"
             }
           ],
           "name": "snowyspirit:gumdrop_blue"
@@ -149,7 +149,7 @@
           "conditions": [
             {
               "condition": "turtleblockacademy:seasonal_condition",
-              "season": "false"
+              "season": "CHRISTMAS"
             }
           ],
           "name": "snowyspirit:gumdrop_brown"
@@ -159,7 +159,7 @@
           "conditions": [
             {
               "condition": "turtleblockacademy:seasonal_condition",
-              "season": "false"
+              "season": "CHRISTMAS"
             }
           ],
           "name": "snowyspirit:gumdrop_green"
@@ -169,7 +169,7 @@
           "conditions": [
             {
               "condition": "turtleblockacademy:seasonal_condition",
-              "season": "false"
+              "season": "CHRISTMAS"
             }
           ],
           "name": "snowyspirit:gumdrop_red"
@@ -179,7 +179,7 @@
           "conditions": [
             {
               "condition": "turtleblockacademy:seasonal_condition",
-              "season": "false"
+              "season": "CHRISTMAS"
             }
           ],
           "name": "snowyspirit:gumdrop_black"
@@ -189,7 +189,7 @@
           "conditions": [
             {
               "condition": "turtleblockacademy:seasonal_condition",
-              "season": "false"
+              "season": "CHRISTMAS"
             }
           ],
           "name": "snowyspirit:glow_lights_prismatic"
@@ -199,7 +199,7 @@
           "conditions": [
             {
               "condition": "turtleblockacademy:seasonal_condition",
-              "season": "false"
+              "season": "CHRISTMAS"
             }
           ],
           "name": "snowyspirit:glow_lights_white"
@@ -209,7 +209,7 @@
           "conditions": [
             {
               "condition": "turtleblockacademy:seasonal_condition",
-              "season": "false"
+              "season": "CHRISTMAS"
             }
           ],
           "name": "snowyspirit:glow_lights_orange"
@@ -219,7 +219,7 @@
           "conditions": [
             {
               "condition": "turtleblockacademy:seasonal_condition",
-              "season": "false"
+              "season": "CHRISTMAS"
             }
           ],
           "name": "snowyspirit:glow_lights_magenta"
@@ -229,7 +229,7 @@
           "conditions": [
             {
               "condition": "turtleblockacademy:seasonal_condition",
-              "season": "false"
+              "season": "CHRISTMAS"
             }
           ],
           "name": "snowyspirit:glow_lights_light_blue"
@@ -239,7 +239,7 @@
           "conditions": [
             {
               "condition": "turtleblockacademy:seasonal_condition",
-              "season": "false"
+              "season": "CHRISTMAS"
             }
           ],
           "name": "snowyspirit:glow_lights_yellow"
@@ -249,7 +249,7 @@
           "conditions": [
             {
               "condition": "turtleblockacademy:seasonal_condition",
-              "season": "false"
+              "season": "CHRISTMAS"
             }
           ],
           "name": "snowyspirit:glow_lights_lime"
@@ -259,7 +259,7 @@
           "conditions": [
             {
               "condition": "turtleblockacademy:seasonal_condition",
-              "season": "false"
+              "season": "CHRISTMAS"
             }
           ],
           "name": "snowyspirit:glow_lights_pink"
@@ -269,7 +269,7 @@
           "conditions": [
             {
               "condition": "turtleblockacademy:seasonal_condition",
-              "season": "false"
+              "season": "CHRISTMAS"
             }
           ],
           "name": "snowyspirit:glow_lights_gray"
@@ -279,7 +279,7 @@
           "conditions": [
             {
               "condition": "turtleblockacademy:seasonal_condition",
-              "season": "false"
+              "season": "CHRISTMAS"
             }
           ],
           "name": "snowyspirit:glow_lights_light_gray"
@@ -289,7 +289,7 @@
           "conditions": [
             {
               "condition": "turtleblockacademy:seasonal_condition",
-              "season": "false"
+              "season": "CHRISTMAS"
             }
           ],
           "name": "snowyspirit:glow_lights_cyan"
@@ -299,7 +299,7 @@
           "conditions": [
             {
               "condition": "turtleblockacademy:seasonal_condition",
-              "season": "false"
+              "season": "CHRISTMAS"
             }
           ],
           "name": "snowyspirit:glow_lights_purple"
@@ -309,7 +309,7 @@
           "conditions": [
             {
               "condition": "turtleblockacademy:seasonal_condition",
-              "season": "false"
+              "season": "CHRISTMAS"
             }
           ],
           "name": "snowyspirit:glow_lights_blue"
@@ -319,7 +319,7 @@
           "conditions": [
             {
               "condition": "turtleblockacademy:seasonal_condition",
-              "season": "false"
+              "season": "CHRISTMAS"
             }
           ],
           "name": "snowyspirit:glow_lights_brown"
@@ -329,7 +329,7 @@
           "conditions": [
             {
               "condition": "turtleblockacademy:seasonal_condition",
-              "season": "false"
+              "season": "CHRISTMAS"
             }
           ],
           "name": "snowyspirit:glow_lights_green"
@@ -339,7 +339,7 @@
           "conditions": [
             {
               "condition": "turtleblockacademy:seasonal_condition",
-              "season": "false"
+              "season": "CHRISTMAS"
             }
           ],
           "name": "snowyspirit:glow_lights_red"
@@ -349,7 +349,7 @@
           "conditions": [
             {
               "condition": "turtleblockacademy:seasonal_condition",
-              "season": "false"
+              "season": "CHRISTMAS"
             }
           ],
           "name": "snowyspirit:glow_lights_black"
@@ -359,7 +359,7 @@
           "conditions": [
             {
               "condition": "turtleblockacademy:seasonal_condition",
-              "season": "false"
+              "season": "CHRISTMAS"
             }
           ],
           "name": "moa_decor_holidays:clabaza_creeper_nav"
@@ -369,7 +369,7 @@
           "conditions": [
             {
               "condition": "turtleblockacademy:seasonal_condition",
-              "season": "false"
+              "season": "CHRISTMAS"
             }
           ],
           "name": "moa_decor_holidays:calabaza_creeper_nav_l"
@@ -379,7 +379,7 @@
           "conditions": [
             {
               "condition": "turtleblockacademy:seasonal_condition",
-              "season": "false"
+              "season": "HALLOWEEN"
             }
           ],
           "name": "moa_decor_holidays:calabaza_zombie"
@@ -389,7 +389,7 @@
           "conditions": [
             {
               "condition": "turtleblockacademy:seasonal_condition",
-              "season": "false"
+              "season": "HALLOWEEN"
             }
           ],
           "name": "moa_decor_holidays:calabaza_zomvie_l"
@@ -399,7 +399,7 @@
           "conditions": [
             {
               "condition": "turtleblockacademy:seasonal_condition",
-              "season": "false"
+              "season": "HALLOWEEN"
             }
           ],
           "name": "moa_decor_holidays:calabaza_esqueleto"
@@ -409,7 +409,7 @@
           "conditions": [
             {
               "condition": "turtleblockacademy:seasonal_condition",
-              "season": "false"
+              "season": "HALLOWEEN"
             }
           ],
           "name": "moa_decor_holidays:calabaza_esqueleto_l"
@@ -419,7 +419,7 @@
           "conditions": [
             {
               "condition": "turtleblockacademy:seasonal_condition",
-              "season": "false"
+              "season": "HALLOWEEN"
             }
           ],
           "name": "moa_decor_holidays:calabaza_creeper"
@@ -429,7 +429,7 @@
           "conditions": [
             {
               "condition": "turtleblockacademy:seasonal_condition",
-              "season": "false"
+              "season": "HALLOWEEN"
             }
           ],
           "name": "moa_decor_holidays:calabaza_creeper_l"
@@ -439,7 +439,7 @@
           "conditions": [
             {
               "condition": "turtleblockacademy:seasonal_condition",
-              "season": "false"
+              "season": "HALLOWEEN"
             }
           ],
           "name": "moa_decor_holidays:calabaza_enderman"
@@ -449,7 +449,7 @@
           "conditions": [
             {
               "condition": "turtleblockacademy:seasonal_condition",
-              "season": "false"
+              "season": "HALLOWEEN"
             }
           ],
           "name": "moa_decor_holidays:calabaza_enderman_l"
@@ -459,7 +459,7 @@
           "conditions": [
             {
               "condition": "turtleblockacademy:seasonal_condition",
-              "season": "false"
+              "season": "HALLOWEEN"
             }
           ],
           "name": "moa_decor_holidays:calabaza_slime"
@@ -469,7 +469,7 @@
           "conditions": [
             {
               "condition": "turtleblockacademy:seasonal_condition",
-              "season": "false"
+              "season": "HALLOWEEN"
             }
           ],
           "name": "moa_decor_holidays:calabaza_slime_l"
@@ -479,7 +479,7 @@
           "conditions": [
             {
               "condition": "turtleblockacademy:seasonal_condition",
-              "season": "false"
+              "season": "HALLOWEEN"
             }
           ],
           "name": "moa_decor_holidays:calabaza_pillager"
@@ -489,7 +489,7 @@
           "conditions": [
             {
               "condition": "turtleblockacademy:seasonal_condition",
-              "season": "false"
+              "season": "HALLOWEEN"
             }
           ],
           "name": "moa_decor_holidays:calabaza_pillager_l"
@@ -499,7 +499,7 @@
           "conditions": [
             {
               "condition": "turtleblockacademy:seasonal_condition",
-              "season": "false"
+              "season": "HALLOWEEN"
             }
           ],
           "name": "moa_decor_holidays:calabaza_warden"
@@ -509,7 +509,7 @@
           "conditions": [
             {
               "condition": "turtleblockacademy:seasonal_condition",
-              "season": "false"
+              "season": "HALLOWEEN"
             }
           ],
           "name": "moa_decor_holidays:calabaza_warden_l"
@@ -519,7 +519,7 @@
           "conditions": [
             {
               "condition": "turtleblockacademy:seasonal_condition",
-              "season": "false"
+              "season": "HALLOWEEN"
             }
           ],
           "name": "moa_decor_holidays:calabaza_creeper"
@@ -529,7 +529,7 @@
           "conditions": [
             {
               "condition": "turtleblockacademy:seasonal_condition",
-              "season": "false"
+              "season": "HALLOWEEN"
             }
           ],
           "name": "moa_decor_holidays:esp_blanco"
@@ -539,7 +539,7 @@
           "conditions": [
             {
               "condition": "turtleblockacademy:seasonal_condition",
-              "season": "false"
+              "season": "HALLOWEEN"
             }
           ],
           "name": "moa_decor_holidays:esp_grisclaro"
@@ -549,7 +549,7 @@
           "conditions": [
             {
               "condition": "turtleblockacademy:seasonal_condition",
-              "season": "false"
+              "season": "HALLOWEEN"
             }
           ],
           "name": "moa_decor_holidays:esp_gris"
@@ -559,7 +559,7 @@
           "conditions": [
             {
               "condition": "turtleblockacademy:seasonal_condition",
-              "season": "false"
+              "season": "HALLOWEEN"
             }
           ],
           "name": "moa_decor_holidays:esp_negro"
@@ -569,7 +569,7 @@
           "conditions": [
             {
               "condition": "turtleblockacademy:seasonal_condition",
-              "season": "false"
+              "season": "HALLOWEEN"
             }
           ],
           "name": "moa_decor_holidays:esp_cafe"
@@ -579,7 +579,7 @@
           "conditions": [
             {
               "condition": "turtleblockacademy:seasonal_condition",
-              "season": "false"
+              "season": "HALLOWEEN"
             }
           ],
           "name": "moa_decor_holidays:esp_rojo"
@@ -589,7 +589,7 @@
           "conditions": [
             {
               "condition": "turtleblockacademy:seasonal_condition",
-              "season": "false"
+              "season": "HALLOWEEN"
             }
           ],
           "name": "moa_decor_holidays:esp_naranja"
@@ -599,7 +599,7 @@
           "conditions": [
             {
               "condition": "turtleblockacademy:seasonal_condition",
-              "season": "false"
+              "season": "HALLOWEEN"
             }
           ],
           "name": "moa_decor_holidays:esp_amarillo"
@@ -609,7 +609,7 @@
           "conditions": [
             {
               "condition": "turtleblockacademy:seasonal_condition",
-              "season": "false"
+              "season": "HALLOWEEN"
             }
           ],
           "name": "moa_decor_holidays:esp_verdelima"
@@ -619,7 +619,7 @@
           "conditions": [
             {
               "condition": "turtleblockacademy:seasonal_condition",
-              "season": "false"
+              "season": "HALLOWEEN"
             }
           ],
           "name": "moa_decor_holidays:esp_verde"
@@ -629,7 +629,7 @@
           "conditions": [
             {
               "condition": "turtleblockacademy:seasonal_condition",
-              "season": "false"
+              "season": "HALLOWEEN"
             }
           ],
           "name": "moa_decor_holidays:esp_cian"
@@ -639,7 +639,7 @@
           "conditions": [
             {
               "condition": "turtleblockacademy:seasonal_condition",
-              "season": "false"
+              "season": "HALLOWEEN"
             }
           ],
           "name": "moa_decor_holidays:esp_azulclaro"
@@ -649,7 +649,7 @@
           "conditions": [
             {
               "condition": "turtleblockacademy:seasonal_condition",
-              "season": "false"
+              "season": "HALLOWEEN"
             }
           ],
           "name": "moa_decor_holidays:esp_azul"
@@ -659,7 +659,7 @@
           "conditions": [
             {
               "condition": "turtleblockacademy:seasonal_condition",
-              "season": "false"
+              "season": "HALLOWEEN"
             }
           ],
           "name": "moa_decor_holidays:esp_morado"
@@ -669,7 +669,7 @@
           "conditions": [
             {
               "condition": "turtleblockacademy:seasonal_condition",
-              "season": "false"
+              "season": "HALLOWEEN"
             }
           ],
           "name": "moa_decor_holidays:esp_magenta"
@@ -679,7 +679,7 @@
           "conditions": [
             {
               "condition": "turtleblockacademy:seasonal_condition",
-              "season": "false"
+              "season": "HALLOWEEN"
             }
           ],
           "name": "moa_decor_holidays:esp_rosa"
@@ -689,7 +689,7 @@
           "conditions": [
             {
               "condition": "turtleblockacademy:seasonal_condition",
-              "season": "false"
+              "season": "HALLOWEEN"
             }
           ],
           "name": "moa_decor_holidays:lapida"
@@ -699,7 +699,7 @@
           "conditions": [
             {
               "condition": "turtleblockacademy:seasonal_condition",
-              "season": "false"
+              "season": "HALLOWEEN"
             }
           ],
           "name": "moa_decor_holidays:lapida_cruz"
@@ -709,7 +709,7 @@
           "conditions": [
             {
               "condition": "turtleblockacademy:seasonal_condition",
-              "season": "false"
+              "season": "HALLOWEEN"
             }
           ],
           "name": "moa_decor_holidays:fantasma"
@@ -719,7 +719,7 @@
           "conditions": [
             {
               "condition": "turtleblockacademy:seasonal_condition",
-              "season": "false"
+              "season": "HALLOWEEN"
             }
           ],
           "name": "moa_decor_holidays:esqueletoacostado"
@@ -729,7 +729,7 @@
           "conditions": [
             {
               "condition": "turtleblockacademy:seasonal_condition",
-              "season": "false"
+              "season": "HALLOWEEN"
             }
           ],
           "name": "moa_decor_holidays:esqueletosentado"
@@ -739,7 +739,7 @@
           "conditions": [
             {
               "condition": "turtleblockacademy:seasonal_condition",
-              "season": "false"
+              "season": "HALLOWEEN"
             }
           ],
           "name": "moa_decor_holidays:tumba"
@@ -749,7 +749,7 @@
           "conditions": [
             {
               "condition": "turtleblockacademy:seasonal_condition",
-              "season": "false"
+              "season": "HALLOWEEN"
             }
           ],
           "name": "moa_decor_holidays:tumbaabierta"
@@ -759,7 +759,7 @@
           "conditions": [
             {
               "condition": "turtleblockacademy:seasonal_condition",
-              "season": "false"
+              "season": "HALLOWEEN"
             }
           ],
           "name": "moa_decor_holidays:tumbaesqueleto"
@@ -769,7 +769,7 @@
           "conditions": [
             {
               "condition": "turtleblockacademy:seasonal_condition",
-              "season": "false"
+              "season": "HALLOWEEN"
             }
           ],
           "name": "moa_decor_holidays:tumbaesqueletosentado"
@@ -779,7 +779,7 @@
           "conditions": [
             {
               "condition": "turtleblockacademy:seasonal_condition",
-              "season": "false"
+              "season": "HALLOWEEN"
             }
           ],
           "name": "moa_decor_holidays:jaula"
@@ -789,7 +789,7 @@
           "conditions": [
             {
               "condition": "turtleblockacademy:seasonal_condition",
-              "season": "false"
+              "season": "HALLOWEEN"
             }
           ],
           "name": "moa_decor_holidays:esqueleto_enjaulado"
@@ -799,7 +799,7 @@
           "conditions": [
             {
               "condition": "turtleblockacademy:seasonal_condition",
-              "season": "false"
+              "season": "HALLOWEEN"
             }
           ],
           "name": "moa_decor_holidays:bruja_escoba"
@@ -809,7 +809,7 @@
           "conditions": [
             {
               "condition": "turtleblockacademy:seasonal_condition",
-              "season": "false"
+              "season": "HALLOWEEN"
             }
           ],
           "name": "moa_decor_holidays:zombieacostado"
@@ -819,7 +819,7 @@
           "conditions": [
             {
               "condition": "turtleblockacademy:seasonal_condition",
-              "season": "false"
+              "season": "HALLOWEEN"
             }
           ],
           "name": "moa_decor_holidays:zombieenterrado"
@@ -829,7 +829,7 @@
           "conditions": [
             {
               "condition": "turtleblockacademy:seasonal_condition",
-              "season": "false"
+              "season": "HALLOWEEN"
             }
           ],
           "name": "moa_decor_holidays:zombiesaliendotierra"
@@ -839,7 +839,7 @@
           "conditions": [
             {
               "condition": "turtleblockacademy:seasonal_condition",
-              "season": "false"
+              "season": "HALLOWEEN"
             }
           ],
           "name": "moa_decor_holidays:mariachiguitarra"
@@ -849,7 +849,7 @@
           "conditions": [
             {
               "condition": "turtleblockacademy:seasonal_condition",
-              "season": "false"
+              "season": "HALLOWEEN"
             }
           ],
           "name": "moa_decor_holidays:mariachitrompeta"
@@ -859,7 +859,7 @@
           "conditions": [
             {
               "condition": "turtleblockacademy:seasonal_condition",
-              "season": "false"
+              "season": "HALLOWEEN"
             }
           ],
           "name": "moa_decor_holidays:mariachiviolin"
@@ -869,7 +869,7 @@
           "conditions": [
             {
               "condition": "turtleblockacademy:seasonal_condition",
-              "season": "false"
+              "season": "HALLOWEEN"
             }
           ],
           "name": "moa_decor_holidays:catrinaroja"
@@ -879,7 +879,7 @@
           "conditions": [
             {
               "condition": "turtleblockacademy:seasonal_condition",
-              "season": "false"
+              "season": "HALLOWEEN"
             }
           ],
           "name": "moa_decor_holidays:catrinamorada"
@@ -889,7 +889,7 @@
           "conditions": [
             {
               "condition": "turtleblockacademy:seasonal_condition",
-              "season": "false"
+              "season": "HALLOWEEN"
             }
           ],
           "name": "moa_decor_holidays:catrinacian"
@@ -899,7 +899,7 @@
           "conditions": [
             {
               "condition": "turtleblockacademy:seasonal_condition",
-              "season": "false"
+              "season": "HALLOWEEN"
             }
           ],
           "name": "moa_decor_holidays:papelpicado_a"
@@ -909,7 +909,7 @@
           "conditions": [
             {
               "condition": "turtleblockacademy:seasonal_condition",
-              "season": "false"
+              "season": "HALLOWEEN"
             }
           ],
           "name": "moa_decor_holidays:papelpicado_cian"
@@ -919,7 +919,7 @@
           "conditions": [
             {
               "condition": "turtleblockacademy:seasonal_condition",
-              "season": "false"
+              "season": "HALLOWEEN"
             }
           ],
           "name": "moa_decor_holidays:papelpicado_morado"
@@ -929,7 +929,7 @@
           "conditions": [
             {
               "condition": "turtleblockacademy:seasonal_condition",
-              "season": "false"
+              "season": "HALLOWEEN"
             }
           ],
           "name": "moa_decor_holidays:papelpicado_rojo"
@@ -939,7 +939,7 @@
           "conditions": [
             {
               "condition": "turtleblockacademy:seasonal_condition",
-              "season": "false"
+              "season": "HALLOWEEN"
             }
           ],
           "name": "moa_decor_holidays:papelpicado_rosa"
@@ -949,7 +949,7 @@
           "conditions": [
             {
               "condition": "turtleblockacademy:seasonal_condition",
-              "season": "false"
+              "season": "HALLOWEEN"
             }
           ],
           "name": "moa_decor_holidays:papelpicado_lima"
@@ -959,7 +959,7 @@
           "conditions": [
             {
               "condition": "turtleblockacademy:seasonal_condition",
-              "season": "false"
+              "season": "HALLOWEEN"
             }
           ],
           "name": "moa_decor_holidays:murcielagocerrado"
@@ -969,7 +969,7 @@
           "conditions": [
             {
               "condition": "turtleblockacademy:seasonal_condition",
-              "season": "false"
+              "season": "HALLOWEEN"
             }
           ],
           "name": "moa_decor_holidays:murcielagoabierto"
@@ -979,7 +979,7 @@
           "conditions": [
             {
               "condition": "turtleblockacademy:seasonal_condition",
-              "season": "false"
+              "season": "HALLOWEEN"
             }
           ],
           "name": "moa_decor_holidays:arana_en_telarana"
@@ -989,7 +989,7 @@
           "conditions": [
             {
               "condition": "turtleblockacademy:seasonal_condition",
-              "season": "false"
+              "season": "HALLOWEEN"
             }
           ],
           "name": "moa_decor_holidays:arana_en_telarana_2"
@@ -999,7 +999,7 @@
           "conditions": [
             {
               "condition": "turtleblockacademy:seasonal_condition",
-              "season": "false"
+              "season": "HALLOWEEN"
             }
           ],
           "name": "moa_decor_holidays:calabaza_dulces"
@@ -1012,15 +1012,15 @@
               "terms": [
                 {
                   "condition": "turtleblockacademy:seasonal_condition",
-                  "season": "false"
+                  "season": "CHRISTMAS"
                 },
                 {
                   "condition": "turtleblockacademy:seasonal_condition",
-                  "season": "false"
+                  "season": "BIRTHDAY"
                 },
                 {
                   "condition": "turtleblockacademy:seasonal_condition",
-                  "season": "false"
+                  "season": "ANNIVERSARY"
                 }
               ]
             }
@@ -1035,15 +1035,15 @@
               "terms": [
                 {
                   "condition": "turtleblockacademy:seasonal_condition",
-                  "season": "false"
+                  "season": "CHRISTMAS"
                 },
                 {
                   "condition": "turtleblockacademy:seasonal_condition",
-                  "season": "false"
+                  "season": "BIRTHDAY"
                 },
                 {
                   "condition": "turtleblockacademy:seasonal_condition",
-                  "season": "false"
+                  "season": "ANNIVERSARY"
                 }
               ]
             }
@@ -1058,15 +1058,15 @@
               "terms": [
                 {
                   "condition": "turtleblockacademy:seasonal_condition",
-                  "season": "false"
+                  "season": "CHRISTMAS"
                 },
                 {
                   "condition": "turtleblockacademy:seasonal_condition",
-                  "season": "false"
+                  "season": "BIRTHDAY"
                 },
                 {
                   "condition": "turtleblockacademy:seasonal_condition",
-                  "season": "false"
+                  "season": "ANNIVERSARY"
                 }
               ]
             }
@@ -1081,15 +1081,15 @@
               "terms": [
                 {
                   "condition": "turtleblockacademy:seasonal_condition",
-                  "season": "false"
+                  "season": "CHRISTMAS"
                 },
                 {
                   "condition": "turtleblockacademy:seasonal_condition",
-                  "season": "false"
+                  "season": "BIRTHDAY"
                 },
                 {
                   "condition": "turtleblockacademy:seasonal_condition",
-                  "season": "false"
+                  "season": "ANNIVERSARY"
                 }
               ]
             }
@@ -1104,15 +1104,15 @@
               "terms": [
                 {
                   "condition": "turtleblockacademy:seasonal_condition",
-                  "season": "false"
+                  "season": "CHRISTMAS"
                 },
                 {
                   "condition": "turtleblockacademy:seasonal_condition",
-                  "season": "false"
+                  "season": "BIRTHDAY"
                 },
                 {
                   "condition": "turtleblockacademy:seasonal_condition",
-                  "season": "false"
+                  "season": "ANNIVERSARY"
                 }
               ]
             }
@@ -1127,15 +1127,15 @@
               "terms": [
                 {
                   "condition": "turtleblockacademy:seasonal_condition",
-                  "season": "false"
+                  "season": "CHRISTMAS"
                 },
                 {
                   "condition": "turtleblockacademy:seasonal_condition",
-                  "season": "false"
+                  "season": "BIRTHDAY"
                 },
                 {
                   "condition": "turtleblockacademy:seasonal_condition",
-                  "season": "false"
+                  "season": "ANNIVERSARY"
                 }
               ]
             }
@@ -1150,15 +1150,15 @@
               "terms": [
                 {
                   "condition": "turtleblockacademy:seasonal_condition",
-                  "season": "false"
+                  "season": "CHRISTMAS"
                 },
                 {
                   "condition": "turtleblockacademy:seasonal_condition",
-                  "season": "false"
+                  "season": "BIRTHDAY"
                 },
                 {
                   "condition": "turtleblockacademy:seasonal_condition",
-                  "season": "false"
+                  "season": "ANNIVERSARY"
                 }
               ]
             }
@@ -1173,15 +1173,15 @@
               "terms": [
                 {
                   "condition": "turtleblockacademy:seasonal_condition",
-                  "season": "false"
+                  "season": "CHRISTMAS"
                 },
                 {
                   "condition": "turtleblockacademy:seasonal_condition",
-                  "season": "false"
+                  "season": "BIRTHDAY"
                 },
                 {
                   "condition": "turtleblockacademy:seasonal_condition",
-                  "season": "false"
+                  "season": "ANNIVERSARY"
                 }
               ]
             }
@@ -1196,15 +1196,15 @@
               "terms": [
                 {
                   "condition": "turtleblockacademy:seasonal_condition",
-                  "season": "false"
+                  "season": "CHRISTMAS"
                 },
                 {
                   "condition": "turtleblockacademy:seasonal_condition",
-                  "season": "false"
+                  "season": "BIRTHDAY"
                 },
                 {
                   "condition": "turtleblockacademy:seasonal_condition",
-                  "season": "false"
+                  "season": "ANNIVERSARY"
                 }
               ]
             }
@@ -1219,15 +1219,15 @@
               "terms": [
                 {
                   "condition": "turtleblockacademy:seasonal_condition",
-                  "season": "false"
+                  "season": "CHRISTMAS"
                 },
                 {
                   "condition": "turtleblockacademy:seasonal_condition",
-                  "season": "false"
+                  "season": "BIRTHDAY"
                 },
                 {
                   "condition": "turtleblockacademy:seasonal_condition",
-                  "season": "false"
+                  "season": "ANNIVERSARY"
                 }
               ]
             }
@@ -1242,15 +1242,15 @@
               "terms": [
                 {
                   "condition": "turtleblockacademy:seasonal_condition",
-                  "season": "false"
+                  "season": "CHRISTMAS"
                 },
                 {
                   "condition": "turtleblockacademy:seasonal_condition",
-                  "season": "false"
+                  "season": "BIRTHDAY"
                 },
                 {
                   "condition": "turtleblockacademy:seasonal_condition",
-                  "season": "false"
+                  "season": "ANNIVERSARY"
                 }
               ]
             }
@@ -1265,15 +1265,15 @@
               "terms": [
                 {
                   "condition": "turtleblockacademy:seasonal_condition",
-                  "season": "false"
+                  "season": "CHRISTMAS"
                 },
                 {
                   "condition": "turtleblockacademy:seasonal_condition",
-                  "season": "false"
+                  "season": "BIRTHDAY"
                 },
                 {
                   "condition": "turtleblockacademy:seasonal_condition",
-                  "season": "false"
+                  "season": "ANNIVERSARY"
                 }
               ]
             }
@@ -1288,15 +1288,15 @@
               "terms": [
                 {
                   "condition": "turtleblockacademy:seasonal_condition",
-                  "season": "false"
+                  "season": "CHRISTMAS"
                 },
                 {
                   "condition": "turtleblockacademy:seasonal_condition",
-                  "season": "false"
+                  "season": "BIRTHDAY"
                 },
                 {
                   "condition": "turtleblockacademy:seasonal_condition",
-                  "season": "false"
+                  "season": "ANNIVERSARY"
                 }
               ]
             }
@@ -1311,15 +1311,15 @@
               "terms": [
                 {
                   "condition": "turtleblockacademy:seasonal_condition",
-                  "season": "false"
+                  "season": "CHRISTMAS"
                 },
                 {
                   "condition": "turtleblockacademy:seasonal_condition",
-                  "season": "false"
+                  "season": "BIRTHDAY"
                 },
                 {
                   "condition": "turtleblockacademy:seasonal_condition",
-                  "season": "false"
+                  "season": "ANNIVERSARY"
                 }
               ]
             }
@@ -1334,15 +1334,15 @@
               "terms": [
                 {
                   "condition": "turtleblockacademy:seasonal_condition",
-                  "season": "false"
+                  "season": "CHRISTMAS"
                 },
                 {
                   "condition": "turtleblockacademy:seasonal_condition",
-                  "season": "false"
+                  "season": "BIRTHDAY"
                 },
                 {
                   "condition": "turtleblockacademy:seasonal_condition",
-                  "season": "false"
+                  "season": "ANNIVERSARY"
                 }
               ]
             }
@@ -1357,15 +1357,15 @@
               "terms": [
                 {
                   "condition": "turtleblockacademy:seasonal_condition",
-                  "season": "false"
+                  "season": "CHRISTMAS"
                 },
                 {
                   "condition": "turtleblockacademy:seasonal_condition",
-                  "season": "false"
+                  "season": "BIRTHDAY"
                 },
                 {
                   "condition": "turtleblockacademy:seasonal_condition",
-                  "season": "false"
+                  "season": "ANNIVERSARY"
                 }
               ]
             }
@@ -1377,7 +1377,7 @@
           "conditions": [
             {
               "condition": "turtleblockacademy:seasonal_condition",
-              "season": "false"
+              "season": "CHRISTMAS"
             }
           ],
           "name": "moa_decor_holidays:corona_navidena"
@@ -1387,7 +1387,7 @@
           "conditions": [
             {
               "condition": "turtleblockacademy:seasonal_condition",
-              "season": "false"
+              "season": "CHRISTMAS"
             }
           ],
           "name": "moa_decor_holidays:bota_ngrisclara"
@@ -1397,7 +1397,7 @@
           "conditions": [
             {
               "condition": "turtleblockacademy:seasonal_condition",
-              "season": "false"
+              "season": "CHRISTMAS"
             }
           ],
           "name": "moa_decor_holidays:bota_ngris"
@@ -1407,7 +1407,7 @@
           "conditions": [
             {
               "condition": "turtleblockacademy:seasonal_condition",
-              "season": "false"
+              "season": "CHRISTMAS"
             }
           ],
           "name": "moa_decor_holidays:bota_nnegra"
@@ -1417,7 +1417,7 @@
           "conditions": [
             {
               "condition": "turtleblockacademy:seasonal_condition",
-              "season": "false"
+              "season": "CHRISTMAS"
             }
           ],
           "name": "moa_decor_holidays:bota_ncafe"
@@ -1427,7 +1427,7 @@
           "conditions": [
             {
               "condition": "turtleblockacademy:seasonal_condition",
-              "season": "false"
+              "season": "CHRISTMAS"
             }
           ],
           "name": "moa_decor_holidays:bota_nroja"
@@ -1437,7 +1437,7 @@
           "conditions": [
             {
               "condition": "turtleblockacademy:seasonal_condition",
-              "season": "false"
+              "season": "CHRISTMAS"
             }
           ],
           "name": "moa_decor_holidays:bota_nnatanja"
@@ -1447,7 +1447,7 @@
           "conditions": [
             {
               "condition": "turtleblockacademy:seasonal_condition",
-              "season": "false"
+              "season": "CHRISTMAS"
             }
           ],
           "name": "moa_decor_holidays:bota_namarilla"
@@ -1457,7 +1457,7 @@
           "conditions": [
             {
               "condition": "turtleblockacademy:seasonal_condition",
-              "season": "false"
+              "season": "CHRISTMAS"
             }
           ],
           "name": "moa_decor_holidays:bota_nverdelima"
@@ -1467,7 +1467,7 @@
           "conditions": [
             {
               "condition": "turtleblockacademy:seasonal_condition",
-              "season": "false"
+              "season": "CHRISTMAS"
             }
           ],
           "name": "moa_decor_holidays:bota_nverde"
@@ -1477,7 +1477,7 @@
           "conditions": [
             {
               "condition": "turtleblockacademy:seasonal_condition",
-              "season": "false"
+              "season": "CHRISTMAS"
             }
           ],
           "name": "moa_decor_holidays:bota_ncian"
@@ -1487,7 +1487,7 @@
           "conditions": [
             {
               "condition": "turtleblockacademy:seasonal_condition",
-              "season": "false"
+              "season": "CHRISTMAS"
             }
           ],
           "name": "moa_decor_holidays:bota_nazulclara"
@@ -1497,7 +1497,7 @@
           "conditions": [
             {
               "condition": "turtleblockacademy:seasonal_condition",
-              "season": "false"
+              "season": "CHRISTMAS"
             }
           ],
           "name": "moa_decor_holidays:bota_nazul"
@@ -1507,7 +1507,7 @@
           "conditions": [
             {
               "condition": "turtleblockacademy:seasonal_condition",
-              "season": "false"
+              "season": "CHRISTMAS"
             }
           ],
           "name": "moa_decor_holidays:bota_nmorada"
@@ -1517,7 +1517,7 @@
           "conditions": [
             {
               "condition": "turtleblockacademy:seasonal_condition",
-              "season": "false"
+              "season": "CHRISTMAS"
             }
           ],
           "name": "moa_decor_holidays:bota_nmagenta"
@@ -1527,7 +1527,7 @@
           "conditions": [
             {
               "condition": "turtleblockacademy:seasonal_condition",
-              "season": "false"
+              "season": "CHRISTMAS"
             }
           ],
           "name": "moa_decor_holidays:bota_nrosa"
@@ -1537,7 +1537,7 @@
           "conditions": [
             {
               "condition": "turtleblockacademy:seasonal_condition",
-              "season": "false"
+              "season": "CHRISTMAS"
             }
           ],
           "name": "moa_decor_holidays:santa_claus"
@@ -1547,7 +1547,7 @@
           "conditions": [
             {
               "condition": "turtleblockacademy:seasonal_condition",
-              "season": "false"
+              "season": "CHRISTMAS"
             }
           ],
           "name": "moa_decor_holidays:duende_navideno"
@@ -1557,7 +1557,7 @@
           "conditions": [
             {
               "condition": "turtleblockacademy:seasonal_condition",
-              "season": "false"
+              "season": "CHRISTMAS"
             }
           ],
           "name": "moa_decor_holidays:duende_navidena"
@@ -1567,7 +1567,7 @@
           "conditions": [
             {
               "condition": "turtleblockacademy:seasonal_condition",
-              "season": "false"
+              "season": "CHRISTMAS"
             }
           ],
           "name": "moa_decor_holidays:creeper_nieve"
@@ -1577,7 +1577,7 @@
           "conditions": [
             {
               "condition": "turtleblockacademy:seasonal_condition",
-              "season": "false"
+              "season": "CHRISTMAS"
             }
           ],
           "name": "moa_decor_holidays:trineo"
@@ -1587,7 +1587,7 @@
           "conditions": [
             {
               "condition": "turtleblockacademy:seasonal_condition",
-              "season": "false"
+              "season": "CHRISTMAS"
             }
           ],
           "name": "moa_decor_holidays:base_pino_navideno"
@@ -1597,7 +1597,7 @@
           "conditions": [
             {
               "condition": "turtleblockacademy:seasonal_condition",
-              "season": "false"
+              "season": "CHRISTMAS"
             }
           ],
           "name": "moa_decor_holidays:pino_navideno"
@@ -1607,7 +1607,7 @@
           "conditions": [
             {
               "condition": "turtleblockacademy:seasonal_condition",
-              "season": "false"
+              "season": "CHRISTMAS"
             }
           ],
           "name": "moa_decor_holidays:pino_navideno_n"
@@ -1617,7 +1617,7 @@
           "conditions": [
             {
               "condition": "turtleblockacademy:seasonal_condition",
-              "season": "false"
+              "season": "CHRISTMAS"
             }
           ],
           "name": "moa_decor_holidays:estrella_navidena"
@@ -1627,7 +1627,7 @@
           "conditions": [
             {
               "condition": "turtleblockacademy:seasonal_condition",
-              "season": "false"
+              "season": "CHRISTMAS"
             }
           ],
           "name": "moa_decor_holidays:p_oso_polar_n"
@@ -1637,7 +1637,7 @@
           "conditions": [
             {
               "condition": "turtleblockacademy:seasonal_condition",
-              "season": "false"
+              "season": "CHRISTMAS"
             }
           ],
           "name": "moa_decor_holidays:p_galleta_jengibre"
@@ -1647,7 +1647,7 @@
           "conditions": [
             {
               "condition": "turtleblockacademy:seasonal_condition",
-              "season": "false"
+              "season": "CHRISTMAS"
             }
           ],
           "name": "moa_decor_holidays:p_galleta_jengibre_n"
@@ -1662,35 +1662,35 @@
                   "condition": "minecraft:inverted",
                   "term": {
                     "condition": "turtleblockacademy:seasonal_condition",
-                    "season": "false"
+                    "season": "CHRISTMAS"
                   }
                 },
                 {
                   "condition": "minecraft:inverted",
                   "term": {
                     "condition": "turtleblockacademy:seasonal_condition",
-                    "season": "false"
+                    "season": "BIRTHDAY"
                   }
                 },
                 {
                   "condition": "minecraft:inverted",
                   "term": {
                     "condition": "turtleblockacademy:seasonal_condition",
-                    "season": "false"
+                    "season": "ANNIVERSARY"
                   }
                 },
                 {
                   "condition": "minecraft:inverted",
                   "term": {
                     "condition": "turtleblockacademy:seasonal_condition",
-                    "season": "false"
+                    "season": "EASTER"
                   }
                 },
                 {
                   "condition": "minecraft:inverted",
                   "term": {
                     "condition": "turtleblockacademy:seasonal_condition",
-                    "season": "false"
+                    "season": "HALLOWEEN"
                   }
                 }
               ]
@@ -1708,35 +1708,35 @@
                   "condition": "minecraft:inverted",
                   "term": {
                     "condition": "turtleblockacademy:seasonal_condition",
-                    "season": "false"
+                    "season": "CHRISTMAS"
                   }
                 },
                 {
                   "condition": "minecraft:inverted",
                   "term": {
                     "condition": "turtleblockacademy:seasonal_condition",
-                    "season": "false"
+                    "season": "BIRTHDAY"
                   }
                 },
                 {
                   "condition": "minecraft:inverted",
                   "term": {
                     "condition": "turtleblockacademy:seasonal_condition",
-                    "season": "false"
+                    "season": "ANNIVERSARY"
                   }
                 },
                 {
                   "condition": "minecraft:inverted",
                   "term": {
                     "condition": "turtleblockacademy:seasonal_condition",
-                    "season": "false"
+                    "season": "EASTER"
                   }
                 },
                 {
                   "condition": "minecraft:inverted",
                   "term": {
                     "condition": "turtleblockacademy:seasonal_condition",
-                    "season": "false"
+                    "season": "HALLOWEEN"
                   }
                 }
               ]
@@ -1749,7 +1749,7 @@
           "conditions": [
             {
               "condition": "turtleblockacademy:seasonal_condition",
-              "season": "false"
+              "season": "CHRISTMAS"
             }
           ],
           "name": "moa_decor_holidays:leprechaunolladeoro"
@@ -1764,35 +1764,35 @@
                   "condition": "minecraft:inverted",
                   "term": {
                     "condition": "turtleblockacademy:seasonal_condition",
-                    "season": "false"
+                    "season": "CHRISTMAS"
                   }
                 },
                 {
                   "condition": "minecraft:inverted",
                   "term": {
                     "condition": "turtleblockacademy:seasonal_condition",
-                    "season": "false"
+                    "season": "BIRTHDAY"
                   }
                 },
                 {
                   "condition": "minecraft:inverted",
                   "term": {
                     "condition": "turtleblockacademy:seasonal_condition",
-                    "season": "false"
+                    "season": "ANNIVERSARY"
                   }
                 },
                 {
                   "condition": "minecraft:inverted",
                   "term": {
                     "condition": "turtleblockacademy:seasonal_condition",
-                    "season": "false"
+                    "season": "EASTER"
                   }
                 },
                 {
                   "condition": "minecraft:inverted",
                   "term": {
                     "condition": "turtleblockacademy:seasonal_condition",
-                    "season": "false"
+                    "season": "HALLOWEEN"
                   }
                 }
               ]
@@ -1810,35 +1810,35 @@
                   "condition": "minecraft:inverted",
                   "term": {
                     "condition": "turtleblockacademy:seasonal_condition",
-                    "season": "false"
+                    "season": "CHRISTMAS"
                   }
                 },
                 {
                   "condition": "minecraft:inverted",
                   "term": {
                     "condition": "turtleblockacademy:seasonal_condition",
-                    "season": "false"
+                    "season": "BIRTHDAY"
                   }
                 },
                 {
                   "condition": "minecraft:inverted",
                   "term": {
                     "condition": "turtleblockacademy:seasonal_condition",
-                    "season": "false"
+                    "season": "ANNIVERSARY"
                   }
                 },
                 {
                   "condition": "minecraft:inverted",
                   "term": {
                     "condition": "turtleblockacademy:seasonal_condition",
-                    "season": "false"
+                    "season": "EASTER"
                   }
                 },
                 {
                   "condition": "minecraft:inverted",
                   "term": {
                     "condition": "turtleblockacademy:seasonal_condition",
-                    "season": "false"
+                    "season": "HALLOWEEN"
                   }
                 }
               ]
@@ -1856,35 +1856,35 @@
                   "condition": "minecraft:inverted",
                   "term": {
                     "condition": "turtleblockacademy:seasonal_condition",
-                    "season": "false"
+                    "season": "CHRISTMAS"
                   }
                 },
                 {
                   "condition": "minecraft:inverted",
                   "term": {
                     "condition": "turtleblockacademy:seasonal_condition",
-                    "season": "false"
+                    "season": "BIRTHDAY"
                   }
                 },
                 {
                   "condition": "minecraft:inverted",
                   "term": {
                     "condition": "turtleblockacademy:seasonal_condition",
-                    "season": "false"
+                    "season": "ANNIVERSARY"
                   }
                 },
                 {
                   "condition": "minecraft:inverted",
                   "term": {
                     "condition": "turtleblockacademy:seasonal_condition",
-                    "season": "false"
+                    "season": "EASTER"
                   }
                 },
                 {
                   "condition": "minecraft:inverted",
                   "term": {
                     "condition": "turtleblockacademy:seasonal_condition",
-                    "season": "false"
+                    "season": "HALLOWEEN"
                   }
                 }
               ]
@@ -1897,7 +1897,7 @@
           "conditions": [
             {
               "condition": "turtleblockacademy:seasonal_condition",
-              "season": "false"
+              "season": "EASTER"
             }
           ],
           "name": "moa_decor_holidays:c_pblanco"
@@ -1907,7 +1907,7 @@
           "conditions": [
             {
               "condition": "turtleblockacademy:seasonal_condition",
-              "season": "false"
+              "season": "EASTER"
             }
           ],
           "name": "moa_decor_holidays:c_pcafe"
@@ -1917,7 +1917,7 @@
           "conditions": [
             {
               "condition": "turtleblockacademy:seasonal_condition",
-              "season": "false"
+              "season": "EASTER"
             }
           ],
           "name": "moa_decor_holidays:c_pdorado"
@@ -1927,7 +1927,7 @@
           "conditions": [
             {
               "condition": "turtleblockacademy:seasonal_condition",
-              "season": "false"
+              "season": "EASTER"
             }
           ],
           "name": "moa_decor_holidays:c_pnegro"
@@ -1937,7 +1937,7 @@
           "conditions": [
             {
               "condition": "turtleblockacademy:seasonal_condition",
-              "season": "false"
+              "season": "EASTER"
             }
           ],
           "name": "moa_decor_holidays:conejo_chocolate"
@@ -1952,7 +1952,7 @@
                   "condition": "minecraft:inverted",
                   "term": {
                     "condition": "turtleblockacademy:seasonal_condition",
-                    "season": "false"
+                    "season": "CHRISTMAS"
                   }
                 },
                 {
@@ -1962,14 +1962,14 @@
                       "condition": "minecraft:inverted",
                       "term": {
                         "condition": "turtleblockacademy:seasonal_condition",
-                        "season": "false"
+                        "season": "HALLOWEEN"
                       }
                     },
                     {
                       "condition": "minecraft:inverted",
                       "term": {
                         "condition": "turtleblockacademy:seasonal_condition",
-                        "season": "false"
+                        "season": "EASTER"
                       }
                     }
                   ]
@@ -1989,7 +1989,7 @@
                   "condition": "minecraft:inverted",
                   "term": {
                     "condition": "turtleblockacademy:seasonal_condition",
-                    "season": "false"
+                    "season": "CHRISTMAS"
                   }
                 },
                 {
@@ -1999,14 +1999,14 @@
                       "condition": "minecraft:inverted",
                       "term": {
                         "condition": "turtleblockacademy:seasonal_condition",
-                        "season": "false"
+                        "season": "HALLOWEEN"
                       }
                     },
                     {
                       "condition": "minecraft:inverted",
                       "term": {
                         "condition": "turtleblockacademy:seasonal_condition",
-                        "season": "false"
+                        "season": "EASTER"
                       }
                     }
                   ]
@@ -2026,7 +2026,7 @@
                   "condition": "minecraft:inverted",
                   "term": {
                     "condition": "turtleblockacademy:seasonal_condition",
-                    "season": "false"
+                    "season": "CHRISTMAS"
                   }
                 },
                 {
@@ -2036,14 +2036,14 @@
                       "condition": "minecraft:inverted",
                       "term": {
                         "condition": "turtleblockacademy:seasonal_condition",
-                        "season": "false"
+                        "season": "HALLOWEEN"
                       }
                     },
                     {
                       "condition": "minecraft:inverted",
                       "term": {
                         "condition": "turtleblockacademy:seasonal_condition",
-                        "season": "false"
+                        "season": "EASTER"
                       }
                     }
                   ]
@@ -2063,7 +2063,7 @@
                   "condition": "minecraft:inverted",
                   "term": {
                     "condition": "turtleblockacademy:seasonal_condition",
-                    "season": "false"
+                    "season": "CHRISTMAS"
                   }
                 },
                 {
@@ -2073,14 +2073,14 @@
                       "condition": "minecraft:inverted",
                       "term": {
                         "condition": "turtleblockacademy:seasonal_condition",
-                        "season": "false"
+                        "season": "HALLOWEEN"
                       }
                     },
                     {
                       "condition": "minecraft:inverted",
                       "term": {
                         "condition": "turtleblockacademy:seasonal_condition",
-                        "season": "false"
+                        "season": "EASTER"
                       }
                     }
                   ]
@@ -2100,7 +2100,7 @@
                   "condition": "minecraft:inverted",
                   "term": {
                     "condition": "turtleblockacademy:seasonal_condition",
-                    "season": "false"
+                    "season": "CHRISTMAS"
                   }
                 },
                 {
@@ -2110,14 +2110,14 @@
                       "condition": "minecraft:inverted",
                       "term": {
                         "condition": "turtleblockacademy:seasonal_condition",
-                        "season": "false"
+                        "season": "HALLOWEEN"
                       }
                     },
                     {
                       "condition": "minecraft:inverted",
                       "term": {
                         "condition": "turtleblockacademy:seasonal_condition",
-                        "season": "false"
+                        "season": "EASTER"
                       }
                     }
                   ]
@@ -2137,7 +2137,7 @@
                   "condition": "minecraft:inverted",
                   "term": {
                     "condition": "turtleblockacademy:seasonal_condition",
-                    "season": "false"
+                    "season": "CHRISTMAS"
                   }
                 },
                 {
@@ -2147,14 +2147,14 @@
                       "condition": "minecraft:inverted",
                       "term": {
                         "condition": "turtleblockacademy:seasonal_condition",
-                        "season": "false"
+                        "season": "HALLOWEEN"
                       }
                     },
                     {
                       "condition": "minecraft:inverted",
                       "term": {
                         "condition": "turtleblockacademy:seasonal_condition",
-                        "season": "false"
+                        "season": "EASTER"
                       }
                     }
                   ]
@@ -2174,7 +2174,7 @@
                   "condition": "minecraft:inverted",
                   "term": {
                     "condition": "turtleblockacademy:seasonal_condition",
-                    "season": "false"
+                    "season": "CHRISTMAS"
                   }
                 },
                 {
@@ -2184,14 +2184,14 @@
                       "condition": "minecraft:inverted",
                       "term": {
                         "condition": "turtleblockacademy:seasonal_condition",
-                        "season": "false"
+                        "season": "HALLOWEEN"
                       }
                     },
                     {
                       "condition": "minecraft:inverted",
                       "term": {
                         "condition": "turtleblockacademy:seasonal_condition",
-                        "season": "false"
+                        "season": "EASTER"
                       }
                     }
                   ]
@@ -2211,7 +2211,7 @@
                   "condition": "minecraft:inverted",
                   "term": {
                     "condition": "turtleblockacademy:seasonal_condition",
-                    "season": "false"
+                    "season": "CHRISTMAS"
                   }
                 },
                 {
@@ -2221,14 +2221,14 @@
                       "condition": "minecraft:inverted",
                       "term": {
                         "condition": "turtleblockacademy:seasonal_condition",
-                        "season": "false"
+                        "season": "HALLOWEEN"
                       }
                     },
                     {
                       "condition": "minecraft:inverted",
                       "term": {
                         "condition": "turtleblockacademy:seasonal_condition",
-                        "season": "false"
+                        "season": "EASTER"
                       }
                     }
                   ]
@@ -2248,7 +2248,7 @@
                   "condition": "minecraft:inverted",
                   "term": {
                     "condition": "turtleblockacademy:seasonal_condition",
-                    "season": "false"
+                    "season": "CHRISTMAS"
                   }
                 },
                 {
@@ -2258,14 +2258,14 @@
                       "condition": "minecraft:inverted",
                       "term": {
                         "condition": "turtleblockacademy:seasonal_condition",
-                        "season": "false"
+                        "season": "HALLOWEEN"
                       }
                     },
                     {
                       "condition": "minecraft:inverted",
                       "term": {
                         "condition": "turtleblockacademy:seasonal_condition",
-                        "season": "false"
+                        "season": "EASTER"
                       }
                     }
                   ]
@@ -2285,7 +2285,7 @@
                   "condition": "minecraft:inverted",
                   "term": {
                     "condition": "turtleblockacademy:seasonal_condition",
-                    "season": "false"
+                    "season": "CHRISTMAS"
                   }
                 },
                 {
@@ -2295,14 +2295,14 @@
                       "condition": "minecraft:inverted",
                       "term": {
                         "condition": "turtleblockacademy:seasonal_condition",
-                        "season": "false"
+                        "season": "HALLOWEEN"
                       }
                     },
                     {
                       "condition": "minecraft:inverted",
                       "term": {
                         "condition": "turtleblockacademy:seasonal_condition",
-                        "season": "false"
+                        "season": "EASTER"
                       }
                     }
                   ]
@@ -2322,7 +2322,7 @@
                   "condition": "minecraft:inverted",
                   "term": {
                     "condition": "turtleblockacademy:seasonal_condition",
-                    "season": "false"
+                    "season": "CHRISTMAS"
                   }
                 },
                 {
@@ -2332,14 +2332,14 @@
                       "condition": "minecraft:inverted",
                       "term": {
                         "condition": "turtleblockacademy:seasonal_condition",
-                        "season": "false"
+                        "season": "HALLOWEEN"
                       }
                     },
                     {
                       "condition": "minecraft:inverted",
                       "term": {
                         "condition": "turtleblockacademy:seasonal_condition",
-                        "season": "false"
+                        "season": "EASTER"
                       }
                     }
                   ]
@@ -2359,7 +2359,7 @@
                   "condition": "minecraft:inverted",
                   "term": {
                     "condition": "turtleblockacademy:seasonal_condition",
-                    "season": "false"
+                    "season": "CHRISTMAS"
                   }
                 },
                 {
@@ -2369,14 +2369,14 @@
                       "condition": "minecraft:inverted",
                       "term": {
                         "condition": "turtleblockacademy:seasonal_condition",
-                        "season": "false"
+                        "season": "HALLOWEEN"
                       }
                     },
                     {
                       "condition": "minecraft:inverted",
                       "term": {
                         "condition": "turtleblockacademy:seasonal_condition",
-                        "season": "false"
+                        "season": "EASTER"
                       }
                     }
                   ]
@@ -2396,7 +2396,7 @@
                   "condition": "minecraft:inverted",
                   "term": {
                     "condition": "turtleblockacademy:seasonal_condition",
-                    "season": "false"
+                    "season": "CHRISTMAS"
                   }
                 },
                 {
@@ -2406,14 +2406,14 @@
                       "condition": "minecraft:inverted",
                       "term": {
                         "condition": "turtleblockacademy:seasonal_condition",
-                        "season": "false"
+                        "season": "HALLOWEEN"
                       }
                     },
                     {
                       "condition": "minecraft:inverted",
                       "term": {
                         "condition": "turtleblockacademy:seasonal_condition",
-                        "season": "false"
+                        "season": "EASTER"
                       }
                     }
                   ]
@@ -2433,7 +2433,7 @@
                   "condition": "minecraft:inverted",
                   "term": {
                     "condition": "turtleblockacademy:seasonal_condition",
-                    "season": "false"
+                    "season": "CHRISTMAS"
                   }
                 },
                 {
@@ -2443,14 +2443,14 @@
                       "condition": "minecraft:inverted",
                       "term": {
                         "condition": "turtleblockacademy:seasonal_condition",
-                        "season": "false"
+                        "season": "HALLOWEEN"
                       }
                     },
                     {
                       "condition": "minecraft:inverted",
                       "term": {
                         "condition": "turtleblockacademy:seasonal_condition",
-                        "season": "false"
+                        "season": "EASTER"
                       }
                     }
                   ]
@@ -2470,7 +2470,7 @@
                   "condition": "minecraft:inverted",
                   "term": {
                     "condition": "turtleblockacademy:seasonal_condition",
-                    "season": "false"
+                    "season": "CHRISTMAS"
                   }
                 },
                 {
@@ -2480,14 +2480,14 @@
                       "condition": "minecraft:inverted",
                       "term": {
                         "condition": "turtleblockacademy:seasonal_condition",
-                        "season": "false"
+                        "season": "HALLOWEEN"
                       }
                     },
                     {
                       "condition": "minecraft:inverted",
                       "term": {
                         "condition": "turtleblockacademy:seasonal_condition",
-                        "season": "false"
+                        "season": "EASTER"
                       }
                     }
                   ]
@@ -2507,7 +2507,7 @@
                   "condition": "minecraft:inverted",
                   "term": {
                     "condition": "turtleblockacademy:seasonal_condition",
-                    "season": "false"
+                    "season": "CHRISTMAS"
                   }
                 },
                 {
@@ -2517,14 +2517,14 @@
                       "condition": "minecraft:inverted",
                       "term": {
                         "condition": "turtleblockacademy:seasonal_condition",
-                        "season": "false"
+                        "season": "HALLOWEEN"
                       }
                     },
                     {
                       "condition": "minecraft:inverted",
                       "term": {
                         "condition": "turtleblockacademy:seasonal_condition",
-                        "season": "false"
+                        "season": "EASTER"
                       }
                     }
                   ]

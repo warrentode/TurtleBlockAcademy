@@ -68,7 +68,9 @@ public class KitchenLootTablesGen implements Consumer<BiConsumer<ResourceLocatio
                         .add(LootTableReference.lootTableReference(KitchenLootTables.WILDBERRIES_EDIBLES))
                         .add(LootTableReference.lootTableReference(KitchenLootTables.CRABBERSDELIGHT_EDIBLES))
                         .add(LootTableReference.lootTableReference(KitchenLootTables.AETHER_EDIBLES).when(IN_AETHER.or(STAGE_AETHER)))
-                        .add(LootTableReference.lootTableReference(KitchenLootTables.MINERSDELIGHT_EDIBLES).when(UNDERGROUND.or(STAGE_MINING)))
+                        .add(LootTableReference.lootTableReference(KitchenLootTables.MINERSDELIGHT_EDIBLES)
+                                .when(IN_LUSH_CAVES.or(IN_DRIPSTONE_CAVES).or(IN_DEEP_DARK)
+                                        .or(IN_SPIDER_NEST).or(IN_GLOWING_GROTTO).or(STAGE_MINING)))
                 )
         );
 

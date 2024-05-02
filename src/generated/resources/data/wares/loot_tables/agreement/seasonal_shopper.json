@@ -9,7 +9,7 @@
           "conditions": [
             {
               "condition": "turtleblockacademy:seasonal_condition",
-              "season": "false"
+              "season": "HALLOWEEN"
             }
           ],
           "name": "lootbags:loot_bags/trick_or_treat_lootbag"
@@ -19,7 +19,7 @@
           "conditions": [
             {
               "condition": "turtleblockacademy:seasonal_condition",
-              "season": "false"
+              "season": "BIRTHDAY"
             }
           ],
           "name": "lootbags:loot_bags/birthday_lootbag"
@@ -29,7 +29,7 @@
           "conditions": [
             {
               "condition": "turtleblockacademy:seasonal_condition",
-              "season": "false"
+              "season": "CHRISTMAS"
             }
           ],
           "name": "lootbags:loot_bags/christmas_lootbag"
@@ -39,7 +39,7 @@
           "conditions": [
             {
               "condition": "turtleblockacademy:seasonal_condition",
-              "season": "false"
+              "season": "EASTER"
             }
           ],
           "name": "lootbags:loot_bags/easter_lootbag"
@@ -49,7 +49,7 @@
           "conditions": [
             {
               "condition": "turtleblockacademy:seasonal_condition",
-              "season": "false"
+              "season": "ANNIVERSARY"
             }
           ],
           "name": "lootbags:loot_bags/anniversary_lootbag"
@@ -59,7 +59,7 @@
           "conditions": [
             {
               "condition": "turtleblockacademy:seasonal_condition",
-              "season": "false"
+              "season": "WINTER"
             }
           ],
           "expand": true,
@@ -73,11 +73,11 @@
               "terms": [
                 {
                   "condition": "turtleblockacademy:seasonal_condition",
-                  "season": "false"
+                  "season": "SPRING"
                 },
                 {
                   "condition": "turtleblockacademy:seasonal_condition",
-                  "season": "false"
+                  "season": "SUMMER"
                 }
               ]
             }
@@ -93,15 +93,15 @@
               "terms": [
                 {
                   "condition": "turtleblockacademy:seasonal_condition",
-                  "season": "false"
+                  "season": "SPRING"
                 },
                 {
                   "condition": "turtleblockacademy:seasonal_condition",
-                  "season": "false"
+                  "season": "SUMMER"
                 },
                 {
                   "condition": "turtleblockacademy:seasonal_condition",
-                  "season": "false"
+                  "season": "AUTUMN"
                 }
               ]
             }
@@ -129,27 +129,27 @@
               "terms": [
                 {
                   "condition": "turtleblockacademy:seasonal_condition",
-                  "season": "false"
+                  "season": "EASTER"
                 },
                 {
                   "condition": "turtleblockacademy:seasonal_condition",
-                  "season": "false"
+                  "season": "BIRTHDAY"
                 },
                 {
                   "condition": "turtleblockacademy:seasonal_condition",
-                  "season": "false"
+                  "season": "CHRISTMAS"
                 },
                 {
                   "condition": "turtleblockacademy:seasonal_condition",
-                  "season": "false"
+                  "season": "ANNIVERSARY"
                 },
                 {
                   "condition": "turtleblockacademy:seasonal_condition",
-                  "season": "false"
+                  "season": "HALLOWEEN"
                 },
                 {
                   "condition": "turtleblockacademy:seasonal_condition",
-                  "season": "false"
+                  "season": "NEW_YEAR"
                 }
               ]
             }

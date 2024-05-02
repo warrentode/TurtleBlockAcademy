@@ -15,7 +15,7 @@
           "conditions": [
             {
               "condition": "turtleblockacademy:seasonal_condition",
-              "season": "false"
+              "season": "CHRISTMAS"
             }
           ],
           "functions": [
@@ -37,7 +37,7 @@
           "conditions": [
             {
               "condition": "turtleblockacademy:seasonal_condition",
-              "season": "false"
+              "season": "CHRISTMAS"
             }
           ],
           "functions": [
@@ -62,11 +62,11 @@
               "terms": [
                 {
                   "condition": "turtleblockacademy:seasonal_condition",
-                  "season": "false"
+                  "season": "CHRISTMAS"
                 },
                 {
                   "condition": "turtleblockacademy:seasonal_condition",
-                  "season": "false"
+                  "season": "NEW_YEAR"
                 }
               ]
             }

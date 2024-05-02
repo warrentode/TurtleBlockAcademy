@@ -4,10 +4,8 @@ import biomesoplenty.api.biome.BOPBiomes;
 import com.aetherteam.aether.data.resources.registries.AetherDimensions;
 import com.catastrophe573.dimdungeons.DimDungeons;
 import com.github.warrentode.turtleblockacademy.datagen.loot.tables.*;
-import com.github.warrentode.turtleblockacademy.loot.conditions.BiomeTagCondition;
 import com.github.warrentode.turtleblockacademy.loot.conditions.GameStageCondition;
 import com.github.warrentode.turtleblockacademy.loot.conditions.SeasonalCondition;
-import com.github.warrentode.turtleblockacademy.util.PackTags;
 import com.google.common.collect.ImmutableList;
 import com.mojang.datafixers.util.Pair;
 import de.maxhenkel.miningdimension.Main;
@@ -67,9 +65,6 @@ public class ModLootProviders extends LootTableProvider {
     public static final LootItemCondition.Builder STAGE_DUNGEONS = GameStageCondition.stage().set(Boolean.valueOf("dungeons"));
     public static final LootItemCondition.Builder STAGE_MINING = GameStageCondition.stage().set(Boolean.valueOf("mining"));
 
-    // biome tag checks
-    public static final LootItemCondition.Builder UNDERGROUND = BiomeTagCondition.tag().set(PackTags.Biomes.IS_UNDERGROUND);
-
     // dimension checks
     public static final LootItemCondition.Builder IN_OVERWORLD
             = LocationCheck.checkLocation(LocationPredicate.Builder.location().setDimension(Level.OVERWORLD));
@@ -85,18 +80,18 @@ public class ModLootProviders extends LootTableProvider {
             LocationCheck.checkLocation(LocationPredicate.Builder.location().setDimension(DimDungeons.DUNGEON_DIMENSION));
 
     // holiday checks
-    public static final LootItemCondition.Builder BIRTHDAY_EVENT = SeasonalCondition.season().set(Boolean.valueOf("BIRTHDAY"));
-    public static final LootItemCondition.Builder HALLOWEEN_EVENT = SeasonalCondition.season().set(Boolean.valueOf("HALLOWEEN"));
-    public static final LootItemCondition.Builder CHRISTMAS_EVENT = SeasonalCondition.season().set(Boolean.valueOf("CHRISTMAS"));
-    public static final LootItemCondition.Builder ANNIVERSARY_EVENT = SeasonalCondition.season().set(Boolean.valueOf("ANNIVERSARY"));
-    public static final LootItemCondition.Builder EASTER_EVENT = SeasonalCondition.season().set(Boolean.valueOf("EASTER"));
-    public static final LootItemCondition.Builder NEW_YEAR_EVENT = SeasonalCondition.season().set(Boolean.valueOf("NEW_YEAR"));
+    public static final LootItemCondition.Builder BIRTHDAY_EVENT = SeasonalCondition.season().set("BIRTHDAY");
+    public static final LootItemCondition.Builder HALLOWEEN_EVENT = SeasonalCondition.season().set("HALLOWEEN");
+    public static final LootItemCondition.Builder CHRISTMAS_EVENT = SeasonalCondition.season().set("CHRISTMAS");
+    public static final LootItemCondition.Builder ANNIVERSARY_EVENT = SeasonalCondition.season().set("ANNIVERSARY");
+    public static final LootItemCondition.Builder EASTER_EVENT = SeasonalCondition.season().set("EASTER");
+    public static final LootItemCondition.Builder NEW_YEAR_EVENT = SeasonalCondition.season().set("NEW_YEAR");
 
     // season checks
-    public static final LootItemCondition.Builder AUTUMN = SeasonalCondition.season().set(Boolean.valueOf("AUTUMN"));
-    public static final LootItemCondition.Builder SPRING = SeasonalCondition.season().set(Boolean.valueOf("SPRING"));
-    public static final LootItemCondition.Builder SUMMER = SeasonalCondition.season().set(Boolean.valueOf("SUMMER"));
-    public static final LootItemCondition.Builder WINTER = SeasonalCondition.season().set(Boolean.valueOf("WINTER"));
+    public static final LootItemCondition.Builder AUTUMN = SeasonalCondition.season().set("AUTUMN");
+    public static final LootItemCondition.Builder SPRING = SeasonalCondition.season().set("SPRING");
+    public static final LootItemCondition.Builder SUMMER = SeasonalCondition.season().set("SUMMER");
+    public static final LootItemCondition.Builder WINTER = SeasonalCondition.season().set("WINTER");
 
     // structure checks
     public static final LootItemCondition.Builder IN_VILLAGE_SNOWY = LocationCheck.checkLocation(LocationPredicate.Builder.location()

@@ -17,8 +17,8 @@ public class SeasonalCondition implements LootItemCondition {
     @Nullable
     final String SEASON;
 
-    SeasonalCondition(@Nullable Boolean SEASON) {
-        this.SEASON = String.valueOf(SEASON);
+    SeasonalCondition(@Nullable String SEASON) {
+        this.SEASON = SEASON;
     }
 
     public @NotNull LootItemConditionType getType() {
@@ -40,9 +40,9 @@ public class SeasonalCondition implements LootItemCondition {
 
     public static class Builder implements LootItemCondition.Builder {
         @Nullable
-        Boolean SEASON;
+        String SEASON;
 
-        public SeasonalCondition.Builder set(@Nullable Boolean SEASON) {
+        public SeasonalCondition.Builder set(@Nullable String SEASON) {
             this.SEASON = SEASON;
             return this;
         }
@@ -60,8 +60,8 @@ public class SeasonalCondition implements LootItemCondition {
 
         /** Deserialize a value by reading it from the JsonObject. */
         public @NotNull SeasonalCondition deserialize(@NotNull JsonObject jsonObject, @NotNull JsonDeserializationContext context) {
-            Boolean booleanValue = jsonObject.has("season") ? GsonHelper.getAsBoolean(jsonObject, "season") : null;
-            return new SeasonalCondition(booleanValue);
+            String string = jsonObject.has("season") ? GsonHelper.getAsString(jsonObject, "season") : null;
+            return new SeasonalCondition(string);
         }
     }
 }

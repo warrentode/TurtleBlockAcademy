@@ -24,11 +24,11 @@
               "terms": [
                 {
                   "condition": "turtleblockacademy:seasonal_condition",
-                  "season": "false"
+                  "season": "AUTUMN"
                 },
                 {
                   "condition": "turtleblockacademy:seasonal_condition",
-                  "season": "false"
+                  "season": "WINTER"
                 }
               ]
             }
@@ -43,11 +43,11 @@
               "terms": [
                 {
                   "condition": "turtleblockacademy:seasonal_condition",
-                  "season": "false"
+                  "season": "AUTUMN"
                 },
                 {
                   "condition": "turtleblockacademy:seasonal_condition",
-                  "season": "false"
+                  "season": "WINTER"
                 }
               ]
             }
@@ -66,11 +66,11 @@
               "terms": [
                 {
                   "condition": "turtleblockacademy:seasonal_condition",
-                  "season": "false"
+                  "season": "SPRING"
                 },
                 {
                   "condition": "turtleblockacademy:seasonal_condition",
-                  "season": "false"
+                  "season": "SUMMER"
                 }
               ]
             }

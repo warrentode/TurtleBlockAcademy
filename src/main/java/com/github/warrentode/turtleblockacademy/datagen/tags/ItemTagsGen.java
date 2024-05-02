@@ -39,13 +39,14 @@ import vectorwing.farmersdelight.common.tag.ForgeTags;
 import java.util.Objects;
 
 import static alabaster.crabbersdelight.common.registry.ModItems.*;
+import static com.github.warrentode.turtleblockacademy.items.ModItems.STUDENT_CARD;
 import static com.sammy.minersdelight.setup.MDItems.CAVE_CARROT;
 import static net.p3pp3rf1y.sophisticatedbackpacks.init.ModItems.*;
 import static vectorwing.farmersdelight.common.registry.ModItems.*;
 
 public class ItemTagsGen extends ItemTagsProvider {
-    public ItemTagsGen(DataGenerator pGenerator, BlockTagsProvider pBlockTagsProvider, String modId, @Nullable ExistingFileHelper existingFileHelper) {
-        super(pGenerator, pBlockTagsProvider, modId, existingFileHelper);
+    public ItemTagsGen(DataGenerator generator, BlockTagsProvider blockTagsProvider, String modid, @Nullable ExistingFileHelper helper) {
+        super(generator, blockTagsProvider, modid, helper);
     }
 
     @Override
@@ -54,6 +55,10 @@ public class ItemTagsGen extends ItemTagsProvider {
     }
 
     private void registerPackTags() {
+        tag(PackTags.Items.CURIO)
+                .addTag(PackTags.Items.SUPPLEMENTARIES_KEY);
+        tag(PackTags.Items.SUPPLEMENTARIES_KEY)
+                .add(STUDENT_CARD.get());
         tag(PackTags.Items.CAGERIUM_ITEMS)
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("cagerium:burning_upgrade")))
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("cagerium:binding_wood_plate")))
