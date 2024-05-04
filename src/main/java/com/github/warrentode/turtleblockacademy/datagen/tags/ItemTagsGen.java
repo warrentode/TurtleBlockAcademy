@@ -471,11 +471,11 @@ public class ItemTagsGen extends ItemTagsProvider {
                 .addOptional(ItemRegister.cakePiece.getId());
         tag(PackTags.Items.CAKES)
                 .addOptional(ModItems.SWEET_BERRY_CHEESECAKE.getId())
-                .addOptional(FRItems.COFFEE_CAKE_SLICE.getId())
-                .addOptional(ItemRegister.honeyCheeseCakePiece.getId())
-                .addOptional(ItemRegister.chocolateCheeseCakePiece.getId())
-                .addOptional(ItemRegister.cheeseCakePiece.getId())
-                .addOptional(ItemRegister.cakePiece.getId());
+                .addOptional(FRItems.COFFEE_CAKE.getId())
+                .addOptional(ItemRegister.honeyCheeseCake.getId())
+                .addOptional(ItemRegister.chocolateCheeseCake.getId())
+                .addOptional(ItemRegister.cheeseCake.getId())
+                .add(Items.CAKE);
         tag(PackTags.Items.TRICKS)
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("domesticationinnovation:rotten_apple")))
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("domesticationinnovation:sinister_carrot")))
@@ -861,7 +861,7 @@ public class ItemTagsGen extends ItemTagsProvider {
         tag(PackTags.Items.STRING)
                 .add(Items.STRING);
         tag(PackTags.Items.ASH)
-                .addOptionalTag(Objects.requireNonNull(ResourceLocation.tryParse("forge:ash")));
+                .addOptionalTag(Objects.requireNonNull(ResourceLocation.tryParse("supplementaries:ash")));
         tag(PackTags.Items.FATS)
                 .add(Items.HONEYCOMB)
                 .addOptional(DelightfulItems.ANIMAL_OIL_BOTTLE.getId())
@@ -1081,6 +1081,9 @@ public class ItemTagsGen extends ItemTagsProvider {
         tag(PackTags.Items.RAW_CHICKEN)
                 .add(Items.CHICKEN)
                 .addOptional(ModItems.CHICKEN_CUTS.getId());
+        tag(PackTags.Items.COOKED_MEATS)
+                .addTag(PackTags.Items.COOKED_CHICKEN)
+                .addTag(PackTags.Items.COOKED_MUTTON);
         tag(PackTags.Items.COOKED_CHICKEN)
                 .add(Items.COOKED_CHICKEN)
                 .addOptional(ModItems.COOKED_CHICKEN_CUTS.getId());

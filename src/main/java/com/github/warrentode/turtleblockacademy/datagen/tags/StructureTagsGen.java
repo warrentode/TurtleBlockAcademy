@@ -21,7 +21,18 @@ public class StructureTagsGen extends StructureTagsProvider {
         this.registerPackTags();
     }
 
-    private void registerPackTags() {
+    private void registerPackTags() {tag(PackTags.StructureTags.OVERWORLD_POI)
+            .addTag(PackTags.StructureTags.WAY_SIGN_DESTINATIONS)
+            .addTag(PackTags.StructureTags.PILLAGER_POI)
+            .addTag(PackTags.StructureTags.DESERT_POI)
+            .addTag(PackTags.StructureTags.JUNGLE_POI)
+            .addTag(PackTags.StructureTags.MISC_POI)
+            .addTag(PackTags.StructureTags.WITCH_SIGHTING)
+            .addTag(PackTags.StructureTags.TREASURE_POI)
+            .addTag(PackTags.StructureTags.UNDERGROUND_POI)
+            .addTag(PackTags.StructureTags.OVERWORLD_NETHER_POI)
+            .addTag(PackTags.StructureTags.OVERWORLD_END_POI)
+            .addTag(PackTags.StructureTags.OVERWORLD_SLIME_ISLANDS);
         tag(PackTags.StructureTags.END_SLIME_ISLANDS)
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("tconstruct:end_slime_island")));
         tag(PackTags.StructureTags.NETHER_SLIME_ISLANDS)

@@ -161,8 +161,9 @@ public class PackTags {
         public static final TagKey<Item> RAW_VENISON = packItemTag("forge", "raw_meats/raw_venison");
         public static final TagKey<Item> RAW_GOAT = packItemTag("forge", "raw_meats/raw_goat");
 
-        public static final TagKey<Item> COOKED_CHICKEN = packItemTag("forge", "ingredients/cooked_chicken");
-        public static final TagKey<Item> COOKED_MUTTON = packItemTag("forge", "ingredients/cooked_mutton");
+        public static final TagKey<Item> COOKED_MEATS = packItemTag("forge", "ingredients/cooked_meats");
+        public static final TagKey<Item> COOKED_CHICKEN = packItemTag("forge", "cooked_meats/cooked_chicken");
+        public static final TagKey<Item> COOKED_MUTTON = packItemTag("forge", "cooked_meats/cooked_mutton");
 
         public static final TagKey<Item> WILDBERRIES_EDIBLES = packItemTag("wildberries", "edibles");
 
@@ -303,6 +304,7 @@ public class PackTags {
         TagKey<Structure> ON_VILLAGE_EXPLORER_MAPS = packStructureTag("forge", "worldgen/structure/village");
         TagKey<Structure> ON_TREASURE_MAPS = packStructureTag("forge", "worldgen/structure/treasure");
 
+        TagKey<Structure> OVERWORLD_POI = packStructureTag(MODID, "worldgen/structure/overworld_poi");
         TagKey<Structure> OVERWORLD_END_POI = packStructureTag(MODID, "worldgen/structure/overworld_end_poi");
         TagKey<Structure> OVERWORLD_NETHER_POI = packStructureTag(MODID, "worldgen/structure/overworld_nether_poi");
 

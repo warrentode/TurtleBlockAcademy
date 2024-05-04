@@ -39,7 +39,7 @@ public class TurtleBlockAcademy {
 
     public TurtleBlockAcademy() {
         ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, AcademyConfig.SPEC,
-                "turtleblockacademy_config.toml");
+                MODID + "-common.toml");
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
         MinecraftForge.EVENT_BUS.register(this);
 

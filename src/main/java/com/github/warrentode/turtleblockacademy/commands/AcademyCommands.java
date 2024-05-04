@@ -103,7 +103,7 @@ public class AcademyCommands {
         tag.putString(AcademyUtil.ACADEMIC_YEAR_KEY, AcademyUtil.getAcademicYear());
 
         stack.setHoverName(Component.literal(AcademyUtil.getAcademicStudent(serverPlayer) + "'s "
-                + AcademyUtil.getAcademicYear() + " Kitchen Unit Study").append(Component.translatable(stack.getDescriptionId())));
+                + AcademyUtil.getAcademicYear() + " Kitchen Unit Study ").append(Component.translatable(stack.getDescriptionId())));
 
         return stack;
     }

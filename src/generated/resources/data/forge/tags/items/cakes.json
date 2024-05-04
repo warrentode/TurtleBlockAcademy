@@ -5,24 +5,21 @@
       "required": false
     },
     {
-      "id": "farmersrespite:coffee_cake_slice",
+      "id": "farmersrespite:coffee_cake",
       "required": false
     },
     {
-      "id": "kawaiidishes:piece_of_honey_cheesecake",
+      "id": "kawaiidishes:honey_cheese_cake",
       "required": false
     },
     {
-      "id": "kawaiidishes:piece_of_chocolate_cheesecake",
+      "id": "kawaiidishes:chocolate_cheese_cake",
       "required": false
     },
     {
-      "id": "kawaiidishes:piece_of_cheesecake",
+      "id": "kawaiidishes:cheese_cake",
       "required": false
     },
-    {
-      "id": "kawaiidishes:piece_of_cake",
-      "required": false
-    }
+    "minecraft:cake"
   ]
 }
