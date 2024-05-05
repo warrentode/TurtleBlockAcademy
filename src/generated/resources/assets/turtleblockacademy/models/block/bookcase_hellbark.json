@@ -1,0 +1,10 @@
+{
+  "parent": "turtleblockacademy:block/bookcase",
+  "textures": {
+    "1": "biomesoplenty:block/hellbark_planks",
+    "2": "biomesoplenty:block/hellbark_log",
+    "3": "biomesoplenty:block/stripped_hellbark_log",
+    "4": "turtleblockacademy:block/books",
+    "particle": "biomesoplenty:block/hellbark_planks"
+  }
+}

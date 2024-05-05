@@ -243,6 +243,40 @@ public class ModBlockLootTablesGen extends BlockLoot {
         this.dropSelf(ModBlocks.LOCKER_TINKER_SKYROOT.get());
         this.dropSelf(ModBlocks.PARK_BENCH_TINKER_SKYROOT.get());
         this.dropSelf(ModBlocks.TABLE_TINKER_SKYROOT.get());
+
+        this.dropSelf(ModBlocks.BOOKCASE_WARPED.get());
+        this.dropSelf(ModBlocks.BOOKCASE_CRIMSON.get());
+        this.dropSelf(ModBlocks.BOOKCASE_MANGROVE.get());
+        this.dropSelf(ModBlocks.BOOKCASE_OAK.get());
+        this.dropSelf(ModBlocks.BOOKCASE_BIRCH.get());
+        this.dropSelf(ModBlocks.BOOKCASE_SPRUCE.get());
+        this.dropSelf(ModBlocks.BOOKCASE_DARK_OAK.get());
+        this.dropSelf(ModBlocks.BOOKCASE_JUNGLE.get());
+        this.dropSelf(ModBlocks.BOOKCASE_ACACIA.get());
+        this.dropSelf(ModBlocks.BOOKCASE_FIR.get());
+        this.dropSelf(ModBlocks.BOOKCASE_REDWOOD.get());
+        this.dropSelf(ModBlocks.BOOKCASE_CHERRY.get());
+        this.dropSelf(ModBlocks.BOOKCASE_MAHOGANY.get());
+        this.dropSelf(ModBlocks.BOOKCASE_JACARANDA.get());
+        this.dropSelf(ModBlocks.BOOKCASE_PALM.get());
+        this.dropSelf(ModBlocks.BOOKCASE_WILLOW.get());
+        this.dropSelf(ModBlocks.BOOKCASE_DEAD.get());
+        this.dropSelf(ModBlocks.BOOKCASE_MAGIC.get());
+        this.dropSelf(ModBlocks.BOOKCASE_UMBRAN.get());
+        this.dropSelf(ModBlocks.BOOKCASE_HELLBARK.get());
+        this.dropSelf(ModBlocks.BOOKCASE_COCONUT.get());
+        this.dropSelf(ModBlocks.BOOKCASE_WALNUT.get());
+        this.dropSelf(ModBlocks.BOOKCASE_AZALEA.get());
+        this.dropSelf(ModBlocks.BOOKCASE_FLOWERING_AZALEA.get());
+        this.dropSelf(ModBlocks.BOOKCASE_GOLDEN_OAK.get());
+        this.dropSelf(ModBlocks.BOOKCASE_AETHER_SKYROOT.get());
+        this.dropSelf(ModBlocks.BOOKCASE_PREAM.get());
+        this.dropSelf(ModBlocks.BOOKCASE_EBONY.get());
+        this.dropSelf(ModBlocks.BOOKCASE_CHORUS_NEST.get());
+        this.dropSelf(ModBlocks.BOOKCASE_BLOODSHROOM.get());
+        this.dropSelf(ModBlocks.BOOKCASE_ENDERBARK.get());
+        this.dropSelf(ModBlocks.BOOKCASE_GREENHEART.get());
+        this.dropSelf(ModBlocks.BOOKCASE_TINKER_SKYROOT.get());
     }
 
     @Override

@@ -649,6 +649,106 @@ public class ModBlocks {
             () -> new TableBlock(BlockBehaviour.Properties.of(Material.WOOD)
                     .sound(SoundType.WOOD).instabreak().noOcclusion()));
 
+    public static final RegistryObject<Block> BOOKCASE_OAK = registerBlock("bookcase_oak",
+            () -> new BookCaseBlock(BlockBehaviour.Properties.of(Material.WOOD)
+                    .sound(SoundType.WOOD).instabreak().noOcclusion()));
+    public static final RegistryObject<Block> BOOKCASE_BIRCH = registerBlock("bookcase_birch",
+            () -> new BookCaseBlock(BlockBehaviour.Properties.of(Material.WOOD)
+                    .sound(SoundType.WOOD).instabreak().noOcclusion()));
+    public static final RegistryObject<Block> BOOKCASE_SPRUCE = registerBlock("bookcase_spruce",
+            () -> new BookCaseBlock(BlockBehaviour.Properties.of(Material.WOOD)
+                    .sound(SoundType.WOOD).instabreak().noOcclusion()));
+    public static final RegistryObject<Block> BOOKCASE_JUNGLE = registerBlock("bookcase_jungle",
+            () -> new BookCaseBlock(BlockBehaviour.Properties.of(Material.WOOD)
+                    .sound(SoundType.WOOD).instabreak().noOcclusion()));
+    public static final RegistryObject<Block> BOOKCASE_ACACIA = registerBlock("bookcase_acacia",
+            () -> new BookCaseBlock(BlockBehaviour.Properties.of(Material.WOOD)
+                    .sound(SoundType.WOOD).instabreak().noOcclusion()));
+    public static final RegistryObject<Block> BOOKCASE_DARK_OAK = registerBlock("bookcase_dark_oak",
+            () -> new BookCaseBlock(BlockBehaviour.Properties.of(Material.WOOD)
+                    .sound(SoundType.WOOD).instabreak().noOcclusion()));
+    public static final RegistryObject<Block> BOOKCASE_MANGROVE = registerBlock("bookcase_mangrove",
+            () -> new BookCaseBlock(BlockBehaviour.Properties.of(Material.WOOD)
+                    .sound(SoundType.WOOD).instabreak().noOcclusion()));
+    public static final RegistryObject<Block> BOOKCASE_CRIMSON = registerBlock("bookcase_crimson",
+            () -> new BookCaseBlock(BlockBehaviour.Properties.of(Material.WOOD)
+                    .sound(SoundType.WOOD).instabreak().noOcclusion()));
+    public static final RegistryObject<Block> BOOKCASE_WARPED = registerBlock("bookcase_warped",
+            () -> new BookCaseBlock(BlockBehaviour.Properties.of(Material.WOOD)
+                    .sound(SoundType.WOOD).instabreak().noOcclusion()));
+    public static final RegistryObject<Block> BOOKCASE_FIR = registerBlock("bookcase_fir",
+            () -> new BookCaseBlock(BlockBehaviour.Properties.of(Material.WOOD)
+                    .sound(SoundType.WOOD).instabreak().noOcclusion()));
+    public static final RegistryObject<Block> BOOKCASE_REDWOOD = registerBlock("bookcase_redwood",
+            () -> new BookCaseBlock(BlockBehaviour.Properties.of(Material.WOOD)
+                    .sound(SoundType.WOOD).instabreak().noOcclusion()));
+    public static final RegistryObject<Block> BOOKCASE_CHERRY = registerBlock("bookcase_cherry",
+            () -> new BookCaseBlock(BlockBehaviour.Properties.of(Material.WOOD)
+                    .sound(SoundType.WOOD).instabreak().noOcclusion()));
+    public static final RegistryObject<Block> BOOKCASE_MAHOGANY = registerBlock("bookcase_mahogany",
+            () -> new BookCaseBlock(BlockBehaviour.Properties.of(Material.WOOD)
+                    .sound(SoundType.WOOD).instabreak().noOcclusion()));
+    public static final RegistryObject<Block> BOOKCASE_JACARANDA = registerBlock("bookcase_jacaranda",
+            () -> new BookCaseBlock(BlockBehaviour.Properties.of(Material.WOOD)
+                    .sound(SoundType.WOOD).instabreak().noOcclusion()));
+    public static final RegistryObject<Block> BOOKCASE_PALM = registerBlock("bookcase_palm",
+            () -> new BookCaseBlock(BlockBehaviour.Properties.of(Material.WOOD)
+                    .sound(SoundType.WOOD).instabreak().noOcclusion()));
+    public static final RegistryObject<Block> BOOKCASE_WILLOW = registerBlock("bookcase_willow",
+            () -> new BookCaseBlock(BlockBehaviour.Properties.of(Material.WOOD)
+                    .sound(SoundType.WOOD).instabreak().noOcclusion()));
+    public static final RegistryObject<Block> BOOKCASE_DEAD = registerBlock("bookcase_dead",
+            () -> new BookCaseBlock(BlockBehaviour.Properties.of(Material.WOOD)
+                    .sound(SoundType.WOOD).instabreak().noOcclusion()));
+    public static final RegistryObject<Block> BOOKCASE_MAGIC = registerBlock("bookcase_magic",
+            () -> new BookCaseBlock(BlockBehaviour.Properties.of(Material.WOOD)
+                    .sound(SoundType.WOOD).instabreak().noOcclusion()));
+    public static final RegistryObject<Block> BOOKCASE_UMBRAN = registerBlock("bookcase_umbran",
+            () -> new BookCaseBlock(BlockBehaviour.Properties.of(Material.WOOD)
+                    .sound(SoundType.WOOD).instabreak().noOcclusion()));
+    public static final RegistryObject<Block> BOOKCASE_HELLBARK = registerBlock("bookcase_hellbark",
+            () -> new BookCaseBlock(BlockBehaviour.Properties.of(Material.WOOD)
+                    .sound(SoundType.WOOD).instabreak().noOcclusion()));
+    public static final RegistryObject<Block> BOOKCASE_COCONUT = registerBlock("bookcase_coconut",
+            () -> new BookCaseBlock(BlockBehaviour.Properties.of(Material.WOOD)
+                    .sound(SoundType.WOOD).instabreak().noOcclusion()));
+    public static final RegistryObject<Block> BOOKCASE_WALNUT = registerBlock("bookcase_walnut",
+            () -> new BookCaseBlock(BlockBehaviour.Properties.of(Material.WOOD)
+                    .sound(SoundType.WOOD).instabreak().noOcclusion()));
+    public static final RegistryObject<Block> BOOKCASE_AZALEA = registerBlock("bookcase_azalea",
+            () -> new BookCaseBlock(BlockBehaviour.Properties.of(Material.WOOD)
+                    .sound(SoundType.WOOD).instabreak().noOcclusion()));
+    public static final RegistryObject<Block> BOOKCASE_FLOWERING_AZALEA = registerBlock("bookcase_flowering_azalea",
+            () -> new BookCaseBlock(BlockBehaviour.Properties.of(Material.WOOD)
+                    .sound(SoundType.WOOD).instabreak().noOcclusion()));
+    public static final RegistryObject<Block> BOOKCASE_GOLDEN_OAK = registerBlock("bookcase_golden_oak",
+            () -> new BookCaseBlock(BlockBehaviour.Properties.of(Material.WOOD)
+                    .sound(SoundType.WOOD).instabreak().noOcclusion()));
+    public static final RegistryObject<Block> BOOKCASE_AETHER_SKYROOT = registerBlock("bookcase_aether_skyroot",
+            () -> new BookCaseBlock(BlockBehaviour.Properties.of(Material.WOOD)
+                    .sound(SoundType.WOOD).instabreak().noOcclusion()));
+    public static final RegistryObject<Block> BOOKCASE_PREAM = registerBlock("bookcase_pream",
+            () -> new BookCaseBlock(BlockBehaviour.Properties.of(Material.WOOD)
+                    .sound(SoundType.WOOD).instabreak().noOcclusion()));
+    public static final RegistryObject<Block> BOOKCASE_EBONY = registerBlock("bookcase_ebony",
+            () -> new BookCaseBlock(BlockBehaviour.Properties.of(Material.WOOD)
+                    .sound(SoundType.WOOD).instabreak().noOcclusion()));
+    public static final RegistryObject<Block> BOOKCASE_CHORUS_NEST = registerBlock("bookcase_chorus_nest",
+            () -> new BookCaseBlock(BlockBehaviour.Properties.of(Material.WOOD)
+                    .sound(SoundType.WOOD).instabreak().noOcclusion()));
+    public static final RegistryObject<Block> BOOKCASE_BLOODSHROOM = registerBlock("bookcase_bloodshroom",
+            () -> new BookCaseBlock(BlockBehaviour.Properties.of(Material.WOOD)
+                    .sound(SoundType.WOOD).instabreak().noOcclusion()));
+    public static final RegistryObject<Block> BOOKCASE_ENDERBARK = registerBlock("bookcase_enderbark",
+            () -> new BookCaseBlock(BlockBehaviour.Properties.of(Material.WOOD)
+                    .sound(SoundType.WOOD).instabreak().noOcclusion()));
+    public static final RegistryObject<Block> BOOKCASE_GREENHEART = registerBlock("bookcase_greenheart",
+            () -> new BookCaseBlock(BlockBehaviour.Properties.of(Material.WOOD)
+                    .sound(SoundType.WOOD).instabreak().noOcclusion()));
+    public static final RegistryObject<Block> BOOKCASE_TINKER_SKYROOT = registerBlock("bookcase_tinker_skyroot",
+            () -> new BookCaseBlock(BlockBehaviour.Properties.of(Material.WOOD)
+                    .sound(SoundType.WOOD).instabreak().noOcclusion()));
+
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
         registerBlockItem(name, toReturn);

@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "bookcases",
+  "key": {
+    "#": {
+      "item": "minecraft:jungle_slab"
+    },
+    "B": {
+      "item": "minecraft:book"
+    },
+    "L": {
+      "item": "minecraft:jungle_log"
+    },
+    "S": {
+      "item": "minecraft:stripped_jungle_log"
+    }
+  },
+  "pattern": [
+    "SSS",
+    "#B#",
+    "LLL"
+  ],
+  "result": {
+    "item": "turtleblockacademy:table_jungle"
+  }
+}

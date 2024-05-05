@@ -1,0 +1,10 @@
+{
+  "parent": "turtleblockacademy:block/bookcase",
+  "textures": {
+    "1": "tconstruct:block/bloodshroom/planks",
+    "2": "tconstruct:block/bloodshroom/log",
+    "3": "tconstruct:block/bloodshroom/stripped_log",
+    "4": "turtleblockacademy:block/books",
+    "particle": "tconstruct:block/bloodshroom/planks"
+  }
+}

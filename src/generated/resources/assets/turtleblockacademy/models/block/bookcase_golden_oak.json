@@ -1,0 +1,10 @@
+{
+  "parent": "turtleblockacademy:block/bookcase",
+  "textures": {
+    "1": "aether:block/skyroot_planks",
+    "2": "aether:block/golden_oak_log",
+    "3": "aether:block/stripped_skyroot_log",
+    "4": "turtleblockacademy:block/books",
+    "particle": "aether:block/skyroot_planks"
+  }
+}

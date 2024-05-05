@@ -1,0 +1,10 @@
+{
+  "parent": "turtleblockacademy:block/bookcase",
+  "textures": {
+    "1": "phantasm:block/pream_planks",
+    "2": "phantasm:block/pream_log_side",
+    "3": "phantasm:block/stripped_pream_log_side",
+    "4": "turtleblockacademy:block/books",
+    "particle": "phantasm:block/pream_planks"
+  }
+}

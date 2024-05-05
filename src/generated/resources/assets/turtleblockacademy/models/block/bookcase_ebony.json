@@ -1,0 +1,10 @@
+{
+  "parent": "turtleblockacademy:block/bookcase",
+  "textures": {
+    "1": "phantasm:block/ebony_planks",
+    "2": "phantasm:block/ebony_stems_side",
+    "3": "phantasm:block/ebony_stems_side_stripped",
+    "4": "turtleblockacademy:block/books",
+    "particle": "phantasm:block/ebony_planks"
+  }
+}

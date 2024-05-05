@@ -47,7 +47,7 @@ public class ModBlockStatesProvider extends BlockStateProvider {
                 ModBlocks.SCHOOL_DESK_CABINET_ACACIA.get(),
                 ModBlocks.SCHOOL_DESK_ACACIA.get(),
                 ModBlocks.PARK_BENCH_ACACIA.get(),
-
+                ModBlocks.BOOKCASE_ACACIA.get(),
                 "minecraft", "acacia");
         processVariants(
                 ModBlocks.DESK_CHAIR_BIRCH.get(),
@@ -56,7 +56,7 @@ public class ModBlockStatesProvider extends BlockStateProvider {
                 ModBlocks.SCHOOL_DESK_CABINET_BIRCH.get(),
                 ModBlocks.SCHOOL_DESK_BIRCH.get(),
                 ModBlocks.PARK_BENCH_BIRCH.get(),
-
+                ModBlocks.BOOKCASE_BIRCH.get(),
                 "minecraft", "birch");
         processVariants(
                 ModBlocks.DESK_CHAIR_CRIMSON.get(),
@@ -65,7 +65,7 @@ public class ModBlockStatesProvider extends BlockStateProvider {
                 ModBlocks.SCHOOL_DESK_CABINET_CRIMSON.get(),
                 ModBlocks.SCHOOL_DESK_CRIMSON.get(),
                 ModBlocks.PARK_BENCH_CRIMSON.get(),
-
+                ModBlocks.BOOKCASE_CRIMSON.get(),
                 "minecraft", "crimson");
         processVariants(
                 ModBlocks.DESK_CHAIR_DARK_OAK.get(),
@@ -74,7 +74,7 @@ public class ModBlockStatesProvider extends BlockStateProvider {
                 ModBlocks.SCHOOL_DESK_CABINET_DARK_OAK.get(),
                 ModBlocks.SCHOOL_DESK_DARK_OAK.get(),
                 ModBlocks.PARK_BENCH_DARK_OAK.get(),
-
+                ModBlocks.BOOKCASE_DARK_OAK.get(),
                 "minecraft", "dark_oak");
         processVariants(
                 ModBlocks.DESK_CHAIR_JUNGLE.get(),
@@ -83,7 +83,7 @@ public class ModBlockStatesProvider extends BlockStateProvider {
                 ModBlocks.SCHOOL_DESK_CABINET_JUNGLE.get(),
                 ModBlocks.SCHOOL_DESK_JUNGLE.get(),
                 ModBlocks.PARK_BENCH_JUNGLE.get(),
-
+                ModBlocks.BOOKCASE_JUNGLE.get(),
                 "minecraft", "jungle");
         processVariants(
                 ModBlocks.DESK_CHAIR_SPRUCE.get(),
@@ -92,7 +92,7 @@ public class ModBlockStatesProvider extends BlockStateProvider {
                 ModBlocks.SCHOOL_DESK_CABINET_SPRUCE.get(),
                 ModBlocks.SCHOOL_DESK_SPRUCE.get(),
                 ModBlocks.PARK_BENCH_SPRUCE.get(),
-
+                ModBlocks.BOOKCASE_SPRUCE.get(),
                 "minecraft", "spruce");
         processVariants(
                 ModBlocks.DESK_CHAIR_MANGROVE.get(),
@@ -101,7 +101,7 @@ public class ModBlockStatesProvider extends BlockStateProvider {
                 ModBlocks.SCHOOL_DESK_CABINET_MANGROVE.get(),
                 ModBlocks.SCHOOL_DESK_MANGROVE.get(),
                 ModBlocks.PARK_BENCH_MANGROVE.get(),
-
+                ModBlocks.BOOKCASE_MANGROVE.get(),
                 "minecraft", "mangrove");
         processVariants(
                 ModBlocks.DESK_CHAIR_OAK.get(),
@@ -110,7 +110,7 @@ public class ModBlockStatesProvider extends BlockStateProvider {
                 ModBlocks.SCHOOL_DESK_CABINET_OAK.get(),
                 ModBlocks.SCHOOL_DESK_OAK.get(),
                 ModBlocks.PARK_BENCH_OAK.get(),
-
+                ModBlocks.BOOKCASE_OAK.get(),
                 "minecraft", "oak");
         processVariants(
                 ModBlocks.DESK_CHAIR_WARPED.get(),
@@ -119,7 +119,7 @@ public class ModBlockStatesProvider extends BlockStateProvider {
                 ModBlocks.SCHOOL_DESK_CABINET_WARPED.get(),
                 ModBlocks.SCHOOL_DESK_WARPED.get(),
                 ModBlocks.PARK_BENCH_WARPED.get(),
-
+                ModBlocks.BOOKCASE_WARPED.get(),
                 "minecraft", "warped");
         processVariants(
                 ModBlocks.DESK_CHAIR_FIR.get(),
@@ -128,7 +128,7 @@ public class ModBlockStatesProvider extends BlockStateProvider {
                 ModBlocks.SCHOOL_DESK_CABINET_FIR.get(),
                 ModBlocks.SCHOOL_DESK_FIR.get(),
                 ModBlocks.PARK_BENCH_FIR.get(),
-
+                ModBlocks.BOOKCASE_FIR.get(),
                 "biomesoplenty", "fir");
         processVariants(
                 ModBlocks.DESK_CHAIR_REDWOOD.get(),
@@ -137,7 +137,7 @@ public class ModBlockStatesProvider extends BlockStateProvider {
                 ModBlocks.SCHOOL_DESK_CABINET_REDWOOD.get(),
                 ModBlocks.SCHOOL_DESK_REDWOOD.get(),
                 ModBlocks.PARK_BENCH_REDWOOD.get(),
-
+                ModBlocks.BOOKCASE_REDWOOD.get(),
                 "biomesoplenty", "redwood");
         processVariants(
                 ModBlocks.DESK_CHAIR_CHERRY.get(),
@@ -146,7 +146,7 @@ public class ModBlockStatesProvider extends BlockStateProvider {
                 ModBlocks.SCHOOL_DESK_CABINET_CHERRY.get(),
                 ModBlocks.SCHOOL_DESK_CHERRY.get(),
                 ModBlocks.PARK_BENCH_CHERRY.get(),
-
+                ModBlocks.BOOKCASE_CHERRY.get(),
                 "biomesoplenty", "cherry");
         processVariants(
                 ModBlocks.DESK_CHAIR_MAHOGANY.get(),
@@ -155,7 +155,7 @@ public class ModBlockStatesProvider extends BlockStateProvider {
                 ModBlocks.SCHOOL_DESK_CABINET_MAHOGANY.get(),
                 ModBlocks.SCHOOL_DESK_MAHOGANY.get(),
                 ModBlocks.PARK_BENCH_MAHOGANY.get(),
-
+                ModBlocks.BOOKCASE_MAHOGANY.get(),
                 "biomesoplenty", "mahogany");
         processVariants(
                 ModBlocks.DESK_CHAIR_JACARANDA.get(),
@@ -164,7 +164,7 @@ public class ModBlockStatesProvider extends BlockStateProvider {
                 ModBlocks.SCHOOL_DESK_CABINET_JACARANDA.get(),
                 ModBlocks.SCHOOL_DESK_JACARANDA.get(),
                 ModBlocks.PARK_BENCH_JACARANDA.get(),
-
+                ModBlocks.BOOKCASE_JACARANDA.get(),
                 "biomesoplenty", "jacaranda");
         processVariants(
                 ModBlocks.DESK_CHAIR_PALM.get(),
@@ -173,7 +173,7 @@ public class ModBlockStatesProvider extends BlockStateProvider {
                 ModBlocks.SCHOOL_DESK_CABINET_PALM.get(),
                 ModBlocks.SCHOOL_DESK_PALM.get(),
                 ModBlocks.PARK_BENCH_PALM.get(),
-
+                ModBlocks.BOOKCASE_PALM.get(),
                 "biomesoplenty", "palm");
         processVariants(
                 ModBlocks.DESK_CHAIR_WILLOW.get(),
@@ -182,7 +182,7 @@ public class ModBlockStatesProvider extends BlockStateProvider {
                 ModBlocks.SCHOOL_DESK_CABINET_WILLOW.get(),
                 ModBlocks.SCHOOL_DESK_WILLOW.get(),
                 ModBlocks.PARK_BENCH_WILLOW.get(),
-
+                ModBlocks.BOOKCASE_WILLOW.get(),
                 "biomesoplenty", "willow");
         processVariants(
                 ModBlocks.DESK_CHAIR_DEAD.get(),
@@ -191,7 +191,7 @@ public class ModBlockStatesProvider extends BlockStateProvider {
                 ModBlocks.SCHOOL_DESK_CABINET_DEAD.get(),
                 ModBlocks.SCHOOL_DESK_DEAD.get(),
                 ModBlocks.PARK_BENCH_DEAD.get(),
-
+                ModBlocks.BOOKCASE_DEAD.get(),
                 "biomesoplenty", "dead");
         processVariants(
                 ModBlocks.DESK_CHAIR_MAGIC.get(),
@@ -200,7 +200,7 @@ public class ModBlockStatesProvider extends BlockStateProvider {
                 ModBlocks.SCHOOL_DESK_CABINET_MAGIC.get(),
                 ModBlocks.SCHOOL_DESK_MAGIC.get(),
                 ModBlocks.PARK_BENCH_MAGIC.get(),
-
+                ModBlocks.BOOKCASE_MAGIC.get(),
                 "biomesoplenty", "magic");
         processVariants(
                 ModBlocks.DESK_CHAIR_UMBRAN.get(),
@@ -209,7 +209,7 @@ public class ModBlockStatesProvider extends BlockStateProvider {
                 ModBlocks.SCHOOL_DESK_CABINET_UMBRAN.get(),
                 ModBlocks.SCHOOL_DESK_UMBRAN.get(),
                 ModBlocks.PARK_BENCH_UMBRAN.get(),
-
+                ModBlocks.BOOKCASE_UMBRAN.get(),
                 "biomesoplenty", "umbran");
         processVariants(
                 ModBlocks.DESK_CHAIR_HELLBARK.get(),
@@ -218,7 +218,7 @@ public class ModBlockStatesProvider extends BlockStateProvider {
                 ModBlocks.SCHOOL_DESK_CABINET_HELLBARK.get(),
                 ModBlocks.SCHOOL_DESK_HELLBARK.get(),
                 ModBlocks.PARK_BENCH_HELLBARK.get(),
-
+                ModBlocks.BOOKCASE_HELLBARK.get(),
                 "biomesoplenty", "hellbark");
         processVariants(
                 ModBlocks.DESK_CHAIR_COCONUT.get(),
@@ -227,7 +227,7 @@ public class ModBlockStatesProvider extends BlockStateProvider {
                 ModBlocks.SCHOOL_DESK_CABINET_COCONUT.get(),
                 ModBlocks.SCHOOL_DESK_COCONUT.get(),
                 ModBlocks.PARK_BENCH_COCONUT.get(),
-
+                ModBlocks.BOOKCASE_COCONUT.get(),
                 "ecologics", "coconut");
         processVariants(
                 ModBlocks.DESK_CHAIR_WALNUT.get(),
@@ -236,7 +236,7 @@ public class ModBlockStatesProvider extends BlockStateProvider {
                 ModBlocks.SCHOOL_DESK_CABINET_WALNUT.get(),
                 ModBlocks.SCHOOL_DESK_WALNUT.get(),
                 ModBlocks.PARK_BENCH_WALNUT.get(),
-
+                ModBlocks.BOOKCASE_WALNUT.get(),
                 "ecologics", "walnut");
         processVariants(
                 ModBlocks.DESK_CHAIR_AZALEA.get(),
@@ -245,7 +245,7 @@ public class ModBlockStatesProvider extends BlockStateProvider {
                 ModBlocks.SCHOOL_DESK_CABINET_AZALEA.get(),
                 ModBlocks.SCHOOL_DESK_AZALEA.get(),
                 ModBlocks.PARK_BENCH_AZALEA.get(),
-
+                ModBlocks.BOOKCASE_AZALEA.get(),
                 "ecologics", "azalea");
         processVariants(
                 ModBlocks.DESK_CHAIR_FLOWERING_AZALEA.get(),
@@ -254,7 +254,7 @@ public class ModBlockStatesProvider extends BlockStateProvider {
                 ModBlocks.SCHOOL_DESK_CABINET_FLOWERING_AZALEA.get(),
                 ModBlocks.SCHOOL_DESK_FLOWERING_AZALEA.get(),
                 ModBlocks.PARK_BENCH_FLOWERING_AZALEA.get(),
-
+                ModBlocks.BOOKCASE_FLOWERING_AZALEA.get(),
                 "ecologics", "flowering_azalea");
         processVariants(
                 ModBlocks.DESK_CHAIR_GOLDEN_OAK.get(),
@@ -263,7 +263,7 @@ public class ModBlockStatesProvider extends BlockStateProvider {
                 ModBlocks.SCHOOL_DESK_CABINET_GOLDEN_OAK.get(),
                 ModBlocks.SCHOOL_DESK_GOLDEN_OAK.get(),
                 ModBlocks.PARK_BENCH_GOLDEN_OAK.get(),
-
+                ModBlocks.BOOKCASE_GOLDEN_OAK.get(),
                 "aether", "golden_oak");
         processVariants(
                 ModBlocks.DESK_CHAIR_AETHER_SKYROOT.get(),
@@ -272,7 +272,7 @@ public class ModBlockStatesProvider extends BlockStateProvider {
                 ModBlocks.SCHOOL_DESK_CABINET_AETHER_SKYROOT.get(),
                 ModBlocks.SCHOOL_DESK_AETHER_SKYROOT.get(),
                 ModBlocks.PARK_BENCH_AETHER_SKYROOT.get(),
-
+                ModBlocks.BOOKCASE_AETHER_SKYROOT.get(),
                 "aether", "skyroot");
         processVariants(
                 ModBlocks.DESK_CHAIR_PREAM.get(),
@@ -281,7 +281,7 @@ public class ModBlockStatesProvider extends BlockStateProvider {
                 ModBlocks.SCHOOL_DESK_CABINET_PREAM.get(),
                 ModBlocks.SCHOOL_DESK_PREAM.get(),
                 ModBlocks.PARK_BENCH_PREAM.get(),
-
+                ModBlocks.BOOKCASE_PREAM.get(),
                 "phantasm", "pream");
         processVariants(
                 ModBlocks.DESK_CHAIR_EBONY.get(),
@@ -290,7 +290,7 @@ public class ModBlockStatesProvider extends BlockStateProvider {
                 ModBlocks.SCHOOL_DESK_CABINET_EBONY.get(),
                 ModBlocks.SCHOOL_DESK_EBONY.get(),
                 ModBlocks.PARK_BENCH_EBONY.get(),
-
+                ModBlocks.BOOKCASE_EBONY.get(),
                 "phantasm", "ebony");
         processVariants(
                 ModBlocks.DESK_CHAIR_CHORUS_NEST.get(),
@@ -299,7 +299,7 @@ public class ModBlockStatesProvider extends BlockStateProvider {
                 ModBlocks.SCHOOL_DESK_CABINET_CHORUS_NEST.get(),
                 ModBlocks.SCHOOL_DESK_CHORUS_NEST.get(),
                 ModBlocks.PARK_BENCH_CHORUS_NEST.get(),
-
+                ModBlocks.BOOKCASE_CHORUS_NEST.get(),
                 "unusualend", "chorus_nest");
         processVariants(
                 ModBlocks.DESK_CHAIR_BLOODSHROOM.get(),
@@ -308,7 +308,7 @@ public class ModBlockStatesProvider extends BlockStateProvider {
                 ModBlocks.SCHOOL_DESK_CABINET_BLOODSHROOM.get(),
                 ModBlocks.SCHOOL_DESK_BLOODSHROOM.get(),
                 ModBlocks.PARK_BENCH_BLOODSHROOM.get(),
-
+                ModBlocks.BOOKCASE_BLOODSHROOM.get(),
                 "tconstruct", "bloodshroom");
         processVariants(
                 ModBlocks.DESK_CHAIR_ENDERBARK.get(),
@@ -317,7 +317,7 @@ public class ModBlockStatesProvider extends BlockStateProvider {
                 ModBlocks.SCHOOL_DESK_CABINET_ENDERBARK.get(),
                 ModBlocks.SCHOOL_DESK_ENDERBARK.get(),
                 ModBlocks.PARK_BENCH_ENDERBARK.get(),
-
+                ModBlocks.BOOKCASE_ENDERBARK.get(),
                 "tconstruct", "enderbark");
         processVariants(
                 ModBlocks.DESK_CHAIR_GREENHEART.get(),
@@ -326,7 +326,7 @@ public class ModBlockStatesProvider extends BlockStateProvider {
                 ModBlocks.SCHOOL_DESK_CABINET_GREENHEART.get(),
                 ModBlocks.SCHOOL_DESK_GREENHEART.get(),
                 ModBlocks.PARK_BENCH_GREENHEART.get(),
-
+                ModBlocks.BOOKCASE_GREENHEART.get(),
                 "tconstruct", "greenheart");
         processVariants(
                 ModBlocks.DESK_CHAIR_TINKER_SKYROOT.get(),
@@ -335,13 +335,14 @@ public class ModBlockStatesProvider extends BlockStateProvider {
                 ModBlocks.SCHOOL_DESK_CABINET_TINKER_SKYROOT.get(),
                 ModBlocks.SCHOOL_DESK_TINKER_SKYROOT.get(),
                 ModBlocks.PARK_BENCH_TINKER_SKYROOT.get(),
-
+                ModBlocks.BOOKCASE_TINKER_SKYROOT.get(),
                 "tconstruct", "skyroot");
     }
 
     protected void processVariants(Block result1, Block result2,
                                    Block result3, Block result4,
                                    Block result5, Block result6,
+                                   Block result7,
                                    String modid, String woodType) {
         String path_1;
         String path_2;
@@ -394,10 +395,29 @@ public class ModBlockStatesProvider extends BlockStateProvider {
         threeTextureHorizontalVariant(result3, MODID + ":" + "block/locker", modid, path_1, path_2, path_3);
         threeTextureHorizontalVariant(result4, MODID + ":" + "block/school_desk_cabinet", modid, path_1, path_2, path_3);
 
+        fourTextureHorizontalVariant(result7, MODID + ":" + "block/bookcase", modid, path_1, path_3, path_2);
+
         twoTextureHorizontalVariant(result6, MODID + ":" + "block/park_bench", modid, path_1, path_2);
         twoTextureHorizontalVariant(result5, MODID + ":" + "block/school_desk", modid, path_1, path_2);
 
         tableVariant(result2, MODID + ":" + "block/table", MODID + ":" + "block/table_center", modid, path_1, path_2, path_3);
+    }
+
+    @SuppressWarnings("SameParameterValue")
+    protected void fourTextureHorizontalVariant(Block result, String parent, String modid, String path_1, String path_2, String path_3) {
+
+        ModelFile parentModel = new ModelFile.UncheckedModelFile(parent);
+
+        final var model = models()
+                .getBuilder(blockName(result)).parent(parentModel)
+                .texture("1", new ResourceLocation(modid, path_1))
+                .texture("2", new ResourceLocation(modid, path_2))
+                .texture("3", new ResourceLocation(modid, path_3))
+                .texture("4", new ResourceLocation(MODID, "block/books"))
+                .texture("particle", new ResourceLocation(modid, path_1));
+
+        horizontalBlock(result, model);
+        simpleBlockItem(result, model);
     }
 
     protected void threeTextureHorizontalVariant(Block result, String parent, String modid, String path_1, String path_2, String path_3) {

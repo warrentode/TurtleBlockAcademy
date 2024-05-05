@@ -306,6 +306,40 @@ public class ModLangGen extends LanguageProvider {
         add(ModBlocks.LOCKER_TINKER_SKYROOT.get(), "Tinker Skyroot Locker");
         add(ModBlocks.PARK_BENCH_TINKER_SKYROOT.get(), "Tinker Skyroot Park Bench");
         add(ModBlocks.TABLE_TINKER_SKYROOT.get(), "Tinker Skyroot Table");
+
+        add(ModBlocks.BOOKCASE_OAK.get(), "Oak Bookcase");
+        add(ModBlocks.BOOKCASE_BIRCH.get(), "Birch Bookcase");
+        add(ModBlocks.BOOKCASE_SPRUCE.get(), "Spruce Bookcase");
+        add(ModBlocks.BOOKCASE_JUNGLE.get(), "Jungle Bookcase");
+        add(ModBlocks.BOOKCASE_ACACIA.get(), "Acacia Bookcase");
+        add(ModBlocks.BOOKCASE_DARK_OAK.get(), "Dark Oak Bookcase");
+        add(ModBlocks.BOOKCASE_MANGROVE.get(), "Mangrove Bookcase");
+        add(ModBlocks.BOOKCASE_CRIMSON.get(), "Crimson Bookcase");
+        add(ModBlocks.BOOKCASE_WARPED.get(), "Warped Bookcase");
+        add(ModBlocks.BOOKCASE_FIR.get(), "Fir Bookcase");
+        add(ModBlocks.BOOKCASE_REDWOOD.get(), "Redwood Bookcase");
+        add(ModBlocks.BOOKCASE_CHERRY.get(), "Cherry Bookcase");
+        add(ModBlocks.BOOKCASE_MAHOGANY.get(), "Mahogany Bookcase");
+        add(ModBlocks.BOOKCASE_JACARANDA.get(), "Jacaranda Bookcase");
+        add(ModBlocks.BOOKCASE_PALM.get(), "Palm Bookcase");
+        add(ModBlocks.BOOKCASE_WILLOW.get(), "Willow Bookcase");
+        add(ModBlocks.BOOKCASE_DEAD.get(), "Dead Bookcase");
+        add(ModBlocks.BOOKCASE_MAGIC.get(), "Magic Bookcase");
+        add(ModBlocks.BOOKCASE_UMBRAN.get(), "Umbran Bookcase");
+        add(ModBlocks.BOOKCASE_HELLBARK.get(), "Hellbark Bookcase");
+        add(ModBlocks.BOOKCASE_COCONUT.get(), "Coconut Bookcase");
+        add(ModBlocks.BOOKCASE_WALNUT.get(), "Walnut Bookcase");
+        add(ModBlocks.BOOKCASE_AZALEA.get(), "Azalea Bookcase");
+        add(ModBlocks.BOOKCASE_FLOWERING_AZALEA.get(), "Flowering Azalea Bookcase");
+        add(ModBlocks.BOOKCASE_GOLDEN_OAK.get(), "Golden Oak Bookcase");
+        add(ModBlocks.BOOKCASE_AETHER_SKYROOT.get(), "Aether Skyroot Bookcase");
+        add(ModBlocks.BOOKCASE_PREAM.get(), "Pream Bookcase");
+        add(ModBlocks.BOOKCASE_EBONY.get(), "Ebony Bookcase");
+        add(ModBlocks.BOOKCASE_CHORUS_NEST.get(), "Chorus Nest Bookcase");
+        add(ModBlocks.BOOKCASE_BLOODSHROOM.get(), "Bloodshroom Bookcase");
+        add(ModBlocks.BOOKCASE_ENDERBARK.get(), "Enderbark Bookcase");
+        add(ModBlocks.BOOKCASE_GREENHEART.get(), "Greenheart Bookcase");
+        add(ModBlocks.BOOKCASE_TINKER_SKYROOT.get(), "Tinker Skyroot Bookcase");
     }
 
     private void addItemGroups() {

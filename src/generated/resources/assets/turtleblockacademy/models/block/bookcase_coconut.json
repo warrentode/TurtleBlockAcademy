@@ -1,0 +1,10 @@
+{
+  "parent": "turtleblockacademy:block/bookcase",
+  "textures": {
+    "1": "ecologics:block/coconut_planks",
+    "2": "ecologics:block/coconut_log",
+    "3": "ecologics:block/stripped_coconut_log",
+    "4": "turtleblockacademy:block/books",
+    "particle": "ecologics:block/coconut_planks"
+  }
+}
