@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "bookcases",
+  "key": {
+    "#": {
+      "item": "biomesoplenty:redwood_slab"
+    },
+    "B": {
+      "item": "minecraft:book"
+    },
+    "L": {
+      "item": "biomesoplenty:redwood_log"
+    },
+    "S": {
+      "item": "biomesoplenty:stripped_redwood_log"
+    }
+  },
+  "pattern": [
+    "SSS",
+    "#B#",
+    "LLL"
+  ],
+  "result": {
+    "item": "turtleblockacademy:bookcase_redwood"
+  }
+}

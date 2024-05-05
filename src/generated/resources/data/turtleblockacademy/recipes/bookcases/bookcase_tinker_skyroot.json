@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "bookcases",
+  "key": {
+    "#": {
+      "tag": "tconstruct:skyroot_slab"
+    },
+    "B": {
+      "item": "minecraft:book"
+    },
+    "L": {
+      "tag": "tconstruct:skyroot_log"
+    },
+    "S": {
+      "tag": "tconstruct:stripped_skyroot_log"
+    }
+  },
+  "pattern": [
+    "SSS",
+    "#B#",
+    "LLL"
+  ],
+  "result": {
+    "item": "turtleblockacademy:bookcase_tinker_skyroot"
+  }
+}

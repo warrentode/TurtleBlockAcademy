@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "bookcases",
+  "key": {
+    "#": {
+      "item": "ecologics:azalea_slab"
+    },
+    "B": {
+      "item": "minecraft:book"
+    },
+    "L": {
+      "item": "ecologics:azalea_log"
+    },
+    "S": {
+      "item": "ecologics:stripped_azalea_log"
+    }
+  },
+  "pattern": [
+    "SSS",
+    "#B#",
+    "LLL"
+  ],
+  "result": {
+    "item": "turtleblockacademy:bookcase_azalea"
+  }
+}

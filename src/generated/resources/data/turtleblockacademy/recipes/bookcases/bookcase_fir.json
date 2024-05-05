@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "bookcases",
+  "key": {
+    "#": {
+      "item": "biomesoplenty:fir_slab"
+    },
+    "B": {
+      "item": "minecraft:book"
+    },
+    "L": {
+      "item": "biomesoplenty:fir_log"
+    },
+    "S": {
+      "item": "biomesoplenty:stripped_fir_log"
+    }
+  },
+  "pattern": [
+    "SSS",
+    "#B#",
+    "LLL"
+  ],
+  "result": {
+    "item": "turtleblockacademy:bookcase_fir"
+  }
+}

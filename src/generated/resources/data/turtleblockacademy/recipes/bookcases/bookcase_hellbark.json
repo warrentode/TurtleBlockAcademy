@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "bookcases",
+  "key": {
+    "#": {
+      "item": "biomesoplenty:hellbark_slab"
+    },
+    "B": {
+      "item": "minecraft:book"
+    },
+    "L": {
+      "item": "biomesoplenty:hellbark_log"
+    },
+    "S": {
+      "item": "biomesoplenty:stripped_hellbark_log"
+    }
+  },
+  "pattern": [
+    "SSS",
+    "#B#",
+    "LLL"
+  ],
+  "result": {
+    "item": "turtleblockacademy:bookcase_hellbark"
+  }
+}

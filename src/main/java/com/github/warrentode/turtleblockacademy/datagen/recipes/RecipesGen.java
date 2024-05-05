@@ -1354,7 +1354,7 @@ public class RecipesGen extends RecipeProvider implements IConditionBuilder {
                 Items.BIRCH_LOG, Items.BIRCH_SLAB);
         tableRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.TABLE_BIRCH.get().asItem().getDefaultInstance(),
                 Items.BIRCH_LOG, Items.STRIPPED_BIRCH_LOG, Items.BIRCH_SLAB);
-        bookcaseRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.TABLE_BIRCH.get().asItem().getDefaultInstance(),
+        bookcaseRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.BOOKCASE_BIRCH.get().asItem().getDefaultInstance(),
                 Items.BIRCH_LOG, Items.STRIPPED_BIRCH_LOG, Items.BIRCH_SLAB);
 
         chairRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.DESK_CHAIR_DARK_OAK.get().asItem().getDefaultInstance(),
@@ -1369,7 +1369,7 @@ public class RecipesGen extends RecipeProvider implements IConditionBuilder {
                 Items.DARK_OAK_LOG, Items.DARK_OAK_SLAB);
         tableRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.TABLE_DARK_OAK.get().asItem().getDefaultInstance(),
                 Items.DARK_OAK_LOG, Items.STRIPPED_DARK_OAK_LOG, Items.DARK_OAK_SLAB);
-        bookcaseRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.TABLE_DARK_OAK.get().asItem().getDefaultInstance(),
+        bookcaseRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.BOOKCASE_DARK_OAK.get().asItem().getDefaultInstance(),
                 Items.DARK_OAK_LOG, Items.STRIPPED_DARK_OAK_LOG, Items.DARK_OAK_SLAB);
 
         chairRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.DESK_CHAIR_JUNGLE.get().asItem().getDefaultInstance(),
@@ -1384,7 +1384,7 @@ public class RecipesGen extends RecipeProvider implements IConditionBuilder {
                 Items.JUNGLE_LOG, Items.JUNGLE_SLAB);
         tableRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.TABLE_JUNGLE.get().asItem().getDefaultInstance(),
                 Items.JUNGLE_LOG, Items.STRIPPED_JUNGLE_LOG, Items.JUNGLE_SLAB);
-        bookcaseRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.TABLE_JUNGLE.get().asItem().getDefaultInstance(),
+        bookcaseRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.BOOKCASE_JUNGLE.get().asItem().getDefaultInstance(),
                 Items.JUNGLE_LOG, Items.STRIPPED_JUNGLE_LOG, Items.JUNGLE_SLAB);
 
         chairRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.DESK_CHAIR_MANGROVE.get().asItem().getDefaultInstance(),
@@ -1399,7 +1399,7 @@ public class RecipesGen extends RecipeProvider implements IConditionBuilder {
                 Items.MANGROVE_LOG, Items.MANGROVE_SLAB);
         tableRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.TABLE_MANGROVE.get().asItem().getDefaultInstance(),
                 Items.MANGROVE_LOG, Items.STRIPPED_MANGROVE_LOG, Items.MANGROVE_SLAB);
-        bookcaseRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.TABLE_MANGROVE.get().asItem().getDefaultInstance(),
+        bookcaseRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.BOOKCASE_MANGROVE.get().asItem().getDefaultInstance(),
                 Items.MANGROVE_LOG, Items.STRIPPED_MANGROVE_LOG, Items.MANGROVE_SLAB);
 
         chairRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.DESK_CHAIR_OAK.get().asItem().getDefaultInstance(),
@@ -1414,7 +1414,7 @@ public class RecipesGen extends RecipeProvider implements IConditionBuilder {
                 Items.OAK_LOG, Items.OAK_SLAB);
         tableRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.TABLE_OAK.get().asItem().getDefaultInstance(),
                 Items.OAK_LOG, Items.STRIPPED_OAK_LOG, Items.OAK_SLAB);
-        bookcaseRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.TABLE_OAK.get().asItem().getDefaultInstance(),
+        bookcaseRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.BOOKCASE_OAK.get().asItem().getDefaultInstance(),
                 Items.OAK_LOG, Items.STRIPPED_OAK_LOG, Items.OAK_SLAB);
 
         chairRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.DESK_CHAIR_SPRUCE.get().asItem().getDefaultInstance(),
@@ -1429,7 +1429,7 @@ public class RecipesGen extends RecipeProvider implements IConditionBuilder {
                 Items.SPRUCE_LOG, Items.SPRUCE_SLAB);
         tableRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.TABLE_SPRUCE.get().asItem().getDefaultInstance(),
                 Items.SPRUCE_LOG, Items.STRIPPED_SPRUCE_LOG, Items.SPRUCE_SLAB);
-        bookcaseRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.TABLE_SPRUCE.get().asItem().getDefaultInstance(),
+        bookcaseRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.BOOKCASE_SPRUCE.get().asItem().getDefaultInstance(),
                 Items.SPRUCE_LOG, Items.STRIPPED_SPRUCE_LOG, Items.SPRUCE_SLAB);
 
         chairRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.DESK_CHAIR_CRIMSON.get().asItem().getDefaultInstance(),
@@ -1444,7 +1444,7 @@ public class RecipesGen extends RecipeProvider implements IConditionBuilder {
                 Items.CRIMSON_STEM, Items.CRIMSON_SLAB);
         tableRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.TABLE_CRIMSON.get().asItem().getDefaultInstance(),
                 Items.CRIMSON_STEM, Items.STRIPPED_CRIMSON_STEM, Items.CRIMSON_SLAB);
-        bookcaseRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.TABLE_CRIMSON.get().asItem().getDefaultInstance(),
+        bookcaseRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.BOOKCASE_CRIMSON.get().asItem().getDefaultInstance(),
                 Items.CRIMSON_STEM, Items.STRIPPED_CRIMSON_STEM, Items.CRIMSON_SLAB);
 
         chairRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.DESK_CHAIR_WARPED.get().asItem().getDefaultInstance(),
@@ -1459,7 +1459,7 @@ public class RecipesGen extends RecipeProvider implements IConditionBuilder {
                 Items.WARPED_STEM, Items.WARPED_SLAB);
         tableRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.TABLE_WARPED.get().asItem().getDefaultInstance(),
                 Items.WARPED_STEM, Items.STRIPPED_WARPED_STEM, Items.WARPED_SLAB);
-        bookcaseRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.TABLE_WARPED.get().asItem().getDefaultInstance(),
+        bookcaseRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.BOOKCASE_WARPED.get().asItem().getDefaultInstance(),
                 Items.WARPED_STEM, Items.STRIPPED_WARPED_STEM, Items.WARPED_SLAB);
 
         chairRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.DESK_CHAIR_FIR.get().asItem().getDefaultInstance(),
@@ -1474,7 +1474,7 @@ public class RecipesGen extends RecipeProvider implements IConditionBuilder {
                 BOPBlocks.FIR_LOG.get(), BOPBlocks.FIR_SLAB.get());
         tableRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.TABLE_FIR.get().asItem().getDefaultInstance(),
                 BOPBlocks.FIR_LOG.get(), BOPBlocks.STRIPPED_FIR_LOG.get(), BOPBlocks.FIR_SLAB.get());
-        bookcaseRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.TABLE_FIR.get().asItem().getDefaultInstance(),
+        bookcaseRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.BOOKCASE_FIR.get().asItem().getDefaultInstance(),
                 BOPBlocks.FIR_LOG.get(), BOPBlocks.STRIPPED_FIR_LOG.get(), BOPBlocks.FIR_SLAB.get());
 
         chairRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.DESK_CHAIR_REDWOOD.get().asItem().getDefaultInstance(),
@@ -1489,7 +1489,7 @@ public class RecipesGen extends RecipeProvider implements IConditionBuilder {
                 BOPBlocks.REDWOOD_LOG.get(), BOPBlocks.REDWOOD_SLAB.get());
         tableRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.TABLE_REDWOOD.get().asItem().getDefaultInstance(),
                 BOPBlocks.REDWOOD_LOG.get(), BOPBlocks.STRIPPED_REDWOOD_LOG.get(), BOPBlocks.REDWOOD_SLAB.get());
-        bookcaseRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.TABLE_REDWOOD.get().asItem().getDefaultInstance(),
+        bookcaseRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.BOOKCASE_REDWOOD.get().asItem().getDefaultInstance(),
                 BOPBlocks.REDWOOD_LOG.get(), BOPBlocks.STRIPPED_REDWOOD_LOG.get(), BOPBlocks.REDWOOD_SLAB.get());
 
         chairRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.DESK_CHAIR_CHERRY.get().asItem().getDefaultInstance(),
@@ -1504,7 +1504,7 @@ public class RecipesGen extends RecipeProvider implements IConditionBuilder {
                 BOPBlocks.CHERRY_LOG.get(), BOPBlocks.CHERRY_SLAB.get());
         tableRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.TABLE_CHERRY.get().asItem().getDefaultInstance(),
                 BOPBlocks.CHERRY_LOG.get(), BOPBlocks.STRIPPED_CHERRY_LOG.get(), BOPBlocks.CHERRY_SLAB.get());
-        bookcaseRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.TABLE_CHERRY.get().asItem().getDefaultInstance(),
+        bookcaseRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.BOOKCASE_CHERRY.get().asItem().getDefaultInstance(),
                 BOPBlocks.CHERRY_LOG.get(), BOPBlocks.STRIPPED_CHERRY_LOG.get(), BOPBlocks.CHERRY_SLAB.get());
 
         chairRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.DESK_CHAIR_MAHOGANY.get().asItem().getDefaultInstance(),
@@ -1519,7 +1519,7 @@ public class RecipesGen extends RecipeProvider implements IConditionBuilder {
                 BOPBlocks.MAHOGANY_LOG.get(), BOPBlocks.MAHOGANY_SLAB.get());
         tableRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.TABLE_MAHOGANY.get().asItem().getDefaultInstance(),
                 BOPBlocks.MAHOGANY_LOG.get(), BOPBlocks.STRIPPED_MAHOGANY_LOG.get(), BOPBlocks.MAHOGANY_SLAB.get());
-        bookcaseRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.TABLE_MAHOGANY.get().asItem().getDefaultInstance(),
+        bookcaseRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.BOOKCASE_MAHOGANY.get().asItem().getDefaultInstance(),
                 BOPBlocks.MAHOGANY_LOG.get(), BOPBlocks.STRIPPED_MAHOGANY_LOG.get(), BOPBlocks.MAHOGANY_SLAB.get());
 
         chairRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.DESK_CHAIR_JACARANDA.get().asItem().getDefaultInstance(),
@@ -1534,7 +1534,7 @@ public class RecipesGen extends RecipeProvider implements IConditionBuilder {
                 BOPBlocks.JACARANDA_LOG.get(), BOPBlocks.JACARANDA_SLAB.get());
         tableRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.TABLE_JACARANDA.get().asItem().getDefaultInstance(),
                 BOPBlocks.JACARANDA_LOG.get(), BOPBlocks.STRIPPED_JACARANDA_LOG.get(), BOPBlocks.JACARANDA_SLAB.get());
-        bookcaseRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.TABLE_JACARANDA.get().asItem().getDefaultInstance(),
+        bookcaseRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.BOOKCASE_JACARANDA.get().asItem().getDefaultInstance(),
                 BOPBlocks.JACARANDA_LOG.get(), BOPBlocks.STRIPPED_JACARANDA_LOG.get(), BOPBlocks.JACARANDA_SLAB.get());
 
         chairRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.DESK_CHAIR_PALM.get().asItem().getDefaultInstance(),
@@ -1549,7 +1549,7 @@ public class RecipesGen extends RecipeProvider implements IConditionBuilder {
                 BOPBlocks.PALM_LOG.get(), BOPBlocks.PALM_SLAB.get());
         tableRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.TABLE_PALM.get().asItem().getDefaultInstance(),
                 BOPBlocks.PALM_LOG.get(), BOPBlocks.STRIPPED_PALM_LOG.get(), BOPBlocks.PALM_SLAB.get());
-        bookcaseRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.TABLE_PALM.get().asItem().getDefaultInstance(),
+        bookcaseRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.BOOKCASE_PALM.get().asItem().getDefaultInstance(),
                 BOPBlocks.PALM_LOG.get(), BOPBlocks.STRIPPED_PALM_LOG.get(), BOPBlocks.PALM_SLAB.get());
 
         chairRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.DESK_CHAIR_WILLOW.get().asItem().getDefaultInstance(),
@@ -1564,7 +1564,7 @@ public class RecipesGen extends RecipeProvider implements IConditionBuilder {
                 BOPBlocks.WILLOW_LOG.get(), BOPBlocks.WILLOW_SLAB.get());
         tableRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.TABLE_WILLOW.get().asItem().getDefaultInstance(),
                 BOPBlocks.WILLOW_LOG.get(), BOPBlocks.STRIPPED_WILLOW_LOG.get(), BOPBlocks.WILLOW_SLAB.get());
-        bookcaseRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.TABLE_WILLOW.get().asItem().getDefaultInstance(),
+        bookcaseRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.BOOKCASE_WILLOW.get().asItem().getDefaultInstance(),
                 BOPBlocks.WILLOW_LOG.get(), BOPBlocks.STRIPPED_WILLOW_LOG.get(), BOPBlocks.WILLOW_SLAB.get());
 
         chairRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.DESK_CHAIR_DEAD.get().asItem().getDefaultInstance(),
@@ -1579,7 +1579,7 @@ public class RecipesGen extends RecipeProvider implements IConditionBuilder {
                 BOPBlocks.DEAD_LOG.get(), BOPBlocks.DEAD_SLAB.get());
         tableRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.TABLE_DEAD.get().asItem().getDefaultInstance(),
                 BOPBlocks.DEAD_LOG.get(), BOPBlocks.STRIPPED_DEAD_LOG.get(), BOPBlocks.DEAD_SLAB.get());
-        bookcaseRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.TABLE_DEAD.get().asItem().getDefaultInstance(),
+        bookcaseRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.BOOKCASE_DEAD.get().asItem().getDefaultInstance(),
                 BOPBlocks.DEAD_LOG.get(), BOPBlocks.STRIPPED_DEAD_LOG.get(), BOPBlocks.DEAD_SLAB.get());
 
         chairRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.DESK_CHAIR_MAGIC.get().asItem().getDefaultInstance(),
@@ -1594,7 +1594,7 @@ public class RecipesGen extends RecipeProvider implements IConditionBuilder {
                 BOPBlocks.MAGIC_LOG.get(), BOPBlocks.MAGIC_SLAB.get());
         tableRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.TABLE_MAGIC.get().asItem().getDefaultInstance(),
                 BOPBlocks.MAGIC_LOG.get(), BOPBlocks.STRIPPED_MAGIC_LOG.get(), BOPBlocks.MAGIC_SLAB.get());
-        bookcaseRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.TABLE_MAGIC.get().asItem().getDefaultInstance(),
+        bookcaseRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.BOOKCASE_MAGIC.get().asItem().getDefaultInstance(),
                 BOPBlocks.MAGIC_LOG.get(), BOPBlocks.STRIPPED_MAGIC_LOG.get(), BOPBlocks.MAGIC_SLAB.get());
 
         chairRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.DESK_CHAIR_UMBRAN.get().asItem().getDefaultInstance(),
@@ -1609,7 +1609,7 @@ public class RecipesGen extends RecipeProvider implements IConditionBuilder {
                 BOPBlocks.UMBRAN_LOG.get(), BOPBlocks.UMBRAN_SLAB.get());
         tableRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.TABLE_UMBRAN.get().asItem().getDefaultInstance(),
                 BOPBlocks.UMBRAN_LOG.get(), BOPBlocks.STRIPPED_UMBRAN_LOG.get(), BOPBlocks.UMBRAN_SLAB.get());
-        bookcaseRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.TABLE_UMBRAN.get().asItem().getDefaultInstance(),
+        bookcaseRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.BOOKCASE_UMBRAN.get().asItem().getDefaultInstance(),
                 BOPBlocks.UMBRAN_LOG.get(), BOPBlocks.STRIPPED_UMBRAN_LOG.get(), BOPBlocks.UMBRAN_SLAB.get());
 
         chairRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.DESK_CHAIR_HELLBARK.get().asItem().getDefaultInstance(),
@@ -1624,7 +1624,7 @@ public class RecipesGen extends RecipeProvider implements IConditionBuilder {
                 BOPBlocks.HELLBARK_LOG.get(), BOPBlocks.HELLBARK_SLAB.get());
         tableRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.TABLE_HELLBARK.get().asItem().getDefaultInstance(),
                 BOPBlocks.HELLBARK_LOG.get(), BOPBlocks.STRIPPED_HELLBARK_LOG.get(), BOPBlocks.HELLBARK_SLAB.get());
-        bookcaseRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.TABLE_HELLBARK.get().asItem().getDefaultInstance(),
+        bookcaseRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.BOOKCASE_HELLBARK.get().asItem().getDefaultInstance(),
                 BOPBlocks.HELLBARK_LOG.get(), BOPBlocks.STRIPPED_HELLBARK_LOG.get(), BOPBlocks.HELLBARK_SLAB.get());
 
         chairRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.DESK_CHAIR_COCONUT.get().asItem().getDefaultInstance(),
@@ -1639,7 +1639,7 @@ public class RecipesGen extends RecipeProvider implements IConditionBuilder {
                 samebutdifferent.ecologics.registry.ModBlocks.COCONUT_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.COCONUT_SLAB.get());
         tableRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.TABLE_COCONUT.get().asItem().getDefaultInstance(),
                 samebutdifferent.ecologics.registry.ModBlocks.COCONUT_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.STRIPPED_COCONUT_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.COCONUT_SLAB.get());
-        bookcaseRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.TABLE_COCONUT.get().asItem().getDefaultInstance(),
+        bookcaseRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.BOOKCASE_COCONUT.get().asItem().getDefaultInstance(),
                 samebutdifferent.ecologics.registry.ModBlocks.COCONUT_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.STRIPPED_COCONUT_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.COCONUT_SLAB.get());
 
         chairRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.DESK_CHAIR_WALNUT.get().asItem().getDefaultInstance(),
@@ -1654,7 +1654,7 @@ public class RecipesGen extends RecipeProvider implements IConditionBuilder {
                 samebutdifferent.ecologics.registry.ModBlocks.WALNUT_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.WALNUT_SLAB.get());
         tableRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.TABLE_WALNUT.get().asItem().getDefaultInstance(),
                 samebutdifferent.ecologics.registry.ModBlocks.WALNUT_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.STRIPPED_WALNUT_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.WALNUT_SLAB.get());
-        bookcaseRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.TABLE_WALNUT.get().asItem().getDefaultInstance(),
+        bookcaseRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.BOOKCASE_WALNUT.get().asItem().getDefaultInstance(),
                 samebutdifferent.ecologics.registry.ModBlocks.WALNUT_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.STRIPPED_WALNUT_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.WALNUT_SLAB.get());
 
         chairRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.DESK_CHAIR_AZALEA.get().asItem().getDefaultInstance(),
@@ -1669,7 +1669,7 @@ public class RecipesGen extends RecipeProvider implements IConditionBuilder {
                 samebutdifferent.ecologics.registry.ModBlocks.AZALEA_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.AZALEA_SLAB.get());
         tableRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.TABLE_AZALEA.get().asItem().getDefaultInstance(),
                 samebutdifferent.ecologics.registry.ModBlocks.AZALEA_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.STRIPPED_AZALEA_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.AZALEA_SLAB.get());
-        bookcaseRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.TABLE_AZALEA.get().asItem().getDefaultInstance(),
+        bookcaseRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.BOOKCASE_AZALEA.get().asItem().getDefaultInstance(),
                 samebutdifferent.ecologics.registry.ModBlocks.AZALEA_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.STRIPPED_AZALEA_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.AZALEA_SLAB.get());
 
         chairRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.DESK_CHAIR_FLOWERING_AZALEA.get().asItem().getDefaultInstance(),
@@ -1684,7 +1684,7 @@ public class RecipesGen extends RecipeProvider implements IConditionBuilder {
                 samebutdifferent.ecologics.registry.ModBlocks.FLOWERING_AZALEA_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.FLOWERING_AZALEA_SLAB.get());
         tableRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.TABLE_FLOWERING_AZALEA.get().asItem().getDefaultInstance(),
                 samebutdifferent.ecologics.registry.ModBlocks.FLOWERING_AZALEA_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.STRIPPED_AZALEA_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.FLOWERING_AZALEA_SLAB.get());
-        bookcaseRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.TABLE_FLOWERING_AZALEA.get().asItem().getDefaultInstance(),
+        bookcaseRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.BOOKCASE_FLOWERING_AZALEA.get().asItem().getDefaultInstance(),
                 samebutdifferent.ecologics.registry.ModBlocks.FLOWERING_AZALEA_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.STRIPPED_AZALEA_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.FLOWERING_AZALEA_SLAB.get());
 
         chairRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.DESK_CHAIR_GOLDEN_OAK.get().asItem().getDefaultInstance(),
@@ -1699,7 +1699,7 @@ public class RecipesGen extends RecipeProvider implements IConditionBuilder {
                 AetherBlocks.GOLDEN_OAK_LOG.get(), AetherBlocks.SKYROOT_SLAB.get());
         tableRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.TABLE_GOLDEN_OAK.get().asItem().getDefaultInstance(),
                 AetherBlocks.GOLDEN_OAK_LOG.get(), AetherBlocks.STRIPPED_SKYROOT_LOG.get(), AetherBlocks.SKYROOT_SLAB.get());
-        bookcaseRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.TABLE_GOLDEN_OAK.get().asItem().getDefaultInstance(),
+        bookcaseRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.BOOKCASE_GOLDEN_OAK.get().asItem().getDefaultInstance(),
                 AetherBlocks.GOLDEN_OAK_LOG.get(), AetherBlocks.STRIPPED_SKYROOT_LOG.get(), AetherBlocks.SKYROOT_SLAB.get());
 
         chairRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.DESK_CHAIR_AETHER_SKYROOT.get().asItem().getDefaultInstance(),
@@ -1714,7 +1714,7 @@ public class RecipesGen extends RecipeProvider implements IConditionBuilder {
                 AetherBlocks.SKYROOT_LOG.get(), AetherBlocks.SKYROOT_SLAB.get());
         tableRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.TABLE_AETHER_SKYROOT.get().asItem().getDefaultInstance(),
                 AetherBlocks.SKYROOT_LOG.get(), AetherBlocks.STRIPPED_SKYROOT_LOG.get(), AetherBlocks.SKYROOT_SLAB.get());
-        bookcaseRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.TABLE_AETHER_SKYROOT.get().asItem().getDefaultInstance(),
+        bookcaseRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.BOOKCASE_AETHER_SKYROOT.get().asItem().getDefaultInstance(),
                 AetherBlocks.SKYROOT_LOG.get(), AetherBlocks.STRIPPED_SKYROOT_LOG.get(), AetherBlocks.SKYROOT_SLAB.get());
 
         chairRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.DESK_CHAIR_PREAM.get().asItem().getDefaultInstance(),
@@ -1729,7 +1729,7 @@ public class RecipesGen extends RecipeProvider implements IConditionBuilder {
                 PhantasmModBlocks.PREAM_LOG.get(), PhantasmModBlocks.PREAM_SLAB.get());
         tableRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.TABLE_PREAM.get().asItem().getDefaultInstance(),
                 PhantasmModBlocks.PREAM_LOG.get(), PhantasmModBlocks.STRIPPED_PREAM_LOG.get(), PhantasmModBlocks.PREAM_SLAB.get());
-        bookcaseRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.TABLE_PREAM.get().asItem().getDefaultInstance(),
+        bookcaseRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.BOOKCASE_PREAM.get().asItem().getDefaultInstance(),
                 PhantasmModBlocks.PREAM_LOG.get(), PhantasmModBlocks.STRIPPED_PREAM_LOG.get(), PhantasmModBlocks.PREAM_SLAB.get());
 
         chairRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.DESK_CHAIR_EBONY.get().asItem().getDefaultInstance(),
@@ -1744,7 +1744,7 @@ public class RecipesGen extends RecipeProvider implements IConditionBuilder {
                 PhantasmModBlocks.EBONY_WOOD.get(), PhantasmModBlocks.EBONY_SLAB.get());
         tableRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.TABLE_EBONY.get().asItem().getDefaultInstance(),
                 PhantasmModBlocks.EBONY_WOOD.get(), PhantasmModBlocks.STRIPPED_EBONY_WOOD.get(), PhantasmModBlocks.EBONY_SLAB.get());
-        bookcaseRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.TABLE_EBONY.get().asItem().getDefaultInstance(),
+        bookcaseRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.BOOKCASE_EBONY.get().asItem().getDefaultInstance(),
                 PhantasmModBlocks.EBONY_WOOD.get(), PhantasmModBlocks.STRIPPED_EBONY_WOOD.get(), PhantasmModBlocks.EBONY_SLAB.get());
 
         chairRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.DESK_CHAIR_CHORUS_NEST.get().asItem().getDefaultInstance(),
@@ -1759,7 +1759,7 @@ public class RecipesGen extends RecipeProvider implements IConditionBuilder {
                 UnusualendModBlocks.CHORUS_NEST_PLANKS.get(), UnusualendModBlocks.CHORUS_NEST_SLAB.get());
         tableRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.TABLE_CHORUS_NEST.get().asItem().getDefaultInstance(),
                 UnusualendModBlocks.CHORUS_NEST_PLANKS.get(), UnusualendModBlocks.STRIPPED_CHORUS_NEST_PLANKS.get(), UnusualendModBlocks.CHORUS_NEST_SLAB.get());
-        bookcaseRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.TABLE_CHORUS_NEST.get().asItem().getDefaultInstance(),
+        bookcaseRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.BOOKCASE_CHORUS_NEST.get().asItem().getDefaultInstance(),
                 UnusualendModBlocks.CHORUS_NEST_PLANKS.get(), UnusualendModBlocks.STRIPPED_CHORUS_NEST_PLANKS.get(), UnusualendModBlocks.CHORUS_NEST_SLAB.get());
 
         chairTagRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.DESK_CHAIR_BLOODSHROOM.get().asItem().getDefaultInstance(),
@@ -1774,7 +1774,7 @@ public class RecipesGen extends RecipeProvider implements IConditionBuilder {
                 PackTags.Items.BLOODSHROOM_LOG, PackTags.Items.BLOODSHROOM_SLAB);
         tableTagRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.TABLE_BLOODSHROOM.get().asItem().getDefaultInstance(),
                 PackTags.Items.BLOODSHROOM_LOG, PackTags.Items.BLOODSHROOM_STRIPPED_LOG, PackTags.Items.BLOODSHROOM_SLAB);
-        bookcaseTagRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.TABLE_BLOODSHROOM.get().asItem().getDefaultInstance(),
+        bookcaseTagRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.BOOKCASE_BLOODSHROOM.get().asItem().getDefaultInstance(),
                 PackTags.Items.BLOODSHROOM_LOG, PackTags.Items.BLOODSHROOM_STRIPPED_LOG, PackTags.Items.BLOODSHROOM_SLAB);
 
         chairTagRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.DESK_CHAIR_ENDERBARK.get().asItem().getDefaultInstance(),
@@ -1789,7 +1789,7 @@ public class RecipesGen extends RecipeProvider implements IConditionBuilder {
                 PackTags.Items.ENDERBARK_LOG, PackTags.Items.ENDERBARK_SLAB);
         tableTagRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.TABLE_ENDERBARK.get().asItem().getDefaultInstance(),
                 PackTags.Items.ENDERBARK_LOG, PackTags.Items.ENDERBARK_STRIPPED_LOG, PackTags.Items.ENDERBARK_SLAB);
-        bookcaseTagRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.TABLE_ENDERBARK.get().asItem().getDefaultInstance(),
+        bookcaseTagRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.BOOKCASE_ENDERBARK.get().asItem().getDefaultInstance(),
                 PackTags.Items.ENDERBARK_LOG, PackTags.Items.ENDERBARK_STRIPPED_LOG, PackTags.Items.ENDERBARK_SLAB);
 
         chairTagRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.DESK_CHAIR_GREENHEART.get().asItem().getDefaultInstance(),
@@ -1804,7 +1804,7 @@ public class RecipesGen extends RecipeProvider implements IConditionBuilder {
                 PackTags.Items.GREENHEART_LOG, PackTags.Items.GREENHEART_SLAB);
         tableTagRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.TABLE_GREENHEART.get().asItem().getDefaultInstance(),
                 PackTags.Items.GREENHEART_LOG, PackTags.Items.GREENHEART_STRIPPED_LOG, PackTags.Items.GREENHEART_SLAB);
-        bookcaseTagRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.TABLE_GREENHEART.get().asItem().getDefaultInstance(),
+        bookcaseTagRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.BOOKCASE_GREENHEART.get().asItem().getDefaultInstance(),
                 PackTags.Items.GREENHEART_LOG, PackTags.Items.GREENHEART_STRIPPED_LOG, PackTags.Items.GREENHEART_SLAB);
 
         chairTagRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.DESK_CHAIR_TINKER_SKYROOT.get().asItem().getDefaultInstance(),
@@ -1819,7 +1819,7 @@ public class RecipesGen extends RecipeProvider implements IConditionBuilder {
                 PackTags.Items.TINKER_SKYROOT_LOG, PackTags.Items.TINKER_SKYROOT_SLAB);
         tableTagRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.TABLE_TINKER_SKYROOT.get().asItem().getDefaultInstance(),
                 PackTags.Items.TINKER_SKYROOT_LOG, PackTags.Items.TINKER_SKYROOT_STRIPPED_LOG, PackTags.Items.TINKER_SKYROOT_SLAB);
-        bookcaseTagRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.TABLE_TINKER_SKYROOT.get().asItem().getDefaultInstance(),
+        bookcaseTagRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.BOOKCASE_TINKER_SKYROOT.get().asItem().getDefaultInstance(),
                 PackTags.Items.TINKER_SKYROOT_LOG, PackTags.Items.TINKER_SKYROOT_STRIPPED_LOG, PackTags.Items.TINKER_SKYROOT_SLAB);
     }
 
