@@ -114,6 +114,62 @@ public class RecipesGen extends RecipeProvider implements IConditionBuilder {
     }
 
     private void minecraftRecipes(Consumer<FinishedRecipe> consumer) {
+        ShapelessRecipeBuilder.shapeless(Items.LIME_DYE, 2)
+                .requires(Items.YELLOW_DYE)
+                .requires(Items.GREEN_DYE)
+                .unlockedBy("has_dye", has(Tags.Items.DYES))
+                .save(consumer, new ResourceLocation("minecraft",
+                        Items.LIME_DYE + "_from_mixed_dye"));
+        ShapelessRecipeBuilder.shapeless(Items.CYAN_DYE, 2)
+                .requires(Items.BLUE_DYE)
+                .requires(Items.GREEN_DYE)
+                .unlockedBy("has_dye", has(Tags.Items.DYES))
+                .save(consumer, new ResourceLocation("minecraft",
+                        Items.CYAN_DYE + "_from_mixed_dye"));
+        ShapelessRecipeBuilder.shapeless(Items.GREEN_DYE, 2)
+                .requires(Items.BLUE_DYE)
+                .requires(Items.YELLOW_DYE)
+                .unlockedBy("has_dye", has(Tags.Items.DYES))
+                .save(consumer, new ResourceLocation("minecraft",
+                        Items.GREEN_DYE + "_from_mixed_dye"));
+        ShapelessRecipeBuilder.shapeless(Items.PURPLE_DYE, 2)
+                .requires(Items.BLUE_DYE)
+                .requires(Items.RED_DYE)
+                .unlockedBy("has_dye", has(Tags.Items.DYES))
+                .save(consumer, new ResourceLocation("minecraft",
+                        Items.PURPLE_DYE + "_from_mixed_dye"));
+        ShapelessRecipeBuilder.shapeless(Items.BROWN_DYE, 2)
+                .requires(Items.BLUE_DYE)
+                .requires(Items.ORANGE_DYE)
+                .unlockedBy("has_dye", has(Tags.Items.DYES))
+                .save(consumer, new ResourceLocation("minecraft",
+                        Items.BROWN_DYE + "_from_mixed_dye_1"));
+        ShapelessRecipeBuilder.shapeless(Items.BROWN_DYE, 2)
+                .requires(Items.RED_DYE)
+                .requires(Items.GREEN_DYE)
+                .unlockedBy("has_dye", has(Tags.Items.DYES))
+                .save(consumer, new ResourceLocation("minecraft",
+                        Items.BROWN_DYE + "_from_mixed_dye_2"));
+        ShapelessRecipeBuilder.shapeless(Items.BROWN_DYE, 2)
+                .requires(Items.PURPLE_DYE)
+                .requires(Items.YELLOW_DYE)
+                .unlockedBy("has_dye", has(Tags.Items.DYES))
+                .save(consumer, new ResourceLocation("minecraft",
+                        Items.BROWN_DYE + "_from_mixed_dye_3"));
+        ShapelessRecipeBuilder.shapeless(Items.BROWN_DYE, 3)
+                .requires(Items.RED_DYE)
+                .requires(Items.BLUE_DYE)
+                .requires(Items.YELLOW_DYE)
+                .unlockedBy("has_dye", has(Tags.Items.DYES))
+                .save(consumer, new ResourceLocation("minecraft",
+                        Items.BROWN_DYE + "_from_mixed_dye_4"));
+        ShapelessRecipeBuilder.shapeless(Items.BROWN_DYE, 3)
+                .requires(Items.ORANGE_DYE)
+                .requires(Items.GREEN_DYE)
+                .requires(Items.PURPLE_DYE)
+                .unlockedBy("has_dye", has(Tags.Items.DYES))
+                .save(consumer, new ResourceLocation("minecraft",
+                        Items.BROWN_DYE + "_from_mixed_dye_5"));
         SingleItemRecipeBuilder.stonecutting(Ingredient.of(Items.YELLOW_STAINED_GLASS),
                         Items.YELLOW_STAINED_GLASS_PANE, 4)
                 .unlockedBy("has_" + Items.YELLOW_STAINED_GLASS, has(Items.YELLOW_STAINED_GLASS))
