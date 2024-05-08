@@ -6,7 +6,7 @@ import com.aetherteam.aether.data.resources.registries.AetherDimensions;
 import com.aetherteam.aether.item.AetherItems;
 import com.catastrophe573.dimdungeons.DimDungeons;
 import com.github.warrentode.turtleblockacademy.TurtleBlockAcademy;
-import com.github.warrentode.turtleblockacademy.blocks.ModBlocks;
+import com.github.warrentode.turtleblockacademy.blocks.ModBlockRegistry;
 import com.github.warrentode.turtleblockacademy.loot.tables.PackBuiltInLootTables;
 import com.github.warrentode.turtleblockacademy.util.PackTags;
 import com.google.common.collect.ImmutableList;
@@ -147,7 +147,7 @@ public class AcademyAdvancementsGen extends AdvancementProvider {
         @SuppressWarnings("unused")
         @Override
         public void accept(Consumer<Advancement> consumer) {
-            Advancement root = createParentAdvancement(ModBlocks.CERTIFICATE_BLOCK.get(),
+            Advancement root = createParentAdvancement(ModBlockRegistry.CERTIFICATE_BLOCK.get(),
                     "root", new ResourceLocation("minecraft:textures/block/calcite.png"),
                     FrameType.CHALLENGE, false, false, false)
                     .addCriterion("tick", new PlayerTrigger.TriggerInstance(CriteriaTriggers.TICK.getId(),
@@ -309,7 +309,7 @@ public class AcademyAdvancementsGen extends AdvancementProvider {
 
             Advancement completeFoodSafety = Advancement.Builder.advancement()
                     .parent(education_track)
-                    .display(ModBlocks.CERTIFICATE_BLOCK.get(),
+                    .display(ModBlockRegistry.CERTIFICATE_BLOCK.get(),
                             Component.translatable("advancement." + MODID + "." + "complete_food_safety"),
                             Component.translatable("advancement." + MODID + "." + "complete_food_safety.desc"),
                             null, FrameType.TASK, false, false, false)

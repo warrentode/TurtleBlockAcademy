@@ -1,0 +1,7 @@
+{
+  "parent": "turtleblockacademy:block/plate_block",
+  "textures": {
+    "1": "turtleblockacademy:block/plate_pink",
+    "particle": "turtleblockacademy:block/plate_pink"
+  }
+}

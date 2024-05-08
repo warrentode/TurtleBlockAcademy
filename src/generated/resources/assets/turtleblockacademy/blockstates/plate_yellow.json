@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "turtleblockacademy:block/plate_yellow",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "turtleblockacademy:block/plate_yellow"
+    },
+    "facing=south": {
+      "model": "turtleblockacademy:block/plate_yellow",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "turtleblockacademy:block/plate_yellow",
+      "y": 270
+    }
+  }
+}

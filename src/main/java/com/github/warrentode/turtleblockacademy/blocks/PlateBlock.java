@@ -9,6 +9,7 @@ import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.BaseEntityBlock;
@@ -89,12 +90,14 @@ public class PlateBlock extends BaseEntityBlock {
         if (blockEntity instanceof PlateBlockEntity plateBlockEntity) {
             ItemStack existing = plateBlockEntity.getStoredItem(slot);
 
+            if (existing.isEmpty() && !heldStack.isEdible()) {
+                return InteractionResult.FAIL;
+            }
             if (existing.isEmpty() && !heldStack.isEmpty() && heldStack.isEdible()) {
                 if (plateBlockEntity.addFood(player, heldStack)) {
                     return InteractionResult.sidedSuccess(level.isClientSide);
                 }
             }
-
             if (heldStack.isEmpty() && !existing.isEmpty()) {
                 ItemStack stack = plateBlockEntity.removeFood();
                 ItemStack received = new ItemStack(stack.copy().getItem());
@@ -117,30 +120,37 @@ public class PlateBlock extends BaseEntityBlock {
         return food.isEdible();
     }
 
-@SuppressWarnings("deprecation")
-public void onRemove(@NotNull BlockState state, @NotNull Level level, @NotNull BlockPos pos, @NotNull BlockState newState, boolean isMoving) {
-    if (!state.is(newState.getBlock())) {
-        BlockEntity blockentity = level.getBlockEntity(pos);
-        if (blockentity instanceof PlateBlockEntity) {
-            Containers.dropContents(level, pos, ((PlateBlockEntity) blockentity).getItems());
+    @SuppressWarnings("deprecation")
+    public void onRemove(@NotNull BlockState state, @NotNull Level level, @NotNull BlockPos pos, @NotNull BlockState newState, boolean isMoving) {
+        if (!state.is(newState.getBlock())) {
+            BlockEntity blockentity = level.getBlockEntity(pos);
+            if (blockentity instanceof PlateBlockEntity) {
+                Containers.dropContents(level, pos, ((PlateBlockEntity) blockentity).getItems());
+            }
+
+            super.onRemove(state, level, pos, newState, isMoving);
         }
-
-        super.onRemove(state, level, pos, newState, isMoving);
     }
-}
 
-@SuppressWarnings("deprecation")
-@Override
-public @NotNull VoxelShape getShape(@NotNull BlockState state, @NotNull BlockGetter level, @NotNull BlockPos pos, @NotNull CollisionContext context) {
-    return SHAPES.get(state.getValue(FACING));
-}
+    @SuppressWarnings("deprecation")
+    @Override
+    public @NotNull VoxelShape getShape(@NotNull BlockState state, @NotNull BlockGetter level, @NotNull BlockPos pos, @NotNull CollisionContext context) {
+        return SHAPES.get(state.getValue(FACING));
+    }
 
-@SuppressWarnings("deprecation")
-public @NotNull RenderShape getRenderShape(@NotNull BlockState state) {
-    return RenderShape.MODEL;
-}
+    @Nullable
+    @Override
+    public BlockState getStateForPlacement(@NotNull BlockPlaceContext context) {
+        return this.defaultBlockState().setValue(FACING,
+                context.getHorizontalDirection().getOpposite());
+    }
 
-public BlockEntity newBlockEntity(@NotNull BlockPos pos, @NotNull BlockState state) {
-    return new PlateBlockEntity(pos, state);
-}
+    @SuppressWarnings("deprecation")
+    public @NotNull RenderShape getRenderShape(@NotNull BlockState state) {
+        return RenderShape.MODEL;
+    }
+
+    public BlockEntity newBlockEntity(@NotNull BlockPos pos, @NotNull BlockState state) {
+        return new PlateBlockEntity(pos, state);
+    }
 }

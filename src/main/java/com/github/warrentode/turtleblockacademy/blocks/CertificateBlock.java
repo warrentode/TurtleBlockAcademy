@@ -88,7 +88,7 @@ public class CertificateBlock extends Block {
     }
 
     private void dropSelf(ItemStack ignoredStack) {
-        new ItemStack(ModBlocks.CERTIFICATE_BLOCK.get().asItem());
+        new ItemStack(ModBlockRegistry.CERTIFICATE_BLOCK.get().asItem());
     }
 
     public static VoxelShape calculateShapes(Direction to, VoxelShape shape) {

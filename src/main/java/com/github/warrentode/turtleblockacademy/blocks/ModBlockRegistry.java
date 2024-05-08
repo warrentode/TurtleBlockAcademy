@@ -17,7 +17,7 @@ import java.util.function.Supplier;
 
 import static com.github.warrentode.turtleblockacademy.TurtleBlockAcademy.MODID;
 
-public class ModBlocks {
+public class ModBlockRegistry {
     public static final DeferredRegister<Block> BLOCKS =
             DeferredRegister.create(ForgeRegistries.BLOCKS, MODID);
 
@@ -27,7 +27,52 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> PLATE_WHITE = registerBlock("plate_white",
             () -> new PlateBlock(BlockBehaviour.Properties.of(Material.GLASS)
-                    .sound(SoundType.GLASS).instabreak()));
+                    .sound(SoundType.BONE_BLOCK).instabreak()));
+    public static final RegistryObject<Block> PLATE_ORANGE = registerBlock("plate_orange",
+            () -> new PlateBlock(BlockBehaviour.Properties.of(Material.GLASS)
+                    .sound(SoundType.BONE_BLOCK).instabreak()));
+    public static final RegistryObject<Block> PLATE_MAGENTA = registerBlock("plate_magenta",
+            () -> new PlateBlock(BlockBehaviour.Properties.of(Material.GLASS)
+                    .sound(SoundType.BONE_BLOCK).instabreak()));
+    public static final RegistryObject<Block> PLATE_LIGHT_BLUE = registerBlock("plate_light_blue",
+            () -> new PlateBlock(BlockBehaviour.Properties.of(Material.GLASS)
+                    .sound(SoundType.BONE_BLOCK).instabreak()));
+    public static final RegistryObject<Block> PLATE_YELLOW = registerBlock("plate_yellow",
+            () -> new PlateBlock(BlockBehaviour.Properties.of(Material.GLASS)
+                    .sound(SoundType.BONE_BLOCK).instabreak()));
+    public static final RegistryObject<Block> PLATE_LIME = registerBlock("plate_lime",
+            () -> new PlateBlock(BlockBehaviour.Properties.of(Material.GLASS)
+                    .sound(SoundType.BONE_BLOCK).instabreak()));
+    public static final RegistryObject<Block> PLATE_PINK = registerBlock("plate_pink",
+            () -> new PlateBlock(BlockBehaviour.Properties.of(Material.GLASS)
+                    .sound(SoundType.BONE_BLOCK).instabreak()));
+    public static final RegistryObject<Block> PLATE_GRAY = registerBlock("plate_gray",
+            () -> new PlateBlock(BlockBehaviour.Properties.of(Material.GLASS)
+                    .sound(SoundType.BONE_BLOCK).instabreak()));
+    public static final RegistryObject<Block> PLATE_LIGHT_GRAY = registerBlock("plate_light_gray",
+            () -> new PlateBlock(BlockBehaviour.Properties.of(Material.GLASS)
+                    .sound(SoundType.BONE_BLOCK).instabreak()));
+    public static final RegistryObject<Block> PLATE_CYAN = registerBlock("plate_cyan",
+            () -> new PlateBlock(BlockBehaviour.Properties.of(Material.GLASS)
+                    .sound(SoundType.BONE_BLOCK).instabreak()));
+    public static final RegistryObject<Block> PLATE_PURPLE = registerBlock("plate_purple",
+            () -> new PlateBlock(BlockBehaviour.Properties.of(Material.GLASS)
+                    .sound(SoundType.BONE_BLOCK).instabreak()));
+    public static final RegistryObject<Block> PLATE_BLUE = registerBlock("plate_blue",
+            () -> new PlateBlock(BlockBehaviour.Properties.of(Material.GLASS)
+                    .sound(SoundType.BONE_BLOCK).instabreak()));
+    public static final RegistryObject<Block> PLATE_BROWN = registerBlock("plate_brown",
+            () -> new PlateBlock(BlockBehaviour.Properties.of(Material.GLASS)
+                    .sound(SoundType.BONE_BLOCK).instabreak()));
+    public static final RegistryObject<Block> PLATE_GREEN = registerBlock("plate_green",
+            () -> new PlateBlock(BlockBehaviour.Properties.of(Material.GLASS)
+                    .sound(SoundType.BONE_BLOCK).instabreak()));
+    public static final RegistryObject<Block> PLATE_RED = registerBlock("plate_red",
+            () -> new PlateBlock(BlockBehaviour.Properties.of(Material.GLASS)
+                    .sound(SoundType.BONE_BLOCK).instabreak()));
+    public static final RegistryObject<Block> PLATE_BLACK = registerBlock("plate_black",
+            () -> new PlateBlock(BlockBehaviour.Properties.of(Material.GLASS)
+                    .sound(SoundType.BONE_BLOCK).instabreak()));
 
     public static final RegistryObject<Block> SCHOOL_DESK_OAK = registerBlock("school_desk_oak",
             () -> new SchoolDeskBlock(BlockBehaviour.Properties.of(Material.WOOD)

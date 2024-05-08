@@ -4,6 +4,7 @@ import biomesoplenty.api.block.BOPBlocks;
 import com.aetherteam.aether.block.AetherBlocks;
 import com.aetherteam.aether.item.AetherItems;
 import com.catastrophe573.dimdungeons.block.BlockRegistrar;
+import com.github.warrentode.turtleblockacademy.blocks.ModBlockRegistry;
 import com.github.warrentode.turtleblockacademy.datagen.recipes.builder.PatchouliShapelessBookRecipeBuilder;
 import com.github.warrentode.turtleblockacademy.datagen.recipes.recipe.CuttingRecipesGen;
 import com.github.warrentode.turtleblockacademy.datagen.recipes.recipe.LootBagRecipesGen;
@@ -1338,500 +1339,540 @@ public class RecipesGen extends RecipeProvider implements IConditionBuilder {
                 .save(consumer, new ResourceLocation(MODID,
                         ModItems.STUDENT_CARD.get().toString()));
 
-        chairRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.DESK_CHAIR_ACACIA.get().asItem().getDefaultInstance(),
+        plateRecipe(consumer, ModBlockRegistry.PLATE_WHITE.get().asItem().getDefaultInstance(),
+                Items.WHITE_GLAZED_TERRACOTTA);
+        plateRecipe(consumer, ModBlockRegistry.PLATE_ORANGE.get().asItem().getDefaultInstance(),
+                Items.ORANGE_GLAZED_TERRACOTTA);
+        plateRecipe(consumer, ModBlockRegistry.PLATE_MAGENTA.get().asItem().getDefaultInstance(),
+                Items.MAGENTA_GLAZED_TERRACOTTA);
+        plateRecipe(consumer, ModBlockRegistry.PLATE_LIGHT_BLUE.get().asItem().getDefaultInstance(),
+                Items.LIGHT_BLUE_GLAZED_TERRACOTTA);
+        plateRecipe(consumer, ModBlockRegistry.PLATE_YELLOW.get().asItem().getDefaultInstance(),
+                Items.YELLOW_GLAZED_TERRACOTTA);
+        plateRecipe(consumer, ModBlockRegistry.PLATE_LIME.get().asItem().getDefaultInstance(),
+                Items.LIME_GLAZED_TERRACOTTA);
+        plateRecipe(consumer, ModBlockRegistry.PLATE_PINK.get().asItem().getDefaultInstance(),
+                Items.PINK_GLAZED_TERRACOTTA);
+        plateRecipe(consumer, ModBlockRegistry.PLATE_GRAY.get().asItem().getDefaultInstance(),
+                Items.GRAY_GLAZED_TERRACOTTA);
+        plateRecipe(consumer, ModBlockRegistry.PLATE_LIGHT_GRAY.get().asItem().getDefaultInstance(),
+                Items.LIGHT_GRAY_GLAZED_TERRACOTTA);
+        plateRecipe(consumer, ModBlockRegistry.PLATE_CYAN.get().asItem().getDefaultInstance(),
+                Items.CYAN_GLAZED_TERRACOTTA);
+        plateRecipe(consumer, ModBlockRegistry.PLATE_PURPLE.get().asItem().getDefaultInstance(),
+                Items.PURPLE_GLAZED_TERRACOTTA);
+        plateRecipe(consumer, ModBlockRegistry.PLATE_BLUE.get().asItem().getDefaultInstance(),
+                Items.BLUE_GLAZED_TERRACOTTA);
+        plateRecipe(consumer, ModBlockRegistry.PLATE_BROWN.get().asItem().getDefaultInstance(),
+                Items.BROWN_GLAZED_TERRACOTTA);
+        plateRecipe(consumer, ModBlockRegistry.PLATE_GREEN.get().asItem().getDefaultInstance(),
+                Items.GREEN_GLAZED_TERRACOTTA);
+        plateRecipe(consumer, ModBlockRegistry.PLATE_RED.get().asItem().getDefaultInstance(),
+                Items.RED_GLAZED_TERRACOTTA);
+        plateRecipe(consumer, ModBlockRegistry.PLATE_BLACK.get().asItem().getDefaultInstance(),
+                Items.BLACK_GLAZED_TERRACOTTA);
+
+        chairRecipe(consumer, ModBlockRegistry.DESK_CHAIR_ACACIA.get().asItem().getDefaultInstance(),
                 Items.ACACIA_LOG, Items.STRIPPED_ACACIA_LOG, Items.ACACIA_SLAB);
-        benchRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.PARK_BENCH_ACACIA.get().asItem().getDefaultInstance(),
+        benchRecipe(consumer, ModBlockRegistry.PARK_BENCH_ACACIA.get().asItem().getDefaultInstance(),
                 Items.ACACIA_LOG, Items.ACACIA_SLAB);
-        deskRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.SCHOOL_DESK_ACACIA.get().asItem().getDefaultInstance(),
+        deskRecipe(consumer, ModBlockRegistry.SCHOOL_DESK_ACACIA.get().asItem().getDefaultInstance(),
                 Items.ACACIA_PLANKS, Items.ACACIA_SLAB);
-        deskCabinetRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.SCHOOL_DESK_CABINET_ACACIA.get().asItem().getDefaultInstance(),
+        deskCabinetRecipe(consumer, ModBlockRegistry.SCHOOL_DESK_CABINET_ACACIA.get().asItem().getDefaultInstance(),
                 Items.ACACIA_LOG, Items.ACACIA_PLANKS);
-        lockerRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.LOCKER_ACACIA.get().asItem().getDefaultInstance(),
+        lockerRecipe(consumer, ModBlockRegistry.LOCKER_ACACIA.get().asItem().getDefaultInstance(),
                 Items.ACACIA_LOG, Items.ACACIA_SLAB);
-        tableRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.TABLE_ACACIA.get().asItem().getDefaultInstance(),
+        tableRecipe(consumer, ModBlockRegistry.TABLE_ACACIA.get().asItem().getDefaultInstance(),
                 Items.ACACIA_LOG, Items.STRIPPED_ACACIA_LOG, Items.ACACIA_SLAB);
-        bookcaseRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.BOOKCASE_ACACIA.get().asItem().getDefaultInstance(),
+        bookcaseRecipe(consumer, ModBlockRegistry.BOOKCASE_ACACIA.get().asItem().getDefaultInstance(),
                 Items.ACACIA_LOG, Items.STRIPPED_ACACIA_LOG, Items.ACACIA_SLAB);
 
-        chairRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.DESK_CHAIR_BIRCH.get().asItem().getDefaultInstance(),
+        chairRecipe(consumer, ModBlockRegistry.DESK_CHAIR_BIRCH.get().asItem().getDefaultInstance(),
                 Items.BIRCH_LOG, Items.STRIPPED_BIRCH_LOG, Items.BIRCH_SLAB);
-        benchRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.PARK_BENCH_BIRCH.get().asItem().getDefaultInstance(),
+        benchRecipe(consumer, ModBlockRegistry.PARK_BENCH_BIRCH.get().asItem().getDefaultInstance(),
                 Items.BIRCH_LOG, Items.BIRCH_SLAB);
-        deskRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.SCHOOL_DESK_BIRCH.get().asItem().getDefaultInstance(),
+        deskRecipe(consumer, ModBlockRegistry.SCHOOL_DESK_BIRCH.get().asItem().getDefaultInstance(),
                 Items.BIRCH_PLANKS, Items.BIRCH_SLAB);
-        deskCabinetRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.SCHOOL_DESK_CABINET_BIRCH.get().asItem().getDefaultInstance(),
+        deskCabinetRecipe(consumer, ModBlockRegistry.SCHOOL_DESK_CABINET_BIRCH.get().asItem().getDefaultInstance(),
                 Items.BIRCH_LOG, Items.BIRCH_PLANKS);
-        lockerRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.LOCKER_BIRCH.get().asItem().getDefaultInstance(),
+        lockerRecipe(consumer, ModBlockRegistry.LOCKER_BIRCH.get().asItem().getDefaultInstance(),
                 Items.BIRCH_LOG, Items.BIRCH_SLAB);
-        tableRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.TABLE_BIRCH.get().asItem().getDefaultInstance(),
+        tableRecipe(consumer, ModBlockRegistry.TABLE_BIRCH.get().asItem().getDefaultInstance(),
                 Items.BIRCH_LOG, Items.STRIPPED_BIRCH_LOG, Items.BIRCH_SLAB);
-        bookcaseRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.BOOKCASE_BIRCH.get().asItem().getDefaultInstance(),
+        bookcaseRecipe(consumer, ModBlockRegistry.BOOKCASE_BIRCH.get().asItem().getDefaultInstance(),
                 Items.BIRCH_LOG, Items.STRIPPED_BIRCH_LOG, Items.BIRCH_SLAB);
 
-        chairRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.DESK_CHAIR_DARK_OAK.get().asItem().getDefaultInstance(),
+        chairRecipe(consumer, ModBlockRegistry.DESK_CHAIR_DARK_OAK.get().asItem().getDefaultInstance(),
                 Items.DARK_OAK_LOG, Items.STRIPPED_DARK_OAK_LOG, Items.DARK_OAK_SLAB);
-        benchRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.PARK_BENCH_DARK_OAK.get().asItem().getDefaultInstance(),
+        benchRecipe(consumer, ModBlockRegistry.PARK_BENCH_DARK_OAK.get().asItem().getDefaultInstance(),
                 Items.DARK_OAK_LOG, Items.DARK_OAK_SLAB);
-        deskRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.SCHOOL_DESK_DARK_OAK.get().asItem().getDefaultInstance(),
+        deskRecipe(consumer, ModBlockRegistry.SCHOOL_DESK_DARK_OAK.get().asItem().getDefaultInstance(),
                 Items.DARK_OAK_PLANKS, Items.DARK_OAK_SLAB);
-        deskCabinetRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.SCHOOL_DESK_CABINET_DARK_OAK.get().asItem().getDefaultInstance(),
+        deskCabinetRecipe(consumer, ModBlockRegistry.SCHOOL_DESK_CABINET_DARK_OAK.get().asItem().getDefaultInstance(),
                 Items.DARK_OAK_LOG, Items.DARK_OAK_PLANKS);
-        lockerRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.LOCKER_DARK_OAK.get().asItem().getDefaultInstance(),
+        lockerRecipe(consumer, ModBlockRegistry.LOCKER_DARK_OAK.get().asItem().getDefaultInstance(),
                 Items.DARK_OAK_LOG, Items.DARK_OAK_SLAB);
-        tableRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.TABLE_DARK_OAK.get().asItem().getDefaultInstance(),
+        tableRecipe(consumer, ModBlockRegistry.TABLE_DARK_OAK.get().asItem().getDefaultInstance(),
                 Items.DARK_OAK_LOG, Items.STRIPPED_DARK_OAK_LOG, Items.DARK_OAK_SLAB);
-        bookcaseRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.BOOKCASE_DARK_OAK.get().asItem().getDefaultInstance(),
+        bookcaseRecipe(consumer, ModBlockRegistry.BOOKCASE_DARK_OAK.get().asItem().getDefaultInstance(),
                 Items.DARK_OAK_LOG, Items.STRIPPED_DARK_OAK_LOG, Items.DARK_OAK_SLAB);
 
-        chairRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.DESK_CHAIR_JUNGLE.get().asItem().getDefaultInstance(),
+        chairRecipe(consumer, ModBlockRegistry.DESK_CHAIR_JUNGLE.get().asItem().getDefaultInstance(),
                 Items.JUNGLE_LOG, Items.STRIPPED_JUNGLE_LOG, Items.JUNGLE_SLAB);
-        benchRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.PARK_BENCH_JUNGLE.get().asItem().getDefaultInstance(),
+        benchRecipe(consumer, ModBlockRegistry.PARK_BENCH_JUNGLE.get().asItem().getDefaultInstance(),
                 Items.JUNGLE_LOG, Items.JUNGLE_SLAB);
-        deskRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.SCHOOL_DESK_JUNGLE.get().asItem().getDefaultInstance(),
+        deskRecipe(consumer, ModBlockRegistry.SCHOOL_DESK_JUNGLE.get().asItem().getDefaultInstance(),
                 Items.JUNGLE_PLANKS, Items.JUNGLE_SLAB);
-        deskCabinetRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.SCHOOL_DESK_CABINET_JUNGLE.get().asItem().getDefaultInstance(),
+        deskCabinetRecipe(consumer, ModBlockRegistry.SCHOOL_DESK_CABINET_JUNGLE.get().asItem().getDefaultInstance(),
                 Items.JUNGLE_LOG, Items.JUNGLE_PLANKS);
-        lockerRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.LOCKER_JUNGLE.get().asItem().getDefaultInstance(),
+        lockerRecipe(consumer, ModBlockRegistry.LOCKER_JUNGLE.get().asItem().getDefaultInstance(),
                 Items.JUNGLE_LOG, Items.JUNGLE_SLAB);
-        tableRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.TABLE_JUNGLE.get().asItem().getDefaultInstance(),
+        tableRecipe(consumer, ModBlockRegistry.TABLE_JUNGLE.get().asItem().getDefaultInstance(),
                 Items.JUNGLE_LOG, Items.STRIPPED_JUNGLE_LOG, Items.JUNGLE_SLAB);
-        bookcaseRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.BOOKCASE_JUNGLE.get().asItem().getDefaultInstance(),
+        bookcaseRecipe(consumer, ModBlockRegistry.BOOKCASE_JUNGLE.get().asItem().getDefaultInstance(),
                 Items.JUNGLE_LOG, Items.STRIPPED_JUNGLE_LOG, Items.JUNGLE_SLAB);
 
-        chairRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.DESK_CHAIR_MANGROVE.get().asItem().getDefaultInstance(),
+        chairRecipe(consumer, ModBlockRegistry.DESK_CHAIR_MANGROVE.get().asItem().getDefaultInstance(),
                 Items.MANGROVE_LOG, Items.STRIPPED_MANGROVE_LOG, Items.MANGROVE_SLAB);
-        benchRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.PARK_BENCH_MANGROVE.get().asItem().getDefaultInstance(),
+        benchRecipe(consumer, ModBlockRegistry.PARK_BENCH_MANGROVE.get().asItem().getDefaultInstance(),
                 Items.MANGROVE_LOG, Items.MANGROVE_SLAB);
-        deskRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.SCHOOL_DESK_MANGROVE.get().asItem().getDefaultInstance(),
+        deskRecipe(consumer, ModBlockRegistry.SCHOOL_DESK_MANGROVE.get().asItem().getDefaultInstance(),
                 Items.MANGROVE_PLANKS, Items.MANGROVE_SLAB);
-        deskCabinetRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.SCHOOL_DESK_CABINET_MANGROVE.get().asItem().getDefaultInstance(),
+        deskCabinetRecipe(consumer, ModBlockRegistry.SCHOOL_DESK_CABINET_MANGROVE.get().asItem().getDefaultInstance(),
                 Items.MANGROVE_LOG, Items.MANGROVE_PLANKS);
-        lockerRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.LOCKER_MANGROVE.get().asItem().getDefaultInstance(),
+        lockerRecipe(consumer, ModBlockRegistry.LOCKER_MANGROVE.get().asItem().getDefaultInstance(),
                 Items.MANGROVE_LOG, Items.MANGROVE_SLAB);
-        tableRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.TABLE_MANGROVE.get().asItem().getDefaultInstance(),
+        tableRecipe(consumer, ModBlockRegistry.TABLE_MANGROVE.get().asItem().getDefaultInstance(),
                 Items.MANGROVE_LOG, Items.STRIPPED_MANGROVE_LOG, Items.MANGROVE_SLAB);
-        bookcaseRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.BOOKCASE_MANGROVE.get().asItem().getDefaultInstance(),
+        bookcaseRecipe(consumer, ModBlockRegistry.BOOKCASE_MANGROVE.get().asItem().getDefaultInstance(),
                 Items.MANGROVE_LOG, Items.STRIPPED_MANGROVE_LOG, Items.MANGROVE_SLAB);
 
-        chairRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.DESK_CHAIR_OAK.get().asItem().getDefaultInstance(),
+        chairRecipe(consumer, ModBlockRegistry.DESK_CHAIR_OAK.get().asItem().getDefaultInstance(),
                 Items.OAK_LOG, Items.STRIPPED_OAK_LOG, Items.OAK_SLAB);
-        benchRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.PARK_BENCH_OAK.get().asItem().getDefaultInstance(),
+        benchRecipe(consumer, ModBlockRegistry.PARK_BENCH_OAK.get().asItem().getDefaultInstance(),
                 Items.OAK_LOG, Items.OAK_SLAB);
-        deskRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.SCHOOL_DESK_OAK.get().asItem().getDefaultInstance(),
+        deskRecipe(consumer, ModBlockRegistry.SCHOOL_DESK_OAK.get().asItem().getDefaultInstance(),
                 Items.OAK_PLANKS, Items.OAK_SLAB);
-        deskCabinetRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.SCHOOL_DESK_CABINET_OAK.get().asItem().getDefaultInstance(),
+        deskCabinetRecipe(consumer, ModBlockRegistry.SCHOOL_DESK_CABINET_OAK.get().asItem().getDefaultInstance(),
                 Items.OAK_LOG, Items.OAK_PLANKS);
-        lockerRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.LOCKER_OAK.get().asItem().getDefaultInstance(),
+        lockerRecipe(consumer, ModBlockRegistry.LOCKER_OAK.get().asItem().getDefaultInstance(),
                 Items.OAK_LOG, Items.OAK_SLAB);
-        tableRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.TABLE_OAK.get().asItem().getDefaultInstance(),
+        tableRecipe(consumer, ModBlockRegistry.TABLE_OAK.get().asItem().getDefaultInstance(),
                 Items.OAK_LOG, Items.STRIPPED_OAK_LOG, Items.OAK_SLAB);
-        bookcaseRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.BOOKCASE_OAK.get().asItem().getDefaultInstance(),
+        bookcaseRecipe(consumer, ModBlockRegistry.BOOKCASE_OAK.get().asItem().getDefaultInstance(),
                 Items.OAK_LOG, Items.STRIPPED_OAK_LOG, Items.OAK_SLAB);
 
-        chairRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.DESK_CHAIR_SPRUCE.get().asItem().getDefaultInstance(),
+        chairRecipe(consumer, ModBlockRegistry.DESK_CHAIR_SPRUCE.get().asItem().getDefaultInstance(),
                 Items.SPRUCE_LOG, Items.STRIPPED_SPRUCE_LOG, Items.SPRUCE_SLAB);
-        benchRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.PARK_BENCH_SPRUCE.get().asItem().getDefaultInstance(),
+        benchRecipe(consumer, ModBlockRegistry.PARK_BENCH_SPRUCE.get().asItem().getDefaultInstance(),
                 Items.SPRUCE_LOG, Items.SPRUCE_SLAB);
-        deskRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.SCHOOL_DESK_SPRUCE.get().asItem().getDefaultInstance(),
+        deskRecipe(consumer, ModBlockRegistry.SCHOOL_DESK_SPRUCE.get().asItem().getDefaultInstance(),
                 Items.SPRUCE_PLANKS, Items.SPRUCE_SLAB);
-        deskCabinetRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.SCHOOL_DESK_CABINET_SPRUCE.get().asItem().getDefaultInstance(),
+        deskCabinetRecipe(consumer, ModBlockRegistry.SCHOOL_DESK_CABINET_SPRUCE.get().asItem().getDefaultInstance(),
                 Items.SPRUCE_LOG, Items.SPRUCE_PLANKS);
-        lockerRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.LOCKER_SPRUCE.get().asItem().getDefaultInstance(),
+        lockerRecipe(consumer, ModBlockRegistry.LOCKER_SPRUCE.get().asItem().getDefaultInstance(),
                 Items.SPRUCE_LOG, Items.SPRUCE_SLAB);
-        tableRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.TABLE_SPRUCE.get().asItem().getDefaultInstance(),
+        tableRecipe(consumer, ModBlockRegistry.TABLE_SPRUCE.get().asItem().getDefaultInstance(),
                 Items.SPRUCE_LOG, Items.STRIPPED_SPRUCE_LOG, Items.SPRUCE_SLAB);
-        bookcaseRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.BOOKCASE_SPRUCE.get().asItem().getDefaultInstance(),
+        bookcaseRecipe(consumer, ModBlockRegistry.BOOKCASE_SPRUCE.get().asItem().getDefaultInstance(),
                 Items.SPRUCE_LOG, Items.STRIPPED_SPRUCE_LOG, Items.SPRUCE_SLAB);
 
-        chairRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.DESK_CHAIR_CRIMSON.get().asItem().getDefaultInstance(),
+        chairRecipe(consumer, ModBlockRegistry.DESK_CHAIR_CRIMSON.get().asItem().getDefaultInstance(),
                 Items.CRIMSON_STEM, Items.STRIPPED_CRIMSON_STEM, Items.CRIMSON_SLAB);
-        benchRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.PARK_BENCH_CRIMSON.get().asItem().getDefaultInstance(),
+        benchRecipe(consumer, ModBlockRegistry.PARK_BENCH_CRIMSON.get().asItem().getDefaultInstance(),
                 Items.CRIMSON_STEM, Items.CRIMSON_SLAB);
-        deskRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.SCHOOL_DESK_CRIMSON.get().asItem().getDefaultInstance(),
+        deskRecipe(consumer, ModBlockRegistry.SCHOOL_DESK_CRIMSON.get().asItem().getDefaultInstance(),
                 Items.CRIMSON_PLANKS, Items.CRIMSON_SLAB);
-        deskCabinetRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.SCHOOL_DESK_CABINET_CRIMSON.get().asItem().getDefaultInstance(),
+        deskCabinetRecipe(consumer, ModBlockRegistry.SCHOOL_DESK_CABINET_CRIMSON.get().asItem().getDefaultInstance(),
                 Items.CRIMSON_STEM, Items.CRIMSON_PLANKS);
-        lockerRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.LOCKER_CRIMSON.get().asItem().getDefaultInstance(),
+        lockerRecipe(consumer, ModBlockRegistry.LOCKER_CRIMSON.get().asItem().getDefaultInstance(),
                 Items.CRIMSON_STEM, Items.CRIMSON_SLAB);
-        tableRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.TABLE_CRIMSON.get().asItem().getDefaultInstance(),
+        tableRecipe(consumer, ModBlockRegistry.TABLE_CRIMSON.get().asItem().getDefaultInstance(),
                 Items.CRIMSON_STEM, Items.STRIPPED_CRIMSON_STEM, Items.CRIMSON_SLAB);
-        bookcaseRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.BOOKCASE_CRIMSON.get().asItem().getDefaultInstance(),
+        bookcaseRecipe(consumer, ModBlockRegistry.BOOKCASE_CRIMSON.get().asItem().getDefaultInstance(),
                 Items.CRIMSON_STEM, Items.STRIPPED_CRIMSON_STEM, Items.CRIMSON_SLAB);
 
-        chairRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.DESK_CHAIR_WARPED.get().asItem().getDefaultInstance(),
+        chairRecipe(consumer, ModBlockRegistry.DESK_CHAIR_WARPED.get().asItem().getDefaultInstance(),
                 Items.WARPED_STEM, Items.STRIPPED_WARPED_STEM, Items.WARPED_SLAB);
-        benchRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.PARK_BENCH_WARPED.get().asItem().getDefaultInstance(),
+        benchRecipe(consumer, ModBlockRegistry.PARK_BENCH_WARPED.get().asItem().getDefaultInstance(),
                 Items.WARPED_STEM, Items.WARPED_SLAB);
-        deskRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.SCHOOL_DESK_WARPED.get().asItem().getDefaultInstance(),
+        deskRecipe(consumer, ModBlockRegistry.SCHOOL_DESK_WARPED.get().asItem().getDefaultInstance(),
                 Items.WARPED_PLANKS, Items.WARPED_SLAB);
-        deskCabinetRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.SCHOOL_DESK_CABINET_WARPED.get().asItem().getDefaultInstance(),
+        deskCabinetRecipe(consumer, ModBlockRegistry.SCHOOL_DESK_CABINET_WARPED.get().asItem().getDefaultInstance(),
                 Items.WARPED_STEM, Items.WARPED_PLANKS);
-        lockerRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.LOCKER_WARPED.get().asItem().getDefaultInstance(),
+        lockerRecipe(consumer, ModBlockRegistry.LOCKER_WARPED.get().asItem().getDefaultInstance(),
                 Items.WARPED_STEM, Items.WARPED_SLAB);
-        tableRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.TABLE_WARPED.get().asItem().getDefaultInstance(),
+        tableRecipe(consumer, ModBlockRegistry.TABLE_WARPED.get().asItem().getDefaultInstance(),
                 Items.WARPED_STEM, Items.STRIPPED_WARPED_STEM, Items.WARPED_SLAB);
-        bookcaseRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.BOOKCASE_WARPED.get().asItem().getDefaultInstance(),
+        bookcaseRecipe(consumer, ModBlockRegistry.BOOKCASE_WARPED.get().asItem().getDefaultInstance(),
                 Items.WARPED_STEM, Items.STRIPPED_WARPED_STEM, Items.WARPED_SLAB);
 
-        chairRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.DESK_CHAIR_FIR.get().asItem().getDefaultInstance(),
+        chairRecipe(consumer, ModBlockRegistry.DESK_CHAIR_FIR.get().asItem().getDefaultInstance(),
                 BOPBlocks.FIR_LOG.get(), BOPBlocks.STRIPPED_FIR_LOG.get(), BOPBlocks.FIR_SLAB.get());
-        benchRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.PARK_BENCH_FIR.get().asItem().getDefaultInstance(),
+        benchRecipe(consumer, ModBlockRegistry.PARK_BENCH_FIR.get().asItem().getDefaultInstance(),
                 BOPBlocks.FIR_LOG.get(), BOPBlocks.FIR_SLAB.get());
-        deskRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.SCHOOL_DESK_FIR.get().asItem().getDefaultInstance(),
+        deskRecipe(consumer, ModBlockRegistry.SCHOOL_DESK_FIR.get().asItem().getDefaultInstance(),
                 BOPBlocks.FIR_PLANKS.get(), BOPBlocks.FIR_SLAB.get());
-        deskCabinetRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.SCHOOL_DESK_CABINET_FIR.get().asItem().getDefaultInstance(),
+        deskCabinetRecipe(consumer, ModBlockRegistry.SCHOOL_DESK_CABINET_FIR.get().asItem().getDefaultInstance(),
                 BOPBlocks.FIR_LOG.get(), BOPBlocks.FIR_PLANKS.get());
-        lockerRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.LOCKER_FIR.get().asItem().getDefaultInstance(),
+        lockerRecipe(consumer, ModBlockRegistry.LOCKER_FIR.get().asItem().getDefaultInstance(),
                 BOPBlocks.FIR_LOG.get(), BOPBlocks.FIR_SLAB.get());
-        tableRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.TABLE_FIR.get().asItem().getDefaultInstance(),
+        tableRecipe(consumer, ModBlockRegistry.TABLE_FIR.get().asItem().getDefaultInstance(),
                 BOPBlocks.FIR_LOG.get(), BOPBlocks.STRIPPED_FIR_LOG.get(), BOPBlocks.FIR_SLAB.get());
-        bookcaseRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.BOOKCASE_FIR.get().asItem().getDefaultInstance(),
+        bookcaseRecipe(consumer, ModBlockRegistry.BOOKCASE_FIR.get().asItem().getDefaultInstance(),
                 BOPBlocks.FIR_LOG.get(), BOPBlocks.STRIPPED_FIR_LOG.get(), BOPBlocks.FIR_SLAB.get());
 
-        chairRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.DESK_CHAIR_REDWOOD.get().asItem().getDefaultInstance(),
+        chairRecipe(consumer, ModBlockRegistry.DESK_CHAIR_REDWOOD.get().asItem().getDefaultInstance(),
                 BOPBlocks.REDWOOD_LOG.get(), BOPBlocks.STRIPPED_REDWOOD_LOG.get(), BOPBlocks.REDWOOD_SLAB.get());
-        benchRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.PARK_BENCH_REDWOOD.get().asItem().getDefaultInstance(),
+        benchRecipe(consumer, ModBlockRegistry.PARK_BENCH_REDWOOD.get().asItem().getDefaultInstance(),
                 BOPBlocks.REDWOOD_LOG.get(), BOPBlocks.REDWOOD_SLAB.get());
-        deskRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.SCHOOL_DESK_REDWOOD.get().asItem().getDefaultInstance(),
+        deskRecipe(consumer, ModBlockRegistry.SCHOOL_DESK_REDWOOD.get().asItem().getDefaultInstance(),
                 BOPBlocks.REDWOOD_PLANKS.get(), BOPBlocks.REDWOOD_SLAB.get());
-        deskCabinetRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.SCHOOL_DESK_CABINET_REDWOOD.get().asItem().getDefaultInstance(),
+        deskCabinetRecipe(consumer, ModBlockRegistry.SCHOOL_DESK_CABINET_REDWOOD.get().asItem().getDefaultInstance(),
                 BOPBlocks.REDWOOD_LOG.get(), BOPBlocks.REDWOOD_PLANKS.get());
-        lockerRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.LOCKER_REDWOOD.get().asItem().getDefaultInstance(),
+        lockerRecipe(consumer, ModBlockRegistry.LOCKER_REDWOOD.get().asItem().getDefaultInstance(),
                 BOPBlocks.REDWOOD_LOG.get(), BOPBlocks.REDWOOD_SLAB.get());
-        tableRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.TABLE_REDWOOD.get().asItem().getDefaultInstance(),
+        tableRecipe(consumer, ModBlockRegistry.TABLE_REDWOOD.get().asItem().getDefaultInstance(),
                 BOPBlocks.REDWOOD_LOG.get(), BOPBlocks.STRIPPED_REDWOOD_LOG.get(), BOPBlocks.REDWOOD_SLAB.get());
-        bookcaseRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.BOOKCASE_REDWOOD.get().asItem().getDefaultInstance(),
+        bookcaseRecipe(consumer, ModBlockRegistry.BOOKCASE_REDWOOD.get().asItem().getDefaultInstance(),
                 BOPBlocks.REDWOOD_LOG.get(), BOPBlocks.STRIPPED_REDWOOD_LOG.get(), BOPBlocks.REDWOOD_SLAB.get());
 
-        chairRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.DESK_CHAIR_CHERRY.get().asItem().getDefaultInstance(),
+        chairRecipe(consumer, ModBlockRegistry.DESK_CHAIR_CHERRY.get().asItem().getDefaultInstance(),
                 BOPBlocks.CHERRY_LOG.get(), BOPBlocks.STRIPPED_CHERRY_LOG.get(), BOPBlocks.CHERRY_SLAB.get());
-        benchRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.PARK_BENCH_CHERRY.get().asItem().getDefaultInstance(),
+        benchRecipe(consumer, ModBlockRegistry.PARK_BENCH_CHERRY.get().asItem().getDefaultInstance(),
                 BOPBlocks.CHERRY_LOG.get(), BOPBlocks.CHERRY_SLAB.get());
-        deskRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.SCHOOL_DESK_CHERRY.get().asItem().getDefaultInstance(),
+        deskRecipe(consumer, ModBlockRegistry.SCHOOL_DESK_CHERRY.get().asItem().getDefaultInstance(),
                 BOPBlocks.CHERRY_PLANKS.get(), BOPBlocks.CHERRY_SLAB.get());
-        deskCabinetRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.SCHOOL_DESK_CABINET_CHERRY.get().asItem().getDefaultInstance(),
+        deskCabinetRecipe(consumer, ModBlockRegistry.SCHOOL_DESK_CABINET_CHERRY.get().asItem().getDefaultInstance(),
                 BOPBlocks.CHERRY_LOG.get(), BOPBlocks.CHERRY_PLANKS.get());
-        lockerRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.LOCKER_CHERRY.get().asItem().getDefaultInstance(),
+        lockerRecipe(consumer, ModBlockRegistry.LOCKER_CHERRY.get().asItem().getDefaultInstance(),
                 BOPBlocks.CHERRY_LOG.get(), BOPBlocks.CHERRY_SLAB.get());
-        tableRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.TABLE_CHERRY.get().asItem().getDefaultInstance(),
+        tableRecipe(consumer, ModBlockRegistry.TABLE_CHERRY.get().asItem().getDefaultInstance(),
                 BOPBlocks.CHERRY_LOG.get(), BOPBlocks.STRIPPED_CHERRY_LOG.get(), BOPBlocks.CHERRY_SLAB.get());
-        bookcaseRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.BOOKCASE_CHERRY.get().asItem().getDefaultInstance(),
+        bookcaseRecipe(consumer, ModBlockRegistry.BOOKCASE_CHERRY.get().asItem().getDefaultInstance(),
                 BOPBlocks.CHERRY_LOG.get(), BOPBlocks.STRIPPED_CHERRY_LOG.get(), BOPBlocks.CHERRY_SLAB.get());
 
-        chairRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.DESK_CHAIR_MAHOGANY.get().asItem().getDefaultInstance(),
+        chairRecipe(consumer, ModBlockRegistry.DESK_CHAIR_MAHOGANY.get().asItem().getDefaultInstance(),
                 BOPBlocks.MAHOGANY_LOG.get(), BOPBlocks.STRIPPED_MAHOGANY_LOG.get(), BOPBlocks.MAHOGANY_SLAB.get());
-        benchRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.PARK_BENCH_MAHOGANY.get().asItem().getDefaultInstance(),
+        benchRecipe(consumer, ModBlockRegistry.PARK_BENCH_MAHOGANY.get().asItem().getDefaultInstance(),
                 BOPBlocks.MAHOGANY_LOG.get(), BOPBlocks.MAHOGANY_SLAB.get());
-        deskRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.SCHOOL_DESK_MAHOGANY.get().asItem().getDefaultInstance(),
+        deskRecipe(consumer, ModBlockRegistry.SCHOOL_DESK_MAHOGANY.get().asItem().getDefaultInstance(),
                 BOPBlocks.MAHOGANY_PLANKS.get(), BOPBlocks.MAHOGANY_SLAB.get());
-        deskCabinetRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.SCHOOL_DESK_CABINET_MAHOGANY.get().asItem().getDefaultInstance(),
+        deskCabinetRecipe(consumer, ModBlockRegistry.SCHOOL_DESK_CABINET_MAHOGANY.get().asItem().getDefaultInstance(),
                 BOPBlocks.MAHOGANY_LOG.get(), BOPBlocks.MAHOGANY_PLANKS.get());
-        lockerRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.LOCKER_MAHOGANY.get().asItem().getDefaultInstance(),
+        lockerRecipe(consumer, ModBlockRegistry.LOCKER_MAHOGANY.get().asItem().getDefaultInstance(),
                 BOPBlocks.MAHOGANY_LOG.get(), BOPBlocks.MAHOGANY_SLAB.get());
-        tableRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.TABLE_MAHOGANY.get().asItem().getDefaultInstance(),
+        tableRecipe(consumer, ModBlockRegistry.TABLE_MAHOGANY.get().asItem().getDefaultInstance(),
                 BOPBlocks.MAHOGANY_LOG.get(), BOPBlocks.STRIPPED_MAHOGANY_LOG.get(), BOPBlocks.MAHOGANY_SLAB.get());
-        bookcaseRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.BOOKCASE_MAHOGANY.get().asItem().getDefaultInstance(),
+        bookcaseRecipe(consumer, ModBlockRegistry.BOOKCASE_MAHOGANY.get().asItem().getDefaultInstance(),
                 BOPBlocks.MAHOGANY_LOG.get(), BOPBlocks.STRIPPED_MAHOGANY_LOG.get(), BOPBlocks.MAHOGANY_SLAB.get());
 
-        chairRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.DESK_CHAIR_JACARANDA.get().asItem().getDefaultInstance(),
+        chairRecipe(consumer, ModBlockRegistry.DESK_CHAIR_JACARANDA.get().asItem().getDefaultInstance(),
                 BOPBlocks.JACARANDA_LOG.get(), BOPBlocks.STRIPPED_JACARANDA_LOG.get(), BOPBlocks.JACARANDA_SLAB.get());
-        benchRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.PARK_BENCH_JACARANDA.get().asItem().getDefaultInstance(),
+        benchRecipe(consumer, ModBlockRegistry.PARK_BENCH_JACARANDA.get().asItem().getDefaultInstance(),
                 BOPBlocks.JACARANDA_LOG.get(), BOPBlocks.JACARANDA_SLAB.get());
-        deskRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.SCHOOL_DESK_JACARANDA.get().asItem().getDefaultInstance(),
+        deskRecipe(consumer, ModBlockRegistry.SCHOOL_DESK_JACARANDA.get().asItem().getDefaultInstance(),
                 BOPBlocks.JACARANDA_PLANKS.get(), BOPBlocks.JACARANDA_SLAB.get());
-        deskCabinetRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.SCHOOL_DESK_CABINET_JACARANDA.get().asItem().getDefaultInstance(),
+        deskCabinetRecipe(consumer, ModBlockRegistry.SCHOOL_DESK_CABINET_JACARANDA.get().asItem().getDefaultInstance(),
                 BOPBlocks.JACARANDA_LOG.get(), BOPBlocks.JACARANDA_PLANKS.get());
-        lockerRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.LOCKER_JACARANDA.get().asItem().getDefaultInstance(),
+        lockerRecipe(consumer, ModBlockRegistry.LOCKER_JACARANDA.get().asItem().getDefaultInstance(),
                 BOPBlocks.JACARANDA_LOG.get(), BOPBlocks.JACARANDA_SLAB.get());
-        tableRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.TABLE_JACARANDA.get().asItem().getDefaultInstance(),
+        tableRecipe(consumer, ModBlockRegistry.TABLE_JACARANDA.get().asItem().getDefaultInstance(),
                 BOPBlocks.JACARANDA_LOG.get(), BOPBlocks.STRIPPED_JACARANDA_LOG.get(), BOPBlocks.JACARANDA_SLAB.get());
-        bookcaseRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.BOOKCASE_JACARANDA.get().asItem().getDefaultInstance(),
+        bookcaseRecipe(consumer, ModBlockRegistry.BOOKCASE_JACARANDA.get().asItem().getDefaultInstance(),
                 BOPBlocks.JACARANDA_LOG.get(), BOPBlocks.STRIPPED_JACARANDA_LOG.get(), BOPBlocks.JACARANDA_SLAB.get());
 
-        chairRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.DESK_CHAIR_PALM.get().asItem().getDefaultInstance(),
+        chairRecipe(consumer, ModBlockRegistry.DESK_CHAIR_PALM.get().asItem().getDefaultInstance(),
                 BOPBlocks.PALM_LOG.get(), BOPBlocks.STRIPPED_PALM_LOG.get(), BOPBlocks.PALM_SLAB.get());
-        benchRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.PARK_BENCH_PALM.get().asItem().getDefaultInstance(),
+        benchRecipe(consumer, ModBlockRegistry.PARK_BENCH_PALM.get().asItem().getDefaultInstance(),
                 BOPBlocks.PALM_LOG.get(), BOPBlocks.PALM_SLAB.get());
-        deskRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.SCHOOL_DESK_PALM.get().asItem().getDefaultInstance(),
+        deskRecipe(consumer, ModBlockRegistry.SCHOOL_DESK_PALM.get().asItem().getDefaultInstance(),
                 BOPBlocks.PALM_PLANKS.get(), BOPBlocks.PALM_SLAB.get());
-        deskCabinetRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.SCHOOL_DESK_CABINET_PALM.get().asItem().getDefaultInstance(),
+        deskCabinetRecipe(consumer, ModBlockRegistry.SCHOOL_DESK_CABINET_PALM.get().asItem().getDefaultInstance(),
                 BOPBlocks.PALM_LOG.get(), BOPBlocks.PALM_PLANKS.get());
-        lockerRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.LOCKER_PALM.get().asItem().getDefaultInstance(),
+        lockerRecipe(consumer, ModBlockRegistry.LOCKER_PALM.get().asItem().getDefaultInstance(),
                 BOPBlocks.PALM_LOG.get(), BOPBlocks.PALM_SLAB.get());
-        tableRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.TABLE_PALM.get().asItem().getDefaultInstance(),
+        tableRecipe(consumer, ModBlockRegistry.TABLE_PALM.get().asItem().getDefaultInstance(),
                 BOPBlocks.PALM_LOG.get(), BOPBlocks.STRIPPED_PALM_LOG.get(), BOPBlocks.PALM_SLAB.get());
-        bookcaseRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.BOOKCASE_PALM.get().asItem().getDefaultInstance(),
+        bookcaseRecipe(consumer, ModBlockRegistry.BOOKCASE_PALM.get().asItem().getDefaultInstance(),
                 BOPBlocks.PALM_LOG.get(), BOPBlocks.STRIPPED_PALM_LOG.get(), BOPBlocks.PALM_SLAB.get());
 
-        chairRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.DESK_CHAIR_WILLOW.get().asItem().getDefaultInstance(),
+        chairRecipe(consumer, ModBlockRegistry.DESK_CHAIR_WILLOW.get().asItem().getDefaultInstance(),
                 BOPBlocks.WILLOW_LOG.get(), BOPBlocks.STRIPPED_WILLOW_LOG.get(), BOPBlocks.WILLOW_SLAB.get());
-        benchRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.PARK_BENCH_WILLOW.get().asItem().getDefaultInstance(),
+        benchRecipe(consumer, ModBlockRegistry.PARK_BENCH_WILLOW.get().asItem().getDefaultInstance(),
                 BOPBlocks.WILLOW_LOG.get(), BOPBlocks.WILLOW_SLAB.get());
-        deskRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.SCHOOL_DESK_WILLOW.get().asItem().getDefaultInstance(),
+        deskRecipe(consumer, ModBlockRegistry.SCHOOL_DESK_WILLOW.get().asItem().getDefaultInstance(),
                 BOPBlocks.WILLOW_PLANKS.get(), BOPBlocks.WILLOW_SLAB.get());
-        deskCabinetRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.SCHOOL_DESK_CABINET_WILLOW.get().asItem().getDefaultInstance(),
+        deskCabinetRecipe(consumer, ModBlockRegistry.SCHOOL_DESK_CABINET_WILLOW.get().asItem().getDefaultInstance(),
                 BOPBlocks.WILLOW_LOG.get(), BOPBlocks.WILLOW_PLANKS.get());
-        lockerRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.LOCKER_WILLOW.get().asItem().getDefaultInstance(),
+        lockerRecipe(consumer, ModBlockRegistry.LOCKER_WILLOW.get().asItem().getDefaultInstance(),
                 BOPBlocks.WILLOW_LOG.get(), BOPBlocks.WILLOW_SLAB.get());
-        tableRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.TABLE_WILLOW.get().asItem().getDefaultInstance(),
+        tableRecipe(consumer, ModBlockRegistry.TABLE_WILLOW.get().asItem().getDefaultInstance(),
                 BOPBlocks.WILLOW_LOG.get(), BOPBlocks.STRIPPED_WILLOW_LOG.get(), BOPBlocks.WILLOW_SLAB.get());
-        bookcaseRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.BOOKCASE_WILLOW.get().asItem().getDefaultInstance(),
+        bookcaseRecipe(consumer, ModBlockRegistry.BOOKCASE_WILLOW.get().asItem().getDefaultInstance(),
                 BOPBlocks.WILLOW_LOG.get(), BOPBlocks.STRIPPED_WILLOW_LOG.get(), BOPBlocks.WILLOW_SLAB.get());
 
-        chairRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.DESK_CHAIR_DEAD.get().asItem().getDefaultInstance(),
+        chairRecipe(consumer, ModBlockRegistry.DESK_CHAIR_DEAD.get().asItem().getDefaultInstance(),
                 BOPBlocks.DEAD_LOG.get(), BOPBlocks.STRIPPED_DEAD_LOG.get(), BOPBlocks.DEAD_SLAB.get());
-        benchRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.PARK_BENCH_DEAD.get().asItem().getDefaultInstance(),
+        benchRecipe(consumer, ModBlockRegistry.PARK_BENCH_DEAD.get().asItem().getDefaultInstance(),
                 BOPBlocks.DEAD_LOG.get(), BOPBlocks.DEAD_SLAB.get());
-        deskRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.SCHOOL_DESK_DEAD.get().asItem().getDefaultInstance(),
+        deskRecipe(consumer, ModBlockRegistry.SCHOOL_DESK_DEAD.get().asItem().getDefaultInstance(),
                 BOPBlocks.DEAD_PLANKS.get(), BOPBlocks.DEAD_SLAB.get());
-        deskCabinetRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.SCHOOL_DESK_CABINET_DEAD.get().asItem().getDefaultInstance(),
+        deskCabinetRecipe(consumer, ModBlockRegistry.SCHOOL_DESK_CABINET_DEAD.get().asItem().getDefaultInstance(),
                 BOPBlocks.DEAD_LOG.get(), BOPBlocks.DEAD_PLANKS.get());
-        lockerRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.LOCKER_DEAD.get().asItem().getDefaultInstance(),
+        lockerRecipe(consumer, ModBlockRegistry.LOCKER_DEAD.get().asItem().getDefaultInstance(),
                 BOPBlocks.DEAD_LOG.get(), BOPBlocks.DEAD_SLAB.get());
-        tableRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.TABLE_DEAD.get().asItem().getDefaultInstance(),
+        tableRecipe(consumer, ModBlockRegistry.TABLE_DEAD.get().asItem().getDefaultInstance(),
                 BOPBlocks.DEAD_LOG.get(), BOPBlocks.STRIPPED_DEAD_LOG.get(), BOPBlocks.DEAD_SLAB.get());
-        bookcaseRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.BOOKCASE_DEAD.get().asItem().getDefaultInstance(),
+        bookcaseRecipe(consumer, ModBlockRegistry.BOOKCASE_DEAD.get().asItem().getDefaultInstance(),
                 BOPBlocks.DEAD_LOG.get(), BOPBlocks.STRIPPED_DEAD_LOG.get(), BOPBlocks.DEAD_SLAB.get());
 
-        chairRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.DESK_CHAIR_MAGIC.get().asItem().getDefaultInstance(),
+        chairRecipe(consumer, ModBlockRegistry.DESK_CHAIR_MAGIC.get().asItem().getDefaultInstance(),
                 BOPBlocks.MAGIC_LOG.get(), BOPBlocks.STRIPPED_MAGIC_LOG.get(), BOPBlocks.MAGIC_SLAB.get());
-        benchRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.PARK_BENCH_MAGIC.get().asItem().getDefaultInstance(),
+        benchRecipe(consumer, ModBlockRegistry.PARK_BENCH_MAGIC.get().asItem().getDefaultInstance(),
                 BOPBlocks.MAGIC_LOG.get(), BOPBlocks.MAGIC_SLAB.get());
-        deskRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.SCHOOL_DESK_MAGIC.get().asItem().getDefaultInstance(),
+        deskRecipe(consumer, ModBlockRegistry.SCHOOL_DESK_MAGIC.get().asItem().getDefaultInstance(),
                 BOPBlocks.MAGIC_PLANKS.get(), BOPBlocks.MAGIC_SLAB.get());
-        deskCabinetRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.SCHOOL_DESK_CABINET_MAGIC.get().asItem().getDefaultInstance(),
+        deskCabinetRecipe(consumer, ModBlockRegistry.SCHOOL_DESK_CABINET_MAGIC.get().asItem().getDefaultInstance(),
                 BOPBlocks.MAGIC_LOG.get(), BOPBlocks.MAGIC_PLANKS.get());
-        lockerRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.LOCKER_MAGIC.get().asItem().getDefaultInstance(),
+        lockerRecipe(consumer, ModBlockRegistry.LOCKER_MAGIC.get().asItem().getDefaultInstance(),
                 BOPBlocks.MAGIC_LOG.get(), BOPBlocks.MAGIC_SLAB.get());
-        tableRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.TABLE_MAGIC.get().asItem().getDefaultInstance(),
+        tableRecipe(consumer, ModBlockRegistry.TABLE_MAGIC.get().asItem().getDefaultInstance(),
                 BOPBlocks.MAGIC_LOG.get(), BOPBlocks.STRIPPED_MAGIC_LOG.get(), BOPBlocks.MAGIC_SLAB.get());
-        bookcaseRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.BOOKCASE_MAGIC.get().asItem().getDefaultInstance(),
+        bookcaseRecipe(consumer, ModBlockRegistry.BOOKCASE_MAGIC.get().asItem().getDefaultInstance(),
                 BOPBlocks.MAGIC_LOG.get(), BOPBlocks.STRIPPED_MAGIC_LOG.get(), BOPBlocks.MAGIC_SLAB.get());
 
-        chairRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.DESK_CHAIR_UMBRAN.get().asItem().getDefaultInstance(),
+        chairRecipe(consumer, ModBlockRegistry.DESK_CHAIR_UMBRAN.get().asItem().getDefaultInstance(),
                 BOPBlocks.UMBRAN_LOG.get(), BOPBlocks.STRIPPED_UMBRAN_LOG.get(), BOPBlocks.UMBRAN_SLAB.get());
-        benchRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.PARK_BENCH_UMBRAN.get().asItem().getDefaultInstance(),
+        benchRecipe(consumer, ModBlockRegistry.PARK_BENCH_UMBRAN.get().asItem().getDefaultInstance(),
                 BOPBlocks.UMBRAN_LOG.get(), BOPBlocks.UMBRAN_SLAB.get());
-        deskRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.SCHOOL_DESK_UMBRAN.get().asItem().getDefaultInstance(),
+        deskRecipe(consumer, ModBlockRegistry.SCHOOL_DESK_UMBRAN.get().asItem().getDefaultInstance(),
                 BOPBlocks.UMBRAN_PLANKS.get(), BOPBlocks.UMBRAN_SLAB.get());
-        deskCabinetRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.SCHOOL_DESK_CABINET_UMBRAN.get().asItem().getDefaultInstance(),
+        deskCabinetRecipe(consumer, ModBlockRegistry.SCHOOL_DESK_CABINET_UMBRAN.get().asItem().getDefaultInstance(),
                 BOPBlocks.UMBRAN_LOG.get(), BOPBlocks.UMBRAN_PLANKS.get());
-        lockerRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.LOCKER_UMBRAN.get().asItem().getDefaultInstance(),
+        lockerRecipe(consumer, ModBlockRegistry.LOCKER_UMBRAN.get().asItem().getDefaultInstance(),
                 BOPBlocks.UMBRAN_LOG.get(), BOPBlocks.UMBRAN_SLAB.get());
-        tableRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.TABLE_UMBRAN.get().asItem().getDefaultInstance(),
+        tableRecipe(consumer, ModBlockRegistry.TABLE_UMBRAN.get().asItem().getDefaultInstance(),
                 BOPBlocks.UMBRAN_LOG.get(), BOPBlocks.STRIPPED_UMBRAN_LOG.get(), BOPBlocks.UMBRAN_SLAB.get());
-        bookcaseRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.BOOKCASE_UMBRAN.get().asItem().getDefaultInstance(),
+        bookcaseRecipe(consumer, ModBlockRegistry.BOOKCASE_UMBRAN.get().asItem().getDefaultInstance(),
                 BOPBlocks.UMBRAN_LOG.get(), BOPBlocks.STRIPPED_UMBRAN_LOG.get(), BOPBlocks.UMBRAN_SLAB.get());
 
-        chairRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.DESK_CHAIR_HELLBARK.get().asItem().getDefaultInstance(),
+        chairRecipe(consumer, ModBlockRegistry.DESK_CHAIR_HELLBARK.get().asItem().getDefaultInstance(),
                 BOPBlocks.HELLBARK_LOG.get(), BOPBlocks.STRIPPED_HELLBARK_LOG.get(), BOPBlocks.HELLBARK_SLAB.get());
-        benchRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.PARK_BENCH_HELLBARK.get().asItem().getDefaultInstance(),
+        benchRecipe(consumer, ModBlockRegistry.PARK_BENCH_HELLBARK.get().asItem().getDefaultInstance(),
                 BOPBlocks.HELLBARK_LOG.get(), BOPBlocks.HELLBARK_SLAB.get());
-        deskRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.SCHOOL_DESK_HELLBARK.get().asItem().getDefaultInstance(),
+        deskRecipe(consumer, ModBlockRegistry.SCHOOL_DESK_HELLBARK.get().asItem().getDefaultInstance(),
                 BOPBlocks.HELLBARK_PLANKS.get(), BOPBlocks.HELLBARK_SLAB.get());
-        deskCabinetRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.SCHOOL_DESK_CABINET_HELLBARK.get().asItem().getDefaultInstance(),
+        deskCabinetRecipe(consumer, ModBlockRegistry.SCHOOL_DESK_CABINET_HELLBARK.get().asItem().getDefaultInstance(),
                 BOPBlocks.HELLBARK_LOG.get(), BOPBlocks.HELLBARK_PLANKS.get());
-        lockerRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.LOCKER_HELLBARK.get().asItem().getDefaultInstance(),
+        lockerRecipe(consumer, ModBlockRegistry.LOCKER_HELLBARK.get().asItem().getDefaultInstance(),
                 BOPBlocks.HELLBARK_LOG.get(), BOPBlocks.HELLBARK_SLAB.get());
-        tableRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.TABLE_HELLBARK.get().asItem().getDefaultInstance(),
+        tableRecipe(consumer, ModBlockRegistry.TABLE_HELLBARK.get().asItem().getDefaultInstance(),
                 BOPBlocks.HELLBARK_LOG.get(), BOPBlocks.STRIPPED_HELLBARK_LOG.get(), BOPBlocks.HELLBARK_SLAB.get());
-        bookcaseRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.BOOKCASE_HELLBARK.get().asItem().getDefaultInstance(),
+        bookcaseRecipe(consumer, ModBlockRegistry.BOOKCASE_HELLBARK.get().asItem().getDefaultInstance(),
                 BOPBlocks.HELLBARK_LOG.get(), BOPBlocks.STRIPPED_HELLBARK_LOG.get(), BOPBlocks.HELLBARK_SLAB.get());
 
-        chairRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.DESK_CHAIR_COCONUT.get().asItem().getDefaultInstance(),
+        chairRecipe(consumer, ModBlockRegistry.DESK_CHAIR_COCONUT.get().asItem().getDefaultInstance(),
                 samebutdifferent.ecologics.registry.ModBlocks.COCONUT_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.STRIPPED_COCONUT_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.COCONUT_SLAB.get());
-        benchRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.PARK_BENCH_COCONUT.get().asItem().getDefaultInstance(),
+        benchRecipe(consumer, ModBlockRegistry.PARK_BENCH_COCONUT.get().asItem().getDefaultInstance(),
                 samebutdifferent.ecologics.registry.ModBlocks.COCONUT_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.COCONUT_SLAB.get());
-        deskRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.SCHOOL_DESK_COCONUT.get().asItem().getDefaultInstance(),
+        deskRecipe(consumer, ModBlockRegistry.SCHOOL_DESK_COCONUT.get().asItem().getDefaultInstance(),
                 samebutdifferent.ecologics.registry.ModBlocks.COCONUT_PLANKS.get(), samebutdifferent.ecologics.registry.ModBlocks.COCONUT_SLAB.get());
-        deskCabinetRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.SCHOOL_DESK_CABINET_COCONUT.get().asItem().getDefaultInstance(),
+        deskCabinetRecipe(consumer, ModBlockRegistry.SCHOOL_DESK_CABINET_COCONUT.get().asItem().getDefaultInstance(),
                 samebutdifferent.ecologics.registry.ModBlocks.COCONUT_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.COCONUT_PLANKS.get());
-        lockerRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.LOCKER_COCONUT.get().asItem().getDefaultInstance(),
+        lockerRecipe(consumer, ModBlockRegistry.LOCKER_COCONUT.get().asItem().getDefaultInstance(),
                 samebutdifferent.ecologics.registry.ModBlocks.COCONUT_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.COCONUT_SLAB.get());
-        tableRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.TABLE_COCONUT.get().asItem().getDefaultInstance(),
+        tableRecipe(consumer, ModBlockRegistry.TABLE_COCONUT.get().asItem().getDefaultInstance(),
                 samebutdifferent.ecologics.registry.ModBlocks.COCONUT_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.STRIPPED_COCONUT_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.COCONUT_SLAB.get());
-        bookcaseRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.BOOKCASE_COCONUT.get().asItem().getDefaultInstance(),
+        bookcaseRecipe(consumer, ModBlockRegistry.BOOKCASE_COCONUT.get().asItem().getDefaultInstance(),
                 samebutdifferent.ecologics.registry.ModBlocks.COCONUT_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.STRIPPED_COCONUT_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.COCONUT_SLAB.get());
 
-        chairRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.DESK_CHAIR_WALNUT.get().asItem().getDefaultInstance(),
+        chairRecipe(consumer, ModBlockRegistry.DESK_CHAIR_WALNUT.get().asItem().getDefaultInstance(),
                 samebutdifferent.ecologics.registry.ModBlocks.WALNUT_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.STRIPPED_WALNUT_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.WALNUT_SLAB.get());
-        benchRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.PARK_BENCH_WALNUT.get().asItem().getDefaultInstance(),
+        benchRecipe(consumer, ModBlockRegistry.PARK_BENCH_WALNUT.get().asItem().getDefaultInstance(),
                 samebutdifferent.ecologics.registry.ModBlocks.WALNUT_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.WALNUT_SLAB.get());
-        deskRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.SCHOOL_DESK_WALNUT.get().asItem().getDefaultInstance(),
+        deskRecipe(consumer, ModBlockRegistry.SCHOOL_DESK_WALNUT.get().asItem().getDefaultInstance(),
                 samebutdifferent.ecologics.registry.ModBlocks.WALNUT_PLANKS.get(), samebutdifferent.ecologics.registry.ModBlocks.WALNUT_SLAB.get());
-        deskCabinetRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.SCHOOL_DESK_CABINET_WALNUT.get().asItem().getDefaultInstance(),
+        deskCabinetRecipe(consumer, ModBlockRegistry.SCHOOL_DESK_CABINET_WALNUT.get().asItem().getDefaultInstance(),
                 samebutdifferent.ecologics.registry.ModBlocks.WALNUT_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.WALNUT_PLANKS.get());
-        lockerRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.LOCKER_WALNUT.get().asItem().getDefaultInstance(),
+        lockerRecipe(consumer, ModBlockRegistry.LOCKER_WALNUT.get().asItem().getDefaultInstance(),
                 samebutdifferent.ecologics.registry.ModBlocks.WALNUT_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.WALNUT_SLAB.get());
-        tableRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.TABLE_WALNUT.get().asItem().getDefaultInstance(),
+        tableRecipe(consumer, ModBlockRegistry.TABLE_WALNUT.get().asItem().getDefaultInstance(),
                 samebutdifferent.ecologics.registry.ModBlocks.WALNUT_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.STRIPPED_WALNUT_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.WALNUT_SLAB.get());
-        bookcaseRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.BOOKCASE_WALNUT.get().asItem().getDefaultInstance(),
+        bookcaseRecipe(consumer, ModBlockRegistry.BOOKCASE_WALNUT.get().asItem().getDefaultInstance(),
                 samebutdifferent.ecologics.registry.ModBlocks.WALNUT_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.STRIPPED_WALNUT_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.WALNUT_SLAB.get());
 
-        chairRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.DESK_CHAIR_AZALEA.get().asItem().getDefaultInstance(),
+        chairRecipe(consumer, ModBlockRegistry.DESK_CHAIR_AZALEA.get().asItem().getDefaultInstance(),
                 samebutdifferent.ecologics.registry.ModBlocks.AZALEA_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.STRIPPED_AZALEA_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.AZALEA_SLAB.get());
-        benchRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.PARK_BENCH_AZALEA.get().asItem().getDefaultInstance(),
+        benchRecipe(consumer, ModBlockRegistry.PARK_BENCH_AZALEA.get().asItem().getDefaultInstance(),
                 samebutdifferent.ecologics.registry.ModBlocks.AZALEA_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.AZALEA_SLAB.get());
-        deskRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.SCHOOL_DESK_AZALEA.get().asItem().getDefaultInstance(),
+        deskRecipe(consumer, ModBlockRegistry.SCHOOL_DESK_AZALEA.get().asItem().getDefaultInstance(),
                 samebutdifferent.ecologics.registry.ModBlocks.AZALEA_PLANKS.get(), samebutdifferent.ecologics.registry.ModBlocks.AZALEA_SLAB.get());
-        deskCabinetRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.SCHOOL_DESK_CABINET_AZALEA.get().asItem().getDefaultInstance(),
+        deskCabinetRecipe(consumer, ModBlockRegistry.SCHOOL_DESK_CABINET_AZALEA.get().asItem().getDefaultInstance(),
                 samebutdifferent.ecologics.registry.ModBlocks.AZALEA_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.AZALEA_PLANKS.get());
-        lockerRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.LOCKER_AZALEA.get().asItem().getDefaultInstance(),
+        lockerRecipe(consumer, ModBlockRegistry.LOCKER_AZALEA.get().asItem().getDefaultInstance(),
                 samebutdifferent.ecologics.registry.ModBlocks.AZALEA_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.AZALEA_SLAB.get());
-        tableRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.TABLE_AZALEA.get().asItem().getDefaultInstance(),
+        tableRecipe(consumer, ModBlockRegistry.TABLE_AZALEA.get().asItem().getDefaultInstance(),
                 samebutdifferent.ecologics.registry.ModBlocks.AZALEA_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.STRIPPED_AZALEA_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.AZALEA_SLAB.get());
-        bookcaseRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.BOOKCASE_AZALEA.get().asItem().getDefaultInstance(),
+        bookcaseRecipe(consumer, ModBlockRegistry.BOOKCASE_AZALEA.get().asItem().getDefaultInstance(),
                 samebutdifferent.ecologics.registry.ModBlocks.AZALEA_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.STRIPPED_AZALEA_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.AZALEA_SLAB.get());
 
-        chairRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.DESK_CHAIR_FLOWERING_AZALEA.get().asItem().getDefaultInstance(),
+        chairRecipe(consumer, ModBlockRegistry.DESK_CHAIR_FLOWERING_AZALEA.get().asItem().getDefaultInstance(),
                 samebutdifferent.ecologics.registry.ModBlocks.FLOWERING_AZALEA_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.STRIPPED_AZALEA_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.FLOWERING_AZALEA_SLAB.get());
-        benchRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.PARK_BENCH_FLOWERING_AZALEA.get().asItem().getDefaultInstance(),
+        benchRecipe(consumer, ModBlockRegistry.PARK_BENCH_FLOWERING_AZALEA.get().asItem().getDefaultInstance(),
                 samebutdifferent.ecologics.registry.ModBlocks.FLOWERING_AZALEA_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.FLOWERING_AZALEA_SLAB.get());
-        deskRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.SCHOOL_DESK_FLOWERING_AZALEA.get().asItem().getDefaultInstance(),
+        deskRecipe(consumer, ModBlockRegistry.SCHOOL_DESK_FLOWERING_AZALEA.get().asItem().getDefaultInstance(),
                 samebutdifferent.ecologics.registry.ModBlocks.FLOWERING_AZALEA_PLANKS.get(), samebutdifferent.ecologics.registry.ModBlocks.FLOWERING_AZALEA_SLAB.get());
-        deskCabinetRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.SCHOOL_DESK_CABINET_FLOWERING_AZALEA.get().asItem().getDefaultInstance(),
+        deskCabinetRecipe(consumer, ModBlockRegistry.SCHOOL_DESK_CABINET_FLOWERING_AZALEA.get().asItem().getDefaultInstance(),
                 samebutdifferent.ecologics.registry.ModBlocks.FLOWERING_AZALEA_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.FLOWERING_AZALEA_PLANKS.get());
-        lockerRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.LOCKER_FLOWERING_AZALEA.get().asItem().getDefaultInstance(),
+        lockerRecipe(consumer, ModBlockRegistry.LOCKER_FLOWERING_AZALEA.get().asItem().getDefaultInstance(),
                 samebutdifferent.ecologics.registry.ModBlocks.FLOWERING_AZALEA_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.FLOWERING_AZALEA_SLAB.get());
-        tableRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.TABLE_FLOWERING_AZALEA.get().asItem().getDefaultInstance(),
+        tableRecipe(consumer, ModBlockRegistry.TABLE_FLOWERING_AZALEA.get().asItem().getDefaultInstance(),
                 samebutdifferent.ecologics.registry.ModBlocks.FLOWERING_AZALEA_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.STRIPPED_AZALEA_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.FLOWERING_AZALEA_SLAB.get());
-        bookcaseRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.BOOKCASE_FLOWERING_AZALEA.get().asItem().getDefaultInstance(),
+        bookcaseRecipe(consumer, ModBlockRegistry.BOOKCASE_FLOWERING_AZALEA.get().asItem().getDefaultInstance(),
                 samebutdifferent.ecologics.registry.ModBlocks.FLOWERING_AZALEA_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.STRIPPED_AZALEA_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.FLOWERING_AZALEA_SLAB.get());
 
-        chairRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.DESK_CHAIR_GOLDEN_OAK.get().asItem().getDefaultInstance(),
+        chairRecipe(consumer, ModBlockRegistry.DESK_CHAIR_GOLDEN_OAK.get().asItem().getDefaultInstance(),
                 AetherBlocks.GOLDEN_OAK_LOG.get(), AetherBlocks.STRIPPED_SKYROOT_LOG.get(), AetherBlocks.SKYROOT_SLAB.get());
-        benchRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.PARK_BENCH_GOLDEN_OAK.get().asItem().getDefaultInstance(),
+        benchRecipe(consumer, ModBlockRegistry.PARK_BENCH_GOLDEN_OAK.get().asItem().getDefaultInstance(),
                 AetherBlocks.GOLDEN_OAK_LOG.get(), AetherBlocks.SKYROOT_SLAB.get());
-        deskRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.SCHOOL_DESK_GOLDEN_OAK.get().asItem().getDefaultInstance(),
+        deskRecipe(consumer, ModBlockRegistry.SCHOOL_DESK_GOLDEN_OAK.get().asItem().getDefaultInstance(),
                 AetherBlocks.SKYROOT_PLANKS.get(), AetherBlocks.SKYROOT_SLAB.get());
-        deskCabinetRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.SCHOOL_DESK_CABINET_GOLDEN_OAK.get().asItem().getDefaultInstance(),
+        deskCabinetRecipe(consumer, ModBlockRegistry.SCHOOL_DESK_CABINET_GOLDEN_OAK.get().asItem().getDefaultInstance(),
                 AetherBlocks.GOLDEN_OAK_LOG.get(), AetherBlocks.SKYROOT_PLANKS.get());
-        lockerRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.LOCKER_GOLDEN_OAK.get().asItem().getDefaultInstance(),
+        lockerRecipe(consumer, ModBlockRegistry.LOCKER_GOLDEN_OAK.get().asItem().getDefaultInstance(),
                 AetherBlocks.GOLDEN_OAK_LOG.get(), AetherBlocks.SKYROOT_SLAB.get());
-        tableRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.TABLE_GOLDEN_OAK.get().asItem().getDefaultInstance(),
+        tableRecipe(consumer, ModBlockRegistry.TABLE_GOLDEN_OAK.get().asItem().getDefaultInstance(),
                 AetherBlocks.GOLDEN_OAK_LOG.get(), AetherBlocks.STRIPPED_SKYROOT_LOG.get(), AetherBlocks.SKYROOT_SLAB.get());
-        bookcaseRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.BOOKCASE_GOLDEN_OAK.get().asItem().getDefaultInstance(),
+        bookcaseRecipe(consumer, ModBlockRegistry.BOOKCASE_GOLDEN_OAK.get().asItem().getDefaultInstance(),
                 AetherBlocks.GOLDEN_OAK_LOG.get(), AetherBlocks.STRIPPED_SKYROOT_LOG.get(), AetherBlocks.SKYROOT_SLAB.get());
 
-        chairRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.DESK_CHAIR_AETHER_SKYROOT.get().asItem().getDefaultInstance(),
+        chairRecipe(consumer, ModBlockRegistry.DESK_CHAIR_AETHER_SKYROOT.get().asItem().getDefaultInstance(),
                 AetherBlocks.SKYROOT_LOG.get(), AetherBlocks.STRIPPED_SKYROOT_LOG.get(), AetherBlocks.SKYROOT_SLAB.get());
-        benchRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.PARK_BENCH_AETHER_SKYROOT.get().asItem().getDefaultInstance(),
+        benchRecipe(consumer, ModBlockRegistry.PARK_BENCH_AETHER_SKYROOT.get().asItem().getDefaultInstance(),
                 AetherBlocks.SKYROOT_LOG.get(), AetherBlocks.SKYROOT_SLAB.get());
-        deskRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.SCHOOL_DESK_AETHER_SKYROOT.get().asItem().getDefaultInstance(),
+        deskRecipe(consumer, ModBlockRegistry.SCHOOL_DESK_AETHER_SKYROOT.get().asItem().getDefaultInstance(),
                 AetherBlocks.SKYROOT_PLANKS.get(), AetherBlocks.SKYROOT_SLAB.get());
-        deskCabinetRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.SCHOOL_DESK_CABINET_AETHER_SKYROOT.get().asItem().getDefaultInstance(),
+        deskCabinetRecipe(consumer, ModBlockRegistry.SCHOOL_DESK_CABINET_AETHER_SKYROOT.get().asItem().getDefaultInstance(),
                 AetherBlocks.SKYROOT_LOG.get(), AetherBlocks.SKYROOT_PLANKS.get());
-        lockerRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.LOCKER_AETHER_SKYROOT.get().asItem().getDefaultInstance(),
+        lockerRecipe(consumer, ModBlockRegistry.LOCKER_AETHER_SKYROOT.get().asItem().getDefaultInstance(),
                 AetherBlocks.SKYROOT_LOG.get(), AetherBlocks.SKYROOT_SLAB.get());
-        tableRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.TABLE_AETHER_SKYROOT.get().asItem().getDefaultInstance(),
+        tableRecipe(consumer, ModBlockRegistry.TABLE_AETHER_SKYROOT.get().asItem().getDefaultInstance(),
                 AetherBlocks.SKYROOT_LOG.get(), AetherBlocks.STRIPPED_SKYROOT_LOG.get(), AetherBlocks.SKYROOT_SLAB.get());
-        bookcaseRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.BOOKCASE_AETHER_SKYROOT.get().asItem().getDefaultInstance(),
+        bookcaseRecipe(consumer, ModBlockRegistry.BOOKCASE_AETHER_SKYROOT.get().asItem().getDefaultInstance(),
                 AetherBlocks.SKYROOT_LOG.get(), AetherBlocks.STRIPPED_SKYROOT_LOG.get(), AetherBlocks.SKYROOT_SLAB.get());
 
-        chairRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.DESK_CHAIR_PREAM.get().asItem().getDefaultInstance(),
+        chairRecipe(consumer, ModBlockRegistry.DESK_CHAIR_PREAM.get().asItem().getDefaultInstance(),
                 PhantasmModBlocks.PREAM_LOG.get(), PhantasmModBlocks.STRIPPED_PREAM_LOG.get(), PhantasmModBlocks.PREAM_SLAB.get());
-        benchRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.PARK_BENCH_PREAM.get().asItem().getDefaultInstance(),
+        benchRecipe(consumer, ModBlockRegistry.PARK_BENCH_PREAM.get().asItem().getDefaultInstance(),
                 PhantasmModBlocks.PREAM_LOG.get(), PhantasmModBlocks.PREAM_SLAB.get());
-        deskRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.SCHOOL_DESK_PREAM.get().asItem().getDefaultInstance(),
+        deskRecipe(consumer, ModBlockRegistry.SCHOOL_DESK_PREAM.get().asItem().getDefaultInstance(),
                 PhantasmModBlocks.PREAM_PLANKS.get(), PhantasmModBlocks.PREAM_SLAB.get());
-        deskCabinetRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.SCHOOL_DESK_CABINET_PREAM.get().asItem().getDefaultInstance(),
+        deskCabinetRecipe(consumer, ModBlockRegistry.SCHOOL_DESK_CABINET_PREAM.get().asItem().getDefaultInstance(),
                 PhantasmModBlocks.PREAM_LOG.get(), PhantasmModBlocks.PREAM_PLANKS.get());
-        lockerRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.LOCKER_PREAM.get().asItem().getDefaultInstance(),
+        lockerRecipe(consumer, ModBlockRegistry.LOCKER_PREAM.get().asItem().getDefaultInstance(),
                 PhantasmModBlocks.PREAM_LOG.get(), PhantasmModBlocks.PREAM_SLAB.get());
-        tableRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.TABLE_PREAM.get().asItem().getDefaultInstance(),
+        tableRecipe(consumer, ModBlockRegistry.TABLE_PREAM.get().asItem().getDefaultInstance(),
                 PhantasmModBlocks.PREAM_LOG.get(), PhantasmModBlocks.STRIPPED_PREAM_LOG.get(), PhantasmModBlocks.PREAM_SLAB.get());
-        bookcaseRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.BOOKCASE_PREAM.get().asItem().getDefaultInstance(),
+        bookcaseRecipe(consumer, ModBlockRegistry.BOOKCASE_PREAM.get().asItem().getDefaultInstance(),
                 PhantasmModBlocks.PREAM_LOG.get(), PhantasmModBlocks.STRIPPED_PREAM_LOG.get(), PhantasmModBlocks.PREAM_SLAB.get());
 
-        chairRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.DESK_CHAIR_EBONY.get().asItem().getDefaultInstance(),
+        chairRecipe(consumer, ModBlockRegistry.DESK_CHAIR_EBONY.get().asItem().getDefaultInstance(),
                 PhantasmModBlocks.EBONY_WOOD.get(), PhantasmModBlocks.STRIPPED_EBONY_WOOD.get(), PhantasmModBlocks.EBONY_SLAB.get());
-        benchRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.PARK_BENCH_EBONY.get().asItem().getDefaultInstance(),
+        benchRecipe(consumer, ModBlockRegistry.PARK_BENCH_EBONY.get().asItem().getDefaultInstance(),
                 PhantasmModBlocks.EBONY_WOOD.get(), PhantasmModBlocks.EBONY_SLAB.get());
-        deskRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.SCHOOL_DESK_EBONY.get().asItem().getDefaultInstance(),
+        deskRecipe(consumer, ModBlockRegistry.SCHOOL_DESK_EBONY.get().asItem().getDefaultInstance(),
                 PhantasmModBlocks.EBONY_PLANKS.get(), PhantasmModBlocks.EBONY_SLAB.get());
-        deskCabinetRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.SCHOOL_DESK_CABINET_EBONY.get().asItem().getDefaultInstance(),
+        deskCabinetRecipe(consumer, ModBlockRegistry.SCHOOL_DESK_CABINET_EBONY.get().asItem().getDefaultInstance(),
                 PhantasmModBlocks.EBONY_WOOD.get(), PhantasmModBlocks.EBONY_PLANKS.get());
-        lockerRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.LOCKER_EBONY.get().asItem().getDefaultInstance(),
+        lockerRecipe(consumer, ModBlockRegistry.LOCKER_EBONY.get().asItem().getDefaultInstance(),
                 PhantasmModBlocks.EBONY_WOOD.get(), PhantasmModBlocks.EBONY_SLAB.get());
-        tableRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.TABLE_EBONY.get().asItem().getDefaultInstance(),
+        tableRecipe(consumer, ModBlockRegistry.TABLE_EBONY.get().asItem().getDefaultInstance(),
                 PhantasmModBlocks.EBONY_WOOD.get(), PhantasmModBlocks.STRIPPED_EBONY_WOOD.get(), PhantasmModBlocks.EBONY_SLAB.get());
-        bookcaseRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.BOOKCASE_EBONY.get().asItem().getDefaultInstance(),
+        bookcaseRecipe(consumer, ModBlockRegistry.BOOKCASE_EBONY.get().asItem().getDefaultInstance(),
                 PhantasmModBlocks.EBONY_WOOD.get(), PhantasmModBlocks.STRIPPED_EBONY_WOOD.get(), PhantasmModBlocks.EBONY_SLAB.get());
 
-        chairRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.DESK_CHAIR_CHORUS_NEST.get().asItem().getDefaultInstance(),
+        chairRecipe(consumer, ModBlockRegistry.DESK_CHAIR_CHORUS_NEST.get().asItem().getDefaultInstance(),
                 UnusualendModBlocks.CHORUS_NEST_PLANKS.get(), UnusualendModBlocks.STRIPPED_CHORUS_NEST_PLANKS.get(), UnusualendModBlocks.CHORUS_NEST_SLAB.get());
-        benchRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.PARK_BENCH_CHORUS_NEST.get().asItem().getDefaultInstance(),
+        benchRecipe(consumer, ModBlockRegistry.PARK_BENCH_CHORUS_NEST.get().asItem().getDefaultInstance(),
                 UnusualendModBlocks.CHORUS_NEST_PLANKS.get(), UnusualendModBlocks.CHORUS_NEST_SLAB.get());
-        deskRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.SCHOOL_DESK_CHORUS_NEST.get().asItem().getDefaultInstance(),
+        deskRecipe(consumer, ModBlockRegistry.SCHOOL_DESK_CHORUS_NEST.get().asItem().getDefaultInstance(),
                 UnusualendModBlocks.CHORUS_NEST_PLANKS.get(), UnusualendModBlocks.CHORUS_NEST_SLAB.get());
-        deskCabinetRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.SCHOOL_DESK_CABINET_CHORUS_NEST.get().asItem().getDefaultInstance(),
+        deskCabinetRecipe(consumer, ModBlockRegistry.SCHOOL_DESK_CABINET_CHORUS_NEST.get().asItem().getDefaultInstance(),
                 UnusualendModBlocks.CHORUS_NEST_PLANKS.get(), UnusualendModBlocks.CHORUS_NEST_PLANKS.get());
-        lockerRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.LOCKER_CHORUS_NEST.get().asItem().getDefaultInstance(),
+        lockerRecipe(consumer, ModBlockRegistry.LOCKER_CHORUS_NEST.get().asItem().getDefaultInstance(),
                 UnusualendModBlocks.CHORUS_NEST_PLANKS.get(), UnusualendModBlocks.CHORUS_NEST_SLAB.get());
-        tableRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.TABLE_CHORUS_NEST.get().asItem().getDefaultInstance(),
+        tableRecipe(consumer, ModBlockRegistry.TABLE_CHORUS_NEST.get().asItem().getDefaultInstance(),
                 UnusualendModBlocks.CHORUS_NEST_PLANKS.get(), UnusualendModBlocks.STRIPPED_CHORUS_NEST_PLANKS.get(), UnusualendModBlocks.CHORUS_NEST_SLAB.get());
-        bookcaseRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.BOOKCASE_CHORUS_NEST.get().asItem().getDefaultInstance(),
+        bookcaseRecipe(consumer, ModBlockRegistry.BOOKCASE_CHORUS_NEST.get().asItem().getDefaultInstance(),
                 UnusualendModBlocks.CHORUS_NEST_PLANKS.get(), UnusualendModBlocks.STRIPPED_CHORUS_NEST_PLANKS.get(), UnusualendModBlocks.CHORUS_NEST_SLAB.get());
 
-        chairTagRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.DESK_CHAIR_BLOODSHROOM.get().asItem().getDefaultInstance(),
+        chairTagRecipe(consumer, ModBlockRegistry.DESK_CHAIR_BLOODSHROOM.get().asItem().getDefaultInstance(),
                 PackTags.Items.BLOODSHROOM_LOG, PackTags.Items.BLOODSHROOM_STRIPPED_LOG, PackTags.Items.BLOODSHROOM_SLAB);
-        benchTagRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.PARK_BENCH_BLOODSHROOM.get().asItem().getDefaultInstance(),
+        benchTagRecipe(consumer, ModBlockRegistry.PARK_BENCH_BLOODSHROOM.get().asItem().getDefaultInstance(),
                 PackTags.Items.BLOODSHROOM_LOG, PackTags.Items.BLOODSHROOM_SLAB);
-        deskTagRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.SCHOOL_DESK_BLOODSHROOM.get().asItem().getDefaultInstance(),
+        deskTagRecipe(consumer, ModBlockRegistry.SCHOOL_DESK_BLOODSHROOM.get().asItem().getDefaultInstance(),
                 PackTags.Items.BLOODSHROOM_PLANKS, PackTags.Items.BLOODSHROOM_SLAB);
-        deskTagCabinetRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.SCHOOL_DESK_CABINET_BLOODSHROOM.get().asItem().getDefaultInstance(),
+        deskTagCabinetRecipe(consumer, ModBlockRegistry.SCHOOL_DESK_CABINET_BLOODSHROOM.get().asItem().getDefaultInstance(),
                 PackTags.Items.BLOODSHROOM_LOG, PackTags.Items.BLOODSHROOM_PLANKS);
-        lockerTagRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.LOCKER_BLOODSHROOM.get().asItem().getDefaultInstance(),
+        lockerTagRecipe(consumer, ModBlockRegistry.LOCKER_BLOODSHROOM.get().asItem().getDefaultInstance(),
                 PackTags.Items.BLOODSHROOM_LOG, PackTags.Items.BLOODSHROOM_SLAB);
-        tableTagRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.TABLE_BLOODSHROOM.get().asItem().getDefaultInstance(),
+        tableTagRecipe(consumer, ModBlockRegistry.TABLE_BLOODSHROOM.get().asItem().getDefaultInstance(),
                 PackTags.Items.BLOODSHROOM_LOG, PackTags.Items.BLOODSHROOM_STRIPPED_LOG, PackTags.Items.BLOODSHROOM_SLAB);
-        bookcaseTagRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.BOOKCASE_BLOODSHROOM.get().asItem().getDefaultInstance(),
+        bookcaseTagRecipe(consumer, ModBlockRegistry.BOOKCASE_BLOODSHROOM.get().asItem().getDefaultInstance(),
                 PackTags.Items.BLOODSHROOM_LOG, PackTags.Items.BLOODSHROOM_STRIPPED_LOG, PackTags.Items.BLOODSHROOM_SLAB);
 
-        chairTagRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.DESK_CHAIR_ENDERBARK.get().asItem().getDefaultInstance(),
+        chairTagRecipe(consumer, ModBlockRegistry.DESK_CHAIR_ENDERBARK.get().asItem().getDefaultInstance(),
                 PackTags.Items.ENDERBARK_LOG, PackTags.Items.ENDERBARK_STRIPPED_LOG, PackTags.Items.ENDERBARK_SLAB);
-        benchTagRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.PARK_BENCH_ENDERBARK.get().asItem().getDefaultInstance(),
+        benchTagRecipe(consumer, ModBlockRegistry.PARK_BENCH_ENDERBARK.get().asItem().getDefaultInstance(),
                 PackTags.Items.ENDERBARK_LOG, PackTags.Items.ENDERBARK_SLAB);
-        deskTagRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.SCHOOL_DESK_ENDERBARK.get().asItem().getDefaultInstance(),
+        deskTagRecipe(consumer, ModBlockRegistry.SCHOOL_DESK_ENDERBARK.get().asItem().getDefaultInstance(),
                 PackTags.Items.ENDERBARK_PLANKS, PackTags.Items.ENDERBARK_SLAB);
-        deskTagCabinetRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.SCHOOL_DESK_CABINET_ENDERBARK.get().asItem().getDefaultInstance(),
+        deskTagCabinetRecipe(consumer, ModBlockRegistry.SCHOOL_DESK_CABINET_ENDERBARK.get().asItem().getDefaultInstance(),
                 PackTags.Items.ENDERBARK_LOG, PackTags.Items.ENDERBARK_PLANKS);
-        lockerTagRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.LOCKER_ENDERBARK.get().asItem().getDefaultInstance(),
+        lockerTagRecipe(consumer, ModBlockRegistry.LOCKER_ENDERBARK.get().asItem().getDefaultInstance(),
                 PackTags.Items.ENDERBARK_LOG, PackTags.Items.ENDERBARK_SLAB);
-        tableTagRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.TABLE_ENDERBARK.get().asItem().getDefaultInstance(),
+        tableTagRecipe(consumer, ModBlockRegistry.TABLE_ENDERBARK.get().asItem().getDefaultInstance(),
                 PackTags.Items.ENDERBARK_LOG, PackTags.Items.ENDERBARK_STRIPPED_LOG, PackTags.Items.ENDERBARK_SLAB);
-        bookcaseTagRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.BOOKCASE_ENDERBARK.get().asItem().getDefaultInstance(),
+        bookcaseTagRecipe(consumer, ModBlockRegistry.BOOKCASE_ENDERBARK.get().asItem().getDefaultInstance(),
                 PackTags.Items.ENDERBARK_LOG, PackTags.Items.ENDERBARK_STRIPPED_LOG, PackTags.Items.ENDERBARK_SLAB);
 
-        chairTagRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.DESK_CHAIR_GREENHEART.get().asItem().getDefaultInstance(),
+        chairTagRecipe(consumer, ModBlockRegistry.DESK_CHAIR_GREENHEART.get().asItem().getDefaultInstance(),
                 PackTags.Items.GREENHEART_LOG, PackTags.Items.GREENHEART_STRIPPED_LOG, PackTags.Items.GREENHEART_SLAB);
-        benchTagRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.PARK_BENCH_GREENHEART.get().asItem().getDefaultInstance(),
+        benchTagRecipe(consumer, ModBlockRegistry.PARK_BENCH_GREENHEART.get().asItem().getDefaultInstance(),
                 PackTags.Items.GREENHEART_LOG, PackTags.Items.GREENHEART_SLAB);
-        deskTagRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.SCHOOL_DESK_GREENHEART.get().asItem().getDefaultInstance(),
+        deskTagRecipe(consumer, ModBlockRegistry.SCHOOL_DESK_GREENHEART.get().asItem().getDefaultInstance(),
                 PackTags.Items.GREENHEART_PLANKS, PackTags.Items.GREENHEART_SLAB);
-        deskTagCabinetRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.SCHOOL_DESK_CABINET_GREENHEART.get().asItem().getDefaultInstance(),
+        deskTagCabinetRecipe(consumer, ModBlockRegistry.SCHOOL_DESK_CABINET_GREENHEART.get().asItem().getDefaultInstance(),
                 PackTags.Items.GREENHEART_LOG, PackTags.Items.GREENHEART_PLANKS);
-        lockerTagRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.LOCKER_GREENHEART.get().asItem().getDefaultInstance(),
+        lockerTagRecipe(consumer, ModBlockRegistry.LOCKER_GREENHEART.get().asItem().getDefaultInstance(),
                 PackTags.Items.GREENHEART_LOG, PackTags.Items.GREENHEART_SLAB);
-        tableTagRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.TABLE_GREENHEART.get().asItem().getDefaultInstance(),
+        tableTagRecipe(consumer, ModBlockRegistry.TABLE_GREENHEART.get().asItem().getDefaultInstance(),
                 PackTags.Items.GREENHEART_LOG, PackTags.Items.GREENHEART_STRIPPED_LOG, PackTags.Items.GREENHEART_SLAB);
-        bookcaseTagRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.BOOKCASE_GREENHEART.get().asItem().getDefaultInstance(),
+        bookcaseTagRecipe(consumer, ModBlockRegistry.BOOKCASE_GREENHEART.get().asItem().getDefaultInstance(),
                 PackTags.Items.GREENHEART_LOG, PackTags.Items.GREENHEART_STRIPPED_LOG, PackTags.Items.GREENHEART_SLAB);
 
-        chairTagRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.DESK_CHAIR_TINKER_SKYROOT.get().asItem().getDefaultInstance(),
+        chairTagRecipe(consumer, ModBlockRegistry.DESK_CHAIR_TINKER_SKYROOT.get().asItem().getDefaultInstance(),
                 PackTags.Items.TINKER_SKYROOT_LOG, PackTags.Items.TINKER_SKYROOT_STRIPPED_LOG, PackTags.Items.TINKER_SKYROOT_SLAB);
-        benchTagRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.PARK_BENCH_TINKER_SKYROOT.get().asItem().getDefaultInstance(),
+        benchTagRecipe(consumer, ModBlockRegistry.PARK_BENCH_TINKER_SKYROOT.get().asItem().getDefaultInstance(),
                 PackTags.Items.TINKER_SKYROOT_LOG, PackTags.Items.TINKER_SKYROOT_SLAB);
-        deskTagRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.SCHOOL_DESK_TINKER_SKYROOT.get().asItem().getDefaultInstance(),
+        deskTagRecipe(consumer, ModBlockRegistry.SCHOOL_DESK_TINKER_SKYROOT.get().asItem().getDefaultInstance(),
                 PackTags.Items.TINKER_SKYROOT_PLANKS, PackTags.Items.TINKER_SKYROOT_SLAB);
-        deskTagCabinetRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.SCHOOL_DESK_CABINET_TINKER_SKYROOT.get().asItem().getDefaultInstance(),
+        deskTagCabinetRecipe(consumer, ModBlockRegistry.SCHOOL_DESK_CABINET_TINKER_SKYROOT.get().asItem().getDefaultInstance(),
                 PackTags.Items.TINKER_SKYROOT_LOG, PackTags.Items.TINKER_SKYROOT_PLANKS);
-        lockerTagRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.LOCKER_TINKER_SKYROOT.get().asItem().getDefaultInstance(),
+        lockerTagRecipe(consumer, ModBlockRegistry.LOCKER_TINKER_SKYROOT.get().asItem().getDefaultInstance(),
                 PackTags.Items.TINKER_SKYROOT_LOG, PackTags.Items.TINKER_SKYROOT_SLAB);
-        tableTagRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.TABLE_TINKER_SKYROOT.get().asItem().getDefaultInstance(),
+        tableTagRecipe(consumer, ModBlockRegistry.TABLE_TINKER_SKYROOT.get().asItem().getDefaultInstance(),
                 PackTags.Items.TINKER_SKYROOT_LOG, PackTags.Items.TINKER_SKYROOT_STRIPPED_LOG, PackTags.Items.TINKER_SKYROOT_SLAB);
-        bookcaseTagRecipe(consumer, com.github.warrentode.turtleblockacademy.blocks.ModBlocks.BOOKCASE_TINKER_SKYROOT.get().asItem().getDefaultInstance(),
+        bookcaseTagRecipe(consumer, ModBlockRegistry.BOOKCASE_TINKER_SKYROOT.get().asItem().getDefaultInstance(),
                 PackTags.Items.TINKER_SKYROOT_LOG, PackTags.Items.TINKER_SKYROOT_STRIPPED_LOG, PackTags.Items.TINKER_SKYROOT_SLAB);
+    }
+
+    private void plateRecipe(Consumer<FinishedRecipe> consumer, ItemStack result, Item ingredient) {
+        SingleItemRecipeBuilder.stonecutting(Ingredient.of(ingredient), result.getItem(), 4)
+                .unlockedBy("has_terracotta",
+                        has(ItemTags.TERRACOTTA))
+                .save(consumer, new ResourceLocation(MODID, "plates/" + result.getItem()));
     }
 
     private void bookcaseTagRecipe(Consumer<FinishedRecipe> consumer, @NotNull ItemStack result, TagKey<Item> log, TagKey<Item> strippedLog, TagKey<Item> slab) {

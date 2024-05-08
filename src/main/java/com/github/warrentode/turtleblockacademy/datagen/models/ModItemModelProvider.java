@@ -1,6 +1,6 @@
 package com.github.warrentode.turtleblockacademy.datagen.models;
 
-import com.github.warrentode.turtleblockacademy.blocks.ModBlocks;
+import com.github.warrentode.turtleblockacademy.blocks.ModBlockRegistry;
 import com.github.warrentode.turtleblockacademy.items.ModItems;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.resources.ResourceLocation;
@@ -23,7 +23,7 @@ public class ModItemModelProvider extends ItemModelProvider {
     protected void registerModels() {
         basicItem(ModItems.STUDENT_CARD.get());
 
-        blockBasedModel(ModBlocks.CERTIFICATE_BLOCK.get().asItem());
+        blockBasedModel(ModBlockRegistry.CERTIFICATE_BLOCK.get().asItem());
     }
 
     public void blockBasedModel(Item item) {

@@ -1,0 +1,7 @@
+{
+  "parent": "turtleblockacademy:block/plate_block",
+  "textures": {
+    "1": "turtleblockacademy:block/plate_brown",
+    "particle": "turtleblockacademy:block/plate_brown"
+  }
+}

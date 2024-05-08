@@ -1,6 +1,6 @@
 package com.github.warrentode.turtleblockacademy;
 
-import com.github.warrentode.turtleblockacademy.blocks.ModBlocks;
+import com.github.warrentode.turtleblockacademy.blocks.ModBlockRegistry;
 import com.github.warrentode.turtleblockacademy.blocks.entity.ModBlockEntities;
 import com.github.warrentode.turtleblockacademy.blocks.gui.ModMenuTypes;
 import com.github.warrentode.turtleblockacademy.blocks.gui.SchoolDeskScreen;
@@ -45,7 +45,7 @@ public class TurtleBlockAcademy {
 
         ModSounds.SOUNDS.register(modEventBus);
 
-        ModBlocks.register(modEventBus);
+        ModBlockRegistry.register(modEventBus);
         ModBlockEntities.register(modEventBus);
         ModMenuTypes.register(modEventBus);
 
@@ -66,7 +66,7 @@ public class TurtleBlockAcademy {
     public static final CreativeModeTab TAB = new CreativeModeTab(MODID) {
         @Override
         public @NotNull ItemStack makeIcon() {
-            return ModBlocks.CERTIFICATE_BLOCK.get().asItem().getDefaultInstance();
+            return ModBlockRegistry.CERTIFICATE_BLOCK.get().asItem().getDefaultInstance();
         }
     };
 
