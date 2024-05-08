@@ -1,5 +1,9 @@
 {
   "values": [
-    "minecraft:cactus"
+    "minecraft:cactus",
+    {
+      "id": "ecologics:prickly_pear",
+      "required": false
+    }
   ]
 }

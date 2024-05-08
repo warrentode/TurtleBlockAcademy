@@ -29,11 +29,14 @@ public class ModLangGen extends LanguageProvider {
         add("subtitles.turtleblockacademy.desk_close", "Desk Drawer Closes");
         add("subtitles.turtleblockacademy.locker_open", "Locker Opens");
         add("subtitles.turtleblockacademy.locker_close", "Locker Closes");
+        add("subtitles.turtleblockacademy.bookcase_open", "Bookcase Opens");
+        add("subtitles.turtleblockacademy.bookcase_close", "Bookcase Closes");
     }
 
     private void addContainers() {
         add("container.turtleblockacademy.desk", "School Desk");
         add("container.turtleblockacademy.storage", "Storage");
+        add("container.turtleblockacademy.plate", "Plate");
     }
 
     private void addMessages() {
@@ -78,6 +81,8 @@ public class ModLangGen extends LanguageProvider {
 
     private void addBlocks() {
         add(ModBlocks.CERTIFICATE_BLOCK.get(), "Certificate of Completion");
+
+        add(ModBlocks.PLATE_WHITE.get(), "White Plate");
 
         add(ModBlocks.SCHOOL_DESK_OAK.get(), "Oak School Desk");
         add(ModBlocks.SCHOOL_DESK_BIRCH.get(), "Birch School Desk");

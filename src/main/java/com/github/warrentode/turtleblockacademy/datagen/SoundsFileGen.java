@@ -33,5 +33,16 @@ public class SoundsFileGen extends SoundDefinitionsProvider {
                 .subtitle("subtitles.turtleblockacademy.locker_close")
                 .with(sound(new ResourceLocation("minecraft", "block/chest/close")).pitch(2))
         );
+
+        this.add(ModSounds.BLOCK_BOOKCASE_OPEN, definition()
+                .subtitle("subtitles.turtleblockacademy.bookcase_open")
+                .with(sound(new ResourceLocation("minecraft", "item/book/close_put1")))
+                .with(sound(new ResourceLocation("minecraft", "item/book/close_put2")))
+        );
+        this.add(ModSounds.BLOCK_BOOKCASE_CLOSE, definition()
+                .subtitle("subtitles.turtleblockacademy.bookcase_close")
+                .with(sound(new ResourceLocation("minecraft", "item/book/close_put1")))
+                .with(sound(new ResourceLocation("minecraft", "item/book/close_put2")))
+        );
     }
 }

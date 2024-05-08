@@ -337,6 +337,13 @@ public class ModBlockStatesProvider extends BlockStateProvider {
                 ModBlocks.PARK_BENCH_TINKER_SKYROOT.get(),
                 ModBlocks.BOOKCASE_TINKER_SKYROOT.get(),
                 "tconstruct", "skyroot");
+
+        processPlateVariants(ModBlocks.PLATE_WHITE.get(), MODID, "block/plate_white");
+    }
+
+    @SuppressWarnings("SameParameterValue")
+    protected void processPlateVariants(Block result, String modid, String path) {
+        plateVariant(result, MODID + ":" + "block/plate_block", modid, path);
     }
 
     protected void processVariants(Block result1, Block result2,
@@ -401,6 +408,20 @@ public class ModBlockStatesProvider extends BlockStateProvider {
         twoTextureHorizontalVariant(result5, MODID + ":" + "block/school_desk", modid, path_1, path_2);
 
         tableVariant(result2, MODID + ":" + "block/table", MODID + ":" + "block/table_center", modid, path_1, path_2, path_3);
+    }
+
+    @SuppressWarnings("SameParameterValue")
+    protected void plateVariant(Block result, String parent, String modid, String path) {
+
+        ModelFile parentModel = new ModelFile.UncheckedModelFile(parent);
+
+        final var model = models()
+                .getBuilder(blockName(result)).parent(parentModel)
+                .texture("1", new ResourceLocation(modid, path))
+                .texture("particle", new ResourceLocation(modid, path));
+
+        horizontalBlock(result, model);
+        simpleBlockItem(result, model);
     }
 
     @SuppressWarnings("SameParameterValue")

@@ -21,4 +21,9 @@ public class ModSounds {
             () -> new SoundEvent(new ResourceLocation(MODID, "block.turtleblockacademy.locker.open")));
     public static final RegistryObject<SoundEvent> BLOCK_LOCKER_CLOSE = SOUNDS.register("block.turtleblockacademy.locker.close",
             () -> new SoundEvent(new ResourceLocation(MODID, "block.turtleblockacademy.locker.close")));
+
+    public static final RegistryObject<SoundEvent> BLOCK_BOOKCASE_OPEN = SOUNDS.register("block.turtleblockacademy.bookcase.open",
+            () -> new SoundEvent(new ResourceLocation(MODID, "block.turtleblockacademy.bookcase.open")));
+    public static final RegistryObject<SoundEvent> BLOCK_BOOKCASE_CLOSE = SOUNDS.register("block.turtleblockacademy.bookcase.close",
+            () -> new SoundEvent(new ResourceLocation(MODID, "block.turtleblockacademy.bookcase.close")));
 }

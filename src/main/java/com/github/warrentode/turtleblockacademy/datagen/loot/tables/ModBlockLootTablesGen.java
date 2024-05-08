@@ -16,6 +16,8 @@ public class ModBlockLootTablesGen extends BlockLoot {
     protected void addTables() {
         this.dropSelf(ModBlocks.CERTIFICATE_BLOCK.get());
 
+        this.dropSelf(ModBlocks.PLATE_WHITE.get());
+
         this.dropSelf(ModBlocks.SCHOOL_DESK_WARPED.get());
         this.dropSelf(ModBlocks.SCHOOL_DESK_CRIMSON.get());
         this.dropSelf(ModBlocks.SCHOOL_DESK_MANGROVE.get());

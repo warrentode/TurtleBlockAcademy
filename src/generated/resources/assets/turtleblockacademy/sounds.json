@@ -1,4 +1,18 @@
 {
+  "block.turtleblockacademy.bookcase.close": {
+    "sounds": [
+      "item/book/close_put1",
+      "item/book/close_put2"
+    ],
+    "subtitle": "subtitles.turtleblockacademy.bookcase_close"
+  },
+  "block.turtleblockacademy.bookcase.open": {
+    "sounds": [
+      "item/book/close_put1",
+      "item/book/close_put2"
+    ],
+    "subtitle": "subtitles.turtleblockacademy.bookcase_open"
+  },
   "block.turtleblockacademy.desk.close": {
     "sounds": [
       {
@@ -13,7 +27,8 @@
       {
         "name": "block/barrel/open1",
         "pitch": 2.0
-      }, {
+      },
+      {
         "name": "block/barrel/open2",
         "pitch": 2.0
       }

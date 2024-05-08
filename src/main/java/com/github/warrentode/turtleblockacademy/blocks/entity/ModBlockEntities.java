@@ -14,6 +14,14 @@ public class ModBlockEntities {
             DeferredRegister.create(ForgeRegistries.BLOCK_ENTITY_TYPES, MODID);
 
     @SuppressWarnings("DataFlowIssue")
+    public static final RegistryObject<BlockEntityType<PlateBlockEntity>> PLATE_BLOCK_ENTITY =
+            BLOCK_ENTITIES.register("plate_block_entity",
+                    () -> BlockEntityType.Builder.of(PlateBlockEntity::new,
+                                    ModBlocks.PLATE_WHITE.get()
+                            )
+                            .build(null));
+
+    @SuppressWarnings("DataFlowIssue")
     public static final RegistryObject<BlockEntityType<SchoolDeskBlockEntity>> SCHOOL_DESK_ENTITY =
             BLOCK_ENTITIES.register("school_desk_entity",
                     () -> BlockEntityType.Builder.of(SchoolDeskBlockEntity::new,

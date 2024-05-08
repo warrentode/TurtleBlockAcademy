@@ -1,4 +1,4 @@
-// 1.19.2	2024-05-05T07:45:26.1685401	LootTables
+// 1.19.2	2024-05-07T06:10:20.9069286	LootTables
 87a0cbf6a892b17ac0de9da47bde823b2367a6cc data/dimdungeons/loot_tables/chests/kit_blackstone.json
 729a3840556d99d848e13423abbe664193fa88d6 data/dimdungeons/loot_tables/chests/kit_brick_set.json
 d297fc4885d818c44a6dcbe76a13fd827f547bb2 data/dimdungeons/loot_tables/chests/kit_christmas_blocks.json
@@ -217,6 +217,7 @@ f1f07787992947217839bc02291d840aca549bc2 data/turtleblockacademy/loot_tables/blo
 1751181387783b222a18e07ed4629748e8557479 data/turtleblockacademy/loot_tables/blocks/park_bench_walnut.json
 6bed0b4271106e68683ff28171d1a54a569d1f84 data/turtleblockacademy/loot_tables/blocks/park_bench_warped.json
 dac7405f63cb29f92ece6670e2e6e42a38c27d3a data/turtleblockacademy/loot_tables/blocks/park_bench_willow.json
+c4caefdd89ccc210ef9a3c8a1ed35dc3eb38a400 data/turtleblockacademy/loot_tables/blocks/plate_white.json
 645e99fdc15c3b32ee901f05339525050945715f data/turtleblockacademy/loot_tables/blocks/school_desk_acacia.json
 8d2b31779bea5d478b38b7d594d55bf2fb3d7189 data/turtleblockacademy/loot_tables/blocks/school_desk_aether_skyroot.json
 e20cb25506686120514cb37b77385d462cbdcad3 data/turtleblockacademy/loot_tables/blocks/school_desk_azalea.json

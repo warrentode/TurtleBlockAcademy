@@ -4,6 +4,7 @@ import biomesoplenty.api.block.BOPBlocks;
 import com.aetherteam.aether.block.AetherBlocks;
 import com.aetherteam.aether.item.AetherItems;
 import com.catastrophe573.dimdungeons.block.BlockRegistrar;
+import com.github.warrentode.turtleblockacademy.datagen.recipes.builder.PatchouliShapelessBookRecipeBuilder;
 import com.github.warrentode.turtleblockacademy.datagen.recipes.recipe.CuttingRecipesGen;
 import com.github.warrentode.turtleblockacademy.datagen.recipes.recipe.LootBagRecipesGen;
 import com.github.warrentode.turtleblockacademy.items.ModItems;
@@ -1317,6 +1318,16 @@ public class RecipesGen extends RecipeProvider implements IConditionBuilder {
     }
 
     private void schoolSupplyRecipes(Consumer<FinishedRecipe> consumer) {
+        PatchouliShapelessBookRecipeBuilder
+                .writeRecipe("turtleblockacademy:kitchen_textbook", 1)
+                .addIngredient(Items.BOOK)
+                .addIngredient(PackTags.Items.INGREDIENTS)
+                .finish(consumer, new ResourceLocation("turtleblockacademy:kitchen_textbook"));
+        PatchouliShapelessBookRecipeBuilder
+                .writeRecipe("turtleblockacademy:brewingguide", 1)
+                .addIngredient(Items.BOOK)
+                .addIngredient(Items.GLASS_BOTTLE)
+                .finish(consumer, new ResourceLocation("turtleblockacademy:brewingguide"));
         ShapedRecipeBuilder.shaped(ModItems.STUDENT_CARD.get(), 1)
                 .pattern("###")
                 .pattern("#T#")

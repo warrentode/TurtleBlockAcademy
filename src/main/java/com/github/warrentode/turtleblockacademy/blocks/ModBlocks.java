@@ -25,6 +25,10 @@ public class ModBlocks {
             () -> new CertificateBlock(BlockBehaviour.Properties.of(Material.PLANT)
                     .sound(TurtleBlockAcademy.CERTIFICATE).instabreak().noOcclusion()));
 
+    public static final RegistryObject<Block> PLATE_WHITE = registerBlock("plate_white",
+            () -> new PlateBlock(BlockBehaviour.Properties.of(Material.GLASS)
+                    .sound(SoundType.GLASS).instabreak()));
+
     public static final RegistryObject<Block> SCHOOL_DESK_OAK = registerBlock("school_desk_oak",
             () -> new SchoolDeskBlock(BlockBehaviour.Properties.of(Material.WOOD)
                     .sound(SoundType.WOOD).instabreak().noOcclusion()));

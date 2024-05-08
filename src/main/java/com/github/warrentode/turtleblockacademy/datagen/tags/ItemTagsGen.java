@@ -760,7 +760,9 @@ public class ItemTagsGen extends ItemTagsProvider {
         tag(PackTags.Items.CABBAGE)
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("farmersdelight:cabbage")));
         tag(PackTags.Items.CACTUS)
-                .add(Items.CACTUS);
+                .add(Items.CACTUS)
+                .addOptional(Objects.requireNonNull(
+                        ResourceLocation.tryParse("ecologics:prickly_pear")));
         tag(PackTags.Items.SHELL)
                 .add(Items.NAUTILUS_SHELL)
                 .addOptional(alabaster.crabbersdelight.common.registry.ModItems.NAUTILUS_SHELL_BLOCK.getId())

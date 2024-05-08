@@ -1,5 +1,6 @@
 package com.github.warrentode.turtleblockacademy.blocks.entity;
 
+import com.github.warrentode.turtleblockacademy.blocks.BookCaseBlock;
 import com.github.warrentode.turtleblockacademy.blocks.SchoolDeskCabinetBlock;
 import com.github.warrentode.turtleblockacademy.blocks.SchoolLockerBlock;
 import com.github.warrentode.turtleblockacademy.util.ModSounds;
@@ -36,6 +37,10 @@ public class SchoolStorageEntity extends RandomizableContainerBlockEntity {
                 SchoolStorageEntity.this.playSound(state, ModSounds.BLOCK_LOCKER_OPEN.get());
                 SchoolStorageEntity.this.updateBlockState(state, true);
             }
+            else if (state.getBlock() instanceof BookCaseBlock) {
+                SchoolStorageEntity.this.playSound(state, ModSounds.BLOCK_BOOKCASE_OPEN.get());
+                SchoolStorageEntity.this.updateBlockState(state, true);
+            }
         }
 
         protected void onClose(@NotNull Level level, @NotNull BlockPos pos, @NotNull BlockState state) {
@@ -46,6 +51,10 @@ public class SchoolStorageEntity extends RandomizableContainerBlockEntity {
             else if (state.getBlock() instanceof SchoolLockerBlock) {
                 SchoolStorageEntity.this.playSound(state, ModSounds.BLOCK_LOCKER_CLOSE.get());
                 SchoolStorageEntity.this.updateBlockState(state, false);
+            }
+            else if (state.getBlock() instanceof BookCaseBlock) {
+                SchoolStorageEntity.this.playSound(state, ModSounds.BLOCK_BOOKCASE_CLOSE.get());
+                SchoolStorageEntity.this.updateBlockState(state, true);
             }
         }
 
@@ -134,6 +143,9 @@ public class SchoolStorageEntity extends RandomizableContainerBlockEntity {
             }
             else if (state.getBlock() instanceof SchoolLockerBlock) {
                 this.level.setBlock(this.getBlockPos(), state.setValue(SchoolLockerBlock.OPEN, open), 3);
+            }
+            else if (state.getBlock() instanceof BookCaseBlock) {
+                this.level.setBlock(this.getBlockPos(), state.setValue(BookCaseBlock.OPEN, open), 3);
             }
         }
     }

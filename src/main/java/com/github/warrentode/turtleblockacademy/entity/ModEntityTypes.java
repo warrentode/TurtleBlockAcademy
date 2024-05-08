@@ -19,6 +19,7 @@ public class ModEntityTypes {
                             new SeatEntity(level), MobCategory.MISC).sized(0.0F, 0.0F)
                     .setCustomClientFactory((spawnEntity, level) -> new SeatEntity(level)));
 
+
     private static <T extends Entity> RegistryObject<EntityType<T>> register(EntityType.Builder<T> builder) {
         return ENTITY_TYPES.register("seat_entity", () -> builder.build("seat_entity"));
     }
