@@ -90,8 +90,8 @@ public class AcademyCommands {
         tag.putString(AcademyUtil.ACADEMIC_NAME_KEY, AcademyUtil.getAcademicStudent(serverPlayer));
         tag.putString(AcademyUtil.ACADEMIC_YEAR_KEY, AcademyUtil.getAcademicYear());
 
-        stack.setHoverName(Component.literal(AcademyUtil.getAcademicStudent(serverPlayer) + "'s "
-                + AcademyUtil.getAcademicYear() + " ").append(Component.translatable(stack.getDescriptionId())));
+        stack.setHoverName(Component.literal(AcademyUtil.getAcademicStudent(serverPlayer)
+                + " " + AcademyUtil.getAcademicYear()));
 
         return stack;
     }

@@ -1,12 +1,15 @@
 {
-  "type": "patchouli:shapeless_book_recipe",
-  "book": "turtleblockacademy:kitchen_textbook",
+  "type": "minecraft:crafting_shapeless",
   "ingredients": [
     {
       "item": "minecraft:book"
     },
     {
-      "tag": "forge:ingredients"
+      "item": "minecraft:egg"
     }
-  ]
+  ],
+  "result": {
+    "count": 1,
+    "item": "turtleblockacademy:kitchen_textbook"
+  }
 }

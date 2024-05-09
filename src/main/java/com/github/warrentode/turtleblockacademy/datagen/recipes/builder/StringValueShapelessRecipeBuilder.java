@@ -13,36 +13,35 @@ import net.minecraft.world.item.crafting.RecipeSerializer;
 import net.minecraft.world.level.ItemLike;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
-import vazkii.patchouli.common.recipe.ShapelessBookRecipe;
 
 import java.util.List;
 import java.util.function.Consumer;
 
 import static com.github.warrentode.turtleblockacademy.TurtleBlockAcademy.MODID;
 
-public class PatchouliShapelessBookRecipeBuilder {
+public class StringValueShapelessRecipeBuilder {
     private final String saveName;
     private final List<Ingredient> ingredients = Lists.newArrayList();
     private final int count;
 
-    public PatchouliShapelessBookRecipeBuilder(String saveName, int  count) {
+    public StringValueShapelessRecipeBuilder(String saveName, int  count) {
         this.saveName = saveName;
         this.count = count;
     }
 
-    public static PatchouliShapelessBookRecipeBuilder writeRecipe(String saveName, int count) {
-        return new PatchouliShapelessBookRecipeBuilder(saveName, count);
+    public static StringValueShapelessRecipeBuilder writeRecipe(String saveName, int count) {
+        return new StringValueShapelessRecipeBuilder(saveName, count);
     }
 
-    public PatchouliShapelessBookRecipeBuilder addIngredient(TagKey<Item> tagIn) {
+    public StringValueShapelessRecipeBuilder addIngredient(TagKey<Item> tagIn) {
         return this.addIngredient(Ingredient.of(tagIn));
     }
 
-    public PatchouliShapelessBookRecipeBuilder addIngredient(ItemLike itemIn) {
+    public StringValueShapelessRecipeBuilder addIngredient(ItemLike itemIn) {
         return this.addIngredient(itemIn, 1);
     }
 
-    public PatchouliShapelessBookRecipeBuilder addIngredient(ItemLike itemIn, int count) {
+    public StringValueShapelessRecipeBuilder addIngredient(ItemLike itemIn, int count) {
         for(int i = 0; i < count; ++i) {
             this.addIngredient(Ingredient.of(itemIn));
         }
@@ -50,11 +49,11 @@ public class PatchouliShapelessBookRecipeBuilder {
         return this;
     }
 
-    public PatchouliShapelessBookRecipeBuilder addIngredient(Ingredient ingredientIn) {
+    public StringValueShapelessRecipeBuilder addIngredient(Ingredient ingredientIn) {
         return this.addIngredient(ingredientIn, 1);
     }
 
-    public PatchouliShapelessBookRecipeBuilder addIngredient(Ingredient ingredientIn, int quantity) {
+    public StringValueShapelessRecipeBuilder addIngredient(Ingredient ingredientIn, int quantity) {
         for(int i = 0; i < quantity; ++i) {
             this.ingredients.add(ingredientIn);
         }
@@ -69,7 +68,7 @@ public class PatchouliShapelessBookRecipeBuilder {
     }
 
     public void finish(Consumer<FinishedRecipe> consumerIn, ResourceLocation save) {
-        consumerIn.accept(new PatchouliShapelessBookRecipeBuilder.Result(save, ingredients, count));
+        consumerIn.accept(new Result(save, ingredients, count));
     }
 
     public static class Result implements FinishedRecipe {
@@ -94,22 +93,25 @@ public class PatchouliShapelessBookRecipeBuilder {
                 arrayIngredients.add(ingredient.toJson());
             }
             json.add("ingredients", arrayIngredients);
-            JsonObject objectResult = new JsonObject();
+            JsonObject objectIngredients = new JsonObject();
             if (this.count > 1) {
-                objectResult.addProperty("count", this.count);
+                objectIngredients.addProperty("count", this.count);
             }
 
-            json.addProperty("book", String.valueOf(save));
+            JsonObject objectResult = new JsonObject();
+            objectResult.addProperty("item", String.valueOf(save));
+            objectResult.addProperty("count", Math.max(count, 1));
+            json.add("result", objectResult);
         }
 
         @Override
         public @NotNull ResourceLocation getId() {
-            return new ResourceLocation("patchouli", save.getPath());
+            return save;
         }
 
         @Override
         public @NotNull RecipeSerializer<?> getType() {
-            return ShapelessBookRecipe.SERIALIZER;
+            return RecipeSerializer.SHAPELESS_RECIPE;
         }
 
         @Nullable

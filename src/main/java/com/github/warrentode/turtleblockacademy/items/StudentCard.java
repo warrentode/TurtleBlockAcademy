@@ -2,6 +2,7 @@ package com.github.warrentode.turtleblockacademy.items;
 
 import com.github.warrentode.turtleblockacademy.util.AcademyUtil;
 import net.minecraft.ChatFormatting;
+import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.InteractionHand;
@@ -35,11 +36,13 @@ public class StudentCard extends Item {
             itemTag.putString(AcademyUtil.ACADEMIC_NAME_KEY, AcademyUtil.getAcademicStudent(playerUsing));
             itemTag.putString(AcademyUtil.ACADEMIC_YEAR_KEY, AcademyUtil.getAcademicYear());
 
-            stack.setHoverName(Component.literal(AcademyUtil.getAcademicStudent(playerUsing) + "'s "
-                    + AcademyUtil.getAcademicYear() + " ").append(Component.translatable(stack.getDescriptionId())));
+            stack.setHoverName(Component.literal(AcademyUtil.getAcademicStudent(playerUsing)
+                    + " " + AcademyUtil.getAcademicYear()));
 
-            playerUsing.sendSystemMessage(Component.translatable("message." + MODID + ".registered")
-                    .withStyle(ChatFormatting.GOLD));
+            if (!level.isClientSide) {
+                playerUsing.sendSystemMessage(Component.translatable("message." + MODID + ".registered")
+                        .withStyle(ChatFormatting.GOLD));
+            }
 
             return new InteractionResultHolder<>(InteractionResult.SUCCESS, stack);
         }
@@ -51,10 +54,13 @@ public class StudentCard extends Item {
     @Override
     public void appendHoverText(@NotNull ItemStack stack, @Nullable Level level, @NotNull List<Component> tooltips, @NotNull TooltipFlag tooltipFlag) {
         if (stack.getTag() != null && !stack.getTag().getString(AcademyUtil.ACADEMIC_NAME_KEY).isEmpty() && !stack.getTag().getString(AcademyUtil.ACADEMIC_YEAR_KEY).isEmpty()) {
-            String academicNameTag = stack.getTag().getString(AcademyUtil.ACADEMIC_NAME_KEY);
-            String academicYearTag = stack.getTag().getString(AcademyUtil.ACADEMIC_YEAR_KEY);
-            tooltips.add(Component.literal(academicNameTag + " " + academicYearTag)
-                    .withStyle(ChatFormatting.GOLD).withStyle(ChatFormatting.BOLD));
+            if (Screen.hasShiftDown()) {
+                String academicNameTag = stack.getTag().getString(AcademyUtil.ACADEMIC_NAME_KEY);
+                String academicYearTag = stack.getTag().getString(AcademyUtil.ACADEMIC_YEAR_KEY);
+                tooltips.add(Component.literal(academicNameTag + "'s" + " " + academicYearTag + " ")
+                        .append(Component.translatable(stack.getDescriptionId()))
+                        .withStyle(ChatFormatting.GOLD));
+            }
         }
         else {
             tooltips.add(Component.translatable("tooltips.turtleblockacademy.student_card_blank").withStyle(ChatFormatting.GRAY));
