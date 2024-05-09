@@ -1,0 +1,12 @@
+{
+    "name": "References and Bonus Reading",
+    "sortnum": 3,
+    "icon": "minecraft:knowledge_book",
+    "category": "turtleblockacademy:macronutrients",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "$(li)$(l:https://hms.harvard.edu/news-events/publications-archive/brain/sugar-brain#:~:text=Glucose%2C%20a%20form%20of%20sugar,sugar%20energy%20in%20the%20body.)Sugar and the Brain$()$(li)$(l:https://www.sciencedirect.com/topics/nursing-and-health-professions/glycogen-liver-level)Scientific Journal Topics on Glycogen$()$(li)$(l:https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3248697/)Skeletal Muscle Glycogen$()$(li)$(l:https://pubmed.ncbi.nlm.nih.gov/10634967/)Ketone Bodies$()$(li)$(l:https://medlineplus.gov/lab-tests/ketones-in-blood/)Ketones in Blood$()$(li)$(l:https://pubmed.ncbi.nlm.nih.gov/8116550/)Carbohydrates as a source of energy$()$(li)$(l:https://www.sciencedirect.com/topics/biochemistry-genetics-and-molecular-biology/krebs-cycle#:~:text=The%20Krebs%20cycle%20has%20two,energy%20for%20various%20synthetic%20processes.)Krebs Cycle$()$(li)$(l:https://dtc.ucsf.edu/types-of-diabetes/type2/understanding-type-2-diabetes/how-the-body-processes-sugar/ketones/#:~:text=Ketones%20and%20ketoacids%20are%20alternative,and%20during%20dieting%20or%20fasting.)Ketones$()$(li)$(l:https://pubmed.ncbi.nlm.nih.gov/33878388/#:~:text=Galactose%20is%20an%20essential%20carbohydrate,being%20a%20precursor%20for%20glycosylation.)Galactose in human metabolism$()$(li)$(l:https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3047787/#:~:text=Glycosylation%20is%20a%20multistep%20process,Ser%20or%20Asp%20residues%2C%20respectively.)Glycosylation$()$(li)$(l:https://www.ncbi.nlm.nih.gov/books/NBK576428/)Biochemistry, Fructose Metabolism$()"
+        }
+    ]
+}

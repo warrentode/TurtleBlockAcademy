@@ -1,7 +1,7 @@
 {
   "name": "Temperature Abuse",
   "sortnum": 2,
-  "icon": "minecraft:writable_book",
+  "icon": "minecraft:blue_ice",
   "category": "turtleblockacademy:food_safety",
   "pages": [
     {

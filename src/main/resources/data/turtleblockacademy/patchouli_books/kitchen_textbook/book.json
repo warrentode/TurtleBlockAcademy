@@ -1,6 +1,6 @@
 {
   "name": "Learning in the Kitchen",
-  "landing_text": "Let's explore and experiment in the kitchen!",
+  "landing_text": "Let's explore and experiment in the kitchen!$(p)Allow me to make use of my college education by nerding out over Food Science, Human Nutrition, and Food Service Management in here.$(p)Academic Subjects Covered:$(li)Science, Health, Social Studies, Math",
   "use_resource_pack": true,
   "book_texture": "turtleblockacademy:textures/gui/book_dark_green.png",
   "filler_texture": "turtleblockacademy:textures/gui/logo.png",

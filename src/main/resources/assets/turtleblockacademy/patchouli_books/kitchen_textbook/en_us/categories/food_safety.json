@@ -2,5 +2,5 @@
   "name": "Food Safety",
   "sortnum": 1,
   "description": "Prevent foodborne illness with these simple practices.",
-  "icon": "minecraft:writable_book"
+  "icon": "farmersdelight:cooking_pot"
 }

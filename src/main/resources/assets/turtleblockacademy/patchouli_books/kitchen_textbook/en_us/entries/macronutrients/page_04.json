@@ -1,0 +1,13 @@
+{
+  "name": "Chapter Complete",
+  "sortnum": 4,
+  "icon": "turtleblockacademy:certificate_block",
+  "category": "turtleblockacademy:macronutrients",
+  "pages": [
+    {
+      "type": "spotlight",
+      "item": "turtleblockacademy:certificate_block",
+      "text": "Take a quick quiz from the instructor to complete this chapter of the unit study."
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+    "name": "Macronutrients",
+    "sortnum": 1,
+    "icon": "minecraft:bread",
+    "category": "turtleblockacademy:macronutrients",
+    "pages": [
+        {
+            "type": "patchouli:image",
+            "images": [
+                "turtleblockacademy:textures/patchouli/macronutrient_pie_chart.png"
+            ],
+            "border": true,
+            "text": "$(li)$(l:https://pubmed.ncbi.nlm.nih.gov/16004827/)Scientific Journal Article$(/l)$(li)$(l:https://www.youtube.com/watch?v=VLUyLeQlP4s)Nursing School Video$(/l)"
+        },
+        {
+            "type": "patchouli:text",
+            "text": "$(l)CARBOHYDRATES 45-65%$()$(li)Complex Carbohydrates$()$(li)Simple Carbohydrates$()$(li)Fiber$()$(li)$(l:https://diabetes.org/food-nutrition/understanding-carbs/types-carbohydrates)Types of Carbohydrates$(/l)$(p)$(l)PROTEINS 10-35%$()$(li)$(l:https://my.clevelandclinic.org/health/articles/22243-amino-acids)Essential Amino Acids$()$(li)$(l:https://bastyr.edu/about/news/what-are-complementary-proteins-and-how-do-we-get-them)Complementary Proteins$()$(p)$(l)FATS 20-35%$()$(li)Saturated$()$(li)Unsaturated$()$(li)Trans Fat$()$(li)$(l:https://lpi.oregonstate.edu/mic/other-nutrients/essential-fatty-acids)Essential Fatty Acids$()$(li)$(l:https://www.hsph.harvard.edu/nutritionsource/what-should-you-eat/fats-and-cholesterol/types-of-fat/)Types of Fat$()$(li)$(l:https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6893649/)Effects of Trans Fat$()"
+        }
+    ]
+}

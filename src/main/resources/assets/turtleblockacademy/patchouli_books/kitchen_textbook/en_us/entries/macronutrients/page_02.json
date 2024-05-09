@@ -1,0 +1,72 @@
+{
+    "name": "Your Body Doesn't Care",
+    "sortnum": 2,
+    "icon": "minecraft:apple",
+    "category": "turtleblockacademy:macronutrients",
+    "pages": [
+        {
+            "type": "patchouli:text",
+            "text": "Your body can't tell the difference between sources of energy. It doesn't matter to it if it comes from sugar, protein, or fat. Energy is energy, and the body will never throw it away.$(p)Everything you eat can, and will, be broken down to glucose for your body's survival."
+        },
+        {
+            "type": "patchouli:text",
+            "text": "This means that if you're trying to lose weight or just control it, you need to focus more on controlling your total calorie intake rather than trying to restrict specific macronutrients.$(p)Please note that none of this applies to anyone requiring any kind of therapeutic diet. Follow your care provider's advice."
+        },
+        {
+            "type": "patchouli:text",
+            "text": "In the most simplistic way to put it, too much of anything poisons the body. If it can't be used or stored, then it needs to be flushed out.$(p)So if we eat more of something than our bodies can flush out in a day, it builds up and creates problems. This applies to all macronutrients and all micronutrients.$(p)No exceptions."
+        },
+        {
+            "type": "patchouli:text",
+            "text": "There are 3 monosaccharides: glucose, fructose, and galactose.$(p)These molecules cannot be broken down further, but the body is unable to use fructose at all. It must be converted to glucose by the liver with enzymes.$(p)On the other hand, galactose is not used as an energy source. Instead it plays an important role in various functions, like our immune response."
+        },
+        {
+            "type": "patchouli:text",
+            "text": "This means that glucose is the primary energy energy source that fuels the body. In a healthy body, insulin signals to cells to take it in for use. Excess glucose is stored away for later. Short term storage is in the form of glycogen.$(p)Glycogen is just long chains of glucose. The max stored in the liver is about 100g. Approximately 500g of additional glycogen is also stored in the muscle. The turn over rate for glycogen is roughly 10g per hour."
+        },
+        {
+            "type": "patchouli:text",
+            "text": "The brain alone uses roughly 120g of glucose per day. This is half of the total glucose burned in the body each day! All that just for fueling one organ.$(p)Naturally, higher physical activity increases the total turnover rate.$(p)Once the body has stored its max amount of glycogen, any remaining calories are tucked away in adipose tissue."
+        },
+        {
+            "type": "patchouli:text",
+            "text": "This is the fat in our bodies and you can think of it as a rainy day fund since the body will trigger hunger cues before breaking down this fat for energy.$(p)It's generally believed that the reason the body resists breaking down fat is to protect itself from famine.$(p)You'll hear the term homeostasis a lot around this topic since the body wants to maintain an equilibrium with its turnover rate."
+        },
+        {
+            "type": "patchouli:text",
+            "text": "If you find yourself craving sugar all the time, it means you're not eating enough complex carbohydrates and have established an equilibrium the requires frequent intake to prevent starvation of the brain.$(p)To fix this you must put in the work to reset your equilibrium.$(p)It does NOT mean you're addicted to sugar. I don't care what anyone tells you, it's straight up the same as saying you're addicted to breathing."
+        },
+        {
+            "type": "patchouli:text",
+            "text": "Why do I say this? Because the brain ONLY runs on glucose and ketone bodies are produced to prevent the starvation of the brain.$(p)Quite literally, your brain is genetically designed to DIE without it and your body is willing to sacrifice EVERYTHING else in order to protect the brain as much as possible.$(p)Without the brain everything else dies."
+        },
+        {
+            "type": "patchouli:text",
+            "text": "Ketone bodies are produced by breaking down body tissue, like your organs and muscles.$(p)Again, the body doesn't care. It will do whatever it needs to do for survival and when it comes to protecting the brain, everything else is fair game.$(p)This is why it's common for people with diabetes to have their ketone levels monitored."
+        },
+        {
+            "type": "patchouli:text",
+            "text": "Diabetes causes starving in a sea of plenty due to poor or absent insulin function.$(p)You can't use the glucose in your blood if the insulin isn't able to make your cells take it in.$(p)What happens instead is at best the glucose gets stored rather than used while screaming for more. But even with what gets stored, there is still so much free glucose in the blood that it can poison the body."
+        },
+        {
+            "type": "patchouli:text",
+            "text": "Diabetes and famine (or fasting) aren't the only causes of ketone production.$(p)Imbalanced diets and excessive exercise are also causes.$(p)High ketone levels puts you at risk for organ failure, acidic blood, kidney stones, and gall stones.$(p)Ultimately, no one should ever be on a ketone diet without the advice and supervision of a health care provider."
+        },
+        {
+            "type": "patchouli:text",
+            "text": "I say this because there are certain situations and conditions where a ketone diet is justified and called for, but the average person doesn't need it.$(p)The recommended intake ranges for macronutrients is intended to prevent a variety of health problems, not just the ones mentioned here."
+        },
+        {
+            "type": "patchouli:text",
+            "text": "I realize that I have placed all my focus in the macronutrient section on this one topic. This is because I have some really strong opinions about it due to the education I've received. My opinions will change whenever the information found in scientific journals change.$(p)Therefore, I will say the same to you as I say to everyone else: take what makes sense and works for you, and disregard the rest.$(p)The information I share is simply that. Do what you want with it."
+        },
+        {
+            "type": "patchouli:text",
+            "text": "With all that said, the Diet mod by TheIllusiveC4 has been added to the modpack to provide hands on practice with being mindful about the foods you select.$(p)I've tried to keep my customizations broad and forgiving since I also want to apply the adage of nutrition doesn't need to be perfect here.$(p)It's so easy, especially in a game, to focus on just one food."
+        },
+        {
+            "type": "patchouli:text",
+            "text": "My goal here is to not just encourage healthy eating, but to promote the practice of mindful and joyful eating as well.$(p)In real life, there is a whole world of food and food cultures out there to discover, explore, and savor.$(p)As one of my professors once said: food is life, enjoy it."
+        }
+    ]
+}
