@@ -140,7 +140,7 @@ dependencies {
     implementation fg.deobf("curse.maven:unusual-end-617757:4549776")
     implementation fg.deobf("curse.maven:phantasm-565254:4398465")
     implementation fg.deobf("curse.maven:aether-255308:5263399")
-    implementation fg.deobf("curse.maven:advanced-mining-dimension-332640:4973553")
+    implementation fg.deobf("curse.maven:lobby-567798:4162895")
 
     // delight and food mod set
     implementation fg.deobf("curse.maven:farmers-delight-398521:4679318")
@@ -158,9 +158,9 @@ dependencies {
     implementation fg.deobf("curse.maven:miners-delight-plus-689630:4738272")
 
     // need this one on for runData
-    // implementation fg.deobf("curse.maven:delightful-637529:4541459")
+    implementation fg.deobf("curse.maven:delightful-637529:4541459")
     // need this one on for runClient
-    compileOnly(fg.deobf("curse.maven:delightful-637529:4541459"))
+    // compileOnly(fg.deobf("curse.maven:delightful-637529:4541459"))
 
     implementation fg.deobf('software.bernie.geckolib:geckolib-forge-1.19:3.1.40')
     implementation fg.deobf("curse.maven:kawaii-dishes-694309:4644365")

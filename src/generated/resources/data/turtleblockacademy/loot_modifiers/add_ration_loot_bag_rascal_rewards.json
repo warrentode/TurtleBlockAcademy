@@ -1,0 +1,11 @@
+{
+  "type": "turtleblockacademy:add_loot_table",
+  "addChance": 1.0,
+  "conditions": [
+    {
+      "condition": "forge:loot_table_id",
+      "loot_table_id": "friendsandfoes:rewards/rascal_good_reward"
+    }
+  ],
+  "lootTable": "lootbags:loot_bags/rations_bag_drop"
+}

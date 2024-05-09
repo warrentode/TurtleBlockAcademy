@@ -6,7 +6,6 @@ import com.aetherteam.aether.item.AetherItems;
 import com.catastrophe573.dimdungeons.block.BlockRegistrar;
 import com.github.warrentode.turtleblockacademy.blocks.ModBlockRegistry;
 import com.github.warrentode.turtleblockacademy.datagen.recipes.builder.PatchouliShapelessBookRecipeBuilder;
-import com.github.warrentode.turtleblockacademy.datagen.recipes.builder.StringValueShapelessRecipeBuilder;
 import com.github.warrentode.turtleblockacademy.datagen.recipes.recipe.CuttingRecipesGen;
 import com.github.warrentode.turtleblockacademy.datagen.recipes.recipe.LootBagRecipesGen;
 import com.github.warrentode.turtleblockacademy.items.ModItems;
@@ -92,21 +91,23 @@ public class RecipesGen extends RecipeProvider implements IConditionBuilder {
                 .addIngredient(Items.BOOK)
                 .addIngredient(Items.EGG)
                 .finish(consumer, new ResourceLocation(MODID,"kitchen_textbook"));
-        StringValueShapelessRecipeBuilder
-                .writeRecipe("turtleblockacademy:kitchen_textbook", 1)
-                .addIngredient(Items.BOOK)
-                .addIngredient(Items.EGG)
-                .finish(consumer, new ResourceLocation(MODID,"kitchen_textbook"));
         PatchouliShapelessBookRecipeBuilder
                 .writeRecipe("turtleblockacademy:brewingguide", 1)
                 .addIngredient(Items.BOOK)
                 .addIngredient(Items.GLASS_BOTTLE)
                 .finish(consumer, new ResourceLocation(MODID,"brewingguide"));
+        /*
         StringValueShapelessRecipeBuilder
                 .writeRecipe("turtleblockacademy:brewingguide", 1)
                 .addIngredient(Items.BOOK)
                 .addIngredient(Items.GLASS_BOTTLE)
                 .finish(consumer, new ResourceLocation(MODID,"brewingguide"));
+        StringValueShapelessRecipeBuilder
+                .writeRecipe("turtleblockacademy:kitchen_textbook", 1)
+                .addIngredient(Items.BOOK)
+                .addIngredient(Items.EGG)
+                .finish(consumer, new ResourceLocation(MODID,"kitchen_textbook"));
+        */
     }
     private void kettleRecipes(Consumer<FinishedRecipe> consumer) {
         ConditionalRecipe.builder()

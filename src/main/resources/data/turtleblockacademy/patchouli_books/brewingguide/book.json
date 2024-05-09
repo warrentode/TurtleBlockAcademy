@@ -10,5 +10,6 @@
   "subtitle": "Brewing Made Easier",
   "creative_tab": "turtleblockacademy",
   "pause_game": true,
-  "text_overflow_mode": "resize"
+  "text_overflow_mode": "resize",
+  "use_blocky_font": true
 }

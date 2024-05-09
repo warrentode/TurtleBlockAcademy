@@ -11,13 +11,9 @@ import com.github.warrentode.turtleblockacademy.loot.tables.PackBuiltInLootTable
 import com.github.warrentode.turtleblockacademy.util.PackTags;
 import com.google.common.collect.ImmutableList;
 import com.google.common.collect.Sets;
-import de.maxhenkel.miningdimension.Main;
 import net.mehvahdjukaar.supplementaries.reg.ModRegistry;
 import net.minecraft.advancements.*;
-import net.minecraft.advancements.critereon.EntityPredicate;
-import net.minecraft.advancements.critereon.ItemPredicate;
-import net.minecraft.advancements.critereon.LocationPredicate;
-import net.minecraft.advancements.critereon.PlayerTrigger;
+import net.minecraft.advancements.critereon.*;
 import net.minecraft.data.CachedOutput;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.DataProvider;
@@ -48,7 +44,6 @@ import static com.catastrophe573.dimdungeons.item.ItemRegistrar.ITEM_BLANK_BUILD
 import static com.catastrophe573.dimdungeons.item.ItemRegistrar.ITEM_PORTAL_KEY;
 import static com.github.Pandarix.beautify.core.init.ItemInit.BOOKSTACK_ITEM;
 import static com.github.warrentode.turtleblockacademy.TurtleBlockAcademy.MODID;
-import static de.maxhenkel.miningdimension.Main.MINING_DIMENSION;
 
 public class AcademyAdvancementsGen extends AdvancementProvider {
     private final Path PATH;
@@ -189,11 +184,11 @@ public class AcademyAdvancementsGen extends AdvancementProvider {
 
             Advancement enteredMining = Advancement.Builder.advancement()
                     .parent(exploration_track)
-                    .display(Main.TELEPORTER_ITEM.get(),
+                    .display(Items.NETHERITE_PICKAXE,
                             Component.translatable("advancement." + MODID + "." + "enter_mining"),
                             Component.translatable("advancement." + MODID + "." + "enter_mining.desc"),
                             null, FrameType.TASK, false, false, false)
-                    .addCriterion("entered_mining", net.minecraft.advancements.critereon.ChangeDimensionTrigger.TriggerInstance.changedDimensionTo(MINING_DIMENSION))
+                    .addCriterion("entered_mining", new ImpossibleTrigger.TriggerInstance())
                     .rewards(AdvancementRewards.Builder.function(new ResourceLocation("turtleblockacademy:set_mining_stage")))
                     .save(consumer, getPath(MODID, "exploration/enter_mining"));
 
@@ -313,9 +308,19 @@ public class AcademyAdvancementsGen extends AdvancementProvider {
                             Component.translatable("advancement." + MODID + "." + "complete_food_safety"),
                             Component.translatable("advancement." + MODID + "." + "complete_food_safety.desc"),
                             null, FrameType.TASK, false, false, false)
-                    .addCriterion("completed_food_safety", net.minecraft.advancements.critereon.ChangeDimensionTrigger.TriggerInstance.changedDimensionTo(MINING_DIMENSION))
-                    .rewards(AdvancementRewards.Builder.function(new ResourceLocation("turtleblockacademy:give_kitchen_certificate")))
+                    .addCriterion("completed_food_safety", new ImpossibleTrigger.TriggerInstance())
+                    .rewards(AdvancementRewards.Builder.experience(500))
                     .save(consumer, getPath(MODID, "education/complete_food_safety"));
+
+            Advancement completeMacronutrients = Advancement.Builder.advancement()
+                    .parent(education_track)
+                    .display(ModBlockRegistry.CERTIFICATE_BLOCK.get(),
+                            Component.translatable("advancement." + MODID + "." + "complete_macronutrients"),
+                            Component.translatable("advancement." + MODID + "." + "complete_macronutrients.desc"),
+                            null, FrameType.TASK, false, false, false)
+                    .addCriterion("completed_food_safety", new ImpossibleTrigger.TriggerInstance())
+                    .rewards(AdvancementRewards.Builder.function(new ResourceLocation("turtleblockacademy:give_kitchen_certificate")))
+                    .save(consumer, getPath(MODID, "education/complete_macronutrients"));
         }
 
         @SuppressWarnings("SameParameterValue")

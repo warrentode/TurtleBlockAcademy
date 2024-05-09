@@ -8,7 +8,6 @@ import com.github.warrentode.turtleblockacademy.loot.conditions.GameStageConditi
 import com.github.warrentode.turtleblockacademy.loot.conditions.SeasonalCondition;
 import com.google.common.collect.ImmutableList;
 import com.mojang.datafixers.util.Pair;
-import de.maxhenkel.miningdimension.Main;
 import net.minecraft.advancements.critereon.LocationPredicate;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.loot.LootTableProvider;
@@ -66,18 +65,21 @@ public class ModLootProviders extends LootTableProvider {
     public static final LootItemCondition.Builder STAGE_MINING = GameStageCondition.stage().set(Boolean.valueOf("mining"));
 
     // dimension checks
-    public static final LootItemCondition.Builder IN_OVERWORLD
-            = LocationCheck.checkLocation(LocationPredicate.Builder.location().setDimension(Level.OVERWORLD));
-    public static final LootItemCondition.Builder IN_MINING =
-            LocationCheck.checkLocation(LocationPredicate.Builder.location().setDimension(Main.MINING_DIMENSION));
+    public static final LootItemCondition.Builder IN_OVERWORLD =
+            LocationCheck.checkLocation(LocationPredicate.Builder.location()
+                    .setDimension(Level.OVERWORLD));
     public static final LootItemCondition.Builder IN_NETHER =
-            LocationCheck.checkLocation(LocationPredicate.Builder.location().setDimension(Level.NETHER));
+            LocationCheck.checkLocation(LocationPredicate.Builder.location()
+                    .setDimension(Level.NETHER));
     public static final LootItemCondition.Builder IN_END =
-            LocationCheck.checkLocation(LocationPredicate.Builder.location().setDimension(Level.END));
+            LocationCheck.checkLocation(LocationPredicate.Builder.location()
+                    .setDimension(Level.END));
     public static final LootItemCondition.Builder IN_AETHER =
-            LocationCheck.checkLocation(LocationPredicate.Builder.location().setDimension(AetherDimensions.AETHER_LEVEL));
+            LocationCheck.checkLocation(LocationPredicate.Builder.location()
+                    .setDimension(AetherDimensions.AETHER_LEVEL));
     public static final LootItemCondition.Builder IN_DUNGEON =
-            LocationCheck.checkLocation(LocationPredicate.Builder.location().setDimension(DimDungeons.DUNGEON_DIMENSION));
+            LocationCheck.checkLocation(LocationPredicate.Builder.location()
+                    .setDimension(DimDungeons.DUNGEON_DIMENSION));
 
     // holiday checks
     public static final LootItemCondition.Builder BIRTHDAY_EVENT = SeasonalCondition.season().set("BIRTHDAY");

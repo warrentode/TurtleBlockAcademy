@@ -2,8 +2,7 @@
   "parent": "turtleblockacademy:exploration_track",
   "criteria": {
     "entered_mining": {
-      "conditions": {},
-      "trigger": "minecraft:changed_dimension"
+      "trigger": "minecraft:impossible"
     }
   },
   "display": {
@@ -14,7 +13,8 @@
     "frame": "task",
     "hidden": false,
     "icon": {
-      "item": "mining_dimension:teleporter"
+      "item": "minecraft:netherite_pickaxe",
+      "nbt": "{Damage:0}"
     },
     "show_toast": false,
     "title": {

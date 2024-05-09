@@ -120,9 +120,9 @@ ordering = "BEFORE"
 side = "BOTH"
 
 [[dependencies.${ mod_id }]]
-modId = "mining_dimension"
+modId = "lobby"
 mandatory = true
-versionRange = "[1.19.2-1.1.0,)"
+versionRange = "[7.0.1,)"
 ordering = "BEFORE"
 side = "BOTH"
 

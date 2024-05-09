@@ -36,6 +36,21 @@ import static com.github.warrentode.turtleblockacademy.datagen.loot.ModLootProvi
 public class LootbagLootTablesGen implements Consumer<BiConsumer<ResourceLocation, LootTable.Builder>> {
     @Override
     public void accept(@NotNull BiConsumer<ResourceLocation, LootTable.Builder> consumer) {
+        consumer.accept(LootbagLootTables.DECO_BAG, LootTable.lootTable()
+                .withPool(LootPool.lootPool()
+                        .setRolls(ConstantValue.exactly(6))
+                        .setBonusRolls(ConstantValue.exactly(0))
+                        .add(LootTableReference.lootTableReference(PackBuiltInLootTables.PLUSHIES))
+                        .add(LootTableReference.lootTableReference(PackBuiltInLootTables.BATH_DECO))
+                        .add(LootTableReference.lootTableReference(PackBuiltInLootTables.ART_DECO))
+                        .add(LootTableReference.lootTableReference(PackBuiltInLootTables.COOKERY_DECO))
+                        .add(LootTableReference.lootTableReference(PackBuiltInLootTables.GARDEN_DECO))
+                        .add(LootTableReference.lootTableReference(PackBuiltInLootTables.SCIENCE_DECO))
+                        .add(LootTableReference.lootTableReference(PackBuiltInLootTables.COOKERY_DECO))
+                        .add(LootTableReference.lootTableReference(PackBuiltInLootTables.HOLIDAY_DECO))
+                        .add(LootTableReference.lootTableReference(PackBuiltInLootTables.MISC_DECO))
+                )
+        );
 
         consumer.accept(LootbagLootTables.PLUSHIE_BAG, LootTable.lootTable()
                 .withPool(LootPool.lootPool()

@@ -14,6 +14,12 @@ public class LootBagRecipesGen {
 
     private static void lootBags(Consumer<FinishedRecipe> consumer) {
         LootBagRecipeBuilder.writeRecipe(
+                "deco_bag",
+                "Deco Bag",
+                "purple",
+                LootType.EPIC.name(),
+                LootbagLootTables.DECO_BAG).build(consumer);
+        LootBagRecipeBuilder.writeRecipe(
                 "anniversary_bag",
                 "Anniversary Bag",
                 "silver",

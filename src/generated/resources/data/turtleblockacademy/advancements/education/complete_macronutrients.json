@@ -8,7 +8,7 @@
   "display": {
     "announce_to_chat": false,
     "description": {
-      "translate": "advancement.turtleblockacademy.complete_food_safety.desc"
+      "translate": "advancement.turtleblockacademy.complete_macronutrients.desc"
     },
     "frame": "task",
     "hidden": false,
@@ -17,7 +17,7 @@
     },
     "show_toast": false,
     "title": {
-      "translate": "advancement.turtleblockacademy.complete_food_safety"
+      "translate": "advancement.turtleblockacademy.complete_macronutrients"
     }
   },
   "requirements": [
@@ -26,6 +26,6 @@
     ]
   ],
   "rewards": {
-    "experience": 500
+    "function": "turtleblockacademy:give_kitchen_certificate"
   }
 }

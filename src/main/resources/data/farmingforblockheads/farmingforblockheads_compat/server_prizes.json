@@ -59,11 +59,21 @@
     {
       "output": {
         "item": "lootbags:loot_bag",
-        "nbt": "{Color: 8388736, Loot: \"lootbags:plushie_bag\", Name: \"Plushie Bag\", Type: \"EPIC\"}"
+        "nbt": "{Color: 8388736, Loot: \"lootbags:deco_bag\", Name: \"Deco Bag\", Type: \"EPIC\"}"
       },
       "payment": {
         "item": "todecoins:server_token_coin",
         "count": 2
+      }
+    },
+    {
+      "output": {
+        "item": "lootbags:loot_bag",
+        "nbt": "{Color: 8388736, Loot: \"lootbags:plushie_bag\", Name: \"Plushie Bag\", Type: \"EPIC\"}"
+      },
+      "payment": {
+        "item": "todecoins:server_token_coin",
+        "count": 1
       }
     },
     {

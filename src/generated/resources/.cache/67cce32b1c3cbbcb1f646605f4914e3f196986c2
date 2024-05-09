@@ -1,4 +1,4 @@
-// 1.19.2	2024-05-08T04:15:06.057785	LootTables
+// 1.19.2	2024-05-09T15:51:59.3796323	LootTables
 87a0cbf6a892b17ac0de9da47bde823b2367a6cc data/dimdungeons/loot_tables/chests/kit_blackstone.json
 729a3840556d99d848e13423abbe664193fa88d6 data/dimdungeons/loot_tables/chests/kit_brick_set.json
 d297fc4885d818c44a6dcbe76a13fd827f547bb2 data/dimdungeons/loot_tables/chests/kit_christmas_blocks.json
@@ -36,6 +36,7 @@ bfe53d62f136cd4b8ccd3f70b19c366ddb889122 data/lootbags/loot_tables/loot_bags/chr
 51bb4b87de0616305af68fcba23657ef918b3184 data/lootbags/loot_tables/loot_bags/christmas_lootbag.json
 1a448b36e763596e9800ae3874bb1a9a9d454fd2 data/lootbags/loot_tables/loot_bags/common_bag_drop.json
 3ad49fd551d9d5f94f8cce9866cdda634d8d5c37 data/lootbags/loot_tables/loot_bags/common_lootbag.json
+8a8811ea61665cf222de7d8b3838c7293ae74a69 data/lootbags/loot_tables/loot_bags/deco_bag.json
 e28febb090c03d1368adf05a1036aa9848311277 data/lootbags/loot_tables/loot_bags/easter_bag_drop.json
 a3fa7d964e857a725651f36071747d7a9d9201a2 data/lootbags/loot_tables/loot_bags/easter_lootbag.json
 0c0441a19d7dbac88bfa56e2278c7a551563c7bf data/lootbags/loot_tables/loot_bags/end_map_sale.json
@@ -364,7 +365,7 @@ c34340d065b5ceec2d42e692544df9147d1185be data/turtleblockacademy/loot_tables/che
 6c8d1bf535ad16197752f0daa751d54f6e757c6e data/turtleblockacademy/loot_tables/chests/kitchen/unusualend_edibles.json
 37e415dfc58b288dc02acead4fef9034c34dfdfb data/turtleblockacademy/loot_tables/chests/kitchen/vanilla_edibles.json
 42a723649da0007639910d2df8a3275569bd2ee3 data/turtleblockacademy/loot_tables/chests/kitchen/wildberries_edibles.json
-cf31ba959c4ef3809135a1b5bcfb6834657d1ae5 data/turtleblockacademy/loot_tables/chests/log_set.json
+1a35a8fa9c3cda74b45da7893bcf56692954b04b data/turtleblockacademy/loot_tables/chests/log_set.json
 47048239d8e32ed635f2fc18c966834b58ca6e28 data/turtleblockacademy/loot_tables/chests/maps/end_mapbox.json
 68bd1ecc987a691eeac55effe4f0ecab04b4ef11 data/turtleblockacademy/loot_tables/chests/maps/end_maps.json
 928a033b154a913d6480450b3e28fad6164d7a03 data/turtleblockacademy/loot_tables/chests/maps/jungle_maps.json

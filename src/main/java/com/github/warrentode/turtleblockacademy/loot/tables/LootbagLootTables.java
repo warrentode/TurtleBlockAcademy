@@ -46,6 +46,7 @@ public class LootbagLootTables {
     @SuppressWarnings("unused")
     public static final ResourceLocation MYSTERY_COIN_PACK = register("mystery_coin_pack");
     public static final ResourceLocation PLUSHIE_BAG = register("plushie_bag");
+    public static final ResourceLocation DECO_BAG = register("deco_bag");
     public static final ResourceLocation REFINED_STORAGE_GIFTS = register("refined_storage_gifts");
     public static final ResourceLocation ARTIFACTS_GIFTS = register("artifacts_gifts");
 
