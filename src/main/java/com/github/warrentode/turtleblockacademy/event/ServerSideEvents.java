@@ -1,6 +1,7 @@
 package com.github.warrentode.turtleblockacademy.event;
 
 import com.github.warrentode.turtleblockacademy.entity.TBAEntityTypes;
+import com.github.warrentode.turtleblockacademy.entity.custom.Herobrine;
 import com.github.warrentode.turtleblockacademy.entity.custom.TreasureBeetle;
 import net.minecraftforge.event.entity.EntityAttributeCreationEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -15,6 +16,7 @@ public class ServerSideEvents {
         @SubscribeEvent
         public static void onEntityAttributeEvent(@NotNull EntityAttributeCreationEvent event) {
             event.put(TBAEntityTypes.TREASURE_BEETLE.get(), TreasureBeetle.setAttributes());
+            event.put(TBAEntityTypes.HEROBRINE.get(), Herobrine.setAttributes());
         }
     }
 }

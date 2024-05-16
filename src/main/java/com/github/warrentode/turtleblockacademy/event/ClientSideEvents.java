@@ -3,6 +3,7 @@ package com.github.warrentode.turtleblockacademy.event;
 import com.github.warrentode.turtleblockacademy.blocks.entity.TBABlockEntities;
 import com.github.warrentode.turtleblockacademy.blocks.renderer.PlateEntityRenderer;
 import com.github.warrentode.turtleblockacademy.blocks.renderer.SchoolDeskRenderer;
+import com.github.warrentode.turtleblockacademy.entity.client.HerobrineModel;
 import com.github.warrentode.turtleblockacademy.entity.client.TBAModelLayers;
 import com.github.warrentode.turtleblockacademy.entity.client.TreasureBeetleModel;
 import net.minecraftforge.api.distmarker.Dist;
@@ -24,9 +25,11 @@ public class ClientSideEvents {
                     PlateEntityRenderer::new);
         }
         @SubscribeEvent
-        public static void onRegisterLayersEvent(EntityRenderersEvent.RegisterLayerDefinitions event) {
+        public static void onRegisterLayersEvent(EntityRenderersEvent.@NotNull RegisterLayerDefinitions event) {
             event.registerLayerDefinition(TBAModelLayers.TREASURE_BEETLE_LAYER,
                     TreasureBeetleModel::createBodyLayer);
+            event.registerLayerDefinition(TBAModelLayers.HEROBRINE_LAYER,
+                    HerobrineModel::createBodyLayer);
         }
     }
 }

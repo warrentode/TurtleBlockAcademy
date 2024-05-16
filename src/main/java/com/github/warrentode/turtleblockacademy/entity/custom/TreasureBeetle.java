@@ -40,7 +40,6 @@ public class TreasureBeetle extends Monster {
     private int treasureTime;
     private float health;
 
-
     public TreasureBeetle(EntityType<? extends Monster> entityType, Level level) {
         super(entityType, level);
         this.idleTimer = 0;
@@ -60,7 +59,6 @@ public class TreasureBeetle extends Monster {
         super.defineSynchedData();
         this.entityData.define(DATA_TREASURE_TIME, 0);
     }
-
 
     @Override
     protected void registerGoals() {

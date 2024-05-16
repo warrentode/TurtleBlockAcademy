@@ -37,4 +37,7 @@ public class TBASounds {
             ()-> new SoundEvent(new ResourceLocation(MODID, "entity.turtleblockacademy.treasure_beetle.step")));
     public static final RegistryObject<SoundEvent> TREASURE_BEETLE_ITEM_DROP = SOUNDS.register("entity.turtleblockacademy.treasure_beetle.item_drop",
             ()-> new SoundEvent(new ResourceLocation(MODID, "entity.turtleblockacademy.treasure_beetle.item_drop")));
+
+    public static final RegistryObject<SoundEvent> HEROBRINE_AMBIENT = SOUNDS.register("entity.turtleblockacademy.herobrine.ambient",
+            ()-> new SoundEvent(new ResourceLocation(MODID, "entity.turtleblockacademy.herobrine.ambient")));
 }

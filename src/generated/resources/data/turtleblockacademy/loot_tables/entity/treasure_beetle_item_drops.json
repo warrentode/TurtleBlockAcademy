@@ -10,12 +10,15 @@
           "name": "forge:gems"
         },
         {
-          "type": "minecraft:loot_table",
-          "name": "turtleblockacademy:chests/kitchen"
-        },
-        {
-          "type": "minecraft:loot_table",
-          "name": "lootbags:loot_bags/artifacts_gifts"
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "add": false,
+              "count": 1.0,
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "minecraft:phantom_membrane"
         }
       ],
       "rolls": 1.0

@@ -22,7 +22,6 @@ public class ModItemModelProvider extends ItemModelProvider {
     @Override
     protected void registerModels() {
         basicItem(TBAItems.STUDENT_CARD.get());
-
         blockBasedModel(TBABlocks.CERTIFICATE_BLOCK.get().asItem());
     }
 

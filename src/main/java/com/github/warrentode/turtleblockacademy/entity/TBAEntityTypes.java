@@ -1,6 +1,7 @@
 package com.github.warrentode.turtleblockacademy.entity;
 
 import com.github.warrentode.turtleblockacademy.blocks.entity.SeatEntity;
+import com.github.warrentode.turtleblockacademy.entity.custom.Herobrine;
 import com.github.warrentode.turtleblockacademy.entity.custom.TreasureBeetle;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.MobCategory;
@@ -24,6 +25,11 @@ public class TBAEntityTypes {
             ENTITY_TYPES.register("treasure_beetle",
                     () -> EntityType.Builder.of(TreasureBeetle::new, MobCategory.MONSTER)
                             .sized(1.0f, 1.0f).build("treasure_beetle"));
+
+    public static final RegistryObject<EntityType<Herobrine>> HEROBRINE =
+            ENTITY_TYPES.register("herobrine",
+                    () -> EntityType.Builder.of(Herobrine::new, MobCategory.CREATURE)
+                            .sized(1.0f, 2.0f).build("herobrine"));
 
     public static void register(IEventBus eventBus) {
         ENTITY_TYPES.register(eventBus);

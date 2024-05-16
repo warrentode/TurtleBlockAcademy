@@ -7,7 +7,6 @@ import cn.foggyhillside.endsdelight.registry.ItemRegistry;
 import com.aetherteam.aether.item.AetherItems;
 import com.catastrophe573.dimdungeons.item.ItemRegistrar;
 import com.github.Pandarix.beautify.core.init.BlockInit;
-import com.github.warrentode.turtleblockacademy.loot.tables.KitchenLootTables;
 import com.github.warrentode.turtleblockacademy.loot.tables.LootbagLootTables;
 import com.github.warrentode.turtleblockacademy.loot.tables.PackBuiltInLootTables;
 import com.github.warrentode.turtleblockacademy.util.TBATags;
@@ -69,16 +68,25 @@ public class PackLootTablesGen implements Consumer<BiConsumer<ResourceLocation, 
         consumer.accept(PackBuiltInLootTables.TREASURE_BEETLE_LOOT, LootTable.lootTable()
                 .withPool(LootPool.lootPool()
                         .setRolls(ConstantValue.exactly(1))
+                        .add(LootTableReference.lootTableReference(LootbagLootTables.ARTIFACTS_GIFTS))
+                )
+                .withPool(LootPool.lootPool()
+                        .setRolls(ConstantValue.exactly(1))
+                        .add(LootItem.lootTableItem(Items.PHANTOM_MEMBRANE)
+                                .apply(SetItemCountFunction.setCount(ConstantValue.exactly(2))))
+                )
+                .withPool(LootPool.lootPool()
+                        .setRolls(ConstantValue.exactly(1))
                         .setBonusRolls(ConstantValue.exactly(1))
                         .add(LootTableReference.lootTableReference(PackBuiltInLootTables.GEMS))
-                        .add(LootTableReference.lootTableReference(LootbagLootTables.ARTIFACTS_GIFTS))
                 ));
         consumer.accept(PackBuiltInLootTables.TREASURE_BEETLE_ITEM_DROPS, LootTable.lootTable()
                 .withPool(LootPool.lootPool()
                         .setRolls(ConstantValue.exactly(1))
                         .setBonusRolls(ConstantValue.exactly(0))
                         .add(TagEntry.expandTag(TBATags.Items.GEMS))
-                        .add(LootTableReference.lootTableReference(KitchenLootTables.KITCHEN))
+                        .add(LootItem.lootTableItem(Items.PHANTOM_MEMBRANE)
+                                .apply(SetItemCountFunction.setCount(ConstantValue.exactly(1))))
                 ));
         //noinspection deprecation
         consumer.accept(PackBuiltInLootTables.BREWING_GUIDE, LootTable.lootTable()

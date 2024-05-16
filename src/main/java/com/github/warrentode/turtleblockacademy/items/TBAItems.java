@@ -23,6 +23,12 @@ public class TBAItems {
                     0x006400, 0xB8860B,
                     new Item.Properties().tab(TAB)));
 
+    public static final RegistryObject<ForgeSpawnEggItem> HEROBRINE_SPAWN_EGG =
+            ITEMS.register("herobrine_spawn_egg",
+                    () -> new ForgeSpawnEggItem(TBAEntityTypes.HEROBRINE,
+                            0x0000FF, 0x1E90FF,
+                            new Item.Properties().tab(TAB)));
+
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }

@@ -178,8 +178,8 @@ dependencies {
     implementation fg.deobf("curse.maven:villagersplus-forge-817272:4370425")
 
     // tinker mod set
-    implementation fg.deobf("curse.maven:mantle-74924:5245271")
-    implementation fg.deobf("curse.maven:tinkers-construct-74072:5245284")
+    implementation fg.deobf("curse.maven:mantle-74924:5339977")
+    implementation fg.deobf("curse.maven:tinkers-construct-74072:5340027")
 
     runtimeOnly(fg.deobf("curse.maven:create-328085:4835190"))
 

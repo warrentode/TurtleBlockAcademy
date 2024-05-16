@@ -74,5 +74,9 @@ public class SoundsFileGen extends SoundDefinitionsProvider {
                 .subtitle("subtitles.turtleblockacademy.treasure_beetle_item_drop")
                 .with(sound(new ResourceLocation("minecraft", "note/icechime")))
         );
+        this.add(TBASounds.HEROBRINE_AMBIENT, definition()
+                .subtitle("subtitles.turtleblockacademy.herobrine_ambient")
+                .with(sound(new ResourceLocation("turtleblockacademy", "silence")))
+        );
     }
 }

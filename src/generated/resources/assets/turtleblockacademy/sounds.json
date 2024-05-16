@@ -53,6 +53,12 @@
     ],
     "subtitle": "subtitles.turtleblockacademy.locker_open"
   },
+  "entity.turtleblockacademy.herobrine.ambient": {
+    "sounds": [
+      "turtleblockacademy:silence"
+    ],
+    "subtitle": "subtitles.turtleblockacademy.herobrine_ambient"
+  },
   "entity.turtleblockacademy.treasure_beetle.ambient": {
     "sounds": [
       "mob/spider/say1",

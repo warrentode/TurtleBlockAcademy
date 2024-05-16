@@ -7,6 +7,7 @@ import com.github.warrentode.turtleblockacademy.blocks.gui.SchoolDeskScreen;
 import com.github.warrentode.turtleblockacademy.config.AcademyConfig;
 import com.github.warrentode.turtleblockacademy.entity.TBAEntityTypes;
 import com.github.warrentode.turtleblockacademy.entity.TBAPOIs;
+import com.github.warrentode.turtleblockacademy.entity.client.HerobrineRenderer;
 import com.github.warrentode.turtleblockacademy.entity.client.SeatEntityRenderer;
 import com.github.warrentode.turtleblockacademy.entity.client.TreasureBeetleRenderer;
 import com.github.warrentode.turtleblockacademy.items.TBAItems;
@@ -110,6 +111,9 @@ public class TurtleBlockAcademy {
 
             EntityRenderers.register(TBAEntityTypes.TREASURE_BEETLE.get(),
                     TreasureBeetleRenderer::new);
+
+            EntityRenderers.register(TBAEntityTypes.HEROBRINE.get(),
+                    HerobrineRenderer::new);
         }
     }
 }

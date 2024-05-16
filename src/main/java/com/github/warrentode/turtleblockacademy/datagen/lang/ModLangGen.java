@@ -22,6 +22,12 @@ public class ModLangGen extends LanguageProvider {
         addMessages();
         addContainers();
         addSubtitles();
+        addEntityTypes();
+    }
+
+    private void addEntityTypes() {
+        add("entity.turtleblockacademy.treasure_beetle", "Treasure Beetle");
+        add("entity.turtleblockacademy.herobrine", "Herobrine");
     }
 
     private void addSubtitles() {
@@ -36,6 +42,7 @@ public class ModLangGen extends LanguageProvider {
         add("subtitles.turtleblockacademy.treasure_beetle_death", "Treasure Beetle Dies");
         add("subtitles.turtleblockacademy.treasure_beetle_step", "Treasure Beetle Crawls");
         add("subtitles.turtleblockacademy.treasure_beetle_item_drop", "Treasure Beetle Drops Treasure");
+        add("subtitles.turtleblockacademy.herobrine_ambient", "You feel you're being watched...");
     }
 
     private void addContainers() {
@@ -82,6 +89,8 @@ public class ModLangGen extends LanguageProvider {
 
     private void addItems() {
         add(TBAItems.STUDENT_CARD.get(), "Turtle Block Academy Student ID");
+        add(TBAItems.TREASURE_BEETLE_SPAWN_EGG.get(), "Treasure Beetle Spawn Egg");
+        add(TBAItems.HEROBRINE_SPAWN_EGG.get(), "Herobrine Spawn Egg");
     }
 
     private void addBlocks() {
