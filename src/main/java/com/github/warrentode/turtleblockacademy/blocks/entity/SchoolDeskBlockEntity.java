@@ -2,7 +2,7 @@ package com.github.warrentode.turtleblockacademy.blocks.entity;
 
 import com.github.warrentode.turtleblockacademy.blocks.SchoolDeskBlock;
 import com.github.warrentode.turtleblockacademy.blocks.gui.SchoolDeskMenu;
-import com.github.warrentode.turtleblockacademy.util.PackTags;
+import com.github.warrentode.turtleblockacademy.util.TBATags;
 import net.minecraft.commands.CommandSource;
 import net.minecraft.commands.CommandSourceStack;
 import net.minecraft.core.BlockPos;
@@ -142,7 +142,7 @@ public class SchoolDeskBlockEntity extends BlockEntity implements Clearable, Men
     };
 
     public SchoolDeskBlockEntity(BlockPos pos, BlockState state) {
-        super(ModBlockEntities.SCHOOL_DESK_ENTITY.get(), pos, state);
+        super(TBABlockEntities.SCHOOL_DESK_ENTITY.get(), pos, state);
     }
 
     public ItemStack getBook() {
@@ -150,7 +150,7 @@ public class SchoolDeskBlockEntity extends BlockEntity implements Clearable, Men
     }
 
     public boolean hasBook() {
-        return this.book.is(PackTags.Items.LECTERN_BOOKS);
+        return this.book.is(TBATags.Items.LECTERN_BOOKS);
     }
 
     public void setBook(ItemStack pStack) {

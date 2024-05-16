@@ -3,6 +3,7 @@ package com.github.warrentode.turtleblockacademy.datagen.loot;
 import com.aetherteam.aether.entity.AetherEntityTypes;
 import com.faboslav.friendsandfoes.FriendsAndFoes;
 import com.faboslav.friendsandfoes.init.FriendsAndFoesEntityTypes;
+import com.github.warrentode.turtleblockacademy.loot.conditions.BiomeTagCondition;
 import com.github.warrentode.turtleblockacademy.loot.conditions.BlockTagCondition;
 import com.github.warrentode.turtleblockacademy.loot.conditions.EntityTypeTagCondition;
 import com.github.warrentode.turtleblockacademy.loot.conditions.ModCheckCondition;
@@ -10,7 +11,7 @@ import com.github.warrentode.turtleblockacademy.loot.modifiers.AddItemLootModifi
 import com.github.warrentode.turtleblockacademy.loot.modifiers.AddLootTableModifier;
 import com.github.warrentode.turtleblockacademy.loot.tables.LootbagLootTables;
 import com.github.warrentode.turtleblockacademy.loot.tables.PackBuiltInLootTables;
-import com.github.warrentode.turtleblockacademy.util.PackTags;
+import com.github.warrentode.turtleblockacademy.util.TBATags;
 import net.brnbrd.delightful.common.item.DelightfulItems;
 import net.mcreator.phantasm.init.PhantasmModEntities;
 import net.mcreator.unusualend.init.UnusualendModEntities;
@@ -47,11 +48,18 @@ public class ModLootModifierGenProvider extends GlobalLootModifierProvider {
                 },
                 LootbagLootTables.RATIONS_BAG_DROP, 1F
         ));
+        add("add_ration_loot_bag_drops", new AddLootTableModifier(
+                new LootItemCondition[]{
+                        LootItemKilledByPlayerCondition.killedByPlayer().build(),
+                        BiomeTagCondition.tag().set(TBATags.Biomes.IS_UNDERGROUND).build()
+                },
+                LootbagLootTables.RATIONS_BAG_DROP, 0.5F
+        ));
         add("additional_sand_drops", new AddLootTableModifier(
                 new LootItemCondition[]{
                         AlternativeLootItemCondition
                                 .alternative(LootTableIdCondition.builder(Blocks.GRAVEL.getLootTable()))
-                                .or(BlockTagCondition.tag().set(PackTags.Blocks.SAND))
+                                .or(BlockTagCondition.tag().set(TBATags.Blocks.SAND))
                                 .build()
                 },
                 PackBuiltInLootTables.BONUS_SAND_DROPS, 0.5F
@@ -77,7 +85,7 @@ public class ModLootModifierGenProvider extends GlobalLootModifierProvider {
                 new LootItemCondition[]{
                         LootItemKilledByPlayerCondition.killedByPlayer().build(),
                         ModCheckCondition.mod().isLoaded("delightful").build(),
-                        EntityTypeTagCondition.tag().set(PackTags.EntityTypes.WILD_GAME).build()
+                        EntityTypeTagCondition.tag().set(TBATags.EntityTypes.WILD_GAME).build()
                 },
                 DelightfulItems.VENISON_CHOPS.get(), 1, 2, 0.1F
         ));

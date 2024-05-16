@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "turtleblockacademy:block/mining_portal_ns"
+    },
+    "axis=z": {
+      "model": "turtleblockacademy:block/mining_portal_ew"
+    }
+  }
+}

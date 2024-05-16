@@ -1,0 +1,14 @@
+{
+    "placement": {
+        "type": "minecraft:random_spread",
+        "salt": 2106576645,
+        "separation": 8,
+        "spacing": 24
+    },
+    "structures": [
+        {
+            "structure": "turtleblockacademy:ichor_slime_pools",
+            "weight": 1
+        }
+    ]
+}

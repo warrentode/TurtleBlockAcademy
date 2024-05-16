@@ -1,0 +1,543 @@
+{
+    "processors": [
+        {
+            "processor_type": "minecraft:block_age",
+            "mossiness": 10
+        },
+        {
+            "processor_type": "minecraft:rule",
+            "rules": [
+                {
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_blockstate_match",
+                        "block_state": {
+                            "Name": "minecraft:campfire",
+                            "Properties": {
+                                "lit": "true",
+                                "facing": "north",
+                                "signal_fire": "false",
+                                "waterlogged": "false"
+                            }
+                        },
+                        "probability": 0.1
+                    },
+                    "output_state": {
+                        "Name": "minecraft:campfire",
+                        "Properties": {
+                            "lit": "false",
+                            "facing": "north",
+                            "signal_fire": "false",
+                            "waterlogged": "false"
+                        }
+                    }
+                },
+                {
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_blockstate_match",
+                        "block_state": {
+                            "Name": "minecraft:campfire",
+                            "Properties": {
+                                "lit": "true",
+                                "facing": "south",
+                                "signal_fire": "false",
+                                "waterlogged": "false"
+                            }
+                        },
+                        "probability": 0.1
+                    },
+                    "output_state": {
+                        "Name": "minecraft:campfire",
+                        "Properties": {
+                            "lit": "false",
+                            "facing": "south",
+                            "signal_fire": "false",
+                            "waterlogged": "false"
+                        }
+                    }
+                },
+                {
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_blockstate_match",
+                        "block_state": {
+                            "Name": "minecraft:campfire",
+                            "Properties": {
+                                "lit": "true",
+                                "facing": "west",
+                                "signal_fire": "false",
+                                "waterlogged": "false"
+                            }
+                        },
+                        "probability": 0.1
+                    },
+                    "output_state": {
+                        "Name": "minecraft:campfire",
+                        "Properties": {
+                            "lit": "false",
+                            "facing": "west",
+                            "signal_fire": "false",
+                            "waterlogged": "false"
+                        }
+                    }
+                },
+                {
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_blockstate_match",
+                        "block_state": {
+                            "Name": "minecraft:campfire",
+                            "Properties": {
+                                "lit": "true",
+                                "facing": "east",
+                                "signal_fire": "false",
+                                "waterlogged": "false"
+                            }
+                        },
+                        "probability": 0.1
+                    },
+                    "output_state": {
+                        "Name": "minecraft:campfire",
+                        "Properties": {
+                            "lit": "false",
+                            "facing": "east",
+                            "signal_fire": "false",
+                            "waterlogged": "false"
+                        }
+                    }
+                },
+                {
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_block_match",
+                        "block": "minecraft:campfire",
+                        "probability": 0.1
+                    },
+                    "output_state": {
+                        "Name": "minecraft:air"
+                    }
+                },
+                {
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_blockstate_match",
+                        "block_state": {
+                            "Name": "farmersdelight:stove",
+                            "Properties": {
+                                "lit": "true",
+                                "facing": "north"
+                            }
+                        },
+                        "probability": 0.1
+                    },
+                    "output_state": {
+                        "Name": "farmersdelight:stove",
+                        "Properties": {
+                            "lit": "false",
+                            "facing": "north"
+                        }
+                    }
+                },
+                {
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_blockstate_match",
+                        "block_state": {
+                            "Name": "farmersdelight:stove",
+                            "Properties": {
+                                "lit": "true",
+                                "facing": "south"
+                            }
+                        },
+                        "probability": 0.1
+                    },
+                    "output_state": {
+                        "Name": "farmersdelight:stove",
+                        "Properties": {
+                            "lit": "false",
+                            "facing": "south"
+                        }
+                    }
+                },
+                {
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_blockstate_match",
+                        "block_state": {
+                            "Name": "farmersdelight:stove",
+                            "Properties": {
+                                "lit": "true",
+                                "facing": "west"
+                            }
+                        },
+                        "probability": 0.1
+                    },
+                    "output_state": {
+                        "Name": "farmersdelight:stove",
+                        "Properties": {
+                            "lit": "false",
+                            "facing": "west"
+                        }
+                    }
+                },
+                {
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_blockstate_match",
+                        "block_state": {
+                            "Name": "farmersdelight:stove",
+                            "Properties": {
+                                "lit": "true",
+                                "facing": "east"
+                            }
+                        },
+                        "probability": 0.1
+                    },
+                    "output_state": {
+                        "Name": "farmersdelight:stove",
+                        "Properties": {
+                            "lit": "false",
+                            "facing": "east"
+                        }
+                    }
+                },
+                {
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_blockstate_match",
+                        "block_state": {
+                            "Name": "miners_delight:copper_pot",
+                            "Properties": {
+                                "facing": "north",
+                                "support": "false",
+                                "waterlogged": "false"
+                            }
+                        },
+                        "probability": 0.1
+                    },
+                    "output_state": {
+                        "Name": "miners_delight:copper_pot",
+                        "Properties": {
+                            "facing": "north",
+                            "support": "false",
+                            "waterlogged": "false"
+                        }
+                    }
+                },
+                {
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_blockstate_match",
+                        "block_state": {
+                            "Name": "miners_delight:copper_pot",
+                            "Properties": {
+                                "facing": "south",
+                                "support": "false",
+                                "waterlogged": "false"
+                            }
+                        },
+                        "probability": 0.1
+                    },
+                    "output_state": {
+                        "Name": "miners_delight:copper_pot",
+                        "Properties": {
+                            "facing": "south",
+                            "support": "false",
+                            "waterlogged": "false"
+                        }
+                    }
+                },
+                {
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_blockstate_match",
+                        "block_state": {
+                            "Name": "miners_delight:copper_pot",
+                            "Properties": {
+                                "facing": "east",
+                                "support": "false",
+                                "waterlogged": "false"
+                            }
+                        },
+                        "probability": 0.1
+                    },
+                    "output_state": {
+                        "Name": "miners_delight:copper_pot",
+                        "Properties": {
+                            "facing": "east",
+                            "support": "false",
+                            "waterlogged": "false"
+                        }
+                    }
+                },
+                {
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_blockstate_match",
+                        "block_state": {
+                            "Name": "miners_delight:copper_pot",
+                            "Properties": {
+                                "facing": "west",
+                                "support": "false",
+                                "waterlogged": "false"
+                            }
+                        },
+                        "probability": 0.1
+                    },
+                    "output_state": {
+                        "Name": "miners_delight:copper_pot",
+                        "Properties": {
+                            "facing": "west",
+                            "support": "false",
+                            "waterlogged": "false"
+                        }
+                    }
+                },
+                {
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_block_match",
+                        "block": "miners_delight:copper_pot",
+                        "probability": 0.1
+                    },
+                    "output_state": {
+                        "Name": "minecraft:air"
+                    }
+                },
+                {
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_blockstate_match",
+                        "block_state": {
+                            "Name": "miners_delight:copper_pot",
+                            "Properties": {
+                                "facing": "north",
+                                "support": "false",
+                                "waterlogged": "false"
+                            }
+                        },
+                        "probability": 0.1
+                    },
+                    "output_state": {
+                        "Name": "farmersdelight:cooking_pot",
+                        "Properties": {
+                            "facing": "north",
+                            "support": "false",
+                            "waterlogged": "false"
+                        }
+                    }
+                },
+                {
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_blockstate_match",
+                        "block_state": {
+                            "Name": "miners_delight:copper_pot",
+                            "Properties": {
+                                "facing": "south",
+                                "support": "false",
+                                "waterlogged": "false"
+                            }
+                        },
+                        "probability": 0.1
+                    },
+                    "output_state": {
+                        "Name": "farmersdelight:cooking_pot",
+                        "Properties": {
+                            "facing": "south",
+                            "support": "false",
+                            "waterlogged": "false"
+                        }
+                    }
+                },
+                {
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_blockstate_match",
+                        "block_state": {
+                            "Name": "miners_delight:copper_pot",
+                            "Properties": {
+                                "facing": "east",
+                                "support": "false",
+                                "waterlogged": "false"
+                            }
+                        },
+                        "probability": 0.1
+                    },
+                    "output_state": {
+                        "Name": "farmersdelight:cooking_pot",
+                        "Properties": {
+                            "facing": "east",
+                            "support": "false",
+                            "waterlogged": "false"
+                        }
+                    }
+                },
+                {
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_blockstate_match",
+                        "block_state": {
+                            "Name": "miners_delight:copper_pot",
+                            "Properties": {
+                                "facing": "west",
+                                "support": "false",
+                                "waterlogged": "false"
+                            }
+                        },
+                        "probability": 0.1
+                    },
+                    "output_state": {
+                        "Name": "farmersdelight:cooking_pot",
+                        "Properties": {
+                            "facing": "west",
+                            "support": "false",
+                            "waterlogged": "false"
+                        }
+                    }
+                },
+                {
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_blockstate_match",
+                        "block_state": {
+                            "Name": "miners_delight:copper_pot",
+                            "Properties": {
+                                "facing": "north",
+                                "support": "false",
+                                "waterlogged": "false"
+                            }
+                        },
+                        "probability": 0.1
+                    },
+                    "output_state": {
+                        "Name": "farmersrespite:kettle",
+                        "Properties": {
+                            "facing": "north",
+                            "support": "false",
+                            "water_level": 0,
+                            "waterlogged": "false"
+                        }
+                    }
+                },
+                {
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_blockstate_match",
+                        "block_state": {
+                            "Name": "miners_delight:copper_pot",
+                            "Properties": {
+                                "facing": "south",
+                                "support": "false",
+                                "waterlogged": "false"
+                            }
+                        },
+                        "probability": 0.1
+                    },
+                    "output_state": {
+                        "Name": "farmersrespite:kettle",
+                        "Properties": {
+                            "facing": "south",
+                            "support": "false",
+                            "water_level": 0,
+                            "waterlogged": "false"
+                        }
+                    }
+                },
+                {
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_blockstate_match",
+                        "block_state": {
+                            "Name": "miners_delight:copper_pot",
+                            "Properties": {
+                                "facing": "east",
+                                "support": "false",
+                                "waterlogged": "false"
+                            }
+                        },
+                        "probability": 0.1
+                    },
+                    "output_state": {
+                        "Name": "farmersrespite:kettle",
+                        "Properties": {
+                            "facing": "east",
+                            "support": "false",
+                            "water_level": 0,
+                            "waterlogged": "false"
+                        }
+                    }
+                },
+                {
+                    "location_predicate": {
+                        "predicate_type": "minecraft:always_true"
+                    },
+                    "input_predicate": {
+                        "predicate_type": "minecraft:random_blockstate_match",
+                        "block_state": {
+                            "Name": "miners_delight:copper_pot",
+                            "Properties": {
+                                "facing": "west",
+                                "support": "false",
+                                "waterlogged": "false"
+                            }
+                        },
+                        "probability": 0.1
+                    },
+                    "output_state": {
+                        "Name": "farmersrespite:kettle",
+                        "Properties": {
+                            "facing": "west",
+                            "support": "false",
+                            "water_level": 0,
+                            "waterlogged": "false"
+                        }
+                    }
+                }
+            ]
+        }
+    ]
+}

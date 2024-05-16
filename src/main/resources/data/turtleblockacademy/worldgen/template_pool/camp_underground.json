@@ -1,0 +1,15 @@
+{
+    "elements": [
+        {
+            "element": {
+                "element_type": "minecraft:legacy_single_pool_element",
+                "location": "turtleblockacademy:camp_underground",
+                "processors": "turtleblockacademy:camp_underground_processor",
+                "projection": "rigid"
+            },
+            "weight": 1
+        }
+    ],
+    "fallback": "minecraft:empty",
+    "name": "turtleblockacademy:camp_underground"
+}

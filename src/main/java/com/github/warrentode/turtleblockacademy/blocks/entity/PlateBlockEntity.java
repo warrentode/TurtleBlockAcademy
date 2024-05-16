@@ -17,10 +17,10 @@ import org.jetbrains.annotations.NotNull;
 import javax.annotation.Nullable;
 
 public class PlateBlockEntity extends BlockEntity implements Clearable {
-    protected NonNullList<ItemStack> items = NonNullList.withSize(1, ItemStack.EMPTY);
+    protected final NonNullList<ItemStack> items = NonNullList.withSize(1, ItemStack.EMPTY);
 
     public PlateBlockEntity(BlockPos blockPos, BlockState blockState) {
-        super(ModBlockEntities.PLATE_BLOCK_ENTITY.get(), blockPos, blockState);
+        super(TBABlockEntities.PLATE_BLOCK_ENTITY.get(), blockPos, blockState);
     }
 
     @Override

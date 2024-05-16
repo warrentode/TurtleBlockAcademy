@@ -1,7 +1,7 @@
 package com.github.warrentode.turtleblockacademy.blocks;
 
 import com.github.warrentode.turtleblockacademy.blocks.entity.SchoolDeskBlockEntity;
-import com.github.warrentode.turtleblockacademy.util.PackTags;
+import com.github.warrentode.turtleblockacademy.util.TBATags;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.nbt.CompoundTag;
@@ -125,7 +125,7 @@ public class SchoolDeskBlock extends BaseEntityBlock {
         return state.rotate(mirror.getRotation(state.getValue(FACING)));
     }
 
-    @SuppressWarnings("deprecation")
+    @Override
     public @NotNull RenderShape getRenderShape(@NotNull BlockState state) {
         return RenderShape.MODEL;
     }
@@ -228,7 +228,7 @@ public class SchoolDeskBlock extends BaseEntityBlock {
                 }
             }
             else {
-                if (!bookInHand.isEmpty() && bookInHand.is(PackTags.Items.LECTERN_BOOKS) && SchoolDeskBlock.tryPlaceBook(player, level, pos, state, bookInHand)) {
+                if (!bookInHand.isEmpty() && bookInHand.is(TBATags.Items.LECTERN_BOOKS) && SchoolDeskBlock.tryPlaceBook(player, level, pos, state, bookInHand)) {
                     return InteractionResult.SUCCESS;
                 }
             }

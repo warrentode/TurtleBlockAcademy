@@ -34,6 +34,7 @@ public class PatchouliShapelessBookRecipeBuilder {
         return new PatchouliShapelessBookRecipeBuilder(saveName, count);
     }
 
+    @SuppressWarnings("unused")
     public PatchouliShapelessBookRecipeBuilder addIngredient(TagKey<Item> tagIn) {
         return this.addIngredient(Ingredient.of(tagIn));
     }

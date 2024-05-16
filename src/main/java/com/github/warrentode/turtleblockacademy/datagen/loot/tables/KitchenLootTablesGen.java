@@ -3,7 +3,7 @@ package com.github.warrentode.turtleblockacademy.datagen.loot.tables;
 import com.aetherteam.aether.item.AetherItems;
 import com.github.warrentode.turtleblockacademy.loot.conditions.ModCheckCondition;
 import com.github.warrentode.turtleblockacademy.loot.tables.KitchenLootTables;
-import com.github.warrentode.turtleblockacademy.util.PackTags;
+import com.github.warrentode.turtleblockacademy.util.TBATags;
 import com.hakimen.kawaiidishes.registry.ItemRegister;
 import com.sammy.minersdelight.setup.MDItems;
 import com.scouter.oceansdelight.items.ODItems;
@@ -139,7 +139,7 @@ public class KitchenLootTablesGen implements Consumer<BiConsumer<ResourceLocatio
                 .withPool(LootPool.lootPool().setRolls(ConstantValue.exactly(1))
                         .setBonusRolls(ConstantValue.exactly(1.0F))
                         .when(ModCheckCondition.mod().isLoaded("wildberries"))
-                        .add(TagEntry.expandTag(PackTags.Items.WILDBERRIES_EDIBLES)
+                        .add(TagEntry.expandTag(TBATags.Items.WILDBERRIES_EDIBLES)
                                 .apply(SetItemCountFunction.setCount(UniformGenerator.between(1, 4))))
                 )
         );

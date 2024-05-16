@@ -1,0 +1,16 @@
+{
+  "values": [
+    "#turtleblockacademy:tba_mining_biomes",
+    "minecraft:lush_caves",
+    "minecraft:dripstone_caves",
+    "minecraft:deep_dark",
+    {
+      "id": "biomesoplenty:spider_nest",
+      "required": false
+    },
+    {
+      "id": "biomesoplenty:glowing_grotto",
+      "required": false
+    }
+  ]
+}

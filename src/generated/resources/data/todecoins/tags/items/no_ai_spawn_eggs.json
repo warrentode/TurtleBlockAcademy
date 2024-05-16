@@ -1,6 +1,10 @@
 {
   "values": [
     {
+      "id": "turtleblockacademy:treasure_beetle_spawn_egg",
+      "required": false
+    },
+    {
       "id": "aether:aechor_plant_spawn_egg",
       "required": false
     },

@@ -3,7 +3,7 @@ package com.github.warrentode.turtleblockacademy.datagen.recipes.recipe;
 import biomesoplenty.api.block.BOPBlocks;
 import com.aetherteam.aether.block.AetherBlocks;
 import com.aetherteam.aether.item.AetherItems;
-import com.github.warrentode.turtleblockacademy.util.PackTags;
+import com.github.warrentode.turtleblockacademy.util.TBATags;
 import net.minecraft.data.recipes.FinishedRecipe;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.item.Items;
@@ -86,7 +86,7 @@ public class CuttingRecipesGen {
                 .addResultWithChance(Items.BONE, 0.05F)
                 .addResultWithChance(SEASHELL.get(), 0.05F)
                 .build(consumer, "farmersdelight:cutting/gravel_alt");
-        CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(PackTags.Items.SAND), new ToolActionIngredient(ToolActions.SHOVEL_DIG), Items.SAND, 1)
+        CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(TBATags.Items.SAND), new ToolActionIngredient(ToolActions.SHOVEL_DIG), Items.SAND, 1)
                 .addResultWithChance(Items.QUARTZ, 0.1F)
                 .addResultWithChance(Items.BONE, 0.05F)
                 .addResultWithChance(SEASHELL.get(), 0.05F)

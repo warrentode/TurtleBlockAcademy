@@ -1,22 +1,29 @@
 package com.github.warrentode.turtleblockacademy;
 
-import com.github.warrentode.turtleblockacademy.blocks.ModBlockRegistry;
-import com.github.warrentode.turtleblockacademy.blocks.entity.ModBlockEntities;
+import com.github.warrentode.turtleblockacademy.blocks.TBABlocks;
+import com.github.warrentode.turtleblockacademy.blocks.entity.TBABlockEntities;
 import com.github.warrentode.turtleblockacademy.blocks.gui.ModMenuTypes;
 import com.github.warrentode.turtleblockacademy.blocks.gui.SchoolDeskScreen;
 import com.github.warrentode.turtleblockacademy.config.AcademyConfig;
-import com.github.warrentode.turtleblockacademy.entity.ModEntityTypes;
-import com.github.warrentode.turtleblockacademy.entity.renderer.SeatEntityRenderer;
-import com.github.warrentode.turtleblockacademy.items.ModItems;
+import com.github.warrentode.turtleblockacademy.entity.TBAEntityTypes;
+import com.github.warrentode.turtleblockacademy.entity.TBAPOIs;
+import com.github.warrentode.turtleblockacademy.entity.client.SeatEntityRenderer;
+import com.github.warrentode.turtleblockacademy.entity.client.TreasureBeetleRenderer;
+import com.github.warrentode.turtleblockacademy.items.TBAItems;
 import com.github.warrentode.turtleblockacademy.loot.serializers.ModLootItemConditions;
 import com.github.warrentode.turtleblockacademy.loot.serializers.ModLootModifiers;
-import com.github.warrentode.turtleblockacademy.util.ModSounds;
+import com.github.warrentode.turtleblockacademy.util.TBASounds;
+import com.github.warrentode.turtleblockacademy.world.biome.TBABiomes;
+import com.github.warrentode.turtleblockacademy.world.dimension.TBADimensions;
 import net.minecraft.client.gui.screens.MenuScreens;
 import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraft.sounds.SoundEvents;
+import net.minecraft.world.entity.SpawnPlacements;
+import net.minecraft.world.entity.monster.Monster;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.levelgen.Heightmap;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.server.ServerStartingEvent;
@@ -42,19 +49,23 @@ public class TurtleBlockAcademy {
                 MODID + "-common.toml");
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
         MinecraftForge.EVENT_BUS.register(this);
+        modEventBus.addListener(this::commonSetup);
 
-        ModSounds.SOUNDS.register(modEventBus);
+        TBASounds.SOUNDS.register(modEventBus);
 
-        ModBlockRegistry.register(modEventBus);
-        ModBlockEntities.register(modEventBus);
+        TBABlocks.register(modEventBus);
+        TBABlockEntities.register(modEventBus);
         ModMenuTypes.register(modEventBus);
 
-        ModEntityTypes.register(modEventBus);
+        TBAEntityTypes.register(modEventBus);
 
-        ModItems.register(modEventBus);
+        TBAItems.register(modEventBus);
 
         ModLootModifiers.register(modEventBus);
         ModLootItemConditions.register(modEventBus);
+
+        TBADimensions.register();
+        TBABiomes.TBA_BIOMES.register(modEventBus);
     }
 
     @SuppressWarnings("deprecation")
@@ -66,12 +77,19 @@ public class TurtleBlockAcademy {
     public static final CreativeModeTab TAB = new CreativeModeTab(MODID) {
         @Override
         public @NotNull ItemStack makeIcon() {
-            return ModBlockRegistry.CERTIFICATE_BLOCK.get().asItem().getDefaultInstance();
+            return TBABlocks.CERTIFICATE_BLOCK.get().asItem().getDefaultInstance();
         }
     };
 
     private void commonSetup(final FMLCommonSetupEvent event) {
-        // reserved for later use
+        event.enqueueWork(TBAPOIs::registerPOIs);
+        event.enqueueWork(()-> {
+            //noinspection deprecation
+            SpawnPlacements.register(TBAEntityTypes.TREASURE_BEETLE.get(),
+                    SpawnPlacements.Type.ON_GROUND,
+                    Heightmap.Types.MOTION_BLOCKING_NO_LEAVES,
+                    Monster::checkMonsterSpawnRules);
+        });
     }
 
     @SubscribeEvent
@@ -86,7 +104,12 @@ public class TurtleBlockAcademy {
             event.enqueueWork(() ->
                     MenuScreens.register(ModMenuTypes.SCHOOL_DESK_MENU.get(),
                             SchoolDeskScreen::new));
-            EntityRenderers.register(ModEntityTypes.SEAT_ENTITY.get(), SeatEntityRenderer::new);
+
+            EntityRenderers.register(TBAEntityTypes.SEAT_ENTITY.get(),
+                    SeatEntityRenderer::new);
+
+            EntityRenderers.register(TBAEntityTypes.TREASURE_BEETLE.get(),
+                    TreasureBeetleRenderer::new);
         }
     }
 }

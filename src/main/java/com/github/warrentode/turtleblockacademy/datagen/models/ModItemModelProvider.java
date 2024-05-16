@@ -1,7 +1,7 @@
 package com.github.warrentode.turtleblockacademy.datagen.models;
 
-import com.github.warrentode.turtleblockacademy.blocks.ModBlockRegistry;
-import com.github.warrentode.turtleblockacademy.items.ModItems;
+import com.github.warrentode.turtleblockacademy.blocks.TBABlocks;
+import com.github.warrentode.turtleblockacademy.items.TBAItems;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;
@@ -21,9 +21,9 @@ public class ModItemModelProvider extends ItemModelProvider {
 
     @Override
     protected void registerModels() {
-        basicItem(ModItems.STUDENT_CARD.get());
+        basicItem(TBAItems.STUDENT_CARD.get());
 
-        blockBasedModel(ModBlockRegistry.CERTIFICATE_BLOCK.get().asItem());
+        blockBasedModel(TBABlocks.CERTIFICATE_BLOCK.get().asItem());
     }
 
     public void blockBasedModel(Item item) {

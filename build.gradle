@@ -1,31 +1,14 @@
 //file:noinspection GroovyAssignabilityCheck
 //file:noinspection GrUnresolvedAccess
 //file:noinspection GroovyAccessibility
-buildscript {
-    repositories {
-        mavenCentral()
-        maven { url = 'https://maven.minecraftforge.net/' }
-        maven { url = 'https://repo.spongepowered.org/repository/maven-public/' }
-        maven { url = 'https://jitpack.io' }
-    }
-    dependencies {
-        classpath group: 'net.minecraftforge.gradle', name: 'ForgeGradle', version: '6.0,6.2', changing: true
-        classpath group: 'org.spongepowered', name: 'mixingradle', version: '0.7-SNAPSHOT'
-    }
-}
-
 plugins {
     id 'eclipse'
     id 'idea'
     id 'maven-publish'
     id 'net.minecraftforge.gradle' version '[6.0,6.2)'
     id 'org.parchmentmc.librarian.forgegradle' version '1.+'
+    id 'org.spongepowered.mixin' version '0.7-SNAPSHOT' apply true
 }
-
-apply plugin: 'net.minecraftforge.gradle'
-apply plugin: 'eclipse'
-apply plugin: 'maven-publish'
-apply plugin: 'org.spongepowered.mixin'
 
 mixin {
     add sourceSets.main, "mixins.turtleblockacademy.refmap.json"
@@ -46,8 +29,8 @@ println "Java: ${System.getProperty 'java.version'}, JVM: ${System.getProperty '
 minecraft {
     mappings channel: mapping_channel, version: mapping_version
     copyIdeResources = true
+    accessTransformer = file('src/main/resources/META-INF/accesstransformer.cfg')
     // generateRunFolders = true
-    // accessTransformer = file('src/main/resources/META-INF/accesstransformer.cfg')
 
     runs {
         configureEach {
@@ -140,7 +123,6 @@ dependencies {
     implementation fg.deobf("curse.maven:unusual-end-617757:4549776")
     implementation fg.deobf("curse.maven:phantasm-565254:4398465")
     implementation fg.deobf("curse.maven:aether-255308:5263399")
-    implementation fg.deobf("curse.maven:lobby-567798:4162895")
 
     // delight and food mod set
     implementation fg.deobf("curse.maven:farmers-delight-398521:4679318")
@@ -158,9 +140,9 @@ dependencies {
     implementation fg.deobf("curse.maven:miners-delight-plus-689630:4738272")
 
     // need this one on for runData
-    implementation fg.deobf("curse.maven:delightful-637529:4541459")
+    // implementation fg.deobf("curse.maven:delightful-637529:4541459")
     // need this one on for runClient
-    // compileOnly(fg.deobf("curse.maven:delightful-637529:4541459"))
+    compileOnly(fg.deobf("curse.maven:delightful-637529:4541459"))
 
     implementation fg.deobf('software.bernie.geckolib:geckolib-forge-1.19:3.1.40')
     implementation fg.deobf("curse.maven:kawaii-dishes-694309:4644365")
@@ -198,6 +180,8 @@ dependencies {
     // tinker mod set
     implementation fg.deobf("curse.maven:mantle-74924:5245271")
     implementation fg.deobf("curse.maven:tinkers-construct-74072:5245284")
+
+    runtimeOnly(fg.deobf("curse.maven:create-328085:4835190"))
 
     // patchouli
     implementation fg.deobf("curse.maven:patchouli-306770:4031402")

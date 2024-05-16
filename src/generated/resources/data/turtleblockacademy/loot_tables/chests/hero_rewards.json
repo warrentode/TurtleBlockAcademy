@@ -12,34 +12,6 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "conditions": [
-            {
-              "condition": "minecraft:alternative",
-              "terms": [
-                {
-                  "condition": "minecraft:inverted",
-                  "term": {
-                    "condition": "turtleblockacademy:gamestage_condition",
-                    "stage": "false"
-                  }
-                },
-                {
-                  "condition": "minecraft:inverted",
-                  "term": {
-                    "condition": "turtleblockacademy:gamestage_condition",
-                    "stage": "false"
-                  }
-                },
-                {
-                  "condition": "minecraft:inverted",
-                  "term": {
-                    "condition": "turtleblockacademy:gamestage_condition",
-                    "stage": "false"
-                  }
-                }
-              ]
-            }
-          ],
           "functions": [
             {
               "function": "minecraft:enchant_randomly"
@@ -50,34 +22,6 @@
         },
         {
           "type": "minecraft:item",
-          "conditions": [
-            {
-              "condition": "minecraft:alternative",
-              "terms": [
-                {
-                  "condition": "minecraft:inverted",
-                  "term": {
-                    "condition": "turtleblockacademy:gamestage_condition",
-                    "stage": "false"
-                  }
-                },
-                {
-                  "condition": "minecraft:inverted",
-                  "term": {
-                    "condition": "turtleblockacademy:gamestage_condition",
-                    "stage": "false"
-                  }
-                },
-                {
-                  "condition": "minecraft:inverted",
-                  "term": {
-                    "condition": "turtleblockacademy:gamestage_condition",
-                    "stage": "false"
-                  }
-                }
-              ]
-            }
-          ],
           "functions": [
             {
               "function": "minecraft:enchant_randomly"
@@ -88,34 +32,6 @@
         },
         {
           "type": "minecraft:item",
-          "conditions": [
-            {
-              "condition": "minecraft:alternative",
-              "terms": [
-                {
-                  "condition": "minecraft:inverted",
-                  "term": {
-                    "condition": "turtleblockacademy:gamestage_condition",
-                    "stage": "false"
-                  }
-                },
-                {
-                  "condition": "minecraft:inverted",
-                  "term": {
-                    "condition": "turtleblockacademy:gamestage_condition",
-                    "stage": "false"
-                  }
-                },
-                {
-                  "condition": "minecraft:inverted",
-                  "term": {
-                    "condition": "turtleblockacademy:gamestage_condition",
-                    "stage": "false"
-                  }
-                }
-              ]
-            }
-          ],
           "functions": [
             {
               "function": "minecraft:enchant_randomly"
@@ -126,34 +42,6 @@
         },
         {
           "type": "minecraft:item",
-          "conditions": [
-            {
-              "condition": "minecraft:alternative",
-              "terms": [
-                {
-                  "condition": "minecraft:inverted",
-                  "term": {
-                    "condition": "turtleblockacademy:gamestage_condition",
-                    "stage": "false"
-                  }
-                },
-                {
-                  "condition": "minecraft:inverted",
-                  "term": {
-                    "condition": "turtleblockacademy:gamestage_condition",
-                    "stage": "false"
-                  }
-                },
-                {
-                  "condition": "minecraft:inverted",
-                  "term": {
-                    "condition": "turtleblockacademy:gamestage_condition",
-                    "stage": "false"
-                  }
-                }
-              ]
-            }
-          ],
           "functions": [
             {
               "function": "minecraft:enchant_randomly"
@@ -164,34 +52,6 @@
         },
         {
           "type": "minecraft:item",
-          "conditions": [
-            {
-              "condition": "minecraft:alternative",
-              "terms": [
-                {
-                  "condition": "minecraft:inverted",
-                  "term": {
-                    "condition": "turtleblockacademy:gamestage_condition",
-                    "stage": "false"
-                  }
-                },
-                {
-                  "condition": "minecraft:inverted",
-                  "term": {
-                    "condition": "turtleblockacademy:gamestage_condition",
-                    "stage": "false"
-                  }
-                },
-                {
-                  "condition": "minecraft:inverted",
-                  "term": {
-                    "condition": "turtleblockacademy:gamestage_condition",
-                    "stage": "false"
-                  }
-                }
-              ]
-            }
-          ],
           "functions": [
             {
               "function": "minecraft:enchant_randomly"
@@ -202,34 +62,6 @@
         },
         {
           "type": "minecraft:item",
-          "conditions": [
-            {
-              "condition": "minecraft:alternative",
-              "terms": [
-                {
-                  "condition": "minecraft:inverted",
-                  "term": {
-                    "condition": "turtleblockacademy:gamestage_condition",
-                    "stage": "false"
-                  }
-                },
-                {
-                  "condition": "minecraft:inverted",
-                  "term": {
-                    "condition": "turtleblockacademy:gamestage_condition",
-                    "stage": "false"
-                  }
-                },
-                {
-                  "condition": "minecraft:inverted",
-                  "term": {
-                    "condition": "turtleblockacademy:gamestage_condition",
-                    "stage": "false"
-                  }
-                }
-              ]
-            }
-          ],
           "functions": [
             {
               "function": "minecraft:enchant_randomly"
@@ -242,27 +74,8 @@
           "type": "minecraft:item",
           "conditions": [
             {
-              "condition": "minecraft:alternative",
-              "terms": [
-                {
-                  "condition": "turtleblockacademy:gamestage_condition",
-                  "stage": "false"
-                },
-                {
-                  "condition": "minecraft:inverted",
-                  "term": {
-                    "condition": "turtleblockacademy:gamestage_condition",
-                    "stage": "false"
-                  }
-                },
-                {
-                  "condition": "minecraft:inverted",
-                  "term": {
-                    "condition": "turtleblockacademy:gamestage_condition",
-                    "stage": "false"
-                  }
-                }
-              ]
+              "condition": "turtleblockacademy:gamestage_condition",
+              "stage": "false"
             }
           ],
           "functions": [
@@ -278,27 +91,8 @@
           "type": "minecraft:item",
           "conditions": [
             {
-              "condition": "minecraft:alternative",
-              "terms": [
-                {
-                  "condition": "turtleblockacademy:gamestage_condition",
-                  "stage": "false"
-                },
-                {
-                  "condition": "minecraft:inverted",
-                  "term": {
-                    "condition": "turtleblockacademy:gamestage_condition",
-                    "stage": "false"
-                  }
-                },
-                {
-                  "condition": "minecraft:inverted",
-                  "term": {
-                    "condition": "turtleblockacademy:gamestage_condition",
-                    "stage": "false"
-                  }
-                }
-              ]
+              "condition": "turtleblockacademy:gamestage_condition",
+              "stage": "false"
             }
           ],
           "functions": [
@@ -314,27 +108,8 @@
           "type": "minecraft:item",
           "conditions": [
             {
-              "condition": "minecraft:alternative",
-              "terms": [
-                {
-                  "condition": "turtleblockacademy:gamestage_condition",
-                  "stage": "false"
-                },
-                {
-                  "condition": "minecraft:inverted",
-                  "term": {
-                    "condition": "turtleblockacademy:gamestage_condition",
-                    "stage": "false"
-                  }
-                },
-                {
-                  "condition": "minecraft:inverted",
-                  "term": {
-                    "condition": "turtleblockacademy:gamestage_condition",
-                    "stage": "false"
-                  }
-                }
-              ]
+              "condition": "turtleblockacademy:gamestage_condition",
+              "stage": "false"
             }
           ],
           "functions": [
@@ -350,27 +125,8 @@
           "type": "minecraft:item",
           "conditions": [
             {
-              "condition": "minecraft:alternative",
-              "terms": [
-                {
-                  "condition": "turtleblockacademy:gamestage_condition",
-                  "stage": "false"
-                },
-                {
-                  "condition": "minecraft:inverted",
-                  "term": {
-                    "condition": "turtleblockacademy:gamestage_condition",
-                    "stage": "false"
-                  }
-                },
-                {
-                  "condition": "minecraft:inverted",
-                  "term": {
-                    "condition": "turtleblockacademy:gamestage_condition",
-                    "stage": "false"
-                  }
-                }
-              ]
+              "condition": "turtleblockacademy:gamestage_condition",
+              "stage": "false"
             }
           ],
           "functions": [
@@ -386,27 +142,8 @@
           "type": "minecraft:item",
           "conditions": [
             {
-              "condition": "minecraft:alternative",
-              "terms": [
-                {
-                  "condition": "turtleblockacademy:gamestage_condition",
-                  "stage": "false"
-                },
-                {
-                  "condition": "minecraft:inverted",
-                  "term": {
-                    "condition": "turtleblockacademy:gamestage_condition",
-                    "stage": "false"
-                  }
-                },
-                {
-                  "condition": "minecraft:inverted",
-                  "term": {
-                    "condition": "turtleblockacademy:gamestage_condition",
-                    "stage": "false"
-                  }
-                }
-              ]
+              "condition": "turtleblockacademy:gamestage_condition",
+              "stage": "false"
             }
           ],
           "functions": [
@@ -422,27 +159,8 @@
           "type": "minecraft:item",
           "conditions": [
             {
-              "condition": "minecraft:alternative",
-              "terms": [
-                {
-                  "condition": "turtleblockacademy:gamestage_condition",
-                  "stage": "false"
-                },
-                {
-                  "condition": "minecraft:inverted",
-                  "term": {
-                    "condition": "turtleblockacademy:gamestage_condition",
-                    "stage": "false"
-                  }
-                },
-                {
-                  "condition": "minecraft:inverted",
-                  "term": {
-                    "condition": "turtleblockacademy:gamestage_condition",
-                    "stage": "false"
-                  }
-                }
-              ]
+              "condition": "turtleblockacademy:gamestage_condition",
+              "stage": "false"
             }
           ],
           "functions": [
@@ -488,13 +206,6 @@
                 {
                   "condition": "turtleblockacademy:gamestage_condition",
                   "stage": "false"
-                },
-                {
-                  "condition": "minecraft:inverted",
-                  "term": {
-                    "condition": "turtleblockacademy:gamestage_condition",
-                    "stage": "false"
-                  }
                 }
               ]
             }
@@ -516,13 +227,6 @@
                 {
                   "condition": "turtleblockacademy:gamestage_condition",
                   "stage": "false"
-                },
-                {
-                  "condition": "minecraft:inverted",
-                  "term": {
-                    "condition": "turtleblockacademy:gamestage_condition",
-                    "stage": "false"
-                  }
                 }
               ]
             }
@@ -548,13 +252,6 @@
                 {
                   "condition": "turtleblockacademy:gamestage_condition",
                   "stage": "false"
-                },
-                {
-                  "condition": "minecraft:inverted",
-                  "term": {
-                    "condition": "turtleblockacademy:gamestage_condition",
-                    "stage": "false"
-                  }
                 }
               ]
             }
@@ -580,13 +277,6 @@
                 {
                   "condition": "turtleblockacademy:gamestage_condition",
                   "stage": "false"
-                },
-                {
-                  "condition": "minecraft:inverted",
-                  "term": {
-                    "condition": "turtleblockacademy:gamestage_condition",
-                    "stage": "false"
-                  }
                 }
               ]
             }
@@ -612,13 +302,6 @@
                 {
                   "condition": "turtleblockacademy:gamestage_condition",
                   "stage": "false"
-                },
-                {
-                  "condition": "minecraft:inverted",
-                  "term": {
-                    "condition": "turtleblockacademy:gamestage_condition",
-                    "stage": "false"
-                  }
                 }
               ]
             }
@@ -644,13 +327,6 @@
                 {
                   "condition": "turtleblockacademy:gamestage_condition",
                   "stage": "false"
-                },
-                {
-                  "condition": "minecraft:inverted",
-                  "term": {
-                    "condition": "turtleblockacademy:gamestage_condition",
-                    "stage": "false"
-                  }
                 }
               ]
             }
@@ -676,13 +352,6 @@
                 {
                   "condition": "turtleblockacademy:gamestage_condition",
                   "stage": "false"
-                },
-                {
-                  "condition": "minecraft:inverted",
-                  "term": {
-                    "condition": "turtleblockacademy:gamestage_condition",
-                    "stage": "false"
-                  }
                 }
               ]
             }
@@ -707,7 +376,8 @@
             {
               "chance": 0.25,
               "condition": "minecraft:random_chance"
-            }, {
+            },
+            {
               "condition": "turtleblockacademy:gamestage_condition",
               "stage": "false"
             }
@@ -732,6 +402,12 @@
     },
     {
       "bonus_rolls": 1.0,
+      "conditions": [
+        {
+          "condition": "turtleblockacademy:gamestage_condition",
+          "stage": "false"
+        }
+      ],
       "entries": [
         {
           "type": "minecraft:loot_table",

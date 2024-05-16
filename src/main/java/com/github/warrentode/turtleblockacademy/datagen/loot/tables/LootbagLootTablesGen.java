@@ -5,7 +5,7 @@ import com.github.warrentode.turtleblockacademy.loot.tables.DimDungeonLootTables
 import com.github.warrentode.turtleblockacademy.loot.tables.KitchenLootTables;
 import com.github.warrentode.turtleblockacademy.loot.tables.LootbagLootTables;
 import com.github.warrentode.turtleblockacademy.loot.tables.PackBuiltInLootTables;
-import com.github.warrentode.turtleblockacademy.util.PackTags;
+import com.github.warrentode.turtleblockacademy.util.TBATags;
 import net.mcreator.justoutdoorstuffs.init.JustoutdoorstuffsModItems;
 import net.minecraft.Util;
 import net.minecraft.nbt.CompoundTag;
@@ -62,7 +62,7 @@ public class LootbagLootTablesGen implements Consumer<BiConsumer<ResourceLocatio
         consumer.accept(LootbagLootTables.LOOTBAG_CURRENCY, LootTable.lootTable()
                 .withPool(LootPool.lootPool().setRolls(UniformGenerator.between(4, 10))
                         .setBonusRolls(ConstantValue.exactly(0))
-                        .add(TagEntry.expandTag(PackTags.Items.LOOTBAG_CURRENCY))
+                        .add(TagEntry.expandTag(TBATags.Items.LOOTBAG_CURRENCY))
                 )
         );
         //noinspection deprecation
@@ -75,17 +75,17 @@ public class LootbagLootTablesGen implements Consumer<BiConsumer<ResourceLocatio
                                 .when(STAGE_DUNGEONS)
                                 .when(LootItemRandomChanceCondition.randomChance(0.1F)))
                         .add(LootTableReference.lootTableReference(LootbagLootTables.LOOTBAG_CURRENCY))
-                        .add(TagEntry.expandTag(PackTags.Items.LOOTBAG_SPECIAL_CURRENCY)
+                        .add(TagEntry.expandTag(TBATags.Items.LOOTBAG_SPECIAL_CURRENCY)
                                 .when(LootItemRandomChanceCondition.randomChance(0.1F)))
                 )
                 .withPool(LootPool.lootPool().setRolls(ConstantValue.exactly(1))
                         .add(LootTableReference.lootTableReference(PackBuiltInLootTables.GEMS)
                                 .apply(SetItemCountFunction.setCount(UniformGenerator.between(3, 5))))
                         .add(LootTableReference.lootTableReference(PackBuiltInLootTables.DUNGEON_REWARDS))
-                        .add(TagEntry.expandTag(PackTags.Items.CAGERIUM_BLOCKS).setWeight(1)
+                        .add(TagEntry.expandTag(TBATags.Items.CAGERIUM_BLOCKS).setWeight(1)
                                 .when(STAGE_APARTMENT)
                                 .when(LootItemRandomChanceCondition.randomChance(0.1F)))
-                        .add(TagEntry.expandTag(PackTags.Items.CAGERIUM_ITEMS).setWeight(1)
+                        .add(TagEntry.expandTag(TBATags.Items.CAGERIUM_ITEMS).setWeight(1)
                                 .when(STAGE_APARTMENT)
                                 .when(LootItemRandomChanceCondition.randomChance(0.1F)))
                 ));
@@ -133,7 +133,7 @@ public class LootbagLootTablesGen implements Consumer<BiConsumer<ResourceLocatio
                                 .apply(SetNbtFunction.setTag(Util.make(new CompoundTag(),
                                         (tag) -> tag.putInt("theme", 6)))))
                         .add(LootItem.lootTableItem(Items.BELL).when(LootItemRandomChanceCondition.randomChance(0.25F)))
-                        .add(TagEntry.expandTag(PackTags.Items.MUSIC_DISCS))
+                        .add(TagEntry.expandTag(TBATags.Items.MUSIC_DISCS))
                         .add(LootTableReference.lootTableReference(LootbagLootTables.REFINED_STORAGE_GIFTS)
                                 .apply(SetItemCountFunction.setCount(ConstantValue.exactly(1))))
                 ));
@@ -141,11 +141,11 @@ public class LootbagLootTablesGen implements Consumer<BiConsumer<ResourceLocatio
                 .withPool(LootPool.lootPool().setRolls(ConstantValue.exactly(1))
                         .add(LootItem.lootTableItem(JustoutdoorstuffsModItems.BLUEPRINT_GARDEN_STUFFS.get()))
                         .add(LootItem.lootTableItem(JustoutdoorstuffsModItems.BLUEPRINT_PATIO_STUFFS.get()))
-                        .add(TagEntry.expandTag(PackTags.Items.DOOR_PATTERNS))
-                        .add(TagEntry.expandTag(PackTags.Items.TRAPDOOR_PATTERNS))
-                        .add(TagEntry.expandTag(PackTags.Items.BACKPACK_UPGRADES)
+                        .add(TagEntry.expandTag(TBATags.Items.DOOR_PATTERNS))
+                        .add(TagEntry.expandTag(TBATags.Items.TRAPDOOR_PATTERNS))
+                        .add(TagEntry.expandTag(TBATags.Items.BACKPACK_UPGRADES)
                                 .when(LootItemRandomChanceCondition.randomChance(0.05F)))
-                        .add(TagEntry.expandTag(PackTags.Items.SHULKER_BOXES).when(IN_END.or(STAGE_END))
+                        .add(TagEntry.expandTag(TBATags.Items.SHULKER_BOXES).when(IN_END.or(STAGE_END))
                                 .when(LootItemRandomChanceCondition.randomChance(0.05F)))
                         .add(LootTableReference.lootTableReference(PackBuiltInLootTables.GIFTS)
                                 .when(LootItemRandomChanceCondition.randomChance(0.25F)))
@@ -195,11 +195,11 @@ public class LootbagLootTablesGen implements Consumer<BiConsumer<ResourceLocatio
                         .add(LootTableReference.lootTableReference(PackBuiltInLootTables.HOLIDAY_DECO))
                 )
                 .withPool(LootPool.lootPool().setRolls(ConstantValue.exactly(2))
-                        .add(TagEntry.expandTag(PackTags.Items.CHOCOLATE))
+                        .add(TagEntry.expandTag(TBATags.Items.CHOCOLATE))
                         .add(LootTableReference.lootTableReference(KitchenLootTables.FESTIVEDELIGHT_EDIBLES))
                 )
                 .withPool(LootPool.lootPool().setRolls(ConstantValue.exactly(2))
-                        .add(TagEntry.expandTag(PackTags.Items.EGGS)))
+                        .add(TagEntry.expandTag(TBATags.Items.EGGS)))
         );
 
         consumer.accept(LootbagLootTables.ANNIVERSARY_LOOTBAG, LootTable.lootTable()
@@ -229,8 +229,8 @@ public class LootbagLootTablesGen implements Consumer<BiConsumer<ResourceLocatio
                         .add(LootTableReference.lootTableReference(PackBuiltInLootTables.HOLIDAY_DECO))
                 )
                 .withPool(LootPool.lootPool().setRolls(ConstantValue.exactly(3))
-                        .add(TagEntry.expandTag(PackTags.Items.SWEETS))
-                        .add(TagEntry.expandTag(PackTags.Items.TRICKS)
+                        .add(TagEntry.expandTag(TBATags.Items.SWEETS))
+                        .add(TagEntry.expandTag(TBATags.Items.TRICKS)
                                 .when(LootItemRandomChanceCondition.randomChance(0.1F)))
                 ));
 
@@ -239,7 +239,7 @@ public class LootbagLootTablesGen implements Consumer<BiConsumer<ResourceLocatio
                         .add(LootTableReference.lootTableReference(PackBuiltInLootTables.GIFTS))
                         .add(LootTableReference.lootTableReference(PackBuiltInLootTables.HOLIDAY_DECO)))
                 .withPool(LootPool.lootPool().setRolls(ConstantValue.exactly(3))
-                        .add(TagEntry.expandTag(PackTags.Items.CAKES)))
+                        .add(TagEntry.expandTag(TBATags.Items.CAKES)))
         );
 
         //noinspection deprecation

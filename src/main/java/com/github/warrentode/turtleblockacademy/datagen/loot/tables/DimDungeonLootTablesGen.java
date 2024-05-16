@@ -4,7 +4,7 @@ import biomesoplenty.api.block.BOPBlocks;
 import com.github.warrentode.turtleblockacademy.loot.tables.DimDungeonLootTables;
 import com.github.warrentode.turtleblockacademy.loot.tables.KitchenLootTables;
 import com.github.warrentode.turtleblockacademy.loot.tables.PackBuiltInLootTables;
-import com.github.warrentode.turtleblockacademy.util.PackTags;
+import com.github.warrentode.turtleblockacademy.util.TBATags;
 import net.mcreator.festivedelight.init.FestiveDelightModBlocks;
 import net.mcreator.phantasm.init.PhantasmModBlocks;
 import net.mcreator.unusualend.init.UnusualendModBlocks;
@@ -205,13 +205,13 @@ public class DimDungeonLootTablesGen implements Consumer<BiConsumer<ResourceLoca
                                 .apply(SetItemCountFunction.setCount(UniformGenerator.between(5, 9))))
                         .add(LootItem.lootTableItem(PhantasmModBlocks.VOID_CRYSTAL_FRAMED_GLASS.get())
                                 .apply(SetItemCountFunction.setCount(UniformGenerator.between(5, 9))))
-                        .add(TagEntry.expandTag(PackTags.Items.GLASS_INFUSED)
+                        .add(TagEntry.expandTag(TBATags.Items.GLASS_INFUSED)
                                 .apply(SetItemCountFunction.setCount(UniformGenerator.between(5, 9))))
-                        .add(TagEntry.expandTag(PackTags.Items.GLASS_REINFORCED)
+                        .add(TagEntry.expandTag(TBATags.Items.GLASS_REINFORCED)
                                 .apply(SetItemCountFunction.setCount(UniformGenerator.between(5, 9))))
-                        .add(TagEntry.expandTag(PackTags.Items.GLASS_GLOWING)
+                        .add(TagEntry.expandTag(TBATags.Items.GLASS_GLOWING)
                                 .apply(SetItemCountFunction.setCount(UniformGenerator.between(5, 9))))
-                        .add(TagEntry.expandTag(PackTags.Items.GLASS_SHIFTING)
+                        .add(TagEntry.expandTag(TBATags.Items.GLASS_SHIFTING)
                                 .apply(SetItemCountFunction.setCount(UniformGenerator.between(5, 9))))
                         .add(LootItem.lootTableItem(QUICKSOIL_GLASS.get())
                                 .apply(SetItemCountFunction.setCount(UniformGenerator.between(5, 9))))
@@ -243,7 +243,7 @@ public class DimDungeonLootTablesGen implements Consumer<BiConsumer<ResourceLoca
                                 .apply(SetItemCountFunction.setCount(ConstantValue.exactly(1))))
                         .add(LootItem.lootTableItem(Items.STICKY_PISTON)
                                 .apply(SetItemCountFunction.setCount(ConstantValue.exactly(1))))
-                        .add(TagEntry.expandTag(PackTags.Items.GOLDEN_HOPPER)
+                        .add(TagEntry.expandTag(TBATags.Items.GOLDEN_HOPPER)
                                 .apply(SetItemCountFunction.setCount(ConstantValue.exactly(1))))
                         .add(LootItem.lootTableItem(SSBlocks.SEASON_SENSOR.get())
                                 .apply(SetItemCountFunction.setCount(ConstantValue.exactly(1))))
@@ -301,7 +301,7 @@ public class DimDungeonLootTablesGen implements Consumer<BiConsumer<ResourceLoca
                                 .apply(SetItemCountFunction.setCount(UniformGenerator.between(1, 5))))
                         .add(LootItem.lootTableItem(Items.NETHERITE_INGOT).setWeight(1).when(IN_NETHER.or(STAGE_NETHER))
                                 .apply(SetItemCountFunction.setCount(UniformGenerator.between(1, 5))))
-                        .add(TagEntry.expandTag(PackTags.Items.ENDONIAN_INGOT).setWeight(10).when(IN_END.or(STAGE_AETHER))
+                        .add(TagEntry.expandTag(TBATags.Items.ENDONIAN_INGOT).setWeight(10).when(IN_END.or(STAGE_AETHER))
                                 .apply(SetItemCountFunction.setCount(UniformGenerator.between(1, 5))))
                 )
         );
@@ -405,7 +405,7 @@ public class DimDungeonLootTablesGen implements Consumer<BiConsumer<ResourceLoca
                                 .apply(SetItemCountFunction.setCount(UniformGenerator.between(5, 9))))
                         .add(LootItem.lootTableItem(STONE_TILES.get())
                                 .apply(SetItemCountFunction.setCount(UniformGenerator.between(5, 9))))
-                        .add(TagEntry.expandTag(PackTags.Items.STONE_TILE)
+                        .add(TagEntry.expandTag(TBATags.Items.STONE_TILE)
                                 .apply(SetItemCountFunction.setCount(UniformGenerator.between(5, 9))))
                         .add(LootItem.lootTableItem(CARVED_STONE.get())
                                 .apply(SetItemCountFunction.setCount(UniformGenerator.between(5, 9))))
@@ -549,7 +549,7 @@ public class DimDungeonLootTablesGen implements Consumer<BiConsumer<ResourceLoca
                                 .apply(SetItemCountFunction.setCount(UniformGenerator.between(5, 9))))
                         .add(LootItem.lootTableItem(BLACKSTONE_LAMP.get())
                                 .apply(SetItemCountFunction.setCount(UniformGenerator.between(5, 9))))
-                        .add(TagEntry.expandTag(PackTags.Items.BLACKSTONE_TILE)
+                        .add(TagEntry.expandTag(TBATags.Items.BLACKSTONE_TILE)
                                 .apply(SetItemCountFunction.setCount(UniformGenerator.between(5, 9))))
                 )
         );
@@ -728,9 +728,9 @@ public class DimDungeonLootTablesGen implements Consumer<BiConsumer<ResourceLoca
                         .setRolls(ConstantValue.exactly(27))
                         .add(LootItem.lootTableItem(Blocks.BRICKS)
                                 .apply(SetItemCountFunction.setCount(UniformGenerator.between(5, 9))))
-                        .add(TagEntry.expandTag(PackTags.Items.LAPIS_BRICKS)
+                        .add(TagEntry.expandTag(TBATags.Items.LAPIS_BRICKS)
                                 .apply(SetItemCountFunction.setCount(UniformGenerator.between(5, 9))))
-                        .add(TagEntry.expandTag(PackTags.Items.ASH_BRICKS)
+                        .add(TagEntry.expandTag(TBATags.Items.ASH_BRICKS)
                                 .apply(SetItemCountFunction.setCount(UniformGenerator.between(5, 9))))
                         .add(LootItem.lootTableItem(Blocks.MUD_BRICKS)
                                 .apply(SetItemCountFunction.setCount(UniformGenerator.between(5, 9))))

@@ -1,0 +1,72 @@
+{
+    "type": "minecraft:nether_forest_vegetation",
+    "config": {
+        "spread_height": 4,
+        "spread_width": 8,
+        "state_provider": {
+            "type": "minecraft:weighted_state_provider",
+            "entries": [
+                {
+                    "data": {
+                        "Name": "unusualend:flowering_purpur_grass"
+                    },
+                    "weight": 30
+                },
+                {
+                    "data": {
+                        "Name": "unusualend:purpur_grass"
+                    },
+                    "weight": 30
+                },
+                {
+                    "data": {
+                        "Name": "unusualend:chorus_roots"
+                    },
+                    "weight": 25
+                },
+                {
+                    "data": {
+                        "Name": "unusualend:endstone_sprouts"
+                    },
+                    "weight": 25
+                },
+                {
+                    "data": {
+                        "Name": "unusualend:chorus_fungus"
+                    },
+                    "weight": 25
+                },
+                {
+                    "data": {
+                        "Name": "phantasm:crystalily"
+                    },
+                    "weight": 20
+                },
+                {
+                    "data": {
+                        "Name": "phantasm:ender_clover"
+                    },
+                    "weight": 20
+                },
+                {
+                    "data": {
+                        "Name": "phantasm:putac_shroom"
+                    },
+                    "weight": 20
+                },
+                {
+                    "data": {
+                        "Name": "phantasm:stardust"
+                    },
+                    "weight": 20
+                },
+                {
+                    "data": {
+                        "Name": "unusualend:endermite_egg"
+                    },
+                    "weight": 1
+                }
+            ]
+        }
+    }
+}

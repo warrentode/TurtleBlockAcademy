@@ -1,7 +1,7 @@
 package com.github.warrentode.turtleblockacademy.commands;
 
-import com.github.warrentode.turtleblockacademy.blocks.ModBlockRegistry;
-import com.github.warrentode.turtleblockacademy.items.ModItems;
+import com.github.warrentode.turtleblockacademy.blocks.TBABlocks;
+import com.github.warrentode.turtleblockacademy.items.TBAItems;
 import com.github.warrentode.turtleblockacademy.util.AcademyUtil;
 import com.mojang.brigadier.CommandDispatcher;
 import com.mojang.brigadier.context.CommandContext;
@@ -38,7 +38,7 @@ public class AcademyCommands {
     private static int giveStudentCard(@NotNull CommandContext<CommandSourceStack> context) throws CommandSyntaxException {
         ServerPlayer serverPlayer = context.getSource().getPlayerOrException();
 
-        ItemStack newCard = new ItemStack(ModItems.STUDENT_CARD.get());
+        ItemStack newCard = new ItemStack(TBAItems.STUDENT_CARD.get());
 
         if (serverPlayer.getMainHandItem().isEmpty()) {
             serverPlayer.setItemInHand(InteractionHand.MAIN_HAND, addBasicTags(serverPlayer, newCard));
@@ -55,7 +55,7 @@ public class AcademyCommands {
             throws CommandSyntaxException {
         ServerPlayer serverPlayer = context.getSource().getPlayerOrException();
 
-        ItemStack newCertificate = new ItemStack(ModBlockRegistry.CERTIFICATE_BLOCK.get().asItem());
+        ItemStack newCertificate = new ItemStack(TBABlocks.CERTIFICATE_BLOCK.get().asItem());
 
         if (serverPlayer.getMainHandItem().isEmpty()) {
             serverPlayer.setItemInHand(InteractionHand.MAIN_HAND, addBasicTags(serverPlayer, newCertificate));
@@ -72,7 +72,7 @@ public class AcademyCommands {
             throws CommandSyntaxException {
         ServerPlayer serverPlayer = context.getSource().getPlayerOrException();
 
-        ItemStack newCertificate = new ItemStack(ModBlockRegistry.CERTIFICATE_BLOCK.get().asItem());
+        ItemStack newCertificate = new ItemStack(TBABlocks.CERTIFICATE_BLOCK.get().asItem());
 
         if (serverPlayer.getMainHandItem().isEmpty()) {
             serverPlayer.setItemInHand(InteractionHand.MAIN_HAND, addKitchenTags(serverPlayer, newCertificate));

@@ -6,6 +6,7 @@ import com.catastrophe573.dimdungeons.DimDungeons;
 import com.github.warrentode.turtleblockacademy.datagen.loot.tables.*;
 import com.github.warrentode.turtleblockacademy.loot.conditions.GameStageCondition;
 import com.github.warrentode.turtleblockacademy.loot.conditions.SeasonalCondition;
+import com.github.warrentode.turtleblockacademy.world.dimension.TBADimensions;
 import com.google.common.collect.ImmutableList;
 import com.mojang.datafixers.util.Pair;
 import net.minecraft.advancements.critereon.LocationPredicate;
@@ -80,6 +81,9 @@ public class ModLootProviders extends LootTableProvider {
     public static final LootItemCondition.Builder IN_DUNGEON =
             LocationCheck.checkLocation(LocationPredicate.Builder.location()
                     .setDimension(DimDungeons.DUNGEON_DIMENSION));
+    public static final LootItemCondition.Builder IN_MINING =
+            LocationCheck.checkLocation(LocationPredicate.Builder.location()
+                    .setDimension(TBADimensions.TDA_MINING_LEVEL));
 
     // holiday checks
     public static final LootItemCondition.Builder BIRTHDAY_EVENT = SeasonalCondition.season().set("BIRTHDAY");

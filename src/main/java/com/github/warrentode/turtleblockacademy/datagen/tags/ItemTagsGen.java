@@ -4,7 +4,8 @@ import biomesoplenty.api.block.BOPBlocks;
 import biomesoplenty.api.item.BOPItems;
 import cn.foggyhillside.endsdelight.registry.ItemRegistry;
 import com.aetherteam.aether.item.AetherItems;
-import com.github.warrentode.turtleblockacademy.util.PackTags;
+import com.github.warrentode.turtleblockacademy.items.TBAItems;
+import com.github.warrentode.turtleblockacademy.util.TBATags;
 import com.hakimen.kawaiidishes.registry.ItemRegister;
 import com.mcwdoors.kikoz.init.ItemInit;
 import com.sammy.minersdelight.setup.MDItems;
@@ -39,7 +40,7 @@ import vectorwing.farmersdelight.common.tag.ForgeTags;
 import java.util.Objects;
 
 import static alabaster.crabbersdelight.common.registry.ModItems.*;
-import static com.github.warrentode.turtleblockacademy.items.ModItems.STUDENT_CARD;
+import static com.github.warrentode.turtleblockacademy.items.TBAItems.STUDENT_CARD;
 import static com.sammy.minersdelight.setup.MDItems.CAVE_CARROT;
 import static net.p3pp3rf1y.sophisticatedbackpacks.init.ModItems.*;
 import static vectorwing.farmersdelight.common.registry.ModItems.*;
@@ -55,107 +56,107 @@ public class ItemTagsGen extends ItemTagsProvider {
     }
 
     private void registerPackTags() {
-        tag(PackTags.Items.CURIO)
-                .addTag(PackTags.Items.SUPPLEMENTARIES_KEY);
-        tag(PackTags.Items.SUPPLEMENTARIES_KEY)
+        tag(TBATags.Items.CURIO)
+                .addTag(TBATags.Items.SUPPLEMENTARIES_KEY);
+        tag(TBATags.Items.SUPPLEMENTARIES_KEY)
                 .add(STUDENT_CARD.get());
-        tag(PackTags.Items.CAGERIUM_ITEMS)
+        tag(TBATags.Items.CAGERIUM_ITEMS)
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("cagerium:burning_upgrade")))
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("cagerium:binding_wood_plate")))
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("cagerium:ominous_skull")))
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("cagerium:skeleton_key")))
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("cagerium:binding_gemstone")));
-        tag(PackTags.Items.CAGERIUM_BLOCKS)
+        tag(TBATags.Items.CAGERIUM_BLOCKS)
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("cagerium:cage")))
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("cagerium:terrarium")))
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("cagerium:plate")));
-        tag(PackTags.Items.ADVANCEMENT_FRAME_ITEM)
+        tag(TBATags.Items.ADVANCEMENT_FRAME_ITEM)
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("advancementframes:advancement_frame")));
-        tag(PackTags.Items.GOLDEN_HOPPER)
+        tag(TBATags.Items.GOLDEN_HOPPER)
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("goldenhopper:golden_hopper")));
-        tag(PackTags.Items.STICKS)
+        tag(TBATags.Items.STICKS)
                 .addOptional(AetherItems.SKYROOT_STICK.getId())
                 .add(Items.STICK);
-        tag(PackTags.Items.BRICK)
+        tag(TBATags.Items.BRICK)
                 .add(ModRegistry.ASH_BRICK_ITEM.get())
                 .add(Items.NETHER_BRICK)
                 .add(Items.BRICK);
-        tag(PackTags.Items.WATER_BUCKETS)
+        tag(TBATags.Items.WATER_BUCKETS)
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("miners_delight:water_cup")))
                 .addOptional(AetherItems.SKYROOT_WATER_BUCKET.getId())
                 .add(Items.WATER_BUCKET);
-        tag(PackTags.Items.BLOODSHROOM_LOG)
+        tag(TBATags.Items.BLOODSHROOM_LOG)
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("tconstruct:bloodshroom_log")));
-        tag(PackTags.Items.BLOODSHROOM_STRIPPED_LOG)
+        tag(TBATags.Items.BLOODSHROOM_STRIPPED_LOG)
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("tconstruct:stripped_bloodshroom_log")));
-        tag(PackTags.Items.BLOODSHROOM_PLANKS)
+        tag(TBATags.Items.BLOODSHROOM_PLANKS)
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("tconstruct:bloodshroom_planks")));
-        tag(PackTags.Items.BLOODSHROOM_SLAB)
+        tag(TBATags.Items.BLOODSHROOM_SLAB)
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("tconstruct:bloodshroom_planks_slab")));
-        tag(PackTags.Items.ENDERBARK_LOG)
+        tag(TBATags.Items.ENDERBARK_LOG)
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("tconstruct:enderbark_log")));
-        tag(PackTags.Items.ENDERBARK_STRIPPED_LOG)
+        tag(TBATags.Items.ENDERBARK_STRIPPED_LOG)
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("tconstruct:stripped_enderbark_log")));
-        tag(PackTags.Items.ENDERBARK_PLANKS)
+        tag(TBATags.Items.ENDERBARK_PLANKS)
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("tconstruct:enderbark_planks")));
-        tag(PackTags.Items.ENDERBARK_SLAB)
+        tag(TBATags.Items.ENDERBARK_SLAB)
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("tconstruct:enderbark_planks_slab")));
-        tag(PackTags.Items.GREENHEART_LOG)
+        tag(TBATags.Items.GREENHEART_LOG)
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("tconstruct:greenheart_log")));
-        tag(PackTags.Items.GREENHEART_STRIPPED_LOG)
+        tag(TBATags.Items.GREENHEART_STRIPPED_LOG)
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("tconstruct:stripped_greenheart_log")));
-        tag(PackTags.Items.GREENHEART_PLANKS)
+        tag(TBATags.Items.GREENHEART_PLANKS)
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("tconstruct:greenheart_planks")));
-        tag(PackTags.Items.GREENHEART_SLAB)
+        tag(TBATags.Items.GREENHEART_SLAB)
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("tconstruct:greenheart_planks_slab")));
-        tag(PackTags.Items.TINKER_SKYROOT_LOG)
+        tag(TBATags.Items.TINKER_SKYROOT_LOG)
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("tconstruct:skyroot_log")));
-        tag(PackTags.Items.TINKER_SKYROOT_STRIPPED_LOG)
+        tag(TBATags.Items.TINKER_SKYROOT_STRIPPED_LOG)
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("tconstruct:stripped_skyroot_log")));
-        tag(PackTags.Items.TINKER_SKYROOT_PLANKS)
+        tag(TBATags.Items.TINKER_SKYROOT_PLANKS)
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("tconstruct:skyroot_planks")));
-        tag(PackTags.Items.TINKER_SKYROOT_SLAB)
+        tag(TBATags.Items.TINKER_SKYROOT_SLAB)
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("tconstruct:skyroot_planks_slab")));
         tag(Tags.Items.LEATHER)
                 .add(Items.LEATHER)
                 .add(Items.RABBIT_HIDE)
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("nethersdelight:hoglin_hide")));
-        tag(PackTags.Items.SAND)
+        tag(TBATags.Items.SAND)
                 .addOptional(BOPBlocks.WHITE_SAND.getId())
                 .addOptional(BOPBlocks.ROOTED_SAND.getId())
                 .addOptional(BOPBlocks.ORANGE_SAND.getId())
                 .addOptional(BOPBlocks.BLACK_SAND.getId())
                 .add(Blocks.SAND.asItem())
                 .add(Blocks.RED_SAND.asItem());
-        tag(PackTags.Items.STRAW_FIBERS)
+        tag(TBATags.Items.STRAW_FIBERS)
                 .add(Items.WHEAT)
                 .addOptional(BOPBlocks.BARLEY.getId())
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("farmersdelight:rice_panicle")))
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("supplementaries:flax")))
                 .addOptional(ModItems.STRAW.getId());
-        tag(PackTags.Items.FLOWER_BOX_PLANTABLE);
-        tag(PackTags.Items.PIGLIN_BARTER_ITEMS);
-        tag(PackTags.Items.BUNDLES)
+        tag(TBATags.Items.FLOWER_BOX_PLANTABLE);
+        tag(TBATags.Items.PIGLIN_BARTER_ITEMS);
+        tag(TBATags.Items.BUNDLES)
                 .add(Items.BUNDLE)
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("bagofholding:leather_bag_of_holding")))
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("bagofholding:iron_bag_of_holding")))
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("bagofholding:gold_bag_of_holding")));
-        tag(PackTags.Items.WALLETS)
-                .addTag(PackTags.Items.BUNDLES);
-        tag(PackTags.Items.SUGAR)
+        tag(TBATags.Items.WALLETS)
+                .addTag(TBATags.Items.BUNDLES);
+        tag(TBATags.Items.SUGAR)
                 .add(Items.SUGAR)
                 .add(Items.HONEY_BOTTLE);
-        tag(PackTags.Items.MILK)
+        tag(TBATags.Items.MILK)
                 .addOptional(ModItems.MILK_BOTTLE.getId())
                 .add(Items.MILK_BUCKET)
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("kawaiidishes:condensed_milk")))
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("aether:skyroot_milk_bucket")));
-        tag(PackTags.Items.STONE_LAMPS)
+        tag(TBATags.Items.STONE_LAMPS)
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("supplementaries:stone_lamp")))
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("supplementaries:blackstone_lamp")))
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("supplementaries:deepslate_lamp")))
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("supplementaries:end_stone_lamp")));
-        tag(PackTags.Items.NEEDLES)
+        tag(TBATags.Items.NEEDLES)
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("sewingkit:wood_sewing_needle")))
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("sewingkit:stone_sewing_needle")))
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("sewingkit:bone_sewing_needle")))
@@ -164,7 +165,7 @@ public class ItemTagsGen extends ItemTagsProvider {
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("sewingkit:iron_sewing_needle")))
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("sewingkit:diamond_sewing_needle")))
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("sewingkit:netherite_sewing_needle")));
-        tag(PackTags.Items.MAILBOXES)
+        tag(TBATags.Items.MAILBOXES)
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("mighty_mail:oak_mail_box")))
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("mighty_mail:spruce_mail_box")))
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("mighty_mail:birch_mail_box")))
@@ -174,7 +175,7 @@ public class ItemTagsGen extends ItemTagsProvider {
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("mighty_mail:crimson_mail_box")))
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("mighty_mail:warped_mail_box")))
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("mighty_mail:mangrove_mail_box")));
-        tag(PackTags.Items.TRELLIS)
+        tag(TBATags.Items.TRELLIS)
                 .addOptional(com.github.Pandarix.beautify.core.init.ItemInit.OAK_TRELLIS_ITEM.getId())
                 .addOptional(com.github.Pandarix.beautify.core.init.ItemInit.SPRUCE_TRELLIS_ITEM.getId())
                 .addOptional(com.github.Pandarix.beautify.core.init.ItemInit.BIRCH_TRELLIS_ITEM.getId())
@@ -184,11 +185,11 @@ public class ItemTagsGen extends ItemTagsProvider {
                 .addOptional(com.github.Pandarix.beautify.core.init.ItemInit.CRIMSON_TRELLIS_ITEM.getId())
                 .addOptional(com.github.Pandarix.beautify.core.init.ItemInit.WARPED_TRELLIS_ITEM.getId())
                 .addOptional(com.github.Pandarix.beautify.core.init.ItemInit.MANGROVE_TRELLIS_ITEM.getId());
-        tag(PackTags.Items.WAYSTONES)
+        tag(TBATags.Items.WAYSTONES)
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("waystones:waystone")))
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("waystones:mossy_waystone")))
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("waystones:sandy_waystone")));
-        tag(PackTags.Items.PICTURE_FRAMES)
+        tag(TBATags.Items.PICTURE_FRAMES)
                 .addOptional(com.github.Pandarix.beautify.core.init.ItemInit.OAK_PICTURE_FRAME_ITEM.getId())
                 .addOptional(com.github.Pandarix.beautify.core.init.ItemInit.SPRUCE_PICTURE_FRAME_ITEM.getId())
                 .addOptional(com.github.Pandarix.beautify.core.init.ItemInit.BIRCH_PICTURE_FRAME_ITEM.getId())
@@ -199,7 +200,7 @@ public class ItemTagsGen extends ItemTagsProvider {
                 .addOptional(com.github.Pandarix.beautify.core.init.ItemInit.WARPED_PICTURE_FRAME_ITEM.getId())
                 .addOptional(com.github.Pandarix.beautify.core.init.ItemInit.MANGROVE_PICTURE_FRAME_ITEM.getId())
                 .addOptional(com.github.Pandarix.beautify.core.init.ItemInit.QUARTZ_PICTURE_FRAME_ITEM.getId());
-        tag(PackTags.Items.WALL_TORCHES)
+        tag(TBATags.Items.WALL_TORCHES)
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("additional_lights:al_torch_magenta_wool")))
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("additional_lights:al_torch_pink_wool")))
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("additional_lights:al_torch_packed_ice")))
@@ -227,7 +228,7 @@ public class ItemTagsGen extends ItemTagsProvider {
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("additional_lights:al_torch_oak_planks")))
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("additional_lights:al_torch_birch_planks")))
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("additional_lights:al_torch_acacia_planks")));
-        tag(PackTags.Items.TALL_STANDING_TORCHES)
+        tag(TBATags.Items.TALL_STANDING_TORCHES)
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("additional_lights:standing_torch_l_cobblestone")))
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("additional_lights:standing_torch_l_mossy_cobblestone")))
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("additional_lights:standing_torch_l_stone")))
@@ -250,7 +251,7 @@ public class ItemTagsGen extends ItemTagsProvider {
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("additional_lights:standing_torch_l_packed_ice")))
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("additional_lights:standing_torch_l_pink_wool")))
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("additional_lights:standing_torch_l_magenta_wool")));
-        tag(PackTags.Items.STANDING_TORCHES)
+        tag(TBATags.Items.STANDING_TORCHES)
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("additional_lights:standing_torch_s_cobblestone")))
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("additional_lights:standing_torch_s_mossy_cobblestone")))
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("additional_lights:standing_torch_s_stone")))
@@ -273,7 +274,7 @@ public class ItemTagsGen extends ItemTagsProvider {
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("additional_lights:standing_torch_s_packed_ice")))
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("additional_lights:standing_torch_s_pink_wool")))
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("additional_lights:standing_torch_s_magenta_wool")));
-        tag(PackTags.Items.LARGE_FIRE_PITS)
+        tag(TBATags.Items.LARGE_FIRE_PITS)
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("additional_lights:fire_pit_l_cobblestone")))
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("additional_lights:fire_pit_l_mossy_cobblestone")))
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("additional_lights:fire_pit_l_stone")))
@@ -296,7 +297,7 @@ public class ItemTagsGen extends ItemTagsProvider {
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("additional_lights:fire_pit_l_packed_ice")))
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("additional_lights:fire_pit_l_pink_wool")))
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("additional_lights:fire_pit_l_magenta_wool")));
-        tag(PackTags.Items.FIRE_PITS)
+        tag(TBATags.Items.FIRE_PITS)
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("additional_lights:fire_pit_s_cobblestone")))
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("additional_lights:fire_pit_s_mossy_cobblestone")))
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("additional_lights:fire_pit_s_stone")))
@@ -319,14 +320,14 @@ public class ItemTagsGen extends ItemTagsProvider {
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("additional_lights:fire_pit_s_packed_ice")))
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("additional_lights:fire_pit_s_pink_wool")))
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("additional_lights:fire_pit_s_magenta_wool")));
-        tag(PackTags.Items.CHIMES)
+        tag(TBATags.Items.CHIMES)
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("chimes:bamboo_chimes")))
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("chimes:carved_bamboo_chimes")))
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("chimes:iron_chimes")))
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("chimes:copper_chimes")))
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("chimes:amethyst_chimes")))
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("chimes:glass_bells")));
-        tag(PackTags.Items.CAMP_CHAIRS)
+        tag(TBATags.Items.CAMP_CHAIRS)
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("campchair:oak_camp_chair")))
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("campchair:spruce_camp_chair")))
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("campchair:birch_camp_chair")))
@@ -336,7 +337,7 @@ public class ItemTagsGen extends ItemTagsProvider {
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("campchair:crimson_camp_chair")))
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("campchair:warped_camp_chair")))
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("campchair:mangrove_camp_chair")));
-        tag(PackTags.Items.BLINDS)
+        tag(TBATags.Items.BLINDS)
                 .addOptional(com.github.Pandarix.beautify.core.init.ItemInit.OAK_BLINDS_ITEM.getId())
                 .addOptional(com.github.Pandarix.beautify.core.init.ItemInit.SPRUCE_BLINDS_ITEM.getId())
                 .addOptional(com.github.Pandarix.beautify.core.init.ItemInit.BIRCH_BLINDS_ITEM.getId())
@@ -347,7 +348,7 @@ public class ItemTagsGen extends ItemTagsProvider {
                 .addOptional(com.github.Pandarix.beautify.core.init.ItemInit.WARPED_BLINDS_ITEM.getId())
                 .addOptional(com.github.Pandarix.beautify.core.init.ItemInit.MANGROVE_BLINDS_ITEM.getId())
                 .addOptional(com.github.Pandarix.beautify.core.init.ItemInit.IRON_BLINDS_ITEM.getId());
-        tag(PackTags.Items.BEEHIVES)
+        tag(TBATags.Items.BEEHIVES)
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("friendsandfoes:acacia_beehive")))
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("friendsandfoes:birch_beehive")))
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("friendsandfoes:crimson_beehive")))
@@ -357,7 +358,7 @@ public class ItemTagsGen extends ItemTagsProvider {
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("friendsandfoes:spruce_beehive")))
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("friendsandfoes:warped_beehive")))
                 .add(Items.BEEHIVE);
-        tag(PackTags.Items.LAMPS)
+        tag(TBATags.Items.LAMPS)
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("additional_lights:al_lamp_magenta_wool")))
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("additional_lights:al_lamp_pink_wool")))
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("additional_lights:al_lamp_packed_ice")))
@@ -381,7 +382,7 @@ public class ItemTagsGen extends ItemTagsProvider {
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("additional_lights:al_lamp_oak_planks")))
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("additional_lights:al_lamp_birch_planks")))
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("additional_lights:al_lamp_acacia_planks")));
-        tag(PackTags.Items.CANDELABRA)
+        tag(TBATags.Items.CANDELABRA)
                 .addOptional(com.github.Pandarix.beautify.core.init.ItemInit.LAMP_CANDLEABRA_YELLOW_ITEM.getId())
                 .addOptional(com.github.Pandarix.beautify.core.init.ItemInit.LAMP_CANDLEABRA_WHITE_ITEM.getId())
                 .addOptional(com.github.Pandarix.beautify.core.init.ItemInit.LAMP_CANDLEABRA_RED_ITEM.getId())
@@ -399,15 +400,15 @@ public class ItemTagsGen extends ItemTagsProvider {
                 .addOptional(com.github.Pandarix.beautify.core.init.ItemInit.LAMP_CANDLEABRA_LIGHT_GRAY_ITEM.getId())
                 .addOptional(com.github.Pandarix.beautify.core.init.ItemInit.LAMP_CANDLEABRA_LIGHT_BLUE_ITEM.getId())
                 .addOptional(com.github.Pandarix.beautify.core.init.ItemInit.LAMP_CANDLEABRA_ITEM.getId());
-        tag(PackTags.Items.BLACKSTONE_TILE)
+        tag(TBATags.Items.BLACKSTONE_TILE)
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("supplementaries:blackstone_tile")));
-        tag(PackTags.Items.STONE_TILE)
+        tag(TBATags.Items.STONE_TILE)
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("supplementaries:stone_tile")));
-        tag(PackTags.Items.LAPIS_BRICKS)
+        tag(TBATags.Items.LAPIS_BRICKS)
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("supplementaries:lapis_bricks")));
-        tag(PackTags.Items.ASH_BRICKS)
+        tag(TBATags.Items.ASH_BRICKS)
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("supplementaries:ash_bricks")));
-        tag(PackTags.Items.PATIO_ITEMS)
+        tag(TBATags.Items.PATIO_ITEMS)
                 .addOptional(JustoutdoorstuffsModItems.PATIO_BBQ_GRILL.getId())
                 .addOptional(JustoutdoorstuffsModItems.PATIO_CHECKERS_SET.getId())
                 .addOptional(JustoutdoorstuffsModItems.PATIO_TEA_SET.getId())
@@ -433,7 +434,7 @@ public class ItemTagsGen extends ItemTagsProvider {
                 .addOptional(JustoutdoorstuffsModItems.PATIO_IRON_BENCH.getId())
                 .addOptional(JustoutdoorstuffsModItems.PATIO_IRON_STOOL.getId())
                 .addOptional(JustoutdoorstuffsModItems.PATIO_IRON_CHAIR.getId());
-        tag(PackTags.Items.GARDEN_ITEMS)
+        tag(TBATags.Items.GARDEN_ITEMS)
                 .addOptional(JustoutdoorstuffsModItems.GARDEN_GNOME_3.getId())
                 .addOptional(JustoutdoorstuffsModItems.GARDEN_GNOME_2.getId())
                 .addOptional(JustoutdoorstuffsModItems.GARDEN_GNOME_1.getId())
@@ -459,63 +460,63 @@ public class ItemTagsGen extends ItemTagsProvider {
                 .addOptional(JustoutdoorstuffsModItems.GARDEN_BENCH.getId())
                 .addOptional(JustoutdoorstuffsModItems.GARDEN_CHAIR.getId())
                 .addOptional(JustoutdoorstuffsModItems.GARDEN_STOOL.getId());
-        tag(PackTags.Items.SLEDS)
+        tag(TBATags.Items.SLEDS)
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("snowyspirit:sled_sand")))
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("snowyspirit:sled_snow")));
-        tag(PackTags.Items.CAKE_SLICES)
+        tag(TBATags.Items.CAKE_SLICES)
                 .addOptional(ModItems.SWEET_BERRY_CHEESECAKE_SLICE.getId())
                 .addOptional(FRItems.COFFEE_CAKE_SLICE.getId())
                 .addOptional(ItemRegister.honeyCheeseCakePiece.getId())
                 .addOptional(ItemRegister.chocolateCheeseCakePiece.getId())
                 .addOptional(ItemRegister.cheeseCakePiece.getId())
                 .addOptional(ItemRegister.cakePiece.getId());
-        tag(PackTags.Items.CAKES)
+        tag(TBATags.Items.CAKES)
                 .addOptional(ModItems.SWEET_BERRY_CHEESECAKE.getId())
                 .addOptional(FRItems.COFFEE_CAKE.getId())
                 .addOptional(ItemRegister.honeyCheeseCake.getId())
                 .addOptional(ItemRegister.chocolateCheeseCake.getId())
                 .addOptional(ItemRegister.cheeseCake.getId())
                 .add(Items.CAKE);
-        tag(PackTags.Items.TRICKS)
+        tag(TBATags.Items.TRICKS)
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("domesticationinnovation:rotten_apple")))
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("domesticationinnovation:sinister_carrot")))
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("hauntedharvest:grim_apple")))
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("hauntedharvest:rotten_apple")));
-        tag(PackTags.Items.INGREDIENTS)
-                .addTag(PackTags.Items.APPLE_INGREDIENTS)
-                .addTag(PackTags.Items.STARCH_INGREDIENTS)
-                .addTag(PackTags.Items.CARROT_INGREDIENTS)
-                .addTag(PackTags.Items.CABBAGE_INGREDIENTS)
-                .addTag(PackTags.Items.PUMPKIN_INGREDIENTS)
-                .addTag(PackTags.Items.MELON_INGREDIENTS)
-                .addTag(PackTags.Items.COCOA_INGREDIENTS)
-                .addTag(PackTags.Items.CLOVER_INGREDIENTS)
-                .addTag(PackTags.Items.ONION_INGREDIENTS)
-                .addTag(PackTags.Items.SPICES)
-                .addTag(PackTags.Items.GLAZES)
-                .addTag(PackTags.Items.COOKED_RICE)
-                .addTag(PackTags.Items.CHEESE_SLICES)
-                .addTag(PackTags.Items.BREAD)
-                .addTag(PackTags.Items.EGGS);
-        tag(PackTags.Items.STARCH_INGREDIENTS)
-                .addTag(PackTags.Items.RICE)
+        tag(TBATags.Items.INGREDIENTS)
+                .addTag(TBATags.Items.APPLE_INGREDIENTS)
+                .addTag(TBATags.Items.STARCH_INGREDIENTS)
+                .addTag(TBATags.Items.CARROT_INGREDIENTS)
+                .addTag(TBATags.Items.CABBAGE_INGREDIENTS)
+                .addTag(TBATags.Items.PUMPKIN_INGREDIENTS)
+                .addTag(TBATags.Items.MELON_INGREDIENTS)
+                .addTag(TBATags.Items.COCOA_INGREDIENTS)
+                .addTag(TBATags.Items.CLOVER_INGREDIENTS)
+                .addTag(TBATags.Items.ONION_INGREDIENTS)
+                .addTag(TBATags.Items.SPICES)
+                .addTag(TBATags.Items.GLAZES)
+                .addTag(TBATags.Items.COOKED_RICE)
+                .addTag(TBATags.Items.CHEESE_SLICES)
+                .addTag(TBATags.Items.BREAD)
+                .addTag(TBATags.Items.EGGS);
+        tag(TBATags.Items.STARCH_INGREDIENTS)
+                .addTag(TBATags.Items.RICE)
                 .add(Items.POTATO);
-        tag(PackTags.Items.APPLE_INGREDIENTS)
-                .addTag(PackTags.Items.STARCH_INGREDIENTS)
+        tag(TBATags.Items.APPLE_INGREDIENTS)
+                .addTag(TBATags.Items.STARCH_INGREDIENTS)
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("tconstruct:jeweled_apple")))
                 .addOptional(AetherItems.WHITE_APPLE.getId())
                 .add(Items.GOLDEN_APPLE)
                 .add(Items.APPLE);
-        tag(PackTags.Items.ONION_INGREDIENTS)
+        tag(TBATags.Items.ONION_INGREDIENTS)
                 .add(Items.ALLIUM)
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("farmersdelight:wild_onion")))
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("farmersdelight:onion")));
-        tag(PackTags.Items.SWEETENED_CHUNK)
+        tag(TBATags.Items.SWEETENED_CHUNK)
                 .add(Items.ROTTEN_FLESH);
-        tag(PackTags.Items.CLOVER_INGREDIENTS)
-                .addTag(PackTags.Items.CLOVER)
+        tag(TBATags.Items.CLOVER_INGREDIENTS)
+                .addTag(TBATags.Items.CLOVER)
                 .addOptional(DelightfulItems.CHOPPED_CLOVER.getId());
-        tag(PackTags.Items.SPICES)
+        tag(TBATags.Items.SPICES)
                 .addOptional(FestiveDelightModItems.CINNAMON_POWDER.getId())
                 .addOptional(lekavar.lma.drinkbeer.registries.ItemRegistry.SPICE_STORM_SHARDS.getId())
                 .addOptional(lekavar.lma.drinkbeer.registries.ItemRegistry.SPICE_SMOKED_EGLIA_BUD.getId())
@@ -532,136 +533,136 @@ public class ItemTagsGen extends ItemTagsProvider {
                 .addOptional(lekavar.lma.drinkbeer.registries.ItemRegistry.SPICE_CITRINE_NIGELLA_SEEDS.getId())
                 .addOptional(lekavar.lma.drinkbeer.registries.ItemRegistry.SPICE_BLAZE_PAPRIKA.getId())
                 .addOptional(lekavar.lma.drinkbeer.registries.ItemRegistry.SPICE_AMETHYST_NIGELLA_SEEDS.getId());
-        tag(PackTags.Items.COCOA)
+        tag(TBATags.Items.COCOA)
                 .add(Items.COCOA_BEANS);
-        tag(PackTags.Items.COCOA_INGREDIENTS)
+        tag(TBATags.Items.COCOA_INGREDIENTS)
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("kawaiidishes:dried_cocoa_beans")))
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("kawaiidishes:roasted_cocoa_beans")))
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("kawaiidishes:cocoa_powder")))
                 .add(Items.COCOA_BEANS);
-        tag(PackTags.Items.MELON)
+        tag(TBATags.Items.MELON)
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("delightful:cantaloupe")))
                 .add(Items.MELON);
-        tag(PackTags.Items.COCONUT)
+        tag(TBATags.Items.COCONUT)
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("ecologics:coconut")))
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("ecologics:coconut_slice")));
-        tag(PackTags.Items.MELON_INGREDIENTS)
+        tag(TBATags.Items.MELON_INGREDIENTS)
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("delightful:cantaloupe_slice")))
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("delightful:cantaloupe")))
                 .add(Items.MELON_SLICE)
                 .add(Items.MELON);
-        tag(PackTags.Items.PUMPKIN_INGREDIENTS)
+        tag(TBATags.Items.PUMPKIN_INGREDIENTS)
                 .add(Items.PUMPKIN)
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("farmersdelight:pumpkin_slice")));
-        tag(PackTags.Items.CABBAGE_INGREDIENTS)
+        tag(TBATags.Items.CABBAGE_INGREDIENTS)
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("farmersdelight:cabbage")))
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("farmersdelight:cabbage_leaf")));
-        tag(PackTags.Items.FOX_FOOD)
+        tag(TBATags.Items.FOX_FOOD)
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("delightful:salmonberries")))
                 .add(Items.GLOW_BERRIES)
-                .addTag(PackTags.Items.WILDBERRIES_EDIBLES)
+                .addTag(TBATags.Items.WILDBERRIES_EDIBLES)
                 .addOptional(AetherItems.BLUE_BERRY.getId());
-        tag(PackTags.Items.CLOVER)
+        tag(TBATags.Items.CLOVER)
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("todecoins:four_leaf_clover")))
                 .addOptional(PhantasmModItems.ENDER_CLOVER.getId())
                 .addOptional(BOPBlocks.CLOVER.getId())
                 .addOptional(BOPBlocks.HUGE_CLOVER_PETAL.getId());
-        tag(PackTags.Items.CRANBERRIES)
+        tag(TBATags.Items.CRANBERRIES)
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("wildberries:cranberries")));
-        tag(PackTags.Items.RASPBERRIES)
+        tag(TBATags.Items.RASPBERRIES)
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("wildberries:raspberries")));
-        tag(PackTags.Items.BLACKBERRIES)
+        tag(TBATags.Items.BLACKBERRIES)
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("wildberries:blackberries")));
-        tag(PackTags.Items.BLUEBERRIES)
+        tag(TBATags.Items.BLUEBERRIES)
                 .addOptional(AetherItems.BLUE_BERRY.getId())
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("wildberries:blueberries")));
-        tag(PackTags.Items.SALAD_INGREDIENTS)
-                .addTag(PackTags.Items.GREENS)
+        tag(TBATags.Items.SALAD_INGREDIENTS)
+                .addTag(TBATags.Items.GREENS)
                 .add(Items.DRIED_KELP);
-        tag(PackTags.Items.RAW_FISHES)
-                .addTag(PackTags.Items.RAW_ELDER_GUARDIAN)
-                .addTag(PackTags.Items.RAW_GUARDIAN)
-                .addTag(PackTags.Items.RAW_CLAWSTER)
-                .addTag(PackTags.Items.RAW_SHRIMP)
-                .addTag(PackTags.Items.RAW_CLAM)
-                .addTag(PackTags.Items.RAW_CRAB)
-                .addTag(PackTags.Items.RAW_SQUID)
-                .addTag(PackTags.Items.RAW_GLOW_SQUID);
-        tag(PackTags.Items.RAW_ELDER_GUARDIAN)
-                .addTag(PackTags.Items.RAW_GUARDIAN)
+        tag(TBATags.Items.RAW_FISHES)
+                .addTag(TBATags.Items.RAW_ELDER_GUARDIAN)
+                .addTag(TBATags.Items.RAW_GUARDIAN)
+                .addTag(TBATags.Items.RAW_CLAWSTER)
+                .addTag(TBATags.Items.RAW_SHRIMP)
+                .addTag(TBATags.Items.RAW_CLAM)
+                .addTag(TBATags.Items.RAW_CRAB)
+                .addTag(TBATags.Items.RAW_SQUID)
+                .addTag(TBATags.Items.RAW_GLOW_SQUID);
+        tag(TBATags.Items.RAW_ELDER_GUARDIAN)
+                .addTag(TBATags.Items.RAW_GUARDIAN)
                 .addOptional(ODItems.ELDER_GUARDIAN_SLICE.getId())
                 .addOptional(ODItems.ELDER_GUARDIAN_SLAB.getId());
-        tag(PackTags.Items.RAW_GUARDIAN)
+        tag(TBATags.Items.RAW_GUARDIAN)
                 .addOptional(ODItems.GUARDIAN_TAIL.getId())
                 .addOptional(ODItems.GUARDIAN.getId());
-        tag(PackTags.Items.RAW_CLAWSTER)
+        tag(TBATags.Items.RAW_CLAWSTER)
                 .addOptional(RAW_CLAWSTER.getId());
-        tag(PackTags.Items.RAW_SHRIMP)
+        tag(TBATags.Items.RAW_SHRIMP)
                 .addOptional(RAW_SHRIMP.getId());
-        tag(PackTags.Items.RAW_CLAM)
+        tag(TBATags.Items.RAW_CLAM)
                 .addOptional(RAW_CLAM_MEAT.getId());
-        tag(PackTags.Items.RAW_CRAB)
+        tag(TBATags.Items.RAW_CRAB)
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("ecologics:crab_claw")))
                 .addOptional(RAW_CRAB.getId());
-        tag(PackTags.Items.RAW_SQUID)
+        tag(TBATags.Items.RAW_SQUID)
                 .addOptional(ODItems.CUT_TENTACLES.getId())
                 .addOptional(ODItems.TENTACLES.getId())
                 .addOptional(MDItems.TENTACLES.getId())
                 .addOptional(MDItems.SQUID.getId());
-        tag(PackTags.Items.RAW_GLOW_SQUID)
+        tag(TBATags.Items.RAW_GLOW_SQUID)
                 .addOptional(ODItems.CUT_TENTACLES.getId())
                 .addOptional(ODItems.TENTACLES.getId())
                 .addOptional(MDItems.TENTACLES.getId())
                 .addOptional(MDItems.GLOW_SQUID.getId());
-        tag(PackTags.Items.RAW_BEEF)
+        tag(TBATags.Items.RAW_BEEF)
                 .add(Items.BEEF)
                 .addOptional(MINCED_BEEF.getId());
-        tag(PackTags.Items.RAW_MUTTON)
+        tag(TBATags.Items.RAW_MUTTON)
                 .add(Items.MUTTON)
                 .addOptional(MUTTON_CHOPS.getId());
-        tag(PackTags.Items.RAW_GOAT)
+        tag(TBATags.Items.RAW_GOAT)
                 .addOptional(DelightfulItems.RAW_GOAT.getId());
-        tag(PackTags.Items.RAW_VENISON)
+        tag(TBATags.Items.RAW_VENISON)
                 .addOptional(DelightfulItems.VENISON_CHOPS.getId());
-        tag(PackTags.Items.RAW_RABBIT)
+        tag(TBATags.Items.RAW_RABBIT)
                 .add(Items.RABBIT);
-        tag(PackTags.Items.RAW_BACON)
+        tag(TBATags.Items.RAW_BACON)
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("tconstruct:bacon")))
                 .addOptional(BACON.getId());
-        tag(PackTags.Items.RAW_PORK)
-                .addTag(PackTags.Items.RAW_BACON)
+        tag(TBATags.Items.RAW_PORK)
+                .addTag(TBATags.Items.RAW_BACON)
                 .addOptional(NDItems.HOGLIN_LOIN.getId())
                 .addOptional(HAM.getId())
                 .add(Items.PORKCHOP);
-        tag(PackTags.Items.RAW_MEATS)
-                .addTag(PackTags.Items.RAW_GOAT)
-                .addTag(PackTags.Items.RAW_VENISON)
-                .addTag(PackTags.Items.RAW_RABBIT)
-                .addTag(PackTags.Items.RAW_BEEF)
-                .addTag(PackTags.Items.RAW_CHICKEN)
-                .addTag(PackTags.Items.RAW_MUTTON)
-                .addTag(PackTags.Items.RAW_PORK);
-        tag(PackTags.Items.GREENS)
+        tag(TBATags.Items.RAW_MEATS)
+                .addTag(TBATags.Items.RAW_GOAT)
+                .addTag(TBATags.Items.RAW_VENISON)
+                .addTag(TBATags.Items.RAW_RABBIT)
+                .addTag(TBATags.Items.RAW_BEEF)
+                .addTag(TBATags.Items.RAW_CHICKEN)
+                .addTag(TBATags.Items.RAW_MUTTON)
+                .addTag(TBATags.Items.RAW_PORK);
+        tag(TBATags.Items.GREENS)
                 .add(Items.KELP)
                 .add(Items.SEAGRASS)
-                .addTag(PackTags.Items.CABBAGE)
-                .addTag(PackTags.Items.CACTUS)
-                .addTag(PackTags.Items.CLOVER);
-        tag(PackTags.Items.COFFEE)
+                .addTag(TBATags.Items.CABBAGE)
+                .addTag(TBATags.Items.CACTUS)
+                .addTag(TBATags.Items.CLOVER);
+        tag(TBATags.Items.COFFEE)
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("kawaiidishes:coffee_fruit")))
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("farmersrespite:coffee_berries")));
-        tag(PackTags.Items.FR_TEA_LEAVES)
+        tag(TBATags.Items.FR_TEA_LEAVES)
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("xercamod:item_tea_leaf")))
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("xercamod:item_tea_dried")))
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("farmersrespite:green_tea_leaves")))
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("farmersrespite:yellow_tea_leaves")))
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("farmersrespite:black_tea_leaves")))
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("delightful:green_tea_leaf")));
-        tag(PackTags.Items.TEA_LEAVES)
-                .addTag(PackTags.Items.FR_TEA_LEAVES);
-        tag(PackTags.Items.APPLES)
+        tag(TBATags.Items.TEA_LEAVES)
+                .addTag(TBATags.Items.FR_TEA_LEAVES);
+        tag(TBATags.Items.APPLES)
                 .add(Items.APPLE);
-        tag(PackTags.Items.VEGETABLES)
+        tag(TBATags.Items.VEGETABLES)
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("hauntedharvest:corn")))
                 .addOptional(ItemRegistry.ChorusSucculent.getId())
                 .addOptional(ItemRegistry.DriedChorusFlower.getId())
@@ -674,28 +675,28 @@ public class ItemTagsGen extends ItemTagsProvider {
                 .add(Items.CARROT)
                 .add(Items.POTATO)
                 .add(Items.BEETROOT)
-                .addTag(PackTags.Items.SHROOMS)
-                .addTag(PackTags.Items.CABBAGE)
-                .addTag(PackTags.Items.TOMATO)
-                .addTag(PackTags.Items.PUMPKIN)
-                .addTag(PackTags.Items.ONION)
-                .addTag(PackTags.Items.CACTUS);
-        tag(PackTags.Items.ONION)
+                .addTag(TBATags.Items.SHROOMS)
+                .addTag(TBATags.Items.CABBAGE)
+                .addTag(TBATags.Items.TOMATO)
+                .addTag(TBATags.Items.PUMPKIN)
+                .addTag(TBATags.Items.ONION)
+                .addTag(TBATags.Items.CACTUS);
+        tag(TBATags.Items.ONION)
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("farmersdelight:wild_onion")))
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("farmersdelight:onion")));
-        tag(PackTags.Items.TOMATO)
+        tag(TBATags.Items.TOMATO)
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("farmersdelight:tomato")))
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("xercamod:tomato")));
-        tag(PackTags.Items.RICE)
+        tag(TBATags.Items.RICE)
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("farmersdelight:rice")))
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("xercamod:rice")));
-        tag(PackTags.Items.CARROTS)
+        tag(TBATags.Items.CARROTS)
                 .addOptional(CAVE_CARROT.getId())
                 .add(Items.CARROT);
-        tag(PackTags.Items.CARROT_INGREDIENTS)
+        tag(TBATags.Items.CARROT_INGREDIENTS)
                 .add(Items.GOLDEN_CARROT)
-                .addTag(PackTags.Items.CARROTS);
-        tag(PackTags.Items.SHROOMS)
+                .addTag(TBATags.Items.CARROTS);
+        tag(TBATags.Items.SHROOMS)
                 .add(Items.RED_MUSHROOM)
                 .add(Items.BROWN_MUSHROOM)
                 .add(Items.CRIMSON_FUNGUS)
@@ -709,7 +710,7 @@ public class ItemTagsGen extends ItemTagsProvider {
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("biomesoplenty:glowshroom")))
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("biomesoplenty:toadstool")))
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("unusualend:chorus_fungus")));
-        tag(PackTags.Items.WILDBERRIES_EDIBLES)
+        tag(TBATags.Items.WILDBERRIES_EDIBLES)
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("wildberries:cranberry_pie_slice")))
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("wildberries:blackberry_pie_slice")))
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("wildberries:raspberry_pie_slice")))
@@ -738,48 +739,48 @@ public class ItemTagsGen extends ItemTagsProvider {
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("wildberries:blackberry")))
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("wildberries:raspberry")))
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("wildberries:blueberries")));
-        tag(PackTags.Items.CROPS)
-                .addTag(PackTags.Items.COCOA)
-                .addTag(PackTags.Items.COFFEE)
-                .addTag(PackTags.Items.TEA_LEAVES)
-                .addTag(PackTags.Items.BERRIES)
-                .addTag(PackTags.Items.VEGETABLES)
-                .addTag(PackTags.Items.GREENS)
-                .addTag(PackTags.Items.FRUITS)
-                .addTag(PackTags.Items.ONION)
-                .addTag(PackTags.Items.CACTUS)
-                .addTag(PackTags.Items.COCONUT)
-                .addTag(PackTags.Items.MELON)
-                .addTag(PackTags.Items.PUMPKIN)
-                .addTag(PackTags.Items.TOMATO)
-                .addTag(PackTags.Items.CABBAGE)
-                .addTag(PackTags.Items.RICE)
-                .addTag(PackTags.Items.SHROOMS);
-        tag(PackTags.Items.PUMPKIN)
+        tag(TBATags.Items.CROPS)
+                .addTag(TBATags.Items.COCOA)
+                .addTag(TBATags.Items.COFFEE)
+                .addTag(TBATags.Items.TEA_LEAVES)
+                .addTag(TBATags.Items.BERRIES)
+                .addTag(TBATags.Items.VEGETABLES)
+                .addTag(TBATags.Items.GREENS)
+                .addTag(TBATags.Items.FRUITS)
+                .addTag(TBATags.Items.ONION)
+                .addTag(TBATags.Items.CACTUS)
+                .addTag(TBATags.Items.COCONUT)
+                .addTag(TBATags.Items.MELON)
+                .addTag(TBATags.Items.PUMPKIN)
+                .addTag(TBATags.Items.TOMATO)
+                .addTag(TBATags.Items.CABBAGE)
+                .addTag(TBATags.Items.RICE)
+                .addTag(TBATags.Items.SHROOMS);
+        tag(TBATags.Items.PUMPKIN)
                 .add(Items.PUMPKIN);
-        tag(PackTags.Items.CABBAGE)
+        tag(TBATags.Items.CABBAGE)
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("farmersdelight:cabbage")));
-        tag(PackTags.Items.CACTUS)
+        tag(TBATags.Items.CACTUS)
                 .add(Items.CACTUS)
                 .addOptional(Objects.requireNonNull(
                         ResourceLocation.tryParse("ecologics:prickly_pear")));
-        tag(PackTags.Items.SHELL)
+        tag(TBATags.Items.SHELL)
                 .add(Items.NAUTILUS_SHELL)
                 .addOptional(alabaster.crabbersdelight.common.registry.ModItems.NAUTILUS_SHELL_BLOCK.getId())
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("ecologics:seashell")))
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("ecologics:seashell_block")))
                 .addOptional(ItemRegistry.DragonEggShell.getId())
                 .add(Items.SHULKER_SHELL);
-        tag(PackTags.Items.ORB)
+        tag(TBATags.Items.ORB)
                 .addOptional(UnusualendModItems.GOLEM_ORB.getId())
                 .addOptional(UnusualendModItems.NETHER_ORB.getId())
                 .addOptional(UnusualendModItems.WITHER_ORB.getId())
                 .addOptional(UnusualendModItems.SHULKER_ORB.getId())
                 .addOptional(UnusualendModItems.SHINY_GLOOPSTONE.getId());
-        tag(PackTags.Items.STAR)
+        tag(TBATags.Items.STAR)
                 .addOptional(PhantasmModItems.STELLIUM_NUGGET.getId())
                 .addOptional(PhantasmModItems.STARDUST.getId());
-        tag(PackTags.Items.GEMSTONE)
+        tag(TBATags.Items.GEMSTONE)
                 .addOptional(MoaDecorBathModItems.GEMADBANO.getId())
                 .addOptional(MoaDecorArtModItems.GEMADEARTE.getId())
                 .addOptional(MoaDecorCookeryModItems.GEMADECOCINA.getId())
@@ -787,7 +788,7 @@ public class ItemTagsGen extends ItemTagsProvider {
                 .addOptional(MoaDecorScienceModItems.GEMADECIENCIA.getId())
                 .addOptional(MoaDecorToysModItems.GEMADEJUGUETES.getId())
                 .addOptional(MoaDecorHolidaysModItems.GEMA_FESTIVIDADES.getId());
-        tag(PackTags.Items.CRYSTAL)
+        tag(TBATags.Items.CRYSTAL)
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("tconstruct:ichor_slime_crystal")))
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("tconstruct:earth_slime_crystal")))
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("tconstruct:sky_slime_crystal")))
@@ -795,12 +796,12 @@ public class ItemTagsGen extends ItemTagsProvider {
                 .addOptional(PhantasmModItems.CRYSTAL_SPIKE_TIP.getId())
                 .addOptional(PhantasmModItems.VOID_CRYSTAL_SPIKE_TIP.getId())
                 .addOptional(UnusualendModItems.SHINY_CRYSTAL.getId());
-        tag(PackTags.Items.ROSE_QUARTZ)
+        tag(TBATags.Items.ROSE_QUARTZ)
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("create:rose_quartz")))
                 .add(BOPItems.ROSE_QUARTZ_SHARD.get());
-        tag(PackTags.Items.PEARL)
+        tag(TBATags.Items.PEARL)
                 .addOptional(alabaster.crabbersdelight.common.registry.ModItems.PEARL.getId());
-        tag(PackTags.Items.GEM_SHARDS)
+        tag(TBATags.Items.GEM_SHARDS)
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("tconstruct:ichor_slime_crystal")))
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("tconstruct:earth_slime_crystal")))
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("tconstruct:sky_slime_crystal")))
@@ -813,7 +814,7 @@ public class ItemTagsGen extends ItemTagsProvider {
                 .addOptional(PhantasmModItems.CRYSTAL_SPIKE_TIP.getId())
                 .addOptional(PhantasmModItems.VOID_CRYSTAL_SPIKE_TIP.getId())
                 .add(Items.ECHO_SHARD);
-        tag(PackTags.Items.SHULKER_BOXES)
+        tag(TBATags.Items.SHULKER_BOXES)
                 .add(Blocks.SHULKER_BOX.asItem())
                 .add(Blocks.BLACK_SHULKER_BOX.asItem())
                 .add(Blocks.BLUE_SHULKER_BOX.asItem())
@@ -831,9 +832,9 @@ public class ItemTagsGen extends ItemTagsProvider {
                 .add(Blocks.RED_SHULKER_BOX.asItem())
                 .add(Blocks.WHITE_SHULKER_BOX.asItem())
                 .add(Blocks.YELLOW_SHULKER_BOX.asItem());
-        tag(PackTags.Items.ENDONIAN_INGOT)
+        tag(TBATags.Items.ENDONIAN_INGOT)
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("todecoins:endonian_ingot")));
-        tag(PackTags.Items.MUSIC_DISCS)
+        tag(TBATags.Items.MUSIC_DISCS)
                 .addOptional(AetherItems.MUSIC_DISC_AETHER_TUNE.getId())
                 .addOptional(AetherItems.MUSIC_DISC_HIGH.getId())
                 .addOptional(AetherItems.MUSIC_DISC_CHINCHILLA.getId())
@@ -846,29 +847,29 @@ public class ItemTagsGen extends ItemTagsProvider {
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("unusualend:music_disc_endstone_golem_theme")))
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("todevillagers:chakra_dream_music_disc")))
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("decoration_delight:cookin_disc")));
-        tag(PackTags.Items.BOOKSHELF_BOOKS)
-                .addTag(PackTags.Items.LECTERN_BOOKS);
-        tag(PackTags.Items.LECTERN_BOOKS)
+        tag(TBATags.Items.BOOKSHELF_BOOKS)
+                .addTag(TBATags.Items.LECTERN_BOOKS);
+        tag(TBATags.Items.LECTERN_BOOKS)
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("corail_recycler:recycling_book")))
-                .addOptionalTag(PackTags.Items.FORGE_BOOKS.location())
-                .addOptionalTag(PackTags.Items.PATCHOULI_BOOKS.location());
-        tag(PackTags.Items.PATCHOULI_BOOKS)
+                .addOptionalTag(TBATags.Items.FORGE_BOOKS.location())
+                .addOptionalTag(TBATags.Items.PATCHOULI_BOOKS.location());
+        tag(TBATags.Items.PATCHOULI_BOOKS)
                 .addOptionalTag(Objects.requireNonNull(ResourceLocation.tryParse("patchouli:guide_book")))
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("turtleblockacademy:brewingguide")));
-        tag(PackTags.Items.TEXTILES)
-                .addTag(PackTags.Items.BARK)
-                .addTag(PackTags.Items.STRING);
-        tag(PackTags.Items.BARK)
+        tag(TBATags.Items.TEXTILES)
+                .addTag(TBATags.Items.BARK)
+                .addTag(TBATags.Items.STRING);
+        tag(TBATags.Items.BARK)
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("farmersdelight:tree_bark")));
-        tag(PackTags.Items.STRING)
+        tag(TBATags.Items.STRING)
                 .add(Items.STRING);
-        tag(PackTags.Items.ASH)
+        tag(TBATags.Items.ASH)
                 .addOptionalTag(Objects.requireNonNull(ResourceLocation.tryParse("supplementaries:ash")));
-        tag(PackTags.Items.FATS)
+        tag(TBATags.Items.FATS)
                 .add(Items.HONEYCOMB)
                 .addOptional(DelightfulItems.ANIMAL_OIL_BOTTLE.getId())
                 .addOptional(DelightfulItems.ANIMAL_FAT.getId());
-        tag(PackTags.Items.WEBBING)
+        tag(TBATags.Items.WEBBING)
                 .addOptional(BOPBlocks.STRINGY_COBWEB.getId())
                 .addOptional(BOPBlocks.WEBBING.getId())
                 .addOptional(BOPBlocks.HANGING_COBWEB.getId())
@@ -877,7 +878,7 @@ public class ItemTagsGen extends ItemTagsProvider {
                 .addOptional(BOPBlocks.GLOWWORM_SILK.getId())
                 .addOptional(BOPBlocks.HAIR.getId())
                 .add(Items.COBWEB);
-        tag(PackTags.Items.CARPETS)
+        tag(TBATags.Items.CARPETS)
                 .add(Items.WHITE_CARPET)
                 .add(Items.LIGHT_GRAY_CARPET)
                 .add(Items.GRAY_CARPET)
@@ -894,58 +895,68 @@ public class ItemTagsGen extends ItemTagsProvider {
                 .add(Items.PINK_CARPET)
                 .add(Items.MAGENTA_CARPET)
                 .add(Items.PURPLE_CARPET);
-        tag(PackTags.Items.NUGGETS)
-                .addTag(PackTags.Items.IRON_NUGGET)
-                .addTag(PackTags.Items.GOLD_NUGGET)
-                .addTag(PackTags.Items.NETHERITE_NUGGET);
-        tag(PackTags.Items.NETHERITE_NUGGET)
+        tag(TBATags.Items.NUGGETS)
+                .addTag(TBATags.Items.IRON_NUGGET)
+                .addTag(TBATags.Items.GOLD_NUGGET)
+                .addTag(TBATags.Items.NETHERITE_NUGGET);
+        tag(TBATags.Items.NETHERITE_NUGGET)
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("todecoins:netherite_nugget")));
-        tag(PackTags.Items.INGOTS)
-                .addTag(PackTags.Items.COPPER_INGOT)
-                .addTag(PackTags.Items.IRON_INGOT)
-                .addTag(PackTags.Items.NETHERITE_INGOT)
-                .addTag(PackTags.Items.ENDONIAN_INGOT);
-        tag(PackTags.Items.GOLD_NUGGET)
+        tag(TBATags.Items.INGOTS)
+                .addTag(TBATags.Items.COPPER_INGOT)
+                .addTag(TBATags.Items.IRON_INGOT)
+                .addTag(TBATags.Items.NETHERITE_INGOT)
+                .addTag(TBATags.Items.ENDONIAN_INGOT);
+        tag(TBATags.Items.GOLD_NUGGET)
                 .add(Items.GOLD_NUGGET);
-        tag(PackTags.Items.IRON_NUGGET)
+        tag(TBATags.Items.IRON_NUGGET)
                 .add(Items.IRON_NUGGET);
-        tag(PackTags.Items.IRON_INGOT)
+        tag(TBATags.Items.IRON_INGOT)
                 .add(Items.IRON_INGOT);
-        tag(PackTags.Items.COPPER_INGOT)
+        tag(TBATags.Items.COPPER_INGOT)
                 .add(Items.COPPER_INGOT);
-        tag(PackTags.Items.NETHERITE_INGOT)
+        tag(TBATags.Items.NETHERITE_INGOT)
                 .add(Items.NETHERITE_INGOT);
-        tag(PackTags.Items.BACKPACKS)
+        tag(TBATags.Items.BACKPACKS)
                 .addOptional(net.p3pp3rf1y.sophisticatedbackpacks.init.ModItems.NETHERITE_BACKPACK.getId())
                 .addOptional(net.p3pp3rf1y.sophisticatedbackpacks.init.ModItems.DIAMOND_BACKPACK.getId())
                 .addOptional(net.p3pp3rf1y.sophisticatedbackpacks.init.ModItems.GOLD_BACKPACK.getId())
                 .addOptional(net.p3pp3rf1y.sophisticatedbackpacks.init.ModItems.IRON_BACKPACK.getId())
                 .addOptional(net.p3pp3rf1y.sophisticatedbackpacks.init.ModItems.BACKPACK.getId());
-        tag(PackTags.Items.TOOLS_CARVING)
+        tag(TBATags.Items.TOOLS_CARVING)
                 .addTag(ForgeTags.TOOLS_KNIVES);
-        tag(PackTags.Items.TOOLS_KNIVES);
-        tag(PackTags.Items.GEMS)
-                .addOptional(UnusualendModItems.ANCIENT_SHARD.getId())
-                .addOptional(AetherItems.LIFE_SHARD.getId());
-        tag(PackTags.Items.SOUL_BINDER)
+        tag(TBATags.Items.TOOLS_KNIVES);
+        tag(TBATags.Items.GEMS)
+                .add(Items.REDSTONE)
+                .add(Items.GLOWSTONE)
+                .add(Items.PRISMARINE_SHARD)
+                .add(Items.PRISMARINE_CRYSTALS)
+                .add(Items.LAPIS_LAZULI)
+                .add(Items.EMERALD)
+                .add(Items.DIAMOND)
+                .addTag(TBATags.Items.PEARL)
+                .addTag(TBATags.Items.CRYSTAL)
+                .addTag(TBATags.Items.GEMSTONE)
+                .addTag(TBATags.Items.GEM_SHARDS)
+                .addTag(TBATags.Items.SOUL_BINDER);
+        tag(TBATags.Items.SOUL_BINDER)
                 .addOptional(AetherItems.LIFE_SHARD.getId())
                 .addOptional(UnusualendModItems.ANCIENT_SHARD.getId())
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("cagerium:binding_gemstone")))
                 .add(Items.ECHO_SHARD);
-        tag(PackTags.Items.BELT)
-                .addOptionalTag(PackTags.Items.LANTERNS.location())
+        tag(TBATags.Items.BELT)
+                .addOptionalTag(TBATags.Items.LANTERNS.location())
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("supplementaries:quiver")));
-        tag(PackTags.Items.HANDS)
-                .addOptionalTag(PackTags.Items.LANTERNS.location())
+        tag(TBATags.Items.HANDS)
+                .addOptionalTag(TBATags.Items.LANTERNS.location())
                 .add(Items.SOUL_TORCH)
                 .add(Items.TORCH)
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("supplementaries:key")))
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("map_atlases:atlas")));
-        tag(PackTags.Items.CURIO_LIGHT_SOURCE)
+        tag(TBATags.Items.CURIO_LIGHT_SOURCE)
                 .add(Items.SOUL_TORCH)
                 .add(Items.TORCH)
-                .addOptionalTag(PackTags.Items.LANTERNS.location());
-        tag(PackTags.Items.LANTERNS)
+                .addOptionalTag(TBATags.Items.LANTERNS.location());
+        tag(TBATags.Items.LANTERNS)
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("mcwlights:striped_lantern")))
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("mcwlights:covered_lantern")))
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("mcwlights:chain_lantern")))
@@ -959,36 +970,36 @@ public class ItemTagsGen extends ItemTagsProvider {
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("supplementaries:lead_lantern")))
                 .add(Items.SOUL_LANTERN)
                 .add(Items.LANTERN);
-        tag(PackTags.Items.GLASS)
+        tag(TBATags.Items.GLASS)
                 .addOptional(UnusualendModItems.CHISELED_GLASS.getId())
                 .addOptional(PhantasmModItems.CRYSTAL_FRAMED_GLASS.getId())
                 .addOptional(PhantasmModItems.VOID_CRYSTAL_FRAMED_GLASS.getId());
-        tag(PackTags.Items.GLASS_INFUSED)
+        tag(TBATags.Items.GLASS_INFUSED)
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("todeville:redstone_infused_glass")));
-        tag(PackTags.Items.GLASS_REINFORCED)
+        tag(TBATags.Items.GLASS_REINFORCED)
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("todeville:reinforced_glass")));
-        tag(PackTags.Items.GLASS_GLOWING)
+        tag(TBATags.Items.GLASS_GLOWING)
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("todeville:glowing_glass")));
-        tag(PackTags.Items.GLASS_SHIFTING)
+        tag(TBATags.Items.GLASS_SHIFTING)
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("todeville:shifting_glass")));
-        tag(PackTags.Items.LOOTBAG_SPECIAL_CURRENCY)
+        tag(TBATags.Items.LOOTBAG_SPECIAL_CURRENCY)
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("todecoins:netherite_coin")))
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("todecoins:emerald_quarter_bank_note")))
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("todecoins:emerald_half_bank_note")))
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("todecoins:emerald_bank_note")))
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("todecoins:lucky_coin")))
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("todecoins:server_token_coin")));
-        tag(PackTags.Items.LOOTBAG_CURRENCY)
+        tag(TBATags.Items.LOOTBAG_CURRENCY)
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("todecoins:copper_coin_bag")))
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("todecoins:iron_coin_bag")))
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("todecoins:gold_coin_bag")))
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("todecoins:nether_gold_coin_bag")))
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("todecoins:endonian_coin_bag")));
-        tag(PackTags.Items.CURRENCY);
-        tag(PackTags.Items.JAR_PLACEABLE)
-                .addTag(PackTags.Items.CURRENCY);
-        tag(PackTags.Items.COOKIES)
-                .addTag(PackTags.Items.JAR_PLACEABLE)
+        tag(TBATags.Items.CURRENCY);
+        tag(TBATags.Items.JAR_PLACEABLE)
+                .addTag(TBATags.Items.CURRENCY);
+        tag(TBATags.Items.COOKIES)
+                .addTag(TBATags.Items.JAR_PLACEABLE)
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("kawaiidishes:chocolate_cookie")))
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("kawaiidishes:sweet_berry_cookie")))
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("kawaiidishes:honey_cookie")))
@@ -1002,19 +1013,19 @@ public class ItemTagsGen extends ItemTagsProvider {
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("festive_delight:gingerbread_cookie_star")))
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("festive_delight:gingerbread_cookie_creeper")))
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("festive_delight:gingerbread_cookie_block")));
-        tag(PackTags.Items.CHOCOLATE)
+        tag(TBATags.Items.CHOCOLATE)
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("kawaiidishes:dark_chocolate_bar")))
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("kawaiidishes:milk_chocolate_bar")))
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("kawaiidishes:white_chocolate_bar")))
                 .addOptionalTag(Objects.requireNonNull(ResourceLocation.tryParse("supplementaries:chocolate_bars")));
-        tag(PackTags.Items.CANDY)
-                .addTag(PackTags.Items.CHOCOLATE)
+        tag(TBATags.Items.CANDY)
+                .addTag(TBATags.Items.CHOCOLATE)
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("festive_delight:sugar_cane")))
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("delightful:rock_candy")));
-        tag(PackTags.Items.SWEETS)
-                .addTag(PackTags.Items.FRUITS)
-                .addTag(PackTags.Items.CANDY);
-        tag(PackTags.Items.BACKPACK_UPGRADES)
+        tag(TBATags.Items.SWEETS)
+                .addTag(TBATags.Items.FRUITS)
+                .addTag(TBATags.Items.CANDY);
+        tag(TBATags.Items.BACKPACK_UPGRADES)
                 .addOptional(PICKUP_UPGRADE.getId())
                 .addOptional(ADVANCED_PICKUP_UPGRADE.getId())
                 .addOptional(FILTER_UPGRADE.getId())
@@ -1056,7 +1067,7 @@ public class ItemTagsGen extends ItemTagsProvider {
                 .addOptional(ADVANCED_PUMP_UPGRADE.getId())
                 .addOptional(XP_PUMP_UPGRADE.getId())
                 .addOptional(ANVIL_UPGRADE.getId());
-        tag(PackTags.Items.DOOR_PATTERNS)
+        tag(TBATags.Items.DOOR_PATTERNS)
                 .addOptional(ItemInit.PRINT_WAFFLE.getId())
                 .addOptional(ItemInit.PRINT_SWAMP.getId())
                 .addOptional(ItemInit.PRINT_SPRUCE.getId())
@@ -1068,7 +1079,7 @@ public class ItemTagsGen extends ItemTagsProvider {
                 .addOptional(ItemInit.PRINT_BIRCH.getId())
                 .addOptional(ItemInit.PRINT_BAMBOO.getId())
                 .addOptional(ItemInit.PRINT_ACACIA.getId());
-        tag(PackTags.Items.TRAPDOOR_PATTERNS)
+        tag(TBATags.Items.TRAPDOOR_PATTERNS)
                 .addOptional(com.mcwtrpdoors.kikoz.init.ItemInit.PRINT_TROPICAL.getId())
                 .addOptional(com.mcwtrpdoors.kikoz.init.ItemInit.PRINT_PAPER.getId())
                 .addOptional(com.mcwtrpdoors.kikoz.init.ItemInit.PRINT_FOUR_PANEL.getId())
@@ -1080,19 +1091,19 @@ public class ItemTagsGen extends ItemTagsProvider {
                 .addOptional(com.mcwtrpdoors.kikoz.init.ItemInit.PRINT_SWAMP.getId())
                 .addOptional(com.mcwtrpdoors.kikoz.init.ItemInit.PRINT_MYSTIC.getId())
                 .addOptional(com.mcwtrpdoors.kikoz.init.ItemInit.PRINT_BAMBOO.getId());
-        tag(PackTags.Items.RAW_CHICKEN)
+        tag(TBATags.Items.RAW_CHICKEN)
                 .add(Items.CHICKEN)
                 .addOptional(ModItems.CHICKEN_CUTS.getId());
-        tag(PackTags.Items.COOKED_MEATS)
-                .addTag(PackTags.Items.COOKED_CHICKEN)
-                .addTag(PackTags.Items.COOKED_MUTTON);
-        tag(PackTags.Items.COOKED_CHICKEN)
+        tag(TBATags.Items.COOKED_MEATS)
+                .addTag(TBATags.Items.COOKED_CHICKEN)
+                .addTag(TBATags.Items.COOKED_MUTTON);
+        tag(TBATags.Items.COOKED_CHICKEN)
                 .add(Items.COOKED_CHICKEN)
                 .addOptional(ModItems.COOKED_CHICKEN_CUTS.getId());
-        tag(PackTags.Items.COOKED_MUTTON)
+        tag(TBATags.Items.COOKED_MUTTON)
                 .add(Items.COOKED_MUTTON)
                 .addOptional(ModItems.COOKED_MUTTON_CHOPS.getId());
-        tag(PackTags.Items.BREAD)
+        tag(TBATags.Items.BREAD)
                 .add(Items.BREAD)
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("tofucraft:steamed_bread")))
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("tofucraft:steamed_bread")))
@@ -1100,7 +1111,7 @@ public class ItemTagsGen extends ItemTagsProvider {
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("tofucraft:apricotjerry_bread")))
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("hauntedharvest:cornbread")))
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("farmersrespite:nether_wart_sourdough")));
-        tag(PackTags.Items.GLAZES)
+        tag(TBATags.Items.GLAZES)
                 .add(Items.HONEY_BOTTLE)
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("wildberries:cranberry_jam")))
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("wildberries:blackberry_jam")))
@@ -1117,44 +1128,45 @@ public class ItemTagsGen extends ItemTagsProvider {
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("delightful:glow_jelly_bottle")))
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("delightful:jelly_bottle")))
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("handcrafted:berry_jam_jar")));
-        tag(PackTags.Items.EGGS)
+        tag(TBATags.Items.EGGS)
                 .addOptional(ItemRegistry.NonHatchableDragonEgg.getId())
                 .add(Items.EGG)
                 .add(Items.TURTLE_EGG);
-        tag(PackTags.Items.CHEESE_SLICES)
+        tag(TBATags.Items.CHEESE_SLICES)
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("tconstruct:cheese")))
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("tofucraft:soy_cheese")))
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("fastfooddelight:cheese")))
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("xercamod:cheese_slice")));
-        tag(PackTags.Items.FRUITS)
+        tag(TBATags.Items.FRUITS)
                 .addOptional(NDItems.PROPELPEARL.getId())
-                .addTag(PackTags.Items.BERRIES)
-                .addTag(PackTags.Items.COCOA)
-                .addTag(PackTags.Items.COCONUT)
-                .addTag(PackTags.Items.MELON)
-                .addTag(PackTags.Items.PUMPKIN)
-                .addTag(PackTags.Items.COFFEE)
-                .addTag(PackTags.Items.APPLES);
-        tag(PackTags.Items.APPLES)
+                .addTag(TBATags.Items.BERRIES)
+                .addTag(TBATags.Items.COCOA)
+                .addTag(TBATags.Items.COCONUT)
+                .addTag(TBATags.Items.MELON)
+                .addTag(TBATags.Items.PUMPKIN)
+                .addTag(TBATags.Items.COFFEE)
+                .addTag(TBATags.Items.APPLES);
+        tag(TBATags.Items.APPLES)
                 .add(Items.APPLE);
-        tag(PackTags.Items.BERRIES)
-                .addTag(PackTags.Items.CRANBERRIES)
-                .addTag(PackTags.Items.RASPBERRIES)
-                .addTag(PackTags.Items.BLACKBERRIES)
-                .addTag(PackTags.Items.BLUEBERRIES)
+        tag(TBATags.Items.BERRIES)
+                .addTag(TBATags.Items.CRANBERRIES)
+                .addTag(TBATags.Items.RASPBERRIES)
+                .addTag(TBATags.Items.BLACKBERRIES)
+                .addTag(TBATags.Items.BLUEBERRIES)
                 .add(Items.CHORUS_FRUIT)
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("phantasm:oblifruit")))
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("phantasm:pream_berry")))
                 .add(Items.SWEET_BERRIES)
                 .add(Items.GLOW_BERRIES)
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("delightful:salmonberries")));
-        tag(PackTags.Items.COOKED_RICE)
+        tag(TBATags.Items.COOKED_RICE)
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("tofucraft:onigiri")))
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("tofucraft:onigiri_salt")))
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("farmersdelight:cooked_rice")))
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("xercamod:cooked_rice")))
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("xercamod:omurice")));
-        tag(PackTags.Items.NO_AI_EGGS)
+        tag(TBATags.Items.NO_AI_EGGS)
+                .addOptional(TBAItems.TREASURE_BEETLE_SPAWN_EGG.getId())
                 .addOptional(AetherItems.AECHOR_PLANT_SPAWN_EGG.getId())
                 .addOptional(AetherItems.COCKATRICE_SPAWN_EGG.getId())
                 .addOptional(AetherItems.FIRE_MINION_SPAWN_EGG.getId())

@@ -6,9 +6,10 @@ import com.aetherteam.aether.data.resources.registries.AetherDimensions;
 import com.aetherteam.aether.item.AetherItems;
 import com.catastrophe573.dimdungeons.DimDungeons;
 import com.github.warrentode.turtleblockacademy.TurtleBlockAcademy;
-import com.github.warrentode.turtleblockacademy.blocks.ModBlockRegistry;
+import com.github.warrentode.turtleblockacademy.blocks.TBABlocks;
 import com.github.warrentode.turtleblockacademy.loot.tables.PackBuiltInLootTables;
-import com.github.warrentode.turtleblockacademy.util.PackTags;
+import com.github.warrentode.turtleblockacademy.util.TBATags;
+import com.github.warrentode.turtleblockacademy.world.dimension.TBADimensions;
 import com.google.common.collect.ImmutableList;
 import com.google.common.collect.Sets;
 import net.mehvahdjukaar.supplementaries.reg.ModRegistry;
@@ -142,7 +143,7 @@ public class AcademyAdvancementsGen extends AdvancementProvider {
         @SuppressWarnings("unused")
         @Override
         public void accept(Consumer<Advancement> consumer) {
-            Advancement root = createParentAdvancement(ModBlockRegistry.CERTIFICATE_BLOCK.get(),
+            Advancement root = createParentAdvancement(TBABlocks.CERTIFICATE_BLOCK.get(),
                     "root", new ResourceLocation("minecraft:textures/block/calcite.png"),
                     FrameType.CHALLENGE, false, false, false)
                     .addCriterion("tick", new PlayerTrigger.TriggerInstance(CriteriaTriggers.TICK.getId(),
@@ -188,7 +189,7 @@ public class AcademyAdvancementsGen extends AdvancementProvider {
                             Component.translatable("advancement." + MODID + "." + "enter_mining"),
                             Component.translatable("advancement." + MODID + "." + "enter_mining.desc"),
                             null, FrameType.TASK, false, false, false)
-                    .addCriterion("entered_mining", new ImpossibleTrigger.TriggerInstance())
+                    .addCriterion("entered_mining",  ChangeDimensionTrigger.TriggerInstance.changedDimensionTo(TBADimensions.TDA_MINING_LEVEL))
                     .rewards(AdvancementRewards.Builder.function(new ResourceLocation("turtleblockacademy:set_mining_stage")))
                     .save(consumer, getPath(MODID, "exploration/enter_mining"));
 
@@ -198,7 +199,7 @@ public class AcademyAdvancementsGen extends AdvancementProvider {
                             Component.translatable("advancements.story.enter_the_nether.title"),
                             Component.translatable("advancements.story.enter_the_nether.description"),
                             null, FrameType.TASK, false, false, false)
-                    .addCriterion("entered_nether", net.minecraft.advancements.critereon.ChangeDimensionTrigger.TriggerInstance.changedDimensionTo(Level.NETHER))
+                    .addCriterion("entered_nether", ChangeDimensionTrigger.TriggerInstance.changedDimensionTo(Level.NETHER))
                     .rewards(AdvancementRewards.Builder.function(new ResourceLocation("turtleblockacademy:set_nether_stage")))
                     .save(consumer, getPath(MODID, "exploration/enter_the_nether"));
 
@@ -206,7 +207,7 @@ public class AcademyAdvancementsGen extends AdvancementProvider {
                     .parent(enteredNether)
                     .display(Blocks.END_STONE, Component.translatable("advancements.story.enter_the_end.title"), Component.translatable("advancements.story.enter_the_end.description"),
                             null, FrameType.TASK, false, false, false)
-                    .addCriterion("entered_end", net.minecraft.advancements.critereon.ChangeDimensionTrigger.TriggerInstance.changedDimensionTo(Level.END))
+                    .addCriterion("entered_end", ChangeDimensionTrigger.TriggerInstance.changedDimensionTo(Level.END))
                     .rewards(AdvancementRewards.Builder.function(new ResourceLocation("turtleblockacademy:set_end_stage")))
                     .save(consumer, getPath(MODID, "exploration/enter_the_end"));
 
@@ -276,7 +277,7 @@ public class AcademyAdvancementsGen extends AdvancementProvider {
                     "equip_light_source", FrameType.TASK, true, true, false)
                     .addCriterion("equip_light_source",
                             CuriosTriggers.equip()
-                                    .withItem(ItemPredicate.Builder.item().of(PackTags.Items.CURIO_LIGHT_SOURCE))
+                                    .withItem(ItemPredicate.Builder.item().of(TBATags.Items.CURIO_LIGHT_SOURCE))
                                     .withSlot(SlotPredicate.Builder.slot().of(SlotTypePreset.HANDS.getIdentifier(), SlotTypePreset.BELT.getIdentifier()))
                                     .withLocation(LocationPredicate.Builder.location())
                                     .build())
@@ -304,7 +305,7 @@ public class AcademyAdvancementsGen extends AdvancementProvider {
 
             Advancement completeFoodSafety = Advancement.Builder.advancement()
                     .parent(education_track)
-                    .display(ModBlockRegistry.CERTIFICATE_BLOCK.get(),
+                    .display(TBABlocks.CERTIFICATE_BLOCK.get(),
                             Component.translatable("advancement." + MODID + "." + "complete_food_safety"),
                             Component.translatable("advancement." + MODID + "." + "complete_food_safety.desc"),
                             null, FrameType.TASK, false, false, false)
@@ -314,7 +315,7 @@ public class AcademyAdvancementsGen extends AdvancementProvider {
 
             Advancement completeMacronutrients = Advancement.Builder.advancement()
                     .parent(education_track)
-                    .display(ModBlockRegistry.CERTIFICATE_BLOCK.get(),
+                    .display(TBABlocks.CERTIFICATE_BLOCK.get(),
                             Component.translatable("advancement." + MODID + "." + "complete_macronutrients"),
                             Component.translatable("advancement." + MODID + "." + "complete_macronutrients.desc"),
                             null, FrameType.TASK, false, false, false)

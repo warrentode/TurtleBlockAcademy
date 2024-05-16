@@ -1,12 +1,13 @@
 package com.github.warrentode.turtleblockacademy.blocks.entity;
 
-import com.github.warrentode.turtleblockacademy.entity.ModEntityTypes;
+import com.github.warrentode.turtleblockacademy.entity.TBAEntityTypes;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.protocol.Packet;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.vehicle.DismountHelper;
@@ -19,14 +20,13 @@ import org.jetbrains.annotations.NotNull;
 import java.util.List;
 
 public class SeatEntity extends Entity {
-
-    public SeatEntity(Level level) {
-        super(ModEntityTypes.SEAT_ENTITY.get(), level);
-        this.noPhysics = true;
+    public SeatEntity(EntityType<?> entityType, Level level) {
+        super(entityType, level);
     }
 
     private SeatEntity(Level level, @NotNull BlockPos source, double yOffset, @NotNull Direction direction) {
-        this(level);
+        this(TBAEntityTypes.SEAT_ENTITY.get(), level);
+        this.noPhysics = true;
         this.setPos(source.getX() + 0.5, source.getY() + yOffset, source.getZ() + 0.5);
         this.setRot(direction.getOpposite().toYRot(), 0F);
     }

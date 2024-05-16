@@ -145,7 +145,7 @@ public class PlateBlock extends BaseEntityBlock {
                 context.getHorizontalDirection().getOpposite());
     }
 
-    @SuppressWarnings("deprecation")
+    @Override
     public @NotNull RenderShape getRenderShape(@NotNull BlockState state) {
         return RenderShape.MODEL;
     }

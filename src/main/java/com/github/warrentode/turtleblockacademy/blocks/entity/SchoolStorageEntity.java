@@ -3,7 +3,7 @@ package com.github.warrentode.turtleblockacademy.blocks.entity;
 import com.github.warrentode.turtleblockacademy.blocks.BookCaseBlock;
 import com.github.warrentode.turtleblockacademy.blocks.SchoolDeskCabinetBlock;
 import com.github.warrentode.turtleblockacademy.blocks.SchoolLockerBlock;
-import com.github.warrentode.turtleblockacademy.util.ModSounds;
+import com.github.warrentode.turtleblockacademy.util.TBASounds;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.NonNullList;
 import net.minecraft.core.Vec3i;
@@ -30,30 +30,30 @@ public class SchoolStorageEntity extends RandomizableContainerBlockEntity {
     private final ContainerOpenersCounter openersCounter = new ContainerOpenersCounter() {
         protected void onOpen(@NotNull Level level, @NotNull BlockPos pos, @NotNull BlockState state) {
             if (state.getBlock() instanceof SchoolDeskCabinetBlock) {
-                SchoolStorageEntity.this.playSound(state, ModSounds.BLOCK_DESK_OPEN.get());
+                SchoolStorageEntity.this.playSound(state, TBASounds.BLOCK_DESK_OPEN.get());
                 SchoolStorageEntity.this.updateBlockState(state, true);
             }
             else if (state.getBlock() instanceof SchoolLockerBlock) {
-                SchoolStorageEntity.this.playSound(state, ModSounds.BLOCK_LOCKER_OPEN.get());
+                SchoolStorageEntity.this.playSound(state, TBASounds.BLOCK_LOCKER_OPEN.get());
                 SchoolStorageEntity.this.updateBlockState(state, true);
             }
             else if (state.getBlock() instanceof BookCaseBlock) {
-                SchoolStorageEntity.this.playSound(state, ModSounds.BLOCK_BOOKCASE_OPEN.get());
+                SchoolStorageEntity.this.playSound(state, TBASounds.BLOCK_BOOKCASE_OPEN.get());
                 SchoolStorageEntity.this.updateBlockState(state, true);
             }
         }
 
         protected void onClose(@NotNull Level level, @NotNull BlockPos pos, @NotNull BlockState state) {
             if (state.getBlock() instanceof SchoolDeskCabinetBlock) {
-                SchoolStorageEntity.this.playSound(state, ModSounds.BLOCK_DESK_CLOSE.get());
+                SchoolStorageEntity.this.playSound(state, TBASounds.BLOCK_DESK_CLOSE.get());
                 SchoolStorageEntity.this.updateBlockState(state, true);
             }
             else if (state.getBlock() instanceof SchoolLockerBlock) {
-                SchoolStorageEntity.this.playSound(state, ModSounds.BLOCK_LOCKER_CLOSE.get());
+                SchoolStorageEntity.this.playSound(state, TBASounds.BLOCK_LOCKER_CLOSE.get());
                 SchoolStorageEntity.this.updateBlockState(state, false);
             }
             else if (state.getBlock() instanceof BookCaseBlock) {
-                SchoolStorageEntity.this.playSound(state, ModSounds.BLOCK_BOOKCASE_CLOSE.get());
+                SchoolStorageEntity.this.playSound(state, TBASounds.BLOCK_BOOKCASE_CLOSE.get());
                 SchoolStorageEntity.this.updateBlockState(state, true);
             }
         }
@@ -73,7 +73,7 @@ public class SchoolStorageEntity extends RandomizableContainerBlockEntity {
     };
 
     public SchoolStorageEntity(BlockPos pos, BlockState state) {
-        super(ModBlockEntities.SCHOOL_STORAGE_ENTITY.get(), pos, state);
+        super(TBABlockEntities.SCHOOL_STORAGE_ENTITY.get(), pos, state);
     }
 
     @Override

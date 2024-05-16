@@ -125,6 +125,7 @@
   "block.turtleblockacademy.locker_walnut": "Walnut Locker",
   "block.turtleblockacademy.locker_warped": "Warped Locker",
   "block.turtleblockacademy.locker_willow": "Willow Locker",
+  "block.turtleblockacademy.mining_portal": "Mining Portal Block",
   "block.turtleblockacademy.park_bench_acacia": "Acacia Park Bench",
   "block.turtleblockacademy.park_bench_aether_skyroot": "Aether Skyroot Park Bench",
   "block.turtleblockacademy.park_bench_azalea": "Azalea Park Bench",
@@ -284,6 +285,11 @@
   "subtitles.turtleblockacademy.desk_open": "Desk Drawer Opens",
   "subtitles.turtleblockacademy.locker_close": "Locker Closes",
   "subtitles.turtleblockacademy.locker_open": "Locker Opens",
+  "subtitles.turtleblockacademy.treasure_beetle_ambient": "Treasure Beetle Hisses",
+  "subtitles.turtleblockacademy.treasure_beetle_death": "Treasure Beetle Dies",
+  "subtitles.turtleblockacademy.treasure_beetle_hurts": "Treasure Beetle Hurts",
+  "subtitles.turtleblockacademy.treasure_beetle_item_drop": "Treasure Beetle Drops Treasure",
+  "subtitles.turtleblockacademy.treasure_beetle_step": "Treasure Beetle Crawls",
   "tooltips.turtleblockacademy.certificate_blank": "Blank Certificate",
   "tooltips.turtleblockacademy.student_card_blank": "Blank Student Card - Use to Register as Student"
 }

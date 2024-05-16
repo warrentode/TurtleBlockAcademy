@@ -4,12 +4,12 @@ import biomesoplenty.api.block.BOPBlocks;
 import com.aetherteam.aether.block.AetherBlocks;
 import com.aetherteam.aether.item.AetherItems;
 import com.catastrophe573.dimdungeons.block.BlockRegistrar;
-import com.github.warrentode.turtleblockacademy.blocks.ModBlockRegistry;
+import com.github.warrentode.turtleblockacademy.blocks.TBABlocks;
 import com.github.warrentode.turtleblockacademy.datagen.recipes.builder.PatchouliShapelessBookRecipeBuilder;
 import com.github.warrentode.turtleblockacademy.datagen.recipes.recipe.CuttingRecipesGen;
 import com.github.warrentode.turtleblockacademy.datagen.recipes.recipe.LootBagRecipesGen;
-import com.github.warrentode.turtleblockacademy.items.ModItems;
-import com.github.warrentode.turtleblockacademy.util.PackTags;
+import com.github.warrentode.turtleblockacademy.items.TBAItems;
+import com.github.warrentode.turtleblockacademy.util.TBATags;
 import com.mcwlights.kikoz.init.BlockInit;
 import decor.delight.init.DecorationDelightModBlocks;
 import net.akaneo.fastfooddelight.common.registry.FFItems;
@@ -264,13 +264,13 @@ public class RecipesGen extends RecipeProvider implements IConditionBuilder {
                 .save(consumer, new ResourceLocation("minecraft",
                         Items.STRING + "_from_any_wool"));
         ShapedRecipeBuilder.shaped(Items.SADDLE)
-                .define('S', PackTags.Items.STRING)
-                .define('I', PackTags.Items.IRON_NUGGET)
+                .define('S', TBATags.Items.STRING)
+                .define('I', TBATags.Items.IRON_NUGGET)
                 .define('L', Tags.Items.LEATHER)
                 .pattern("LLL")
                 .pattern("S S")
                 .pattern("I I")
-                .unlockedBy("has_iron_nugget", has(PackTags.Items.IRON_NUGGET))
+                .unlockedBy("has_iron_nugget", has(TBATags.Items.IRON_NUGGET))
                 .save(consumer, new ResourceLocation("minecraft",
                         Items.SADDLE.toString()));
         SingleItemRecipeBuilder.stonecutting(Ingredient.of(Items.RED_STAINED_GLASS),
@@ -395,13 +395,13 @@ public class RecipesGen extends RecipeProvider implements IConditionBuilder {
                 .save(consumer, new ResourceLocation("minecraft",
                         Items.ORANGE_BANNER + "_from_any_color"));
         ShapedRecipeBuilder.shaped(Items.NAME_TAG)
-                .define('S', PackTags.Items.STRING)
-                .define('I', PackTags.Items.IRON_INGOT)
+                .define('S', TBATags.Items.STRING)
+                .define('I', TBATags.Items.IRON_INGOT)
                 .define('P', Items.PAPER)
                 .pattern("S  ")
                 .pattern(" I ")
                 .pattern("  P")
-                .unlockedBy("has_iron_ingot", has(PackTags.Items.IRON_INGOT))
+                .unlockedBy("has_iron_ingot", has(TBATags.Items.IRON_INGOT))
                 .save(consumer, new ResourceLocation("minecraft",
                         Items.NAME_TAG.toString()));
         ShapelessRecipeBuilder.shapeless(Items.MELON_SLICE, 9)
@@ -593,19 +593,19 @@ public class RecipesGen extends RecipeProvider implements IConditionBuilder {
                 .unlockedBy("has_" + Items.GLASS, has(Items.GLASS))
                 .save(consumer, new ResourceLocation("minecraft",
                         Items.GLASS_PANE + "_from_stonecutting"));
-        SimpleCookingRecipeBuilder.blasting(Ingredient.of(PackTags.Items.SAND),
+        SimpleCookingRecipeBuilder.blasting(Ingredient.of(TBATags.Items.SAND),
                         Items.GLASS, 0.1F, 100)
-                .unlockedBy("has_any_sand", has(PackTags.Items.SAND))
+                .unlockedBy("has_any_sand", has(TBATags.Items.SAND))
                 .save(consumer, new ResourceLocation("minecraft",
                         Items.GLASS + "_from_blasting"));
-        SimpleCookingRecipeBuilder.blasting(Ingredient.of(PackTags.Items.GLASS),
+        SimpleCookingRecipeBuilder.blasting(Ingredient.of(TBATags.Items.GLASS),
                         Items.GLASS_BOTTLE, 0.1F, 100)
-                .unlockedBy("has_any_glass", has(PackTags.Items.GLASS))
+                .unlockedBy("has_any_glass", has(TBATags.Items.GLASS))
                 .save(consumer, new ResourceLocation("minecraft",
                         Items.GLASS_BOTTLE + "_from_blasting"));
-        SimpleCookingRecipeBuilder.smelting(Ingredient.of(PackTags.Items.GLASS),
+        SimpleCookingRecipeBuilder.smelting(Ingredient.of(TBATags.Items.GLASS),
                         Items.GLASS_BOTTLE, 0.1F, 200)
-                .unlockedBy("has_any_glass", has(PackTags.Items.GLASS))
+                .unlockedBy("has_any_glass", has(TBATags.Items.GLASS))
                 .save(consumer, new ResourceLocation("minecraft",
                         Items.GLASS_BOTTLE + "_from_smelting"));
         SingleItemRecipeBuilder.stonecutting(Ingredient.of(Items.CYAN_STAINED_GLASS),
@@ -749,97 +749,97 @@ public class RecipesGen extends RecipeProvider implements IConditionBuilder {
         ShapedRecipeBuilder.shaped(Items.WHITE_WOOL, 2)
                 .pattern("XXX")
                 .define('X', Items.WHITE_CARPET)
-                .unlockedBy("has_carpet", has(PackTags.Items.CARPETS))
+                .unlockedBy("has_carpet", has(TBATags.Items.CARPETS))
                 .save(consumer, new ResourceLocation("minecraft",
                         getConversionRecipeName(Items.WHITE_WOOL, Items.WHITE_CARPET)));
         ShapedRecipeBuilder.shaped(Items.LIGHT_GRAY_WOOL, 2)
                 .pattern("XXX")
                 .define('X', Items.LIGHT_GRAY_CARPET)
-                .unlockedBy("has_carpet", has(PackTags.Items.CARPETS))
+                .unlockedBy("has_carpet", has(TBATags.Items.CARPETS))
                 .save(consumer, new ResourceLocation("minecraft",
                         getConversionRecipeName(Items.LIGHT_GRAY_WOOL, Items.LIGHT_GRAY_CARPET)));
         ShapedRecipeBuilder.shaped(Items.GRAY_WOOL, 2)
                 .pattern("XXX")
                 .define('X', Items.GRAY_CARPET)
-                .unlockedBy("has_carpet", has(PackTags.Items.CARPETS))
+                .unlockedBy("has_carpet", has(TBATags.Items.CARPETS))
                 .save(consumer, new ResourceLocation("minecraft",
                         getConversionRecipeName(Items.GRAY_WOOL, Items.GRAY_CARPET)));
         ShapedRecipeBuilder.shaped(Items.BLACK_WOOL, 2)
                 .pattern("XXX")
                 .define('X', Items.BLACK_CARPET)
-                .unlockedBy("has_carpet", has(PackTags.Items.CARPETS))
+                .unlockedBy("has_carpet", has(TBATags.Items.CARPETS))
                 .save(consumer, new ResourceLocation("minecraft",
                         getConversionRecipeName(Items.BLACK_WOOL, Items.BLACK_CARPET)));
         ShapedRecipeBuilder.shaped(Items.BROWN_WOOL, 2)
                 .pattern("XXX")
                 .define('X', Items.BROWN_CARPET)
-                .unlockedBy("has_carpet", has(PackTags.Items.CARPETS))
+                .unlockedBy("has_carpet", has(TBATags.Items.CARPETS))
                 .save(consumer, new ResourceLocation("minecraft",
                         getConversionRecipeName(Items.BROWN_WOOL, Items.BROWN_CARPET)));
         ShapedRecipeBuilder.shaped(Items.RED_WOOL, 2)
                 .pattern("XXX")
                 .define('X', Items.RED_CARPET)
-                .unlockedBy("has_carpet", has(PackTags.Items.CARPETS))
+                .unlockedBy("has_carpet", has(TBATags.Items.CARPETS))
                 .save(consumer, new ResourceLocation("minecraft",
                         getConversionRecipeName(Items.RED_WOOL, Items.RED_CARPET)));
         ShapedRecipeBuilder.shaped(Items.ORANGE_WOOL, 2)
                 .pattern("XXX")
                 .define('X', Items.ORANGE_CARPET)
-                .unlockedBy("has_carpet", has(PackTags.Items.CARPETS))
+                .unlockedBy("has_carpet", has(TBATags.Items.CARPETS))
                 .save(consumer, new ResourceLocation("minecraft",
                         getConversionRecipeName(Items.ORANGE_WOOL, Items.ORANGE_CARPET)));
         ShapedRecipeBuilder.shaped(Items.YELLOW_WOOL, 2)
                 .pattern("XXX")
                 .define('X', Items.YELLOW_CARPET)
-                .unlockedBy("has_carpet", has(PackTags.Items.CARPETS))
+                .unlockedBy("has_carpet", has(TBATags.Items.CARPETS))
                 .save(consumer, new ResourceLocation("minecraft",
                         getConversionRecipeName(Items.YELLOW_WOOL, Items.YELLOW_CARPET)));
         ShapedRecipeBuilder.shaped(Items.LIME_WOOL, 2)
                 .pattern("XXX")
                 .define('X', Items.LIME_CARPET)
-                .unlockedBy("has_carpet", has(PackTags.Items.CARPETS))
+                .unlockedBy("has_carpet", has(TBATags.Items.CARPETS))
                 .save(consumer, new ResourceLocation("minecraft",
                         getConversionRecipeName(Items.LIME_WOOL, Items.LIME_CARPET)));
         ShapedRecipeBuilder.shaped(Items.GREEN_WOOL, 2)
                 .pattern("XXX")
                 .define('X', Items.GREEN_CARPET)
-                .unlockedBy("has_carpet", has(PackTags.Items.CARPETS))
+                .unlockedBy("has_carpet", has(TBATags.Items.CARPETS))
                 .save(consumer, new ResourceLocation("minecraft",
                         getConversionRecipeName(Items.GREEN_WOOL, Items.GREEN_CARPET)));
         ShapedRecipeBuilder.shaped(Items.LIGHT_BLUE_WOOL, 2)
                 .pattern("XXX")
                 .define('X', Items.LIGHT_BLUE_CARPET)
-                .unlockedBy("has_carpet", has(PackTags.Items.CARPETS))
+                .unlockedBy("has_carpet", has(TBATags.Items.CARPETS))
                 .save(consumer, new ResourceLocation("minecraft",
                         getConversionRecipeName(Items.LIGHT_BLUE_WOOL, Items.LIGHT_BLUE_CARPET)));
         ShapedRecipeBuilder.shaped(Items.CYAN_WOOL, 2)
                 .pattern("XXX")
                 .define('X', Items.CYAN_CARPET)
-                .unlockedBy("has_carpet", has(PackTags.Items.CARPETS))
+                .unlockedBy("has_carpet", has(TBATags.Items.CARPETS))
                 .save(consumer, new ResourceLocation("minecraft",
                         getConversionRecipeName(Items.CYAN_WOOL, Items.CYAN_CARPET)));
         ShapedRecipeBuilder.shaped(Items.BLUE_WOOL, 2)
                 .pattern("XXX")
                 .define('X', Items.BLUE_CARPET)
-                .unlockedBy("has_carpet", has(PackTags.Items.CARPETS))
+                .unlockedBy("has_carpet", has(TBATags.Items.CARPETS))
                 .save(consumer, new ResourceLocation("minecraft",
                         getConversionRecipeName(Items.BLUE_WOOL, Items.BLUE_CARPET)));
         ShapedRecipeBuilder.shaped(Items.PURPLE_WOOL, 2)
                 .pattern("XXX")
                 .define('X', Items.PURPLE_CARPET)
-                .unlockedBy("has_carpet", has(PackTags.Items.CARPETS))
+                .unlockedBy("has_carpet", has(TBATags.Items.CARPETS))
                 .save(consumer, new ResourceLocation("minecraft",
                         getConversionRecipeName(Items.PURPLE_WOOL, Items.PURPLE_CARPET)));
         ShapedRecipeBuilder.shaped(Items.PINK_WOOL, 2)
                 .pattern("XXX")
                 .define('X', Items.PINK_CARPET)
-                .unlockedBy("has_carpet", has(PackTags.Items.CARPETS))
+                .unlockedBy("has_carpet", has(TBATags.Items.CARPETS))
                 .save(consumer, new ResourceLocation("minecraft",
                         getConversionRecipeName(Items.PINK_WOOL, Items.PINK_CARPET)));
         ShapedRecipeBuilder.shaped(Items.MAGENTA_WOOL, 2)
                 .pattern("XXX")
                 .define('X', Items.MAGENTA_CARPET)
-                .unlockedBy("has_carpet", has(PackTags.Items.CARPETS))
+                .unlockedBy("has_carpet", has(TBATags.Items.CARPETS))
                 .save(consumer, new ResourceLocation("minecraft",
                         getConversionRecipeName(Items.MAGENTA_WOOL, Items.MAGENTA_CARPET)));
         ShapedRecipeBuilder.shaped(Items.MOSS_BLOCK, 2)
@@ -868,8 +868,8 @@ public class RecipesGen extends RecipeProvider implements IConditionBuilder {
         ConditionalRecipe.builder()
                 .addCondition(modLoaded("biomesoplenty"))
                 .addRecipe(ShapelessRecipeBuilder.shapeless(Items.STRING, 1)
-                        .requires(PackTags.Items.WEBBING)
-                        .unlockedBy("has_webbing", has(PackTags.Items.WEBBING))
+                        .requires(TBATags.Items.WEBBING)
+                        .unlockedBy("has_webbing", has(TBATags.Items.WEBBING))
                         ::save)
                 .build(consumer, new ResourceLocation("minecraft", "string_from_webbing"));
         ConditionalRecipe.builder()
@@ -918,7 +918,7 @@ public class RecipesGen extends RecipeProvider implements IConditionBuilder {
                         .pattern("I I")
                         .pattern("BCB")
                         .pattern("BBB")
-                        .define('I', PackTags.Items.IRON_INGOT)
+                        .define('I', TBATags.Items.IRON_INGOT)
                         .define('B', Blocks.BRICKS)
                         .define('C', Blocks.CAULDRON)
                         .unlockedBy("has_cauldron", has(Blocks.CAULDRON))
@@ -960,22 +960,22 @@ public class RecipesGen extends RecipeProvider implements IConditionBuilder {
                         .pattern(" I ")
                         .pattern("IRI")
                         .pattern("GGG")
-                        .define('I', PackTags.Items.IRON_INGOT)
+                        .define('I', TBATags.Items.IRON_INGOT)
                         .define('R', Items.REDSTONE)
-                        .define('G', PackTags.Items.GOLD_NUGGET)
-                        .unlockedBy("has_gold_nugget", has(PackTags.Items.GOLD_NUGGET))
+                        .define('G', TBATags.Items.GOLD_NUGGET)
+                        .unlockedBy("has_gold_nugget", has(TBATags.Items.GOLD_NUGGET))
                         ::save)
                 .build(consumer, new ResourceLocation("fastfooddelight",
                         FFItems.CHECKOUT_MACHINE.get().toString()));
         ConditionalRecipe.builder()
                 .addCondition(modLoaded("fastfooddelight"))
                 .addRecipe(ShapelessRecipeBuilder.shapeless(FFItems.CHICKEN_CHEESE_SANDWICH.get())
-                        .requires(PackTags.Items.BREAD)
-                        .requires(PackTags.Items.COOKED_CHICKEN)
-                        .requires(PackTags.Items.GREENS)
-                        .requires(PackTags.Items.VEGETABLES)
-                        .requires(PackTags.Items.CHEESE_SLICES)
-                        .unlockedBy("has_cooked_chicken", has(PackTags.Items.COOKED_CHICKEN))
+                        .requires(TBATags.Items.BREAD)
+                        .requires(TBATags.Items.COOKED_CHICKEN)
+                        .requires(TBATags.Items.GREENS)
+                        .requires(TBATags.Items.VEGETABLES)
+                        .requires(TBATags.Items.CHEESE_SLICES)
+                        .unlockedBy("has_cooked_chicken", has(TBATags.Items.COOKED_CHICKEN))
                         ::save)
                 .build(consumer, new ResourceLocation("fastfooddelight",
                         FFItems.CHICKEN_CHEESE_SANDWICH.get() + "_alt"));
@@ -988,12 +988,12 @@ public class RecipesGen extends RecipeProvider implements IConditionBuilder {
                         .pattern("BSB")
                         .pattern("#C#")
                         .pattern("###")
-                        .define('B', PackTags.Items.BRICK)
+                        .define('B', TBATags.Items.BRICK)
                         .define('S', Tags.Items.LEATHER)
-                        .define('#', PackTags.Items.COPPER_INGOT)
-                        .define('C', PackTags.Items.WATER_BUCKETS)
+                        .define('#', TBATags.Items.COPPER_INGOT)
+                        .define('C', TBATags.Items.WATER_BUCKETS)
                         .unlockedBy("has_copper_ingot",
-                                has(PackTags.Items.COPPER_INGOT))
+                                has(TBATags.Items.COPPER_INGOT))
                         ::save)
                 .build(consumer, new ResourceLocation("farmersdelight",
                         ModBlocks.COOKING_POT.get().asItem() + "_alt"));
@@ -1002,28 +1002,28 @@ public class RecipesGen extends RecipeProvider implements IConditionBuilder {
                 .addRecipe(ShapelessRecipeBuilder.shapeless(ModBlocks.SHEPHERDS_PIE_BLOCK.get())
                         .requires(Items.BAKED_POTATO)
                         .requires(Items.BAKED_POTATO)
-                        .requires(PackTags.Items.MILK)
-                        .requires(PackTags.Items.COOKED_MUTTON)
-                        .requires(PackTags.Items.COOKED_MUTTON)
-                        .requires(PackTags.Items.COOKED_MUTTON)
-                        .requires(PackTags.Items.ONION_INGREDIENTS)
-                        .requires(PackTags.Items.ONION_INGREDIENTS)
+                        .requires(TBATags.Items.MILK)
+                        .requires(TBATags.Items.COOKED_MUTTON)
+                        .requires(TBATags.Items.COOKED_MUTTON)
+                        .requires(TBATags.Items.COOKED_MUTTON)
+                        .requires(TBATags.Items.ONION_INGREDIENTS)
+                        .requires(TBATags.Items.ONION_INGREDIENTS)
                         .requires(Items.BOWL)
                         .unlockedBy("has_cooked_mutton",
-                                has(PackTags.Items.COOKED_MUTTON))
+                                has(TBATags.Items.COOKED_MUTTON))
                         ::save)
                 .build(consumer, new ResourceLocation("farmersdelight",
                         ModBlocks.SHEPHERDS_PIE_BLOCK.get().asItem() + "_alt"));
         ConditionalRecipe.builder()
                 .addCondition(modLoaded("farmersdelight"))
                 .addRecipe(ShapelessRecipeBuilder.shapeless(ModBlocks.ROAST_CHICKEN_BLOCK.get())
-                        .requires(PackTags.Items.EGGS)
-                        .requires(PackTags.Items.BREAD)
-                        .requires(PackTags.Items.VEGETABLES)
-                        .requires(PackTags.Items.VEGETABLES)
-                        .requires(PackTags.Items.VEGETABLES)
-                        .requires(PackTags.Items.VEGETABLES)
-                        .requires(PackTags.Items.VEGETABLES)
+                        .requires(TBATags.Items.EGGS)
+                        .requires(TBATags.Items.BREAD)
+                        .requires(TBATags.Items.VEGETABLES)
+                        .requires(TBATags.Items.VEGETABLES)
+                        .requires(TBATags.Items.VEGETABLES)
+                        .requires(TBATags.Items.VEGETABLES)
+                        .requires(TBATags.Items.VEGETABLES)
                         .requires(Items.COOKED_CHICKEN)
                         .requires(Items.BOWL)
                         .unlockedBy("has_cooked_chicken",
@@ -1052,8 +1052,8 @@ public class RecipesGen extends RecipeProvider implements IConditionBuilder {
                 .addCondition(modLoaded("farmersdelight"))
                 .addRecipe(ShapelessRecipeBuilder.shapeless(ModBlocks.ORGANIC_COMPOST.get())
                         .requires(Blocks.DIRT)
-                        .requires(PackTags.Items.STRAW_FIBERS)
-                        .requires(PackTags.Items.STRAW_FIBERS)
+                        .requires(TBATags.Items.STRAW_FIBERS)
+                        .requires(TBATags.Items.STRAW_FIBERS)
                         .requires(Items.BONE_MEAL)
                         .requires(Items.BONE_MEAL)
                         .requires(vectorwing.farmersdelight.common.registry.ModItems.TREE_BARK.get())
@@ -1068,14 +1068,14 @@ public class RecipesGen extends RecipeProvider implements IConditionBuilder {
         ConditionalRecipe.builder()
                 .addCondition(modLoaded("farmersdelight"))
                 .addRecipe(ShapelessRecipeBuilder.shapeless(ModBlocks.HONEY_GLAZED_HAM_BLOCK.get())
-                        .requires(PackTags.Items.BERRIES)
-                        .requires(PackTags.Items.BERRIES)
-                        .requires(PackTags.Items.BERRIES)
-                        .requires(PackTags.Items.BERRIES)
-                        .requires(PackTags.Items.GLAZES)
+                        .requires(TBATags.Items.BERRIES)
+                        .requires(TBATags.Items.BERRIES)
+                        .requires(TBATags.Items.BERRIES)
+                        .requires(TBATags.Items.BERRIES)
+                        .requires(TBATags.Items.GLAZES)
                         .requires(vectorwing.farmersdelight.common.registry.ModItems.SMOKED_HAM.get())
-                        .requires(PackTags.Items.COOKED_RICE)
-                        .requires(PackTags.Items.COOKED_RICE)
+                        .requires(TBATags.Items.COOKED_RICE)
+                        .requires(TBATags.Items.COOKED_RICE)
                         .requires(Items.BOWL)
                         .unlockedBy("has_smoked_ham",
                                 has(vectorwing.farmersdelight.common.registry.ModItems.SMOKED_HAM.get()))
@@ -1092,12 +1092,12 @@ public class RecipesGen extends RecipeProvider implements IConditionBuilder {
                         .pattern("SLS")
                         .pattern("#C#")
                         .pattern("###")
-                        .define('S', PackTags.Items.STICKS)
+                        .define('S', TBATags.Items.STICKS)
                         .define('L', Tags.Items.LEATHER)
-                        .define('#', PackTags.Items.COPPER_INGOT)
-                        .define('C', PackTags.Items.WATER_BUCKETS)
+                        .define('#', TBATags.Items.COPPER_INGOT)
+                        .define('C', TBATags.Items.WATER_BUCKETS)
                         .unlockedBy("has_copper_ingot",
-                                has(PackTags.Items.COPPER_INGOT))
+                                has(TBATags.Items.COPPER_INGOT))
                         ::save)
                 .build(consumer, new ResourceLocation("farmersrespite",
                         FRItems.KETTLE.get().asItem() + "_alt"));
@@ -1107,17 +1107,17 @@ public class RecipesGen extends RecipeProvider implements IConditionBuilder {
         ConditionalRecipe.builder()
                 .addCondition(modLoaded("festive_delight"))
                 .addRecipe(ShapelessRecipeBuilder.shapeless(FestiveDelightModItems.FESTIVE_CHICKEN_BLOCK.get())
-                        .requires(PackTags.Items.BERRIES)
-                        .requires(PackTags.Items.BERRIES)
-                        .requires(PackTags.Items.BERRIES)
-                        .requires(PackTags.Items.BERRIES)
-                        .requires(PackTags.Items.GLAZES)
-                        .requires(PackTags.Items.COOKED_CHICKEN)
-                        .requires(PackTags.Items.COOKED_RICE)
-                        .requires(PackTags.Items.COOKED_RICE)
+                        .requires(TBATags.Items.BERRIES)
+                        .requires(TBATags.Items.BERRIES)
+                        .requires(TBATags.Items.BERRIES)
+                        .requires(TBATags.Items.BERRIES)
+                        .requires(TBATags.Items.GLAZES)
+                        .requires(TBATags.Items.COOKED_CHICKEN)
+                        .requires(TBATags.Items.COOKED_RICE)
+                        .requires(TBATags.Items.COOKED_RICE)
                         .requires(Items.BOWL)
                         .unlockedBy("has_cooked_chicken",
-                                has(PackTags.Items.COOKED_CHICKEN))
+                                has(TBATags.Items.COOKED_CHICKEN))
                         ::save)
                 .build(consumer, new ResourceLocation("festive_delight",
                         FestiveDelightModItems.FESTIVE_CHICKEN_BLOCK.get() + "_alt"));
@@ -1128,12 +1128,12 @@ public class RecipesGen extends RecipeProvider implements IConditionBuilder {
                 .addCondition(modLoaded("supplementaries"))
                 .addRecipe(ShapelessRecipeBuilder.shapeless(ModRegistry.SOAP.get(), 6)
                         .requires(Items.WATER_BUCKET)
-                        .requires(PackTags.Items.ASH)
-                        .requires(PackTags.Items.ASH)
-                        .requires(PackTags.Items.ASH)
-                        .requires(PackTags.Items.ASH)
-                        .requires(PackTags.Items.FATS)
-                        .unlockedBy("has_ash", has(PackTags.Items.ASH))
+                        .requires(TBATags.Items.ASH)
+                        .requires(TBATags.Items.ASH)
+                        .requires(TBATags.Items.ASH)
+                        .requires(TBATags.Items.ASH)
+                        .requires(TBATags.Items.FATS)
+                        .unlockedBy("has_ash", has(TBATags.Items.ASH))
                         ::save)
                 .build(consumer, new ResourceLocation("supplementaries", "items/soap_alt"));
         ConditionalRecipe.builder()
@@ -1142,7 +1142,7 @@ public class RecipesGen extends RecipeProvider implements IConditionBuilder {
                         .pattern(" SL")
                         .pattern("SL ")
                         .pattern("L  ")
-                        .define('S', PackTags.Items.STRING)
+                        .define('S', TBATags.Items.STRING)
                         .define('L', Items.LEATHER)
                         .unlockedBy("has_leather", has(Items.LEATHER))
                         ::save)
@@ -1150,9 +1150,9 @@ public class RecipesGen extends RecipeProvider implements IConditionBuilder {
         ConditionalRecipe.builder()
                 .addCondition(modLoaded("supplementaries"))
                 .addRecipe(ShapelessRecipeBuilder.shapeless(Items.LAPIS_LAZULI, 4)
-                        .requires(PackTags.Items.LAPIS_BRICKS)
+                        .requires(TBATags.Items.LAPIS_BRICKS)
                         .unlockedBy("has_lapis_bricks",
-                                has(PackTags.Items.LAPIS_BRICKS))
+                                has(TBATags.Items.LAPIS_BRICKS))
                         ::save)
                 .build(consumer, new ResourceLocation("supplementaries",
                         Items.LAPIS_LAZULI + "_from_" + "lapis_bricks"));
@@ -1165,9 +1165,9 @@ public class RecipesGen extends RecipeProvider implements IConditionBuilder {
                         .pattern(" L ")
                         .pattern(" F ")
                         .pattern(" W ")
-                        .define('L', PackTags.Items.LANTERNS)
+                        .define('L', TBATags.Items.LANTERNS)
                         .define('F', Tags.Items.FENCES)
-                        .define('W', PackTags.Items.WALLS)
+                        .define('W', TBATags.Items.WALLS)
                         .unlockedBy("can_craft_lantern", RecipeUnlockedTrigger
                                 .unlocked(Objects.requireNonNull(ResourceLocation.tryParse("minecraft/recipes/lantern"))))
                         ::save)
@@ -1180,7 +1180,7 @@ public class RecipesGen extends RecipeProvider implements IConditionBuilder {
                         .pattern(" W ")
                         .define('S', Items.SOUL_LANTERN)
                         .define('F', Tags.Items.FENCES)
-                        .define('W', PackTags.Items.WALLS)
+                        .define('W', TBATags.Items.WALLS)
                         .unlockedBy("has_soul_lantern", InventoryChangeTrigger.TriggerInstance.hasItems(Items.SOUL_LANTERN))
                         ::save)
                 .build(consumer, new ResourceLocation("mcwlights", "soul_classic_street_lamp_alt"));
@@ -1190,9 +1190,9 @@ public class RecipesGen extends RecipeProvider implements IConditionBuilder {
                         .pattern("L L")
                         .pattern(" F ")
                         .pattern(" W ")
-                        .define('L', PackTags.Items.LANTERNS)
+                        .define('L', TBATags.Items.LANTERNS)
                         .define('F', Tags.Items.FENCES)
-                        .define('W', PackTags.Items.WALLS)
+                        .define('W', TBATags.Items.WALLS)
                         .unlockedBy("can_craft_classic_street_lamp", RecipeUnlockedTrigger
                                 .unlocked(Objects.requireNonNull(ResourceLocation.tryParse("mcwlights/recipes/classic_street_lamp_alt"))))
                         ::save)
@@ -1205,7 +1205,7 @@ public class RecipesGen extends RecipeProvider implements IConditionBuilder {
                         .pattern(" W ")
                         .define('S', Items.SOUL_LANTERN)
                         .define('F', Tags.Items.FENCES)
-                        .define('W', PackTags.Items.WALLS)
+                        .define('W', TBATags.Items.WALLS)
                         .unlockedBy("can_craft_soul_classic_street_lamp", RecipeUnlockedTrigger
                                 .unlocked(Objects.requireNonNull(ResourceLocation.tryParse("mcwlights/recipes/soul_classic_street_lamp_alt"))))
                         ::save)
@@ -1246,11 +1246,11 @@ public class RecipesGen extends RecipeProvider implements IConditionBuilder {
                 .addRecipe(finishedRecipeConsumer ->
                         CookingPotRecipeBuilder.cookingPotRecipe(FISH_STEW.get(),
                                         1, 200, 1.0F)
-                                .addIngredient(PackTags.Items.RAW_FISHES)
+                                .addIngredient(TBATags.Items.RAW_FISHES)
                                 .addIngredient(TOMATO_SAUCE.get())
-                                .addIngredient(PackTags.Items.ONION_INGREDIENTS)
+                                .addIngredient(TBATags.Items.ONION_INGREDIENTS)
                                 .unlockedBy("has_raw_fish",
-                                        has(PackTags.Items.RAW_FISHES))
+                                        has(TBATags.Items.RAW_FISHES))
                                 .build(consumer, new ResourceLocation("farmersdelight",
                                         "cooking/" + FISH_STEW.get() + "_from_tagged_ingredients"))
                 );
@@ -1260,11 +1260,11 @@ public class RecipesGen extends RecipeProvider implements IConditionBuilder {
                         CookingPotRecipeBuilder.cookingPotRecipe(DUMPLINGS.get(),
                                         2, 200, 1.0F)
                                 .addIngredient(ForgeTags.DOUGH)
-                                .addIngredient(PackTags.Items.CABBAGE_INGREDIENTS)
-                                .addIngredient(PackTags.Items.ONION_INGREDIENTS)
+                                .addIngredient(TBATags.Items.CABBAGE_INGREDIENTS)
+                                .addIngredient(TBATags.Items.ONION_INGREDIENTS)
                                 .addIngredient(Ingredient.fromValues(
-                                        Stream.of(new Ingredient.TagValue(PackTags.Items.RAW_MEATS),
-                                                new Ingredient.TagValue(PackTags.Items.SHROOMS))))
+                                        Stream.of(new Ingredient.TagValue(TBATags.Items.RAW_MEATS),
+                                                new Ingredient.TagValue(TBATags.Items.SHROOMS))))
                                 .unlockedBy("has_dough", has(ForgeTags.DOUGH))
                                 .build(consumer, new ResourceLocation("farmersdelight",
                                         "cooking/" + DUMPLINGS.get() + "_from_tagged_ingredients"))
@@ -1274,11 +1274,11 @@ public class RecipesGen extends RecipeProvider implements IConditionBuilder {
                 .addRecipe(finishedRecipeConsumer ->
                         CookingPotRecipeBuilder.cookingPotRecipe(FRIED_RICE.get(),
                                         2, 200, 1.0F)
-                                .addIngredient(PackTags.Items.RICE)
-                                .addIngredient(PackTags.Items.EGGS)
-                                .addIngredient(PackTags.Items.VEGETABLES)
-                                .addIngredient(PackTags.Items.VEGETABLES)
-                                .unlockedBy("has_rice", has(PackTags.Items.RICE))
+                                .addIngredient(TBATags.Items.RICE)
+                                .addIngredient(TBATags.Items.EGGS)
+                                .addIngredient(TBATags.Items.VEGETABLES)
+                                .addIngredient(TBATags.Items.VEGETABLES)
+                                .unlockedBy("has_rice", has(TBATags.Items.RICE))
                                 .build(consumer, new ResourceLocation("farmersdelight",
                                         "cooking/" + FRIED_RICE.get() + "_from_tagged_ingredients"))
                 );
@@ -1290,7 +1290,7 @@ public class RecipesGen extends RecipeProvider implements IConditionBuilder {
                                 .addIngredient(ForgeTags.PASTA)
                                 .addIngredient(ForgeTags.COOKED_EGGS)
                                 .addIngredient(Items.DRIED_KELP)
-                                .addIngredient(PackTags.Items.RAW_MEATS)
+                                .addIngredient(TBATags.Items.RAW_MEATS)
                                 .unlockedBy("has_pasta", has(ForgeTags.PASTA))
                                 .build(consumer, new ResourceLocation("farmersdelight",
                                         "cooking/" + NOODLE_SOUP.get() + "_from_tagged_ingredients"))
@@ -1300,11 +1300,11 @@ public class RecipesGen extends RecipeProvider implements IConditionBuilder {
                 .addRecipe(finishedRecipeConsumer ->
                         CookingPotRecipeBuilder.cookingPotRecipe(VEGETABLE_NOODLES.get(),
                                         1, 200, 1.0F)
-                                .addIngredient(PackTags.Items.CARROT_INGREDIENTS)
-                                .addIngredient(PackTags.Items.SHROOMS)
+                                .addIngredient(TBATags.Items.CARROT_INGREDIENTS)
+                                .addIngredient(TBATags.Items.SHROOMS)
                                 .addIngredient(ForgeTags.PASTA)
-                                .addIngredient(PackTags.Items.SALAD_INGREDIENTS)
-                                .addIngredient(PackTags.Items.VEGETABLES)
+                                .addIngredient(TBATags.Items.SALAD_INGREDIENTS)
+                                .addIngredient(TBATags.Items.VEGETABLES)
                                 .unlockedBy("has_pasta", has(ForgeTags.PASTA))
                                 .build(consumer, new ResourceLocation("farmersdelight",
                                         "cooking/" + VEGETABLE_NOODLES.get() + "_from_tagged_ingredients"))
@@ -1314,10 +1314,10 @@ public class RecipesGen extends RecipeProvider implements IConditionBuilder {
                 .addRecipe(finishedRecipeConsumer ->
                         CookingPotRecipeBuilder.cookingPotRecipe(VEGETABLE_SOUP.get(),
                                         1, 200, 1.0F)
-                                .addIngredient(PackTags.Items.CARROT_INGREDIENTS)
-                                .addIngredient(PackTags.Items.STARCH_INGREDIENTS)
-                                .addIngredient(PackTags.Items.SALAD_INGREDIENTS)
-                                .addIngredient(PackTags.Items.VEGETABLES)
+                                .addIngredient(TBATags.Items.CARROT_INGREDIENTS)
+                                .addIngredient(TBATags.Items.STARCH_INGREDIENTS)
+                                .addIngredient(TBATags.Items.SALAD_INGREDIENTS)
+                                .addIngredient(TBATags.Items.VEGETABLES)
                                 .unlockedBy("has_pasta", has(ForgeTags.PASTA))
                                 .build(consumer, new ResourceLocation("farmersdelight",
                                         "cooking/" + VEGETABLE_SOUP.get() + "_from_tagged_ingredients"))
@@ -1327,9 +1327,9 @@ public class RecipesGen extends RecipeProvider implements IConditionBuilder {
                 .addRecipe(finishedRecipeConsumer ->
                         CookingPotRecipeBuilder.cookingPotRecipe(MUSHROOM_STEW,
                                         1, 200, 1.0F)
-                                .addIngredient(PackTags.Items.SHROOMS)
-                                .addIngredient(PackTags.Items.SHROOMS)
-                                .unlockedBy("has_shrooms", has(PackTags.Items.SHROOMS))
+                                .addIngredient(TBATags.Items.SHROOMS)
+                                .addIngredient(TBATags.Items.SHROOMS)
+                                .unlockedBy("has_shrooms", has(TBATags.Items.SHROOMS))
                                 .build(consumer, new ResourceLocation("farmersdelight",
                                         "cooking/" + MUSHROOM_STEW + "_from_tagged_ingredients"))
                 );
@@ -1338,11 +1338,11 @@ public class RecipesGen extends RecipeProvider implements IConditionBuilder {
                 .addRecipe(finishedRecipeConsumer ->
                         CookingPotRecipeBuilder.cookingPotRecipe(MUSHROOM_RICE.get(),
                                         1, 200, 1.0F)
-                                .addIngredient(PackTags.Items.SHROOMS)
-                                .addIngredient(PackTags.Items.SHROOMS)
-                                .addIngredient(PackTags.Items.RICE)
-                                .addIngredient(PackTags.Items.VEGETABLES)
-                                .unlockedBy("has_shrooms", has(PackTags.Items.SHROOMS))
+                                .addIngredient(TBATags.Items.SHROOMS)
+                                .addIngredient(TBATags.Items.SHROOMS)
+                                .addIngredient(TBATags.Items.RICE)
+                                .addIngredient(TBATags.Items.VEGETABLES)
+                                .unlockedBy("has_shrooms", has(TBATags.Items.SHROOMS))
                                 .build(consumer, new ResourceLocation("farmersdelight",
                                         "cooking/" + MUSHROOM_RICE.get() + "_from_tagged_ingredients"))
                 );
@@ -1351,12 +1351,12 @@ public class RecipesGen extends RecipeProvider implements IConditionBuilder {
                 .addRecipe(finishedRecipeConsumer ->
                         CookingPotRecipeBuilder.cookingPotRecipe(STUFFED_PUMPKIN_BLOCK.get(),
                                 1, 400, 2.0F, Items.PUMPKIN)
-                                .addIngredient(PackTags.Items.STARCH_INGREDIENTS)
-                                .addIngredient(PackTags.Items.ONION_INGREDIENTS)
-                                .addIngredient(PackTags.Items.SHROOMS)
-                                .addIngredient(PackTags.Items.STARCH_INGREDIENTS)
-                                .addIngredient(PackTags.Items.BERRIES)
-                                .addIngredient(PackTags.Items.VEGETABLES)
+                                .addIngredient(TBATags.Items.STARCH_INGREDIENTS)
+                                .addIngredient(TBATags.Items.ONION_INGREDIENTS)
+                                .addIngredient(TBATags.Items.SHROOMS)
+                                .addIngredient(TBATags.Items.STARCH_INGREDIENTS)
+                                .addIngredient(TBATags.Items.BERRIES)
+                                .addIngredient(TBATags.Items.VEGETABLES)
                                 .unlockedByItems("has_pumpkin", Blocks.PUMPKIN)
                                 .build(consumer, new ResourceLocation("farmersdelight",
                                         "cooking/" + STUFFED_PUMPKIN_BLOCK.get() + "_from_tagged_ingredients"))
@@ -1365,12 +1365,12 @@ public class RecipesGen extends RecipeProvider implements IConditionBuilder {
                 .addCondition(modLoaded("farmersdelight"))
                 .addCondition(modLoaded("delightful"))
                 .addCondition(this.itemExists(DelightfulItems.ROCK_CANDY.getId().getNamespace(), DelightfulItems.ROCK_CANDY.getId().getPath()))
-                .addCondition(this.not(this.tagEmpty(PackTags.Items.GEM_SHARDS)))
+                .addCondition(this.not(this.tagEmpty(TBATags.Items.GEM_SHARDS)))
                 .addRecipe(finishedRecipeConsumer ->
                         CookingPotRecipeBuilder.cookingPotRecipe(DelightfulItems.ROCK_CANDY.get(), 1, 200, 0.35F, Items.STICK)
-                                .addIngredient(Ingredient.of(PackTags.Items.GEM_SHARDS), 2)
-                                .addIngredient(PackTags.Items.SUGAR)
-                                .unlockedBy("has_gem_shards", has(PackTags.Items.GEM_SHARDS))
+                                .addIngredient(Ingredient.of(TBATags.Items.GEM_SHARDS), 2)
+                                .addIngredient(TBATags.Items.SUGAR)
+                                .unlockedBy("has_gem_shards", has(TBATags.Items.GEM_SHARDS))
                                 .build(consumer, new ResourceLocation("delightful", "cooking/rock_candy_alt_1"))
                 );
         ConditionalRecipe.builder()
@@ -1378,29 +1378,29 @@ public class RecipesGen extends RecipeProvider implements IConditionBuilder {
                 .addCondition(modLoaded("delightful"))
                 .addCondition(modLoaded("aether"))
                 .addCondition(this.itemExists(DelightfulItems.ROCK_CANDY.getId().getNamespace(), DelightfulItems.ROCK_CANDY.getId().getPath()))
-                .addCondition(this.not(this.tagEmpty(PackTags.Items.GEM_SHARDS)))
+                .addCondition(this.not(this.tagEmpty(TBATags.Items.GEM_SHARDS)))
                 .addRecipe(finishedRecipeConsumer ->
                         CookingPotRecipeBuilder.cookingPotRecipe(DelightfulItems.ROCK_CANDY.get(), 1, 200, 0.35F, AetherItems.SKYROOT_STICK.get())
-                                .addIngredient(Ingredient.of(PackTags.Items.GEM_SHARDS), 2)
-                                .addIngredient(PackTags.Items.SUGAR)
-                                .unlockedBy("has_gem_shards", has(PackTags.Items.GEM_SHARDS))
+                                .addIngredient(Ingredient.of(TBATags.Items.GEM_SHARDS), 2)
+                                .addIngredient(TBATags.Items.SUGAR)
+                                .unlockedBy("has_gem_shards", has(TBATags.Items.GEM_SHARDS))
                                 .build(consumer, new ResourceLocation("delightful", "cooking/rock_candy_alt_2"))
                 );
         ConditionalRecipe.builder()
                 .addCondition(modLoaded("farmersdelight"))
                 .addRecipe(finishedRecipeConsumer ->
                         CookingPotRecipeBuilder.cookingPotRecipe(CHICKEN_SOUP.get(), 1, 200, 1.0F)
-                                .addIngredient(Ingredient.of(PackTags.Items.RAW_CHICKEN))
-                                .addIngredient(Ingredient.of(PackTags.Items.CARROT_INGREDIENTS))
-                                .addIngredient(Ingredient.of(PackTags.Items.VEGETABLES))
-                                .addIngredient(Ingredient.of(PackTags.Items.SALAD_INGREDIENTS))
-                                .unlockedBy("has_chicken", has(PackTags.Items.RAW_CHICKEN))
+                                .addIngredient(Ingredient.of(TBATags.Items.RAW_CHICKEN))
+                                .addIngredient(Ingredient.of(TBATags.Items.CARROT_INGREDIENTS))
+                                .addIngredient(Ingredient.of(TBATags.Items.VEGETABLES))
+                                .addIngredient(Ingredient.of(TBATags.Items.SALAD_INGREDIENTS))
+                                .unlockedBy("has_chicken", has(TBATags.Items.RAW_CHICKEN))
                                 .build(consumer, new ResourceLocation("farmersdelight", "cooking/" + CHICKEN_SOUP.get() + "_from_tagged_ingredients"))
                 );
     }
 
     private void schoolSupplyRecipes(Consumer<FinishedRecipe> consumer) {
-        ShapedRecipeBuilder.shaped(ModItems.STUDENT_CARD.get(), 1)
+        ShapedRecipeBuilder.shaped(TBAItems.STUDENT_CARD.get(), 1)
                 .pattern("###")
                 .pattern("#T#")
                 .pattern("###")
@@ -1408,535 +1408,535 @@ public class RecipesGen extends RecipeProvider implements IConditionBuilder {
                 .define('T', Items.NAME_TAG)
                 .unlockedBy("has_name_tag", has(Items.NAME_TAG))
                 .save(consumer, new ResourceLocation(MODID,
-                        ModItems.STUDENT_CARD.get().toString()));
+                        TBAItems.STUDENT_CARD.get().toString()));
 
-        plateRecipe(consumer, ModBlockRegistry.PLATE_WHITE.get().asItem().getDefaultInstance(),
+        plateRecipe(consumer, TBABlocks.PLATE_WHITE.get().asItem().getDefaultInstance(),
                 Items.WHITE_GLAZED_TERRACOTTA);
-        plateRecipe(consumer, ModBlockRegistry.PLATE_ORANGE.get().asItem().getDefaultInstance(),
+        plateRecipe(consumer, TBABlocks.PLATE_ORANGE.get().asItem().getDefaultInstance(),
                 Items.ORANGE_GLAZED_TERRACOTTA);
-        plateRecipe(consumer, ModBlockRegistry.PLATE_MAGENTA.get().asItem().getDefaultInstance(),
+        plateRecipe(consumer, TBABlocks.PLATE_MAGENTA.get().asItem().getDefaultInstance(),
                 Items.MAGENTA_GLAZED_TERRACOTTA);
-        plateRecipe(consumer, ModBlockRegistry.PLATE_LIGHT_BLUE.get().asItem().getDefaultInstance(),
+        plateRecipe(consumer, TBABlocks.PLATE_LIGHT_BLUE.get().asItem().getDefaultInstance(),
                 Items.LIGHT_BLUE_GLAZED_TERRACOTTA);
-        plateRecipe(consumer, ModBlockRegistry.PLATE_YELLOW.get().asItem().getDefaultInstance(),
+        plateRecipe(consumer, TBABlocks.PLATE_YELLOW.get().asItem().getDefaultInstance(),
                 Items.YELLOW_GLAZED_TERRACOTTA);
-        plateRecipe(consumer, ModBlockRegistry.PLATE_LIME.get().asItem().getDefaultInstance(),
+        plateRecipe(consumer, TBABlocks.PLATE_LIME.get().asItem().getDefaultInstance(),
                 Items.LIME_GLAZED_TERRACOTTA);
-        plateRecipe(consumer, ModBlockRegistry.PLATE_PINK.get().asItem().getDefaultInstance(),
+        plateRecipe(consumer, TBABlocks.PLATE_PINK.get().asItem().getDefaultInstance(),
                 Items.PINK_GLAZED_TERRACOTTA);
-        plateRecipe(consumer, ModBlockRegistry.PLATE_GRAY.get().asItem().getDefaultInstance(),
+        plateRecipe(consumer, TBABlocks.PLATE_GRAY.get().asItem().getDefaultInstance(),
                 Items.GRAY_GLAZED_TERRACOTTA);
-        plateRecipe(consumer, ModBlockRegistry.PLATE_LIGHT_GRAY.get().asItem().getDefaultInstance(),
+        plateRecipe(consumer, TBABlocks.PLATE_LIGHT_GRAY.get().asItem().getDefaultInstance(),
                 Items.LIGHT_GRAY_GLAZED_TERRACOTTA);
-        plateRecipe(consumer, ModBlockRegistry.PLATE_CYAN.get().asItem().getDefaultInstance(),
+        plateRecipe(consumer, TBABlocks.PLATE_CYAN.get().asItem().getDefaultInstance(),
                 Items.CYAN_GLAZED_TERRACOTTA);
-        plateRecipe(consumer, ModBlockRegistry.PLATE_PURPLE.get().asItem().getDefaultInstance(),
+        plateRecipe(consumer, TBABlocks.PLATE_PURPLE.get().asItem().getDefaultInstance(),
                 Items.PURPLE_GLAZED_TERRACOTTA);
-        plateRecipe(consumer, ModBlockRegistry.PLATE_BLUE.get().asItem().getDefaultInstance(),
+        plateRecipe(consumer, TBABlocks.PLATE_BLUE.get().asItem().getDefaultInstance(),
                 Items.BLUE_GLAZED_TERRACOTTA);
-        plateRecipe(consumer, ModBlockRegistry.PLATE_BROWN.get().asItem().getDefaultInstance(),
+        plateRecipe(consumer, TBABlocks.PLATE_BROWN.get().asItem().getDefaultInstance(),
                 Items.BROWN_GLAZED_TERRACOTTA);
-        plateRecipe(consumer, ModBlockRegistry.PLATE_GREEN.get().asItem().getDefaultInstance(),
+        plateRecipe(consumer, TBABlocks.PLATE_GREEN.get().asItem().getDefaultInstance(),
                 Items.GREEN_GLAZED_TERRACOTTA);
-        plateRecipe(consumer, ModBlockRegistry.PLATE_RED.get().asItem().getDefaultInstance(),
+        plateRecipe(consumer, TBABlocks.PLATE_RED.get().asItem().getDefaultInstance(),
                 Items.RED_GLAZED_TERRACOTTA);
-        plateRecipe(consumer, ModBlockRegistry.PLATE_BLACK.get().asItem().getDefaultInstance(),
+        plateRecipe(consumer, TBABlocks.PLATE_BLACK.get().asItem().getDefaultInstance(),
                 Items.BLACK_GLAZED_TERRACOTTA);
 
-        chairRecipe(consumer, ModBlockRegistry.DESK_CHAIR_ACACIA.get().asItem().getDefaultInstance(),
+        chairRecipe(consumer, TBABlocks.DESK_CHAIR_ACACIA.get().asItem().getDefaultInstance(),
                 Items.ACACIA_LOG, Items.STRIPPED_ACACIA_LOG, Items.ACACIA_SLAB);
-        benchRecipe(consumer, ModBlockRegistry.PARK_BENCH_ACACIA.get().asItem().getDefaultInstance(),
+        benchRecipe(consumer, TBABlocks.PARK_BENCH_ACACIA.get().asItem().getDefaultInstance(),
                 Items.ACACIA_LOG, Items.ACACIA_SLAB);
-        deskRecipe(consumer, ModBlockRegistry.SCHOOL_DESK_ACACIA.get().asItem().getDefaultInstance(),
+        deskRecipe(consumer, TBABlocks.SCHOOL_DESK_ACACIA.get().asItem().getDefaultInstance(),
                 Items.ACACIA_PLANKS, Items.ACACIA_SLAB);
-        deskCabinetRecipe(consumer, ModBlockRegistry.SCHOOL_DESK_CABINET_ACACIA.get().asItem().getDefaultInstance(),
+        deskCabinetRecipe(consumer, TBABlocks.SCHOOL_DESK_CABINET_ACACIA.get().asItem().getDefaultInstance(),
                 Items.ACACIA_LOG, Items.ACACIA_PLANKS);
-        lockerRecipe(consumer, ModBlockRegistry.LOCKER_ACACIA.get().asItem().getDefaultInstance(),
+        lockerRecipe(consumer, TBABlocks.LOCKER_ACACIA.get().asItem().getDefaultInstance(),
                 Items.ACACIA_LOG, Items.ACACIA_SLAB);
-        tableRecipe(consumer, ModBlockRegistry.TABLE_ACACIA.get().asItem().getDefaultInstance(),
+        tableRecipe(consumer, TBABlocks.TABLE_ACACIA.get().asItem().getDefaultInstance(),
                 Items.ACACIA_LOG, Items.STRIPPED_ACACIA_LOG, Items.ACACIA_SLAB);
-        bookcaseRecipe(consumer, ModBlockRegistry.BOOKCASE_ACACIA.get().asItem().getDefaultInstance(),
+        bookcaseRecipe(consumer, TBABlocks.BOOKCASE_ACACIA.get().asItem().getDefaultInstance(),
                 Items.ACACIA_LOG, Items.STRIPPED_ACACIA_LOG, Items.ACACIA_SLAB);
 
-        chairRecipe(consumer, ModBlockRegistry.DESK_CHAIR_BIRCH.get().asItem().getDefaultInstance(),
+        chairRecipe(consumer, TBABlocks.DESK_CHAIR_BIRCH.get().asItem().getDefaultInstance(),
                 Items.BIRCH_LOG, Items.STRIPPED_BIRCH_LOG, Items.BIRCH_SLAB);
-        benchRecipe(consumer, ModBlockRegistry.PARK_BENCH_BIRCH.get().asItem().getDefaultInstance(),
+        benchRecipe(consumer, TBABlocks.PARK_BENCH_BIRCH.get().asItem().getDefaultInstance(),
                 Items.BIRCH_LOG, Items.BIRCH_SLAB);
-        deskRecipe(consumer, ModBlockRegistry.SCHOOL_DESK_BIRCH.get().asItem().getDefaultInstance(),
+        deskRecipe(consumer, TBABlocks.SCHOOL_DESK_BIRCH.get().asItem().getDefaultInstance(),
                 Items.BIRCH_PLANKS, Items.BIRCH_SLAB);
-        deskCabinetRecipe(consumer, ModBlockRegistry.SCHOOL_DESK_CABINET_BIRCH.get().asItem().getDefaultInstance(),
+        deskCabinetRecipe(consumer, TBABlocks.SCHOOL_DESK_CABINET_BIRCH.get().asItem().getDefaultInstance(),
                 Items.BIRCH_LOG, Items.BIRCH_PLANKS);
-        lockerRecipe(consumer, ModBlockRegistry.LOCKER_BIRCH.get().asItem().getDefaultInstance(),
+        lockerRecipe(consumer, TBABlocks.LOCKER_BIRCH.get().asItem().getDefaultInstance(),
                 Items.BIRCH_LOG, Items.BIRCH_SLAB);
-        tableRecipe(consumer, ModBlockRegistry.TABLE_BIRCH.get().asItem().getDefaultInstance(),
+        tableRecipe(consumer, TBABlocks.TABLE_BIRCH.get().asItem().getDefaultInstance(),
                 Items.BIRCH_LOG, Items.STRIPPED_BIRCH_LOG, Items.BIRCH_SLAB);
-        bookcaseRecipe(consumer, ModBlockRegistry.BOOKCASE_BIRCH.get().asItem().getDefaultInstance(),
+        bookcaseRecipe(consumer, TBABlocks.BOOKCASE_BIRCH.get().asItem().getDefaultInstance(),
                 Items.BIRCH_LOG, Items.STRIPPED_BIRCH_LOG, Items.BIRCH_SLAB);
 
-        chairRecipe(consumer, ModBlockRegistry.DESK_CHAIR_DARK_OAK.get().asItem().getDefaultInstance(),
+        chairRecipe(consumer, TBABlocks.DESK_CHAIR_DARK_OAK.get().asItem().getDefaultInstance(),
                 Items.DARK_OAK_LOG, Items.STRIPPED_DARK_OAK_LOG, Items.DARK_OAK_SLAB);
-        benchRecipe(consumer, ModBlockRegistry.PARK_BENCH_DARK_OAK.get().asItem().getDefaultInstance(),
+        benchRecipe(consumer, TBABlocks.PARK_BENCH_DARK_OAK.get().asItem().getDefaultInstance(),
                 Items.DARK_OAK_LOG, Items.DARK_OAK_SLAB);
-        deskRecipe(consumer, ModBlockRegistry.SCHOOL_DESK_DARK_OAK.get().asItem().getDefaultInstance(),
+        deskRecipe(consumer, TBABlocks.SCHOOL_DESK_DARK_OAK.get().asItem().getDefaultInstance(),
                 Items.DARK_OAK_PLANKS, Items.DARK_OAK_SLAB);
-        deskCabinetRecipe(consumer, ModBlockRegistry.SCHOOL_DESK_CABINET_DARK_OAK.get().asItem().getDefaultInstance(),
+        deskCabinetRecipe(consumer, TBABlocks.SCHOOL_DESK_CABINET_DARK_OAK.get().asItem().getDefaultInstance(),
                 Items.DARK_OAK_LOG, Items.DARK_OAK_PLANKS);
-        lockerRecipe(consumer, ModBlockRegistry.LOCKER_DARK_OAK.get().asItem().getDefaultInstance(),
+        lockerRecipe(consumer, TBABlocks.LOCKER_DARK_OAK.get().asItem().getDefaultInstance(),
                 Items.DARK_OAK_LOG, Items.DARK_OAK_SLAB);
-        tableRecipe(consumer, ModBlockRegistry.TABLE_DARK_OAK.get().asItem().getDefaultInstance(),
+        tableRecipe(consumer, TBABlocks.TABLE_DARK_OAK.get().asItem().getDefaultInstance(),
                 Items.DARK_OAK_LOG, Items.STRIPPED_DARK_OAK_LOG, Items.DARK_OAK_SLAB);
-        bookcaseRecipe(consumer, ModBlockRegistry.BOOKCASE_DARK_OAK.get().asItem().getDefaultInstance(),
+        bookcaseRecipe(consumer, TBABlocks.BOOKCASE_DARK_OAK.get().asItem().getDefaultInstance(),
                 Items.DARK_OAK_LOG, Items.STRIPPED_DARK_OAK_LOG, Items.DARK_OAK_SLAB);
 
-        chairRecipe(consumer, ModBlockRegistry.DESK_CHAIR_JUNGLE.get().asItem().getDefaultInstance(),
+        chairRecipe(consumer, TBABlocks.DESK_CHAIR_JUNGLE.get().asItem().getDefaultInstance(),
                 Items.JUNGLE_LOG, Items.STRIPPED_JUNGLE_LOG, Items.JUNGLE_SLAB);
-        benchRecipe(consumer, ModBlockRegistry.PARK_BENCH_JUNGLE.get().asItem().getDefaultInstance(),
+        benchRecipe(consumer, TBABlocks.PARK_BENCH_JUNGLE.get().asItem().getDefaultInstance(),
                 Items.JUNGLE_LOG, Items.JUNGLE_SLAB);
-        deskRecipe(consumer, ModBlockRegistry.SCHOOL_DESK_JUNGLE.get().asItem().getDefaultInstance(),
+        deskRecipe(consumer, TBABlocks.SCHOOL_DESK_JUNGLE.get().asItem().getDefaultInstance(),
                 Items.JUNGLE_PLANKS, Items.JUNGLE_SLAB);
-        deskCabinetRecipe(consumer, ModBlockRegistry.SCHOOL_DESK_CABINET_JUNGLE.get().asItem().getDefaultInstance(),
+        deskCabinetRecipe(consumer, TBABlocks.SCHOOL_DESK_CABINET_JUNGLE.get().asItem().getDefaultInstance(),
                 Items.JUNGLE_LOG, Items.JUNGLE_PLANKS);
-        lockerRecipe(consumer, ModBlockRegistry.LOCKER_JUNGLE.get().asItem().getDefaultInstance(),
+        lockerRecipe(consumer, TBABlocks.LOCKER_JUNGLE.get().asItem().getDefaultInstance(),
                 Items.JUNGLE_LOG, Items.JUNGLE_SLAB);
-        tableRecipe(consumer, ModBlockRegistry.TABLE_JUNGLE.get().asItem().getDefaultInstance(),
+        tableRecipe(consumer, TBABlocks.TABLE_JUNGLE.get().asItem().getDefaultInstance(),
                 Items.JUNGLE_LOG, Items.STRIPPED_JUNGLE_LOG, Items.JUNGLE_SLAB);
-        bookcaseRecipe(consumer, ModBlockRegistry.BOOKCASE_JUNGLE.get().asItem().getDefaultInstance(),
+        bookcaseRecipe(consumer, TBABlocks.BOOKCASE_JUNGLE.get().asItem().getDefaultInstance(),
                 Items.JUNGLE_LOG, Items.STRIPPED_JUNGLE_LOG, Items.JUNGLE_SLAB);
 
-        chairRecipe(consumer, ModBlockRegistry.DESK_CHAIR_MANGROVE.get().asItem().getDefaultInstance(),
+        chairRecipe(consumer, TBABlocks.DESK_CHAIR_MANGROVE.get().asItem().getDefaultInstance(),
                 Items.MANGROVE_LOG, Items.STRIPPED_MANGROVE_LOG, Items.MANGROVE_SLAB);
-        benchRecipe(consumer, ModBlockRegistry.PARK_BENCH_MANGROVE.get().asItem().getDefaultInstance(),
+        benchRecipe(consumer, TBABlocks.PARK_BENCH_MANGROVE.get().asItem().getDefaultInstance(),
                 Items.MANGROVE_LOG, Items.MANGROVE_SLAB);
-        deskRecipe(consumer, ModBlockRegistry.SCHOOL_DESK_MANGROVE.get().asItem().getDefaultInstance(),
+        deskRecipe(consumer, TBABlocks.SCHOOL_DESK_MANGROVE.get().asItem().getDefaultInstance(),
                 Items.MANGROVE_PLANKS, Items.MANGROVE_SLAB);
-        deskCabinetRecipe(consumer, ModBlockRegistry.SCHOOL_DESK_CABINET_MANGROVE.get().asItem().getDefaultInstance(),
+        deskCabinetRecipe(consumer, TBABlocks.SCHOOL_DESK_CABINET_MANGROVE.get().asItem().getDefaultInstance(),
                 Items.MANGROVE_LOG, Items.MANGROVE_PLANKS);
-        lockerRecipe(consumer, ModBlockRegistry.LOCKER_MANGROVE.get().asItem().getDefaultInstance(),
+        lockerRecipe(consumer, TBABlocks.LOCKER_MANGROVE.get().asItem().getDefaultInstance(),
                 Items.MANGROVE_LOG, Items.MANGROVE_SLAB);
-        tableRecipe(consumer, ModBlockRegistry.TABLE_MANGROVE.get().asItem().getDefaultInstance(),
+        tableRecipe(consumer, TBABlocks.TABLE_MANGROVE.get().asItem().getDefaultInstance(),
                 Items.MANGROVE_LOG, Items.STRIPPED_MANGROVE_LOG, Items.MANGROVE_SLAB);
-        bookcaseRecipe(consumer, ModBlockRegistry.BOOKCASE_MANGROVE.get().asItem().getDefaultInstance(),
+        bookcaseRecipe(consumer, TBABlocks.BOOKCASE_MANGROVE.get().asItem().getDefaultInstance(),
                 Items.MANGROVE_LOG, Items.STRIPPED_MANGROVE_LOG, Items.MANGROVE_SLAB);
 
-        chairRecipe(consumer, ModBlockRegistry.DESK_CHAIR_OAK.get().asItem().getDefaultInstance(),
+        chairRecipe(consumer, TBABlocks.DESK_CHAIR_OAK.get().asItem().getDefaultInstance(),
                 Items.OAK_LOG, Items.STRIPPED_OAK_LOG, Items.OAK_SLAB);
-        benchRecipe(consumer, ModBlockRegistry.PARK_BENCH_OAK.get().asItem().getDefaultInstance(),
+        benchRecipe(consumer, TBABlocks.PARK_BENCH_OAK.get().asItem().getDefaultInstance(),
                 Items.OAK_LOG, Items.OAK_SLAB);
-        deskRecipe(consumer, ModBlockRegistry.SCHOOL_DESK_OAK.get().asItem().getDefaultInstance(),
+        deskRecipe(consumer, TBABlocks.SCHOOL_DESK_OAK.get().asItem().getDefaultInstance(),
                 Items.OAK_PLANKS, Items.OAK_SLAB);
-        deskCabinetRecipe(consumer, ModBlockRegistry.SCHOOL_DESK_CABINET_OAK.get().asItem().getDefaultInstance(),
+        deskCabinetRecipe(consumer, TBABlocks.SCHOOL_DESK_CABINET_OAK.get().asItem().getDefaultInstance(),
                 Items.OAK_LOG, Items.OAK_PLANKS);
-        lockerRecipe(consumer, ModBlockRegistry.LOCKER_OAK.get().asItem().getDefaultInstance(),
+        lockerRecipe(consumer, TBABlocks.LOCKER_OAK.get().asItem().getDefaultInstance(),
                 Items.OAK_LOG, Items.OAK_SLAB);
-        tableRecipe(consumer, ModBlockRegistry.TABLE_OAK.get().asItem().getDefaultInstance(),
+        tableRecipe(consumer, TBABlocks.TABLE_OAK.get().asItem().getDefaultInstance(),
                 Items.OAK_LOG, Items.STRIPPED_OAK_LOG, Items.OAK_SLAB);
-        bookcaseRecipe(consumer, ModBlockRegistry.BOOKCASE_OAK.get().asItem().getDefaultInstance(),
+        bookcaseRecipe(consumer, TBABlocks.BOOKCASE_OAK.get().asItem().getDefaultInstance(),
                 Items.OAK_LOG, Items.STRIPPED_OAK_LOG, Items.OAK_SLAB);
 
-        chairRecipe(consumer, ModBlockRegistry.DESK_CHAIR_SPRUCE.get().asItem().getDefaultInstance(),
+        chairRecipe(consumer, TBABlocks.DESK_CHAIR_SPRUCE.get().asItem().getDefaultInstance(),
                 Items.SPRUCE_LOG, Items.STRIPPED_SPRUCE_LOG, Items.SPRUCE_SLAB);
-        benchRecipe(consumer, ModBlockRegistry.PARK_BENCH_SPRUCE.get().asItem().getDefaultInstance(),
+        benchRecipe(consumer, TBABlocks.PARK_BENCH_SPRUCE.get().asItem().getDefaultInstance(),
                 Items.SPRUCE_LOG, Items.SPRUCE_SLAB);
-        deskRecipe(consumer, ModBlockRegistry.SCHOOL_DESK_SPRUCE.get().asItem().getDefaultInstance(),
+        deskRecipe(consumer, TBABlocks.SCHOOL_DESK_SPRUCE.get().asItem().getDefaultInstance(),
                 Items.SPRUCE_PLANKS, Items.SPRUCE_SLAB);
-        deskCabinetRecipe(consumer, ModBlockRegistry.SCHOOL_DESK_CABINET_SPRUCE.get().asItem().getDefaultInstance(),
+        deskCabinetRecipe(consumer, TBABlocks.SCHOOL_DESK_CABINET_SPRUCE.get().asItem().getDefaultInstance(),
                 Items.SPRUCE_LOG, Items.SPRUCE_PLANKS);
-        lockerRecipe(consumer, ModBlockRegistry.LOCKER_SPRUCE.get().asItem().getDefaultInstance(),
+        lockerRecipe(consumer, TBABlocks.LOCKER_SPRUCE.get().asItem().getDefaultInstance(),
                 Items.SPRUCE_LOG, Items.SPRUCE_SLAB);
-        tableRecipe(consumer, ModBlockRegistry.TABLE_SPRUCE.get().asItem().getDefaultInstance(),
+        tableRecipe(consumer, TBABlocks.TABLE_SPRUCE.get().asItem().getDefaultInstance(),
                 Items.SPRUCE_LOG, Items.STRIPPED_SPRUCE_LOG, Items.SPRUCE_SLAB);
-        bookcaseRecipe(consumer, ModBlockRegistry.BOOKCASE_SPRUCE.get().asItem().getDefaultInstance(),
+        bookcaseRecipe(consumer, TBABlocks.BOOKCASE_SPRUCE.get().asItem().getDefaultInstance(),
                 Items.SPRUCE_LOG, Items.STRIPPED_SPRUCE_LOG, Items.SPRUCE_SLAB);
 
-        chairRecipe(consumer, ModBlockRegistry.DESK_CHAIR_CRIMSON.get().asItem().getDefaultInstance(),
+        chairRecipe(consumer, TBABlocks.DESK_CHAIR_CRIMSON.get().asItem().getDefaultInstance(),
                 Items.CRIMSON_STEM, Items.STRIPPED_CRIMSON_STEM, Items.CRIMSON_SLAB);
-        benchRecipe(consumer, ModBlockRegistry.PARK_BENCH_CRIMSON.get().asItem().getDefaultInstance(),
+        benchRecipe(consumer, TBABlocks.PARK_BENCH_CRIMSON.get().asItem().getDefaultInstance(),
                 Items.CRIMSON_STEM, Items.CRIMSON_SLAB);
-        deskRecipe(consumer, ModBlockRegistry.SCHOOL_DESK_CRIMSON.get().asItem().getDefaultInstance(),
+        deskRecipe(consumer, TBABlocks.SCHOOL_DESK_CRIMSON.get().asItem().getDefaultInstance(),
                 Items.CRIMSON_PLANKS, Items.CRIMSON_SLAB);
-        deskCabinetRecipe(consumer, ModBlockRegistry.SCHOOL_DESK_CABINET_CRIMSON.get().asItem().getDefaultInstance(),
+        deskCabinetRecipe(consumer, TBABlocks.SCHOOL_DESK_CABINET_CRIMSON.get().asItem().getDefaultInstance(),
                 Items.CRIMSON_STEM, Items.CRIMSON_PLANKS);
-        lockerRecipe(consumer, ModBlockRegistry.LOCKER_CRIMSON.get().asItem().getDefaultInstance(),
+        lockerRecipe(consumer, TBABlocks.LOCKER_CRIMSON.get().asItem().getDefaultInstance(),
                 Items.CRIMSON_STEM, Items.CRIMSON_SLAB);
-        tableRecipe(consumer, ModBlockRegistry.TABLE_CRIMSON.get().asItem().getDefaultInstance(),
+        tableRecipe(consumer, TBABlocks.TABLE_CRIMSON.get().asItem().getDefaultInstance(),
                 Items.CRIMSON_STEM, Items.STRIPPED_CRIMSON_STEM, Items.CRIMSON_SLAB);
-        bookcaseRecipe(consumer, ModBlockRegistry.BOOKCASE_CRIMSON.get().asItem().getDefaultInstance(),
+        bookcaseRecipe(consumer, TBABlocks.BOOKCASE_CRIMSON.get().asItem().getDefaultInstance(),
                 Items.CRIMSON_STEM, Items.STRIPPED_CRIMSON_STEM, Items.CRIMSON_SLAB);
 
-        chairRecipe(consumer, ModBlockRegistry.DESK_CHAIR_WARPED.get().asItem().getDefaultInstance(),
+        chairRecipe(consumer, TBABlocks.DESK_CHAIR_WARPED.get().asItem().getDefaultInstance(),
                 Items.WARPED_STEM, Items.STRIPPED_WARPED_STEM, Items.WARPED_SLAB);
-        benchRecipe(consumer, ModBlockRegistry.PARK_BENCH_WARPED.get().asItem().getDefaultInstance(),
+        benchRecipe(consumer, TBABlocks.PARK_BENCH_WARPED.get().asItem().getDefaultInstance(),
                 Items.WARPED_STEM, Items.WARPED_SLAB);
-        deskRecipe(consumer, ModBlockRegistry.SCHOOL_DESK_WARPED.get().asItem().getDefaultInstance(),
+        deskRecipe(consumer, TBABlocks.SCHOOL_DESK_WARPED.get().asItem().getDefaultInstance(),
                 Items.WARPED_PLANKS, Items.WARPED_SLAB);
-        deskCabinetRecipe(consumer, ModBlockRegistry.SCHOOL_DESK_CABINET_WARPED.get().asItem().getDefaultInstance(),
+        deskCabinetRecipe(consumer, TBABlocks.SCHOOL_DESK_CABINET_WARPED.get().asItem().getDefaultInstance(),
                 Items.WARPED_STEM, Items.WARPED_PLANKS);
-        lockerRecipe(consumer, ModBlockRegistry.LOCKER_WARPED.get().asItem().getDefaultInstance(),
+        lockerRecipe(consumer, TBABlocks.LOCKER_WARPED.get().asItem().getDefaultInstance(),
                 Items.WARPED_STEM, Items.WARPED_SLAB);
-        tableRecipe(consumer, ModBlockRegistry.TABLE_WARPED.get().asItem().getDefaultInstance(),
+        tableRecipe(consumer, TBABlocks.TABLE_WARPED.get().asItem().getDefaultInstance(),
                 Items.WARPED_STEM, Items.STRIPPED_WARPED_STEM, Items.WARPED_SLAB);
-        bookcaseRecipe(consumer, ModBlockRegistry.BOOKCASE_WARPED.get().asItem().getDefaultInstance(),
+        bookcaseRecipe(consumer, TBABlocks.BOOKCASE_WARPED.get().asItem().getDefaultInstance(),
                 Items.WARPED_STEM, Items.STRIPPED_WARPED_STEM, Items.WARPED_SLAB);
 
-        chairRecipe(consumer, ModBlockRegistry.DESK_CHAIR_FIR.get().asItem().getDefaultInstance(),
+        chairRecipe(consumer, TBABlocks.DESK_CHAIR_FIR.get().asItem().getDefaultInstance(),
                 BOPBlocks.FIR_LOG.get(), BOPBlocks.STRIPPED_FIR_LOG.get(), BOPBlocks.FIR_SLAB.get());
-        benchRecipe(consumer, ModBlockRegistry.PARK_BENCH_FIR.get().asItem().getDefaultInstance(),
+        benchRecipe(consumer, TBABlocks.PARK_BENCH_FIR.get().asItem().getDefaultInstance(),
                 BOPBlocks.FIR_LOG.get(), BOPBlocks.FIR_SLAB.get());
-        deskRecipe(consumer, ModBlockRegistry.SCHOOL_DESK_FIR.get().asItem().getDefaultInstance(),
+        deskRecipe(consumer, TBABlocks.SCHOOL_DESK_FIR.get().asItem().getDefaultInstance(),
                 BOPBlocks.FIR_PLANKS.get(), BOPBlocks.FIR_SLAB.get());
-        deskCabinetRecipe(consumer, ModBlockRegistry.SCHOOL_DESK_CABINET_FIR.get().asItem().getDefaultInstance(),
+        deskCabinetRecipe(consumer, TBABlocks.SCHOOL_DESK_CABINET_FIR.get().asItem().getDefaultInstance(),
                 BOPBlocks.FIR_LOG.get(), BOPBlocks.FIR_PLANKS.get());
-        lockerRecipe(consumer, ModBlockRegistry.LOCKER_FIR.get().asItem().getDefaultInstance(),
+        lockerRecipe(consumer, TBABlocks.LOCKER_FIR.get().asItem().getDefaultInstance(),
                 BOPBlocks.FIR_LOG.get(), BOPBlocks.FIR_SLAB.get());
-        tableRecipe(consumer, ModBlockRegistry.TABLE_FIR.get().asItem().getDefaultInstance(),
+        tableRecipe(consumer, TBABlocks.TABLE_FIR.get().asItem().getDefaultInstance(),
                 BOPBlocks.FIR_LOG.get(), BOPBlocks.STRIPPED_FIR_LOG.get(), BOPBlocks.FIR_SLAB.get());
-        bookcaseRecipe(consumer, ModBlockRegistry.BOOKCASE_FIR.get().asItem().getDefaultInstance(),
+        bookcaseRecipe(consumer, TBABlocks.BOOKCASE_FIR.get().asItem().getDefaultInstance(),
                 BOPBlocks.FIR_LOG.get(), BOPBlocks.STRIPPED_FIR_LOG.get(), BOPBlocks.FIR_SLAB.get());
 
-        chairRecipe(consumer, ModBlockRegistry.DESK_CHAIR_REDWOOD.get().asItem().getDefaultInstance(),
+        chairRecipe(consumer, TBABlocks.DESK_CHAIR_REDWOOD.get().asItem().getDefaultInstance(),
                 BOPBlocks.REDWOOD_LOG.get(), BOPBlocks.STRIPPED_REDWOOD_LOG.get(), BOPBlocks.REDWOOD_SLAB.get());
-        benchRecipe(consumer, ModBlockRegistry.PARK_BENCH_REDWOOD.get().asItem().getDefaultInstance(),
+        benchRecipe(consumer, TBABlocks.PARK_BENCH_REDWOOD.get().asItem().getDefaultInstance(),
                 BOPBlocks.REDWOOD_LOG.get(), BOPBlocks.REDWOOD_SLAB.get());
-        deskRecipe(consumer, ModBlockRegistry.SCHOOL_DESK_REDWOOD.get().asItem().getDefaultInstance(),
+        deskRecipe(consumer, TBABlocks.SCHOOL_DESK_REDWOOD.get().asItem().getDefaultInstance(),
                 BOPBlocks.REDWOOD_PLANKS.get(), BOPBlocks.REDWOOD_SLAB.get());
-        deskCabinetRecipe(consumer, ModBlockRegistry.SCHOOL_DESK_CABINET_REDWOOD.get().asItem().getDefaultInstance(),
+        deskCabinetRecipe(consumer, TBABlocks.SCHOOL_DESK_CABINET_REDWOOD.get().asItem().getDefaultInstance(),
                 BOPBlocks.REDWOOD_LOG.get(), BOPBlocks.REDWOOD_PLANKS.get());
-        lockerRecipe(consumer, ModBlockRegistry.LOCKER_REDWOOD.get().asItem().getDefaultInstance(),
+        lockerRecipe(consumer, TBABlocks.LOCKER_REDWOOD.get().asItem().getDefaultInstance(),
                 BOPBlocks.REDWOOD_LOG.get(), BOPBlocks.REDWOOD_SLAB.get());
-        tableRecipe(consumer, ModBlockRegistry.TABLE_REDWOOD.get().asItem().getDefaultInstance(),
+        tableRecipe(consumer, TBABlocks.TABLE_REDWOOD.get().asItem().getDefaultInstance(),
                 BOPBlocks.REDWOOD_LOG.get(), BOPBlocks.STRIPPED_REDWOOD_LOG.get(), BOPBlocks.REDWOOD_SLAB.get());
-        bookcaseRecipe(consumer, ModBlockRegistry.BOOKCASE_REDWOOD.get().asItem().getDefaultInstance(),
+        bookcaseRecipe(consumer, TBABlocks.BOOKCASE_REDWOOD.get().asItem().getDefaultInstance(),
                 BOPBlocks.REDWOOD_LOG.get(), BOPBlocks.STRIPPED_REDWOOD_LOG.get(), BOPBlocks.REDWOOD_SLAB.get());
 
-        chairRecipe(consumer, ModBlockRegistry.DESK_CHAIR_CHERRY.get().asItem().getDefaultInstance(),
+        chairRecipe(consumer, TBABlocks.DESK_CHAIR_CHERRY.get().asItem().getDefaultInstance(),
                 BOPBlocks.CHERRY_LOG.get(), BOPBlocks.STRIPPED_CHERRY_LOG.get(), BOPBlocks.CHERRY_SLAB.get());
-        benchRecipe(consumer, ModBlockRegistry.PARK_BENCH_CHERRY.get().asItem().getDefaultInstance(),
+        benchRecipe(consumer, TBABlocks.PARK_BENCH_CHERRY.get().asItem().getDefaultInstance(),
                 BOPBlocks.CHERRY_LOG.get(), BOPBlocks.CHERRY_SLAB.get());
-        deskRecipe(consumer, ModBlockRegistry.SCHOOL_DESK_CHERRY.get().asItem().getDefaultInstance(),
+        deskRecipe(consumer, TBABlocks.SCHOOL_DESK_CHERRY.get().asItem().getDefaultInstance(),
                 BOPBlocks.CHERRY_PLANKS.get(), BOPBlocks.CHERRY_SLAB.get());
-        deskCabinetRecipe(consumer, ModBlockRegistry.SCHOOL_DESK_CABINET_CHERRY.get().asItem().getDefaultInstance(),
+        deskCabinetRecipe(consumer, TBABlocks.SCHOOL_DESK_CABINET_CHERRY.get().asItem().getDefaultInstance(),
                 BOPBlocks.CHERRY_LOG.get(), BOPBlocks.CHERRY_PLANKS.get());
-        lockerRecipe(consumer, ModBlockRegistry.LOCKER_CHERRY.get().asItem().getDefaultInstance(),
+        lockerRecipe(consumer, TBABlocks.LOCKER_CHERRY.get().asItem().getDefaultInstance(),
                 BOPBlocks.CHERRY_LOG.get(), BOPBlocks.CHERRY_SLAB.get());
-        tableRecipe(consumer, ModBlockRegistry.TABLE_CHERRY.get().asItem().getDefaultInstance(),
+        tableRecipe(consumer, TBABlocks.TABLE_CHERRY.get().asItem().getDefaultInstance(),
                 BOPBlocks.CHERRY_LOG.get(), BOPBlocks.STRIPPED_CHERRY_LOG.get(), BOPBlocks.CHERRY_SLAB.get());
-        bookcaseRecipe(consumer, ModBlockRegistry.BOOKCASE_CHERRY.get().asItem().getDefaultInstance(),
+        bookcaseRecipe(consumer, TBABlocks.BOOKCASE_CHERRY.get().asItem().getDefaultInstance(),
                 BOPBlocks.CHERRY_LOG.get(), BOPBlocks.STRIPPED_CHERRY_LOG.get(), BOPBlocks.CHERRY_SLAB.get());
 
-        chairRecipe(consumer, ModBlockRegistry.DESK_CHAIR_MAHOGANY.get().asItem().getDefaultInstance(),
+        chairRecipe(consumer, TBABlocks.DESK_CHAIR_MAHOGANY.get().asItem().getDefaultInstance(),
                 BOPBlocks.MAHOGANY_LOG.get(), BOPBlocks.STRIPPED_MAHOGANY_LOG.get(), BOPBlocks.MAHOGANY_SLAB.get());
-        benchRecipe(consumer, ModBlockRegistry.PARK_BENCH_MAHOGANY.get().asItem().getDefaultInstance(),
+        benchRecipe(consumer, TBABlocks.PARK_BENCH_MAHOGANY.get().asItem().getDefaultInstance(),
                 BOPBlocks.MAHOGANY_LOG.get(), BOPBlocks.MAHOGANY_SLAB.get());
-        deskRecipe(consumer, ModBlockRegistry.SCHOOL_DESK_MAHOGANY.get().asItem().getDefaultInstance(),
+        deskRecipe(consumer, TBABlocks.SCHOOL_DESK_MAHOGANY.get().asItem().getDefaultInstance(),
                 BOPBlocks.MAHOGANY_PLANKS.get(), BOPBlocks.MAHOGANY_SLAB.get());
-        deskCabinetRecipe(consumer, ModBlockRegistry.SCHOOL_DESK_CABINET_MAHOGANY.get().asItem().getDefaultInstance(),
+        deskCabinetRecipe(consumer, TBABlocks.SCHOOL_DESK_CABINET_MAHOGANY.get().asItem().getDefaultInstance(),
                 BOPBlocks.MAHOGANY_LOG.get(), BOPBlocks.MAHOGANY_PLANKS.get());
-        lockerRecipe(consumer, ModBlockRegistry.LOCKER_MAHOGANY.get().asItem().getDefaultInstance(),
+        lockerRecipe(consumer, TBABlocks.LOCKER_MAHOGANY.get().asItem().getDefaultInstance(),
                 BOPBlocks.MAHOGANY_LOG.get(), BOPBlocks.MAHOGANY_SLAB.get());
-        tableRecipe(consumer, ModBlockRegistry.TABLE_MAHOGANY.get().asItem().getDefaultInstance(),
+        tableRecipe(consumer, TBABlocks.TABLE_MAHOGANY.get().asItem().getDefaultInstance(),
                 BOPBlocks.MAHOGANY_LOG.get(), BOPBlocks.STRIPPED_MAHOGANY_LOG.get(), BOPBlocks.MAHOGANY_SLAB.get());
-        bookcaseRecipe(consumer, ModBlockRegistry.BOOKCASE_MAHOGANY.get().asItem().getDefaultInstance(),
+        bookcaseRecipe(consumer, TBABlocks.BOOKCASE_MAHOGANY.get().asItem().getDefaultInstance(),
                 BOPBlocks.MAHOGANY_LOG.get(), BOPBlocks.STRIPPED_MAHOGANY_LOG.get(), BOPBlocks.MAHOGANY_SLAB.get());
 
-        chairRecipe(consumer, ModBlockRegistry.DESK_CHAIR_JACARANDA.get().asItem().getDefaultInstance(),
+        chairRecipe(consumer, TBABlocks.DESK_CHAIR_JACARANDA.get().asItem().getDefaultInstance(),
                 BOPBlocks.JACARANDA_LOG.get(), BOPBlocks.STRIPPED_JACARANDA_LOG.get(), BOPBlocks.JACARANDA_SLAB.get());
-        benchRecipe(consumer, ModBlockRegistry.PARK_BENCH_JACARANDA.get().asItem().getDefaultInstance(),
+        benchRecipe(consumer, TBABlocks.PARK_BENCH_JACARANDA.get().asItem().getDefaultInstance(),
                 BOPBlocks.JACARANDA_LOG.get(), BOPBlocks.JACARANDA_SLAB.get());
-        deskRecipe(consumer, ModBlockRegistry.SCHOOL_DESK_JACARANDA.get().asItem().getDefaultInstance(),
+        deskRecipe(consumer, TBABlocks.SCHOOL_DESK_JACARANDA.get().asItem().getDefaultInstance(),
                 BOPBlocks.JACARANDA_PLANKS.get(), BOPBlocks.JACARANDA_SLAB.get());
-        deskCabinetRecipe(consumer, ModBlockRegistry.SCHOOL_DESK_CABINET_JACARANDA.get().asItem().getDefaultInstance(),
+        deskCabinetRecipe(consumer, TBABlocks.SCHOOL_DESK_CABINET_JACARANDA.get().asItem().getDefaultInstance(),
                 BOPBlocks.JACARANDA_LOG.get(), BOPBlocks.JACARANDA_PLANKS.get());
-        lockerRecipe(consumer, ModBlockRegistry.LOCKER_JACARANDA.get().asItem().getDefaultInstance(),
+        lockerRecipe(consumer, TBABlocks.LOCKER_JACARANDA.get().asItem().getDefaultInstance(),
                 BOPBlocks.JACARANDA_LOG.get(), BOPBlocks.JACARANDA_SLAB.get());
-        tableRecipe(consumer, ModBlockRegistry.TABLE_JACARANDA.get().asItem().getDefaultInstance(),
+        tableRecipe(consumer, TBABlocks.TABLE_JACARANDA.get().asItem().getDefaultInstance(),
                 BOPBlocks.JACARANDA_LOG.get(), BOPBlocks.STRIPPED_JACARANDA_LOG.get(), BOPBlocks.JACARANDA_SLAB.get());
-        bookcaseRecipe(consumer, ModBlockRegistry.BOOKCASE_JACARANDA.get().asItem().getDefaultInstance(),
+        bookcaseRecipe(consumer, TBABlocks.BOOKCASE_JACARANDA.get().asItem().getDefaultInstance(),
                 BOPBlocks.JACARANDA_LOG.get(), BOPBlocks.STRIPPED_JACARANDA_LOG.get(), BOPBlocks.JACARANDA_SLAB.get());
 
-        chairRecipe(consumer, ModBlockRegistry.DESK_CHAIR_PALM.get().asItem().getDefaultInstance(),
+        chairRecipe(consumer, TBABlocks.DESK_CHAIR_PALM.get().asItem().getDefaultInstance(),
                 BOPBlocks.PALM_LOG.get(), BOPBlocks.STRIPPED_PALM_LOG.get(), BOPBlocks.PALM_SLAB.get());
-        benchRecipe(consumer, ModBlockRegistry.PARK_BENCH_PALM.get().asItem().getDefaultInstance(),
+        benchRecipe(consumer, TBABlocks.PARK_BENCH_PALM.get().asItem().getDefaultInstance(),
                 BOPBlocks.PALM_LOG.get(), BOPBlocks.PALM_SLAB.get());
-        deskRecipe(consumer, ModBlockRegistry.SCHOOL_DESK_PALM.get().asItem().getDefaultInstance(),
+        deskRecipe(consumer, TBABlocks.SCHOOL_DESK_PALM.get().asItem().getDefaultInstance(),
                 BOPBlocks.PALM_PLANKS.get(), BOPBlocks.PALM_SLAB.get());
-        deskCabinetRecipe(consumer, ModBlockRegistry.SCHOOL_DESK_CABINET_PALM.get().asItem().getDefaultInstance(),
+        deskCabinetRecipe(consumer, TBABlocks.SCHOOL_DESK_CABINET_PALM.get().asItem().getDefaultInstance(),
                 BOPBlocks.PALM_LOG.get(), BOPBlocks.PALM_PLANKS.get());
-        lockerRecipe(consumer, ModBlockRegistry.LOCKER_PALM.get().asItem().getDefaultInstance(),
+        lockerRecipe(consumer, TBABlocks.LOCKER_PALM.get().asItem().getDefaultInstance(),
                 BOPBlocks.PALM_LOG.get(), BOPBlocks.PALM_SLAB.get());
-        tableRecipe(consumer, ModBlockRegistry.TABLE_PALM.get().asItem().getDefaultInstance(),
+        tableRecipe(consumer, TBABlocks.TABLE_PALM.get().asItem().getDefaultInstance(),
                 BOPBlocks.PALM_LOG.get(), BOPBlocks.STRIPPED_PALM_LOG.get(), BOPBlocks.PALM_SLAB.get());
-        bookcaseRecipe(consumer, ModBlockRegistry.BOOKCASE_PALM.get().asItem().getDefaultInstance(),
+        bookcaseRecipe(consumer, TBABlocks.BOOKCASE_PALM.get().asItem().getDefaultInstance(),
                 BOPBlocks.PALM_LOG.get(), BOPBlocks.STRIPPED_PALM_LOG.get(), BOPBlocks.PALM_SLAB.get());
 
-        chairRecipe(consumer, ModBlockRegistry.DESK_CHAIR_WILLOW.get().asItem().getDefaultInstance(),
+        chairRecipe(consumer, TBABlocks.DESK_CHAIR_WILLOW.get().asItem().getDefaultInstance(),
                 BOPBlocks.WILLOW_LOG.get(), BOPBlocks.STRIPPED_WILLOW_LOG.get(), BOPBlocks.WILLOW_SLAB.get());
-        benchRecipe(consumer, ModBlockRegistry.PARK_BENCH_WILLOW.get().asItem().getDefaultInstance(),
+        benchRecipe(consumer, TBABlocks.PARK_BENCH_WILLOW.get().asItem().getDefaultInstance(),
                 BOPBlocks.WILLOW_LOG.get(), BOPBlocks.WILLOW_SLAB.get());
-        deskRecipe(consumer, ModBlockRegistry.SCHOOL_DESK_WILLOW.get().asItem().getDefaultInstance(),
+        deskRecipe(consumer, TBABlocks.SCHOOL_DESK_WILLOW.get().asItem().getDefaultInstance(),
                 BOPBlocks.WILLOW_PLANKS.get(), BOPBlocks.WILLOW_SLAB.get());
-        deskCabinetRecipe(consumer, ModBlockRegistry.SCHOOL_DESK_CABINET_WILLOW.get().asItem().getDefaultInstance(),
+        deskCabinetRecipe(consumer, TBABlocks.SCHOOL_DESK_CABINET_WILLOW.get().asItem().getDefaultInstance(),
                 BOPBlocks.WILLOW_LOG.get(), BOPBlocks.WILLOW_PLANKS.get());
-        lockerRecipe(consumer, ModBlockRegistry.LOCKER_WILLOW.get().asItem().getDefaultInstance(),
+        lockerRecipe(consumer, TBABlocks.LOCKER_WILLOW.get().asItem().getDefaultInstance(),
                 BOPBlocks.WILLOW_LOG.get(), BOPBlocks.WILLOW_SLAB.get());
-        tableRecipe(consumer, ModBlockRegistry.TABLE_WILLOW.get().asItem().getDefaultInstance(),
+        tableRecipe(consumer, TBABlocks.TABLE_WILLOW.get().asItem().getDefaultInstance(),
                 BOPBlocks.WILLOW_LOG.get(), BOPBlocks.STRIPPED_WILLOW_LOG.get(), BOPBlocks.WILLOW_SLAB.get());
-        bookcaseRecipe(consumer, ModBlockRegistry.BOOKCASE_WILLOW.get().asItem().getDefaultInstance(),
+        bookcaseRecipe(consumer, TBABlocks.BOOKCASE_WILLOW.get().asItem().getDefaultInstance(),
                 BOPBlocks.WILLOW_LOG.get(), BOPBlocks.STRIPPED_WILLOW_LOG.get(), BOPBlocks.WILLOW_SLAB.get());
 
-        chairRecipe(consumer, ModBlockRegistry.DESK_CHAIR_DEAD.get().asItem().getDefaultInstance(),
+        chairRecipe(consumer, TBABlocks.DESK_CHAIR_DEAD.get().asItem().getDefaultInstance(),
                 BOPBlocks.DEAD_LOG.get(), BOPBlocks.STRIPPED_DEAD_LOG.get(), BOPBlocks.DEAD_SLAB.get());
-        benchRecipe(consumer, ModBlockRegistry.PARK_BENCH_DEAD.get().asItem().getDefaultInstance(),
+        benchRecipe(consumer, TBABlocks.PARK_BENCH_DEAD.get().asItem().getDefaultInstance(),
                 BOPBlocks.DEAD_LOG.get(), BOPBlocks.DEAD_SLAB.get());
-        deskRecipe(consumer, ModBlockRegistry.SCHOOL_DESK_DEAD.get().asItem().getDefaultInstance(),
+        deskRecipe(consumer, TBABlocks.SCHOOL_DESK_DEAD.get().asItem().getDefaultInstance(),
                 BOPBlocks.DEAD_PLANKS.get(), BOPBlocks.DEAD_SLAB.get());
-        deskCabinetRecipe(consumer, ModBlockRegistry.SCHOOL_DESK_CABINET_DEAD.get().asItem().getDefaultInstance(),
+        deskCabinetRecipe(consumer, TBABlocks.SCHOOL_DESK_CABINET_DEAD.get().asItem().getDefaultInstance(),
                 BOPBlocks.DEAD_LOG.get(), BOPBlocks.DEAD_PLANKS.get());
-        lockerRecipe(consumer, ModBlockRegistry.LOCKER_DEAD.get().asItem().getDefaultInstance(),
+        lockerRecipe(consumer, TBABlocks.LOCKER_DEAD.get().asItem().getDefaultInstance(),
                 BOPBlocks.DEAD_LOG.get(), BOPBlocks.DEAD_SLAB.get());
-        tableRecipe(consumer, ModBlockRegistry.TABLE_DEAD.get().asItem().getDefaultInstance(),
+        tableRecipe(consumer, TBABlocks.TABLE_DEAD.get().asItem().getDefaultInstance(),
                 BOPBlocks.DEAD_LOG.get(), BOPBlocks.STRIPPED_DEAD_LOG.get(), BOPBlocks.DEAD_SLAB.get());
-        bookcaseRecipe(consumer, ModBlockRegistry.BOOKCASE_DEAD.get().asItem().getDefaultInstance(),
+        bookcaseRecipe(consumer, TBABlocks.BOOKCASE_DEAD.get().asItem().getDefaultInstance(),
                 BOPBlocks.DEAD_LOG.get(), BOPBlocks.STRIPPED_DEAD_LOG.get(), BOPBlocks.DEAD_SLAB.get());
 
-        chairRecipe(consumer, ModBlockRegistry.DESK_CHAIR_MAGIC.get().asItem().getDefaultInstance(),
+        chairRecipe(consumer, TBABlocks.DESK_CHAIR_MAGIC.get().asItem().getDefaultInstance(),
                 BOPBlocks.MAGIC_LOG.get(), BOPBlocks.STRIPPED_MAGIC_LOG.get(), BOPBlocks.MAGIC_SLAB.get());
-        benchRecipe(consumer, ModBlockRegistry.PARK_BENCH_MAGIC.get().asItem().getDefaultInstance(),
+        benchRecipe(consumer, TBABlocks.PARK_BENCH_MAGIC.get().asItem().getDefaultInstance(),
                 BOPBlocks.MAGIC_LOG.get(), BOPBlocks.MAGIC_SLAB.get());
-        deskRecipe(consumer, ModBlockRegistry.SCHOOL_DESK_MAGIC.get().asItem().getDefaultInstance(),
+        deskRecipe(consumer, TBABlocks.SCHOOL_DESK_MAGIC.get().asItem().getDefaultInstance(),
                 BOPBlocks.MAGIC_PLANKS.get(), BOPBlocks.MAGIC_SLAB.get());
-        deskCabinetRecipe(consumer, ModBlockRegistry.SCHOOL_DESK_CABINET_MAGIC.get().asItem().getDefaultInstance(),
+        deskCabinetRecipe(consumer, TBABlocks.SCHOOL_DESK_CABINET_MAGIC.get().asItem().getDefaultInstance(),
                 BOPBlocks.MAGIC_LOG.get(), BOPBlocks.MAGIC_PLANKS.get());
-        lockerRecipe(consumer, ModBlockRegistry.LOCKER_MAGIC.get().asItem().getDefaultInstance(),
+        lockerRecipe(consumer, TBABlocks.LOCKER_MAGIC.get().asItem().getDefaultInstance(),
                 BOPBlocks.MAGIC_LOG.get(), BOPBlocks.MAGIC_SLAB.get());
-        tableRecipe(consumer, ModBlockRegistry.TABLE_MAGIC.get().asItem().getDefaultInstance(),
+        tableRecipe(consumer, TBABlocks.TABLE_MAGIC.get().asItem().getDefaultInstance(),
                 BOPBlocks.MAGIC_LOG.get(), BOPBlocks.STRIPPED_MAGIC_LOG.get(), BOPBlocks.MAGIC_SLAB.get());
-        bookcaseRecipe(consumer, ModBlockRegistry.BOOKCASE_MAGIC.get().asItem().getDefaultInstance(),
+        bookcaseRecipe(consumer, TBABlocks.BOOKCASE_MAGIC.get().asItem().getDefaultInstance(),
                 BOPBlocks.MAGIC_LOG.get(), BOPBlocks.STRIPPED_MAGIC_LOG.get(), BOPBlocks.MAGIC_SLAB.get());
 
-        chairRecipe(consumer, ModBlockRegistry.DESK_CHAIR_UMBRAN.get().asItem().getDefaultInstance(),
+        chairRecipe(consumer, TBABlocks.DESK_CHAIR_UMBRAN.get().asItem().getDefaultInstance(),
                 BOPBlocks.UMBRAN_LOG.get(), BOPBlocks.STRIPPED_UMBRAN_LOG.get(), BOPBlocks.UMBRAN_SLAB.get());
-        benchRecipe(consumer, ModBlockRegistry.PARK_BENCH_UMBRAN.get().asItem().getDefaultInstance(),
+        benchRecipe(consumer, TBABlocks.PARK_BENCH_UMBRAN.get().asItem().getDefaultInstance(),
                 BOPBlocks.UMBRAN_LOG.get(), BOPBlocks.UMBRAN_SLAB.get());
-        deskRecipe(consumer, ModBlockRegistry.SCHOOL_DESK_UMBRAN.get().asItem().getDefaultInstance(),
+        deskRecipe(consumer, TBABlocks.SCHOOL_DESK_UMBRAN.get().asItem().getDefaultInstance(),
                 BOPBlocks.UMBRAN_PLANKS.get(), BOPBlocks.UMBRAN_SLAB.get());
-        deskCabinetRecipe(consumer, ModBlockRegistry.SCHOOL_DESK_CABINET_UMBRAN.get().asItem().getDefaultInstance(),
+        deskCabinetRecipe(consumer, TBABlocks.SCHOOL_DESK_CABINET_UMBRAN.get().asItem().getDefaultInstance(),
                 BOPBlocks.UMBRAN_LOG.get(), BOPBlocks.UMBRAN_PLANKS.get());
-        lockerRecipe(consumer, ModBlockRegistry.LOCKER_UMBRAN.get().asItem().getDefaultInstance(),
+        lockerRecipe(consumer, TBABlocks.LOCKER_UMBRAN.get().asItem().getDefaultInstance(),
                 BOPBlocks.UMBRAN_LOG.get(), BOPBlocks.UMBRAN_SLAB.get());
-        tableRecipe(consumer, ModBlockRegistry.TABLE_UMBRAN.get().asItem().getDefaultInstance(),
+        tableRecipe(consumer, TBABlocks.TABLE_UMBRAN.get().asItem().getDefaultInstance(),
                 BOPBlocks.UMBRAN_LOG.get(), BOPBlocks.STRIPPED_UMBRAN_LOG.get(), BOPBlocks.UMBRAN_SLAB.get());
-        bookcaseRecipe(consumer, ModBlockRegistry.BOOKCASE_UMBRAN.get().asItem().getDefaultInstance(),
+        bookcaseRecipe(consumer, TBABlocks.BOOKCASE_UMBRAN.get().asItem().getDefaultInstance(),
                 BOPBlocks.UMBRAN_LOG.get(), BOPBlocks.STRIPPED_UMBRAN_LOG.get(), BOPBlocks.UMBRAN_SLAB.get());
 
-        chairRecipe(consumer, ModBlockRegistry.DESK_CHAIR_HELLBARK.get().asItem().getDefaultInstance(),
+        chairRecipe(consumer, TBABlocks.DESK_CHAIR_HELLBARK.get().asItem().getDefaultInstance(),
                 BOPBlocks.HELLBARK_LOG.get(), BOPBlocks.STRIPPED_HELLBARK_LOG.get(), BOPBlocks.HELLBARK_SLAB.get());
-        benchRecipe(consumer, ModBlockRegistry.PARK_BENCH_HELLBARK.get().asItem().getDefaultInstance(),
+        benchRecipe(consumer, TBABlocks.PARK_BENCH_HELLBARK.get().asItem().getDefaultInstance(),
                 BOPBlocks.HELLBARK_LOG.get(), BOPBlocks.HELLBARK_SLAB.get());
-        deskRecipe(consumer, ModBlockRegistry.SCHOOL_DESK_HELLBARK.get().asItem().getDefaultInstance(),
+        deskRecipe(consumer, TBABlocks.SCHOOL_DESK_HELLBARK.get().asItem().getDefaultInstance(),
                 BOPBlocks.HELLBARK_PLANKS.get(), BOPBlocks.HELLBARK_SLAB.get());
-        deskCabinetRecipe(consumer, ModBlockRegistry.SCHOOL_DESK_CABINET_HELLBARK.get().asItem().getDefaultInstance(),
+        deskCabinetRecipe(consumer, TBABlocks.SCHOOL_DESK_CABINET_HELLBARK.get().asItem().getDefaultInstance(),
                 BOPBlocks.HELLBARK_LOG.get(), BOPBlocks.HELLBARK_PLANKS.get());
-        lockerRecipe(consumer, ModBlockRegistry.LOCKER_HELLBARK.get().asItem().getDefaultInstance(),
+        lockerRecipe(consumer, TBABlocks.LOCKER_HELLBARK.get().asItem().getDefaultInstance(),
                 BOPBlocks.HELLBARK_LOG.get(), BOPBlocks.HELLBARK_SLAB.get());
-        tableRecipe(consumer, ModBlockRegistry.TABLE_HELLBARK.get().asItem().getDefaultInstance(),
+        tableRecipe(consumer, TBABlocks.TABLE_HELLBARK.get().asItem().getDefaultInstance(),
                 BOPBlocks.HELLBARK_LOG.get(), BOPBlocks.STRIPPED_HELLBARK_LOG.get(), BOPBlocks.HELLBARK_SLAB.get());
-        bookcaseRecipe(consumer, ModBlockRegistry.BOOKCASE_HELLBARK.get().asItem().getDefaultInstance(),
+        bookcaseRecipe(consumer, TBABlocks.BOOKCASE_HELLBARK.get().asItem().getDefaultInstance(),
                 BOPBlocks.HELLBARK_LOG.get(), BOPBlocks.STRIPPED_HELLBARK_LOG.get(), BOPBlocks.HELLBARK_SLAB.get());
 
-        chairRecipe(consumer, ModBlockRegistry.DESK_CHAIR_COCONUT.get().asItem().getDefaultInstance(),
+        chairRecipe(consumer, TBABlocks.DESK_CHAIR_COCONUT.get().asItem().getDefaultInstance(),
                 samebutdifferent.ecologics.registry.ModBlocks.COCONUT_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.STRIPPED_COCONUT_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.COCONUT_SLAB.get());
-        benchRecipe(consumer, ModBlockRegistry.PARK_BENCH_COCONUT.get().asItem().getDefaultInstance(),
+        benchRecipe(consumer, TBABlocks.PARK_BENCH_COCONUT.get().asItem().getDefaultInstance(),
                 samebutdifferent.ecologics.registry.ModBlocks.COCONUT_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.COCONUT_SLAB.get());
-        deskRecipe(consumer, ModBlockRegistry.SCHOOL_DESK_COCONUT.get().asItem().getDefaultInstance(),
+        deskRecipe(consumer, TBABlocks.SCHOOL_DESK_COCONUT.get().asItem().getDefaultInstance(),
                 samebutdifferent.ecologics.registry.ModBlocks.COCONUT_PLANKS.get(), samebutdifferent.ecologics.registry.ModBlocks.COCONUT_SLAB.get());
-        deskCabinetRecipe(consumer, ModBlockRegistry.SCHOOL_DESK_CABINET_COCONUT.get().asItem().getDefaultInstance(),
+        deskCabinetRecipe(consumer, TBABlocks.SCHOOL_DESK_CABINET_COCONUT.get().asItem().getDefaultInstance(),
                 samebutdifferent.ecologics.registry.ModBlocks.COCONUT_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.COCONUT_PLANKS.get());
-        lockerRecipe(consumer, ModBlockRegistry.LOCKER_COCONUT.get().asItem().getDefaultInstance(),
+        lockerRecipe(consumer, TBABlocks.LOCKER_COCONUT.get().asItem().getDefaultInstance(),
                 samebutdifferent.ecologics.registry.ModBlocks.COCONUT_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.COCONUT_SLAB.get());
-        tableRecipe(consumer, ModBlockRegistry.TABLE_COCONUT.get().asItem().getDefaultInstance(),
+        tableRecipe(consumer, TBABlocks.TABLE_COCONUT.get().asItem().getDefaultInstance(),
                 samebutdifferent.ecologics.registry.ModBlocks.COCONUT_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.STRIPPED_COCONUT_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.COCONUT_SLAB.get());
-        bookcaseRecipe(consumer, ModBlockRegistry.BOOKCASE_COCONUT.get().asItem().getDefaultInstance(),
+        bookcaseRecipe(consumer, TBABlocks.BOOKCASE_COCONUT.get().asItem().getDefaultInstance(),
                 samebutdifferent.ecologics.registry.ModBlocks.COCONUT_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.STRIPPED_COCONUT_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.COCONUT_SLAB.get());
 
-        chairRecipe(consumer, ModBlockRegistry.DESK_CHAIR_WALNUT.get().asItem().getDefaultInstance(),
+        chairRecipe(consumer, TBABlocks.DESK_CHAIR_WALNUT.get().asItem().getDefaultInstance(),
                 samebutdifferent.ecologics.registry.ModBlocks.WALNUT_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.STRIPPED_WALNUT_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.WALNUT_SLAB.get());
-        benchRecipe(consumer, ModBlockRegistry.PARK_BENCH_WALNUT.get().asItem().getDefaultInstance(),
+        benchRecipe(consumer, TBABlocks.PARK_BENCH_WALNUT.get().asItem().getDefaultInstance(),
                 samebutdifferent.ecologics.registry.ModBlocks.WALNUT_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.WALNUT_SLAB.get());
-        deskRecipe(consumer, ModBlockRegistry.SCHOOL_DESK_WALNUT.get().asItem().getDefaultInstance(),
+        deskRecipe(consumer, TBABlocks.SCHOOL_DESK_WALNUT.get().asItem().getDefaultInstance(),
                 samebutdifferent.ecologics.registry.ModBlocks.WALNUT_PLANKS.get(), samebutdifferent.ecologics.registry.ModBlocks.WALNUT_SLAB.get());
-        deskCabinetRecipe(consumer, ModBlockRegistry.SCHOOL_DESK_CABINET_WALNUT.get().asItem().getDefaultInstance(),
+        deskCabinetRecipe(consumer, TBABlocks.SCHOOL_DESK_CABINET_WALNUT.get().asItem().getDefaultInstance(),
                 samebutdifferent.ecologics.registry.ModBlocks.WALNUT_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.WALNUT_PLANKS.get());
-        lockerRecipe(consumer, ModBlockRegistry.LOCKER_WALNUT.get().asItem().getDefaultInstance(),
+        lockerRecipe(consumer, TBABlocks.LOCKER_WALNUT.get().asItem().getDefaultInstance(),
                 samebutdifferent.ecologics.registry.ModBlocks.WALNUT_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.WALNUT_SLAB.get());
-        tableRecipe(consumer, ModBlockRegistry.TABLE_WALNUT.get().asItem().getDefaultInstance(),
+        tableRecipe(consumer, TBABlocks.TABLE_WALNUT.get().asItem().getDefaultInstance(),
                 samebutdifferent.ecologics.registry.ModBlocks.WALNUT_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.STRIPPED_WALNUT_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.WALNUT_SLAB.get());
-        bookcaseRecipe(consumer, ModBlockRegistry.BOOKCASE_WALNUT.get().asItem().getDefaultInstance(),
+        bookcaseRecipe(consumer, TBABlocks.BOOKCASE_WALNUT.get().asItem().getDefaultInstance(),
                 samebutdifferent.ecologics.registry.ModBlocks.WALNUT_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.STRIPPED_WALNUT_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.WALNUT_SLAB.get());
 
-        chairRecipe(consumer, ModBlockRegistry.DESK_CHAIR_AZALEA.get().asItem().getDefaultInstance(),
+        chairRecipe(consumer, TBABlocks.DESK_CHAIR_AZALEA.get().asItem().getDefaultInstance(),
                 samebutdifferent.ecologics.registry.ModBlocks.AZALEA_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.STRIPPED_AZALEA_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.AZALEA_SLAB.get());
-        benchRecipe(consumer, ModBlockRegistry.PARK_BENCH_AZALEA.get().asItem().getDefaultInstance(),
+        benchRecipe(consumer, TBABlocks.PARK_BENCH_AZALEA.get().asItem().getDefaultInstance(),
                 samebutdifferent.ecologics.registry.ModBlocks.AZALEA_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.AZALEA_SLAB.get());
-        deskRecipe(consumer, ModBlockRegistry.SCHOOL_DESK_AZALEA.get().asItem().getDefaultInstance(),
+        deskRecipe(consumer, TBABlocks.SCHOOL_DESK_AZALEA.get().asItem().getDefaultInstance(),
                 samebutdifferent.ecologics.registry.ModBlocks.AZALEA_PLANKS.get(), samebutdifferent.ecologics.registry.ModBlocks.AZALEA_SLAB.get());
-        deskCabinetRecipe(consumer, ModBlockRegistry.SCHOOL_DESK_CABINET_AZALEA.get().asItem().getDefaultInstance(),
+        deskCabinetRecipe(consumer, TBABlocks.SCHOOL_DESK_CABINET_AZALEA.get().asItem().getDefaultInstance(),
                 samebutdifferent.ecologics.registry.ModBlocks.AZALEA_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.AZALEA_PLANKS.get());
-        lockerRecipe(consumer, ModBlockRegistry.LOCKER_AZALEA.get().asItem().getDefaultInstance(),
+        lockerRecipe(consumer, TBABlocks.LOCKER_AZALEA.get().asItem().getDefaultInstance(),
                 samebutdifferent.ecologics.registry.ModBlocks.AZALEA_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.AZALEA_SLAB.get());
-        tableRecipe(consumer, ModBlockRegistry.TABLE_AZALEA.get().asItem().getDefaultInstance(),
+        tableRecipe(consumer, TBABlocks.TABLE_AZALEA.get().asItem().getDefaultInstance(),
                 samebutdifferent.ecologics.registry.ModBlocks.AZALEA_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.STRIPPED_AZALEA_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.AZALEA_SLAB.get());
-        bookcaseRecipe(consumer, ModBlockRegistry.BOOKCASE_AZALEA.get().asItem().getDefaultInstance(),
+        bookcaseRecipe(consumer, TBABlocks.BOOKCASE_AZALEA.get().asItem().getDefaultInstance(),
                 samebutdifferent.ecologics.registry.ModBlocks.AZALEA_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.STRIPPED_AZALEA_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.AZALEA_SLAB.get());
 
-        chairRecipe(consumer, ModBlockRegistry.DESK_CHAIR_FLOWERING_AZALEA.get().asItem().getDefaultInstance(),
+        chairRecipe(consumer, TBABlocks.DESK_CHAIR_FLOWERING_AZALEA.get().asItem().getDefaultInstance(),
                 samebutdifferent.ecologics.registry.ModBlocks.FLOWERING_AZALEA_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.STRIPPED_AZALEA_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.FLOWERING_AZALEA_SLAB.get());
-        benchRecipe(consumer, ModBlockRegistry.PARK_BENCH_FLOWERING_AZALEA.get().asItem().getDefaultInstance(),
+        benchRecipe(consumer, TBABlocks.PARK_BENCH_FLOWERING_AZALEA.get().asItem().getDefaultInstance(),
                 samebutdifferent.ecologics.registry.ModBlocks.FLOWERING_AZALEA_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.FLOWERING_AZALEA_SLAB.get());
-        deskRecipe(consumer, ModBlockRegistry.SCHOOL_DESK_FLOWERING_AZALEA.get().asItem().getDefaultInstance(),
+        deskRecipe(consumer, TBABlocks.SCHOOL_DESK_FLOWERING_AZALEA.get().asItem().getDefaultInstance(),
                 samebutdifferent.ecologics.registry.ModBlocks.FLOWERING_AZALEA_PLANKS.get(), samebutdifferent.ecologics.registry.ModBlocks.FLOWERING_AZALEA_SLAB.get());
-        deskCabinetRecipe(consumer, ModBlockRegistry.SCHOOL_DESK_CABINET_FLOWERING_AZALEA.get().asItem().getDefaultInstance(),
+        deskCabinetRecipe(consumer, TBABlocks.SCHOOL_DESK_CABINET_FLOWERING_AZALEA.get().asItem().getDefaultInstance(),
                 samebutdifferent.ecologics.registry.ModBlocks.FLOWERING_AZALEA_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.FLOWERING_AZALEA_PLANKS.get());
-        lockerRecipe(consumer, ModBlockRegistry.LOCKER_FLOWERING_AZALEA.get().asItem().getDefaultInstance(),
+        lockerRecipe(consumer, TBABlocks.LOCKER_FLOWERING_AZALEA.get().asItem().getDefaultInstance(),
                 samebutdifferent.ecologics.registry.ModBlocks.FLOWERING_AZALEA_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.FLOWERING_AZALEA_SLAB.get());
-        tableRecipe(consumer, ModBlockRegistry.TABLE_FLOWERING_AZALEA.get().asItem().getDefaultInstance(),
+        tableRecipe(consumer, TBABlocks.TABLE_FLOWERING_AZALEA.get().asItem().getDefaultInstance(),
                 samebutdifferent.ecologics.registry.ModBlocks.FLOWERING_AZALEA_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.STRIPPED_AZALEA_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.FLOWERING_AZALEA_SLAB.get());
-        bookcaseRecipe(consumer, ModBlockRegistry.BOOKCASE_FLOWERING_AZALEA.get().asItem().getDefaultInstance(),
+        bookcaseRecipe(consumer, TBABlocks.BOOKCASE_FLOWERING_AZALEA.get().asItem().getDefaultInstance(),
                 samebutdifferent.ecologics.registry.ModBlocks.FLOWERING_AZALEA_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.STRIPPED_AZALEA_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.FLOWERING_AZALEA_SLAB.get());
 
-        chairRecipe(consumer, ModBlockRegistry.DESK_CHAIR_GOLDEN_OAK.get().asItem().getDefaultInstance(),
+        chairRecipe(consumer, TBABlocks.DESK_CHAIR_GOLDEN_OAK.get().asItem().getDefaultInstance(),
                 AetherBlocks.GOLDEN_OAK_LOG.get(), AetherBlocks.STRIPPED_SKYROOT_LOG.get(), AetherBlocks.SKYROOT_SLAB.get());
-        benchRecipe(consumer, ModBlockRegistry.PARK_BENCH_GOLDEN_OAK.get().asItem().getDefaultInstance(),
+        benchRecipe(consumer, TBABlocks.PARK_BENCH_GOLDEN_OAK.get().asItem().getDefaultInstance(),
                 AetherBlocks.GOLDEN_OAK_LOG.get(), AetherBlocks.SKYROOT_SLAB.get());
-        deskRecipe(consumer, ModBlockRegistry.SCHOOL_DESK_GOLDEN_OAK.get().asItem().getDefaultInstance(),
+        deskRecipe(consumer, TBABlocks.SCHOOL_DESK_GOLDEN_OAK.get().asItem().getDefaultInstance(),
                 AetherBlocks.SKYROOT_PLANKS.get(), AetherBlocks.SKYROOT_SLAB.get());
-        deskCabinetRecipe(consumer, ModBlockRegistry.SCHOOL_DESK_CABINET_GOLDEN_OAK.get().asItem().getDefaultInstance(),
+        deskCabinetRecipe(consumer, TBABlocks.SCHOOL_DESK_CABINET_GOLDEN_OAK.get().asItem().getDefaultInstance(),
                 AetherBlocks.GOLDEN_OAK_LOG.get(), AetherBlocks.SKYROOT_PLANKS.get());
-        lockerRecipe(consumer, ModBlockRegistry.LOCKER_GOLDEN_OAK.get().asItem().getDefaultInstance(),
+        lockerRecipe(consumer, TBABlocks.LOCKER_GOLDEN_OAK.get().asItem().getDefaultInstance(),
                 AetherBlocks.GOLDEN_OAK_LOG.get(), AetherBlocks.SKYROOT_SLAB.get());
-        tableRecipe(consumer, ModBlockRegistry.TABLE_GOLDEN_OAK.get().asItem().getDefaultInstance(),
+        tableRecipe(consumer, TBABlocks.TABLE_GOLDEN_OAK.get().asItem().getDefaultInstance(),
                 AetherBlocks.GOLDEN_OAK_LOG.get(), AetherBlocks.STRIPPED_SKYROOT_LOG.get(), AetherBlocks.SKYROOT_SLAB.get());
-        bookcaseRecipe(consumer, ModBlockRegistry.BOOKCASE_GOLDEN_OAK.get().asItem().getDefaultInstance(),
+        bookcaseRecipe(consumer, TBABlocks.BOOKCASE_GOLDEN_OAK.get().asItem().getDefaultInstance(),
                 AetherBlocks.GOLDEN_OAK_LOG.get(), AetherBlocks.STRIPPED_SKYROOT_LOG.get(), AetherBlocks.SKYROOT_SLAB.get());
 
-        chairRecipe(consumer, ModBlockRegistry.DESK_CHAIR_AETHER_SKYROOT.get().asItem().getDefaultInstance(),
+        chairRecipe(consumer, TBABlocks.DESK_CHAIR_AETHER_SKYROOT.get().asItem().getDefaultInstance(),
                 AetherBlocks.SKYROOT_LOG.get(), AetherBlocks.STRIPPED_SKYROOT_LOG.get(), AetherBlocks.SKYROOT_SLAB.get());
-        benchRecipe(consumer, ModBlockRegistry.PARK_BENCH_AETHER_SKYROOT.get().asItem().getDefaultInstance(),
+        benchRecipe(consumer, TBABlocks.PARK_BENCH_AETHER_SKYROOT.get().asItem().getDefaultInstance(),
                 AetherBlocks.SKYROOT_LOG.get(), AetherBlocks.SKYROOT_SLAB.get());
-        deskRecipe(consumer, ModBlockRegistry.SCHOOL_DESK_AETHER_SKYROOT.get().asItem().getDefaultInstance(),
+        deskRecipe(consumer, TBABlocks.SCHOOL_DESK_AETHER_SKYROOT.get().asItem().getDefaultInstance(),
                 AetherBlocks.SKYROOT_PLANKS.get(), AetherBlocks.SKYROOT_SLAB.get());
-        deskCabinetRecipe(consumer, ModBlockRegistry.SCHOOL_DESK_CABINET_AETHER_SKYROOT.get().asItem().getDefaultInstance(),
+        deskCabinetRecipe(consumer, TBABlocks.SCHOOL_DESK_CABINET_AETHER_SKYROOT.get().asItem().getDefaultInstance(),
                 AetherBlocks.SKYROOT_LOG.get(), AetherBlocks.SKYROOT_PLANKS.get());
-        lockerRecipe(consumer, ModBlockRegistry.LOCKER_AETHER_SKYROOT.get().asItem().getDefaultInstance(),
+        lockerRecipe(consumer, TBABlocks.LOCKER_AETHER_SKYROOT.get().asItem().getDefaultInstance(),
                 AetherBlocks.SKYROOT_LOG.get(), AetherBlocks.SKYROOT_SLAB.get());
-        tableRecipe(consumer, ModBlockRegistry.TABLE_AETHER_SKYROOT.get().asItem().getDefaultInstance(),
+        tableRecipe(consumer, TBABlocks.TABLE_AETHER_SKYROOT.get().asItem().getDefaultInstance(),
                 AetherBlocks.SKYROOT_LOG.get(), AetherBlocks.STRIPPED_SKYROOT_LOG.get(), AetherBlocks.SKYROOT_SLAB.get());
-        bookcaseRecipe(consumer, ModBlockRegistry.BOOKCASE_AETHER_SKYROOT.get().asItem().getDefaultInstance(),
+        bookcaseRecipe(consumer, TBABlocks.BOOKCASE_AETHER_SKYROOT.get().asItem().getDefaultInstance(),
                 AetherBlocks.SKYROOT_LOG.get(), AetherBlocks.STRIPPED_SKYROOT_LOG.get(), AetherBlocks.SKYROOT_SLAB.get());
 
-        chairRecipe(consumer, ModBlockRegistry.DESK_CHAIR_PREAM.get().asItem().getDefaultInstance(),
+        chairRecipe(consumer, TBABlocks.DESK_CHAIR_PREAM.get().asItem().getDefaultInstance(),
                 PhantasmModBlocks.PREAM_LOG.get(), PhantasmModBlocks.STRIPPED_PREAM_LOG.get(), PhantasmModBlocks.PREAM_SLAB.get());
-        benchRecipe(consumer, ModBlockRegistry.PARK_BENCH_PREAM.get().asItem().getDefaultInstance(),
+        benchRecipe(consumer, TBABlocks.PARK_BENCH_PREAM.get().asItem().getDefaultInstance(),
                 PhantasmModBlocks.PREAM_LOG.get(), PhantasmModBlocks.PREAM_SLAB.get());
-        deskRecipe(consumer, ModBlockRegistry.SCHOOL_DESK_PREAM.get().asItem().getDefaultInstance(),
+        deskRecipe(consumer, TBABlocks.SCHOOL_DESK_PREAM.get().asItem().getDefaultInstance(),
                 PhantasmModBlocks.PREAM_PLANKS.get(), PhantasmModBlocks.PREAM_SLAB.get());
-        deskCabinetRecipe(consumer, ModBlockRegistry.SCHOOL_DESK_CABINET_PREAM.get().asItem().getDefaultInstance(),
+        deskCabinetRecipe(consumer, TBABlocks.SCHOOL_DESK_CABINET_PREAM.get().asItem().getDefaultInstance(),
                 PhantasmModBlocks.PREAM_LOG.get(), PhantasmModBlocks.PREAM_PLANKS.get());
-        lockerRecipe(consumer, ModBlockRegistry.LOCKER_PREAM.get().asItem().getDefaultInstance(),
+        lockerRecipe(consumer, TBABlocks.LOCKER_PREAM.get().asItem().getDefaultInstance(),
                 PhantasmModBlocks.PREAM_LOG.get(), PhantasmModBlocks.PREAM_SLAB.get());
-        tableRecipe(consumer, ModBlockRegistry.TABLE_PREAM.get().asItem().getDefaultInstance(),
+        tableRecipe(consumer, TBABlocks.TABLE_PREAM.get().asItem().getDefaultInstance(),
                 PhantasmModBlocks.PREAM_LOG.get(), PhantasmModBlocks.STRIPPED_PREAM_LOG.get(), PhantasmModBlocks.PREAM_SLAB.get());
-        bookcaseRecipe(consumer, ModBlockRegistry.BOOKCASE_PREAM.get().asItem().getDefaultInstance(),
+        bookcaseRecipe(consumer, TBABlocks.BOOKCASE_PREAM.get().asItem().getDefaultInstance(),
                 PhantasmModBlocks.PREAM_LOG.get(), PhantasmModBlocks.STRIPPED_PREAM_LOG.get(), PhantasmModBlocks.PREAM_SLAB.get());
 
-        chairRecipe(consumer, ModBlockRegistry.DESK_CHAIR_EBONY.get().asItem().getDefaultInstance(),
+        chairRecipe(consumer, TBABlocks.DESK_CHAIR_EBONY.get().asItem().getDefaultInstance(),
                 PhantasmModBlocks.EBONY_WOOD.get(), PhantasmModBlocks.STRIPPED_EBONY_WOOD.get(), PhantasmModBlocks.EBONY_SLAB.get());
-        benchRecipe(consumer, ModBlockRegistry.PARK_BENCH_EBONY.get().asItem().getDefaultInstance(),
+        benchRecipe(consumer, TBABlocks.PARK_BENCH_EBONY.get().asItem().getDefaultInstance(),
                 PhantasmModBlocks.EBONY_WOOD.get(), PhantasmModBlocks.EBONY_SLAB.get());
-        deskRecipe(consumer, ModBlockRegistry.SCHOOL_DESK_EBONY.get().asItem().getDefaultInstance(),
+        deskRecipe(consumer, TBABlocks.SCHOOL_DESK_EBONY.get().asItem().getDefaultInstance(),
                 PhantasmModBlocks.EBONY_PLANKS.get(), PhantasmModBlocks.EBONY_SLAB.get());
-        deskCabinetRecipe(consumer, ModBlockRegistry.SCHOOL_DESK_CABINET_EBONY.get().asItem().getDefaultInstance(),
+        deskCabinetRecipe(consumer, TBABlocks.SCHOOL_DESK_CABINET_EBONY.get().asItem().getDefaultInstance(),
                 PhantasmModBlocks.EBONY_WOOD.get(), PhantasmModBlocks.EBONY_PLANKS.get());
-        lockerRecipe(consumer, ModBlockRegistry.LOCKER_EBONY.get().asItem().getDefaultInstance(),
+        lockerRecipe(consumer, TBABlocks.LOCKER_EBONY.get().asItem().getDefaultInstance(),
                 PhantasmModBlocks.EBONY_WOOD.get(), PhantasmModBlocks.EBONY_SLAB.get());
-        tableRecipe(consumer, ModBlockRegistry.TABLE_EBONY.get().asItem().getDefaultInstance(),
+        tableRecipe(consumer, TBABlocks.TABLE_EBONY.get().asItem().getDefaultInstance(),
                 PhantasmModBlocks.EBONY_WOOD.get(), PhantasmModBlocks.STRIPPED_EBONY_WOOD.get(), PhantasmModBlocks.EBONY_SLAB.get());
-        bookcaseRecipe(consumer, ModBlockRegistry.BOOKCASE_EBONY.get().asItem().getDefaultInstance(),
+        bookcaseRecipe(consumer, TBABlocks.BOOKCASE_EBONY.get().asItem().getDefaultInstance(),
                 PhantasmModBlocks.EBONY_WOOD.get(), PhantasmModBlocks.STRIPPED_EBONY_WOOD.get(), PhantasmModBlocks.EBONY_SLAB.get());
 
-        chairRecipe(consumer, ModBlockRegistry.DESK_CHAIR_CHORUS_NEST.get().asItem().getDefaultInstance(),
+        chairRecipe(consumer, TBABlocks.DESK_CHAIR_CHORUS_NEST.get().asItem().getDefaultInstance(),
                 UnusualendModBlocks.CHORUS_NEST_PLANKS.get(), UnusualendModBlocks.STRIPPED_CHORUS_NEST_PLANKS.get(), UnusualendModBlocks.CHORUS_NEST_SLAB.get());
-        benchRecipe(consumer, ModBlockRegistry.PARK_BENCH_CHORUS_NEST.get().asItem().getDefaultInstance(),
+        benchRecipe(consumer, TBABlocks.PARK_BENCH_CHORUS_NEST.get().asItem().getDefaultInstance(),
                 UnusualendModBlocks.CHORUS_NEST_PLANKS.get(), UnusualendModBlocks.CHORUS_NEST_SLAB.get());
-        deskRecipe(consumer, ModBlockRegistry.SCHOOL_DESK_CHORUS_NEST.get().asItem().getDefaultInstance(),
+        deskRecipe(consumer, TBABlocks.SCHOOL_DESK_CHORUS_NEST.get().asItem().getDefaultInstance(),
                 UnusualendModBlocks.CHORUS_NEST_PLANKS.get(), UnusualendModBlocks.CHORUS_NEST_SLAB.get());
-        deskCabinetRecipe(consumer, ModBlockRegistry.SCHOOL_DESK_CABINET_CHORUS_NEST.get().asItem().getDefaultInstance(),
+        deskCabinetRecipe(consumer, TBABlocks.SCHOOL_DESK_CABINET_CHORUS_NEST.get().asItem().getDefaultInstance(),
                 UnusualendModBlocks.CHORUS_NEST_PLANKS.get(), UnusualendModBlocks.CHORUS_NEST_PLANKS.get());
-        lockerRecipe(consumer, ModBlockRegistry.LOCKER_CHORUS_NEST.get().asItem().getDefaultInstance(),
+        lockerRecipe(consumer, TBABlocks.LOCKER_CHORUS_NEST.get().asItem().getDefaultInstance(),
                 UnusualendModBlocks.CHORUS_NEST_PLANKS.get(), UnusualendModBlocks.CHORUS_NEST_SLAB.get());
-        tableRecipe(consumer, ModBlockRegistry.TABLE_CHORUS_NEST.get().asItem().getDefaultInstance(),
+        tableRecipe(consumer, TBABlocks.TABLE_CHORUS_NEST.get().asItem().getDefaultInstance(),
                 UnusualendModBlocks.CHORUS_NEST_PLANKS.get(), UnusualendModBlocks.STRIPPED_CHORUS_NEST_PLANKS.get(), UnusualendModBlocks.CHORUS_NEST_SLAB.get());
-        bookcaseRecipe(consumer, ModBlockRegistry.BOOKCASE_CHORUS_NEST.get().asItem().getDefaultInstance(),
+        bookcaseRecipe(consumer, TBABlocks.BOOKCASE_CHORUS_NEST.get().asItem().getDefaultInstance(),
                 UnusualendModBlocks.CHORUS_NEST_PLANKS.get(), UnusualendModBlocks.STRIPPED_CHORUS_NEST_PLANKS.get(), UnusualendModBlocks.CHORUS_NEST_SLAB.get());
 
-        chairTagRecipe(consumer, ModBlockRegistry.DESK_CHAIR_BLOODSHROOM.get().asItem().getDefaultInstance(),
-                PackTags.Items.BLOODSHROOM_LOG, PackTags.Items.BLOODSHROOM_STRIPPED_LOG, PackTags.Items.BLOODSHROOM_SLAB);
-        benchTagRecipe(consumer, ModBlockRegistry.PARK_BENCH_BLOODSHROOM.get().asItem().getDefaultInstance(),
-                PackTags.Items.BLOODSHROOM_LOG, PackTags.Items.BLOODSHROOM_SLAB);
-        deskTagRecipe(consumer, ModBlockRegistry.SCHOOL_DESK_BLOODSHROOM.get().asItem().getDefaultInstance(),
-                PackTags.Items.BLOODSHROOM_PLANKS, PackTags.Items.BLOODSHROOM_SLAB);
-        deskTagCabinetRecipe(consumer, ModBlockRegistry.SCHOOL_DESK_CABINET_BLOODSHROOM.get().asItem().getDefaultInstance(),
-                PackTags.Items.BLOODSHROOM_LOG, PackTags.Items.BLOODSHROOM_PLANKS);
-        lockerTagRecipe(consumer, ModBlockRegistry.LOCKER_BLOODSHROOM.get().asItem().getDefaultInstance(),
-                PackTags.Items.BLOODSHROOM_LOG, PackTags.Items.BLOODSHROOM_SLAB);
-        tableTagRecipe(consumer, ModBlockRegistry.TABLE_BLOODSHROOM.get().asItem().getDefaultInstance(),
-                PackTags.Items.BLOODSHROOM_LOG, PackTags.Items.BLOODSHROOM_STRIPPED_LOG, PackTags.Items.BLOODSHROOM_SLAB);
-        bookcaseTagRecipe(consumer, ModBlockRegistry.BOOKCASE_BLOODSHROOM.get().asItem().getDefaultInstance(),
-                PackTags.Items.BLOODSHROOM_LOG, PackTags.Items.BLOODSHROOM_STRIPPED_LOG, PackTags.Items.BLOODSHROOM_SLAB);
+        chairTagRecipe(consumer, TBABlocks.DESK_CHAIR_BLOODSHROOM.get().asItem().getDefaultInstance(),
+                TBATags.Items.BLOODSHROOM_LOG, TBATags.Items.BLOODSHROOM_STRIPPED_LOG, TBATags.Items.BLOODSHROOM_SLAB);
+        benchTagRecipe(consumer, TBABlocks.PARK_BENCH_BLOODSHROOM.get().asItem().getDefaultInstance(),
+                TBATags.Items.BLOODSHROOM_LOG, TBATags.Items.BLOODSHROOM_SLAB);
+        deskTagRecipe(consumer, TBABlocks.SCHOOL_DESK_BLOODSHROOM.get().asItem().getDefaultInstance(),
+                TBATags.Items.BLOODSHROOM_PLANKS, TBATags.Items.BLOODSHROOM_SLAB);
+        deskTagCabinetRecipe(consumer, TBABlocks.SCHOOL_DESK_CABINET_BLOODSHROOM.get().asItem().getDefaultInstance(),
+                TBATags.Items.BLOODSHROOM_LOG, TBATags.Items.BLOODSHROOM_PLANKS);
+        lockerTagRecipe(consumer, TBABlocks.LOCKER_BLOODSHROOM.get().asItem().getDefaultInstance(),
+                TBATags.Items.BLOODSHROOM_LOG, TBATags.Items.BLOODSHROOM_SLAB);
+        tableTagRecipe(consumer, TBABlocks.TABLE_BLOODSHROOM.get().asItem().getDefaultInstance(),
+                TBATags.Items.BLOODSHROOM_LOG, TBATags.Items.BLOODSHROOM_STRIPPED_LOG, TBATags.Items.BLOODSHROOM_SLAB);
+        bookcaseTagRecipe(consumer, TBABlocks.BOOKCASE_BLOODSHROOM.get().asItem().getDefaultInstance(),
+                TBATags.Items.BLOODSHROOM_LOG, TBATags.Items.BLOODSHROOM_STRIPPED_LOG, TBATags.Items.BLOODSHROOM_SLAB);
 
-        chairTagRecipe(consumer, ModBlockRegistry.DESK_CHAIR_ENDERBARK.get().asItem().getDefaultInstance(),
-                PackTags.Items.ENDERBARK_LOG, PackTags.Items.ENDERBARK_STRIPPED_LOG, PackTags.Items.ENDERBARK_SLAB);
-        benchTagRecipe(consumer, ModBlockRegistry.PARK_BENCH_ENDERBARK.get().asItem().getDefaultInstance(),
-                PackTags.Items.ENDERBARK_LOG, PackTags.Items.ENDERBARK_SLAB);
-        deskTagRecipe(consumer, ModBlockRegistry.SCHOOL_DESK_ENDERBARK.get().asItem().getDefaultInstance(),
-                PackTags.Items.ENDERBARK_PLANKS, PackTags.Items.ENDERBARK_SLAB);
-        deskTagCabinetRecipe(consumer, ModBlockRegistry.SCHOOL_DESK_CABINET_ENDERBARK.get().asItem().getDefaultInstance(),
-                PackTags.Items.ENDERBARK_LOG, PackTags.Items.ENDERBARK_PLANKS);
-        lockerTagRecipe(consumer, ModBlockRegistry.LOCKER_ENDERBARK.get().asItem().getDefaultInstance(),
-                PackTags.Items.ENDERBARK_LOG, PackTags.Items.ENDERBARK_SLAB);
-        tableTagRecipe(consumer, ModBlockRegistry.TABLE_ENDERBARK.get().asItem().getDefaultInstance(),
-                PackTags.Items.ENDERBARK_LOG, PackTags.Items.ENDERBARK_STRIPPED_LOG, PackTags.Items.ENDERBARK_SLAB);
-        bookcaseTagRecipe(consumer, ModBlockRegistry.BOOKCASE_ENDERBARK.get().asItem().getDefaultInstance(),
-                PackTags.Items.ENDERBARK_LOG, PackTags.Items.ENDERBARK_STRIPPED_LOG, PackTags.Items.ENDERBARK_SLAB);
+        chairTagRecipe(consumer, TBABlocks.DESK_CHAIR_ENDERBARK.get().asItem().getDefaultInstance(),
+                TBATags.Items.ENDERBARK_LOG, TBATags.Items.ENDERBARK_STRIPPED_LOG, TBATags.Items.ENDERBARK_SLAB);
+        benchTagRecipe(consumer, TBABlocks.PARK_BENCH_ENDERBARK.get().asItem().getDefaultInstance(),
+                TBATags.Items.ENDERBARK_LOG, TBATags.Items.ENDERBARK_SLAB);
+        deskTagRecipe(consumer, TBABlocks.SCHOOL_DESK_ENDERBARK.get().asItem().getDefaultInstance(),
+                TBATags.Items.ENDERBARK_PLANKS, TBATags.Items.ENDERBARK_SLAB);
+        deskTagCabinetRecipe(consumer, TBABlocks.SCHOOL_DESK_CABINET_ENDERBARK.get().asItem().getDefaultInstance(),
+                TBATags.Items.ENDERBARK_LOG, TBATags.Items.ENDERBARK_PLANKS);
+        lockerTagRecipe(consumer, TBABlocks.LOCKER_ENDERBARK.get().asItem().getDefaultInstance(),
+                TBATags.Items.ENDERBARK_LOG, TBATags.Items.ENDERBARK_SLAB);
+        tableTagRecipe(consumer, TBABlocks.TABLE_ENDERBARK.get().asItem().getDefaultInstance(),
+                TBATags.Items.ENDERBARK_LOG, TBATags.Items.ENDERBARK_STRIPPED_LOG, TBATags.Items.ENDERBARK_SLAB);
+        bookcaseTagRecipe(consumer, TBABlocks.BOOKCASE_ENDERBARK.get().asItem().getDefaultInstance(),
+                TBATags.Items.ENDERBARK_LOG, TBATags.Items.ENDERBARK_STRIPPED_LOG, TBATags.Items.ENDERBARK_SLAB);
 
-        chairTagRecipe(consumer, ModBlockRegistry.DESK_CHAIR_GREENHEART.get().asItem().getDefaultInstance(),
-                PackTags.Items.GREENHEART_LOG, PackTags.Items.GREENHEART_STRIPPED_LOG, PackTags.Items.GREENHEART_SLAB);
-        benchTagRecipe(consumer, ModBlockRegistry.PARK_BENCH_GREENHEART.get().asItem().getDefaultInstance(),
-                PackTags.Items.GREENHEART_LOG, PackTags.Items.GREENHEART_SLAB);
-        deskTagRecipe(consumer, ModBlockRegistry.SCHOOL_DESK_GREENHEART.get().asItem().getDefaultInstance(),
-                PackTags.Items.GREENHEART_PLANKS, PackTags.Items.GREENHEART_SLAB);
-        deskTagCabinetRecipe(consumer, ModBlockRegistry.SCHOOL_DESK_CABINET_GREENHEART.get().asItem().getDefaultInstance(),
-                PackTags.Items.GREENHEART_LOG, PackTags.Items.GREENHEART_PLANKS);
-        lockerTagRecipe(consumer, ModBlockRegistry.LOCKER_GREENHEART.get().asItem().getDefaultInstance(),
-                PackTags.Items.GREENHEART_LOG, PackTags.Items.GREENHEART_SLAB);
-        tableTagRecipe(consumer, ModBlockRegistry.TABLE_GREENHEART.get().asItem().getDefaultInstance(),
-                PackTags.Items.GREENHEART_LOG, PackTags.Items.GREENHEART_STRIPPED_LOG, PackTags.Items.GREENHEART_SLAB);
-        bookcaseTagRecipe(consumer, ModBlockRegistry.BOOKCASE_GREENHEART.get().asItem().getDefaultInstance(),
-                PackTags.Items.GREENHEART_LOG, PackTags.Items.GREENHEART_STRIPPED_LOG, PackTags.Items.GREENHEART_SLAB);
+        chairTagRecipe(consumer, TBABlocks.DESK_CHAIR_GREENHEART.get().asItem().getDefaultInstance(),
+                TBATags.Items.GREENHEART_LOG, TBATags.Items.GREENHEART_STRIPPED_LOG, TBATags.Items.GREENHEART_SLAB);
+        benchTagRecipe(consumer, TBABlocks.PARK_BENCH_GREENHEART.get().asItem().getDefaultInstance(),
+                TBATags.Items.GREENHEART_LOG, TBATags.Items.GREENHEART_SLAB);
+        deskTagRecipe(consumer, TBABlocks.SCHOOL_DESK_GREENHEART.get().asItem().getDefaultInstance(),
+                TBATags.Items.GREENHEART_PLANKS, TBATags.Items.GREENHEART_SLAB);
+        deskTagCabinetRecipe(consumer, TBABlocks.SCHOOL_DESK_CABINET_GREENHEART.get().asItem().getDefaultInstance(),
+                TBATags.Items.GREENHEART_LOG, TBATags.Items.GREENHEART_PLANKS);
+        lockerTagRecipe(consumer, TBABlocks.LOCKER_GREENHEART.get().asItem().getDefaultInstance(),
+                TBATags.Items.GREENHEART_LOG, TBATags.Items.GREENHEART_SLAB);
+        tableTagRecipe(consumer, TBABlocks.TABLE_GREENHEART.get().asItem().getDefaultInstance(),
+                TBATags.Items.GREENHEART_LOG, TBATags.Items.GREENHEART_STRIPPED_LOG, TBATags.Items.GREENHEART_SLAB);
+        bookcaseTagRecipe(consumer, TBABlocks.BOOKCASE_GREENHEART.get().asItem().getDefaultInstance(),
+                TBATags.Items.GREENHEART_LOG, TBATags.Items.GREENHEART_STRIPPED_LOG, TBATags.Items.GREENHEART_SLAB);
 
-        chairTagRecipe(consumer, ModBlockRegistry.DESK_CHAIR_TINKER_SKYROOT.get().asItem().getDefaultInstance(),
-                PackTags.Items.TINKER_SKYROOT_LOG, PackTags.Items.TINKER_SKYROOT_STRIPPED_LOG, PackTags.Items.TINKER_SKYROOT_SLAB);
-        benchTagRecipe(consumer, ModBlockRegistry.PARK_BENCH_TINKER_SKYROOT.get().asItem().getDefaultInstance(),
-                PackTags.Items.TINKER_SKYROOT_LOG, PackTags.Items.TINKER_SKYROOT_SLAB);
-        deskTagRecipe(consumer, ModBlockRegistry.SCHOOL_DESK_TINKER_SKYROOT.get().asItem().getDefaultInstance(),
-                PackTags.Items.TINKER_SKYROOT_PLANKS, PackTags.Items.TINKER_SKYROOT_SLAB);
-        deskTagCabinetRecipe(consumer, ModBlockRegistry.SCHOOL_DESK_CABINET_TINKER_SKYROOT.get().asItem().getDefaultInstance(),
-                PackTags.Items.TINKER_SKYROOT_LOG, PackTags.Items.TINKER_SKYROOT_PLANKS);
-        lockerTagRecipe(consumer, ModBlockRegistry.LOCKER_TINKER_SKYROOT.get().asItem().getDefaultInstance(),
-                PackTags.Items.TINKER_SKYROOT_LOG, PackTags.Items.TINKER_SKYROOT_SLAB);
-        tableTagRecipe(consumer, ModBlockRegistry.TABLE_TINKER_SKYROOT.get().asItem().getDefaultInstance(),
-                PackTags.Items.TINKER_SKYROOT_LOG, PackTags.Items.TINKER_SKYROOT_STRIPPED_LOG, PackTags.Items.TINKER_SKYROOT_SLAB);
-        bookcaseTagRecipe(consumer, ModBlockRegistry.BOOKCASE_TINKER_SKYROOT.get().asItem().getDefaultInstance(),
-                PackTags.Items.TINKER_SKYROOT_LOG, PackTags.Items.TINKER_SKYROOT_STRIPPED_LOG, PackTags.Items.TINKER_SKYROOT_SLAB);
+        chairTagRecipe(consumer, TBABlocks.DESK_CHAIR_TINKER_SKYROOT.get().asItem().getDefaultInstance(),
+                TBATags.Items.TINKER_SKYROOT_LOG, TBATags.Items.TINKER_SKYROOT_STRIPPED_LOG, TBATags.Items.TINKER_SKYROOT_SLAB);
+        benchTagRecipe(consumer, TBABlocks.PARK_BENCH_TINKER_SKYROOT.get().asItem().getDefaultInstance(),
+                TBATags.Items.TINKER_SKYROOT_LOG, TBATags.Items.TINKER_SKYROOT_SLAB);
+        deskTagRecipe(consumer, TBABlocks.SCHOOL_DESK_TINKER_SKYROOT.get().asItem().getDefaultInstance(),
+                TBATags.Items.TINKER_SKYROOT_PLANKS, TBATags.Items.TINKER_SKYROOT_SLAB);
+        deskTagCabinetRecipe(consumer, TBABlocks.SCHOOL_DESK_CABINET_TINKER_SKYROOT.get().asItem().getDefaultInstance(),
+                TBATags.Items.TINKER_SKYROOT_LOG, TBATags.Items.TINKER_SKYROOT_PLANKS);
+        lockerTagRecipe(consumer, TBABlocks.LOCKER_TINKER_SKYROOT.get().asItem().getDefaultInstance(),
+                TBATags.Items.TINKER_SKYROOT_LOG, TBATags.Items.TINKER_SKYROOT_SLAB);
+        tableTagRecipe(consumer, TBABlocks.TABLE_TINKER_SKYROOT.get().asItem().getDefaultInstance(),
+                TBATags.Items.TINKER_SKYROOT_LOG, TBATags.Items.TINKER_SKYROOT_STRIPPED_LOG, TBATags.Items.TINKER_SKYROOT_SLAB);
+        bookcaseTagRecipe(consumer, TBABlocks.BOOKCASE_TINKER_SKYROOT.get().asItem().getDefaultInstance(),
+                TBATags.Items.TINKER_SKYROOT_LOG, TBATags.Items.TINKER_SKYROOT_STRIPPED_LOG, TBATags.Items.TINKER_SKYROOT_SLAB);
     }
 
     private void plateRecipe(Consumer<FinishedRecipe> consumer, ItemStack result, Item ingredient) {

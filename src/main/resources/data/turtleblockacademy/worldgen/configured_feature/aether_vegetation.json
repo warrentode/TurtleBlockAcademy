@@ -1,0 +1,30 @@
+{
+    "type": "minecraft:nether_forest_vegetation",
+    "config": {
+        "spread_height": 4,
+        "spread_width": 8,
+        "state_provider": {
+            "type": "minecraft:weighted_state_provider",
+            "entries": [
+                {
+                    "data": {
+                        "Name": "aether:purple_flower"
+                    },
+                    "weight": 25
+                },
+                {
+                    "data": {
+                        "Name": "aether:white_flower"
+                    },
+                    "weight": 25
+                },
+                {
+                    "data": {
+                        "Name": "aether:berry_bush"
+                    },
+                    "weight": 5
+                }
+            ]
+        }
+    }
+}

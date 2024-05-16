@@ -1,0 +1,14 @@
+{
+    "placement": {
+        "type": "minecraft:random_spread",
+        "salt": 1556583656,
+        "separation": 8,
+        "spacing": 24
+    },
+    "structures": [
+        {
+            "structure": "turtleblockacademy:camp_underground",
+            "weight": 1
+        }
+    ]
+}

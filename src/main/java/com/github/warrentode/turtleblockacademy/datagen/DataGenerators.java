@@ -7,10 +7,7 @@ import com.github.warrentode.turtleblockacademy.datagen.loot.ModLootProviders;
 import com.github.warrentode.turtleblockacademy.datagen.models.ModBlockStatesProvider;
 import com.github.warrentode.turtleblockacademy.datagen.models.ModItemModelProvider;
 import com.github.warrentode.turtleblockacademy.datagen.recipes.RecipesGen;
-import com.github.warrentode.turtleblockacademy.datagen.tags.BlockTagsGen;
-import com.github.warrentode.turtleblockacademy.datagen.tags.EntityTypeTagsGen;
-import com.github.warrentode.turtleblockacademy.datagen.tags.ItemTagsGen;
-import com.github.warrentode.turtleblockacademy.datagen.tags.StructureTagsGen;
+import com.github.warrentode.turtleblockacademy.datagen.tags.*;
 import net.minecraft.data.DataGenerator;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.data.event.GatherDataEvent;
@@ -33,6 +30,7 @@ public class DataGenerators {
         generator.addProvider(event.includeServer(), new ItemTagsGen(generator, blockTagsGen, MODID, helper));
         generator.addProvider(event.includeServer(), new EntityTypeTagsGen(generator, MODID, helper));
         generator.addProvider(event.includeServer(), new StructureTagsGen(generator, MODID, helper));
+        generator.addProvider(event.includeServer(), new BiomeTagsGen(generator, MODID, helper));
 
         generator.addProvider(event.includeServer(), new RecipesGen(generator));
 

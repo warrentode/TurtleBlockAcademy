@@ -1,6 +1,6 @@
 package com.github.warrentode.turtleblockacademy.datagen.models;
 
-import com.github.warrentode.turtleblockacademy.blocks.ModBlockRegistry;
+import com.github.warrentode.turtleblockacademy.blocks.TBABlocks;
 import net.minecraft.core.Direction;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.resources.ResourceLocation;
@@ -38,322 +38,322 @@ public class ModBlockStatesProvider extends BlockStateProvider {
 
     @Override
     protected void registerStatesAndModels() {
-        horizontalBlock(ModBlockRegistry.CERTIFICATE_BLOCK.get(), existingModel(ModBlockRegistry.CERTIFICATE_BLOCK.get()));
+        horizontalBlock(TBABlocks.CERTIFICATE_BLOCK.get(), existingModel(TBABlocks.CERTIFICATE_BLOCK.get()));
 
         processVariants(
-                ModBlockRegistry.DESK_CHAIR_ACACIA.get(),
-                ModBlockRegistry.TABLE_ACACIA.get(),
-                ModBlockRegistry.LOCKER_ACACIA.get(),
-                ModBlockRegistry.SCHOOL_DESK_CABINET_ACACIA.get(),
-                ModBlockRegistry.SCHOOL_DESK_ACACIA.get(),
-                ModBlockRegistry.PARK_BENCH_ACACIA.get(),
-                ModBlockRegistry.BOOKCASE_ACACIA.get(),
+                TBABlocks.DESK_CHAIR_ACACIA.get(),
+                TBABlocks.TABLE_ACACIA.get(),
+                TBABlocks.LOCKER_ACACIA.get(),
+                TBABlocks.SCHOOL_DESK_CABINET_ACACIA.get(),
+                TBABlocks.SCHOOL_DESK_ACACIA.get(),
+                TBABlocks.PARK_BENCH_ACACIA.get(),
+                TBABlocks.BOOKCASE_ACACIA.get(),
                 "minecraft", "acacia");
         processVariants(
-                ModBlockRegistry.DESK_CHAIR_BIRCH.get(),
-                ModBlockRegistry.TABLE_BIRCH.get(),
-                ModBlockRegistry.LOCKER_BIRCH.get(),
-                ModBlockRegistry.SCHOOL_DESK_CABINET_BIRCH.get(),
-                ModBlockRegistry.SCHOOL_DESK_BIRCH.get(),
-                ModBlockRegistry.PARK_BENCH_BIRCH.get(),
-                ModBlockRegistry.BOOKCASE_BIRCH.get(),
+                TBABlocks.DESK_CHAIR_BIRCH.get(),
+                TBABlocks.TABLE_BIRCH.get(),
+                TBABlocks.LOCKER_BIRCH.get(),
+                TBABlocks.SCHOOL_DESK_CABINET_BIRCH.get(),
+                TBABlocks.SCHOOL_DESK_BIRCH.get(),
+                TBABlocks.PARK_BENCH_BIRCH.get(),
+                TBABlocks.BOOKCASE_BIRCH.get(),
                 "minecraft", "birch");
         processVariants(
-                ModBlockRegistry.DESK_CHAIR_CRIMSON.get(),
-                ModBlockRegistry.TABLE_CRIMSON.get(),
-                ModBlockRegistry.LOCKER_CRIMSON.get(),
-                ModBlockRegistry.SCHOOL_DESK_CABINET_CRIMSON.get(),
-                ModBlockRegistry.SCHOOL_DESK_CRIMSON.get(),
-                ModBlockRegistry.PARK_BENCH_CRIMSON.get(),
-                ModBlockRegistry.BOOKCASE_CRIMSON.get(),
+                TBABlocks.DESK_CHAIR_CRIMSON.get(),
+                TBABlocks.TABLE_CRIMSON.get(),
+                TBABlocks.LOCKER_CRIMSON.get(),
+                TBABlocks.SCHOOL_DESK_CABINET_CRIMSON.get(),
+                TBABlocks.SCHOOL_DESK_CRIMSON.get(),
+                TBABlocks.PARK_BENCH_CRIMSON.get(),
+                TBABlocks.BOOKCASE_CRIMSON.get(),
                 "minecraft", "crimson");
         processVariants(
-                ModBlockRegistry.DESK_CHAIR_DARK_OAK.get(),
-                ModBlockRegistry.TABLE_DARK_OAK.get(),
-                ModBlockRegistry.LOCKER_DARK_OAK.get(),
-                ModBlockRegistry.SCHOOL_DESK_CABINET_DARK_OAK.get(),
-                ModBlockRegistry.SCHOOL_DESK_DARK_OAK.get(),
-                ModBlockRegistry.PARK_BENCH_DARK_OAK.get(),
-                ModBlockRegistry.BOOKCASE_DARK_OAK.get(),
+                TBABlocks.DESK_CHAIR_DARK_OAK.get(),
+                TBABlocks.TABLE_DARK_OAK.get(),
+                TBABlocks.LOCKER_DARK_OAK.get(),
+                TBABlocks.SCHOOL_DESK_CABINET_DARK_OAK.get(),
+                TBABlocks.SCHOOL_DESK_DARK_OAK.get(),
+                TBABlocks.PARK_BENCH_DARK_OAK.get(),
+                TBABlocks.BOOKCASE_DARK_OAK.get(),
                 "minecraft", "dark_oak");
         processVariants(
-                ModBlockRegistry.DESK_CHAIR_JUNGLE.get(),
-                ModBlockRegistry.TABLE_JUNGLE.get(),
-                ModBlockRegistry.LOCKER_JUNGLE.get(),
-                ModBlockRegistry.SCHOOL_DESK_CABINET_JUNGLE.get(),
-                ModBlockRegistry.SCHOOL_DESK_JUNGLE.get(),
-                ModBlockRegistry.PARK_BENCH_JUNGLE.get(),
-                ModBlockRegistry.BOOKCASE_JUNGLE.get(),
+                TBABlocks.DESK_CHAIR_JUNGLE.get(),
+                TBABlocks.TABLE_JUNGLE.get(),
+                TBABlocks.LOCKER_JUNGLE.get(),
+                TBABlocks.SCHOOL_DESK_CABINET_JUNGLE.get(),
+                TBABlocks.SCHOOL_DESK_JUNGLE.get(),
+                TBABlocks.PARK_BENCH_JUNGLE.get(),
+                TBABlocks.BOOKCASE_JUNGLE.get(),
                 "minecraft", "jungle");
         processVariants(
-                ModBlockRegistry.DESK_CHAIR_SPRUCE.get(),
-                ModBlockRegistry.TABLE_SPRUCE.get(),
-                ModBlockRegistry.LOCKER_SPRUCE.get(),
-                ModBlockRegistry.SCHOOL_DESK_CABINET_SPRUCE.get(),
-                ModBlockRegistry.SCHOOL_DESK_SPRUCE.get(),
-                ModBlockRegistry.PARK_BENCH_SPRUCE.get(),
-                ModBlockRegistry.BOOKCASE_SPRUCE.get(),
+                TBABlocks.DESK_CHAIR_SPRUCE.get(),
+                TBABlocks.TABLE_SPRUCE.get(),
+                TBABlocks.LOCKER_SPRUCE.get(),
+                TBABlocks.SCHOOL_DESK_CABINET_SPRUCE.get(),
+                TBABlocks.SCHOOL_DESK_SPRUCE.get(),
+                TBABlocks.PARK_BENCH_SPRUCE.get(),
+                TBABlocks.BOOKCASE_SPRUCE.get(),
                 "minecraft", "spruce");
         processVariants(
-                ModBlockRegistry.DESK_CHAIR_MANGROVE.get(),
-                ModBlockRegistry.TABLE_MANGROVE.get(),
-                ModBlockRegistry.LOCKER_MANGROVE.get(),
-                ModBlockRegistry.SCHOOL_DESK_CABINET_MANGROVE.get(),
-                ModBlockRegistry.SCHOOL_DESK_MANGROVE.get(),
-                ModBlockRegistry.PARK_BENCH_MANGROVE.get(),
-                ModBlockRegistry.BOOKCASE_MANGROVE.get(),
+                TBABlocks.DESK_CHAIR_MANGROVE.get(),
+                TBABlocks.TABLE_MANGROVE.get(),
+                TBABlocks.LOCKER_MANGROVE.get(),
+                TBABlocks.SCHOOL_DESK_CABINET_MANGROVE.get(),
+                TBABlocks.SCHOOL_DESK_MANGROVE.get(),
+                TBABlocks.PARK_BENCH_MANGROVE.get(),
+                TBABlocks.BOOKCASE_MANGROVE.get(),
                 "minecraft", "mangrove");
         processVariants(
-                ModBlockRegistry.DESK_CHAIR_OAK.get(),
-                ModBlockRegistry.TABLE_OAK.get(),
-                ModBlockRegistry.LOCKER_OAK.get(),
-                ModBlockRegistry.SCHOOL_DESK_CABINET_OAK.get(),
-                ModBlockRegistry.SCHOOL_DESK_OAK.get(),
-                ModBlockRegistry.PARK_BENCH_OAK.get(),
-                ModBlockRegistry.BOOKCASE_OAK.get(),
+                TBABlocks.DESK_CHAIR_OAK.get(),
+                TBABlocks.TABLE_OAK.get(),
+                TBABlocks.LOCKER_OAK.get(),
+                TBABlocks.SCHOOL_DESK_CABINET_OAK.get(),
+                TBABlocks.SCHOOL_DESK_OAK.get(),
+                TBABlocks.PARK_BENCH_OAK.get(),
+                TBABlocks.BOOKCASE_OAK.get(),
                 "minecraft", "oak");
         processVariants(
-                ModBlockRegistry.DESK_CHAIR_WARPED.get(),
-                ModBlockRegistry.TABLE_WARPED.get(),
-                ModBlockRegistry.LOCKER_WARPED.get(),
-                ModBlockRegistry.SCHOOL_DESK_CABINET_WARPED.get(),
-                ModBlockRegistry.SCHOOL_DESK_WARPED.get(),
-                ModBlockRegistry.PARK_BENCH_WARPED.get(),
-                ModBlockRegistry.BOOKCASE_WARPED.get(),
+                TBABlocks.DESK_CHAIR_WARPED.get(),
+                TBABlocks.TABLE_WARPED.get(),
+                TBABlocks.LOCKER_WARPED.get(),
+                TBABlocks.SCHOOL_DESK_CABINET_WARPED.get(),
+                TBABlocks.SCHOOL_DESK_WARPED.get(),
+                TBABlocks.PARK_BENCH_WARPED.get(),
+                TBABlocks.BOOKCASE_WARPED.get(),
                 "minecraft", "warped");
         processVariants(
-                ModBlockRegistry.DESK_CHAIR_FIR.get(),
-                ModBlockRegistry.TABLE_FIR.get(),
-                ModBlockRegistry.LOCKER_FIR.get(),
-                ModBlockRegistry.SCHOOL_DESK_CABINET_FIR.get(),
-                ModBlockRegistry.SCHOOL_DESK_FIR.get(),
-                ModBlockRegistry.PARK_BENCH_FIR.get(),
-                ModBlockRegistry.BOOKCASE_FIR.get(),
+                TBABlocks.DESK_CHAIR_FIR.get(),
+                TBABlocks.TABLE_FIR.get(),
+                TBABlocks.LOCKER_FIR.get(),
+                TBABlocks.SCHOOL_DESK_CABINET_FIR.get(),
+                TBABlocks.SCHOOL_DESK_FIR.get(),
+                TBABlocks.PARK_BENCH_FIR.get(),
+                TBABlocks.BOOKCASE_FIR.get(),
                 "biomesoplenty", "fir");
         processVariants(
-                ModBlockRegistry.DESK_CHAIR_REDWOOD.get(),
-                ModBlockRegistry.TABLE_REDWOOD.get(),
-                ModBlockRegistry.LOCKER_REDWOOD.get(),
-                ModBlockRegistry.SCHOOL_DESK_CABINET_REDWOOD.get(),
-                ModBlockRegistry.SCHOOL_DESK_REDWOOD.get(),
-                ModBlockRegistry.PARK_BENCH_REDWOOD.get(),
-                ModBlockRegistry.BOOKCASE_REDWOOD.get(),
+                TBABlocks.DESK_CHAIR_REDWOOD.get(),
+                TBABlocks.TABLE_REDWOOD.get(),
+                TBABlocks.LOCKER_REDWOOD.get(),
+                TBABlocks.SCHOOL_DESK_CABINET_REDWOOD.get(),
+                TBABlocks.SCHOOL_DESK_REDWOOD.get(),
+                TBABlocks.PARK_BENCH_REDWOOD.get(),
+                TBABlocks.BOOKCASE_REDWOOD.get(),
                 "biomesoplenty", "redwood");
         processVariants(
-                ModBlockRegistry.DESK_CHAIR_CHERRY.get(),
-                ModBlockRegistry.TABLE_CHERRY.get(),
-                ModBlockRegistry.LOCKER_CHERRY.get(),
-                ModBlockRegistry.SCHOOL_DESK_CABINET_CHERRY.get(),
-                ModBlockRegistry.SCHOOL_DESK_CHERRY.get(),
-                ModBlockRegistry.PARK_BENCH_CHERRY.get(),
-                ModBlockRegistry.BOOKCASE_CHERRY.get(),
+                TBABlocks.DESK_CHAIR_CHERRY.get(),
+                TBABlocks.TABLE_CHERRY.get(),
+                TBABlocks.LOCKER_CHERRY.get(),
+                TBABlocks.SCHOOL_DESK_CABINET_CHERRY.get(),
+                TBABlocks.SCHOOL_DESK_CHERRY.get(),
+                TBABlocks.PARK_BENCH_CHERRY.get(),
+                TBABlocks.BOOKCASE_CHERRY.get(),
                 "biomesoplenty", "cherry");
         processVariants(
-                ModBlockRegistry.DESK_CHAIR_MAHOGANY.get(),
-                ModBlockRegistry.TABLE_MAHOGANY.get(),
-                ModBlockRegistry.LOCKER_MAHOGANY.get(),
-                ModBlockRegistry.SCHOOL_DESK_CABINET_MAHOGANY.get(),
-                ModBlockRegistry.SCHOOL_DESK_MAHOGANY.get(),
-                ModBlockRegistry.PARK_BENCH_MAHOGANY.get(),
-                ModBlockRegistry.BOOKCASE_MAHOGANY.get(),
+                TBABlocks.DESK_CHAIR_MAHOGANY.get(),
+                TBABlocks.TABLE_MAHOGANY.get(),
+                TBABlocks.LOCKER_MAHOGANY.get(),
+                TBABlocks.SCHOOL_DESK_CABINET_MAHOGANY.get(),
+                TBABlocks.SCHOOL_DESK_MAHOGANY.get(),
+                TBABlocks.PARK_BENCH_MAHOGANY.get(),
+                TBABlocks.BOOKCASE_MAHOGANY.get(),
                 "biomesoplenty", "mahogany");
         processVariants(
-                ModBlockRegistry.DESK_CHAIR_JACARANDA.get(),
-                ModBlockRegistry.TABLE_JACARANDA.get(),
-                ModBlockRegistry.LOCKER_JACARANDA.get(),
-                ModBlockRegistry.SCHOOL_DESK_CABINET_JACARANDA.get(),
-                ModBlockRegistry.SCHOOL_DESK_JACARANDA.get(),
-                ModBlockRegistry.PARK_BENCH_JACARANDA.get(),
-                ModBlockRegistry.BOOKCASE_JACARANDA.get(),
+                TBABlocks.DESK_CHAIR_JACARANDA.get(),
+                TBABlocks.TABLE_JACARANDA.get(),
+                TBABlocks.LOCKER_JACARANDA.get(),
+                TBABlocks.SCHOOL_DESK_CABINET_JACARANDA.get(),
+                TBABlocks.SCHOOL_DESK_JACARANDA.get(),
+                TBABlocks.PARK_BENCH_JACARANDA.get(),
+                TBABlocks.BOOKCASE_JACARANDA.get(),
                 "biomesoplenty", "jacaranda");
         processVariants(
-                ModBlockRegistry.DESK_CHAIR_PALM.get(),
-                ModBlockRegistry.TABLE_PALM.get(),
-                ModBlockRegistry.LOCKER_PALM.get(),
-                ModBlockRegistry.SCHOOL_DESK_CABINET_PALM.get(),
-                ModBlockRegistry.SCHOOL_DESK_PALM.get(),
-                ModBlockRegistry.PARK_BENCH_PALM.get(),
-                ModBlockRegistry.BOOKCASE_PALM.get(),
+                TBABlocks.DESK_CHAIR_PALM.get(),
+                TBABlocks.TABLE_PALM.get(),
+                TBABlocks.LOCKER_PALM.get(),
+                TBABlocks.SCHOOL_DESK_CABINET_PALM.get(),
+                TBABlocks.SCHOOL_DESK_PALM.get(),
+                TBABlocks.PARK_BENCH_PALM.get(),
+                TBABlocks.BOOKCASE_PALM.get(),
                 "biomesoplenty", "palm");
         processVariants(
-                ModBlockRegistry.DESK_CHAIR_WILLOW.get(),
-                ModBlockRegistry.TABLE_WILLOW.get(),
-                ModBlockRegistry.LOCKER_WILLOW.get(),
-                ModBlockRegistry.SCHOOL_DESK_CABINET_WILLOW.get(),
-                ModBlockRegistry.SCHOOL_DESK_WILLOW.get(),
-                ModBlockRegistry.PARK_BENCH_WILLOW.get(),
-                ModBlockRegistry.BOOKCASE_WILLOW.get(),
+                TBABlocks.DESK_CHAIR_WILLOW.get(),
+                TBABlocks.TABLE_WILLOW.get(),
+                TBABlocks.LOCKER_WILLOW.get(),
+                TBABlocks.SCHOOL_DESK_CABINET_WILLOW.get(),
+                TBABlocks.SCHOOL_DESK_WILLOW.get(),
+                TBABlocks.PARK_BENCH_WILLOW.get(),
+                TBABlocks.BOOKCASE_WILLOW.get(),
                 "biomesoplenty", "willow");
         processVariants(
-                ModBlockRegistry.DESK_CHAIR_DEAD.get(),
-                ModBlockRegistry.TABLE_DEAD.get(),
-                ModBlockRegistry.LOCKER_DEAD.get(),
-                ModBlockRegistry.SCHOOL_DESK_CABINET_DEAD.get(),
-                ModBlockRegistry.SCHOOL_DESK_DEAD.get(),
-                ModBlockRegistry.PARK_BENCH_DEAD.get(),
-                ModBlockRegistry.BOOKCASE_DEAD.get(),
+                TBABlocks.DESK_CHAIR_DEAD.get(),
+                TBABlocks.TABLE_DEAD.get(),
+                TBABlocks.LOCKER_DEAD.get(),
+                TBABlocks.SCHOOL_DESK_CABINET_DEAD.get(),
+                TBABlocks.SCHOOL_DESK_DEAD.get(),
+                TBABlocks.PARK_BENCH_DEAD.get(),
+                TBABlocks.BOOKCASE_DEAD.get(),
                 "biomesoplenty", "dead");
         processVariants(
-                ModBlockRegistry.DESK_CHAIR_MAGIC.get(),
-                ModBlockRegistry.TABLE_MAGIC.get(),
-                ModBlockRegistry.LOCKER_MAGIC.get(),
-                ModBlockRegistry.SCHOOL_DESK_CABINET_MAGIC.get(),
-                ModBlockRegistry.SCHOOL_DESK_MAGIC.get(),
-                ModBlockRegistry.PARK_BENCH_MAGIC.get(),
-                ModBlockRegistry.BOOKCASE_MAGIC.get(),
+                TBABlocks.DESK_CHAIR_MAGIC.get(),
+                TBABlocks.TABLE_MAGIC.get(),
+                TBABlocks.LOCKER_MAGIC.get(),
+                TBABlocks.SCHOOL_DESK_CABINET_MAGIC.get(),
+                TBABlocks.SCHOOL_DESK_MAGIC.get(),
+                TBABlocks.PARK_BENCH_MAGIC.get(),
+                TBABlocks.BOOKCASE_MAGIC.get(),
                 "biomesoplenty", "magic");
         processVariants(
-                ModBlockRegistry.DESK_CHAIR_UMBRAN.get(),
-                ModBlockRegistry.TABLE_UMBRAN.get(),
-                ModBlockRegistry.LOCKER_UMBRAN.get(),
-                ModBlockRegistry.SCHOOL_DESK_CABINET_UMBRAN.get(),
-                ModBlockRegistry.SCHOOL_DESK_UMBRAN.get(),
-                ModBlockRegistry.PARK_BENCH_UMBRAN.get(),
-                ModBlockRegistry.BOOKCASE_UMBRAN.get(),
+                TBABlocks.DESK_CHAIR_UMBRAN.get(),
+                TBABlocks.TABLE_UMBRAN.get(),
+                TBABlocks.LOCKER_UMBRAN.get(),
+                TBABlocks.SCHOOL_DESK_CABINET_UMBRAN.get(),
+                TBABlocks.SCHOOL_DESK_UMBRAN.get(),
+                TBABlocks.PARK_BENCH_UMBRAN.get(),
+                TBABlocks.BOOKCASE_UMBRAN.get(),
                 "biomesoplenty", "umbran");
         processVariants(
-                ModBlockRegistry.DESK_CHAIR_HELLBARK.get(),
-                ModBlockRegistry.TABLE_HELLBARK.get(),
-                ModBlockRegistry.LOCKER_HELLBARK.get(),
-                ModBlockRegistry.SCHOOL_DESK_CABINET_HELLBARK.get(),
-                ModBlockRegistry.SCHOOL_DESK_HELLBARK.get(),
-                ModBlockRegistry.PARK_BENCH_HELLBARK.get(),
-                ModBlockRegistry.BOOKCASE_HELLBARK.get(),
+                TBABlocks.DESK_CHAIR_HELLBARK.get(),
+                TBABlocks.TABLE_HELLBARK.get(),
+                TBABlocks.LOCKER_HELLBARK.get(),
+                TBABlocks.SCHOOL_DESK_CABINET_HELLBARK.get(),
+                TBABlocks.SCHOOL_DESK_HELLBARK.get(),
+                TBABlocks.PARK_BENCH_HELLBARK.get(),
+                TBABlocks.BOOKCASE_HELLBARK.get(),
                 "biomesoplenty", "hellbark");
         processVariants(
-                ModBlockRegistry.DESK_CHAIR_COCONUT.get(),
-                ModBlockRegistry.TABLE_COCONUT.get(),
-                ModBlockRegistry.LOCKER_COCONUT.get(),
-                ModBlockRegistry.SCHOOL_DESK_CABINET_COCONUT.get(),
-                ModBlockRegistry.SCHOOL_DESK_COCONUT.get(),
-                ModBlockRegistry.PARK_BENCH_COCONUT.get(),
-                ModBlockRegistry.BOOKCASE_COCONUT.get(),
+                TBABlocks.DESK_CHAIR_COCONUT.get(),
+                TBABlocks.TABLE_COCONUT.get(),
+                TBABlocks.LOCKER_COCONUT.get(),
+                TBABlocks.SCHOOL_DESK_CABINET_COCONUT.get(),
+                TBABlocks.SCHOOL_DESK_COCONUT.get(),
+                TBABlocks.PARK_BENCH_COCONUT.get(),
+                TBABlocks.BOOKCASE_COCONUT.get(),
                 "ecologics", "coconut");
         processVariants(
-                ModBlockRegistry.DESK_CHAIR_WALNUT.get(),
-                ModBlockRegistry.TABLE_WALNUT.get(),
-                ModBlockRegistry.LOCKER_WALNUT.get(),
-                ModBlockRegistry.SCHOOL_DESK_CABINET_WALNUT.get(),
-                ModBlockRegistry.SCHOOL_DESK_WALNUT.get(),
-                ModBlockRegistry.PARK_BENCH_WALNUT.get(),
-                ModBlockRegistry.BOOKCASE_WALNUT.get(),
+                TBABlocks.DESK_CHAIR_WALNUT.get(),
+                TBABlocks.TABLE_WALNUT.get(),
+                TBABlocks.LOCKER_WALNUT.get(),
+                TBABlocks.SCHOOL_DESK_CABINET_WALNUT.get(),
+                TBABlocks.SCHOOL_DESK_WALNUT.get(),
+                TBABlocks.PARK_BENCH_WALNUT.get(),
+                TBABlocks.BOOKCASE_WALNUT.get(),
                 "ecologics", "walnut");
         processVariants(
-                ModBlockRegistry.DESK_CHAIR_AZALEA.get(),
-                ModBlockRegistry.TABLE_AZALEA.get(),
-                ModBlockRegistry.LOCKER_AZALEA.get(),
-                ModBlockRegistry.SCHOOL_DESK_CABINET_AZALEA.get(),
-                ModBlockRegistry.SCHOOL_DESK_AZALEA.get(),
-                ModBlockRegistry.PARK_BENCH_AZALEA.get(),
-                ModBlockRegistry.BOOKCASE_AZALEA.get(),
+                TBABlocks.DESK_CHAIR_AZALEA.get(),
+                TBABlocks.TABLE_AZALEA.get(),
+                TBABlocks.LOCKER_AZALEA.get(),
+                TBABlocks.SCHOOL_DESK_CABINET_AZALEA.get(),
+                TBABlocks.SCHOOL_DESK_AZALEA.get(),
+                TBABlocks.PARK_BENCH_AZALEA.get(),
+                TBABlocks.BOOKCASE_AZALEA.get(),
                 "ecologics", "azalea");
         processVariants(
-                ModBlockRegistry.DESK_CHAIR_FLOWERING_AZALEA.get(),
-                ModBlockRegistry.TABLE_FLOWERING_AZALEA.get(),
-                ModBlockRegistry.LOCKER_FLOWERING_AZALEA.get(),
-                ModBlockRegistry.SCHOOL_DESK_CABINET_FLOWERING_AZALEA.get(),
-                ModBlockRegistry.SCHOOL_DESK_FLOWERING_AZALEA.get(),
-                ModBlockRegistry.PARK_BENCH_FLOWERING_AZALEA.get(),
-                ModBlockRegistry.BOOKCASE_FLOWERING_AZALEA.get(),
+                TBABlocks.DESK_CHAIR_FLOWERING_AZALEA.get(),
+                TBABlocks.TABLE_FLOWERING_AZALEA.get(),
+                TBABlocks.LOCKER_FLOWERING_AZALEA.get(),
+                TBABlocks.SCHOOL_DESK_CABINET_FLOWERING_AZALEA.get(),
+                TBABlocks.SCHOOL_DESK_FLOWERING_AZALEA.get(),
+                TBABlocks.PARK_BENCH_FLOWERING_AZALEA.get(),
+                TBABlocks.BOOKCASE_FLOWERING_AZALEA.get(),
                 "ecologics", "flowering_azalea");
         processVariants(
-                ModBlockRegistry.DESK_CHAIR_GOLDEN_OAK.get(),
-                ModBlockRegistry.TABLE_GOLDEN_OAK.get(),
-                ModBlockRegistry.LOCKER_GOLDEN_OAK.get(),
-                ModBlockRegistry.SCHOOL_DESK_CABINET_GOLDEN_OAK.get(),
-                ModBlockRegistry.SCHOOL_DESK_GOLDEN_OAK.get(),
-                ModBlockRegistry.PARK_BENCH_GOLDEN_OAK.get(),
-                ModBlockRegistry.BOOKCASE_GOLDEN_OAK.get(),
+                TBABlocks.DESK_CHAIR_GOLDEN_OAK.get(),
+                TBABlocks.TABLE_GOLDEN_OAK.get(),
+                TBABlocks.LOCKER_GOLDEN_OAK.get(),
+                TBABlocks.SCHOOL_DESK_CABINET_GOLDEN_OAK.get(),
+                TBABlocks.SCHOOL_DESK_GOLDEN_OAK.get(),
+                TBABlocks.PARK_BENCH_GOLDEN_OAK.get(),
+                TBABlocks.BOOKCASE_GOLDEN_OAK.get(),
                 "aether", "golden_oak");
         processVariants(
-                ModBlockRegistry.DESK_CHAIR_AETHER_SKYROOT.get(),
-                ModBlockRegistry.TABLE_AETHER_SKYROOT.get(),
-                ModBlockRegistry.LOCKER_AETHER_SKYROOT.get(),
-                ModBlockRegistry.SCHOOL_DESK_CABINET_AETHER_SKYROOT.get(),
-                ModBlockRegistry.SCHOOL_DESK_AETHER_SKYROOT.get(),
-                ModBlockRegistry.PARK_BENCH_AETHER_SKYROOT.get(),
-                ModBlockRegistry.BOOKCASE_AETHER_SKYROOT.get(),
+                TBABlocks.DESK_CHAIR_AETHER_SKYROOT.get(),
+                TBABlocks.TABLE_AETHER_SKYROOT.get(),
+                TBABlocks.LOCKER_AETHER_SKYROOT.get(),
+                TBABlocks.SCHOOL_DESK_CABINET_AETHER_SKYROOT.get(),
+                TBABlocks.SCHOOL_DESK_AETHER_SKYROOT.get(),
+                TBABlocks.PARK_BENCH_AETHER_SKYROOT.get(),
+                TBABlocks.BOOKCASE_AETHER_SKYROOT.get(),
                 "aether", "skyroot");
         processVariants(
-                ModBlockRegistry.DESK_CHAIR_PREAM.get(),
-                ModBlockRegistry.TABLE_PREAM.get(),
-                ModBlockRegistry.LOCKER_PREAM.get(),
-                ModBlockRegistry.SCHOOL_DESK_CABINET_PREAM.get(),
-                ModBlockRegistry.SCHOOL_DESK_PREAM.get(),
-                ModBlockRegistry.PARK_BENCH_PREAM.get(),
-                ModBlockRegistry.BOOKCASE_PREAM.get(),
+                TBABlocks.DESK_CHAIR_PREAM.get(),
+                TBABlocks.TABLE_PREAM.get(),
+                TBABlocks.LOCKER_PREAM.get(),
+                TBABlocks.SCHOOL_DESK_CABINET_PREAM.get(),
+                TBABlocks.SCHOOL_DESK_PREAM.get(),
+                TBABlocks.PARK_BENCH_PREAM.get(),
+                TBABlocks.BOOKCASE_PREAM.get(),
                 "phantasm", "pream");
         processVariants(
-                ModBlockRegistry.DESK_CHAIR_EBONY.get(),
-                ModBlockRegistry.TABLE_EBONY.get(),
-                ModBlockRegistry.LOCKER_EBONY.get(),
-                ModBlockRegistry.SCHOOL_DESK_CABINET_EBONY.get(),
-                ModBlockRegistry.SCHOOL_DESK_EBONY.get(),
-                ModBlockRegistry.PARK_BENCH_EBONY.get(),
-                ModBlockRegistry.BOOKCASE_EBONY.get(),
+                TBABlocks.DESK_CHAIR_EBONY.get(),
+                TBABlocks.TABLE_EBONY.get(),
+                TBABlocks.LOCKER_EBONY.get(),
+                TBABlocks.SCHOOL_DESK_CABINET_EBONY.get(),
+                TBABlocks.SCHOOL_DESK_EBONY.get(),
+                TBABlocks.PARK_BENCH_EBONY.get(),
+                TBABlocks.BOOKCASE_EBONY.get(),
                 "phantasm", "ebony");
         processVariants(
-                ModBlockRegistry.DESK_CHAIR_CHORUS_NEST.get(),
-                ModBlockRegistry.TABLE_CHORUS_NEST.get(),
-                ModBlockRegistry.LOCKER_CHORUS_NEST.get(),
-                ModBlockRegistry.SCHOOL_DESK_CABINET_CHORUS_NEST.get(),
-                ModBlockRegistry.SCHOOL_DESK_CHORUS_NEST.get(),
-                ModBlockRegistry.PARK_BENCH_CHORUS_NEST.get(),
-                ModBlockRegistry.BOOKCASE_CHORUS_NEST.get(),
+                TBABlocks.DESK_CHAIR_CHORUS_NEST.get(),
+                TBABlocks.TABLE_CHORUS_NEST.get(),
+                TBABlocks.LOCKER_CHORUS_NEST.get(),
+                TBABlocks.SCHOOL_DESK_CABINET_CHORUS_NEST.get(),
+                TBABlocks.SCHOOL_DESK_CHORUS_NEST.get(),
+                TBABlocks.PARK_BENCH_CHORUS_NEST.get(),
+                TBABlocks.BOOKCASE_CHORUS_NEST.get(),
                 "unusualend", "chorus_nest");
         processVariants(
-                ModBlockRegistry.DESK_CHAIR_BLOODSHROOM.get(),
-                ModBlockRegistry.TABLE_BLOODSHROOM.get(),
-                ModBlockRegistry.LOCKER_BLOODSHROOM.get(),
-                ModBlockRegistry.SCHOOL_DESK_CABINET_BLOODSHROOM.get(),
-                ModBlockRegistry.SCHOOL_DESK_BLOODSHROOM.get(),
-                ModBlockRegistry.PARK_BENCH_BLOODSHROOM.get(),
-                ModBlockRegistry.BOOKCASE_BLOODSHROOM.get(),
+                TBABlocks.DESK_CHAIR_BLOODSHROOM.get(),
+                TBABlocks.TABLE_BLOODSHROOM.get(),
+                TBABlocks.LOCKER_BLOODSHROOM.get(),
+                TBABlocks.SCHOOL_DESK_CABINET_BLOODSHROOM.get(),
+                TBABlocks.SCHOOL_DESK_BLOODSHROOM.get(),
+                TBABlocks.PARK_BENCH_BLOODSHROOM.get(),
+                TBABlocks.BOOKCASE_BLOODSHROOM.get(),
                 "tconstruct", "bloodshroom");
         processVariants(
-                ModBlockRegistry.DESK_CHAIR_ENDERBARK.get(),
-                ModBlockRegistry.TABLE_ENDERBARK.get(),
-                ModBlockRegistry.LOCKER_ENDERBARK.get(),
-                ModBlockRegistry.SCHOOL_DESK_CABINET_ENDERBARK.get(),
-                ModBlockRegistry.SCHOOL_DESK_ENDERBARK.get(),
-                ModBlockRegistry.PARK_BENCH_ENDERBARK.get(),
-                ModBlockRegistry.BOOKCASE_ENDERBARK.get(),
+                TBABlocks.DESK_CHAIR_ENDERBARK.get(),
+                TBABlocks.TABLE_ENDERBARK.get(),
+                TBABlocks.LOCKER_ENDERBARK.get(),
+                TBABlocks.SCHOOL_DESK_CABINET_ENDERBARK.get(),
+                TBABlocks.SCHOOL_DESK_ENDERBARK.get(),
+                TBABlocks.PARK_BENCH_ENDERBARK.get(),
+                TBABlocks.BOOKCASE_ENDERBARK.get(),
                 "tconstruct", "enderbark");
         processVariants(
-                ModBlockRegistry.DESK_CHAIR_GREENHEART.get(),
-                ModBlockRegistry.TABLE_GREENHEART.get(),
-                ModBlockRegistry.LOCKER_GREENHEART.get(),
-                ModBlockRegistry.SCHOOL_DESK_CABINET_GREENHEART.get(),
-                ModBlockRegistry.SCHOOL_DESK_GREENHEART.get(),
-                ModBlockRegistry.PARK_BENCH_GREENHEART.get(),
-                ModBlockRegistry.BOOKCASE_GREENHEART.get(),
+                TBABlocks.DESK_CHAIR_GREENHEART.get(),
+                TBABlocks.TABLE_GREENHEART.get(),
+                TBABlocks.LOCKER_GREENHEART.get(),
+                TBABlocks.SCHOOL_DESK_CABINET_GREENHEART.get(),
+                TBABlocks.SCHOOL_DESK_GREENHEART.get(),
+                TBABlocks.PARK_BENCH_GREENHEART.get(),
+                TBABlocks.BOOKCASE_GREENHEART.get(),
                 "tconstruct", "greenheart");
         processVariants(
-                ModBlockRegistry.DESK_CHAIR_TINKER_SKYROOT.get(),
-                ModBlockRegistry.TABLE_TINKER_SKYROOT.get(),
-                ModBlockRegistry.LOCKER_TINKER_SKYROOT.get(),
-                ModBlockRegistry.SCHOOL_DESK_CABINET_TINKER_SKYROOT.get(),
-                ModBlockRegistry.SCHOOL_DESK_TINKER_SKYROOT.get(),
-                ModBlockRegistry.PARK_BENCH_TINKER_SKYROOT.get(),
-                ModBlockRegistry.BOOKCASE_TINKER_SKYROOT.get(),
+                TBABlocks.DESK_CHAIR_TINKER_SKYROOT.get(),
+                TBABlocks.TABLE_TINKER_SKYROOT.get(),
+                TBABlocks.LOCKER_TINKER_SKYROOT.get(),
+                TBABlocks.SCHOOL_DESK_CABINET_TINKER_SKYROOT.get(),
+                TBABlocks.SCHOOL_DESK_TINKER_SKYROOT.get(),
+                TBABlocks.PARK_BENCH_TINKER_SKYROOT.get(),
+                TBABlocks.BOOKCASE_TINKER_SKYROOT.get(),
                 "tconstruct", "skyroot");
 
-        processPlateVariants(ModBlockRegistry.PLATE_WHITE.get(), MODID, "block/plate_white");
-        processPlateVariants(ModBlockRegistry.PLATE_ORANGE.get(), MODID, "block/plate_orange");
-        processPlateVariants(ModBlockRegistry.PLATE_MAGENTA.get(), MODID, "block/plate_magenta");
-        processPlateVariants(ModBlockRegistry.PLATE_LIGHT_BLUE.get(), MODID, "block/plate_light_blue");
-        processPlateVariants(ModBlockRegistry.PLATE_YELLOW.get(), MODID, "block/plate_yellow");
-        processPlateVariants(ModBlockRegistry.PLATE_LIME.get(), MODID, "block/plate_lime");
-        processPlateVariants(ModBlockRegistry.PLATE_PINK.get(), MODID, "block/plate_pink");
-        processPlateVariants(ModBlockRegistry.PLATE_GRAY.get(), MODID, "block/plate_gray");
-        processPlateVariants(ModBlockRegistry.PLATE_LIGHT_GRAY.get(), MODID, "block/plate_light_gray");
-        processPlateVariants(ModBlockRegistry.PLATE_CYAN.get(), MODID, "block/plate_cyan");
-        processPlateVariants(ModBlockRegistry.PLATE_PURPLE.get(), MODID, "block/plate_purple");
-        processPlateVariants(ModBlockRegistry.PLATE_BLUE.get(), MODID, "block/plate_blue");
-        processPlateVariants(ModBlockRegistry.PLATE_BROWN.get(), MODID, "block/plate_brown");
-        processPlateVariants(ModBlockRegistry.PLATE_GREEN.get(), MODID, "block/plate_green");
-        processPlateVariants(ModBlockRegistry.PLATE_RED.get(), MODID, "block/plate_red");
-        processPlateVariants(ModBlockRegistry.PLATE_BLACK.get(), MODID, "block/plate_black");
+        processPlateVariants(TBABlocks.PLATE_WHITE.get(), MODID, "block/plate_white");
+        processPlateVariants(TBABlocks.PLATE_ORANGE.get(), MODID, "block/plate_orange");
+        processPlateVariants(TBABlocks.PLATE_MAGENTA.get(), MODID, "block/plate_magenta");
+        processPlateVariants(TBABlocks.PLATE_LIGHT_BLUE.get(), MODID, "block/plate_light_blue");
+        processPlateVariants(TBABlocks.PLATE_YELLOW.get(), MODID, "block/plate_yellow");
+        processPlateVariants(TBABlocks.PLATE_LIME.get(), MODID, "block/plate_lime");
+        processPlateVariants(TBABlocks.PLATE_PINK.get(), MODID, "block/plate_pink");
+        processPlateVariants(TBABlocks.PLATE_GRAY.get(), MODID, "block/plate_gray");
+        processPlateVariants(TBABlocks.PLATE_LIGHT_GRAY.get(), MODID, "block/plate_light_gray");
+        processPlateVariants(TBABlocks.PLATE_CYAN.get(), MODID, "block/plate_cyan");
+        processPlateVariants(TBABlocks.PLATE_PURPLE.get(), MODID, "block/plate_purple");
+        processPlateVariants(TBABlocks.PLATE_BLUE.get(), MODID, "block/plate_blue");
+        processPlateVariants(TBABlocks.PLATE_BROWN.get(), MODID, "block/plate_brown");
+        processPlateVariants(TBABlocks.PLATE_GREEN.get(), MODID, "block/plate_green");
+        processPlateVariants(TBABlocks.PLATE_RED.get(), MODID, "block/plate_red");
+        processPlateVariants(TBABlocks.PLATE_BLACK.get(), MODID, "block/plate_black");
     }
 
     @SuppressWarnings("SameParameterValue")

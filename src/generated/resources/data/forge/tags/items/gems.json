@@ -1,12 +1,16 @@
 {
   "values": [
-    {
-      "id": "unusualend:ancient_shard",
-      "required": false
-    },
-    {
-      "id": "aether:life_shard",
-      "required": false
-    }
+    "minecraft:redstone",
+    "minecraft:glowstone",
+    "minecraft:prismarine_shard",
+    "minecraft:prismarine_crystals",
+    "minecraft:lapis_lazuli",
+    "minecraft:emerald",
+    "minecraft:diamond",
+    "#forge:gems/pearls",
+    "#forge:gems/crystal",
+    "#forge:gems/gemstone",
+    "#forge:gems/gem_shards",
+    "#turtleblockacademy:soul_binder"
   ]
 }

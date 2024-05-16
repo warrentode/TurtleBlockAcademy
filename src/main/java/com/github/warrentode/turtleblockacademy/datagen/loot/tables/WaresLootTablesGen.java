@@ -9,7 +9,7 @@ import com.github.warrentode.turtleblockacademy.loot.tables.KitchenLootTables;
 import com.github.warrentode.turtleblockacademy.loot.tables.LootbagLootTables;
 import com.github.warrentode.turtleblockacademy.loot.tables.PackBuiltInLootTables;
 import com.github.warrentode.turtleblockacademy.loot.tables.WaresLootTables;
-import com.github.warrentode.turtleblockacademy.util.PackTags;
+import com.github.warrentode.turtleblockacademy.util.TBATags;
 import com.hakimen.kawaiidishes.registry.ItemRegister;
 import net.brnbrd.delightful.common.item.DelightfulItems;
 import net.mcreator.phantasm.init.PhantasmModItems;
@@ -47,9 +47,9 @@ public class WaresLootTablesGen implements Consumer<BiConsumer<ResourceLocation,
                         .add(LootTableReference.lootTableReference(LootbagLootTables.CHRISTMAS_LOOTBAG).when(CHRISTMAS_EVENT))
                         .add(LootTableReference.lootTableReference(LootbagLootTables.EASTER_LOOTBAG).when(EASTER_EVENT))
                         .add(LootTableReference.lootTableReference(LootbagLootTables.ANNIVERSARY_LOOTBAG).when(ANNIVERSARY_EVENT))
-                        .add(TagEntry.expandTag(PackTags.Items.SLEDS).when(WINTER))
-                        .add(TagEntry.expandTag(PackTags.Items.GARDEN_ITEMS).when(SPRING.or(SUMMER)))
-                        .add(TagEntry.expandTag(PackTags.Items.PATIO_ITEMS).when(SPRING.or(SUMMER).or(AUTUMN)))
+                        .add(TagEntry.expandTag(TBATags.Items.SLEDS).when(WINTER))
+                        .add(TagEntry.expandTag(TBATags.Items.GARDEN_ITEMS).when(SPRING.or(SUMMER)))
+                        .add(TagEntry.expandTag(TBATags.Items.PATIO_ITEMS).when(SPRING.or(SUMMER).or(AUTUMN)))
                         .add(LootTableReference.lootTableReference(KitchenLootTables.KITCHEN))
                         .add(LootTableReference.lootTableReference(PackBuiltInLootTables.BATH_DECO))
                         .add(LootTableReference.lootTableReference(PackBuiltInLootTables.PLUSHIES))
@@ -2092,7 +2092,7 @@ public class WaresLootTablesGen implements Consumer<BiConsumer<ResourceLocation,
                 ));
         consumer.accept(WaresLootTables.WARES_CROPS, LootTable.lootTable()
                 .withPool(LootPool.lootPool().setRolls(ConstantValue.exactly(1))
-                        .add(TagEntry.expandTag(PackTags.Items.CROPS)
+                        .add(TagEntry.expandTag(TBATags.Items.CROPS)
                                 .apply(SetItemCountFunction.setCount(UniformGenerator.between(20, 30))))
                 )
         );

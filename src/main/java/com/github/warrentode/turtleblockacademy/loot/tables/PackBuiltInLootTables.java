@@ -15,6 +15,9 @@ public class PackBuiltInLootTables {
     public static final ResourceLocation KITCHEN_TEXTBOOK = register(MODID + ":" + "advancements/loot_tables/give_kitchen_textbook");
 
     // randomized map loot tables
+    public static final ResourceLocation TREASURE_BEETLE_ITEM_DROPS = register(MODID + ":" + "entity/treasure_beetle_item_drops");
+    public static final ResourceLocation TREASURE_BEETLE_LOOT = register(MODID + ":" + "entity/treasure_beetle");
+    public static final ResourceLocation CAMP_CHEST = register(MODID + ":" + "chests/camp_chest");
     public static final ResourceLocation MASTER_MAPBOX = register(MODID + ":" + "chests/maps/master_mapbox");
     public static final ResourceLocation END_MAPBOX = register(MODID + ":" + "chests/maps/end_mapbox");
     public static final ResourceLocation NETHER_MAPBOX = register(MODID + ":" + "chests/maps/nether_mapbox");

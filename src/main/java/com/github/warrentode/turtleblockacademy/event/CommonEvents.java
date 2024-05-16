@@ -8,8 +8,9 @@ import org.jetbrains.annotations.NotNull;
 
 import static com.github.warrentode.turtleblockacademy.TurtleBlockAcademy.MODID;
 
+// all of these events occur on both logical sides
 public class CommonEvents {
-    @Mod.EventBusSubscriber(modid = MODID, bus = net.minecraftforge.fml.common.Mod.EventBusSubscriber.Bus.FORGE)
+    @Mod.EventBusSubscriber(modid = MODID, bus = Mod.EventBusSubscriber.Bus.FORGE)
     public static class ForgeBus {
         @SubscribeEvent
         public static void registerCommands(@NotNull RegisterCommandsEvent event) {

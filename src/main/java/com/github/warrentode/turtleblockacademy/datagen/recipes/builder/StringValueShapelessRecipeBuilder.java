@@ -29,14 +29,17 @@ public class StringValueShapelessRecipeBuilder {
         this.count = count;
     }
 
+    @SuppressWarnings("unused")
     public static StringValueShapelessRecipeBuilder writeRecipe(String saveName, int count) {
         return new StringValueShapelessRecipeBuilder(saveName, count);
     }
 
+    @SuppressWarnings("unused")
     public StringValueShapelessRecipeBuilder addIngredient(TagKey<Item> tagIn) {
         return this.addIngredient(Ingredient.of(tagIn));
     }
 
+    @SuppressWarnings("unused")
     public StringValueShapelessRecipeBuilder addIngredient(ItemLike itemIn) {
         return this.addIngredient(itemIn, 1);
     }
