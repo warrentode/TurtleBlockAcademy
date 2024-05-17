@@ -1,6 +1,5 @@
 package com.github.warrentode.turtleblockacademy.blocks;
 
-import com.github.warrentode.turtleblockacademy.util.TBATags;
 import com.github.warrentode.turtleblockacademy.world.dimension.TBADimensions;
 import com.github.warrentode.turtleblockacademy.world.dimension.portal.TBAMiningTeleporter;
 import net.minecraft.core.BlockPos;
@@ -19,7 +18,6 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.block.RenderShape;
 import net.minecraft.world.level.block.Rotation;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
@@ -53,13 +51,8 @@ public class TBAMiningPortalBlock extends Block {
     }
 
     @SuppressWarnings("deprecation")
-    public @NotNull RenderShape getRenderShape(@NotNull BlockState state) {
-        return RenderShape.MODEL;
-    }
-
-    @SuppressWarnings("deprecation")
     @Override
-    public @NotNull VoxelShape getShape(@NotNull BlockState state, @NotNull BlockGetter level, @NotNull BlockPos pos, @NotNull CollisionContext context) {
+    public @NotNull VoxelShape getShape(@NotNull BlockState state, @NotNull BlockGetter getter, @NotNull BlockPos pos, @NotNull CollisionContext context) {
         //noinspection EnhancedSwitchMigration
         switch (state.getValue(AXIS)) {
             case Z:
@@ -70,11 +63,10 @@ public class TBAMiningPortalBlock extends Block {
         }
     }
 
-    public boolean trySpawnPortal(LevelAccessor level, BlockPos pos) {
-        TBAMiningPortalBlock.Size TBAMiningPortalBlock$size = this.isPortal(level, pos);
-        if (TBAMiningPortalBlock$size != null &&
-                !onTrySpawnPortal(level, pos, TBAMiningPortalBlock$size)) {
-            TBAMiningPortalBlock$size.placePortalBlocks();
+    public boolean trySpawnPortal(LevelAccessor accessor, BlockPos pos) {
+        TBAMiningPortalBlock.Size size = this.isPortal(accessor, pos);
+        if (size != null && !onTrySpawnPortal(accessor, pos, size)) {
+            size.placePortalBlocks();
             return true;
         }
         else {
@@ -82,17 +74,16 @@ public class TBAMiningPortalBlock extends Block {
         }
     }
 
-    public static boolean onTrySpawnPortal(LevelAccessor world, BlockPos pos, TBAMiningPortalBlock.Size size) {
-        return MinecraftForge.EVENT_BUS.post(
-                new PortalSpawnEvent(world, pos, world.getBlockState(pos), size));
+    public static boolean onTrySpawnPortal(LevelAccessor accessor, BlockPos pos, TBAMiningPortalBlock.Size size) {
+        return MinecraftForge.EVENT_BUS.post(new PortalSpawnEvent(accessor, pos, accessor.getBlockState(pos), size));
     }
 
     @Cancelable
     public static class PortalSpawnEvent extends BlockEvent {
         private final TBAMiningPortalBlock.Size size;
 
-        public PortalSpawnEvent(LevelAccessor world, BlockPos pos, BlockState state, TBAMiningPortalBlock.Size size) {
-            super(world, pos, state);
+        public PortalSpawnEvent(LevelAccessor accessor, BlockPos pos, BlockState state, TBAMiningPortalBlock.Size size) {
+            super(accessor, pos, state);
             this.size = size;
         }
 
@@ -102,28 +93,24 @@ public class TBAMiningPortalBlock extends Block {
     }
 
     @Nullable
-    public TBAMiningPortalBlock.Size isPortal(LevelAccessor level, BlockPos pos) {
-        TBAMiningPortalBlock.Size TBAMiningPortalBlock$size = new Size(level, pos, Direction.Axis.X);
-        if (TBAMiningPortalBlock$size.isValid() && TBAMiningPortalBlock$size.portalBlockCount == 0) {
-            return TBAMiningPortalBlock$size;
+    public TBAMiningPortalBlock.Size isPortal(LevelAccessor accessor, BlockPos pos) {
+        TBAMiningPortalBlock.Size size = new Size(accessor, pos, Direction.Axis.X);
+        if (size.isValid() && size.portalBlockCount == 0) {
+            return size;
         }
         else {
-            TBAMiningPortalBlock.Size TBAMiningPortalBlock$size1 = new Size(level, pos, Direction.Axis.Z);
-            return TBAMiningPortalBlock$size1.isValid()
-                    && TBAMiningPortalBlock$size1.portalBlockCount == 0 ? TBAMiningPortalBlock$size1 : null;
+            TBAMiningPortalBlock.Size size1 = new Size(accessor, pos, Direction.Axis.Z);
+            return size1.isValid() && size1.portalBlockCount == 0 ? size1 : null;
         }
     }
 
     @SuppressWarnings("deprecation")
     @Override
-    public @NotNull BlockState updateShape(@NotNull BlockState stateIn, @NotNull Direction facing, @NotNull BlockState facingState, @NotNull LevelAccessor level, @NotNull BlockPos currentPos, @NotNull BlockPos facingPos) {
+    public @NotNull BlockState updateShape(@NotNull BlockState state, @NotNull Direction facing, @NotNull BlockState facingState, @NotNull LevelAccessor accessor, @NotNull BlockPos currentPos, @NotNull BlockPos facingPos) {
         Direction.Axis direction$axis = facing.getAxis();
-        Direction.Axis direction$axis1 = stateIn.getValue(AXIS);
+        Direction.Axis direction$axis1 = state.getValue(AXIS);
         boolean flag = direction$axis1 != direction$axis && direction$axis.isHorizontal();
-        return !flag && facingState.getBlock() != this
-                && !(new Size(level, currentPos, direction$axis1)).validatePortal() ?
-                Blocks.AIR.defaultBlockState() : super.updateShape(stateIn,
-                facing, facingState, level, currentPos, facingPos);
+        return !flag && facingState.getBlock() != this && !(new Size(accessor, currentPos, direction$axis1)).validatePortal() ? Blocks.AIR.defaultBlockState() : super.updateShape(state, facing, facingState, accessor, currentPos, facingPos);
     }
 
     @SuppressWarnings("deprecation")
@@ -137,20 +124,16 @@ public class TBAMiningPortalBlock extends Block {
                 if (!entity.level.isClientSide && !pos.equals(entity.portalEntrancePos)) {
                     entity.portalEntrancePos = pos.immutable();
                 }
-                Level entityWorld = entity.level;
-                //noinspection ConstantValue
-                if (entityWorld != null) {
-                    MinecraftServer minecraftserver = entityWorld.getServer();
-                    ResourceKey<Level> destination = entity.level.dimension() ==
-                            TBADimensions.TDA_MINING_LEVEL ? Level.OVERWORLD : TBADimensions.TDA_MINING_LEVEL;
-                    if (minecraftserver != null) {
-                        ServerLevel destinationWorld = minecraftserver.getLevel(destination);
-                        if (destinationWorld != null && minecraftserver.isNetherEnabled() && !entity.isPassenger()) {
-                            entity.level.getProfiler().push("mining_portal");
-                            entity.setPortalCooldown();
-                            entity.changeDimension(destinationWorld, new TBAMiningTeleporter(destinationWorld));
-                            entity.level.getProfiler().pop();
-                        }
+                Level level1 = entity.level;
+                MinecraftServer minecraftserver = level1.getServer();
+                ResourceKey<Level> destination = entity.level.dimension() == TBADimensions.TDA_MINING_LEVEL ? Level.OVERWORLD : TBADimensions.TDA_MINING_LEVEL;
+                if (minecraftserver != null) {
+                    ServerLevel destinationWorld = minecraftserver.getLevel(destination);
+                    if (destinationWorld != null && minecraftserver.isNetherEnabled() && !entity.isPassenger()) {
+                        entity.level.getProfiler().push("mining_portal");
+                        entity.setPortalCooldown();
+                        entity.changeDimension(destinationWorld, new TBAMiningTeleporter(destinationWorld));
+                        entity.level.getProfiler().pop();
                     }
                 }
             }
@@ -186,19 +169,18 @@ public class TBAMiningPortalBlock extends Block {
             level.addParticle(ParticleTypes.WHITE_ASH.getType(),
                     x, y, z, xSpeed, ySpeed, zSpeed);
         }
-
     }
 
     @SuppressWarnings("deprecation")
     @Override
-    public @NotNull ItemStack getCloneItemStack(@NotNull BlockGetter level, @NotNull BlockPos pos, @NotNull BlockState state) {
+    public @NotNull ItemStack getCloneItemStack(@NotNull BlockGetter getter, @NotNull BlockPos pos, @NotNull BlockState state) {
         return ItemStack.EMPTY;
     }
 
     @SuppressWarnings("deprecation")
     @Override
-    public @NotNull BlockState rotate(@NotNull BlockState state, @NotNull Rotation rot) {
-        switch (rot) {
+    public @NotNull BlockState rotate(@NotNull BlockState state, @NotNull Rotation rotation) {
+        switch (rotation) {
             case COUNTERCLOCKWISE_90:
             case CLOCKWISE_90:
                 //noinspection EnhancedSwitchMigration
@@ -244,8 +226,7 @@ public class TBAMiningPortalBlock extends Block {
             }
 
             //noinspection StatementWithEmptyBody
-            for (BlockPos blockpos = pos; pos.getY() > blockpos.getY() - 21 && pos.getY() > 0
-                    && this.canConnect(level.getBlockState(pos.below())); pos = pos.below()) {
+            for (BlockPos blockpos = pos; pos.getY() > blockpos.getY() - 21 && pos.getY() > 0 && this.canConnect(level.getBlockState(pos.below())); pos = pos.below()) {
             }
 
             int i = this.getDistanceUntilEdge(pos, this.leftDir) - 1;
@@ -269,15 +250,13 @@ public class TBAMiningPortalBlock extends Block {
             for (i = 0; i < 22; ++i) {
                 BlockPos blockpos = pos.relative(directionIn, i);
                 if (!this.canConnect(this.level.getBlockState(blockpos)) ||
-                        !(this.level.getBlockState(blockpos.below())
-                                .is(TBATags.Blocks.TBA_MINING_PORTAL_FRAME_BLOCKS))) {
+                        !(this.level.getBlockState(blockpos.below()).is(Blocks.ANDESITE))) {
                     break;
                 }
             }
 
             BlockPos framePos = pos.relative(directionIn, i);
-            return this.level.getBlockState(framePos)
-                    .is(TBATags.Blocks.TBA_MINING_PORTAL_FRAME_BLOCKS) ? i : 0;
+            return this.level.getBlockState(framePos).is(Blocks.ANDESITE) ? i : 0;
         }
 
         public int getHeight() {
@@ -292,42 +271,41 @@ public class TBAMiningPortalBlock extends Block {
             label56:
             for (this.height = 0; this.height < 21; ++this.height) {
                 for (int i = 0; i < this.width; ++i) {
-                    assert this.bottomLeft != null;
-                    BlockPos blockpos = this.bottomLeft.relative(this.rightDir, i)
-                            .above(this.height);
-                    BlockState blockstate = this.level.getBlockState(blockpos);
-                    if (!this.canConnect(blockstate)) {
-                        break label56;
-                    }
-
-                    Block block = blockstate.getBlock();
-                    if (block == TBABlocks.TBA_MINING_PORTAL.get()) {
-                        ++this.portalBlockCount;
-                    }
-
-                    if (i == 0) {
-                        BlockPos framePos = blockpos.relative(this.leftDir);
-                        if (!(this.level.getBlockState(framePos)
-                                .is(TBATags.Blocks.TBA_MINING_PORTAL_FRAME_BLOCKS))) {
+                    if (this.bottomLeft != null) {
+                        BlockPos blockPos = this.bottomLeft.relative(this.rightDir, i).above(this.height);
+                        BlockState blockState = this.level.getBlockState(blockPos);
+                        if (!this.canConnect(blockState)) {
                             break label56;
                         }
-                    }
-                    else if (i == this.width - 1) {
-                        BlockPos framePos = blockpos.relative(this.rightDir);
-                        if (!(this.level.getBlockState(framePos)
-                                .is(TBATags.Blocks.TBA_MINING_PORTAL_FRAME_BLOCKS))) {
-                            break label56;
+
+                        Block block = blockState.getBlock();
+                        if (block == TBABlocks.TBA_MINING_PORTAL.get()) {
+                            ++this.portalBlockCount;
+                        }
+
+                        if (i == 0) {
+                            BlockPos framePos = blockPos.relative(this.leftDir);
+                            if (!(this.level.getBlockState(framePos).is(Blocks.ANDESITE))) {
+                                break label56;
+                            }
+                        }
+                        else if (i == this.width - 1) {
+                            BlockPos framePos = blockPos.relative(this.rightDir);
+                            if (!(this.level.getBlockState(framePos).is(Blocks.ANDESITE))) {
+                                break label56;
+                            }
                         }
                     }
                 }
             }
 
             for (int j = 0; j < this.width; ++j) {
-                BlockPos framePos = this.bottomLeft.relative(this.rightDir, j).above(this.height);
-                if (!(this.level.getBlockState(framePos)
-                        .is(TBATags.Blocks.TBA_MINING_PORTAL_FRAME_BLOCKS))) {
-                    this.height = 0;
-                    break;
+                if (this.bottomLeft != null) {
+                    BlockPos framePos = this.bottomLeft.relative(this.rightDir, j).above(this.height);
+                    if (!(this.level.getBlockState(framePos).is(Blocks.ANDESITE))) {
+                        this.height = 0;
+                        break;
+                    }
                 }
             }
 
@@ -348,22 +326,21 @@ public class TBAMiningPortalBlock extends Block {
         }
 
         public boolean isValid() {
-            return this.bottomLeft != null && this.width >= 2 && this.width <= 21
-                    && this.height >= 3 && this.height <= 21;
+            return this.bottomLeft != null && this.width >= 2 && this.width <= 21 && this.height >= 3 && this.height <= 21;
         }
 
         public void placePortalBlocks() {
             for (int i = 0; i < this.width; ++i) {
-                assert this.bottomLeft != null;
-                BlockPos blockpos = this.bottomLeft.relative(this.rightDir, i);
+                if (this.bottomLeft != null) {
+                    BlockPos blockpos = this.bottomLeft.relative(this.rightDir, i);
 
-                for (int j = 0; j < this.height; ++j) {
-                    this.level.setBlock(blockpos.above(j),
-                            TBABlocks.TBA_MINING_PORTAL.get().defaultBlockState()
-                                    .setValue(TBAMiningPortalBlock.AXIS, this.axis), 18);
+                    for (int j = 0; j < this.height; ++j) {
+                        this.level.setBlock(blockpos.above(j),
+                                TBABlocks.TBA_MINING_PORTAL.get().defaultBlockState()
+                                        .setValue(TBAMiningPortalBlock.AXIS, this.axis), 18);
+                    }
                 }
             }
-
         }
 
         private boolean isPortalCountValidForSize() {

@@ -10,8 +10,6 @@ import net.minecraft.core.Direction;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.server.level.TicketType;
-import net.minecraft.sounds.SoundEvents;
-import net.minecraft.sounds.SoundSource;
 import net.minecraft.util.Mth;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.ai.village.poi.PoiManager;
@@ -37,31 +35,31 @@ import java.util.function.Function;
 public class TBAMiningTeleporter implements ITeleporter {
     protected final ServerLevel level;
 
-    public TBAMiningTeleporter(ServerLevel worldIn) {
-        this.level = worldIn;
+    public TBAMiningTeleporter(ServerLevel level) {
+        this.level = level;
     }
 
     public Optional<BlockUtil.FoundRectangle> getExistingPortal(BlockPos pos) {
         PoiManager poiManager = this.level.getPoiManager();
         poiManager.ensureLoadedAndValid(this.level, pos, 64);
-        Optional<PoiRecord> optional = poiManager.getInSquare((poiType) -> {
-            assert TBAPOIs.MINING_PORTAL_POI.getKey() != null;
-            return poiType.is(TBAPOIs.MINING_PORTAL_POI.getKey());
-        }, pos, 64, PoiManager.Occupancy.ANY)
-                .sorted(Comparator.<PoiRecord>comparingDouble((poi) ->
-                poi.getPos().distSqr(pos)).thenComparingInt((poi) ->
-                poi.getPos().getY())).filter((poi) ->
-                this.level.getBlockState(poi.getPos())
-                        .hasProperty(BlockStateProperties.HORIZONTAL_AXIS)).findFirst();
+        //noinspection DataFlowIssue
+        Optional<PoiRecord> optional = poiManager.getInSquare((poiType) ->
+                        poiType.is(TBAPOIs.MINING_PORTAL_POI.getKey()), pos, 64,
+                PoiManager.Occupancy.ANY).sorted(
+                Comparator.<PoiRecord>comparingDouble((poi) ->
+                        poi.getPos().distSqr(pos)).thenComparingInt((poi) ->
+                        poi.getPos().getY())).filter((poi) ->
+                this.level.getBlockState(poi.getPos()).hasProperty(
+                        BlockStateProperties.HORIZONTAL_AXIS)).findFirst();
         return optional.map((poi) -> {
-            BlockPos blockPos = poi.getPos();
+            BlockPos blockpos = poi.getPos();
             this.level.getChunkSource().addRegionTicket(TicketType.PORTAL,
-                    new ChunkPos(blockPos), 3, blockPos);
-            BlockState blockstate = this.level.getBlockState(blockPos);
-            return BlockUtil.getLargestRectangleAround(blockPos,
+                    new ChunkPos(blockpos), 3, blockpos);
+            BlockState blockstate = this.level.getBlockState(blockpos);
+            return BlockUtil.getLargestRectangleAround(blockpos,
                     blockstate.getValue(BlockStateProperties.HORIZONTAL_AXIS),
                     21, Direction.Axis.Y, 21, (posIn) ->
-                    this.level.getBlockState(posIn) == blockstate);
+                            this.level.getBlockState(posIn) == blockstate);
         });
     }
 
@@ -143,13 +141,12 @@ public class TBAMiningTeleporter implements ITeleporter {
             }
         }
 
-        BlockState miningPortal = TBABlocks.TBA_MINING_PORTAL.get().defaultBlockState()
-                .setValue(TBAMiningPortalBlock.AXIS, axis);
+        BlockState portal = TBABlocks.TBA_MINING_PORTAL.get().defaultBlockState().setValue(TBAMiningPortalBlock.AXIS, axis);
 
         for (int j2 = 0; j2 < 2; ++j2) {
             for (int l2 = 0; l2 < 3; ++l2) {
                 mutablePos.setWithOffset(blockPos, j2 * direction.getStepX(), l2, j2 * direction.getStepZ());
-                this.level.setBlock(mutablePos, miningPortal, 18);
+                this.level.setBlock(mutablePos, portal, 18);
             }
         }
 
@@ -178,8 +175,8 @@ public class TBAMiningTeleporter implements ITeleporter {
     @Nullable
     @Override
     public PortalInfo getPortalInfo(@NotNull Entity entity, @NotNull ServerLevel level, Function<ServerLevel, PortalInfo> defaultPortalInfo) {
-        boolean mining_dimension = level.dimension() == TBADimensions.TDA_MINING_LEVEL;
-        if (entity.level.dimension() != TBADimensions.TDA_MINING_LEVEL && !mining_dimension) {
+        boolean destinationIsMining = level.dimension() == TBADimensions.TDA_MINING_LEVEL;
+        if (entity.level.dimension() != TBADimensions.TDA_MINING_LEVEL && !destinationIsMining) {
             return null;
         }
         else {
@@ -216,19 +213,13 @@ public class TBAMiningTeleporter implements ITeleporter {
             return existingPortal;
         }
         else {
-            Direction.Axis portalAxis = this.level.getBlockState(entity.portalEntrancePos)
-                    .getOptionalValue(TBAMiningPortalBlock.AXIS).orElse(Direction.Axis.X);
+            Direction.Axis portalAxis = this.level.getBlockState(entity.portalEntrancePos).getOptionalValue(TBAMiningPortalBlock.AXIS).orElse(Direction.Axis.X);
             return this.makePortal(pos, portalAxis);
         }
     }
 
     @Override
-    public boolean playTeleportSound(@NotNull ServerPlayer player, @NotNull ServerLevel sourceDim, ServerLevel destinationDim) {
-        if (sourceDim.getRandom().nextInt(50) < 50) {
-            player.getLevel().playSound(player, player.getOnPos(),
-                    SoundEvents.AMETHYST_BLOCK_CHIME, SoundSource.BLOCKS, 1F, 1F);
-            return true;
-        }
-        else return false;
+    public boolean playTeleportSound(ServerPlayer player, ServerLevel origin, ServerLevel destination) {
+        return true;
     }
 }

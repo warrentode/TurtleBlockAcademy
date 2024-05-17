@@ -67,6 +67,7 @@ public class TurtleBlockAcademy {
 
         TBADimensions.register();
         TBABiomes.TBA_BIOMES.register(modEventBus);
+        TBAPOIs.register(modEventBus);
     }
 
     @SuppressWarnings("deprecation")
@@ -83,7 +84,6 @@ public class TurtleBlockAcademy {
     };
 
     private void commonSetup(final FMLCommonSetupEvent event) {
-        event.enqueueWork(TBAPOIs::registerPOIs);
         event.enqueueWork(()-> {
             //noinspection deprecation
             SpawnPlacements.register(TBAEntityTypes.TREASURE_BEETLE.get(),
