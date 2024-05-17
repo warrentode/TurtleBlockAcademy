@@ -25,8 +25,9 @@ public class TBABlocks {
             () -> new CertificateBlock(BlockBehaviour.Properties.of(Material.PLANT)
                     .sound(TurtleBlockAcademy.CERTIFICATE).strength(1).noOcclusion()));
 
-    public static final RegistryObject<Block> TBA_MINING_PORTAL =
-            registerBlockWithoutBlockItem("mining_portal", TBAMiningPortalBlock::new);
+   /* removed until I can fix portal for production environment
+   public static final RegistryObject<Block> TBA_MINING_PORTAL =
+            registerBlockWithoutBlockItem("mining_portal", TBAMiningPortalBlock::new); */
 
     public static final RegistryObject<Block> PLATE_WHITE = registerBlock("plate_white",
             () -> new PlateBlock(BlockBehaviour.Properties.of(Material.GLASS)

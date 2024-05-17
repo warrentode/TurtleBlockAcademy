@@ -139,6 +139,12 @@ public class RecipesGen extends RecipeProvider implements IConditionBuilder {
     }
 
     private void minecraftRecipes(Consumer<FinishedRecipe> consumer) {
+        ShapelessRecipeBuilder.shapeless(Items.SUGAR, 1)
+                .requires(Items.BEETROOT)
+                .requires(Items.BEETROOT)
+                .unlockedBy("has_beetroot", has(Items.BEETROOT))
+                .save(consumer, new ResourceLocation("minecraft",
+                        Items.SUGAR + "_from_beetroot"));
         ShapelessRecipeBuilder.shapeless(Items.LIME_DYE, 2)
                 .requires(Items.YELLOW_DYE)
                 .requires(Items.GREEN_DYE)

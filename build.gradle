@@ -72,6 +72,7 @@ sourceSets.main.resources {
 }
 
 repositories {
+    mavenCentral()
     maven {
         url = "https://cursemaven.com"
         content {
@@ -140,7 +141,7 @@ dependencies {
     implementation fg.deobf("curse.maven:miners-delight-plus-689630:4738272")
 
     // need this one on for runData
-    // implementation fg.deobf("curse.maven:delightful-637529:4541459")
+    implementation fg.deobf("curse.maven:delightful-637529:4541459")
     // need this one on for runClient
     compileOnly(fg.deobf("curse.maven:delightful-637529:4541459"))
 
@@ -186,6 +187,11 @@ dependencies {
     // patchouli
     implementation fg.deobf("curse.maven:patchouli-306770:4031402")
 
+    // mixin extras
+    compileOnly(annotationProcessor("io.github.llamalad7:mixinextras-common:0.3.6"))
+    implementation(jarJar("io.github.llamalad7:mixinextras-forge:0.3.6")) {
+        jarJar.ranged(it, "[0.3.6,)")
+    }
     // sponge mixin
     annotationProcessor 'org.spongepowered:mixin:0.8.5:processor'
 }

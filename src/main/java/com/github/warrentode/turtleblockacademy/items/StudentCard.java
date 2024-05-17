@@ -1,17 +1,10 @@
 package com.github.warrentode.turtleblockacademy.items;
 
-import com.github.warrentode.turtleblockacademy.blocks.TBABlocks;
-import com.github.warrentode.turtleblockacademy.blocks.TBAMiningPortalBlock;
 import com.github.warrentode.turtleblockacademy.util.AcademyUtil;
-import com.github.warrentode.turtleblockacademy.world.dimension.TBADimensions;
 import net.minecraft.ChatFormatting;
 import net.minecraft.client.gui.screens.Screen;
-import net.minecraft.core.BlockPos;
-import net.minecraft.core.Direction;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.chat.Component;
-import net.minecraft.sounds.SoundEvents;
-import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.InteractionResultHolder;
@@ -19,7 +12,6 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.TooltipFlag;
-import net.minecraft.world.item.context.UseOnContext;
 import net.minecraft.world.level.Level;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
@@ -33,6 +25,7 @@ public class StudentCard extends Item {
         super(properties);
     }
 
+    /* removed until I can fix the portal for production environment
     @Override
     public @NotNull InteractionResult useOn(@NotNull UseOnContext context) {
         Player player = context.getPlayer();
@@ -53,6 +46,7 @@ public class StudentCard extends Item {
         }
         return InteractionResult.FAIL;
     }
+     */
 
     @Override
     public @NotNull InteractionResultHolder<ItemStack> use(@NotNull Level level, @NotNull Player playerUsing, @NotNull InteractionHand useHand) {

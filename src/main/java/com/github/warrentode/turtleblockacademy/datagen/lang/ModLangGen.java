@@ -96,7 +96,7 @@ public class ModLangGen extends LanguageProvider {
     private void addBlocks() {
         add(TBABlocks.CERTIFICATE_BLOCK.get(), "Certificate of Completion");
 
-        add(TBABlocks.TBA_MINING_PORTAL.get(), "Mining Portal Block");
+        // add(TBABlocks.TBA_MINING_PORTAL.get(), "Mining Portal Block");
 
         add(TBABlocks.PLATE_WHITE.get(), "White Plate");
         add(TBABlocks.PLATE_ORANGE.get(), "Orange Plate");

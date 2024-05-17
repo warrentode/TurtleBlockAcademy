@@ -6,7 +6,6 @@ import com.github.warrentode.turtleblockacademy.blocks.gui.ModMenuTypes;
 import com.github.warrentode.turtleblockacademy.blocks.gui.SchoolDeskScreen;
 import com.github.warrentode.turtleblockacademy.config.AcademyConfig;
 import com.github.warrentode.turtleblockacademy.entity.TBAEntityTypes;
-import com.github.warrentode.turtleblockacademy.entity.TBAPOIs;
 import com.github.warrentode.turtleblockacademy.entity.client.HerobrineRenderer;
 import com.github.warrentode.turtleblockacademy.entity.client.SeatEntityRenderer;
 import com.github.warrentode.turtleblockacademy.entity.client.TreasureBeetleRenderer;
@@ -67,7 +66,7 @@ public class TurtleBlockAcademy {
 
         TBADimensions.register();
         TBABiomes.TBA_BIOMES.register(modEventBus);
-        TBAPOIs.register(modEventBus);
+        // TBAPOIs.register(modEventBus);
     }
 
     @SuppressWarnings("deprecation")
