@@ -205,6 +205,7 @@ public class TBATags {
         public static final TagKey<Item> SWEETENED_CHUNK = packItemTag("rottenleather", "sweetened_chunk");
 
         public static final TagKey<Item> GLAZES = packItemTag("forge", "ingredients/glazes");
+        public static final TagKey<Item> ALCOHOL = packItemTag("forge", "ingredients/alcohol");
         public static final TagKey<Item> STRAW_FIBERS = packItemTag(MODID, "straw_fibers");
 
         public static final TagKey<Item> JAR_PLACEABLE = packItemTag(MODID, "jar_placeable");

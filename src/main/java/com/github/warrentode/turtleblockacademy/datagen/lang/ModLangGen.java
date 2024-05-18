@@ -91,6 +91,10 @@ public class ModLangGen extends LanguageProvider {
         add(TBAItems.STUDENT_CARD.get(), "Turtle Block Academy Student ID");
         add(TBAItems.TREASURE_BEETLE_SPAWN_EGG.get(), "Treasure Beetle Spawn Egg");
         add(TBAItems.HEROBRINE_SPAWN_EGG.get(), "Herobrine Spawn Egg");
+        add(TBAItems.BEET_WINE.get(), "Beet Wine");
+        add(TBAItems.VINEGAR_BOTTLE.get(), "Vinegar");
+        add(TBAItems.BEET_RISOTTO.get(), "Beet Risotto");
+        add(TBAItems.BEET_SALAD.get(), "Beet Salad");
     }
 
     private void addBlocks() {

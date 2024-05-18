@@ -22,6 +22,11 @@ public class ModItemModelProvider extends ItemModelProvider {
     @Override
     protected void registerModels() {
         basicItem(TBAItems.STUDENT_CARD.get());
+        basicItem(TBAItems.BEET_WINE.get());
+        basicItem(TBAItems.VINEGAR_BOTTLE.get());
+        basicItem(TBAItems.BEET_RISOTTO.get());
+        basicItem(TBAItems.BEET_SALAD.get());
+
         blockBasedModel(TBABlocks.CERTIFICATE_BLOCK.get().asItem());
     }
 

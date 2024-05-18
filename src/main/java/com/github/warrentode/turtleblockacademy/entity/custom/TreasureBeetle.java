@@ -34,6 +34,8 @@ import java.util.List;
 public class TreasureBeetle extends Monster {
     private static final EntityDataAccessor<Integer> DATA_TREASURE_TIME =
             SynchedEntityData.defineId(TreasureBeetle.class, EntityDataSerializers.INT);
+    private static final EntityDataAccessor<Integer> DATA_IDLE_TIME =
+            SynchedEntityData.defineId(TreasureBeetle.class, EntityDataSerializers.INT);
     public static final AnimationState walkAnimationState = new AnimationState();
     public static final AnimationState idleAnimationState = new AnimationState();
     private int idleTimer;
@@ -55,9 +57,18 @@ public class TreasureBeetle extends Monster {
         this.entityData.set(DATA_TREASURE_TIME, treasureTime);
     }
 
+    protected int getIdleTime() {
+        return this.entityData.get(DATA_IDLE_TIME);
+    }
+
+    public void setIdleTime(int idleTime) {
+        this.entityData.set(DATA_IDLE_TIME, idleTime);
+    }
+
     protected void defineSynchedData() {
         super.defineSynchedData();
         this.entityData.define(DATA_TREASURE_TIME, 0);
+        this.entityData.define(DATA_IDLE_TIME, 0);
     }
 
     @Override
@@ -101,8 +112,9 @@ public class TreasureBeetle extends Monster {
             treasureTime--;
             setTreasureTime(treasureTime--);
         }
-        while (this.idleTimer > 0) {
+        while (getIdleTime() > 0 && this.idleTimer > 0) {
             idleTimer--;
+            setIdleTime(idleTimer--);
         }
 
         if (!level.isClientSide) {

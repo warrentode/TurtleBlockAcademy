@@ -1,0 +1,26 @@
+{
+  "type": "drinkbeer:brewing",
+  "brewing_time": 24000,
+  "cup": {
+    "count": 4,
+    "item": "minecraft:glass_bottle"
+  },
+  "ingredients": [
+    {
+      "item": "tconstruct:beetroot_soup_bucket"
+    },
+    {
+      "tag": "forge:sugar"
+    },
+    {
+      "tag": "forge:sugar"
+    },
+    {
+      "tag": "forge:ingredients/bread"
+    }
+  ],
+  "result": {
+    "count": 4,
+    "item": "turtleblockacademy:beet_wine"
+  }
+}

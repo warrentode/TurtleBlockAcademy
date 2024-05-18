@@ -1,0 +1,31 @@
+{
+  "type": "farmersdelight:cooking",
+  "container": {
+    "item": "minecraft:bowl"
+  },
+  "cookingtime": 200,
+  "experience": 1.0,
+  "ingredients": [
+    {
+      "item": "farmersdelight:cooked_rice"
+    },
+    {
+      "item": "minecraft:beetroot_soup"
+    },
+    {
+      "item": "farmersdelight:bone_broth"
+    },
+    {
+      "tag": "forge:ingredients/onion"
+    },
+    {
+      "item": "turtleblockacademy:beet_wine"
+    },
+    {
+      "item": "turtleblockacademy:vinegar_bottle"
+    }
+  ],
+  "result": {
+    "item": "turtleblockacademy:beet_risotto"
+  }
+}

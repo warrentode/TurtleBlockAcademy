@@ -4,6 +4,9 @@ import com.github.warrentode.turtleblockacademy.util.TBASounds;
 import net.minecraft.core.BlockPos;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.nbt.NbtUtils;
+import net.minecraft.network.syncher.EntityDataAccessor;
+import net.minecraft.network.syncher.EntityDataSerializers;
+import net.minecraft.network.syncher.SynchedEntityData;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.entity.*;
@@ -20,6 +23,8 @@ import javax.annotation.Nullable;
 import java.util.EnumSet;
 
 public class Herobrine extends PathfinderMob implements Npc {
+    private static final EntityDataAccessor<Integer> DATA_IDLE_TIME =
+            SynchedEntityData.defineId(Herobrine.class, EntityDataSerializers.INT);
     public static final AnimationState walkAnimationState = new AnimationState();
     public static final AnimationState idleAnimationState = new AnimationState();
     private int idleTimer;
@@ -36,14 +41,26 @@ public class Herobrine extends PathfinderMob implements Npc {
         this.idleTimer = 0;
     }
 
+    protected int getIdleTime() {
+        return this.entityData.get(DATA_IDLE_TIME);
+    }
+
+    public void setIdleTime(int idleTime) {
+        this.entityData.set(DATA_IDLE_TIME, idleTime);
+    }
+
+    protected void defineSynchedData() {
+        super.defineSynchedData();
+        this.entityData.define(DATA_IDLE_TIME, 0);
+    }
+
     protected void registerGoals() {
         this.goalSelector.addGoal(0, new FloatGoal(this));
-        this.goalSelector.addGoal(1, new HerobrineFreezeWhenLookedAt(this));
-        this.goalSelector.addGoal(1, new LookAtPlayerGoal(this, Mob.class, 8.0F));
-        this.goalSelector.addGoal(2, new AvoidEntityGoal<>(this, Player.class, 16.0F, 1.0, 1.5F));
-        this.goalSelector.addGoal(2, new WanderToPositionGoal(this, 2.0, 0.35));
-        this.goalSelector.addGoal(4, new MoveTowardsRestrictionGoal(this, 0.35));
-        this.goalSelector.addGoal(8, new WaterAvoidingRandomStrollGoal(this, 0.35));
+        this.goalSelector.addGoal(3, new InteractGoal(this, Player.class, 32.0F, 1.0F));
+        this.goalSelector.addGoal(4, new LookAtPlayerGoal(this, Mob.class, 32.0F));
+        this.goalSelector.addGoal(5, new WanderToPositionGoal(this, 2.0, 0.35));
+        this.goalSelector.addGoal(6, new MoveTowardsRestrictionGoal(this, 0.35));
+        this.goalSelector.addGoal(7, new WaterAvoidingRandomStrollGoal(this, 0.35));
         this.goalSelector.addGoal(9, new RandomLookAroundGoal(this));
     }
 
@@ -127,22 +144,23 @@ public class Herobrine extends PathfinderMob implements Npc {
         while (this.despawnDelay > 0) {
             despawnDelay--;
         }
-        while (this.idleTimer > 0) {
+        while (this.getIdleTime() > 0 && this.idleTimer > 0) {
             idleTimer--;
+            setIdleTime(idleTimer--);
         }
 
-        if (--idleTimer > 0) {
-            idleAnimationState.startIfStopped(this.tickCount);
-        }
-        else {
-            idleAnimationState.stop();
-        }
         if (this.isMovingOnLand()) {
             walkAnimationState.startIfStopped(this.tickCount);
         }
         else {
             walkAnimationState.stop();
             idleTimer = this.random.nextInt(40) + 80;
+        }
+        if (--idleTimer > 0) {
+            idleAnimationState.startIfStopped(this.tickCount);
+        }
+        else {
+            idleAnimationState.stop();
         }
 
         if (!this.level.isClientSide) {
@@ -210,44 +228,5 @@ public class Herobrine extends PathfinderMob implements Npc {
         private boolean isTooFarAway(@NotNull BlockPos pos, double distance) {
             return !pos.closerToCenterThan(this.herobrine.position(), distance);
         }
-    }
-
-    static class HerobrineFreezeWhenLookedAt extends Goal {
-        private final Herobrine herobrine;
-        @Nullable
-        private LivingEntity target;
-
-        public HerobrineFreezeWhenLookedAt(Herobrine herobrine) {
-            this.herobrine = herobrine;
-            this.setFlags(EnumSet.of(Flag.JUMP, Flag.MOVE));
-        }
-
-        public boolean canUse() {
-            this.target = this.herobrine.getTarget();
-            if (!(this.target instanceof Player)) {
-                return false;
-            } else {
-                double d0 = this.target.distanceToSqr(this.herobrine);
-                return !(d0 > 256.0) && this.herobrine.isLookingAtMe((Player) this.target);
-            }
-        }
-
-        public void start() {
-            this.herobrine.getNavigation().stop();
-        }
-
-        public void tick() {
-            assert this.target != null;
-            this.herobrine.getLookControl().setLookAt(this.target.getX(), this.target.getEyeY(), this.target.getZ());
-        }
-    }
-
-    boolean isLookingAtMe(@NotNull Player player) {
-        Vec3 vec3 = player.getViewVector(1.0F).normalize();
-        Vec3 vec31 = new Vec3(this.getX() - player.getX(), this.getEyeY() - player.getEyeY(), this.getZ() - player.getZ());
-        double d0 = vec31.length();
-        vec31 = vec31.normalize();
-        double d1 = vec3.dot(vec31);
-        return d1 > 1.0 - 0.025 / d0 && player.hasLineOfSight(this);
     }
 }

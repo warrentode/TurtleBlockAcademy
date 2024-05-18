@@ -89,9 +89,10 @@ public class TreasureBeetleModel<T extends Entity> extends HierarchicalModel<T> 
 		float min = Math.min((float)entity.getDeltaMovement().lengthSqr() * 200.0F, 8.0F);
 		this.applyHeadRotation(netHeadYaw, headPitch, ageInTicks);
 		this.animate(TreasureBeetle.walkAnimationState, TBAAnimationDefinitions.TREASURE_BEETLE_WALK, ageInTicks, min);
-		this.animate(TreasureBeetle.idleAnimationState, TBAAnimationDefinitions.TREASURE_BEETLE_IDLE, ageInTicks);
+		this.animate(TreasureBeetle.idleAnimationState, TBAAnimationDefinitions.TREASURE_BEETLE_IDLE, ageInTicks, min);
 	}
 
+	@SuppressWarnings("unused")
 	private void applyHeadRotation(float netHeadYaw, float headPitch, float ageInTicks) {
 		this.head.yRot = netHeadYaw * 0.017453292F;
 		this.head.xRot = headPitch * 0.017453292F;

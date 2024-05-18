@@ -1111,6 +1111,9 @@ public class ItemTagsGen extends ItemTagsProvider {
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("tofucraft:apricotjerry_bread")))
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("hauntedharvest:cornbread")))
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("farmersrespite:nether_wart_sourdough")));
+        tag(TBATags.Items.ALCOHOL)
+                .add(TBAItems.BEET_WINE.get())
+                .addOptionalTag(Objects.requireNonNull(ResourceLocation.tryParse("drinkbeer:beer")));
         tag(TBATags.Items.GLAZES)
                 .add(Items.HONEY_BOTTLE)
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("wildberries:cranberry_jam")))

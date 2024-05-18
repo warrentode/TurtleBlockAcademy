@@ -1,0 +1,26 @@
+{
+  "type": "drinkbeer:brewing",
+  "brewing_time": 24000,
+  "cup": {
+    "count": 4,
+    "item": "minecraft:glass_bottle"
+  },
+  "ingredients": [
+    {
+      "tag": "forge:ingredients/alcohol"
+    },
+    {
+      "tag": "forge:ingredients/alcohol"
+    },
+    {
+      "tag": "forge:ingredients/alcohol"
+    },
+    {
+      "tag": "forge:ingredients/alcohol"
+    }
+  ],
+  "result": {
+    "count": 4,
+    "item": "turtleblockacademy:vinegar_bottle"
+  }
+}

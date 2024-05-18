@@ -5,6 +5,7 @@ import com.aetherteam.aether.block.AetherBlocks;
 import com.aetherteam.aether.item.AetherItems;
 import com.catastrophe573.dimdungeons.block.BlockRegistrar;
 import com.github.warrentode.turtleblockacademy.blocks.TBABlocks;
+import com.github.warrentode.turtleblockacademy.datagen.recipes.builder.BrewingRecipeBuilder;
 import com.github.warrentode.turtleblockacademy.datagen.recipes.builder.PatchouliShapelessBookRecipeBuilder;
 import com.github.warrentode.turtleblockacademy.datagen.recipes.recipe.CuttingRecipesGen;
 import com.github.warrentode.turtleblockacademy.datagen.recipes.recipe.LootBagRecipesGen;
@@ -36,6 +37,7 @@ import net.minecraftforge.common.Tags;
 import net.minecraftforge.common.crafting.ConditionalRecipe;
 import net.minecraftforge.common.crafting.conditions.IConditionBuilder;
 import org.jetbrains.annotations.NotNull;
+import slimeknights.tconstruct.fluids.TinkerFluids;
 import umpaz.farmersrespite.common.registry.FRItems;
 import umpaz.farmersrespite.data.builder.KettleRecipeBuilder;
 import vectorwing.farmersdelight.common.registry.ModBlocks;
@@ -65,6 +67,7 @@ public class RecipesGen extends RecipeProvider implements IConditionBuilder {
     @Override
     protected void buildCraftingRecipes(@NotNull Consumer<FinishedRecipe> consumer) {
         schoolSupplyRecipes(consumer);
+        brewingRecipes(consumer);
         cookingPotRecipes(consumer);
         kettleRecipes(consumer);
         mcwlightsRecipes(consumer);
@@ -85,6 +88,59 @@ public class RecipesGen extends RecipeProvider implements IConditionBuilder {
         CuttingRecipesGen.register(consumer);
     }
 
+    private void brewingRecipes(Consumer<FinishedRecipe> consumer) {
+        ConditionalRecipe.builder()
+                .addCondition(modLoaded("drinkbeer"))
+                .addRecipe(finishedRecipeConsumer ->
+                        BrewingRecipeBuilder.brewingRecipe(TBAItems.BEET_WINE.get(),
+                                        24000, Items.GLASS_BOTTLE, 4)
+                                .addIngredient(Items.BEETROOT_SOUP)
+                                .addIngredient(Items.BEETROOT_SOUP)
+                                .addIngredient(TBATags.Items.SUGAR)
+                                .addIngredient(TBATags.Items.BREAD)
+                                .build(consumer, new ResourceLocation("drinkbeer",
+                                        TBAItems.BEET_WINE.get().asItem().toString()))
+                );
+        ConditionalRecipe.builder()
+                .addCondition(modLoaded("drinkbeer"))
+                .addCondition(modLoaded("tconstruct"))
+                .addRecipe(finishedRecipeConsumer ->
+                        BrewingRecipeBuilder.brewingRecipe(TBAItems.BEET_WINE.get(),
+                                        24000, Items.GLASS_BOTTLE, 4)
+                                .addIngredient(TinkerFluids.beetrootSoup)
+                                .addIngredient(TBATags.Items.SUGAR)
+                                .addIngredient(TBATags.Items.SUGAR)
+                                .addIngredient(TBATags.Items.BREAD)
+                                .build(consumer, new ResourceLocation("drinkbeer",
+                                        TBAItems.BEET_WINE.get() + "_from_beetroot_soup_bucket"))
+                );
+        ConditionalRecipe.builder()
+                .addCondition(modLoaded("drinkbeer"))
+                .addRecipe(finishedRecipeConsumer ->
+                        BrewingRecipeBuilder.brewingRecipe(TBAItems.VINEGAR_BOTTLE.get(),
+                                        24000, Items.GLASS_BOTTLE, 4)
+                                .addIngredient(TBATags.Items.ALCOHOL)
+                                .addIngredient(TBATags.Items.ALCOHOL)
+                                .addIngredient(TBATags.Items.ALCOHOL)
+                                .addIngredient(TBATags.Items.ALCOHOL)
+                                .build(consumer, new ResourceLocation("drinkbeer",
+                                        TBAItems.VINEGAR_BOTTLE.get().asItem().toString()))
+                );
+        ConditionalRecipe.builder()
+                .addCondition(modLoaded("drinkbeer"))
+                .addCondition(modLoaded("farmersdelight"))
+                .addRecipe(finishedRecipeConsumer ->
+                        BrewingRecipeBuilder.brewingRecipe(TBAItems.VINEGAR_BOTTLE.get(),
+                                        24000, Items.GLASS_BOTTLE, 4)
+                                .addIngredient(APPLE_CIDER.get())
+                                .addIngredient(APPLE_CIDER.get())
+                                .addIngredient(APPLE_CIDER.get())
+                                .addIngredient(APPLE_CIDER.get())
+                                .build(consumer, new ResourceLocation("drinkbeer",
+                                        TBAItems.VINEGAR_BOTTLE.get() + "_from_apple_cider"))
+                );
+    }
+
     private void patchouliBooksRecipes(Consumer<FinishedRecipe> consumer) {
         PatchouliShapelessBookRecipeBuilder
                 .writeRecipe("turtleblockacademy:kitchen_textbook", 1)
@@ -96,18 +152,6 @@ public class RecipesGen extends RecipeProvider implements IConditionBuilder {
                 .addIngredient(Items.BOOK)
                 .addIngredient(Items.GLASS_BOTTLE)
                 .finish(consumer, new ResourceLocation(MODID,"brewingguide"));
-        /*
-        StringValueShapelessRecipeBuilder
-                .writeRecipe("turtleblockacademy:brewingguide", 1)
-                .addIngredient(Items.BOOK)
-                .addIngredient(Items.GLASS_BOTTLE)
-                .finish(consumer, new ResourceLocation(MODID,"brewingguide"));
-        StringValueShapelessRecipeBuilder
-                .writeRecipe("turtleblockacademy:kitchen_textbook", 1)
-                .addIngredient(Items.BOOK)
-                .addIngredient(Items.EGG)
-                .finish(consumer, new ResourceLocation(MODID,"kitchen_textbook"));
-        */
     }
     private void kettleRecipes(Consumer<FinishedRecipe> consumer) {
         ConditionalRecipe.builder()
@@ -1221,6 +1265,38 @@ public class RecipesGen extends RecipeProvider implements IConditionBuilder {
     private void cookingPotRecipes(Consumer<FinishedRecipe> consumer) {
         ConditionalRecipe.builder()
                 .addCondition(modLoaded("farmersdelight"))
+                .addRecipe(finishedRecipeConsumer ->
+                        CookingPotRecipeBuilder.cookingPotRecipe(TBAItems.BEET_RISOTTO.get(),
+                                        1, 200, 1.0F, Items.BOWL)
+                                .addIngredient(COOKED_RICE.get())
+                                .addIngredient(Items.BEETROOT_SOUP)
+                                .addIngredient(BONE_BROTH.get())
+                                .addIngredient(TBATags.Items.ONION_INGREDIENTS)
+                                .addIngredient(TBAItems.BEET_WINE.get())
+                                .addIngredient(TBAItems.VINEGAR_BOTTLE.get())
+                                .unlockedBy("has_beets",
+                                        has(Items.BEETROOT))
+                                .build(consumer, new ResourceLocation("farmersdelight",
+                                        "cooking/" + TBAItems.BEET_RISOTTO.get()))
+                );
+        ConditionalRecipe.builder()
+                .addCondition(modLoaded("farmersdelight"))
+                .addRecipe(finishedRecipeConsumer ->
+                        CookingPotRecipeBuilder.cookingPotRecipe(TBAItems.BEET_SALAD.get(),
+                                        1, 200, 1.0F, Items.BOWL)
+                                .addIngredient(Items.BEETROOT)
+                                .addIngredient(Items.BEETROOT)
+                                .addIngredient(Items.BEETROOT)
+                                .addIngredient(TBATags.Items.ONION_INGREDIENTS)
+                                .addIngredient(TBATags.Items.SUGAR)
+                                .addIngredient(TBAItems.VINEGAR_BOTTLE.get())
+                                .unlockedBy("has_beets",
+                                        has(Items.BEETROOT))
+                                .build(consumer, new ResourceLocation("farmersdelight",
+                                        "cooking/" + TBAItems.BEET_SALAD.get()))
+                );
+        ConditionalRecipe.builder()
+                .addCondition(modLoaded("farmersdelight"))
                 .addCondition(modLoaded("farmersrespite"))
                 .addCondition(modLoaded("delightful"))
                 .addRecipe(finishedRecipeConsumer ->
@@ -1279,7 +1355,7 @@ public class RecipesGen extends RecipeProvider implements IConditionBuilder {
                 .addCondition(modLoaded("farmersdelight"))
                 .addRecipe(finishedRecipeConsumer ->
                         CookingPotRecipeBuilder.cookingPotRecipe(FRIED_RICE.get(),
-                                        2, 200, 1.0F)
+                                        2, 200, 1.0F, Items.BOWL)
                                 .addIngredient(TBATags.Items.RICE)
                                 .addIngredient(TBATags.Items.EGGS)
                                 .addIngredient(TBATags.Items.VEGETABLES)

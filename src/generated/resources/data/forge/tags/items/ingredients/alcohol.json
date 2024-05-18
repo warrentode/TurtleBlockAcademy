@@ -1,0 +1,9 @@
+{
+  "values": [
+    "turtleblockacademy:beet_wine",
+    {
+      "id": "#drinkbeer:beer",
+      "required": false
+    }
+  ]
+}

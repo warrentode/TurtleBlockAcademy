@@ -81,7 +81,7 @@ public class HerobrineModel<T extends Entity> extends HierarchicalModel<T> {
         float min = Math.min((float)entity.getDeltaMovement().lengthSqr() * 200.0F, 8.0F);
         this.applyHeadRotation(netHeadYaw, headPitch, ageInTicks);
         this.animate(Herobrine.walkAnimationState, TBAAnimationDefinitions.HEROBRINE_WALK, ageInTicks, min);
-        this.animate(Herobrine.idleAnimationState, TBAAnimationDefinitions.HEROBRINE_IDLE, ageInTicks);
+        this.animate(Herobrine.idleAnimationState, TBAAnimationDefinitions.HEROBRINE_IDLE, ageInTicks, min);
     }
 
     @Override

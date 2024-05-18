@@ -20,10 +20,11 @@ import javax.annotation.Nullable;
 
 public class HerobrineSpawner implements CustomSpawner {
     private final HerobrineData herobrineData;
+    @SuppressWarnings("unused")
     private final EntityType<Herobrine> herobrine;
     private static final int tickDelayBeforeSpawn = 1200;
-    public static final int defaultSpawnDelay = 24000;
-    public static final int defaultDespawnDelay = 48000;
+    public static final int defaultSpawnDelay = 12000;
+    public static final int defaultDespawnDelay = 6000;
     private static final int minSpawnChance = 25;
     private static final int maxSpawnChance = 75;
     private static final int spawnChanceIncrease = minSpawnChance;
