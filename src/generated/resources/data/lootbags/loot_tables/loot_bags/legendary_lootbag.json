@@ -15,8 +15,9 @@
           "conditions": [
             {
               "condition": "turtleblockacademy:gamestage_condition",
-              "stage": "false"
-            }, {
+              "stage": "dungeons"
+            },
+            {
               "chance": 0.1,
               "condition": "minecraft:random_chance"
             }
@@ -74,8 +75,9 @@
           "conditions": [
             {
               "condition": "turtleblockacademy:gamestage_condition",
-              "stage": "false"
-            }, {
+              "stage": "apartment"
+            },
+            {
               "chance": 0.1,
               "condition": "minecraft:random_chance"
             }
@@ -88,8 +90,9 @@
           "conditions": [
             {
               "condition": "turtleblockacademy:gamestage_condition",
-              "stage": "false"
-            }, {
+              "stage": "apartment"
+            },
+            {
               "chance": 0.1,
               "condition": "minecraft:random_chance"
             }

@@ -58,12 +58,12 @@ public class ModLootProviders extends LootTableProvider {
     }
 
     // game stage checks
-    public static final LootItemCondition.Builder STAGE_NETHER = GameStageCondition.stage().set(Boolean.valueOf("nether"));
-    public static final LootItemCondition.Builder STAGE_END = GameStageCondition.stage().set(Boolean.valueOf("end"));
-    public static final LootItemCondition.Builder STAGE_AETHER = GameStageCondition.stage().set(Boolean.valueOf("aether"));
-    public static final LootItemCondition.Builder STAGE_APARTMENT = GameStageCondition.stage().set(Boolean.valueOf("apartment"));
-    public static final LootItemCondition.Builder STAGE_DUNGEONS = GameStageCondition.stage().set(Boolean.valueOf("dungeons"));
-    public static final LootItemCondition.Builder STAGE_MINING = GameStageCondition.stage().set(Boolean.valueOf("mining"));
+    public static final LootItemCondition.Builder STAGE_NETHER = GameStageCondition.stage().set("nether");
+    public static final LootItemCondition.Builder STAGE_END = GameStageCondition.stage().set("end");
+    public static final LootItemCondition.Builder STAGE_AETHER = GameStageCondition.stage().set("aether");
+    public static final LootItemCondition.Builder STAGE_APARTMENT = GameStageCondition.stage().set("apartment");
+    public static final LootItemCondition.Builder STAGE_DUNGEONS = GameStageCondition.stage().set("dungeons");
+    public static final LootItemCondition.Builder STAGE_MINING = GameStageCondition.stage().set("mining");
 
     // dimension checks
     public static final LootItemCondition.Builder IN_OVERWORLD =

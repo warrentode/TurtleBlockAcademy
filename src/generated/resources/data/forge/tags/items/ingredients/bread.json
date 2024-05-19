@@ -2,6 +2,10 @@
   "values": [
     "minecraft:bread",
     {
+      "id": "eggdelight:bread_slice",
+      "required": false
+    },
+    {
       "id": "tofucraft:steamed_bread",
       "required": false
     },

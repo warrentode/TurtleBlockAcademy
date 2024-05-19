@@ -1,0 +1,9 @@
+{
+  "type": "lootbags:loot",
+  "color": "purple",
+  "name": "Loot Bag (Epic)",
+  "output": {
+    "table": "lootbags:loot_bags/epic_lootbag"
+  },
+  "rarity": "EPIC"
+}

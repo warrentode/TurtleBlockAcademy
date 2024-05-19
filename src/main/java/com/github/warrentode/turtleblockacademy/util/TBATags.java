@@ -237,6 +237,7 @@ public class TBATags {
         public static final TagKey<Item> NEEDLES = packItemTag(MODID, "needles");
         public static final TagKey<Item> STONE_LAMPS = packItemTag(MODID, "stone_lamps");
         public static final TagKey<Item> WAYSTONES = packItemTag(MODID, "waystones");
+        public static final TagKey<Item> APPLECRATES = packItemTag(MODID, "applecrates");
 
         public static final TagKey<Item> LOOTBAG_CURRENCY = packItemTag(MODID, "lootbag_currency");
         public static final TagKey<Item> LOOTBAG_SPECIAL_CURRENCY = packItemTag(MODID, "lootbag_special_currency");

@@ -44,9 +44,10 @@
                   "predicate": {
                     "dimension": "minecraft:the_end"
                   }
-                }, {
+                },
+                {
                   "condition": "turtleblockacademy:gamestage_condition",
-                  "stage": "false"
+                  "stage": "end"
                 }
               ]
             },

@@ -10,7 +10,6 @@ import net.minecraft.util.GsonHelper;
 import net.minecraft.world.level.storage.loot.LootContext;
 import net.minecraft.world.level.storage.loot.predicates.LootItemCondition;
 import net.minecraft.world.level.storage.loot.predicates.LootItemConditionType;
-import net.minecraftforge.fml.ModList;
 import org.jetbrains.annotations.NotNull;
 
 import javax.annotation.Nullable;
@@ -19,8 +18,8 @@ public class GameStageCondition implements LootItemCondition {
     @Nullable
     final String STAGE;
 
-    GameStageCondition(@Nullable Boolean stage) {
-        this.STAGE = String.valueOf(stage);
+    GameStageCondition(@Nullable String stage) {
+        this.STAGE = stage;
     }
 
     @Override
@@ -30,9 +29,9 @@ public class GameStageCondition implements LootItemCondition {
 
     @Override
     public boolean test(LootContext context) {
-        ServerPlayer player = context.getLevel().getServer().createCommandSourceStack().getPlayer();
-        if (STAGE != null && ModList.get().isLoaded("gamestages")) {
-                return GameStageHelper.hasStage(player, this.STAGE);
+        if (STAGE != null) {
+            ServerPlayer player = context.getLevel().getServer().createCommandSourceStack().getPlayer();
+            return GameStageHelper.hasStage(player, this.STAGE);
         }
         else {
             return false;
@@ -45,9 +44,9 @@ public class GameStageCondition implements LootItemCondition {
 
     public static class Builder implements LootItemCondition.Builder {
         @Nullable
-        Boolean STAGE;
+        String STAGE;
 
-        public GameStageCondition.Builder set(@Nullable Boolean STAGE) {
+        public GameStageCondition.Builder set(@Nullable String STAGE) {
             this.STAGE = STAGE;
             return this;
         }
@@ -65,8 +64,8 @@ public class GameStageCondition implements LootItemCondition {
 
         /** Deserialize a value by reading it from the JsonObject. */
         public @NotNull GameStageCondition deserialize(@NotNull JsonObject jsonObject, @NotNull JsonDeserializationContext context) {
-            Boolean booleanValue = jsonObject.has("stage") ? GsonHelper.getAsBoolean(jsonObject, "stage") : null;
-            return new GameStageCondition(booleanValue);
+            String string = jsonObject.has("stage") ? GsonHelper.getAsString(jsonObject, "stage") : null;
+            return new GameStageCondition(string);
         }
     }
 }

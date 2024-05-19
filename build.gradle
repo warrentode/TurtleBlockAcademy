@@ -141,7 +141,7 @@ dependencies {
     implementation fg.deobf("curse.maven:miners-delight-plus-689630:4738272")
 
     // need this one on for runData
-    // implementation fg.deobf("curse.maven:delightful-637529:4541459")
+    implementation fg.deobf("curse.maven:delightful-637529:4541459")
     // need this one on for runClient
     compileOnly(fg.deobf("curse.maven:delightful-637529:4541459"))
 

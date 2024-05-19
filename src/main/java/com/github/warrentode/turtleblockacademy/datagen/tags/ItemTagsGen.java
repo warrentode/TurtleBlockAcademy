@@ -56,6 +56,77 @@ public class ItemTagsGen extends ItemTagsProvider {
     }
 
     private void registerPackTags() {
+        tag(TBATags.Items.APPLECRATES)
+                .addOptional(Objects.requireNonNull(
+                        ResourceLocation.tryParse("applecrates_compat:skyroot_crate")))
+                .addOptional(Objects.requireNonNull(
+                        ResourceLocation.tryParse("applecrates_compat:tofu_stem_crate")))
+                .addOptional(Objects.requireNonNull(
+                        ResourceLocation.tryParse("applecrates_compat:green_cactus_extra_crate")))
+                .addOptional(Objects.requireNonNull(
+                        ResourceLocation.tryParse("applecrates_compat:cactus_extra_crate")))
+                .addOptional(Objects.requireNonNull(
+                        ResourceLocation.tryParse("applecrates_compat:chorus_nest_crate")))
+                .addOptional(Objects.requireNonNull(
+                        ResourceLocation.tryParse("applecrates_compat:ebony_crate")))
+                .addOptional(Objects.requireNonNull(
+                        ResourceLocation.tryParse("applecrates_compat:pream_crate")))
+                .addOptional(Objects.requireNonNull(
+                        ResourceLocation.tryParse("applecrates_compat:flowering_azalea_crate")))
+                .addOptional(Objects.requireNonNull(
+                        ResourceLocation.tryParse("applecrates_compat:azalea_crate")))
+                .addOptional(Objects.requireNonNull(
+                        ResourceLocation.tryParse("applecrates_compat:walnut_crate")))
+                .addOptional(Objects.requireNonNull(
+                        ResourceLocation.tryParse("applecrates_compat:coconut_crate")))
+                .addOptional(Objects.requireNonNull(
+                        ResourceLocation.tryParse("applecrates_compat:willow_crate")))
+                .addOptional(Objects.requireNonNull(
+                        ResourceLocation.tryParse("applecrates_compat:redwood_crate")))
+                .addOptional(Objects.requireNonNull(
+                        ResourceLocation.tryParse("applecrates_compat:palm_crate")))
+                .addOptional(Objects.requireNonNull(
+                        ResourceLocation.tryParse("applecrates_compat:mahogany_crate")))
+                .addOptional(Objects.requireNonNull(
+                        ResourceLocation.tryParse("applecrates_compat:magic_crate")))
+                .addOptional(Objects.requireNonNull(
+                        ResourceLocation.tryParse("applecrates_compat:jacaranda_crate")))
+                .addOptional(Objects.requireNonNull(
+                        ResourceLocation.tryParse("applecrates_compat:hellbark_crate")))
+                .addOptional(Objects.requireNonNull(
+                        ResourceLocation.tryParse("applecrates_compat:fir_crate")))
+                .addOptional(Objects.requireNonNull(
+                        ResourceLocation.tryParse("applecrates_compat:dead_crate")))
+                .addOptional(Objects.requireNonNull(
+                        ResourceLocation.tryParse("applecrates_compat:cherry_crate")))
+                .addOptional(Objects.requireNonNull(
+                        ResourceLocation.tryParse("applecrates_compat:enderbark_crate")))
+                .addOptional(Objects.requireNonNull(
+                        ResourceLocation.tryParse("applecrates_compat:bloodshroom_crate")))
+                .addOptional(Objects.requireNonNull(
+                        ResourceLocation.tryParse("applecrates_compat:greenheart_crate")))
+                .addOptional(Objects.requireNonNull(
+                        ResourceLocation.tryParse("applecrates_compat:tc_skyroot_crate")))
+                .addOptional(Objects.requireNonNull(
+                        ResourceLocation.tryParse("applecrates_compat:warped_crate")))
+                .addOptional(Objects.requireNonNull(
+                        ResourceLocation.tryParse("applecrates_compat:mangrove_crate")))
+                .addOptional(Objects.requireNonNull(
+                        ResourceLocation.tryParse("applecrates:warped_crate")))
+                .addOptional(Objects.requireNonNull(
+                        ResourceLocation.tryParse("applecrates:spruce_crate")))
+                .addOptional(Objects.requireNonNull(
+                        ResourceLocation.tryParse("applecrates:oak_crate")))
+                .addOptional(Objects.requireNonNull(
+                        ResourceLocation.tryParse("applecrates:jungle_crate")))
+                .addOptional(Objects.requireNonNull(
+                        ResourceLocation.tryParse("applecrates:dark_oak_crate")))
+                .addOptional(Objects.requireNonNull(
+                        ResourceLocation.tryParse("applecrates:crimson_crate")))
+                .addOptional(Objects.requireNonNull(
+                        ResourceLocation.tryParse("applecrates:birch_crate")))
+                .addOptional(Objects.requireNonNull(
+                        ResourceLocation.tryParse("applecrates:acacia_crate")));
         tag(TBATags.Items.CURIO)
                 .addTag(TBATags.Items.SUPPLEMENTARIES_KEY);
         tag(TBATags.Items.SUPPLEMENTARIES_KEY)
@@ -1105,6 +1176,7 @@ public class ItemTagsGen extends ItemTagsProvider {
                 .addOptional(ModItems.COOKED_MUTTON_CHOPS.getId());
         tag(TBATags.Items.BREAD)
                 .add(Items.BREAD)
+                .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("eggdelight:bread_slice")))
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("tofucraft:steamed_bread")))
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("tofucraft:steamed_bread")))
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("tofucraft:steamed_bread_cocoa")))

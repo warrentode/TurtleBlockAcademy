@@ -262,7 +262,7 @@
                 },
                 {
                   "condition": "turtleblockacademy:gamestage_condition",
-                  "stage": "false"
+                  "stage": "nether"
                 }
               ]
             }
@@ -300,7 +300,7 @@
                 },
                 {
                   "condition": "turtleblockacademy:gamestage_condition",
-                  "stage": "false"
+                  "stage": "nether"
                 }
               ]
             }
@@ -678,7 +678,7 @@
                 },
                 {
                   "condition": "turtleblockacademy:gamestage_condition",
-                  "stage": "false"
+                  "stage": "nether"
                 }
               ]
             }
@@ -852,7 +852,7 @@
                 },
                 {
                   "condition": "turtleblockacademy:gamestage_condition",
-                  "stage": "false"
+                  "stage": "end"
                 }
               ]
             }
@@ -890,7 +890,7 @@
                 },
                 {
                   "condition": "turtleblockacademy:gamestage_condition",
-                  "stage": "false"
+                  "stage": "end"
                 }
               ]
             }
@@ -928,7 +928,7 @@
                 },
                 {
                   "condition": "turtleblockacademy:gamestage_condition",
-                  "stage": "false"
+                  "stage": "end"
                 }
               ]
             }
@@ -966,7 +966,7 @@
                 },
                 {
                   "condition": "turtleblockacademy:gamestage_condition",
-                  "stage": "false"
+                  "stage": "end"
                 }
               ]
             }
@@ -1004,7 +1004,7 @@
                 },
                 {
                   "condition": "turtleblockacademy:gamestage_condition",
-                  "stage": "false"
+                  "stage": "aether"
                 }
               ]
             }
@@ -1042,7 +1042,7 @@
                 },
                 {
                   "condition": "turtleblockacademy:gamestage_condition",
-                  "stage": "false"
+                  "stage": "aether"
                 }
               ]
             }

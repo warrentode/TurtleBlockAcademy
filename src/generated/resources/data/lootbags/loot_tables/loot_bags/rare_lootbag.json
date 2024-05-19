@@ -24,8 +24,9 @@
           "conditions": [
             {
               "condition": "turtleblockacademy:gamestage_condition",
-              "stage": "false"
-            }, {
+              "stage": "dungeons"
+            },
+            {
               "chance": 0.01,
               "condition": "minecraft:random_chance"
             }
@@ -43,8 +44,9 @@
           "conditions": [
             {
               "condition": "turtleblockacademy:gamestage_condition",
-              "stage": "false"
-            }, {
+              "stage": "dungeons"
+            },
+            {
               "chance": 0.01,
               "condition": "minecraft:random_chance"
             }
@@ -62,8 +64,9 @@
           "conditions": [
             {
               "condition": "turtleblockacademy:gamestage_condition",
-              "stage": "false"
-            }, {
+              "stage": "dungeons"
+            },
+            {
               "chance": 0.01,
               "condition": "minecraft:random_chance"
             }
@@ -81,8 +84,9 @@
           "conditions": [
             {
               "condition": "turtleblockacademy:gamestage_condition",
-              "stage": "false"
-            }, {
+              "stage": "dungeons"
+            },
+            {
               "chance": 0.01,
               "condition": "minecraft:random_chance"
             }

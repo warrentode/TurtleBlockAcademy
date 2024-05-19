@@ -19,7 +19,7 @@
             },
             {
               "condition": "turtleblockacademy:gamestage_condition",
-              "stage": "false"
+              "stage": "aether"
             }
           ]
         }

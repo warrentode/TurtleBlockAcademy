@@ -104,6 +104,12 @@ public class LootBagRecipesGen {
                 LootType.EPIC.name(),
                 LootbagLootTables.PLUSHIE_BAG).build(consumer);
         LootBagRecipeBuilder.writeRecipe(
+                "epic_bag",
+                "Loot Bag (Epic)",
+                "purple",
+                LootType.EPIC.name(),
+                LootbagLootTables.EPIC).build(consumer);
+        LootBagRecipeBuilder.writeRecipe(
                 "rare_bag",
                 "Loot Bag (Rare)",
                 "gold",

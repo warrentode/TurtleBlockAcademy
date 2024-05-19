@@ -75,7 +75,7 @@
           "conditions": [
             {
               "condition": "turtleblockacademy:gamestage_condition",
-              "stage": "false"
+              "stage": "nether"
             }
           ],
           "functions": [
@@ -92,7 +92,7 @@
           "conditions": [
             {
               "condition": "turtleblockacademy:gamestage_condition",
-              "stage": "false"
+              "stage": "nether"
             }
           ],
           "functions": [
@@ -109,7 +109,7 @@
           "conditions": [
             {
               "condition": "turtleblockacademy:gamestage_condition",
-              "stage": "false"
+              "stage": "nether"
             }
           ],
           "functions": [
@@ -126,7 +126,7 @@
           "conditions": [
             {
               "condition": "turtleblockacademy:gamestage_condition",
-              "stage": "false"
+              "stage": "nether"
             }
           ],
           "functions": [
@@ -143,7 +143,7 @@
           "conditions": [
             {
               "condition": "turtleblockacademy:gamestage_condition",
-              "stage": "false"
+              "stage": "nether"
             }
           ],
           "functions": [
@@ -160,7 +160,7 @@
           "conditions": [
             {
               "condition": "turtleblockacademy:gamestage_condition",
-              "stage": "false"
+              "stage": "nether"
             }
           ],
           "functions": [
@@ -180,11 +180,11 @@
               "terms": [
                 {
                   "condition": "turtleblockacademy:gamestage_condition",
-                  "stage": "false"
+                  "stage": "end"
                 },
                 {
                   "condition": "turtleblockacademy:gamestage_condition",
-                  "stage": "false"
+                  "stage": "aether"
                 }
               ]
             }
@@ -201,11 +201,11 @@
               "terms": [
                 {
                   "condition": "turtleblockacademy:gamestage_condition",
-                  "stage": "false"
+                  "stage": "nether"
                 },
                 {
                   "condition": "turtleblockacademy:gamestage_condition",
-                  "stage": "false"
+                  "stage": "end"
                 }
               ]
             }
@@ -222,11 +222,11 @@
               "terms": [
                 {
                   "condition": "turtleblockacademy:gamestage_condition",
-                  "stage": "false"
+                  "stage": "nether"
                 },
                 {
                   "condition": "turtleblockacademy:gamestage_condition",
-                  "stage": "false"
+                  "stage": "end"
                 }
               ]
             }
@@ -247,11 +247,11 @@
               "terms": [
                 {
                   "condition": "turtleblockacademy:gamestage_condition",
-                  "stage": "false"
+                  "stage": "nether"
                 },
                 {
                   "condition": "turtleblockacademy:gamestage_condition",
-                  "stage": "false"
+                  "stage": "end"
                 }
               ]
             }
@@ -272,11 +272,11 @@
               "terms": [
                 {
                   "condition": "turtleblockacademy:gamestage_condition",
-                  "stage": "false"
+                  "stage": "nether"
                 },
                 {
                   "condition": "turtleblockacademy:gamestage_condition",
-                  "stage": "false"
+                  "stage": "end"
                 }
               ]
             }
@@ -297,11 +297,11 @@
               "terms": [
                 {
                   "condition": "turtleblockacademy:gamestage_condition",
-                  "stage": "false"
+                  "stage": "nether"
                 },
                 {
                   "condition": "turtleblockacademy:gamestage_condition",
-                  "stage": "false"
+                  "stage": "end"
                 }
               ]
             }
@@ -322,11 +322,11 @@
               "terms": [
                 {
                   "condition": "turtleblockacademy:gamestage_condition",
-                  "stage": "false"
+                  "stage": "nether"
                 },
                 {
                   "condition": "turtleblockacademy:gamestage_condition",
-                  "stage": "false"
+                  "stage": "end"
                 }
               ]
             }
@@ -347,11 +347,11 @@
               "terms": [
                 {
                   "condition": "turtleblockacademy:gamestage_condition",
-                  "stage": "false"
+                  "stage": "nether"
                 },
                 {
                   "condition": "turtleblockacademy:gamestage_condition",
-                  "stage": "false"
+                  "stage": "end"
                 }
               ]
             }
@@ -379,7 +379,7 @@
             },
             {
               "condition": "turtleblockacademy:gamestage_condition",
-              "stage": "false"
+              "stage": "aether"
             }
           ],
           "name": "aether:life_shard",
@@ -405,7 +405,7 @@
       "conditions": [
         {
           "condition": "turtleblockacademy:gamestage_condition",
-          "stage": "false"
+          "stage": "end"
         }
       ],
       "entries": [

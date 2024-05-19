@@ -30,12 +30,14 @@
                   "predicate": {
                     "dimension": "minecraft:the_end"
                   }
-                }, {
+                },
+                {
                   "condition": "turtleblockacademy:gamestage_condition",
-                  "stage": "false"
-                }, {
+                  "stage": "end"
+                },
+                {
                   "condition": "turtleblockacademy:gamestage_condition",
-                  "stage": "false"
+                  "stage": "aether"
                 }
               ]
             }
@@ -74,8 +76,9 @@
           "conditions": [
             {
               "condition": "turtleblockacademy:gamestage_condition",
-              "stage": "false"
-            }, {
+              "stage": "nether"
+            },
+            {
               "chance": 0.1,
               "condition": "minecraft:random_chance"
             }

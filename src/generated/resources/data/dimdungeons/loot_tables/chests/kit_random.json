@@ -68,7 +68,7 @@
                 },
                 {
                   "condition": "turtleblockacademy:gamestage_condition",
-                  "stage": "false"
+                  "stage": "nether"
                 }
               ]
             }
@@ -97,7 +97,7 @@
                 },
                 {
                   "condition": "turtleblockacademy:gamestage_condition",
-                  "stage": "false"
+                  "stage": "end"
                 },
                 {
                   "condition": "minecraft:location_check",
@@ -124,7 +124,7 @@
                 },
                 {
                   "condition": "turtleblockacademy:gamestage_condition",
-                  "stage": "false"
+                  "stage": "end"
                 },
                 {
                   "condition": "minecraft:location_check",
@@ -151,7 +151,7 @@
                 },
                 {
                   "condition": "turtleblockacademy:gamestage_condition",
-                  "stage": "false"
+                  "stage": "end"
                 },
                 {
                   "condition": "minecraft:location_check",
@@ -182,7 +182,7 @@
                 },
                 {
                   "condition": "turtleblockacademy:gamestage_condition",
-                  "stage": "false"
+                  "stage": "end"
                 },
                 {
                   "condition": "minecraft:location_check",
@@ -219,7 +219,7 @@
                 },
                 {
                   "condition": "turtleblockacademy:gamestage_condition",
-                  "stage": "false"
+                  "stage": "nether"
                 }
               ]
             }

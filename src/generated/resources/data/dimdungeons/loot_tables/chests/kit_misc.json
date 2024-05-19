@@ -135,9 +135,10 @@
                   "predicate": {
                     "dimension": "minecraft:the_nether"
                   }
-                }, {
+                },
+                {
                   "condition": "turtleblockacademy:gamestage_condition",
-                  "stage": "false"
+                  "stage": "nether"
                 }
               ]
             }

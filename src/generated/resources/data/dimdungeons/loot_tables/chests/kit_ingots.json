@@ -63,9 +63,10 @@
                   "predicate": {
                     "dimension": "minecraft:the_nether"
                   }
-                }, {
+                },
+                {
                   "condition": "turtleblockacademy:gamestage_condition",
-                  "stage": "false"
+                  "stage": "nether"
                 }
               ]
             }
@@ -95,9 +96,10 @@
                   "predicate": {
                     "dimension": "minecraft:the_nether"
                   }
-                }, {
+                },
+                {
                   "condition": "turtleblockacademy:gamestage_condition",
-                  "stage": "false"
+                  "stage": "nether"
                 }
               ]
             }
@@ -126,9 +128,10 @@
                   "predicate": {
                     "dimension": "minecraft:the_end"
                   }
-                }, {
+                },
+                {
                   "condition": "turtleblockacademy:gamestage_condition",
-                  "stage": "false"
+                  "stage": "aether"
                 }
               ]
             }

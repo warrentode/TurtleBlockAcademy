@@ -191,7 +191,7 @@
                 },
                 {
                   "condition": "turtleblockacademy:gamestage_condition",
-                  "stage": "false"
+                  "stage": "mining"
                 }
               ]
             },
@@ -242,7 +242,7 @@
                 },
                 {
                   "condition": "turtleblockacademy:gamestage_condition",
-                  "stage": "false"
+                  "stage": "mining"
                 }
               ]
             },
