@@ -494,13 +494,23 @@
 
     {
       "output": {
+        "item": "aether:life_shard"
+      },
+      "payment": {
+        "item": "todecoins:server_token_coin",
+        "count": 8
+      }
+    },
+    {
+      "output": {
         "item": "refinedstorage:wrench"
       },
       "payment": {
         "item": "todecoins:server_token_coin",
         "count": 1
       }
-    }, {
+    },
+    {
       "output": {
         "item": "refinedstorage:silicon",
         "count": 4
@@ -509,7 +519,8 @@
         "item": "todecoins:server_token_coin",
         "count": 1
       }
-    }, {
+    },
+    {
       "output": {
         "item": "refinedstorage:processor_binding",
         "count": 8
@@ -518,7 +529,8 @@
         "item": "todecoins:server_token_coin",
         "count": 4
       }
-    }, {
+    },
+    {
       "output": {
         "item": "refinedstorage:quartz_enriched_iron",
         "count": 4
@@ -527,7 +539,8 @@
         "item": "todecoins:server_token_coin",
         "count": 2
       }
-    }, {
+    },
+    {
       "output": {
         "item": "refinedstorage:1k_storage_disk"
       },

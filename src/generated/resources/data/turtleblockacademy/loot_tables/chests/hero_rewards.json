@@ -12,6 +12,12 @@
       "entries": [
         {
           "type": "minecraft:loot_table",
+          "conditions": [
+            {
+              "chance": 0.1,
+              "condition": "minecraft:random_chance"
+            }
+          ],
           "name": "turtleblockacademy:chests/leather_tier_gear",
           "quality": -1
         },
@@ -22,11 +28,23 @@
         },
         {
           "type": "minecraft:loot_table",
+          "conditions": [
+            {
+              "chance": 0.5,
+              "condition": "minecraft:random_chance"
+            }
+          ],
           "name": "turtleblockacademy:chests/diamond_tier_gear",
           "weight": 5
         },
         {
           "type": "minecraft:loot_table",
+          "conditions": [
+            {
+              "chance": 0.25,
+              "condition": "minecraft:random_chance"
+            }
+          ],
           "name": "turtleblockacademy:chests/netherite_tier_gear",
           "quality": 1
         }

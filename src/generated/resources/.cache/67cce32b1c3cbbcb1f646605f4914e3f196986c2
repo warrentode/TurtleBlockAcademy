@@ -1,4 +1,4 @@
-// 1.19.2	2024-05-20T01:12:10.1186999	LootTables
+// 1.19.2	2024-05-20T02:04:02.0640851	LootTables
 e2401b7cbcd222542356afa83d2ea98f28f151a8 data/dimdungeons/loot_tables/chests/kit_basic_supplies.json
 87a0cbf6a892b17ac0de9da47bde823b2367a6cc data/dimdungeons/loot_tables/chests/kit_blackstone.json
 3da5b95edb2c52fcbf8b6f6adbed631a2a63e509 data/dimdungeons/loot_tables/chests/kit_brick_set.json
@@ -331,7 +331,7 @@ bb11222a25956e8f5ca99f1793defddd140258ec data/turtleblockacademy/loot_tables/che
 3aacf0f8c58a7676ba85151949272bf70ef8043f data/turtleblockacademy/loot_tables/chests/garden_deco.json
 a3701a5c15e192d5360aef49f141d4521864d4c4 data/turtleblockacademy/loot_tables/chests/gems.json
 258a7bd9dad778aac005f036f9a3f970e7f86865 data/turtleblockacademy/loot_tables/chests/gifts.json
-bdf7f2505c29b58b938c6f5a35e4515b2b0ad117 data/turtleblockacademy/loot_tables/chests/hero_rewards.json
+78932fc2ee4e6b2c0614c527bb5cca384fdd2abb data/turtleblockacademy/loot_tables/chests/hero_rewards.json
 d2569ddb6d2d61948bee6f9cb0ae4ed60baeb633 data/turtleblockacademy/loot_tables/chests/holiday_deco.json
 04cf282c955209db3b41288569c642f7796547dc data/turtleblockacademy/loot_tables/chests/iron_tier_gear.json
 300374e946aa9095d14fb84c244413640bb07e5a data/turtleblockacademy/loot_tables/chests/kitchen.json
