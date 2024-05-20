@@ -1,0 +1,9 @@
+{
+  "type": "lootbags:loot",
+  "color": "white",
+  "name": "Leather Tier Gear Bag",
+  "output": {
+    "table": "turtleblockacademy:chests/leather_tier_gear"
+  },
+  "rarity": "COMMON"
+}

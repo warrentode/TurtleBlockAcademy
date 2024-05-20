@@ -1,0 +1,9 @@
+{
+  "type": "lootbags:loot",
+  "color": "white",
+  "name": "Basic Supplies Kit Bag",
+  "output": {
+    "table": "dimdungeons:chests/kit_basic_supplies"
+  },
+  "rarity": "COMMON"
+}

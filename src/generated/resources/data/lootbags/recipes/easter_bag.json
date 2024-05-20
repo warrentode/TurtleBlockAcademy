@@ -1,9 +1,9 @@
 {
   "type": "lootbags:loot",
-  "color": "lavender",
+  "color": "blue",
   "name": "Easter Bag",
   "output": {
     "table": "lootbags:loot_bags/easter_lootbag"
   },
-  "rarity": "LEGENDARY"
+  "rarity": "UNCOMMON"
 }

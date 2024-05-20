@@ -1,0 +1,9 @@
+{
+  "type": "lootbags:loot",
+  "color": "white",
+  "name": "Stone Kit Bag",
+  "output": {
+    "table": "dimdungeons:chests/kit_stone"
+  },
+  "rarity": "COMMON"
+}

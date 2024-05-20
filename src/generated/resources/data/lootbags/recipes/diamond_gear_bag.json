@@ -1,0 +1,9 @@
+{
+  "type": "lootbags:loot",
+  "color": "gold",
+  "name": "Diamond Tier Gear Bag",
+  "output": {
+    "table": "turtleblockacademy:chests/leather_tier_gear"
+  },
+  "rarity": "RARE"
+}

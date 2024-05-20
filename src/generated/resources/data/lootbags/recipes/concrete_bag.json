@@ -1,0 +1,9 @@
+{
+  "type": "lootbags:loot",
+  "color": "white",
+  "name": "Concrete Kit Bag",
+  "output": {
+    "table": "dimdungeons:chests/kit_concrete"
+  },
+  "rarity": "COMMON"
+}

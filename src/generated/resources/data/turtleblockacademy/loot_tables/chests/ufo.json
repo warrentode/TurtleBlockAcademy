@@ -3,27 +3,6 @@
   "pools": [
     {
       "bonus_rolls": 1.0,
-      "conditions": [
-        {
-          "condition": "minecraft:alternative",
-          "terms": [
-            {
-              "condition": "minecraft:location_check",
-              "predicate": {
-                "dimension": "minecraft:the_end"
-              }
-            },
-            {
-              "condition": "turtleblockacademy:gamestage_condition",
-              "stage": "end"
-            },
-            {
-              "condition": "turtleblockacademy:gamestage_condition",
-              "stage": "aether"
-            }
-          ]
-        }
-      ],
       "entries": [
         {
           "type": "minecraft:tag",
@@ -93,19 +72,6 @@
         {
           "type": "minecraft:item",
           "conditions": [
-            {
-              "condition": "minecraft:alternative",
-              "terms": [
-                {
-                  "condition": "turtleblockacademy:gamestage_condition",
-                  "stage": "end"
-                },
-                {
-                  "condition": "turtleblockacademy:gamestage_condition",
-                  "stage": "aether"
-                }
-              ]
-            },
             {
               "chance": 0.25,
               "condition": "minecraft:random_chance"

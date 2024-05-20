@@ -1,0 +1,9 @@
+{
+  "type": "lootbags:loot",
+  "color": "limegreen",
+  "name": "Netherite Tier Gear Bag",
+  "output": {
+    "table": "turtleblockacademy:chests/netherite_tier_gear"
+  },
+  "rarity": "LEGENDARY"
+}

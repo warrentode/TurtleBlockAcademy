@@ -30,44 +30,10 @@
         },
         {
           "type": "minecraft:loot_table",
-          "conditions": [
-            {
-              "condition": "minecraft:alternative",
-              "terms": [
-                {
-                  "condition": "minecraft:location_check",
-                  "predicate": {
-                    "dimension": "minecraft:the_end"
-                  }
-                },
-                {
-                  "condition": "turtleblockacademy:gamestage_condition",
-                  "stage": "end"
-                }
-              ]
-            }
-          ],
           "name": "turtleblockacademy:chests/kitchen/endsdelight_edibles"
         },
         {
           "type": "minecraft:loot_table",
-          "conditions": [
-            {
-              "condition": "minecraft:alternative",
-              "terms": [
-                {
-                  "condition": "minecraft:location_check",
-                  "predicate": {
-                    "dimension": "minecraft:the_nether"
-                  }
-                },
-                {
-                  "condition": "turtleblockacademy:gamestage_condition",
-                  "stage": "nether"
-                }
-              ]
-            }
-          ],
           "name": "turtleblockacademy:chests/kitchen/nethersdelight_edibles"
         },
         {
@@ -92,44 +58,10 @@
         },
         {
           "type": "minecraft:loot_table",
-          "conditions": [
-            {
-              "condition": "minecraft:alternative",
-              "terms": [
-                {
-                  "condition": "minecraft:location_check",
-                  "predicate": {
-                    "dimension": "minecraft:the_end"
-                  }
-                },
-                {
-                  "condition": "turtleblockacademy:gamestage_condition",
-                  "stage": "end"
-                }
-              ]
-            }
-          ],
           "name": "turtleblockacademy:chests/kitchen/phantasm_edibles"
         },
         {
           "type": "minecraft:loot_table",
-          "conditions": [
-            {
-              "condition": "minecraft:alternative",
-              "terms": [
-                {
-                  "condition": "minecraft:location_check",
-                  "predicate": {
-                    "dimension": "minecraft:the_end"
-                  }
-                },
-                {
-                  "condition": "turtleblockacademy:gamestage_condition",
-                  "stage": "end"
-                }
-              ]
-            }
-          ],
           "name": "turtleblockacademy:chests/kitchen/unusualend_edibles"
         },
         {
@@ -150,68 +82,10 @@
         },
         {
           "type": "minecraft:loot_table",
-          "conditions": [
-            {
-              "condition": "minecraft:alternative",
-              "terms": [
-                {
-                  "condition": "minecraft:location_check",
-                  "predicate": {
-                    "dimension": "aether:the_aether"
-                  }
-                },
-                {
-                  "condition": "turtleblockacademy:gamestage_condition",
-                  "stage": "aether"
-                }
-              ]
-            }
-          ],
           "name": "turtleblockacademy:chests/kitchen/aether_edibles"
         },
         {
           "type": "minecraft:loot_table",
-          "conditions": [
-            {
-              "condition": "minecraft:alternative",
-              "terms": [
-                {
-                  "condition": "minecraft:location_check",
-                  "predicate": {
-                    "biome": "minecraft:lush_caves"
-                  }
-                },
-                {
-                  "condition": "minecraft:location_check",
-                  "predicate": {
-                    "biome": "minecraft:dripstone_caves"
-                  }
-                },
-                {
-                  "condition": "minecraft:location_check",
-                  "predicate": {
-                    "biome": "minecraft:deep_dark"
-                  }
-                },
-                {
-                  "condition": "minecraft:location_check",
-                  "predicate": {
-                    "biome": "biomesoplenty:spider_nest"
-                  }
-                },
-                {
-                  "condition": "minecraft:location_check",
-                  "predicate": {
-                    "biome": "biomesoplenty:glowing_grotto"
-                  }
-                },
-                {
-                  "condition": "turtleblockacademy:gamestage_condition",
-                  "stage": "mining"
-                }
-              ]
-            }
-          ],
           "name": "turtleblockacademy:chests/kitchen/minersdelight_edibles"
         }
       ],

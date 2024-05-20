@@ -19,7 +19,7 @@
     {
       "output": {
         "item": "lootbags:loot_bag",
-        "nbt": "{Type: \"COMMON\", Loot: \"lootbags:common_bag\", Color: 16777215, Name: \"Loot Bag (Common)\"}"
+        "nbt": "{Type: \"COMMON\", Loot: \"lootbags:basic_supplies_bag\", Color: 16777215, Name: \"Basic Supplies Kit Bag\"}"
       },
       "payment": {
         "item": "todecoins:server_token_coin",
@@ -29,7 +29,229 @@
     {
       "output": {
         "item": "lootbags:loot_bag",
-        "nbt": "{Type: \"UNCOMMON\", Loot: \"lootbags:uncommon_bag\", Color: 255, Name: \"Loot Bag (Uncommon)\"}"
+        "nbt": "{Type: \"COMMON\", Loot: \"lootbags:concrete_bag\", Color: 16777215, Name: \"Concrete Kit Bag\"}"
+      },
+      "payment": {
+        "item": "todecoins:server_token_coin",
+        "count": 1
+      }
+    },
+    {
+      "output": {
+        "item": "lootbags:loot_bag",
+        "nbt": "{Type: \"COMMON\", Loot: \"lootbags:glass_bag\", Color: 16777215, Name: \"Glass Kit Bag\"}"
+      },
+      "payment": {
+        "item": "todecoins:server_token_coin",
+        "count": 1
+      }
+    },
+    {
+      "output": {
+        "item": "lootbags:loot_bag",
+        "nbt": "{Type: \"COMMON\", Loot: \"lootbags:redstone_bag\", Color: 16777215, Name: \"Redstone Kit Bag\"}"
+      },
+      "payment": {
+        "item": "todecoins:server_token_coin",
+        "count": 1
+      }
+    },
+    {
+      "output": {
+        "item": "lootbags:loot_bag",
+        "nbt": "{Type: \"COMMON\", Loot: \"lootbags:wool_bag\", Color: 16777215, Name: \"Wool Kit Bag\"}"
+      },
+      "payment": {
+        "item": "todecoins:server_token_coin",
+        "count": 1
+      }
+    },
+    {
+      "output": {
+        "item": "lootbags:loot_bag",
+        "nbt": "{Type: \"COMMON\", Loot: \"lootbags:terracotta_bag\", Color: 16777215, Name: \"Terracotta Kit Bag\"}"
+      },
+      "payment": {
+        "item": "todecoins:server_token_coin",
+        "count": 1
+      }
+    },
+    {
+      "output": {
+        "item": "lootbags:loot_bag",
+        "nbt": "{Type: \"COMMON\", Loot: \"lootbags:glazed_terracotta_bag\", Color: 16777215, Name: \"Glazed Terracotta Kit Bag\"}"
+      },
+      "payment": {
+        "item": "todecoins:server_token_coin",
+        "count": 1
+      }
+    },
+    {
+      "output": {
+        "item": "lootbags:loot_bag",
+        "nbt": "{Type: \"COMMON\", Loot: \"lootbags:stone_bag\", Color: 16777215, Name: \"Stone Kit Bag\"}"
+      },
+      "payment": {
+        "item": "todecoins:server_token_coin",
+        "count": 1
+      }
+    },
+    {
+      "output": {
+        "item": "lootbags:loot_bag",
+        "nbt": "{Type: \"COMMON\", Loot: \"lootbags:sandstone_bag\", Color: 16777215, Name: \"Sandstone Kit Bag\"}"
+      },
+      "payment": {
+        "item": "todecoins:server_token_coin",
+        "count": 1
+      }
+    },
+    {
+      "output": {
+        "item": "lootbags:loot_bag",
+        "nbt": "{Type: \"COMMON\", Loot: \"lootbags:misc_stone_bag\", Color: 16777215, Name: \"Misc. Stone Kit Bag\"}"
+      },
+      "payment": {
+        "item": "todecoins:server_token_coin",
+        "count": 1
+      }
+    },
+    {
+      "output": {
+        "item": "lootbags:loot_bag",
+        "nbt": "{Type: \"COMMON\", Loot: \"lootbags:blackstone_bag\", Color: 16777215, Name: \"Blackstone Kit Bag\"}"
+      },
+      "payment": {
+        "item": "todecoins:server_token_coin",
+        "count": 1
+      }
+    },
+    {
+      "output": {
+        "item": "lootbags:loot_bag",
+        "nbt": "{Type: \"COMMON\", Loot: \"lootbags:deepslate_bag\", Color: 16777215, Name: \"Deepslate Kit Bag\"}"
+      },
+      "payment": {
+        "item": "todecoins:server_token_coin",
+        "count": 1
+      }
+    },
+    {
+      "output": {
+        "item": "lootbags:loot_bag",
+        "nbt": "{Type: \"COMMON\", Loot: \"lootbags:endstone_bag\", Color: 16777215, Name: \"End Stone Kit Bag\"}"
+      },
+      "payment": {
+        "item": "todecoins:server_token_coin",
+        "count": 1
+      }
+    },
+    {
+      "output": {
+        "item": "lootbags:loot_bag",
+        "nbt": "{Type: \"COMMON\", Loot: \"lootbags:purpur_bag\", Color: 16777215, Name: \"Purpur Kit Bag\"}"
+      },
+      "payment": {
+        "item": "todecoins:server_token_coin",
+        "count": 1
+      }
+    },
+    {
+      "output": {
+        "item": "lootbags:loot_bag",
+        "nbt": "{Type: \"COMMON\", Loot: \"lootbags:bricks_bag\", Color: 16777215, Name: \"Bricks Kit Bag\"}"
+      },
+      "payment": {
+        "item": "todecoins:server_token_coin",
+        "count": 1
+      }
+    },
+    {
+      "output": {
+        "item": "lootbags:loot_bag",
+        "nbt": "{Type: \"COMMON\", Loot: \"lootbags:quartz_bag\", Color: 16777215, Name: \"Quartz Kit Bag\"}"
+      },
+      "payment": {
+        "item": "todecoins:server_token_coin",
+        "count": 1
+      }
+    },
+    {
+      "output": {
+        "item": "lootbags:loot_bag",
+        "nbt": "{Type: \"COMMON\", Loot: \"lootbags:christmas_block_bag\", Color: 16777215, Name: \"Christmas Block Kit Bag\"}"
+      },
+      "payment": {
+        "item": "todecoins:server_token_coin",
+        "count": 1
+      }
+    },
+    {
+      "output": {
+        "item": "lootbags:loot_bag",
+        "nbt": "{Type: \"COMMON\", Loot: \"lootbags:winter_block_bag\", Color: 16777215, Name: \"Winter Block Kit Bag\"}"
+      },
+      "payment": {
+        "item": "todecoins:server_token_coin",
+        "count": 1
+      }
+    },
+    {
+      "output": {
+        "item": "lootbags:loot_bag",
+        "nbt": "{Type: \"COMMON\", Loot: \"lootbags:logs_bag\", Color: 16777215, Name: \"Logs Block Kit Bag\"}"
+      },
+      "payment": {
+        "item": "todecoins:server_token_coin",
+        "count": 1
+      }
+    },
+    {
+      "output": {
+        "item": "lootbags:loot_bag",
+        "nbt": "{Type: \"COMMON\", Loot: \"lootbags:sand_bag\", Color: 16777215, Name: \"Sand Kit Bag\"}"
+      },
+      "payment": {
+        "item": "todecoins:server_token_coin",
+        "count": 1
+      }
+    },
+    {
+      "output": {
+        "item": "lootbags:loot_bag",
+        "nbt": "{Type: \"COMMON\", Loot: \"lootbags:leather_gear_bag\", Color: 16777215, Name: \"Leather Tier Gear Bag\"}"
+      },
+      "payment": {
+        "item": "todecoins:server_token_coin",
+        "count": 1
+      }
+    },
+    {
+      "output": {
+        "item": "lootbags:loot_bag",
+        "nbt": "{Type: \"COMMON\", Loot: \"lootbags:deco_bag\", Color: 16777215, Name: \"Deco Bag\"}"
+      },
+      "payment": {
+        "item": "todecoins:server_token_coin",
+        "count": 1
+      }
+    },
+    {
+      "output": {
+        "item": "lootbags:loot_bag",
+        "nbt": "{Type: \"COMMON\", Loot: \"lootbags:plushie_bag\", Color: 16777215, Name: \"Plushie Bag\"}"
+      },
+      "payment": {
+        "item": "todecoins:server_token_coin",
+        "count": 1
+      }
+    },
+
+
+    {
+      "output": {
+        "item": "lootbags:loot_bag",
+        "nbt": "{Type: \"UNCOMMON\", Loot: \"lootbags:shulker_boxes_bag\", Color: 255, Name: \"Shulker Boxes Bag\"}"
       },
       "payment": {
         "item": "todecoins:server_token_coin",
@@ -39,7 +261,138 @@
     {
       "output": {
         "item": "lootbags:loot_bag",
-        "nbt": "{Type: \"RARE\", Loot: \"lootbags:rare_bag\", Color: 16766720, Name: \"Loot Bag (Rare)\"}"
+        "nbt": "{Type: \"UNCOMMON\", Loot: \"lootbags:iron_gear_bag\", Color: 255, Name: \"Iron Tier Gear Bag\"}"
+      },
+      "payment": {
+        "item": "todecoins:server_token_coin",
+        "count": 2
+      }
+    },
+    {
+      "output": {
+        "item": "lootbags:loot_bag",
+        "nbt": "{Type: \"UNCOMMON\", Loot: \"lootbags:anniversary_bag\", Color: 255, Name: \"Anniversary Bag\"}"
+      },
+      "payment": {
+        "item": "todecoins:server_token_coin",
+        "count": 2
+      }
+    },
+    {
+      "output": {
+        "item": "lootbags:loot_bag",
+        "nbt": "{Type: \"UNCOMMON\", Loot: \"lootbags:birthday_bag\", Color: 255, Name: \"Birthday Bag\"}"
+      },
+      "payment": {
+        "item": "todecoins:server_token_coin",
+        "count": 2
+      }
+    },
+    {
+      "output": {
+        "item": "lootbags:loot_bag",
+        "nbt": "{Type: \"UNCOMMON\", Loot: \"lootbags:christmas_bag\", Color: 255, Name: \"Christmas Bag\"}"
+      },
+      "payment": {
+        "item": "todecoins:server_token_coin",
+        "count": 2
+      }
+    },
+    {
+      "output": {
+        "item": "lootbags:loot_bag",
+        "nbt": "{Type: \"UNCOMMON\", Loot: \"lootbags:easter_bag\", Color: 255, Name: \"Easter Bag\"}"
+      },
+      "payment": {
+        "item": "todecoins:server_token_coin",
+        "count": 2
+      }
+    },
+    {
+      "output": {
+        "item": "lootbags:loot_bag",
+        "nbt": "{Type: \"UNCOMMON\", Loot: \"lootbags:trick_or_treat_bag\", Color: 255, Name: \"Trick or Treat Bag\"}"
+      },
+      "payment": {
+        "item": "todecoins:server_token_coin",
+        "count": 2
+      }
+    },
+
+    {
+      "output": {
+        "item": "lootbags:loot_bag",
+        "nbt": "{Type: \"RARE\", Loot: \"lootbags:prismarine_bag\", Color: 16766720, Name: \"Prismarine Kit Bag\"}"
+      },
+      "payment": {
+        "item": "todecoins:server_token_coin",
+        "count": 3
+      }
+    },
+    {
+      "output": {
+        "item": "lootbags:loot_bag",
+        "nbt": "{Type: \"RARE\", Loot: \"lootbags:creature_stone_bag\", Color: 16766720, Name: \"Creature Stone Kit Bag\"}"
+      },
+      "payment": {
+        "item": "todecoins:server_token_coin",
+        "count": 3
+      }
+    },
+    {
+      "output": {
+        "item": "lootbags:loot_bag",
+        "nbt": "{Type: \"RARE\", Loot: \"lootbags:obsidian_bag\", Color: 16766720, Name: \"Obsidian Kit Bag\"}"
+      },
+      "payment": {
+        "item": "todecoins:server_token_coin",
+        "count": 3
+      }
+    },
+    {
+      "output": {
+        "item": "lootbags:loot_bag",
+        "nbt": "{Type: \"RARE\", Loot: \"lootbags:crystal_bag\", Color: 16766720, Name: \"Crystal Kit Bag\"}"
+      },
+      "payment": {
+        "item": "todecoins:server_token_coin",
+        "count": 3
+      }
+    },
+    {
+      "output": {
+        "item": "lootbags:loot_bag",
+        "nbt": "{Type: \"RARE\", Loot: \"lootbags:refined_storage_bag\", Color: 16766720, Name: \"Refined Storage Bag\"}"
+      },
+      "payment": {
+        "item": "todecoins:server_token_coin",
+        "count": 3
+      }
+    },
+    {
+      "output": {
+        "item": "lootbags:loot_bag",
+        "nbt": "{Type: \"RARE\", Loot: \"lootbags:gems_bag\", Color: 16766720, Name: \"Gems Kit Bag\"}"
+      },
+      "payment": {
+        "item": "todecoins:server_token_coin",
+        "count": 3
+      }
+    },
+    {
+      "output": {
+        "item": "lootbags:loot_bag",
+        "nbt": "{Type: \"RARE\", Loot: \"lootbags:music_discs_bag\", Color: 16766720, Name: \"Music Discs Bag\"}"
+      },
+      "payment": {
+        "item": "todecoins:server_token_coin",
+        "count": 3
+      }
+    },
+    {
+      "output": {
+        "item": "lootbags:loot_bag",
+        "nbt": "{Type: \"RARE\", Loot: \"lootbags:backpack_upgrades_bag\", Color: 16766720, Name: \"Backpack Upgrades Bag\"}"
       },
       "payment": {
         "item": "todecoins:server_token_coin",
@@ -59,37 +412,28 @@
     {
       "output": {
         "item": "lootbags:loot_bag",
-        "nbt": "{Color: 8388736, Loot: \"lootbags:deco_bag\", Name: \"Deco Bag\", Type: \"EPIC\"}"
+        "nbt": "{Type: \"RARE\", Loot: \"lootbags:diamond_gear_bag\", Color: 16766720, Name: \"Diamond Tier Gear Bag\"}"
       },
       "payment": {
         "item": "todecoins:server_token_coin",
-        "count": 2
+        "count": 3
       }
     },
     {
       "output": {
         "item": "lootbags:loot_bag",
-        "nbt": "{Color: 8388736, Loot: \"lootbags:plushie_bag\", Name: \"Plushie Bag\", Type: \"EPIC\"}"
+        "nbt": "{Type: \"RARE\", Loot: \"lootbags:tinkers_bag\", Color: 16766720, Name: \"Tinkers Kit Bag\"}"
       },
       "payment": {
         "item": "todecoins:server_token_coin",
-        "count": 1
+        "count": 3
       }
     },
+
     {
       "output": {
         "item": "lootbags:loot_bag",
-        "nbt": "{Color: 8388736, Loot: \"lootbags:mystery_coin_pack\", Name: \"Mystery Coin Pack\", Type: \"EPIC\"}"
-      },
-      "payment": {
-        "item": "todecoins:server_token_coin",
-        "count": 2
-      }
-    },
-    {
-      "output": {
-        "item": "lootbags:loot_bag",
-        "nbt": "{Color: 8388736, Loot: \"lootbags:epic_bag\", Name: \"Loot Bag (Epic)\", Type: \"EPIC\"}"
+        "nbt": "{Color: 8388736, Loot: \"lootbags:ingots_bag\", Name: \"Ingots Kit Bag\", Type: \"EPIC\"}"
       },
       "payment": {
         "item": "todecoins:server_token_coin",
@@ -99,7 +443,28 @@
     {
       "output": {
         "item": "lootbags:loot_bag",
-        "nbt": "{Color: 3329330, Loot: \"lootbags:legendary_bag\", Name: \"Loot Bag (Legendary)\", Type: \"LEGENDARY\"}"
+        "nbt": "{Color: 8388736, Loot: \"lootbags:ufo_bag\", Name: \"UFO Bag\", Type: \"EPIC\"}"
+      },
+      "payment": {
+        "item": "todecoins:server_token_coin",
+        "count": 4
+      }
+    },
+    {
+      "output": {
+        "item": "lootbags:loot_bag",
+        "nbt": "{Color: 8388736, Loot: \"lootbags:mystery_coin_pack\", Name: \"Mystery Coin Pack\", Type: \"EPIC\"}"
+      },
+      "payment": {
+        "item": "todecoins:server_token_coin",
+        "count": 4
+      }
+    },
+
+    {
+      "output": {
+        "item": "lootbags:loot_bag",
+        "nbt": "{Color: 3329330, Loot: \"lootbags:artifacts_bag\", Name: \"Artifacts Kit Bag\", Type: \"LEGENDARY\"}"
       },
       "payment": {
         "item": "todecoins:server_token_coin",
@@ -109,53 +474,24 @@
     {
       "output": {
         "item": "lootbags:loot_bag",
-        "nbt": "{Color: 12632256, Loot: \"lootbags:anniversary_bag\", Name: \"Anniversary Bag\", Type: \"LEGENDARY\"}"
+        "nbt": "{Color: 3329330, Loot: \"lootbags:cagerium_bag\", Name: \"Cagerium Kit Bag\", Type: \"LEGENDARY\"}"
       },
       "payment": {
         "item": "todecoins:server_token_coin",
-        "count": 1
+        "count": 8
       }
     },
     {
       "output": {
         "item": "lootbags:loot_bag",
-        "nbt": "{Color: 16753920, Loot: \"lootbags:trick_or_treat_bag\", Name: \"Trick or Treat Bag\", Type: \"LEGENDARY\"}"
+        "nbt": "{Color: 3329330, Loot: \"lootbags:netherite_gear_bag\", Name: \"Netherite Tier Gear Bag\", Type: \"LEGENDARY\"}"
       },
       "payment": {
         "item": "todecoins:server_token_coin",
-        "count": 1
+        "count": 8
       }
     },
-    {
-      "output": {
-        "item": "lootbags:loot_bag",
-        "nbt": "{Color: 8388564, Loot: \"lootbags:birthday_bag\", Name: \"Birthday Bag\", Type: \"LEGENDARY\"}"
-      },
-      "payment": {
-        "item": "todecoins:server_token_coin",
-        "count": 1
-      }
-    },
-    {
-      "output": {
-        "item": "lootbags:loot_bag",
-        "nbt": "{Color: 65535, Loot: \"lootbags:christmas_bag\", Name: \"Christmas Bag\", Type: \"LEGENDARY\"}"
-      },
-      "payment": {
-        "item": "todecoins:server_token_coin",
-        "count": 1
-      }
-    },
-    {
-      "output": {
-        "item": "lootbags:loot_bag",
-        "nbt": "{Color: 15132410, Loot: \"lootbags:easter_bag\", Name: \"Easter Bag\", Type: \"LEGENDARY\"}"
-      },
-      "payment": {
-        "item": "todecoins:server_token_coin",
-        "count": 1
-      }
-    },
+
     {
       "output": {
         "item": "refinedstorage:wrench"

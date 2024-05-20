@@ -15,70 +15,6 @@
           "name": "aether:life_shard"
         },
         {
-          "type": "minecraft:item",
-          "conditions": [
-            {
-              "chance": 0.1,
-              "condition": "minecraft:random_chance"
-            }
-          ],
-          "functions": [
-            {
-              "function": "minecraft:set_nbt",
-              "tag": "{theme:3}"
-            }
-          ],
-          "name": "dimdungeons:item_blank_theme_key"
-        },
-        {
-          "type": "minecraft:item",
-          "conditions": [
-            {
-              "chance": 0.1,
-              "condition": "minecraft:random_chance"
-            }
-          ],
-          "functions": [
-            {
-              "function": "minecraft:set_nbt",
-              "tag": "{theme:4}"
-            }
-          ],
-          "name": "dimdungeons:item_blank_theme_key"
-        },
-        {
-          "type": "minecraft:item",
-          "conditions": [
-            {
-              "chance": 0.1,
-              "condition": "minecraft:random_chance"
-            }
-          ],
-          "functions": [
-            {
-              "function": "minecraft:set_nbt",
-              "tag": "{theme:5}"
-            }
-          ],
-          "name": "dimdungeons:item_blank_theme_key"
-        },
-        {
-          "type": "minecraft:item",
-          "conditions": [
-            {
-              "chance": 0.1,
-              "condition": "minecraft:random_chance"
-            }
-          ],
-          "functions": [
-            {
-              "function": "minecraft:set_nbt",
-              "tag": "{theme:6}"
-            }
-          ],
-          "name": "dimdungeons:item_blank_theme_key"
-        },
-        {
           "type": "minecraft:loot_table",
           "conditions": [
             {
@@ -101,47 +37,60 @@
         {
           "type": "minecraft:loot_table",
           "name": "turtleblockacademy:chests/holiday_deco"
-        }, {
+        },
+        {
           "type": "minecraft:loot_table",
           "name": "minecraft:gameplay/cat_morning_gift"
-        }, {
+        },
+        {
           "type": "minecraft:loot_table",
           "name": "minecraft:gameplay/hero_of_the_village/armorer_gift"
-        }, {
+        },
+        {
           "type": "minecraft:loot_table",
           "name": "minecraft:gameplay/hero_of_the_village/butcher_gift"
-        }, {
+        },
+        {
           "type": "minecraft:loot_table",
           "name": "minecraft:gameplay/hero_of_the_village/cartographer_gift"
-        }, {
+        },
+        {
           "type": "minecraft:loot_table",
           "name": "minecraft:gameplay/hero_of_the_village/cleric_gift"
-        }, {
+        },
+        {
           "type": "minecraft:loot_table",
           "name": "minecraft:gameplay/hero_of_the_village/farmer_gift"
         },
         {
           "type": "minecraft:loot_table",
           "name": "minecraft:gameplay/hero_of_the_village/fisherman_gift"
-        }, {
+        },
+        {
           "type": "minecraft:loot_table",
           "name": "minecraft:gameplay/hero_of_the_village/fletcher_gift"
-        }, {
+        },
+        {
           "type": "minecraft:loot_table",
           "name": "minecraft:gameplay/hero_of_the_village/leatherworker_gift"
-        }, {
+        },
+        {
           "type": "minecraft:loot_table",
           "name": "minecraft:gameplay/hero_of_the_village/librarian_gift"
-        }, {
+        },
+        {
           "type": "minecraft:loot_table",
           "name": "minecraft:gameplay/hero_of_the_village/mason_gift"
-        }, {
+        },
+        {
           "type": "minecraft:loot_table",
           "name": "minecraft:gameplay/hero_of_the_village/shepherd_gift"
-        }, {
+        },
+        {
           "type": "minecraft:loot_table",
           "name": "minecraft:gameplay/hero_of_the_village/toolsmith_gift"
-        }, {
+        },
+        {
           "type": "minecraft:loot_table",
           "name": "minecraft:gameplay/hero_of_the_village/weaponsmith_gift"
         }

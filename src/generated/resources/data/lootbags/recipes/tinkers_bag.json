@@ -1,0 +1,9 @@
+{
+  "type": "lootbags:loot",
+  "color": "gold",
+  "name": "Tinkers Kit Bag",
+  "output": {
+    "table": "lootbags:loot_bags/tinkers_lootbag"
+  },
+  "rarity": "RARE"
+}

@@ -216,23 +216,6 @@
         },
         {
           "type": "minecraft:loot_table",
-          "conditions": [
-            {
-              "condition": "minecraft:alternative",
-              "terms": [
-                {
-                  "condition": "minecraft:location_check",
-                  "predicate": {
-                    "dimension": "minecraft:the_end"
-                  }
-                },
-                {
-                  "condition": "turtleblockacademy:gamestage_condition",
-                  "stage": "end"
-                }
-              ]
-            }
-          ],
           "functions": [
             {
               "add": false,
@@ -248,66 +231,10 @@
         },
         {
           "type": "minecraft:loot_table",
-          "conditions": [
-            {
-              "condition": "minecraft:alternative",
-              "terms": [
-                {
-                  "condition": "minecraft:location_check",
-                  "predicate": {
-                    "dimension": "minecraft:the_end"
-                  }
-                },
-                {
-                  "condition": "turtleblockacademy:gamestage_condition",
-                  "stage": "end"
-                }
-              ]
-            }
-          ],
-          "functions": [
-            {
-              "add": false,
-              "count": {
-                "type": "minecraft:uniform",
-                "max": 9.0,
-                "min": 5.0
-              },
-              "function": "minecraft:set_count"
-            }
-          ],
           "name": "turtleblockacademy:chests/kitchen/phantasm_edibles"
         },
         {
           "type": "minecraft:loot_table",
-          "conditions": [
-            {
-              "condition": "minecraft:alternative",
-              "terms": [
-                {
-                  "condition": "minecraft:location_check",
-                  "predicate": {
-                    "dimension": "minecraft:the_end"
-                  }
-                },
-                {
-                  "condition": "turtleblockacademy:gamestage_condition",
-                  "stage": "end"
-                }
-              ]
-            }
-          ],
-          "functions": [
-            {
-              "add": false,
-              "count": {
-                "type": "minecraft:uniform",
-                "max": 9.0,
-                "min": 5.0
-              },
-              "function": "minecraft:set_count"
-            }
-          ],
           "name": "turtleblockacademy:chests/kitchen/unusualend_edibles"
         },
         {
@@ -327,23 +254,6 @@
         },
         {
           "type": "minecraft:loot_table",
-          "conditions": [
-            {
-              "condition": "minecraft:alternative",
-              "terms": [
-                {
-                  "condition": "minecraft:location_check",
-                  "predicate": {
-                    "dimension": "aether:the_aether"
-                  }
-                },
-                {
-                  "condition": "turtleblockacademy:gamestage_condition",
-                  "stage": "aether"
-                }
-              ]
-            }
-          ],
           "functions": [
             {
               "add": false,
@@ -359,23 +269,6 @@
         },
         {
           "type": "minecraft:loot_table",
-          "conditions": [
-            {
-              "condition": "minecraft:alternative",
-              "terms": [
-                {
-                  "condition": "minecraft:location_check",
-                  "predicate": {
-                    "dimension": "minecraft:the_nether"
-                  }
-                },
-                {
-                  "condition": "turtleblockacademy:gamestage_condition",
-                  "stage": "nether"
-                }
-              ]
-            }
-          ],
           "functions": [
             {
               "add": false,
@@ -388,6 +281,26 @@
             }
           ],
           "name": "turtleblockacademy:chests/kitchen/nethersdelight_edibles"
+        }
+      ],
+      "functions": [
+        {
+          "add": false,
+          "count": {
+            "type": "minecraft:uniform",
+            "max": 9.0,
+            "min": 5.0
+          },
+          "function": "minecraft:set_count"
+        },
+        {
+          "add": false,
+          "count": {
+            "type": "minecraft:uniform",
+            "max": 9.0,
+            "min": 5.0
+          },
+          "function": "minecraft:set_count"
         }
       ],
       "name": "dimdungeons:kit_food",

@@ -10,15 +10,6 @@ public class LootbagLootTables {
     private static final Set<ResourceLocation> LOCATIONS = Sets.newHashSet();
     private static final Set<ResourceLocation> IMMUTABLE_LOCATIONS = Collections.unmodifiableSet(LOCATIONS);
 
-    public static final ResourceLocation LOOT_BAG_DROPS = register("loot_bag_drops");
-
-    public static final ResourceLocation BIRTHDAY_BAG_DROP = register("birthday_bag_drop");
-    public static final ResourceLocation HALLOWEEN_BAG_DROP = register("halloween_bag_drop");
-    public static final ResourceLocation CHRISTMAS_BAG_DROP = register("christmas_bag_drop");
-    public static final ResourceLocation ANNIVERSARY_BAG_DROP = register("anniversary_bag_drop");
-    public static final ResourceLocation EASTER_BAG_DROP = register("easter_bag_drop");
-    public static final ResourceLocation NEW_YEAR_BAG_DROP = register("new_year_bag_drop");
-
     public static final ResourceLocation BIRTHDAY_LOOTBAG = register("birthday_lootbag");
     public static final ResourceLocation HALLOWEEN_LOOTBAG = register("trick_or_treat_lootbag");
     public static final ResourceLocation CHRISTMAS_LOOTBAG = register("christmas_lootbag");
@@ -27,23 +18,16 @@ public class LootbagLootTables {
     public static final ResourceLocation NEW_YEAR_LOOTBAG = register("new_year_lootbag");
 
     public static final ResourceLocation RATIONS_BAG_DROP = register("rations_bag_drop");
-    public static final ResourceLocation COMMON_BAG_DROP = register("common_bag_drop");
-    public static final ResourceLocation UNCOMMON_BAG_DROP = register("uncommon_bag_drop");
-    public static final ResourceLocation LUCKY_LOOTBAG_DROP = register("lucky_lootbag_drop");
-    public static final ResourceLocation RARE_BAG_DROP = register("rare_bag_drop");
-    public static final ResourceLocation EPIC_BAG_DROP = register("epic_bag_drop");
-    public static final ResourceLocation LEGENDARY_BAG_DROP = register("legendary_bag_drop");
 
     public static final ResourceLocation RATIONS = register("rations_lootbag");
-    public static final ResourceLocation COMMON = register("common_lootbag");
-    public static final ResourceLocation UNCOMMON = register("uncommon_lootbag");
-    public static final ResourceLocation RARE = register("rare_lootbag");
-    @SuppressWarnings("unused")
     public static final ResourceLocation LUCKY_LOOTBAG = register("lucky_lootbag");
-    public static final ResourceLocation EPIC = register("epic_lootbag");
-    public static final ResourceLocation LEGENDARY = register("legendary_lootbag");
 
-    @SuppressWarnings("unused")
+    public static final ResourceLocation CAGERIUM_KIT = register("cagerium_lootbag");
+    public static final ResourceLocation TINKERS_KIT = register("tinkers_lootbag");
+    public static final ResourceLocation UFO_BAG = register("ufo_lootbag");
+    public static final ResourceLocation SHULKER_BOXES = register("shulker_boxes_lootbag");
+    public static final ResourceLocation BACKPACK_UPGRADES = register("backpack_upgrade_lootbag");
+    public static final ResourceLocation MUSIC_DISCS = register("music_disc_lootbag");
     public static final ResourceLocation MYSTERY_COIN_PACK = register("mystery_coin_pack");
     public static final ResourceLocation PLUSHIE_BAG = register("plushie_bag");
     public static final ResourceLocation DECO_BAG = register("deco_bag");

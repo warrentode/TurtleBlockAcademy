@@ -32,10 +32,6 @@ public class ModLootItemConditions extends LootItemConditions {
             = REGISTER.register("seasonal_condition",
             () -> new LootItemConditionType(new SeasonalCondition.Serializer()));
 
-    public static final RegistryObject<LootItemConditionType> GAME_STAGE_CONDITION
-            = REGISTER.register("gamestage_condition",
-            () -> new LootItemConditionType(new GameStageCondition.Serializer()));
-
     public static void register(IEventBus eventBus) {
         REGISTER.register(eventBus);
     }

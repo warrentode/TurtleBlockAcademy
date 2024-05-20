@@ -1,0 +1,9 @@
+{
+  "type": "lootbags:loot",
+  "color": "gold",
+  "name": "Obsidian Kit Bag",
+  "output": {
+    "table": "dimdungeons:chests/kit_obsidian"
+  },
+  "rarity": "RARE"
+}

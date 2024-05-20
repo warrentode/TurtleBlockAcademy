@@ -1,0 +1,9 @@
+{
+  "type": "lootbags:loot",
+  "color": "white",
+  "name": "Redstone Kit Bag",
+  "output": {
+    "table": "dimdungeons:chests/kit_redstone"
+  },
+  "rarity": "COMMON"
+}

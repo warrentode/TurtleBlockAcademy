@@ -1,9 +1,0 @@
-{
-  "type": "lootbags:loot",
-  "color": "blue",
-  "name": "Loot Bag (Uncommon)",
-  "output": {
-    "table": "lootbags:loot_bags/uncommon_lootbag"
-  },
-  "rarity": "UNCOMMON"
-}

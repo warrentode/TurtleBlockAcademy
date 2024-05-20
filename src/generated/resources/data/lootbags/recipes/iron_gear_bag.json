@@ -1,0 +1,9 @@
+{
+  "type": "lootbags:loot",
+  "color": "blue",
+  "name": "Iron Tier Gear Bag",
+  "output": {
+    "table": "turtleblockacademy:chests/iron_tier_gear"
+  },
+  "rarity": "UNCOMMON"
+}

@@ -1,6 +1,6 @@
 package com.github.warrentode.turtleblockacademy.datagen;
 
-import com.github.warrentode.turtleblockacademy.datagen.advancements.AcademyAdvancementsGen;
+import com.github.warrentode.turtleblockacademy.datagen.advancements.TBAAdvancementsGen;
 import com.github.warrentode.turtleblockacademy.datagen.lang.ModLangGen;
 import com.github.warrentode.turtleblockacademy.datagen.loot.ModLootModifierGenProvider;
 import com.github.warrentode.turtleblockacademy.datagen.loot.ModLootProviders;
@@ -37,7 +37,7 @@ public class DataGenerators {
         generator.addProvider(event.includeClient(), new SoundsFileGen(generator, helper));
         generator.addProvider(event.includeServer(), new ModBlockStatesProvider(generator, MODID, helper));
         generator.addProvider(event.includeServer(), new ModItemModelProvider(generator, MODID, helper));
-        generator.addProvider(event.includeServer(), new AcademyAdvancementsGen(generator, helper));
+        generator.addProvider(event.includeServer(), new TBAAdvancementsGen(generator, helper));
         generator.addProvider(event.includeClient(), new ModLangGen(generator, MODID, "en_us"));
         generator.addProvider(event.includeServer(), new ModLootProviders(generator));
         generator.addProvider(event.includeServer(), new ModLootModifierGenProvider(generator, MODID));

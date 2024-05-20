@@ -21,6 +21,12 @@
                   "predicate": {
                     "dimension": "dimdungeons:dungeon_dimension"
                   }
+                },
+                {
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                    "dimension": "turtleblockacademy:mining_dimension"
+                  }
                 }
               ]
             }
@@ -54,6 +60,12 @@
                   "condition": "minecraft:location_check",
                   "predicate": {
                     "dimension": "dimdungeons:dungeon_dimension"
+                  }
+                },
+                {
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                    "dimension": "turtleblockacademy:mining_dimension"
                   }
                 }
               ]
@@ -89,6 +101,12 @@
                   "predicate": {
                     "dimension": "dimdungeons:dungeon_dimension"
                   }
+                },
+                {
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                    "dimension": "turtleblockacademy:mining_dimension"
+                  }
                 }
               ]
             }
@@ -122,6 +140,12 @@
                   "condition": "minecraft:location_check",
                   "predicate": {
                     "dimension": "dimdungeons:dungeon_dimension"
+                  }
+                },
+                {
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                    "dimension": "turtleblockacademy:mining_dimension"
                   }
                 }
               ]
@@ -157,6 +181,12 @@
                   "predicate": {
                     "dimension": "dimdungeons:dungeon_dimension"
                   }
+                },
+                {
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                    "dimension": "turtleblockacademy:mining_dimension"
+                  }
                 }
               ]
             }
@@ -191,6 +221,12 @@
                   "predicate": {
                     "dimension": "dimdungeons:dungeon_dimension"
                   }
+                },
+                {
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                    "dimension": "turtleblockacademy:mining_dimension"
+                  }
                 }
               ]
             }
@@ -224,6 +260,12 @@
                   "condition": "minecraft:location_check",
                   "predicate": {
                     "dimension": "dimdungeons:dungeon_dimension"
+                  }
+                },
+                {
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                    "dimension": "turtleblockacademy:mining_dimension"
                   }
                 }
               ]
@@ -261,8 +303,10 @@
                   }
                 },
                 {
-                  "condition": "turtleblockacademy:gamestage_condition",
-                  "stage": "nether"
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                    "dimension": "turtleblockacademy:mining_dimension"
+                  }
                 }
               ]
             }
@@ -299,8 +343,10 @@
                   }
                 },
                 {
-                  "condition": "turtleblockacademy:gamestage_condition",
-                  "stage": "nether"
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                    "dimension": "turtleblockacademy:mining_dimension"
+                  }
                 }
               ]
             }
@@ -334,6 +380,12 @@
                   "condition": "minecraft:location_check",
                   "predicate": {
                     "dimension": "dimdungeons:dungeon_dimension"
+                  }
+                },
+                {
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                    "dimension": "turtleblockacademy:mining_dimension"
                   }
                 }
               ]
@@ -369,6 +421,12 @@
                   "predicate": {
                     "dimension": "dimdungeons:dungeon_dimension"
                   }
+                },
+                {
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                    "dimension": "turtleblockacademy:mining_dimension"
+                  }
                 }
               ]
             }
@@ -402,6 +460,12 @@
                   "condition": "minecraft:location_check",
                   "predicate": {
                     "dimension": "dimdungeons:dungeon_dimension"
+                  }
+                },
+                {
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                    "dimension": "turtleblockacademy:mining_dimension"
                   }
                 }
               ]
@@ -437,6 +501,12 @@
                   "predicate": {
                     "dimension": "dimdungeons:dungeon_dimension"
                   }
+                },
+                {
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                    "dimension": "turtleblockacademy:mining_dimension"
+                  }
                 }
               ]
             }
@@ -470,6 +540,12 @@
                   "condition": "minecraft:location_check",
                   "predicate": {
                     "dimension": "dimdungeons:dungeon_dimension"
+                  }
+                },
+                {
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                    "dimension": "turtleblockacademy:mining_dimension"
                   }
                 }
               ]
@@ -505,6 +581,12 @@
                   "predicate": {
                     "dimension": "dimdungeons:dungeon_dimension"
                   }
+                },
+                {
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                    "dimension": "turtleblockacademy:mining_dimension"
+                  }
                 }
               ]
             }
@@ -538,6 +620,12 @@
                   "condition": "minecraft:location_check",
                   "predicate": {
                     "dimension": "dimdungeons:dungeon_dimension"
+                  }
+                },
+                {
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                    "dimension": "turtleblockacademy:mining_dimension"
                   }
                 }
               ]
@@ -573,6 +661,12 @@
                   "predicate": {
                     "dimension": "dimdungeons:dungeon_dimension"
                   }
+                },
+                {
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                    "dimension": "turtleblockacademy:mining_dimension"
+                  }
                 }
               ]
             }
@@ -607,6 +701,12 @@
                   "predicate": {
                     "dimension": "dimdungeons:dungeon_dimension"
                   }
+                },
+                {
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                    "dimension": "turtleblockacademy:mining_dimension"
+                  }
                 }
               ]
             }
@@ -640,6 +740,12 @@
                   "condition": "minecraft:location_check",
                   "predicate": {
                     "dimension": "dimdungeons:dungeon_dimension"
+                  }
+                },
+                {
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                    "dimension": "turtleblockacademy:mining_dimension"
                   }
                 }
               ]
@@ -677,8 +783,10 @@
                   }
                 },
                 {
-                  "condition": "turtleblockacademy:gamestage_condition",
-                  "stage": "nether"
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                    "dimension": "turtleblockacademy:mining_dimension"
+                  }
                 }
               ]
             }
@@ -712,6 +820,12 @@
                   "condition": "minecraft:location_check",
                   "predicate": {
                     "dimension": "dimdungeons:dungeon_dimension"
+                  }
+                },
+                {
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                    "dimension": "turtleblockacademy:mining_dimension"
                   }
                 }
               ]
@@ -747,6 +861,12 @@
                   "predicate": {
                     "dimension": "dimdungeons:dungeon_dimension"
                   }
+                },
+                {
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                    "dimension": "turtleblockacademy:mining_dimension"
+                  }
                 }
               ]
             }
@@ -781,6 +901,12 @@
                   "predicate": {
                     "dimension": "dimdungeons:dungeon_dimension"
                   }
+                },
+                {
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                    "dimension": "turtleblockacademy:mining_dimension"
+                  }
                 }
               ]
             }
@@ -814,6 +940,12 @@
                   "condition": "minecraft:location_check",
                   "predicate": {
                     "dimension": "dimdungeons:dungeon_dimension"
+                  }
+                },
+                {
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                    "dimension": "turtleblockacademy:mining_dimension"
                   }
                 }
               ]
@@ -851,8 +983,10 @@
                   }
                 },
                 {
-                  "condition": "turtleblockacademy:gamestage_condition",
-                  "stage": "end"
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                    "dimension": "turtleblockacademy:mining_dimension"
+                  }
                 }
               ]
             }
@@ -889,8 +1023,10 @@
                   }
                 },
                 {
-                  "condition": "turtleblockacademy:gamestage_condition",
-                  "stage": "end"
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                    "dimension": "turtleblockacademy:mining_dimension"
+                  }
                 }
               ]
             }
@@ -927,8 +1063,10 @@
                   }
                 },
                 {
-                  "condition": "turtleblockacademy:gamestage_condition",
-                  "stage": "end"
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                    "dimension": "turtleblockacademy:mining_dimension"
+                  }
                 }
               ]
             }
@@ -965,8 +1103,10 @@
                   }
                 },
                 {
-                  "condition": "turtleblockacademy:gamestage_condition",
-                  "stage": "end"
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                    "dimension": "turtleblockacademy:mining_dimension"
+                  }
                 }
               ]
             }
@@ -1003,8 +1143,10 @@
                   }
                 },
                 {
-                  "condition": "turtleblockacademy:gamestage_condition",
-                  "stage": "aether"
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                    "dimension": "turtleblockacademy:mining_dimension"
+                  }
                 }
               ]
             }
@@ -1041,8 +1183,10 @@
                   }
                 },
                 {
-                  "condition": "turtleblockacademy:gamestage_condition",
-                  "stage": "aether"
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                    "dimension": "turtleblockacademy:mining_dimension"
+                  }
                 }
               ]
             }

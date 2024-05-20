@@ -38,7 +38,7 @@ public class DimDungeonLootTables {
 
     public static final ResourceLocation KIT_LOGS = register("dimdungeons" + ":" + "chests/kit_logs");
     public static final ResourceLocation KIT_SAND = register("dimdungeons" + ":" + "chests/kit_sand");
-    public static final ResourceLocation KIT_MISC = register("dimdungeons" + ":" + "chests/kit_misc");
+    public static final ResourceLocation KIT_BASIC_SUPPLIES = register("dimdungeons" + ":" + "chests/kit_basic_supplies");
     public static final ResourceLocation KIT_DECOR = register("dimdungeons" + ":" + "chests/kit_decor");
 
     private static final Set<ResourceLocation> IMMUTABLE_LOCATIONS = Collections.unmodifiableSet(LOCATIONS);

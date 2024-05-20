@@ -1,0 +1,82 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:elytra"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_scrap"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:enchant_randomly"
+            }
+          ],
+          "name": "minecraft:netherite_axe"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:enchant_randomly"
+            }
+          ],
+          "name": "minecraft:netherite_pickaxe"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:enchant_randomly"
+            }
+          ],
+          "name": "minecraft:netherite_sword"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:enchant_randomly"
+            }
+          ],
+          "name": "minecraft:netherite_helmet"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:enchant_randomly"
+            }
+          ],
+          "name": "minecraft:netherite_chestplate"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:enchant_randomly"
+            }
+          ],
+          "name": "minecraft:netherite_leggings"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "minecraft:enchant_randomly"
+            }
+          ],
+          "name": "minecraft:netherite_boots"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ]
+}

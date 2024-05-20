@@ -1,0 +1,9 @@
+{
+  "type": "lootbags:loot",
+  "color": "limegreen",
+  "name": "Cagerium Kit Bag",
+  "output": {
+    "table": "lootbags:loot_bags/cagerium_lootbag"
+  },
+  "rarity": "LEGENDARY"
+}

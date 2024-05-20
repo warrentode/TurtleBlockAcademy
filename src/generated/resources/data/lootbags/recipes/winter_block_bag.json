@@ -1,0 +1,9 @@
+{
+  "type": "lootbags:loot",
+  "color": "white",
+  "name": "Winter Block Kit Bag",
+  "output": {
+    "table": "dimdungeons:chests/kit_winter_blocks"
+  },
+  "rarity": "COMMON"
+}

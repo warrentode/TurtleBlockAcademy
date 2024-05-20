@@ -1,9 +1,9 @@
 {
   "type": "lootbags:loot",
-  "color": "purple",
+  "color": "white",
   "name": "Deco Bag",
   "output": {
     "table": "lootbags:loot_bags/deco_bag"
   },
-  "rarity": "EPIC"
+  "rarity": "COMMON"
 }

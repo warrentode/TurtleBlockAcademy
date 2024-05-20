@@ -32,10 +32,6 @@
           "type": "minecraft:tag",
           "conditions": [
             {
-              "condition": "turtleblockacademy:gamestage_condition",
-              "stage": "apartment"
-            },
-            {
               "chance": 0.001,
               "condition": "minecraft:random_chance"
             }
@@ -73,46 +69,12 @@
         },
         {
           "type": "minecraft:tag",
-          "conditions": [
-            {
-              "condition": "minecraft:alternative",
-              "terms": [
-                {
-                  "condition": "minecraft:location_check",
-                  "predicate": {
-                    "dimension": "minecraft:the_end"
-                  }
-                },
-                {
-                  "condition": "turtleblockacademy:gamestage_condition",
-                  "stage": "end"
-                }
-              ]
-            }
-          ],
           "expand": true,
           "name": "forge:gems/star",
           "quality": 6
         },
         {
           "type": "minecraft:item",
-          "conditions": [
-            {
-              "condition": "minecraft:alternative",
-              "terms": [
-                {
-                  "condition": "minecraft:location_check",
-                  "predicate": {
-                    "dimension": "minecraft:the_nether"
-                  }
-                },
-                {
-                  "condition": "turtleblockacademy:gamestage_condition",
-                  "stage": "nether"
-                }
-              ]
-            }
-          ],
           "name": "minecraft:ghast_tear",
           "quality": 6
         },
@@ -154,23 +116,6 @@
         },
         {
           "type": "minecraft:item",
-          "conditions": [
-            {
-              "condition": "minecraft:alternative",
-              "terms": [
-                {
-                  "condition": "minecraft:location_check",
-                  "predicate": {
-                    "dimension": "minecraft:the_nether"
-                  }
-                },
-                {
-                  "condition": "turtleblockacademy:gamestage_condition",
-                  "stage": "nether"
-                }
-              ]
-            }
-          ],
           "functions": [
             {
               "add": false,
@@ -183,23 +128,6 @@
         },
         {
           "type": "minecraft:item",
-          "conditions": [
-            {
-              "condition": "minecraft:alternative",
-              "terms": [
-                {
-                  "condition": "minecraft:location_check",
-                  "predicate": {
-                    "dimension": "minecraft:the_nether"
-                  }
-                },
-                {
-                  "condition": "turtleblockacademy:gamestage_condition",
-                  "stage": "nether"
-                }
-              ]
-            }
-          ],
           "functions": [
             {
               "add": false,
@@ -212,23 +140,6 @@
         },
         {
           "type": "minecraft:item",
-          "conditions": [
-            {
-              "condition": "minecraft:alternative",
-              "terms": [
-                {
-                  "condition": "minecraft:location_check",
-                  "predicate": {
-                    "dimension": "minecraft:the_nether"
-                  }
-                },
-                {
-                  "condition": "turtleblockacademy:gamestage_condition",
-                  "stage": "nether"
-                }
-              ]
-            }
-          ],
           "functions": [
             {
               "add": false,
@@ -253,23 +164,6 @@
         },
         {
           "type": "minecraft:tag",
-          "conditions": [
-            {
-              "condition": "minecraft:alternative",
-              "terms": [
-                {
-                  "condition": "minecraft:location_check",
-                  "predicate": {
-                    "dimension": "minecraft:the_end"
-                  }
-                },
-                {
-                  "condition": "turtleblockacademy:gamestage_condition",
-                  "stage": "end"
-                }
-              ]
-            }
-          ],
           "expand": true,
           "name": "forge:gems/crystal",
           "quality": 6

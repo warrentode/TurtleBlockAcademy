@@ -4,7 +4,6 @@ import biomesoplenty.api.biome.BOPBiomes;
 import com.aetherteam.aether.data.resources.registries.AetherDimensions;
 import com.catastrophe573.dimdungeons.DimDungeons;
 import com.github.warrentode.turtleblockacademy.datagen.loot.tables.*;
-import com.github.warrentode.turtleblockacademy.loot.conditions.GameStageCondition;
 import com.github.warrentode.turtleblockacademy.loot.conditions.SeasonalCondition;
 import com.github.warrentode.turtleblockacademy.world.dimension.TBADimensions;
 import com.google.common.collect.ImmutableList;
@@ -56,14 +55,6 @@ public class ModLootProviders extends LootTableProvider {
     protected void validate(@NotNull Map<ResourceLocation, LootTable> map, @NotNull ValidationContext validationTracker) {
         map.forEach((id, table) -> LootTables.validate(validationTracker, id, table));
     }
-
-    // game stage checks
-    public static final LootItemCondition.Builder STAGE_NETHER = GameStageCondition.stage().set("nether");
-    public static final LootItemCondition.Builder STAGE_END = GameStageCondition.stage().set("end");
-    public static final LootItemCondition.Builder STAGE_AETHER = GameStageCondition.stage().set("aether");
-    public static final LootItemCondition.Builder STAGE_APARTMENT = GameStageCondition.stage().set("apartment");
-    public static final LootItemCondition.Builder STAGE_DUNGEONS = GameStageCondition.stage().set("dungeons");
-    public static final LootItemCondition.Builder STAGE_MINING = GameStageCondition.stage().set("mining");
 
     // dimension checks
     public static final LootItemCondition.Builder IN_OVERWORLD =

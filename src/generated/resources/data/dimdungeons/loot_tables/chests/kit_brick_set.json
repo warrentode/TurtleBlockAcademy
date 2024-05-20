@@ -68,29 +68,6 @@
         },
         {
           "type": "minecraft:item",
-          "conditions": [
-            {
-              "condition": "minecraft:alternative",
-              "terms": [
-                {
-                  "condition": "minecraft:location_check",
-                  "predicate": {
-                    "dimension": "minecraft:the_nether"
-                  }
-                },
-                {
-                  "condition": "turtleblockacademy:gamestage_condition",
-                  "stage": "nether"
-                },
-                {
-                  "condition": "minecraft:location_check",
-                  "predicate": {
-                    "dimension": "dimdungeons:dungeon_dimension"
-                  }
-                }
-              ]
-            }
-          ],
           "functions": [
             {
               "add": false,
@@ -106,29 +83,6 @@
         },
         {
           "type": "minecraft:item",
-          "conditions": [
-            {
-              "condition": "minecraft:alternative",
-              "terms": [
-                {
-                  "condition": "minecraft:location_check",
-                  "predicate": {
-                    "dimension": "minecraft:the_nether"
-                  }
-                },
-                {
-                  "condition": "turtleblockacademy:gamestage_condition",
-                  "stage": "nether"
-                },
-                {
-                  "condition": "minecraft:location_check",
-                  "predicate": {
-                    "dimension": "dimdungeons:dungeon_dimension"
-                  }
-                }
-              ]
-            }
-          ],
           "functions": [
             {
               "add": false,
@@ -144,29 +98,6 @@
         },
         {
           "type": "minecraft:item",
-          "conditions": [
-            {
-              "condition": "minecraft:alternative",
-              "terms": [
-                {
-                  "condition": "minecraft:location_check",
-                  "predicate": {
-                    "dimension": "minecraft:the_nether"
-                  }
-                },
-                {
-                  "condition": "turtleblockacademy:gamestage_condition",
-                  "stage": "nether"
-                },
-                {
-                  "condition": "minecraft:location_check",
-                  "predicate": {
-                    "dimension": "dimdungeons:dungeon_dimension"
-                  }
-                }
-              ]
-            }
-          ],
           "functions": [
             {
               "add": false,

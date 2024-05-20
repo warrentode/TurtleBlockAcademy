@@ -14,10 +14,11 @@ public class PackBuiltInLootTables {
     public static final ResourceLocation BREWING_GUIDE = register(MODID + ":" + "advancements/loot_tables/give_brewing_guide");
     public static final ResourceLocation KITCHEN_TEXTBOOK = register(MODID + ":" + "advancements/loot_tables/give_kitchen_textbook");
 
-    // randomized map loot tables
     public static final ResourceLocation TREASURE_BEETLE_ITEM_DROPS = register(MODID + ":" + "entity/treasure_beetle_item_drops");
     public static final ResourceLocation TREASURE_BEETLE_LOOT = register(MODID + ":" + "entity/treasure_beetle");
     public static final ResourceLocation CAMP_CHEST = register(MODID + ":" + "chests/camp_chest");
+
+    // randomized map loot tables
     public static final ResourceLocation MASTER_MAPBOX = register(MODID + ":" + "chests/maps/master_mapbox");
     public static final ResourceLocation END_MAPBOX = register(MODID + ":" + "chests/maps/end_mapbox");
     public static final ResourceLocation NETHER_MAPBOX = register(MODID + ":" + "chests/maps/nether_mapbox");
@@ -34,13 +35,20 @@ public class PackBuiltInLootTables {
     public static final ResourceLocation SCOUT_MAPS = register(MODID + ":" + "chests/maps/scout_maps");
     public static final ResourceLocation TREASURE_MAPS = register(MODID + ":" + "chests/maps/treasure_maps");
 
-    public static final ResourceLocation GEMS = register(MODID + ":" + "chests/gems");
+    public static final ResourceLocation LEATHER_TIER_GEAR = register(MODID + ":" + "chests/leather_tier_gear");
+    public static final ResourceLocation IRON_TIER_GEAR = register(MODID + ":" + "chests/iron_tier_gear");
+    public static final ResourceLocation DIAMOND_TIER_GEAR = register(MODID + ":" + "chests/diamond_tier_gear");
+    public static final ResourceLocation NETHERITE_TIER_GEAR = register(MODID + ":" + "chests/netherite_tier_gear");
+
     public static final ResourceLocation HERO_REWARDS = register(MODID + ":" + "chests/hero_rewards");
     public static final ResourceLocation DUNGEON_REWARDS = register(MODID + ":" + "chests/dungeon_rewards");
+
+    public static final ResourceLocation GEMS = register(MODID + ":" + "chests/gems");
     public static final ResourceLocation UFO = register(MODID + ":" + "chests/ufo");
     public static final ResourceLocation SPAWN_STARTER_BONUS = register(MODID + ":" + "chests/starter_bonus_chest");
     public static final ResourceLocation LOG_SET = register(MODID + ":" + "chests/log_set");
     public static final ResourceLocation GIFTS = register(MODID + ":" + "chests/gifts");
+
     public static final ResourceLocation PLUSHIES = register(MODID + ":" + "chests/plushies");
     public static final ResourceLocation BATH_DECO = register(MODID + ":" + "chests/bath_deco");
     public static final ResourceLocation ART_DECO = register(MODID + ":" + "chests/art_deco");

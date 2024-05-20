@@ -50,29 +50,6 @@
         },
         {
           "type": "minecraft:loot_table",
-          "conditions": [
-            {
-              "condition": "minecraft:alternative",
-              "terms": [
-                {
-                  "condition": "minecraft:location_check",
-                  "predicate": {
-                    "dimension": "minecraft:the_nether"
-                  }
-                },
-                {
-                  "condition": "minecraft:location_check",
-                  "predicate": {
-                    "dimension": "dimdungeons:dungeon_dimension"
-                  }
-                },
-                {
-                  "condition": "turtleblockacademy:gamestage_condition",
-                  "stage": "nether"
-                }
-              ]
-            }
-          ],
           "name": "dimdungeons:chests/kit_blackstone"
         },
         {
@@ -85,83 +62,14 @@
         },
         {
           "type": "minecraft:loot_table",
-          "conditions": [
-            {
-              "condition": "minecraft:alternative",
-              "terms": [
-                {
-                  "condition": "minecraft:location_check",
-                  "predicate": {
-                    "dimension": "minecraft:the_end"
-                  }
-                },
-                {
-                  "condition": "turtleblockacademy:gamestage_condition",
-                  "stage": "end"
-                },
-                {
-                  "condition": "minecraft:location_check",
-                  "predicate": {
-                    "dimension": "dimdungeons:dungeon_dimension"
-                  }
-                }
-              ]
-            }
-          ],
           "name": "dimdungeons:chests/kit_end_stones"
         },
         {
           "type": "minecraft:loot_table",
-          "conditions": [
-            {
-              "condition": "minecraft:alternative",
-              "terms": [
-                {
-                  "condition": "minecraft:location_check",
-                  "predicate": {
-                    "dimension": "minecraft:the_end"
-                  }
-                },
-                {
-                  "condition": "turtleblockacademy:gamestage_condition",
-                  "stage": "end"
-                },
-                {
-                  "condition": "minecraft:location_check",
-                  "predicate": {
-                    "dimension": "dimdungeons:dungeon_dimension"
-                  }
-                }
-              ]
-            }
-          ],
           "name": "dimdungeons:chests/kit_purpur_stones"
         },
         {
           "type": "minecraft:loot_table",
-          "conditions": [
-            {
-              "condition": "minecraft:alternative",
-              "terms": [
-                {
-                  "condition": "minecraft:location_check",
-                  "predicate": {
-                    "dimension": "minecraft:the_end"
-                  }
-                },
-                {
-                  "condition": "turtleblockacademy:gamestage_condition",
-                  "stage": "end"
-                },
-                {
-                  "condition": "minecraft:location_check",
-                  "predicate": {
-                    "dimension": "dimdungeons:dungeon_dimension"
-                  }
-                }
-              ]
-            }
-          ],
           "name": "dimdungeons:chests/kit_creature_stones"
         },
         {
@@ -170,29 +78,6 @@
         },
         {
           "type": "minecraft:loot_table",
-          "conditions": [
-            {
-              "condition": "minecraft:alternative",
-              "terms": [
-                {
-                  "condition": "minecraft:location_check",
-                  "predicate": {
-                    "dimension": "minecraft:the_end"
-                  }
-                },
-                {
-                  "condition": "turtleblockacademy:gamestage_condition",
-                  "stage": "end"
-                },
-                {
-                  "condition": "minecraft:location_check",
-                  "predicate": {
-                    "dimension": "dimdungeons:dungeon_dimension"
-                  }
-                }
-              ]
-            }
-          ],
           "name": "dimdungeons:chests/kit_crystal"
         },
         {
@@ -201,34 +86,11 @@
         },
         {
           "type": "minecraft:loot_table",
-          "conditions": [
-            {
-              "condition": "minecraft:alternative",
-              "terms": [
-                {
-                  "condition": "minecraft:location_check",
-                  "predicate": {
-                    "dimension": "minecraft:the_nether"
-                  }
-                },
-                {
-                  "condition": "minecraft:location_check",
-                  "predicate": {
-                    "dimension": "dimdungeons:dungeon_dimension"
-                  }
-                },
-                {
-                  "condition": "turtleblockacademy:gamestage_condition",
-                  "stage": "nether"
-                }
-              ]
-            }
-          ],
           "name": "dimdungeons:chests/kit_quartz"
         },
         {
           "type": "minecraft:loot_table",
-          "name": "dimdungeons:chests/kit_misc"
+          "name": "dimdungeons:chests/kit_basic_supplies"
         },
         {
           "type": "minecraft:loot_table",

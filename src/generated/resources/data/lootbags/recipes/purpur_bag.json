@@ -1,0 +1,9 @@
+{
+  "type": "lootbags:loot",
+  "color": "white",
+  "name": "Purpur Kit Bag",
+  "output": {
+    "table": "dimdungeons:chests/kit_purpur_stones"
+  },
+  "rarity": "COMMON"
+}

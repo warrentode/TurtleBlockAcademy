@@ -3,6 +3,22 @@
   "pools": [
     {
       "bonus_rolls": 0.0,
+      "conditions": [
+        {
+          "chance": 0.25,
+          "condition": "minecraft:random_chance"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "name": "dimdungeons:chests/kit_basic_supplies"
+        }
+      ],
+      "rolls": 1.0
+    },
+    {
+      "bonus_rolls": 0.0,
       "entries": [
         {
           "type": "minecraft:loot_table",
@@ -13,6 +29,24 @@
     },
     {
       "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "name": "turtleblockacademy:chests/log_set"
+        }
+      ],
+      "rolls": 1.0
+    },
+    {
+      "bonus_rolls": 0.0,
+      "conditions": [
+        {
+          "condition": "minecraft:location_check",
+          "predicate": {
+            "dimension": "turtleblockacademy:mining_dimension"
+          }
+        }
+      ],
       "entries": [
         {
           "type": "minecraft:loot_table",

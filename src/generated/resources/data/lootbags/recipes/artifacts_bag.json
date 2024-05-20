@@ -1,0 +1,9 @@
+{
+  "type": "lootbags:loot",
+  "color": "limegreen",
+  "name": "Artifacts Kit Bag",
+  "output": {
+    "table": "lootbags:loot_bags/artifacts_gifts"
+  },
+  "rarity": "LEGENDARY"
+}

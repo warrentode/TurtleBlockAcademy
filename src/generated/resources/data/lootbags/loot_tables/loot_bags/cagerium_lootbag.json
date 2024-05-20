@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "bonus_rolls": 1.0,
+      "entries": [
+        {
+          "type": "minecraft:tag",
+          "conditions": [
+            {
+              "chance": 0.1,
+              "condition": "minecraft:random_chance"
+            }
+          ],
+          "expand": true,
+          "name": "cagerium:cagerium_blocks"
+        },
+        {
+          "type": "minecraft:tag",
+          "conditions": [
+            {
+              "chance": 0.1,
+              "condition": "minecraft:random_chance"
+            }
+          ],
+          "expand": true,
+          "name": "cagerium:cagerium_items"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ]
+}

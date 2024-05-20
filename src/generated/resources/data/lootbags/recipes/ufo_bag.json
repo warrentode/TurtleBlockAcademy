@@ -1,0 +1,9 @@
+{
+  "type": "lootbags:loot",
+  "color": "purple",
+  "name": "UFO Bag",
+  "output": {
+    "table": "lootbags:loot_bags/ufo_lootbag"
+  },
+  "rarity": "EPIC"
+}

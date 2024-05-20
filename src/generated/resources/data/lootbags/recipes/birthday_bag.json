@@ -1,9 +1,9 @@
 {
   "type": "lootbags:loot",
-  "color": "aquamarine",
+  "color": "blue",
   "name": "Birthday Bag",
   "output": {
     "table": "lootbags:loot_bags/birthday_lootbag"
   },
-  "rarity": "LEGENDARY"
+  "rarity": "UNCOMMON"
 }

@@ -1,0 +1,9 @@
+{
+  "type": "lootbags:loot",
+  "color": "gold",
+  "name": "Refined Storage Bag",
+  "output": {
+    "table": "lootbags:loot_bags/refined_storage_gifts"
+  },
+  "rarity": "RARE"
+}

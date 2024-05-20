@@ -1,0 +1,9 @@
+{
+  "type": "lootbags:loot",
+  "color": "white",
+  "name": "Sand Kit Bag",
+  "output": {
+    "table": "dimdungeons:chests/kit_sand"
+  },
+  "rarity": "COMMON"
+}

@@ -1,0 +1,9 @@
+{
+  "type": "lootbags:loot",
+  "color": "white",
+  "name": "Quartz Kit Bag",
+  "output": {
+    "table": "dimdungeons:chests/kit_quartz"
+  },
+  "rarity": "COMMON"
+}

@@ -6,6 +6,16 @@
       "entries": [
         {
           "type": "minecraft:loot_table",
+          "name": "lootbags:loot_bags/lootbag_currency"
+        }
+      ],
+      "rolls": 1.0
+    },
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
           "name": "lootbags:loot_bags/artifacts_gifts"
         }
       ],

@@ -1,0 +1,9 @@
+{
+  "type": "lootbags:loot",
+  "color": "rare",
+  "name": "Gems Kit Bag",
+  "output": {
+    "table": "turtleblockacademy:chests/gems"
+  },
+  "rarity": "RARE"
+}

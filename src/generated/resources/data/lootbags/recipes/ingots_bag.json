@@ -1,0 +1,9 @@
+{
+  "type": "lootbags:loot",
+  "color": "purple",
+  "name": "Ingots Kit Bag",
+  "output": {
+    "table": "dimdungeons:chests/kit_concrete"
+  },
+  "rarity": "EPIC"
+}
