@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "turtleblockacademy:cloves"
+    }
+  ],
+  "result": {
+    "item": "turtleblockacademy:clove_seeds"
+  }
+}

@@ -28,7 +28,7 @@ import java.util.Objects;
 import java.util.function.BiConsumer;
 import java.util.function.Consumer;
 
-import static com.github.warrentode.turtleblockacademy.datagen.loot.ModLootProviders.IN_MINING;
+import static com.github.warrentode.turtleblockacademy.datagen.loot.TBALootProviders.IN_MINING;
 
 
 public class LootbagLootTablesGen implements Consumer<BiConsumer<ResourceLocation, LootTable.Builder>> {

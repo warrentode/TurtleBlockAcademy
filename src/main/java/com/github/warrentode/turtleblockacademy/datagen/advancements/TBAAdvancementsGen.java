@@ -217,7 +217,7 @@ public class TBAAdvancementsGen extends AdvancementProvider {
                             Component.translatable("advancement.aether.enter_aether"),
                             Component.translatable("advancement.aether.enter_aether.desc"),
                             null, FrameType.TASK, false, false, false)
-                    .addCriterion("enter_aether", net.minecraft.advancements.critereon.ChangeDimensionTrigger.TriggerInstance.changedDimensionTo(AetherDimensions.AETHER_LEVEL))
+                    .addCriterion("enter_aether", ChangeDimensionTrigger.TriggerInstance.changedDimensionTo(AetherDimensions.AETHER_LEVEL))
                     .rewards(AdvancementRewards.Builder.function(new ResourceLocation("turtleblockacademy:set_aether_stage")))
                     .save(consumer, getPath(MODID, "exploration/enter_aether"));
 
@@ -227,7 +227,7 @@ public class TBAAdvancementsGen extends AdvancementProvider {
                             Component.translatable("advancements.dimdungeons.dungeons.enter_personal_space.title"),
                             Component.translatable("advancements.dimdungeons.dungeons.enter_personal_space.description"),
                             null, FrameType.TASK, false, false, false)
-                    .addCriterion("entered_space", net.minecraft.advancements.critereon.ChangeDimensionTrigger.TriggerInstance.changedDimensionTo(DimDungeons.BUILD_DIMENSION))
+                    .addCriterion("entered_space", ChangeDimensionTrigger.TriggerInstance.changedDimensionTo(DimDungeons.BUILD_DIMENSION))
                     .rewards(AdvancementRewards.Builder.function(new ResourceLocation("turtleblockacademy:set_apartment_stage")))
                     .save(consumer, getPath(MODID, "exploration/enter_personal_space"));
 
@@ -237,7 +237,7 @@ public class TBAAdvancementsGen extends AdvancementProvider {
                             Component.translatable("advancements.dimdungeons.dungeons.enter_basic_dungeon.title"),
                             Component.translatable("advancements.dimdungeons.dungeons.enter_basic_dungeon.description"),
                             null, FrameType.TASK, false, false, false)
-                    .addCriterion("entered_dungeon", net.minecraft.advancements.critereon.ChangeDimensionTrigger.TriggerInstance.changedDimensionTo(DimDungeons.DUNGEON_DIMENSION))
+                    .addCriterion("entered_dungeon", ChangeDimensionTrigger.TriggerInstance.changedDimensionTo(DimDungeons.DUNGEON_DIMENSION))
                     .rewards(AdvancementRewards.Builder.function(new ResourceLocation("turtleblockacademy:set_dungeons_stage")))
                     .save(consumer, getPath(MODID, "exploration/enter_basic_dungeon"));
 

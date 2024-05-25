@@ -6,6 +6,10 @@
       "entries": [
         {
           "type": "minecraft:loot_table",
+          "name": "turtleblockacademy:chests/kitchen/turtleblockacademy_edibles"
+        },
+        {
+          "type": "minecraft:loot_table",
           "name": "turtleblockacademy:chests/kitchen/vanilla_edibles"
         },
         {

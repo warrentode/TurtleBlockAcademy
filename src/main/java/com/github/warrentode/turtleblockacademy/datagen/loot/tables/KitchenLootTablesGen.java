@@ -1,6 +1,7 @@
 package com.github.warrentode.turtleblockacademy.datagen.loot.tables;
 
 import com.aetherteam.aether.item.AetherItems;
+import com.github.warrentode.turtleblockacademy.items.TBAItems;
 import com.github.warrentode.turtleblockacademy.loot.conditions.ModCheckCondition;
 import com.github.warrentode.turtleblockacademy.loot.tables.KitchenLootTables;
 import com.github.warrentode.turtleblockacademy.util.TBATags;
@@ -35,7 +36,7 @@ import vectorwing.farmersdelight.common.registry.ModItems;
 import java.util.function.BiConsumer;
 import java.util.function.Consumer;
 
-import static com.github.warrentode.turtleblockacademy.datagen.loot.ModLootProviders.*;
+import static com.github.warrentode.turtleblockacademy.datagen.loot.TBALootProviders.*;
 import static net.mcreator.unusualend.init.UnusualendModItems.*;
 import static net.mehvahdjukaar.hauntedharvest.reg.ModRegistry.*;
 import static net.mehvahdjukaar.snowyspirit.reg.ModRegistry.*;
@@ -48,6 +49,7 @@ public class KitchenLootTablesGen implements Consumer<BiConsumer<ResourceLocatio
         consumer.accept(KitchenLootTables.KITCHEN, LootTable.lootTable()
                 .withPool(LootPool.lootPool().setRolls(UniformGenerator.between(2, 4))
                         .setBonusRolls(ConstantValue.exactly(1.0F))
+                        .add(LootTableReference.lootTableReference(KitchenLootTables.TBA_EDIBLES))
                         .add(LootTableReference.lootTableReference(KitchenLootTables.VANILLA_EDIBLES))
                         .add(LootTableReference.lootTableReference(KitchenLootTables.FARMERSDELIGHT_EDIBLES))
                         .add(LootTableReference.lootTableReference(KitchenLootTables.FARMERSRESPITE_EDIBLES))
@@ -71,6 +73,22 @@ public class KitchenLootTablesGen implements Consumer<BiConsumer<ResourceLocatio
                         .add(LootTableReference.lootTableReference(KitchenLootTables.MINERSDELIGHT_EDIBLES))
                 )
         );
+
+        consumer.accept(KitchenLootTables.TBA_EDIBLES, LootTable.lootTable()
+                .withPool(LootPool.lootPool().setRolls(ConstantValue.exactly(1))
+                        .setBonusRolls(ConstantValue.exactly(1.0F))
+                        .when(ModCheckCondition.mod().isLoaded("turtleblockacademy"))
+                        .add(LootItem.lootTableItem(TBAItems.BEET_PICKLES.get())
+                                .apply(SetItemCountFunction.setCount(UniformGenerator.between(1, 4))))
+                        .add(LootItem.lootTableItem(TBAItems.BEET_WINE.get())
+                                .apply(SetItemCountFunction.setCount(UniformGenerator.between(1, 4))))
+                        .add(LootItem.lootTableItem(TBAItems.BEET_RISOTTO.get())
+                                .apply(SetItemCountFunction.setCount(UniformGenerator.between(1, 4))))
+                        .add(LootItem.lootTableItem(TBAItems.BEET_SALAD.get())
+                                .apply(SetItemCountFunction.setCount(UniformGenerator.between(1, 4))))
+                        .add(LootItem.lootTableItem(TBAItems.VINEGAR_BOTTLE.get())
+                                .apply(SetItemCountFunction.setCount(UniformGenerator.between(1, 4))))
+                ));
 
         consumer.accept(KitchenLootTables.MINERSDELIGHT_EDIBLES, LootTable.lootTable()
                 .withPool(LootPool.lootPool().setRolls(ConstantValue.exactly(1))

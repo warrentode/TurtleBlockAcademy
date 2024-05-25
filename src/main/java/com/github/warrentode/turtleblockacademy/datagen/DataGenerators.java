@@ -1,11 +1,11 @@
 package com.github.warrentode.turtleblockacademy.datagen;
 
 import com.github.warrentode.turtleblockacademy.datagen.advancements.TBAAdvancementsGen;
-import com.github.warrentode.turtleblockacademy.datagen.lang.ModLangGen;
-import com.github.warrentode.turtleblockacademy.datagen.loot.ModLootModifierGenProvider;
-import com.github.warrentode.turtleblockacademy.datagen.loot.ModLootProviders;
-import com.github.warrentode.turtleblockacademy.datagen.models.ModBlockStatesProvider;
-import com.github.warrentode.turtleblockacademy.datagen.models.ModItemModelProvider;
+import com.github.warrentode.turtleblockacademy.datagen.lang.TBALangGen;
+import com.github.warrentode.turtleblockacademy.datagen.loot.TBALootModifierGenProvider;
+import com.github.warrentode.turtleblockacademy.datagen.loot.TBALootProviders;
+import com.github.warrentode.turtleblockacademy.datagen.models.TBABlockStatesProvider;
+import com.github.warrentode.turtleblockacademy.datagen.models.TBAItemModelProvider;
 import com.github.warrentode.turtleblockacademy.datagen.recipes.RecipesGen;
 import com.github.warrentode.turtleblockacademy.datagen.tags.*;
 import net.minecraft.data.DataGenerator;
@@ -35,11 +35,11 @@ public class DataGenerators {
         generator.addProvider(event.includeServer(), new RecipesGen(generator));
 
         generator.addProvider(event.includeClient(), new SoundsFileGen(generator, helper));
-        generator.addProvider(event.includeServer(), new ModBlockStatesProvider(generator, MODID, helper));
-        generator.addProvider(event.includeServer(), new ModItemModelProvider(generator, MODID, helper));
+        generator.addProvider(event.includeServer(), new TBABlockStatesProvider(generator, MODID, helper));
+        generator.addProvider(event.includeServer(), new TBAItemModelProvider(generator, MODID, helper));
         generator.addProvider(event.includeServer(), new TBAAdvancementsGen(generator, helper));
-        generator.addProvider(event.includeClient(), new ModLangGen(generator, MODID, "en_us"));
-        generator.addProvider(event.includeServer(), new ModLootProviders(generator));
-        generator.addProvider(event.includeServer(), new ModLootModifierGenProvider(generator, MODID));
+        generator.addProvider(event.includeClient(), new TBALangGen(generator, MODID, "en_us"));
+        generator.addProvider(event.includeServer(), new TBALootProviders(generator));
+        generator.addProvider(event.includeServer(), new TBALootModifierGenProvider(generator, MODID));
     }
 }

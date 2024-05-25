@@ -25,9 +25,23 @@ public class TBABlocks {
             () -> new CertificateBlock(BlockBehaviour.Properties.of(Material.PLANT)
                     .sound(TurtleBlockAcademy.CERTIFICATE).strength(1).noOcclusion()));
 
-   /* removed until I can fix portal for production environment
-   public static final RegistryObject<Block> TBA_MINING_PORTAL =
-            registerBlockWithoutBlockItem("mining_portal", TBAMiningPortalBlock::new); */
+    public static final RegistryObject<Block> FERMENTING_POT_BLOCK = registerBlock("fermenting_pot",
+            () -> new FermentingPotBlock(BlockBehaviour.Properties.of(Material.STONE)
+                    .sound(SoundType.STONE).strength(1).noOcclusion()));
+
+    public static final RegistryObject<Block> CLOVE_BUSH = BLOCKS.register("clove_bush",
+            () -> new CloveBushBlock(BlockBehaviour.Properties.of(Material.PLANT)
+                    .randomTicks().instabreak().sound(SoundType.SWEET_BERRY_BUSH)
+                    .noCollission().noOcclusion()));
+
+   public static final RegistryObject<Block> TBA_MINING_PORTAL_BLOCK =
+            registerBlockWithoutBlockItem("mining_portal", TBAMiningPortalBlock::new);
+
+    public static final RegistryObject<Block> QUARTZ_CLUSTER = registerBlock("quartz_cluster",
+            () -> new QuartzClusterBlock(7, 3,
+                    BlockBehaviour.Properties.of(Material.AMETHYST)
+                    .sound(SoundType.AMETHYST_CLUSTER).strength(1.5F)
+                            .lightLevel((state)-> 5)));
 
     public static final RegistryObject<Block> PLATE_WHITE = registerBlock("plate_white",
             () -> new PlateBlock(BlockBehaviour.Properties.of(Material.GLASS)

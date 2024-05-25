@@ -25,7 +25,9 @@
           }
         },
         "pattern": [
-          "BSB", "#C#", "###"
+          "BSB",
+          "#C#",
+          "###"
         ],
         "result": {
           "item": "farmersdelight:cooking_pot"

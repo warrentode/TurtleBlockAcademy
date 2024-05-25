@@ -40,12 +40,14 @@ public class BlockTagsGen extends BlockTagsProvider {
     }
 
     private void registerBlockMineables() {
-        tag(net.minecraft.tags.BlockTags.MINEABLE_WITH_PICKAXE)
+        tag(BlockTags.MINEABLE_WITH_PICKAXE)
                 .add(Blocks.BUDDING_AMETHYST)
                 .add(Blocks.REINFORCED_DEEPSLATE);
     }
 
     protected void registerTBATags() {
+        tag(TBATags.Blocks.SERENE_SEASONS_SUMMER_CROPS)
+                .add(TBABlocks.CLOVE_BUSH.get());
         tag(TBATags.Blocks.TBA_MINING_PORTAL_FRAME_BLOCKS)
                 .add(Blocks.ANDESITE);
         tag(TBATags.Blocks.PLATES)

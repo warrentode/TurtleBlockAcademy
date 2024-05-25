@@ -14,7 +14,8 @@
             }
           ],
           "name": "minecraft:sculk_catalyst"
-        }, {
+        },
+        {
           "type": "minecraft:item",
           "functions": [
             {

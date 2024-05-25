@@ -1,0 +1,35 @@
+{
+  "type": "turtleblockacademy:fermenting",
+  "container": {
+    "item": "minecraft:bowl"
+  },
+  "cover": {
+    "item": "minecraft:smooth_stone_slab"
+  },
+  "experience": 0.35,
+  "fermenting_time": 300,
+  "ingredients": [
+    {
+      "item": "minecraft:beetroot"
+    },
+    {
+      "item": "turtleblockacademy:vinegar_bottle"
+    },
+    {
+      "tag": "forge:sugar"
+    },
+    {
+      "tag": "forge:sugar"
+    },
+    {
+      "tag": "forge:ingredients/salt"
+    },
+    {
+      "item": "turtleblockacademy:ground_cloves"
+    }
+  ],
+  "recipe_book_tab": "pickles",
+  "result": {
+    "item": "turtleblockacademy:beet_pickles"
+  }
+}

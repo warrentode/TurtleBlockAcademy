@@ -70,7 +70,7 @@ public class PatchouliShapelessBookRecipeBuilder {
     }
 
     public void finish(Consumer<FinishedRecipe> consumerIn, ResourceLocation save) {
-        consumerIn.accept(new PatchouliShapelessBookRecipeBuilder.Result(save, ingredients, count));
+        consumerIn.accept(new Result(save, ingredients, count));
     }
 
     public static class Result implements FinishedRecipe {

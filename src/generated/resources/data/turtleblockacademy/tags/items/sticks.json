@@ -3,6 +3,7 @@
     {
       "id": "aether:skyroot_stick",
       "required": false
-    }, "minecraft:stick"
+    },
+    "minecraft:stick"
   ]
 }

@@ -8,7 +8,8 @@
           "type": "minecraft:tag",
           "expand": true,
           "name": "minecraft:flowers"
-        }, {
+        },
+        {
           "type": "minecraft:item",
           "functions": [
             {
@@ -29,7 +30,8 @@
             }
           ],
           "name": "minecraft:honeycomb"
-        }, {
+        },
+        {
           "type": "minecraft:loot_table",
           "name": "wares:agreement/village/regional_products/plains_products"
         }

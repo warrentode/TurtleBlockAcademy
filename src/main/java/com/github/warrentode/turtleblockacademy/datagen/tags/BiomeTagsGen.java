@@ -5,10 +5,14 @@ import com.github.warrentode.turtleblockacademy.util.TBATags;
 import com.github.warrentode.turtleblockacademy.world.biome.TBABiomes;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.tags.BiomeTagsProvider;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.BiomeTags;
 import net.minecraft.world.level.biome.Biomes;
+import net.minecraftforge.common.Tags;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import org.jetbrains.annotations.Nullable;
+
+import java.util.Objects;
 
 public class BiomeTagsGen extends BiomeTagsProvider {
     public BiomeTagsGen(DataGenerator generator, String modid, @Nullable ExistingFileHelper helper) {
@@ -17,6 +21,29 @@ public class BiomeTagsGen extends BiomeTagsProvider {
 
     @Override
     protected void addTags() {
+        tag(TBATags.Biomes.IS_TROPICAL)
+                .addOptionalTag(Objects.requireNonNull(
+                        ResourceLocation.tryParse("biomesoplenty:tropics")))
+                .addOptionalTag(Objects.requireNonNull(
+                        ResourceLocation.tryParse("biomesoplenty:tropics")))
+                .addOptionalTag(Objects.requireNonNull(
+                        ResourceLocation.tryParse("biomesoplenty:rocky_rainforest")))
+                .addOptionalTag(Objects.requireNonNull(
+                        ResourceLocation.tryParse("biomesoplenty:rainforest")))
+                .addOptionalTag(Objects.requireNonNull(
+                        ResourceLocation.tryParse("biomesoplenty:fungal_jungle")))
+                .addOptionalTag(Objects.requireNonNull(
+                        ResourceLocation.tryParse("biomesoplenty:floodplain")))
+                .addOptionalTag(Objects.requireNonNull(
+                        ResourceLocation.tryParse("biomesoplenty:bayou")))
+                .add(Biomes.MANGROVE_SWAMP)
+                .add(Biomes.JUNGLE)
+                .add(Biomes.SPARSE_JUNGLE)
+                .add(Biomes.BAMBOO_JUNGLE);
+        tag(Tags.Biomes.IS_WET_OVERWORLD)
+                .addTag(TBATags.Biomes.IS_TROPICAL);
+        tag(Tags.Biomes.IS_HOT_OVERWORLD)
+                .addTag(TBATags.Biomes.IS_TROPICAL);
         tag(TBATags.Biomes.HAS_SKY_SLIME_POOLS)
                 .add(TBABiomes.TBA_UNDERDEEP)
                 .add(TBABiomes.TBA_AETHER_INCURSION);

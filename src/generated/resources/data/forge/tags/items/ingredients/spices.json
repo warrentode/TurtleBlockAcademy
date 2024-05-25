@@ -1,5 +1,7 @@
 {
   "values": [
+    "turtleblockacademy:dried_cloves",
+    "turtleblockacademy:ground_cloves",
     {
       "id": "festive_delight:cinnamon_powder",
       "required": false

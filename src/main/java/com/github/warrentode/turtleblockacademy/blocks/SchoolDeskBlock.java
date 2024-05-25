@@ -125,6 +125,7 @@ public class SchoolDeskBlock extends BaseEntityBlock {
         return state.rotate(mirror.getRotation(state.getValue(FACING)));
     }
 
+    @SuppressWarnings("deprecation")
     @Override
     public @NotNull RenderShape getRenderShape(@NotNull BlockState state) {
         return RenderShape.MODEL;

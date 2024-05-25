@@ -3,10 +3,12 @@
     {
       "id": "tconstruct:clay_island",
       "required": false
-    }, {
+    },
+    {
       "id": "tconstruct:earth_slime_island",
       "required": false
-    }, {
+    },
+    {
       "id": "tconstruct:sky_slime_island",
       "required": false
     }

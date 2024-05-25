@@ -35,7 +35,7 @@ import vectorwing.farmersdelight.common.registry.ModItems;
 import java.util.function.BiConsumer;
 import java.util.function.Consumer;
 
-import static com.github.warrentode.turtleblockacademy.datagen.loot.ModLootProviders.*;
+import static com.github.warrentode.turtleblockacademy.datagen.loot.TBALootProviders.*;
 
 public class WaresLootTablesGen implements Consumer<BiConsumer<ResourceLocation, LootTable.Builder>> {
     @Override

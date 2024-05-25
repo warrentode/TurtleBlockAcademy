@@ -13,7 +13,9 @@
     }
   },
   "pattern": [
-    "PPP", "LCL", "PPP"
+    "PPP",
+    "LCL",
+    "PPP"
   ],
   "result": {
     "item": "turtleblockacademy:school_desk_cabinet_hellbark"

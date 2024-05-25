@@ -1115,7 +1115,8 @@
                   "predicate": {
                     "biome": "minecraft:warm_ocean"
                   }
-                }, {
+                },
+                {
                   "condition": "minecraft:location_check",
                   "predicate": {
                     "biome": "minecraft:river"
@@ -1331,7 +1332,8 @@
             }
           ],
           "name": "wares:agreement/village/regional_products/meadow_products"
-        }, {
+        },
+        {
           "type": "minecraft:loot_table",
           "conditions": [
             {
@@ -1342,7 +1344,8 @@
             }
           ],
           "name": "wares:agreement/village/regional_products/sunflower_plains_products"
-        }, {
+        },
+        {
           "type": "minecraft:loot_table",
           "conditions": [
             {
@@ -1353,7 +1356,8 @@
             }
           ],
           "name": "wares:agreement/village/regional_products/mushroom_fields_products"
-        }, {
+        },
+        {
           "type": "minecraft:loot_table",
           "conditions": [
             {
@@ -1364,7 +1368,8 @@
             }
           ],
           "name": "wares:agreement/village/regional_products/deep_dark_products"
-        }, {
+        },
+        {
           "type": "minecraft:loot_table",
           "conditions": [
             {
@@ -1375,7 +1380,8 @@
             }
           ],
           "name": "wares:agreement/village/regional_products/dripstone_cave_products"
-        }, {
+        },
+        {
           "type": "minecraft:loot_table",
           "conditions": [
             {
@@ -1386,7 +1392,8 @@
             }
           ],
           "name": "wares:agreement/village/regional_products/lush_cave_products"
-        }, {
+        },
+        {
           "type": "minecraft:loot_table",
           "name": "wares:agreement/village/regional_products/plains_products"
         }
