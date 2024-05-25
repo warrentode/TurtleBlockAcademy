@@ -1,4 +1,4 @@
-// 1.19.2	2024-05-25T11:34:58.8902162	LootTables
+// 1.19.2	2024-05-25T12:07:56.7049619	LootTables
 e2401b7cbcd222542356afa83d2ea98f28f151a8 data/dimdungeons/loot_tables/chests/kit_basic_supplies.json
 87a0cbf6a892b17ac0de9da47bde823b2367a6cc data/dimdungeons/loot_tables/chests/kit_blackstone.json
 3da5b95edb2c52fcbf8b6f6adbed631a2a63e509 data/dimdungeons/loot_tables/chests/kit_brick_set.json
@@ -45,7 +45,7 @@ a4c0a867588aa057abe3093ba93cf6dbd76810b7 data/lootbags/loot_tables/loot_bags/new
 8a6c9fe863d4fd8e9780abf0cc56964239e10038 data/lootbags/loot_tables/loot_bags/ocean_map_sale.json
 3613c4af418b99ae31b4bad5aafec13c4194aab0 data/lootbags/loot_tables/loot_bags/plushie_bag.json
 9e23f63c31602bb0ceaa23e490592e982a3f3caf data/lootbags/loot_tables/loot_bags/rations_bag_drop.json
-b91384486679de8eadb78a497ddc6d11437b4b9e data/lootbags/loot_tables/loot_bags/rations_lootbag.json
+0a2b8249ec8017e56bbe28fbe37bf31aadc2ddd0 data/lootbags/loot_tables/loot_bags/rations_lootbag.json
 9cd0201c5b7b427167f00abd7024404b33f75aeb data/lootbags/loot_tables/loot_bags/refined_storage_gifts.json
 a1a6ae9a10974f3167902de50cde716385be34b1 data/lootbags/loot_tables/loot_bags/scout_map_sale.json
 4d9f1ff4acf9aed12e80b9fe2a52f72cca1b6346 data/lootbags/loot_tables/loot_bags/shulker_boxes_lootbag.json

@@ -57,6 +57,23 @@ public class ItemTagsGen extends ItemTagsProvider {
     }
 
     private void registerPackTags() {
+        tag(TBATags.Items.CHALK)
+                .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("chalk:yellow_chalk")))
+                .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("chalk:pink_chalk")))
+                .addOptional(Objects.requireNonNull(ResourceLocation.tryParse( "chalk:purple_chalk")))
+                .addOptional(Objects.requireNonNull(ResourceLocation.tryParse( "chalk:light_gray_chalk")))
+                .addOptional(Objects.requireNonNull(ResourceLocation.tryParse( "chalk:light_blue_chalk")))
+                .addOptional(Objects.requireNonNull(ResourceLocation.tryParse( "chalk:magenta_chalk")))
+                .addOptional(Objects.requireNonNull(ResourceLocation.tryParse( "chalk:lime_chalk")))
+                .addOptional(Objects.requireNonNull(ResourceLocation.tryParse( "chalk:black_chalk")))
+                .addOptional(Objects.requireNonNull(ResourceLocation.tryParse( "chalk:gray_chalk")))
+                .addOptional(Objects.requireNonNull(ResourceLocation.tryParse( "chalk:blue_chalk")))
+                .addOptional(Objects.requireNonNull(ResourceLocation.tryParse( "chalk:red_chalk")))
+                .addOptional(Objects.requireNonNull(ResourceLocation.tryParse( "chalk:orange_chalk")))
+                .addOptional(Objects.requireNonNull(ResourceLocation.tryParse( "chalk:cyan_chalk")))
+                .addOptional(Objects.requireNonNull(ResourceLocation.tryParse( "chalk:white_chalk")))
+                .addOptional(Objects.requireNonNull(ResourceLocation.tryParse( "chalk:brown_chalk")))
+                .addOptional(Objects.requireNonNull(ResourceLocation.tryParse( "chalk:green_chalk")));
         tag(TBATags.Items.WHEAT_FLOUR)
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("create:wheat_flour")))
                 .add(TBAItems.WHEAT_FLOUR.get());

@@ -119,6 +119,8 @@ public class LootbagLootTablesGen implements Consumer<BiConsumer<ResourceLocatio
                         .when(IN_MINING))
                 .withPool(LootPool.lootPool().setRolls(ConstantValue.exactly(1)).setBonusRolls(ConstantValue.exactly(0))
                         .add(LootItem.lootTableItem(Items.STONE_PICKAXE)))
+                .withPool(LootPool.lootPool().setRolls(ConstantValue.exactly(1)).setBonusRolls(ConstantValue.exactly(1))
+                        .add(TagEntry.expandTag(TBATags.Items.CHALK)))
                 .withPool(LootPool.lootPool().setRolls(ConstantValue.exactly(1)).setBonusRolls(ConstantValue.exactly(0))
                         .add(LootItem.lootTableItem(Items.CHARCOAL)
                                 .apply(SetItemCountFunction.setCount(UniformGenerator.between(6.0F, 10.0F)))))

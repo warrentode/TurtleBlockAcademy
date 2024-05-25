@@ -66,6 +66,17 @@
       "rolls": 1.0
     },
     {
+      "bonus_rolls": 1.0,
+      "entries": [
+        {
+          "type": "minecraft:tag",
+          "expand": true,
+          "name": "forge:chalks"
+        }
+      ],
+      "rolls": 1.0
+    },
+    {
       "bonus_rolls": 0.0,
       "entries": [
         {

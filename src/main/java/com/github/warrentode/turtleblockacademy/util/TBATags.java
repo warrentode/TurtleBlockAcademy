@@ -47,6 +47,7 @@ public class TBATags {
     }
 
     public static class Items {
+        public static final TagKey<Item> CHALK = packItemTag("forge", "chalks");
         public static final TagKey<Item> SUPPLEMENTARIES_KEY = packItemTag("supplementaries", "key");
 
         public static final TagKey<Item> BLOODSHROOM_LOG = packItemTag("tconstruct", "bloodshroom_log");
