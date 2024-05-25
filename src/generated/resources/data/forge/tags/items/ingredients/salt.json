@@ -1,0 +1,12 @@
+{
+  "values": [
+    {
+      "id": "turtleblockacademy:pickling_salt",
+      "required": false
+    },
+    {
+      "id": "salt:salt",
+      "required": false
+    }
+  ]
+}

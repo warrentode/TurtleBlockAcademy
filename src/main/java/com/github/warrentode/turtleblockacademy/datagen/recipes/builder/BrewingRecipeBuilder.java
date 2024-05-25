@@ -88,7 +88,7 @@ public class BrewingRecipeBuilder {
     }
 
     public void build(Consumer<FinishedRecipe> consumerIn, ResourceLocation id) {
-        consumerIn.accept(new BrewingRecipeBuilder.Result(id, this.result, this.cup, this.count, this.ingredients, this.brewingTime));
+        consumerIn.accept(new Result(id, this.result, this.cup, this.count, this.ingredients, this.brewingTime));
     }
 
     public static class Result implements FinishedRecipe {

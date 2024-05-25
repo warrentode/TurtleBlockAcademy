@@ -3,7 +3,8 @@
     {
       "id": "#patchouli:guide_book",
       "required": false
-    }, {
+    },
+    {
       "id": "turtleblockacademy:brewingguide",
       "required": false
     }

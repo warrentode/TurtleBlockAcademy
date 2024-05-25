@@ -14,6 +14,13 @@ public class TBABlockEntities {
             DeferredRegister.create(ForgeRegistries.BLOCK_ENTITY_TYPES, MODID);
 
     @SuppressWarnings("DataFlowIssue")
+    public static final RegistryObject<BlockEntityType<FermentingPotBlockEntity>> FERMENTING_POT_ENTITY =
+            BLOCK_ENTITIES.register("fermenting_pot_entity",
+                    () -> BlockEntityType.Builder.of(FermentingPotBlockEntity::new,
+                                    TBABlocks.FERMENTING_POT_BLOCK.get())
+                            .build(null));
+
+    @SuppressWarnings("DataFlowIssue")
     public static final RegistryObject<BlockEntityType<PlateBlockEntity>> PLATE_BLOCK_ENTITY =
             BLOCK_ENTITIES.register("plate_block_entity",
                     () -> BlockEntityType.Builder.of(PlateBlockEntity::new,

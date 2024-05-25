@@ -1,0 +1,36 @@
+{
+  "type": "turtleblockacademy:fermenting",
+  "container": {
+    "item": "minecraft:glass_bottle"
+  },
+  "cover": {
+    "item": "minecraft:white_carpet"
+  },
+  "experience": 0.35,
+  "fermenting_time": 300,
+  "group": "hard_cider",
+  "ingredients": [
+    {
+      "tag": "turtleblockacademy:apple_ciders"
+    },
+    {
+      "tag": "turtleblockacademy:apple_ciders"
+    },
+    {
+      "tag": "turtleblockacademy:apple_ciders"
+    },
+    {
+      "tag": "turtleblockacademy:apple_ciders"
+    },
+    {
+      "tag": "forge:sugar"
+    },
+    {
+      "item": "turtleblockacademy:yeast"
+    }
+  ],
+  "recipe_book_tab": "liquids",
+  "result": {
+    "item": "turtleblockacademy:hard_apple_cider"
+  }
+}

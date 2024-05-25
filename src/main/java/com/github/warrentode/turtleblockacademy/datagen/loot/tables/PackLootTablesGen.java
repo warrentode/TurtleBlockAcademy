@@ -51,7 +51,7 @@ import java.util.function.Consumer;
 
 import static com.aetherteam.aether.block.AetherBlocks.GOLDEN_OAK_LOG;
 import static com.aetherteam.aether.block.AetherBlocks.SKYROOT_LOG;
-import static com.github.warrentode.turtleblockacademy.datagen.loot.ModLootProviders.*;
+import static com.github.warrentode.turtleblockacademy.datagen.loot.TBALootProviders.*;
 import static com.refinedmods.refinedstorage.RSItems.*;
 import static decor.delight.init.DecorationDelightModItems.*;
 import static net.mcreator.moadecorholidays.init.MoaDecorHolidaysModItems.*;

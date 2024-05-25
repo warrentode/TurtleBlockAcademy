@@ -3,6 +3,7 @@
     {
       "id": "miners_delight:cave_carrot",
       "required": false
-    }, "minecraft:carrot"
+    },
+    "minecraft:carrot"
   ]
 }

@@ -14,7 +14,8 @@
             }
           ],
           "name": "minecraft:clay"
-        }, {
+        },
+        {
           "type": "minecraft:item",
           "functions": [
             {
@@ -24,7 +25,8 @@
             }
           ],
           "name": "minecraft:big_dripleaf"
-        }, {
+        },
+        {
           "type": "minecraft:item",
           "functions": [
             {
@@ -34,7 +36,8 @@
             }
           ],
           "name": "minecraft:small_dripleaf"
-        }, {
+        },
+        {
           "type": "minecraft:item",
           "functions": [
             {
@@ -44,7 +47,8 @@
             }
           ],
           "name": "minecraft:glow_berries"
-        }, {
+        },
+        {
           "type": "minecraft:item",
           "functions": [
             {
@@ -54,7 +58,8 @@
             }
           ],
           "name": "minecraft:azalea"
-        }, {
+        },
+        {
           "type": "minecraft:item",
           "functions": [
             {

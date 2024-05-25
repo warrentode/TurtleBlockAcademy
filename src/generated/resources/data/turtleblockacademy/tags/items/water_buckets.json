@@ -3,9 +3,11 @@
     {
       "id": "miners_delight:water_cup",
       "required": false
-    }, {
+    },
+    {
       "id": "aether:skyroot_water_bucket",
       "required": false
-    }, "minecraft:water_bucket"
+    },
+    "minecraft:water_bucket"
   ]
 }

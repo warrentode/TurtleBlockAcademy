@@ -2,19 +2,25 @@ package com.github.warrentode.turtleblockacademy;
 
 import com.github.warrentode.turtleblockacademy.blocks.TBABlocks;
 import com.github.warrentode.turtleblockacademy.blocks.entity.TBABlockEntities;
-import com.github.warrentode.turtleblockacademy.blocks.gui.ModMenuTypes;
-import com.github.warrentode.turtleblockacademy.blocks.gui.SchoolDeskScreen;
+import com.github.warrentode.turtleblockacademy.blocks.entity.gui.FermentingPotScreen;
+import com.github.warrentode.turtleblockacademy.blocks.entity.gui.SchoolDeskScreen;
+import com.github.warrentode.turtleblockacademy.blocks.entity.gui.TBAMenuTypes;
 import com.github.warrentode.turtleblockacademy.config.AcademyConfig;
 import com.github.warrentode.turtleblockacademy.entity.TBAEntityTypes;
+import com.github.warrentode.turtleblockacademy.entity.TBAPOIs;
 import com.github.warrentode.turtleblockacademy.entity.client.HerobrineRenderer;
 import com.github.warrentode.turtleblockacademy.entity.client.SeatEntityRenderer;
 import com.github.warrentode.turtleblockacademy.entity.client.TreasureBeetleRenderer;
 import com.github.warrentode.turtleblockacademy.items.TBAItems;
 import com.github.warrentode.turtleblockacademy.loot.serializers.ModLootItemConditions;
 import com.github.warrentode.turtleblockacademy.loot.serializers.ModLootModifiers;
+import com.github.warrentode.turtleblockacademy.recipe.TBARecipes;
+import com.github.warrentode.turtleblockacademy.recipe.fermenting.FermentingRecipeCategories;
 import com.github.warrentode.turtleblockacademy.util.TBASounds;
 import com.github.warrentode.turtleblockacademy.world.biome.TBABiomes;
 import com.github.warrentode.turtleblockacademy.world.dimension.TBADimensions;
+import com.github.warrentode.turtleblockacademy.world.feature.TBAConfiguredFeatures;
+import com.github.warrentode.turtleblockacademy.world.feature.TBAPlacedFeatures;
 import net.minecraft.client.gui.screens.MenuScreens;
 import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraft.sounds.SoundEvents;
@@ -25,6 +31,7 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.levelgen.Heightmap;
 import net.minecraftforge.api.distmarker.Dist;
+import net.minecraftforge.client.event.RegisterRecipeBookCategoriesEvent;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.server.ServerStartingEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -55,7 +62,8 @@ public class TurtleBlockAcademy {
 
         TBABlocks.register(modEventBus);
         TBABlockEntities.register(modEventBus);
-        ModMenuTypes.register(modEventBus);
+        TBAMenuTypes.register(modEventBus);
+        TBARecipes.register(modEventBus);
 
         TBAEntityTypes.register(modEventBus);
 
@@ -66,7 +74,9 @@ public class TurtleBlockAcademy {
 
         TBADimensions.register();
         TBABiomes.TBA_BIOMES.register(modEventBus);
-        // TBAPOIs.register(modEventBus);
+        TBAConfiguredFeatures.CONFIGURED_FEATURES.register(modEventBus);
+        TBAPlacedFeatures.PLACED_FEATURES.register(modEventBus);
+        TBAPOIs.register(modEventBus);
     }
 
     @SuppressWarnings("deprecation")
@@ -82,7 +92,7 @@ public class TurtleBlockAcademy {
         }
     };
 
-    private void commonSetup(final FMLCommonSetupEvent event) {
+    private void commonSetup(final @NotNull FMLCommonSetupEvent event) {
         event.enqueueWork(()-> {
             //noinspection deprecation
             SpawnPlacements.register(TBAEntityTypes.TREASURE_BEETLE.get(),
@@ -101,18 +111,23 @@ public class TurtleBlockAcademy {
     public static class ClientModEvents {
         @SubscribeEvent
         public static void onClientSetup(@NotNull FMLClientSetupEvent event) {
-            event.enqueueWork(() ->
-                    MenuScreens.register(ModMenuTypes.SCHOOL_DESK_MENU.get(),
-                            SchoolDeskScreen::new));
+            event.enqueueWork(() -> MenuScreens.register(
+                    TBAMenuTypes.SCHOOL_DESK_MENU.get(), SchoolDeskScreen::new));
+            event.enqueueWork(() -> MenuScreens.register(
+                    TBAMenuTypes.FERMENTING_POT_MENU.get(), FermentingPotScreen::new));
 
             EntityRenderers.register(TBAEntityTypes.SEAT_ENTITY.get(),
                     SeatEntityRenderer::new);
 
             EntityRenderers.register(TBAEntityTypes.TREASURE_BEETLE.get(),
                     TreasureBeetleRenderer::new);
-
             EntityRenderers.register(TBAEntityTypes.HEROBRINE.get(),
                     HerobrineRenderer::new);
+        }
+
+        @SubscribeEvent
+        public static void onRegisterRecipeBookCategories(RegisterRecipeBookCategoriesEvent event) {
+            FermentingRecipeCategories.init(event);
         }
     }
 }

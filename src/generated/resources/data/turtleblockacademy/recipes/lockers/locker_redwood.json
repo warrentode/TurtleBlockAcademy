@@ -13,7 +13,9 @@
     }
   },
   "pattern": [
-    "###", "LCL", "###"
+    "###",
+    "LCL",
+    "###"
   ],
   "result": {
     "item": "turtleblockacademy:locker_redwood"

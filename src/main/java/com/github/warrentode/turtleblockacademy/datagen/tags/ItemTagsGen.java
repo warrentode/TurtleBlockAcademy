@@ -27,6 +27,7 @@ import net.minecraft.data.DataGenerator;
 import net.minecraft.data.tags.BlockTagsProvider;
 import net.minecraft.data.tags.ItemTagsProvider;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.tags.ItemTags;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.common.Tags;
@@ -56,6 +57,26 @@ public class ItemTagsGen extends ItemTagsProvider {
     }
 
     private void registerPackTags() {
+        tag(TBATags.Items.WHEAT_FLOUR)
+                .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("create:wheat_flour")))
+                .add(TBAItems.WHEAT_FLOUR.get());
+        tag(TBATags.Items.FLOUR)
+                .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("create:cinder_flour")))
+                .addTag(TBATags.Items.WHEAT_FLOUR);
+        tag(TBATags.Items.APPLE_CIDERS)
+                .addOptional(FRItems.STRONG_APPLE_CIDER.getId())
+                .addOptional(FRItems.LONG_APPLE_CIDER.getId())
+                .addOptional(APPLE_CIDER.getId());
+        tag(TBATags.Items.FERMENTING_CONTAINERS)
+                .add(Items.BOWL)
+                .add(Items.GLASS_BOTTLE);
+        tag(TBATags.Items.FERMENTING_POT_COVERS)
+                .addTag(TBATags.Items.PICKLING_STONES)
+                .addTag(TBATags.Items.FABRIC_COVERS);
+        tag(TBATags.Items.PICKLING_STONES)
+                .addTag(ItemTags.SLABS);
+        tag(TBATags.Items.FABRIC_COVERS)
+                .addTag(ItemTags.WOOL_CARPETS);
         tag(TBATags.Items.APPLECRATES)
                 .addOptional(Objects.requireNonNull(
                         ResourceLocation.tryParse("applecrates_compat:skyroot_crate")))
@@ -554,6 +575,7 @@ public class ItemTagsGen extends ItemTagsProvider {
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("hauntedharvest:grim_apple")))
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("hauntedharvest:rotten_apple")));
         tag(TBATags.Items.INGREDIENTS)
+                .addTag(TBATags.Items.SALT_INGREDIENTS)
                 .addTag(TBATags.Items.APPLE_INGREDIENTS)
                 .addTag(TBATags.Items.STARCH_INGREDIENTS)
                 .addTag(TBATags.Items.CARROT_INGREDIENTS)
@@ -563,13 +585,17 @@ public class ItemTagsGen extends ItemTagsProvider {
                 .addTag(TBATags.Items.COCOA_INGREDIENTS)
                 .addTag(TBATags.Items.CLOVER_INGREDIENTS)
                 .addTag(TBATags.Items.ONION_INGREDIENTS)
-                .addTag(TBATags.Items.SPICES)
+                .addTag(TBATags.Items.SPICES_INGREDIENTS)
                 .addTag(TBATags.Items.GLAZES)
                 .addTag(TBATags.Items.COOKED_RICE)
                 .addTag(TBATags.Items.CHEESE_SLICES)
                 .addTag(TBATags.Items.BREAD)
                 .addTag(TBATags.Items.EGGS);
+        tag(TBATags.Items.SALT_INGREDIENTS)
+                .addOptional(TBAItems.PICKLING_SALT.getId())
+                .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("salt:salt")));
         tag(TBATags.Items.STARCH_INGREDIENTS)
+                .addTag(TBATags.Items.FLOUR)
                 .addTag(TBATags.Items.RICE)
                 .add(Items.POTATO);
         tag(TBATags.Items.APPLE_INGREDIENTS)
@@ -587,7 +613,9 @@ public class ItemTagsGen extends ItemTagsProvider {
         tag(TBATags.Items.CLOVER_INGREDIENTS)
                 .addTag(TBATags.Items.CLOVER)
                 .addOptional(DelightfulItems.CHOPPED_CLOVER.getId());
-        tag(TBATags.Items.SPICES)
+        tag(TBATags.Items.SPICES_INGREDIENTS)
+                .add(TBAItems.DRIED_CLOVES.get())
+                .add(TBAItems.GROUND_CLOVES.get())
                 .addOptional(FestiveDelightModItems.CINNAMON_POWDER.getId())
                 .addOptional(lekavar.lma.drinkbeer.registries.ItemRegistry.SPICE_STORM_SHARDS.getId())
                 .addOptional(lekavar.lma.drinkbeer.registries.ItemRegistry.SPICE_SMOKED_EGLIA_BUD.getId())

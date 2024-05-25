@@ -14,7 +14,8 @@
             }
           ],
           "name": "minecraft:red_mushroom"
-        }, {
+        },
+        {
           "type": "minecraft:item",
           "functions": [
             {
@@ -24,7 +25,8 @@
             }
           ],
           "name": "minecraft:brown_mushroom"
-        }, {
+        },
+        {
           "type": "minecraft:item",
           "functions": [
             {
@@ -34,7 +36,8 @@
             }
           ],
           "name": "minecraft:leather"
-        }, {
+        },
+        {
           "type": "minecraft:item",
           "functions": [
             {
@@ -44,7 +47,8 @@
             }
           ],
           "name": "minecraft:beef"
-        }, {
+        },
+        {
           "type": "minecraft:item",
           "functions": [
             {

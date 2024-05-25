@@ -8,9 +8,11 @@
   "ingredients": [
     {
       "tag": "forge:gems/gem_shards"
-    }, {
+    },
+    {
       "tag": "forge:gems/gem_shards"
-    }, {
+    },
+    {
       "tag": "forge:sugar"
     }
   ],

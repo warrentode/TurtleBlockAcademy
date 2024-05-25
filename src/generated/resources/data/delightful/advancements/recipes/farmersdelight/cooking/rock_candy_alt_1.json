@@ -20,7 +20,8 @@
   },
   "requirements": [
     [
-      "has_gem_shards", "has_the_recipe"
+      "has_gem_shards",
+      "has_the_recipe"
     ]
   ],
   "rewards": {

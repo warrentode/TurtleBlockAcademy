@@ -1,0 +1,30 @@
+{
+  "type": "turtleblockacademy:fermenting",
+  "cover": {
+    "item": "minecraft:white_carpet"
+  },
+  "experience": 0.35,
+  "fermenting_time": 300,
+  "ingredients": [
+    {
+      "tag": "forge:flour/wheat"
+    },
+    {
+      "tag": "forge:flour/wheat"
+    },
+    {
+      "tag": "forge:flour/wheat"
+    },
+    {
+      "tag": "forge:flour/wheat"
+    },
+    {
+      "item": "minecraft:water_bucket"
+    }
+  ],
+  "recipe_book_tab": "agents",
+  "result": {
+    "count": 4,
+    "item": "turtleblockacademy:yeast"
+  }
+}

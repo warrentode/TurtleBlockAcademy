@@ -27,7 +27,7 @@ import java.util.function.BiConsumer;
 import java.util.function.Consumer;
 
 import static com.aetherteam.aether.block.AetherBlocks.*;
-import static com.github.warrentode.turtleblockacademy.datagen.loot.ModLootProviders.*;
+import static com.github.warrentode.turtleblockacademy.datagen.loot.TBALootProviders.*;
 import static com.refinedmods.refinedstorage.RSItems.QUARTZ_ENRICHED_IRON;
 import static decor.delight.init.DecorationDelightModItems.*;
 import static net.mcreator.phantasm.init.PhantasmModItems.*;

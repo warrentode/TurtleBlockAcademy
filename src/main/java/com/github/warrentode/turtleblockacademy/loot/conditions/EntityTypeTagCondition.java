@@ -43,14 +43,14 @@ public class EntityTypeTagCondition implements LootItemCondition {
     }
 
     @Contract(value = " -> new", pure = true)
-    public static EntityTypeTagCondition.@NotNull Builder tag() {
-        return new EntityTypeTagCondition.Builder();
+    public static @NotNull Builder tag() {
+        return new Builder();
     }
 
     public static class Builder implements LootItemCondition.Builder {
         TagKey<EntityType<?>> entityTypeTag;
 
-        public EntityTypeTagCondition.Builder set(TagKey<EntityType<?>> entityTypeTag) {
+        public Builder set(TagKey<EntityType<?>> entityTypeTag) {
             this.entityTypeTag = entityTypeTag;
             return this;
         }

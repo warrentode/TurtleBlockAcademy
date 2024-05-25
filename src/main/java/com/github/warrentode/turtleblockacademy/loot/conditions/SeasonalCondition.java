@@ -34,15 +34,15 @@ public class SeasonalCondition implements LootItemCondition {
         }
     }
 
-    public static SeasonalCondition.Builder season() {
-        return new SeasonalCondition.Builder();
+    public static Builder season() {
+        return new Builder();
     }
 
     public static class Builder implements LootItemCondition.Builder {
         @Nullable
         String SEASON;
 
-        public SeasonalCondition.Builder set(@Nullable String SEASON) {
+        public Builder set(@Nullable String SEASON) {
             this.SEASON = SEASON;
             return this;
         }

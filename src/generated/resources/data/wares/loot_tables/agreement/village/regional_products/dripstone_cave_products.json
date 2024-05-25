@@ -14,7 +14,8 @@
             }
           ],
           "name": "minecraft:pointed_dripstone"
-        }, {
+        },
+        {
           "type": "minecraft:item",
           "functions": [
             {
@@ -24,7 +25,8 @@
             }
           ],
           "name": "minecraft:dripstone_block"
-        }, {
+        },
+        {
           "type": "minecraft:item",
           "functions": [
             {
@@ -34,7 +36,8 @@
             }
           ],
           "name": "minecraft:glow_lichen"
-        }, {
+        },
+        {
           "type": "minecraft:item",
           "functions": [
             {
@@ -44,7 +47,8 @@
             }
           ],
           "name": "minecraft:red_mushroom"
-        }, {
+        },
+        {
           "type": "minecraft:item",
           "functions": [
             {

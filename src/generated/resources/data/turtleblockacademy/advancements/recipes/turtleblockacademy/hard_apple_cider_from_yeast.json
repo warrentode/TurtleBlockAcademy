@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_apple_cider": {
+      "conditions": {
+        "items": [
+          {
+            "tag": "turtleblockacademy:apple_ciders"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "turtleblockacademy:hard_apple_cider_from_yeast"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_apple_cider",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "turtleblockacademy:hard_apple_cider_from_yeast"
+    ]
+  }
+}

@@ -1,5 +1,6 @@
 {
   "values": [
+    "#forge:ingredients/flour",
     "#forge:crops/rice",
     "minecraft:potato"
   ]

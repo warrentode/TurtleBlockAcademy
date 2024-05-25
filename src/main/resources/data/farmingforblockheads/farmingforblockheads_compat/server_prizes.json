@@ -8,6 +8,15 @@
   "customEntries": [
     {
       "output": {
+        "item": "minecraft:bell"
+      },
+      "payment": {
+        "item": "todecoins:server_token_coin",
+        "count": 1
+      }
+    },
+    {
+      "output": {
         "item": "lootbags:loot_bag",
         "nbt": "{Type: \"COMMON\", Loot: \"lootbags:rations_bag\", Color: 16777215, Name: \"Rations Bag\"}"
       },

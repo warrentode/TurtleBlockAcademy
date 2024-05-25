@@ -1,0 +1,49 @@
+{
+  "variants": {
+    "facing=east,has_cloth_cover=false,has_pickling_stone=false": {
+      "model": "turtleblockacademy:block/fermenting_pot",
+      "y": 90
+    },
+    "facing=north,has_cloth_cover=false,has_pickling_stone=false": {
+      "model": "turtleblockacademy:block/fermenting_pot"
+    },
+    "facing=south,has_cloth_cover=false,has_pickling_stone=false": {
+      "model": "turtleblockacademy:block/fermenting_pot",
+      "y": 180
+    },
+    "facing=west,has_cloth_cover=false,has_pickling_stone=false": {
+      "model": "turtleblockacademy:block/fermenting_pot",
+      "y": 270
+    },
+    "facing=east,has_cloth_cover=false,has_pickling_stone=true": {
+      "model": "turtleblockacademy:block/fermenting_pot_pickling_stone",
+      "y": 90
+    },
+    "facing=north,has_cloth_cover=false,has_pickling_stone=true": {
+      "model": "turtleblockacademy:block/fermenting_pot_pickling_stone"
+    },
+    "facing=south,has_cloth_cover=false,has_pickling_stone=true": {
+      "model": "turtleblockacademy:block/fermenting_pot_pickling_stone",
+      "y": 180
+    },
+    "facing=west,has_cloth_cover=false,has_pickling_stone=true": {
+      "model": "turtleblockacademy:block/fermenting_pot_pickling_stone",
+      "y": 270
+    },
+    "facing=east,has_cloth_cover=true,has_pickling_stone=false": {
+      "model": "turtleblockacademy:block/fermenting_pot_cloth_cover",
+      "y": 90
+    },
+    "facing=north,has_cloth_cover=true,has_pickling_stone=false": {
+      "model": "turtleblockacademy:block/fermenting_pot_cloth_cover"
+    },
+    "facing=south,has_cloth_cover=true,has_pickling_stone=false": {
+      "model": "turtleblockacademy:block/fermenting_pot_cloth_cover",
+      "y": 180
+    },
+    "facing=west,has_cloth_cover=true,has_pickling_stone=false": {
+      "model": "turtleblockacademy:block/fermenting_pot_cloth_cover",
+      "y": 270
+    }
+  }
+}

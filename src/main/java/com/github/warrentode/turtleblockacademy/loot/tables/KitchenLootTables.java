@@ -34,6 +34,7 @@ public class KitchenLootTables {
     public static final ResourceLocation WILDBERRIES_EDIBLES = register("chests/kitchen/wildberries_edibles");
     public static final ResourceLocation CRABBERSDELIGHT_EDIBLES = register("chests/kitchen/crabbersdelight_edibles");
     public static final ResourceLocation MINERSDELIGHT_EDIBLES = register("chests/kitchen/minersdelight_edibles");
+    public static final ResourceLocation TBA_EDIBLES = register("chests/kitchen/turtleblockacademy_edibles");
 
     private static ResourceLocation register(String path) {
         return register(new ResourceLocation(MODID, path));
