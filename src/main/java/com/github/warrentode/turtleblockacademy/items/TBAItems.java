@@ -75,7 +75,7 @@ public class TBAItems {
     public static final RegistryObject<Item> BEET_PICKLES =
             ITEMS.register("beet_pickles", () ->
                     new PickledItem(bowlFoodItem(TBAFoods.PICKLES)
-                            .tab(TAB)));
+                            .tab(TAB), false, false));
 
     public static final RegistryObject<Item> BEET_WINE =
             ITEMS.register("beet_wine", () ->
