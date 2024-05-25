@@ -106,6 +106,11 @@ public class TBALangGen extends LanguageProvider {
         add(TBAItems.BEET_PICKLES.get(), "Pickled Beets");
         add(TBAItems.YEAST.get(), "Yeast");
         add(TBAItems.HARD_APPLE_CIDER.get(), "Hard Apple Cider");
+        add(TBAItems.DILL_SEEDS.get(), "Dill Seeds");
+        add(TBAItems.DILL_HERB.get(), "Dill Herb");
+        add(TBAItems.CUCUMBER.get(), "Cucumber");
+        add(TBAItems.CUCUMBER_SEEDS.get(), "Cucumber Seeds");
+        add(TBAItems.DILL_PICKLE.get(), "Dill Pickle");
     }
 
     private void addBlocks() {
@@ -113,6 +118,8 @@ public class TBALangGen extends LanguageProvider {
         add(TBABlocks.QUARTZ_CLUSTER.get(), "Quartz Cluster");
         add(TBABlocks.FERMENTING_POT_BLOCK.get(), "Fermenting Pot");
         add(TBABlocks.CLOVE_BUSH.get(), "Clove Bush");
+        add(TBABlocks.CUCUMBER_BUSH.get(), "Cucumber Bush");
+        add(TBABlocks.DILL_BUSH.get(), "Dill Crop");
 
         // add(TBABlocks.TBA_MINING_PORTAL.get(), "Mining Portal Block");
 

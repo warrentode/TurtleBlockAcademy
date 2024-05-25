@@ -72,6 +72,7 @@ public class TBAItems {
                             0x0000FF, 0x1E90FF,
                             new Item.Properties().tab(TAB)));
 
+
     public static final RegistryObject<Item> BEET_PICKLES =
             ITEMS.register("beet_pickles", () ->
                     new PickledItem(bowlFoodItem(TBAFoods.PICKLES)
@@ -102,6 +103,37 @@ public class TBAItems {
                     new ConsumableItem(bowlFoodItem(TBAFoods.SALAD_DISHES)
                             .tab(TAB), false, false));
 
+    public static final RegistryObject<Item> CUCUMBER =
+            ITEMS.register("cucumber", () ->
+                    new ConsumableItem(foodItem(TBAFoods.CUCUMBER).stacksTo(64)
+                            .tab(TAB), false, false));
+
+    public static final RegistryObject<Item> CUCUMBER_SEEDS =
+            ITEMS.register("cucumber_seeds",
+                    () -> new ItemNameBlockItem(TBABlocks.CUCUMBER_BUSH.get(),
+                            new Item.Properties().tab(TAB)));
+
+    public static final RegistryObject<Item> DILL_SEEDS =
+            ITEMS.register("dill_seeds",
+                    () -> new ItemNameBlockItem(TBABlocks.DILL_BUSH.get(),
+                            new Item.Properties().tab(TAB)));
+
+    public static final RegistryObject<Item> DILL_HERB =
+            ITEMS.register("dill_herb", () ->
+                    new Item(new Item.Properties().tab(TAB)));
+
+    public static final RegistryObject<Item> DILL_PICKLE =
+            ITEMS.register("dill_pickle", () ->
+                    new PickledItem(foodItem(TBAFoods.PICKLES).stacksTo(64)
+                            .tab(TAB), false, false));
+
+
+    public static @NotNull Item.Properties foodItem(FoodProperties food) {
+        return (new Item.Properties()).food(food)
+                .tab(TAB)
+                .tab(FarmersDelight.CREATIVE_TAB)
+                .tab(CreativeModeTab.TAB_FOOD);
+    }
 
     public static @NotNull Item.Properties bowlFoodItem(FoodProperties food) {
         return (new Item.Properties()).food(food).stacksTo(16)

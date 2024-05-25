@@ -92,6 +92,19 @@ public class RecipesGen extends RecipeProvider implements IConditionBuilder {
     }
 
     private void fermentingRecipes(Consumer<FinishedRecipe> consumer) {
+        FermentingPotRecipeBuilder.fermentingPotRecipe(TBAItems.DILL_PICKLE.get(),
+                        2, 300, 0.35F, Items.SMOOTH_STONE_SLAB)
+                .setRecipeBookTab(FermentingRecipeBookTab.PICKLES)
+                .addIngredient(TBAItems.CUCUMBER.get())
+                .addIngredient(TBAItems.CUCUMBER.get())
+                .addIngredient(TBAItems.VINEGAR_BOTTLE.get())
+                .addIngredient(TBATags.Items.SALT_INGREDIENTS)
+                .addIngredient(TBATags.Items.ONION_INGREDIENTS)
+                .addIngredient(TBAItems.DILL_HERB.get())
+                .unlockedBy("has_cucumber", has(TBAItems.CUCUMBER.get()))
+                .build(consumer, new ResourceLocation(MODID,
+                        TBAItems.DILL_PICKLE.get().asItem().toString()));
+
         FermentingPotRecipeBuilder.fermentingPotRecipe(TBAItems.BEET_PICKLES.get(),
                         1, 300, 0.35F, Items.SMOOTH_STONE_SLAB,
                         Items.BOWL)
@@ -293,6 +306,11 @@ public class RecipesGen extends RecipeProvider implements IConditionBuilder {
     }
 
     private void minecraftRecipes(Consumer<FinishedRecipe> consumer) {
+        ShapelessRecipeBuilder.shapeless(TBAItems.CUCUMBER_SEEDS.get(), 1)
+                .requires(TBAItems.CUCUMBER.get())
+                .unlockedBy("has_cucumber", has(TBAItems.CUCUMBER.get()))
+                .save(consumer, new ResourceLocation(MODID,
+                        TBAItems.CUCUMBER_SEEDS.get().asItem().toString()));
         SimpleCookingRecipeBuilder.smelting(Ingredient.of(TBAItems.CLOVES.get()),
                         TBAItems.DRIED_CLOVES.get(), 0.15F, 200)
                 .unlockedBy("has_cloves", has(TBAItems.CLOVES.get()))

@@ -6,6 +6,9 @@ import net.minecraft.world.food.FoodProperties;
 import vectorwing.farmersdelight.common.registry.ModEffects;
 
 public class TBAFoods {
+    public static final FoodProperties CUCUMBER = (new FoodProperties.Builder())
+            .nutrition(1).saturationMod(0.6F).build();
+
     public static final FoodProperties BEET_WINE = new FoodProperties.Builder()
             .alwaysEat().fast().nutrition(1).saturationMod(0.2F)
             .effect(() -> new MobEffectInstance(MobEffects.HEALTH_BOOST,

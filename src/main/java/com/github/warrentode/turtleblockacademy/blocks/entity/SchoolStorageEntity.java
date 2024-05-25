@@ -1,8 +1,8 @@
 package com.github.warrentode.turtleblockacademy.blocks.entity;
 
-import com.github.warrentode.turtleblockacademy.blocks.BookCaseBlock;
-import com.github.warrentode.turtleblockacademy.blocks.SchoolDeskCabinetBlock;
-import com.github.warrentode.turtleblockacademy.blocks.SchoolLockerBlock;
+import com.github.warrentode.turtleblockacademy.blocks.furniture.BookCaseBlock;
+import com.github.warrentode.turtleblockacademy.blocks.furniture.SchoolDeskCabinetBlock;
+import com.github.warrentode.turtleblockacademy.blocks.furniture.SchoolLockerBlock;
 import com.github.warrentode.turtleblockacademy.util.TBASounds;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.NonNullList;

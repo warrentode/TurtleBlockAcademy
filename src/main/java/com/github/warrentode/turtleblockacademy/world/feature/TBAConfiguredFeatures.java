@@ -26,6 +26,22 @@ public class TBAConfiguredFeatures {
                             new SimpleBlockConfiguration(
                                     BlockStateProvider.simple(TBABlocks.CLOVE_BUSH.get()))))));
 
+    public static final RegistryObject<ConfiguredFeature<?, ?>> PATCH_CUCUMBER_BUSH =
+            CONFIGURED_FEATURES.register("patch_cucumber_bush",
+                    () -> new ConfiguredFeature<>(Feature.RANDOM_PATCH,
+                            new RandomPatchConfiguration(32, 6, 2,
+                                    PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK,
+                                            new SimpleBlockConfiguration(
+                                                    BlockStateProvider.simple(TBABlocks.CUCUMBER_BUSH.get()))))));
+
+    public static final RegistryObject<ConfiguredFeature<?, ?>> PATCH_DILL_BUSH =
+            CONFIGURED_FEATURES.register("patch_dill_bush",
+                    () -> new ConfiguredFeature<>(Feature.RANDOM_PATCH,
+                            new RandomPatchConfiguration(32, 6, 2,
+                                    PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK,
+                                            new SimpleBlockConfiguration(
+                                                    BlockStateProvider.simple(TBABlocks.DILL_BUSH.get()))))));
+
     public static void register(IEventBus eventBus) {
         CONFIGURED_FEATURES.register(eventBus);
     }

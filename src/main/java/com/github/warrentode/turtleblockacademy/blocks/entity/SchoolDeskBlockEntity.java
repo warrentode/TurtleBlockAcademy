@@ -1,7 +1,7 @@
 package com.github.warrentode.turtleblockacademy.blocks.entity;
 
-import com.github.warrentode.turtleblockacademy.blocks.SchoolDeskBlock;
 import com.github.warrentode.turtleblockacademy.blocks.entity.gui.SchoolDeskMenu;
+import com.github.warrentode.turtleblockacademy.blocks.furniture.SchoolDeskBlock;
 import com.github.warrentode.turtleblockacademy.util.TBATags;
 import net.minecraft.commands.CommandSource;
 import net.minecraft.commands.CommandSourceStack;

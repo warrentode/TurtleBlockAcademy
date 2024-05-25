@@ -575,6 +575,7 @@ public class ItemTagsGen extends ItemTagsProvider {
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("hauntedharvest:grim_apple")))
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("hauntedharvest:rotten_apple")));
         tag(TBATags.Items.INGREDIENTS)
+                .addTag(TBATags.Items.CUCUMBERS)
                 .addTag(TBATags.Items.SALT_INGREDIENTS)
                 .addTag(TBATags.Items.APPLE_INGREDIENTS)
                 .addTag(TBATags.Items.STARCH_INGREDIENTS)
@@ -591,6 +592,8 @@ public class ItemTagsGen extends ItemTagsProvider {
                 .addTag(TBATags.Items.CHEESE_SLICES)
                 .addTag(TBATags.Items.BREAD)
                 .addTag(TBATags.Items.EGGS);
+        tag(TBATags.Items.CUCUMBER_INGREDIENTS)
+                .addTag(TBATags.Items.CUCUMBERS);
         tag(TBATags.Items.SALT_INGREDIENTS)
                 .addOptional(TBAItems.PICKLING_SALT.getId())
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("salt:salt")));
@@ -614,8 +617,8 @@ public class ItemTagsGen extends ItemTagsProvider {
                 .addTag(TBATags.Items.CLOVER)
                 .addOptional(DelightfulItems.CHOPPED_CLOVER.getId());
         tag(TBATags.Items.SPICES_INGREDIENTS)
-                .add(TBAItems.DRIED_CLOVES.get())
-                .add(TBAItems.GROUND_CLOVES.get())
+                .addTag(TBATags.Items.DILL)
+                .addTag(TBATags.Items.CLOVES)
                 .addOptional(FestiveDelightModItems.CINNAMON_POWDER.getId())
                 .addOptional(lekavar.lma.drinkbeer.registries.ItemRegistry.SPICE_STORM_SHARDS.getId())
                 .addOptional(lekavar.lma.drinkbeer.registries.ItemRegistry.SPICE_SMOKED_EGLIA_BUD.getId())
@@ -762,6 +765,8 @@ public class ItemTagsGen extends ItemTagsProvider {
         tag(TBATags.Items.APPLES)
                 .add(Items.APPLE);
         tag(TBATags.Items.VEGETABLES)
+                .addTag(TBATags.Items.SPICES_INGREDIENTS)
+                .add(TBAItems.CUCUMBER.get())
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("hauntedharvest:corn")))
                 .addOptional(ItemRegistry.ChorusSucculent.getId())
                 .addOptional(ItemRegistry.DriedChorusFlower.getId())
@@ -839,6 +844,9 @@ public class ItemTagsGen extends ItemTagsProvider {
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("wildberries:raspberry")))
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("wildberries:blueberries")));
         tag(TBATags.Items.CROPS)
+                .addTag(TBATags.Items.DILL)
+                .addTag(TBATags.Items.CUCUMBERS)
+                .addTag(TBATags.Items.CLOVES)
                 .addTag(TBATags.Items.COCOA)
                 .addTag(TBATags.Items.COFFEE)
                 .addTag(TBATags.Items.TEA_LEAVES)
@@ -855,6 +863,13 @@ public class ItemTagsGen extends ItemTagsProvider {
                 .addTag(TBATags.Items.CABBAGE)
                 .addTag(TBATags.Items.RICE)
                 .addTag(TBATags.Items.SHROOMS);
+        tag(TBATags.Items.DILL)
+                .add(TBAItems.DILL_HERB.get())
+                .add(TBAItems.DILL_SEEDS.get());
+        tag(TBATags.Items.CUCUMBERS)
+                .add(TBAItems.CUCUMBER.get());
+        tag(TBATags.Items.CLOVES)
+                .add(TBAItems.CLOVES.get());
         tag(TBATags.Items.PUMPKIN)
                 .add(Items.PUMPKIN);
         tag(TBATags.Items.CABBAGE)

@@ -1,7 +1,7 @@
 package com.github.warrentode.turtleblockacademy.blocks.renderer;
 
-import com.github.warrentode.turtleblockacademy.blocks.SchoolDeskBlock;
 import com.github.warrentode.turtleblockacademy.blocks.entity.SchoolDeskBlockEntity;
+import com.github.warrentode.turtleblockacademy.blocks.furniture.SchoolDeskBlock;
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.vertex.VertexConsumer;
 import com.mojang.math.Vector3f;

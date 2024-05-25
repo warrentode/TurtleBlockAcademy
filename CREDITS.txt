@@ -35,3 +35,11 @@ the student card started out with this image from pixabay: https://pixabay.com/v
     but was then heavily modified with cropped screenshots and the homeschooling logo
 
 the images for the plates are all created by me using the vanilla glazed terracotta textures
+
+images of clove and cucumber bushes are altered versions of the sweet berry bush
+
+cucumber is from pixabay by OpenClipart-Vectors at https://pixabay.com/vectors/cucumber-eat-edible-food-fresh-1299833/
+
+dill pickle is from pixabay by OpenClipart-Vectors at https://pixabay.com/vectors/cucumbers-green-vegetables-fruits-576568/
+
+the dill herb is heavily modified from the vanilla's azure bluet texture

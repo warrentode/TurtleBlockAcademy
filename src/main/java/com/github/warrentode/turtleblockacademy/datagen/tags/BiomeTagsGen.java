@@ -21,6 +21,24 @@ public class BiomeTagsGen extends BiomeTagsProvider {
 
     @Override
     protected void addTags() {
+        tag(TBATags.Biomes.IS_ARID)
+                .add(Biomes.DESERT)
+                .add(Biomes.SAVANNA)
+                .add(Biomes.SAVANNA_PLATEAU)
+                .add(Biomes.BADLANDS)
+                .add(Biomes.WOODED_BADLANDS)
+                .add(Biomes.WINDSWEPT_SAVANNA)
+                .add(Biomes.ERODED_BADLANDS)
+                .addOptional(Objects.requireNonNull(
+                        ResourceLocation.tryParse("biomesoplenty:wooded_scrubland")))
+                .addOptional(Objects.requireNonNull(
+                        ResourceLocation.tryParse("biomesoplenty:wasteland")))
+                .addOptional(Objects.requireNonNull(
+                        ResourceLocation.tryParse("biomesoplenty:volcano")))
+                .addOptional(Objects.requireNonNull(
+                        ResourceLocation.tryParse("biomesoplenty:shrubland")))
+                .addOptional(Objects.requireNonNull(
+                        ResourceLocation.tryParse("biomesoplenty:dryland")));
         tag(TBATags.Biomes.IS_TROPICAL)
                 .addOptionalTag(Objects.requireNonNull(
                         ResourceLocation.tryParse("biomesoplenty:tropics")))

@@ -187,8 +187,8 @@ dependencies {
     implementation fg.deobf("curse.maven:salt-832006:4988711")
 
     // moonlight lib mod set
-    implementation fg.deobf("curse.maven:selene-499980:4983974")
-    implementation fg.deobf("curse.maven:supplementaries-412082:5152602")
+    implementation fg.deobf("curse.maven:selene-499980:4758015")
+    implementation fg.deobf("curse.maven:supplementaries-412082:4713347")
     implementation fg.deobf("curse.maven:haunted-harvest-541753:4567840")
     implementation fg.deobf("curse.maven:snowy-spirit-566142:4479536")
 

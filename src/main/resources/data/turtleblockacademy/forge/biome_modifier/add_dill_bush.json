@@ -1,0 +1,6 @@
+{
+    "type": "forge:add_features",
+    "biomes": "#forge:is_arid",
+    "features": "turtleblockacademy:dill_bush_placed",
+    "step": "vegetal_decoration"
+}

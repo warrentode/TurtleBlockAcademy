@@ -1,5 +1,7 @@
 {
   "values": [
+    "#forge:ingredients/spices",
+    "turtleblockacademy:cucumber",
     {
       "id": "hauntedharvest:corn",
       "required": false

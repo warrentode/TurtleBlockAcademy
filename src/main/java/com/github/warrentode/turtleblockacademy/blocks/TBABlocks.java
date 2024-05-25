@@ -1,6 +1,10 @@
 package com.github.warrentode.turtleblockacademy.blocks;
 
 import com.github.warrentode.turtleblockacademy.TurtleBlockAcademy;
+import com.github.warrentode.turtleblockacademy.blocks.crop.CloveBushBlock;
+import com.github.warrentode.turtleblockacademy.blocks.crop.CucumberBushBlock;
+import com.github.warrentode.turtleblockacademy.blocks.crop.DillBushBlock;
+import com.github.warrentode.turtleblockacademy.blocks.furniture.*;
 import com.github.warrentode.turtleblockacademy.items.TBAItems;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -33,6 +37,16 @@ public class TBABlocks {
             () -> new CloveBushBlock(BlockBehaviour.Properties.of(Material.PLANT)
                     .randomTicks().instabreak().sound(SoundType.SWEET_BERRY_BUSH)
                     .noCollission().noOcclusion()));
+
+ public static final RegistryObject<Block> CUCUMBER_BUSH = BLOCKS.register("cucumber_bush",
+         () -> new CucumberBushBlock(BlockBehaviour.Properties.of(Material.PLANT)
+                 .randomTicks().instabreak().sound(SoundType.SWEET_BERRY_BUSH)
+                 .noCollission().noOcclusion()));
+
+ public static final RegistryObject<Block> DILL_BUSH = BLOCKS.register("dill_bush",
+         () -> new DillBushBlock(BlockBehaviour.Properties.of(Material.PLANT)
+                 .randomTicks().instabreak().sound(SoundType.CROP)
+                 .noCollission().noOcclusion()));
 
    public static final RegistryObject<Block> TBA_MINING_PORTAL_BLOCK =
             registerBlockWithoutBlockItem("mining_portal", TBAMiningPortalBlock::new);

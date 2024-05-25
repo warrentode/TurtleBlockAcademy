@@ -264,13 +264,13 @@ side = "BOTH"
 [[dependencies.turtleblockacademy]]
 modId = "moonlight"
 mandatory = true
-versionRange = "[1.19.2-2.3.6,)"
+versionRange = "[1.19.2-2.2.46,)"
 ordering = "BEFORE"
 side = "BOTH"
 [[dependencies.turtleblockacademy]]
 modId = "supplementaries"
 mandatory = true
-versionRange = "[1.19.2-2.4.20,)"
+versionRange = "[1.19.2-2.3.23,)"
 ordering = "BEFORE"
 side = "BOTH"
 [[dependencies.turtleblockacademy]]

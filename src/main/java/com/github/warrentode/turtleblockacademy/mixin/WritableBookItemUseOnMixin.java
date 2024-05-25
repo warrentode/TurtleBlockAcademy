@@ -1,6 +1,6 @@
 package com.github.warrentode.turtleblockacademy.mixin;
 
-import com.github.warrentode.turtleblockacademy.blocks.SchoolDeskBlock;
+import com.github.warrentode.turtleblockacademy.blocks.furniture.SchoolDeskBlock;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.item.WritableBookItem;

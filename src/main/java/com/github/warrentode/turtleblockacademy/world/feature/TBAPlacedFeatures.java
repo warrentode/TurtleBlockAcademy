@@ -25,6 +25,20 @@ public class TBAPlacedFeatures {
                     InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP,
                             BiomeFilter.biome())));
 
+    public static final RegistryObject<PlacedFeature> CUCUMBER_BUSH_PLACED =
+            PLACED_FEATURES.register("cucumber_bush_placed",
+                    () -> new PlacedFeature(TBAConfiguredFeatures.PATCH_CUCUMBER_BUSH.getHolder().get(),
+                            List.of(RarityFilter.onAverageOnceEvery(32),
+                                    InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP,
+                                    BiomeFilter.biome())));
+
+    public static final RegistryObject<PlacedFeature> DILL_BUSH_PLACED =
+            PLACED_FEATURES.register("dill_bush_placed",
+                    () -> new PlacedFeature(TBAConfiguredFeatures.PATCH_DILL_BUSH.getHolder().get(),
+                            List.of(RarityFilter.onAverageOnceEvery(32),
+                                    InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP,
+                                    BiomeFilter.biome())));
+
     public static void register(IEventBus eventBus) {
         PLACED_FEATURES.register(eventBus);
     }

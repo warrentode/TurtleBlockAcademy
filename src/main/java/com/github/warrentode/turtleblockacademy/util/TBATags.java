@@ -135,8 +135,11 @@ public class TBATags {
         public static final TagKey<Item> SHELL = packItemTag("forge", "gems/shell");
 
         public static final TagKey<Item> CROPS = packItemTag("forge", "crops");
+        public static final TagKey<Item> DILL = packItemTag("forge", "crops/dill");
         public static final TagKey<Item> SHROOMS = packItemTag("forge", "crops/shrooms");
         public static final TagKey<Item> CARROTS = packItemTag("forge", "crops/carrots");
+        public static final TagKey<Item> CLOVES = packItemTag("forge", "crops/cloves");
+        public static final TagKey<Item> CUCUMBERS = packItemTag("forge", "crops/cucumbers");
         public static final TagKey<Item> RICE = packItemTag("forge", "crops/rice");
         public static final TagKey<Item> CABBAGE = packItemTag("forge", "crops/cabbage");
         public static final TagKey<Item> TOMATO = packItemTag("forge", "crops/tomato");
@@ -203,6 +206,7 @@ public class TBATags {
         public static final TagKey<Item> ONION_INGREDIENTS = packItemTag("forge", "ingredients/onion");
         public static final TagKey<Item> COOKED_RICE = packItemTag("forge", "ingredients/cooked_rice");
         public static final TagKey<Item> SPICES_INGREDIENTS = packItemTag("forge", "ingredients/spices");
+        public static final TagKey<Item> CUCUMBER_INGREDIENTS = packItemTag("forge", "ingredients/cucumber");
         public static final TagKey<Item> CHEESE_SLICES = packItemTag("forge", "ingredients/cheese_slices");
         public static final TagKey<Item> BREAD = packItemTag("forge", "ingredients/bread");
         public static final TagKey<Item> SWEETENED_CHUNK = packItemTag("rottenleather", "sweetened_chunk");
@@ -212,6 +216,7 @@ public class TBATags {
         public static final TagKey<Item> ALCOHOL = packItemTag("forge", "ingredients/alcohol");
         public static final TagKey<Item> FLOUR = packItemTag("forge", "ingredients/flour");
         public static final TagKey<Item> WHEAT_FLOUR = packItemTag("forge", "flour/wheat");
+
         public static final TagKey<Item> STRAW_FIBERS = packItemTag(MODID, "straw_fibers");
 
         public static final TagKey<Item> JAR_PLACEABLE = packItemTag(MODID, "jar_placeable");
@@ -356,6 +361,7 @@ public class TBATags {
         TagKey<Biome> TBA_MINING_BIOMES = packBiomeTag(MODID,"tba_mining_biomes");
         TagKey<Biome> UNDERGROUND_BUT_NOT_DEEP_DARK = packBiomeTag(MODID,"underground_but_not_deep_dark");
         TagKey<Biome> IS_TROPICAL = packBiomeTag("forge","is_tropical");
+        TagKey<Biome> IS_ARID = packBiomeTag("forge","is_arid");
 
 
         TagKey<Biome> HAS_CLAY_SLIME_POOLS = packBiomeTag(MODID,"has_structure/clay_slime_pools");

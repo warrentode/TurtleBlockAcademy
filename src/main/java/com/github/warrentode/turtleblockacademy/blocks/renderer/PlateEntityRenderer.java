@@ -1,7 +1,7 @@
 package com.github.warrentode.turtleblockacademy.blocks.renderer;
 
-import com.github.warrentode.turtleblockacademy.blocks.PlateBlock;
 import com.github.warrentode.turtleblockacademy.blocks.entity.PlateBlockEntity;
+import com.github.warrentode.turtleblockacademy.blocks.furniture.PlateBlock;
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.math.Vector3f;
 import net.minecraft.client.renderer.MultiBufferSource;

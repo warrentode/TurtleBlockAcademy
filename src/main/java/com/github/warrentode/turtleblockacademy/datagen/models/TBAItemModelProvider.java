@@ -31,6 +31,11 @@ public class TBAItemModelProvider extends ItemModelProvider {
 
         basicItem(TBAItems.CLOVES.get());
         basicItem(TBAItems.CLOVE_SEEDS.get());
+        basicItem(TBAItems.CUCUMBER_SEEDS.get());
+        basicItem(TBAItems.CUCUMBER.get());
+        basicItem(TBAItems.DILL_PICKLE.get());
+        basicItem(TBAItems.DILL_SEEDS.get());
+        basicItem(TBAItems.DILL_HERB.get());
         basicItem(TBAItems.DRIED_CLOVES.get());
         basicItem(TBAItems.GROUND_CLOVES.get());
         basicItem(TBAItems.PICKLING_SALT.get());

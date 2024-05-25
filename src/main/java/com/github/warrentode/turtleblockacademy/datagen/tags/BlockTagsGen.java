@@ -47,6 +47,8 @@ public class BlockTagsGen extends BlockTagsProvider {
 
     protected void registerTBATags() {
         tag(TBATags.Blocks.SERENE_SEASONS_SUMMER_CROPS)
+                .add(TBABlocks.DILL_BUSH.get())
+                .add(TBABlocks.CUCUMBER_BUSH.get())
                 .add(TBABlocks.CLOVE_BUSH.get());
         tag(TBATags.Blocks.TBA_MINING_PORTAL_FRAME_BLOCKS)
                 .add(Blocks.ANDESITE);

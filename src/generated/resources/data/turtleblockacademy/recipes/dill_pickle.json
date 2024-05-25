@@ -1,0 +1,33 @@
+{
+  "type": "turtleblockacademy:fermenting",
+  "cover": {
+    "item": "minecraft:smooth_stone_slab"
+  },
+  "experience": 0.35,
+  "fermenting_time": 300,
+  "ingredients": [
+    {
+      "item": "turtleblockacademy:cucumber"
+    },
+    {
+      "item": "turtleblockacademy:cucumber"
+    },
+    {
+      "item": "turtleblockacademy:vinegar_bottle"
+    },
+    {
+      "tag": "forge:ingredients/salt"
+    },
+    {
+      "tag": "forge:ingredients/onion"
+    },
+    {
+      "item": "turtleblockacademy:dill_herb"
+    }
+  ],
+  "recipe_book_tab": "pickles",
+  "result": {
+    "count": 2,
+    "item": "turtleblockacademy:dill_pickle"
+  }
+}

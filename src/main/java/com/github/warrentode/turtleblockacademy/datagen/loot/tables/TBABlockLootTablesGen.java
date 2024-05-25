@@ -1,7 +1,7 @@
 package com.github.warrentode.turtleblockacademy.datagen.loot.tables;
 
-import com.github.warrentode.turtleblockacademy.blocks.CloveBushBlock;
 import com.github.warrentode.turtleblockacademy.blocks.TBABlocks;
+import com.github.warrentode.turtleblockacademy.blocks.crop.CloveBushBlock;
 import com.github.warrentode.turtleblockacademy.items.TBAItems;
 import net.minecraft.advancements.critereon.ItemPredicate;
 import net.minecraft.advancements.critereon.StatePropertiesPredicate;
@@ -11,12 +11,14 @@ import net.minecraft.tags.ItemTags;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.enchantment.Enchantments;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.CropBlock;
 import net.minecraft.world.level.storage.loot.LootPool;
 import net.minecraft.world.level.storage.loot.LootTable;
 import net.minecraft.world.level.storage.loot.entries.LootItem;
 import net.minecraft.world.level.storage.loot.functions.ApplyBonusCount;
 import net.minecraft.world.level.storage.loot.functions.SetItemCountFunction;
 import net.minecraft.world.level.storage.loot.predicates.LootItemBlockStatePropertyCondition;
+import net.minecraft.world.level.storage.loot.predicates.LootItemCondition;
 import net.minecraft.world.level.storage.loot.predicates.MatchTool;
 import net.minecraft.world.level.storage.loot.providers.number.ConstantValue;
 import net.minecraft.world.level.storage.loot.providers.number.UniformGenerator;
@@ -34,19 +36,51 @@ public class TBABlockLootTablesGen extends BlockLoot {
 
         this.dropSelf(TBABlocks.FERMENTING_POT_BLOCK.get());
 
-        this.add(TBABlocks.CLOVE_BUSH.get(), (block) -> 
-                applyExplosionDecay(block, 
+        this.add(TBABlocks.CLOVE_BUSH.get(), (block) ->
+                applyExplosionDecay(block,
                         LootTable.lootTable().withPool(LootPool.lootPool()
-                                .when(LootItemBlockStatePropertyCondition
-                                        .hasBlockStateProperties(TBABlocks.CLOVE_BUSH.get())
-                                        .setProperties(StatePropertiesPredicate.Builder.properties()
-                                                .hasProperty(CloveBushBlock.AGE, CloveBushBlock.MAX_AGE)))
-                                .add(LootItem.lootTableItem(TBAItems.CLOVES.get()))
-                                .apply(SetItemCountFunction.setCount(UniformGenerator.between(2.0F, 3.0F)))
-                                .apply(ApplyBonusCount.addUniformBonusCount(Enchantments.BLOCK_FORTUNE)))
-                                .withPool(LootPool.lootPool().when(LootItemBlockStatePropertyCondition.hasBlockStateProperties(TBABlocks.CLOVE_BUSH.get())
-                                        .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(CloveBushBlock.AGE, 2)))
+                                        .when(LootItemBlockStatePropertyCondition
+                                                .hasBlockStateProperties(TBABlocks.CLOVE_BUSH.get())
+                                                .setProperties(StatePropertiesPredicate.Builder.properties()
+                                                        .hasProperty(CloveBushBlock.AGE, CloveBushBlock.MAX_AGE)))
                                         .add(LootItem.lootTableItem(TBAItems.CLOVES.get()))
+                                        .apply(SetItemCountFunction.setCount(UniformGenerator.between(2.0F, 3.0F)))
+                                        .apply(ApplyBonusCount.addUniformBonusCount(Enchantments.BLOCK_FORTUNE)))
+                                .withPool(LootPool.lootPool().when(LootItemBlockStatePropertyCondition.hasBlockStateProperties(TBABlocks.CLOVE_BUSH.get())
+                                                .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(CloveBushBlock.AGE, 2)))
+                                        .add(LootItem.lootTableItem(TBAItems.CLOVES.get()))
+                                        .apply(SetItemCountFunction.setCount(UniformGenerator.between(1.0F, 2.0F)))
+                                        .apply(ApplyBonusCount.addUniformBonusCount(Enchantments.BLOCK_FORTUNE)))));
+
+        this.add(TBABlocks.CUCUMBER_BUSH.get(), (block) ->
+                applyExplosionDecay(block,
+                        LootTable.lootTable().withPool(LootPool.lootPool()
+                                        .when(LootItemBlockStatePropertyCondition
+                                                .hasBlockStateProperties(TBABlocks.CUCUMBER_BUSH.get())
+                                                .setProperties(StatePropertiesPredicate.Builder.properties()
+                                                        .hasProperty(CloveBushBlock.AGE, CloveBushBlock.MAX_AGE)))
+                                        .add(LootItem.lootTableItem(TBAItems.CUCUMBER.get()))
+                                        .apply(SetItemCountFunction.setCount(UniformGenerator.between(2.0F, 3.0F)))
+                                        .apply(ApplyBonusCount.addUniformBonusCount(Enchantments.BLOCK_FORTUNE)))
+                                .withPool(LootPool.lootPool().when(LootItemBlockStatePropertyCondition.hasBlockStateProperties(TBABlocks.CUCUMBER_BUSH.get())
+                                                .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(CloveBushBlock.AGE, 2)))
+                                        .add(LootItem.lootTableItem(TBAItems.CUCUMBER.get()))
+                                        .apply(SetItemCountFunction.setCount(UniformGenerator.between(1.0F, 2.0F)))
+                                        .apply(ApplyBonusCount.addUniformBonusCount(Enchantments.BLOCK_FORTUNE)))));
+
+        this.add(TBABlocks.DILL_BUSH.get(), (block) ->
+                applyExplosionDecay(block,
+                        LootTable.lootTable().withPool(LootPool.lootPool()
+                                        .when(LootItemBlockStatePropertyCondition
+                                                .hasBlockStateProperties(TBABlocks.DILL_BUSH.get())
+                                                .setProperties(StatePropertiesPredicate.Builder.properties()
+                                                        .hasProperty(CloveBushBlock.AGE, CloveBushBlock.MAX_AGE)))
+                                        .add(LootItem.lootTableItem(TBAItems.DILL_HERB.get()))
+                                        .apply(SetItemCountFunction.setCount(UniformGenerator.between(2.0F, 3.0F)))
+                                        .apply(ApplyBonusCount.addUniformBonusCount(Enchantments.BLOCK_FORTUNE)))
+                                .withPool(LootPool.lootPool().when(LootItemBlockStatePropertyCondition.hasBlockStateProperties(TBABlocks.DILL_BUSH.get())
+                                                .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(CloveBushBlock.AGE, 2)))
+                                        .add(LootItem.lootTableItem(TBAItems.DILL_SEEDS.get()))
                                         .apply(SetItemCountFunction.setCount(UniformGenerator.between(1.0F, 2.0F)))
                                         .apply(ApplyBonusCount.addUniformBonusCount(Enchantments.BLOCK_FORTUNE)))));
 
@@ -59,6 +93,17 @@ public class TBABlockLootTablesGen extends BlockLoot {
                         .otherwise(applyExplosionDecay(block,
                                 LootItem.lootTableItem(Items.QUARTZ)
                                         .apply(SetItemCountFunction.setCount(ConstantValue.exactly(2.0F)))))));
+
+        LootItemCondition.Builder dillCropBuilder =
+                LootItemBlockStatePropertyCondition
+                        .hasBlockStateProperties(TBABlocks.DILL_BUSH.get())
+                        .setProperties(StatePropertiesPredicate.Builder.properties()
+                                .hasProperty(CropBlock.AGE, 7));
+        this.add(TBABlocks.DILL_BUSH.get(),
+                createCropDrops(TBABlocks.DILL_BUSH.get(),
+                        TBAItems.DILL_HERB.get(),
+                        TBAItems.DILL_SEEDS.get(),
+                        dillCropBuilder));
 
         this.dropSelf(TBABlocks.PLATE_WHITE.get());
         this.dropSelf(TBABlocks.PLATE_ORANGE.get());

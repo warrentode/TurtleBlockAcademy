@@ -1,5 +1,8 @@
 {
   "values": [
+    "#forge:crops/dill",
+    "#forge:crops/cucumbers",
+    "#forge:crops/cloves",
     "#forge:crops/cocoa",
     "#forge:crops/coffee",
     "#forge:crops/tea",
