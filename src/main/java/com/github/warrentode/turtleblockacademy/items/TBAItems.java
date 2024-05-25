@@ -103,16 +103,6 @@ public class TBAItems {
                             .tab(TAB), false, false));
 
 
-    public static @NotNull Item.Properties basicItem() {
-        return (new Item.Properties()).tab(TAB);
-    }
-
-    public static @NotNull Item.Properties foodItem(FoodProperties food) {
-        return (new Item.Properties()).food(food).tab(TAB)
-                .tab(FarmersDelight.CREATIVE_TAB)
-                .tab(CreativeModeTab.TAB_FOOD);
-    }
-
     public static @NotNull Item.Properties bowlFoodItem(FoodProperties food) {
         return (new Item.Properties()).food(food).stacksTo(16)
                 .craftRemainder(Items.BOWL)

@@ -1,10 +1,10 @@
 {
   "parent": "turtleblockacademy:block/bookcase",
   "textures": {
-    "1": "unusualend:block/chorus_nest_planks",
-    "2": "unusualend:block/chorus_nest_mosaic",
-    "3": "unusualend:block/stripped_chorus_nest_planks",
+    "1": "unusualend:blocks/chorus_nest_planks",
+    "2": "unusualend:blocks/chorus_nest_mosaic",
+    "3": "unusualend:blocks/stripped_chorus_nest_planks",
     "4": "turtleblockacademy:block/books",
-    "particle": "unusualend:block/chorus_nest_planks"
+    "particle": "unusualend:blocks/chorus_nest_planks"
   }
 }

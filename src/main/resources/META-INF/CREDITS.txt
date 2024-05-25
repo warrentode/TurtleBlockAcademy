@@ -33,3 +33,5 @@ the beet risotto image is a modified image of the fried rice image from Farmer's
 
 the student card started out with this image from pixabay: https://pixabay.com/vectors/id-laminated-passport-document-1605162/
     but was then heavily modified with cropped screenshots and the homeschooling logo
+
+the images for the plates are all created by me using the vanilla glazed terracotta textures

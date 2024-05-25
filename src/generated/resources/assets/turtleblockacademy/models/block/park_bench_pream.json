@@ -1,8 +1,8 @@
 {
   "parent": "turtleblockacademy:block/park_bench",
   "textures": {
-    "1": "phantasm:block/pream_planks",
-    "2": "phantasm:block/stripped_pream_log_side",
-    "particle": "phantasm:block/pream_planks"
+    "1": "phantasm:blocks/pream_planks",
+    "2": "phantasm:blocks/stripped_pream_log_side",
+    "particle": "phantasm:blocks/pream_planks"
   }
 }

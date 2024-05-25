@@ -1,7 +1,7 @@
 {
   "parent": "turtleblockacademy:block/table_center",
   "textures": {
-    "1": "tconstruct:block/enderbark/planks",
-    "particle": "tconstruct:block/enderbark/planks"
+    "1": "tconstruct:block/wood/enderbark/planks",
+    "particle": "tconstruct:block/wood/enderbark/planks"
   }
 }

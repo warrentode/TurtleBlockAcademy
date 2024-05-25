@@ -1,10 +1,10 @@
 {
   "parent": "turtleblockacademy:block/bookcase",
   "textures": {
-    "1": "tconstruct:block/skyroot/planks",
-    "2": "tconstruct:block/skyroot/log",
-    "3": "tconstruct:block/skyroot/stripped_log",
+    "1": "tconstruct:block/wood/skyroot/planks",
+    "2": "tconstruct:block/wood/skyroot/log",
+    "3": "tconstruct:block/wood/skyroot/stripped_log",
     "4": "turtleblockacademy:block/books",
-    "particle": "tconstruct:block/skyroot/planks"
+    "particle": "tconstruct:block/wood/skyroot/planks"
   }
 }

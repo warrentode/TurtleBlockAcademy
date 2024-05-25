@@ -1,9 +1,9 @@
 {
   "parent": "turtleblockacademy:block/locker",
   "textures": {
-    "1": "aether:block/skyroot_planks",
-    "2": "aether:block/stripped_skyroot_log",
-    "3": "aether:block/golden_oak_log",
-    "particle": "aether:block/skyroot_planks"
+    "1": "aether:block/construction/skyroot_planks",
+    "2": "aether:block/natural/stripped_skyroot_log",
+    "3": "aether:block/natural/golden_oak_log",
+    "particle": "aether:block/construction/skyroot_planks"
   }
 }

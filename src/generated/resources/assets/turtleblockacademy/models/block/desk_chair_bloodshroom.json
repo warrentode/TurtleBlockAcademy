@@ -1,9 +1,9 @@
 {
   "parent": "turtleblockacademy:block/desk_chair",
   "textures": {
-    "1": "tconstruct:block/bloodshroom/planks",
-    "2": "tconstruct:block/bloodshroom/stripped_log",
-    "3": "tconstruct:block/bloodshroom/log",
-    "particle": "tconstruct:block/bloodshroom/planks"
+    "1": "tconstruct:block/wood/bloodshroom/planks",
+    "2": "tconstruct:block/wood/bloodshroom/stripped_log",
+    "3": "tconstruct:block/wood/bloodshroom/log",
+    "particle": "tconstruct:block/wood/bloodshroom/planks"
   }
 }

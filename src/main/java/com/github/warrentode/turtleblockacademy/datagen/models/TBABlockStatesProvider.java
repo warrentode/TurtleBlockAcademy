@@ -4,6 +4,7 @@ import com.github.warrentode.turtleblockacademy.blocks.TBABlocks;
 import net.minecraft.core.Direction;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.server.packs.PackType;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.properties.BooleanProperty;
 import net.minecraftforge.client.model.generators.BlockStateProvider;
@@ -19,9 +20,14 @@ import static com.github.warrentode.turtleblockacademy.TurtleBlockAcademy.MODID;
 
 public class TBABlockStatesProvider extends BlockStateProvider {
     private static final int DEFAULT_ANGLE_OFFSET = 180;
+    protected static final ExistingFileHelper.ResourceType TEXTURE
+            = new ExistingFileHelper.ResourceType(PackType.CLIENT_RESOURCES,
+            ".png", "textures");
+    public final ExistingFileHelper helper;
 
     public TBABlockStatesProvider(DataGenerator generator, String ignoredModid, ExistingFileHelper helper) {
         super(generator, MODID, helper);
+        this.helper = helper;
     }
 
     private @NotNull String blockName(Block block) {
@@ -384,30 +390,35 @@ public class TBABlockStatesProvider extends BlockStateProvider {
         }
 
         if (Objects.equals(woodType, "golden_oak")) {
-            path_1 = "block/skyroot_planks";
-            path_2 = "block/stripped_skyroot_log";
-            path_3 = "block/" + woodType + "_log";
+            path_1 = "block/construction/skyroot_planks";
+            path_2 = "block/natural/stripped_skyroot_log";
+            path_3 = "block/natural/" + woodType + "_log";
+        }
+        else if (Objects.equals(modid, "aether") && Objects.equals(woodType, "skyroot")) {
+            path_1 = "block/construction/skyroot_planks";
+            path_2 = "block/natural/stripped_skyroot_log";
+            path_3 = "block/natural/" + woodType + "_log";
         }
         else if (Objects.equals(woodType, "pream")) {
-            path_1 = "block/" + woodType + "_planks";
-            path_2 = "block/stripped_" + woodType + "_log_side";
-            path_3 = "block/" + woodType + "_log_side";
+            path_1 = "blocks/" + woodType + "_planks";
+            path_2 = "blocks/stripped_" + woodType + "_log_side";
+            path_3 = "blocks/" + woodType + "_log_side";
         }
         else if (Objects.equals(woodType, "ebony")) {
-            path_1 = "block/" + woodType + "_planks";
-            path_2 = "block/" + woodType + "_stems_side_stripped";
-            path_3 = "block/" + woodType + "_stems_side";
+            path_1 = "blocks/" + woodType + "_planks";
+            path_2 = "blocks/" + woodType + "_stems_side_stripped";
+            path_3 = "blocks/" + woodType + "_stems_side";
         }
         else if (Objects.equals(woodType, "chorus_nest")) {
-            path_1 = "block/" + woodType + "_planks";
-            path_2 = "block/stripped_" + woodType + "_planks";
-            path_3 = "block/" + woodType + "_mosaic";
+            path_1 = "blocks/" + woodType + "_planks";
+            path_2 = "blocks/stripped_" + woodType + "_planks";
+            path_3 = "blocks/" + woodType + "_mosaic";
         }
         else if (Objects.equals(modid, "tconstruct") && (Objects.equals(woodType, "bloodshroom") || Objects.equals(woodType, "enderbark")
                 || Objects.equals(woodType, "greenheart") || Objects.equals(woodType, "skyroot"))) {
-            path_1 = "block/" + woodType + "/planks";
-            path_2 = "block/" + woodType + "/stripped_log";
-            path_3 = "block/" + woodType + "/log";
+            path_1 = "block/wood/" + woodType + "/planks";
+            path_2 = "block/wood/" + woodType + "/stripped_log";
+            path_3 = "block/wood/" + woodType + "/log";
         }
         else {
             path_1 = "block/" + woodType + "_planks";
@@ -444,13 +455,21 @@ public class TBABlockStatesProvider extends BlockStateProvider {
 
         ModelFile parentModel = new ModelFile.UncheckedModelFile(parent);
 
+        ResourceLocation existingTexture1 = new ResourceLocation(modid, path_1);
+        ResourceLocation existingTexture2 = new ResourceLocation(modid, path_2);
+        ResourceLocation existingTexture3 = new ResourceLocation(modid, path_3);
+
+        this.helper.trackGenerated(existingTexture1, TEXTURE);
+        this.helper.trackGenerated(existingTexture2, TEXTURE);
+        this.helper.trackGenerated(existingTexture3, TEXTURE);
+
         final var model = models()
                 .getBuilder(blockName(result)).parent(parentModel)
-                .texture("1", new ResourceLocation(modid, path_1))
-                .texture("2", new ResourceLocation(modid, path_2))
-                .texture("3", new ResourceLocation(modid, path_3))
+                .texture("1", existingTexture1)
+                .texture("2", existingTexture2)
+                .texture("3", existingTexture3)
                 .texture("4", new ResourceLocation(MODID, "block/books"))
-                .texture("particle", new ResourceLocation(modid, path_1));
+                .texture("particle", existingTexture1);
 
         horizontalBlock(result, model);
         simpleBlockItem(result, model);
@@ -460,12 +479,20 @@ public class TBABlockStatesProvider extends BlockStateProvider {
 
         ModelFile parentModel = new ModelFile.UncheckedModelFile(parent);
 
+        ResourceLocation existingTexture1 = new ResourceLocation(modid, path_1);
+        ResourceLocation existingTexture2 = new ResourceLocation(modid, path_2);
+        ResourceLocation existingTexture3 = new ResourceLocation(modid, path_3);
+
+        this.helper.trackGenerated(existingTexture1, TEXTURE);
+        this.helper.trackGenerated(existingTexture2, TEXTURE);
+        this.helper.trackGenerated(existingTexture3, TEXTURE);
+
         final var model = models()
                 .getBuilder(blockName(result)).parent(parentModel)
-                .texture("1", new ResourceLocation(modid, path_1))
-                .texture("2", new ResourceLocation(modid, path_2))
-                .texture("3", new ResourceLocation(modid, path_3))
-                .texture("particle", new ResourceLocation(modid, path_1));
+                .texture("1", existingTexture1)
+                .texture("2", existingTexture2)
+                .texture("3", existingTexture3)
+                .texture("particle", existingTexture1);
 
         horizontalBlock(result, model);
         simpleBlockItem(result, model);
@@ -474,11 +501,17 @@ public class TBABlockStatesProvider extends BlockStateProvider {
     protected void twoTextureHorizontalVariant(Block result, String parent, String modid, String path_1, String path_2) {
         ModelFile parentModel = new ModelFile.UncheckedModelFile(parent);
 
+        ResourceLocation existingTexture1 = new ResourceLocation(modid, path_1);
+        ResourceLocation existingTexture2 = new ResourceLocation(modid, path_2);
+
+        this.helper.trackGenerated(existingTexture1, TEXTURE);
+        this.helper.trackGenerated(existingTexture2, TEXTURE);
+
         final var model = models()
                 .getBuilder(blockName(result)).parent(parentModel)
-                .texture("1", new ResourceLocation(modid, path_1))
-                .texture("2", new ResourceLocation(modid, path_2))
-                .texture("particle", new ResourceLocation(modid, path_1));
+                .texture("1", existingTexture1)
+                .texture("2", existingTexture2)
+                .texture("particle", existingTexture1);
 
         horizontalBlock(result, model);
         simpleBlockItem(result, model);
@@ -491,17 +524,25 @@ public class TBABlockStatesProvider extends BlockStateProvider {
         ModelFile parentModel1 = new ModelFile.UncheckedModelFile(parent1);
         ModelFile parentModel2 = new ModelFile.UncheckedModelFile(parent2);
 
+        ResourceLocation existingTexture1 = new ResourceLocation(modid, path_1);
+        ResourceLocation existingTexture2 = new ResourceLocation(modid, path_2);
+        ResourceLocation existingTexture3 = new ResourceLocation(modid, path_3);
+
+        this.helper.trackGenerated(existingTexture1, TEXTURE);
+        this.helper.trackGenerated(existingTexture2, TEXTURE);
+        this.helper.trackGenerated(existingTexture3, TEXTURE);
+
         final var table = models()
                 .getBuilder(blockName(result)).parent(parentModel1)
-                .texture("1", new ResourceLocation(modid, path_1))
-                .texture("2", new ResourceLocation(modid, path_2))
-                .texture("3", new ResourceLocation(modid, path_3))
-                .texture("particle", new ResourceLocation(modid, path_1));
+                .texture("1", existingTexture1)
+                .texture("2", existingTexture2)
+                .texture("3", existingTexture3)
+                .texture("particle", existingTexture1);
 
         final var tableCenter = models()
                 .getBuilder(blockName(result) + "_center").parent(parentModel2)
-                .texture("1", new ResourceLocation(modid, path_1))
-                .texture("particle", new ResourceLocation(modid, path_1));
+                .texture("1", existingTexture1)
+                .texture("particle", existingTexture1);
 
         getVariantBuilder(result)
                 // Set the rotation and default model for all states

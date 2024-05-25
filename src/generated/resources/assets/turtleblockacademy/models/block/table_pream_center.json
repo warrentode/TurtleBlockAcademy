@@ -1,7 +1,7 @@
 {
   "parent": "turtleblockacademy:block/table_center",
   "textures": {
-    "1": "phantasm:block/pream_planks",
-    "particle": "phantasm:block/pream_planks"
+    "1": "phantasm:blocks/pream_planks",
+    "particle": "phantasm:blocks/pream_planks"
   }
 }
