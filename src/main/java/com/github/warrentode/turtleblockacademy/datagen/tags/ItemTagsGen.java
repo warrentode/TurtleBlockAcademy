@@ -57,6 +57,23 @@ public class ItemTagsGen extends ItemTagsProvider {
     }
 
     private void registerPackTags() {
+        tag(TBATags.Items.EASTER_EGGS)
+                .add(TBAItems.COLORED_EGG_BLANK_WHITE.get())
+                .add(TBAItems.COLORED_EGG_BLANK_ORANGE.get())
+                .add(TBAItems.COLORED_EGG_BLANK_RED.get())
+                .add(TBAItems.COLORED_EGG_BLANK_MAGENTA.get())
+                .add(TBAItems.COLORED_EGG_BLANK_LIGHT_BLUE.get())
+                .add(TBAItems.COLORED_EGG_BLANK_YELLOW.get())
+                .add(TBAItems.COLORED_EGG_BLANK_LIME.get())
+                .add(TBAItems.COLORED_EGG_BLANK_PINK.get())
+                .add(TBAItems.COLORED_EGG_BLANK_GRAY.get())
+                .add(TBAItems.COLORED_EGG_BLANK_LIGHT_GRAY.get())
+                .add(TBAItems.COLORED_EGG_BLANK_CYAN.get())
+                .add(TBAItems.COLORED_EGG_BLANK_PURPLE.get())
+                .add(TBAItems.COLORED_EGG_BLANK_BLUE.get())
+                .add(TBAItems.COLORED_EGG_BLANK_BROWN.get())
+                .add(TBAItems.COLORED_EGG_BLANK_GREEN.get())
+                .add(TBAItems.COLORED_EGG_BLANK_BLACK.get());
         tag(TBATags.Items.CHALK)
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("chalk:yellow_chalk")))
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("chalk:pink_chalk")))

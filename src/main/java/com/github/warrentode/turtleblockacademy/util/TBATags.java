@@ -47,6 +47,7 @@ public class TBATags {
     }
 
     public static class Items {
+        public static final TagKey<Item> EASTER_EGGS = packItemTag(MODID, "easter_eggs");
         public static final TagKey<Item> CHALK = packItemTag("forge", "chalks");
         public static final TagKey<Item> SUPPLEMENTARIES_KEY = packItemTag("supplementaries", "key");
 

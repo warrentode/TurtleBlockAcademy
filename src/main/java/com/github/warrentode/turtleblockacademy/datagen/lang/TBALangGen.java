@@ -83,6 +83,15 @@ public class TBALangGen extends LanguageProvider {
     private void addTooltips() {
         fillTooltipKeys("student_card_blank", "Blank Student Card - Use to Register as Student");
         fillTooltipKeys("certificate_blank", "Blank Certificate");
+        add("tooltip.turtleblockacademy.pickled_item_custom.beet_pickles",
+                "Did you know that vinegar helps fabrics hold on to natural pigments longer?\nBe careful not to spill your pickled beets onto your clothes!");
+        add("tooltip.turtleblockacademy.pickled_item_custom.dill_pickle",
+                "Did you know that the United States has a national pickle day on November 14th?");
+        add("tooltip.turtleblockacademy.pickled_item_effect",
+                "Unpasteurized fermented foods are probiotic and when stored well,\nthey promote good gut bacterial health.\nTo reflect this, these pickles will remove one negative effect when consumed.");
+        add("tooltip.turtleblockacademy.easter_egg_item_custom.red_colored_egg",
+                "In China, children celebrate the spring equinox by trying to balance their decorated eggs on their ends.\nSuccess is believed to bring good luck for the year.");
+
     }
 
     private void fillTooltipKeys(String key, String name) {
@@ -111,6 +120,21 @@ public class TBALangGen extends LanguageProvider {
         add(TBAItems.CUCUMBER.get(), "Cucumber");
         add(TBAItems.CUCUMBER_SEEDS.get(), "Cucumber Seeds");
         add(TBAItems.DILL_PICKLE.get(), "Dill Pickle");
+        add(TBAItems.COLORED_EGG_BLANK_WHITE.get(), "White Colored Egg");
+        add(TBAItems.COLORED_EGG_BLANK_ORANGE.get(), "Orange Colored Egg");
+        add(TBAItems.COLORED_EGG_BLANK_MAGENTA.get(), "Magenta Colored Egg");
+        add(TBAItems.COLORED_EGG_BLANK_LIGHT_BLUE.get(), "Light Blue Colored Egg");
+        add(TBAItems.COLORED_EGG_BLANK_YELLOW.get(), "Yellow Colored Egg");
+        add(TBAItems.COLORED_EGG_BLANK_LIME.get(), "Lime Colored Egg");
+        add(TBAItems.COLORED_EGG_BLANK_PINK.get(), "Pink Colored Egg");
+        add(TBAItems.COLORED_EGG_BLANK_GRAY.get(), "Gray Colored Egg");
+        add(TBAItems.COLORED_EGG_BLANK_LIGHT_GRAY.get(), "Light Gray Colored Egg");
+        add(TBAItems.COLORED_EGG_BLANK_CYAN.get(), "Cyan Colored Egg");
+        add(TBAItems.COLORED_EGG_BLANK_PURPLE.get(), "Purple Colored Egg");
+        add(TBAItems.COLORED_EGG_BLANK_BLUE.get(), "Blue Colored Egg");
+        add(TBAItems.COLORED_EGG_BLANK_BROWN.get(), "Brown Colored Egg");
+        add(TBAItems.COLORED_EGG_BLANK_GREEN.get(), "Green Colored Egg");
+        add(TBAItems.COLORED_EGG_BLANK_BLACK.get(), "Black Colored Egg");
     }
 
     private void addBlocks() {

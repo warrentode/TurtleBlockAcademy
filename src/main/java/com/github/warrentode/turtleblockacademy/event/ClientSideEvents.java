@@ -24,6 +24,7 @@ public class ClientSideEvents {
             event.registerBlockEntityRenderer(TBABlockEntities.PLATE_BLOCK_ENTITY.get(),
                     PlateEntityRenderer::new);
         }
+
         @SubscribeEvent
         public static void onRegisterLayersEvent(EntityRenderersEvent.@NotNull RegisterLayerDefinitions event) {
             event.registerLayerDefinition(TBAModelLayers.TREASURE_BEETLE_LAYER,
@@ -31,5 +32,29 @@ public class ClientSideEvents {
             event.registerLayerDefinition(TBAModelLayers.HEROBRINE_LAYER,
                     HerobrineModel::createBodyLayer);
         }
+
+       /* @SubscribeEvent
+        public void registerItemColors(@NotNull RegisterColorHandlersEvent.Item event){
+            event.register((stack, tintIndex) ->
+                            stack.getItem() instanceof EasterEggItem blankEggItem
+                                    ? (blankEggItem).getColor(stack, tintIndex)
+                                    : 0xFFFFFF,
+                    TBAItems.COLORED_EGG_BLANK_BLACK.get(),
+                    TBAItems.COLORED_EGG_BLANK_ORANGE.get(),
+                    TBAItems.COLORED_EGG_BLANK_RED.get(),
+                    TBAItems.COLORED_EGG_BLANK_MAGENTA.get(),
+                    TBAItems.COLORED_EGG_BLANK_LIGHT_BLUE.get(),
+                    TBAItems.COLORED_EGG_BLANK_YELLOW.get(),
+                    TBAItems.COLORED_EGG_BLANK_LIME.get(),
+                    TBAItems.COLORED_EGG_BLANK_PINK.get(),
+                    TBAItems.COLORED_EGG_BLANK_LIGHT_GRAY.get(),
+                    TBAItems.COLORED_EGG_BLANK_CYAN.get(),
+                    TBAItems.COLORED_EGG_BLANK_PURPLE.get(),
+                    TBAItems.COLORED_EGG_BLANK_BLUE.get(),
+                    TBAItems.COLORED_EGG_BLANK_BROWN.get(),
+                    TBAItems.COLORED_EGG_BLANK_GREEN.get());
+        }
+
+        */
     }
 }

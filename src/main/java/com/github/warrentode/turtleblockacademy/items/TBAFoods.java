@@ -40,4 +40,9 @@ public class TBAFoods {
             .nutrition(5).saturationMod(0.5F).alwaysEat()
             .effect(() -> new MobEffectInstance(MobEffects.ABSORPTION,
                     1200, 0), 1.0F).build();
+
+    public static final FoodProperties EASTER_EGGS = (new FoodProperties.Builder())
+            .nutrition(1).saturationMod(0.1F).alwaysEat()
+            .effect(() -> new MobEffectInstance(ModEffects.COMFORT.get(),
+                    100, 0), 1.0F).build();
 }

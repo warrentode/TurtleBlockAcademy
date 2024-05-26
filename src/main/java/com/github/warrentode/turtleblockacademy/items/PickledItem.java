@@ -17,7 +17,6 @@ import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.entity.living.MobEffectEvent;
 import org.jetbrains.annotations.NotNull;
-import vectorwing.farmersdelight.common.Configuration;
 import vectorwing.farmersdelight.common.item.ConsumableItem;
 import vectorwing.farmersdelight.common.utility.TextUtils;
 
@@ -73,16 +72,16 @@ public class PickledItem extends ConsumableItem {
     @Override
     public void appendHoverText(@NotNull ItemStack stack, @Nullable Level level, @NotNull List<Component> tooltip, @NotNull TooltipFlag isAdvanced) {
         if (this.hasCustomTooltip && Screen.hasShiftDown()) {
-            MutableComponent textEmpty = Component.translatable("tooltip.turtleblockacademy.pickled_item_custom" + this);
+            MutableComponent textEmpty = Component
+                    .translatable("tooltip.turtleblockacademy.pickled_item_custom." + this);
             tooltip.add(textEmpty.withStyle(ChatFormatting.BLUE));
         }
 
-        if (Configuration.FOOD_EFFECT_TOOLTIP.get()) {
-
-            if (this.hasFoodEffectTooltip) {
-                TextUtils.addFoodEffectTooltip(stack, tooltip, 1.0F);
-            }
+        if (this.hasFoodEffectTooltip) {
+            MutableComponent textEmpty = Component
+                    .translatable("tooltip.turtleblockacademy.pickled_item_effect");
+            tooltip.add(textEmpty.withStyle(ChatFormatting.BLUE));
+            TextUtils.addFoodEffectTooltip(stack, tooltip, 1.0F);
         }
-
     }
 }
