@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "baskets",
+  "key": {
+    "#": {
+      "tag": "forge:rods/wooden"
+    },
+    "C": {
+      "item": "minecraft:gray_carpet"
+    },
+    "S": {
+      "item": "minecraft:spruce_slab"
+    }
+  },
+  "pattern": [
+    "###",
+    "SCS",
+    "SSS"
+  ],
+  "result": {
+    "item": "turtleblockacademy:basket_spruce_gray"
+  }
+}

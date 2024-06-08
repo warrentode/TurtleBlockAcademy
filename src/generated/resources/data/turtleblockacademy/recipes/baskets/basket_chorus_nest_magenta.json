@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "baskets",
+  "key": {
+    "#": {
+      "tag": "forge:rods/wooden"
+    },
+    "C": {
+      "item": "minecraft:magenta_carpet"
+    },
+    "S": {
+      "item": "unusualend:chorus_nest_slab"
+    }
+  },
+  "pattern": [
+    "###",
+    "SCS",
+    "SSS"
+  ],
+  "result": {
+    "item": "turtleblockacademy:basket_chorus_nest_magenta"
+  }
+}

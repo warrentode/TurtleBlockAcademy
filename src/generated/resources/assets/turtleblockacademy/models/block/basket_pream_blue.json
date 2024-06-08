@@ -1,0 +1,8 @@
+{
+  "parent": "turtleblockacademy:block/basket",
+  "textures": {
+    "0": "phantasm:blocks/pream_planks",
+    "1": "minecraft:block/blue_wool",
+    "particle": "phantasm:blocks/pream_planks"
+  }
+}

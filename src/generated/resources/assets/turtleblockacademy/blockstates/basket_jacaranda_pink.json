@@ -1,0 +1,34 @@
+{
+  "variants": {
+    "conditional=false,facing=east": {
+      "model": "turtleblockacademy:block/basket_jacaranda_pink",
+      "y": 90
+    },
+    "conditional=false,facing=north": {
+      "model": "turtleblockacademy:block/basket_jacaranda_pink"
+    },
+    "conditional=false,facing=south": {
+      "model": "turtleblockacademy:block/basket_jacaranda_pink",
+      "y": 180
+    },
+    "conditional=false,facing=west": {
+      "model": "turtleblockacademy:block/basket_jacaranda_pink",
+      "y": 270
+    },
+    "conditional=true,facing=east": {
+      "model": "turtleblockacademy:block/basket_jacaranda_pink",
+      "y": 90
+    },
+    "conditional=true,facing=north": {
+      "model": "turtleblockacademy:block/basket_jacaranda_pink"
+    },
+    "conditional=true,facing=south": {
+      "model": "turtleblockacademy:block/basket_jacaranda_pink",
+      "y": 180
+    },
+    "conditional=true,facing=west": {
+      "model": "turtleblockacademy:block/basket_jacaranda_pink",
+      "y": 270
+    }
+  }
+}

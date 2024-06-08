@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "baskets",
+  "key": {
+    "#": {
+      "tag": "forge:rods/wooden"
+    },
+    "C": {
+      "item": "minecraft:orange_carpet"
+    },
+    "S": {
+      "item": "biomesoplenty:cherry_slab"
+    }
+  },
+  "pattern": [
+    "###",
+    "SCS",
+    "SSS"
+  ],
+  "result": {
+    "item": "turtleblockacademy:basket_cherry_orange"
+  }
+}

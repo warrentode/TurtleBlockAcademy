@@ -1,0 +1,8 @@
+{
+  "parent": "turtleblockacademy:block/basket",
+  "textures": {
+    "0": "biomesoplenty:block/magic_planks",
+    "1": "minecraft:block/cyan_wool",
+    "particle": "biomesoplenty:block/magic_planks"
+  }
+}
