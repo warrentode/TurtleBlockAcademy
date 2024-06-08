@@ -3,10 +3,10 @@
   "group": "desks",
   "key": {
     "#": {
-      "tag": "tconstruct:bloodshroom_slab"
+      "item": "tconstruct:bloodshroom_planks_slab"
     },
     "P": {
-      "tag": "tconstruct:bloodshroom_planks"
+      "item": "tconstruct:bloodshroom_planks"
     }
   },
   "pattern": [

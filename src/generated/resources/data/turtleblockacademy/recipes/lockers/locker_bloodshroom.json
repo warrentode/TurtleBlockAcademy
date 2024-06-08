@@ -3,13 +3,13 @@
   "group": "lockers",
   "key": {
     "#": {
-      "tag": "tconstruct:bloodshroom_slab"
+      "item": "tconstruct:bloodshroom_planks_slab"
     },
     "C": {
       "item": "minecraft:chest"
     },
     "L": {
-      "tag": "tconstruct:bloodshroom_log"
+      "item": "tconstruct:bloodshroom_log"
     }
   },
   "pattern": [

@@ -19,7 +19,7 @@ import static com.github.warrentode.turtleblockacademy.TurtleBlockAcademy.MODID;
 
 @JeiPlugin
 public class JEIModPlugin implements IModPlugin {
-    public static RecipeType<FermentingPotRecipe> FERMENTING_TYPE =
+    public static final RecipeType<FermentingPotRecipe> FERMENTING_TYPE =
             new RecipeType<>(FermentingCategory.UID, FermentingPotRecipe.class);
 
     public JEIModPlugin() {}

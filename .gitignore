@@ -27,3 +27,8 @@ run
 forge*changelog.txt
 /run-data/
 /src/generated/resources/.cache/
+/zine_zone/
+/zine_zone/TODO.txt
+module-info
+/CHANGELOG.txt
+/update_template.json

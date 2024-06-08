@@ -219,6 +219,7 @@ public class TBAMiningTeleporter implements ITeleporter {
     }
 
     @Override
+    @SuppressWarnings("RedundantMethodOverride")
     public boolean playTeleportSound(ServerPlayer player, ServerLevel origin, ServerLevel destination) {
         return true;
     }

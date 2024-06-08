@@ -5,7 +5,9 @@
       "conditions": {
         "items": [
           {
-            "tag": "tconstruct:skyroot_planks"
+            "items": [
+              "tconstruct:skyroot_planks"
+            ]
           }
         ]
       },

@@ -5,7 +5,9 @@
       "conditions": {
         "items": [
           {
-            "tag": "tconstruct:skyroot_log"
+            "items": [
+              "tconstruct:skyroot_log"
+            ]
           }
         ]
       },

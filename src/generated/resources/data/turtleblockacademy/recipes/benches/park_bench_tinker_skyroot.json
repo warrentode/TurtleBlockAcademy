@@ -3,10 +3,10 @@
   "group": "benches",
   "key": {
     "#": {
-      "tag": "tconstruct:skyroot_slab"
+      "item": "tconstruct:skyroot_planks_slab"
     },
     "L": {
-      "tag": "tconstruct:skyroot_log"
+      "item": "tconstruct:skyroot_log"
     }
   },
   "pattern": [

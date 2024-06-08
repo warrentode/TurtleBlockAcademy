@@ -6,10 +6,10 @@
       "item": "minecraft:chest"
     },
     "L": {
-      "tag": "tconstruct:bloodshroom_log"
+      "item": "tconstruct:bloodshroom_log"
     },
     "P": {
-      "tag": "tconstruct:bloodshroom_planks"
+      "item": "tconstruct:bloodshroom_planks"
     }
   },
   "pattern": [

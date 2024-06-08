@@ -16,33 +16,19 @@ import org.jetbrains.annotations.NotNull;
 
 public class TreasureBeetleModel<T extends Entity> extends HierarchicalModel<T> {
 	private final ModelPart root;
-	private final ModelPart body;
-	private final ModelPart shell;
-	private final ModelPart head;
-	@SuppressWarnings("unused")
-    private final ModelPart leg_1;
-	@SuppressWarnings("unused")
-	private final ModelPart leg_2;
-	@SuppressWarnings("unused")
-	private final ModelPart leg_3;
-	@SuppressWarnings("unused")
-	private final ModelPart leg_4;
-	@SuppressWarnings("unused")
-	private final ModelPart leg_5;
-	@SuppressWarnings("unused")
-	private final ModelPart leg_6;
+    private final ModelPart head;
 
-	public TreasureBeetleModel(@NotNull ModelPart part) {
+    public TreasureBeetleModel(@NotNull ModelPart part) {
 		this.root = part.getChild("root");
-		this.body = root.getChild("body");
-		this.shell = body.getChild("shell");
+        ModelPart body = root.getChild("body");
+        ModelPart shell = body.getChild("shell");
 		this.head = shell.getChild("head");
-		this.leg_1 = body.getChild("leg_1");
-		this.leg_2 = body.getChild("leg_2");
-		this.leg_3 = body.getChild("leg_3");
-		this.leg_4 = body.getChild("leg_4");
-		this.leg_5 = body.getChild("leg_5");
-		this.leg_6 = body.getChild("leg_6");
+        ModelPart leg_1 = body.getChild("leg_1");
+        ModelPart leg_2 = body.getChild("leg_2");
+        ModelPart leg_3 = body.getChild("leg_3");
+        ModelPart leg_4 = body.getChild("leg_4");
+        ModelPart leg_5 = body.getChild("leg_5");
+        ModelPart leg_6 = body.getChild("leg_6");
 	}
 
 	public static @NotNull LayerDefinition createBodyLayer() {

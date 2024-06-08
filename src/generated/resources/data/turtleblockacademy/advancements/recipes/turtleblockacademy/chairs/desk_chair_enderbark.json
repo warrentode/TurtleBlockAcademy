@@ -5,7 +5,9 @@
       "conditions": {
         "items": [
           {
-            "tag": "tconstruct:enderbark_log"
+            "items": [
+              "tconstruct:enderbark_log"
+            ]
           }
         ]
       },

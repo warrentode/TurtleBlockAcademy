@@ -3,13 +3,13 @@
   "group": "lockers",
   "key": {
     "#": {
-      "tag": "tconstruct:skyroot_slab"
+      "item": "tconstruct:skyroot_planks_slab"
     },
     "C": {
       "item": "minecraft:chest"
     },
     "L": {
-      "tag": "tconstruct:skyroot_log"
+      "item": "tconstruct:skyroot_log"
     }
   },
   "pattern": [

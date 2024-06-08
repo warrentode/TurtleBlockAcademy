@@ -20,8 +20,6 @@ import javax.annotation.Nullable;
 
 public class HerobrineSpawner implements CustomSpawner {
     private final HerobrineData herobrineData;
-    @SuppressWarnings("unused")
-    private final EntityType<Herobrine> herobrine;
     private static final int tickDelayBeforeSpawn = 1200;
     public static final int defaultSpawnDelay = 12000;
     public static final int defaultDespawnDelay = 6000;
@@ -37,7 +35,6 @@ public class HerobrineSpawner implements CustomSpawner {
 
     public HerobrineSpawner(@NotNull MinecraftServer server, String key, EntityType<Herobrine> herobrine) {
         this.herobrineData = HerobrineSavedData.get(server).getHerobrineData(key);
-        this.herobrine = herobrine;
         this.tickDelay = tickDelayBeforeSpawn;
         this.spawnDelay = herobrineData.getHerobrineSpawnDelay();
         this.spawnChance = herobrineData.getHerobrineSpawnChance();

@@ -6,10 +6,10 @@
       "item": "minecraft:chest"
     },
     "L": {
-      "tag": "tconstruct:skyroot_log"
+      "item": "tconstruct:skyroot_log"
     },
     "P": {
-      "tag": "tconstruct:skyroot_planks"
+      "item": "tconstruct:skyroot_planks"
     }
   },
   "pattern": [

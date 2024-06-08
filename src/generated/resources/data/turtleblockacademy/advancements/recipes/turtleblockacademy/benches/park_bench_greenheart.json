@@ -5,7 +5,9 @@
       "conditions": {
         "items": [
           {
-            "tag": "tconstruct:greenheart_log"
+            "items": [
+              "tconstruct:greenheart_log"
+            ]
           }
         ]
       },

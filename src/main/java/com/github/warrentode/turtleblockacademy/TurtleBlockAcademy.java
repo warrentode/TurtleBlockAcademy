@@ -12,8 +12,8 @@ import com.github.warrentode.turtleblockacademy.entity.client.HerobrineRenderer;
 import com.github.warrentode.turtleblockacademy.entity.client.SeatEntityRenderer;
 import com.github.warrentode.turtleblockacademy.entity.client.TreasureBeetleRenderer;
 import com.github.warrentode.turtleblockacademy.items.TBAItems;
-import com.github.warrentode.turtleblockacademy.loot.serializers.ModLootItemConditions;
-import com.github.warrentode.turtleblockacademy.loot.serializers.ModLootModifiers;
+import com.github.warrentode.turtleblockacademy.loot.serializers.TBALootItemConditions;
+import com.github.warrentode.turtleblockacademy.loot.serializers.TBALootModifiers;
 import com.github.warrentode.turtleblockacademy.recipe.TBARecipes;
 import com.github.warrentode.turtleblockacademy.recipe.fermenting.FermentingRecipeCategories;
 import com.github.warrentode.turtleblockacademy.util.TBASounds;
@@ -26,8 +26,6 @@ import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.entity.SpawnPlacements;
 import net.minecraft.world.entity.monster.Monster;
-import net.minecraft.world.item.CreativeModeTab;
-import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.levelgen.Heightmap;
 import net.minecraftforge.api.distmarker.Dist;
@@ -69,8 +67,8 @@ public class TurtleBlockAcademy {
 
         TBAItems.register(modEventBus);
 
-        ModLootModifiers.register(modEventBus);
-        ModLootItemConditions.register(modEventBus);
+        TBALootModifiers.register(modEventBus);
+        TBALootItemConditions.register(modEventBus);
 
         TBADimensions.register();
         TBABiomes.TBA_BIOMES.register(modEventBus);
@@ -85,13 +83,6 @@ public class TurtleBlockAcademy {
             SoundEvents.ITEM_FRAME_PLACE, SoundEvents.ITEM_FRAME_BREAK,
             SoundEvents.ITEM_FRAME_BREAK);
 
-    public static final CreativeModeTab TAB = new CreativeModeTab(MODID) {
-        @Override
-        public @NotNull ItemStack makeIcon() {
-            return TBABlocks.CERTIFICATE_BLOCK.get().asItem().getDefaultInstance();
-        }
-    };
-
     private void commonSetup(final @NotNull FMLCommonSetupEvent event) {
         event.enqueueWork(()-> {
             //noinspection deprecation
@@ -103,6 +94,7 @@ public class TurtleBlockAcademy {
     }
 
     @SubscribeEvent
+    @SuppressWarnings("EmptyMethod")
     public void onServerStarting(ServerStartingEvent event) {
         // reserved for later use
     }

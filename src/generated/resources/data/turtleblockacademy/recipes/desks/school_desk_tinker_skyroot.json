@@ -3,10 +3,10 @@
   "group": "desks",
   "key": {
     "#": {
-      "tag": "tconstruct:skyroot_slab"
+      "item": "tconstruct:skyroot_planks_slab"
     },
     "P": {
-      "tag": "tconstruct:skyroot_planks"
+      "item": "tconstruct:skyroot_planks"
     }
   },
   "pattern": [

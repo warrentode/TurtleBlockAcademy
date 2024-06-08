@@ -15,32 +15,18 @@ public class HerobrineModel<T extends Entity> extends HierarchicalModel<T> {
     private final ModelPart root;
     private final ModelPart body;
     private final ModelPart head;
-    @SuppressWarnings("unused")
-    private final ModelPart rightArm;
-    @SuppressWarnings("unused")
-    private final ModelPart rightItem;
-    @SuppressWarnings("unused")
-    private final ModelPart leftArm;
-    @SuppressWarnings("unused")
-    private final ModelPart leftItem;
-    @SuppressWarnings("unused")
-    private final ModelPart rightLeg;
-    @SuppressWarnings("unused")
-    private final ModelPart leftLeg;
-    @SuppressWarnings("unused")
-    private final ModelPart waist;
 
     public HerobrineModel(@NotNull ModelPart root) {
         this.root = root;
         this.body = root.getChild("body");
         this.head = body.getChild("head");
-        this.rightArm = body.getChild("rightArm");
-        this.rightItem = rightArm.getChild("rightItem");
-        this.leftArm = body.getChild("leftArm");
-        this.leftItem = leftArm.getChild("leftItem");
-        this.rightLeg = body.getChild("rightLeg");
-        this.leftLeg = body.getChild("leftLeg");
-        this.waist = body.getChild("waist");
+        ModelPart rightArm = body.getChild("rightArm");
+        ModelPart rightItem = rightArm.getChild("rightItem");
+        ModelPart leftArm = body.getChild("leftArm");
+        ModelPart leftItem = leftArm.getChild("leftItem");
+        ModelPart rightLeg = body.getChild("rightLeg");
+        ModelPart leftLeg = body.getChild("leftLeg");
+        ModelPart waist = body.getChild("waist");
     }
 
     public static @NotNull LayerDefinition createBodyLayer() {

@@ -28,7 +28,6 @@ import net.minecraft.data.DataGenerator;
 import net.minecraft.data.recipes.*;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.ItemTags;
-import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
@@ -40,6 +39,7 @@ import net.minecraftforge.common.crafting.ConditionalRecipe;
 import net.minecraftforge.common.crafting.conditions.IConditionBuilder;
 import org.jetbrains.annotations.NotNull;
 import slimeknights.tconstruct.fluids.TinkerFluids;
+import slimeknights.tconstruct.world.TinkerWorld;
 import umpaz.farmersrespite.common.registry.FRItems;
 import umpaz.farmersrespite.data.builder.KettleRecipeBuilder;
 import vectorwing.farmersdelight.common.registry.ModBlocks;
@@ -2117,87 +2117,599 @@ public class RecipesGen extends RecipeProvider implements IConditionBuilder {
         bookcaseRecipe(consumer, TBABlocks.BOOKCASE_CHORUS_NEST.get().asItem().getDefaultInstance(),
                 UnusualendModBlocks.CHORUS_NEST_PLANKS.get(), UnusualendModBlocks.STRIPPED_CHORUS_NEST_PLANKS.get(), UnusualendModBlocks.CHORUS_NEST_SLAB.get());
 
-        chairTagRecipe(consumer, TBABlocks.DESK_CHAIR_BLOODSHROOM.get().asItem().getDefaultInstance(),
-                TBATags.Items.BLOODSHROOM_LOG, TBATags.Items.BLOODSHROOM_STRIPPED_LOG, TBATags.Items.BLOODSHROOM_SLAB);
-        benchTagRecipe(consumer, TBABlocks.PARK_BENCH_BLOODSHROOM.get().asItem().getDefaultInstance(),
-                TBATags.Items.BLOODSHROOM_LOG, TBATags.Items.BLOODSHROOM_SLAB);
-        deskTagRecipe(consumer, TBABlocks.SCHOOL_DESK_BLOODSHROOM.get().asItem().getDefaultInstance(),
-                TBATags.Items.BLOODSHROOM_PLANKS, TBATags.Items.BLOODSHROOM_SLAB);
-        deskTagCabinetRecipe(consumer, TBABlocks.SCHOOL_DESK_CABINET_BLOODSHROOM.get().asItem().getDefaultInstance(),
-                TBATags.Items.BLOODSHROOM_LOG, TBATags.Items.BLOODSHROOM_PLANKS);
-        lockerTagRecipe(consumer, TBABlocks.LOCKER_BLOODSHROOM.get().asItem().getDefaultInstance(),
-                TBATags.Items.BLOODSHROOM_LOG, TBATags.Items.BLOODSHROOM_SLAB);
-        tableTagRecipe(consumer, TBABlocks.TABLE_BLOODSHROOM.get().asItem().getDefaultInstance(),
-                TBATags.Items.BLOODSHROOM_LOG, TBATags.Items.BLOODSHROOM_STRIPPED_LOG, TBATags.Items.BLOODSHROOM_SLAB);
-        bookcaseTagRecipe(consumer, TBABlocks.BOOKCASE_BLOODSHROOM.get().asItem().getDefaultInstance(),
-                TBATags.Items.BLOODSHROOM_LOG, TBATags.Items.BLOODSHROOM_STRIPPED_LOG, TBATags.Items.BLOODSHROOM_SLAB);
+        chairRecipe(consumer, TBABlocks.DESK_CHAIR_BLOODSHROOM.get().asItem().getDefaultInstance(),
+                TinkerWorld.bloodshroom.getLog(), TinkerWorld.bloodshroom.getStrippedLog(), TinkerWorld.bloodshroom.getSlab());
+        benchRecipe(consumer, TBABlocks.PARK_BENCH_BLOODSHROOM.get().asItem().getDefaultInstance(),
+                TinkerWorld.bloodshroom.getLog(), TinkerWorld.bloodshroom.getSlab());
+        deskRecipe(consumer, TBABlocks.SCHOOL_DESK_BLOODSHROOM.get().asItem().getDefaultInstance(),
+                TinkerWorld.bloodshroom.get(), TinkerWorld.bloodshroom.getSlab());
+        deskCabinetRecipe(consumer, TBABlocks.SCHOOL_DESK_CABINET_BLOODSHROOM.get().asItem().getDefaultInstance(),
+                TinkerWorld.bloodshroom.getLog(), TinkerWorld.bloodshroom.get());
+        lockerRecipe(consumer, TBABlocks.LOCKER_BLOODSHROOM.get().asItem().getDefaultInstance(),
+                TinkerWorld.bloodshroom.getLog(), TinkerWorld.bloodshroom.getSlab());
+        tableRecipe(consumer, TBABlocks.TABLE_BLOODSHROOM.get().asItem().getDefaultInstance(),
+                TinkerWorld.bloodshroom.getLog(), TinkerWorld.bloodshroom.getStrippedLog(), TinkerWorld.bloodshroom.getSlab());
+        bookcaseRecipe(consumer, TBABlocks.BOOKCASE_BLOODSHROOM.get().asItem().getDefaultInstance(),
+                TinkerWorld.bloodshroom.getLog(), TinkerWorld.bloodshroom.getStrippedLog(), TinkerWorld.bloodshroom.getSlab());
 
-        chairTagRecipe(consumer, TBABlocks.DESK_CHAIR_ENDERBARK.get().asItem().getDefaultInstance(),
-                TBATags.Items.ENDERBARK_LOG, TBATags.Items.ENDERBARK_STRIPPED_LOG, TBATags.Items.ENDERBARK_SLAB);
-        benchTagRecipe(consumer, TBABlocks.PARK_BENCH_ENDERBARK.get().asItem().getDefaultInstance(),
-                TBATags.Items.ENDERBARK_LOG, TBATags.Items.ENDERBARK_SLAB);
-        deskTagRecipe(consumer, TBABlocks.SCHOOL_DESK_ENDERBARK.get().asItem().getDefaultInstance(),
-                TBATags.Items.ENDERBARK_PLANKS, TBATags.Items.ENDERBARK_SLAB);
-        deskTagCabinetRecipe(consumer, TBABlocks.SCHOOL_DESK_CABINET_ENDERBARK.get().asItem().getDefaultInstance(),
-                TBATags.Items.ENDERBARK_LOG, TBATags.Items.ENDERBARK_PLANKS);
-        lockerTagRecipe(consumer, TBABlocks.LOCKER_ENDERBARK.get().asItem().getDefaultInstance(),
-                TBATags.Items.ENDERBARK_LOG, TBATags.Items.ENDERBARK_SLAB);
-        tableTagRecipe(consumer, TBABlocks.TABLE_ENDERBARK.get().asItem().getDefaultInstance(),
-                TBATags.Items.ENDERBARK_LOG, TBATags.Items.ENDERBARK_STRIPPED_LOG, TBATags.Items.ENDERBARK_SLAB);
-        bookcaseTagRecipe(consumer, TBABlocks.BOOKCASE_ENDERBARK.get().asItem().getDefaultInstance(),
-                TBATags.Items.ENDERBARK_LOG, TBATags.Items.ENDERBARK_STRIPPED_LOG, TBATags.Items.ENDERBARK_SLAB);
+        chairRecipe(consumer, TBABlocks.DESK_CHAIR_ENDERBARK.get().asItem().getDefaultInstance(),
+                TinkerWorld.enderbark.getLog(), TinkerWorld.enderbark.getStrippedLog(), TinkerWorld.enderbark.getSlab());
+        benchRecipe(consumer, TBABlocks.PARK_BENCH_ENDERBARK.get().asItem().getDefaultInstance(),
+                TinkerWorld.enderbark.getLog(), TinkerWorld.enderbark.getSlab());
+        deskRecipe(consumer, TBABlocks.SCHOOL_DESK_ENDERBARK.get().asItem().getDefaultInstance(),
+                TinkerWorld.enderbark.get(), TinkerWorld.enderbark.getSlab());
+        deskCabinetRecipe(consumer, TBABlocks.SCHOOL_DESK_CABINET_ENDERBARK.get().asItem().getDefaultInstance(),
+                TinkerWorld.enderbark.getLog(), TinkerWorld.enderbark.get());
+        lockerRecipe(consumer, TBABlocks.LOCKER_ENDERBARK.get().asItem().getDefaultInstance(),
+                TinkerWorld.enderbark.getLog(), TinkerWorld.enderbark.getSlab());
+        tableRecipe(consumer, TBABlocks.TABLE_ENDERBARK.get().asItem().getDefaultInstance(),
+                TinkerWorld.enderbark.getLog(), TinkerWorld.enderbark.getStrippedLog(), TinkerWorld.enderbark.getSlab());
+        bookcaseRecipe(consumer, TBABlocks.BOOKCASE_ENDERBARK.get().asItem().getDefaultInstance(),
+                TinkerWorld.enderbark.getLog(), TinkerWorld.enderbark.getStrippedLog(), TinkerWorld.enderbark.getSlab());
 
-        chairTagRecipe(consumer, TBABlocks.DESK_CHAIR_GREENHEART.get().asItem().getDefaultInstance(),
-                TBATags.Items.GREENHEART_LOG, TBATags.Items.GREENHEART_STRIPPED_LOG, TBATags.Items.GREENHEART_SLAB);
-        benchTagRecipe(consumer, TBABlocks.PARK_BENCH_GREENHEART.get().asItem().getDefaultInstance(),
-                TBATags.Items.GREENHEART_LOG, TBATags.Items.GREENHEART_SLAB);
-        deskTagRecipe(consumer, TBABlocks.SCHOOL_DESK_GREENHEART.get().asItem().getDefaultInstance(),
-                TBATags.Items.GREENHEART_PLANKS, TBATags.Items.GREENHEART_SLAB);
-        deskTagCabinetRecipe(consumer, TBABlocks.SCHOOL_DESK_CABINET_GREENHEART.get().asItem().getDefaultInstance(),
-                TBATags.Items.GREENHEART_LOG, TBATags.Items.GREENHEART_PLANKS);
-        lockerTagRecipe(consumer, TBABlocks.LOCKER_GREENHEART.get().asItem().getDefaultInstance(),
-                TBATags.Items.GREENHEART_LOG, TBATags.Items.GREENHEART_SLAB);
-        tableTagRecipe(consumer, TBABlocks.TABLE_GREENHEART.get().asItem().getDefaultInstance(),
-                TBATags.Items.GREENHEART_LOG, TBATags.Items.GREENHEART_STRIPPED_LOG, TBATags.Items.GREENHEART_SLAB);
-        bookcaseTagRecipe(consumer, TBABlocks.BOOKCASE_GREENHEART.get().asItem().getDefaultInstance(),
-                TBATags.Items.GREENHEART_LOG, TBATags.Items.GREENHEART_STRIPPED_LOG, TBATags.Items.GREENHEART_SLAB);
+        chairRecipe(consumer, TBABlocks.DESK_CHAIR_GREENHEART.get().asItem().getDefaultInstance(),
+                TinkerWorld.greenheart.getLog(), TinkerWorld.greenheart.getStrippedLog(), TinkerWorld.greenheart.getSlab());
+        benchRecipe(consumer, TBABlocks.PARK_BENCH_GREENHEART.get().asItem().getDefaultInstance(),
+                TinkerWorld.greenheart.getLog(), TinkerWorld.greenheart.getSlab());
+        deskRecipe(consumer, TBABlocks.SCHOOL_DESK_GREENHEART.get().asItem().getDefaultInstance(),
+                TinkerWorld.greenheart.get(), TinkerWorld.greenheart.getSlab());
+        deskCabinetRecipe(consumer, TBABlocks.SCHOOL_DESK_CABINET_GREENHEART.get().asItem().getDefaultInstance(),
+                TinkerWorld.greenheart.getLog(), TinkerWorld.greenheart.get());
+        lockerRecipe(consumer, TBABlocks.LOCKER_GREENHEART.get().asItem().getDefaultInstance(),
+                TinkerWorld.greenheart.getLog(), TinkerWorld.greenheart.getSlab());
+        tableRecipe(consumer, TBABlocks.TABLE_GREENHEART.get().asItem().getDefaultInstance(),
+                TinkerWorld.greenheart.getLog(), TinkerWorld.greenheart.getStrippedLog(), TinkerWorld.greenheart.getSlab());
+        bookcaseRecipe(consumer, TBABlocks.BOOKCASE_GREENHEART.get().asItem().getDefaultInstance(),
+                TinkerWorld.greenheart.getLog(), TinkerWorld.greenheart.getStrippedLog(), TinkerWorld.greenheart.getSlab());
 
-        chairTagRecipe(consumer, TBABlocks.DESK_CHAIR_TINKER_SKYROOT.get().asItem().getDefaultInstance(),
-                TBATags.Items.TINKER_SKYROOT_LOG, TBATags.Items.TINKER_SKYROOT_STRIPPED_LOG, TBATags.Items.TINKER_SKYROOT_SLAB);
-        benchTagRecipe(consumer, TBABlocks.PARK_BENCH_TINKER_SKYROOT.get().asItem().getDefaultInstance(),
-                TBATags.Items.TINKER_SKYROOT_LOG, TBATags.Items.TINKER_SKYROOT_SLAB);
-        deskTagRecipe(consumer, TBABlocks.SCHOOL_DESK_TINKER_SKYROOT.get().asItem().getDefaultInstance(),
-                TBATags.Items.TINKER_SKYROOT_PLANKS, TBATags.Items.TINKER_SKYROOT_SLAB);
-        deskTagCabinetRecipe(consumer, TBABlocks.SCHOOL_DESK_CABINET_TINKER_SKYROOT.get().asItem().getDefaultInstance(),
-                TBATags.Items.TINKER_SKYROOT_LOG, TBATags.Items.TINKER_SKYROOT_PLANKS);
-        lockerTagRecipe(consumer, TBABlocks.LOCKER_TINKER_SKYROOT.get().asItem().getDefaultInstance(),
-                TBATags.Items.TINKER_SKYROOT_LOG, TBATags.Items.TINKER_SKYROOT_SLAB);
-        tableTagRecipe(consumer, TBABlocks.TABLE_TINKER_SKYROOT.get().asItem().getDefaultInstance(),
-                TBATags.Items.TINKER_SKYROOT_LOG, TBATags.Items.TINKER_SKYROOT_STRIPPED_LOG, TBATags.Items.TINKER_SKYROOT_SLAB);
-        bookcaseTagRecipe(consumer, TBABlocks.BOOKCASE_TINKER_SKYROOT.get().asItem().getDefaultInstance(),
-                TBATags.Items.TINKER_SKYROOT_LOG, TBATags.Items.TINKER_SKYROOT_STRIPPED_LOG, TBATags.Items.TINKER_SKYROOT_SLAB);
+        chairRecipe(consumer, TBABlocks.DESK_CHAIR_TINKER_SKYROOT.get().asItem().getDefaultInstance(),
+                TinkerWorld.skyroot.getLog(), TinkerWorld.skyroot.getStrippedLog(), TinkerWorld.skyroot.getSlab());
+        benchRecipe(consumer, TBABlocks.PARK_BENCH_TINKER_SKYROOT.get().asItem().getDefaultInstance(),
+                TinkerWorld.skyroot.getLog(), TinkerWorld.skyroot.getSlab());
+        deskRecipe(consumer, TBABlocks.SCHOOL_DESK_TINKER_SKYROOT.get().asItem().getDefaultInstance(),
+                TinkerWorld.skyroot.get(), TinkerWorld.skyroot.getSlab());
+        deskCabinetRecipe(consumer, TBABlocks.SCHOOL_DESK_CABINET_TINKER_SKYROOT.get().asItem().getDefaultInstance(),
+                TinkerWorld.skyroot.getLog(), TinkerWorld.skyroot.get());
+        lockerRecipe(consumer, TBABlocks.LOCKER_TINKER_SKYROOT.get().asItem().getDefaultInstance(),
+                TinkerWorld.skyroot.getLog(), TinkerWorld.skyroot.getSlab());
+        tableRecipe(consumer, TBABlocks.TABLE_TINKER_SKYROOT.get().asItem().getDefaultInstance(),
+                TinkerWorld.skyroot.getLog(), TinkerWorld.skyroot.getStrippedLog(), TinkerWorld.skyroot.getSlab());
+        bookcaseRecipe(consumer, TBABlocks.BOOKCASE_TINKER_SKYROOT.get().asItem().getDefaultInstance(),
+                TinkerWorld.skyroot.getLog(), TinkerWorld.skyroot.getStrippedLog(), TinkerWorld.skyroot.getSlab());
+
+        basketRecipe(consumer, TBABlocks.BASKET_OAK_WHITE.get().asItem().getDefaultInstance(), Items.WHITE_CARPET, Items.OAK_SLAB);
+        basketRecipe(consumer, TBABlocks.BASKET_OAK_LIGHT_GRAY.get().asItem().getDefaultInstance(), Items.LIGHT_GRAY_CARPET, Items.OAK_SLAB);
+        basketRecipe(consumer, TBABlocks.BASKET_OAK_GRAY.get().asItem().getDefaultInstance(), Items.GRAY_CARPET, Items.OAK_SLAB);
+        basketRecipe(consumer, TBABlocks.BASKET_OAK_BLACK.get().asItem().getDefaultInstance(), Items.BLACK_CARPET, Items.OAK_SLAB);
+        basketRecipe(consumer, TBABlocks.BASKET_OAK_BROWN.get().asItem().getDefaultInstance(), Items.BROWN_CARPET, Items.OAK_SLAB);
+        basketRecipe(consumer, TBABlocks.BASKET_OAK_RED.get().asItem().getDefaultInstance(), Items.RED_CARPET, Items.OAK_SLAB);
+        basketRecipe(consumer, TBABlocks.BASKET_OAK_ORANGE.get().asItem().getDefaultInstance(), Items.ORANGE_CARPET, Items.OAK_SLAB);
+        basketRecipe(consumer, TBABlocks.BASKET_OAK_YELLOW.get().asItem().getDefaultInstance(), Items.YELLOW_CARPET, Items.OAK_SLAB);
+        basketRecipe(consumer, TBABlocks.BASKET_OAK_LIME.get().asItem().getDefaultInstance(), Items.LIME_CARPET, Items.OAK_SLAB);
+        basketRecipe(consumer, TBABlocks.BASKET_OAK_GREEN.get().asItem().getDefaultInstance(), Items.GREEN_CARPET, Items.OAK_SLAB);
+        basketRecipe(consumer, TBABlocks.BASKET_OAK_CYAN.get().asItem().getDefaultInstance(), Items.CYAN_CARPET, Items.OAK_SLAB);
+        basketRecipe(consumer, TBABlocks.BASKET_OAK_LIGHT_BLUE.get().asItem().getDefaultInstance(), Items.LIGHT_BLUE_CARPET, Items.OAK_SLAB);
+        basketRecipe(consumer, TBABlocks.BASKET_OAK_BLUE.get().asItem().getDefaultInstance(), Items.BLUE_CARPET, Items.OAK_SLAB);
+        basketRecipe(consumer, TBABlocks.BASKET_OAK_PURPLE.get().asItem().getDefaultInstance(), Items.PURPLE_CARPET, Items.OAK_SLAB);
+        basketRecipe(consumer, TBABlocks.BASKET_OAK_MAGENTA.get().asItem().getDefaultInstance(), Items.MAGENTA_CARPET, Items.OAK_SLAB);
+        basketRecipe(consumer, TBABlocks.BASKET_OAK_PINK.get().asItem().getDefaultInstance(), Items.PINK_CARPET, Items.OAK_SLAB);
+        basketRecipe(consumer, TBABlocks.BASKET_BIRCH_WHITE.get().asItem().getDefaultInstance(), Items.WHITE_CARPET, Items.BIRCH_SLAB);
+        basketRecipe(consumer, TBABlocks.BASKET_BIRCH_LIGHT_GRAY.get().asItem().getDefaultInstance(), Items.LIGHT_GRAY_CARPET, Items.BIRCH_SLAB);
+        basketRecipe(consumer, TBABlocks.BASKET_BIRCH_GRAY.get().asItem().getDefaultInstance(), Items.GRAY_CARPET, Items.BIRCH_SLAB);
+        basketRecipe(consumer, TBABlocks.BASKET_BIRCH_BLACK.get().asItem().getDefaultInstance(), Items.BLACK_CARPET, Items.BIRCH_SLAB);
+        basketRecipe(consumer, TBABlocks.BASKET_BIRCH_BROWN.get().asItem().getDefaultInstance(), Items.BROWN_CARPET, Items.BIRCH_SLAB);
+        basketRecipe(consumer, TBABlocks.BASKET_BIRCH_RED.get().asItem().getDefaultInstance(), Items.RED_CARPET, Items.BIRCH_SLAB);
+        basketRecipe(consumer, TBABlocks.BASKET_BIRCH_ORANGE.get().asItem().getDefaultInstance(), Items.ORANGE_CARPET, Items.BIRCH_SLAB);
+        basketRecipe(consumer, TBABlocks.BASKET_BIRCH_YELLOW.get().asItem().getDefaultInstance(), Items.YELLOW_CARPET, Items.BIRCH_SLAB);
+        basketRecipe(consumer, TBABlocks.BASKET_BIRCH_LIME.get().asItem().getDefaultInstance(), Items.LIME_CARPET, Items.BIRCH_SLAB);
+        basketRecipe(consumer, TBABlocks.BASKET_BIRCH_GREEN.get().asItem().getDefaultInstance(), Items.GREEN_CARPET, Items.BIRCH_SLAB);
+        basketRecipe(consumer, TBABlocks.BASKET_BIRCH_CYAN.get().asItem().getDefaultInstance(), Items.CYAN_CARPET, Items.BIRCH_SLAB);
+        basketRecipe(consumer, TBABlocks.BASKET_BIRCH_LIGHT_BLUE.get().asItem().getDefaultInstance(), Items.LIGHT_BLUE_CARPET, Items.BIRCH_SLAB);
+        basketRecipe(consumer, TBABlocks.BASKET_BIRCH_BLUE.get().asItem().getDefaultInstance(), Items.BLUE_CARPET, Items.BIRCH_SLAB);
+        basketRecipe(consumer, TBABlocks.BASKET_BIRCH_PURPLE.get().asItem().getDefaultInstance(), Items.PURPLE_CARPET, Items.BIRCH_SLAB);
+        basketRecipe(consumer, TBABlocks.BASKET_BIRCH_MAGENTA.get().asItem().getDefaultInstance(), Items.MAGENTA_CARPET, Items.BIRCH_SLAB);
+        basketRecipe(consumer, TBABlocks.BASKET_BIRCH_PINK.get().asItem().getDefaultInstance(), Items.PINK_CARPET, Items.BIRCH_SLAB);
+        basketRecipe(consumer, TBABlocks.BASKET_SPRUCE_WHITE.get().asItem().getDefaultInstance(), Items.WHITE_CARPET, Items.SPRUCE_SLAB);
+        basketRecipe(consumer, TBABlocks.BASKET_SPRUCE_LIGHT_GRAY.get().asItem().getDefaultInstance(), Items.LIGHT_GRAY_CARPET, Items.SPRUCE_SLAB);
+        basketRecipe(consumer, TBABlocks.BASKET_SPRUCE_GRAY.get().asItem().getDefaultInstance(), Items.GRAY_CARPET, Items.SPRUCE_SLAB);
+        basketRecipe(consumer, TBABlocks.BASKET_SPRUCE_BLACK.get().asItem().getDefaultInstance(), Items.BLACK_CARPET, Items.SPRUCE_SLAB);
+        basketRecipe(consumer, TBABlocks.BASKET_SPRUCE_BROWN.get().asItem().getDefaultInstance(), Items.BROWN_CARPET, Items.SPRUCE_SLAB);
+        basketRecipe(consumer, TBABlocks.BASKET_SPRUCE_RED.get().asItem().getDefaultInstance(), Items.RED_CARPET, Items.SPRUCE_SLAB);
+        basketRecipe(consumer, TBABlocks.BASKET_SPRUCE_ORANGE.get().asItem().getDefaultInstance(), Items.ORANGE_CARPET, Items.SPRUCE_SLAB);
+        basketRecipe(consumer, TBABlocks.BASKET_SPRUCE_YELLOW.get().asItem().getDefaultInstance(), Items.YELLOW_CARPET, Items.SPRUCE_SLAB);
+        basketRecipe(consumer, TBABlocks.BASKET_SPRUCE_LIME.get().asItem().getDefaultInstance(), Items.LIME_CARPET, Items.SPRUCE_SLAB);
+        basketRecipe(consumer, TBABlocks.BASKET_SPRUCE_GREEN.get().asItem().getDefaultInstance(), Items.GREEN_CARPET, Items.SPRUCE_SLAB);
+        basketRecipe(consumer, TBABlocks.BASKET_SPRUCE_CYAN.get().asItem().getDefaultInstance(), Items.CYAN_CARPET, Items.SPRUCE_SLAB);
+        basketRecipe(consumer, TBABlocks.BASKET_SPRUCE_LIGHT_BLUE.get().asItem().getDefaultInstance(), Items.LIGHT_BLUE_CARPET, Items.SPRUCE_SLAB);
+        basketRecipe(consumer, TBABlocks.BASKET_SPRUCE_BLUE.get().asItem().getDefaultInstance(), Items.BLUE_CARPET, Items.SPRUCE_SLAB);
+        basketRecipe(consumer, TBABlocks.BASKET_SPRUCE_PURPLE.get().asItem().getDefaultInstance(), Items.PURPLE_CARPET, Items.SPRUCE_SLAB);
+        basketRecipe(consumer, TBABlocks.BASKET_SPRUCE_MAGENTA.get().asItem().getDefaultInstance(), Items.MAGENTA_CARPET, Items.SPRUCE_SLAB);
+        basketRecipe(consumer, TBABlocks.BASKET_SPRUCE_PINK.get().asItem().getDefaultInstance(), Items.PINK_CARPET, Items.SPRUCE_SLAB);
+        basketRecipe(consumer, TBABlocks.BASKET_JUNGLE_WHITE.get().asItem().getDefaultInstance(), Items.WHITE_CARPET, Items.JUNGLE_SLAB);
+        basketRecipe(consumer, TBABlocks.BASKET_JUNGLE_LIGHT_GRAY.get().asItem().getDefaultInstance(), Items.LIGHT_GRAY_CARPET, Items.JUNGLE_SLAB);
+        basketRecipe(consumer, TBABlocks.BASKET_JUNGLE_GRAY.get().asItem().getDefaultInstance(), Items.GRAY_CARPET, Items.JUNGLE_SLAB);
+        basketRecipe(consumer, TBABlocks.BASKET_JUNGLE_BLACK.get().asItem().getDefaultInstance(), Items.BLACK_CARPET, Items.JUNGLE_SLAB);
+        basketRecipe(consumer, TBABlocks.BASKET_JUNGLE_BROWN.get().asItem().getDefaultInstance(), Items.BROWN_CARPET, Items.JUNGLE_SLAB);
+        basketRecipe(consumer, TBABlocks.BASKET_JUNGLE_RED.get().asItem().getDefaultInstance(), Items.RED_CARPET, Items.JUNGLE_SLAB);
+        basketRecipe(consumer, TBABlocks.BASKET_JUNGLE_ORANGE.get().asItem().getDefaultInstance(), Items.ORANGE_CARPET, Items.JUNGLE_SLAB);
+        basketRecipe(consumer, TBABlocks.BASKET_JUNGLE_YELLOW.get().asItem().getDefaultInstance(), Items.YELLOW_CARPET, Items.JUNGLE_SLAB);
+        basketRecipe(consumer, TBABlocks.BASKET_JUNGLE_LIME.get().asItem().getDefaultInstance(), Items.LIME_CARPET, Items.JUNGLE_SLAB);
+        basketRecipe(consumer, TBABlocks.BASKET_JUNGLE_GREEN.get().asItem().getDefaultInstance(), Items.GREEN_CARPET, Items.JUNGLE_SLAB);
+        basketRecipe(consumer, TBABlocks.BASKET_JUNGLE_CYAN.get().asItem().getDefaultInstance(), Items.CYAN_CARPET, Items.JUNGLE_SLAB);
+        basketRecipe(consumer, TBABlocks.BASKET_JUNGLE_LIGHT_BLUE.get().asItem().getDefaultInstance(), Items.LIGHT_BLUE_CARPET, Items.JUNGLE_SLAB);
+        basketRecipe(consumer, TBABlocks.BASKET_JUNGLE_BLUE.get().asItem().getDefaultInstance(), Items.BLUE_CARPET, Items.JUNGLE_SLAB);
+        basketRecipe(consumer, TBABlocks.BASKET_JUNGLE_PURPLE.get().asItem().getDefaultInstance(), Items.PURPLE_CARPET, Items.JUNGLE_SLAB);
+        basketRecipe(consumer, TBABlocks.BASKET_JUNGLE_MAGENTA.get().asItem().getDefaultInstance(), Items.MAGENTA_CARPET, Items.JUNGLE_SLAB);
+        basketRecipe(consumer, TBABlocks.BASKET_JUNGLE_PINK.get().asItem().getDefaultInstance(), Items.PINK_CARPET, Items.JUNGLE_SLAB);
+        basketRecipe(consumer, TBABlocks.BASKET_ACACIA_WHITE.get().asItem().getDefaultInstance(), Items.WHITE_CARPET, Items.ACACIA_SLAB);
+        basketRecipe(consumer, TBABlocks.BASKET_ACACIA_LIGHT_GRAY.get().asItem().getDefaultInstance(), Items.LIGHT_GRAY_CARPET, Items.ACACIA_SLAB);
+        basketRecipe(consumer, TBABlocks.BASKET_ACACIA_GRAY.get().asItem().getDefaultInstance(), Items.GRAY_CARPET, Items.ACACIA_SLAB);
+        basketRecipe(consumer, TBABlocks.BASKET_ACACIA_BLACK.get().asItem().getDefaultInstance(), Items.BLACK_CARPET, Items.ACACIA_SLAB);
+        basketRecipe(consumer, TBABlocks.BASKET_ACACIA_BROWN.get().asItem().getDefaultInstance(), Items.BROWN_CARPET, Items.ACACIA_SLAB);
+        basketRecipe(consumer, TBABlocks.BASKET_ACACIA_RED.get().asItem().getDefaultInstance(), Items.RED_CARPET, Items.ACACIA_SLAB);
+        basketRecipe(consumer, TBABlocks.BASKET_ACACIA_ORANGE.get().asItem().getDefaultInstance(), Items.ORANGE_CARPET, Items.ACACIA_SLAB);
+        basketRecipe(consumer, TBABlocks.BASKET_ACACIA_YELLOW.get().asItem().getDefaultInstance(), Items.YELLOW_CARPET, Items.ACACIA_SLAB);
+        basketRecipe(consumer, TBABlocks.BASKET_ACACIA_LIME.get().asItem().getDefaultInstance(), Items.LIME_CARPET, Items.ACACIA_SLAB);
+        basketRecipe(consumer, TBABlocks.BASKET_ACACIA_GREEN.get().asItem().getDefaultInstance(), Items.GREEN_CARPET, Items.ACACIA_SLAB);
+        basketRecipe(consumer, TBABlocks.BASKET_ACACIA_CYAN.get().asItem().getDefaultInstance(), Items.CYAN_CARPET, Items.ACACIA_SLAB);
+        basketRecipe(consumer, TBABlocks.BASKET_ACACIA_LIGHT_BLUE.get().asItem().getDefaultInstance(), Items.LIGHT_BLUE_CARPET, Items.ACACIA_SLAB);
+        basketRecipe(consumer, TBABlocks.BASKET_ACACIA_BLUE.get().asItem().getDefaultInstance(), Items.BLUE_CARPET, Items.ACACIA_SLAB);
+        basketRecipe(consumer, TBABlocks.BASKET_ACACIA_PURPLE.get().asItem().getDefaultInstance(), Items.PURPLE_CARPET, Items.ACACIA_SLAB);
+        basketRecipe(consumer, TBABlocks.BASKET_ACACIA_MAGENTA.get().asItem().getDefaultInstance(), Items.MAGENTA_CARPET, Items.ACACIA_SLAB);
+        basketRecipe(consumer, TBABlocks.BASKET_ACACIA_PINK.get().asItem().getDefaultInstance(), Items.PINK_CARPET, Items.ACACIA_SLAB);
+        basketRecipe(consumer, TBABlocks.BASKET_DARK_OAK_WHITE.get().asItem().getDefaultInstance(), Items.WHITE_CARPET, Items.DARK_OAK_SLAB);
+        basketRecipe(consumer, TBABlocks.BASKET_DARK_OAK_LIGHT_GRAY.get().asItem().getDefaultInstance(), Items.LIGHT_GRAY_CARPET, Items.DARK_OAK_SLAB);
+        basketRecipe(consumer, TBABlocks.BASKET_DARK_OAK_GRAY.get().asItem().getDefaultInstance(), Items.GRAY_CARPET, Items.DARK_OAK_SLAB);
+        basketRecipe(consumer, TBABlocks.BASKET_DARK_OAK_BLACK.get().asItem().getDefaultInstance(), Items.BLACK_CARPET, Items.DARK_OAK_SLAB);
+        basketRecipe(consumer, TBABlocks.BASKET_DARK_OAK_BROWN.get().asItem().getDefaultInstance(), Items.BROWN_CARPET, Items.DARK_OAK_SLAB);
+        basketRecipe(consumer, TBABlocks.BASKET_DARK_OAK_RED.get().asItem().getDefaultInstance(), Items.RED_CARPET, Items.DARK_OAK_SLAB);
+        basketRecipe(consumer, TBABlocks.BASKET_DARK_OAK_ORANGE.get().asItem().getDefaultInstance(), Items.ORANGE_CARPET, Items.DARK_OAK_SLAB);
+        basketRecipe(consumer, TBABlocks.BASKET_DARK_OAK_YELLOW.get().asItem().getDefaultInstance(), Items.YELLOW_CARPET, Items.DARK_OAK_SLAB);
+        basketRecipe(consumer, TBABlocks.BASKET_DARK_OAK_LIME.get().asItem().getDefaultInstance(), Items.LIME_CARPET, Items.DARK_OAK_SLAB);
+        basketRecipe(consumer, TBABlocks.BASKET_DARK_OAK_GREEN.get().asItem().getDefaultInstance(), Items.GREEN_CARPET, Items.DARK_OAK_SLAB);
+        basketRecipe(consumer, TBABlocks.BASKET_DARK_OAK_CYAN.get().asItem().getDefaultInstance(), Items.CYAN_CARPET, Items.DARK_OAK_SLAB);
+        basketRecipe(consumer, TBABlocks.BASKET_DARK_OAK_LIGHT_BLUE.get().asItem().getDefaultInstance(), Items.LIGHT_BLUE_CARPET, Items.DARK_OAK_SLAB);
+        basketRecipe(consumer, TBABlocks.BASKET_DARK_OAK_BLUE.get().asItem().getDefaultInstance(), Items.BLUE_CARPET, Items.DARK_OAK_SLAB);
+        basketRecipe(consumer, TBABlocks.BASKET_DARK_OAK_PURPLE.get().asItem().getDefaultInstance(), Items.PURPLE_CARPET, Items.DARK_OAK_SLAB);
+        basketRecipe(consumer, TBABlocks.BASKET_DARK_OAK_MAGENTA.get().asItem().getDefaultInstance(), Items.MAGENTA_CARPET, Items.DARK_OAK_SLAB);
+        basketRecipe(consumer, TBABlocks.BASKET_DARK_OAK_PINK.get().asItem().getDefaultInstance(), Items.PINK_CARPET, Items.DARK_OAK_SLAB);
+        basketRecipe(consumer, TBABlocks.BASKET_MANGROVE_WHITE.get().asItem().getDefaultInstance(), Items.WHITE_CARPET, Items.MANGROVE_SLAB);
+        basketRecipe(consumer, TBABlocks.BASKET_MANGROVE_LIGHT_GRAY.get().asItem().getDefaultInstance(), Items.LIGHT_GRAY_CARPET, Items.MANGROVE_SLAB);
+        basketRecipe(consumer, TBABlocks.BASKET_MANGROVE_GRAY.get().asItem().getDefaultInstance(), Items.GRAY_CARPET, Items.MANGROVE_SLAB);
+        basketRecipe(consumer, TBABlocks.BASKET_MANGROVE_BLACK.get().asItem().getDefaultInstance(), Items.BLACK_CARPET, Items.MANGROVE_SLAB);
+        basketRecipe(consumer, TBABlocks.BASKET_MANGROVE_BROWN.get().asItem().getDefaultInstance(), Items.BROWN_CARPET, Items.MANGROVE_SLAB);
+        basketRecipe(consumer, TBABlocks.BASKET_MANGROVE_RED.get().asItem().getDefaultInstance(), Items.RED_CARPET, Items.MANGROVE_SLAB);
+        basketRecipe(consumer, TBABlocks.BASKET_MANGROVE_ORANGE.get().asItem().getDefaultInstance(), Items.ORANGE_CARPET, Items.MANGROVE_SLAB);
+        basketRecipe(consumer, TBABlocks.BASKET_MANGROVE_YELLOW.get().asItem().getDefaultInstance(), Items.YELLOW_CARPET, Items.MANGROVE_SLAB);
+        basketRecipe(consumer, TBABlocks.BASKET_MANGROVE_LIME.get().asItem().getDefaultInstance(), Items.LIME_CARPET, Items.MANGROVE_SLAB);
+        basketRecipe(consumer, TBABlocks.BASKET_MANGROVE_GREEN.get().asItem().getDefaultInstance(), Items.GREEN_CARPET, Items.MANGROVE_SLAB);
+        basketRecipe(consumer, TBABlocks.BASKET_MANGROVE_CYAN.get().asItem().getDefaultInstance(), Items.CYAN_CARPET, Items.MANGROVE_SLAB);
+        basketRecipe(consumer, TBABlocks.BASKET_MANGROVE_LIGHT_BLUE.get().asItem().getDefaultInstance(), Items.LIGHT_BLUE_CARPET, Items.MANGROVE_SLAB);
+        basketRecipe(consumer, TBABlocks.BASKET_MANGROVE_BLUE.get().asItem().getDefaultInstance(), Items.BLUE_CARPET, Items.MANGROVE_SLAB);
+        basketRecipe(consumer, TBABlocks.BASKET_MANGROVE_PURPLE.get().asItem().getDefaultInstance(), Items.PURPLE_CARPET, Items.MANGROVE_SLAB);
+        basketRecipe(consumer, TBABlocks.BASKET_MANGROVE_MAGENTA.get().asItem().getDefaultInstance(), Items.MAGENTA_CARPET, Items.MANGROVE_SLAB);
+        basketRecipe(consumer, TBABlocks.BASKET_MANGROVE_PINK.get().asItem().getDefaultInstance(), Items.PINK_CARPET, Items.MANGROVE_SLAB);
+        basketRecipe(consumer, TBABlocks.BASKET_CRIMSON_WHITE.get().asItem().getDefaultInstance(), Items.WHITE_CARPET, Items.CRIMSON_SLAB);
+        basketRecipe(consumer, TBABlocks.BASKET_CRIMSON_LIGHT_GRAY.get().asItem().getDefaultInstance(), Items.LIGHT_GRAY_CARPET, Items.CRIMSON_SLAB);
+        basketRecipe(consumer, TBABlocks.BASKET_CRIMSON_GRAY.get().asItem().getDefaultInstance(), Items.GRAY_CARPET, Items.CRIMSON_SLAB);
+        basketRecipe(consumer, TBABlocks.BASKET_CRIMSON_BLACK.get().asItem().getDefaultInstance(), Items.BLACK_CARPET, Items.CRIMSON_SLAB);
+        basketRecipe(consumer, TBABlocks.BASKET_CRIMSON_BROWN.get().asItem().getDefaultInstance(), Items.BROWN_CARPET, Items.CRIMSON_SLAB);
+        basketRecipe(consumer, TBABlocks.BASKET_CRIMSON_RED.get().asItem().getDefaultInstance(), Items.RED_CARPET, Items.CRIMSON_SLAB);
+        basketRecipe(consumer, TBABlocks.BASKET_CRIMSON_ORANGE.get().asItem().getDefaultInstance(), Items.ORANGE_CARPET, Items.CRIMSON_SLAB);
+        basketRecipe(consumer, TBABlocks.BASKET_CRIMSON_YELLOW.get().asItem().getDefaultInstance(), Items.YELLOW_CARPET, Items.CRIMSON_SLAB);
+        basketRecipe(consumer, TBABlocks.BASKET_CRIMSON_LIME.get().asItem().getDefaultInstance(), Items.LIME_CARPET, Items.CRIMSON_SLAB);
+        basketRecipe(consumer, TBABlocks.BASKET_CRIMSON_GREEN.get().asItem().getDefaultInstance(), Items.GREEN_CARPET, Items.CRIMSON_SLAB);
+        basketRecipe(consumer, TBABlocks.BASKET_CRIMSON_CYAN.get().asItem().getDefaultInstance(), Items.CYAN_CARPET, Items.CRIMSON_SLAB);
+        basketRecipe(consumer, TBABlocks.BASKET_CRIMSON_LIGHT_BLUE.get().asItem().getDefaultInstance(), Items.LIGHT_BLUE_CARPET, Items.CRIMSON_SLAB);
+        basketRecipe(consumer, TBABlocks.BASKET_CRIMSON_BLUE.get().asItem().getDefaultInstance(), Items.BLUE_CARPET, Items.CRIMSON_SLAB);
+        basketRecipe(consumer, TBABlocks.BASKET_CRIMSON_PURPLE.get().asItem().getDefaultInstance(), Items.PURPLE_CARPET, Items.CRIMSON_SLAB);
+        basketRecipe(consumer, TBABlocks.BASKET_CRIMSON_MAGENTA.get().asItem().getDefaultInstance(), Items.MAGENTA_CARPET, Items.CRIMSON_SLAB);
+        basketRecipe(consumer, TBABlocks.BASKET_CRIMSON_PINK.get().asItem().getDefaultInstance(), Items.PINK_CARPET, Items.CRIMSON_SLAB);
+        basketRecipe(consumer, TBABlocks.BASKET_WARPED_WHITE.get().asItem().getDefaultInstance(), Items.WHITE_CARPET, Items.WARPED_SLAB);
+        basketRecipe(consumer, TBABlocks.BASKET_WARPED_LIGHT_GRAY.get().asItem().getDefaultInstance(), Items.LIGHT_GRAY_CARPET, Items.WARPED_SLAB);
+        basketRecipe(consumer, TBABlocks.BASKET_WARPED_GRAY.get().asItem().getDefaultInstance(), Items.GRAY_CARPET, Items.WARPED_SLAB);
+        basketRecipe(consumer, TBABlocks.BASKET_WARPED_BLACK.get().asItem().getDefaultInstance(), Items.BLACK_CARPET, Items.WARPED_SLAB);
+        basketRecipe(consumer, TBABlocks.BASKET_WARPED_BROWN.get().asItem().getDefaultInstance(), Items.BROWN_CARPET, Items.WARPED_SLAB);
+        basketRecipe(consumer, TBABlocks.BASKET_WARPED_RED.get().asItem().getDefaultInstance(), Items.RED_CARPET, Items.WARPED_SLAB);
+        basketRecipe(consumer, TBABlocks.BASKET_WARPED_ORANGE.get().asItem().getDefaultInstance(), Items.ORANGE_CARPET, Items.WARPED_SLAB);
+        basketRecipe(consumer, TBABlocks.BASKET_WARPED_YELLOW.get().asItem().getDefaultInstance(), Items.YELLOW_CARPET, Items.WARPED_SLAB);
+        basketRecipe(consumer, TBABlocks.BASKET_WARPED_LIME.get().asItem().getDefaultInstance(), Items.LIME_CARPET, Items.WARPED_SLAB);
+        basketRecipe(consumer, TBABlocks.BASKET_WARPED_GREEN.get().asItem().getDefaultInstance(), Items.GREEN_CARPET, Items.WARPED_SLAB);
+        basketRecipe(consumer, TBABlocks.BASKET_WARPED_CYAN.get().asItem().getDefaultInstance(), Items.CYAN_CARPET, Items.WARPED_SLAB);
+        basketRecipe(consumer, TBABlocks.BASKET_WARPED_LIGHT_BLUE.get().asItem().getDefaultInstance(), Items.LIGHT_BLUE_CARPET, Items.WARPED_SLAB);
+        basketRecipe(consumer, TBABlocks.BASKET_WARPED_BLUE.get().asItem().getDefaultInstance(), Items.BLUE_CARPET, Items.WARPED_SLAB);
+        basketRecipe(consumer, TBABlocks.BASKET_WARPED_PURPLE.get().asItem().getDefaultInstance(), Items.PURPLE_CARPET, Items.WARPED_SLAB);
+        basketRecipe(consumer, TBABlocks.BASKET_WARPED_MAGENTA.get().asItem().getDefaultInstance(), Items.MAGENTA_CARPET, Items.WARPED_SLAB);
+        basketRecipe(consumer, TBABlocks.BASKET_WARPED_PINK.get().asItem().getDefaultInstance(), Items.PINK_CARPET, Items.WARPED_SLAB);
+        basketRecipe(consumer, TBABlocks.BASKET_FIR_WHITE.get().asItem().getDefaultInstance(), Items.WHITE_CARPET, BOPBlocks.FIR_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_FIR_LIGHT_GRAY.get().asItem().getDefaultInstance(), Items.LIGHT_GRAY_CARPET, BOPBlocks.FIR_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_FIR_GRAY.get().asItem().getDefaultInstance(), Items.GRAY_CARPET, BOPBlocks.FIR_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_FIR_BLACK.get().asItem().getDefaultInstance(), Items.BLACK_CARPET, BOPBlocks.FIR_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_FIR_BROWN.get().asItem().getDefaultInstance(), Items.BROWN_CARPET, BOPBlocks.FIR_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_FIR_RED.get().asItem().getDefaultInstance(), Items.RED_CARPET, BOPBlocks.FIR_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_FIR_ORANGE.get().asItem().getDefaultInstance(), Items.ORANGE_CARPET, BOPBlocks.FIR_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_FIR_YELLOW.get().asItem().getDefaultInstance(), Items.YELLOW_CARPET, BOPBlocks.FIR_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_FIR_LIME.get().asItem().getDefaultInstance(), Items.LIME_CARPET, BOPBlocks.FIR_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_FIR_GREEN.get().asItem().getDefaultInstance(), Items.GREEN_CARPET, BOPBlocks.FIR_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_FIR_CYAN.get().asItem().getDefaultInstance(), Items.CYAN_CARPET, BOPBlocks.FIR_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_FIR_LIGHT_BLUE.get().asItem().getDefaultInstance(), Items.LIGHT_BLUE_CARPET, BOPBlocks.FIR_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_FIR_BLUE.get().asItem().getDefaultInstance(), Items.BLUE_CARPET, BOPBlocks.FIR_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_FIR_PURPLE.get().asItem().getDefaultInstance(), Items.PURPLE_CARPET, BOPBlocks.FIR_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_FIR_MAGENTA.get().asItem().getDefaultInstance(), Items.MAGENTA_CARPET, BOPBlocks.FIR_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_FIR_PINK.get().asItem().getDefaultInstance(), Items.PINK_CARPET, BOPBlocks.FIR_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_REDWOOD_WHITE.get().asItem().getDefaultInstance(), Items.WHITE_CARPET, BOPBlocks.REDWOOD_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_REDWOOD_LIGHT_GRAY.get().asItem().getDefaultInstance(), Items.LIGHT_GRAY_CARPET, BOPBlocks.REDWOOD_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_REDWOOD_GRAY.get().asItem().getDefaultInstance(), Items.GRAY_CARPET, BOPBlocks.REDWOOD_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_REDWOOD_BLACK.get().asItem().getDefaultInstance(), Items.BLACK_CARPET, BOPBlocks.REDWOOD_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_REDWOOD_BROWN.get().asItem().getDefaultInstance(), Items.BROWN_CARPET, BOPBlocks.REDWOOD_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_REDWOOD_RED.get().asItem().getDefaultInstance(), Items.RED_CARPET, BOPBlocks.REDWOOD_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_REDWOOD_ORANGE.get().asItem().getDefaultInstance(), Items.ORANGE_CARPET, BOPBlocks.REDWOOD_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_REDWOOD_YELLOW.get().asItem().getDefaultInstance(), Items.YELLOW_CARPET, BOPBlocks.REDWOOD_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_REDWOOD_LIME.get().asItem().getDefaultInstance(), Items.LIME_CARPET, BOPBlocks.REDWOOD_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_REDWOOD_GREEN.get().asItem().getDefaultInstance(), Items.GREEN_CARPET, BOPBlocks.REDWOOD_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_REDWOOD_CYAN.get().asItem().getDefaultInstance(), Items.CYAN_CARPET, BOPBlocks.REDWOOD_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_REDWOOD_LIGHT_BLUE.get().asItem().getDefaultInstance(), Items.LIGHT_BLUE_CARPET, BOPBlocks.REDWOOD_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_REDWOOD_BLUE.get().asItem().getDefaultInstance(), Items.BLUE_CARPET, BOPBlocks.REDWOOD_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_REDWOOD_PURPLE.get().asItem().getDefaultInstance(), Items.PURPLE_CARPET, BOPBlocks.REDWOOD_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_REDWOOD_MAGENTA.get().asItem().getDefaultInstance(), Items.MAGENTA_CARPET, BOPBlocks.REDWOOD_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_REDWOOD_PINK.get().asItem().getDefaultInstance(), Items.PINK_CARPET, BOPBlocks.REDWOOD_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_CHERRY_WHITE.get().asItem().getDefaultInstance(), Items.WHITE_CARPET, BOPBlocks.CHERRY_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_CHERRY_LIGHT_GRAY.get().asItem().getDefaultInstance(), Items.LIGHT_GRAY_CARPET, BOPBlocks.CHERRY_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_CHERRY_GRAY.get().asItem().getDefaultInstance(), Items.GRAY_CARPET, BOPBlocks.CHERRY_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_CHERRY_BLACK.get().asItem().getDefaultInstance(), Items.BLACK_CARPET, BOPBlocks.CHERRY_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_CHERRY_BROWN.get().asItem().getDefaultInstance(), Items.BROWN_CARPET, BOPBlocks.CHERRY_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_CHERRY_RED.get().asItem().getDefaultInstance(), Items.RED_CARPET, BOPBlocks.CHERRY_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_CHERRY_ORANGE.get().asItem().getDefaultInstance(), Items.ORANGE_CARPET, BOPBlocks.CHERRY_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_CHERRY_YELLOW.get().asItem().getDefaultInstance(), Items.YELLOW_CARPET, BOPBlocks.CHERRY_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_CHERRY_LIME.get().asItem().getDefaultInstance(), Items.LIME_CARPET, BOPBlocks.CHERRY_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_CHERRY_GREEN.get().asItem().getDefaultInstance(), Items.GREEN_CARPET, BOPBlocks.CHERRY_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_CHERRY_CYAN.get().asItem().getDefaultInstance(), Items.CYAN_CARPET, BOPBlocks.CHERRY_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_CHERRY_LIGHT_BLUE.get().asItem().getDefaultInstance(), Items.LIGHT_BLUE_CARPET, BOPBlocks.CHERRY_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_CHERRY_BLUE.get().asItem().getDefaultInstance(), Items.BLUE_CARPET, BOPBlocks.CHERRY_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_CHERRY_PURPLE.get().asItem().getDefaultInstance(), Items.PURPLE_CARPET, BOPBlocks.CHERRY_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_CHERRY_MAGENTA.get().asItem().getDefaultInstance(), Items.MAGENTA_CARPET, BOPBlocks.CHERRY_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_CHERRY_PINK.get().asItem().getDefaultInstance(), Items.PINK_CARPET, BOPBlocks.CHERRY_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_MAHOGANY_WHITE.get().asItem().getDefaultInstance(), Items.WHITE_CARPET, BOPBlocks.MAHOGANY_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_MAHOGANY_LIGHT_GRAY.get().asItem().getDefaultInstance(), Items.LIGHT_GRAY_CARPET, BOPBlocks.MAHOGANY_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_MAHOGANY_GRAY.get().asItem().getDefaultInstance(), Items.GRAY_CARPET, BOPBlocks.MAHOGANY_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_MAHOGANY_BLACK.get().asItem().getDefaultInstance(), Items.BLACK_CARPET, BOPBlocks.MAHOGANY_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_MAHOGANY_BROWN.get().asItem().getDefaultInstance(), Items.BROWN_CARPET, BOPBlocks.MAHOGANY_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_MAHOGANY_RED.get().asItem().getDefaultInstance(), Items.RED_CARPET, BOPBlocks.MAHOGANY_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_MAHOGANY_ORANGE.get().asItem().getDefaultInstance(), Items.ORANGE_CARPET, BOPBlocks.MAHOGANY_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_MAHOGANY_YELLOW.get().asItem().getDefaultInstance(), Items.YELLOW_CARPET, BOPBlocks.MAHOGANY_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_MAHOGANY_LIME.get().asItem().getDefaultInstance(), Items.LIME_CARPET, BOPBlocks.MAHOGANY_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_MAHOGANY_GREEN.get().asItem().getDefaultInstance(), Items.GREEN_CARPET, BOPBlocks.MAHOGANY_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_MAHOGANY_CYAN.get().asItem().getDefaultInstance(), Items.CYAN_CARPET, BOPBlocks.MAHOGANY_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_MAHOGANY_LIGHT_BLUE.get().asItem().getDefaultInstance(), Items.LIGHT_BLUE_CARPET, BOPBlocks.MAHOGANY_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_MAHOGANY_BLUE.get().asItem().getDefaultInstance(), Items.BLUE_CARPET, BOPBlocks.MAHOGANY_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_MAHOGANY_PURPLE.get().asItem().getDefaultInstance(), Items.PURPLE_CARPET, BOPBlocks.MAHOGANY_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_MAHOGANY_MAGENTA.get().asItem().getDefaultInstance(), Items.MAGENTA_CARPET, BOPBlocks.MAHOGANY_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_MAHOGANY_PINK.get().asItem().getDefaultInstance(), Items.PINK_CARPET, BOPBlocks.MAHOGANY_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_JACARANDA_WHITE.get().asItem().getDefaultInstance(), Items.WHITE_CARPET, BOPBlocks.JACARANDA_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_JACARANDA_LIGHT_GRAY.get().asItem().getDefaultInstance(), Items.LIGHT_GRAY_CARPET, BOPBlocks.JACARANDA_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_JACARANDA_GRAY.get().asItem().getDefaultInstance(), Items.GRAY_CARPET, BOPBlocks.JACARANDA_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_JACARANDA_BLACK.get().asItem().getDefaultInstance(), Items.BLACK_CARPET, BOPBlocks.JACARANDA_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_JACARANDA_BROWN.get().asItem().getDefaultInstance(), Items.BROWN_CARPET, BOPBlocks.JACARANDA_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_JACARANDA_RED.get().asItem().getDefaultInstance(), Items.RED_CARPET, BOPBlocks.JACARANDA_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_JACARANDA_ORANGE.get().asItem().getDefaultInstance(), Items.ORANGE_CARPET, BOPBlocks.JACARANDA_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_JACARANDA_YELLOW.get().asItem().getDefaultInstance(), Items.YELLOW_CARPET, BOPBlocks.JACARANDA_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_JACARANDA_LIME.get().asItem().getDefaultInstance(), Items.LIME_CARPET, BOPBlocks.JACARANDA_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_JACARANDA_GREEN.get().asItem().getDefaultInstance(), Items.GREEN_CARPET, BOPBlocks.JACARANDA_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_JACARANDA_CYAN.get().asItem().getDefaultInstance(), Items.CYAN_CARPET, BOPBlocks.JACARANDA_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_JACARANDA_LIGHT_BLUE.get().asItem().getDefaultInstance(), Items.LIGHT_BLUE_CARPET, BOPBlocks.JACARANDA_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_JACARANDA_BLUE.get().asItem().getDefaultInstance(), Items.BLUE_CARPET, BOPBlocks.JACARANDA_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_JACARANDA_PURPLE.get().asItem().getDefaultInstance(), Items.PURPLE_CARPET, BOPBlocks.JACARANDA_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_JACARANDA_MAGENTA.get().asItem().getDefaultInstance(), Items.MAGENTA_CARPET, BOPBlocks.JACARANDA_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_JACARANDA_PINK.get().asItem().getDefaultInstance(), Items.PINK_CARPET, BOPBlocks.JACARANDA_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_PALM_WHITE.get().asItem().getDefaultInstance(), Items.WHITE_CARPET, BOPBlocks.PALM_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_PALM_LIGHT_GRAY.get().asItem().getDefaultInstance(), Items.LIGHT_GRAY_CARPET, BOPBlocks.PALM_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_PALM_GRAY.get().asItem().getDefaultInstance(), Items.GRAY_CARPET, BOPBlocks.PALM_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_PALM_BLACK.get().asItem().getDefaultInstance(), Items.BLACK_CARPET, BOPBlocks.PALM_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_PALM_BROWN.get().asItem().getDefaultInstance(), Items.BROWN_CARPET, BOPBlocks.PALM_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_PALM_RED.get().asItem().getDefaultInstance(), Items.RED_CARPET, BOPBlocks.PALM_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_PALM_ORANGE.get().asItem().getDefaultInstance(), Items.ORANGE_CARPET, BOPBlocks.PALM_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_PALM_YELLOW.get().asItem().getDefaultInstance(), Items.YELLOW_CARPET, BOPBlocks.PALM_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_PALM_LIME.get().asItem().getDefaultInstance(), Items.LIME_CARPET, BOPBlocks.PALM_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_PALM_GREEN.get().asItem().getDefaultInstance(), Items.GREEN_CARPET, BOPBlocks.PALM_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_PALM_CYAN.get().asItem().getDefaultInstance(), Items.CYAN_CARPET, BOPBlocks.PALM_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_PALM_LIGHT_BLUE.get().asItem().getDefaultInstance(), Items.LIGHT_BLUE_CARPET, BOPBlocks.PALM_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_PALM_BLUE.get().asItem().getDefaultInstance(), Items.BLUE_CARPET, BOPBlocks.PALM_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_PALM_PURPLE.get().asItem().getDefaultInstance(), Items.PURPLE_CARPET, BOPBlocks.PALM_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_PALM_MAGENTA.get().asItem().getDefaultInstance(), Items.MAGENTA_CARPET, BOPBlocks.PALM_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_PALM_PINK.get().asItem().getDefaultInstance(), Items.PINK_CARPET, BOPBlocks.PALM_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_WILLOW_WHITE.get().asItem().getDefaultInstance(), Items.WHITE_CARPET, BOPBlocks.WILLOW_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_WILLOW_LIGHT_GRAY.get().asItem().getDefaultInstance(), Items.LIGHT_GRAY_CARPET, BOPBlocks.WILLOW_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_WILLOW_GRAY.get().asItem().getDefaultInstance(), Items.GRAY_CARPET, BOPBlocks.WILLOW_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_WILLOW_BLACK.get().asItem().getDefaultInstance(), Items.BLACK_CARPET, BOPBlocks.WILLOW_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_WILLOW_BROWN.get().asItem().getDefaultInstance(), Items.BROWN_CARPET, BOPBlocks.WILLOW_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_WILLOW_RED.get().asItem().getDefaultInstance(), Items.RED_CARPET, BOPBlocks.WILLOW_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_WILLOW_ORANGE.get().asItem().getDefaultInstance(), Items.ORANGE_CARPET, BOPBlocks.WILLOW_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_WILLOW_YELLOW.get().asItem().getDefaultInstance(), Items.YELLOW_CARPET, BOPBlocks.WILLOW_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_WILLOW_LIME.get().asItem().getDefaultInstance(), Items.LIME_CARPET, BOPBlocks.WILLOW_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_WILLOW_GREEN.get().asItem().getDefaultInstance(), Items.GREEN_CARPET, BOPBlocks.WILLOW_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_WILLOW_CYAN.get().asItem().getDefaultInstance(), Items.CYAN_CARPET, BOPBlocks.WILLOW_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_WILLOW_LIGHT_BLUE.get().asItem().getDefaultInstance(), Items.LIGHT_BLUE_CARPET, BOPBlocks.WILLOW_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_WILLOW_BLUE.get().asItem().getDefaultInstance(), Items.BLUE_CARPET, BOPBlocks.WILLOW_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_WILLOW_PURPLE.get().asItem().getDefaultInstance(), Items.PURPLE_CARPET, BOPBlocks.WILLOW_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_WILLOW_MAGENTA.get().asItem().getDefaultInstance(), Items.MAGENTA_CARPET, BOPBlocks.WILLOW_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_WILLOW_PINK.get().asItem().getDefaultInstance(), Items.PINK_CARPET, BOPBlocks.WILLOW_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_DEAD_WHITE.get().asItem().getDefaultInstance(), Items.WHITE_CARPET, BOPBlocks.DEAD_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_DEAD_LIGHT_GRAY.get().asItem().getDefaultInstance(), Items.LIGHT_GRAY_CARPET, BOPBlocks.DEAD_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_DEAD_GRAY.get().asItem().getDefaultInstance(), Items.GRAY_CARPET, BOPBlocks.DEAD_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_DEAD_BLACK.get().asItem().getDefaultInstance(), Items.BLACK_CARPET, BOPBlocks.DEAD_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_DEAD_BROWN.get().asItem().getDefaultInstance(), Items.BROWN_CARPET, BOPBlocks.DEAD_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_DEAD_RED.get().asItem().getDefaultInstance(), Items.RED_CARPET, BOPBlocks.DEAD_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_DEAD_ORANGE.get().asItem().getDefaultInstance(), Items.ORANGE_CARPET, BOPBlocks.DEAD_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_DEAD_YELLOW.get().asItem().getDefaultInstance(), Items.YELLOW_CARPET, BOPBlocks.DEAD_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_DEAD_LIME.get().asItem().getDefaultInstance(), Items.LIME_CARPET, BOPBlocks.DEAD_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_DEAD_GREEN.get().asItem().getDefaultInstance(), Items.GREEN_CARPET, BOPBlocks.DEAD_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_DEAD_CYAN.get().asItem().getDefaultInstance(), Items.CYAN_CARPET, BOPBlocks.DEAD_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_DEAD_LIGHT_BLUE.get().asItem().getDefaultInstance(), Items.LIGHT_BLUE_CARPET, BOPBlocks.DEAD_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_DEAD_BLUE.get().asItem().getDefaultInstance(), Items.BLUE_CARPET, BOPBlocks.DEAD_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_DEAD_PURPLE.get().asItem().getDefaultInstance(), Items.PURPLE_CARPET, BOPBlocks.DEAD_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_DEAD_MAGENTA.get().asItem().getDefaultInstance(), Items.MAGENTA_CARPET, BOPBlocks.DEAD_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_DEAD_PINK.get().asItem().getDefaultInstance(), Items.PINK_CARPET, BOPBlocks.DEAD_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_MAGIC_WHITE.get().asItem().getDefaultInstance(), Items.WHITE_CARPET, BOPBlocks.MAGIC_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_MAGIC_LIGHT_GRAY.get().asItem().getDefaultInstance(), Items.LIGHT_GRAY_CARPET, BOPBlocks.MAGIC_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_MAGIC_GRAY.get().asItem().getDefaultInstance(), Items.GRAY_CARPET, BOPBlocks.MAGIC_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_MAGIC_BLACK.get().asItem().getDefaultInstance(), Items.BLACK_CARPET, BOPBlocks.MAGIC_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_MAGIC_BROWN.get().asItem().getDefaultInstance(), Items.BROWN_CARPET, BOPBlocks.MAGIC_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_MAGIC_RED.get().asItem().getDefaultInstance(), Items.RED_CARPET, BOPBlocks.MAGIC_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_MAGIC_ORANGE.get().asItem().getDefaultInstance(), Items.ORANGE_CARPET, BOPBlocks.MAGIC_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_MAGIC_YELLOW.get().asItem().getDefaultInstance(), Items.YELLOW_CARPET, BOPBlocks.MAGIC_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_MAGIC_LIME.get().asItem().getDefaultInstance(), Items.LIME_CARPET, BOPBlocks.MAGIC_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_MAGIC_GREEN.get().asItem().getDefaultInstance(), Items.GREEN_CARPET, BOPBlocks.MAGIC_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_MAGIC_CYAN.get().asItem().getDefaultInstance(), Items.CYAN_CARPET, BOPBlocks.MAGIC_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_MAGIC_LIGHT_BLUE.get().asItem().getDefaultInstance(), Items.LIGHT_BLUE_CARPET, BOPBlocks.MAGIC_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_MAGIC_BLUE.get().asItem().getDefaultInstance(), Items.BLUE_CARPET, BOPBlocks.MAGIC_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_MAGIC_PURPLE.get().asItem().getDefaultInstance(), Items.PURPLE_CARPET, BOPBlocks.MAGIC_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_MAGIC_MAGENTA.get().asItem().getDefaultInstance(), Items.MAGENTA_CARPET, BOPBlocks.MAGIC_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_MAGIC_PINK.get().asItem().getDefaultInstance(), Items.PINK_CARPET, BOPBlocks.MAGIC_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_UMBRAN_WHITE.get().asItem().getDefaultInstance(), Items.WHITE_CARPET, BOPBlocks.UMBRAN_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_UMBRAN_LIGHT_GRAY.get().asItem().getDefaultInstance(), Items.LIGHT_GRAY_CARPET, BOPBlocks.UMBRAN_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_UMBRAN_GRAY.get().asItem().getDefaultInstance(), Items.GRAY_CARPET, BOPBlocks.UMBRAN_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_UMBRAN_BLACK.get().asItem().getDefaultInstance(), Items.BLACK_CARPET, BOPBlocks.UMBRAN_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_UMBRAN_BROWN.get().asItem().getDefaultInstance(), Items.BROWN_CARPET, BOPBlocks.UMBRAN_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_UMBRAN_RED.get().asItem().getDefaultInstance(), Items.RED_CARPET, BOPBlocks.UMBRAN_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_UMBRAN_ORANGE.get().asItem().getDefaultInstance(), Items.ORANGE_CARPET, BOPBlocks.UMBRAN_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_UMBRAN_YELLOW.get().asItem().getDefaultInstance(), Items.YELLOW_CARPET, BOPBlocks.UMBRAN_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_UMBRAN_LIME.get().asItem().getDefaultInstance(), Items.LIME_CARPET, BOPBlocks.UMBRAN_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_UMBRAN_GREEN.get().asItem().getDefaultInstance(), Items.GREEN_CARPET, BOPBlocks.UMBRAN_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_UMBRAN_CYAN.get().asItem().getDefaultInstance(), Items.CYAN_CARPET, BOPBlocks.UMBRAN_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_UMBRAN_LIGHT_BLUE.get().asItem().getDefaultInstance(), Items.LIGHT_BLUE_CARPET, BOPBlocks.UMBRAN_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_UMBRAN_BLUE.get().asItem().getDefaultInstance(), Items.BLUE_CARPET, BOPBlocks.UMBRAN_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_UMBRAN_PURPLE.get().asItem().getDefaultInstance(), Items.PURPLE_CARPET, BOPBlocks.UMBRAN_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_UMBRAN_MAGENTA.get().asItem().getDefaultInstance(), Items.MAGENTA_CARPET, BOPBlocks.UMBRAN_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_UMBRAN_PINK.get().asItem().getDefaultInstance(), Items.PINK_CARPET, BOPBlocks.UMBRAN_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_HELLBARK_WHITE.get().asItem().getDefaultInstance(), Items.WHITE_CARPET, BOPBlocks.HELLBARK_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_HELLBARK_LIGHT_GRAY.get().asItem().getDefaultInstance(), Items.LIGHT_GRAY_CARPET, BOPBlocks.HELLBARK_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_HELLBARK_GRAY.get().asItem().getDefaultInstance(), Items.GRAY_CARPET, BOPBlocks.HELLBARK_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_HELLBARK_BLACK.get().asItem().getDefaultInstance(), Items.BLACK_CARPET, BOPBlocks.HELLBARK_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_HELLBARK_BROWN.get().asItem().getDefaultInstance(), Items.BROWN_CARPET, BOPBlocks.HELLBARK_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_HELLBARK_RED.get().asItem().getDefaultInstance(), Items.RED_CARPET, BOPBlocks.HELLBARK_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_HELLBARK_ORANGE.get().asItem().getDefaultInstance(), Items.ORANGE_CARPET, BOPBlocks.HELLBARK_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_HELLBARK_YELLOW.get().asItem().getDefaultInstance(), Items.YELLOW_CARPET, BOPBlocks.HELLBARK_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_HELLBARK_LIME.get().asItem().getDefaultInstance(), Items.LIME_CARPET, BOPBlocks.HELLBARK_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_HELLBARK_GREEN.get().asItem().getDefaultInstance(), Items.GREEN_CARPET, BOPBlocks.HELLBARK_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_HELLBARK_CYAN.get().asItem().getDefaultInstance(), Items.CYAN_CARPET, BOPBlocks.HELLBARK_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_HELLBARK_LIGHT_BLUE.get().asItem().getDefaultInstance(), Items.LIGHT_BLUE_CARPET, BOPBlocks.HELLBARK_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_HELLBARK_BLUE.get().asItem().getDefaultInstance(), Items.BLUE_CARPET, BOPBlocks.HELLBARK_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_HELLBARK_PURPLE.get().asItem().getDefaultInstance(), Items.PURPLE_CARPET, BOPBlocks.HELLBARK_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_HELLBARK_MAGENTA.get().asItem().getDefaultInstance(), Items.MAGENTA_CARPET, BOPBlocks.HELLBARK_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_HELLBARK_PINK.get().asItem().getDefaultInstance(), Items.PINK_CARPET, BOPBlocks.HELLBARK_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_COCONUT_WHITE.get().asItem().getDefaultInstance(), Items.WHITE_CARPET, samebutdifferent.ecologics.registry.ModBlocks.COCONUT_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_COCONUT_LIGHT_GRAY.get().asItem().getDefaultInstance(), Items.LIGHT_GRAY_CARPET, samebutdifferent.ecologics.registry.ModBlocks.COCONUT_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_COCONUT_GRAY.get().asItem().getDefaultInstance(), Items.GRAY_CARPET, samebutdifferent.ecologics.registry.ModBlocks.COCONUT_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_COCONUT_BLACK.get().asItem().getDefaultInstance(), Items.BLACK_CARPET, samebutdifferent.ecologics.registry.ModBlocks.COCONUT_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_COCONUT_BROWN.get().asItem().getDefaultInstance(), Items.BROWN_CARPET, samebutdifferent.ecologics.registry.ModBlocks.COCONUT_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_COCONUT_RED.get().asItem().getDefaultInstance(), Items.RED_CARPET, samebutdifferent.ecologics.registry.ModBlocks.COCONUT_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_COCONUT_ORANGE.get().asItem().getDefaultInstance(), Items.ORANGE_CARPET, samebutdifferent.ecologics.registry.ModBlocks.COCONUT_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_COCONUT_YELLOW.get().asItem().getDefaultInstance(), Items.YELLOW_CARPET, samebutdifferent.ecologics.registry.ModBlocks.COCONUT_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_COCONUT_LIME.get().asItem().getDefaultInstance(), Items.LIME_CARPET, samebutdifferent.ecologics.registry.ModBlocks.COCONUT_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_COCONUT_GREEN.get().asItem().getDefaultInstance(), Items.GREEN_CARPET, samebutdifferent.ecologics.registry.ModBlocks.COCONUT_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_COCONUT_CYAN.get().asItem().getDefaultInstance(), Items.CYAN_CARPET, samebutdifferent.ecologics.registry.ModBlocks.COCONUT_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_COCONUT_LIGHT_BLUE.get().asItem().getDefaultInstance(), Items.LIGHT_BLUE_CARPET, samebutdifferent.ecologics.registry.ModBlocks.COCONUT_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_COCONUT_BLUE.get().asItem().getDefaultInstance(), Items.BLUE_CARPET, samebutdifferent.ecologics.registry.ModBlocks.COCONUT_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_COCONUT_PURPLE.get().asItem().getDefaultInstance(), Items.PURPLE_CARPET, samebutdifferent.ecologics.registry.ModBlocks.COCONUT_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_COCONUT_MAGENTA.get().asItem().getDefaultInstance(), Items.MAGENTA_CARPET, samebutdifferent.ecologics.registry.ModBlocks.COCONUT_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_COCONUT_PINK.get().asItem().getDefaultInstance(), Items.PINK_CARPET, samebutdifferent.ecologics.registry.ModBlocks.COCONUT_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_WALNUT_WHITE.get().asItem().getDefaultInstance(), Items.WHITE_CARPET, samebutdifferent.ecologics.registry.ModBlocks.WALNUT_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_WALNUT_LIGHT_GRAY.get().asItem().getDefaultInstance(), Items.LIGHT_GRAY_CARPET, samebutdifferent.ecologics.registry.ModBlocks.WALNUT_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_WALNUT_GRAY.get().asItem().getDefaultInstance(), Items.GRAY_CARPET, samebutdifferent.ecologics.registry.ModBlocks.WALNUT_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_WALNUT_BLACK.get().asItem().getDefaultInstance(), Items.BLACK_CARPET, samebutdifferent.ecologics.registry.ModBlocks.WALNUT_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_WALNUT_BROWN.get().asItem().getDefaultInstance(), Items.BROWN_CARPET, samebutdifferent.ecologics.registry.ModBlocks.WALNUT_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_WALNUT_RED.get().asItem().getDefaultInstance(), Items.RED_CARPET, samebutdifferent.ecologics.registry.ModBlocks.WALNUT_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_WALNUT_ORANGE.get().asItem().getDefaultInstance(), Items.ORANGE_CARPET, samebutdifferent.ecologics.registry.ModBlocks.WALNUT_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_WALNUT_YELLOW.get().asItem().getDefaultInstance(), Items.YELLOW_CARPET, samebutdifferent.ecologics.registry.ModBlocks.WALNUT_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_WALNUT_LIME.get().asItem().getDefaultInstance(), Items.LIME_CARPET, samebutdifferent.ecologics.registry.ModBlocks.WALNUT_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_WALNUT_GREEN.get().asItem().getDefaultInstance(), Items.GREEN_CARPET, samebutdifferent.ecologics.registry.ModBlocks.WALNUT_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_WALNUT_CYAN.get().asItem().getDefaultInstance(), Items.CYAN_CARPET, samebutdifferent.ecologics.registry.ModBlocks.WALNUT_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_WALNUT_LIGHT_BLUE.get().asItem().getDefaultInstance(), Items.LIGHT_BLUE_CARPET, samebutdifferent.ecologics.registry.ModBlocks.WALNUT_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_WALNUT_BLUE.get().asItem().getDefaultInstance(), Items.BLUE_CARPET, samebutdifferent.ecologics.registry.ModBlocks.WALNUT_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_WALNUT_PURPLE.get().asItem().getDefaultInstance(), Items.PURPLE_CARPET, samebutdifferent.ecologics.registry.ModBlocks.WALNUT_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_WALNUT_MAGENTA.get().asItem().getDefaultInstance(), Items.MAGENTA_CARPET, samebutdifferent.ecologics.registry.ModBlocks.WALNUT_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_WALNUT_PINK.get().asItem().getDefaultInstance(), Items.PINK_CARPET, samebutdifferent.ecologics.registry.ModBlocks.WALNUT_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_AZALEA_WHITE.get().asItem().getDefaultInstance(), Items.WHITE_CARPET, samebutdifferent.ecologics.registry.ModBlocks.AZALEA_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_AZALEA_LIGHT_GRAY.get().asItem().getDefaultInstance(), Items.LIGHT_GRAY_CARPET, samebutdifferent.ecologics.registry.ModBlocks.AZALEA_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_AZALEA_GRAY.get().asItem().getDefaultInstance(), Items.GRAY_CARPET, samebutdifferent.ecologics.registry.ModBlocks.AZALEA_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_AZALEA_BLACK.get().asItem().getDefaultInstance(), Items.BLACK_CARPET, samebutdifferent.ecologics.registry.ModBlocks.AZALEA_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_AZALEA_BROWN.get().asItem().getDefaultInstance(), Items.BROWN_CARPET, samebutdifferent.ecologics.registry.ModBlocks.AZALEA_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_AZALEA_RED.get().asItem().getDefaultInstance(), Items.RED_CARPET, samebutdifferent.ecologics.registry.ModBlocks.AZALEA_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_AZALEA_ORANGE.get().asItem().getDefaultInstance(), Items.ORANGE_CARPET, samebutdifferent.ecologics.registry.ModBlocks.AZALEA_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_AZALEA_YELLOW.get().asItem().getDefaultInstance(), Items.YELLOW_CARPET, samebutdifferent.ecologics.registry.ModBlocks.AZALEA_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_AZALEA_LIME.get().asItem().getDefaultInstance(), Items.LIME_CARPET, samebutdifferent.ecologics.registry.ModBlocks.AZALEA_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_AZALEA_GREEN.get().asItem().getDefaultInstance(), Items.GREEN_CARPET, samebutdifferent.ecologics.registry.ModBlocks.AZALEA_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_AZALEA_CYAN.get().asItem().getDefaultInstance(), Items.CYAN_CARPET, samebutdifferent.ecologics.registry.ModBlocks.AZALEA_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_AZALEA_LIGHT_BLUE.get().asItem().getDefaultInstance(), Items.LIGHT_BLUE_CARPET, samebutdifferent.ecologics.registry.ModBlocks.AZALEA_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_AZALEA_BLUE.get().asItem().getDefaultInstance(), Items.BLUE_CARPET, samebutdifferent.ecologics.registry.ModBlocks.AZALEA_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_AZALEA_PURPLE.get().asItem().getDefaultInstance(), Items.PURPLE_CARPET, samebutdifferent.ecologics.registry.ModBlocks.AZALEA_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_AZALEA_MAGENTA.get().asItem().getDefaultInstance(), Items.MAGENTA_CARPET, samebutdifferent.ecologics.registry.ModBlocks.AZALEA_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_AZALEA_PINK.get().asItem().getDefaultInstance(), Items.PINK_CARPET, samebutdifferent.ecologics.registry.ModBlocks.AZALEA_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_FLOWERING_AZALEA_WHITE.get().asItem().getDefaultInstance(), Items.WHITE_CARPET, samebutdifferent.ecologics.registry.ModBlocks.FLOWERING_AZALEA_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_FLOWERING_AZALEA_LIGHT_GRAY.get().asItem().getDefaultInstance(), Items.LIGHT_GRAY_CARPET, samebutdifferent.ecologics.registry.ModBlocks.FLOWERING_AZALEA_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_FLOWERING_AZALEA_GRAY.get().asItem().getDefaultInstance(), Items.GRAY_CARPET, samebutdifferent.ecologics.registry.ModBlocks.FLOWERING_AZALEA_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_FLOWERING_AZALEA_BLACK.get().asItem().getDefaultInstance(), Items.BLACK_CARPET, samebutdifferent.ecologics.registry.ModBlocks.FLOWERING_AZALEA_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_FLOWERING_AZALEA_BROWN.get().asItem().getDefaultInstance(), Items.BROWN_CARPET, samebutdifferent.ecologics.registry.ModBlocks.FLOWERING_AZALEA_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_FLOWERING_AZALEA_RED.get().asItem().getDefaultInstance(), Items.RED_CARPET, samebutdifferent.ecologics.registry.ModBlocks.FLOWERING_AZALEA_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_FLOWERING_AZALEA_ORANGE.get().asItem().getDefaultInstance(), Items.ORANGE_CARPET, samebutdifferent.ecologics.registry.ModBlocks.FLOWERING_AZALEA_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_FLOWERING_AZALEA_YELLOW.get().asItem().getDefaultInstance(), Items.YELLOW_CARPET, samebutdifferent.ecologics.registry.ModBlocks.FLOWERING_AZALEA_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_FLOWERING_AZALEA_LIME.get().asItem().getDefaultInstance(), Items.LIME_CARPET, samebutdifferent.ecologics.registry.ModBlocks.FLOWERING_AZALEA_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_FLOWERING_AZALEA_GREEN.get().asItem().getDefaultInstance(), Items.GREEN_CARPET, samebutdifferent.ecologics.registry.ModBlocks.FLOWERING_AZALEA_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_FLOWERING_AZALEA_CYAN.get().asItem().getDefaultInstance(), Items.CYAN_CARPET, samebutdifferent.ecologics.registry.ModBlocks.FLOWERING_AZALEA_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_FLOWERING_AZALEA_LIGHT_BLUE.get().asItem().getDefaultInstance(), Items.LIGHT_BLUE_CARPET, samebutdifferent.ecologics.registry.ModBlocks.FLOWERING_AZALEA_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_FLOWERING_AZALEA_BLUE.get().asItem().getDefaultInstance(), Items.BLUE_CARPET, samebutdifferent.ecologics.registry.ModBlocks.FLOWERING_AZALEA_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_FLOWERING_AZALEA_PURPLE.get().asItem().getDefaultInstance(), Items.PURPLE_CARPET, samebutdifferent.ecologics.registry.ModBlocks.FLOWERING_AZALEA_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_FLOWERING_AZALEA_MAGENTA.get().asItem().getDefaultInstance(), Items.MAGENTA_CARPET, samebutdifferent.ecologics.registry.ModBlocks.FLOWERING_AZALEA_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_FLOWERING_AZALEA_PINK.get().asItem().getDefaultInstance(), Items.PINK_CARPET, samebutdifferent.ecologics.registry.ModBlocks.FLOWERING_AZALEA_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_AETHER_SKYROOT_WHITE.get().asItem().getDefaultInstance(), Items.WHITE_CARPET, AetherBlocks.SKYROOT_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_AETHER_SKYROOT_LIGHT_GRAY.get().asItem().getDefaultInstance(), Items.LIGHT_GRAY_CARPET, AetherBlocks.SKYROOT_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_AETHER_SKYROOT_GRAY.get().asItem().getDefaultInstance(), Items.GRAY_CARPET, AetherBlocks.SKYROOT_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_AETHER_SKYROOT_BLACK.get().asItem().getDefaultInstance(), Items.BLACK_CARPET, AetherBlocks.SKYROOT_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_AETHER_SKYROOT_BROWN.get().asItem().getDefaultInstance(), Items.BROWN_CARPET, AetherBlocks.SKYROOT_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_AETHER_SKYROOT_RED.get().asItem().getDefaultInstance(), Items.RED_CARPET, AetherBlocks.SKYROOT_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_AETHER_SKYROOT_ORANGE.get().asItem().getDefaultInstance(), Items.ORANGE_CARPET, AetherBlocks.SKYROOT_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_AETHER_SKYROOT_YELLOW.get().asItem().getDefaultInstance(), Items.YELLOW_CARPET, AetherBlocks.SKYROOT_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_AETHER_SKYROOT_LIME.get().asItem().getDefaultInstance(), Items.LIME_CARPET, AetherBlocks.SKYROOT_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_AETHER_SKYROOT_GREEN.get().asItem().getDefaultInstance(), Items.GREEN_CARPET, AetherBlocks.SKYROOT_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_AETHER_SKYROOT_CYAN.get().asItem().getDefaultInstance(), Items.CYAN_CARPET, AetherBlocks.SKYROOT_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_AETHER_SKYROOT_LIGHT_BLUE.get().asItem().getDefaultInstance(), Items.LIGHT_BLUE_CARPET, AetherBlocks.SKYROOT_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_AETHER_SKYROOT_BLUE.get().asItem().getDefaultInstance(), Items.BLUE_CARPET, AetherBlocks.SKYROOT_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_AETHER_SKYROOT_PURPLE.get().asItem().getDefaultInstance(), Items.PURPLE_CARPET, AetherBlocks.SKYROOT_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_AETHER_SKYROOT_MAGENTA.get().asItem().getDefaultInstance(), Items.MAGENTA_CARPET, AetherBlocks.SKYROOT_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_AETHER_SKYROOT_PINK.get().asItem().getDefaultInstance(), Items.PINK_CARPET, AetherBlocks.SKYROOT_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_PREAM_WHITE.get().asItem().getDefaultInstance(), Items.WHITE_CARPET, PhantasmModBlocks.PREAM_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_PREAM_LIGHT_GRAY.get().asItem().getDefaultInstance(), Items.LIGHT_GRAY_CARPET, PhantasmModBlocks.PREAM_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_PREAM_GRAY.get().asItem().getDefaultInstance(), Items.GRAY_CARPET, PhantasmModBlocks.PREAM_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_PREAM_BLACK.get().asItem().getDefaultInstance(), Items.BLACK_CARPET, PhantasmModBlocks.PREAM_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_PREAM_BROWN.get().asItem().getDefaultInstance(), Items.BROWN_CARPET, PhantasmModBlocks.PREAM_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_PREAM_RED.get().asItem().getDefaultInstance(), Items.RED_CARPET, PhantasmModBlocks.PREAM_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_PREAM_ORANGE.get().asItem().getDefaultInstance(), Items.ORANGE_CARPET, PhantasmModBlocks.PREAM_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_PREAM_YELLOW.get().asItem().getDefaultInstance(), Items.YELLOW_CARPET, PhantasmModBlocks.PREAM_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_PREAM_LIME.get().asItem().getDefaultInstance(), Items.LIME_CARPET, PhantasmModBlocks.PREAM_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_PREAM_GREEN.get().asItem().getDefaultInstance(), Items.GREEN_CARPET, PhantasmModBlocks.PREAM_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_PREAM_CYAN.get().asItem().getDefaultInstance(), Items.CYAN_CARPET, PhantasmModBlocks.PREAM_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_PREAM_LIGHT_BLUE.get().asItem().getDefaultInstance(), Items.LIGHT_BLUE_CARPET, PhantasmModBlocks.PREAM_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_PREAM_BLUE.get().asItem().getDefaultInstance(), Items.BLUE_CARPET, PhantasmModBlocks.PREAM_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_PREAM_PURPLE.get().asItem().getDefaultInstance(), Items.PURPLE_CARPET, PhantasmModBlocks.PREAM_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_PREAM_MAGENTA.get().asItem().getDefaultInstance(), Items.MAGENTA_CARPET, PhantasmModBlocks.PREAM_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_PREAM_PINK.get().asItem().getDefaultInstance(), Items.PINK_CARPET, PhantasmModBlocks.PREAM_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_EBONY_WHITE.get().asItem().getDefaultInstance(), Items.WHITE_CARPET, PhantasmModBlocks.EBONY_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_EBONY_LIGHT_GRAY.get().asItem().getDefaultInstance(), Items.LIGHT_GRAY_CARPET, PhantasmModBlocks.EBONY_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_EBONY_GRAY.get().asItem().getDefaultInstance(), Items.GRAY_CARPET, PhantasmModBlocks.EBONY_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_EBONY_BLACK.get().asItem().getDefaultInstance(), Items.BLACK_CARPET, PhantasmModBlocks.EBONY_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_EBONY_BROWN.get().asItem().getDefaultInstance(), Items.BROWN_CARPET, PhantasmModBlocks.EBONY_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_EBONY_RED.get().asItem().getDefaultInstance(), Items.RED_CARPET, PhantasmModBlocks.EBONY_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_EBONY_ORANGE.get().asItem().getDefaultInstance(), Items.ORANGE_CARPET, PhantasmModBlocks.EBONY_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_EBONY_YELLOW.get().asItem().getDefaultInstance(), Items.YELLOW_CARPET, PhantasmModBlocks.EBONY_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_EBONY_LIME.get().asItem().getDefaultInstance(), Items.LIME_CARPET, PhantasmModBlocks.EBONY_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_EBONY_GREEN.get().asItem().getDefaultInstance(), Items.GREEN_CARPET, PhantasmModBlocks.EBONY_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_EBONY_CYAN.get().asItem().getDefaultInstance(), Items.CYAN_CARPET, PhantasmModBlocks.EBONY_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_EBONY_LIGHT_BLUE.get().asItem().getDefaultInstance(), Items.LIGHT_BLUE_CARPET, PhantasmModBlocks.EBONY_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_EBONY_BLUE.get().asItem().getDefaultInstance(), Items.BLUE_CARPET, PhantasmModBlocks.EBONY_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_EBONY_PURPLE.get().asItem().getDefaultInstance(), Items.PURPLE_CARPET, PhantasmModBlocks.EBONY_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_EBONY_MAGENTA.get().asItem().getDefaultInstance(), Items.MAGENTA_CARPET, PhantasmModBlocks.EBONY_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_EBONY_PINK.get().asItem().getDefaultInstance(), Items.PINK_CARPET, PhantasmModBlocks.EBONY_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_CHORUS_NEST_WHITE.get().asItem().getDefaultInstance(), Items.WHITE_CARPET, UnusualendModBlocks.CHORUS_NEST_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_CHORUS_NEST_LIGHT_GRAY.get().asItem().getDefaultInstance(), Items.LIGHT_GRAY_CARPET, UnusualendModBlocks.CHORUS_NEST_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_CHORUS_NEST_GRAY.get().asItem().getDefaultInstance(), Items.GRAY_CARPET, UnusualendModBlocks.CHORUS_NEST_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_CHORUS_NEST_BLACK.get().asItem().getDefaultInstance(), Items.BLACK_CARPET, UnusualendModBlocks.CHORUS_NEST_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_CHORUS_NEST_BROWN.get().asItem().getDefaultInstance(), Items.BROWN_CARPET, UnusualendModBlocks.CHORUS_NEST_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_CHORUS_NEST_RED.get().asItem().getDefaultInstance(), Items.RED_CARPET, UnusualendModBlocks.CHORUS_NEST_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_CHORUS_NEST_ORANGE.get().asItem().getDefaultInstance(), Items.ORANGE_CARPET, UnusualendModBlocks.CHORUS_NEST_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_CHORUS_NEST_YELLOW.get().asItem().getDefaultInstance(), Items.YELLOW_CARPET, UnusualendModBlocks.CHORUS_NEST_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_CHORUS_NEST_LIME.get().asItem().getDefaultInstance(), Items.LIME_CARPET, UnusualendModBlocks.CHORUS_NEST_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_CHORUS_NEST_GREEN.get().asItem().getDefaultInstance(), Items.GREEN_CARPET, UnusualendModBlocks.CHORUS_NEST_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_CHORUS_NEST_CYAN.get().asItem().getDefaultInstance(), Items.CYAN_CARPET, UnusualendModBlocks.CHORUS_NEST_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_CHORUS_NEST_LIGHT_BLUE.get().asItem().getDefaultInstance(), Items.LIGHT_BLUE_CARPET, UnusualendModBlocks.CHORUS_NEST_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_CHORUS_NEST_BLUE.get().asItem().getDefaultInstance(), Items.BLUE_CARPET, UnusualendModBlocks.CHORUS_NEST_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_CHORUS_NEST_PURPLE.get().asItem().getDefaultInstance(), Items.PURPLE_CARPET, UnusualendModBlocks.CHORUS_NEST_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_CHORUS_NEST_MAGENTA.get().asItem().getDefaultInstance(), Items.MAGENTA_CARPET, UnusualendModBlocks.CHORUS_NEST_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_CHORUS_NEST_PINK.get().asItem().getDefaultInstance(), Items.PINK_CARPET, UnusualendModBlocks.CHORUS_NEST_SLAB.get());
+        basketRecipe(consumer, TBABlocks.BASKET_BLOODSHROOM_WHITE.get().asItem().getDefaultInstance(), Items.WHITE_CARPET, TinkerWorld.bloodshroom.getSlab());
+        basketRecipe(consumer, TBABlocks.BASKET_BLOODSHROOM_LIGHT_GRAY.get().asItem().getDefaultInstance(), Items.LIGHT_GRAY_CARPET, TinkerWorld.bloodshroom.getSlab());
+        basketRecipe(consumer, TBABlocks.BASKET_BLOODSHROOM_GRAY.get().asItem().getDefaultInstance(), Items.GRAY_CARPET, TinkerWorld.bloodshroom.getSlab());
+        basketRecipe(consumer, TBABlocks.BASKET_BLOODSHROOM_BLACK.get().asItem().getDefaultInstance(), Items.BLACK_CARPET, TinkerWorld.bloodshroom.getSlab());
+        basketRecipe(consumer, TBABlocks.BASKET_BLOODSHROOM_BROWN.get().asItem().getDefaultInstance(), Items.BROWN_CARPET, TinkerWorld.bloodshroom.getSlab());
+        basketRecipe(consumer, TBABlocks.BASKET_BLOODSHROOM_RED.get().asItem().getDefaultInstance(), Items.RED_CARPET, TinkerWorld.bloodshroom.getSlab());
+        basketRecipe(consumer, TBABlocks.BASKET_BLOODSHROOM_ORANGE.get().asItem().getDefaultInstance(), Items.ORANGE_CARPET, TinkerWorld.bloodshroom.getSlab());
+        basketRecipe(consumer, TBABlocks.BASKET_BLOODSHROOM_YELLOW.get().asItem().getDefaultInstance(), Items.YELLOW_CARPET, TinkerWorld.bloodshroom.getSlab());
+        basketRecipe(consumer, TBABlocks.BASKET_BLOODSHROOM_LIME.get().asItem().getDefaultInstance(), Items.LIME_CARPET, TinkerWorld.bloodshroom.getSlab());
+        basketRecipe(consumer, TBABlocks.BASKET_BLOODSHROOM_GREEN.get().asItem().getDefaultInstance(), Items.GREEN_CARPET, TinkerWorld.bloodshroom.getSlab());
+        basketRecipe(consumer, TBABlocks.BASKET_BLOODSHROOM_CYAN.get().asItem().getDefaultInstance(), Items.CYAN_CARPET, TinkerWorld.bloodshroom.getSlab());
+        basketRecipe(consumer, TBABlocks.BASKET_BLOODSHROOM_LIGHT_BLUE.get().asItem().getDefaultInstance(), Items.LIGHT_BLUE_CARPET, TinkerWorld.bloodshroom.getSlab());
+        basketRecipe(consumer, TBABlocks.BASKET_BLOODSHROOM_BLUE.get().asItem().getDefaultInstance(), Items.BLUE_CARPET, TinkerWorld.bloodshroom.getSlab());
+        basketRecipe(consumer, TBABlocks.BASKET_BLOODSHROOM_PURPLE.get().asItem().getDefaultInstance(), Items.PURPLE_CARPET, TinkerWorld.bloodshroom.getSlab());
+        basketRecipe(consumer, TBABlocks.BASKET_BLOODSHROOM_MAGENTA.get().asItem().getDefaultInstance(), Items.MAGENTA_CARPET, TinkerWorld.bloodshroom.getSlab());
+        basketRecipe(consumer, TBABlocks.BASKET_BLOODSHROOM_PINK.get().asItem().getDefaultInstance(), Items.PINK_CARPET, TinkerWorld.bloodshroom.getSlab());
+        basketRecipe(consumer, TBABlocks.BASKET_ENDERBARK_WHITE.get().asItem().getDefaultInstance(), Items.WHITE_CARPET, TinkerWorld.enderbark.getSlab());
+        basketRecipe(consumer, TBABlocks.BASKET_ENDERBARK_LIGHT_GRAY.get().asItem().getDefaultInstance(), Items.LIGHT_GRAY_CARPET, TinkerWorld.enderbark.getSlab());
+        basketRecipe(consumer, TBABlocks.BASKET_ENDERBARK_GRAY.get().asItem().getDefaultInstance(), Items.GRAY_CARPET, TinkerWorld.enderbark.getSlab());
+        basketRecipe(consumer, TBABlocks.BASKET_ENDERBARK_BLACK.get().asItem().getDefaultInstance(), Items.BLACK_CARPET, TinkerWorld.enderbark.getSlab());
+        basketRecipe(consumer, TBABlocks.BASKET_ENDERBARK_BROWN.get().asItem().getDefaultInstance(), Items.BROWN_CARPET, TinkerWorld.enderbark.getSlab());
+        basketRecipe(consumer, TBABlocks.BASKET_ENDERBARK_RED.get().asItem().getDefaultInstance(), Items.RED_CARPET, TinkerWorld.enderbark.getSlab());
+        basketRecipe(consumer, TBABlocks.BASKET_ENDERBARK_ORANGE.get().asItem().getDefaultInstance(), Items.ORANGE_CARPET, TinkerWorld.enderbark.getSlab());
+        basketRecipe(consumer, TBABlocks.BASKET_ENDERBARK_YELLOW.get().asItem().getDefaultInstance(), Items.YELLOW_CARPET, TinkerWorld.enderbark.getSlab());
+        basketRecipe(consumer, TBABlocks.BASKET_ENDERBARK_LIME.get().asItem().getDefaultInstance(), Items.LIME_CARPET, TinkerWorld.enderbark.getSlab());
+        basketRecipe(consumer, TBABlocks.BASKET_ENDERBARK_GREEN.get().asItem().getDefaultInstance(), Items.GREEN_CARPET, TinkerWorld.enderbark.getSlab());
+        basketRecipe(consumer, TBABlocks.BASKET_ENDERBARK_CYAN.get().asItem().getDefaultInstance(), Items.CYAN_CARPET, TinkerWorld.enderbark.getSlab());
+        basketRecipe(consumer, TBABlocks.BASKET_ENDERBARK_LIGHT_BLUE.get().asItem().getDefaultInstance(), Items.LIGHT_BLUE_CARPET, TinkerWorld.enderbark.getSlab());
+        basketRecipe(consumer, TBABlocks.BASKET_ENDERBARK_BLUE.get().asItem().getDefaultInstance(), Items.BLUE_CARPET, TinkerWorld.enderbark.getSlab());
+        basketRecipe(consumer, TBABlocks.BASKET_ENDERBARK_PURPLE.get().asItem().getDefaultInstance(), Items.PURPLE_CARPET, TinkerWorld.enderbark.getSlab());
+        basketRecipe(consumer, TBABlocks.BASKET_ENDERBARK_MAGENTA.get().asItem().getDefaultInstance(), Items.MAGENTA_CARPET, TinkerWorld.enderbark.getSlab());
+        basketRecipe(consumer, TBABlocks.BASKET_ENDERBARK_PINK.get().asItem().getDefaultInstance(), Items.PINK_CARPET, TinkerWorld.enderbark.getSlab());
+        basketRecipe(consumer, TBABlocks.BASKET_GREENHEART_WHITE.get().asItem().getDefaultInstance(), Items.WHITE_CARPET, TinkerWorld.greenheart.getSlab());
+        basketRecipe(consumer, TBABlocks.BASKET_GREENHEART_LIGHT_GRAY.get().asItem().getDefaultInstance(), Items.LIGHT_GRAY_CARPET, TinkerWorld.greenheart.getSlab());
+        basketRecipe(consumer, TBABlocks.BASKET_GREENHEART_GRAY.get().asItem().getDefaultInstance(), Items.GRAY_CARPET, TinkerWorld.greenheart.getSlab());
+        basketRecipe(consumer, TBABlocks.BASKET_GREENHEART_BLACK.get().asItem().getDefaultInstance(), Items.BLACK_CARPET, TinkerWorld.greenheart.getSlab());
+        basketRecipe(consumer, TBABlocks.BASKET_GREENHEART_BROWN.get().asItem().getDefaultInstance(), Items.BROWN_CARPET, TinkerWorld.greenheart.getSlab());
+        basketRecipe(consumer, TBABlocks.BASKET_GREENHEART_RED.get().asItem().getDefaultInstance(), Items.RED_CARPET, TinkerWorld.greenheart.getSlab());
+        basketRecipe(consumer, TBABlocks.BASKET_GREENHEART_ORANGE.get().asItem().getDefaultInstance(), Items.ORANGE_CARPET, TinkerWorld.greenheart.getSlab());
+        basketRecipe(consumer, TBABlocks.BASKET_GREENHEART_YELLOW.get().asItem().getDefaultInstance(), Items.YELLOW_CARPET, TinkerWorld.greenheart.getSlab());
+        basketRecipe(consumer, TBABlocks.BASKET_GREENHEART_LIME.get().asItem().getDefaultInstance(), Items.LIME_CARPET, TinkerWorld.greenheart.getSlab());
+        basketRecipe(consumer, TBABlocks.BASKET_GREENHEART_GREEN.get().asItem().getDefaultInstance(), Items.GREEN_CARPET, TinkerWorld.greenheart.getSlab());
+        basketRecipe(consumer, TBABlocks.BASKET_GREENHEART_CYAN.get().asItem().getDefaultInstance(), Items.CYAN_CARPET, TinkerWorld.greenheart.getSlab());
+        basketRecipe(consumer, TBABlocks.BASKET_GREENHEART_LIGHT_BLUE.get().asItem().getDefaultInstance(), Items.LIGHT_BLUE_CARPET, TinkerWorld.greenheart.getSlab());
+        basketRecipe(consumer, TBABlocks.BASKET_GREENHEART_BLUE.get().asItem().getDefaultInstance(), Items.BLUE_CARPET, TinkerWorld.greenheart.getSlab());
+        basketRecipe(consumer, TBABlocks.BASKET_GREENHEART_PURPLE.get().asItem().getDefaultInstance(), Items.PURPLE_CARPET, TinkerWorld.greenheart.getSlab());
+        basketRecipe(consumer, TBABlocks.BASKET_GREENHEART_MAGENTA.get().asItem().getDefaultInstance(), Items.MAGENTA_CARPET, TinkerWorld.greenheart.getSlab());
+        basketRecipe(consumer, TBABlocks.BASKET_GREENHEART_PINK.get().asItem().getDefaultInstance(), Items.PINK_CARPET, TinkerWorld.greenheart.getSlab());
+        basketRecipe(consumer, TBABlocks.BASKET_TINKER_SKYROOT_WHITE.get().asItem().getDefaultInstance(), Items.WHITE_CARPET, TinkerWorld.skyroot.getSlab());
+        basketRecipe(consumer, TBABlocks.BASKET_TINKER_SKYROOT_LIGHT_GRAY.get().asItem().getDefaultInstance(), Items.LIGHT_GRAY_CARPET, TinkerWorld.skyroot.getSlab());
+        basketRecipe(consumer, TBABlocks.BASKET_TINKER_SKYROOT_GRAY.get().asItem().getDefaultInstance(), Items.GRAY_CARPET, TinkerWorld.skyroot.getSlab());
+        basketRecipe(consumer, TBABlocks.BASKET_TINKER_SKYROOT_BLACK.get().asItem().getDefaultInstance(), Items.BLACK_CARPET, TinkerWorld.skyroot.getSlab());
+        basketRecipe(consumer, TBABlocks.BASKET_TINKER_SKYROOT_BROWN.get().asItem().getDefaultInstance(), Items.BROWN_CARPET, TinkerWorld.skyroot.getSlab());
+        basketRecipe(consumer, TBABlocks.BASKET_TINKER_SKYROOT_RED.get().asItem().getDefaultInstance(), Items.RED_CARPET, TinkerWorld.skyroot.getSlab());
+        basketRecipe(consumer, TBABlocks.BASKET_TINKER_SKYROOT_ORANGE.get().asItem().getDefaultInstance(), Items.ORANGE_CARPET, TinkerWorld.skyroot.getSlab());
+        basketRecipe(consumer, TBABlocks.BASKET_TINKER_SKYROOT_YELLOW.get().asItem().getDefaultInstance(), Items.YELLOW_CARPET, TinkerWorld.skyroot.getSlab());
+        basketRecipe(consumer, TBABlocks.BASKET_TINKER_SKYROOT_LIME.get().asItem().getDefaultInstance(), Items.LIME_CARPET, TinkerWorld.skyroot.getSlab());
+        basketRecipe(consumer, TBABlocks.BASKET_TINKER_SKYROOT_GREEN.get().asItem().getDefaultInstance(), Items.GREEN_CARPET, TinkerWorld.skyroot.getSlab());
+        basketRecipe(consumer, TBABlocks.BASKET_TINKER_SKYROOT_CYAN.get().asItem().getDefaultInstance(), Items.CYAN_CARPET, TinkerWorld.skyroot.getSlab());
+        basketRecipe(consumer, TBABlocks.BASKET_TINKER_SKYROOT_LIGHT_BLUE.get().asItem().getDefaultInstance(), Items.LIGHT_BLUE_CARPET, TinkerWorld.skyroot.getSlab());
+        basketRecipe(consumer, TBABlocks.BASKET_TINKER_SKYROOT_BLUE.get().asItem().getDefaultInstance(), Items.BLUE_CARPET, TinkerWorld.skyroot.getSlab());
+        basketRecipe(consumer, TBABlocks.BASKET_TINKER_SKYROOT_PURPLE.get().asItem().getDefaultInstance(), Items.PURPLE_CARPET, TinkerWorld.skyroot.getSlab());
+        basketRecipe(consumer, TBABlocks.BASKET_TINKER_SKYROOT_MAGENTA.get().asItem().getDefaultInstance(), Items.MAGENTA_CARPET, TinkerWorld.skyroot.getSlab());
+        basketRecipe(consumer, TBABlocks.BASKET_TINKER_SKYROOT_PINK.get().asItem().getDefaultInstance(), Items.PINK_CARPET, TinkerWorld.skyroot.getSlab());
     }
 
-    private void plateRecipe(Consumer<FinishedRecipe> consumer, ItemStack result, Item ingredient) {
+    private void plateRecipe(Consumer<FinishedRecipe> consumer, @NotNull ItemStack result, Item ingredient) {
         SingleItemRecipeBuilder.stonecutting(Ingredient.of(ingredient), result.getItem(), 4)
                 .unlockedBy("has_terracotta",
                         has(ItemTags.TERRACOTTA))
                 .save(consumer, new ResourceLocation(MODID, "plates/" + result.getItem()));
     }
 
-    private void bookcaseTagRecipe(Consumer<FinishedRecipe> consumer, @NotNull ItemStack result, TagKey<Item> log, TagKey<Item> strippedLog, TagKey<Item> slab) {
+    private void basketRecipe(Consumer<FinishedRecipe> consumer, @NotNull ItemStack result, ItemLike carpet, ItemLike slab) {
         ShapedRecipeBuilder.shaped(result.getItem(), 1)
-                .group("bookcases")
+                .group("baskets")
+                .pattern("###")
+                .pattern("SCS")
                 .pattern("SSS")
-                .pattern("#B#")
-                .pattern("LLL")
-                .define('#', Ingredient.of(slab))
-                .define('B', Items.BOOK)
-                .define('L', Ingredient.of(log))
-                .define('S', Ingredient.of(strippedLog))
-                .unlockedBy("has_book", has(Items.BOOK))
+                .define('#', Ingredient.of(TBATags.Items.STICKS))
+                .define('C', Ingredient.of(carpet))
+                .define('S', Ingredient.of(slab))
+                .unlockedBy("has_logs", has(ItemTags.LOGS))
                 .save(consumer, new ResourceLocation(MODID,
-                        "bookcases/" + result.getItem()));
+                        "baskets/" + result.getItem()));
     }
 
     private void bookcaseRecipe(Consumer<FinishedRecipe> consumer, @NotNull ItemStack result, ItemLike log, ItemLike strippedLog, ItemLike slab) {
@@ -2215,20 +2727,6 @@ public class RecipesGen extends RecipeProvider implements IConditionBuilder {
                         "bookcases/" + result.getItem()));
     }
 
-    private void chairTagRecipe(Consumer<FinishedRecipe> consumer, @NotNull ItemStack result, TagKey<Item> log, TagKey<Item> strippedLog, TagKey<Item> slab) {
-        ShapedRecipeBuilder.shaped(result.getItem(), 2)
-                .group("chairs")
-                .pattern("  #")
-                .pattern("#S#")
-                .pattern("L L")
-                .define('#', Ingredient.of(slab))
-                .define('S', Ingredient.of(strippedLog))
-                .define('L', Ingredient.of(log))
-                .unlockedBy("has_log", has(log))
-                .save(consumer, new ResourceLocation(MODID,
-                        "chairs/" + result.getItem()));
-    }
-
     private void chairRecipe(Consumer<FinishedRecipe> consumer, @NotNull ItemStack result, ItemLike log, ItemLike strippedLog, ItemLike slab) {
         ShapedRecipeBuilder.shaped(result.getItem(), 2)
                 .group("chairs")
@@ -2241,19 +2739,6 @@ public class RecipesGen extends RecipeProvider implements IConditionBuilder {
                 .unlockedBy("has_log", has(log))
                 .save(consumer, new ResourceLocation(MODID,
                         "chairs/" + result.getItem()));
-    }
-
-    private void benchTagRecipe(Consumer<FinishedRecipe> consumer, @NotNull ItemStack result, TagKey<Item> log, TagKey<Item> slab) {
-        ShapedRecipeBuilder.shaped(result.getItem(), 2)
-                .group("benches")
-                .pattern("  #")
-                .pattern("###")
-                .pattern("L L")
-                .define('#', Ingredient.of(slab))
-                .define('L', Ingredient.of(log))
-                .unlockedBy("has_log", has(log))
-                .save(consumer, new ResourceLocation(MODID,
-                        "benches/" + result.getItem()));
     }
 
     private void benchRecipe(Consumer<FinishedRecipe> consumer, @NotNull ItemStack result, ItemLike log, ItemLike slab) {
@@ -2269,18 +2754,6 @@ public class RecipesGen extends RecipeProvider implements IConditionBuilder {
                         "benches/" + result.getItem()));
     }
 
-    private void deskTagRecipe(Consumer<FinishedRecipe> consumer, @NotNull ItemStack result, TagKey<Item> planks, TagKey<Item> slab) {
-        ShapedRecipeBuilder.shaped(result.getItem(), 2)
-                .group("desks")
-                .pattern("###")
-                .pattern("P P")
-                .define('#', Ingredient.of(slab))
-                .define('P', Ingredient.of(planks))
-                .unlockedBy("has_planks", has(planks))
-                .save(consumer, new ResourceLocation(MODID,
-                        "desks/" + result.getItem()));
-    }
-
     private void deskRecipe(Consumer<FinishedRecipe> consumer, @NotNull ItemStack result, ItemLike planks, ItemLike slab) {
         ShapedRecipeBuilder.shaped(result.getItem(), 2)
                 .group("desks")
@@ -2291,20 +2764,6 @@ public class RecipesGen extends RecipeProvider implements IConditionBuilder {
                 .unlockedBy("has_planks", has(planks))
                 .save(consumer, new ResourceLocation(MODID,
                         "desks/" + result.getItem()));
-    }
-
-    private void deskTagCabinetRecipe(Consumer<FinishedRecipe> consumer, @NotNull ItemStack result, TagKey<Item> log, TagKey<Item> planks) {
-        ShapedRecipeBuilder.shaped(result.getItem(), 1)
-                .group("desk_cabinets")
-                .pattern("PPP")
-                .pattern("LCL")
-                .pattern("PPP")
-                .define('P', Ingredient.of(planks))
-                .define('C', Items.CHEST)
-                .define('L', Ingredient.of(log))
-                .unlockedBy("has_chest", has(Items.CHEST))
-                .save(consumer, new ResourceLocation(MODID,
-                        "desk_cabinets/" + result.getItem()));
     }
 
     private void deskCabinetRecipe(Consumer<FinishedRecipe> consumer, @NotNull ItemStack result, ItemLike log, ItemLike planks) {
@@ -2321,20 +2780,6 @@ public class RecipesGen extends RecipeProvider implements IConditionBuilder {
                         "desk_cabinets/" + result.getItem()));
     }
 
-    private void lockerTagRecipe(Consumer<FinishedRecipe> consumer, @NotNull ItemStack result, TagKey<Item> log, TagKey<Item> slab) {
-        ShapedRecipeBuilder.shaped(result.getItem(), 1)
-                .group("lockers")
-                .pattern("###")
-                .pattern("LCL")
-                .pattern("###")
-                .define('#', Ingredient.of(slab))
-                .define('C', Items.CHEST)
-                .define('L', Ingredient.of(log))
-                .unlockedBy("has_chest", has(Items.CHEST))
-                .save(consumer, new ResourceLocation(MODID,
-                        "lockers/" + result.getItem()));
-    }
-
     private void lockerRecipe(Consumer<FinishedRecipe> consumer, @NotNull ItemStack result, ItemLike log, ItemLike slab) {
         ShapedRecipeBuilder.shaped(result.getItem(), 1)
                 .group("lockers")
@@ -2347,20 +2792,6 @@ public class RecipesGen extends RecipeProvider implements IConditionBuilder {
                 .unlockedBy("has_chest", has(Items.CHEST))
                 .save(consumer, new ResourceLocation(MODID,
                         "lockers/" + result.getItem()));
-    }
-
-    private void tableTagRecipe(Consumer<FinishedRecipe> consumer, @NotNull ItemStack result, TagKey<Item> log, TagKey<Item> strippedLog, TagKey<Item> slab) {
-        ShapedRecipeBuilder.shaped(result.getItem(), 2)
-                .group("tables")
-                .pattern("###")
-                .pattern(" S ")
-                .pattern(" L ")
-                .define('#', Ingredient.of(slab))
-                .define('S', Ingredient.of(strippedLog))
-                .define('L', Ingredient.of(log))
-                .unlockedBy("has_slab", has(slab))
-                .save(consumer, new ResourceLocation(MODID,
-                        "tables/" + result.getItem()));
     }
 
     private void tableRecipe(Consumer<FinishedRecipe> consumer, @NotNull ItemStack result, ItemLike log, ItemLike strippedLog, ItemLike slab) {

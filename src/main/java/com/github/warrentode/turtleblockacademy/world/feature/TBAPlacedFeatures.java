@@ -14,6 +14,7 @@ import java.util.List;
 
 import static com.github.warrentode.turtleblockacademy.TurtleBlockAcademy.MODID;
 
+@SuppressWarnings("OptionalGetWithoutIsPresent")
 public class TBAPlacedFeatures {
     public static final DeferredRegister<PlacedFeature> PLACED_FEATURES =
             DeferredRegister.create(Registry.PLACED_FEATURE_REGISTRY, MODID);
