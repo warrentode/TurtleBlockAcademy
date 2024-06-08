@@ -1,6 +1,7 @@
 package com.github.warrentode.turtleblockacademy.blocks.furniture;
 
 import com.github.warrentode.turtleblockacademy.blocks.entity.PlateBlockEntity;
+import com.github.warrentode.turtleblockacademy.util.ShapeUtil;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.sounds.SoundEvents;
@@ -53,27 +54,7 @@ public class PlateBlock extends BaseEntityBlock {
         super(properties);
         this.registerDefaultState(this.stateDefinition.any()
                 .setValue(FACING, Direction.NORTH));
-        runCalculation();
-    }
-
-    protected void runCalculation() {
-        for (Direction direction : Direction.values()) {
-            SHAPES.put(direction, calculateShapes(direction, PlateBlock.SHAPE));
-        }
-    }
-
-    public static VoxelShape calculateShapes(@NotNull Direction to, VoxelShape shape) {
-        final VoxelShape[] buffer = {shape, Shapes.empty()};
-
-        final int times = (to.get2DDataValue() - Direction.NORTH.get2DDataValue() + 4) % 4;
-        for (int i = 0; i < times; i++) {
-            buffer[0].forAllBoxes((minX, minY, minZ, maxX, maxY, maxZ) -> buffer[1] = Shapes.or(buffer[1],
-                    Shapes.create(1 - maxZ, minY, minX, 1 - minZ, maxY, maxX)));
-            buffer[0] = buffer[1];
-            buffer[1] = Shapes.empty();
-        }
-
-        return buffer[0];
+        ShapeUtil.runCalculation(SHAPES, SHAPE);
     }
 
     @Override
@@ -112,14 +93,6 @@ public class PlateBlock extends BaseEntityBlock {
         return InteractionResult.PASS;
     }
 
-    @SuppressWarnings("unused")
-    public static boolean tryPlaceFood(@Nullable Player player, @NotNull Level level, BlockPos pos, @NotNull BlockState state, ItemStack food) {
-        if (food == null || food.isEmpty()) {
-            return true;
-        }
-        return food.isEdible();
-    }
-
     @SuppressWarnings("deprecation")
     public void onRemove(@NotNull BlockState state, @NotNull Level level, @NotNull BlockPos pos, @NotNull BlockState newState, boolean isMoving) {
         if (!state.is(newState.getBlock())) {
@@ -145,6 +118,7 @@ public class PlateBlock extends BaseEntityBlock {
                 context.getHorizontalDirection().getOpposite());
     }
 
+    @SuppressWarnings("deprecation")
     @Override
     public @NotNull RenderShape getRenderShape(@NotNull BlockState state) {
         return RenderShape.MODEL;

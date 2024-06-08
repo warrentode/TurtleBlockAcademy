@@ -1,6 +1,6 @@
 package com.github.warrentode.turtleblockacademy.loot.conditions;
 
-import com.github.warrentode.turtleblockacademy.loot.serializers.ModLootItemConditions;
+import com.github.warrentode.turtleblockacademy.loot.serializers.TBALootItemConditions;
 import com.google.common.collect.ImmutableSet;
 import com.google.gson.JsonDeserializationContext;
 import com.google.gson.JsonObject;
@@ -29,7 +29,7 @@ public class EntityTypeTagCondition implements LootItemCondition {
     }
 
     public @NotNull LootItemConditionType getType() {
-        return ModLootItemConditions.ENTITY_TYPE_TAG_CONDITION.get();
+        return TBALootItemConditions.ENTITY_TYPE_TAG_CONDITION.get();
     }
 
     public @NotNull Set<LootContextParam<?>> getReferencedContextParams() {

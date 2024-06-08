@@ -1,6 +1,6 @@
 package com.github.warrentode.turtleblockacademy.loot.conditions;
 
-import com.github.warrentode.turtleblockacademy.loot.serializers.ModLootItemConditions;
+import com.github.warrentode.turtleblockacademy.loot.serializers.TBALootItemConditions;
 import com.github.warrentode.turtleblockacademy.util.CalendarUtil;
 import com.google.gson.JsonDeserializationContext;
 import com.google.gson.JsonObject;
@@ -22,7 +22,7 @@ public class SeasonalCondition implements LootItemCondition {
     }
 
     public @NotNull LootItemConditionType getType() {
-        return ModLootItemConditions.SEASONAL_CONDITION.get();
+        return TBALootItemConditions.SEASONAL_CONDITION.get();
     }
 
     public boolean test(@NotNull LootContext context) {

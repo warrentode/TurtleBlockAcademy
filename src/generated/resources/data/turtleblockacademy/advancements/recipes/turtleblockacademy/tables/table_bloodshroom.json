@@ -5,7 +5,9 @@
       "conditions": {
         "items": [
           {
-            "tag": "tconstruct:bloodshroom_slab"
+            "items": [
+              "tconstruct:bloodshroom_planks_slab"
+            ]
           }
         ]
       },

@@ -3,13 +3,13 @@
   "group": "tables",
   "key": {
     "#": {
-      "tag": "tconstruct:greenheart_slab"
+      "item": "tconstruct:greenheart_planks_slab"
     },
     "L": {
-      "tag": "tconstruct:greenheart_log"
+      "item": "tconstruct:greenheart_log"
     },
     "S": {
-      "tag": "tconstruct:stripped_greenheart_log"
+      "item": "tconstruct:stripped_greenheart_log"
     }
   },
   "pattern": [

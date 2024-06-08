@@ -1,6 +1,7 @@
 package com.github.warrentode.turtleblockacademy.blocks.furniture;
 
 import com.github.warrentode.turtleblockacademy.blocks.entity.SchoolDeskBlockEntity;
+import com.github.warrentode.turtleblockacademy.util.ShapeUtil;
 import com.github.warrentode.turtleblockacademy.util.TBATags;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -62,7 +63,7 @@ public class SchoolDeskBlock extends BaseEntityBlock {
         this.registerDefaultState(this.stateDefinition.any()
                 .setValue(FACING, Direction.NORTH)
                 .setValue(HAS_BOOK, Boolean.FALSE));
-        runCalculation();
+        ShapeUtil.runCalculation(SHAPES, SHAPE);
     }
 
     @Override
@@ -93,26 +94,6 @@ public class SchoolDeskBlock extends BaseEntityBlock {
         return this.defaultBlockState().setValue(FACING,
                         context.getHorizontalDirection().getOpposite())
                 .setValue(HAS_BOOK, flag);
-    }
-
-    protected void runCalculation() {
-        for (Direction direction : Direction.values()) {
-            SHAPES.put(direction, calculateShapes(direction, SchoolDeskBlock.SHAPE));
-        }
-    }
-
-    public static VoxelShape calculateShapes(@NotNull Direction to, VoxelShape shape) {
-        final VoxelShape[] buffer = {shape, Shapes.empty()};
-
-        final int times = (to.get2DDataValue() - Direction.NORTH.get2DDataValue() + 4) % 4;
-        for (int i = 0; i < times; i++) {
-            buffer[0].forAllBoxes((minX, minY, minZ, maxX, maxY, maxZ) -> buffer[1] = Shapes.or(buffer[1],
-                    Shapes.create(1 - maxZ, minY, minX, 1 - minZ, maxY, maxX)));
-            buffer[0] = buffer[1];
-            buffer[1] = Shapes.empty();
-        }
-
-        return buffer[0];
     }
 
     @SuppressWarnings("deprecation")

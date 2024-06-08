@@ -5,7 +5,9 @@
       "conditions": {
         "items": [
           {
-            "tag": "tconstruct:bloodshroom_log"
+            "items": [
+              "tconstruct:bloodshroom_log"
+            ]
           }
         ]
       },

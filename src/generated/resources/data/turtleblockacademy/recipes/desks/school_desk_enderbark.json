@@ -3,10 +3,10 @@
   "group": "desks",
   "key": {
     "#": {
-      "tag": "tconstruct:enderbark_slab"
+      "item": "tconstruct:enderbark_planks_slab"
     },
     "P": {
-      "tag": "tconstruct:enderbark_planks"
+      "item": "tconstruct:enderbark_planks"
     }
   },
   "pattern": [

@@ -1,6 +1,7 @@
 package com.github.warrentode.turtleblockacademy.blocks.furniture;
 
 import com.github.warrentode.turtleblockacademy.blocks.entity.SchoolStorageEntity;
+import com.github.warrentode.turtleblockacademy.util.ShapeUtil;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.server.level.ServerLevel;
@@ -24,7 +25,6 @@ import net.minecraft.world.level.block.state.properties.BooleanProperty;
 import net.minecraft.world.level.block.state.properties.DirectionProperty;
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.shapes.CollisionContext;
-import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.VoxelShape;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
@@ -45,7 +45,7 @@ public class SchoolLockerBlock extends BaseEntityBlock {
         this.registerDefaultState(this.stateDefinition.any()
                 .setValue(FACING, Direction.NORTH)
                 .setValue(OPEN, false));
-        runCalculation();
+        ShapeUtil.runCalculation(SHAPES, SHAPE);
     }
 
     @SuppressWarnings("deprecation")
@@ -109,26 +109,6 @@ public class SchoolLockerBlock extends BaseEntityBlock {
         }
     }
 
-    protected void runCalculation() {
-        for (Direction direction : Direction.values()) {
-            SHAPES.put(direction, calculateShapes(direction, SchoolLockerBlock.SHAPE));
-        }
-    }
-
-    public static VoxelShape calculateShapes(@NotNull Direction to, VoxelShape shape) {
-        final VoxelShape[] buffer = {shape, Shapes.empty()};
-
-        final int times = (to.get2DDataValue() - Direction.NORTH.get2DDataValue() + 4) % 4;
-        for (int i = 0; i < times; i++) {
-            buffer[0].forAllBoxes((minX, minY, minZ, maxX, maxY, maxZ) -> buffer[1] = Shapes.or(buffer[1],
-                    Shapes.create(1 - maxZ, minY, minX, 1 - minZ, maxY, maxX)));
-            buffer[0] = buffer[1];
-            buffer[1] = Shapes.empty();
-        }
-
-        return buffer[0];
-    }
-
     @SuppressWarnings("deprecation")
     public @NotNull BlockState rotate(@NotNull BlockState state, @NotNull Rotation rotation) {
         return state.setValue(FACING, rotation.rotate(state.getValue(FACING)));
@@ -139,6 +119,7 @@ public class SchoolLockerBlock extends BaseEntityBlock {
         return state.rotate(mirror.getRotation(state.getValue(FACING)));
     }
 
+    @SuppressWarnings("deprecation")
     @Override
     public @NotNull RenderShape getRenderShape(@NotNull BlockState state) {
         return RenderShape.MODEL;

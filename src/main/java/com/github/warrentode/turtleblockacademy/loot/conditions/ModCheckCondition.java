@@ -1,6 +1,6 @@
 package com.github.warrentode.turtleblockacademy.loot.conditions;
 
-import com.github.warrentode.turtleblockacademy.loot.serializers.ModLootItemConditions;
+import com.github.warrentode.turtleblockacademy.loot.serializers.TBALootItemConditions;
 import com.google.gson.JsonDeserializationContext;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonSerializationContext;
@@ -22,7 +22,7 @@ public class ModCheckCondition implements LootItemCondition {
     }
 
     public @NotNull LootItemConditionType getType() {
-        return ModLootItemConditions.MODLOADED_CONDITION.get();
+        return TBALootItemConditions.MODLOADED_CONDITION.get();
     }
 
     public boolean test(@NotNull LootContext context) {

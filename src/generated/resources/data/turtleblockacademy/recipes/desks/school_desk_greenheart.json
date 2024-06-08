@@ -3,10 +3,10 @@
   "group": "desks",
   "key": {
     "#": {
-      "tag": "tconstruct:greenheart_slab"
+      "item": "tconstruct:greenheart_planks_slab"
     },
     "P": {
-      "tag": "tconstruct:greenheart_planks"
+      "item": "tconstruct:greenheart_planks"
     }
   },
   "pattern": [

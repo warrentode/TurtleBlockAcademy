@@ -1,7 +1,0 @@
-{
-  "parent": "turtleblockacademy:item/template_colored_egg_blank",
-  "textures": {
-    "0": "turtleblockacademy:item/colored_egg",
-    "1": "turtleblockacademy:item/colored_egg_blank_overlay"
-  }
-}

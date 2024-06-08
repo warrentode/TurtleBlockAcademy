@@ -3,16 +3,16 @@
   "group": "bookcases",
   "key": {
     "#": {
-      "tag": "tconstruct:skyroot_slab"
+      "item": "tconstruct:skyroot_planks_slab"
     },
     "B": {
       "item": "minecraft:book"
     },
     "L": {
-      "tag": "tconstruct:skyroot_log"
+      "item": "tconstruct:skyroot_log"
     },
     "S": {
-      "tag": "tconstruct:stripped_skyroot_log"
+      "item": "tconstruct:stripped_skyroot_log"
     }
   },
   "pattern": [

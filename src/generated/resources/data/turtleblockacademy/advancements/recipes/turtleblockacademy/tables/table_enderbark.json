@@ -5,7 +5,9 @@
       "conditions": {
         "items": [
           {
-            "tag": "tconstruct:enderbark_slab"
+            "items": [
+              "tconstruct:enderbark_planks_slab"
+            ]
           }
         ]
       },

@@ -5,7 +5,9 @@
       "conditions": {
         "items": [
           {
-            "tag": "tconstruct:greenheart_planks"
+            "items": [
+              "tconstruct:greenheart_planks"
+            ]
           }
         ]
       },

@@ -46,6 +46,7 @@ import net.minecraftforge.common.util.LazyOptional;
 import net.minecraftforge.items.IItemHandler;
 import net.minecraftforge.items.ItemStackHandler;
 import net.minecraftforge.items.wrapper.RecipeWrapper;
+import org.jetbrains.annotations.Contract;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 import slimeknights.tconstruct.fluids.TinkerFluids;
@@ -219,7 +220,8 @@ public class FermentingPotBlockEntity extends BlockEntity implements MenuProvide
         nbt.put("RecipesUsed", compoundRecipes);
     }
 
-    private CompoundTag writeItems(CompoundTag nbt) {
+    @Contract("_ -> param1")
+    private @NotNull CompoundTag writeItems(CompoundTag nbt) {
         super.saveAdditional(nbt);
         nbt.put("inventory", inventory.serializeNBT());
         nbt.put("lastItemCrafted", lastItemCrafted.serializeNBT());
@@ -492,7 +494,7 @@ public class FermentingPotBlockEntity extends BlockEntity implements MenuProvide
     }
 
     protected void ejectIngredientRemainder(ItemStack remainderStack) {
-        Direction direction = this.getBlockState().getValue(FermentingPotBlock.FACING);
+        Direction direction = this.getBlockState().getValue(FermentingPotBlock.FACING).getOpposite();
         double x = (double) this.worldPosition.getX() + 0.5 + (double) direction.getStepX() * 0.25;
         double y = (double) this.worldPosition.getY() + 0.7;
         double z = (double) this.worldPosition.getZ() + 0.5 + (double) direction.getStepZ() * 0.25;

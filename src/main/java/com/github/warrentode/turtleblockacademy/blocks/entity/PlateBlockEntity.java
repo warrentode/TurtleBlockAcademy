@@ -59,7 +59,7 @@ public class PlateBlockEntity extends BlockEntity implements Clearable {
     }
 
     public ItemStack removeFood() {
-        for(int i= 0; i < this.items.size(); i++) {
+        for (int i = 0; i < this.items.size(); i++) {
             if (!getStoredItem(i).isEmpty()) {
                 ItemStack item = getStoredItem(i).split(1);
                 setChanged();

@@ -3,16 +3,16 @@
   "group": "bookcases",
   "key": {
     "#": {
-      "tag": "tconstruct:enderbark_slab"
+      "item": "tconstruct:enderbark_planks_slab"
     },
     "B": {
       "item": "minecraft:book"
     },
     "L": {
-      "tag": "tconstruct:enderbark_log"
+      "item": "tconstruct:enderbark_log"
     },
     "S": {
-      "tag": "tconstruct:stripped_enderbark_log"
+      "item": "tconstruct:stripped_enderbark_log"
     }
   },
   "pattern": [

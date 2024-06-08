@@ -6,10 +6,10 @@
       "item": "minecraft:chest"
     },
     "L": {
-      "tag": "tconstruct:greenheart_log"
+      "item": "tconstruct:greenheart_log"
     },
     "P": {
-      "tag": "tconstruct:greenheart_planks"
+      "item": "tconstruct:greenheart_planks"
     }
   },
   "pattern": [

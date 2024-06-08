@@ -14,6 +14,7 @@ import static com.github.warrentode.turtleblockacademy.TurtleBlockAcademy.MODID;
 
 public class TBATags {
     public static class Blocks {
+        public static final TagKey<Block> BASKETS = packBlockTag(MODID, "baskets");
         public static final TagKey<Block> TBA_MINING_PORTAL_FRAME_BLOCKS = packBlockTag(MODID, "mining_portal_frame_blocks");
 
         public static final TagKey<Block> DROPS_FOUR_LEAF_CLOVER = packBlockTag("todecoins", "drops_four_leaf_clover");
@@ -47,7 +48,10 @@ public class TBATags {
     }
 
     public static class Items {
+        public static final TagKey<Item> SEEDS = packItemTag("forge", "seeds");
+        public static final TagKey<Item> DYES = packItemTag("forge", "dye");
         public static final TagKey<Item> EASTER_EGGS = packItemTag(MODID, "easter_eggs");
+        public static final TagKey<Item> BASKET_ITEMS = packItemTag(MODID, "basket_items");
         public static final TagKey<Item> CHALK = packItemTag("forge", "chalks");
         public static final TagKey<Item> SUPPLEMENTARIES_KEY = packItemTag("supplementaries", "key");
 
@@ -90,7 +94,7 @@ public class TBATags {
 
         public static final TagKey<Item> BRICK = packItemTag(MODID, "brick");
         public static final TagKey<Item> WATER_BUCKETS = packItemTag(MODID, "water_buckets");
-        public static final TagKey<Item> STICKS = packItemTag(MODID, "sticks");
+        public static final TagKey<Item> STICKS = packItemTag("forge", "rods/wooden");
 
         public static final TagKey<Item> BACKPACKS = packItemTag(MODID, "backpacks");
 

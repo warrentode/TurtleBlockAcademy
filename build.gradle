@@ -97,6 +97,7 @@ minecraft {
 
 sourceSets.main.resources {
     srcDir 'src/generated/resources'
+    exclude '.cache'
 }
 
 mixin {
@@ -218,7 +219,7 @@ dependencies {
     implementation fg.deobf("curse.maven:mantle-74924:5339977")
     implementation fg.deobf("curse.maven:tinkers-construct-74072:5340027")
 
-    runtimeOnly(fg.deobf("curse.maven:create-328085:4835190"))
+    // runtimeOnly(fg.deobf("curse.maven:create-328085:4835190"))
 
     // patchouli
     implementation fg.deobf("curse.maven:patchouli-306770:4031402")
@@ -248,9 +249,24 @@ jar {
                 "Implementation-Version"  : project.jar.archiveVersion,
                 "Implementation-Vendor"   : project.mod_author,
                 "Implementation-Timestamp": new Date().format("yyyy-MM-dd'T'HH:mm:ssZ"),
-                "MixinConfigs"            : "mixins.todecoins.json"
+                "MixinConfigs"            : "mixins.turtleblockacademy.json"
         ])
     }
+}
+
+tasks.register('updateJson') {
+    file('update.json').withWriter { writer ->
+        file('update_template.json').eachLine { line ->
+            writer << line.replaceAll("version", project.version) + System.getProperty("line.separator")
+        }
+        writer.close()
+    }
+}
+
+tasks.register('updateChangeLog', Exec) {
+    workingDir(project.projectDir)
+    commandLine 'git', 'log', '--date=short', '--pretty=\\"%cd - %s\\"', '--since=1.month', '--no-merges'
+    standardOutput = new PrintStream("${rootDir}/CHANGELOG.txt")
 }
 
 jar.finalizedBy('reobfJar')
