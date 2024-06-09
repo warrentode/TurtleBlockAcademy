@@ -11,8 +11,6 @@ import net.minecraft.network.protocol.Packet;
 import net.minecraft.network.protocol.game.ClientGamePacketListener;
 import net.minecraft.network.protocol.game.ClientboundBlockEntityDataPacket;
 import net.minecraft.sounds.SoundEvents;
-import net.minecraft.world.Containers;
-import net.minecraft.world.SimpleContainer;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
@@ -82,7 +80,8 @@ public class BasketBlockEntity extends BlockEntity {
         tag.put("inventory", itemHandler.serializeNBT());
     }
 
-    private @NotNull CompoundTag writeItems(CompoundTag tag) {
+    @NotNull
+    public CompoundTag writeItems(CompoundTag tag) {
         super.saveAdditional(tag);
         tag.put("inventory", inventory.serializeNBT());
         return tag;
@@ -98,15 +97,12 @@ public class BasketBlockEntity extends BlockEntity {
         inventory.deserializeNBT(tag.getCompound("inventory"));
     }
 
-    public void drops() {
-        SimpleContainer inventory = new SimpleContainer(itemHandler.getSlots());
-
-        for (int i = 0; i < itemHandler.getSlots(); i++) {
-            inventory.setItem(i, itemHandler.getStackInSlot(i));
+    public void saveToItem(@NotNull ItemStack stack) {
+        CompoundTag tag = new CompoundTag();
+        this.saveAdditional(tag);
+        if (!tag.isEmpty()) {
+            stack.addTagElement("BlockEntityTag", tag);
         }
-
-        assert this.level != null;
-        Containers.dropContents(this.level, this.worldPosition, inventory);
     }
 
     public ItemStack getStoredItem(int slot) {
@@ -151,13 +147,13 @@ public class BasketBlockEntity extends BlockEntity {
         return ItemStack.EMPTY;
     }
 
-    private boolean notEmpty() {
+    public boolean isEmpty() {
         for (int i = 0; i < this.inventory.getSlots(); ++i) {
             if (!inventory.getStackInSlot(i).isEmpty()) {
-                return true;
+                return false;
             }
         }
-        return false;
+        return true;
     }
 
     @Nullable
@@ -182,7 +178,7 @@ public class BasketBlockEntity extends BlockEntity {
             return;
         }
 
-        state = state.setValue(BasketBlock.CONDITIONAL, basketEntity.notEmpty());
+        state = state.setValue(BasketBlock.CONDITIONAL, !basketEntity.isEmpty());
         BasketBlock.resetBlockState(level, pos, state, state.getValue(BasketBlock.CONDITIONAL));
 
         if (CalendarUtil.check("ANNIVERSARY") || CalendarUtil.check("BIRTHDAY")

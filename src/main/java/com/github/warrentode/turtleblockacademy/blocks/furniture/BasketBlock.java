@@ -8,11 +8,13 @@ import com.github.warrentode.turtleblockacademy.util.TBATags;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.core.particles.DustParticleOptions;
+import net.minecraft.nbt.CompoundTag;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.util.RandomSource;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
+import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.DyeColor;
 import net.minecraft.world.item.ItemStack;
@@ -28,6 +30,8 @@ import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.level.block.state.properties.BooleanProperty;
 import net.minecraft.world.level.block.state.properties.DirectionProperty;
+import net.minecraft.world.level.storage.loot.LootContext;
+import net.minecraft.world.level.storage.loot.parameters.LootContextParams;
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.shapes.BooleanOp;
 import net.minecraft.world.phys.shapes.CollisionContext;
@@ -38,6 +42,7 @@ import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.EnumMap;
+import java.util.List;
 import java.util.Map;
 import java.util.stream.Stream;
 
@@ -101,8 +106,8 @@ public class BasketBlock extends BaseEntityBlock {
         builder.add(FACING, CONDITIONAL);
     }
 
-    @SuppressWarnings("deprecation")
     @Override
+    @SuppressWarnings("deprecation")
     public @NotNull InteractionResult use(@NotNull BlockState state, @NotNull Level level, @NotNull BlockPos pos, @NotNull Player player, @NotNull InteractionHand hand, @NotNull BlockHitResult hit) {
         ItemStack heldStack = player.getItemInHand(InteractionHand.MAIN_HAND);
         BlockEntity blockEntity = level.getBlockEntity(pos);
@@ -147,21 +152,69 @@ public class BasketBlock extends BaseEntityBlock {
         return InteractionResult.PASS;
     }
 
+    @Override
+    @SuppressWarnings("deprecation")
+    public @NotNull ItemStack getCloneItemStack(@NotNull BlockGetter getter, @NotNull BlockPos pos, @NotNull BlockState state) {
+        ItemStack stack = super.getCloneItemStack(getter, pos, state);
+        BasketBlockEntity basketEntity = (BasketBlockEntity) getter.getBlockEntity(pos);
+        if (basketEntity != null) {
+            CompoundTag tag = basketEntity.writeItems(new CompoundTag());
+            if (!tag.isEmpty()) {
+                stack.addTagElement("BlockEntityTag", tag);
+            }
+        }
+        return stack;
+    }
+
+    @Override
+    public void playerWillDestroy(@NotNull Level level, @NotNull BlockPos pos, @NotNull BlockState state, @NotNull Player player) {
+        BlockEntity blockEntity = level.getBlockEntity(pos);
+        if (blockEntity instanceof BasketBlockEntity basketEntity) {
+            if (!level.isClientSide) {
+                ItemStack itemstack = new ItemStack(this);
+                basketEntity.saveToItem(itemstack);
+
+                ItemEntity itementity = new ItemEntity(level, pos.getX() + 0.5D, pos.getY() + 0.5D, pos.getZ() + 0.5D, itemstack);
+                itementity.setDefaultPickUpDelay();
+                level.addFreshEntity(itementity);
+            }
+            level.updateNeighbourForOutputSignal(pos, this);
+        }
+        super.playerWillDestroy(level, pos, state, player);
+    }
+
+
+    @Override
     @SuppressWarnings("deprecation")
     public void onRemove(@NotNull BlockState state, @NotNull Level level, @NotNull BlockPos pos, @NotNull BlockState newState, boolean isMoving) {
         if (!state.is(newState.getBlock())) {
             BlockEntity blockentity = level.getBlockEntity(pos);
-            if (blockentity instanceof BasketBlockEntity basketEntity) {
-                basketEntity.drops();
+            if (blockentity instanceof BasketBlockEntity) {
                 level.updateNeighbourForOutputSignal(pos, this);
             }
-
             super.onRemove(state, level, pos, newState, isMoving);
         }
     }
 
-    @SuppressWarnings("deprecation")
     @Override
+    @SuppressWarnings("deprecation")
+    public @NotNull List<ItemStack> getDrops(@NotNull BlockState state, LootContext.@NotNull Builder builder) {
+        List<ItemStack> drops = super.getDrops(state, builder);
+        BlockEntity blockEntity = builder.getOptionalParameter(LootContextParams.BLOCK_ENTITY);
+
+        if (blockEntity instanceof BasketBlockEntity basketEntity) {
+            ItemStack stack = new ItemStack(this);
+            basketEntity.saveToItem(stack);
+
+            drops.add(stack);
+            drops.removeIf(itemStack -> itemStack.getItem() == this.asItem());
+        }
+
+        return drops;
+    }
+
+    @Override
+    @SuppressWarnings("deprecation")
     public @NotNull VoxelShape getShape(@NotNull BlockState state, @NotNull BlockGetter level, @NotNull BlockPos pos, @NotNull CollisionContext context) {
         return SHAPES.get(state.getValue(FACING));
     }
@@ -173,8 +226,8 @@ public class BasketBlock extends BaseEntityBlock {
                 context.getHorizontalDirection().getOpposite());
     }
 
-    @SuppressWarnings("deprecation")
     @Override
+    @SuppressWarnings("deprecation")
     public @NotNull RenderShape getRenderShape(@NotNull BlockState state) {
         return RenderShape.MODEL;
     }
@@ -184,14 +237,14 @@ public class BasketBlock extends BaseEntityBlock {
         return SHAPES.get(state.getValue(FACING));
     }
 
-    @SuppressWarnings("deprecation")
     @Override
+    @SuppressWarnings("deprecation")
     public @NotNull BlockState rotate(@NotNull BlockState state, @NotNull Rotation rotation) {
         return state.setValue(FACING, rotation.rotate(state.getValue(FACING)));
     }
 
-    @SuppressWarnings("deprecation")
     @Override
+    @SuppressWarnings("deprecation")
     public @NotNull BlockState mirror(@NotNull BlockState state, @NotNull Mirror mirror) {
         return state.rotate(mirror.getRotation(state.getValue(FACING)));
     }
