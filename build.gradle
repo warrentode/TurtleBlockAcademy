@@ -109,6 +109,9 @@ mixin {
 repositories {
     mavenCentral()
     maven {
+        url = 'https://maven.minecraftforge.net/'
+    }
+    maven {
         url = "https://cursemaven.com"
         content {
             includeGroup "curse.maven"
@@ -126,6 +129,12 @@ repositories {
         // location of a maven mirror for JEI files, as a fallback
         name = "ModMaven"
         url = "https://modmaven.dev"
+    }
+    maven {
+        url = 'https://repo.spongepowered.org/repository/maven-public/'
+    }
+    maven {
+        url = 'https://jitpack.io'
     }
 }
 
@@ -279,7 +288,12 @@ publishing {
     }
     repositories {
         maven {
-            url "file://${project.projectDir}/mcmodsrepo"
+            name = "localRepo"
+            url = "file://${project.projectDir}/mcmodsrepo"
+        }
+        maven {
+            name = "jitpack"
+            url = "https://jitpack.io"
         }
     }
 }
