@@ -22,12 +22,6 @@ jobs:
           java-version: 17
           distribution: 'temurin'
 
-      - name: Set JAVA_HOME
-        run: echo "JAVA_HOME=$(java -XshowSettings:properties -version 2>&1 | grep 'java.home' | awk '{print \$3}')" >> $GITHUB_ENV
-
-      - name: Check Gradle Wrapper Permissions
-        run: ls -l gradlew
-
       - name: Make Gradle executable
         run: |
           cd https://github.com/warrentode/TurtleBlockAcademy
