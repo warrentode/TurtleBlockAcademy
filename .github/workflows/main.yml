@@ -23,9 +23,7 @@ jobs:
           distribution: 'temurin'
 
       - name: Make Gradle executable
-        run: |
-          cd https://github.com/warrentode/TurtleBlockAcademy
-          chmod +x ./gradlew
+        run: chmod +x ./gradlew
 
       - name: Run Unit Tests
         run: ./gradlew test --stacktrace
