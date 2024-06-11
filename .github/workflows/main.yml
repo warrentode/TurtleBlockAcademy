@@ -23,7 +23,7 @@ jobs:
           distribution: 'temurin'
 
       - name: Make Gradle executable
-        run: chmod +x ./gradlew
+        run: chmod +x gradlew
 
       - name: Run Unit Tests
         run: ./gradlew test --stacktrace
