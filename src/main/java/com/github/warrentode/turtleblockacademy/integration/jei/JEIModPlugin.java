@@ -1,7 +1,7 @@
 package com.github.warrentode.turtleblockacademy.integration.jei;
 
 import com.github.warrentode.turtleblockacademy.blocks.TBABlocks;
-import com.github.warrentode.turtleblockacademy.blocks.entity.gui.FermentingPotMenu;
+import com.github.warrentode.turtleblockacademy.blocks.entity.gui.fermentingpot.FermentingPotMenu;
 import com.github.warrentode.turtleblockacademy.blocks.entity.gui.TBAMenuTypes;
 import com.github.warrentode.turtleblockacademy.recipe.fermenting.FermentingPotRecipe;
 import mezz.jei.api.IModPlugin;

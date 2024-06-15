@@ -1,7 +1,7 @@
 package com.github.warrentode.turtleblockacademy.recipe.fermenting;
 
-import com.github.warrentode.turtleblockacademy.TurtleBlockAcademy;
 import com.github.warrentode.turtleblockacademy.items.TBAItems;
+import com.github.warrentode.turtleblockacademy.util.LogUtil;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParseException;
@@ -158,7 +158,7 @@ public class FermentingPotRecipe implements Recipe<RecipeWrapper> {
                 String tabKeyIn = GsonHelper.getAsString(serializedRecipe, "recipe_book_tab", null);
                 FermentingRecipeBookTab tabIn = FermentingRecipeBookTab.findByName(tabKeyIn);
                 if (tabKeyIn != null && tabIn == null) {
-                    TurtleBlockAcademy.LOGGER.warn("Optional field 'recipe_book_tab' does not match any valid tab. If defined, must be one of the following: {}", EnumSet.allOf(FermentingRecipeBookTab.class));
+                    LogUtil.warn("Optional field 'recipe_book_tab' does not match any valid tab. If defined, must be one of the following: {}", EnumSet.allOf(FermentingRecipeBookTab.class));
                 }
 
                 ItemStack resultIn = CraftingHelper.getItemStack(GsonHelper.getAsJsonObject(serializedRecipe, "result"), true);

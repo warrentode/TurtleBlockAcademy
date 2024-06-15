@@ -2,8 +2,8 @@ package com.github.warrentode.turtleblockacademy;
 
 import com.github.warrentode.turtleblockacademy.blocks.TBABlocks;
 import com.github.warrentode.turtleblockacademy.blocks.entity.TBABlockEntities;
-import com.github.warrentode.turtleblockacademy.blocks.entity.gui.FermentingPotScreen;
-import com.github.warrentode.turtleblockacademy.blocks.entity.gui.SchoolDeskScreen;
+import com.github.warrentode.turtleblockacademy.blocks.entity.gui.fermentingpot.FermentingPotScreen;
+import com.github.warrentode.turtleblockacademy.blocks.entity.gui.desk.SchoolDeskScreen;
 import com.github.warrentode.turtleblockacademy.blocks.entity.gui.TBAMenuTypes;
 import com.github.warrentode.turtleblockacademy.config.AcademyConfig;
 import com.github.warrentode.turtleblockacademy.entity.TBAEntityTypes;

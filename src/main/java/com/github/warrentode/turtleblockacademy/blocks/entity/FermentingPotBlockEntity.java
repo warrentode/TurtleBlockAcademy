@@ -1,10 +1,11 @@
 package com.github.warrentode.turtleblockacademy.blocks.entity;
 
 import com.github.warrentode.turtleblockacademy.blocks.FermentingPotBlock;
-import com.github.warrentode.turtleblockacademy.blocks.entity.gui.FermentingPotMenu;
+import com.github.warrentode.turtleblockacademy.blocks.entity.gui.fermentingpot.FermentingPotMenu;
 import com.github.warrentode.turtleblockacademy.mixin.RecipeManagerAccessor;
 import com.github.warrentode.turtleblockacademy.recipe.TBARecipes;
 import com.github.warrentode.turtleblockacademy.recipe.fermenting.FermentingPotRecipe;
+import com.github.warrentode.turtleblockacademy.util.IngredientRemainderUtil;
 import com.github.warrentode.turtleblockacademy.util.TBATags;
 import com.google.common.collect.Lists;
 import it.unimi.dsi.fastutil.objects.Object2IntMap;
@@ -33,7 +34,6 @@ import net.minecraft.world.inventory.ContainerData;
 import net.minecraft.world.inventory.RecipeHolder;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.Recipe;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
@@ -49,7 +49,6 @@ import net.minecraftforge.items.wrapper.RecipeWrapper;
 import org.jetbrains.annotations.Contract;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
-import slimeknights.tconstruct.fluids.TinkerFluids;
 import vectorwing.farmersdelight.common.utility.ItemUtils;
 
 import java.util.List;
@@ -73,37 +72,8 @@ public class FermentingPotBlockEntity extends BlockEntity implements MenuProvide
     private ItemStack coverStack;
     private ItemStack containerStack;
     private boolean checkNewRecipe;
-    public static final Map<Item, Item> INGREDIENT_REMAINDER_OVERRIDES =
-            Map.ofEntries(Map.entry(TinkerFluids.beetrootSoup.asItem(), Items.BUCKET),
-                    Map.entry(TinkerFluids.venomBottle.asItem(), Items.GLASS_BOTTLE),
-                    Map.entry(TinkerFluids.magmaBottle.asItem(), Items.GLASS_BOTTLE),
-                    Map.entry(TinkerFluids.meatSoupBowl.asItem(), Items.BOWL),
-                    Map.entry(TinkerFluids.earthSlime.asItem(), Items.BUCKET),
-                    Map.entry(TinkerFluids.skySlime.asItem(), Items.BUCKET),
-                    Map.entry(TinkerFluids.enderSlime.asItem(), Items.BUCKET),
-                    Map.entry(TinkerFluids.magma.asItem(), Items.BUCKET),
-                    Map.entry(TinkerFluids.honey.asItem(), Items.BUCKET),
-                    Map.entry(TinkerFluids.mushroomStew.asItem(), Items.BUCKET),
-                    Map.entry(TinkerFluids.rabbitStew.asItem(), Items.BUCKET),
-                    Map.entry(TinkerFluids.meatSoup.asItem(), Items.BUCKET),
-                    Map.entry(TinkerFluids.potion.asItem(), Items.BUCKET),
-                    Map.entry(TinkerFluids.blazingBlood.asItem(), Items.BUCKET),
-                    Map.entry(TinkerFluids.liquidSoul.asItem(), Items.BUCKET),
-                    Map.entry(Items.WATER_BUCKET, Items.BUCKET),
-                    Map.entry(Items.POWDER_SNOW_BUCKET, Items.BUCKET),
-                    Map.entry(Items.AXOLOTL_BUCKET, Items.BUCKET),
-                    Map.entry(Items.COD_BUCKET, Items.BUCKET),
-                    Map.entry(Items.PUFFERFISH_BUCKET, Items.BUCKET),
-                    Map.entry(Items.SALMON_BUCKET, Items.BUCKET),
-                    Map.entry(Items.TROPICAL_FISH_BUCKET, Items.BUCKET),
-                    Map.entry(Items.SUSPICIOUS_STEW, Items.BOWL),
-                    Map.entry(Items.MUSHROOM_STEW, Items.BOWL),
-                    Map.entry(Items.RABBIT_STEW, Items.BOWL),
-                    Map.entry(Items.BEETROOT_SOUP, Items.BOWL),
-                    Map.entry(Items.POTION, Items.GLASS_BOTTLE),
-                    Map.entry(Items.SPLASH_POTION, Items.GLASS_BOTTLE),
-                    Map.entry(Items.LINGERING_POTION, Items.GLASS_BOTTLE),
-                    Map.entry(Items.EXPERIENCE_BOTTLE, Items.GLASS_BOTTLE));
+    public static final Map<Item, Item> INGREDIENT_REMAINDER_OVERRIDES
+            = IngredientRemainderUtil.INGREDIENT_REMAINDER_OVERRIDES;
 
     private final ItemStackHandler itemHandler = new ItemStackHandler(9) {
         @Override
@@ -184,12 +154,8 @@ public class FermentingPotBlockEntity extends BlockEntity implements MenuProvide
     }
 
     @Override
-    public @NotNull <T> LazyOptional<T> getCapability(@NotNull Capability<T> cap, @Nullable Direction side) {
-        if (cap == ForgeCapabilities.ITEM_HANDLER) {
-            return lazyItemHandler.cast();
-        }
-
-        return super.getCapability(cap, side);
+    public @NotNull <T> LazyOptional<T> getCapability(@NotNull Capability<T> capability, @Nullable Direction side) {
+        return ForgeCapabilities.ITEM_HANDLER.orEmpty(capability, this.lazyItemHandler);
     }
 
     @Override

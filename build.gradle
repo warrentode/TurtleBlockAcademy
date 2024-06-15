@@ -6,7 +6,8 @@ buildscript {
         mavenCentral()
         maven { url = 'https://maven.minecraftforge.net/' }
         maven { url = 'https://repo.spongepowered.org/repository/maven-public/' }
-        maven { url = 'https://jitpack.io' }
+        mavenCentral()
+        maven { url 'https://jitpack.io' }
     }
     dependencies {
         classpath group: 'net.minecraftforge.gradle', name: 'ForgeGradle', version: '6.0,6.2', changing: true
@@ -16,6 +17,8 @@ buildscript {
 
 plugins {
     id 'eclipse'
+    id 'idea'
+    id 'java'
     id 'maven-publish'
     id 'net.minecraftforge.gradle' version '[6.0,6.2)'
     id 'org.parchmentmc.librarian.forgegradle' version '1.+'
@@ -23,6 +26,7 @@ plugins {
 
 apply plugin: 'net.minecraftforge.gradle'
 apply plugin: 'eclipse'
+apply plugin: 'idea'
 apply plugin: 'java'
 apply plugin: 'maven-publish'
 apply plugin: 'org.spongepowered.mixin'
@@ -33,7 +37,12 @@ base {
     archivesName = "${project.modid}"
 }
 
-java.toolchain.languageVersion = JavaLanguageVersion.of(17)
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(17)
+    }
+}
+
 println "Java: ${System.getProperty 'java.version'}, JVM: ${System.getProperty 'java.vm.version'} (${System.getProperty 'java.vendor'}), Arch: ${System.getProperty 'os.arch'}"
 
 minecraft {
@@ -300,4 +309,10 @@ publishing {
 
 tasks.withType(JavaCompile).configureEach {
     options.encoding = 'UTF-8' // Use the UTF-8 charset for Java compilation
+    options.release = 17
+}
+
+wrapper {
+    gradleVersion = "8.4"
+    distributionType = Wrapper.DistributionType.ALL
 }
