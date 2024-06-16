@@ -1,5 +1,8 @@
 {
   "values": [
+    "#minecraft:flowers",
+    "#forge:ingredients/bread",
+    "#hauntedharvest:sweets",
     "#turtleblockacademy:easter_eggs"
   ]
 }

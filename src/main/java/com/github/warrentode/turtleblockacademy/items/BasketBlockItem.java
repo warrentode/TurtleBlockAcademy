@@ -4,21 +4,23 @@ import com.github.warrentode.turtleblockacademy.blocks.entity.BasketBlockEntity;
 import com.github.warrentode.turtleblockacademy.blocks.entity.gui.basket.BasketMenu;
 import com.github.warrentode.turtleblockacademy.blocks.furniture.BasketBlock;
 import com.github.warrentode.turtleblockacademy.util.LogUtil;
+import net.minecraft.ChatFormatting;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.chat.Component;
+import net.minecraft.network.chat.MutableComponent;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.*;
 import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.item.BlockItem;
-import net.minecraft.world.item.DyeColor;
-import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.*;
 import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
-import net.minecraftforge.items.IItemHandler;
 import net.minecraftforge.items.ItemStackHandler;
 import net.minecraftforge.network.NetworkHooks;
 import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
+
+import java.util.List;
 
 public class BasketBlockItem extends BlockItem {
     public final BasketBlock basketBlock;
@@ -36,31 +38,10 @@ public class BasketBlockItem extends BlockItem {
         return BasketBlockEntity.INVENTORY_SIZE;
     }
 
-    public IItemHandler getInventory(ItemStack stack) {
-        ItemStackHandler stackHandler = new ItemStackHandler(getInventorySize(stack));
-        if (stack.getTag() != null && stack.getTag().contains("inventory")) {
-            stackHandler.deserializeNBT(stack.getTag().getCompound("inventory"));
-            LogUtil.info("Loaded inventory from item stack.");
-        }
-        else {
-            LogUtil.info("No inventory data found on item stack. Creating new inventory.");
-        }
-        return stackHandler;
-    }
-
-    public void saveInventory(ItemStack stack, IItemHandler itemHandler) {
-        if (itemHandler instanceof ItemStackHandler) {
-            CompoundTag inventoryTag = ((ItemStackHandler) itemHandler).serializeNBT();
-            stack.getOrCreateTag().put("inventory", inventoryTag);
-            LogUtil.info("Saved inventory to item stack.");
-        }
-    }
-
     @Override
     public @NotNull InteractionResultHolder<ItemStack> use(@NotNull Level level, @NotNull Player playerIn, @NotNull InteractionHand hand) {
         ItemStack heldStack = playerIn.getItemInHand(hand);
         if (!level.isClientSide() && playerIn instanceof ServerPlayer serverPlayer) {
-            IItemHandler inventoryHandler = getInventory(heldStack);
             NetworkHooks.openScreen(serverPlayer, new SimpleMenuProvider(
                             (id, playerInventory, player) ->
                                     new BasketMenu(id, playerInventory),
@@ -79,5 +60,28 @@ public class BasketBlockItem extends BlockItem {
             return super.place(context);
         }
         return InteractionResult.PASS;
+    }
+
+    @Override
+    public void appendHoverText(@NotNull ItemStack basketItem, @Nullable Level level, @NotNull List<Component> toolTip, @NotNull TooltipFlag flag) {
+        CompoundTag tag = basketItem.getTag();
+        if (tag != null) {
+            if (basketItem.getTag().contains("BlockEntityTag")) {
+                if (basketItem.getTag().getCompound("BlockEntityTag").getCompound("inventory") != null) {
+                    ItemStackHandler basketInventory = new ItemStackHandler(getInventorySize(basketItem));
+                    basketInventory.deserializeNBT(basketItem.getTag().getCompound("BlockEntityTag").getCompound("inventory"));
+
+                    toolTip.add(Component.translatable("container.turtleblockacademy.basket.contents").withStyle(ChatFormatting.ITALIC));
+
+                    for (int i = 0; i < basketInventory.getSlots(); i++) {
+                        if (basketInventory.getStackInSlot(i).getItem() != Items.AIR) {
+                            MutableComponent mutableComponent = basketInventory.getStackInSlot(i).getHoverName().copy();
+                            mutableComponent.append(" x").append(String.valueOf(basketItem.getCount()));
+                            toolTip.add(Component.literal( "- " ).append(mutableComponent).withStyle(ChatFormatting.ITALIC));
+                        }
+                    }
+                }
+            }
+        }
     }
 }

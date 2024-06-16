@@ -7,7 +7,6 @@ import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.Connection;
-import net.minecraft.network.chat.Component;
 import net.minecraft.network.protocol.Packet;
 import net.minecraft.network.protocol.game.ClientGamePacketListener;
 import net.minecraft.network.protocol.game.ClientboundBlockEntityDataPacket;
@@ -30,7 +29,6 @@ import javax.annotation.Nullable;
 import java.util.Objects;
 
 public class BasketBlockEntity extends BlockEntity {
-    private Component customName;
     public final ItemStackHandler inventory;
     public static final int INVENTORY_SIZE = 9;
     public static final int MAX_STACK_SIZE = 1;
@@ -105,6 +103,14 @@ public class BasketBlockEntity extends BlockEntity {
         this.saveAdditional(tag);
         if (!tag.isEmpty()) {
             stack.addTagElement("BlockEntityTag", tag);
+        }
+    }
+
+    public void loadFromItem(@NotNull ItemStack stack) {
+        CompoundTag tag = stack.getTag();
+        // 10 is the NBT type ID for CompoundTag
+        if (tag != null && tag.contains("BlockEntityTag", 10)) {
+            this.load(tag.getCompound("BlockEntityTag"));
         }
     }
 

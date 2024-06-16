@@ -792,6 +792,7 @@
   "block.turtleblockacademy.table_warped": "Warped Table",
   "block.turtleblockacademy.table_willow": "Willow Table",
   "container.turtleblockacademy.basket": "Basket",
+  "container.turtleblockacademy.basket.contents": "Basket Contents",
   "container.turtleblockacademy.desk": "School Desk",
   "container.turtleblockacademy.fermenting_pot": "Fermenting Pot",
   "container.turtleblockacademy.recipe_book.fermenting": "Showing Fermentable",

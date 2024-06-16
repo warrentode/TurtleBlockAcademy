@@ -48,7 +48,6 @@ public class BlockTagsGen extends BlockTagsProvider {
     protected void registerTBATags() {
         tag(TBATags.Blocks.BASKETS)
                 .add(
-
                         TBABlocks.BASKET_OAK_WHITE.get(),
                         TBABlocks.BASKET_OAK_LIGHT_GRAY.get(),
                         TBABlocks.BASKET_OAK_GRAY.get(),

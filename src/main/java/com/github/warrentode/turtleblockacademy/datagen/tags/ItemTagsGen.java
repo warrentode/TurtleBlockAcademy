@@ -58,6 +58,9 @@ public class ItemTagsGen extends ItemTagsProvider {
 
     private void registerPackTags() {
         tag(TBATags.Items.BASKET_ITEMS)
+                .addTag(ItemTags.FLOWERS)
+                .addTag(TBATags.Items.BREAD)
+                .addTag(TBATags.Items.SWEETS)
                 .addTag(TBATags.Items.EASTER_EGGS);
         tag(TBATags.Items.EASTER_EGGS)
                 .add(TBAItems.COLORED_EGG_BLACK_CHECKERED_BLACK.get())
@@ -1706,6 +1709,8 @@ public class ItemTagsGen extends ItemTagsProvider {
                 .addOptionalTag(Objects.requireNonNull(ResourceLocation.tryParse("supplementaries:chocolate_bars")));
         tag(TBATags.Items.CANDY)
                 .addTag(TBATags.Items.CHOCOLATE)
+                .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("snowyspirit:candy_cane")))
+                .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("supplementaries:candy")))
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("festive_delight:sugar_cane")))
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("delightful:rock_candy")));
         tag(TBATags.Items.SWEETS)
