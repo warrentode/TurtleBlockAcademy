@@ -51,6 +51,7 @@ public class TBALangGen extends LanguageProvider {
         add("container.turtleblockacademy.storage", "Storage");
         add("container.turtleblockacademy.fermenting_pot", "Fermenting Pot");
         add("container.turtleblockacademy.recipe_book.fermenting", "Showing Fermentable");
+        add("container.turtleblockacademy.basket", "Basket");
     }
 
     private void addMessages() {

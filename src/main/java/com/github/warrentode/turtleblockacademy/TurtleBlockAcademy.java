@@ -2,6 +2,7 @@ package com.github.warrentode.turtleblockacademy;
 
 import com.github.warrentode.turtleblockacademy.blocks.TBABlocks;
 import com.github.warrentode.turtleblockacademy.blocks.entity.TBABlockEntities;
+import com.github.warrentode.turtleblockacademy.blocks.entity.gui.basket.BasketScreen;
 import com.github.warrentode.turtleblockacademy.blocks.entity.gui.fermentingpot.FermentingPotScreen;
 import com.github.warrentode.turtleblockacademy.blocks.entity.gui.desk.SchoolDeskScreen;
 import com.github.warrentode.turtleblockacademy.blocks.entity.gui.TBAMenuTypes;
@@ -107,6 +108,8 @@ public class TurtleBlockAcademy {
                     TBAMenuTypes.SCHOOL_DESK_MENU.get(), SchoolDeskScreen::new));
             event.enqueueWork(() -> MenuScreens.register(
                     TBAMenuTypes.FERMENTING_POT_MENU.get(), FermentingPotScreen::new));
+            event.enqueueWork(() -> MenuScreens.register(
+                    TBAMenuTypes.BASKET_MENU.get(), BasketScreen::new));
 
             EntityRenderers.register(TBAEntityTypes.SEAT_ENTITY.get(),
                     SeatEntityRenderer::new);

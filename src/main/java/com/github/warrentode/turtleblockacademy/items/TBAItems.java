@@ -12,6 +12,7 @@ import net.minecraft.world.item.DyeColor;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemNameBlockItem;
 import net.minecraft.world.item.Items;
+import net.minecraft.world.level.block.Block;
 import net.minecraftforge.common.ForgeSpawnEggItem;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -1743,6 +1744,1036 @@ public class TBAItems {
     public static final RegistryObject<Item> COLORED_EGG_BLACK_CHECKERED_BLACK =
             ITEMS.register("colored_egg_black_checkered_black",
                     ()-> checkeredStampedEgg(DyeColor.BLACK, DyeColor.BLACK));
+
+    public static final RegistryObject<Item> BASKET_OAK_WHITE =
+            ITEMS.register("basket_oak_white", () -> basket(TBABlocks.BASKET_OAK_WHITE.get()));
+    public static final RegistryObject<Item> BASKET_OAK_LIGHT_GRAY =
+            ITEMS.register("basket_oak_light_gray", () -> basket(TBABlocks.BASKET_OAK_LIGHT_GRAY.get()));
+    public static final RegistryObject<Item> BASKET_OAK_GRAY =
+            ITEMS.register("basket_oak_gray", () -> basket(TBABlocks.BASKET_OAK_GRAY.get()));
+    public static final RegistryObject<Item> BASKET_OAK_BLACK =
+            ITEMS.register("basket_oak_black", () -> basket(TBABlocks.BASKET_OAK_BLACK.get()));
+    public static final RegistryObject<Item> BASKET_OAK_BROWN =
+            ITEMS.register("basket_oak_brown", () -> basket(TBABlocks.BASKET_OAK_BROWN.get()));
+    public static final RegistryObject<Item> BASKET_OAK_RED =
+            ITEMS.register("basket_oak_red", () -> basket(TBABlocks.BASKET_OAK_RED.get()));
+    public static final RegistryObject<Item> BASKET_OAK_ORANGE =
+            ITEMS.register("basket_oak_orange", () -> basket(TBABlocks.BASKET_OAK_ORANGE.get()));
+    public static final RegistryObject<Item> BASKET_OAK_YELLOW =
+            ITEMS.register("basket_oak_yellow", () -> basket(TBABlocks.BASKET_OAK_YELLOW.get()));
+    public static final RegistryObject<Item> BASKET_OAK_LIME =
+            ITEMS.register("basket_oak_lime", () -> basket(TBABlocks.BASKET_OAK_LIME.get()));
+    public static final RegistryObject<Item> BASKET_OAK_GREEN =
+            ITEMS.register("basket_oak_green", () -> basket(TBABlocks.BASKET_OAK_GREEN.get()));
+    public static final RegistryObject<Item> BASKET_OAK_CYAN =
+            ITEMS.register("basket_oak_cyan", () -> basket(TBABlocks.BASKET_OAK_CYAN.get()));
+    public static final RegistryObject<Item> BASKET_OAK_LIGHT_BLUE =
+            ITEMS.register("basket_oak_light_blue", () -> basket(TBABlocks.BASKET_OAK_LIGHT_BLUE.get()));
+    public static final RegistryObject<Item> BASKET_OAK_BLUE =
+            ITEMS.register("basket_oak_blue", () -> basket(TBABlocks.BASKET_OAK_BLUE.get()));
+    public static final RegistryObject<Item> BASKET_OAK_PURPLE =
+            ITEMS.register("basket_oak_purple", () -> basket(TBABlocks.BASKET_OAK_PURPLE.get()));
+    public static final RegistryObject<Item> BASKET_OAK_MAGENTA =
+            ITEMS.register("basket_oak_magenta", () -> basket(TBABlocks.BASKET_OAK_MAGENTA.get()));
+    public static final RegistryObject<Item> BASKET_OAK_PINK =
+            ITEMS.register("basket_oak_pink", () -> basket(TBABlocks.BASKET_OAK_PINK.get()));
+    public static final RegistryObject<Item> BASKET_BIRCH_WHITE =
+            ITEMS.register("basket_birch_white", () -> basket(TBABlocks.BASKET_BIRCH_WHITE.get()));
+    public static final RegistryObject<Item> BASKET_BIRCH_LIGHT_GRAY =
+            ITEMS.register("basket_birch_light_gray", () -> basket(TBABlocks.BASKET_BIRCH_LIGHT_GRAY.get()));
+    public static final RegistryObject<Item> BASKET_BIRCH_GRAY =
+            ITEMS.register("basket_birch_gray", () -> basket(TBABlocks.BASKET_BIRCH_GRAY.get()));
+    public static final RegistryObject<Item> BASKET_BIRCH_BLACK =
+            ITEMS.register("basket_birch_black", () -> basket(TBABlocks.BASKET_BIRCH_BLACK.get()));
+    public static final RegistryObject<Item> BASKET_BIRCH_BROWN =
+            ITEMS.register("basket_birch_brown", () -> basket(TBABlocks.BASKET_BIRCH_BROWN.get()));
+    public static final RegistryObject<Item> BASKET_BIRCH_RED =
+            ITEMS.register("basket_birch_red", () -> basket(TBABlocks.BASKET_BIRCH_RED.get()));
+    public static final RegistryObject<Item> BASKET_BIRCH_ORANGE =
+            ITEMS.register("basket_birch_orange", () -> basket(TBABlocks.BASKET_BIRCH_ORANGE.get()));
+    public static final RegistryObject<Item> BASKET_BIRCH_YELLOW =
+            ITEMS.register("basket_birch_yellow", () -> basket(TBABlocks.BASKET_BIRCH_YELLOW.get()));
+    public static final RegistryObject<Item> BASKET_BIRCH_LIME =
+            ITEMS.register("basket_birch_lime", () -> basket(TBABlocks.BASKET_BIRCH_LIME.get()));
+    public static final RegistryObject<Item> BASKET_BIRCH_GREEN =
+            ITEMS.register("basket_birch_green", () -> basket(TBABlocks.BASKET_BIRCH_GREEN.get()));
+    public static final RegistryObject<Item> BASKET_BIRCH_CYAN =
+            ITEMS.register("basket_birch_cyan", () -> basket(TBABlocks.BASKET_BIRCH_CYAN.get()));
+    public static final RegistryObject<Item> BASKET_BIRCH_LIGHT_BLUE =
+            ITEMS.register("basket_birch_light_blue", () -> basket(TBABlocks.BASKET_BIRCH_LIGHT_BLUE.get()));
+    public static final RegistryObject<Item> BASKET_BIRCH_BLUE =
+            ITEMS.register("basket_birch_blue", () -> basket(TBABlocks.BASKET_BIRCH_BLUE.get()));
+    public static final RegistryObject<Item> BASKET_BIRCH_PURPLE =
+            ITEMS.register("basket_birch_purple", () -> basket(TBABlocks.BASKET_BIRCH_PURPLE.get()));
+    public static final RegistryObject<Item> BASKET_BIRCH_MAGENTA =
+            ITEMS.register("basket_birch_magenta", () -> basket(TBABlocks.BASKET_BIRCH_MAGENTA.get()));
+    public static final RegistryObject<Item> BASKET_BIRCH_PINK =
+            ITEMS.register("basket_birch_pink", () -> basket(TBABlocks.BASKET_BIRCH_PINK.get()));
+    public static final RegistryObject<Item> BASKET_SPRUCE_WHITE =
+            ITEMS.register("basket_spruce_white", () -> basket(TBABlocks.BASKET_SPRUCE_WHITE.get()));
+    public static final RegistryObject<Item> BASKET_SPRUCE_LIGHT_GRAY =
+            ITEMS.register("basket_spruce_light_gray", () -> basket(TBABlocks.BASKET_SPRUCE_LIGHT_GRAY.get()));
+    public static final RegistryObject<Item> BASKET_SPRUCE_GRAY =
+            ITEMS.register("basket_spruce_gray", () -> basket(TBABlocks.BASKET_SPRUCE_GRAY.get()));
+    public static final RegistryObject<Item> BASKET_SPRUCE_BLACK =
+            ITEMS.register("basket_spruce_black", () -> basket(TBABlocks.BASKET_SPRUCE_BLACK.get()));
+    public static final RegistryObject<Item> BASKET_SPRUCE_BROWN =
+            ITEMS.register("basket_spruce_brown", () -> basket(TBABlocks.BASKET_SPRUCE_BROWN.get()));
+    public static final RegistryObject<Item> BASKET_SPRUCE_RED =
+            ITEMS.register("basket_spruce_red", () -> basket(TBABlocks.BASKET_SPRUCE_RED.get()));
+    public static final RegistryObject<Item> BASKET_SPRUCE_ORANGE =
+            ITEMS.register("basket_spruce_orange", () -> basket(TBABlocks.BASKET_SPRUCE_ORANGE.get()));
+    public static final RegistryObject<Item> BASKET_SPRUCE_YELLOW =
+            ITEMS.register("basket_spruce_yellow", () -> basket(TBABlocks.BASKET_SPRUCE_YELLOW.get()));
+    public static final RegistryObject<Item> BASKET_SPRUCE_LIME =
+            ITEMS.register("basket_spruce_lime", () -> basket(TBABlocks.BASKET_SPRUCE_LIME.get()));
+    public static final RegistryObject<Item> BASKET_SPRUCE_GREEN =
+            ITEMS.register("basket_spruce_green", () -> basket(TBABlocks.BASKET_SPRUCE_GREEN.get()));
+    public static final RegistryObject<Item> BASKET_SPRUCE_CYAN =
+            ITEMS.register("basket_spruce_cyan", () -> basket(TBABlocks.BASKET_SPRUCE_CYAN.get()));
+    public static final RegistryObject<Item> BASKET_SPRUCE_LIGHT_BLUE =
+            ITEMS.register("basket_spruce_light_blue", () -> basket(TBABlocks.BASKET_SPRUCE_LIGHT_BLUE.get()));
+    public static final RegistryObject<Item> BASKET_SPRUCE_BLUE =
+            ITEMS.register("basket_spruce_blue", () -> basket(TBABlocks.BASKET_SPRUCE_BLUE.get()));
+    public static final RegistryObject<Item> BASKET_SPRUCE_PURPLE =
+            ITEMS.register("basket_spruce_purple", () -> basket(TBABlocks.BASKET_SPRUCE_PURPLE.get()));
+    public static final RegistryObject<Item> BASKET_SPRUCE_MAGENTA =
+            ITEMS.register("basket_spruce_magenta", () -> basket(TBABlocks.BASKET_SPRUCE_MAGENTA.get()));
+    public static final RegistryObject<Item> BASKET_SPRUCE_PINK =
+            ITEMS.register("basket_spruce_pink", () -> basket(TBABlocks.BASKET_SPRUCE_PINK.get()));
+    public static final RegistryObject<Item> BASKET_JUNGLE_WHITE =
+            ITEMS.register("basket_jungle_white", () -> basket(TBABlocks.BASKET_JUNGLE_WHITE.get()));
+    public static final RegistryObject<Item> BASKET_JUNGLE_LIGHT_GRAY =
+            ITEMS.register("basket_jungle_light_gray", () -> basket(TBABlocks.BASKET_JUNGLE_LIGHT_GRAY.get()));
+    public static final RegistryObject<Item> BASKET_JUNGLE_GRAY =
+            ITEMS.register("basket_jungle_gray", () -> basket(TBABlocks.BASKET_JUNGLE_GRAY.get()));
+    public static final RegistryObject<Item> BASKET_JUNGLE_BLACK =
+            ITEMS.register("basket_jungle_black", () -> basket(TBABlocks.BASKET_JUNGLE_BLACK.get()));
+    public static final RegistryObject<Item> BASKET_JUNGLE_BROWN =
+            ITEMS.register("basket_jungle_brown", () -> basket(TBABlocks.BASKET_JUNGLE_BROWN.get()));
+    public static final RegistryObject<Item> BASKET_JUNGLE_RED =
+            ITEMS.register("basket_jungle_red", () -> basket(TBABlocks.BASKET_JUNGLE_RED.get()));
+    public static final RegistryObject<Item> BASKET_JUNGLE_ORANGE =
+            ITEMS.register("basket_jungle_orange", () -> basket(TBABlocks.BASKET_JUNGLE_ORANGE.get()));
+    public static final RegistryObject<Item> BASKET_JUNGLE_YELLOW =
+            ITEMS.register("basket_jungle_yellow", () -> basket(TBABlocks.BASKET_JUNGLE_YELLOW.get()));
+    public static final RegistryObject<Item> BASKET_JUNGLE_LIME =
+            ITEMS.register("basket_jungle_lime", () -> basket(TBABlocks.BASKET_JUNGLE_LIME.get()));
+    public static final RegistryObject<Item> BASKET_JUNGLE_GREEN =
+            ITEMS.register("basket_jungle_green", () -> basket(TBABlocks.BASKET_JUNGLE_GREEN.get()));
+    public static final RegistryObject<Item> BASKET_JUNGLE_CYAN =
+            ITEMS.register("basket_jungle_cyan", () -> basket(TBABlocks.BASKET_JUNGLE_CYAN.get()));
+    public static final RegistryObject<Item> BASKET_JUNGLE_LIGHT_BLUE =
+            ITEMS.register("basket_jungle_light_blue", () -> basket(TBABlocks.BASKET_JUNGLE_LIGHT_BLUE.get()));
+    public static final RegistryObject<Item> BASKET_JUNGLE_BLUE =
+            ITEMS.register("basket_jungle_blue", () -> basket(TBABlocks.BASKET_JUNGLE_BLUE.get()));
+    public static final RegistryObject<Item> BASKET_JUNGLE_PURPLE =
+            ITEMS.register("basket_jungle_purple", () -> basket(TBABlocks.BASKET_JUNGLE_PURPLE.get()));
+    public static final RegistryObject<Item> BASKET_JUNGLE_MAGENTA =
+            ITEMS.register("basket_jungle_magenta", () -> basket(TBABlocks.BASKET_JUNGLE_MAGENTA.get()));
+    public static final RegistryObject<Item> BASKET_JUNGLE_PINK =
+            ITEMS.register("basket_jungle_pink", () -> basket(TBABlocks.BASKET_JUNGLE_PINK.get()));
+    public static final RegistryObject<Item> BASKET_ACACIA_WHITE =
+            ITEMS.register("basket_acacia_white", () -> basket(TBABlocks.BASKET_ACACIA_WHITE.get()));
+    public static final RegistryObject<Item> BASKET_ACACIA_LIGHT_GRAY =
+            ITEMS.register("basket_acacia_light_gray", () -> basket(TBABlocks.BASKET_ACACIA_LIGHT_GRAY.get()));
+    public static final RegistryObject<Item> BASKET_ACACIA_GRAY =
+            ITEMS.register("basket_acacia_gray", () -> basket(TBABlocks.BASKET_ACACIA_GRAY.get()));
+    public static final RegistryObject<Item> BASKET_ACACIA_BLACK =
+            ITEMS.register("basket_acacia_black", () -> basket(TBABlocks.BASKET_ACACIA_BLACK.get()));
+    public static final RegistryObject<Item> BASKET_ACACIA_BROWN =
+            ITEMS.register("basket_acacia_brown", () -> basket(TBABlocks.BASKET_ACACIA_BROWN.get()));
+    public static final RegistryObject<Item> BASKET_ACACIA_RED =
+            ITEMS.register("basket_acacia_red", () -> basket(TBABlocks.BASKET_ACACIA_RED.get()));
+    public static final RegistryObject<Item> BASKET_ACACIA_ORANGE =
+            ITEMS.register("basket_acacia_orange", () -> basket(TBABlocks.BASKET_ACACIA_ORANGE.get()));
+    public static final RegistryObject<Item> BASKET_ACACIA_YELLOW =
+            ITEMS.register("basket_acacia_yellow", () -> basket(TBABlocks.BASKET_ACACIA_YELLOW.get()));
+    public static final RegistryObject<Item> BASKET_ACACIA_LIME =
+            ITEMS.register("basket_acacia_lime", () -> basket(TBABlocks.BASKET_ACACIA_LIME.get()));
+    public static final RegistryObject<Item> BASKET_ACACIA_GREEN =
+            ITEMS.register("basket_acacia_green", () -> basket(TBABlocks.BASKET_ACACIA_GREEN.get()));
+    public static final RegistryObject<Item> BASKET_ACACIA_CYAN =
+            ITEMS.register("basket_acacia_cyan", () -> basket(TBABlocks.BASKET_ACACIA_CYAN.get()));
+    public static final RegistryObject<Item> BASKET_ACACIA_LIGHT_BLUE =
+            ITEMS.register("basket_acacia_light_blue", () -> basket(TBABlocks.BASKET_ACACIA_LIGHT_BLUE.get()));
+    public static final RegistryObject<Item> BASKET_ACACIA_BLUE =
+            ITEMS.register("basket_acacia_blue", () -> basket(TBABlocks.BASKET_ACACIA_BLUE.get()));
+    public static final RegistryObject<Item> BASKET_ACACIA_PURPLE =
+            ITEMS.register("basket_acacia_purple", () -> basket(TBABlocks.BASKET_ACACIA_PURPLE.get()));
+    public static final RegistryObject<Item> BASKET_ACACIA_MAGENTA =
+            ITEMS.register("basket_acacia_magenta", () -> basket(TBABlocks.BASKET_ACACIA_MAGENTA.get()));
+    public static final RegistryObject<Item> BASKET_ACACIA_PINK =
+            ITEMS.register("basket_acacia_pink", () -> basket(TBABlocks.BASKET_ACACIA_PINK.get()));
+    public static final RegistryObject<Item> BASKET_DARK_OAK_WHITE =
+            ITEMS.register("basket_dark_oak_white", () -> basket(TBABlocks.BASKET_DARK_OAK_WHITE.get()));
+    public static final RegistryObject<Item> BASKET_DARK_OAK_LIGHT_GRAY =
+            ITEMS.register("basket_dark_oak_light_gray", () -> basket(TBABlocks.BASKET_DARK_OAK_LIGHT_GRAY.get()));
+    public static final RegistryObject<Item> BASKET_DARK_OAK_GRAY =
+            ITEMS.register("basket_dark_oak_gray", () -> basket(TBABlocks.BASKET_DARK_OAK_GRAY.get()));
+    public static final RegistryObject<Item> BASKET_DARK_OAK_BLACK =
+            ITEMS.register("basket_dark_oak_black", () -> basket(TBABlocks.BASKET_DARK_OAK_BLACK.get()));
+    public static final RegistryObject<Item> BASKET_DARK_OAK_BROWN =
+            ITEMS.register("basket_dark_oak_brown", () -> basket(TBABlocks.BASKET_DARK_OAK_BROWN.get()));
+    public static final RegistryObject<Item> BASKET_DARK_OAK_RED =
+            ITEMS.register("basket_dark_oak_red", () -> basket(TBABlocks.BASKET_DARK_OAK_RED.get()));
+    public static final RegistryObject<Item> BASKET_DARK_OAK_ORANGE =
+            ITEMS.register("basket_dark_oak_orange", () -> basket(TBABlocks.BASKET_DARK_OAK_ORANGE.get()));
+    public static final RegistryObject<Item> BASKET_DARK_OAK_YELLOW =
+            ITEMS.register("basket_dark_oak_yellow", () -> basket(TBABlocks.BASKET_DARK_OAK_YELLOW.get()));
+    public static final RegistryObject<Item> BASKET_DARK_OAK_LIME =
+            ITEMS.register("basket_dark_oak_lime", () -> basket(TBABlocks.BASKET_DARK_OAK_LIME.get()));
+    public static final RegistryObject<Item> BASKET_DARK_OAK_GREEN =
+            ITEMS.register("basket_dark_oak_green", () -> basket(TBABlocks.BASKET_DARK_OAK_GREEN.get()));
+    public static final RegistryObject<Item> BASKET_DARK_OAK_CYAN =
+            ITEMS.register("basket_dark_oak_cyan", () -> basket(TBABlocks.BASKET_DARK_OAK_CYAN.get()));
+    public static final RegistryObject<Item> BASKET_DARK_OAK_LIGHT_BLUE =
+            ITEMS.register("basket_dark_oak_light_blue", () -> basket(TBABlocks.BASKET_DARK_OAK_LIGHT_BLUE.get()));
+    public static final RegistryObject<Item> BASKET_DARK_OAK_BLUE =
+            ITEMS.register("basket_dark_oak_blue", () -> basket(TBABlocks.BASKET_DARK_OAK_BLUE.get()));
+    public static final RegistryObject<Item> BASKET_DARK_OAK_PURPLE =
+            ITEMS.register("basket_dark_oak_purple", () -> basket(TBABlocks.BASKET_DARK_OAK_PURPLE.get()));
+    public static final RegistryObject<Item> BASKET_DARK_OAK_MAGENTA =
+            ITEMS.register("basket_dark_oak_magenta", () -> basket(TBABlocks.BASKET_DARK_OAK_MAGENTA.get()));
+    public static final RegistryObject<Item> BASKET_DARK_OAK_PINK =
+            ITEMS.register("basket_dark_oak_pink", () -> basket(TBABlocks.BASKET_DARK_OAK_PINK.get()));
+    public static final RegistryObject<Item> BASKET_MANGROVE_WHITE =
+            ITEMS.register("basket_mangrove_white", () -> basket(TBABlocks.BASKET_MANGROVE_WHITE.get()));
+    public static final RegistryObject<Item> BASKET_MANGROVE_LIGHT_GRAY =
+            ITEMS.register("basket_mangrove_light_gray", () -> basket(TBABlocks.BASKET_MANGROVE_LIGHT_GRAY.get()));
+    public static final RegistryObject<Item> BASKET_MANGROVE_GRAY =
+            ITEMS.register("basket_mangrove_gray", () -> basket(TBABlocks.BASKET_MANGROVE_GRAY.get()));
+    public static final RegistryObject<Item> BASKET_MANGROVE_BLACK =
+            ITEMS.register("basket_mangrove_black", () -> basket(TBABlocks.BASKET_MANGROVE_BLACK.get()));
+    public static final RegistryObject<Item> BASKET_MANGROVE_BROWN =
+            ITEMS.register("basket_mangrove_brown", () -> basket(TBABlocks.BASKET_MANGROVE_BROWN.get()));
+    public static final RegistryObject<Item> BASKET_MANGROVE_RED =
+            ITEMS.register("basket_mangrove_red", () -> basket(TBABlocks.BASKET_MANGROVE_RED.get()));
+    public static final RegistryObject<Item> BASKET_MANGROVE_ORANGE =
+            ITEMS.register("basket_mangrove_orange", () -> basket(TBABlocks.BASKET_MANGROVE_ORANGE.get()));
+    public static final RegistryObject<Item> BASKET_MANGROVE_YELLOW =
+            ITEMS.register("basket_mangrove_yellow", () -> basket(TBABlocks.BASKET_MANGROVE_YELLOW.get()));
+    public static final RegistryObject<Item> BASKET_MANGROVE_LIME =
+            ITEMS.register("basket_mangrove_lime", () -> basket(TBABlocks.BASKET_MANGROVE_LIME.get()));
+    public static final RegistryObject<Item> BASKET_MANGROVE_GREEN =
+            ITEMS.register("basket_mangrove_green", () -> basket(TBABlocks.BASKET_MANGROVE_GREEN.get()));
+    public static final RegistryObject<Item> BASKET_MANGROVE_CYAN =
+            ITEMS.register("basket_mangrove_cyan", () -> basket(TBABlocks.BASKET_MANGROVE_CYAN.get()));
+    public static final RegistryObject<Item> BASKET_MANGROVE_LIGHT_BLUE =
+            ITEMS.register("basket_mangrove_light_blue", () -> basket(TBABlocks.BASKET_MANGROVE_LIGHT_BLUE.get()));
+    public static final RegistryObject<Item> BASKET_MANGROVE_BLUE =
+            ITEMS.register("basket_mangrove_blue", () -> basket(TBABlocks.BASKET_MANGROVE_BLUE.get()));
+    public static final RegistryObject<Item> BASKET_MANGROVE_PURPLE =
+            ITEMS.register("basket_mangrove_purple", () -> basket(TBABlocks.BASKET_MANGROVE_PURPLE.get()));
+    public static final RegistryObject<Item> BASKET_MANGROVE_MAGENTA =
+            ITEMS.register("basket_mangrove_magenta", () -> basket(TBABlocks.BASKET_MANGROVE_MAGENTA.get()));
+    public static final RegistryObject<Item> BASKET_MANGROVE_PINK =
+            ITEMS.register("basket_mangrove_pink", () -> basket(TBABlocks.BASKET_MANGROVE_PINK.get()));
+    public static final RegistryObject<Item> BASKET_CRIMSON_WHITE =
+            ITEMS.register("basket_crimson_white", () -> basket(TBABlocks.BASKET_CRIMSON_WHITE.get()));
+    public static final RegistryObject<Item> BASKET_CRIMSON_LIGHT_GRAY =
+            ITEMS.register("basket_crimson_light_gray", () -> basket(TBABlocks.BASKET_CRIMSON_LIGHT_GRAY.get()));
+    public static final RegistryObject<Item> BASKET_CRIMSON_GRAY =
+            ITEMS.register("basket_crimson_gray", () -> basket(TBABlocks.BASKET_CRIMSON_GRAY.get()));
+    public static final RegistryObject<Item> BASKET_CRIMSON_BLACK =
+            ITEMS.register("basket_crimson_black", () -> basket(TBABlocks.BASKET_CRIMSON_BLACK.get()));
+    public static final RegistryObject<Item> BASKET_CRIMSON_BROWN =
+            ITEMS.register("basket_crimson_brown", () -> basket(TBABlocks.BASKET_CRIMSON_BROWN.get()));
+    public static final RegistryObject<Item> BASKET_CRIMSON_RED =
+            ITEMS.register("basket_crimson_red", () -> basket(TBABlocks.BASKET_CRIMSON_RED.get()));
+    public static final RegistryObject<Item> BASKET_CRIMSON_ORANGE =
+            ITEMS.register("basket_crimson_orange", () -> basket(TBABlocks.BASKET_CRIMSON_ORANGE.get()));
+    public static final RegistryObject<Item> BASKET_CRIMSON_YELLOW =
+            ITEMS.register("basket_crimson_yellow", () -> basket(TBABlocks.BASKET_CRIMSON_YELLOW.get()));
+    public static final RegistryObject<Item> BASKET_CRIMSON_LIME =
+            ITEMS.register("basket_crimson_lime", () -> basket(TBABlocks.BASKET_CRIMSON_LIME.get()));
+    public static final RegistryObject<Item> BASKET_CRIMSON_GREEN =
+            ITEMS.register("basket_crimson_green", () -> basket(TBABlocks.BASKET_CRIMSON_GREEN.get()));
+    public static final RegistryObject<Item> BASKET_CRIMSON_CYAN =
+            ITEMS.register("basket_crimson_cyan", () -> basket(TBABlocks.BASKET_CRIMSON_CYAN.get()));
+    public static final RegistryObject<Item> BASKET_CRIMSON_LIGHT_BLUE =
+            ITEMS.register("basket_crimson_light_blue", () -> basket(TBABlocks.BASKET_CRIMSON_LIGHT_BLUE.get()));
+    public static final RegistryObject<Item> BASKET_CRIMSON_BLUE =
+            ITEMS.register("basket_crimson_blue", () -> basket(TBABlocks.BASKET_CRIMSON_BLUE.get()));
+    public static final RegistryObject<Item> BASKET_CRIMSON_PURPLE =
+            ITEMS.register("basket_crimson_purple", () -> basket(TBABlocks.BASKET_CRIMSON_PURPLE.get()));
+    public static final RegistryObject<Item> BASKET_CRIMSON_MAGENTA =
+            ITEMS.register("basket_crimson_magenta", () -> basket(TBABlocks.BASKET_CRIMSON_MAGENTA.get()));
+    public static final RegistryObject<Item> BASKET_CRIMSON_PINK =
+            ITEMS.register("basket_crimson_pink", () -> basket(TBABlocks.BASKET_CRIMSON_PINK.get()));
+    public static final RegistryObject<Item> BASKET_WARPED_WHITE =
+            ITEMS.register("basket_warped_white", () -> basket(TBABlocks.BASKET_WARPED_WHITE.get()));
+    public static final RegistryObject<Item> BASKET_WARPED_LIGHT_GRAY =
+            ITEMS.register("basket_warped_light_gray", () -> basket(TBABlocks.BASKET_WARPED_LIGHT_GRAY.get()));
+    public static final RegistryObject<Item> BASKET_WARPED_GRAY =
+            ITEMS.register("basket_warped_gray", () -> basket(TBABlocks.BASKET_WARPED_GRAY.get()));
+    public static final RegistryObject<Item> BASKET_WARPED_BLACK =
+            ITEMS.register("basket_warped_black", () -> basket(TBABlocks.BASKET_WARPED_BLACK.get()));
+    public static final RegistryObject<Item> BASKET_WARPED_BROWN =
+            ITEMS.register("basket_warped_brown", () -> basket(TBABlocks.BASKET_WARPED_BROWN.get()));
+    public static final RegistryObject<Item> BASKET_WARPED_RED =
+            ITEMS.register("basket_warped_red", () -> basket(TBABlocks.BASKET_WARPED_RED.get()));
+    public static final RegistryObject<Item> BASKET_WARPED_ORANGE =
+            ITEMS.register("basket_warped_orange", () -> basket(TBABlocks.BASKET_WARPED_ORANGE.get()));
+    public static final RegistryObject<Item> BASKET_WARPED_YELLOW =
+            ITEMS.register("basket_warped_yellow", () -> basket(TBABlocks.BASKET_WARPED_YELLOW.get()));
+    public static final RegistryObject<Item> BASKET_WARPED_LIME =
+            ITEMS.register("basket_warped_lime", () -> basket(TBABlocks.BASKET_WARPED_LIME.get()));
+    public static final RegistryObject<Item> BASKET_WARPED_GREEN =
+            ITEMS.register("basket_warped_green", () -> basket(TBABlocks.BASKET_WARPED_GREEN.get()));
+    public static final RegistryObject<Item> BASKET_WARPED_CYAN =
+            ITEMS.register("basket_warped_cyan", () -> basket(TBABlocks.BASKET_WARPED_CYAN.get()));
+    public static final RegistryObject<Item> BASKET_WARPED_LIGHT_BLUE =
+            ITEMS.register("basket_warped_light_blue", () -> basket(TBABlocks.BASKET_WARPED_LIGHT_BLUE.get()));
+    public static final RegistryObject<Item> BASKET_WARPED_BLUE =
+            ITEMS.register("basket_warped_blue", () -> basket(TBABlocks.BASKET_WARPED_BLUE.get()));
+    public static final RegistryObject<Item> BASKET_WARPED_PURPLE =
+            ITEMS.register("basket_warped_purple", () -> basket(TBABlocks.BASKET_WARPED_PURPLE.get()));
+    public static final RegistryObject<Item> BASKET_WARPED_MAGENTA =
+            ITEMS.register("basket_warped_magenta", () -> basket(TBABlocks.BASKET_WARPED_MAGENTA.get()));
+    public static final RegistryObject<Item> BASKET_WARPED_PINK =
+            ITEMS.register("basket_warped_pink", () -> basket(TBABlocks.BASKET_WARPED_PINK.get()));
+    public static final RegistryObject<Item> BASKET_FIR_WHITE =
+            ITEMS.register("basket_fir_white", () -> basket(TBABlocks.BASKET_FIR_WHITE.get()));
+    public static final RegistryObject<Item> BASKET_FIR_LIGHT_GRAY =
+            ITEMS.register("basket_fir_light_gray", () -> basket(TBABlocks.BASKET_FIR_LIGHT_GRAY.get()));
+    public static final RegistryObject<Item> BASKET_FIR_GRAY =
+            ITEMS.register("basket_fir_gray", () -> basket(TBABlocks.BASKET_FIR_GRAY.get()));
+    public static final RegistryObject<Item> BASKET_FIR_BLACK =
+            ITEMS.register("basket_fir_black", () -> basket(TBABlocks.BASKET_FIR_BLACK.get()));
+    public static final RegistryObject<Item> BASKET_FIR_BROWN =
+            ITEMS.register("basket_fir_brown", () -> basket(TBABlocks.BASKET_FIR_BROWN.get()));
+    public static final RegistryObject<Item> BASKET_FIR_RED =
+            ITEMS.register("basket_fir_red", () -> basket(TBABlocks.BASKET_FIR_RED.get()));
+    public static final RegistryObject<Item> BASKET_FIR_ORANGE =
+            ITEMS.register("basket_fir_orange", () -> basket(TBABlocks.BASKET_FIR_ORANGE.get()));
+    public static final RegistryObject<Item> BASKET_FIR_YELLOW =
+            ITEMS.register("basket_fir_yellow", () -> basket(TBABlocks.BASKET_FIR_YELLOW.get()));
+    public static final RegistryObject<Item> BASKET_FIR_LIME =
+            ITEMS.register("basket_fir_lime", () -> basket(TBABlocks.BASKET_FIR_LIME.get()));
+    public static final RegistryObject<Item> BASKET_FIR_GREEN =
+            ITEMS.register("basket_fir_green", () -> basket(TBABlocks.BASKET_FIR_GREEN.get()));
+    public static final RegistryObject<Item> BASKET_FIR_CYAN =
+            ITEMS.register("basket_fir_cyan", () -> basket(TBABlocks.BASKET_FIR_CYAN.get()));
+    public static final RegistryObject<Item> BASKET_FIR_LIGHT_BLUE =
+            ITEMS.register("basket_fir_light_blue", () -> basket(TBABlocks.BASKET_FIR_LIGHT_BLUE.get()));
+    public static final RegistryObject<Item> BASKET_FIR_BLUE =
+            ITEMS.register("basket_fir_blue", () -> basket(TBABlocks.BASKET_FIR_BLUE.get()));
+    public static final RegistryObject<Item> BASKET_FIR_PURPLE =
+            ITEMS.register("basket_fir_purple", () -> basket(TBABlocks.BASKET_FIR_PURPLE.get()));
+    public static final RegistryObject<Item> BASKET_FIR_MAGENTA =
+            ITEMS.register("basket_fir_magenta", () -> basket(TBABlocks.BASKET_FIR_MAGENTA.get()));
+    public static final RegistryObject<Item> BASKET_FIR_PINK =
+            ITEMS.register("basket_fir_pink", () -> basket(TBABlocks.BASKET_FIR_PINK.get()));
+    public static final RegistryObject<Item> BASKET_REDWOOD_WHITE =
+            ITEMS.register("basket_redwood_white", () -> basket(TBABlocks.BASKET_REDWOOD_WHITE.get()));
+    public static final RegistryObject<Item> BASKET_REDWOOD_LIGHT_GRAY =
+            ITEMS.register("basket_redwood_light_gray", () -> basket(TBABlocks.BASKET_REDWOOD_LIGHT_GRAY.get()));
+    public static final RegistryObject<Item> BASKET_REDWOOD_GRAY =
+            ITEMS.register("basket_redwood_gray", () -> basket(TBABlocks.BASKET_REDWOOD_GRAY.get()));
+    public static final RegistryObject<Item> BASKET_REDWOOD_BLACK =
+            ITEMS.register("basket_redwood_black", () -> basket(TBABlocks.BASKET_REDWOOD_BLACK.get()));
+    public static final RegistryObject<Item> BASKET_REDWOOD_BROWN =
+            ITEMS.register("basket_redwood_brown", () -> basket(TBABlocks.BASKET_REDWOOD_BROWN.get()));
+    public static final RegistryObject<Item> BASKET_REDWOOD_RED =
+            ITEMS.register("basket_redwood_red", () -> basket(TBABlocks.BASKET_REDWOOD_RED.get()));
+    public static final RegistryObject<Item> BASKET_REDWOOD_ORANGE =
+            ITEMS.register("basket_redwood_orange", () -> basket(TBABlocks.BASKET_REDWOOD_ORANGE.get()));
+    public static final RegistryObject<Item> BASKET_REDWOOD_YELLOW =
+            ITEMS.register("basket_redwood_yellow", () -> basket(TBABlocks.BASKET_REDWOOD_YELLOW.get()));
+    public static final RegistryObject<Item> BASKET_REDWOOD_LIME =
+            ITEMS.register("basket_redwood_lime", () -> basket(TBABlocks.BASKET_REDWOOD_LIME.get()));
+    public static final RegistryObject<Item> BASKET_REDWOOD_GREEN =
+            ITEMS.register("basket_redwood_green", () -> basket(TBABlocks.BASKET_REDWOOD_GREEN.get()));
+    public static final RegistryObject<Item> BASKET_REDWOOD_CYAN =
+            ITEMS.register("basket_redwood_cyan", () -> basket(TBABlocks.BASKET_REDWOOD_CYAN.get()));
+    public static final RegistryObject<Item> BASKET_REDWOOD_LIGHT_BLUE =
+            ITEMS.register("basket_redwood_light_blue", () -> basket(TBABlocks.BASKET_REDWOOD_LIGHT_BLUE.get()));
+    public static final RegistryObject<Item> BASKET_REDWOOD_BLUE =
+            ITEMS.register("basket_redwood_blue", () -> basket(TBABlocks.BASKET_REDWOOD_BLUE.get()));
+    public static final RegistryObject<Item> BASKET_REDWOOD_PURPLE =
+            ITEMS.register("basket_redwood_purple", () -> basket(TBABlocks.BASKET_REDWOOD_PURPLE.get()));
+    public static final RegistryObject<Item> BASKET_REDWOOD_MAGENTA =
+            ITEMS.register("basket_redwood_magenta", () -> basket(TBABlocks.BASKET_REDWOOD_MAGENTA.get()));
+    public static final RegistryObject<Item> BASKET_REDWOOD_PINK =
+            ITEMS.register("basket_redwood_pink", () -> basket(TBABlocks.BASKET_REDWOOD_PINK.get()));
+    public static final RegistryObject<Item> BASKET_CHERRY_WHITE =
+            ITEMS.register("basket_cherry_white", () -> basket(TBABlocks.BASKET_CHERRY_WHITE.get()));
+    public static final RegistryObject<Item> BASKET_CHERRY_LIGHT_GRAY =
+            ITEMS.register("basket_cherry_light_gray", () -> basket(TBABlocks.BASKET_CHERRY_LIGHT_GRAY.get()));
+    public static final RegistryObject<Item> BASKET_CHERRY_GRAY =
+            ITEMS.register("basket_cherry_gray", () -> basket(TBABlocks.BASKET_CHERRY_GRAY.get()));
+    public static final RegistryObject<Item> BASKET_CHERRY_BLACK =
+            ITEMS.register("basket_cherry_black", () -> basket(TBABlocks.BASKET_CHERRY_BLACK.get()));
+    public static final RegistryObject<Item> BASKET_CHERRY_BROWN =
+            ITEMS.register("basket_cherry_brown", () -> basket(TBABlocks.BASKET_CHERRY_BROWN.get()));
+    public static final RegistryObject<Item> BASKET_CHERRY_RED =
+            ITEMS.register("basket_cherry_red", () -> basket(TBABlocks.BASKET_CHERRY_RED.get()));
+    public static final RegistryObject<Item> BASKET_CHERRY_ORANGE =
+            ITEMS.register("basket_cherry_orange", () -> basket(TBABlocks.BASKET_CHERRY_ORANGE.get()));
+    public static final RegistryObject<Item> BASKET_CHERRY_YELLOW =
+            ITEMS.register("basket_cherry_yellow", () -> basket(TBABlocks.BASKET_CHERRY_YELLOW.get()));
+    public static final RegistryObject<Item> BASKET_CHERRY_LIME =
+            ITEMS.register("basket_cherry_lime", () -> basket(TBABlocks.BASKET_CHERRY_LIME.get()));
+    public static final RegistryObject<Item> BASKET_CHERRY_GREEN =
+            ITEMS.register("basket_cherry_green", () -> basket(TBABlocks.BASKET_CHERRY_GREEN.get()));
+    public static final RegistryObject<Item> BASKET_CHERRY_CYAN =
+            ITEMS.register("basket_cherry_cyan", () -> basket(TBABlocks.BASKET_CHERRY_CYAN.get()));
+    public static final RegistryObject<Item> BASKET_CHERRY_LIGHT_BLUE =
+            ITEMS.register("basket_cherry_light_blue", () -> basket(TBABlocks.BASKET_CHERRY_LIGHT_BLUE.get()));
+    public static final RegistryObject<Item> BASKET_CHERRY_BLUE =
+            ITEMS.register("basket_cherry_blue", () -> basket(TBABlocks.BASKET_CHERRY_BLUE.get()));
+    public static final RegistryObject<Item> BASKET_CHERRY_PURPLE =
+            ITEMS.register("basket_cherry_purple", () -> basket(TBABlocks.BASKET_CHERRY_PURPLE.get()));
+    public static final RegistryObject<Item> BASKET_CHERRY_MAGENTA =
+            ITEMS.register("basket_cherry_magenta", () -> basket(TBABlocks.BASKET_CHERRY_MAGENTA.get()));
+    public static final RegistryObject<Item> BASKET_CHERRY_PINK =
+            ITEMS.register("basket_cherry_pink", () -> basket(TBABlocks.BASKET_CHERRY_PINK.get()));
+    public static final RegistryObject<Item> BASKET_MAHOGANY_WHITE =
+            ITEMS.register("basket_mahogany_white", () -> basket(TBABlocks.BASKET_MAHOGANY_WHITE.get()));
+    public static final RegistryObject<Item> BASKET_MAHOGANY_LIGHT_GRAY =
+            ITEMS.register("basket_mahogany_light_gray", () -> basket(TBABlocks.BASKET_MAHOGANY_LIGHT_GRAY.get()));
+    public static final RegistryObject<Item> BASKET_MAHOGANY_GRAY =
+            ITEMS.register("basket_mahogany_gray", () -> basket(TBABlocks.BASKET_MAHOGANY_GRAY.get()));
+    public static final RegistryObject<Item> BASKET_MAHOGANY_BLACK =
+            ITEMS.register("basket_mahogany_black", () -> basket(TBABlocks.BASKET_MAHOGANY_BLACK.get()));
+    public static final RegistryObject<Item> BASKET_MAHOGANY_BROWN =
+            ITEMS.register("basket_mahogany_brown", () -> basket(TBABlocks.BASKET_MAHOGANY_BROWN.get()));
+    public static final RegistryObject<Item> BASKET_MAHOGANY_RED =
+            ITEMS.register("basket_mahogany_red", () -> basket(TBABlocks.BASKET_MAHOGANY_RED.get()));
+    public static final RegistryObject<Item> BASKET_MAHOGANY_ORANGE =
+            ITEMS.register("basket_mahogany_orange", () -> basket(TBABlocks.BASKET_MAHOGANY_ORANGE.get()));
+    public static final RegistryObject<Item> BASKET_MAHOGANY_YELLOW =
+            ITEMS.register("basket_mahogany_yellow", () -> basket(TBABlocks.BASKET_MAHOGANY_YELLOW.get()));
+    public static final RegistryObject<Item> BASKET_MAHOGANY_LIME =
+            ITEMS.register("basket_mahogany_lime", () -> basket(TBABlocks.BASKET_MAHOGANY_LIME.get()));
+    public static final RegistryObject<Item> BASKET_MAHOGANY_GREEN =
+            ITEMS.register("basket_mahogany_green", () -> basket(TBABlocks.BASKET_MAHOGANY_GREEN.get()));
+    public static final RegistryObject<Item> BASKET_MAHOGANY_CYAN =
+            ITEMS.register("basket_mahogany_cyan", () -> basket(TBABlocks.BASKET_MAHOGANY_CYAN.get()));
+    public static final RegistryObject<Item> BASKET_MAHOGANY_LIGHT_BLUE =
+            ITEMS.register("basket_mahogany_light_blue", () -> basket(TBABlocks.BASKET_MAHOGANY_LIGHT_BLUE.get()));
+    public static final RegistryObject<Item> BASKET_MAHOGANY_BLUE =
+            ITEMS.register("basket_mahogany_blue", () -> basket(TBABlocks.BASKET_MAHOGANY_BLUE.get()));
+    public static final RegistryObject<Item> BASKET_MAHOGANY_PURPLE =
+            ITEMS.register("basket_mahogany_purple", () -> basket(TBABlocks.BASKET_MAHOGANY_PURPLE.get()));
+    public static final RegistryObject<Item> BASKET_MAHOGANY_MAGENTA =
+            ITEMS.register("basket_mahogany_magenta", () -> basket(TBABlocks.BASKET_MAHOGANY_MAGENTA.get()));
+    public static final RegistryObject<Item> BASKET_MAHOGANY_PINK =
+            ITEMS.register("basket_mahogany_pink", () -> basket(TBABlocks.BASKET_MAHOGANY_PINK.get()));
+    public static final RegistryObject<Item> BASKET_JACARANDA_WHITE =
+            ITEMS.register("basket_jacaranda_white", () -> basket(TBABlocks.BASKET_JACARANDA_WHITE.get()));
+    public static final RegistryObject<Item> BASKET_JACARANDA_LIGHT_GRAY =
+            ITEMS.register("basket_jacaranda_light_gray", () -> basket(TBABlocks.BASKET_JACARANDA_LIGHT_GRAY.get()));
+    public static final RegistryObject<Item> BASKET_JACARANDA_GRAY =
+            ITEMS.register("basket_jacaranda_gray", () -> basket(TBABlocks.BASKET_JACARANDA_GRAY.get()));
+    public static final RegistryObject<Item> BASKET_JACARANDA_BLACK =
+            ITEMS.register("basket_jacaranda_black", () -> basket(TBABlocks.BASKET_JACARANDA_BLACK.get()));
+    public static final RegistryObject<Item> BASKET_JACARANDA_BROWN =
+            ITEMS.register("basket_jacaranda_brown", () -> basket(TBABlocks.BASKET_JACARANDA_BROWN.get()));
+    public static final RegistryObject<Item> BASKET_JACARANDA_RED =
+            ITEMS.register("basket_jacaranda_red", () -> basket(TBABlocks.BASKET_JACARANDA_RED.get()));
+    public static final RegistryObject<Item> BASKET_JACARANDA_ORANGE =
+            ITEMS.register("basket_jacaranda_orange", () -> basket(TBABlocks.BASKET_JACARANDA_ORANGE.get()));
+    public static final RegistryObject<Item> BASKET_JACARANDA_YELLOW =
+            ITEMS.register("basket_jacaranda_yellow", () -> basket(TBABlocks.BASKET_JACARANDA_YELLOW.get()));
+    public static final RegistryObject<Item> BASKET_JACARANDA_LIME =
+            ITEMS.register("basket_jacaranda_lime", () -> basket(TBABlocks.BASKET_JACARANDA_LIME.get()));
+    public static final RegistryObject<Item> BASKET_JACARANDA_GREEN =
+            ITEMS.register("basket_jacaranda_green", () -> basket(TBABlocks.BASKET_JACARANDA_GREEN.get()));
+    public static final RegistryObject<Item> BASKET_JACARANDA_CYAN =
+            ITEMS.register("basket_jacaranda_cyan", () -> basket(TBABlocks.BASKET_JACARANDA_CYAN.get()));
+    public static final RegistryObject<Item> BASKET_JACARANDA_LIGHT_BLUE =
+            ITEMS.register("basket_jacaranda_light_blue", () -> basket(TBABlocks.BASKET_JACARANDA_LIGHT_BLUE.get()));
+    public static final RegistryObject<Item> BASKET_JACARANDA_BLUE =
+            ITEMS.register("basket_jacaranda_blue", () -> basket(TBABlocks.BASKET_JACARANDA_BLUE.get()));
+    public static final RegistryObject<Item> BASKET_JACARANDA_PURPLE =
+            ITEMS.register("basket_jacaranda_purple", () -> basket(TBABlocks.BASKET_JACARANDA_PURPLE.get()));
+    public static final RegistryObject<Item> BASKET_JACARANDA_MAGENTA =
+            ITEMS.register("basket_jacaranda_magenta", () -> basket(TBABlocks.BASKET_JACARANDA_MAGENTA.get()));
+    public static final RegistryObject<Item> BASKET_JACARANDA_PINK =
+            ITEMS.register("basket_jacaranda_pink", () -> basket(TBABlocks.BASKET_JACARANDA_PINK.get()));
+    public static final RegistryObject<Item> BASKET_PALM_WHITE =
+            ITEMS.register("basket_palm_white", () -> basket(TBABlocks.BASKET_PALM_WHITE.get()));
+    public static final RegistryObject<Item> BASKET_PALM_LIGHT_GRAY =
+            ITEMS.register("basket_palm_light_gray", () -> basket(TBABlocks.BASKET_PALM_LIGHT_GRAY.get()));
+    public static final RegistryObject<Item> BASKET_PALM_GRAY =
+            ITEMS.register("basket_palm_gray", () -> basket(TBABlocks.BASKET_PALM_GRAY.get()));
+    public static final RegistryObject<Item> BASKET_PALM_BLACK =
+            ITEMS.register("basket_palm_black", () -> basket(TBABlocks.BASKET_PALM_BLACK.get()));
+    public static final RegistryObject<Item> BASKET_PALM_BROWN =
+            ITEMS.register("basket_palm_brown", () -> basket(TBABlocks.BASKET_PALM_BROWN.get()));
+    public static final RegistryObject<Item> BASKET_PALM_RED =
+            ITEMS.register("basket_palm_red", () -> basket(TBABlocks.BASKET_PALM_RED.get()));
+    public static final RegistryObject<Item> BASKET_PALM_ORANGE =
+            ITEMS.register("basket_palm_orange", () -> basket(TBABlocks.BASKET_PALM_ORANGE.get()));
+    public static final RegistryObject<Item> BASKET_PALM_YELLOW =
+            ITEMS.register("basket_palm_yellow", () -> basket(TBABlocks.BASKET_PALM_YELLOW.get()));
+    public static final RegistryObject<Item> BASKET_PALM_LIME =
+            ITEMS.register("basket_palm_lime", () -> basket(TBABlocks.BASKET_PALM_LIME.get()));
+    public static final RegistryObject<Item> BASKET_PALM_GREEN =
+            ITEMS.register("basket_palm_green", () -> basket(TBABlocks.BASKET_PALM_GREEN.get()));
+    public static final RegistryObject<Item> BASKET_PALM_CYAN =
+            ITEMS.register("basket_palm_cyan", () -> basket(TBABlocks.BASKET_PALM_CYAN.get()));
+    public static final RegistryObject<Item> BASKET_PALM_LIGHT_BLUE =
+            ITEMS.register("basket_palm_light_blue", () -> basket(TBABlocks.BASKET_PALM_LIGHT_BLUE.get()));
+    public static final RegistryObject<Item> BASKET_PALM_BLUE =
+            ITEMS.register("basket_palm_blue", () -> basket(TBABlocks.BASKET_PALM_BLUE.get()));
+    public static final RegistryObject<Item> BASKET_PALM_PURPLE =
+            ITEMS.register("basket_palm_purple", () -> basket(TBABlocks.BASKET_PALM_PURPLE.get()));
+    public static final RegistryObject<Item> BASKET_PALM_MAGENTA =
+            ITEMS.register("basket_palm_magenta", () -> basket(TBABlocks.BASKET_PALM_MAGENTA.get()));
+    public static final RegistryObject<Item> BASKET_PALM_PINK =
+            ITEMS.register("basket_palm_pink", () -> basket(TBABlocks.BASKET_PALM_PINK.get()));
+    public static final RegistryObject<Item> BASKET_WILLOW_WHITE =
+            ITEMS.register("basket_willow_white", () -> basket(TBABlocks.BASKET_WILLOW_WHITE.get()));
+    public static final RegistryObject<Item> BASKET_WILLOW_LIGHT_GRAY =
+            ITEMS.register("basket_willow_light_gray", () -> basket(TBABlocks.BASKET_WILLOW_LIGHT_GRAY.get()));
+    public static final RegistryObject<Item> BASKET_WILLOW_GRAY =
+            ITEMS.register("basket_willow_gray", () -> basket(TBABlocks.BASKET_WILLOW_GRAY.get()));
+    public static final RegistryObject<Item> BASKET_WILLOW_BLACK =
+            ITEMS.register("basket_willow_black", () -> basket(TBABlocks.BASKET_WILLOW_BLACK.get()));
+    public static final RegistryObject<Item> BASKET_WILLOW_BROWN =
+            ITEMS.register("basket_willow_brown", () -> basket(TBABlocks.BASKET_WILLOW_BROWN.get()));
+    public static final RegistryObject<Item> BASKET_WILLOW_RED =
+            ITEMS.register("basket_willow_red", () -> basket(TBABlocks.BASKET_WILLOW_RED.get()));
+    public static final RegistryObject<Item> BASKET_WILLOW_ORANGE =
+            ITEMS.register("basket_willow_orange", () -> basket(TBABlocks.BASKET_WILLOW_ORANGE.get()));
+    public static final RegistryObject<Item> BASKET_WILLOW_YELLOW =
+            ITEMS.register("basket_willow_yellow", () -> basket(TBABlocks.BASKET_WILLOW_YELLOW.get()));
+    public static final RegistryObject<Item> BASKET_WILLOW_LIME =
+            ITEMS.register("basket_willow_lime", () -> basket(TBABlocks.BASKET_WILLOW_LIME.get()));
+    public static final RegistryObject<Item> BASKET_WILLOW_GREEN =
+            ITEMS.register("basket_willow_green", () -> basket(TBABlocks.BASKET_WILLOW_GREEN.get()));
+    public static final RegistryObject<Item> BASKET_WILLOW_CYAN =
+            ITEMS.register("basket_willow_cyan", () -> basket(TBABlocks.BASKET_WILLOW_CYAN.get()));
+    public static final RegistryObject<Item> BASKET_WILLOW_LIGHT_BLUE =
+            ITEMS.register("basket_willow_light_blue", () -> basket(TBABlocks.BASKET_WILLOW_LIGHT_BLUE.get()));
+    public static final RegistryObject<Item> BASKET_WILLOW_BLUE =
+            ITEMS.register("basket_willow_blue", () -> basket(TBABlocks.BASKET_WILLOW_BLUE.get()));
+    public static final RegistryObject<Item> BASKET_WILLOW_PURPLE =
+            ITEMS.register("basket_willow_purple", () -> basket(TBABlocks.BASKET_WILLOW_PURPLE.get()));
+    public static final RegistryObject<Item> BASKET_WILLOW_MAGENTA =
+            ITEMS.register("basket_willow_magenta", () -> basket(TBABlocks.BASKET_WILLOW_MAGENTA.get()));
+    public static final RegistryObject<Item> BASKET_WILLOW_PINK =
+            ITEMS.register("basket_willow_pink", () -> basket(TBABlocks.BASKET_WILLOW_PINK.get()));
+    public static final RegistryObject<Item> BASKET_DEAD_WHITE =
+            ITEMS.register("basket_dead_white", () -> basket(TBABlocks.BASKET_DEAD_WHITE.get()));
+    public static final RegistryObject<Item> BASKET_DEAD_LIGHT_GRAY =
+            ITEMS.register("basket_dead_light_gray", () -> basket(TBABlocks.BASKET_DEAD_LIGHT_GRAY.get()));
+    public static final RegistryObject<Item> BASKET_DEAD_GRAY =
+            ITEMS.register("basket_dead_gray", () -> basket(TBABlocks.BASKET_DEAD_GRAY.get()));
+    public static final RegistryObject<Item> BASKET_DEAD_BLACK =
+            ITEMS.register("basket_dead_black", () -> basket(TBABlocks.BASKET_DEAD_BLACK.get()));
+    public static final RegistryObject<Item> BASKET_DEAD_BROWN =
+            ITEMS.register("basket_dead_brown", () -> basket(TBABlocks.BASKET_DEAD_BROWN.get()));
+    public static final RegistryObject<Item> BASKET_DEAD_RED =
+            ITEMS.register("basket_dead_red", () -> basket(TBABlocks.BASKET_DEAD_RED.get()));
+    public static final RegistryObject<Item> BASKET_DEAD_ORANGE =
+            ITEMS.register("basket_dead_orange", () -> basket(TBABlocks.BASKET_DEAD_ORANGE.get()));
+    public static final RegistryObject<Item> BASKET_DEAD_YELLOW =
+            ITEMS.register("basket_dead_yellow", () -> basket(TBABlocks.BASKET_DEAD_YELLOW.get()));
+    public static final RegistryObject<Item> BASKET_DEAD_LIME =
+            ITEMS.register("basket_dead_lime", () -> basket(TBABlocks.BASKET_DEAD_LIME.get()));
+    public static final RegistryObject<Item> BASKET_DEAD_GREEN =
+            ITEMS.register("basket_dead_green", () -> basket(TBABlocks.BASKET_DEAD_GREEN.get()));
+    public static final RegistryObject<Item> BASKET_DEAD_CYAN =
+            ITEMS.register("basket_dead_cyan", () -> basket(TBABlocks.BASKET_DEAD_CYAN.get()));
+    public static final RegistryObject<Item> BASKET_DEAD_LIGHT_BLUE =
+            ITEMS.register("basket_dead_light_blue", () -> basket(TBABlocks.BASKET_DEAD_LIGHT_BLUE.get()));
+    public static final RegistryObject<Item> BASKET_DEAD_BLUE =
+            ITEMS.register("basket_dead_blue", () -> basket(TBABlocks.BASKET_DEAD_BLUE.get()));
+    public static final RegistryObject<Item> BASKET_DEAD_PURPLE =
+            ITEMS.register("basket_dead_purple", () -> basket(TBABlocks.BASKET_DEAD_PURPLE.get()));
+    public static final RegistryObject<Item> BASKET_DEAD_MAGENTA =
+            ITEMS.register("basket_dead_magenta", () -> basket(TBABlocks.BASKET_DEAD_MAGENTA.get()));
+    public static final RegistryObject<Item> BASKET_DEAD_PINK =
+            ITEMS.register("basket_dead_pink", () -> basket(TBABlocks.BASKET_DEAD_PINK.get()));
+    public static final RegistryObject<Item> BASKET_MAGIC_WHITE =
+            ITEMS.register("basket_magic_white", () -> basket(TBABlocks.BASKET_MAGIC_WHITE.get()));
+    public static final RegistryObject<Item> BASKET_MAGIC_LIGHT_GRAY =
+            ITEMS.register("basket_magic_light_gray", () -> basket(TBABlocks.BASKET_MAGIC_LIGHT_GRAY.get()));
+    public static final RegistryObject<Item> BASKET_MAGIC_GRAY =
+            ITEMS.register("basket_magic_gray", () -> basket(TBABlocks.BASKET_MAGIC_GRAY.get()));
+    public static final RegistryObject<Item> BASKET_MAGIC_BLACK =
+            ITEMS.register("basket_magic_black", () -> basket(TBABlocks.BASKET_MAGIC_BLACK.get()));
+    public static final RegistryObject<Item> BASKET_MAGIC_BROWN =
+            ITEMS.register("basket_magic_brown", () -> basket(TBABlocks.BASKET_MAGIC_BROWN.get()));
+    public static final RegistryObject<Item> BASKET_MAGIC_RED =
+            ITEMS.register("basket_magic_red", () -> basket(TBABlocks.BASKET_MAGIC_RED.get()));
+    public static final RegistryObject<Item> BASKET_MAGIC_ORANGE =
+            ITEMS.register("basket_magic_orange", () -> basket(TBABlocks.BASKET_MAGIC_ORANGE.get()));
+    public static final RegistryObject<Item> BASKET_MAGIC_YELLOW =
+            ITEMS.register("basket_magic_yellow", () -> basket(TBABlocks.BASKET_MAGIC_YELLOW.get()));
+    public static final RegistryObject<Item> BASKET_MAGIC_LIME =
+            ITEMS.register("basket_magic_lime", () -> basket(TBABlocks.BASKET_MAGIC_LIME.get()));
+    public static final RegistryObject<Item> BASKET_MAGIC_GREEN =
+            ITEMS.register("basket_magic_green", () -> basket(TBABlocks.BASKET_MAGIC_GREEN.get()));
+    public static final RegistryObject<Item> BASKET_MAGIC_CYAN =
+            ITEMS.register("basket_magic_cyan", () -> basket(TBABlocks.BASKET_MAGIC_CYAN.get()));
+    public static final RegistryObject<Item> BASKET_MAGIC_LIGHT_BLUE =
+            ITEMS.register("basket_magic_light_blue", () -> basket(TBABlocks.BASKET_MAGIC_LIGHT_BLUE.get()));
+    public static final RegistryObject<Item> BASKET_MAGIC_BLUE =
+            ITEMS.register("basket_magic_blue", () -> basket(TBABlocks.BASKET_MAGIC_BLUE.get()));
+    public static final RegistryObject<Item> BASKET_MAGIC_PURPLE =
+            ITEMS.register("basket_magic_purple", () -> basket(TBABlocks.BASKET_MAGIC_PURPLE.get()));
+    public static final RegistryObject<Item> BASKET_MAGIC_MAGENTA =
+            ITEMS.register("basket_magic_magenta", () -> basket(TBABlocks.BASKET_MAGIC_MAGENTA.get()));
+    public static final RegistryObject<Item> BASKET_MAGIC_PINK =
+            ITEMS.register("basket_magic_pink", () -> basket(TBABlocks.BASKET_MAGIC_PINK.get()));
+    public static final RegistryObject<Item> BASKET_UMBRAN_WHITE =
+            ITEMS.register("basket_umbran_white", () -> basket(TBABlocks.BASKET_UMBRAN_WHITE.get()));
+    public static final RegistryObject<Item> BASKET_UMBRAN_LIGHT_GRAY =
+            ITEMS.register("basket_umbran_light_gray", () -> basket(TBABlocks.BASKET_UMBRAN_LIGHT_GRAY.get()));
+    public static final RegistryObject<Item> BASKET_UMBRAN_GRAY =
+            ITEMS.register("basket_umbran_gray", () -> basket(TBABlocks.BASKET_UMBRAN_GRAY.get()));
+    public static final RegistryObject<Item> BASKET_UMBRAN_BLACK =
+            ITEMS.register("basket_umbran_black", () -> basket(TBABlocks.BASKET_UMBRAN_BLACK.get()));
+    public static final RegistryObject<Item> BASKET_UMBRAN_BROWN =
+            ITEMS.register("basket_umbran_brown", () -> basket(TBABlocks.BASKET_UMBRAN_BROWN.get()));
+    public static final RegistryObject<Item> BASKET_UMBRAN_RED =
+            ITEMS.register("basket_umbran_red", () -> basket(TBABlocks.BASKET_UMBRAN_RED.get()));
+    public static final RegistryObject<Item> BASKET_UMBRAN_ORANGE =
+            ITEMS.register("basket_umbran_orange", () -> basket(TBABlocks.BASKET_UMBRAN_ORANGE.get()));
+    public static final RegistryObject<Item> BASKET_UMBRAN_YELLOW =
+            ITEMS.register("basket_umbran_yellow", () -> basket(TBABlocks.BASKET_UMBRAN_YELLOW.get()));
+    public static final RegistryObject<Item> BASKET_UMBRAN_LIME =
+            ITEMS.register("basket_umbran_lime", () -> basket(TBABlocks.BASKET_UMBRAN_LIME.get()));
+    public static final RegistryObject<Item> BASKET_UMBRAN_GREEN =
+            ITEMS.register("basket_umbran_green", () -> basket(TBABlocks.BASKET_UMBRAN_GREEN.get()));
+    public static final RegistryObject<Item> BASKET_UMBRAN_CYAN =
+            ITEMS.register("basket_umbran_cyan", () -> basket(TBABlocks.BASKET_UMBRAN_CYAN.get()));
+    public static final RegistryObject<Item> BASKET_UMBRAN_LIGHT_BLUE =
+            ITEMS.register("basket_umbran_light_blue", () -> basket(TBABlocks.BASKET_UMBRAN_LIGHT_BLUE.get()));
+    public static final RegistryObject<Item> BASKET_UMBRAN_BLUE =
+            ITEMS.register("basket_umbran_blue", () -> basket(TBABlocks.BASKET_UMBRAN_BLUE.get()));
+    public static final RegistryObject<Item> BASKET_UMBRAN_PURPLE =
+            ITEMS.register("basket_umbran_purple", () -> basket(TBABlocks.BASKET_UMBRAN_PURPLE.get()));
+    public static final RegistryObject<Item> BASKET_UMBRAN_MAGENTA =
+            ITEMS.register("basket_umbran_magenta", () -> basket(TBABlocks.BASKET_UMBRAN_MAGENTA.get()));
+    public static final RegistryObject<Item> BASKET_UMBRAN_PINK =
+            ITEMS.register("basket_umbran_pink", () -> basket(TBABlocks.BASKET_UMBRAN_PINK.get()));
+    public static final RegistryObject<Item> BASKET_HELLBARK_WHITE =
+            ITEMS.register("basket_hellbark_white", () -> basket(TBABlocks.BASKET_HELLBARK_WHITE.get()));
+    public static final RegistryObject<Item> BASKET_HELLBARK_LIGHT_GRAY =
+            ITEMS.register("basket_hellbark_light_gray", () -> basket(TBABlocks.BASKET_HELLBARK_LIGHT_GRAY.get()));
+    public static final RegistryObject<Item> BASKET_HELLBARK_GRAY =
+            ITEMS.register("basket_hellbark_gray", () -> basket(TBABlocks.BASKET_HELLBARK_GRAY.get()));
+    public static final RegistryObject<Item> BASKET_HELLBARK_BLACK =
+            ITEMS.register("basket_hellbark_black", () -> basket(TBABlocks.BASKET_HELLBARK_BLACK.get()));
+    public static final RegistryObject<Item> BASKET_HELLBARK_BROWN =
+            ITEMS.register("basket_hellbark_brown", () -> basket(TBABlocks.BASKET_HELLBARK_BROWN.get()));
+    public static final RegistryObject<Item> BASKET_HELLBARK_RED =
+            ITEMS.register("basket_hellbark_red", () -> basket(TBABlocks.BASKET_HELLBARK_RED.get()));
+    public static final RegistryObject<Item> BASKET_HELLBARK_ORANGE =
+            ITEMS.register("basket_hellbark_orange", () -> basket(TBABlocks.BASKET_HELLBARK_ORANGE.get()));
+    public static final RegistryObject<Item> BASKET_HELLBARK_YELLOW =
+            ITEMS.register("basket_hellbark_yellow", () -> basket(TBABlocks.BASKET_HELLBARK_YELLOW.get()));
+    public static final RegistryObject<Item> BASKET_HELLBARK_LIME =
+            ITEMS.register("basket_hellbark_lime", () -> basket(TBABlocks.BASKET_HELLBARK_LIME.get()));
+    public static final RegistryObject<Item> BASKET_HELLBARK_GREEN =
+            ITEMS.register("basket_hellbark_green", () -> basket(TBABlocks.BASKET_HELLBARK_GREEN.get()));
+    public static final RegistryObject<Item> BASKET_HELLBARK_CYAN =
+            ITEMS.register("basket_hellbark_cyan", () -> basket(TBABlocks.BASKET_HELLBARK_CYAN.get()));
+    public static final RegistryObject<Item> BASKET_HELLBARK_LIGHT_BLUE =
+            ITEMS.register("basket_hellbark_light_blue", () -> basket(TBABlocks.BASKET_HELLBARK_LIGHT_BLUE.get()));
+    public static final RegistryObject<Item> BASKET_HELLBARK_BLUE =
+            ITEMS.register("basket_hellbark_blue", () -> basket(TBABlocks.BASKET_HELLBARK_BLUE.get()));
+    public static final RegistryObject<Item> BASKET_HELLBARK_PURPLE =
+            ITEMS.register("basket_hellbark_purple", () -> basket(TBABlocks.BASKET_HELLBARK_PURPLE.get()));
+    public static final RegistryObject<Item> BASKET_HELLBARK_MAGENTA =
+            ITEMS.register("basket_hellbark_magenta", () -> basket(TBABlocks.BASKET_HELLBARK_MAGENTA.get()));
+    public static final RegistryObject<Item> BASKET_HELLBARK_PINK =
+            ITEMS.register("basket_hellbark_pink", () -> basket(TBABlocks.BASKET_HELLBARK_PINK.get()));
+    public static final RegistryObject<Item> BASKET_COCONUT_WHITE =
+            ITEMS.register("basket_coconut_white", () -> basket(TBABlocks.BASKET_COCONUT_WHITE.get()));
+    public static final RegistryObject<Item> BASKET_COCONUT_LIGHT_GRAY =
+            ITEMS.register("basket_coconut_light_gray", () -> basket(TBABlocks.BASKET_COCONUT_LIGHT_GRAY.get()));
+    public static final RegistryObject<Item> BASKET_COCONUT_GRAY =
+            ITEMS.register("basket_coconut_gray", () -> basket(TBABlocks.BASKET_COCONUT_GRAY.get()));
+    public static final RegistryObject<Item> BASKET_COCONUT_BLACK =
+            ITEMS.register("basket_coconut_black", () -> basket(TBABlocks.BASKET_COCONUT_BLACK.get()));
+    public static final RegistryObject<Item> BASKET_COCONUT_BROWN =
+            ITEMS.register("basket_coconut_brown", () -> basket(TBABlocks.BASKET_COCONUT_BROWN.get()));
+    public static final RegistryObject<Item> BASKET_COCONUT_RED =
+            ITEMS.register("basket_coconut_red", () -> basket(TBABlocks.BASKET_COCONUT_RED.get()));
+    public static final RegistryObject<Item> BASKET_COCONUT_ORANGE =
+            ITEMS.register("basket_coconut_orange", () -> basket(TBABlocks.BASKET_COCONUT_ORANGE.get()));
+    public static final RegistryObject<Item> BASKET_COCONUT_YELLOW =
+            ITEMS.register("basket_coconut_yellow", () -> basket(TBABlocks.BASKET_COCONUT_YELLOW.get()));
+    public static final RegistryObject<Item> BASKET_COCONUT_LIME =
+            ITEMS.register("basket_coconut_lime", () -> basket(TBABlocks.BASKET_COCONUT_LIME.get()));
+    public static final RegistryObject<Item> BASKET_COCONUT_GREEN =
+            ITEMS.register("basket_coconut_green", () -> basket(TBABlocks.BASKET_COCONUT_GREEN.get()));
+    public static final RegistryObject<Item> BASKET_COCONUT_CYAN =
+            ITEMS.register("basket_coconut_cyan", () -> basket(TBABlocks.BASKET_COCONUT_CYAN.get()));
+    public static final RegistryObject<Item> BASKET_COCONUT_LIGHT_BLUE =
+            ITEMS.register("basket_coconut_light_blue", () -> basket(TBABlocks.BASKET_COCONUT_LIGHT_BLUE.get()));
+    public static final RegistryObject<Item> BASKET_COCONUT_BLUE =
+            ITEMS.register("basket_coconut_blue", () -> basket(TBABlocks.BASKET_COCONUT_BLUE.get()));
+    public static final RegistryObject<Item> BASKET_COCONUT_PURPLE =
+            ITEMS.register("basket_coconut_purple", () -> basket(TBABlocks.BASKET_COCONUT_PURPLE.get()));
+    public static final RegistryObject<Item> BASKET_COCONUT_MAGENTA =
+            ITEMS.register("basket_coconut_magenta", () -> basket(TBABlocks.BASKET_COCONUT_MAGENTA.get()));
+    public static final RegistryObject<Item> BASKET_COCONUT_PINK =
+            ITEMS.register("basket_coconut_pink", () -> basket(TBABlocks.BASKET_COCONUT_PINK.get()));
+    public static final RegistryObject<Item> BASKET_WALNUT_WHITE =
+            ITEMS.register("basket_walnut_white", () -> basket(TBABlocks.BASKET_WALNUT_WHITE.get()));
+    public static final RegistryObject<Item> BASKET_WALNUT_LIGHT_GRAY =
+            ITEMS.register("basket_walnut_light_gray", () -> basket(TBABlocks.BASKET_WALNUT_LIGHT_GRAY.get()));
+    public static final RegistryObject<Item> BASKET_WALNUT_GRAY =
+            ITEMS.register("basket_walnut_gray", () -> basket(TBABlocks.BASKET_WALNUT_GRAY.get()));
+    public static final RegistryObject<Item> BASKET_WALNUT_BLACK =
+            ITEMS.register("basket_walnut_black", () -> basket(TBABlocks.BASKET_WALNUT_BLACK.get()));
+    public static final RegistryObject<Item> BASKET_WALNUT_BROWN =
+            ITEMS.register("basket_walnut_brown", () -> basket(TBABlocks.BASKET_WALNUT_BROWN.get()));
+    public static final RegistryObject<Item> BASKET_WALNUT_RED =
+            ITEMS.register("basket_walnut_red", () -> basket(TBABlocks.BASKET_WALNUT_RED.get()));
+    public static final RegistryObject<Item> BASKET_WALNUT_ORANGE =
+            ITEMS.register("basket_walnut_orange", () -> basket(TBABlocks.BASKET_WALNUT_ORANGE.get()));
+    public static final RegistryObject<Item> BASKET_WALNUT_YELLOW =
+            ITEMS.register("basket_walnut_yellow", () -> basket(TBABlocks.BASKET_WALNUT_YELLOW.get()));
+    public static final RegistryObject<Item> BASKET_WALNUT_LIME =
+            ITEMS.register("basket_walnut_lime", () -> basket(TBABlocks.BASKET_WALNUT_LIME.get()));
+    public static final RegistryObject<Item> BASKET_WALNUT_GREEN =
+            ITEMS.register("basket_walnut_green", () -> basket(TBABlocks.BASKET_WALNUT_GREEN.get()));
+    public static final RegistryObject<Item> BASKET_WALNUT_CYAN =
+            ITEMS.register("basket_walnut_cyan", () -> basket(TBABlocks.BASKET_WALNUT_CYAN.get()));
+    public static final RegistryObject<Item> BASKET_WALNUT_LIGHT_BLUE =
+            ITEMS.register("basket_walnut_light_blue", () -> basket(TBABlocks.BASKET_WALNUT_LIGHT_BLUE.get()));
+    public static final RegistryObject<Item> BASKET_WALNUT_BLUE =
+            ITEMS.register("basket_walnut_blue", () -> basket(TBABlocks.BASKET_WALNUT_BLUE.get()));
+    public static final RegistryObject<Item> BASKET_WALNUT_PURPLE =
+            ITEMS.register("basket_walnut_purple", () -> basket(TBABlocks.BASKET_WALNUT_PURPLE.get()));
+    public static final RegistryObject<Item> BASKET_WALNUT_MAGENTA =
+            ITEMS.register("basket_walnut_magenta", () -> basket(TBABlocks.BASKET_WALNUT_MAGENTA.get()));
+    public static final RegistryObject<Item> BASKET_WALNUT_PINK =
+            ITEMS.register("basket_walnut_pink", () -> basket(TBABlocks.BASKET_WALNUT_PINK.get()));
+    public static final RegistryObject<Item> BASKET_AZALEA_WHITE =
+            ITEMS.register("basket_azalea_white", () -> basket(TBABlocks.BASKET_AZALEA_WHITE.get()));
+    public static final RegistryObject<Item> BASKET_AZALEA_LIGHT_GRAY =
+            ITEMS.register("basket_azalea_light_gray", () -> basket(TBABlocks.BASKET_AZALEA_LIGHT_GRAY.get()));
+    public static final RegistryObject<Item> BASKET_AZALEA_GRAY =
+            ITEMS.register("basket_azalea_gray", () -> basket(TBABlocks.BASKET_AZALEA_GRAY.get()));
+    public static final RegistryObject<Item> BASKET_AZALEA_BLACK =
+            ITEMS.register("basket_azalea_black", () -> basket(TBABlocks.BASKET_AZALEA_BLACK.get()));
+    public static final RegistryObject<Item> BASKET_AZALEA_BROWN =
+            ITEMS.register("basket_azalea_brown", () -> basket(TBABlocks.BASKET_AZALEA_BROWN.get()));
+    public static final RegistryObject<Item> BASKET_AZALEA_RED =
+            ITEMS.register("basket_azalea_red", () -> basket(TBABlocks.BASKET_AZALEA_RED.get()));
+    public static final RegistryObject<Item> BASKET_AZALEA_ORANGE =
+            ITEMS.register("basket_azalea_orange", () -> basket(TBABlocks.BASKET_AZALEA_ORANGE.get()));
+    public static final RegistryObject<Item> BASKET_AZALEA_YELLOW =
+            ITEMS.register("basket_azalea_yellow", () -> basket(TBABlocks.BASKET_AZALEA_YELLOW.get()));
+    public static final RegistryObject<Item> BASKET_AZALEA_LIME =
+            ITEMS.register("basket_azalea_lime", () -> basket(TBABlocks.BASKET_AZALEA_LIME.get()));
+    public static final RegistryObject<Item> BASKET_AZALEA_GREEN =
+            ITEMS.register("basket_azalea_green", () -> basket(TBABlocks.BASKET_AZALEA_GREEN.get()));
+    public static final RegistryObject<Item> BASKET_AZALEA_CYAN =
+            ITEMS.register("basket_azalea_cyan", () -> basket(TBABlocks.BASKET_AZALEA_CYAN.get()));
+    public static final RegistryObject<Item> BASKET_AZALEA_LIGHT_BLUE =
+            ITEMS.register("basket_azalea_light_blue", () -> basket(TBABlocks.BASKET_AZALEA_LIGHT_BLUE.get()));
+    public static final RegistryObject<Item> BASKET_AZALEA_BLUE =
+            ITEMS.register("basket_azalea_blue", () -> basket(TBABlocks.BASKET_AZALEA_BLUE.get()));
+    public static final RegistryObject<Item> BASKET_AZALEA_PURPLE =
+            ITEMS.register("basket_azalea_purple", () -> basket(TBABlocks.BASKET_AZALEA_PURPLE.get()));
+    public static final RegistryObject<Item> BASKET_AZALEA_MAGENTA =
+            ITEMS.register("basket_azalea_magenta", () -> basket(TBABlocks.BASKET_AZALEA_MAGENTA.get()));
+    public static final RegistryObject<Item> BASKET_AZALEA_PINK =
+            ITEMS.register("basket_azalea_pink", () -> basket(TBABlocks.BASKET_AZALEA_PINK.get()));
+    public static final RegistryObject<Item> BASKET_FLOWERING_AZALEA_WHITE =
+            ITEMS.register("basket_flowering_azalea_white", () -> basket(TBABlocks.BASKET_FLOWERING_AZALEA_WHITE.get()));
+    public static final RegistryObject<Item> BASKET_FLOWERING_AZALEA_LIGHT_GRAY =
+            ITEMS.register("basket_flowering_azalea_light_gray", () -> basket(TBABlocks.BASKET_FLOWERING_AZALEA_LIGHT_GRAY.get()));
+    public static final RegistryObject<Item> BASKET_FLOWERING_AZALEA_GRAY =
+            ITEMS.register("basket_flowering_azalea_gray", () -> basket(TBABlocks.BASKET_FLOWERING_AZALEA_GRAY.get()));
+    public static final RegistryObject<Item> BASKET_FLOWERING_AZALEA_BLACK =
+            ITEMS.register("basket_flowering_azalea_black", () -> basket(TBABlocks.BASKET_FLOWERING_AZALEA_BLACK.get()));
+    public static final RegistryObject<Item> BASKET_FLOWERING_AZALEA_BROWN =
+            ITEMS.register("basket_flowering_azalea_brown", () -> basket(TBABlocks.BASKET_FLOWERING_AZALEA_BROWN.get()));
+    public static final RegistryObject<Item> BASKET_FLOWERING_AZALEA_RED =
+            ITEMS.register("basket_flowering_azalea_red", () -> basket(TBABlocks.BASKET_FLOWERING_AZALEA_RED.get()));
+    public static final RegistryObject<Item> BASKET_FLOWERING_AZALEA_ORANGE =
+            ITEMS.register("basket_flowering_azalea_orange", () -> basket(TBABlocks.BASKET_FLOWERING_AZALEA_ORANGE.get()));
+    public static final RegistryObject<Item> BASKET_FLOWERING_AZALEA_YELLOW =
+            ITEMS.register("basket_flowering_azalea_yellow", () -> basket(TBABlocks.BASKET_FLOWERING_AZALEA_YELLOW.get()));
+    public static final RegistryObject<Item> BASKET_FLOWERING_AZALEA_LIME =
+            ITEMS.register("basket_flowering_azalea_lime", () -> basket(TBABlocks.BASKET_FLOWERING_AZALEA_LIME.get()));
+    public static final RegistryObject<Item> BASKET_FLOWERING_AZALEA_GREEN =
+            ITEMS.register("basket_flowering_azalea_green", () -> basket(TBABlocks.BASKET_FLOWERING_AZALEA_GREEN.get()));
+    public static final RegistryObject<Item> BASKET_FLOWERING_AZALEA_CYAN =
+            ITEMS.register("basket_flowering_azalea_cyan", () -> basket(TBABlocks.BASKET_FLOWERING_AZALEA_CYAN.get()));
+    public static final RegistryObject<Item> BASKET_FLOWERING_AZALEA_LIGHT_BLUE =
+            ITEMS.register("basket_flowering_azalea_light_blue", () -> basket(TBABlocks.BASKET_FLOWERING_AZALEA_LIGHT_BLUE.get()));
+    public static final RegistryObject<Item> BASKET_FLOWERING_AZALEA_BLUE =
+            ITEMS.register("basket_flowering_azalea_blue", () -> basket(TBABlocks.BASKET_FLOWERING_AZALEA_BLUE.get()));
+    public static final RegistryObject<Item> BASKET_FLOWERING_AZALEA_PURPLE =
+            ITEMS.register("basket_flowering_azalea_purple", () -> basket(TBABlocks.BASKET_FLOWERING_AZALEA_PURPLE.get()));
+    public static final RegistryObject<Item> BASKET_FLOWERING_AZALEA_MAGENTA =
+            ITEMS.register("basket_flowering_azalea_magenta", () -> basket(TBABlocks.BASKET_FLOWERING_AZALEA_MAGENTA.get()));
+    public static final RegistryObject<Item> BASKET_FLOWERING_AZALEA_PINK =
+            ITEMS.register("basket_flowering_azalea_pink", () -> basket(TBABlocks.BASKET_FLOWERING_AZALEA_PINK.get()));
+    public static final RegistryObject<Item> BASKET_AETHER_SKYROOT_WHITE =
+            ITEMS.register("basket_aether_skyroot_white", () -> basket(TBABlocks.BASKET_AETHER_SKYROOT_WHITE.get()));
+    public static final RegistryObject<Item> BASKET_AETHER_SKYROOT_LIGHT_GRAY =
+            ITEMS.register("basket_aether_skyroot_light_gray", () -> basket(TBABlocks.BASKET_AETHER_SKYROOT_LIGHT_GRAY.get()));
+    public static final RegistryObject<Item> BASKET_AETHER_SKYROOT_GRAY =
+            ITEMS.register("basket_aether_skyroot_gray", () -> basket(TBABlocks.BASKET_AETHER_SKYROOT_GRAY.get()));
+    public static final RegistryObject<Item> BASKET_AETHER_SKYROOT_BLACK =
+            ITEMS.register("basket_aether_skyroot_black", () -> basket(TBABlocks.BASKET_AETHER_SKYROOT_BLACK.get()));
+    public static final RegistryObject<Item> BASKET_AETHER_SKYROOT_BROWN =
+            ITEMS.register("basket_aether_skyroot_brown", () -> basket(TBABlocks.BASKET_AETHER_SKYROOT_BROWN.get()));
+    public static final RegistryObject<Item> BASKET_AETHER_SKYROOT_RED =
+            ITEMS.register("basket_aether_skyroot_red", () -> basket(TBABlocks.BASKET_AETHER_SKYROOT_RED.get()));
+    public static final RegistryObject<Item> BASKET_AETHER_SKYROOT_ORANGE =
+            ITEMS.register("basket_aether_skyroot_orange", () -> basket(TBABlocks.BASKET_AETHER_SKYROOT_ORANGE.get()));
+    public static final RegistryObject<Item> BASKET_AETHER_SKYROOT_YELLOW =
+            ITEMS.register("basket_aether_skyroot_yellow", () -> basket(TBABlocks.BASKET_AETHER_SKYROOT_YELLOW.get()));
+    public static final RegistryObject<Item> BASKET_AETHER_SKYROOT_LIME =
+            ITEMS.register("basket_aether_skyroot_lime", () -> basket(TBABlocks.BASKET_AETHER_SKYROOT_LIME.get()));
+    public static final RegistryObject<Item> BASKET_AETHER_SKYROOT_GREEN =
+            ITEMS.register("basket_aether_skyroot_green", () -> basket(TBABlocks.BASKET_AETHER_SKYROOT_GREEN.get()));
+    public static final RegistryObject<Item> BASKET_AETHER_SKYROOT_CYAN =
+            ITEMS.register("basket_aether_skyroot_cyan", () -> basket(TBABlocks.BASKET_AETHER_SKYROOT_CYAN.get()));
+    public static final RegistryObject<Item> BASKET_AETHER_SKYROOT_LIGHT_BLUE =
+            ITEMS.register("basket_aether_skyroot_light_blue", () -> basket(TBABlocks.BASKET_AETHER_SKYROOT_LIGHT_BLUE.get()));
+    public static final RegistryObject<Item> BASKET_AETHER_SKYROOT_BLUE =
+            ITEMS.register("basket_aether_skyroot_blue", () -> basket(TBABlocks.BASKET_AETHER_SKYROOT_BLUE.get()));
+    public static final RegistryObject<Item> BASKET_AETHER_SKYROOT_PURPLE =
+            ITEMS.register("basket_aether_skyroot_purple", () -> basket(TBABlocks.BASKET_AETHER_SKYROOT_PURPLE.get()));
+    public static final RegistryObject<Item> BASKET_AETHER_SKYROOT_MAGENTA =
+            ITEMS.register("basket_aether_skyroot_magenta", () -> basket(TBABlocks.BASKET_AETHER_SKYROOT_MAGENTA.get()));
+    public static final RegistryObject<Item> BASKET_AETHER_SKYROOT_PINK =
+            ITEMS.register("basket_aether_skyroot_pink", () -> basket(TBABlocks.BASKET_AETHER_SKYROOT_PINK.get()));
+    public static final RegistryObject<Item> BASKET_PREAM_WHITE =
+            ITEMS.register("basket_pream_white", () -> basket(TBABlocks.BASKET_PREAM_WHITE.get()));
+    public static final RegistryObject<Item> BASKET_PREAM_LIGHT_GRAY =
+            ITEMS.register("basket_pream_light_gray", () -> basket(TBABlocks.BASKET_PREAM_LIGHT_GRAY.get()));
+    public static final RegistryObject<Item> BASKET_PREAM_GRAY =
+            ITEMS.register("basket_pream_gray", () -> basket(TBABlocks.BASKET_PREAM_GRAY.get()));
+    public static final RegistryObject<Item> BASKET_PREAM_BLACK =
+            ITEMS.register("basket_pream_black", () -> basket(TBABlocks.BASKET_PREAM_BLACK.get()));
+    public static final RegistryObject<Item> BASKET_PREAM_BROWN =
+            ITEMS.register("basket_pream_brown", () -> basket(TBABlocks.BASKET_PREAM_BROWN.get()));
+    public static final RegistryObject<Item> BASKET_PREAM_RED =
+            ITEMS.register("basket_pream_red", () -> basket(TBABlocks.BASKET_PREAM_RED.get()));
+    public static final RegistryObject<Item> BASKET_PREAM_ORANGE =
+            ITEMS.register("basket_pream_orange", () -> basket(TBABlocks.BASKET_PREAM_ORANGE.get()));
+    public static final RegistryObject<Item> BASKET_PREAM_YELLOW =
+            ITEMS.register("basket_pream_yellow", () -> basket(TBABlocks.BASKET_PREAM_YELLOW.get()));
+    public static final RegistryObject<Item> BASKET_PREAM_LIME =
+            ITEMS.register("basket_pream_lime", () -> basket(TBABlocks.BASKET_PREAM_LIME.get()));
+    public static final RegistryObject<Item> BASKET_PREAM_GREEN =
+            ITEMS.register("basket_pream_green", () -> basket(TBABlocks.BASKET_PREAM_GREEN.get()));
+    public static final RegistryObject<Item> BASKET_PREAM_CYAN =
+            ITEMS.register("basket_pream_cyan", () -> basket(TBABlocks.BASKET_PREAM_CYAN.get()));
+    public static final RegistryObject<Item> BASKET_PREAM_LIGHT_BLUE =
+            ITEMS.register("basket_pream_light_blue", () -> basket(TBABlocks.BASKET_PREAM_LIGHT_BLUE.get()));
+    public static final RegistryObject<Item> BASKET_PREAM_BLUE =
+            ITEMS.register("basket_pream_blue", () -> basket(TBABlocks.BASKET_PREAM_BLUE.get()));
+    public static final RegistryObject<Item> BASKET_PREAM_PURPLE =
+            ITEMS.register("basket_pream_purple", () -> basket(TBABlocks.BASKET_PREAM_PURPLE.get()));
+    public static final RegistryObject<Item> BASKET_PREAM_MAGENTA =
+            ITEMS.register("basket_pream_magenta", () -> basket(TBABlocks.BASKET_PREAM_MAGENTA.get()));
+    public static final RegistryObject<Item> BASKET_PREAM_PINK =
+            ITEMS.register("basket_pream_pink", () -> basket(TBABlocks.BASKET_PREAM_PINK.get()));
+    public static final RegistryObject<Item> BASKET_EBONY_WHITE =
+            ITEMS.register("basket_ebony_white", () -> basket(TBABlocks.BASKET_EBONY_WHITE.get()));
+    public static final RegistryObject<Item> BASKET_EBONY_LIGHT_GRAY =
+            ITEMS.register("basket_ebony_light_gray", () -> basket(TBABlocks.BASKET_EBONY_LIGHT_GRAY.get()));
+    public static final RegistryObject<Item> BASKET_EBONY_GRAY =
+            ITEMS.register("basket_ebony_gray", () -> basket(TBABlocks.BASKET_EBONY_GRAY.get()));
+    public static final RegistryObject<Item> BASKET_EBONY_BLACK =
+            ITEMS.register("basket_ebony_black", () -> basket(TBABlocks.BASKET_EBONY_BLACK.get()));
+    public static final RegistryObject<Item> BASKET_EBONY_BROWN =
+            ITEMS.register("basket_ebony_brown", () -> basket(TBABlocks.BASKET_EBONY_BROWN.get()));
+    public static final RegistryObject<Item> BASKET_EBONY_RED =
+            ITEMS.register("basket_ebony_red", () -> basket(TBABlocks.BASKET_EBONY_RED.get()));
+    public static final RegistryObject<Item> BASKET_EBONY_ORANGE =
+            ITEMS.register("basket_ebony_orange", () -> basket(TBABlocks.BASKET_EBONY_ORANGE.get()));
+    public static final RegistryObject<Item> BASKET_EBONY_YELLOW =
+            ITEMS.register("basket_ebony_yellow", () -> basket(TBABlocks.BASKET_EBONY_YELLOW.get()));
+    public static final RegistryObject<Item> BASKET_EBONY_LIME =
+            ITEMS.register("basket_ebony_lime", () -> basket(TBABlocks.BASKET_EBONY_LIME.get()));
+    public static final RegistryObject<Item> BASKET_EBONY_GREEN =
+            ITEMS.register("basket_ebony_green", () -> basket(TBABlocks.BASKET_EBONY_GREEN.get()));
+    public static final RegistryObject<Item> BASKET_EBONY_CYAN =
+            ITEMS.register("basket_ebony_cyan", () -> basket(TBABlocks.BASKET_EBONY_CYAN.get()));
+    public static final RegistryObject<Item> BASKET_EBONY_LIGHT_BLUE =
+            ITEMS.register("basket_ebony_light_blue", () -> basket(TBABlocks.BASKET_EBONY_LIGHT_BLUE.get()));
+    public static final RegistryObject<Item> BASKET_EBONY_BLUE =
+            ITEMS.register("basket_ebony_blue", () -> basket(TBABlocks.BASKET_EBONY_BLUE.get()));
+    public static final RegistryObject<Item> BASKET_EBONY_PURPLE =
+            ITEMS.register("basket_ebony_purple", () -> basket(TBABlocks.BASKET_EBONY_PURPLE.get()));
+    public static final RegistryObject<Item> BASKET_EBONY_MAGENTA =
+            ITEMS.register("basket_ebony_magenta", () -> basket(TBABlocks.BASKET_EBONY_MAGENTA.get()));
+    public static final RegistryObject<Item> BASKET_EBONY_PINK =
+            ITEMS.register("basket_ebony_pink", () -> basket(TBABlocks.BASKET_EBONY_PINK.get()));
+    public static final RegistryObject<Item> BASKET_CHORUS_NEST_WHITE =
+            ITEMS.register("basket_chorus_nest_white", () -> basket(TBABlocks.BASKET_CHORUS_NEST_WHITE.get()));
+    public static final RegistryObject<Item> BASKET_CHORUS_NEST_LIGHT_GRAY =
+            ITEMS.register("basket_chorus_nest_light_gray", () -> basket(TBABlocks.BASKET_CHORUS_NEST_LIGHT_GRAY.get()));
+    public static final RegistryObject<Item> BASKET_CHORUS_NEST_GRAY =
+            ITEMS.register("basket_chorus_nest_gray", () -> basket(TBABlocks.BASKET_CHORUS_NEST_GRAY.get()));
+    public static final RegistryObject<Item> BASKET_CHORUS_NEST_BLACK =
+            ITEMS.register("basket_chorus_nest_black", () -> basket(TBABlocks.BASKET_CHORUS_NEST_BLACK.get()));
+    public static final RegistryObject<Item> BASKET_CHORUS_NEST_BROWN =
+            ITEMS.register("basket_chorus_nest_brown", () -> basket(TBABlocks.BASKET_CHORUS_NEST_BROWN.get()));
+    public static final RegistryObject<Item> BASKET_CHORUS_NEST_RED =
+            ITEMS.register("basket_chorus_nest_red", () -> basket(TBABlocks.BASKET_CHORUS_NEST_RED.get()));
+    public static final RegistryObject<Item> BASKET_CHORUS_NEST_ORANGE =
+            ITEMS.register("basket_chorus_nest_orange", () -> basket(TBABlocks.BASKET_CHORUS_NEST_ORANGE.get()));
+    public static final RegistryObject<Item> BASKET_CHORUS_NEST_YELLOW =
+            ITEMS.register("basket_chorus_nest_yellow", () -> basket(TBABlocks.BASKET_CHORUS_NEST_YELLOW.get()));
+    public static final RegistryObject<Item> BASKET_CHORUS_NEST_LIME =
+            ITEMS.register("basket_chorus_nest_lime", () -> basket(TBABlocks.BASKET_CHORUS_NEST_LIME.get()));
+    public static final RegistryObject<Item> BASKET_CHORUS_NEST_GREEN =
+            ITEMS.register("basket_chorus_nest_green", () -> basket(TBABlocks.BASKET_CHORUS_NEST_GREEN.get()));
+    public static final RegistryObject<Item> BASKET_CHORUS_NEST_CYAN =
+            ITEMS.register("basket_chorus_nest_cyan", () -> basket(TBABlocks.BASKET_CHORUS_NEST_CYAN.get()));
+    public static final RegistryObject<Item> BASKET_CHORUS_NEST_LIGHT_BLUE =
+            ITEMS.register("basket_chorus_nest_light_blue", () -> basket(TBABlocks.BASKET_CHORUS_NEST_LIGHT_BLUE.get()));
+    public static final RegistryObject<Item> BASKET_CHORUS_NEST_BLUE =
+            ITEMS.register("basket_chorus_nest_blue", () -> basket(TBABlocks.BASKET_CHORUS_NEST_BLUE.get()));
+    public static final RegistryObject<Item> BASKET_CHORUS_NEST_PURPLE =
+            ITEMS.register("basket_chorus_nest_purple", () -> basket(TBABlocks.BASKET_CHORUS_NEST_PURPLE.get()));
+    public static final RegistryObject<Item> BASKET_CHORUS_NEST_MAGENTA =
+            ITEMS.register("basket_chorus_nest_magenta", () -> basket(TBABlocks.BASKET_CHORUS_NEST_MAGENTA.get()));
+    public static final RegistryObject<Item> BASKET_CHORUS_NEST_PINK =
+            ITEMS.register("basket_chorus_nest_pink", () -> basket(TBABlocks.BASKET_CHORUS_NEST_PINK.get()));
+    public static final RegistryObject<Item> BASKET_BLOODSHROOM_WHITE =
+            ITEMS.register("basket_bloodshroom_white", () -> basket(TBABlocks.BASKET_BLOODSHROOM_WHITE.get()));
+    public static final RegistryObject<Item> BASKET_BLOODSHROOM_LIGHT_GRAY =
+            ITEMS.register("basket_bloodshroom_light_gray", () -> basket(TBABlocks.BASKET_BLOODSHROOM_LIGHT_GRAY.get()));
+    public static final RegistryObject<Item> BASKET_BLOODSHROOM_GRAY =
+            ITEMS.register("basket_bloodshroom_gray", () -> basket(TBABlocks.BASKET_BLOODSHROOM_GRAY.get()));
+    public static final RegistryObject<Item> BASKET_BLOODSHROOM_BLACK =
+            ITEMS.register("basket_bloodshroom_black", () -> basket(TBABlocks.BASKET_BLOODSHROOM_BLACK.get()));
+    public static final RegistryObject<Item> BASKET_BLOODSHROOM_BROWN =
+            ITEMS.register("basket_bloodshroom_brown", () -> basket(TBABlocks.BASKET_BLOODSHROOM_BROWN.get()));
+    public static final RegistryObject<Item> BASKET_BLOODSHROOM_RED =
+            ITEMS.register("basket_bloodshroom_red", () -> basket(TBABlocks.BASKET_BLOODSHROOM_RED.get()));
+    public static final RegistryObject<Item> BASKET_BLOODSHROOM_ORANGE =
+            ITEMS.register("basket_bloodshroom_orange", () -> basket(TBABlocks.BASKET_BLOODSHROOM_ORANGE.get()));
+    public static final RegistryObject<Item> BASKET_BLOODSHROOM_YELLOW =
+            ITEMS.register("basket_bloodshroom_yellow", () -> basket(TBABlocks.BASKET_BLOODSHROOM_YELLOW.get()));
+    public static final RegistryObject<Item> BASKET_BLOODSHROOM_LIME =
+            ITEMS.register("basket_bloodshroom_lime", () -> basket(TBABlocks.BASKET_BLOODSHROOM_LIME.get()));
+    public static final RegistryObject<Item> BASKET_BLOODSHROOM_GREEN =
+            ITEMS.register("basket_bloodshroom_green", () -> basket(TBABlocks.BASKET_BLOODSHROOM_GREEN.get()));
+    public static final RegistryObject<Item> BASKET_BLOODSHROOM_CYAN =
+            ITEMS.register("basket_bloodshroom_cyan", () -> basket(TBABlocks.BASKET_BLOODSHROOM_CYAN.get()));
+    public static final RegistryObject<Item> BASKET_BLOODSHROOM_LIGHT_BLUE =
+            ITEMS.register("basket_bloodshroom_light_blue", () -> basket(TBABlocks.BASKET_BLOODSHROOM_LIGHT_BLUE.get()));
+    public static final RegistryObject<Item> BASKET_BLOODSHROOM_BLUE =
+            ITEMS.register("basket_bloodshroom_blue", () -> basket(TBABlocks.BASKET_BLOODSHROOM_BLUE.get()));
+    public static final RegistryObject<Item> BASKET_BLOODSHROOM_PURPLE =
+            ITEMS.register("basket_bloodshroom_purple", () -> basket(TBABlocks.BASKET_BLOODSHROOM_PURPLE.get()));
+    public static final RegistryObject<Item> BASKET_BLOODSHROOM_MAGENTA =
+            ITEMS.register("basket_bloodshroom_magenta", () -> basket(TBABlocks.BASKET_BLOODSHROOM_MAGENTA.get()));
+    public static final RegistryObject<Item> BASKET_BLOODSHROOM_PINK =
+            ITEMS.register("basket_bloodshroom_pink", () -> basket(TBABlocks.BASKET_BLOODSHROOM_PINK.get()));
+    public static final RegistryObject<Item> BASKET_ENDERBARK_WHITE =
+            ITEMS.register("basket_enderbark_white", () -> basket(TBABlocks.BASKET_ENDERBARK_WHITE.get()));
+    public static final RegistryObject<Item> BASKET_ENDERBARK_LIGHT_GRAY =
+            ITEMS.register("basket_enderbark_light_gray", () -> basket(TBABlocks.BASKET_ENDERBARK_LIGHT_GRAY.get()));
+    public static final RegistryObject<Item> BASKET_ENDERBARK_GRAY =
+            ITEMS.register("basket_enderbark_gray", () -> basket(TBABlocks.BASKET_ENDERBARK_GRAY.get()));
+    public static final RegistryObject<Item> BASKET_ENDERBARK_BLACK =
+            ITEMS.register("basket_enderbark_black", () -> basket(TBABlocks.BASKET_ENDERBARK_BLACK.get()));
+    public static final RegistryObject<Item> BASKET_ENDERBARK_BROWN =
+            ITEMS.register("basket_enderbark_brown", () -> basket(TBABlocks.BASKET_ENDERBARK_BROWN.get()));
+    public static final RegistryObject<Item> BASKET_ENDERBARK_RED =
+            ITEMS.register("basket_enderbark_red", () -> basket(TBABlocks.BASKET_ENDERBARK_RED.get()));
+    public static final RegistryObject<Item> BASKET_ENDERBARK_ORANGE =
+            ITEMS.register("basket_enderbark_orange", () -> basket(TBABlocks.BASKET_ENDERBARK_ORANGE.get()));
+    public static final RegistryObject<Item> BASKET_ENDERBARK_YELLOW =
+            ITEMS.register("basket_enderbark_yellow", () -> basket(TBABlocks.BASKET_ENDERBARK_YELLOW.get()));
+    public static final RegistryObject<Item> BASKET_ENDERBARK_LIME =
+            ITEMS.register("basket_enderbark_lime", () -> basket(TBABlocks.BASKET_ENDERBARK_LIME.get()));
+    public static final RegistryObject<Item> BASKET_ENDERBARK_GREEN =
+            ITEMS.register("basket_enderbark_green", () -> basket(TBABlocks.BASKET_ENDERBARK_GREEN.get()));
+    public static final RegistryObject<Item> BASKET_ENDERBARK_CYAN =
+            ITEMS.register("basket_enderbark_cyan", () -> basket(TBABlocks.BASKET_ENDERBARK_CYAN.get()));
+    public static final RegistryObject<Item> BASKET_ENDERBARK_LIGHT_BLUE =
+            ITEMS.register("basket_enderbark_light_blue", () -> basket(TBABlocks.BASKET_ENDERBARK_LIGHT_BLUE.get()));
+    public static final RegistryObject<Item> BASKET_ENDERBARK_BLUE =
+            ITEMS.register("basket_enderbark_blue", () -> basket(TBABlocks.BASKET_ENDERBARK_BLUE.get()));
+    public static final RegistryObject<Item> BASKET_ENDERBARK_PURPLE =
+            ITEMS.register("basket_enderbark_purple", () -> basket(TBABlocks.BASKET_ENDERBARK_PURPLE.get()));
+    public static final RegistryObject<Item> BASKET_ENDERBARK_MAGENTA =
+            ITEMS.register("basket_enderbark_magenta", () -> basket(TBABlocks.BASKET_ENDERBARK_MAGENTA.get()));
+    public static final RegistryObject<Item> BASKET_ENDERBARK_PINK =
+            ITEMS.register("basket_enderbark_pink", () -> basket(TBABlocks.BASKET_ENDERBARK_PINK.get()));
+    public static final RegistryObject<Item> BASKET_GREENHEART_WHITE =
+            ITEMS.register("basket_greenheart_white", () -> basket(TBABlocks.BASKET_GREENHEART_WHITE.get()));
+    public static final RegistryObject<Item> BASKET_GREENHEART_LIGHT_GRAY =
+            ITEMS.register("basket_greenheart_light_gray", () -> basket(TBABlocks.BASKET_GREENHEART_LIGHT_GRAY.get()));
+    public static final RegistryObject<Item> BASKET_GREENHEART_GRAY =
+            ITEMS.register("basket_greenheart_gray", () -> basket(TBABlocks.BASKET_GREENHEART_GRAY.get()));
+    public static final RegistryObject<Item> BASKET_GREENHEART_BLACK =
+            ITEMS.register("basket_greenheart_black", () -> basket(TBABlocks.BASKET_GREENHEART_BLACK.get()));
+    public static final RegistryObject<Item> BASKET_GREENHEART_BROWN =
+            ITEMS.register("basket_greenheart_brown", () -> basket(TBABlocks.BASKET_GREENHEART_BROWN.get()));
+    public static final RegistryObject<Item> BASKET_GREENHEART_RED =
+            ITEMS.register("basket_greenheart_red", () -> basket(TBABlocks.BASKET_GREENHEART_RED.get()));
+    public static final RegistryObject<Item> BASKET_GREENHEART_ORANGE =
+            ITEMS.register("basket_greenheart_orange", () -> basket(TBABlocks.BASKET_GREENHEART_ORANGE.get()));
+    public static final RegistryObject<Item> BASKET_GREENHEART_YELLOW =
+            ITEMS.register("basket_greenheart_yellow", () -> basket(TBABlocks.BASKET_GREENHEART_YELLOW.get()));
+    public static final RegistryObject<Item> BASKET_GREENHEART_LIME =
+            ITEMS.register("basket_greenheart_lime", () -> basket(TBABlocks.BASKET_GREENHEART_LIME.get()));
+    public static final RegistryObject<Item> BASKET_GREENHEART_GREEN =
+            ITEMS.register("basket_greenheart_green", () -> basket(TBABlocks.BASKET_GREENHEART_GREEN.get()));
+    public static final RegistryObject<Item> BASKET_GREENHEART_CYAN =
+            ITEMS.register("basket_greenheart_cyan", () -> basket(TBABlocks.BASKET_GREENHEART_CYAN.get()));
+    public static final RegistryObject<Item> BASKET_GREENHEART_LIGHT_BLUE =
+            ITEMS.register("basket_greenheart_light_blue", () -> basket(TBABlocks.BASKET_GREENHEART_LIGHT_BLUE.get()));
+    public static final RegistryObject<Item> BASKET_GREENHEART_BLUE =
+            ITEMS.register("basket_greenheart_blue", () -> basket(TBABlocks.BASKET_GREENHEART_BLUE.get()));
+    public static final RegistryObject<Item> BASKET_GREENHEART_PURPLE =
+            ITEMS.register("basket_greenheart_purple", () -> basket(TBABlocks.BASKET_GREENHEART_PURPLE.get()));
+    public static final RegistryObject<Item> BASKET_GREENHEART_MAGENTA =
+            ITEMS.register("basket_greenheart_magenta", () -> basket(TBABlocks.BASKET_GREENHEART_MAGENTA.get()));
+    public static final RegistryObject<Item> BASKET_GREENHEART_PINK =
+            ITEMS.register("basket_greenheart_pink", () -> basket(TBABlocks.BASKET_GREENHEART_PINK.get()));
+    public static final RegistryObject<Item> BASKET_TINKER_SKYROOT_WHITE =
+            ITEMS.register("basket_tinker_skyroot_white", () -> basket(TBABlocks.BASKET_TINKER_SKYROOT_WHITE.get()));
+    public static final RegistryObject<Item> BASKET_TINKER_SKYROOT_LIGHT_GRAY =
+            ITEMS.register("basket_tinker_skyroot_light_gray", () -> basket(TBABlocks.BASKET_TINKER_SKYROOT_LIGHT_GRAY.get()));
+    public static final RegistryObject<Item> BASKET_TINKER_SKYROOT_GRAY =
+            ITEMS.register("basket_tinker_skyroot_gray", () -> basket(TBABlocks.BASKET_TINKER_SKYROOT_GRAY.get()));
+    public static final RegistryObject<Item> BASKET_TINKER_SKYROOT_BLACK =
+            ITEMS.register("basket_tinker_skyroot_black", () -> basket(TBABlocks.BASKET_TINKER_SKYROOT_BLACK.get()));
+    public static final RegistryObject<Item> BASKET_TINKER_SKYROOT_BROWN =
+            ITEMS.register("basket_tinker_skyroot_brown", () -> basket(TBABlocks.BASKET_TINKER_SKYROOT_BROWN.get()));
+    public static final RegistryObject<Item> BASKET_TINKER_SKYROOT_RED =
+            ITEMS.register("basket_tinker_skyroot_red", () -> basket(TBABlocks.BASKET_TINKER_SKYROOT_RED.get()));
+    public static final RegistryObject<Item> BASKET_TINKER_SKYROOT_ORANGE =
+            ITEMS.register("basket_tinker_skyroot_orange", () -> basket(TBABlocks.BASKET_TINKER_SKYROOT_ORANGE.get()));
+    public static final RegistryObject<Item> BASKET_TINKER_SKYROOT_YELLOW =
+            ITEMS.register("basket_tinker_skyroot_yellow", () -> basket(TBABlocks.BASKET_TINKER_SKYROOT_YELLOW.get()));
+    public static final RegistryObject<Item> BASKET_TINKER_SKYROOT_LIME =
+            ITEMS.register("basket_tinker_skyroot_lime", () -> basket(TBABlocks.BASKET_TINKER_SKYROOT_LIME.get()));
+    public static final RegistryObject<Item> BASKET_TINKER_SKYROOT_GREEN =
+            ITEMS.register("basket_tinker_skyroot_green", () -> basket(TBABlocks.BASKET_TINKER_SKYROOT_GREEN.get()));
+    public static final RegistryObject<Item> BASKET_TINKER_SKYROOT_CYAN =
+            ITEMS.register("basket_tinker_skyroot_cyan", () -> basket(TBABlocks.BASKET_TINKER_SKYROOT_CYAN.get()));
+    public static final RegistryObject<Item> BASKET_TINKER_SKYROOT_LIGHT_BLUE =
+            ITEMS.register("basket_tinker_skyroot_light_blue", () -> basket(TBABlocks.BASKET_TINKER_SKYROOT_LIGHT_BLUE.get()));
+    public static final RegistryObject<Item> BASKET_TINKER_SKYROOT_BLUE =
+            ITEMS.register("basket_tinker_skyroot_blue", () -> basket(TBABlocks.BASKET_TINKER_SKYROOT_BLUE.get()));
+    public static final RegistryObject<Item> BASKET_TINKER_SKYROOT_PURPLE =
+            ITEMS.register("basket_tinker_skyroot_purple", () -> basket(TBABlocks.BASKET_TINKER_SKYROOT_PURPLE.get()));
+    public static final RegistryObject<Item> BASKET_TINKER_SKYROOT_MAGENTA =
+            ITEMS.register("basket_tinker_skyroot_magenta", () -> basket(TBABlocks.BASKET_TINKER_SKYROOT_MAGENTA.get()));
+    public static final RegistryObject<Item> BASKET_TINKER_SKYROOT_PINK =
+            ITEMS.register("basket_tinker_skyroot_pink", () -> basket(TBABlocks.BASKET_TINKER_SKYROOT_PINK.get()));
+
+    private static @NotNull BasketBlockItem basket(Block basketBlock) {
+        return new BasketBlockItem(basketBlock, new Item.Properties().stacksTo(1)
+                .tab(TBATab.TAB));
+    }
 
     @Contract("_ -> new")
     private static @NotNull EasterEggItem blankEgg(DyeColor color) {

@@ -1,17 +1,25 @@
 package com.github.warrentode.turtleblockacademy.blocks.entity;
 
+import com.github.warrentode.turtleblockacademy.blocks.entity.gui.basket.BasketMenu;
 import com.github.warrentode.turtleblockacademy.blocks.furniture.BasketBlock;
 import com.github.warrentode.turtleblockacademy.util.CalendarUtil;
+import com.github.warrentode.turtleblockacademy.util.LogUtil;
 import com.github.warrentode.turtleblockacademy.util.TBATags;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.Connection;
+import net.minecraft.network.chat.Component;
 import net.minecraft.network.protocol.Packet;
 import net.minecraft.network.protocol.game.ClientGamePacketListener;
 import net.minecraft.network.protocol.game.ClientboundBlockEntityDataPacket;
 import net.minecraft.sounds.SoundEvents;
+import net.minecraft.world.MenuProvider;
+import net.minecraft.world.Nameable;
+import net.minecraft.world.SimpleContainer;
+import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
@@ -28,11 +36,13 @@ import org.jetbrains.annotations.NotNull;
 import javax.annotation.Nullable;
 import java.util.Objects;
 
-public class BasketBlockEntity extends BlockEntity {
+public class BasketBlockEntity extends BlockEntity implements MenuProvider, Nameable {
+    private Component customName;
     public final ItemStackHandler inventory;
     public static final int INVENTORY_SIZE = 9;
+    public static final int MAX_STACK_SIZE = 1;
 
-    private final ItemStackHandler itemHandler = new ItemStackHandler(INVENTORY_SIZE) {
+    private final ItemStackHandler basketHandler = new ItemStackHandler(INVENTORY_SIZE) {
         @Override
         protected void onContentsChanged(int slot) {
             if (level != null) {
@@ -50,11 +60,11 @@ public class BasketBlockEntity extends BlockEntity {
 
     public BasketBlockEntity(BlockPos pos, BlockState state) {
         super(TBABlockEntities.BASKET_BLOCK_ENTITY.get(), pos, state);
-        this.inventory = itemHandler;
+        this.inventory = basketHandler;
     }
 
     @Override
-    public @NotNull <T> LazyOptional<T> getCapability(@NotNull Capability<T> cap, @org.jetbrains.annotations.Nullable Direction side) {
+    public @NotNull <T> LazyOptional<T> getCapability(@NotNull Capability<T> cap, @Nullable Direction side) {
         if (cap == ForgeCapabilities.ITEM_HANDLER) {
             return lazyItemHandler.cast();
         }
@@ -65,7 +75,7 @@ public class BasketBlockEntity extends BlockEntity {
     @Override
     public void onLoad() {
         super.onLoad();
-        lazyItemHandler = LazyOptional.of(() -> itemHandler);
+        lazyItemHandler = LazyOptional.of(() -> basketHandler);
     }
 
     @Override
@@ -77,7 +87,7 @@ public class BasketBlockEntity extends BlockEntity {
     @Override
     public void saveAdditional(@NotNull CompoundTag tag) {
         super.saveAdditional(tag);
-        tag.put("inventory", itemHandler.serializeNBT());
+        tag.put("inventory", basketHandler.serializeNBT());
     }
 
     @NotNull
@@ -189,5 +199,31 @@ public class BasketBlockEntity extends BlockEntity {
         else {
             BasketBlock.setLightLvl(0);
         }
+    }
+
+    @Override
+    public boolean hasCustomName() {
+        return Nameable.super.hasCustomName();
+    }
+
+    public @NotNull Component getName() {
+        return customName != null ? customName :
+                Component.translatable("container.turtleblockacademy.basket");
+    }
+
+    @Override
+    public @NotNull Component getDisplayName() {
+        return getName();
+    }
+
+    public void setCustomName(Component name) {
+        customName = name;
+    }
+
+    @Nullable
+    @Override
+    public AbstractContainerMenu createMenu(int id, @NotNull Inventory inventory, @NotNull Player player) {
+        LogUtil.info("This is Principal Herobrine speaking, creating menu for basket item now.");
+        return new BasketMenu(id, inventory, new SimpleContainer(INVENTORY_SIZE));
     }
 }
