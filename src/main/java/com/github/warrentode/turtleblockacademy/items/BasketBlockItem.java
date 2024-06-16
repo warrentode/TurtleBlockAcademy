@@ -3,6 +3,8 @@ package com.github.warrentode.turtleblockacademy.items;
 import com.github.warrentode.turtleblockacademy.blocks.entity.BasketBlockEntity;
 import com.github.warrentode.turtleblockacademy.blocks.entity.gui.basket.BasketMenu;
 import com.github.warrentode.turtleblockacademy.blocks.furniture.BasketBlock;
+import com.github.warrentode.turtleblockacademy.util.LogUtil;
+import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.chat.Component;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.*;
@@ -36,13 +38,21 @@ public class BasketBlockItem extends BlockItem {
 
     public IItemHandler getInventory(ItemStack stack) {
         ItemStackHandler stackHandler = new ItemStackHandler(getInventorySize(stack));
-        stackHandler.deserializeNBT(stack.getOrCreateTag().getCompound("inventory"));
+        if (stack.getTag() != null && stack.getTag().contains("inventory")) {
+            stackHandler.deserializeNBT(stack.getTag().getCompound("inventory"));
+            LogUtil.info("Loaded inventory from item stack.");
+        }
+        else {
+            LogUtil.info("No inventory data found on item stack. Creating new inventory.");
+        }
         return stackHandler;
     }
 
     public void saveInventory(ItemStack stack, IItemHandler itemHandler) {
         if (itemHandler instanceof ItemStackHandler) {
-            stack.getOrCreateTag().put("inventory", ((ItemStackHandler) itemHandler).serializeNBT());
+            CompoundTag inventoryTag = ((ItemStackHandler) itemHandler).serializeNBT();
+            stack.getOrCreateTag().put("inventory", inventoryTag);
+            LogUtil.info("Saved inventory to item stack.");
         }
     }
 
@@ -50,13 +60,14 @@ public class BasketBlockItem extends BlockItem {
     public @NotNull InteractionResultHolder<ItemStack> use(@NotNull Level level, @NotNull Player playerIn, @NotNull InteractionHand hand) {
         ItemStack heldStack = playerIn.getItemInHand(hand);
         if (!level.isClientSide() && playerIn instanceof ServerPlayer serverPlayer) {
+            IItemHandler inventoryHandler = getInventory(heldStack);
             NetworkHooks.openScreen(serverPlayer, new SimpleMenuProvider(
                             (id, playerInventory, player) ->
-                                    new BasketMenu(id, playerInventory,
-                                            new SimpleContainer(getInventorySize(heldStack))),
+                                    new BasketMenu(id, playerInventory),
                             Component.translatable("container.turtleblockacademy.basket")),
                     buf -> buf.writeItemStack(playerIn.getItemInHand(hand), false)
             );
+            LogUtil.info("Opened basket screen.");
         }
         return InteractionResultHolder.sidedSuccess(heldStack, level.isClientSide());
     }

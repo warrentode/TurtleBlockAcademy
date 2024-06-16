@@ -2,13 +2,14 @@ package com.github.warrentode.turtleblockacademy.blocks.entity.gui.basket;
 
 import com.github.warrentode.turtleblockacademy.blocks.entity.BasketBlockEntity;
 import com.github.warrentode.turtleblockacademy.blocks.entity.gui.TBAMenuTypes;
-import net.minecraft.network.FriendlyByteBuf;
-import net.minecraft.world.Container;
-import net.minecraft.world.SimpleContainer;
+import com.github.warrentode.turtleblockacademy.items.BasketBlockItem;
+import com.github.warrentode.turtleblockacademy.util.LogUtil;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.inventory.*;
 import net.minecraft.world.item.ItemStack;
+import net.minecraftforge.items.IItemHandler;
+import net.minecraftforge.items.SlotItemHandler;
 import org.jetbrains.annotations.NotNull;
 
 public class BasketMenu extends AbstractContainerMenu {
@@ -32,17 +33,14 @@ public class BasketMenu extends AbstractContainerMenu {
     private static final int CONTAINER_SLOT_COUNT = BasketBlockEntity.INVENTORY_SIZE;
     private static final int TE_INVENTORY_LAST_SLOT_INDEX = TE_INVENTORY_FIRST_SLOT_INDEX + CONTAINER_SLOT_COUNT - 1;
 
-    private final Container basket;
+    private final ItemStack item;
+    private final IItemHandler basketInventory;
 
-    public BasketMenu(int containerId, Inventory playerInventory, FriendlyByteBuf buffer) {
-        this(containerId, playerInventory, new SimpleContainer(CONTAINER_SLOT_COUNT));
-    }
-
-    public BasketMenu(int containerId, @NotNull Inventory playerInventory, Container container) {
+    public BasketMenu(int containerId, @NotNull Inventory playerInventory) {
         super(TBAMenuTypes.BASKET_MENU.get(), containerId);
-        checkContainerSize(container, CONTAINER_SLOT_COUNT);
-        this.basket = container;
-        this.basket.startOpen(playerInventory.player);
+        this.item = getHeldItem(playerInventory.player);
+        this.basketInventory = ((BasketBlockItem) this.item.getItem()).getInventory(this.item);
+        LogUtil.info("BasketMenu created with ID: {}", containerId);
 
         int numRows = 3;
         int numCols = 3;
@@ -56,7 +54,7 @@ public class BasketMenu extends AbstractContainerMenu {
         // Add block entity slots
         for (int rows = 0; rows < numRows; ++rows) {
             for (int cols = 0; cols < numCols; ++cols) {
-                this.addSlot(new Slot(this.basket, cols + rows * numRows,
+                this.addSlot(new SlotItemHandler(this.basketInventory, cols + rows * numRows,
                         entityStartX + cols * borderSize, entityStartY + rows * borderSize));
             }
         }
@@ -74,9 +72,24 @@ public class BasketMenu extends AbstractContainerMenu {
         }
     }
 
+    private ItemStack getHeldItem(@NotNull Player player) {
+        // Determine which held item is a basket (if either)
+        if (isBasket(player.getMainHandItem())) {
+            return player.getMainHandItem();
+        }
+        if (isBasket(player.getOffhandItem())) {
+            return player.getOffhandItem();
+        }
+        return ItemStack.EMPTY;
+    }
+
+    private static boolean isBasket(@NotNull ItemStack stack) {
+        return stack.getItem() instanceof BasketBlockItem;
+    }
+
     @Override
     public boolean stillValid(@NotNull Player player) {
-        return this.basket.stillValid(player);
+        return player.getMainHandItem().getItem() instanceof BasketBlockItem || player.getOffhandItem().getItem() instanceof BasketBlockItem;
     }
 
     /** this is diesieben07's quickMoveStack method, slightly altered to match the varibles I changed above **/
@@ -121,6 +134,9 @@ public class BasketMenu extends AbstractContainerMenu {
     @Override
     public void removed(@NotNull Player player) {
         super.removed(player);
-        this.basket.stopOpen(player);
+        LogUtil.info("BasketMenu removed for player: {}", player.getName().getString());
+        // Save the inventory to the backpack's NBT
+        ((BasketBlockItem) this.item.getItem()).saveInventory(this.item, this.basketInventory);
+        LogUtil.info("Basket inventory saved for player: {}", player.getName().getString());
     }
 }

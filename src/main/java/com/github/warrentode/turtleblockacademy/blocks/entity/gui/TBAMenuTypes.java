@@ -24,10 +24,13 @@ public class TBAMenuTypes {
             registerMenuType(FermentingPotMenu::new, "fermenting_pot_menu");
 
     public static final RegistryObject<MenuType<BasketMenu>> BASKET_MENU =
-            registerMenuType(BasketMenu::new, "basket_menu");
+            registerSimpleMenuType("basket_menu", new MenuType<>(BasketMenu::new));
 
+    private static RegistryObject<MenuType<BasketMenu>> registerSimpleMenuType(String name, MenuType<BasketMenu> type) {
+        return MENUS.register(name, () -> type);
+    }
 
-    private static <T extends AbstractContainerMenu> RegistryObject<MenuType<T>> registerMenuType(IContainerFactory<T> factory, @SuppressWarnings("SameParameterValue") String name) {
+    private static <T extends AbstractContainerMenu> RegistryObject<MenuType<T>> registerMenuType(IContainerFactory<T> factory, String name) {
         return MENUS.register(name, () -> IForgeMenuType.create(factory));
     }
 
