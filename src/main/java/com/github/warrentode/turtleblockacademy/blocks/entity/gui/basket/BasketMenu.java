@@ -10,7 +10,6 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.inventory.*;
 import net.minecraft.world.item.ItemStack;
 import net.minecraftforge.items.ItemStackHandler;
-import net.minecraftforge.items.SlotItemHandler;
 import org.jetbrains.annotations.NotNull;
 
 public class BasketMenu extends AbstractContainerMenu {
@@ -41,8 +40,9 @@ public class BasketMenu extends AbstractContainerMenu {
         // Add block entity slots
         for (int rows = 0; rows < numEntityRows; ++rows) {
             for (int cols = 0; cols < numEntityCols; ++cols) {
-                this.addSlot(new SlotItemHandler(this.basketInventory, cols + rows * numEntityRows,
-                        entityStartX + cols * borderSize, entityStartY + rows * borderSize));
+                this.addSlot(new BasketSlotHandler(this.basketInventory, playerInventory.player,
+                        cols + rows * numEntityRows, entityStartX + cols * borderSize,
+                        entityStartY + rows * borderSize));
             }
         }
 
