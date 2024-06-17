@@ -48,6 +48,8 @@ public class TBATags {
     }
 
     public static class Items {
+        public static final TagKey<Item> CRAFTING_REMAINDERS = packItemTag("forge", "crafting_remainders");
+
         public static final TagKey<Item> SEEDS = packItemTag("forge", "seeds");
         public static final TagKey<Item> DYES = packItemTag("forge", "dye");
         public static final TagKey<Item> EASTER_EGGS = packItemTag(MODID, "easter_eggs");

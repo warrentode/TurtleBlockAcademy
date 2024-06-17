@@ -33,6 +33,7 @@ import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.common.Tags;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import org.jetbrains.annotations.Nullable;
+import slimeknights.tconstruct.fluids.TinkerFluids;
 import umpaz.farmersrespite.common.registry.FRItems;
 import umpaz.nethersdelight.common.registry.NDItems;
 import vectorwing.farmersdelight.common.registry.ModItems;
@@ -57,6 +58,54 @@ public class ItemTagsGen extends ItemTagsProvider {
     }
 
     private void registerPackTags() {
+        tag(TBATags.Items.CRAFTING_REMAINDERS)
+                .addOptionalTag(Objects.requireNonNull(ResourceLocation.tryParse(
+                        "todevillagers:glassblower_tools")))
+                .addOptionalTag(Objects.requireNonNull(ResourceLocation.tryParse(
+                        "todecoins:currency_stamps")))
+                .addOptional(Objects.requireNonNull(ResourceLocation.tryParse(
+                        TinkerFluids.beetrootSoup.asItem().toString())))
+                .addOptional(Objects.requireNonNull(ResourceLocation.tryParse(
+                        TinkerFluids.earthSlime.asItem().toString())))
+                .addOptional(Objects.requireNonNull(ResourceLocation.tryParse(
+                        TinkerFluids.skySlime.asItem().toString())))
+                .addOptional(Objects.requireNonNull(ResourceLocation.tryParse(
+                        TinkerFluids.enderSlime.asItem().toString())))
+                .addOptional(Objects.requireNonNull(ResourceLocation.tryParse(
+                        TinkerFluids.magma.asItem().toString())))
+                .addOptional(Objects.requireNonNull(ResourceLocation.tryParse(
+                        TinkerFluids.honey.asItem().toString())))
+                .addOptional(Objects.requireNonNull(ResourceLocation.tryParse(
+                        TinkerFluids.mushroomStew.asItem().toString())))
+                .addOptional(Objects.requireNonNull(ResourceLocation.tryParse(
+                        TinkerFluids.rabbitStew.asItem().toString())))
+                .addOptional(Objects.requireNonNull(ResourceLocation.tryParse(
+                        TinkerFluids.potion.asItem().toString())))
+                .addOptional(Objects.requireNonNull(ResourceLocation.tryParse(
+                        TinkerFluids.blazingBlood.asItem().toString())))
+                .addOptional(Objects.requireNonNull(ResourceLocation.tryParse(
+                        TinkerFluids.liquidSoul.asItem().toString())))
+                .addOptional(Objects.requireNonNull(ResourceLocation.tryParse(
+                        TinkerFluids.venomBottle.asItem().toString())))
+                .addOptional(Objects.requireNonNull(ResourceLocation.tryParse(
+                        TinkerFluids.magmaBottle.asItem().toString())))
+                .addOptional(Objects.requireNonNull(ResourceLocation.tryParse(
+                        TinkerFluids.meatSoupBowl.asItem().toString())))
+                .add(Items.EXPERIENCE_BOTTLE)
+                .add(Items.LINGERING_POTION)
+                .add(Items.SPLASH_POTION)
+                .add(Items.POTION)
+                .add(Items.BEETROOT_SOUP)
+                .add(Items.RABBIT_STEW)
+                .add(Items.MUSHROOM_STEW)
+                .add(Items.SUSPICIOUS_STEW)
+                .add(Items.TROPICAL_FISH_BUCKET)
+                .add(Items.SALMON_BUCKET)
+                .add(Items.PUFFERFISH_BUCKET)
+                .add(Items.COD_BUCKET)
+                .add(Items.AXOLOTL_BUCKET)
+                .add(Items.POWDER_SNOW_BUCKET)
+                .add(Items.WATER_BUCKET);
         tag(TBATags.Items.BASKET_ITEMS)
                 .addTag(ItemTags.FLOWERS)
                 .addTag(TBATags.Items.BREAD)
