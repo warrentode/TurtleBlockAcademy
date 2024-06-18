@@ -48,7 +48,14 @@ public class TBATags {
     }
 
     public static class Items {
-        public static final TagKey<Item> CRAFTING_REMAINDERS = packItemTag("forge", "crafting_remainders");
+        public static final TagKey<Item> BUCKET_REMAINDERS = packItemTag("forge", "bucket_remainders");
+        public static final TagKey<Item> BOWL_REMAINDERS = packItemTag("forge", "bowl_remainders");
+        public static final TagKey<Item> BOTTLE_REMAINDERS = packItemTag("forge", "bottle_remainders");
+        public static final TagKey<Item> MATCHING_ITEM_REMAINDERS = packItemTag("forge", "matching_item_remainders");
+        public static final TagKey<Item> EGG_STAMPS = packItemTag("forge", "egg_stamps");
+
+        public static final TagKey<Item> BOILED_EGGS = packItemTag("forge", "boiled_eggs");
+        public static final TagKey<Item> SLIME_BALLS = packItemTag("forge", "slime_balls");
 
         public static final TagKey<Item> SEEDS = packItemTag("forge", "seeds");
         public static final TagKey<Item> DYES = packItemTag("forge", "dye");

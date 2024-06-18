@@ -1,7 +1,6 @@
 {
     "parent": "item/generated",
     "textures": {
-        "layer0": "turtleblockacademy:item/colored_egg.png",
-        "layer1": "turtleblockacademy:item/stamp.png"
+        "layer0": "turtleblockacademy:item/egg_colored.png"
     }
 }

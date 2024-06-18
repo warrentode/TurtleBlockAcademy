@@ -93,10 +93,8 @@ public class TBALangGen extends LanguageProvider {
                 "Did you know that the United States has a national pickle day on November 14th?");
         add("tooltip.turtleblockacademy.pickled_item_effect",
                 "Unpasteurized fermented foods are probiotic and when stored well,\nthey promote good gut bacterial health.\nTo reflect this, these pickles will remove one negative effect when consumed.");
-        add("tooltip.turtleblockacademy.easter_egg_item_food_effect", "Provides Comfort effect for a brief time.");
         add("tooltip.turtleblockacademy.easter_egg_item_custom_tooltip",
                 "In China, children celebrate the spring equinox by trying to balance their decorated eggs on their ends.\nSuccess is believed to bring good luck for the year.");
-
     }
 
     private void fillTooltipKeys(String key, String name) {
@@ -125,6 +123,10 @@ public class TBALangGen extends LanguageProvider {
         add(TBAItems.CUCUMBER.get(), "Cucumber");
         add(TBAItems.CUCUMBER_SEEDS.get(), "Cucumber Seeds");
         add(TBAItems.DILL_PICKLE.get(), "Dill Pickle");
+        add(TBAItems.BOILED_EGG.get(), "Boiled Egg");
+        add(TBAItems.PEELED_EGG.get(), "Peeled Egg");
+        add(TBAItems.EGG_STAMP_CREEPER.get(), "Creeper Egg Stamp");
+        add(TBAItems.EGG_STAMP_FLOWER.get(), "Flower Egg Stamp");
     }
 
     private void addEasterEggs() {
@@ -656,518 +658,518 @@ public class TBALangGen extends LanguageProvider {
                 "Black Colored Egg with Orange Creeper Stamp");
         add(TBAItems.COLORED_EGG_BLACK_CREEPER_WHITE.get(),
                 "Black Colored Egg with White Creeper Stamp");
-        add(TBAItems.COLORED_EGG_WHITE_CHECKERED_BLACK.get(),
-                "White Colored Egg with Black Checkered Stamp");
-        add(TBAItems.COLORED_EGG_WHITE_CHECKERED_RED.get(),
-                "White Colored Egg with Red Checkered Stamp");
-        add(TBAItems.COLORED_EGG_WHITE_CHECKERED_GREEN.get(),
-                "White Colored Egg with Green Checkered Stamp");
-        add(TBAItems.COLORED_EGG_WHITE_CHECKERED_BROWN.get(),
-                "White Colored Egg with Brown Checkered Stamp");
-        add(TBAItems.COLORED_EGG_WHITE_CHECKERED_BLUE.get(),
-                "White Colored Egg with Blue Checkered Stamp");
-        add(TBAItems.COLORED_EGG_WHITE_CHECKERED_PURPLE.get(),
-                "White Colored Egg with Purple Checkered Stamp");
-        add(TBAItems.COLORED_EGG_WHITE_CHECKERED_CYAN.get(),
-                "White Colored Egg with Cyan Checkered Stamp");
-        add(TBAItems.COLORED_EGG_WHITE_CHECKERED_LIGHT_GRAY.get(),
-                "White Colored Egg with Light Gray Checkered Stamp");
-        add(TBAItems.COLORED_EGG_WHITE_CHECKERED_GRAY.get(),
-                "White Colored Egg with Gray Checkered Stamp");
-        add(TBAItems.COLORED_EGG_WHITE_CHECKERED_PINK.get(),
-                "White Colored Egg with Pink Checkered Stamp");
-        add(TBAItems.COLORED_EGG_WHITE_CHECKERED_LIME.get(),
-                "White Colored Egg with Lime Checkered Stamp");
-        add(TBAItems.COLORED_EGG_WHITE_CHECKERED_YELLOW.get(),
-                "White Colored Egg with Yellow Checkered Stamp");
-        add(TBAItems.COLORED_EGG_WHITE_CHECKERED_LIGHT_BLUE.get(),
-                "White Colored Egg with Light Blue Checkered Stamp");
-        add(TBAItems.COLORED_EGG_WHITE_CHECKERED_MAGENTA.get(),
-                "White Colored Egg with Magenta Checkered Stamp");
-        add(TBAItems.COLORED_EGG_WHITE_CHECKERED_ORANGE.get(),
-                "White Colored Egg with Orange Checkered Stamp");
-        add(TBAItems.COLORED_EGG_WHITE_CHECKERED_WHITE.get(),
-                "White Colored Egg with White Checkered Stamp");
-        add(TBAItems.COLORED_EGG_ORANGE_CHECKERED_BLACK.get(),
-                "Orange Colored Egg with Black Checkered Stamp");
-        add(TBAItems.COLORED_EGG_ORANGE_CHECKERED_RED.get(),
-                "Orange Colored Egg with Red Checkered Stamp");
-        add(TBAItems.COLORED_EGG_ORANGE_CHECKERED_GREEN.get(),
-                "Orange Colored Egg with Green Checkered Stamp");
-        add(TBAItems.COLORED_EGG_ORANGE_CHECKERED_BROWN.get(),
-                "Orange Colored Egg with Brown Checkered Stamp");
-        add(TBAItems.COLORED_EGG_ORANGE_CHECKERED_BLUE.get(),
-                "Orange Colored Egg with Blue Checkered Stamp");
-        add(TBAItems.COLORED_EGG_ORANGE_CHECKERED_PURPLE.get(),
-                "Orange Colored Egg with Purple Checkered Stamp");
-        add(TBAItems.COLORED_EGG_ORANGE_CHECKERED_CYAN.get(),
-                "Orange Colored Egg with Cyan Checkered Stamp");
-        add(TBAItems.COLORED_EGG_ORANGE_CHECKERED_LIGHT_GRAY.get(),
-                "Orange Colored Egg with Light Gray Checkered Stamp");
-        add(TBAItems.COLORED_EGG_ORANGE_CHECKERED_GRAY.get(),
-                "Orange Colored Egg with Gray Checkered Stamp");
-        add(TBAItems.COLORED_EGG_ORANGE_CHECKERED_PINK.get(),
-                "Orange Colored Egg with Pink Checkered Stamp");
-        add(TBAItems.COLORED_EGG_ORANGE_CHECKERED_LIME.get(),
-                "Orange Colored Egg with Lime Checkered Stamp");
-        add(TBAItems.COLORED_EGG_ORANGE_CHECKERED_YELLOW.get(),
-                "Orange Colored Egg with Yellow Checkered Stamp");
-        add(TBAItems.COLORED_EGG_ORANGE_CHECKERED_LIGHT_BLUE.get(),
-                "Orange Colored Egg with Light Blue Checkered Stamp");
-        add(TBAItems.COLORED_EGG_ORANGE_CHECKERED_MAGENTA.get(),
-                "Orange Colored Egg with Magenta Checkered Stamp");
-        add(TBAItems.COLORED_EGG_ORANGE_CHECKERED_ORANGE.get(),
-                "Orange Colored Egg with Orange Checkered Stamp");
-        add(TBAItems.COLORED_EGG_ORANGE_CHECKERED_WHITE.get(),
-                "Orange Colored Egg with White Checkered Stamp");
-        add(TBAItems.COLORED_EGG_MAGENTA_CHECKERED_BLACK.get(),
-                "Magenta Colored Egg with Black Checkered Stamp");
-        add(TBAItems.COLORED_EGG_MAGENTA_CHECKERED_RED.get(),
-                "Magenta Colored Egg with Red Checkered Stamp");
-        add(TBAItems.COLORED_EGG_MAGENTA_CHECKERED_GREEN.get(),
-                "Magenta Colored Egg with Green Checkered Stamp");
-        add(TBAItems.COLORED_EGG_MAGENTA_CHECKERED_BROWN.get(),
-                "Magenta Colored Egg with Brown Checkered Stamp");
-        add(TBAItems.COLORED_EGG_MAGENTA_CHECKERED_BLUE.get(),
-                "Magenta Colored Egg with Blue Checkered Stamp");
-        add(TBAItems.COLORED_EGG_MAGENTA_CHECKERED_PURPLE.get(),
-                "Magenta Colored Egg with Purple Checkered Stamp");
-        add(TBAItems.COLORED_EGG_MAGENTA_CHECKERED_CYAN.get(),
-                "Magenta Colored Egg with Cyan Checkered Stamp");
-        add(TBAItems.COLORED_EGG_MAGENTA_CHECKERED_LIGHT_GRAY.get(),
-                "Magenta Colored Egg with Light Gray Checkered Stamp");
-        add(TBAItems.COLORED_EGG_MAGENTA_CHECKERED_GRAY.get(),
-                "Magenta Colored Egg with Gray Checkered Stamp");
-        add(TBAItems.COLORED_EGG_MAGENTA_CHECKERED_PINK.get(),
-                "Magenta Colored Egg with Pink Checkered Stamp");
-        add(TBAItems.COLORED_EGG_MAGENTA_CHECKERED_LIME.get(),
-                "Magenta Colored Egg with Lime Checkered Stamp");
-        add(TBAItems.COLORED_EGG_MAGENTA_CHECKERED_YELLOW.get(),
-                "Magenta Colored Egg with Yellow Checkered Stamp");
-        add(TBAItems.COLORED_EGG_MAGENTA_CHECKERED_LIGHT_BLUE.get(),
-                "Magenta Colored Egg with Light Blue Checkered Stamp");
-        add(TBAItems.COLORED_EGG_MAGENTA_CHECKERED_MAGENTA.get(),
-                "Magenta Colored Egg with Magenta Checkered Stamp");
-        add(TBAItems.COLORED_EGG_MAGENTA_CHECKERED_ORANGE.get(),
-                "Magenta Colored Egg with Orange Checkered Stamp");
-        add(TBAItems.COLORED_EGG_MAGENTA_CHECKERED_WHITE.get(),
-                "Magenta Colored Egg with White Checkered Stamp");
-        add(TBAItems.COLORED_EGG_LIGHT_BLUE_CHECKERED_BLACK.get(),
-                "Light Blue Colored Egg with Black Checkered Stamp");
-        add(TBAItems.COLORED_EGG_LIGHT_BLUE_CHECKERED_RED.get(),
-                "Light Blue Colored Egg with Red Checkered Stamp");
-        add(TBAItems.COLORED_EGG_LIGHT_BLUE_CHECKERED_GREEN.get(),
-                "Light Blue Colored Egg with Green Checkered Stamp");
-        add(TBAItems.COLORED_EGG_LIGHT_BLUE_CHECKERED_BROWN.get(),
-                "Light Blue Colored Egg with Brown Checkered Stamp");
-        add(TBAItems.COLORED_EGG_LIGHT_BLUE_CHECKERED_BLUE.get(),
-                "Light Blue Colored Egg with Blue Checkered Stamp");
-        add(TBAItems.COLORED_EGG_LIGHT_BLUE_CHECKERED_PURPLE.get(),
-                "Light Blue Colored Egg with Purple Checkered Stamp");
-        add(TBAItems.COLORED_EGG_LIGHT_BLUE_CHECKERED_CYAN.get(),
-                "Light Blue Colored Egg with Cyan Checkered Stamp");
-        add(TBAItems.COLORED_EGG_LIGHT_BLUE_CHECKERED_LIGHT_GRAY.get(),
-                "Light Blue Colored Egg with Light Gray Checkered Stamp");
-        add(TBAItems.COLORED_EGG_LIGHT_BLUE_CHECKERED_GRAY.get(),
-                "Light Blue Colored Egg with Gray Checkered Stamp");
-        add(TBAItems.COLORED_EGG_LIGHT_BLUE_CHECKERED_PINK.get(),
-                "Light Blue Colored Egg with Pink Checkered Stamp");
-        add(TBAItems.COLORED_EGG_LIGHT_BLUE_CHECKERED_LIME.get(),
-                "Light Blue Colored Egg with Lime Checkered Stamp");
-        add(TBAItems.COLORED_EGG_LIGHT_BLUE_CHECKERED_YELLOW.get(),
-                "Light Blue Colored Egg with Yellow Checkered Stamp");
-        add(TBAItems.COLORED_EGG_LIGHT_BLUE_CHECKERED_LIGHT_BLUE.get(),
-                "Light Blue Colored Egg with Light Blue Checkered Stamp");
-        add(TBAItems.COLORED_EGG_LIGHT_BLUE_CHECKERED_MAGENTA.get(),
-                "Light Blue Colored Egg with Magenta Checkered Stamp");
-        add(TBAItems.COLORED_EGG_LIGHT_BLUE_CHECKERED_ORANGE.get(),
-                "Light Blue Colored Egg with Orange Checkered Stamp");
-        add(TBAItems.COLORED_EGG_LIGHT_BLUE_CHECKERED_WHITE.get(),
-                "Light Blue Colored Egg with White Checkered Stamp");
-        add(TBAItems.COLORED_EGG_YELLOW_CHECKERED_BLACK.get(),
-                "Yellow Colored Egg with Black Checkered Stamp");
-        add(TBAItems.COLORED_EGG_YELLOW_CHECKERED_RED.get(),
-                "Yellow Colored Egg with Red Checkered Stamp");
-        add(TBAItems.COLORED_EGG_YELLOW_CHECKERED_GREEN.get(),
-                "Yellow Colored Egg with Green Checkered Stamp");
-        add(TBAItems.COLORED_EGG_YELLOW_CHECKERED_BROWN.get(),
-                "Yellow Colored Egg with Brown Checkered Stamp");
-        add(TBAItems.COLORED_EGG_YELLOW_CHECKERED_BLUE.get(),
-                "Yellow Colored Egg with Blue Checkered Stamp");
-        add(TBAItems.COLORED_EGG_YELLOW_CHECKERED_PURPLE.get(),
-                "Yellow Colored Egg with Purple Checkered Stamp");
-        add(TBAItems.COLORED_EGG_YELLOW_CHECKERED_CYAN.get(),
-                "Yellow Colored Egg with Cyan Checkered Stamp");
-        add(TBAItems.COLORED_EGG_YELLOW_CHECKERED_LIGHT_GRAY.get(),
-                "Yellow Colored Egg with Light Gray Checkered Stamp");
-        add(TBAItems.COLORED_EGG_YELLOW_CHECKERED_GRAY.get(),
-                "Yellow Colored Egg with Gray Checkered Stamp");
-        add(TBAItems.COLORED_EGG_YELLOW_CHECKERED_PINK.get(),
-                "Yellow Colored Egg with Pink Checkered Stamp");
-        add(TBAItems.COLORED_EGG_YELLOW_CHECKERED_LIME.get(),
-                "Yellow Colored Egg with Lime Checkered Stamp");
-        add(TBAItems.COLORED_EGG_YELLOW_CHECKERED_YELLOW.get(),
-                "Yellow Colored Egg with Yellow Checkered Stamp");
-        add(TBAItems.COLORED_EGG_YELLOW_CHECKERED_LIGHT_BLUE.get(),
-                "Yellow Colored Egg with Light Blue Checkered Stamp");
-        add(TBAItems.COLORED_EGG_YELLOW_CHECKERED_MAGENTA.get(),
-                "Yellow Colored Egg with Magenta Checkered Stamp");
-        add(TBAItems.COLORED_EGG_YELLOW_CHECKERED_ORANGE.get(),
-                "Yellow Colored Egg with Orange Checkered Stamp");
-        add(TBAItems.COLORED_EGG_YELLOW_CHECKERED_WHITE.get(),
-                "Yellow Colored Egg with White Checkered Stamp");
-        add(TBAItems.COLORED_EGG_LIME_CHECKERED_BLACK.get(),
-                "Lime Colored Egg with Black Checkered Stamp");
-        add(TBAItems.COLORED_EGG_LIME_CHECKERED_RED.get(),
-                "Lime Colored Egg with Red Checkered Stamp");
-        add(TBAItems.COLORED_EGG_LIME_CHECKERED_GREEN.get(),
-                "Lime Colored Egg with Green Checkered Stamp");
-        add(TBAItems.COLORED_EGG_LIME_CHECKERED_BROWN.get(),
-                "Lime Colored Egg with Brown Checkered Stamp");
-        add(TBAItems.COLORED_EGG_LIME_CHECKERED_BLUE.get(),
-                "Lime Colored Egg with Blue Checkered Stamp");
-        add(TBAItems.COLORED_EGG_LIME_CHECKERED_PURPLE.get(),
-                "Lime Colored Egg with Purple Checkered Stamp");
-        add(TBAItems.COLORED_EGG_LIME_CHECKERED_CYAN.get(),
-                "Lime Colored Egg with Cyan Checkered Stamp");
-        add(TBAItems.COLORED_EGG_LIME_CHECKERED_LIGHT_GRAY.get(),
-                "Lime Colored Egg with Light Gray Checkered Stamp");
-        add(TBAItems.COLORED_EGG_LIME_CHECKERED_GRAY.get(),
-                "Lime Colored Egg with Gray Checkered Stamp");
-        add(TBAItems.COLORED_EGG_LIME_CHECKERED_PINK.get(),
-                "Lime Colored Egg with Pink Checkered Stamp");
-        add(TBAItems.COLORED_EGG_LIME_CHECKERED_LIME.get(),
-                "Lime Colored Egg with Lime Checkered Stamp");
-        add(TBAItems.COLORED_EGG_LIME_CHECKERED_YELLOW.get(),
-                "Lime Colored Egg with Yellow Checkered Stamp");
-        add(TBAItems.COLORED_EGG_LIME_CHECKERED_LIGHT_BLUE.get(),
-                "Lime Colored Egg with Light Blue Checkered Stamp");
-        add(TBAItems.COLORED_EGG_LIME_CHECKERED_MAGENTA.get(),
-                "Lime Colored Egg with Magenta Checkered Stamp");
-        add(TBAItems.COLORED_EGG_LIME_CHECKERED_ORANGE.get(),
-                "Lime Colored Egg with Orange Checkered Stamp");
-        add(TBAItems.COLORED_EGG_LIME_CHECKERED_WHITE.get(),
-                "Lime Colored Egg with White Checkered Stamp");
-        add(TBAItems.COLORED_EGG_PINK_CHECKERED_BLACK.get(),
-                "Pink Colored Egg with Black Checkered Stamp");
-        add(TBAItems.COLORED_EGG_PINK_CHECKERED_RED.get(),
-                "Pink Colored Egg with Red Checkered Stamp");
-        add(TBAItems.COLORED_EGG_PINK_CHECKERED_GREEN.get(),
-                "Pink Colored Egg with Green Checkered Stamp");
-        add(TBAItems.COLORED_EGG_PINK_CHECKERED_BROWN.get(),
-                "Pink Colored Egg with Brown Checkered Stamp");
-        add(TBAItems.COLORED_EGG_PINK_CHECKERED_BLUE.get(),
-                "Pink Colored Egg with Blue Checkered Stamp");
-        add(TBAItems.COLORED_EGG_PINK_CHECKERED_PURPLE.get(),
-                "Pink Colored Egg with Purple Checkered Stamp");
-        add(TBAItems.COLORED_EGG_PINK_CHECKERED_CYAN.get(),
-                "Pink Colored Egg with Cyan Checkered Stamp");
-        add(TBAItems.COLORED_EGG_PINK_CHECKERED_LIGHT_GRAY.get(),
-                "Pink Colored Egg with Light Gray Checkered Stamp");
-        add(TBAItems.COLORED_EGG_PINK_CHECKERED_GRAY.get(),
-                "Pink Colored Egg with Gray Checkered Stamp");
-        add(TBAItems.COLORED_EGG_PINK_CHECKERED_PINK.get(),
-                "Pink Colored Egg with Pink Checkered Stamp");
-        add(TBAItems.COLORED_EGG_PINK_CHECKERED_LIME.get(),
-                "Pink Colored Egg with Lime Checkered Stamp");
-        add(TBAItems.COLORED_EGG_PINK_CHECKERED_YELLOW.get(),
-                "Pink Colored Egg with Yellow Checkered Stamp");
-        add(TBAItems.COLORED_EGG_PINK_CHECKERED_LIGHT_BLUE.get(),
-                "Pink Colored Egg with Light Blue Checkered Stamp");
-        add(TBAItems.COLORED_EGG_PINK_CHECKERED_MAGENTA.get(),
-                "Pink Colored Egg with Magenta Checkered Stamp");
-        add(TBAItems.COLORED_EGG_PINK_CHECKERED_ORANGE.get(),
-                "Pink Colored Egg with Orange Checkered Stamp");
-        add(TBAItems.COLORED_EGG_PINK_CHECKERED_WHITE.get(),
-                "Pink Colored Egg with White Checkered Stamp");
-        add(TBAItems.COLORED_EGG_GRAY_CHECKERED_BLACK.get(),
-                "Gray Colored Egg with Black Checkered Stamp");
-        add(TBAItems.COLORED_EGG_GRAY_CHECKERED_RED.get(),
-                "Gray Colored Egg with Red Checkered Stamp");
-        add(TBAItems.COLORED_EGG_GRAY_CHECKERED_GREEN.get(),
-                "Gray Colored Egg with Green Checkered Stamp");
-        add(TBAItems.COLORED_EGG_GRAY_CHECKERED_BROWN.get(),
-                "Gray Colored Egg with Brown Checkered Stamp");
-        add(TBAItems.COLORED_EGG_GRAY_CHECKERED_BLUE.get(),
-                "Gray Colored Egg with Blue Checkered Stamp");
-        add(TBAItems.COLORED_EGG_GRAY_CHECKERED_PURPLE.get(),
-                "Gray Colored Egg with Purple Checkered Stamp");
-        add(TBAItems.COLORED_EGG_GRAY_CHECKERED_CYAN.get(),
-                "Gray Colored Egg with Cyan Checkered Stamp");
-        add(TBAItems.COLORED_EGG_GRAY_CHECKERED_LIGHT_GRAY.get(),
-                "Gray Colored Egg with Light Gray Checkered Stamp");
-        add(TBAItems.COLORED_EGG_GRAY_CHECKERED_GRAY.get(),
-                "Gray Colored Egg with Gray Checkered Stamp");
-        add(TBAItems.COLORED_EGG_GRAY_CHECKERED_PINK.get(),
-                "Gray Colored Egg with Pink Checkered Stamp");
-        add(TBAItems.COLORED_EGG_GRAY_CHECKERED_LIME.get(),
-                "Gray Colored Egg with Lime Checkered Stamp");
-        add(TBAItems.COLORED_EGG_GRAY_CHECKERED_YELLOW.get(),
-                "Gray Colored Egg with Yellow Checkered Stamp");
-        add(TBAItems.COLORED_EGG_GRAY_CHECKERED_LIGHT_BLUE.get(),
-                "Gray Colored Egg with Light Blue Checkered Stamp");
-        add(TBAItems.COLORED_EGG_GRAY_CHECKERED_MAGENTA.get(),
-                "Gray Colored Egg with Magenta Checkered Stamp");
-        add(TBAItems.COLORED_EGG_GRAY_CHECKERED_ORANGE.get(),
-                "Gray Colored Egg with Orange Checkered Stamp");
-        add(TBAItems.COLORED_EGG_GRAY_CHECKERED_WHITE.get(),
-                "Gray Colored Egg with White Checkered Stamp");
-        add(TBAItems.COLORED_EGG_LIGHT_GRAY_CHECKERED_BLACK.get(),
-                "Light Gray Colored Egg with Black Checkered Stamp");
-        add(TBAItems.COLORED_EGG_LIGHT_GRAY_CHECKERED_RED.get(),
-                "Light Gray Colored Egg with Red Checkered Stamp");
-        add(TBAItems.COLORED_EGG_LIGHT_GRAY_CHECKERED_GREEN.get(),
-                "Light Gray Colored Egg with Green Checkered Stamp");
-        add(TBAItems.COLORED_EGG_LIGHT_GRAY_CHECKERED_BROWN.get(),
-                "Light Gray Colored Egg with Brown Checkered Stamp");
-        add(TBAItems.COLORED_EGG_LIGHT_GRAY_CHECKERED_BLUE.get(),
-                "Light Gray Colored Egg with Blue Checkered Stamp");
-        add(TBAItems.COLORED_EGG_LIGHT_GRAY_CHECKERED_PURPLE.get(),
-                "Light Gray Colored Egg with Purple Checkered Stamp");
-        add(TBAItems.COLORED_EGG_LIGHT_GRAY_CHECKERED_CYAN.get(),
-                "Light Gray Colored Egg with Cyan Checkered Stamp");
-        add(TBAItems.COLORED_EGG_LIGHT_GRAY_CHECKERED_LIGHT_GRAY.get(),
-                "Light Gray Colored Egg with Light Gray Checkered Stamp");
-        add(TBAItems.COLORED_EGG_LIGHT_GRAY_CHECKERED_GRAY.get(),
-                "Light Gray Colored Egg with Gray Checkered Stamp");
-        add(TBAItems.COLORED_EGG_LIGHT_GRAY_CHECKERED_PINK.get(),
-                "Light Gray Colored Egg with Pink Checkered Stamp");
-        add(TBAItems.COLORED_EGG_LIGHT_GRAY_CHECKERED_LIME.get(),
-                "Light Gray Colored Egg with Lime Checkered Stamp");
-        add(TBAItems.COLORED_EGG_LIGHT_GRAY_CHECKERED_YELLOW.get(),
-                "Light Gray Colored Egg with Yellow Checkered Stamp");
-        add(TBAItems.COLORED_EGG_LIGHT_GRAY_CHECKERED_LIGHT_BLUE.get(),
-                "Light Gray Colored Egg with Light Blue Checkered Stamp");
-        add(TBAItems.COLORED_EGG_LIGHT_GRAY_CHECKERED_MAGENTA.get(),
-                "Light Gray Colored Egg with Magenta Checkered Stamp");
-        add(TBAItems.COLORED_EGG_LIGHT_GRAY_CHECKERED_ORANGE.get(),
-                "Light Gray Colored Egg with Orange Checkered Stamp");
-        add(TBAItems.COLORED_EGG_LIGHT_GRAY_CHECKERED_WHITE.get(),
-                "Light Gray Colored Egg with White Checkered Stamp");
-        add(TBAItems.COLORED_EGG_CYAN_CHECKERED_BLACK.get(),
-                "Cyan Colored Egg with Black Checkered Stamp");
-        add(TBAItems.COLORED_EGG_CYAN_CHECKERED_RED.get(),
-                "Cyan Colored Egg with Red Checkered Stamp");
-        add(TBAItems.COLORED_EGG_CYAN_CHECKERED_GREEN.get(),
-                "Cyan Colored Egg with Green Checkered Stamp");
-        add(TBAItems.COLORED_EGG_CYAN_CHECKERED_BROWN.get(),
-                "Cyan Colored Egg with Brown Checkered Stamp");
-        add(TBAItems.COLORED_EGG_CYAN_CHECKERED_BLUE.get(),
-                "Cyan Colored Egg with Blue Checkered Stamp");
-        add(TBAItems.COLORED_EGG_CYAN_CHECKERED_PURPLE.get(),
-                "Cyan Colored Egg with Purple Checkered Stamp");
-        add(TBAItems.COLORED_EGG_CYAN_CHECKERED_CYAN.get(),
-                "Cyan Colored Egg with Cyan Checkered Stamp");
-        add(TBAItems.COLORED_EGG_CYAN_CHECKERED_LIGHT_GRAY.get(),
-                "Cyan Colored Egg with Light Gray Checkered Stamp");
-        add(TBAItems.COLORED_EGG_CYAN_CHECKERED_GRAY.get(),
-                "Cyan Colored Egg with Gray Checkered Stamp");
-        add(TBAItems.COLORED_EGG_CYAN_CHECKERED_PINK.get(),
-                "Cyan Colored Egg with Pink Checkered Stamp");
-        add(TBAItems.COLORED_EGG_CYAN_CHECKERED_LIME.get(),
-                "Cyan Colored Egg with Lime Checkered Stamp");
-        add(TBAItems.COLORED_EGG_CYAN_CHECKERED_YELLOW.get(),
-                "Cyan Colored Egg with Yellow Checkered Stamp");
-        add(TBAItems.COLORED_EGG_CYAN_CHECKERED_LIGHT_BLUE.get(),
-                "Cyan Colored Egg with Light Blue Checkered Stamp");
-        add(TBAItems.COLORED_EGG_CYAN_CHECKERED_MAGENTA.get(),
-                "Cyan Colored Egg with Magenta Checkered Stamp");
-        add(TBAItems.COLORED_EGG_CYAN_CHECKERED_ORANGE.get(),
-                "Cyan Colored Egg with Orange Checkered Stamp");
-        add(TBAItems.COLORED_EGG_CYAN_CHECKERED_WHITE.get(),
-                "Cyan Colored Egg with White Checkered Stamp");
-        add(TBAItems.COLORED_EGG_PURPLE_CHECKERED_BLACK.get(),
-                "Purple Colored Egg with Black Checkered Stamp");
-        add(TBAItems.COLORED_EGG_PURPLE_CHECKERED_RED.get(),
-                "Purple Colored Egg with Red Checkered Stamp");
-        add(TBAItems.COLORED_EGG_PURPLE_CHECKERED_GREEN.get(),
-                "Purple Colored Egg with Green Checkered Stamp");
-        add(TBAItems.COLORED_EGG_PURPLE_CHECKERED_BROWN.get(),
-                "Purple Colored Egg with Brown Checkered Stamp");
-        add(TBAItems.COLORED_EGG_PURPLE_CHECKERED_BLUE.get(),
-                "Purple Colored Egg with Blue Checkered Stamp");
-        add(TBAItems.COLORED_EGG_PURPLE_CHECKERED_PURPLE.get(),
-                "Purple Colored Egg with Purple Checkered Stamp");
-        add(TBAItems.COLORED_EGG_PURPLE_CHECKERED_CYAN.get(),
-                "Purple Colored Egg with Cyan Checkered Stamp");
-        add(TBAItems.COLORED_EGG_PURPLE_CHECKERED_LIGHT_GRAY.get(),
-                "Purple Colored Egg with Light Gray Checkered Stamp");
-        add(TBAItems.COLORED_EGG_PURPLE_CHECKERED_GRAY.get(),
-                "Purple Colored Egg with Gray Checkered Stamp");
-        add(TBAItems.COLORED_EGG_PURPLE_CHECKERED_PINK.get(),
-                "Purple Colored Egg with Pink Checkered Stamp");
-        add(TBAItems.COLORED_EGG_PURPLE_CHECKERED_LIME.get(),
-                "Purple Colored Egg with Lime Checkered Stamp");
-        add(TBAItems.COLORED_EGG_PURPLE_CHECKERED_YELLOW.get(),
-                "Purple Colored Egg with Yellow Checkered Stamp");
-        add(TBAItems.COLORED_EGG_PURPLE_CHECKERED_LIGHT_BLUE.get(),
-                "Purple Colored Egg with Light Blue Checkered Stamp");
-        add(TBAItems.COLORED_EGG_PURPLE_CHECKERED_MAGENTA.get(),
-                "Purple Colored Egg with Magenta Checkered Stamp");
-        add(TBAItems.COLORED_EGG_PURPLE_CHECKERED_ORANGE.get(),
-                "Purple Colored Egg with Orange Checkered Stamp");
-        add(TBAItems.COLORED_EGG_PURPLE_CHECKERED_WHITE.get(),
-                "Purple Colored Egg with White Checkered Stamp");
-        add(TBAItems.COLORED_EGG_BLUE_CHECKERED_BLACK.get(),
-                "Blue Colored Egg with Black Checkered Stamp");
-        add(TBAItems.COLORED_EGG_BLUE_CHECKERED_RED.get(),
-                "Blue Colored Egg with Red Checkered Stamp");
-        add(TBAItems.COLORED_EGG_BLUE_CHECKERED_GREEN.get(),
-                "Blue Colored Egg with Green Checkered Stamp");
-        add(TBAItems.COLORED_EGG_BLUE_CHECKERED_BROWN.get(),
-                "Blue Colored Egg with Brown Checkered Stamp");
-        add(TBAItems.COLORED_EGG_BLUE_CHECKERED_BLUE.get(),
-                "Blue Colored Egg with Blue Checkered Stamp");
-        add(TBAItems.COLORED_EGG_BLUE_CHECKERED_PURPLE.get(),
-                "Blue Colored Egg with Purple Checkered Stamp");
-        add(TBAItems.COLORED_EGG_BLUE_CHECKERED_CYAN.get(),
-                "Blue Colored Egg with Cyan Checkered Stamp");
-        add(TBAItems.COLORED_EGG_BLUE_CHECKERED_LIGHT_GRAY.get(),
-                "Blue Colored Egg with Light Gray Checkered Stamp");
-        add(TBAItems.COLORED_EGG_BLUE_CHECKERED_GRAY.get(),
-                "Blue Colored Egg with Gray Checkered Stamp");
-        add(TBAItems.COLORED_EGG_BLUE_CHECKERED_PINK.get(),
-                "Blue Colored Egg with Pink Checkered Stamp");
-        add(TBAItems.COLORED_EGG_BLUE_CHECKERED_LIME.get(),
-                "Blue Colored Egg with Lime Checkered Stamp");
-        add(TBAItems.COLORED_EGG_BLUE_CHECKERED_YELLOW.get(),
-                "Blue Colored Egg with Yellow Checkered Stamp");
-        add(TBAItems.COLORED_EGG_BLUE_CHECKERED_LIGHT_BLUE.get(),
-                "Blue Colored Egg with Light Blue Checkered Stamp");
-        add(TBAItems.COLORED_EGG_BLUE_CHECKERED_MAGENTA.get(),
-                "Blue Colored Egg with Magenta Checkered Stamp");
-        add(TBAItems.COLORED_EGG_BLUE_CHECKERED_ORANGE.get(),
-                "Blue Colored Egg with Orange Checkered Stamp");
-        add(TBAItems.COLORED_EGG_BLUE_CHECKERED_WHITE.get(),
-                "Blue Colored Egg with White Checkered Stamp");
-        add(TBAItems.COLORED_EGG_BROWN_CHECKERED_BLACK.get(),
-                "Brown Colored Egg with Black Checkered Stamp");
-        add(TBAItems.COLORED_EGG_BROWN_CHECKERED_RED.get(),
-                "Brown Colored Egg with Red Checkered Stamp");
-        add(TBAItems.COLORED_EGG_BROWN_CHECKERED_GREEN.get(),
-                "Brown Colored Egg with Green Checkered Stamp");
-        add(TBAItems.COLORED_EGG_BROWN_CHECKERED_BROWN.get(),
-                "Brown Colored Egg with Brown Checkered Stamp");
-        add(TBAItems.COLORED_EGG_BROWN_CHECKERED_BLUE.get(),
-                "Brown Colored Egg with Blue Checkered Stamp");
-        add(TBAItems.COLORED_EGG_BROWN_CHECKERED_PURPLE.get(),
-                "Brown Colored Egg with Purple Checkered Stamp");
-        add(TBAItems.COLORED_EGG_BROWN_CHECKERED_CYAN.get(),
-                "Brown Colored Egg with Cyan Checkered Stamp");
-        add(TBAItems.COLORED_EGG_BROWN_CHECKERED_LIGHT_GRAY.get(),
-                "Brown Colored Egg with Light Gray Checkered Stamp");
-        add(TBAItems.COLORED_EGG_BROWN_CHECKERED_GRAY.get(),
-                "Brown Colored Egg with Gray Checkered Stamp");
-        add(TBAItems.COLORED_EGG_BROWN_CHECKERED_PINK.get(),
-                "Brown Colored Egg with Pink Checkered Stamp");
-        add(TBAItems.COLORED_EGG_BROWN_CHECKERED_LIME.get(),
-                "Brown Colored Egg with Lime Checkered Stamp");
-        add(TBAItems.COLORED_EGG_BROWN_CHECKERED_YELLOW.get(),
-                "Brown Colored Egg with Yellow Checkered Stamp");
-        add(TBAItems.COLORED_EGG_BROWN_CHECKERED_LIGHT_BLUE.get(),
-                "Brown Colored Egg with Light Blue Checkered Stamp");
-        add(TBAItems.COLORED_EGG_BROWN_CHECKERED_MAGENTA.get(),
-                "Brown Colored Egg with Magenta Checkered Stamp");
-        add(TBAItems.COLORED_EGG_BROWN_CHECKERED_ORANGE.get(),
-                "Brown Colored Egg with Orange Checkered Stamp");
-        add(TBAItems.COLORED_EGG_BROWN_CHECKERED_WHITE.get(),
-                "Brown Colored Egg with White Checkered Stamp");
-        add(TBAItems.COLORED_EGG_GREEN_CHECKERED_BLACK.get(),
-                "Green Colored Egg with Black Checkered Stamp");
-        add(TBAItems.COLORED_EGG_GREEN_CHECKERED_RED.get(),
-                "Green Colored Egg with Red Checkered Stamp");
-        add(TBAItems.COLORED_EGG_GREEN_CHECKERED_GREEN.get(),
-                "Green Colored Egg with Green Checkered Stamp");
-        add(TBAItems.COLORED_EGG_GREEN_CHECKERED_BROWN.get(),
-                "Green Colored Egg with Brown Checkered Stamp");
-        add(TBAItems.COLORED_EGG_GREEN_CHECKERED_BLUE.get(),
-                "Green Colored Egg with Blue Checkered Stamp");
-        add(TBAItems.COLORED_EGG_GREEN_CHECKERED_PURPLE.get(),
-                "Green Colored Egg with Purple Checkered Stamp");
-        add(TBAItems.COLORED_EGG_GREEN_CHECKERED_CYAN.get(),
-                "Green Colored Egg with Cyan Checkered Stamp");
-        add(TBAItems.COLORED_EGG_GREEN_CHECKERED_LIGHT_GRAY.get(),
-                "Green Colored Egg with Light Gray Checkered Stamp");
-        add(TBAItems.COLORED_EGG_GREEN_CHECKERED_GRAY.get(),
-                "Green Colored Egg with Gray Checkered Stamp");
-        add(TBAItems.COLORED_EGG_GREEN_CHECKERED_PINK.get(),
-                "Green Colored Egg with Pink Checkered Stamp");
-        add(TBAItems.COLORED_EGG_GREEN_CHECKERED_LIME.get(),
-                "Green Colored Egg with Lime Checkered Stamp");
-        add(TBAItems.COLORED_EGG_GREEN_CHECKERED_YELLOW.get(),
-                "Green Colored Egg with Yellow Checkered Stamp");
-        add(TBAItems.COLORED_EGG_GREEN_CHECKERED_LIGHT_BLUE.get(),
-                "Green Colored Egg with Light Blue Checkered Stamp");
-        add(TBAItems.COLORED_EGG_GREEN_CHECKERED_MAGENTA.get(),
-                "Green Colored Egg with Magenta Checkered Stamp");
-        add(TBAItems.COLORED_EGG_GREEN_CHECKERED_ORANGE.get(),
-                "Green Colored Egg with Orange Checkered Stamp");
-        add(TBAItems.COLORED_EGG_GREEN_CHECKERED_WHITE.get(),
-                "Green Colored Egg with White Checkered Stamp");
-        add(TBAItems.COLORED_EGG_RED_CHECKERED_BLACK.get(),
-                "Red Colored Egg with Black Checkered Stamp");
-        add(TBAItems.COLORED_EGG_RED_CHECKERED_RED.get(),
-                "Red Colored Egg with Red Checkered Stamp");
-        add(TBAItems.COLORED_EGG_RED_CHECKERED_GREEN.get(),
-                "Red Colored Egg with Green Checkered Stamp");
-        add(TBAItems.COLORED_EGG_RED_CHECKERED_BROWN.get(),
-                "Red Colored Egg with Brown Checkered Stamp");
-        add(TBAItems.COLORED_EGG_RED_CHECKERED_BLUE.get(),
-                "Red Colored Egg with Blue Checkered Stamp");
-        add(TBAItems.COLORED_EGG_RED_CHECKERED_PURPLE.get(),
-                "Red Colored Egg with Purple Checkered Stamp");
-        add(TBAItems.COLORED_EGG_RED_CHECKERED_CYAN.get(),
-                "Red Colored Egg with Cyan Checkered Stamp");
-        add(TBAItems.COLORED_EGG_RED_CHECKERED_LIGHT_GRAY.get(),
-                "Red Colored Egg with Light Gray Checkered Stamp");
-        add(TBAItems.COLORED_EGG_RED_CHECKERED_GRAY.get(),
-                "Red Colored Egg with Gray Checkered Stamp");
-        add(TBAItems.COLORED_EGG_RED_CHECKERED_PINK.get(),
-                "Red Colored Egg with Pink Checkered Stamp");
-        add(TBAItems.COLORED_EGG_RED_CHECKERED_LIME.get(),
-                "Red Colored Egg with Lime Checkered Stamp");
-        add(TBAItems.COLORED_EGG_RED_CHECKERED_YELLOW.get(),
-                "Red Colored Egg with Yellow Checkered Stamp");
-        add(TBAItems.COLORED_EGG_RED_CHECKERED_LIGHT_BLUE.get(),
-                "Red Colored Egg with Light Blue Checkered Stamp");
-        add(TBAItems.COLORED_EGG_RED_CHECKERED_MAGENTA.get(),
-                "Red Colored Egg with Magenta Checkered Stamp");
-        add(TBAItems.COLORED_EGG_RED_CHECKERED_ORANGE.get(),
-                "Red Colored Egg with Orange Checkered Stamp");
-        add(TBAItems.COLORED_EGG_RED_CHECKERED_WHITE.get(),
-                "Red Colored Egg with White Checkered Stamp");
-        add(TBAItems.COLORED_EGG_BLACK_CHECKERED_BLACK.get(),
-                "Black Colored Egg with Black Checkered Stamp");
-        add(TBAItems.COLORED_EGG_BLACK_CHECKERED_RED.get(),
-                "Black Colored Egg with Red Checkered Stamp");
-        add(TBAItems.COLORED_EGG_BLACK_CHECKERED_GREEN.get(),
-                "Black Colored Egg with Green Checkered Stamp");
-        add(TBAItems.COLORED_EGG_BLACK_CHECKERED_BROWN.get(),
-                "Black Colored Egg with Brown Checkered Stamp");
-        add(TBAItems.COLORED_EGG_BLACK_CHECKERED_BLUE.get(),
-                "Black Colored Egg with Blue Checkered Stamp");
-        add(TBAItems.COLORED_EGG_BLACK_CHECKERED_PURPLE.get(),
-                "Black Colored Egg with Purple Checkered Stamp");
-        add(TBAItems.COLORED_EGG_BLACK_CHECKERED_CYAN.get(),
-                "Black Colored Egg with Cyan Checkered Stamp");
-        add(TBAItems.COLORED_EGG_BLACK_CHECKERED_LIGHT_GRAY.get(),
-                "Black Colored Egg with Light Gray Checkered Stamp");
-        add(TBAItems.COLORED_EGG_BLACK_CHECKERED_GRAY.get(),
-                "Black Colored Egg with Gray Checkered Stamp");
-        add(TBAItems.COLORED_EGG_BLACK_CHECKERED_PINK.get(),
-                "Black Colored Egg with Pink Checkered Stamp");
-        add(TBAItems.COLORED_EGG_BLACK_CHECKERED_LIME.get(),
-                "Black Colored Egg with Lime Checkered Stamp");
-        add(TBAItems.COLORED_EGG_BLACK_CHECKERED_YELLOW.get(),
-                "Black Colored Egg with Yellow Checkered Stamp");
-        add(TBAItems.COLORED_EGG_BLACK_CHECKERED_LIGHT_BLUE.get(),
-                "Black Colored Egg with Light Blue Checkered Stamp");
-        add(TBAItems.COLORED_EGG_BLACK_CHECKERED_MAGENTA.get(),
-                "Black Colored Egg with Magenta Checkered Stamp");
-        add(TBAItems.COLORED_EGG_BLACK_CHECKERED_ORANGE.get(),
-                "Black Colored Egg with Orange Checkered Stamp");
-        add(TBAItems.COLORED_EGG_BLACK_CHECKERED_WHITE.get(),
-                "Black Colored Egg with White Checkered Stamp");
+        add(TBAItems.COLORED_EGG_WHITE_FLOWER_BLACK.get(),
+                "White Colored Egg with Black Flower Stamp");
+        add(TBAItems.COLORED_EGG_WHITE_FLOWER_RED.get(),
+                "White Colored Egg with Red Flower Stamp");
+        add(TBAItems.COLORED_EGG_WHITE_FLOWER_GREEN.get(),
+                "White Colored Egg with Green Flower Stamp");
+        add(TBAItems.COLORED_EGG_WHITE_FLOWER_BROWN.get(),
+                "White Colored Egg with Brown Flower Stamp");
+        add(TBAItems.COLORED_EGG_WHITE_FLOWER_BLUE.get(),
+                "White Colored Egg with Blue Flower Stamp");
+        add(TBAItems.COLORED_EGG_WHITE_FLOWER_PURPLE.get(),
+                "White Colored Egg with Purple Flower Stamp");
+        add(TBAItems.COLORED_EGG_WHITE_FLOWER_CYAN.get(),
+                "White Colored Egg with Cyan Flower Stamp");
+        add(TBAItems.COLORED_EGG_WHITE_FLOWER_LIGHT_GRAY.get(),
+                "White Colored Egg with Light Gray Flower Stamp");
+        add(TBAItems.COLORED_EGG_WHITE_FLOWER_GRAY.get(),
+                "White Colored Egg with Gray Flower Stamp");
+        add(TBAItems.COLORED_EGG_WHITE_FLOWER_PINK.get(),
+                "White Colored Egg with Pink Flower Stamp");
+        add(TBAItems.COLORED_EGG_WHITE_FLOWER_LIME.get(),
+                "White Colored Egg with Lime Flower Stamp");
+        add(TBAItems.COLORED_EGG_WHITE_FLOWER_YELLOW.get(),
+                "White Colored Egg with Yellow Flower Stamp");
+        add(TBAItems.COLORED_EGG_WHITE_FLOWER_LIGHT_BLUE.get(),
+                "White Colored Egg with Light Blue Flower Stamp");
+        add(TBAItems.COLORED_EGG_WHITE_FLOWER_MAGENTA.get(),
+                "White Colored Egg with Magenta Flower Stamp");
+        add(TBAItems.COLORED_EGG_WHITE_FLOWER_ORANGE.get(),
+                "White Colored Egg with Orange Flower Stamp");
+        add(TBAItems.COLORED_EGG_WHITE_FLOWER_WHITE.get(),
+                "White Colored Egg with White Flower Stamp");
+        add(TBAItems.COLORED_EGG_ORANGE_FLOWER_BLACK.get(),
+                "Orange Colored Egg with Black Flower Stamp");
+        add(TBAItems.COLORED_EGG_ORANGE_FLOWER_RED.get(),
+                "Orange Colored Egg with Red Flower Stamp");
+        add(TBAItems.COLORED_EGG_ORANGE_FLOWER_GREEN.get(),
+                "Orange Colored Egg with Green Flower Stamp");
+        add(TBAItems.COLORED_EGG_ORANGE_FLOWER_BROWN.get(),
+                "Orange Colored Egg with Brown Flower Stamp");
+        add(TBAItems.COLORED_EGG_ORANGE_FLOWER_BLUE.get(),
+                "Orange Colored Egg with Blue Flower Stamp");
+        add(TBAItems.COLORED_EGG_ORANGE_FLOWER_PURPLE.get(),
+                "Orange Colored Egg with Purple Flower Stamp");
+        add(TBAItems.COLORED_EGG_ORANGE_FLOWER_CYAN.get(),
+                "Orange Colored Egg with Cyan Flower Stamp");
+        add(TBAItems.COLORED_EGG_ORANGE_FLOWER_LIGHT_GRAY.get(),
+                "Orange Colored Egg with Light Gray Flower Stamp");
+        add(TBAItems.COLORED_EGG_ORANGE_FLOWER_GRAY.get(),
+                "Orange Colored Egg with Gray Flower Stamp");
+        add(TBAItems.COLORED_EGG_ORANGE_FLOWER_PINK.get(),
+                "Orange Colored Egg with Pink Flower Stamp");
+        add(TBAItems.COLORED_EGG_ORANGE_FLOWER_LIME.get(),
+                "Orange Colored Egg with Lime Flower Stamp");
+        add(TBAItems.COLORED_EGG_ORANGE_FLOWER_YELLOW.get(),
+                "Orange Colored Egg with Yellow Flower Stamp");
+        add(TBAItems.COLORED_EGG_ORANGE_FLOWER_LIGHT_BLUE.get(),
+                "Orange Colored Egg with Light Blue Flower Stamp");
+        add(TBAItems.COLORED_EGG_ORANGE_FLOWER_MAGENTA.get(),
+                "Orange Colored Egg with Magenta Flower Stamp");
+        add(TBAItems.COLORED_EGG_ORANGE_FLOWER_ORANGE.get(),
+                "Orange Colored Egg with Orange Flower Stamp");
+        add(TBAItems.COLORED_EGG_ORANGE_FLOWER_WHITE.get(),
+                "Orange Colored Egg with White Flower Stamp");
+        add(TBAItems.COLORED_EGG_MAGENTA_FLOWER_BLACK.get(),
+                "Magenta Colored Egg with Black Flower Stamp");
+        add(TBAItems.COLORED_EGG_MAGENTA_FLOWER_RED.get(),
+                "Magenta Colored Egg with Red Flower Stamp");
+        add(TBAItems.COLORED_EGG_MAGENTA_FLOWER_GREEN.get(),
+                "Magenta Colored Egg with Green Flower Stamp");
+        add(TBAItems.COLORED_EGG_MAGENTA_FLOWER_BROWN.get(),
+                "Magenta Colored Egg with Brown Flower Stamp");
+        add(TBAItems.COLORED_EGG_MAGENTA_FLOWER_BLUE.get(),
+                "Magenta Colored Egg with Blue Flower Stamp");
+        add(TBAItems.COLORED_EGG_MAGENTA_FLOWER_PURPLE.get(),
+                "Magenta Colored Egg with Purple Flower Stamp");
+        add(TBAItems.COLORED_EGG_MAGENTA_FLOWER_CYAN.get(),
+                "Magenta Colored Egg with Cyan Flower Stamp");
+        add(TBAItems.COLORED_EGG_MAGENTA_FLOWER_LIGHT_GRAY.get(),
+                "Magenta Colored Egg with Light Gray Flower Stamp");
+        add(TBAItems.COLORED_EGG_MAGENTA_FLOWER_GRAY.get(),
+                "Magenta Colored Egg with Gray Flower Stamp");
+        add(TBAItems.COLORED_EGG_MAGENTA_FLOWER_PINK.get(),
+                "Magenta Colored Egg with Pink Flower Stamp");
+        add(TBAItems.COLORED_EGG_MAGENTA_FLOWER_LIME.get(),
+                "Magenta Colored Egg with Lime Flower Stamp");
+        add(TBAItems.COLORED_EGG_MAGENTA_FLOWER_YELLOW.get(),
+                "Magenta Colored Egg with Yellow Flower Stamp");
+        add(TBAItems.COLORED_EGG_MAGENTA_FLOWER_LIGHT_BLUE.get(),
+                "Magenta Colored Egg with Light Blue Flower Stamp");
+        add(TBAItems.COLORED_EGG_MAGENTA_FLOWER_MAGENTA.get(),
+                "Magenta Colored Egg with Magenta Flower Stamp");
+        add(TBAItems.COLORED_EGG_MAGENTA_FLOWER_ORANGE.get(),
+                "Magenta Colored Egg with Orange Flower Stamp");
+        add(TBAItems.COLORED_EGG_MAGENTA_FLOWER_WHITE.get(),
+                "Magenta Colored Egg with White Flower Stamp");
+        add(TBAItems.COLORED_EGG_LIGHT_BLUE_FLOWER_BLACK.get(),
+                "Light Blue Colored Egg with Black Flower Stamp");
+        add(TBAItems.COLORED_EGG_LIGHT_BLUE_FLOWER_RED.get(),
+                "Light Blue Colored Egg with Red Flower Stamp");
+        add(TBAItems.COLORED_EGG_LIGHT_BLUE_FLOWER_GREEN.get(),
+                "Light Blue Colored Egg with Green Flower Stamp");
+        add(TBAItems.COLORED_EGG_LIGHT_BLUE_FLOWER_BROWN.get(),
+                "Light Blue Colored Egg with Brown Flower Stamp");
+        add(TBAItems.COLORED_EGG_LIGHT_BLUE_FLOWER_BLUE.get(),
+                "Light Blue Colored Egg with Blue Flower Stamp");
+        add(TBAItems.COLORED_EGG_LIGHT_BLUE_FLOWER_PURPLE.get(),
+                "Light Blue Colored Egg with Purple Flower Stamp");
+        add(TBAItems.COLORED_EGG_LIGHT_BLUE_FLOWER_CYAN.get(),
+                "Light Blue Colored Egg with Cyan Flower Stamp");
+        add(TBAItems.COLORED_EGG_LIGHT_BLUE_FLOWER_LIGHT_GRAY.get(),
+                "Light Blue Colored Egg with Light Gray Flower Stamp");
+        add(TBAItems.COLORED_EGG_LIGHT_BLUE_FLOWER_GRAY.get(),
+                "Light Blue Colored Egg with Gray Flower Stamp");
+        add(TBAItems.COLORED_EGG_LIGHT_BLUE_FLOWER_PINK.get(),
+                "Light Blue Colored Egg with Pink Flower Stamp");
+        add(TBAItems.COLORED_EGG_LIGHT_BLUE_FLOWER_LIME.get(),
+                "Light Blue Colored Egg with Lime Flower Stamp");
+        add(TBAItems.COLORED_EGG_LIGHT_BLUE_FLOWER_YELLOW.get(),
+                "Light Blue Colored Egg with Yellow Flower Stamp");
+        add(TBAItems.COLORED_EGG_LIGHT_BLUE_FLOWER_LIGHT_BLUE.get(),
+                "Light Blue Colored Egg with Light Blue Flower Stamp");
+        add(TBAItems.COLORED_EGG_LIGHT_BLUE_FLOWER_MAGENTA.get(),
+                "Light Blue Colored Egg with Magenta Flower Stamp");
+        add(TBAItems.COLORED_EGG_LIGHT_BLUE_FLOWER_ORANGE.get(),
+                "Light Blue Colored Egg with Orange Flower Stamp");
+        add(TBAItems.COLORED_EGG_LIGHT_BLUE_FLOWER_WHITE.get(),
+                "Light Blue Colored Egg with White Flower Stamp");
+        add(TBAItems.COLORED_EGG_YELLOW_FLOWER_BLACK.get(),
+                "Yellow Colored Egg with Black Flower Stamp");
+        add(TBAItems.COLORED_EGG_YELLOW_FLOWER_RED.get(),
+                "Yellow Colored Egg with Red Flower Stamp");
+        add(TBAItems.COLORED_EGG_YELLOW_FLOWER_GREEN.get(),
+                "Yellow Colored Egg with Green Flower Stamp");
+        add(TBAItems.COLORED_EGG_YELLOW_FLOWER_BROWN.get(),
+                "Yellow Colored Egg with Brown Flower Stamp");
+        add(TBAItems.COLORED_EGG_YELLOW_FLOWER_BLUE.get(),
+                "Yellow Colored Egg with Blue Flower Stamp");
+        add(TBAItems.COLORED_EGG_YELLOW_FLOWER_PURPLE.get(),
+                "Yellow Colored Egg with Purple Flower Stamp");
+        add(TBAItems.COLORED_EGG_YELLOW_FLOWER_CYAN.get(),
+                "Yellow Colored Egg with Cyan Flower Stamp");
+        add(TBAItems.COLORED_EGG_YELLOW_FLOWER_LIGHT_GRAY.get(),
+                "Yellow Colored Egg with Light Gray Flower Stamp");
+        add(TBAItems.COLORED_EGG_YELLOW_FLOWER_GRAY.get(),
+                "Yellow Colored Egg with Gray Flower Stamp");
+        add(TBAItems.COLORED_EGG_YELLOW_FLOWER_PINK.get(),
+                "Yellow Colored Egg with Pink Flower Stamp");
+        add(TBAItems.COLORED_EGG_YELLOW_FLOWER_LIME.get(),
+                "Yellow Colored Egg with Lime Flower Stamp");
+        add(TBAItems.COLORED_EGG_YELLOW_FLOWER_YELLOW.get(),
+                "Yellow Colored Egg with Yellow Flower Stamp");
+        add(TBAItems.COLORED_EGG_YELLOW_FLOWER_LIGHT_BLUE.get(),
+                "Yellow Colored Egg with Light Blue Flower Stamp");
+        add(TBAItems.COLORED_EGG_YELLOW_FLOWER_MAGENTA.get(),
+                "Yellow Colored Egg with Magenta Flower Stamp");
+        add(TBAItems.COLORED_EGG_YELLOW_FLOWER_ORANGE.get(),
+                "Yellow Colored Egg with Orange Flower Stamp");
+        add(TBAItems.COLORED_EGG_YELLOW_FLOWER_WHITE.get(),
+                "Yellow Colored Egg with White Flower Stamp");
+        add(TBAItems.COLORED_EGG_LIME_FLOWER_BLACK.get(),
+                "Lime Colored Egg with Black Flower Stamp");
+        add(TBAItems.COLORED_EGG_LIME_FLOWER_RED.get(),
+                "Lime Colored Egg with Red Flower Stamp");
+        add(TBAItems.COLORED_EGG_LIME_FLOWER_GREEN.get(),
+                "Lime Colored Egg with Green Flower Stamp");
+        add(TBAItems.COLORED_EGG_LIME_FLOWER_BROWN.get(),
+                "Lime Colored Egg with Brown Flower Stamp");
+        add(TBAItems.COLORED_EGG_LIME_FLOWER_BLUE.get(),
+                "Lime Colored Egg with Blue Flower Stamp");
+        add(TBAItems.COLORED_EGG_LIME_FLOWER_PURPLE.get(),
+                "Lime Colored Egg with Purple Flower Stamp");
+        add(TBAItems.COLORED_EGG_LIME_FLOWER_CYAN.get(),
+                "Lime Colored Egg with Cyan Flower Stamp");
+        add(TBAItems.COLORED_EGG_LIME_FLOWER_LIGHT_GRAY.get(),
+                "Lime Colored Egg with Light Gray Flower Stamp");
+        add(TBAItems.COLORED_EGG_LIME_FLOWER_GRAY.get(),
+                "Lime Colored Egg with Gray Flower Stamp");
+        add(TBAItems.COLORED_EGG_LIME_FLOWER_PINK.get(),
+                "Lime Colored Egg with Pink Flower Stamp");
+        add(TBAItems.COLORED_EGG_LIME_FLOWER_LIME.get(),
+                "Lime Colored Egg with Lime Flower Stamp");
+        add(TBAItems.COLORED_EGG_LIME_FLOWER_YELLOW.get(),
+                "Lime Colored Egg with Yellow Flower Stamp");
+        add(TBAItems.COLORED_EGG_LIME_FLOWER_LIGHT_BLUE.get(),
+                "Lime Colored Egg with Light Blue Flower Stamp");
+        add(TBAItems.COLORED_EGG_LIME_FLOWER_MAGENTA.get(),
+                "Lime Colored Egg with Magenta Flower Stamp");
+        add(TBAItems.COLORED_EGG_LIME_FLOWER_ORANGE.get(),
+                "Lime Colored Egg with Orange Flower Stamp");
+        add(TBAItems.COLORED_EGG_LIME_FLOWER_WHITE.get(),
+                "Lime Colored Egg with White Flower Stamp");
+        add(TBAItems.COLORED_EGG_PINK_FLOWER_BLACK.get(),
+                "Pink Colored Egg with Black Flower Stamp");
+        add(TBAItems.COLORED_EGG_PINK_FLOWER_RED.get(),
+                "Pink Colored Egg with Red Flower Stamp");
+        add(TBAItems.COLORED_EGG_PINK_FLOWER_GREEN.get(),
+                "Pink Colored Egg with Green Flower Stamp");
+        add(TBAItems.COLORED_EGG_PINK_FLOWER_BROWN.get(),
+                "Pink Colored Egg with Brown Flower Stamp");
+        add(TBAItems.COLORED_EGG_PINK_FLOWER_BLUE.get(),
+                "Pink Colored Egg with Blue Flower Stamp");
+        add(TBAItems.COLORED_EGG_PINK_FLOWER_PURPLE.get(),
+                "Pink Colored Egg with Purple Flower Stamp");
+        add(TBAItems.COLORED_EGG_PINK_FLOWER_CYAN.get(),
+                "Pink Colored Egg with Cyan Flower Stamp");
+        add(TBAItems.COLORED_EGG_PINK_FLOWER_LIGHT_GRAY.get(),
+                "Pink Colored Egg with Light Gray Flower Stamp");
+        add(TBAItems.COLORED_EGG_PINK_FLOWER_GRAY.get(),
+                "Pink Colored Egg with Gray Flower Stamp");
+        add(TBAItems.COLORED_EGG_PINK_FLOWER_PINK.get(),
+                "Pink Colored Egg with Pink Flower Stamp");
+        add(TBAItems.COLORED_EGG_PINK_FLOWER_LIME.get(),
+                "Pink Colored Egg with Lime Flower Stamp");
+        add(TBAItems.COLORED_EGG_PINK_FLOWER_YELLOW.get(),
+                "Pink Colored Egg with Yellow Flower Stamp");
+        add(TBAItems.COLORED_EGG_PINK_FLOWER_LIGHT_BLUE.get(),
+                "Pink Colored Egg with Light Blue Flower Stamp");
+        add(TBAItems.COLORED_EGG_PINK_FLOWER_MAGENTA.get(),
+                "Pink Colored Egg with Magenta Flower Stamp");
+        add(TBAItems.COLORED_EGG_PINK_FLOWER_ORANGE.get(),
+                "Pink Colored Egg with Orange Flower Stamp");
+        add(TBAItems.COLORED_EGG_PINK_FLOWER_WHITE.get(),
+                "Pink Colored Egg with White Flower Stamp");
+        add(TBAItems.COLORED_EGG_GRAY_FLOWER_BLACK.get(),
+                "Gray Colored Egg with Black Flower Stamp");
+        add(TBAItems.COLORED_EGG_GRAY_FLOWER_RED.get(),
+                "Gray Colored Egg with Red Flower Stamp");
+        add(TBAItems.COLORED_EGG_GRAY_FLOWER_GREEN.get(),
+                "Gray Colored Egg with Green Flower Stamp");
+        add(TBAItems.COLORED_EGG_GRAY_FLOWER_BROWN.get(),
+                "Gray Colored Egg with Brown Flower Stamp");
+        add(TBAItems.COLORED_EGG_GRAY_FLOWER_BLUE.get(),
+                "Gray Colored Egg with Blue Flower Stamp");
+        add(TBAItems.COLORED_EGG_GRAY_FLOWER_PURPLE.get(),
+                "Gray Colored Egg with Purple Flower Stamp");
+        add(TBAItems.COLORED_EGG_GRAY_FLOWER_CYAN.get(),
+                "Gray Colored Egg with Cyan Flower Stamp");
+        add(TBAItems.COLORED_EGG_GRAY_FLOWER_LIGHT_GRAY.get(),
+                "Gray Colored Egg with Light Gray Flower Stamp");
+        add(TBAItems.COLORED_EGG_GRAY_FLOWER_GRAY.get(),
+                "Gray Colored Egg with Gray Flower Stamp");
+        add(TBAItems.COLORED_EGG_GRAY_FLOWER_PINK.get(),
+                "Gray Colored Egg with Pink Flower Stamp");
+        add(TBAItems.COLORED_EGG_GRAY_FLOWER_LIME.get(),
+                "Gray Colored Egg with Lime Flower Stamp");
+        add(TBAItems.COLORED_EGG_GRAY_FLOWER_YELLOW.get(),
+                "Gray Colored Egg with Yellow Flower Stamp");
+        add(TBAItems.COLORED_EGG_GRAY_FLOWER_LIGHT_BLUE.get(),
+                "Gray Colored Egg with Light Blue Flower Stamp");
+        add(TBAItems.COLORED_EGG_GRAY_FLOWER_MAGENTA.get(),
+                "Gray Colored Egg with Magenta Flower Stamp");
+        add(TBAItems.COLORED_EGG_GRAY_FLOWER_ORANGE.get(),
+                "Gray Colored Egg with Orange Flower Stamp");
+        add(TBAItems.COLORED_EGG_GRAY_FLOWER_WHITE.get(),
+                "Gray Colored Egg with White Flower Stamp");
+        add(TBAItems.COLORED_EGG_LIGHT_GRAY_FLOWER_BLACK.get(),
+                "Light Gray Colored Egg with Black Flower Stamp");
+        add(TBAItems.COLORED_EGG_LIGHT_GRAY_FLOWER_RED.get(),
+                "Light Gray Colored Egg with Red Flower Stamp");
+        add(TBAItems.COLORED_EGG_LIGHT_GRAY_FLOWER_GREEN.get(),
+                "Light Gray Colored Egg with Green Flower Stamp");
+        add(TBAItems.COLORED_EGG_LIGHT_GRAY_FLOWER_BROWN.get(),
+                "Light Gray Colored Egg with Brown Flower Stamp");
+        add(TBAItems.COLORED_EGG_LIGHT_GRAY_FLOWER_BLUE.get(),
+                "Light Gray Colored Egg with Blue Flower Stamp");
+        add(TBAItems.COLORED_EGG_LIGHT_GRAY_FLOWER_PURPLE.get(),
+                "Light Gray Colored Egg with Purple Flower Stamp");
+        add(TBAItems.COLORED_EGG_LIGHT_GRAY_FLOWER_CYAN.get(),
+                "Light Gray Colored Egg with Cyan Flower Stamp");
+        add(TBAItems.COLORED_EGG_LIGHT_GRAY_FLOWER_LIGHT_GRAY.get(),
+                "Light Gray Colored Egg with Light Gray Flower Stamp");
+        add(TBAItems.COLORED_EGG_LIGHT_GRAY_FLOWER_GRAY.get(),
+                "Light Gray Colored Egg with Gray Flower Stamp");
+        add(TBAItems.COLORED_EGG_LIGHT_GRAY_FLOWER_PINK.get(),
+                "Light Gray Colored Egg with Pink Flower Stamp");
+        add(TBAItems.COLORED_EGG_LIGHT_GRAY_FLOWER_LIME.get(),
+                "Light Gray Colored Egg with Lime Flower Stamp");
+        add(TBAItems.COLORED_EGG_LIGHT_GRAY_FLOWER_YELLOW.get(),
+                "Light Gray Colored Egg with Yellow Flower Stamp");
+        add(TBAItems.COLORED_EGG_LIGHT_GRAY_FLOWER_LIGHT_BLUE.get(),
+                "Light Gray Colored Egg with Light Blue Flower Stamp");
+        add(TBAItems.COLORED_EGG_LIGHT_GRAY_FLOWER_MAGENTA.get(),
+                "Light Gray Colored Egg with Magenta Flower Stamp");
+        add(TBAItems.COLORED_EGG_LIGHT_GRAY_FLOWER_ORANGE.get(),
+                "Light Gray Colored Egg with Orange Flower Stamp");
+        add(TBAItems.COLORED_EGG_LIGHT_GRAY_FLOWER_WHITE.get(),
+                "Light Gray Colored Egg with White Flower Stamp");
+        add(TBAItems.COLORED_EGG_CYAN_FLOWER_BLACK.get(),
+                "Cyan Colored Egg with Black Flower Stamp");
+        add(TBAItems.COLORED_EGG_CYAN_FLOWER_RED.get(),
+                "Cyan Colored Egg with Red Flower Stamp");
+        add(TBAItems.COLORED_EGG_CYAN_FLOWER_GREEN.get(),
+                "Cyan Colored Egg with Green Flower Stamp");
+        add(TBAItems.COLORED_EGG_CYAN_FLOWER_BROWN.get(),
+                "Cyan Colored Egg with Brown Flower Stamp");
+        add(TBAItems.COLORED_EGG_CYAN_FLOWER_BLUE.get(),
+                "Cyan Colored Egg with Blue Flower Stamp");
+        add(TBAItems.COLORED_EGG_CYAN_FLOWER_PURPLE.get(),
+                "Cyan Colored Egg with Purple Flower Stamp");
+        add(TBAItems.COLORED_EGG_CYAN_FLOWER_CYAN.get(),
+                "Cyan Colored Egg with Cyan Flower Stamp");
+        add(TBAItems.COLORED_EGG_CYAN_FLOWER_LIGHT_GRAY.get(),
+                "Cyan Colored Egg with Light Gray Flower Stamp");
+        add(TBAItems.COLORED_EGG_CYAN_FLOWER_GRAY.get(),
+                "Cyan Colored Egg with Gray Flower Stamp");
+        add(TBAItems.COLORED_EGG_CYAN_FLOWER_PINK.get(),
+                "Cyan Colored Egg with Pink Flower Stamp");
+        add(TBAItems.COLORED_EGG_CYAN_FLOWER_LIME.get(),
+                "Cyan Colored Egg with Lime Flower Stamp");
+        add(TBAItems.COLORED_EGG_CYAN_FLOWER_YELLOW.get(),
+                "Cyan Colored Egg with Yellow Flower Stamp");
+        add(TBAItems.COLORED_EGG_CYAN_FLOWER_LIGHT_BLUE.get(),
+                "Cyan Colored Egg with Light Blue Flower Stamp");
+        add(TBAItems.COLORED_EGG_CYAN_FLOWER_MAGENTA.get(),
+                "Cyan Colored Egg with Magenta Flower Stamp");
+        add(TBAItems.COLORED_EGG_CYAN_FLOWER_ORANGE.get(),
+                "Cyan Colored Egg with Orange Flower Stamp");
+        add(TBAItems.COLORED_EGG_CYAN_FLOWER_WHITE.get(),
+                "Cyan Colored Egg with White Flower Stamp");
+        add(TBAItems.COLORED_EGG_PURPLE_FLOWER_BLACK.get(),
+                "Purple Colored Egg with Black Flower Stamp");
+        add(TBAItems.COLORED_EGG_PURPLE_FLOWER_RED.get(),
+                "Purple Colored Egg with Red Flower Stamp");
+        add(TBAItems.COLORED_EGG_PURPLE_FLOWER_GREEN.get(),
+                "Purple Colored Egg with Green Flower Stamp");
+        add(TBAItems.COLORED_EGG_PURPLE_FLOWER_BROWN.get(),
+                "Purple Colored Egg with Brown Flower Stamp");
+        add(TBAItems.COLORED_EGG_PURPLE_FLOWER_BLUE.get(),
+                "Purple Colored Egg with Blue Flower Stamp");
+        add(TBAItems.COLORED_EGG_PURPLE_FLOWER_PURPLE.get(),
+                "Purple Colored Egg with Purple Flower Stamp");
+        add(TBAItems.COLORED_EGG_PURPLE_FLOWER_CYAN.get(),
+                "Purple Colored Egg with Cyan Flower Stamp");
+        add(TBAItems.COLORED_EGG_PURPLE_FLOWER_LIGHT_GRAY.get(),
+                "Purple Colored Egg with Light Gray Flower Stamp");
+        add(TBAItems.COLORED_EGG_PURPLE_FLOWER_GRAY.get(),
+                "Purple Colored Egg with Gray Flower Stamp");
+        add(TBAItems.COLORED_EGG_PURPLE_FLOWER_PINK.get(),
+                "Purple Colored Egg with Pink Flower Stamp");
+        add(TBAItems.COLORED_EGG_PURPLE_FLOWER_LIME.get(),
+                "Purple Colored Egg with Lime Flower Stamp");
+        add(TBAItems.COLORED_EGG_PURPLE_FLOWER_YELLOW.get(),
+                "Purple Colored Egg with Yellow Flower Stamp");
+        add(TBAItems.COLORED_EGG_PURPLE_FLOWER_LIGHT_BLUE.get(),
+                "Purple Colored Egg with Light Blue Flower Stamp");
+        add(TBAItems.COLORED_EGG_PURPLE_FLOWER_MAGENTA.get(),
+                "Purple Colored Egg with Magenta Flower Stamp");
+        add(TBAItems.COLORED_EGG_PURPLE_FLOWER_ORANGE.get(),
+                "Purple Colored Egg with Orange Flower Stamp");
+        add(TBAItems.COLORED_EGG_PURPLE_FLOWER_WHITE.get(),
+                "Purple Colored Egg with White Flower Stamp");
+        add(TBAItems.COLORED_EGG_BLUE_FLOWER_BLACK.get(),
+                "Blue Colored Egg with Black Flower Stamp");
+        add(TBAItems.COLORED_EGG_BLUE_FLOWER_RED.get(),
+                "Blue Colored Egg with Red Flower Stamp");
+        add(TBAItems.COLORED_EGG_BLUE_FLOWER_GREEN.get(),
+                "Blue Colored Egg with Green Flower Stamp");
+        add(TBAItems.COLORED_EGG_BLUE_FLOWER_BROWN.get(),
+                "Blue Colored Egg with Brown Flower Stamp");
+        add(TBAItems.COLORED_EGG_BLUE_FLOWER_BLUE.get(),
+                "Blue Colored Egg with Blue Flower Stamp");
+        add(TBAItems.COLORED_EGG_BLUE_FLOWER_PURPLE.get(),
+                "Blue Colored Egg with Purple Flower Stamp");
+        add(TBAItems.COLORED_EGG_BLUE_FLOWER_CYAN.get(),
+                "Blue Colored Egg with Cyan Flower Stamp");
+        add(TBAItems.COLORED_EGG_BLUE_FLOWER_LIGHT_GRAY.get(),
+                "Blue Colored Egg with Light Gray Flower Stamp");
+        add(TBAItems.COLORED_EGG_BLUE_FLOWER_GRAY.get(),
+                "Blue Colored Egg with Gray Flower Stamp");
+        add(TBAItems.COLORED_EGG_BLUE_FLOWER_PINK.get(),
+                "Blue Colored Egg with Pink Flower Stamp");
+        add(TBAItems.COLORED_EGG_BLUE_FLOWER_LIME.get(),
+                "Blue Colored Egg with Lime Flower Stamp");
+        add(TBAItems.COLORED_EGG_BLUE_FLOWER_YELLOW.get(),
+                "Blue Colored Egg with Yellow Flower Stamp");
+        add(TBAItems.COLORED_EGG_BLUE_FLOWER_LIGHT_BLUE.get(),
+                "Blue Colored Egg with Light Blue Flower Stamp");
+        add(TBAItems.COLORED_EGG_BLUE_FLOWER_MAGENTA.get(),
+                "Blue Colored Egg with Magenta Flower Stamp");
+        add(TBAItems.COLORED_EGG_BLUE_FLOWER_ORANGE.get(),
+                "Blue Colored Egg with Orange Flower Stamp");
+        add(TBAItems.COLORED_EGG_BLUE_FLOWER_WHITE.get(),
+                "Blue Colored Egg with White Flower Stamp");
+        add(TBAItems.COLORED_EGG_BROWN_FLOWER_BLACK.get(),
+                "Brown Colored Egg with Black Flower Stamp");
+        add(TBAItems.COLORED_EGG_BROWN_FLOWER_RED.get(),
+                "Brown Colored Egg with Red Flower Stamp");
+        add(TBAItems.COLORED_EGG_BROWN_FLOWER_GREEN.get(),
+                "Brown Colored Egg with Green Flower Stamp");
+        add(TBAItems.COLORED_EGG_BROWN_FLOWER_BROWN.get(),
+                "Brown Colored Egg with Brown Flower Stamp");
+        add(TBAItems.COLORED_EGG_BROWN_FLOWER_BLUE.get(),
+                "Brown Colored Egg with Blue Flower Stamp");
+        add(TBAItems.COLORED_EGG_BROWN_FLOWER_PURPLE.get(),
+                "Brown Colored Egg with Purple Flower Stamp");
+        add(TBAItems.COLORED_EGG_BROWN_FLOWER_CYAN.get(),
+                "Brown Colored Egg with Cyan Flower Stamp");
+        add(TBAItems.COLORED_EGG_BROWN_FLOWER_LIGHT_GRAY.get(),
+                "Brown Colored Egg with Light Gray Flower Stamp");
+        add(TBAItems.COLORED_EGG_BROWN_FLOWER_GRAY.get(),
+                "Brown Colored Egg with Gray Flower Stamp");
+        add(TBAItems.COLORED_EGG_BROWN_FLOWER_PINK.get(),
+                "Brown Colored Egg with Pink Flower Stamp");
+        add(TBAItems.COLORED_EGG_BROWN_FLOWER_LIME.get(),
+                "Brown Colored Egg with Lime Flower Stamp");
+        add(TBAItems.COLORED_EGG_BROWN_FLOWER_YELLOW.get(),
+                "Brown Colored Egg with Yellow Flower Stamp");
+        add(TBAItems.COLORED_EGG_BROWN_FLOWER_LIGHT_BLUE.get(),
+                "Brown Colored Egg with Light Blue Flower Stamp");
+        add(TBAItems.COLORED_EGG_BROWN_FLOWER_MAGENTA.get(),
+                "Brown Colored Egg with Magenta Flower Stamp");
+        add(TBAItems.COLORED_EGG_BROWN_FLOWER_ORANGE.get(),
+                "Brown Colored Egg with Orange Flower Stamp");
+        add(TBAItems.COLORED_EGG_BROWN_FLOWER_WHITE.get(),
+                "Brown Colored Egg with White Flower Stamp");
+        add(TBAItems.COLORED_EGG_GREEN_FLOWER_BLACK.get(),
+                "Green Colored Egg with Black Flower Stamp");
+        add(TBAItems.COLORED_EGG_GREEN_FLOWER_RED.get(),
+                "Green Colored Egg with Red Flower Stamp");
+        add(TBAItems.COLORED_EGG_GREEN_FLOWER_GREEN.get(),
+                "Green Colored Egg with Green Flower Stamp");
+        add(TBAItems.COLORED_EGG_GREEN_FLOWER_BROWN.get(),
+                "Green Colored Egg with Brown Flower Stamp");
+        add(TBAItems.COLORED_EGG_GREEN_FLOWER_BLUE.get(),
+                "Green Colored Egg with Blue Flower Stamp");
+        add(TBAItems.COLORED_EGG_GREEN_FLOWER_PURPLE.get(),
+                "Green Colored Egg with Purple Flower Stamp");
+        add(TBAItems.COLORED_EGG_GREEN_FLOWER_CYAN.get(),
+                "Green Colored Egg with Cyan Flower Stamp");
+        add(TBAItems.COLORED_EGG_GREEN_FLOWER_LIGHT_GRAY.get(),
+                "Green Colored Egg with Light Gray Flower Stamp");
+        add(TBAItems.COLORED_EGG_GREEN_FLOWER_GRAY.get(),
+                "Green Colored Egg with Gray Flower Stamp");
+        add(TBAItems.COLORED_EGG_GREEN_FLOWER_PINK.get(),
+                "Green Colored Egg with Pink Flower Stamp");
+        add(TBAItems.COLORED_EGG_GREEN_FLOWER_LIME.get(),
+                "Green Colored Egg with Lime Flower Stamp");
+        add(TBAItems.COLORED_EGG_GREEN_FLOWER_YELLOW.get(),
+                "Green Colored Egg with Yellow Flower Stamp");
+        add(TBAItems.COLORED_EGG_GREEN_FLOWER_LIGHT_BLUE.get(),
+                "Green Colored Egg with Light Blue Flower Stamp");
+        add(TBAItems.COLORED_EGG_GREEN_FLOWER_MAGENTA.get(),
+                "Green Colored Egg with Magenta Flower Stamp");
+        add(TBAItems.COLORED_EGG_GREEN_FLOWER_ORANGE.get(),
+                "Green Colored Egg with Orange Flower Stamp");
+        add(TBAItems.COLORED_EGG_GREEN_FLOWER_WHITE.get(),
+                "Green Colored Egg with White Flower Stamp");
+        add(TBAItems.COLORED_EGG_RED_FLOWER_BLACK.get(),
+                "Red Colored Egg with Black Flower Stamp");
+        add(TBAItems.COLORED_EGG_RED_FLOWER_RED.get(),
+                "Red Colored Egg with Red Flower Stamp");
+        add(TBAItems.COLORED_EGG_RED_FLOWER_GREEN.get(),
+                "Red Colored Egg with Green Flower Stamp");
+        add(TBAItems.COLORED_EGG_RED_FLOWER_BROWN.get(),
+                "Red Colored Egg with Brown Flower Stamp");
+        add(TBAItems.COLORED_EGG_RED_FLOWER_BLUE.get(),
+                "Red Colored Egg with Blue Flower Stamp");
+        add(TBAItems.COLORED_EGG_RED_FLOWER_PURPLE.get(),
+                "Red Colored Egg with Purple Flower Stamp");
+        add(TBAItems.COLORED_EGG_RED_FLOWER_CYAN.get(),
+                "Red Colored Egg with Cyan Flower Stamp");
+        add(TBAItems.COLORED_EGG_RED_FLOWER_LIGHT_GRAY.get(),
+                "Red Colored Egg with Light Gray Flower Stamp");
+        add(TBAItems.COLORED_EGG_RED_FLOWER_GRAY.get(),
+                "Red Colored Egg with Gray Flower Stamp");
+        add(TBAItems.COLORED_EGG_RED_FLOWER_PINK.get(),
+                "Red Colored Egg with Pink Flower Stamp");
+        add(TBAItems.COLORED_EGG_RED_FLOWER_LIME.get(),
+                "Red Colored Egg with Lime Flower Stamp");
+        add(TBAItems.COLORED_EGG_RED_FLOWER_YELLOW.get(),
+                "Red Colored Egg with Yellow Flower Stamp");
+        add(TBAItems.COLORED_EGG_RED_FLOWER_LIGHT_BLUE.get(),
+                "Red Colored Egg with Light Blue Flower Stamp");
+        add(TBAItems.COLORED_EGG_RED_FLOWER_MAGENTA.get(),
+                "Red Colored Egg with Magenta Flower Stamp");
+        add(TBAItems.COLORED_EGG_RED_FLOWER_ORANGE.get(),
+                "Red Colored Egg with Orange Flower Stamp");
+        add(TBAItems.COLORED_EGG_RED_FLOWER_WHITE.get(),
+                "Red Colored Egg with White Flower Stamp");
+        add(TBAItems.COLORED_EGG_BLACK_FLOWER_BLACK.get(),
+                "Black Colored Egg with Black Flower Stamp");
+        add(TBAItems.COLORED_EGG_BLACK_FLOWER_RED.get(),
+                "Black Colored Egg with Red Flower Stamp");
+        add(TBAItems.COLORED_EGG_BLACK_FLOWER_GREEN.get(),
+                "Black Colored Egg with Green Flower Stamp");
+        add(TBAItems.COLORED_EGG_BLACK_FLOWER_BROWN.get(),
+                "Black Colored Egg with Brown Flower Stamp");
+        add(TBAItems.COLORED_EGG_BLACK_FLOWER_BLUE.get(),
+                "Black Colored Egg with Blue Flower Stamp");
+        add(TBAItems.COLORED_EGG_BLACK_FLOWER_PURPLE.get(),
+                "Black Colored Egg with Purple Flower Stamp");
+        add(TBAItems.COLORED_EGG_BLACK_FLOWER_CYAN.get(),
+                "Black Colored Egg with Cyan Flower Stamp");
+        add(TBAItems.COLORED_EGG_BLACK_FLOWER_LIGHT_GRAY.get(),
+                "Black Colored Egg with Light Gray Flower Stamp");
+        add(TBAItems.COLORED_EGG_BLACK_FLOWER_GRAY.get(),
+                "Black Colored Egg with Gray Flower Stamp");
+        add(TBAItems.COLORED_EGG_BLACK_FLOWER_PINK.get(),
+                "Black Colored Egg with Pink Flower Stamp");
+        add(TBAItems.COLORED_EGG_BLACK_FLOWER_LIME.get(),
+                "Black Colored Egg with Lime Flower Stamp");
+        add(TBAItems.COLORED_EGG_BLACK_FLOWER_YELLOW.get(),
+                "Black Colored Egg with Yellow Flower Stamp");
+        add(TBAItems.COLORED_EGG_BLACK_FLOWER_LIGHT_BLUE.get(),
+                "Black Colored Egg with Light Blue Flower Stamp");
+        add(TBAItems.COLORED_EGG_BLACK_FLOWER_MAGENTA.get(),
+                "Black Colored Egg with Magenta Flower Stamp");
+        add(TBAItems.COLORED_EGG_BLACK_FLOWER_ORANGE.get(),
+                "Black Colored Egg with Orange Flower Stamp");
+        add(TBAItems.COLORED_EGG_BLACK_FLOWER_WHITE.get(),
+                "Black Colored Egg with White Flower Stamp");
     }
 
     private void addBlocks() {

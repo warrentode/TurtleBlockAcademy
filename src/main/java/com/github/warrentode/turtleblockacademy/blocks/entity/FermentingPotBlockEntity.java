@@ -391,7 +391,7 @@ public class FermentingPotBlockEntity extends BlockEntity implements MenuProvide
         if (slotStack0.hasCraftingRemainingItem()) {
             this.ejectIngredientRemainder(slotStack0.getCraftingRemainingItem());
         }
-        else if (INGREDIENT_REMAINDER_OVERRIDES.containsKey(slotStack0.getItem())) {
+        else if (IngredientRemainderUtil.getRemainder(slotStack0.getItem()) != null) {
             this.ejectIngredientRemainder(INGREDIENT_REMAINDER_OVERRIDES.get(slotStack0.getItem()).getDefaultInstance());
         }
 
@@ -400,7 +400,7 @@ public class FermentingPotBlockEntity extends BlockEntity implements MenuProvide
         if (slotStack1.hasCraftingRemainingItem()) {
             this.ejectIngredientRemainder(slotStack1.getCraftingRemainingItem());
         }
-        else if (INGREDIENT_REMAINDER_OVERRIDES.containsKey(slotStack1.getItem())) {
+        else if (IngredientRemainderUtil.getRemainder(slotStack1.getItem()) != null) {
             this.ejectIngredientRemainder(INGREDIENT_REMAINDER_OVERRIDES.get(slotStack1.getItem()).getDefaultInstance());
         }
 
@@ -409,7 +409,7 @@ public class FermentingPotBlockEntity extends BlockEntity implements MenuProvide
         if (slotStack2.hasCraftingRemainingItem()) {
             this.ejectIngredientRemainder(slotStack2.getCraftingRemainingItem());
         }
-        else if (INGREDIENT_REMAINDER_OVERRIDES.containsKey(slotStack2.getItem())) {
+        else if (IngredientRemainderUtil.getRemainder(slotStack2.getItem()) != null) {
             this.ejectIngredientRemainder(INGREDIENT_REMAINDER_OVERRIDES.get(slotStack2.getItem()).getDefaultInstance());
         }
 
@@ -418,7 +418,7 @@ public class FermentingPotBlockEntity extends BlockEntity implements MenuProvide
         if (slotStack3.hasCraftingRemainingItem()) {
             this.ejectIngredientRemainder(slotStack3.getCraftingRemainingItem());
         }
-        else if (INGREDIENT_REMAINDER_OVERRIDES.containsKey(slotStack3.getItem())) {
+        else if (IngredientRemainderUtil.getRemainder(slotStack3.getItem()) != null) {
             this.ejectIngredientRemainder(INGREDIENT_REMAINDER_OVERRIDES.get(slotStack3.getItem()).getDefaultInstance());
         }
 
@@ -427,7 +427,7 @@ public class FermentingPotBlockEntity extends BlockEntity implements MenuProvide
         if (slotStack4.hasCraftingRemainingItem()) {
             this.ejectIngredientRemainder(slotStack4.getCraftingRemainingItem());
         }
-        else if (INGREDIENT_REMAINDER_OVERRIDES.containsKey(slotStack4.getItem())) {
+        else if (IngredientRemainderUtil.getRemainder(slotStack4.getItem()) != null) {
             this.ejectIngredientRemainder(INGREDIENT_REMAINDER_OVERRIDES.get(slotStack4.getItem()).getDefaultInstance());
         }
 
@@ -436,7 +436,7 @@ public class FermentingPotBlockEntity extends BlockEntity implements MenuProvide
         if (slotStack5.hasCraftingRemainingItem()) {
             this.ejectIngredientRemainder(slotStack5.getCraftingRemainingItem());
         }
-        else if (INGREDIENT_REMAINDER_OVERRIDES.containsKey(slotStack5.getItem())) {
+        else if (IngredientRemainderUtil.getRemainder(slotStack5.getItem()) != null) {
             this.ejectIngredientRemainder(INGREDIENT_REMAINDER_OVERRIDES.get(slotStack5.getItem()).getDefaultInstance());
         }
 
@@ -446,7 +446,7 @@ public class FermentingPotBlockEntity extends BlockEntity implements MenuProvide
         if (slotStack_CONTAINER_SLOT.hasCraftingRemainingItem()) {
             this.ejectIngredientRemainder(slotStack_CONTAINER_SLOT.getCraftingRemainingItem());
         }
-        else if (INGREDIENT_REMAINDER_OVERRIDES.containsKey(slotStack_CONTAINER_SLOT.getItem())) {
+        else if (IngredientRemainderUtil.getRemainder(slotStack_CONTAINER_SLOT.getItem()) != null) {
             this.ejectIngredientRemainder(INGREDIENT_REMAINDER_OVERRIDES.get(slotStack_CONTAINER_SLOT.getItem()).getDefaultInstance());
         }
 

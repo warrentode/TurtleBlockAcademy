@@ -1,0 +1,24 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "eggdelight"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shapeless",
+        "ingredients": [
+          {
+            "tag": "forge:boiled_eggs"
+          }
+        ],
+        "result": {
+          "item": "eggdelight:peeled_egg"
+        }
+      }
+    }
+  ]
+}

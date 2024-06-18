@@ -1,0 +1,33 @@
+{
+  "type": "turtleblockacademy:shapeless_remainder",
+  "ingredients": [
+    {
+      "item": "turtleblockacademy:colored_egg_magenta"
+    },
+    {
+      "item": "turtleblockacademy:colored_egg_magenta"
+    },
+    {
+      "item": "turtleblockacademy:colored_egg_magenta"
+    },
+    {
+      "item": "turtleblockacademy:colored_egg_magenta"
+    },
+    {
+      "item": "turtleblockacademy:colored_egg_magenta"
+    },
+    {
+      "item": "turtleblockacademy:colored_egg_magenta"
+    },
+    {
+      "item": "turtleblockacademy:egg_stamp_flower"
+    },
+    {
+      "item": "minecraft:black_dye"
+    }
+  ],
+  "result": {
+    "count": 6,
+    "item": "turtleblockacademy:colored_egg_magenta_flower_black"
+  }
+}

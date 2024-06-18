@@ -1,0 +1,9 @@
+{
+  "values": [
+    {
+      "id": "eggdelight:boiled_egg",
+      "required": false
+    },
+    "turtleblockacademy:boiled_egg"
+  ]
+}

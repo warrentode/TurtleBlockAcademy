@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "forge:boiled_eggs"
+    },
+    {
+      "tag": "forge:boiled_eggs"
+    },
+    {
+      "tag": "forge:boiled_eggs"
+    },
+    {
+      "tag": "forge:boiled_eggs"
+    },
+    {
+      "tag": "forge:boiled_eggs"
+    },
+    {
+      "tag": "forge:boiled_eggs"
+    },
+    {
+      "tag": "forge:dyes/red"
+    },
+    {
+      "item": "turtleblockacademy:vinegar_bottle"
+    },
+    {
+      "tag": "turtleblockacademy:water_buckets"
+    }
+  ],
+  "result": {
+    "count": 6,
+    "item": "turtleblockacademy:colored_egg_red"
+  }
+}

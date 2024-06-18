@@ -8,6 +8,7 @@ import com.github.warrentode.turtleblockacademy.blocks.TBABlocks;
 import com.github.warrentode.turtleblockacademy.datagen.recipes.builder.BrewingRecipeBuilder;
 import com.github.warrentode.turtleblockacademy.datagen.recipes.builder.FermentingPotRecipeBuilder;
 import com.github.warrentode.turtleblockacademy.datagen.recipes.builder.PatchouliShapelessBookRecipeBuilder;
+import com.github.warrentode.turtleblockacademy.datagen.recipes.recipe.EasterEggRecipes;
 import com.github.warrentode.turtleblockacademy.datagen.recipes.recipe.CuttingRecipesGen;
 import com.github.warrentode.turtleblockacademy.datagen.recipes.recipe.LootBagRecipesGen;
 import com.github.warrentode.turtleblockacademy.items.TBAItems;
@@ -89,6 +90,7 @@ public class RecipesGen extends RecipeProvider implements IConditionBuilder {
 
         LootBagRecipesGen.register(consumer);
         CuttingRecipesGen.register(consumer);
+        EasterEggRecipes.register(consumer);
     }
 
     private void fermentingRecipes(Consumer<FinishedRecipe> consumer) {
@@ -194,7 +196,7 @@ public class RecipesGen extends RecipeProvider implements IConditionBuilder {
                         TBAItems.VINEGAR_BOTTLE.get().asItem().toString()));
 
         FermentingPotRecipeBuilder.fermentingPotRecipe(TBAItems.YEAST.get(),
-                4,300, 0.35F, Items.WHITE_CARPET)
+                        4, 300, 0.35F, Items.WHITE_CARPET)
                 .setRecipeBookTab(FermentingRecipeBookTab.AGENTS)
                 .addIngredient(TBATags.Items.WHEAT_FLOUR)
                 .addIngredient(TBATags.Items.WHEAT_FLOUR)
@@ -306,6 +308,24 @@ public class RecipesGen extends RecipeProvider implements IConditionBuilder {
     }
 
     private void minecraftRecipes(Consumer<FinishedRecipe> consumer) {
+        ConditionalRecipe.builder()
+                .addCondition(not(modLoaded("eggdelight")))
+                .addRecipe(ShapelessRecipeBuilder.shapeless(TBAItems.PEELED_EGG.get(), 1)
+                        .requires(TBATags.Items.BOILED_EGGS)
+                        .unlockedBy("has_boiled_eggs", has(TBATags.Items.BOILED_EGGS))
+                        ::save)
+                .build(consumer, new ResourceLocation(MODID,
+                        TBAItems.PEELED_EGG.get().asItem().toString()));
+        ConditionalRecipe.builder()
+                .addCondition(not(modLoaded("eggdelight")))
+                .addRecipe(ShapelessRecipeBuilder.shapeless(TBAItems.PEELED_EGG.get(), 1)
+                        .requires(TBATags.Items.EASTER_EGGS)
+                        .unlockedBy("has_easter_eggs",
+                                has(TBATags.Items.EASTER_EGGS))
+                        ::save)
+                .build(consumer, new ResourceLocation(MODID,
+                        TBAItems.PEELED_EGG.get().asItem() + "_from_easter_egg"));
+
         ShapelessRecipeBuilder.shapeless(TBAItems.CUCUMBER_SEEDS.get(), 1)
                 .requires(TBAItems.CUCUMBER.get())
                 .unlockedBy("has_cucumber", has(TBAItems.CUCUMBER.get()))
@@ -1413,6 +1433,19 @@ public class RecipesGen extends RecipeProvider implements IConditionBuilder {
     private void cookingPotRecipes(Consumer<FinishedRecipe> consumer) {
         ConditionalRecipe.builder()
                 .addCondition(modLoaded("farmersdelight"))
+                .addCondition(not(modLoaded("eggdelight")))
+                .addRecipe(finishedRecipeConsumer ->
+                        CookingPotRecipeBuilder.cookingPotRecipe(TBAItems.BOILED_EGG.get(),
+                                        1, 200, 0.35F, null)
+                                .addIngredient(Items.EGG)
+                                .addIngredient(Items.WATER_BUCKET)
+                                .unlockedBy("has_eggs",
+                                        has(Items.EGG))
+                                .build(consumer, new ResourceLocation("farmersdelight",
+                                        "cooking/" + TBAItems.BOILED_EGG.get()))
+                );
+        ConditionalRecipe.builder()
+                .addCondition(modLoaded("farmersdelight"))
                 .addRecipe(finishedRecipeConsumer ->
                         CookingPotRecipeBuilder.cookingPotRecipe(TBAItems.BEET_RISOTTO.get(),
                                         1, 200, 1.0F, Items.BOWL)
@@ -1630,6 +1663,25 @@ public class RecipesGen extends RecipeProvider implements IConditionBuilder {
     }
 
     private void schoolSupplyRecipes(Consumer<FinishedRecipe> consumer) {
+        ShapelessRecipeBuilder.shapeless(TBAItems.EGG_STAMP_CREEPER.get(), 1)
+                .requires(ItemTags.BUTTONS)
+                .requires(Items.HONEYCOMB)
+                .requires(Items.HONEY_BOTTLE)
+                .requires(Items.CREEPER_BANNER_PATTERN)
+                .unlockedBy("has_creeper_banner_pattern",
+                        has(Items.CREEPER_BANNER_PATTERN))
+                .save(consumer, new ResourceLocation(MODID,
+                        TBAItems.EGG_STAMP_CREEPER.get() + "_using_honey"));
+        ShapelessRecipeBuilder.shapeless(TBAItems.EGG_STAMP_CREEPER.get(), 1)
+                .requires(ItemTags.BUTTONS)
+                .requires(Items.HONEYCOMB)
+                .requires(TBATags.Items.SLIME_BALLS)
+                .requires(Items.CREEPER_BANNER_PATTERN)
+                .unlockedBy("has_creeper_banner_pattern",
+                        has(Items.CREEPER_BANNER_PATTERN))
+                .save(consumer, new ResourceLocation(MODID,
+                        TBAItems.EGG_STAMP_CREEPER.get() + "_using_slime"));
+
         ShapedRecipeBuilder.shaped(TBABlocks.FERMENTING_POT_BLOCK.get(), 1)
                 .pattern("# #")
                 .pattern("SSS")

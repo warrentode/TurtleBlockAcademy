@@ -7,7 +7,8 @@ package com.github.warrentode.turtleblockacademy.util;
  * this software and associated documentation files (the “Software”), to deal in the
  * Software without restriction, including without limitation the rights to use, copy,
  * modify, merge, publish, distribute, sublicense, and/or sell copies of the Software,
- *  and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+ * and to permit persons to whom the Software is furnished to do so, subject to the
+ * following conditions:
  *
  * The above copyright notice and this permission notice shall be included in all copies
  * or substantial portions of the Software.
@@ -21,10 +22,10 @@ package com.github.warrentode.turtleblockacademy.util;
 
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
-import net.minecraftforge.fml.ModList;
+import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
-import slimeknights.tconstruct.fluids.TinkerFluids;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -51,57 +52,26 @@ public class IngredientRemainderUtil {
     // Maps for storing item remainders and tag remainders
     public static final Map<Item, Item> INGREDIENT_REMAINDER_OVERRIDES = new HashMap<>();
     /**
-     * the tag being use here (TBATags.Items.CRAFTING_REMAINDERS) is already registered in my mod's tag class,
-     * and the items listed in here are added to that tag via my mod's datagen class, so there was no need to
-     * set up any kind of system in here to add those items to that tag being mapped in this class
-     * (honestly it just felt less complicated to me to do it this way given how I was already doing
-     * datagen for my tags)
-     *
-     * you can see an example of how this class is used inside an entity in here in my
-     * FermentingPotBlockEntity class if you need a reference
+     * you can see an example of how this class is used inside my
+     * {@link com.github.warrentode.turtleblockacademy.blocks.entity.FermentingPotBlockEntity}
+     * and {@link com.github.warrentode.turtleblockacademy.recipe.ShapelessRemainderRecipe} if you need a reference
      **/
-    public static final Map<TagKey<Item>, Item> TAG_REMAINDER_OVERRIDES = new HashMap<>();
+    public static final Map<TagKey<Item>, Item> TAG_BUCKET_REMAINDER_OVERRIDES = new HashMap<>();
+    public static final Map<TagKey<Item>, Item> TAG_BOWL_REMAINDER_OVERRIDES = new HashMap<>();
+    public static final Map<TagKey<Item>, Item> TAG_BOTTLE_REMAINDER_OVERRIDES = new HashMap<>();
+    public static final Map<TagKey<Item>, Item> TAG_MATCHING_ITEM_REMAINDER_OVERRIDES = new HashMap<>();
 
     static {
-        // Hardcode vanilla items and remainders
-        INGREDIENT_REMAINDER_OVERRIDES.put(Items.WATER_BUCKET, Items.BUCKET);
-        INGREDIENT_REMAINDER_OVERRIDES.put(Items.POWDER_SNOW_BUCKET, Items.BUCKET);
-        INGREDIENT_REMAINDER_OVERRIDES.put(Items.AXOLOTL_BUCKET, Items.BUCKET);
-        INGREDIENT_REMAINDER_OVERRIDES.put(Items.COD_BUCKET, Items.BUCKET);
-        INGREDIENT_REMAINDER_OVERRIDES.put(Items.PUFFERFISH_BUCKET, Items.BUCKET);
-        INGREDIENT_REMAINDER_OVERRIDES.put(Items.SALMON_BUCKET, Items.BUCKET);
-        INGREDIENT_REMAINDER_OVERRIDES.put(Items.TROPICAL_FISH_BUCKET, Items.BUCKET);
-        INGREDIENT_REMAINDER_OVERRIDES.put(Items.SUSPICIOUS_STEW, Items.BOWL);
-        INGREDIENT_REMAINDER_OVERRIDES.put(Items.MUSHROOM_STEW, Items.BOWL);
-        INGREDIENT_REMAINDER_OVERRIDES.put(Items.RABBIT_STEW, Items.BOWL);
-        INGREDIENT_REMAINDER_OVERRIDES.put(Items.BEETROOT_SOUP, Items.BOWL);
-        INGREDIENT_REMAINDER_OVERRIDES.put(Items.POTION, Items.GLASS_BOTTLE);
-        INGREDIENT_REMAINDER_OVERRIDES.put(Items.SPLASH_POTION, Items.GLASS_BOTTLE);
-        INGREDIENT_REMAINDER_OVERRIDES.put(Items.LINGERING_POTION, Items.GLASS_BOTTLE);
-        INGREDIENT_REMAINDER_OVERRIDES.put(Items.EXPERIENCE_BOTTLE, Items.GLASS_BOTTLE);
+        Item matchingItem = getMatchedItem(ItemStack.EMPTY.getItem());
 
-        // Check for specific mods and add the pre-prepped items if present
-        /* add crafting remainders from tconstruct */
-        if (ModList.get().isLoaded("tconstruct")) {
-            LogUtil.info("Tinker's Construct found, adding the pre-prepped crafting remainders to dynamic map.");
-            INGREDIENT_REMAINDER_OVERRIDES.put(TinkerFluids.beetrootSoup.asItem(), Items.BUCKET);
-            INGREDIENT_REMAINDER_OVERRIDES.put(TinkerFluids.earthSlime.asItem(), Items.BUCKET);
-            INGREDIENT_REMAINDER_OVERRIDES.put(TinkerFluids.skySlime.asItem(), Items.BUCKET);
-            INGREDIENT_REMAINDER_OVERRIDES.put(TinkerFluids.enderSlime.asItem(), Items.BUCKET);
-            INGREDIENT_REMAINDER_OVERRIDES.put(TinkerFluids.magma.asItem(), Items.BUCKET);
-            INGREDIENT_REMAINDER_OVERRIDES.put(TinkerFluids.honey.asItem(), Items.BUCKET);
-            INGREDIENT_REMAINDER_OVERRIDES.put(TinkerFluids.mushroomStew.asItem(), Items.BUCKET);
-            INGREDIENT_REMAINDER_OVERRIDES.put(TinkerFluids.rabbitStew.asItem(), Items.BUCKET);
-            INGREDIENT_REMAINDER_OVERRIDES.put(TinkerFluids.potion.asItem(), Items.BUCKET);
-            INGREDIENT_REMAINDER_OVERRIDES.put(TinkerFluids.blazingBlood.asItem(), Items.BUCKET);
-            INGREDIENT_REMAINDER_OVERRIDES.put(TinkerFluids.liquidSoul.asItem(), Items.BUCKET);
-            INGREDIENT_REMAINDER_OVERRIDES.put(TinkerFluids.venomBottle.asItem(), Items.GLASS_BOTTLE);
-            INGREDIENT_REMAINDER_OVERRIDES.put(TinkerFluids.magmaBottle.asItem(), Items.GLASS_BOTTLE);
-            INGREDIENT_REMAINDER_OVERRIDES.put(TinkerFluids.meatSoupBowl.asItem(), Items.BOWL);
-        }
-        else {
-            LogUtil.info("Tinker's Construct not found, skipping pre-prepped crafting remainder list.");
-        }
+        // map of the remainder tags
+        TAG_BUCKET_REMAINDER_OVERRIDES.put(TBATags.Items.BUCKET_REMAINDERS, Items.BUCKET);
+        TAG_BUCKET_REMAINDER_OVERRIDES.put(TBATags.Items.BOWL_REMAINDERS, Items.BOWL);
+        TAG_BUCKET_REMAINDER_OVERRIDES.put(TBATags.Items.BOTTLE_REMAINDERS, Items.GLASS_BOTTLE);
+        /** not sure why with this tag, the item returns to your inventory instead of staying in the
+         * crafting grid like the others, but at least the item is returned
+         **/
+        TAG_BUCKET_REMAINDER_OVERRIDES.put(TBATags.Items.MATCHING_ITEM_REMAINDERS, matchingItem);
     }
 
     // Utility method to get the remainder item
@@ -112,7 +82,25 @@ public class IngredientRemainderUtil {
         }
 
         // Check tags next
-        for (Map.Entry<TagKey<Item>, Item> entry : TAG_REMAINDER_OVERRIDES.entrySet()) {
+        for (Map.Entry<TagKey<Item>, Item> entry : TAG_BUCKET_REMAINDER_OVERRIDES.entrySet()) {
+            TagKey<Item> tag = entry.getKey();
+            if (item.getDefaultInstance().is(tag)) {
+                return entry.getValue();
+            }
+        }
+        for (Map.Entry<TagKey<Item>, Item> entry : TAG_BOWL_REMAINDER_OVERRIDES.entrySet()) {
+            TagKey<Item> tag = entry.getKey();
+            if (item.getDefaultInstance().is(tag)) {
+                return entry.getValue();
+            }
+        }
+        for (Map.Entry<TagKey<Item>, Item> entry : TAG_BOTTLE_REMAINDER_OVERRIDES.entrySet()) {
+            TagKey<Item> tag = entry.getKey();
+            if (item.getDefaultInstance().is(tag)) {
+                return entry.getValue();
+            }
+        }
+        for (Map.Entry<TagKey<Item>, Item> entry : TAG_MATCHING_ITEM_REMAINDER_OVERRIDES.entrySet()) {
             TagKey<Item> tag = entry.getKey();
             if (item.getDefaultInstance().is(tag)) {
                 return entry.getValue();
@@ -121,5 +109,13 @@ public class IngredientRemainderUtil {
 
         // Return null if no remainder is found
         return null;
+    }
+
+    public static @NotNull Item getMatchedItem(@NotNull Item item) {
+        ItemStack matchedStack = ItemStack.EMPTY;
+        if (item.getDefaultInstance().is(TBATags.Items.MATCHING_ITEM_REMAINDERS)) {
+            matchedStack = item.getDefaultInstance().copy();
+        }
+        return matchedStack.getItem();
     }
 }

@@ -1,0 +1,33 @@
+{
+  "type": "turtleblockacademy:shapeless_remainder",
+  "ingredients": [
+    {
+      "item": "turtleblockacademy:colored_egg_cyan"
+    },
+    {
+      "item": "turtleblockacademy:colored_egg_cyan"
+    },
+    {
+      "item": "turtleblockacademy:colored_egg_cyan"
+    },
+    {
+      "item": "turtleblockacademy:colored_egg_cyan"
+    },
+    {
+      "item": "turtleblockacademy:colored_egg_cyan"
+    },
+    {
+      "item": "turtleblockacademy:colored_egg_cyan"
+    },
+    {
+      "item": "turtleblockacademy:egg_stamp_creeper"
+    },
+    {
+      "item": "minecraft:black_dye"
+    }
+  ],
+  "result": {
+    "count": 6,
+    "item": "turtleblockacademy:colored_egg_cyan_creeper_black"
+  }
+}

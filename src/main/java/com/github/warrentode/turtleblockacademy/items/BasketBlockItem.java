@@ -34,6 +34,7 @@ public class BasketBlockItem extends BlockItem {
         return this.basketBlock.getColor();
     }
 
+    @SuppressWarnings("SameReturnValue")
     public int getInventorySize(ItemStack stack) {
         return BasketBlockEntity.INVENTORY_SIZE;
     }

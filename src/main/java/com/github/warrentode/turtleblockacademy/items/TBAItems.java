@@ -33,6 +33,12 @@ public class TBAItems {
     public static final RegistryObject<Item> STUDENT_CARD =
             ITEMS.register("student_card",
                     () -> new StudentCard(basicItem().stacksTo(1)));
+    public static final RegistryObject<Item> EGG_STAMP_CREEPER =
+            ITEMS.register("egg_stamp_creeper",
+                    () -> new Item(basicItem()));
+    public static final RegistryObject<Item> EGG_STAMP_FLOWER =
+            ITEMS.register("egg_stamp_flower",
+                    () -> new Item(basicItem()));
 
     // BASIC ITEMS
     public static final RegistryObject<Item> YEAST =
@@ -63,16 +69,13 @@ public class TBAItems {
     // SEEDS
     public static final RegistryObject<Item> CLOVE_SEEDS =
             ITEMS.register("clove_seeds",
-                    () -> new ItemNameBlockItem(TBABlocks.CLOVE_BUSH.get(),
-                            basicItem()));
+                    () -> new ItemNameBlockItem(TBABlocks.CLOVE_BUSH.get(), basicItem()));
     public static final RegistryObject<Item> CUCUMBER_SEEDS =
             ITEMS.register("cucumber_seeds",
-                    () -> new ItemNameBlockItem(TBABlocks.CUCUMBER_BUSH.get(),
-                            basicItem()));
+                    () -> new ItemNameBlockItem(TBABlocks.CUCUMBER_BUSH.get(), basicItem()));
     public static final RegistryObject<Item> DILL_SEEDS =
             ITEMS.register("dill_seeds",
-                    () -> new ItemNameBlockItem(TBABlocks.DILL_BUSH.get(),
-                            basicItem()));
+                    () -> new ItemNameBlockItem(TBABlocks.DILL_BUSH.get(), basicItem()));
 
     // DRINKS
     public static final RegistryObject<Item> BEET_WINE =
@@ -111,39 +114,47 @@ public class TBAItems {
                     new PickledItem(foodItem(TBAFoods.PICKLES),
                             true, true));
 
+    public static final RegistryObject<Item> BOILED_EGG =
+            ITEMS.register("boiled_egg", () ->
+                    new Item(basicItem()));
+    public static final RegistryObject<Item> PEELED_EGG =
+            ITEMS.register("peeled_egg", () ->
+                    new ConsumableItem(foodItem(TBAFoods.PEELED_EGGS),
+                            true, true));
+
     // blank colored egg variants
     public static final RegistryObject<Item> COLORED_EGG_WHITE =
-            ITEMS.register("colored_egg_white", ()-> blankEgg(DyeColor.WHITE));
+            ITEMS.register("colored_egg_white", ()-> blankColoredEgg(DyeColor.WHITE));
     public static final RegistryObject<Item> COLORED_EGG_ORANGE =
-            ITEMS.register("colored_egg_orange", ()-> blankEgg(DyeColor.ORANGE));
+            ITEMS.register("colored_egg_orange", ()-> blankColoredEgg(DyeColor.ORANGE));
     public static final RegistryObject<Item> COLORED_EGG_MAGENTA =
-            ITEMS.register("colored_egg_magenta", ()-> blankEgg(DyeColor.MAGENTA));
+            ITEMS.register("colored_egg_magenta", ()-> blankColoredEgg(DyeColor.MAGENTA));
     public static final RegistryObject<Item> COLORED_EGG_LIGHT_BLUE =
-            ITEMS.register("colored_egg_light_blue", ()-> blankEgg(DyeColor.LIGHT_BLUE));
+            ITEMS.register("colored_egg_light_blue", ()-> blankColoredEgg(DyeColor.LIGHT_BLUE));
     public static final RegistryObject<Item> COLORED_EGG_YELLOW =
-            ITEMS.register("colored_egg_yellow", ()-> blankEgg(DyeColor.YELLOW));
+            ITEMS.register("colored_egg_yellow", ()-> blankColoredEgg(DyeColor.YELLOW));
     public static final RegistryObject<Item> COLORED_EGG_LIME =
-            ITEMS.register("colored_egg_lime", ()-> blankEgg(DyeColor.LIME));
+            ITEMS.register("colored_egg_lime", ()-> blankColoredEgg(DyeColor.LIME));
         public static final RegistryObject<Item> COLORED_EGG_PINK =
-            ITEMS.register("colored_egg_pink", ()-> blankEgg(DyeColor.PINK));
+            ITEMS.register("colored_egg_pink", ()-> blankColoredEgg(DyeColor.PINK));
     public static final RegistryObject<Item> COLORED_EGG_GRAY =
-            ITEMS.register("colored_egg_gray", ()-> blankEgg(DyeColor.GRAY));
+            ITEMS.register("colored_egg_gray", ()-> blankColoredEgg(DyeColor.GRAY));
     public static final RegistryObject<Item> COLORED_EGG_LIGHT_GRAY =
-            ITEMS.register("colored_egg_light_gray", ()-> blankEgg(DyeColor.LIGHT_GRAY));
+            ITEMS.register("colored_egg_light_gray", ()-> blankColoredEgg(DyeColor.LIGHT_GRAY));
     public static final RegistryObject<Item> COLORED_EGG_CYAN =
-            ITEMS.register("colored_egg_cyan", ()-> blankEgg(DyeColor.CYAN));
+            ITEMS.register("colored_egg_cyan", ()-> blankColoredEgg(DyeColor.CYAN));
     public static final RegistryObject<Item> COLORED_EGG_PURPLE =
-            ITEMS.register("colored_egg_purple", ()-> blankEgg(DyeColor.PURPLE));
+            ITEMS.register("colored_egg_purple", ()-> blankColoredEgg(DyeColor.PURPLE));
     public static final RegistryObject<Item> COLORED_EGG_BLUE =
-            ITEMS.register("colored_egg_blue", ()-> blankEgg(DyeColor.BLUE));
+            ITEMS.register("colored_egg_blue", ()-> blankColoredEgg(DyeColor.BLUE));
     public static final RegistryObject<Item> COLORED_EGG_BROWN =
-            ITEMS.register("colored_egg_brown", ()-> blankEgg(DyeColor.BROWN));
+            ITEMS.register("colored_egg_brown", ()-> blankColoredEgg(DyeColor.BROWN));
     public static final RegistryObject<Item> COLORED_EGG_GREEN =
-            ITEMS.register("colored_egg_green", ()-> blankEgg(DyeColor.GREEN));
+            ITEMS.register("colored_egg_green", ()-> blankColoredEgg(DyeColor.GREEN));
     public static final RegistryObject<Item> COLORED_EGG_RED =
-            ITEMS.register("colored_egg_red", ()-> blankEgg(DyeColor.RED));
+            ITEMS.register("colored_egg_red", ()-> blankColoredEgg(DyeColor.RED));
     public static final RegistryObject<Item> COLORED_EGG_BLACK =
-            ITEMS.register("colored_egg_black", ()-> blankEgg(DyeColor.BLACK));
+            ITEMS.register("colored_egg_black", ()-> blankColoredEgg(DyeColor.BLACK));
 
     // white colored egg creeper variants
     public static final RegistryObject<Item> COLORED_EGG_WHITE_CREEPER_WHITE =
@@ -945,805 +956,805 @@ public class TBAItems {
             ITEMS.register("colored_egg_black_creeper_black",
                     ()-> creeperStampedEgg(DyeColor.BLACK, DyeColor.BLACK));
 
-    // white colored egg checkered variants
-    public static final RegistryObject<Item> COLORED_EGG_WHITE_CHECKERED_WHITE =
-            ITEMS.register("colored_egg_white_checkered_white",
-                    ()-> checkeredStampedEgg(DyeColor.WHITE, DyeColor.WHITE));
-    public static final RegistryObject<Item> COLORED_EGG_WHITE_CHECKERED_ORANGE =
-            ITEMS.register("colored_egg_white_checkered_orange",
-                    ()-> checkeredStampedEgg(DyeColor.WHITE, DyeColor.ORANGE));
-    public static final RegistryObject<Item> COLORED_EGG_WHITE_CHECKERED_MAGENTA =
-            ITEMS.register("colored_egg_white_checkered_magenta",
-                    ()-> checkeredStampedEgg(DyeColor.WHITE, DyeColor.MAGENTA));
-    public static final RegistryObject<Item> COLORED_EGG_WHITE_CHECKERED_LIGHT_BLUE =
-            ITEMS.register("colored_egg_white_checkered_light_blue",
-                    ()-> checkeredStampedEgg(DyeColor.WHITE, DyeColor.LIGHT_BLUE));
-    public static final RegistryObject<Item> COLORED_EGG_WHITE_CHECKERED_YELLOW =
-            ITEMS.register("colored_egg_white_checkered_yellow",
-                    ()-> checkeredStampedEgg(DyeColor.WHITE, DyeColor.YELLOW));
-    public static final RegistryObject<Item> COLORED_EGG_WHITE_CHECKERED_LIME =
-            ITEMS.register("colored_egg_white_checkered_lime",
-                    ()-> checkeredStampedEgg(DyeColor.WHITE, DyeColor.LIME));
-    public static final RegistryObject<Item> COLORED_EGG_WHITE_CHECKERED_PINK =
-            ITEMS.register("colored_egg_white_checkered_pink",
-                    ()-> checkeredStampedEgg(DyeColor.WHITE, DyeColor.PINK));
-    public static final RegistryObject<Item> COLORED_EGG_WHITE_CHECKERED_GRAY =
-            ITEMS.register("colored_egg_white_checkered_gray",
-                    ()-> checkeredStampedEgg(DyeColor.WHITE, DyeColor.GRAY));
-    public static final RegistryObject<Item> COLORED_EGG_WHITE_CHECKERED_LIGHT_GRAY =
-            ITEMS.register("colored_egg_white_checkered_light_gray",
-                    ()-> checkeredStampedEgg(DyeColor.WHITE, DyeColor.LIGHT_GRAY));
-    public static final RegistryObject<Item> COLORED_EGG_WHITE_CHECKERED_CYAN =
-            ITEMS.register("colored_egg_white_checkered_cyan",
-                    ()-> checkeredStampedEgg(DyeColor.WHITE, DyeColor.CYAN));
-    public static final RegistryObject<Item> COLORED_EGG_WHITE_CHECKERED_PURPLE =
-            ITEMS.register("colored_egg_white_checkered_purple",
-                    ()-> checkeredStampedEgg(DyeColor.WHITE, DyeColor.PURPLE));
-    public static final RegistryObject<Item> COLORED_EGG_WHITE_CHECKERED_BLUE =
-            ITEMS.register("colored_egg_white_checkered_blue",
-                    ()-> checkeredStampedEgg(DyeColor.WHITE, DyeColor.BLUE));
-    public static final RegistryObject<Item> COLORED_EGG_WHITE_CHECKERED_BROWN =
-            ITEMS.register("colored_egg_white_checkered_brown",
-                    ()-> checkeredStampedEgg(DyeColor.WHITE, DyeColor.BROWN));
-    public static final RegistryObject<Item> COLORED_EGG_WHITE_CHECKERED_GREEN =
-            ITEMS.register("colored_egg_white_checkered_green",
-                    ()-> checkeredStampedEgg(DyeColor.WHITE, DyeColor.GREEN));
-    public static final RegistryObject<Item> COLORED_EGG_WHITE_CHECKERED_RED =
-            ITEMS.register("colored_egg_white_checkered_red",
-                    ()-> checkeredStampedEgg(DyeColor.WHITE, DyeColor.RED));
-    public static final RegistryObject<Item> COLORED_EGG_WHITE_CHECKERED_BLACK =
-            ITEMS.register("colored_egg_white_checkered_black",
-                    ()-> checkeredStampedEgg(DyeColor.WHITE, DyeColor.BLACK));
+    // white colored egg flower variants
+    public static final RegistryObject<Item> COLORED_EGG_WHITE_FLOWER_WHITE =
+            ITEMS.register("colored_egg_white_flower_white",
+                    ()-> flowerStampedEgg(DyeColor.WHITE, DyeColor.WHITE));
+    public static final RegistryObject<Item> COLORED_EGG_WHITE_FLOWER_ORANGE =
+            ITEMS.register("colored_egg_white_flower_orange",
+                    ()-> flowerStampedEgg(DyeColor.WHITE, DyeColor.ORANGE));
+    public static final RegistryObject<Item> COLORED_EGG_WHITE_FLOWER_MAGENTA =
+            ITEMS.register("colored_egg_white_flower_magenta",
+                    ()-> flowerStampedEgg(DyeColor.WHITE, DyeColor.MAGENTA));
+    public static final RegistryObject<Item> COLORED_EGG_WHITE_FLOWER_LIGHT_BLUE =
+            ITEMS.register("colored_egg_white_flower_light_blue",
+                    ()-> flowerStampedEgg(DyeColor.WHITE, DyeColor.LIGHT_BLUE));
+    public static final RegistryObject<Item> COLORED_EGG_WHITE_FLOWER_YELLOW =
+            ITEMS.register("colored_egg_white_flower_yellow",
+                    ()-> flowerStampedEgg(DyeColor.WHITE, DyeColor.YELLOW));
+    public static final RegistryObject<Item> COLORED_EGG_WHITE_FLOWER_LIME =
+            ITEMS.register("colored_egg_white_flower_lime",
+                    ()-> flowerStampedEgg(DyeColor.WHITE, DyeColor.LIME));
+    public static final RegistryObject<Item> COLORED_EGG_WHITE_FLOWER_PINK =
+            ITEMS.register("colored_egg_white_flower_pink",
+                    ()-> flowerStampedEgg(DyeColor.WHITE, DyeColor.PINK));
+    public static final RegistryObject<Item> COLORED_EGG_WHITE_FLOWER_GRAY =
+            ITEMS.register("colored_egg_white_flower_gray",
+                    ()-> flowerStampedEgg(DyeColor.WHITE, DyeColor.GRAY));
+    public static final RegistryObject<Item> COLORED_EGG_WHITE_FLOWER_LIGHT_GRAY =
+            ITEMS.register("colored_egg_white_flower_light_gray",
+                    ()-> flowerStampedEgg(DyeColor.WHITE, DyeColor.LIGHT_GRAY));
+    public static final RegistryObject<Item> COLORED_EGG_WHITE_FLOWER_CYAN =
+            ITEMS.register("colored_egg_white_flower_cyan",
+                    ()-> flowerStampedEgg(DyeColor.WHITE, DyeColor.CYAN));
+    public static final RegistryObject<Item> COLORED_EGG_WHITE_FLOWER_PURPLE =
+            ITEMS.register("colored_egg_white_flower_purple",
+                    ()-> flowerStampedEgg(DyeColor.WHITE, DyeColor.PURPLE));
+    public static final RegistryObject<Item> COLORED_EGG_WHITE_FLOWER_BLUE =
+            ITEMS.register("colored_egg_white_flower_blue",
+                    ()-> flowerStampedEgg(DyeColor.WHITE, DyeColor.BLUE));
+    public static final RegistryObject<Item> COLORED_EGG_WHITE_FLOWER_BROWN =
+            ITEMS.register("colored_egg_white_flower_brown",
+                    ()-> flowerStampedEgg(DyeColor.WHITE, DyeColor.BROWN));
+    public static final RegistryObject<Item> COLORED_EGG_WHITE_FLOWER_GREEN =
+            ITEMS.register("colored_egg_white_flower_green",
+                    ()-> flowerStampedEgg(DyeColor.WHITE, DyeColor.GREEN));
+    public static final RegistryObject<Item> COLORED_EGG_WHITE_FLOWER_RED =
+            ITEMS.register("colored_egg_white_flower_red",
+                    ()-> flowerStampedEgg(DyeColor.WHITE, DyeColor.RED));
+    public static final RegistryObject<Item> COLORED_EGG_WHITE_FLOWER_BLACK =
+            ITEMS.register("colored_egg_white_flower_black",
+                    ()-> flowerStampedEgg(DyeColor.WHITE, DyeColor.BLACK));
 
-    // orange colored egg checkered variants
-    public static final RegistryObject<Item> COLORED_EGG_ORANGE_CHECKERED_WHITE =
-            ITEMS.register("colored_egg_orange_checkered_white",
-                    ()-> checkeredStampedEgg(DyeColor.ORANGE, DyeColor.WHITE));
-    public static final RegistryObject<Item> COLORED_EGG_ORANGE_CHECKERED_ORANGE =
-            ITEMS.register("colored_egg_orange_checkered_orange",
-                    ()-> checkeredStampedEgg(DyeColor.ORANGE, DyeColor.ORANGE));
-    public static final RegistryObject<Item> COLORED_EGG_ORANGE_CHECKERED_MAGENTA =
-            ITEMS.register("colored_egg_orange_checkered_magenta",
-                    ()-> checkeredStampedEgg(DyeColor.ORANGE, DyeColor.MAGENTA));
-    public static final RegistryObject<Item> COLORED_EGG_ORANGE_CHECKERED_LIGHT_BLUE =
-            ITEMS.register("colored_egg_orange_checkered_light_blue",
-                    ()-> checkeredStampedEgg(DyeColor.ORANGE, DyeColor.LIGHT_BLUE));
-    public static final RegistryObject<Item> COLORED_EGG_ORANGE_CHECKERED_YELLOW =
-            ITEMS.register("colored_egg_orange_checkered_yellow",
-                    ()-> checkeredStampedEgg(DyeColor.ORANGE, DyeColor.YELLOW));
-    public static final RegistryObject<Item> COLORED_EGG_ORANGE_CHECKERED_LIME =
-            ITEMS.register("colored_egg_orange_checkered_lime",
-                    ()-> checkeredStampedEgg(DyeColor.ORANGE, DyeColor.LIME));
-    public static final RegistryObject<Item> COLORED_EGG_ORANGE_CHECKERED_PINK =
-            ITEMS.register("colored_egg_orange_checkered_pink",
-                    ()-> checkeredStampedEgg(DyeColor.ORANGE, DyeColor.PINK));
-    public static final RegistryObject<Item> COLORED_EGG_ORANGE_CHECKERED_GRAY =
-            ITEMS.register("colored_egg_orange_checkered_gray",
-                    ()-> checkeredStampedEgg(DyeColor.ORANGE, DyeColor.GRAY));
-    public static final RegistryObject<Item> COLORED_EGG_ORANGE_CHECKERED_LIGHT_GRAY =
-            ITEMS.register("colored_egg_orange_checkered_light_gray",
-                    ()-> checkeredStampedEgg(DyeColor.ORANGE, DyeColor.LIGHT_GRAY));
-    public static final RegistryObject<Item> COLORED_EGG_ORANGE_CHECKERED_CYAN =
-            ITEMS.register("colored_egg_orange_checkered_cyan",
-                    ()-> checkeredStampedEgg(DyeColor.ORANGE, DyeColor.CYAN));
-    public static final RegistryObject<Item> COLORED_EGG_ORANGE_CHECKERED_PURPLE =
-            ITEMS.register("colored_egg_orange_checkered_purple",
-                    ()-> checkeredStampedEgg(DyeColor.ORANGE, DyeColor.PURPLE));
-    public static final RegistryObject<Item> COLORED_EGG_ORANGE_CHECKERED_BLUE =
-            ITEMS.register("colored_egg_orange_checkered_blue",
-                    ()-> checkeredStampedEgg(DyeColor.ORANGE, DyeColor.BLUE));
-    public static final RegistryObject<Item> COLORED_EGG_ORANGE_CHECKERED_BROWN =
-            ITEMS.register("colored_egg_orange_checkered_brown",
-                    ()-> checkeredStampedEgg(DyeColor.ORANGE, DyeColor.BROWN));
-    public static final RegistryObject<Item> COLORED_EGG_ORANGE_CHECKERED_GREEN =
-            ITEMS.register("colored_egg_orange_checkered_green",
-                    ()-> checkeredStampedEgg(DyeColor.ORANGE, DyeColor.GREEN));
-    public static final RegistryObject<Item> COLORED_EGG_ORANGE_CHECKERED_RED =
-            ITEMS.register("colored_egg_orange_checkered_red",
-                    ()-> checkeredStampedEgg(DyeColor.ORANGE, DyeColor.RED));
-    public static final RegistryObject<Item> COLORED_EGG_ORANGE_CHECKERED_BLACK =
-            ITEMS.register("colored_egg_orange_checkered_black",
-                    ()-> checkeredStampedEgg(DyeColor.ORANGE, DyeColor.BLACK));
+    // orange colored egg flower variants
+    public static final RegistryObject<Item> COLORED_EGG_ORANGE_FLOWER_WHITE =
+            ITEMS.register("colored_egg_orange_flower_white",
+                    ()-> flowerStampedEgg(DyeColor.ORANGE, DyeColor.WHITE));
+    public static final RegistryObject<Item> COLORED_EGG_ORANGE_FLOWER_ORANGE =
+            ITEMS.register("colored_egg_orange_flower_orange",
+                    ()-> flowerStampedEgg(DyeColor.ORANGE, DyeColor.ORANGE));
+    public static final RegistryObject<Item> COLORED_EGG_ORANGE_FLOWER_MAGENTA =
+            ITEMS.register("colored_egg_orange_flower_magenta",
+                    ()-> flowerStampedEgg(DyeColor.ORANGE, DyeColor.MAGENTA));
+    public static final RegistryObject<Item> COLORED_EGG_ORANGE_FLOWER_LIGHT_BLUE =
+            ITEMS.register("colored_egg_orange_flower_light_blue",
+                    ()-> flowerStampedEgg(DyeColor.ORANGE, DyeColor.LIGHT_BLUE));
+    public static final RegistryObject<Item> COLORED_EGG_ORANGE_FLOWER_YELLOW =
+            ITEMS.register("colored_egg_orange_flower_yellow",
+                    ()-> flowerStampedEgg(DyeColor.ORANGE, DyeColor.YELLOW));
+    public static final RegistryObject<Item> COLORED_EGG_ORANGE_FLOWER_LIME =
+            ITEMS.register("colored_egg_orange_flower_lime",
+                    ()-> flowerStampedEgg(DyeColor.ORANGE, DyeColor.LIME));
+    public static final RegistryObject<Item> COLORED_EGG_ORANGE_FLOWER_PINK =
+            ITEMS.register("colored_egg_orange_flower_pink",
+                    ()-> flowerStampedEgg(DyeColor.ORANGE, DyeColor.PINK));
+    public static final RegistryObject<Item> COLORED_EGG_ORANGE_FLOWER_GRAY =
+            ITEMS.register("colored_egg_orange_flower_gray",
+                    ()-> flowerStampedEgg(DyeColor.ORANGE, DyeColor.GRAY));
+    public static final RegistryObject<Item> COLORED_EGG_ORANGE_FLOWER_LIGHT_GRAY =
+            ITEMS.register("colored_egg_orange_flower_light_gray",
+                    ()-> flowerStampedEgg(DyeColor.ORANGE, DyeColor.LIGHT_GRAY));
+    public static final RegistryObject<Item> COLORED_EGG_ORANGE_FLOWER_CYAN =
+            ITEMS.register("colored_egg_orange_flower_cyan",
+                    ()-> flowerStampedEgg(DyeColor.ORANGE, DyeColor.CYAN));
+    public static final RegistryObject<Item> COLORED_EGG_ORANGE_FLOWER_PURPLE =
+            ITEMS.register("colored_egg_orange_flower_purple",
+                    ()-> flowerStampedEgg(DyeColor.ORANGE, DyeColor.PURPLE));
+    public static final RegistryObject<Item> COLORED_EGG_ORANGE_FLOWER_BLUE =
+            ITEMS.register("colored_egg_orange_flower_blue",
+                    ()-> flowerStampedEgg(DyeColor.ORANGE, DyeColor.BLUE));
+    public static final RegistryObject<Item> COLORED_EGG_ORANGE_FLOWER_BROWN =
+            ITEMS.register("colored_egg_orange_flower_brown",
+                    ()-> flowerStampedEgg(DyeColor.ORANGE, DyeColor.BROWN));
+    public static final RegistryObject<Item> COLORED_EGG_ORANGE_FLOWER_GREEN =
+            ITEMS.register("colored_egg_orange_flower_green",
+                    ()-> flowerStampedEgg(DyeColor.ORANGE, DyeColor.GREEN));
+    public static final RegistryObject<Item> COLORED_EGG_ORANGE_FLOWER_RED =
+            ITEMS.register("colored_egg_orange_flower_red",
+                    ()-> flowerStampedEgg(DyeColor.ORANGE, DyeColor.RED));
+    public static final RegistryObject<Item> COLORED_EGG_ORANGE_FLOWER_BLACK =
+            ITEMS.register("colored_egg_orange_flower_black",
+                    ()-> flowerStampedEgg(DyeColor.ORANGE, DyeColor.BLACK));
 
-    // magenta colored egg checkered variants
-    public static final RegistryObject<Item> COLORED_EGG_MAGENTA_CHECKERED_WHITE =
-            ITEMS.register("colored_egg_magenta_checkered_white",
-                    ()-> checkeredStampedEgg(DyeColor.MAGENTA, DyeColor.WHITE));
-    public static final RegistryObject<Item> COLORED_EGG_MAGENTA_CHECKERED_ORANGE =
-            ITEMS.register("colored_egg_magenta_checkered_orange",
-                    ()-> checkeredStampedEgg(DyeColor.MAGENTA, DyeColor.ORANGE));
-    public static final RegistryObject<Item> COLORED_EGG_MAGENTA_CHECKERED_MAGENTA =
-            ITEMS.register("colored_egg_magenta_checkered_magenta",
-                    ()-> checkeredStampedEgg(DyeColor.MAGENTA, DyeColor.MAGENTA));
-    public static final RegistryObject<Item> COLORED_EGG_MAGENTA_CHECKERED_LIGHT_BLUE =
-            ITEMS.register("colored_egg_magenta_checkered_light_blue",
-                    ()-> checkeredStampedEgg(DyeColor.MAGENTA, DyeColor.LIGHT_BLUE));
-    public static final RegistryObject<Item> COLORED_EGG_MAGENTA_CHECKERED_YELLOW =
-            ITEMS.register("colored_egg_magenta_checkered_yellow",
-                    ()-> checkeredStampedEgg(DyeColor.MAGENTA, DyeColor.YELLOW));
-    public static final RegistryObject<Item> COLORED_EGG_MAGENTA_CHECKERED_LIME =
-            ITEMS.register("colored_egg_magenta_checkered_lime",
-                    ()-> checkeredStampedEgg(DyeColor.MAGENTA, DyeColor.LIME));
-    public static final RegistryObject<Item> COLORED_EGG_MAGENTA_CHECKERED_PINK =
-            ITEMS.register("colored_egg_magenta_checkered_pink",
-                    ()-> checkeredStampedEgg(DyeColor.MAGENTA, DyeColor.PINK));
-    public static final RegistryObject<Item> COLORED_EGG_MAGENTA_CHECKERED_GRAY =
-            ITEMS.register("colored_egg_magenta_checkered_gray",
-                    ()-> checkeredStampedEgg(DyeColor.MAGENTA, DyeColor.GRAY));
-    public static final RegistryObject<Item> COLORED_EGG_MAGENTA_CHECKERED_LIGHT_GRAY =
-            ITEMS.register("colored_egg_magenta_checkered_light_gray",
-                    ()-> checkeredStampedEgg(DyeColor.MAGENTA, DyeColor.LIGHT_GRAY));
-    public static final RegistryObject<Item> COLORED_EGG_MAGENTA_CHECKERED_CYAN =
-            ITEMS.register("colored_egg_magenta_checkered_cyan",
-                    ()-> checkeredStampedEgg(DyeColor.MAGENTA, DyeColor.CYAN));
-    public static final RegistryObject<Item> COLORED_EGG_MAGENTA_CHECKERED_PURPLE =
-            ITEMS.register("colored_egg_magenta_checkered_purple",
-                    ()-> checkeredStampedEgg(DyeColor.MAGENTA, DyeColor.PURPLE));
-    public static final RegistryObject<Item> COLORED_EGG_MAGENTA_CHECKERED_BLUE =
-            ITEMS.register("colored_egg_magenta_checkered_blue",
-                    ()-> checkeredStampedEgg(DyeColor.MAGENTA, DyeColor.BLUE));
-    public static final RegistryObject<Item> COLORED_EGG_MAGENTA_CHECKERED_BROWN =
-            ITEMS.register("colored_egg_magenta_checkered_brown",
-                    ()-> checkeredStampedEgg(DyeColor.MAGENTA, DyeColor.BROWN));
-    public static final RegistryObject<Item> COLORED_EGG_MAGENTA_CHECKERED_GREEN =
-            ITEMS.register("colored_egg_magenta_checkered_green",
-                    ()-> checkeredStampedEgg(DyeColor.MAGENTA, DyeColor.GREEN));
-    public static final RegistryObject<Item> COLORED_EGG_MAGENTA_CHECKERED_RED =
-            ITEMS.register("colored_egg_magenta_checkered_red",
-                    ()-> checkeredStampedEgg(DyeColor.MAGENTA, DyeColor.RED));
-    public static final RegistryObject<Item> COLORED_EGG_MAGENTA_CHECKERED_BLACK =
-            ITEMS.register("colored_egg_magenta_checkered_black",
-                    ()-> checkeredStampedEgg(DyeColor.MAGENTA, DyeColor.BLACK));
+    // magenta colored egg flower variants
+    public static final RegistryObject<Item> COLORED_EGG_MAGENTA_FLOWER_WHITE =
+            ITEMS.register("colored_egg_magenta_flower_white",
+                    ()-> flowerStampedEgg(DyeColor.MAGENTA, DyeColor.WHITE));
+    public static final RegistryObject<Item> COLORED_EGG_MAGENTA_FLOWER_ORANGE =
+            ITEMS.register("colored_egg_magenta_flower_orange",
+                    ()-> flowerStampedEgg(DyeColor.MAGENTA, DyeColor.ORANGE));
+    public static final RegistryObject<Item> COLORED_EGG_MAGENTA_FLOWER_MAGENTA =
+            ITEMS.register("colored_egg_magenta_flower_magenta",
+                    ()-> flowerStampedEgg(DyeColor.MAGENTA, DyeColor.MAGENTA));
+    public static final RegistryObject<Item> COLORED_EGG_MAGENTA_FLOWER_LIGHT_BLUE =
+            ITEMS.register("colored_egg_magenta_flower_light_blue",
+                    ()-> flowerStampedEgg(DyeColor.MAGENTA, DyeColor.LIGHT_BLUE));
+    public static final RegistryObject<Item> COLORED_EGG_MAGENTA_FLOWER_YELLOW =
+            ITEMS.register("colored_egg_magenta_flower_yellow",
+                    ()-> flowerStampedEgg(DyeColor.MAGENTA, DyeColor.YELLOW));
+    public static final RegistryObject<Item> COLORED_EGG_MAGENTA_FLOWER_LIME =
+            ITEMS.register("colored_egg_magenta_flower_lime",
+                    ()-> flowerStampedEgg(DyeColor.MAGENTA, DyeColor.LIME));
+    public static final RegistryObject<Item> COLORED_EGG_MAGENTA_FLOWER_PINK =
+            ITEMS.register("colored_egg_magenta_flower_pink",
+                    ()-> flowerStampedEgg(DyeColor.MAGENTA, DyeColor.PINK));
+    public static final RegistryObject<Item> COLORED_EGG_MAGENTA_FLOWER_GRAY =
+            ITEMS.register("colored_egg_magenta_flower_gray",
+                    ()-> flowerStampedEgg(DyeColor.MAGENTA, DyeColor.GRAY));
+    public static final RegistryObject<Item> COLORED_EGG_MAGENTA_FLOWER_LIGHT_GRAY =
+            ITEMS.register("colored_egg_magenta_flower_light_gray",
+                    ()-> flowerStampedEgg(DyeColor.MAGENTA, DyeColor.LIGHT_GRAY));
+    public static final RegistryObject<Item> COLORED_EGG_MAGENTA_FLOWER_CYAN =
+            ITEMS.register("colored_egg_magenta_flower_cyan",
+                    ()-> flowerStampedEgg(DyeColor.MAGENTA, DyeColor.CYAN));
+    public static final RegistryObject<Item> COLORED_EGG_MAGENTA_FLOWER_PURPLE =
+            ITEMS.register("colored_egg_magenta_flower_purple",
+                    ()-> flowerStampedEgg(DyeColor.MAGENTA, DyeColor.PURPLE));
+    public static final RegistryObject<Item> COLORED_EGG_MAGENTA_FLOWER_BLUE =
+            ITEMS.register("colored_egg_magenta_flower_blue",
+                    ()-> flowerStampedEgg(DyeColor.MAGENTA, DyeColor.BLUE));
+    public static final RegistryObject<Item> COLORED_EGG_MAGENTA_FLOWER_BROWN =
+            ITEMS.register("colored_egg_magenta_flower_brown",
+                    ()-> flowerStampedEgg(DyeColor.MAGENTA, DyeColor.BROWN));
+    public static final RegistryObject<Item> COLORED_EGG_MAGENTA_FLOWER_GREEN =
+            ITEMS.register("colored_egg_magenta_flower_green",
+                    ()-> flowerStampedEgg(DyeColor.MAGENTA, DyeColor.GREEN));
+    public static final RegistryObject<Item> COLORED_EGG_MAGENTA_FLOWER_RED =
+            ITEMS.register("colored_egg_magenta_flower_red",
+                    ()-> flowerStampedEgg(DyeColor.MAGENTA, DyeColor.RED));
+    public static final RegistryObject<Item> COLORED_EGG_MAGENTA_FLOWER_BLACK =
+            ITEMS.register("colored_egg_magenta_flower_black",
+                    ()-> flowerStampedEgg(DyeColor.MAGENTA, DyeColor.BLACK));
 
-    // light blue colored egg checkered variants
-    public static final RegistryObject<Item> COLORED_EGG_LIGHT_BLUE_CHECKERED_WHITE =
-            ITEMS.register("colored_egg_light_blue_checkered_white",
-                    ()-> checkeredStampedEgg(DyeColor.LIGHT_BLUE, DyeColor.WHITE));
-    public static final RegistryObject<Item> COLORED_EGG_LIGHT_BLUE_CHECKERED_ORANGE =
-            ITEMS.register("colored_egg_light_blue_checkered_orange",
-                    ()-> checkeredStampedEgg(DyeColor.LIGHT_BLUE, DyeColor.ORANGE));
-    public static final RegistryObject<Item> COLORED_EGG_LIGHT_BLUE_CHECKERED_MAGENTA =
-            ITEMS.register("colored_egg_light_blue_checkered_magenta",
-                    ()-> checkeredStampedEgg(DyeColor.LIGHT_BLUE, DyeColor.LIGHT_BLUE));
-    public static final RegistryObject<Item> COLORED_EGG_LIGHT_BLUE_CHECKERED_LIGHT_BLUE =
-            ITEMS.register("colored_egg_light_blue_checkered_light_blue",
-                    ()-> checkeredStampedEgg(DyeColor.LIGHT_BLUE, DyeColor.LIGHT_BLUE));
-    public static final RegistryObject<Item> COLORED_EGG_LIGHT_BLUE_CHECKERED_YELLOW =
-            ITEMS.register("colored_egg_light_blue_checkered_yellow",
-                    ()-> checkeredStampedEgg(DyeColor.LIGHT_BLUE, DyeColor.YELLOW));
-    public static final RegistryObject<Item> COLORED_EGG_LIGHT_BLUE_CHECKERED_LIME =
-            ITEMS.register("colored_egg_light_blue_checkered_lime",
-                    ()-> checkeredStampedEgg(DyeColor.LIGHT_BLUE, DyeColor.LIME));
-    public static final RegistryObject<Item> COLORED_EGG_LIGHT_BLUE_CHECKERED_PINK =
-            ITEMS.register("colored_egg_light_blue_checkered_pink",
-                    ()-> checkeredStampedEgg(DyeColor.LIGHT_BLUE, DyeColor.PINK));
-    public static final RegistryObject<Item> COLORED_EGG_LIGHT_BLUE_CHECKERED_GRAY =
-            ITEMS.register("colored_egg_light_blue_checkered_gray",
-                    ()-> checkeredStampedEgg(DyeColor.LIGHT_BLUE, DyeColor.GRAY));
-    public static final RegistryObject<Item> COLORED_EGG_LIGHT_BLUE_CHECKERED_LIGHT_GRAY =
-            ITEMS.register("colored_egg_light_blue_checkered_light_gray",
-                    ()-> checkeredStampedEgg(DyeColor.LIGHT_BLUE, DyeColor.LIGHT_GRAY));
-    public static final RegistryObject<Item> COLORED_EGG_LIGHT_BLUE_CHECKERED_CYAN =
-            ITEMS.register("colored_egg_light_blue_checkered_cyan",
-                    ()-> checkeredStampedEgg(DyeColor.LIGHT_BLUE, DyeColor.CYAN));
-    public static final RegistryObject<Item> COLORED_EGG_LIGHT_BLUE_CHECKERED_PURPLE =
-            ITEMS.register("colored_egg_light_blue_checkered_purple",
-                    ()-> checkeredStampedEgg(DyeColor.LIGHT_BLUE, DyeColor.PURPLE));
-    public static final RegistryObject<Item> COLORED_EGG_LIGHT_BLUE_CHECKERED_BLUE =
-            ITEMS.register("colored_egg_light_blue_checkered_blue",
-                    ()-> checkeredStampedEgg(DyeColor.LIGHT_BLUE, DyeColor.BLUE));
-    public static final RegistryObject<Item> COLORED_EGG_LIGHT_BLUE_CHECKERED_BROWN =
-            ITEMS.register("colored_egg_light_blue_checkered_brown",
-                    ()-> checkeredStampedEgg(DyeColor.LIGHT_BLUE, DyeColor.BROWN));
-    public static final RegistryObject<Item> COLORED_EGG_LIGHT_BLUE_CHECKERED_GREEN =
-            ITEMS.register("colored_egg_light_blue_checkered_green",
-                    ()-> checkeredStampedEgg(DyeColor.LIGHT_BLUE, DyeColor.GREEN));
-    public static final RegistryObject<Item> COLORED_EGG_LIGHT_BLUE_CHECKERED_RED =
-            ITEMS.register("colored_egg_light_blue_checkered_red",
-                    ()-> checkeredStampedEgg(DyeColor.LIGHT_BLUE, DyeColor.RED));
-    public static final RegistryObject<Item> COLORED_EGG_LIGHT_BLUE_CHECKERED_BLACK =
-            ITEMS.register("colored_egg_light_blue_checkered_black",
-                    ()-> checkeredStampedEgg(DyeColor.LIGHT_BLUE, DyeColor.BLACK));
+    // light blue colored egg flower variants
+    public static final RegistryObject<Item> COLORED_EGG_LIGHT_BLUE_FLOWER_WHITE =
+            ITEMS.register("colored_egg_light_blue_flower_white",
+                    ()-> flowerStampedEgg(DyeColor.LIGHT_BLUE, DyeColor.WHITE));
+    public static final RegistryObject<Item> COLORED_EGG_LIGHT_BLUE_FLOWER_ORANGE =
+            ITEMS.register("colored_egg_light_blue_flower_orange",
+                    ()-> flowerStampedEgg(DyeColor.LIGHT_BLUE, DyeColor.ORANGE));
+    public static final RegistryObject<Item> COLORED_EGG_LIGHT_BLUE_FLOWER_MAGENTA =
+            ITEMS.register("colored_egg_light_blue_flower_magenta",
+                    ()-> flowerStampedEgg(DyeColor.LIGHT_BLUE, DyeColor.LIGHT_BLUE));
+    public static final RegistryObject<Item> COLORED_EGG_LIGHT_BLUE_FLOWER_LIGHT_BLUE =
+            ITEMS.register("colored_egg_light_blue_flower_light_blue",
+                    ()-> flowerStampedEgg(DyeColor.LIGHT_BLUE, DyeColor.LIGHT_BLUE));
+    public static final RegistryObject<Item> COLORED_EGG_LIGHT_BLUE_FLOWER_YELLOW =
+            ITEMS.register("colored_egg_light_blue_flower_yellow",
+                    ()-> flowerStampedEgg(DyeColor.LIGHT_BLUE, DyeColor.YELLOW));
+    public static final RegistryObject<Item> COLORED_EGG_LIGHT_BLUE_FLOWER_LIME =
+            ITEMS.register("colored_egg_light_blue_flower_lime",
+                    ()-> flowerStampedEgg(DyeColor.LIGHT_BLUE, DyeColor.LIME));
+    public static final RegistryObject<Item> COLORED_EGG_LIGHT_BLUE_FLOWER_PINK =
+            ITEMS.register("colored_egg_light_blue_flower_pink",
+                    ()-> flowerStampedEgg(DyeColor.LIGHT_BLUE, DyeColor.PINK));
+    public static final RegistryObject<Item> COLORED_EGG_LIGHT_BLUE_FLOWER_GRAY =
+            ITEMS.register("colored_egg_light_blue_flower_gray",
+                    ()-> flowerStampedEgg(DyeColor.LIGHT_BLUE, DyeColor.GRAY));
+    public static final RegistryObject<Item> COLORED_EGG_LIGHT_BLUE_FLOWER_LIGHT_GRAY =
+            ITEMS.register("colored_egg_light_blue_flower_light_gray",
+                    ()-> flowerStampedEgg(DyeColor.LIGHT_BLUE, DyeColor.LIGHT_GRAY));
+    public static final RegistryObject<Item> COLORED_EGG_LIGHT_BLUE_FLOWER_CYAN =
+            ITEMS.register("colored_egg_light_blue_flower_cyan",
+                    ()-> flowerStampedEgg(DyeColor.LIGHT_BLUE, DyeColor.CYAN));
+    public static final RegistryObject<Item> COLORED_EGG_LIGHT_BLUE_FLOWER_PURPLE =
+            ITEMS.register("colored_egg_light_blue_flower_purple",
+                    ()-> flowerStampedEgg(DyeColor.LIGHT_BLUE, DyeColor.PURPLE));
+    public static final RegistryObject<Item> COLORED_EGG_LIGHT_BLUE_FLOWER_BLUE =
+            ITEMS.register("colored_egg_light_blue_flower_blue",
+                    ()-> flowerStampedEgg(DyeColor.LIGHT_BLUE, DyeColor.BLUE));
+    public static final RegistryObject<Item> COLORED_EGG_LIGHT_BLUE_FLOWER_BROWN =
+            ITEMS.register("colored_egg_light_blue_flower_brown",
+                    ()-> flowerStampedEgg(DyeColor.LIGHT_BLUE, DyeColor.BROWN));
+    public static final RegistryObject<Item> COLORED_EGG_LIGHT_BLUE_FLOWER_GREEN =
+            ITEMS.register("colored_egg_light_blue_flower_green",
+                    ()-> flowerStampedEgg(DyeColor.LIGHT_BLUE, DyeColor.GREEN));
+    public static final RegistryObject<Item> COLORED_EGG_LIGHT_BLUE_FLOWER_RED =
+            ITEMS.register("colored_egg_light_blue_flower_red",
+                    ()-> flowerStampedEgg(DyeColor.LIGHT_BLUE, DyeColor.RED));
+    public static final RegistryObject<Item> COLORED_EGG_LIGHT_BLUE_FLOWER_BLACK =
+            ITEMS.register("colored_egg_light_blue_flower_black",
+                    ()-> flowerStampedEgg(DyeColor.LIGHT_BLUE, DyeColor.BLACK));
 
-    // yellow colored egg checkered variants
-    public static final RegistryObject<Item> COLORED_EGG_YELLOW_CHECKERED_WHITE =
-            ITEMS.register("colored_egg_yellow_checkered_white",
-                    ()-> checkeredStampedEgg(DyeColor.YELLOW, DyeColor.WHITE));
-    public static final RegistryObject<Item> COLORED_EGG_YELLOW_CHECKERED_ORANGE =
-            ITEMS.register("colored_egg_yellow_checkered_orange",
-                    ()-> checkeredStampedEgg(DyeColor.YELLOW, DyeColor.ORANGE));
-    public static final RegistryObject<Item> COLORED_EGG_YELLOW_CHECKERED_MAGENTA =
-            ITEMS.register("colored_egg_yellow_checkered_magenta",
-                    ()-> checkeredStampedEgg(DyeColor.YELLOW, DyeColor.LIGHT_BLUE));
-    public static final RegistryObject<Item> COLORED_EGG_YELLOW_CHECKERED_LIGHT_BLUE =
-            ITEMS.register("colored_egg_yellow_checkered_light_blue",
-                    ()-> checkeredStampedEgg(DyeColor.YELLOW, DyeColor.LIGHT_BLUE));
-    public static final RegistryObject<Item> COLORED_EGG_YELLOW_CHECKERED_YELLOW =
-            ITEMS.register("colored_egg_yellow_checkered_yellow",
-                    ()-> checkeredStampedEgg(DyeColor.YELLOW, DyeColor.YELLOW));
-    public static final RegistryObject<Item> COLORED_EGG_YELLOW_CHECKERED_LIME =
-            ITEMS.register("colored_egg_yellow_checkered_lime",
-                    ()-> checkeredStampedEgg(DyeColor.YELLOW, DyeColor.LIME));
-    public static final RegistryObject<Item> COLORED_EGG_YELLOW_CHECKERED_PINK =
-            ITEMS.register("colored_egg_yellow_checkered_pink",
-                    ()-> checkeredStampedEgg(DyeColor.YELLOW, DyeColor.PINK));
-    public static final RegistryObject<Item> COLORED_EGG_YELLOW_CHECKERED_GRAY =
-            ITEMS.register("colored_egg_yellow_checkered_gray",
-                    ()-> checkeredStampedEgg(DyeColor.YELLOW, DyeColor.GRAY));
-    public static final RegistryObject<Item> COLORED_EGG_YELLOW_CHECKERED_LIGHT_GRAY =
-            ITEMS.register("colored_egg_yellow_checkered_light_gray",
-                    ()-> checkeredStampedEgg(DyeColor.YELLOW, DyeColor.LIGHT_GRAY));
-    public static final RegistryObject<Item> COLORED_EGG_YELLOW_CHECKERED_CYAN =
-            ITEMS.register("colored_egg_yellow_checkered_cyan",
-                    ()-> checkeredStampedEgg(DyeColor.YELLOW, DyeColor.CYAN));
-    public static final RegistryObject<Item> COLORED_EGG_YELLOW_CHECKERED_PURPLE =
-            ITEMS.register("colored_egg_yellow_checkered_purple",
-                    ()-> checkeredStampedEgg(DyeColor.YELLOW, DyeColor.PURPLE));
-    public static final RegistryObject<Item> COLORED_EGG_YELLOW_CHECKERED_BLUE =
-            ITEMS.register("colored_egg_yellow_checkered_blue",
-                    ()-> checkeredStampedEgg(DyeColor.YELLOW, DyeColor.BLUE));
-    public static final RegistryObject<Item> COLORED_EGG_YELLOW_CHECKERED_BROWN =
-            ITEMS.register("colored_egg_yellow_checkered_brown",
-                    ()-> checkeredStampedEgg(DyeColor.YELLOW, DyeColor.BROWN));
-    public static final RegistryObject<Item> COLORED_EGG_YELLOW_CHECKERED_GREEN =
-            ITEMS.register("colored_egg_yellow_checkered_green",
-                    ()-> checkeredStampedEgg(DyeColor.YELLOW, DyeColor.GREEN));
-    public static final RegistryObject<Item> COLORED_EGG_YELLOW_CHECKERED_RED =
-            ITEMS.register("colored_egg_yellow_checkered_red",
-                    ()-> checkeredStampedEgg(DyeColor.YELLOW, DyeColor.RED));
-    public static final RegistryObject<Item> COLORED_EGG_YELLOW_CHECKERED_BLACK =
-            ITEMS.register("colored_egg_yellow_checkered_black",
-                    ()-> checkeredStampedEgg(DyeColor.YELLOW, DyeColor.BLACK));
+    // yellow colored egg flower variants
+    public static final RegistryObject<Item> COLORED_EGG_YELLOW_FLOWER_WHITE =
+            ITEMS.register("colored_egg_yellow_flower_white",
+                    ()-> flowerStampedEgg(DyeColor.YELLOW, DyeColor.WHITE));
+    public static final RegistryObject<Item> COLORED_EGG_YELLOW_FLOWER_ORANGE =
+            ITEMS.register("colored_egg_yellow_flower_orange",
+                    ()-> flowerStampedEgg(DyeColor.YELLOW, DyeColor.ORANGE));
+    public static final RegistryObject<Item> COLORED_EGG_YELLOW_FLOWER_MAGENTA =
+            ITEMS.register("colored_egg_yellow_flower_magenta",
+                    ()-> flowerStampedEgg(DyeColor.YELLOW, DyeColor.LIGHT_BLUE));
+    public static final RegistryObject<Item> COLORED_EGG_YELLOW_FLOWER_LIGHT_BLUE =
+            ITEMS.register("colored_egg_yellow_flower_light_blue",
+                    ()-> flowerStampedEgg(DyeColor.YELLOW, DyeColor.LIGHT_BLUE));
+    public static final RegistryObject<Item> COLORED_EGG_YELLOW_FLOWER_YELLOW =
+            ITEMS.register("colored_egg_yellow_flower_yellow",
+                    ()-> flowerStampedEgg(DyeColor.YELLOW, DyeColor.YELLOW));
+    public static final RegistryObject<Item> COLORED_EGG_YELLOW_FLOWER_LIME =
+            ITEMS.register("colored_egg_yellow_flower_lime",
+                    ()-> flowerStampedEgg(DyeColor.YELLOW, DyeColor.LIME));
+    public static final RegistryObject<Item> COLORED_EGG_YELLOW_FLOWER_PINK =
+            ITEMS.register("colored_egg_yellow_flower_pink",
+                    ()-> flowerStampedEgg(DyeColor.YELLOW, DyeColor.PINK));
+    public static final RegistryObject<Item> COLORED_EGG_YELLOW_FLOWER_GRAY =
+            ITEMS.register("colored_egg_yellow_flower_gray",
+                    ()-> flowerStampedEgg(DyeColor.YELLOW, DyeColor.GRAY));
+    public static final RegistryObject<Item> COLORED_EGG_YELLOW_FLOWER_LIGHT_GRAY =
+            ITEMS.register("colored_egg_yellow_flower_light_gray",
+                    ()-> flowerStampedEgg(DyeColor.YELLOW, DyeColor.LIGHT_GRAY));
+    public static final RegistryObject<Item> COLORED_EGG_YELLOW_FLOWER_CYAN =
+            ITEMS.register("colored_egg_yellow_flower_cyan",
+                    ()-> flowerStampedEgg(DyeColor.YELLOW, DyeColor.CYAN));
+    public static final RegistryObject<Item> COLORED_EGG_YELLOW_FLOWER_PURPLE =
+            ITEMS.register("colored_egg_yellow_flower_purple",
+                    ()-> flowerStampedEgg(DyeColor.YELLOW, DyeColor.PURPLE));
+    public static final RegistryObject<Item> COLORED_EGG_YELLOW_FLOWER_BLUE =
+            ITEMS.register("colored_egg_yellow_flower_blue",
+                    ()-> flowerStampedEgg(DyeColor.YELLOW, DyeColor.BLUE));
+    public static final RegistryObject<Item> COLORED_EGG_YELLOW_FLOWER_BROWN =
+            ITEMS.register("colored_egg_yellow_flower_brown",
+                    ()-> flowerStampedEgg(DyeColor.YELLOW, DyeColor.BROWN));
+    public static final RegistryObject<Item> COLORED_EGG_YELLOW_FLOWER_GREEN =
+            ITEMS.register("colored_egg_yellow_flower_green",
+                    ()-> flowerStampedEgg(DyeColor.YELLOW, DyeColor.GREEN));
+    public static final RegistryObject<Item> COLORED_EGG_YELLOW_FLOWER_RED =
+            ITEMS.register("colored_egg_yellow_flower_red",
+                    ()-> flowerStampedEgg(DyeColor.YELLOW, DyeColor.RED));
+    public static final RegistryObject<Item> COLORED_EGG_YELLOW_FLOWER_BLACK =
+            ITEMS.register("colored_egg_yellow_flower_black",
+                    ()-> flowerStampedEgg(DyeColor.YELLOW, DyeColor.BLACK));
 
-    // lime colored egg checkered variants
-    public static final RegistryObject<Item> COLORED_EGG_LIME_CHECKERED_WHITE =
-            ITEMS.register("colored_egg_lime_checkered_white",
-                    ()-> checkeredStampedEgg(DyeColor.LIME, DyeColor.WHITE));
-    public static final RegistryObject<Item> COLORED_EGG_LIME_CHECKERED_ORANGE =
-            ITEMS.register("colored_egg_lime_checkered_orange",
-                    ()-> checkeredStampedEgg(DyeColor.LIME, DyeColor.ORANGE));
-    public static final RegistryObject<Item> COLORED_EGG_LIME_CHECKERED_MAGENTA =
-            ITEMS.register("colored_egg_lime_checkered_magenta",
-                    ()-> checkeredStampedEgg(DyeColor.LIME, DyeColor.LIGHT_BLUE));
-    public static final RegistryObject<Item> COLORED_EGG_LIME_CHECKERED_LIGHT_BLUE =
-            ITEMS.register("colored_egg_lime_checkered_light_blue",
-                    ()-> checkeredStampedEgg(DyeColor.LIME, DyeColor.LIGHT_BLUE));
-    public static final RegistryObject<Item> COLORED_EGG_LIME_CHECKERED_YELLOW =
-            ITEMS.register("colored_egg_lime_checkered_yellow",
-                    ()-> checkeredStampedEgg(DyeColor.LIME, DyeColor.YELLOW));
-    public static final RegistryObject<Item> COLORED_EGG_LIME_CHECKERED_LIME =
-            ITEMS.register("colored_egg_lime_checkered_lime",
-                    ()-> checkeredStampedEgg(DyeColor.LIME, DyeColor.LIME));
-    public static final RegistryObject<Item> COLORED_EGG_LIME_CHECKERED_PINK =
-            ITEMS.register("colored_egg_lime_checkered_pink",
-                    ()-> checkeredStampedEgg(DyeColor.LIME, DyeColor.PINK));
-    public static final RegistryObject<Item> COLORED_EGG_LIME_CHECKERED_GRAY =
-            ITEMS.register("colored_egg_lime_checkered_gray",
-                    ()-> checkeredStampedEgg(DyeColor.LIME, DyeColor.GRAY));
-    public static final RegistryObject<Item> COLORED_EGG_LIME_CHECKERED_LIGHT_GRAY =
-            ITEMS.register("colored_egg_lime_checkered_light_gray",
-                    ()-> checkeredStampedEgg(DyeColor.LIME, DyeColor.LIGHT_GRAY));
-    public static final RegistryObject<Item> COLORED_EGG_LIME_CHECKERED_CYAN =
-            ITEMS.register("colored_egg_lime_checkered_cyan",
-                    ()-> checkeredStampedEgg(DyeColor.LIME, DyeColor.CYAN));
-    public static final RegistryObject<Item> COLORED_EGG_LIME_CHECKERED_PURPLE =
-            ITEMS.register("colored_egg_lime_checkered_purple",
-                    ()-> checkeredStampedEgg(DyeColor.LIME, DyeColor.PURPLE));
-    public static final RegistryObject<Item> COLORED_EGG_LIME_CHECKERED_BLUE =
-            ITEMS.register("colored_egg_lime_checkered_blue",
-                    ()-> checkeredStampedEgg(DyeColor.LIME, DyeColor.BLUE));
-    public static final RegistryObject<Item> COLORED_EGG_LIME_CHECKERED_BROWN =
-            ITEMS.register("colored_egg_lime_checkered_brown",
-                    ()-> checkeredStampedEgg(DyeColor.LIME, DyeColor.BROWN));
-    public static final RegistryObject<Item> COLORED_EGG_LIME_CHECKERED_GREEN =
-            ITEMS.register("colored_egg_lime_checkered_green",
-                    ()-> checkeredStampedEgg(DyeColor.LIME, DyeColor.GREEN));
-    public static final RegistryObject<Item> COLORED_EGG_LIME_CHECKERED_RED =
-            ITEMS.register("colored_egg_lime_checkered_red",
-                    ()-> checkeredStampedEgg(DyeColor.LIME, DyeColor.RED));
-    public static final RegistryObject<Item> COLORED_EGG_LIME_CHECKERED_BLACK =
-            ITEMS.register("colored_egg_lime_checkered_black",
-                    ()-> checkeredStampedEgg(DyeColor.LIME, DyeColor.BLACK));
+    // lime colored egg flower variants
+    public static final RegistryObject<Item> COLORED_EGG_LIME_FLOWER_WHITE =
+            ITEMS.register("colored_egg_lime_flower_white",
+                    ()-> flowerStampedEgg(DyeColor.LIME, DyeColor.WHITE));
+    public static final RegistryObject<Item> COLORED_EGG_LIME_FLOWER_ORANGE =
+            ITEMS.register("colored_egg_lime_flower_orange",
+                    ()-> flowerStampedEgg(DyeColor.LIME, DyeColor.ORANGE));
+    public static final RegistryObject<Item> COLORED_EGG_LIME_FLOWER_MAGENTA =
+            ITEMS.register("colored_egg_lime_flower_magenta",
+                    ()-> flowerStampedEgg(DyeColor.LIME, DyeColor.LIGHT_BLUE));
+    public static final RegistryObject<Item> COLORED_EGG_LIME_FLOWER_LIGHT_BLUE =
+            ITEMS.register("colored_egg_lime_flower_light_blue",
+                    ()-> flowerStampedEgg(DyeColor.LIME, DyeColor.LIGHT_BLUE));
+    public static final RegistryObject<Item> COLORED_EGG_LIME_FLOWER_YELLOW =
+            ITEMS.register("colored_egg_lime_flower_yellow",
+                    ()-> flowerStampedEgg(DyeColor.LIME, DyeColor.YELLOW));
+    public static final RegistryObject<Item> COLORED_EGG_LIME_FLOWER_LIME =
+            ITEMS.register("colored_egg_lime_flower_lime",
+                    ()-> flowerStampedEgg(DyeColor.LIME, DyeColor.LIME));
+    public static final RegistryObject<Item> COLORED_EGG_LIME_FLOWER_PINK =
+            ITEMS.register("colored_egg_lime_flower_pink",
+                    ()-> flowerStampedEgg(DyeColor.LIME, DyeColor.PINK));
+    public static final RegistryObject<Item> COLORED_EGG_LIME_FLOWER_GRAY =
+            ITEMS.register("colored_egg_lime_flower_gray",
+                    ()-> flowerStampedEgg(DyeColor.LIME, DyeColor.GRAY));
+    public static final RegistryObject<Item> COLORED_EGG_LIME_FLOWER_LIGHT_GRAY =
+            ITEMS.register("colored_egg_lime_flower_light_gray",
+                    ()-> flowerStampedEgg(DyeColor.LIME, DyeColor.LIGHT_GRAY));
+    public static final RegistryObject<Item> COLORED_EGG_LIME_FLOWER_CYAN =
+            ITEMS.register("colored_egg_lime_flower_cyan",
+                    ()-> flowerStampedEgg(DyeColor.LIME, DyeColor.CYAN));
+    public static final RegistryObject<Item> COLORED_EGG_LIME_FLOWER_PURPLE =
+            ITEMS.register("colored_egg_lime_flower_purple",
+                    ()-> flowerStampedEgg(DyeColor.LIME, DyeColor.PURPLE));
+    public static final RegistryObject<Item> COLORED_EGG_LIME_FLOWER_BLUE =
+            ITEMS.register("colored_egg_lime_flower_blue",
+                    ()-> flowerStampedEgg(DyeColor.LIME, DyeColor.BLUE));
+    public static final RegistryObject<Item> COLORED_EGG_LIME_FLOWER_BROWN =
+            ITEMS.register("colored_egg_lime_flower_brown",
+                    ()-> flowerStampedEgg(DyeColor.LIME, DyeColor.BROWN));
+    public static final RegistryObject<Item> COLORED_EGG_LIME_FLOWER_GREEN =
+            ITEMS.register("colored_egg_lime_flower_green",
+                    ()-> flowerStampedEgg(DyeColor.LIME, DyeColor.GREEN));
+    public static final RegistryObject<Item> COLORED_EGG_LIME_FLOWER_RED =
+            ITEMS.register("colored_egg_lime_flower_red",
+                    ()-> flowerStampedEgg(DyeColor.LIME, DyeColor.RED));
+    public static final RegistryObject<Item> COLORED_EGG_LIME_FLOWER_BLACK =
+            ITEMS.register("colored_egg_lime_flower_black",
+                    ()-> flowerStampedEgg(DyeColor.LIME, DyeColor.BLACK));
 
-    // pink colored egg checkered variants
-    public static final RegistryObject<Item> COLORED_EGG_PINK_CHECKERED_WHITE =
-            ITEMS.register("colored_egg_pink_checkered_white",
-                    ()-> checkeredStampedEgg(DyeColor.PINK, DyeColor.WHITE));
-    public static final RegistryObject<Item> COLORED_EGG_PINK_CHECKERED_ORANGE =
-            ITEMS.register("colored_egg_pink_checkered_orange",
-                    ()-> checkeredStampedEgg(DyeColor.PINK, DyeColor.ORANGE));
-    public static final RegistryObject<Item> COLORED_EGG_PINK_CHECKERED_MAGENTA =
-            ITEMS.register("colored_egg_pink_checkered_magenta",
-                    ()-> checkeredStampedEgg(DyeColor.PINK, DyeColor.LIGHT_BLUE));
-    public static final RegistryObject<Item> COLORED_EGG_PINK_CHECKERED_LIGHT_BLUE =
-            ITEMS.register("colored_egg_pink_checkered_light_blue",
-                    ()-> checkeredStampedEgg(DyeColor.PINK, DyeColor.LIGHT_BLUE));
-    public static final RegistryObject<Item> COLORED_EGG_PINK_CHECKERED_YELLOW =
-            ITEMS.register("colored_egg_pink_checkered_yellow",
-                    ()-> checkeredStampedEgg(DyeColor.PINK, DyeColor.YELLOW));
-    public static final RegistryObject<Item> COLORED_EGG_PINK_CHECKERED_LIME =
-            ITEMS.register("colored_egg_pink_checkered_lime",
-                    ()-> checkeredStampedEgg(DyeColor.PINK, DyeColor.LIME));
-    public static final RegistryObject<Item> COLORED_EGG_PINK_CHECKERED_PINK =
-            ITEMS.register("colored_egg_pink_checkered_pink",
-                    ()-> checkeredStampedEgg(DyeColor.PINK, DyeColor.PINK));
-    public static final RegistryObject<Item> COLORED_EGG_PINK_CHECKERED_GRAY =
-            ITEMS.register("colored_egg_pink_checkered_gray",
-                    ()-> checkeredStampedEgg(DyeColor.PINK, DyeColor.GRAY));
-    public static final RegistryObject<Item> COLORED_EGG_PINK_CHECKERED_LIGHT_GRAY =
-            ITEMS.register("colored_egg_pink_checkered_light_gray",
-                    ()-> checkeredStampedEgg(DyeColor.PINK, DyeColor.LIGHT_GRAY));
-    public static final RegistryObject<Item> COLORED_EGG_PINK_CHECKERED_CYAN =
-            ITEMS.register("colored_egg_pink_checkered_cyan",
-                    ()-> checkeredStampedEgg(DyeColor.PINK, DyeColor.CYAN));
-    public static final RegistryObject<Item> COLORED_EGG_PINK_CHECKERED_PURPLE =
-            ITEMS.register("colored_egg_pink_checkered_purple",
-                    ()-> checkeredStampedEgg(DyeColor.PINK, DyeColor.PURPLE));
-    public static final RegistryObject<Item> COLORED_EGG_PINK_CHECKERED_BLUE =
-            ITEMS.register("colored_egg_pink_checkered_blue",
-                    ()-> checkeredStampedEgg(DyeColor.PINK, DyeColor.BLUE));
-    public static final RegistryObject<Item> COLORED_EGG_PINK_CHECKERED_BROWN =
-            ITEMS.register("colored_egg_pink_checkered_brown",
-                    ()-> checkeredStampedEgg(DyeColor.PINK, DyeColor.BROWN));
-    public static final RegistryObject<Item> COLORED_EGG_PINK_CHECKERED_GREEN =
-            ITEMS.register("colored_egg_pink_checkered_green",
-                    ()-> checkeredStampedEgg(DyeColor.PINK, DyeColor.GREEN));
-    public static final RegistryObject<Item> COLORED_EGG_PINK_CHECKERED_RED =
-            ITEMS.register("colored_egg_pink_checkered_red",
-                    ()-> checkeredStampedEgg(DyeColor.PINK, DyeColor.RED));
-    public static final RegistryObject<Item> COLORED_EGG_PINK_CHECKERED_BLACK =
-            ITEMS.register("colored_egg_pink_checkered_black",
-                    ()-> checkeredStampedEgg(DyeColor.PINK, DyeColor.BLACK));
+    // pink colored egg flower variants
+    public static final RegistryObject<Item> COLORED_EGG_PINK_FLOWER_WHITE =
+            ITEMS.register("colored_egg_pink_flower_white",
+                    ()-> flowerStampedEgg(DyeColor.PINK, DyeColor.WHITE));
+    public static final RegistryObject<Item> COLORED_EGG_PINK_FLOWER_ORANGE =
+            ITEMS.register("colored_egg_pink_flower_orange",
+                    ()-> flowerStampedEgg(DyeColor.PINK, DyeColor.ORANGE));
+    public static final RegistryObject<Item> COLORED_EGG_PINK_FLOWER_MAGENTA =
+            ITEMS.register("colored_egg_pink_flower_magenta",
+                    ()-> flowerStampedEgg(DyeColor.PINK, DyeColor.LIGHT_BLUE));
+    public static final RegistryObject<Item> COLORED_EGG_PINK_FLOWER_LIGHT_BLUE =
+            ITEMS.register("colored_egg_pink_flower_light_blue",
+                    ()-> flowerStampedEgg(DyeColor.PINK, DyeColor.LIGHT_BLUE));
+    public static final RegistryObject<Item> COLORED_EGG_PINK_FLOWER_YELLOW =
+            ITEMS.register("colored_egg_pink_flower_yellow",
+                    ()-> flowerStampedEgg(DyeColor.PINK, DyeColor.YELLOW));
+    public static final RegistryObject<Item> COLORED_EGG_PINK_FLOWER_LIME =
+            ITEMS.register("colored_egg_pink_flower_lime",
+                    ()-> flowerStampedEgg(DyeColor.PINK, DyeColor.LIME));
+    public static final RegistryObject<Item> COLORED_EGG_PINK_FLOWER_PINK =
+            ITEMS.register("colored_egg_pink_flower_pink",
+                    ()-> flowerStampedEgg(DyeColor.PINK, DyeColor.PINK));
+    public static final RegistryObject<Item> COLORED_EGG_PINK_FLOWER_GRAY =
+            ITEMS.register("colored_egg_pink_flower_gray",
+                    ()-> flowerStampedEgg(DyeColor.PINK, DyeColor.GRAY));
+    public static final RegistryObject<Item> COLORED_EGG_PINK_FLOWER_LIGHT_GRAY =
+            ITEMS.register("colored_egg_pink_flower_light_gray",
+                    ()-> flowerStampedEgg(DyeColor.PINK, DyeColor.LIGHT_GRAY));
+    public static final RegistryObject<Item> COLORED_EGG_PINK_FLOWER_CYAN =
+            ITEMS.register("colored_egg_pink_flower_cyan",
+                    ()-> flowerStampedEgg(DyeColor.PINK, DyeColor.CYAN));
+    public static final RegistryObject<Item> COLORED_EGG_PINK_FLOWER_PURPLE =
+            ITEMS.register("colored_egg_pink_flower_purple",
+                    ()-> flowerStampedEgg(DyeColor.PINK, DyeColor.PURPLE));
+    public static final RegistryObject<Item> COLORED_EGG_PINK_FLOWER_BLUE =
+            ITEMS.register("colored_egg_pink_flower_blue",
+                    ()-> flowerStampedEgg(DyeColor.PINK, DyeColor.BLUE));
+    public static final RegistryObject<Item> COLORED_EGG_PINK_FLOWER_BROWN =
+            ITEMS.register("colored_egg_pink_flower_brown",
+                    ()-> flowerStampedEgg(DyeColor.PINK, DyeColor.BROWN));
+    public static final RegistryObject<Item> COLORED_EGG_PINK_FLOWER_GREEN =
+            ITEMS.register("colored_egg_pink_flower_green",
+                    ()-> flowerStampedEgg(DyeColor.PINK, DyeColor.GREEN));
+    public static final RegistryObject<Item> COLORED_EGG_PINK_FLOWER_RED =
+            ITEMS.register("colored_egg_pink_flower_red",
+                    ()-> flowerStampedEgg(DyeColor.PINK, DyeColor.RED));
+    public static final RegistryObject<Item> COLORED_EGG_PINK_FLOWER_BLACK =
+            ITEMS.register("colored_egg_pink_flower_black",
+                    ()-> flowerStampedEgg(DyeColor.PINK, DyeColor.BLACK));
 
-    // gray colored egg checkered variants
-    public static final RegistryObject<Item> COLORED_EGG_GRAY_CHECKERED_WHITE =
-            ITEMS.register("colored_egg_gray_checkered_white",
-                    ()-> checkeredStampedEgg(DyeColor.GRAY, DyeColor.WHITE));
-    public static final RegistryObject<Item> COLORED_EGG_GRAY_CHECKERED_ORANGE =
-            ITEMS.register("colored_egg_gray_checkered_orange",
-                    ()-> checkeredStampedEgg(DyeColor.GRAY, DyeColor.ORANGE));
-    public static final RegistryObject<Item> COLORED_EGG_GRAY_CHECKERED_MAGENTA =
-            ITEMS.register("colored_egg_gray_checkered_magenta",
-                    ()-> checkeredStampedEgg(DyeColor.GRAY, DyeColor.LIGHT_BLUE));
-    public static final RegistryObject<Item> COLORED_EGG_GRAY_CHECKERED_LIGHT_BLUE =
-            ITEMS.register("colored_egg_gray_checkered_light_blue",
-                    ()-> checkeredStampedEgg(DyeColor.GRAY, DyeColor.LIGHT_BLUE));
-    public static final RegistryObject<Item> COLORED_EGG_GRAY_CHECKERED_YELLOW =
-            ITEMS.register("colored_egg_gray_checkered_yellow",
-                    ()-> checkeredStampedEgg(DyeColor.GRAY, DyeColor.YELLOW));
-    public static final RegistryObject<Item> COLORED_EGG_GRAY_CHECKERED_LIME =
-            ITEMS.register("colored_egg_gray_checkered_lime",
-                    ()-> checkeredStampedEgg(DyeColor.GRAY, DyeColor.LIME));
-    public static final RegistryObject<Item> COLORED_EGG_GRAY_CHECKERED_PINK =
-            ITEMS.register("colored_egg_gray_checkered_pink",
-                    ()-> checkeredStampedEgg(DyeColor.GRAY, DyeColor.PINK));
-    public static final RegistryObject<Item> COLORED_EGG_GRAY_CHECKERED_GRAY =
-            ITEMS.register("colored_egg_gray_checkered_gray",
-                    ()-> checkeredStampedEgg(DyeColor.GRAY, DyeColor.GRAY));
-    public static final RegistryObject<Item> COLORED_EGG_GRAY_CHECKERED_LIGHT_GRAY =
-            ITEMS.register("colored_egg_gray_checkered_light_gray",
-                    ()-> checkeredStampedEgg(DyeColor.GRAY, DyeColor.LIGHT_GRAY));
-    public static final RegistryObject<Item> COLORED_EGG_GRAY_CHECKERED_CYAN =
-            ITEMS.register("colored_egg_gray_checkered_cyan",
-                    ()-> checkeredStampedEgg(DyeColor.GRAY, DyeColor.CYAN));
-    public static final RegistryObject<Item> COLORED_EGG_GRAY_CHECKERED_PURPLE =
-            ITEMS.register("colored_egg_gray_checkered_purple",
-                    ()-> checkeredStampedEgg(DyeColor.GRAY, DyeColor.PURPLE));
-    public static final RegistryObject<Item> COLORED_EGG_GRAY_CHECKERED_BLUE =
-            ITEMS.register("colored_egg_gray_checkered_blue",
-                    ()-> checkeredStampedEgg(DyeColor.GRAY, DyeColor.BLUE));
-    public static final RegistryObject<Item> COLORED_EGG_GRAY_CHECKERED_BROWN =
-            ITEMS.register("colored_egg_gray_checkered_brown",
-                    ()-> checkeredStampedEgg(DyeColor.GRAY, DyeColor.BROWN));
-    public static final RegistryObject<Item> COLORED_EGG_GRAY_CHECKERED_GREEN =
-            ITEMS.register("colored_egg_gray_checkered_green",
-                    ()-> checkeredStampedEgg(DyeColor.GRAY, DyeColor.GREEN));
-    public static final RegistryObject<Item> COLORED_EGG_GRAY_CHECKERED_RED =
-            ITEMS.register("colored_egg_gray_checkered_red",
-                    ()-> checkeredStampedEgg(DyeColor.GRAY, DyeColor.RED));
-    public static final RegistryObject<Item> COLORED_EGG_GRAY_CHECKERED_BLACK =
-            ITEMS.register("colored_egg_gray_checkered_black",
-                    ()-> checkeredStampedEgg(DyeColor.GRAY, DyeColor.BLACK));
+    // gray colored egg flower variants
+    public static final RegistryObject<Item> COLORED_EGG_GRAY_FLOWER_WHITE =
+            ITEMS.register("colored_egg_gray_flower_white",
+                    ()-> flowerStampedEgg(DyeColor.GRAY, DyeColor.WHITE));
+    public static final RegistryObject<Item> COLORED_EGG_GRAY_FLOWER_ORANGE =
+            ITEMS.register("colored_egg_gray_flower_orange",
+                    ()-> flowerStampedEgg(DyeColor.GRAY, DyeColor.ORANGE));
+    public static final RegistryObject<Item> COLORED_EGG_GRAY_FLOWER_MAGENTA =
+            ITEMS.register("colored_egg_gray_flower_magenta",
+                    ()-> flowerStampedEgg(DyeColor.GRAY, DyeColor.LIGHT_BLUE));
+    public static final RegistryObject<Item> COLORED_EGG_GRAY_FLOWER_LIGHT_BLUE =
+            ITEMS.register("colored_egg_gray_flower_light_blue",
+                    ()-> flowerStampedEgg(DyeColor.GRAY, DyeColor.LIGHT_BLUE));
+    public static final RegistryObject<Item> COLORED_EGG_GRAY_FLOWER_YELLOW =
+            ITEMS.register("colored_egg_gray_flower_yellow",
+                    ()-> flowerStampedEgg(DyeColor.GRAY, DyeColor.YELLOW));
+    public static final RegistryObject<Item> COLORED_EGG_GRAY_FLOWER_LIME =
+            ITEMS.register("colored_egg_gray_flower_lime",
+                    ()-> flowerStampedEgg(DyeColor.GRAY, DyeColor.LIME));
+    public static final RegistryObject<Item> COLORED_EGG_GRAY_FLOWER_PINK =
+            ITEMS.register("colored_egg_gray_flower_pink",
+                    ()-> flowerStampedEgg(DyeColor.GRAY, DyeColor.PINK));
+    public static final RegistryObject<Item> COLORED_EGG_GRAY_FLOWER_GRAY =
+            ITEMS.register("colored_egg_gray_flower_gray",
+                    ()-> flowerStampedEgg(DyeColor.GRAY, DyeColor.GRAY));
+    public static final RegistryObject<Item> COLORED_EGG_GRAY_FLOWER_LIGHT_GRAY =
+            ITEMS.register("colored_egg_gray_flower_light_gray",
+                    ()-> flowerStampedEgg(DyeColor.GRAY, DyeColor.LIGHT_GRAY));
+    public static final RegistryObject<Item> COLORED_EGG_GRAY_FLOWER_CYAN =
+            ITEMS.register("colored_egg_gray_flower_cyan",
+                    ()-> flowerStampedEgg(DyeColor.GRAY, DyeColor.CYAN));
+    public static final RegistryObject<Item> COLORED_EGG_GRAY_FLOWER_PURPLE =
+            ITEMS.register("colored_egg_gray_flower_purple",
+                    ()-> flowerStampedEgg(DyeColor.GRAY, DyeColor.PURPLE));
+    public static final RegistryObject<Item> COLORED_EGG_GRAY_FLOWER_BLUE =
+            ITEMS.register("colored_egg_gray_flower_blue",
+                    ()-> flowerStampedEgg(DyeColor.GRAY, DyeColor.BLUE));
+    public static final RegistryObject<Item> COLORED_EGG_GRAY_FLOWER_BROWN =
+            ITEMS.register("colored_egg_gray_flower_brown",
+                    ()-> flowerStampedEgg(DyeColor.GRAY, DyeColor.BROWN));
+    public static final RegistryObject<Item> COLORED_EGG_GRAY_FLOWER_GREEN =
+            ITEMS.register("colored_egg_gray_flower_green",
+                    ()-> flowerStampedEgg(DyeColor.GRAY, DyeColor.GREEN));
+    public static final RegistryObject<Item> COLORED_EGG_GRAY_FLOWER_RED =
+            ITEMS.register("colored_egg_gray_flower_red",
+                    ()-> flowerStampedEgg(DyeColor.GRAY, DyeColor.RED));
+    public static final RegistryObject<Item> COLORED_EGG_GRAY_FLOWER_BLACK =
+            ITEMS.register("colored_egg_gray_flower_black",
+                    ()-> flowerStampedEgg(DyeColor.GRAY, DyeColor.BLACK));
 
-    // light gray colored egg checkered variants
-    public static final RegistryObject<Item> COLORED_EGG_LIGHT_GRAY_CHECKERED_WHITE =
-            ITEMS.register("colored_egg_light_gray_checkered_white",
-                    ()-> checkeredStampedEgg(DyeColor.LIGHT_GRAY, DyeColor.WHITE));
-    public static final RegistryObject<Item> COLORED_EGG_LIGHT_GRAY_CHECKERED_ORANGE =
-            ITEMS.register("colored_egg_light_gray_checkered_orange",
-                    ()-> checkeredStampedEgg(DyeColor.LIGHT_GRAY, DyeColor.ORANGE));
-    public static final RegistryObject<Item> COLORED_EGG_LIGHT_GRAY_CHECKERED_MAGENTA =
-            ITEMS.register("colored_egg_light_gray_checkered_magenta",
-                    ()-> checkeredStampedEgg(DyeColor.LIGHT_GRAY, DyeColor.LIGHT_BLUE));
-    public static final RegistryObject<Item> COLORED_EGG_LIGHT_GRAY_CHECKERED_LIGHT_BLUE =
-            ITEMS.register("colored_egg_light_gray_checkered_light_blue",
-                    ()-> checkeredStampedEgg(DyeColor.LIGHT_GRAY, DyeColor.LIGHT_BLUE));
-    public static final RegistryObject<Item> COLORED_EGG_LIGHT_GRAY_CHECKERED_YELLOW =
-            ITEMS.register("colored_egg_light_gray_checkered_yellow",
-                    ()-> checkeredStampedEgg(DyeColor.LIGHT_GRAY, DyeColor.YELLOW));
-    public static final RegistryObject<Item> COLORED_EGG_LIGHT_GRAY_CHECKERED_LIME =
-            ITEMS.register("colored_egg_light_gray_checkered_lime",
-                    ()-> checkeredStampedEgg(DyeColor.LIGHT_GRAY, DyeColor.LIME));
-    public static final RegistryObject<Item> COLORED_EGG_LIGHT_GRAY_CHECKERED_PINK =
-            ITEMS.register("colored_egg_light_gray_checkered_pink",
-                    ()-> checkeredStampedEgg(DyeColor.LIGHT_GRAY, DyeColor.PINK));
-    public static final RegistryObject<Item> COLORED_EGG_LIGHT_GRAY_CHECKERED_GRAY =
-            ITEMS.register("colored_egg_light_gray_checkered_gray",
-                    ()-> checkeredStampedEgg(DyeColor.LIGHT_GRAY, DyeColor.GRAY));
-    public static final RegistryObject<Item> COLORED_EGG_LIGHT_GRAY_CHECKERED_LIGHT_GRAY =
-            ITEMS.register("colored_egg_light_gray_checkered_light_gray",
-                    ()-> checkeredStampedEgg(DyeColor.LIGHT_GRAY, DyeColor.LIGHT_GRAY));
-    public static final RegistryObject<Item> COLORED_EGG_LIGHT_GRAY_CHECKERED_CYAN =
-            ITEMS.register("colored_egg_light_gray_checkered_cyan",
-                    ()-> checkeredStampedEgg(DyeColor.LIGHT_GRAY, DyeColor.CYAN));
-    public static final RegistryObject<Item> COLORED_EGG_LIGHT_GRAY_CHECKERED_PURPLE =
-            ITEMS.register("colored_egg_light_gray_checkered_purple",
-                    ()-> checkeredStampedEgg(DyeColor.LIGHT_GRAY, DyeColor.PURPLE));
-    public static final RegistryObject<Item> COLORED_EGG_LIGHT_GRAY_CHECKERED_BLUE =
-            ITEMS.register("colored_egg_light_gray_checkered_blue",
-                    ()-> checkeredStampedEgg(DyeColor.LIGHT_GRAY, DyeColor.BLUE));
-    public static final RegistryObject<Item> COLORED_EGG_LIGHT_GRAY_CHECKERED_BROWN =
-            ITEMS.register("colored_egg_light_gray_checkered_brown",
-                    ()-> checkeredStampedEgg(DyeColor.LIGHT_GRAY, DyeColor.BROWN));
-    public static final RegistryObject<Item> COLORED_EGG_LIGHT_GRAY_CHECKERED_GREEN =
-            ITEMS.register("colored_egg_light_gray_checkered_green",
-                    ()-> checkeredStampedEgg(DyeColor.LIGHT_GRAY, DyeColor.GREEN));
-    public static final RegistryObject<Item> COLORED_EGG_LIGHT_GRAY_CHECKERED_RED =
-            ITEMS.register("colored_egg_light_gray_checkered_red",
-                    ()-> checkeredStampedEgg(DyeColor.LIGHT_GRAY, DyeColor.RED));
-    public static final RegistryObject<Item> COLORED_EGG_LIGHT_GRAY_CHECKERED_BLACK =
-            ITEMS.register("colored_egg_light_gray_checkered_black",
-                    ()-> checkeredStampedEgg(DyeColor.LIGHT_GRAY, DyeColor.BLACK));
+    // light gray colored egg flower variants
+    public static final RegistryObject<Item> COLORED_EGG_LIGHT_GRAY_FLOWER_WHITE =
+            ITEMS.register("colored_egg_light_gray_flower_white",
+                    ()-> flowerStampedEgg(DyeColor.LIGHT_GRAY, DyeColor.WHITE));
+    public static final RegistryObject<Item> COLORED_EGG_LIGHT_GRAY_FLOWER_ORANGE =
+            ITEMS.register("colored_egg_light_gray_flower_orange",
+                    ()-> flowerStampedEgg(DyeColor.LIGHT_GRAY, DyeColor.ORANGE));
+    public static final RegistryObject<Item> COLORED_EGG_LIGHT_GRAY_FLOWER_MAGENTA =
+            ITEMS.register("colored_egg_light_gray_flower_magenta",
+                    ()-> flowerStampedEgg(DyeColor.LIGHT_GRAY, DyeColor.LIGHT_BLUE));
+    public static final RegistryObject<Item> COLORED_EGG_LIGHT_GRAY_FLOWER_LIGHT_BLUE =
+            ITEMS.register("colored_egg_light_gray_flower_light_blue",
+                    ()-> flowerStampedEgg(DyeColor.LIGHT_GRAY, DyeColor.LIGHT_BLUE));
+    public static final RegistryObject<Item> COLORED_EGG_LIGHT_GRAY_FLOWER_YELLOW =
+            ITEMS.register("colored_egg_light_gray_flower_yellow",
+                    ()-> flowerStampedEgg(DyeColor.LIGHT_GRAY, DyeColor.YELLOW));
+    public static final RegistryObject<Item> COLORED_EGG_LIGHT_GRAY_FLOWER_LIME =
+            ITEMS.register("colored_egg_light_gray_flower_lime",
+                    ()-> flowerStampedEgg(DyeColor.LIGHT_GRAY, DyeColor.LIME));
+    public static final RegistryObject<Item> COLORED_EGG_LIGHT_GRAY_FLOWER_PINK =
+            ITEMS.register("colored_egg_light_gray_flower_pink",
+                    ()-> flowerStampedEgg(DyeColor.LIGHT_GRAY, DyeColor.PINK));
+    public static final RegistryObject<Item> COLORED_EGG_LIGHT_GRAY_FLOWER_GRAY =
+            ITEMS.register("colored_egg_light_gray_flower_gray",
+                    ()-> flowerStampedEgg(DyeColor.LIGHT_GRAY, DyeColor.GRAY));
+    public static final RegistryObject<Item> COLORED_EGG_LIGHT_GRAY_FLOWER_LIGHT_GRAY =
+            ITEMS.register("colored_egg_light_gray_flower_light_gray",
+                    ()-> flowerStampedEgg(DyeColor.LIGHT_GRAY, DyeColor.LIGHT_GRAY));
+    public static final RegistryObject<Item> COLORED_EGG_LIGHT_GRAY_FLOWER_CYAN =
+            ITEMS.register("colored_egg_light_gray_flower_cyan",
+                    ()-> flowerStampedEgg(DyeColor.LIGHT_GRAY, DyeColor.CYAN));
+    public static final RegistryObject<Item> COLORED_EGG_LIGHT_GRAY_FLOWER_PURPLE =
+            ITEMS.register("colored_egg_light_gray_flower_purple",
+                    ()-> flowerStampedEgg(DyeColor.LIGHT_GRAY, DyeColor.PURPLE));
+    public static final RegistryObject<Item> COLORED_EGG_LIGHT_GRAY_FLOWER_BLUE =
+            ITEMS.register("colored_egg_light_gray_flower_blue",
+                    ()-> flowerStampedEgg(DyeColor.LIGHT_GRAY, DyeColor.BLUE));
+    public static final RegistryObject<Item> COLORED_EGG_LIGHT_GRAY_FLOWER_BROWN =
+            ITEMS.register("colored_egg_light_gray_flower_brown",
+                    ()-> flowerStampedEgg(DyeColor.LIGHT_GRAY, DyeColor.BROWN));
+    public static final RegistryObject<Item> COLORED_EGG_LIGHT_GRAY_FLOWER_GREEN =
+            ITEMS.register("colored_egg_light_gray_flower_green",
+                    ()-> flowerStampedEgg(DyeColor.LIGHT_GRAY, DyeColor.GREEN));
+    public static final RegistryObject<Item> COLORED_EGG_LIGHT_GRAY_FLOWER_RED =
+            ITEMS.register("colored_egg_light_gray_flower_red",
+                    ()-> flowerStampedEgg(DyeColor.LIGHT_GRAY, DyeColor.RED));
+    public static final RegistryObject<Item> COLORED_EGG_LIGHT_GRAY_FLOWER_BLACK =
+            ITEMS.register("colored_egg_light_gray_flower_black",
+                    ()-> flowerStampedEgg(DyeColor.LIGHT_GRAY, DyeColor.BLACK));
 
-    // cyan colored egg checkered variants
-    public static final RegistryObject<Item> COLORED_EGG_CYAN_CHECKERED_WHITE =
-            ITEMS.register("colored_egg_cyan_checkered_white",
-                    ()-> checkeredStampedEgg(DyeColor.CYAN, DyeColor.WHITE));
-    public static final RegistryObject<Item> COLORED_EGG_CYAN_CHECKERED_ORANGE =
-            ITEMS.register("colored_egg_cyan_checkered_orange",
-                    ()-> checkeredStampedEgg(DyeColor.CYAN, DyeColor.ORANGE));
-    public static final RegistryObject<Item> COLORED_EGG_CYAN_CHECKERED_MAGENTA =
-            ITEMS.register("colored_egg_cyan_checkered_magenta",
-                    ()-> checkeredStampedEgg(DyeColor.CYAN, DyeColor.LIGHT_BLUE));
-    public static final RegistryObject<Item> COLORED_EGG_CYAN_CHECKERED_LIGHT_BLUE =
-            ITEMS.register("colored_egg_cyan_checkered_light_blue",
-                    ()-> checkeredStampedEgg(DyeColor.CYAN, DyeColor.LIGHT_BLUE));
-    public static final RegistryObject<Item> COLORED_EGG_CYAN_CHECKERED_YELLOW =
-            ITEMS.register("colored_egg_cyan_checkered_yellow",
-                    ()-> checkeredStampedEgg(DyeColor.CYAN, DyeColor.YELLOW));
-    public static final RegistryObject<Item> COLORED_EGG_CYAN_CHECKERED_LIME =
-            ITEMS.register("colored_egg_cyan_checkered_lime",
-                    ()-> checkeredStampedEgg(DyeColor.CYAN, DyeColor.LIME));
-    public static final RegistryObject<Item> COLORED_EGG_CYAN_CHECKERED_PINK =
-            ITEMS.register("colored_egg_cyan_checkered_pink",
-                    ()-> checkeredStampedEgg(DyeColor.CYAN, DyeColor.PINK));
-    public static final RegistryObject<Item> COLORED_EGG_CYAN_CHECKERED_GRAY =
-            ITEMS.register("colored_egg_cyan_checkered_gray",
-                    ()-> checkeredStampedEgg(DyeColor.CYAN, DyeColor.GRAY));
-    public static final RegistryObject<Item> COLORED_EGG_CYAN_CHECKERED_LIGHT_GRAY =
-            ITEMS.register("colored_egg_cyan_checkered_light_gray",
-                    ()-> checkeredStampedEgg(DyeColor.CYAN, DyeColor.LIGHT_GRAY));
-    public static final RegistryObject<Item> COLORED_EGG_CYAN_CHECKERED_CYAN =
-            ITEMS.register("colored_egg_cyan_checkered_cyan",
-                    ()-> checkeredStampedEgg(DyeColor.CYAN, DyeColor.CYAN));
-    public static final RegistryObject<Item> COLORED_EGG_CYAN_CHECKERED_PURPLE =
-            ITEMS.register("colored_egg_cyan_checkered_purple",
-                    ()-> checkeredStampedEgg(DyeColor.CYAN, DyeColor.PURPLE));
-    public static final RegistryObject<Item> COLORED_EGG_CYAN_CHECKERED_BLUE =
-            ITEMS.register("colored_egg_cyan_checkered_blue",
-                    ()-> checkeredStampedEgg(DyeColor.CYAN, DyeColor.BLUE));
-    public static final RegistryObject<Item> COLORED_EGG_CYAN_CHECKERED_BROWN =
-            ITEMS.register("colored_egg_cyan_checkered_brown",
-                    ()-> checkeredStampedEgg(DyeColor.CYAN, DyeColor.BROWN));
-    public static final RegistryObject<Item> COLORED_EGG_CYAN_CHECKERED_GREEN =
-            ITEMS.register("colored_egg_cyan_checkered_green",
-                    ()-> checkeredStampedEgg(DyeColor.CYAN, DyeColor.GREEN));
-    public static final RegistryObject<Item> COLORED_EGG_CYAN_CHECKERED_RED =
-            ITEMS.register("colored_egg_cyan_checkered_red",
-                    ()-> checkeredStampedEgg(DyeColor.CYAN, DyeColor.RED));
-    public static final RegistryObject<Item> COLORED_EGG_CYAN_CHECKERED_BLACK =
-            ITEMS.register("colored_egg_cyan_checkered_black",
-                    ()-> checkeredStampedEgg(DyeColor.CYAN, DyeColor.BLACK));
+    // cyan colored egg flower variants
+    public static final RegistryObject<Item> COLORED_EGG_CYAN_FLOWER_WHITE =
+            ITEMS.register("colored_egg_cyan_flower_white",
+                    ()-> flowerStampedEgg(DyeColor.CYAN, DyeColor.WHITE));
+    public static final RegistryObject<Item> COLORED_EGG_CYAN_FLOWER_ORANGE =
+            ITEMS.register("colored_egg_cyan_flower_orange",
+                    ()-> flowerStampedEgg(DyeColor.CYAN, DyeColor.ORANGE));
+    public static final RegistryObject<Item> COLORED_EGG_CYAN_FLOWER_MAGENTA =
+            ITEMS.register("colored_egg_cyan_flower_magenta",
+                    ()-> flowerStampedEgg(DyeColor.CYAN, DyeColor.LIGHT_BLUE));
+    public static final RegistryObject<Item> COLORED_EGG_CYAN_FLOWER_LIGHT_BLUE =
+            ITEMS.register("colored_egg_cyan_flower_light_blue",
+                    ()-> flowerStampedEgg(DyeColor.CYAN, DyeColor.LIGHT_BLUE));
+    public static final RegistryObject<Item> COLORED_EGG_CYAN_FLOWER_YELLOW =
+            ITEMS.register("colored_egg_cyan_flower_yellow",
+                    ()-> flowerStampedEgg(DyeColor.CYAN, DyeColor.YELLOW));
+    public static final RegistryObject<Item> COLORED_EGG_CYAN_FLOWER_LIME =
+            ITEMS.register("colored_egg_cyan_flower_lime",
+                    ()-> flowerStampedEgg(DyeColor.CYAN, DyeColor.LIME));
+    public static final RegistryObject<Item> COLORED_EGG_CYAN_FLOWER_PINK =
+            ITEMS.register("colored_egg_cyan_flower_pink",
+                    ()-> flowerStampedEgg(DyeColor.CYAN, DyeColor.PINK));
+    public static final RegistryObject<Item> COLORED_EGG_CYAN_FLOWER_GRAY =
+            ITEMS.register("colored_egg_cyan_flower_gray",
+                    ()-> flowerStampedEgg(DyeColor.CYAN, DyeColor.GRAY));
+    public static final RegistryObject<Item> COLORED_EGG_CYAN_FLOWER_LIGHT_GRAY =
+            ITEMS.register("colored_egg_cyan_flower_light_gray",
+                    ()-> flowerStampedEgg(DyeColor.CYAN, DyeColor.LIGHT_GRAY));
+    public static final RegistryObject<Item> COLORED_EGG_CYAN_FLOWER_CYAN =
+            ITEMS.register("colored_egg_cyan_flower_cyan",
+                    ()-> flowerStampedEgg(DyeColor.CYAN, DyeColor.CYAN));
+    public static final RegistryObject<Item> COLORED_EGG_CYAN_FLOWER_PURPLE =
+            ITEMS.register("colored_egg_cyan_flower_purple",
+                    ()-> flowerStampedEgg(DyeColor.CYAN, DyeColor.PURPLE));
+    public static final RegistryObject<Item> COLORED_EGG_CYAN_FLOWER_BLUE =
+            ITEMS.register("colored_egg_cyan_flower_blue",
+                    ()-> flowerStampedEgg(DyeColor.CYAN, DyeColor.BLUE));
+    public static final RegistryObject<Item> COLORED_EGG_CYAN_FLOWER_BROWN =
+            ITEMS.register("colored_egg_cyan_flower_brown",
+                    ()-> flowerStampedEgg(DyeColor.CYAN, DyeColor.BROWN));
+    public static final RegistryObject<Item> COLORED_EGG_CYAN_FLOWER_GREEN =
+            ITEMS.register("colored_egg_cyan_flower_green",
+                    ()-> flowerStampedEgg(DyeColor.CYAN, DyeColor.GREEN));
+    public static final RegistryObject<Item> COLORED_EGG_CYAN_FLOWER_RED =
+            ITEMS.register("colored_egg_cyan_flower_red",
+                    ()-> flowerStampedEgg(DyeColor.CYAN, DyeColor.RED));
+    public static final RegistryObject<Item> COLORED_EGG_CYAN_FLOWER_BLACK =
+            ITEMS.register("colored_egg_cyan_flower_black",
+                    ()-> flowerStampedEgg(DyeColor.CYAN, DyeColor.BLACK));
 
-    // purple colored egg checkered variants
-    public static final RegistryObject<Item> COLORED_EGG_PURPLE_CHECKERED_WHITE =
-            ITEMS.register("colored_egg_purple_checkered_white",
-                    ()-> checkeredStampedEgg(DyeColor.PURPLE, DyeColor.WHITE));
-    public static final RegistryObject<Item> COLORED_EGG_PURPLE_CHECKERED_ORANGE =
-            ITEMS.register("colored_egg_purple_checkered_orange",
-                    ()-> checkeredStampedEgg(DyeColor.PURPLE, DyeColor.ORANGE));
-    public static final RegistryObject<Item> COLORED_EGG_PURPLE_CHECKERED_MAGENTA =
-            ITEMS.register("colored_egg_purple_checkered_magenta",
-                    ()-> checkeredStampedEgg(DyeColor.PURPLE, DyeColor.LIGHT_BLUE));
-    public static final RegistryObject<Item> COLORED_EGG_PURPLE_CHECKERED_LIGHT_BLUE =
-            ITEMS.register("colored_egg_purple_checkered_light_blue",
-                    ()-> checkeredStampedEgg(DyeColor.PURPLE, DyeColor.LIGHT_BLUE));
-    public static final RegistryObject<Item> COLORED_EGG_PURPLE_CHECKERED_YELLOW =
-            ITEMS.register("colored_egg_purple_checkered_yellow",
-                    ()-> checkeredStampedEgg(DyeColor.PURPLE, DyeColor.YELLOW));
-    public static final RegistryObject<Item> COLORED_EGG_PURPLE_CHECKERED_LIME =
-            ITEMS.register("colored_egg_purple_checkered_lime",
-                    ()-> checkeredStampedEgg(DyeColor.PURPLE, DyeColor.LIME));
-    public static final RegistryObject<Item> COLORED_EGG_PURPLE_CHECKERED_PINK =
-            ITEMS.register("colored_egg_purple_checkered_pink",
-                    ()-> checkeredStampedEgg(DyeColor.PURPLE, DyeColor.PINK));
-    public static final RegistryObject<Item> COLORED_EGG_PURPLE_CHECKERED_GRAY =
-            ITEMS.register("colored_egg_purple_checkered_gray",
-                    ()-> checkeredStampedEgg(DyeColor.PURPLE, DyeColor.GRAY));
-    public static final RegistryObject<Item> COLORED_EGG_PURPLE_CHECKERED_LIGHT_GRAY =
-            ITEMS.register("colored_egg_purple_checkered_light_gray",
-                    ()-> checkeredStampedEgg(DyeColor.PURPLE, DyeColor.LIGHT_GRAY));
-    public static final RegistryObject<Item> COLORED_EGG_PURPLE_CHECKERED_CYAN =
-            ITEMS.register("colored_egg_purple_checkered_cyan",
-                    ()-> checkeredStampedEgg(DyeColor.PURPLE, DyeColor.CYAN));
-    public static final RegistryObject<Item> COLORED_EGG_PURPLE_CHECKERED_PURPLE =
-            ITEMS.register("colored_egg_purple_checkered_purple",
-                    ()-> checkeredStampedEgg(DyeColor.PURPLE, DyeColor.PURPLE));
-    public static final RegistryObject<Item> COLORED_EGG_PURPLE_CHECKERED_BLUE =
-            ITEMS.register("colored_egg_purple_checkered_blue",
-                    ()-> checkeredStampedEgg(DyeColor.PURPLE, DyeColor.BLUE));
-    public static final RegistryObject<Item> COLORED_EGG_PURPLE_CHECKERED_BROWN =
-            ITEMS.register("colored_egg_purple_checkered_brown",
-                    ()-> checkeredStampedEgg(DyeColor.PURPLE, DyeColor.BROWN));
-    public static final RegistryObject<Item> COLORED_EGG_PURPLE_CHECKERED_GREEN =
-            ITEMS.register("colored_egg_purple_checkered_green",
-                    ()-> checkeredStampedEgg(DyeColor.PURPLE, DyeColor.GREEN));
-    public static final RegistryObject<Item> COLORED_EGG_PURPLE_CHECKERED_RED =
-            ITEMS.register("colored_egg_purple_checkered_red",
-                    ()-> checkeredStampedEgg(DyeColor.PURPLE, DyeColor.RED));
-    public static final RegistryObject<Item> COLORED_EGG_PURPLE_CHECKERED_BLACK =
-            ITEMS.register("colored_egg_purple_checkered_black",
-                    ()-> checkeredStampedEgg(DyeColor.PURPLE, DyeColor.BLACK));
+    // purple colored egg flower variants
+    public static final RegistryObject<Item> COLORED_EGG_PURPLE_FLOWER_WHITE =
+            ITEMS.register("colored_egg_purple_flower_white",
+                    ()-> flowerStampedEgg(DyeColor.PURPLE, DyeColor.WHITE));
+    public static final RegistryObject<Item> COLORED_EGG_PURPLE_FLOWER_ORANGE =
+            ITEMS.register("colored_egg_purple_flower_orange",
+                    ()-> flowerStampedEgg(DyeColor.PURPLE, DyeColor.ORANGE));
+    public static final RegistryObject<Item> COLORED_EGG_PURPLE_FLOWER_MAGENTA =
+            ITEMS.register("colored_egg_purple_flower_magenta",
+                    ()-> flowerStampedEgg(DyeColor.PURPLE, DyeColor.LIGHT_BLUE));
+    public static final RegistryObject<Item> COLORED_EGG_PURPLE_FLOWER_LIGHT_BLUE =
+            ITEMS.register("colored_egg_purple_flower_light_blue",
+                    ()-> flowerStampedEgg(DyeColor.PURPLE, DyeColor.LIGHT_BLUE));
+    public static final RegistryObject<Item> COLORED_EGG_PURPLE_FLOWER_YELLOW =
+            ITEMS.register("colored_egg_purple_flower_yellow",
+                    ()-> flowerStampedEgg(DyeColor.PURPLE, DyeColor.YELLOW));
+    public static final RegistryObject<Item> COLORED_EGG_PURPLE_FLOWER_LIME =
+            ITEMS.register("colored_egg_purple_flower_lime",
+                    ()-> flowerStampedEgg(DyeColor.PURPLE, DyeColor.LIME));
+    public static final RegistryObject<Item> COLORED_EGG_PURPLE_FLOWER_PINK =
+            ITEMS.register("colored_egg_purple_flower_pink",
+                    ()-> flowerStampedEgg(DyeColor.PURPLE, DyeColor.PINK));
+    public static final RegistryObject<Item> COLORED_EGG_PURPLE_FLOWER_GRAY =
+            ITEMS.register("colored_egg_purple_flower_gray",
+                    ()-> flowerStampedEgg(DyeColor.PURPLE, DyeColor.GRAY));
+    public static final RegistryObject<Item> COLORED_EGG_PURPLE_FLOWER_LIGHT_GRAY =
+            ITEMS.register("colored_egg_purple_flower_light_gray",
+                    ()-> flowerStampedEgg(DyeColor.PURPLE, DyeColor.LIGHT_GRAY));
+    public static final RegistryObject<Item> COLORED_EGG_PURPLE_FLOWER_CYAN =
+            ITEMS.register("colored_egg_purple_flower_cyan",
+                    ()-> flowerStampedEgg(DyeColor.PURPLE, DyeColor.CYAN));
+    public static final RegistryObject<Item> COLORED_EGG_PURPLE_FLOWER_PURPLE =
+            ITEMS.register("colored_egg_purple_flower_purple",
+                    ()-> flowerStampedEgg(DyeColor.PURPLE, DyeColor.PURPLE));
+    public static final RegistryObject<Item> COLORED_EGG_PURPLE_FLOWER_BLUE =
+            ITEMS.register("colored_egg_purple_flower_blue",
+                    ()-> flowerStampedEgg(DyeColor.PURPLE, DyeColor.BLUE));
+    public static final RegistryObject<Item> COLORED_EGG_PURPLE_FLOWER_BROWN =
+            ITEMS.register("colored_egg_purple_flower_brown",
+                    ()-> flowerStampedEgg(DyeColor.PURPLE, DyeColor.BROWN));
+    public static final RegistryObject<Item> COLORED_EGG_PURPLE_FLOWER_GREEN =
+            ITEMS.register("colored_egg_purple_flower_green",
+                    ()-> flowerStampedEgg(DyeColor.PURPLE, DyeColor.GREEN));
+    public static final RegistryObject<Item> COLORED_EGG_PURPLE_FLOWER_RED =
+            ITEMS.register("colored_egg_purple_flower_red",
+                    ()-> flowerStampedEgg(DyeColor.PURPLE, DyeColor.RED));
+    public static final RegistryObject<Item> COLORED_EGG_PURPLE_FLOWER_BLACK =
+            ITEMS.register("colored_egg_purple_flower_black",
+                    ()-> flowerStampedEgg(DyeColor.PURPLE, DyeColor.BLACK));
 
-    // blue colored egg checkered variants
-    public static final RegistryObject<Item> COLORED_EGG_BLUE_CHECKERED_WHITE =
-            ITEMS.register("colored_egg_blue_checkered_white",
-                    ()-> checkeredStampedEgg(DyeColor.BLUE, DyeColor.WHITE));
-    public static final RegistryObject<Item> COLORED_EGG_BLUE_CHECKERED_ORANGE =
-            ITEMS.register("colored_egg_blue_checkered_orange",
-                    ()-> checkeredStampedEgg(DyeColor.BLUE, DyeColor.ORANGE));
-    public static final RegistryObject<Item> COLORED_EGG_BLUE_CHECKERED_MAGENTA =
-            ITEMS.register("colored_egg_blue_checkered_magenta",
-                    ()-> checkeredStampedEgg(DyeColor.BLUE, DyeColor.LIGHT_BLUE));
-    public static final RegistryObject<Item> COLORED_EGG_BLUE_CHECKERED_LIGHT_BLUE =
-            ITEMS.register("colored_egg_blue_checkered_light_blue",
-                    ()-> checkeredStampedEgg(DyeColor.BLUE, DyeColor.LIGHT_BLUE));
-    public static final RegistryObject<Item> COLORED_EGG_BLUE_CHECKERED_YELLOW =
-            ITEMS.register("colored_egg_blue_checkered_yellow",
-                    ()-> checkeredStampedEgg(DyeColor.BLUE, DyeColor.YELLOW));
-    public static final RegistryObject<Item> COLORED_EGG_BLUE_CHECKERED_LIME =
-            ITEMS.register("colored_egg_blue_checkered_lime",
-                    ()-> checkeredStampedEgg(DyeColor.BLUE, DyeColor.LIME));
-    public static final RegistryObject<Item> COLORED_EGG_BLUE_CHECKERED_PINK =
-            ITEMS.register("colored_egg_blue_checkered_pink",
-                    ()-> checkeredStampedEgg(DyeColor.BLUE, DyeColor.PINK));
-    public static final RegistryObject<Item> COLORED_EGG_BLUE_CHECKERED_GRAY =
-            ITEMS.register("colored_egg_blue_checkered_gray",
-                    ()-> checkeredStampedEgg(DyeColor.BLUE, DyeColor.GRAY));
-    public static final RegistryObject<Item> COLORED_EGG_BLUE_CHECKERED_LIGHT_GRAY =
-            ITEMS.register("colored_egg_blue_checkered_light_gray",
-                    ()-> checkeredStampedEgg(DyeColor.BLUE, DyeColor.LIGHT_GRAY));
-    public static final RegistryObject<Item> COLORED_EGG_BLUE_CHECKERED_CYAN =
-            ITEMS.register("colored_egg_blue_checkered_cyan",
-                    ()-> checkeredStampedEgg(DyeColor.BLUE, DyeColor.CYAN));
-    public static final RegistryObject<Item> COLORED_EGG_BLUE_CHECKERED_PURPLE =
-            ITEMS.register("colored_egg_blue_checkered_purple",
-                    ()-> checkeredStampedEgg(DyeColor.BLUE, DyeColor.PURPLE));
-    public static final RegistryObject<Item> COLORED_EGG_BLUE_CHECKERED_BLUE =
-            ITEMS.register("colored_egg_blue_checkered_blue",
-                    ()-> checkeredStampedEgg(DyeColor.BLUE, DyeColor.BLUE));
-    public static final RegistryObject<Item> COLORED_EGG_BLUE_CHECKERED_BROWN =
-            ITEMS.register("colored_egg_blue_checkered_brown",
-                    ()-> checkeredStampedEgg(DyeColor.BLUE, DyeColor.BROWN));
-    public static final RegistryObject<Item> COLORED_EGG_BLUE_CHECKERED_GREEN =
-            ITEMS.register("colored_egg_blue_checkered_green",
-                    ()-> checkeredStampedEgg(DyeColor.BLUE, DyeColor.GREEN));
-    public static final RegistryObject<Item> COLORED_EGG_BLUE_CHECKERED_RED =
-            ITEMS.register("colored_egg_blue_checkered_red",
-                    ()-> checkeredStampedEgg(DyeColor.BLUE, DyeColor.RED));
-    public static final RegistryObject<Item> COLORED_EGG_BLUE_CHECKERED_BLACK =
-            ITEMS.register("colored_egg_blue_checkered_black",
-                    ()-> checkeredStampedEgg(DyeColor.BLUE, DyeColor.BLACK));
+    // blue colored egg flower variants
+    public static final RegistryObject<Item> COLORED_EGG_BLUE_FLOWER_WHITE =
+            ITEMS.register("colored_egg_blue_flower_white",
+                    ()-> flowerStampedEgg(DyeColor.BLUE, DyeColor.WHITE));
+    public static final RegistryObject<Item> COLORED_EGG_BLUE_FLOWER_ORANGE =
+            ITEMS.register("colored_egg_blue_flower_orange",
+                    ()-> flowerStampedEgg(DyeColor.BLUE, DyeColor.ORANGE));
+    public static final RegistryObject<Item> COLORED_EGG_BLUE_FLOWER_MAGENTA =
+            ITEMS.register("colored_egg_blue_flower_magenta",
+                    ()-> flowerStampedEgg(DyeColor.BLUE, DyeColor.LIGHT_BLUE));
+    public static final RegistryObject<Item> COLORED_EGG_BLUE_FLOWER_LIGHT_BLUE =
+            ITEMS.register("colored_egg_blue_flower_light_blue",
+                    ()-> flowerStampedEgg(DyeColor.BLUE, DyeColor.LIGHT_BLUE));
+    public static final RegistryObject<Item> COLORED_EGG_BLUE_FLOWER_YELLOW =
+            ITEMS.register("colored_egg_blue_flower_yellow",
+                    ()-> flowerStampedEgg(DyeColor.BLUE, DyeColor.YELLOW));
+    public static final RegistryObject<Item> COLORED_EGG_BLUE_FLOWER_LIME =
+            ITEMS.register("colored_egg_blue_flower_lime",
+                    ()-> flowerStampedEgg(DyeColor.BLUE, DyeColor.LIME));
+    public static final RegistryObject<Item> COLORED_EGG_BLUE_FLOWER_PINK =
+            ITEMS.register("colored_egg_blue_flower_pink",
+                    ()-> flowerStampedEgg(DyeColor.BLUE, DyeColor.PINK));
+    public static final RegistryObject<Item> COLORED_EGG_BLUE_FLOWER_GRAY =
+            ITEMS.register("colored_egg_blue_flower_gray",
+                    ()-> flowerStampedEgg(DyeColor.BLUE, DyeColor.GRAY));
+    public static final RegistryObject<Item> COLORED_EGG_BLUE_FLOWER_LIGHT_GRAY =
+            ITEMS.register("colored_egg_blue_flower_light_gray",
+                    ()-> flowerStampedEgg(DyeColor.BLUE, DyeColor.LIGHT_GRAY));
+    public static final RegistryObject<Item> COLORED_EGG_BLUE_FLOWER_CYAN =
+            ITEMS.register("colored_egg_blue_flower_cyan",
+                    ()-> flowerStampedEgg(DyeColor.BLUE, DyeColor.CYAN));
+    public static final RegistryObject<Item> COLORED_EGG_BLUE_FLOWER_PURPLE =
+            ITEMS.register("colored_egg_blue_flower_purple",
+                    ()-> flowerStampedEgg(DyeColor.BLUE, DyeColor.PURPLE));
+    public static final RegistryObject<Item> COLORED_EGG_BLUE_FLOWER_BLUE =
+            ITEMS.register("colored_egg_blue_flower_blue",
+                    ()-> flowerStampedEgg(DyeColor.BLUE, DyeColor.BLUE));
+    public static final RegistryObject<Item> COLORED_EGG_BLUE_FLOWER_BROWN =
+            ITEMS.register("colored_egg_blue_flower_brown",
+                    ()-> flowerStampedEgg(DyeColor.BLUE, DyeColor.BROWN));
+    public static final RegistryObject<Item> COLORED_EGG_BLUE_FLOWER_GREEN =
+            ITEMS.register("colored_egg_blue_flower_green",
+                    ()-> flowerStampedEgg(DyeColor.BLUE, DyeColor.GREEN));
+    public static final RegistryObject<Item> COLORED_EGG_BLUE_FLOWER_RED =
+            ITEMS.register("colored_egg_blue_flower_red",
+                    ()-> flowerStampedEgg(DyeColor.BLUE, DyeColor.RED));
+    public static final RegistryObject<Item> COLORED_EGG_BLUE_FLOWER_BLACK =
+            ITEMS.register("colored_egg_blue_flower_black",
+                    ()-> flowerStampedEgg(DyeColor.BLUE, DyeColor.BLACK));
 
-    // brown colored egg checkered variants
-    public static final RegistryObject<Item> COLORED_EGG_BROWN_CHECKERED_WHITE =
-            ITEMS.register("colored_egg_brown_checkered_white",
-                    ()-> checkeredStampedEgg(DyeColor.BROWN, DyeColor.WHITE));
-    public static final RegistryObject<Item> COLORED_EGG_BROWN_CHECKERED_ORANGE =
-            ITEMS.register("colored_egg_brown_checkered_orange",
-                    ()-> checkeredStampedEgg(DyeColor.BROWN, DyeColor.ORANGE));
-    public static final RegistryObject<Item> COLORED_EGG_BROWN_CHECKERED_MAGENTA =
-            ITEMS.register("colored_egg_brown_checkered_magenta",
-                    ()-> checkeredStampedEgg(DyeColor.BROWN, DyeColor.LIGHT_BLUE));
-    public static final RegistryObject<Item> COLORED_EGG_BROWN_CHECKERED_LIGHT_BLUE =
-            ITEMS.register("colored_egg_brown_checkered_light_blue",
-                    ()-> checkeredStampedEgg(DyeColor.BROWN, DyeColor.LIGHT_BLUE));
-    public static final RegistryObject<Item> COLORED_EGG_BROWN_CHECKERED_YELLOW =
-            ITEMS.register("colored_egg_brown_checkered_yellow",
-                    ()-> checkeredStampedEgg(DyeColor.BROWN, DyeColor.YELLOW));
-    public static final RegistryObject<Item> COLORED_EGG_BROWN_CHECKERED_LIME =
-            ITEMS.register("colored_egg_brown_checkered_lime",
-                    ()-> checkeredStampedEgg(DyeColor.BROWN, DyeColor.LIME));
-    public static final RegistryObject<Item> COLORED_EGG_BROWN_CHECKERED_PINK =
-            ITEMS.register("colored_egg_brown_checkered_pink",
-                    ()-> checkeredStampedEgg(DyeColor.BROWN, DyeColor.PINK));
-    public static final RegistryObject<Item> COLORED_EGG_BROWN_CHECKERED_GRAY =
-            ITEMS.register("colored_egg_brown_checkered_gray",
-                    ()-> checkeredStampedEgg(DyeColor.BROWN, DyeColor.GRAY));
-    public static final RegistryObject<Item> COLORED_EGG_BROWN_CHECKERED_LIGHT_GRAY =
-            ITEMS.register("colored_egg_brown_checkered_light_gray",
-                    ()-> checkeredStampedEgg(DyeColor.BROWN, DyeColor.LIGHT_GRAY));
-    public static final RegistryObject<Item> COLORED_EGG_BROWN_CHECKERED_CYAN =
-            ITEMS.register("colored_egg_brown_checkered_cyan",
-                    ()-> checkeredStampedEgg(DyeColor.BROWN, DyeColor.CYAN));
-    public static final RegistryObject<Item> COLORED_EGG_BROWN_CHECKERED_PURPLE =
-            ITEMS.register("colored_egg_brown_checkered_purple",
-                    ()-> checkeredStampedEgg(DyeColor.BROWN, DyeColor.PURPLE));
-    public static final RegistryObject<Item> COLORED_EGG_BROWN_CHECKERED_BLUE =
-            ITEMS.register("colored_egg_brown_checkered_blue",
-                    ()-> checkeredStampedEgg(DyeColor.BROWN, DyeColor.BLUE));
-    public static final RegistryObject<Item> COLORED_EGG_BROWN_CHECKERED_BROWN =
-            ITEMS.register("colored_egg_brown_checkered_brown",
-                    ()-> checkeredStampedEgg(DyeColor.BROWN, DyeColor.BROWN));
-    public static final RegistryObject<Item> COLORED_EGG_BROWN_CHECKERED_GREEN =
-            ITEMS.register("colored_egg_brown_checkered_green",
-                    ()-> checkeredStampedEgg(DyeColor.BROWN, DyeColor.GREEN));
-    public static final RegistryObject<Item> COLORED_EGG_BROWN_CHECKERED_RED =
-            ITEMS.register("colored_egg_brown_checkered_red",
-                    ()-> checkeredStampedEgg(DyeColor.BROWN, DyeColor.RED));
-    public static final RegistryObject<Item> COLORED_EGG_BROWN_CHECKERED_BLACK =
-            ITEMS.register("colored_egg_brown_checkered_black",
-                    ()-> checkeredStampedEgg(DyeColor.BROWN, DyeColor.BLACK));
+    // brown colored egg flower variants
+    public static final RegistryObject<Item> COLORED_EGG_BROWN_FLOWER_WHITE =
+            ITEMS.register("colored_egg_brown_flower_white",
+                    ()-> flowerStampedEgg(DyeColor.BROWN, DyeColor.WHITE));
+    public static final RegistryObject<Item> COLORED_EGG_BROWN_FLOWER_ORANGE =
+            ITEMS.register("colored_egg_brown_flower_orange",
+                    ()-> flowerStampedEgg(DyeColor.BROWN, DyeColor.ORANGE));
+    public static final RegistryObject<Item> COLORED_EGG_BROWN_FLOWER_MAGENTA =
+            ITEMS.register("colored_egg_brown_flower_magenta",
+                    ()-> flowerStampedEgg(DyeColor.BROWN, DyeColor.LIGHT_BLUE));
+    public static final RegistryObject<Item> COLORED_EGG_BROWN_FLOWER_LIGHT_BLUE =
+            ITEMS.register("colored_egg_brown_flower_light_blue",
+                    ()-> flowerStampedEgg(DyeColor.BROWN, DyeColor.LIGHT_BLUE));
+    public static final RegistryObject<Item> COLORED_EGG_BROWN_FLOWER_YELLOW =
+            ITEMS.register("colored_egg_brown_flower_yellow",
+                    ()-> flowerStampedEgg(DyeColor.BROWN, DyeColor.YELLOW));
+    public static final RegistryObject<Item> COLORED_EGG_BROWN_FLOWER_LIME =
+            ITEMS.register("colored_egg_brown_flower_lime",
+                    ()-> flowerStampedEgg(DyeColor.BROWN, DyeColor.LIME));
+    public static final RegistryObject<Item> COLORED_EGG_BROWN_FLOWER_PINK =
+            ITEMS.register("colored_egg_brown_flower_pink",
+                    ()-> flowerStampedEgg(DyeColor.BROWN, DyeColor.PINK));
+    public static final RegistryObject<Item> COLORED_EGG_BROWN_FLOWER_GRAY =
+            ITEMS.register("colored_egg_brown_flower_gray",
+                    ()-> flowerStampedEgg(DyeColor.BROWN, DyeColor.GRAY));
+    public static final RegistryObject<Item> COLORED_EGG_BROWN_FLOWER_LIGHT_GRAY =
+            ITEMS.register("colored_egg_brown_flower_light_gray",
+                    ()-> flowerStampedEgg(DyeColor.BROWN, DyeColor.LIGHT_GRAY));
+    public static final RegistryObject<Item> COLORED_EGG_BROWN_FLOWER_CYAN =
+            ITEMS.register("colored_egg_brown_flower_cyan",
+                    ()-> flowerStampedEgg(DyeColor.BROWN, DyeColor.CYAN));
+    public static final RegistryObject<Item> COLORED_EGG_BROWN_FLOWER_PURPLE =
+            ITEMS.register("colored_egg_brown_flower_purple",
+                    ()-> flowerStampedEgg(DyeColor.BROWN, DyeColor.PURPLE));
+    public static final RegistryObject<Item> COLORED_EGG_BROWN_FLOWER_BLUE =
+            ITEMS.register("colored_egg_brown_flower_blue",
+                    ()-> flowerStampedEgg(DyeColor.BROWN, DyeColor.BLUE));
+    public static final RegistryObject<Item> COLORED_EGG_BROWN_FLOWER_BROWN =
+            ITEMS.register("colored_egg_brown_flower_brown",
+                    ()-> flowerStampedEgg(DyeColor.BROWN, DyeColor.BROWN));
+    public static final RegistryObject<Item> COLORED_EGG_BROWN_FLOWER_GREEN =
+            ITEMS.register("colored_egg_brown_flower_green",
+                    ()-> flowerStampedEgg(DyeColor.BROWN, DyeColor.GREEN));
+    public static final RegistryObject<Item> COLORED_EGG_BROWN_FLOWER_RED =
+            ITEMS.register("colored_egg_brown_flower_red",
+                    ()-> flowerStampedEgg(DyeColor.BROWN, DyeColor.RED));
+    public static final RegistryObject<Item> COLORED_EGG_BROWN_FLOWER_BLACK =
+            ITEMS.register("colored_egg_brown_flower_black",
+                    ()-> flowerStampedEgg(DyeColor.BROWN, DyeColor.BLACK));
 
-    // green colored egg checkered variants
-    public static final RegistryObject<Item> COLORED_EGG_GREEN_CHECKERED_WHITE =
-            ITEMS.register("colored_egg_green_checkered_white",
-                    ()-> checkeredStampedEgg(DyeColor.GREEN, DyeColor.WHITE));
-    public static final RegistryObject<Item> COLORED_EGG_GREEN_CHECKERED_ORANGE =
-            ITEMS.register("colored_egg_green_checkered_orange",
-                    ()-> checkeredStampedEgg(DyeColor.GREEN, DyeColor.ORANGE));
-    public static final RegistryObject<Item> COLORED_EGG_GREEN_CHECKERED_MAGENTA =
-            ITEMS.register("colored_egg_green_checkered_magenta",
-                    ()-> checkeredStampedEgg(DyeColor.GREEN, DyeColor.LIGHT_BLUE));
-    public static final RegistryObject<Item> COLORED_EGG_GREEN_CHECKERED_LIGHT_BLUE =
-            ITEMS.register("colored_egg_green_checkered_light_blue",
-                    ()-> checkeredStampedEgg(DyeColor.GREEN, DyeColor.LIGHT_BLUE));
-    public static final RegistryObject<Item> COLORED_EGG_GREEN_CHECKERED_YELLOW =
-            ITEMS.register("colored_egg_green_checkered_yellow",
-                    ()-> checkeredStampedEgg(DyeColor.GREEN, DyeColor.YELLOW));
-    public static final RegistryObject<Item> COLORED_EGG_GREEN_CHECKERED_LIME =
-            ITEMS.register("colored_egg_green_checkered_lime",
-                    ()-> checkeredStampedEgg(DyeColor.GREEN, DyeColor.LIME));
-    public static final RegistryObject<Item> COLORED_EGG_GREEN_CHECKERED_PINK =
-            ITEMS.register("colored_egg_green_checkered_pink",
-                    ()-> checkeredStampedEgg(DyeColor.GREEN, DyeColor.PINK));
-    public static final RegistryObject<Item> COLORED_EGG_GREEN_CHECKERED_GRAY =
-            ITEMS.register("colored_egg_green_checkered_gray",
-                    ()-> checkeredStampedEgg(DyeColor.GREEN, DyeColor.GRAY));
-    public static final RegistryObject<Item> COLORED_EGG_GREEN_CHECKERED_LIGHT_GRAY =
-            ITEMS.register("colored_egg_green_checkered_light_gray",
-                    ()-> checkeredStampedEgg(DyeColor.GREEN, DyeColor.LIGHT_GRAY));
-    public static final RegistryObject<Item> COLORED_EGG_GREEN_CHECKERED_CYAN =
-            ITEMS.register("colored_egg_green_checkered_cyan",
-                    ()-> checkeredStampedEgg(DyeColor.GREEN, DyeColor.CYAN));
-    public static final RegistryObject<Item> COLORED_EGG_GREEN_CHECKERED_PURPLE =
-            ITEMS.register("colored_egg_green_checkered_purple",
-                    ()-> checkeredStampedEgg(DyeColor.GREEN, DyeColor.PURPLE));
-    public static final RegistryObject<Item> COLORED_EGG_GREEN_CHECKERED_BLUE =
-            ITEMS.register("colored_egg_green_checkered_blue",
-                    ()-> checkeredStampedEgg(DyeColor.GREEN, DyeColor.BLUE));
-    public static final RegistryObject<Item> COLORED_EGG_GREEN_CHECKERED_BROWN =
-            ITEMS.register("colored_egg_green_checkered_brown",
-                    ()-> checkeredStampedEgg(DyeColor.GREEN, DyeColor.BROWN));
-    public static final RegistryObject<Item> COLORED_EGG_GREEN_CHECKERED_GREEN =
-            ITEMS.register("colored_egg_green_checkered_green",
-                    ()-> checkeredStampedEgg(DyeColor.GREEN, DyeColor.GREEN));
-    public static final RegistryObject<Item> COLORED_EGG_GREEN_CHECKERED_RED =
-            ITEMS.register("colored_egg_green_checkered_red",
-                    ()-> checkeredStampedEgg(DyeColor.GREEN, DyeColor.RED));
-    public static final RegistryObject<Item> COLORED_EGG_GREEN_CHECKERED_BLACK =
-            ITEMS.register("colored_egg_green_checkered_black",
-                    ()-> checkeredStampedEgg(DyeColor.GREEN, DyeColor.BLACK));
+    // green colored egg flower variants
+    public static final RegistryObject<Item> COLORED_EGG_GREEN_FLOWER_WHITE =
+            ITEMS.register("colored_egg_green_flower_white",
+                    ()-> flowerStampedEgg(DyeColor.GREEN, DyeColor.WHITE));
+    public static final RegistryObject<Item> COLORED_EGG_GREEN_FLOWER_ORANGE =
+            ITEMS.register("colored_egg_green_flower_orange",
+                    ()-> flowerStampedEgg(DyeColor.GREEN, DyeColor.ORANGE));
+    public static final RegistryObject<Item> COLORED_EGG_GREEN_FLOWER_MAGENTA =
+            ITEMS.register("colored_egg_green_flower_magenta",
+                    ()-> flowerStampedEgg(DyeColor.GREEN, DyeColor.LIGHT_BLUE));
+    public static final RegistryObject<Item> COLORED_EGG_GREEN_FLOWER_LIGHT_BLUE =
+            ITEMS.register("colored_egg_green_flower_light_blue",
+                    ()-> flowerStampedEgg(DyeColor.GREEN, DyeColor.LIGHT_BLUE));
+    public static final RegistryObject<Item> COLORED_EGG_GREEN_FLOWER_YELLOW =
+            ITEMS.register("colored_egg_green_flower_yellow",
+                    ()-> flowerStampedEgg(DyeColor.GREEN, DyeColor.YELLOW));
+    public static final RegistryObject<Item> COLORED_EGG_GREEN_FLOWER_LIME =
+            ITEMS.register("colored_egg_green_flower_lime",
+                    ()-> flowerStampedEgg(DyeColor.GREEN, DyeColor.LIME));
+    public static final RegistryObject<Item> COLORED_EGG_GREEN_FLOWER_PINK =
+            ITEMS.register("colored_egg_green_flower_pink",
+                    ()-> flowerStampedEgg(DyeColor.GREEN, DyeColor.PINK));
+    public static final RegistryObject<Item> COLORED_EGG_GREEN_FLOWER_GRAY =
+            ITEMS.register("colored_egg_green_flower_gray",
+                    ()-> flowerStampedEgg(DyeColor.GREEN, DyeColor.GRAY));
+    public static final RegistryObject<Item> COLORED_EGG_GREEN_FLOWER_LIGHT_GRAY =
+            ITEMS.register("colored_egg_green_flower_light_gray",
+                    ()-> flowerStampedEgg(DyeColor.GREEN, DyeColor.LIGHT_GRAY));
+    public static final RegistryObject<Item> COLORED_EGG_GREEN_FLOWER_CYAN =
+            ITEMS.register("colored_egg_green_flower_cyan",
+                    ()-> flowerStampedEgg(DyeColor.GREEN, DyeColor.CYAN));
+    public static final RegistryObject<Item> COLORED_EGG_GREEN_FLOWER_PURPLE =
+            ITEMS.register("colored_egg_green_flower_purple",
+                    ()-> flowerStampedEgg(DyeColor.GREEN, DyeColor.PURPLE));
+    public static final RegistryObject<Item> COLORED_EGG_GREEN_FLOWER_BLUE =
+            ITEMS.register("colored_egg_green_flower_blue",
+                    ()-> flowerStampedEgg(DyeColor.GREEN, DyeColor.BLUE));
+    public static final RegistryObject<Item> COLORED_EGG_GREEN_FLOWER_BROWN =
+            ITEMS.register("colored_egg_green_flower_brown",
+                    ()-> flowerStampedEgg(DyeColor.GREEN, DyeColor.BROWN));
+    public static final RegistryObject<Item> COLORED_EGG_GREEN_FLOWER_GREEN =
+            ITEMS.register("colored_egg_green_flower_green",
+                    ()-> flowerStampedEgg(DyeColor.GREEN, DyeColor.GREEN));
+    public static final RegistryObject<Item> COLORED_EGG_GREEN_FLOWER_RED =
+            ITEMS.register("colored_egg_green_flower_red",
+                    ()-> flowerStampedEgg(DyeColor.GREEN, DyeColor.RED));
+    public static final RegistryObject<Item> COLORED_EGG_GREEN_FLOWER_BLACK =
+            ITEMS.register("colored_egg_green_flower_black",
+                    ()-> flowerStampedEgg(DyeColor.GREEN, DyeColor.BLACK));
 
-    // red colored egg checkered variants
-    public static final RegistryObject<Item> COLORED_EGG_RED_CHECKERED_WHITE =
-            ITEMS.register("colored_egg_red_checkered_white",
-                    ()-> checkeredStampedEgg(DyeColor.RED, DyeColor.WHITE));
-    public static final RegistryObject<Item> COLORED_EGG_RED_CHECKERED_ORANGE =
-            ITEMS.register("colored_egg_red_checkered_orange",
-                    ()-> checkeredStampedEgg(DyeColor.RED, DyeColor.ORANGE));
-    public static final RegistryObject<Item> COLORED_EGG_RED_CHECKERED_MAGENTA =
-            ITEMS.register("colored_egg_red_checkered_magenta",
-                    ()-> checkeredStampedEgg(DyeColor.RED, DyeColor.LIGHT_BLUE));
-    public static final RegistryObject<Item> COLORED_EGG_RED_CHECKERED_LIGHT_BLUE =
-            ITEMS.register("colored_egg_red_checkered_light_blue",
-                    ()-> checkeredStampedEgg(DyeColor.RED, DyeColor.LIGHT_BLUE));
-    public static final RegistryObject<Item> COLORED_EGG_RED_CHECKERED_YELLOW =
-            ITEMS.register("colored_egg_red_checkered_yellow",
-                    ()-> checkeredStampedEgg(DyeColor.RED, DyeColor.YELLOW));
-    public static final RegistryObject<Item> COLORED_EGG_RED_CHECKERED_LIME =
-            ITEMS.register("colored_egg_red_checkered_lime",
-                    ()-> checkeredStampedEgg(DyeColor.RED, DyeColor.LIME));
-    public static final RegistryObject<Item> COLORED_EGG_RED_CHECKERED_PINK =
-            ITEMS.register("colored_egg_red_checkered_pink",
-                    ()-> checkeredStampedEgg(DyeColor.RED, DyeColor.PINK));
-    public static final RegistryObject<Item> COLORED_EGG_RED_CHECKERED_GRAY =
-            ITEMS.register("colored_egg_red_checkered_gray",
-                    ()-> checkeredStampedEgg(DyeColor.RED, DyeColor.GRAY));
-    public static final RegistryObject<Item> COLORED_EGG_RED_CHECKERED_LIGHT_GRAY =
-            ITEMS.register("colored_egg_red_checkered_light_gray",
-                    ()-> checkeredStampedEgg(DyeColor.RED, DyeColor.LIGHT_GRAY));
-    public static final RegistryObject<Item> COLORED_EGG_RED_CHECKERED_CYAN =
-            ITEMS.register("colored_egg_red_checkered_cyan",
-                    ()-> checkeredStampedEgg(DyeColor.RED, DyeColor.CYAN));
-    public static final RegistryObject<Item> COLORED_EGG_RED_CHECKERED_PURPLE =
-            ITEMS.register("colored_egg_red_checkered_purple",
-                    ()-> checkeredStampedEgg(DyeColor.RED, DyeColor.PURPLE));
-    public static final RegistryObject<Item> COLORED_EGG_RED_CHECKERED_BLUE =
-            ITEMS.register("colored_egg_red_checkered_blue",
-                    ()-> checkeredStampedEgg(DyeColor.RED, DyeColor.BLUE));
-    public static final RegistryObject<Item> COLORED_EGG_RED_CHECKERED_BROWN =
-            ITEMS.register("colored_egg_red_checkered_brown",
-                    ()-> checkeredStampedEgg(DyeColor.RED, DyeColor.BROWN));
-    public static final RegistryObject<Item> COLORED_EGG_RED_CHECKERED_GREEN =
-            ITEMS.register("colored_egg_red_checkered_green",
-                    ()-> checkeredStampedEgg(DyeColor.RED, DyeColor.GREEN));
-    public static final RegistryObject<Item> COLORED_EGG_RED_CHECKERED_RED =
-            ITEMS.register("colored_egg_red_checkered_red",
-                    ()-> checkeredStampedEgg(DyeColor.RED, DyeColor.RED));
-    public static final RegistryObject<Item> COLORED_EGG_RED_CHECKERED_BLACK =
-            ITEMS.register("colored_egg_red_checkered_black",
-                    ()-> checkeredStampedEgg(DyeColor.RED, DyeColor.BLACK));
+    // red colored egg flower variants
+    public static final RegistryObject<Item> COLORED_EGG_RED_FLOWER_WHITE =
+            ITEMS.register("colored_egg_red_flower_white",
+                    ()-> flowerStampedEgg(DyeColor.RED, DyeColor.WHITE));
+    public static final RegistryObject<Item> COLORED_EGG_RED_FLOWER_ORANGE =
+            ITEMS.register("colored_egg_red_flower_orange",
+                    ()-> flowerStampedEgg(DyeColor.RED, DyeColor.ORANGE));
+    public static final RegistryObject<Item> COLORED_EGG_RED_FLOWER_MAGENTA =
+            ITEMS.register("colored_egg_red_flower_magenta",
+                    ()-> flowerStampedEgg(DyeColor.RED, DyeColor.LIGHT_BLUE));
+    public static final RegistryObject<Item> COLORED_EGG_RED_FLOWER_LIGHT_BLUE =
+            ITEMS.register("colored_egg_red_flower_light_blue",
+                    ()-> flowerStampedEgg(DyeColor.RED, DyeColor.LIGHT_BLUE));
+    public static final RegistryObject<Item> COLORED_EGG_RED_FLOWER_YELLOW =
+            ITEMS.register("colored_egg_red_flower_yellow",
+                    ()-> flowerStampedEgg(DyeColor.RED, DyeColor.YELLOW));
+    public static final RegistryObject<Item> COLORED_EGG_RED_FLOWER_LIME =
+            ITEMS.register("colored_egg_red_flower_lime",
+                    ()-> flowerStampedEgg(DyeColor.RED, DyeColor.LIME));
+    public static final RegistryObject<Item> COLORED_EGG_RED_FLOWER_PINK =
+            ITEMS.register("colored_egg_red_flower_pink",
+                    ()-> flowerStampedEgg(DyeColor.RED, DyeColor.PINK));
+    public static final RegistryObject<Item> COLORED_EGG_RED_FLOWER_GRAY =
+            ITEMS.register("colored_egg_red_flower_gray",
+                    ()-> flowerStampedEgg(DyeColor.RED, DyeColor.GRAY));
+    public static final RegistryObject<Item> COLORED_EGG_RED_FLOWER_LIGHT_GRAY =
+            ITEMS.register("colored_egg_red_flower_light_gray",
+                    ()-> flowerStampedEgg(DyeColor.RED, DyeColor.LIGHT_GRAY));
+    public static final RegistryObject<Item> COLORED_EGG_RED_FLOWER_CYAN =
+            ITEMS.register("colored_egg_red_flower_cyan",
+                    ()-> flowerStampedEgg(DyeColor.RED, DyeColor.CYAN));
+    public static final RegistryObject<Item> COLORED_EGG_RED_FLOWER_PURPLE =
+            ITEMS.register("colored_egg_red_flower_purple",
+                    ()-> flowerStampedEgg(DyeColor.RED, DyeColor.PURPLE));
+    public static final RegistryObject<Item> COLORED_EGG_RED_FLOWER_BLUE =
+            ITEMS.register("colored_egg_red_flower_blue",
+                    ()-> flowerStampedEgg(DyeColor.RED, DyeColor.BLUE));
+    public static final RegistryObject<Item> COLORED_EGG_RED_FLOWER_BROWN =
+            ITEMS.register("colored_egg_red_flower_brown",
+                    ()-> flowerStampedEgg(DyeColor.RED, DyeColor.BROWN));
+    public static final RegistryObject<Item> COLORED_EGG_RED_FLOWER_GREEN =
+            ITEMS.register("colored_egg_red_flower_green",
+                    ()-> flowerStampedEgg(DyeColor.RED, DyeColor.GREEN));
+    public static final RegistryObject<Item> COLORED_EGG_RED_FLOWER_RED =
+            ITEMS.register("colored_egg_red_flower_red",
+                    ()-> flowerStampedEgg(DyeColor.RED, DyeColor.RED));
+    public static final RegistryObject<Item> COLORED_EGG_RED_FLOWER_BLACK =
+            ITEMS.register("colored_egg_red_flower_black",
+                    ()-> flowerStampedEgg(DyeColor.RED, DyeColor.BLACK));
 
-    // black colored egg checkered variants
-    public static final RegistryObject<Item> COLORED_EGG_BLACK_CHECKERED_WHITE =
-            ITEMS.register("colored_egg_black_checkered_white",
-                    ()-> checkeredStampedEgg(DyeColor.BLACK, DyeColor.WHITE));
-    public static final RegistryObject<Item> COLORED_EGG_BLACK_CHECKERED_ORANGE =
-            ITEMS.register("colored_egg_black_checkered_orange",
-                    ()-> checkeredStampedEgg(DyeColor.BLACK, DyeColor.ORANGE));
-    public static final RegistryObject<Item> COLORED_EGG_BLACK_CHECKERED_MAGENTA =
-            ITEMS.register("colored_egg_black_checkered_magenta",
-                    ()-> checkeredStampedEgg(DyeColor.BLACK, DyeColor.LIGHT_BLUE));
-    public static final RegistryObject<Item> COLORED_EGG_BLACK_CHECKERED_LIGHT_BLUE =
-            ITEMS.register("colored_egg_black_checkered_light_blue",
-                    ()-> checkeredStampedEgg(DyeColor.BLACK, DyeColor.LIGHT_BLUE));
-    public static final RegistryObject<Item> COLORED_EGG_BLACK_CHECKERED_YELLOW =
-            ITEMS.register("colored_egg_black_checkered_yellow",
-                    ()-> checkeredStampedEgg(DyeColor.BLACK, DyeColor.YELLOW));
-    public static final RegistryObject<Item> COLORED_EGG_BLACK_CHECKERED_LIME =
-            ITEMS.register("colored_egg_black_checkered_lime",
-                    ()-> checkeredStampedEgg(DyeColor.BLACK, DyeColor.LIME));
-    public static final RegistryObject<Item> COLORED_EGG_BLACK_CHECKERED_PINK =
-            ITEMS.register("colored_egg_black_checkered_pink",
-                    ()-> checkeredStampedEgg(DyeColor.BLACK, DyeColor.PINK));
-    public static final RegistryObject<Item> COLORED_EGG_BLACK_CHECKERED_GRAY =
-            ITEMS.register("colored_egg_black_checkered_gray",
-                    ()-> checkeredStampedEgg(DyeColor.BLACK, DyeColor.GRAY));
-    public static final RegistryObject<Item> COLORED_EGG_BLACK_CHECKERED_LIGHT_GRAY =
-            ITEMS.register("colored_egg_black_checkered_light_gray",
-                    ()-> checkeredStampedEgg(DyeColor.BLACK, DyeColor.LIGHT_GRAY));
-    public static final RegistryObject<Item> COLORED_EGG_BLACK_CHECKERED_CYAN =
-            ITEMS.register("colored_egg_black_checkered_cyan",
-                    ()-> checkeredStampedEgg(DyeColor.BLACK, DyeColor.CYAN));
-    public static final RegistryObject<Item> COLORED_EGG_BLACK_CHECKERED_PURPLE =
-            ITEMS.register("colored_egg_black_checkered_purple",
-                    ()-> checkeredStampedEgg(DyeColor.BLACK, DyeColor.PURPLE));
-    public static final RegistryObject<Item> COLORED_EGG_BLACK_CHECKERED_BLUE =
-            ITEMS.register("colored_egg_black_checkered_blue",
-                    ()-> checkeredStampedEgg(DyeColor.BLACK, DyeColor.BLUE));
-    public static final RegistryObject<Item> COLORED_EGG_BLACK_CHECKERED_BROWN =
-            ITEMS.register("colored_egg_black_checkered_brown",
-                    ()-> checkeredStampedEgg(DyeColor.BLACK, DyeColor.BROWN));
-    public static final RegistryObject<Item> COLORED_EGG_BLACK_CHECKERED_GREEN =
-            ITEMS.register("colored_egg_black_checkered_green",
-                    ()-> checkeredStampedEgg(DyeColor.BLACK, DyeColor.GREEN));
-    public static final RegistryObject<Item> COLORED_EGG_BLACK_CHECKERED_RED =
-            ITEMS.register("colored_egg_black_checkered_red",
-                    ()-> checkeredStampedEgg(DyeColor.BLACK, DyeColor.RED));
-    public static final RegistryObject<Item> COLORED_EGG_BLACK_CHECKERED_BLACK =
-            ITEMS.register("colored_egg_black_checkered_black",
-                    ()-> checkeredStampedEgg(DyeColor.BLACK, DyeColor.BLACK));
+    // black colored egg flower variants
+    public static final RegistryObject<Item> COLORED_EGG_BLACK_FLOWER_WHITE =
+            ITEMS.register("colored_egg_black_flower_white",
+                    ()-> flowerStampedEgg(DyeColor.BLACK, DyeColor.WHITE));
+    public static final RegistryObject<Item> COLORED_EGG_BLACK_FLOWER_ORANGE =
+            ITEMS.register("colored_egg_black_flower_orange",
+                    ()-> flowerStampedEgg(DyeColor.BLACK, DyeColor.ORANGE));
+    public static final RegistryObject<Item> COLORED_EGG_BLACK_FLOWER_MAGENTA =
+            ITEMS.register("colored_egg_black_flower_magenta",
+                    ()-> flowerStampedEgg(DyeColor.BLACK, DyeColor.LIGHT_BLUE));
+    public static final RegistryObject<Item> COLORED_EGG_BLACK_FLOWER_LIGHT_BLUE =
+            ITEMS.register("colored_egg_black_flower_light_blue",
+                    ()-> flowerStampedEgg(DyeColor.BLACK, DyeColor.LIGHT_BLUE));
+    public static final RegistryObject<Item> COLORED_EGG_BLACK_FLOWER_YELLOW =
+            ITEMS.register("colored_egg_black_flower_yellow",
+                    ()-> flowerStampedEgg(DyeColor.BLACK, DyeColor.YELLOW));
+    public static final RegistryObject<Item> COLORED_EGG_BLACK_FLOWER_LIME =
+            ITEMS.register("colored_egg_black_flower_lime",
+                    ()-> flowerStampedEgg(DyeColor.BLACK, DyeColor.LIME));
+    public static final RegistryObject<Item> COLORED_EGG_BLACK_FLOWER_PINK =
+            ITEMS.register("colored_egg_black_flower_pink",
+                    ()-> flowerStampedEgg(DyeColor.BLACK, DyeColor.PINK));
+    public static final RegistryObject<Item> COLORED_EGG_BLACK_FLOWER_GRAY =
+            ITEMS.register("colored_egg_black_flower_gray",
+                    ()-> flowerStampedEgg(DyeColor.BLACK, DyeColor.GRAY));
+    public static final RegistryObject<Item> COLORED_EGG_BLACK_FLOWER_LIGHT_GRAY =
+            ITEMS.register("colored_egg_black_flower_light_gray",
+                    ()-> flowerStampedEgg(DyeColor.BLACK, DyeColor.LIGHT_GRAY));
+    public static final RegistryObject<Item> COLORED_EGG_BLACK_FLOWER_CYAN =
+            ITEMS.register("colored_egg_black_flower_cyan",
+                    ()-> flowerStampedEgg(DyeColor.BLACK, DyeColor.CYAN));
+    public static final RegistryObject<Item> COLORED_EGG_BLACK_FLOWER_PURPLE =
+            ITEMS.register("colored_egg_black_flower_purple",
+                    ()-> flowerStampedEgg(DyeColor.BLACK, DyeColor.PURPLE));
+    public static final RegistryObject<Item> COLORED_EGG_BLACK_FLOWER_BLUE =
+            ITEMS.register("colored_egg_black_flower_blue",
+                    ()-> flowerStampedEgg(DyeColor.BLACK, DyeColor.BLUE));
+    public static final RegistryObject<Item> COLORED_EGG_BLACK_FLOWER_BROWN =
+            ITEMS.register("colored_egg_black_flower_brown",
+                    ()-> flowerStampedEgg(DyeColor.BLACK, DyeColor.BROWN));
+    public static final RegistryObject<Item> COLORED_EGG_BLACK_FLOWER_GREEN =
+            ITEMS.register("colored_egg_black_flower_green",
+                    ()-> flowerStampedEgg(DyeColor.BLACK, DyeColor.GREEN));
+    public static final RegistryObject<Item> COLORED_EGG_BLACK_FLOWER_RED =
+            ITEMS.register("colored_egg_black_flower_red",
+                    ()-> flowerStampedEgg(DyeColor.BLACK, DyeColor.RED));
+    public static final RegistryObject<Item> COLORED_EGG_BLACK_FLOWER_BLACK =
+            ITEMS.register("colored_egg_black_flower_black",
+                    ()-> flowerStampedEgg(DyeColor.BLACK, DyeColor.BLACK));
 
     public static final RegistryObject<Item> BASKET_OAK_WHITE =
             ITEMS.register("basket_oak_white", () -> basket(TBABlocks.BASKET_OAK_WHITE.get()));
@@ -2776,24 +2787,24 @@ public class TBAItems {
     }
 
     @Contract("_ -> new")
-    private static @NotNull EasterEggItem blankEgg(DyeColor color) {
+    private static @NotNull EasterEggItem blankColoredEgg(DyeColor color) {
         return new EasterEggItem(color, null,
                 EasterEggProperties.Layer.BLANK,
-                new Item.Properties().food(TBAFoods.EASTER_EGGS)
+                new Item.Properties()
                         .stacksTo(64)
                         .tab(TBATab.TAB));
     }
-    private static @NotNull EasterEggItem checkeredStampedEgg(DyeColor eggColor, DyeColor stampColor) {
+    private static @NotNull EasterEggItem flowerStampedEgg(DyeColor eggColor, DyeColor stampColor) {
         return new EasterEggItem(eggColor, stampColor,
-                EasterEggProperties.Layer.CHECKERED,
-                new Item.Properties().food(TBAFoods.EASTER_EGGS)
+                EasterEggProperties.Layer.FLOWER,
+                new Item.Properties()
                         .stacksTo(64)
                         .tab(TBATab.TAB));
     }
     private static @NotNull EasterEggItem creeperStampedEgg(DyeColor eggColor, DyeColor stampColor) {
         return new EasterEggItem(eggColor, stampColor,
                 EasterEggProperties.Layer.CREEPER,
-                new Item.Properties().food(TBAFoods.EASTER_EGGS)
+                new Item.Properties()
                         .stacksTo(64)
                         .tab(TBATab.TAB));
     }
@@ -2815,7 +2826,7 @@ public class TBAItems {
                 .tab(TBATab.TAB);
     }
 
-    public static Item.@NotNull Properties basicItem() {
+    public static @NotNull Item.Properties basicItem() {
         return (new Item.Properties()).tab(TBATab.TAB);
     }
 

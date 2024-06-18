@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "minecraft:buttons"
+    },
+    {
+      "item": "minecraft:honeycomb"
+    },
+    {
+      "item": "minecraft:honey_bottle"
+    },
+    {
+      "item": "minecraft:creeper_banner_pattern"
+    }
+  ],
+  "result": {
+    "item": "turtleblockacademy:egg_stamp_creeper"
+  }
+}

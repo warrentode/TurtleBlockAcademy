@@ -1,0 +1,27 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:not",
+          "value": {
+            "type": "forge:mod_loaded",
+            "modid": "eggdelight"
+          }
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shapeless",
+        "ingredients": [
+          {
+            "tag": "turtleblockacademy:easter_eggs"
+          }
+        ],
+        "result": {
+          "item": "turtleblockacademy:peeled_egg"
+        }
+      }
+    }
+  ]
+}

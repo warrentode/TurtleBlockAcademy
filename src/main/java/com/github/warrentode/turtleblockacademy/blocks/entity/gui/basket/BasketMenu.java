@@ -3,7 +3,6 @@ package com.github.warrentode.turtleblockacademy.blocks.entity.gui.basket;
 import com.github.warrentode.turtleblockacademy.blocks.entity.BasketBlockEntity;
 import com.github.warrentode.turtleblockacademy.blocks.entity.gui.TBAMenuTypes;
 import com.github.warrentode.turtleblockacademy.items.BasketBlockItem;
-import com.github.warrentode.turtleblockacademy.util.LogUtil;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.entity.player.Player;
@@ -24,7 +23,6 @@ public class BasketMenu extends AbstractContainerMenu {
         if (basketItem.getTag() != null) {
             basketInventory.deserializeNBT(basketItem.getTag().getCompound("BlockEntityTag").getCompound("inventory"));
         }
-        LogUtil.info("BasketMenu created with ID: {}", containerId);
 
         int numEntityRows = 3;
         int numEntityCols = 3;
@@ -116,21 +114,17 @@ public class BasketMenu extends AbstractContainerMenu {
     @Override
     public void removed(@NotNull Player player) {
         super.removed(player);
-        LogUtil.info("BasketMenu removed for player: {}", player.getName().getString());
 
         // Save the inventory to the basket's NBT
-        //noinspection IfStatementWithIdenticalBranches
         if (basketItem.getTag() != null) {
             CompoundTag tag = basketItem.getTag().getCompound("BlockEntityTag");
             tag.put("inventory", basketInventory.serializeNBT());
             basketItem.getTag().put("BlockEntityTag", tag);
-            LogUtil.info("Basket inventory saved for player: {}", player.getName().getString());
         }
         else {
             CompoundTag tag = new CompoundTag();
             tag.put("inventory", basketInventory.serializeNBT());
             basketItem.getOrCreateTag().put("BlockEntityTag", tag);
-            LogUtil.info("Basket inventory saved for player: {}", player.getName().getString());
         }
     }
 }
