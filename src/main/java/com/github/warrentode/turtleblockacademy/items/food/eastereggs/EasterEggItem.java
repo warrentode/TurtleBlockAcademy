@@ -13,9 +13,11 @@ import org.jetbrains.annotations.NotNull;
 import vectorwing.farmersdelight.common.item.ConsumableItem;
 
 import javax.annotation.Nullable;
+import java.util.ArrayList;
 import java.util.List;
 
 public class EasterEggItem extends ConsumableItem {
+    public static final List<EasterEggItem> EASTER_EGGS = new ArrayList<>();
     private final DyeColor baseColor;
     private final DyeColor layerColor;
     private final EasterEggProperties.Layer layer;
@@ -28,6 +30,8 @@ public class EasterEggItem extends ConsumableItem {
         this.baseColor = baseColor;
         this.layerColor = layerColor;
         this.easterEggItem = this;
+
+        EASTER_EGGS.add(this);
     }
 
     public String getEggLayerName() {
@@ -757,32 +761,53 @@ public class EasterEggItem extends ConsumableItem {
         return TBAItems.COLORED_EGG_WHITE.get().getDefaultInstance();
     }
 
-    public int getTintIndex(int tintIndex) {
+    public int getBaseTint() {
         DyeColor baseTint = getBaseColor(this.baseColor);
+        // values from https://www.w3schools.com/colors/colors_crayola.asp
+        return switch (baseTint) {
+            case ORANGE -> 0xFF9966;
+            case MAGENTA -> 0xDB91EF;
+            case LIGHT_BLUE -> 0x50BFE6;
+            case YELLOW -> 0xFFD12A;
+            case LIME -> 0xAFE313;
+            case PINK -> 0xFC80A5;
+            case GRAY -> 0x828E84;
+            case LIGHT_GRAY -> 0xC8C8CD;
+            case CYAN -> 0x3AA8C1;
+            case PURPLE -> 0x9C51B6;
+            case BLUE -> 0x2E5894;
+            case BROWN -> 0xAF6E4D;
+            case GREEN -> 0x29AB87;
+            case RED -> 0xDA2C43;
+            case BLACK -> 0x353839;
+            default -> 0xFEFEFE;
+        };
+    }
+
+    public int getStampTint() {
         DyeColor layerTint = getLayerColor(this.layerColor);
-        if (baseTint == null) {
-            return 0xF9FFFE;
-        }
-        else {
-            return switch (baseTint) {
-                case ORANGE -> 0xF9801D;
-                case MAGENTA -> 0xC74EBD;
-                case LIGHT_BLUE -> 0x3AB3DA;
-                case YELLOW -> 0xFED83D;
-                case LIME -> 0x80C71F;
-                case PINK -> 0xF38BAA;
-                case GRAY -> 0x474F52;
-                case LIGHT_GRAY -> 0x9D9D97;
-                case CYAN -> 0x169C9C;
-                case PURPLE -> 0x8932B8;
-                case BLUE -> 0x3C44AA;
-                case BROWN -> 0x835432;
-                case GREEN -> 0x5E7C16;
-                case RED -> 0xB02E26;
-                case BLACK -> 0x1D1D21;
-                default -> 0xF9FFFE;
+        // base layer values mixed 3 or more shades darker here https://www.w3schools.com/colors/colors_picker.asp
+        if (layerTint != null) {
+            return switch (layerTint) {
+                case ORANGE -> 0xe64d00;
+                case MAGENTA -> 0xa41dc9;
+                case LIGHT_BLUE -> 0x1d9bc9;
+                case YELLOW -> 0xe6b400;
+                case LIME -> 0x7fa50d;
+                case PINK -> 0xe10547;
+                case GRAY -> 0x555e57;
+                case LIGHT_GRAY -> 0x6d6d78;
+                case CYAN -> 0x297889;
+                case PURPLE -> 0x5c2d6c;
+                case BLUE -> 0x2a5189;
+                case BROWN -> 0x6a442f;
+                case GREEN -> 0x196751;
+                case RED -> 0x991a31;
+                case BLACK -> 0x181a1b;
+                default -> 0xcccccc;
             };
         }
+        return 0xFEFEFE;
     }
 
     public void appendHoverText(@NotNull ItemStack stack, @Nullable Level level, @NotNull List<Component> tooltips, @NotNull TooltipFlag isAdvanced) {

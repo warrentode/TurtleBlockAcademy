@@ -114,6 +114,7 @@ public class TBAItems {
                     new PickledItem(foodItem(TBAFoods.PICKLES),
                             true, true));
 
+
     public static final RegistryObject<Item> BOILED_EGG =
             ITEMS.register("boiled_egg", () ->
                     new Item(basicItem()));
@@ -315,7 +316,7 @@ public class TBAItems {
                     ()-> creeperStampedEgg(DyeColor.LIGHT_BLUE, DyeColor.ORANGE));
     public static final RegistryObject<Item> COLORED_EGG_LIGHT_BLUE_CREEPER_MAGENTA =
             ITEMS.register("colored_egg_light_blue_creeper_magenta",
-                    ()-> creeperStampedEgg(DyeColor.LIGHT_BLUE, DyeColor.LIGHT_BLUE));
+                    ()-> creeperStampedEgg(DyeColor.LIGHT_BLUE, DyeColor.MAGENTA));
     public static final RegistryObject<Item> COLORED_EGG_LIGHT_BLUE_CREEPER_LIGHT_BLUE =
             ITEMS.register("colored_egg_light_blue_creeper_light_blue",
                     ()-> creeperStampedEgg(DyeColor.LIGHT_BLUE, DyeColor.LIGHT_BLUE));
@@ -365,7 +366,7 @@ public class TBAItems {
                     ()-> creeperStampedEgg(DyeColor.YELLOW, DyeColor.ORANGE));
     public static final RegistryObject<Item> COLORED_EGG_YELLOW_CREEPER_MAGENTA =
             ITEMS.register("colored_egg_yellow_creeper_magenta",
-                    ()-> creeperStampedEgg(DyeColor.YELLOW, DyeColor.LIGHT_BLUE));
+                    ()-> creeperStampedEgg(DyeColor.YELLOW, DyeColor.MAGENTA));
     public static final RegistryObject<Item> COLORED_EGG_YELLOW_CREEPER_LIGHT_BLUE =
             ITEMS.register("colored_egg_yellow_creeper_light_blue",
                     ()-> creeperStampedEgg(DyeColor.YELLOW, DyeColor.LIGHT_BLUE));
@@ -415,7 +416,7 @@ public class TBAItems {
                     ()-> creeperStampedEgg(DyeColor.LIME, DyeColor.ORANGE));
     public static final RegistryObject<Item> COLORED_EGG_LIME_CREEPER_MAGENTA =
             ITEMS.register("colored_egg_lime_creeper_magenta",
-                    ()-> creeperStampedEgg(DyeColor.LIME, DyeColor.LIGHT_BLUE));
+                    ()-> creeperStampedEgg(DyeColor.LIME, DyeColor.MAGENTA));
     public static final RegistryObject<Item> COLORED_EGG_LIME_CREEPER_LIGHT_BLUE =
             ITEMS.register("colored_egg_lime_creeper_light_blue",
                     ()-> creeperStampedEgg(DyeColor.LIME, DyeColor.LIGHT_BLUE));
@@ -465,7 +466,7 @@ public class TBAItems {
                     ()-> creeperStampedEgg(DyeColor.PINK, DyeColor.ORANGE));
     public static final RegistryObject<Item> COLORED_EGG_PINK_CREEPER_MAGENTA =
             ITEMS.register("colored_egg_pink_creeper_magenta",
-                    ()-> creeperStampedEgg(DyeColor.PINK, DyeColor.LIGHT_BLUE));
+                    ()-> creeperStampedEgg(DyeColor.PINK, DyeColor.MAGENTA));
     public static final RegistryObject<Item> COLORED_EGG_PINK_CREEPER_LIGHT_BLUE =
             ITEMS.register("colored_egg_pink_creeper_light_blue",
                     ()-> creeperStampedEgg(DyeColor.PINK, DyeColor.LIGHT_BLUE));
@@ -515,7 +516,7 @@ public class TBAItems {
                     ()-> creeperStampedEgg(DyeColor.GRAY, DyeColor.ORANGE));
     public static final RegistryObject<Item> COLORED_EGG_GRAY_CREEPER_MAGENTA =
             ITEMS.register("colored_egg_gray_creeper_magenta",
-                    ()-> creeperStampedEgg(DyeColor.GRAY, DyeColor.LIGHT_BLUE));
+                    ()-> creeperStampedEgg(DyeColor.GRAY, DyeColor.MAGENTA));
     public static final RegistryObject<Item> COLORED_EGG_GRAY_CREEPER_LIGHT_BLUE =
             ITEMS.register("colored_egg_gray_creeper_light_blue",
                     ()-> creeperStampedEgg(DyeColor.GRAY, DyeColor.LIGHT_BLUE));
@@ -565,7 +566,7 @@ public class TBAItems {
                     ()-> creeperStampedEgg(DyeColor.LIGHT_GRAY, DyeColor.ORANGE));
     public static final RegistryObject<Item> COLORED_EGG_LIGHT_GRAY_CREEPER_MAGENTA =
             ITEMS.register("colored_egg_light_gray_creeper_magenta",
-                    ()-> creeperStampedEgg(DyeColor.LIGHT_GRAY, DyeColor.LIGHT_BLUE));
+                    ()-> creeperStampedEgg(DyeColor.LIGHT_GRAY, DyeColor.MAGENTA));
     public static final RegistryObject<Item> COLORED_EGG_LIGHT_GRAY_CREEPER_LIGHT_BLUE =
             ITEMS.register("colored_egg_light_gray_creeper_light_blue",
                     ()-> creeperStampedEgg(DyeColor.LIGHT_GRAY, DyeColor.LIGHT_BLUE));
@@ -615,7 +616,7 @@ public class TBAItems {
                     ()-> creeperStampedEgg(DyeColor.CYAN, DyeColor.ORANGE));
     public static final RegistryObject<Item> COLORED_EGG_CYAN_CREEPER_MAGENTA =
             ITEMS.register("colored_egg_cyan_creeper_magenta",
-                    ()-> creeperStampedEgg(DyeColor.CYAN, DyeColor.LIGHT_BLUE));
+                    ()-> creeperStampedEgg(DyeColor.CYAN, DyeColor.MAGENTA));
     public static final RegistryObject<Item> COLORED_EGG_CYAN_CREEPER_LIGHT_BLUE =
             ITEMS.register("colored_egg_cyan_creeper_light_blue",
                     ()-> creeperStampedEgg(DyeColor.CYAN, DyeColor.LIGHT_BLUE));
@@ -665,7 +666,7 @@ public class TBAItems {
                     ()-> creeperStampedEgg(DyeColor.PURPLE, DyeColor.ORANGE));
     public static final RegistryObject<Item> COLORED_EGG_PURPLE_CREEPER_MAGENTA =
             ITEMS.register("colored_egg_purple_creeper_magenta",
-                    ()-> creeperStampedEgg(DyeColor.PURPLE, DyeColor.LIGHT_BLUE));
+                    ()-> creeperStampedEgg(DyeColor.PURPLE, DyeColor.MAGENTA));
     public static final RegistryObject<Item> COLORED_EGG_PURPLE_CREEPER_LIGHT_BLUE =
             ITEMS.register("colored_egg_purple_creeper_light_blue",
                     ()-> creeperStampedEgg(DyeColor.PURPLE, DyeColor.LIGHT_BLUE));
@@ -715,7 +716,7 @@ public class TBAItems {
                     ()-> creeperStampedEgg(DyeColor.BLUE, DyeColor.ORANGE));
     public static final RegistryObject<Item> COLORED_EGG_BLUE_CREEPER_MAGENTA =
             ITEMS.register("colored_egg_blue_creeper_magenta",
-                    ()-> creeperStampedEgg(DyeColor.BLUE, DyeColor.LIGHT_BLUE));
+                    ()-> creeperStampedEgg(DyeColor.BLUE, DyeColor.MAGENTA));
     public static final RegistryObject<Item> COLORED_EGG_BLUE_CREEPER_LIGHT_BLUE =
             ITEMS.register("colored_egg_blue_creeper_light_blue",
                     ()-> creeperStampedEgg(DyeColor.BLUE, DyeColor.LIGHT_BLUE));
@@ -765,7 +766,7 @@ public class TBAItems {
                     ()-> creeperStampedEgg(DyeColor.BROWN, DyeColor.ORANGE));
     public static final RegistryObject<Item> COLORED_EGG_BROWN_CREEPER_MAGENTA =
             ITEMS.register("colored_egg_brown_creeper_magenta",
-                    ()-> creeperStampedEgg(DyeColor.BROWN, DyeColor.LIGHT_BLUE));
+                    ()-> creeperStampedEgg(DyeColor.BROWN, DyeColor.MAGENTA));
     public static final RegistryObject<Item> COLORED_EGG_BROWN_CREEPER_LIGHT_BLUE =
             ITEMS.register("colored_egg_brown_creeper_light_blue",
                     ()-> creeperStampedEgg(DyeColor.BROWN, DyeColor.LIGHT_BLUE));
@@ -815,7 +816,7 @@ public class TBAItems {
                     ()-> creeperStampedEgg(DyeColor.GREEN, DyeColor.ORANGE));
     public static final RegistryObject<Item> COLORED_EGG_GREEN_CREEPER_MAGENTA =
             ITEMS.register("colored_egg_green_creeper_magenta",
-                    ()-> creeperStampedEgg(DyeColor.GREEN, DyeColor.LIGHT_BLUE));
+                    ()-> creeperStampedEgg(DyeColor.GREEN, DyeColor.MAGENTA));
     public static final RegistryObject<Item> COLORED_EGG_GREEN_CREEPER_LIGHT_BLUE =
             ITEMS.register("colored_egg_green_creeper_light_blue",
                     ()-> creeperStampedEgg(DyeColor.GREEN, DyeColor.LIGHT_BLUE));
@@ -865,7 +866,7 @@ public class TBAItems {
                     ()-> creeperStampedEgg(DyeColor.RED, DyeColor.ORANGE));
     public static final RegistryObject<Item> COLORED_EGG_RED_CREEPER_MAGENTA =
             ITEMS.register("colored_egg_red_creeper_magenta",
-                    ()-> creeperStampedEgg(DyeColor.RED, DyeColor.LIGHT_BLUE));
+                    ()-> creeperStampedEgg(DyeColor.RED, DyeColor.MAGENTA));
     public static final RegistryObject<Item> COLORED_EGG_RED_CREEPER_LIGHT_BLUE =
             ITEMS.register("colored_egg_red_creeper_light_blue",
                     ()-> creeperStampedEgg(DyeColor.RED, DyeColor.LIGHT_BLUE));
@@ -915,7 +916,7 @@ public class TBAItems {
                     ()-> creeperStampedEgg(DyeColor.BLACK, DyeColor.ORANGE));
     public static final RegistryObject<Item> COLORED_EGG_BLACK_CREEPER_MAGENTA =
             ITEMS.register("colored_egg_black_creeper_magenta",
-                    ()-> creeperStampedEgg(DyeColor.BLACK, DyeColor.LIGHT_BLUE));
+                    ()-> creeperStampedEgg(DyeColor.BLACK, DyeColor.MAGENTA));
     public static final RegistryObject<Item> COLORED_EGG_BLACK_CREEPER_LIGHT_BLUE =
             ITEMS.register("colored_egg_black_creeper_light_blue",
                     ()-> creeperStampedEgg(DyeColor.BLACK, DyeColor.LIGHT_BLUE));
@@ -1115,7 +1116,7 @@ public class TBAItems {
                     ()-> flowerStampedEgg(DyeColor.LIGHT_BLUE, DyeColor.ORANGE));
     public static final RegistryObject<Item> COLORED_EGG_LIGHT_BLUE_FLOWER_MAGENTA =
             ITEMS.register("colored_egg_light_blue_flower_magenta",
-                    ()-> flowerStampedEgg(DyeColor.LIGHT_BLUE, DyeColor.LIGHT_BLUE));
+                    ()-> flowerStampedEgg(DyeColor.LIGHT_BLUE, DyeColor.MAGENTA));
     public static final RegistryObject<Item> COLORED_EGG_LIGHT_BLUE_FLOWER_LIGHT_BLUE =
             ITEMS.register("colored_egg_light_blue_flower_light_blue",
                     ()-> flowerStampedEgg(DyeColor.LIGHT_BLUE, DyeColor.LIGHT_BLUE));
@@ -1165,7 +1166,7 @@ public class TBAItems {
                     ()-> flowerStampedEgg(DyeColor.YELLOW, DyeColor.ORANGE));
     public static final RegistryObject<Item> COLORED_EGG_YELLOW_FLOWER_MAGENTA =
             ITEMS.register("colored_egg_yellow_flower_magenta",
-                    ()-> flowerStampedEgg(DyeColor.YELLOW, DyeColor.LIGHT_BLUE));
+                    ()-> flowerStampedEgg(DyeColor.YELLOW, DyeColor.MAGENTA));
     public static final RegistryObject<Item> COLORED_EGG_YELLOW_FLOWER_LIGHT_BLUE =
             ITEMS.register("colored_egg_yellow_flower_light_blue",
                     ()-> flowerStampedEgg(DyeColor.YELLOW, DyeColor.LIGHT_BLUE));
@@ -1215,7 +1216,7 @@ public class TBAItems {
                     ()-> flowerStampedEgg(DyeColor.LIME, DyeColor.ORANGE));
     public static final RegistryObject<Item> COLORED_EGG_LIME_FLOWER_MAGENTA =
             ITEMS.register("colored_egg_lime_flower_magenta",
-                    ()-> flowerStampedEgg(DyeColor.LIME, DyeColor.LIGHT_BLUE));
+                    ()-> flowerStampedEgg(DyeColor.LIME, DyeColor.MAGENTA));
     public static final RegistryObject<Item> COLORED_EGG_LIME_FLOWER_LIGHT_BLUE =
             ITEMS.register("colored_egg_lime_flower_light_blue",
                     ()-> flowerStampedEgg(DyeColor.LIME, DyeColor.LIGHT_BLUE));
@@ -1265,7 +1266,7 @@ public class TBAItems {
                     ()-> flowerStampedEgg(DyeColor.PINK, DyeColor.ORANGE));
     public static final RegistryObject<Item> COLORED_EGG_PINK_FLOWER_MAGENTA =
             ITEMS.register("colored_egg_pink_flower_magenta",
-                    ()-> flowerStampedEgg(DyeColor.PINK, DyeColor.LIGHT_BLUE));
+                    ()-> flowerStampedEgg(DyeColor.PINK, DyeColor.MAGENTA));
     public static final RegistryObject<Item> COLORED_EGG_PINK_FLOWER_LIGHT_BLUE =
             ITEMS.register("colored_egg_pink_flower_light_blue",
                     ()-> flowerStampedEgg(DyeColor.PINK, DyeColor.LIGHT_BLUE));
@@ -1315,7 +1316,7 @@ public class TBAItems {
                     ()-> flowerStampedEgg(DyeColor.GRAY, DyeColor.ORANGE));
     public static final RegistryObject<Item> COLORED_EGG_GRAY_FLOWER_MAGENTA =
             ITEMS.register("colored_egg_gray_flower_magenta",
-                    ()-> flowerStampedEgg(DyeColor.GRAY, DyeColor.LIGHT_BLUE));
+                    ()-> flowerStampedEgg(DyeColor.GRAY, DyeColor.MAGENTA));
     public static final RegistryObject<Item> COLORED_EGG_GRAY_FLOWER_LIGHT_BLUE =
             ITEMS.register("colored_egg_gray_flower_light_blue",
                     ()-> flowerStampedEgg(DyeColor.GRAY, DyeColor.LIGHT_BLUE));
@@ -1365,7 +1366,7 @@ public class TBAItems {
                     ()-> flowerStampedEgg(DyeColor.LIGHT_GRAY, DyeColor.ORANGE));
     public static final RegistryObject<Item> COLORED_EGG_LIGHT_GRAY_FLOWER_MAGENTA =
             ITEMS.register("colored_egg_light_gray_flower_magenta",
-                    ()-> flowerStampedEgg(DyeColor.LIGHT_GRAY, DyeColor.LIGHT_BLUE));
+                    ()-> flowerStampedEgg(DyeColor.LIGHT_GRAY, DyeColor.MAGENTA));
     public static final RegistryObject<Item> COLORED_EGG_LIGHT_GRAY_FLOWER_LIGHT_BLUE =
             ITEMS.register("colored_egg_light_gray_flower_light_blue",
                     ()-> flowerStampedEgg(DyeColor.LIGHT_GRAY, DyeColor.LIGHT_BLUE));
@@ -1415,7 +1416,7 @@ public class TBAItems {
                     ()-> flowerStampedEgg(DyeColor.CYAN, DyeColor.ORANGE));
     public static final RegistryObject<Item> COLORED_EGG_CYAN_FLOWER_MAGENTA =
             ITEMS.register("colored_egg_cyan_flower_magenta",
-                    ()-> flowerStampedEgg(DyeColor.CYAN, DyeColor.LIGHT_BLUE));
+                    ()-> flowerStampedEgg(DyeColor.CYAN, DyeColor.MAGENTA));
     public static final RegistryObject<Item> COLORED_EGG_CYAN_FLOWER_LIGHT_BLUE =
             ITEMS.register("colored_egg_cyan_flower_light_blue",
                     ()-> flowerStampedEgg(DyeColor.CYAN, DyeColor.LIGHT_BLUE));
@@ -1465,7 +1466,7 @@ public class TBAItems {
                     ()-> flowerStampedEgg(DyeColor.PURPLE, DyeColor.ORANGE));
     public static final RegistryObject<Item> COLORED_EGG_PURPLE_FLOWER_MAGENTA =
             ITEMS.register("colored_egg_purple_flower_magenta",
-                    ()-> flowerStampedEgg(DyeColor.PURPLE, DyeColor.LIGHT_BLUE));
+                    ()-> flowerStampedEgg(DyeColor.PURPLE, DyeColor.MAGENTA));
     public static final RegistryObject<Item> COLORED_EGG_PURPLE_FLOWER_LIGHT_BLUE =
             ITEMS.register("colored_egg_purple_flower_light_blue",
                     ()-> flowerStampedEgg(DyeColor.PURPLE, DyeColor.LIGHT_BLUE));
@@ -1515,7 +1516,7 @@ public class TBAItems {
                     ()-> flowerStampedEgg(DyeColor.BLUE, DyeColor.ORANGE));
     public static final RegistryObject<Item> COLORED_EGG_BLUE_FLOWER_MAGENTA =
             ITEMS.register("colored_egg_blue_flower_magenta",
-                    ()-> flowerStampedEgg(DyeColor.BLUE, DyeColor.LIGHT_BLUE));
+                    ()-> flowerStampedEgg(DyeColor.BLUE, DyeColor.MAGENTA));
     public static final RegistryObject<Item> COLORED_EGG_BLUE_FLOWER_LIGHT_BLUE =
             ITEMS.register("colored_egg_blue_flower_light_blue",
                     ()-> flowerStampedEgg(DyeColor.BLUE, DyeColor.LIGHT_BLUE));
@@ -1565,7 +1566,7 @@ public class TBAItems {
                     ()-> flowerStampedEgg(DyeColor.BROWN, DyeColor.ORANGE));
     public static final RegistryObject<Item> COLORED_EGG_BROWN_FLOWER_MAGENTA =
             ITEMS.register("colored_egg_brown_flower_magenta",
-                    ()-> flowerStampedEgg(DyeColor.BROWN, DyeColor.LIGHT_BLUE));
+                    ()-> flowerStampedEgg(DyeColor.BROWN, DyeColor.MAGENTA));
     public static final RegistryObject<Item> COLORED_EGG_BROWN_FLOWER_LIGHT_BLUE =
             ITEMS.register("colored_egg_brown_flower_light_blue",
                     ()-> flowerStampedEgg(DyeColor.BROWN, DyeColor.LIGHT_BLUE));
@@ -1615,7 +1616,7 @@ public class TBAItems {
                     ()-> flowerStampedEgg(DyeColor.GREEN, DyeColor.ORANGE));
     public static final RegistryObject<Item> COLORED_EGG_GREEN_FLOWER_MAGENTA =
             ITEMS.register("colored_egg_green_flower_magenta",
-                    ()-> flowerStampedEgg(DyeColor.GREEN, DyeColor.LIGHT_BLUE));
+                    ()-> flowerStampedEgg(DyeColor.GREEN, DyeColor.MAGENTA));
     public static final RegistryObject<Item> COLORED_EGG_GREEN_FLOWER_LIGHT_BLUE =
             ITEMS.register("colored_egg_green_flower_light_blue",
                     ()-> flowerStampedEgg(DyeColor.GREEN, DyeColor.LIGHT_BLUE));
@@ -1665,7 +1666,7 @@ public class TBAItems {
                     ()-> flowerStampedEgg(DyeColor.RED, DyeColor.ORANGE));
     public static final RegistryObject<Item> COLORED_EGG_RED_FLOWER_MAGENTA =
             ITEMS.register("colored_egg_red_flower_magenta",
-                    ()-> flowerStampedEgg(DyeColor.RED, DyeColor.LIGHT_BLUE));
+                    ()-> flowerStampedEgg(DyeColor.RED, DyeColor.MAGENTA));
     public static final RegistryObject<Item> COLORED_EGG_RED_FLOWER_LIGHT_BLUE =
             ITEMS.register("colored_egg_red_flower_light_blue",
                     ()-> flowerStampedEgg(DyeColor.RED, DyeColor.LIGHT_BLUE));
@@ -1715,7 +1716,7 @@ public class TBAItems {
                     ()-> flowerStampedEgg(DyeColor.BLACK, DyeColor.ORANGE));
     public static final RegistryObject<Item> COLORED_EGG_BLACK_FLOWER_MAGENTA =
             ITEMS.register("colored_egg_black_flower_magenta",
-                    ()-> flowerStampedEgg(DyeColor.BLACK, DyeColor.LIGHT_BLUE));
+                    ()-> flowerStampedEgg(DyeColor.BLACK, DyeColor.MAGENTA));
     public static final RegistryObject<Item> COLORED_EGG_BLACK_FLOWER_LIGHT_BLUE =
             ITEMS.register("colored_egg_black_flower_light_blue",
                     ()-> flowerStampedEgg(DyeColor.BLACK, DyeColor.LIGHT_BLUE));

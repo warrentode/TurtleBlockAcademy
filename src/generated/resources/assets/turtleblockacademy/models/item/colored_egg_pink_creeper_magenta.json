@@ -1,7 +1,7 @@
 {
   "parent": "turtleblockacademy:item/template_stamped_egg",
   "textures": {
-    "layer0": "turtleblockacademy:item/colored_egg_pink",
-    "layer1": "turtleblockacademy:item/creeper_stamp_magenta"
+    "layer0": "turtleblockacademy:item/egg_colored",
+    "layer1": "turtleblockacademy:item/egg_stamp_creeper"
   }
 }
