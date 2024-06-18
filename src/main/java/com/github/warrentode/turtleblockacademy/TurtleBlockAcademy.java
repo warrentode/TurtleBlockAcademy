@@ -17,7 +17,6 @@ import com.github.warrentode.turtleblockacademy.loot.serializers.TBALootItemCond
 import com.github.warrentode.turtleblockacademy.loot.serializers.TBALootModifiers;
 import com.github.warrentode.turtleblockacademy.recipe.TBARecipes;
 import com.github.warrentode.turtleblockacademy.recipe.fermenting.FermentingRecipeCategories;
-import com.github.warrentode.turtleblockacademy.util.LogUtil;
 import com.github.warrentode.turtleblockacademy.util.TBASounds;
 import com.github.warrentode.turtleblockacademy.world.biome.TBABiomes;
 import com.github.warrentode.turtleblockacademy.world.dimension.TBADimensions;
@@ -28,6 +27,7 @@ import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.entity.SpawnPlacements;
 import net.minecraft.world.entity.monster.Monster;
+import net.minecraft.world.level.block.ComposterBlock;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.levelgen.Heightmap;
 import net.minecraftforge.api.distmarker.Dist;
@@ -92,6 +92,7 @@ public class TurtleBlockAcademy {
                     SpawnPlacements.Type.ON_GROUND,
                     Heightmap.Types.MOTION_BLOCKING_NO_LEAVES,
                     Monster::checkMonsterSpawnRules);
+            registerCompostable();
         });
     }
 
@@ -125,5 +126,18 @@ public class TurtleBlockAcademy {
         public static void onRegisterRecipeBookCategories(RegisterRecipeBookCategoriesEvent event) {
             FermentingRecipeCategories.init(event);
         }
+    }
+
+    private void registerCompostable() {
+        ComposterBlock.COMPOSTABLES.put(TBAItems.CLOVE_SEEDS.get(), 0.3F);
+        ComposterBlock.COMPOSTABLES.put(TBAItems.CUCUMBER_SEEDS.get(), 0.3F);
+        ComposterBlock.COMPOSTABLES.put(TBAItems.DILL_SEEDS.get(), 0.3F);
+        ComposterBlock.COMPOSTABLES.put(TBAItems.CLOVES.get(), 0.3F);
+        ComposterBlock.COMPOSTABLES.put(TBAItems.CUCUMBER.get(), 0.3F);
+        ComposterBlock.COMPOSTABLES.put(TBAItems.DILL_HERB.get(), 0.3F);
+        ComposterBlock.COMPOSTABLES.put(TBAItems.DRIED_CLOVES.get(), 0.3F);
+        ComposterBlock.COMPOSTABLES.put(TBABlocks.CLOVE_BUSH.get(), 0.65F);
+        ComposterBlock.COMPOSTABLES.put(TBABlocks.CUCUMBER_BUSH.get(), 0.65F);
+        ComposterBlock.COMPOSTABLES.put(TBABlocks.DILL_BUSH.get(), 0.65F);
     }
 }
