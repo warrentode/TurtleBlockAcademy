@@ -4,6 +4,7 @@ import biomesoplenty.api.block.BOPBlocks;
 import biomesoplenty.api.item.BOPItems;
 import cn.foggyhillside.endsdelight.registry.ItemRegistry;
 import com.aetherteam.aether.item.AetherItems;
+import com.github.warrentode.turtleblockacademy.blocks.TBABlocks;
 import com.github.warrentode.turtleblockacademy.items.TBAItems;
 import com.github.warrentode.turtleblockacademy.util.TBATags;
 import com.hakimen.kawaiidishes.registry.ItemRegister;
@@ -58,6 +59,9 @@ public class ItemTagsGen extends ItemTagsProvider {
     }
 
     private void registerPackTags() {
+        tag(TBATags.Items.ACADEMY_SUPPLIES)
+                .add(TBAItems.STUDENT_CARD.get())
+                .add(TBABlocks.CERTIFICATE_BLOCK.get().asItem());
         tag(TBATags.Items.MATCHING_ITEM_REMAINDERS)
                 .addTag(TBATags.Items.EGG_STAMPS)
                 .addOptionalTag(Objects.requireNonNull(ResourceLocation.tryParse(
@@ -1218,8 +1222,18 @@ public class ItemTagsGen extends ItemTagsProvider {
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("domesticationinnovation:sinister_carrot")))
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("hauntedharvest:grim_apple")))
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("hauntedharvest:rotten_apple")));
+        tag(TBATags.Items.DILL_INGREDIENTS)
+                .add(TBAItems.DILL_HERB.get())
+                .add(TBAItems.DILL_SEEDS.get());
+        tag(TBATags.Items.CLOVE_INGREDIENTS)
+                .add(TBAItems.GROUND_CLOVES.get())
+                .add(TBAItems.DRIED_CLOVES.get());
         tag(TBATags.Items.INGREDIENTS)
-                .addTag(TBATags.Items.CUCUMBERS)
+                .add(TBAItems.YEAST.get())
+                .addTag(TBATags.Items.DILL_INGREDIENTS)
+                .addTag(TBATags.Items.CLOVE_INGREDIENTS)
+                .addTag(TBATags.Items.BOILED_EGGS)
+                .addTag(TBATags.Items.CUCUMBER_INGREDIENTS)
                 .addTag(TBATags.Items.SALT_INGREDIENTS)
                 .addTag(TBATags.Items.APPLE_INGREDIENTS)
                 .addTag(TBATags.Items.STARCH_INGREDIENTS)
@@ -1855,6 +1869,7 @@ public class ItemTagsGen extends ItemTagsProvider {
                 .add(Items.CHICKEN)
                 .addOptional(ModItems.CHICKEN_CUTS.getId());
         tag(TBATags.Items.COOKED_MEATS)
+                .addTag(TBATags.Items.BOILED_EGGS)
                 .addTag(TBATags.Items.COOKED_CHICKEN)
                 .addTag(TBATags.Items.COOKED_MUTTON);
         tag(TBATags.Items.COOKED_CHICKEN)

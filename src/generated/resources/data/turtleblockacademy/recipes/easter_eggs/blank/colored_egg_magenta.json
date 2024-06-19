@@ -2,22 +2,22 @@
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
     {
-      "tag": "forge:boiled_eggs"
+      "tag": "forge:cooked_meats/boiled_eggs"
     },
     {
-      "tag": "forge:boiled_eggs"
+      "tag": "forge:cooked_meats/boiled_eggs"
     },
     {
-      "tag": "forge:boiled_eggs"
+      "tag": "forge:cooked_meats/boiled_eggs"
     },
     {
-      "tag": "forge:boiled_eggs"
+      "tag": "forge:cooked_meats/boiled_eggs"
     },
     {
-      "tag": "forge:boiled_eggs"
+      "tag": "forge:cooked_meats/boiled_eggs"
     },
     {
-      "tag": "forge:boiled_eggs"
+      "tag": "forge:cooked_meats/boiled_eggs"
     },
     {
       "tag": "forge:dyes/magenta"

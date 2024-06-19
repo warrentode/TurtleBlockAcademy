@@ -46,7 +46,18 @@ public class BlockTagsGen extends BlockTagsProvider {
     }
 
     protected void registerTBATags() {
+        tag(TBATags.Blocks.FURNITURE)
+                .addTag(TBATags.Blocks.DESKS)
+                .addTag(TBATags.Blocks.DESK_CABINETS)
+                .addTag(TBATags.Blocks.TABLES)
+                .addTag(TBATags.Blocks.CHAIRS)
+                .addTag(TBATags.Blocks.BENCHES)
+                .addTag(TBATags.Blocks.LOCKERS)
+                .addTag(TBATags.Blocks.PLATES)
+                .addTag(TBATags.Blocks.BOOKCASES)
+                .addTag(TBATags.Blocks.BASKETS);
         tag(TBATags.Blocks.BASKETS)
+
                 .add(
                         TBABlocks.BASKET_OAK_WHITE.get(),
                         TBABlocks.BASKET_OAK_LIGHT_GRAY.get(),

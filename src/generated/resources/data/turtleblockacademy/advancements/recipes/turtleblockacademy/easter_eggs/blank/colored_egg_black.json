@@ -5,7 +5,7 @@
       "conditions": {
         "items": [
           {
-            "tag": "forge:boiled_eggs"
+            "tag": "forge:cooked_meats/boiled_eggs"
           }
         ]
       },

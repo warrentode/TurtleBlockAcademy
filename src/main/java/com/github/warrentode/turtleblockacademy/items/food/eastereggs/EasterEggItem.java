@@ -6,17 +6,17 @@ import net.minecraft.ChatFormatting;
 import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.DyeColor;
+import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.level.Level;
 import org.jetbrains.annotations.NotNull;
-import vectorwing.farmersdelight.common.item.ConsumableItem;
 
 import javax.annotation.Nullable;
 import java.util.ArrayList;
 import java.util.List;
 
-public class EasterEggItem extends ConsumableItem {
+public class EasterEggItem extends Item {
     public static final List<EasterEggItem> EASTER_EGGS = new ArrayList<>();
     private final DyeColor baseColor;
     private final DyeColor layerColor;
@@ -25,7 +25,7 @@ public class EasterEggItem extends ConsumableItem {
 
     public EasterEggItem(DyeColor baseColor, @Nullable DyeColor layerColor, EasterEggProperties.@NotNull Layer layer, @NotNull Properties properties) {
         // base properties for the eggs
-        super(properties, true, true);
+        super(properties);
         this.layer = layer.getEggLayer();
         this.baseColor = baseColor;
         this.layerColor = layerColor;

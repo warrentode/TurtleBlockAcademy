@@ -1,6 +1,10 @@
 {
   "values": [
-    "#forge:crops/cucumbers",
+    "turtleblockacademy:yeast",
+    "#forge:ingredients/dill",
+    "#forge:ingredients/clove",
+    "#forge:cooked_meats/boiled_eggs",
+    "#forge:ingredients/cucumber",
     "#forge:ingredients/salt",
     "#forge:ingredients/apple",
     "#forge:ingredients/starch",

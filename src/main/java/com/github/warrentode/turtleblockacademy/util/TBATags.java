@@ -14,6 +14,7 @@ import static com.github.warrentode.turtleblockacademy.TurtleBlockAcademy.MODID;
 
 public class TBATags {
     public static class Blocks {
+        public static final TagKey<Block> FURNITURE = packBlockTag("forge", "furniture");
         public static final TagKey<Block> BASKETS = packBlockTag(MODID, "baskets");
         public static final TagKey<Block> TBA_MINING_PORTAL_FRAME_BLOCKS = packBlockTag(MODID, "mining_portal_frame_blocks");
 
@@ -48,13 +49,13 @@ public class TBATags {
     }
 
     public static class Items {
+        public static final TagKey<Item> ACADEMY_SUPPLIES = packItemTag(MODID, "academy_supplies");
         public static final TagKey<Item> BUCKET_REMAINDERS = packItemTag("forge", "bucket_remainders");
         public static final TagKey<Item> BOWL_REMAINDERS = packItemTag("forge", "bowl_remainders");
         public static final TagKey<Item> BOTTLE_REMAINDERS = packItemTag("forge", "bottle_remainders");
         public static final TagKey<Item> MATCHING_ITEM_REMAINDERS = packItemTag("forge", "matching_item_remainders");
         public static final TagKey<Item> EGG_STAMPS = packItemTag("forge", "egg_stamps");
 
-        public static final TagKey<Item> BOILED_EGGS = packItemTag("forge", "boiled_eggs");
         public static final TagKey<Item> SLIME_BALLS = packItemTag("forge", "slime_balls");
 
         public static final TagKey<Item> SEEDS = packItemTag("forge", "seeds");
@@ -197,6 +198,8 @@ public class TBATags {
         public static final TagKey<Item> COOKED_CHICKEN = packItemTag("forge", "cooked_meats/cooked_chicken");
         public static final TagKey<Item> COOKED_MUTTON = packItemTag("forge", "cooked_meats/cooked_mutton");
 
+        public static final TagKey<Item> BOILED_EGGS = packItemTag("forge", "cooked_meats/boiled_eggs");
+
         public static final TagKey<Item> WILDBERRIES_EDIBLES = packItemTag("wildberries", "edibles");
 
         public static final TagKey<Item> BLUEBERRIES = packItemTag("forge", "blueberries");
@@ -226,6 +229,8 @@ public class TBATags {
         public static final TagKey<Item> BREAD = packItemTag("forge", "ingredients/bread");
         public static final TagKey<Item> SWEETENED_CHUNK = packItemTag("rottenleather", "sweetened_chunk");
         public static final TagKey<Item> APPLE_CIDERS = packItemTag(MODID, "apple_ciders");
+        public static final TagKey<Item> DILL_INGREDIENTS = packItemTag("forge", "ingredients/dill");
+        public static final TagKey<Item> CLOVE_INGREDIENTS = packItemTag("forge", "ingredients/clove");
 
         public static final TagKey<Item> GLAZES = packItemTag("forge", "ingredients/glazes");
         public static final TagKey<Item> ALCOHOL = packItemTag("forge", "ingredients/alcohol");
