@@ -35,6 +35,11 @@ public class TBAItemModelProvider extends ItemModelProvider {
         spawnEggItem(TBAItems.HEROBRINE_SPAWN_EGG.get());
         spawnEggItem(TBAItems.TREASURE_BEETLE_SPAWN_EGG.get());
 
+        threadSpoolItem(TBAItems.WOOL_THREAD.get(), "spooled_thread");
+        threadSpoolItem(TBAItems.SILK_THREAD.get(), "silk_thread");
+
+        basicItem(TBAItems.COPPER_NEEDLE.get());
+
         eggStamp(TBAItems.EGG_STAMP_CREEPER.get(), "creeper");
         eggStamp(TBAItems.EGG_STAMP_FLOWER.get(), "flower");
 
@@ -87,6 +92,20 @@ public class TBAItemModelProvider extends ItemModelProvider {
                 }
             }
         }
+    }
+
+    private void threadSpoolItem(Item item, String threadName) {
+        ModelFile threadModel = new ModelFile.UncheckedModelFile(MODID + ":" + "item/template_thread");
+        ResourceLocation threadTexture = new ResourceLocation(MODID, "item/" + threadName);
+        ResourceLocation spoolTexture = new ResourceLocation(MODID, "item/spool");
+
+        withExistingParent(itemName(item), threadModel.getLocation());
+
+        getBuilder(String.valueOf(item))
+                .parent(threadModel)
+                .texture("layer0", threadTexture)
+                .texture("layer1", spoolTexture)
+                .texture("particle", threadTexture);
     }
 
     private void eggStamp(Item eggStamp, String stampDesign) {

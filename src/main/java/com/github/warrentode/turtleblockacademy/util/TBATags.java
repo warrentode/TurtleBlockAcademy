@@ -14,6 +14,7 @@ import static com.github.warrentode.turtleblockacademy.TurtleBlockAcademy.MODID;
 
 public class TBATags {
     public static class Blocks {
+        public static final TagKey<Block> PICNIC_BLANKETS = packBlockTag(MODID, "picnic_blankets");
         public static final TagKey<Block> FURNITURE = packBlockTag("forge", "furniture");
         public static final TagKey<Block> BASKETS = packBlockTag(MODID, "baskets");
         public static final TagKey<Block> TBA_MINING_PORTAL_FRAME_BLOCKS = packBlockTag(MODID, "mining_portal_frame_blocks");
@@ -128,6 +129,7 @@ public class TBATags {
         public static final TagKey<Item> IRON_INGOT = packItemTag("forge", "ingots/iron");
 
         public static final TagKey<Item> COPPER_INGOT = packItemTag("forge", "ingots/copper");
+        public static final TagKey<Item> COPPER_NUGGET = packItemTag("forge", "nuggets/copper");
 
         public static final TagKey<Item> GOLD_NUGGET = packItemTag("forge", "nuggets/gold");
 
@@ -282,6 +284,8 @@ public class TBATags {
         public static final TagKey<Item> TEXTILES = packItemTag("forge", "textiles");
         public static final TagKey<Item> BARK = packItemTag("forge", "textiles/bark");
         public static final TagKey<Item> STRING = packItemTag("forge", "textiles/string");
+        public static final TagKey<Item> FABRIC_TEXTILES = packItemTag("forge", "textiles/fabric");
+        public static final TagKey<Item> THREAD = packItemTag("forge", "textiles/thread");
 
         public static final TagKey<Item> NUGGETS = packItemTag("forge", "nuggets");
         public static final TagKey<Item> INGOTS = packItemTag("forge", "ingots");

@@ -18,6 +18,7 @@ import net.minecraftforge.fml.common.Mod;
 import org.jetbrains.annotations.NotNull;
 
 import static com.github.warrentode.turtleblockacademy.TurtleBlockAcademy.MODID;
+import static com.github.warrentode.turtleblockacademy.blocks.furniture.PicnicBlanket.PICNIC_BLANKET_LIST;
 import static com.github.warrentode.turtleblockacademy.items.food.eastereggs.EasterEggItem.EASTER_EGGS;
 
 public class ClientSideEvents {
@@ -56,18 +57,28 @@ public class ClientSideEvents {
                 return -1; // No tint for other layers
             }, egg));
 
-            //noinspection deprecation
-            event.getItemColors().register((stack, tintIndex) -> {
-                if (stack.is(TBAItems.BOILED_EGG.get()) && tintIndex == 0) {
-                    // SeaShell
-                    return 0xFFF5EE;
-                }
-                else if (stack.is(TBAItems.PEELED_EGG.get()) && tintIndex == 0) {
-                    // AntiqueWhite
-                    return 0xFAEBD7;
-                }
-                return -1; // No color for other layers
-            }, TBAItems.BOILED_EGG.get(), TBAItems.PEELED_EGG.get());
+            event.getItemColors().getColor(TBAItems.BOILED_EGG.get()
+                    .getDefaultInstance(), 0xFFF5EE);
+            event.getItemColors().getColor(TBAItems.PEELED_EGG.get()
+                    .getDefaultInstance(), 0xFAEBD7);
+
+            // Register block colors
+            PICNIC_BLANKET_LIST.forEach(picnicBlanket -> {
+                //noinspection deprecation
+                event.getBlockColors().register((state, world, pos, tintIndex) -> {
+                    // return the appropriate color from block class
+                    return picnicBlanket.getTintIndex();
+                }, picnicBlanket);
+            });
+
+            // Register item colors
+            PICNIC_BLANKET_LIST.forEach(picnicBlanket -> {
+                //noinspection deprecation
+                event.getItemColors().register((stack, tintIndex) -> {
+                    // return the appropriate color from block class
+                    return picnicBlanket.getTintIndex();
+                }, picnicBlanket);
+            });
         }
     }
 }

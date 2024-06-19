@@ -5,9 +5,7 @@ import com.aetherteam.aether.block.AetherBlocks;
 import com.aetherteam.aether.item.AetherItems;
 import com.catastrophe573.dimdungeons.block.BlockRegistrar;
 import com.github.warrentode.turtleblockacademy.blocks.TBABlocks;
-import com.github.warrentode.turtleblockacademy.datagen.recipes.builder.BrewingRecipeBuilder;
-import com.github.warrentode.turtleblockacademy.datagen.recipes.builder.FermentingPotRecipeBuilder;
-import com.github.warrentode.turtleblockacademy.datagen.recipes.builder.PatchouliShapelessBookRecipeBuilder;
+import com.github.warrentode.turtleblockacademy.datagen.recipes.builder.*;
 import com.github.warrentode.turtleblockacademy.datagen.recipes.recipe.EasterEggRecipes;
 import com.github.warrentode.turtleblockacademy.datagen.recipes.recipe.CuttingRecipesGen;
 import com.github.warrentode.turtleblockacademy.datagen.recipes.recipe.LootBagRecipesGen;
@@ -29,6 +27,7 @@ import net.minecraft.data.DataGenerator;
 import net.minecraft.data.recipes.*;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.ItemTags;
+import net.minecraft.world.item.DyeColor;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
@@ -38,6 +37,7 @@ import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.common.Tags;
 import net.minecraftforge.common.crafting.ConditionalRecipe;
 import net.minecraftforge.common.crafting.conditions.IConditionBuilder;
+import org.jetbrains.annotations.Contract;
 import org.jetbrains.annotations.NotNull;
 import slimeknights.tconstruct.fluids.TinkerFluids;
 import slimeknights.tconstruct.world.TinkerWorld;
@@ -54,8 +54,8 @@ import java.util.stream.Stream;
 import static com.catastrophe573.dimdungeons.item.ItemRegistrar.ITEM_HOMEWARD_PEARL;
 import static com.catastrophe573.dimdungeons.item.ItemRegistrar.ITEM_PORTAL_KEY;
 import static com.github.warrentode.turtleblockacademy.TurtleBlockAcademy.MODID;
-import static net.brnbrd.delightful.common.item.DelightfulItems.GREEN_TEA_LEAF;
-import static net.brnbrd.delightful.common.item.DelightfulItems.MATCHA;
+import static com.github.warrentode.turtleblockacademy.blocks.furniture.PicnicBlanket.PICNIC_BLANKET_LIST;
+import static net.brnbrd.delightful.common.item.DelightfulItems.*;
 import static net.minecraft.world.item.Items.MUSHROOM_STEW;
 import static samebutdifferent.ecologics.registry.ModBlocks.SEASHELL;
 import static samebutdifferent.ecologics.registry.ModBlocks.SEASHELL_TILES;
@@ -87,10 +87,60 @@ public class RecipesGen extends RecipeProvider implements IConditionBuilder {
         minecraftRecipes(consumer);
         patchouliBooksRecipes(consumer);
         fermentingRecipes(consumer);
+        picnicBlanketRecipes(consumer);
 
         LootBagRecipesGen.register(consumer);
         CuttingRecipesGen.register(consumer);
         EasterEggRecipes.register(consumer);
+    }
+
+    private void picnicBlanketRecipes(Consumer<FinishedRecipe> consumer) {
+        PICNIC_BLANKET_LIST.forEach(picnicBlanket ->
+                picnicBlanketTemplate(consumer, picnicBlanket.asItem(),
+                        picnicBlanket.getClothColor(picnicBlanket.asItem().getDefaultInstance()))
+        );
+    }
+
+    private void picnicBlanketTemplate(Consumer<FinishedRecipe> consumer, @NotNull Item picnicBlanket, DyeColor woolColor) {
+        ShapedRemainderRecipeBuilder.recipe(picnicBlanket.asItem(), 4)
+                .define('C', getMatchingCarpet(woolColor))
+                .define('N', TBATags.Items.NEEDLES)
+                .define('T', TBATags.Items.STRING)
+                .pattern("NCC")
+                .pattern("TCC")
+                .unlockedByAnyIngredient()
+                .build(consumer,picnicBlanket.asItem().getDescriptionId() + "_with_string");
+
+        ShapedRemainderRecipeBuilder.recipe(picnicBlanket.asItem(), 4)
+                .define('C', getMatchingCarpet(woolColor))
+                .define('N', TBATags.Items.NEEDLES)
+                .define('T', TBATags.Items.THREAD)
+                .pattern("NCC")
+                .pattern("TCC")
+                .unlockedByAnyIngredient()
+                .build(consumer,picnicBlanket.asItem().getDescriptionId() + "_with_thread");
+    }
+
+    @Contract(pure = true)
+    private Item getMatchingCarpet(@NotNull DyeColor color) {
+        return switch (color) {
+            case ORANGE -> Items.ORANGE_CARPET;
+            case MAGENTA -> Items.MAGENTA_CARPET;
+            case LIGHT_BLUE -> Items.LIGHT_BLUE_CARPET;
+            case YELLOW -> Items.YELLOW_CARPET;
+            case LIME -> Items.LIME_CARPET;
+            case PINK -> Items.PINK_CARPET;
+            case GRAY -> Items.GRAY_CARPET;
+            case LIGHT_GRAY -> Items.LIGHT_GRAY_CARPET;
+            case CYAN -> Items.CYAN_CARPET;
+            case PURPLE -> Items.PURPLE_CARPET;
+            case BLUE -> Items.BLUE_CARPET;
+            case BROWN -> Items.BROWN_CARPET;
+            case GREEN -> Items.GREEN_CARPET;
+            case RED -> Items.RED_CARPET;
+            case BLACK -> Items.BLACK_CARPET;
+            default -> Items.WHITE_CARPET;
+        };
     }
 
     private void fermentingRecipes(Consumer<FinishedRecipe> consumer) {
@@ -1663,6 +1713,34 @@ public class RecipesGen extends RecipeProvider implements IConditionBuilder {
     }
 
     private void schoolSupplyRecipes(Consumer<FinishedRecipe> consumer) {
+        ConditionalRecipe.builder()
+                .addCondition(not(this.tagEmpty(TBATags.Items.COPPER_NUGGET)))
+                .addRecipe(finishedRecipeConsumer ->
+                        ShapelessRemainderRecipeBuilder.recipe(TBAItems.COPPER_NEEDLE.get(), 1)
+                                .setGroup("needles")
+                                .addIngredient(TBATags.Items.COPPER_NUGGET)
+                                .unlockedByAnyIngredient()
+                                .build(consumer, TBAItems.COPPER_NEEDLE.getId() + "_from_nugget")
+                );
+        ShapelessRemainderRecipeBuilder.recipe(TBAItems.COPPER_NEEDLE.get(), 9)
+                .setGroup("needles")
+                .addIngredient(TBATags.Items.COPPER_INGOT)
+                .unlockedByAnyIngredient()
+                .build(consumer, TBAItems.COPPER_NEEDLE.getId() + "_from_ingot");
+        ShapedRemainderRecipeBuilder.recipe(TBAItems.SILK_THREAD.get(), 1)
+                .setGroup("thread")
+                .pattern("FFF")
+                .pattern("FFF")
+                .define('F', TBATags.Items.WEBBING)
+                .unlockedByAnyIngredient()
+                .build(consumer, TBAItems.SILK_THREAD.getId());
+        ShapedRemainderRecipeBuilder.recipe(TBAItems.WOOL_THREAD.get(), 1)
+                .setGroup("thread")
+                .pattern("FFF")
+                .pattern("FFF")
+                .define('F', Items.STRING)
+                .unlockedByAnyIngredient()
+                .build(consumer, TBAItems.WOOL_THREAD.getId());
         ShapelessRecipeBuilder.shapeless(TBAItems.EGG_STAMP_CREEPER.get(), 1)
                 .requires(ItemTags.BUTTONS)
                 .requires(Items.HONEYCOMB)

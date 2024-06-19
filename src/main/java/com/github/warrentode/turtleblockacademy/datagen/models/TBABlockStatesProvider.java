@@ -17,6 +17,7 @@ import org.jetbrains.annotations.NotNull;
 import java.util.Objects;
 
 import static com.github.warrentode.turtleblockacademy.TurtleBlockAcademy.MODID;
+import static com.github.warrentode.turtleblockacademy.blocks.furniture.PicnicBlanket.PICNIC_BLANKET_LIST;
 
 public class TBABlockStatesProvider extends BlockStateProvider {
     private static final int DEFAULT_ANGLE_OFFSET = 180;
@@ -873,6 +874,31 @@ public class TBABlockStatesProvider extends BlockStateProvider {
         processBasketVariants(TBABlocks.BASKET_TINKER_SKYROOT_PURPLE.get(), "tconstruct", "skyroot", "purple");
         processBasketVariants(TBABlocks.BASKET_TINKER_SKYROOT_MAGENTA.get(), "tconstruct", "skyroot", "magenta");
         processBasketVariants(TBABlocks.BASKET_TINKER_SKYROOT_PINK.get(), "tconstruct", "skyroot", "pink");
+
+        PICNIC_BLANKET_LIST.forEach(picnicBlanket ->
+                processPicnicBlanketVariants(picnicBlanket.defaultBlockState().getBlock())
+        );
+    }
+
+    @SuppressWarnings("SameParameterValue")
+    protected void processPicnicBlanketVariants(Block result) {
+        picnicBlanketTemplate(result, MODID + ":" + "block/template_picnic_blanket");
+    }
+
+    @SuppressWarnings("SameParameterValue")
+    protected void picnicBlanketTemplate(Block result, String parent) {
+        ModelFile parentModel = new ModelFile.UncheckedModelFile(modLoc("block/template_picnic_blanket"));
+        ResourceLocation existingTexture = new ResourceLocation(MODID, "block/checkered_cloth");
+
+        this.helper.trackGenerated(existingTexture, TEXTURE);
+
+        final var model = models()
+                .getBuilder(blockName(result)).parent(parentModel)
+                .texture("0", existingTexture)
+                .texture("particle", existingTexture);
+
+        simpleBlock(result, model);
+        simpleBlockItem(result, model);
     }
 
     protected void processBasketVariants(Block result, String modid, String woodType, @NotNull String color) {
@@ -914,7 +940,7 @@ public class TBABlockStatesProvider extends BlockStateProvider {
 
     @SuppressWarnings("SameParameterValue")
     protected void processPlateVariants(Block result, String modid, String path) {
-        plateVariant(result, MODID + ":" + "block/plate_block", modid, path);
+        processPlateVariants(result, MODID + ":" + "block/plate_block", modid, path);
     }
 
     protected void processWoodVariants(Block result1, Block result2,
@@ -987,14 +1013,16 @@ public class TBABlockStatesProvider extends BlockStateProvider {
     }
 
     @SuppressWarnings("SameParameterValue")
-    protected void plateVariant(Block result, String parent, String modid, String path) {
-
+    protected void processPlateVariants(Block result, String parent, String modid, String path) {
         ModelFile parentModel = new ModelFile.UncheckedModelFile(parent);
+        ResourceLocation existingTexture = new ResourceLocation(modid, path);
+
+        this.helper.trackGenerated(existingTexture, TEXTURE);
 
         final var model = models()
                 .getBuilder(blockName(result)).parent(parentModel)
-                .texture("1", new ResourceLocation(modid, path))
-                .texture("particle", new ResourceLocation(modid, path));
+                .texture("1", existingTexture)
+                .texture("particle", existingTexture);
 
         horizontalBlock(result, model);
         simpleBlockItem(result, model);

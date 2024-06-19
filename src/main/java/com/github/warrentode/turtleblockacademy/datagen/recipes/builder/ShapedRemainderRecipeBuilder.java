@@ -119,7 +119,7 @@ public class ShapedRemainderRecipeBuilder {
     public void build(Consumer<FinishedRecipe> consumerIn, String save) {
         ResourceLocation resourcelocation = ForgeRegistries.ITEMS.getKey(this.result);
         if ((new ResourceLocation(save)).equals(resourcelocation)) {
-            throw new IllegalStateException("Fermenting Recipe " + save + " needs a unique 'save' file location!");
+            throw new IllegalStateException("Shaped Remainder Recipe " + save + " needs a unique 'save' file location!");
         }
         else {
             this.build(consumerIn, new ResourceLocation(save));
@@ -197,8 +197,8 @@ public class ShapedRemainderRecipeBuilder {
         }
 
         public void serializeRecipeData(@NotNull JsonObject json) {
-            if (!this.group.isEmpty()) {
-                json.addProperty("group", this.group);
+            if (group != null) {
+                json.addProperty("group", group);
             }
 
             JsonArray jsonArray = new JsonArray();

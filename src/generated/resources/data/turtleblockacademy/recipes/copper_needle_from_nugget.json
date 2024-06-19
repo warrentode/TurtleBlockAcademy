@@ -1,0 +1,12 @@
+{
+  "type": "turtleblockacademy:shapeless_remainder",
+  "group": "needles",
+  "ingredients": [
+    {
+      "tag": "forge:nuggets/copper"
+    }
+  ],
+  "result": {
+    "item": "turtleblockacademy:copper_needle"
+  }
+}

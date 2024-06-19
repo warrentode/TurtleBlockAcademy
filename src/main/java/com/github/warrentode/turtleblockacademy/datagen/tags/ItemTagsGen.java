@@ -59,10 +59,16 @@ public class ItemTagsGen extends ItemTagsProvider {
     }
 
     private void registerPackTags() {
+        tag(TBATags.Items.THREAD)
+                .add(TBAItems.SILK_THREAD.get())
+                .add(TBAItems.WOOL_THREAD.get());
+        tag(TBATags.Items.FABRIC_TEXTILES)
+                .addTag(ItemTags.WOOL);
         tag(TBATags.Items.ACADEMY_SUPPLIES)
                 .add(TBAItems.STUDENT_CARD.get())
                 .add(TBABlocks.CERTIFICATE_BLOCK.get().asItem());
         tag(TBATags.Items.MATCHING_ITEM_REMAINDERS)
+                .addTag(TBATags.Items.NEEDLES)
                 .addTag(TBATags.Items.EGG_STAMPS)
                 .addOptionalTag(Objects.requireNonNull(ResourceLocation.tryParse(
                         "todevillagers:glassblower_tools")))
@@ -897,6 +903,7 @@ public class ItemTagsGen extends ItemTagsProvider {
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("supplementaries:deepslate_lamp")))
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("supplementaries:end_stone_lamp")));
         tag(TBATags.Items.NEEDLES)
+                .add(TBAItems.COPPER_NEEDLE.get())
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("sewingkit:wood_sewing_needle")))
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("sewingkit:stone_sewing_needle")))
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("sewingkit:bone_sewing_needle")))
@@ -1629,6 +1636,8 @@ public class ItemTagsGen extends ItemTagsProvider {
                 .addOptionalTag(Objects.requireNonNull(ResourceLocation.tryParse("patchouli:guide_book")))
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("turtleblockacademy:brewingguide")));
         tag(TBATags.Items.TEXTILES)
+                .addTag(TBATags.Items.THREAD)
+                .addTag(TBATags.Items.FABRIC_TEXTILES)
                 .addTag(TBATags.Items.BARK)
                 .addTag(TBATags.Items.STRING);
         tag(TBATags.Items.BARK)
@@ -1668,6 +1677,7 @@ public class ItemTagsGen extends ItemTagsProvider {
                 .add(Items.MAGENTA_CARPET)
                 .add(Items.PURPLE_CARPET);
         tag(TBATags.Items.NUGGETS)
+                .addTag(TBATags.Items.COPPER_NUGGET)
                 .addTag(TBATags.Items.IRON_NUGGET)
                 .addTag(TBATags.Items.GOLD_NUGGET)
                 .addTag(TBATags.Items.NETHERITE_NUGGET);
@@ -1686,6 +1696,7 @@ public class ItemTagsGen extends ItemTagsProvider {
                 .add(Items.IRON_INGOT);
         tag(TBATags.Items.COPPER_INGOT)
                 .add(Items.COPPER_INGOT);
+        tag(TBATags.Items.COPPER_NUGGET);
         tag(TBATags.Items.NETHERITE_INGOT)
                 .add(Items.NETHERITE_INGOT);
         tag(TBATags.Items.BACKPACKS)

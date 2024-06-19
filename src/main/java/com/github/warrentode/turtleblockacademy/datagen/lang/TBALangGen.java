@@ -127,6 +127,9 @@ public class TBALangGen extends LanguageProvider {
         add(TBAItems.PEELED_EGG.get(), "Peeled Egg");
         add(TBAItems.EGG_STAMP_CREEPER.get(), "Creeper Egg Stamp");
         add(TBAItems.EGG_STAMP_FLOWER.get(), "Flower Egg Stamp");
+        add(TBAItems.WOOL_THREAD.get(), "Wool Thread");
+        add(TBAItems.SILK_THREAD.get(), "Silk Thread");
+        add(TBAItems.COPPER_NEEDLE.get(), "Copper Needle");
     }
 
     private void addEasterEggs() {
@@ -1181,6 +1184,23 @@ public class TBALangGen extends LanguageProvider {
         add(TBABlocks.DILL_BUSH.get(), "Dill Crop");
 
         add(TBABlocks.TBA_MINING_PORTAL_BLOCK.get(), "Mining Portal Block");
+
+        add(TBABlocks.PICNIC_BLANKET_WHITE.get(), "White Picnic Blanket");
+        add(TBABlocks.PICNIC_BLANKET_ORANGE.get(), "Orange Picnic Blanket");
+        add(TBABlocks.PICNIC_BLANKET_MAGENTA.get(), "Magenta Picnic Blanket");
+        add(TBABlocks.PICNIC_BLANKET_LIGHT_BLUE.get(), "Light Blue Picnic Blanket");
+        add(TBABlocks.PICNIC_BLANKET_YELLOW.get(), "Yellow Picnic Blanket");
+        add(TBABlocks.PICNIC_BLANKET_LIME.get(), "Lime Picnic Blanket");
+        add(TBABlocks.PICNIC_BLANKET_PINK.get(), "Pink Picnic Blanket");
+        add(TBABlocks.PICNIC_BLANKET_GRAY.get(), "Gray Picnic Blanket");
+        add(TBABlocks.PICNIC_BLANKET_LIGHT_GRAY.get(), "Light Gray Picnic Blanket");
+        add(TBABlocks.PICNIC_BLANKET_CYAN.get(), "Cyan Picnic Blanket");
+        add(TBABlocks.PICNIC_BLANKET_PURPLE.get(), "Purple Picnic Blanket");
+        add(TBABlocks.PICNIC_BLANKET_BLUE.get(), "Blue Picnic Blanket");
+        add(TBABlocks.PICNIC_BLANKET_BROWN.get(), "Brown Picnic Blanket");
+        add(TBABlocks.PICNIC_BLANKET_GREEN.get(), "Green Picnic Blanket");
+        add(TBABlocks.PICNIC_BLANKET_RED.get(), "Red Picnic Blanket");
+        add(TBABlocks.PICNIC_BLANKET_BLACK.get(), "Black Picnic Blanket");
 
         add(TBABlocks.PLATE_WHITE.get(), "White Plate");
         add(TBABlocks.PLATE_ORANGE.get(), "Orange Plate");

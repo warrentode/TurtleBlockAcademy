@@ -1,5 +1,6 @@
 {
   "values": [
+    "turtleblockacademy:copper_needle",
     {
       "id": "sewingkit:wood_sewing_needle",
       "required": false

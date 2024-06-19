@@ -1,6 +1,6 @@
-package com.github.warrentode.turtleblockacademy.entity.client;
+package com.github.warrentode.turtleblockacademy.blocks.entity.renderer;
 
-import com.github.warrentode.turtleblockacademy.blocks.entity.SeatEntity;
+import com.github.warrentode.turtleblockacademy.entity.SeatEntity;
 import com.mojang.blaze3d.vertex.PoseStack;
 import net.minecraft.client.renderer.MultiBufferSource;
 import net.minecraft.client.renderer.entity.EntityRenderer;

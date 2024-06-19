@@ -1,6 +1,5 @@
-package com.github.warrentode.turtleblockacademy.blocks.entity;
+package com.github.warrentode.turtleblockacademy.entity;
 
-import com.github.warrentode.turtleblockacademy.entity.TBAEntityTypes;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.nbt.CompoundTag;

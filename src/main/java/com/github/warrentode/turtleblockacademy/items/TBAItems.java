@@ -39,6 +39,15 @@ public class TBAItems {
     public static final RegistryObject<Item> EGG_STAMP_FLOWER =
             ITEMS.register("egg_stamp_flower",
                     () -> new Item(basicItem()));
+    public static final RegistryObject<Item> WOOL_THREAD =
+            ITEMS.register("wool_thread",
+                    () -> new Item(basicItem()));
+    public static final RegistryObject<Item> SILK_THREAD =
+            ITEMS.register("silk_thread",
+                    () -> new Item(basicItem()));
+    public static final RegistryObject<Item> COPPER_NEEDLE =
+            ITEMS.register("copper_needle",
+                    () -> new Item(basicItem().defaultDurability(64)));
 
     // BASIC ITEMS
     public static final RegistryObject<Item> YEAST =

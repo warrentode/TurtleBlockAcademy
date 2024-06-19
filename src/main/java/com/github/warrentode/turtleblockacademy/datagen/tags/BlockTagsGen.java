@@ -18,6 +18,7 @@ import org.jetbrains.annotations.Nullable;
 
 import java.util.Objects;
 
+import static com.github.warrentode.turtleblockacademy.util.TBATags.Blocks.PICNIC_BLANKETS;
 import static net.minecraft.tags.BlockTags.NEEDS_STONE_TOOL;
 
 public class BlockTagsGen extends BlockTagsProvider {
@@ -47,6 +48,7 @@ public class BlockTagsGen extends BlockTagsProvider {
 
     protected void registerTBATags() {
         tag(TBATags.Blocks.FURNITURE)
+                .addTag(PICNIC_BLANKETS)
                 .addTag(TBATags.Blocks.DESKS)
                 .addTag(TBATags.Blocks.DESK_CABINETS)
                 .addTag(TBATags.Blocks.TABLES)
@@ -56,8 +58,26 @@ public class BlockTagsGen extends BlockTagsProvider {
                 .addTag(TBATags.Blocks.PLATES)
                 .addTag(TBATags.Blocks.BOOKCASES)
                 .addTag(TBATags.Blocks.BASKETS);
+        tag(TBATags.Blocks.PICNIC_BLANKETS)
+                .add(
+                        TBABlocks.PICNIC_BLANKET_WHITE.get(),
+                        TBABlocks.PICNIC_BLANKET_LIGHT_GRAY.get(),
+                        TBABlocks.PICNIC_BLANKET_GRAY.get(),
+                        TBABlocks.PICNIC_BLANKET_BLACK.get(),
+                        TBABlocks.PICNIC_BLANKET_BROWN.get(),
+                        TBABlocks.PICNIC_BLANKET_RED.get(),
+                        TBABlocks.PICNIC_BLANKET_ORANGE.get(),
+                        TBABlocks.PICNIC_BLANKET_YELLOW.get(),
+                        TBABlocks.PICNIC_BLANKET_LIME.get(),
+                        TBABlocks.PICNIC_BLANKET_GREEN.get(),
+                        TBABlocks.PICNIC_BLANKET_CYAN.get(),
+                        TBABlocks.PICNIC_BLANKET_LIGHT_BLUE.get(),
+                        TBABlocks.PICNIC_BLANKET_BLUE.get(),
+                        TBABlocks.PICNIC_BLANKET_PURPLE.get(),
+                        TBABlocks.PICNIC_BLANKET_MAGENTA.get(),
+                        TBABlocks.PICNIC_BLANKET_PINK.get()
+                );
         tag(TBATags.Blocks.BASKETS)
-
                 .add(
                         TBABlocks.BASKET_OAK_WHITE.get(),
                         TBABlocks.BASKET_OAK_LIGHT_GRAY.get(),

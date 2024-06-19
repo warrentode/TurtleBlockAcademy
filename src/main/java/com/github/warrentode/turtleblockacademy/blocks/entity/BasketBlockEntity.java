@@ -1,7 +1,7 @@
 package com.github.warrentode.turtleblockacademy.blocks.entity;
 
 import com.github.warrentode.turtleblockacademy.blocks.furniture.BasketBlock;
-import com.github.warrentode.turtleblockacademy.util.CalendarUtil;
+import com.github.warrentode.turtleblockacademy.util.SeasonalParticleColors;
 import com.github.warrentode.turtleblockacademy.util.TBATags;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -187,16 +187,9 @@ public class BasketBlockEntity extends BlockEntity {
             return;
         }
 
+        SeasonalParticleColors.eventCheck();
+
         state = state.setValue(BasketBlock.CONDITIONAL, !basketEntity.isEmpty());
         BasketBlock.resetBlockState(level, pos, state, state.getValue(BasketBlock.CONDITIONAL));
-
-        if (CalendarUtil.check("ANNIVERSARY") || CalendarUtil.check("BIRTHDAY")
-                || CalendarUtil.check("HALLOWEEN") || CalendarUtil.check("CHRISTMAS")
-                || CalendarUtil.check("EASTER") || CalendarUtil.check("NEW_YEAR")) {
-            BasketBlock.setLightLvl(15);
-        }
-        else {
-            BasketBlock.setLightLvl(0);
-        }
     }
 }

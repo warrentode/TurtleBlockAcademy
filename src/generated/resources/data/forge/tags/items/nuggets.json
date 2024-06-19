@@ -1,5 +1,6 @@
 {
   "values": [
+    "#forge:nuggets/copper",
     "#forge:nuggets/iron",
     "#forge:nuggets/gold",
     "#forge:nuggets/netherite"

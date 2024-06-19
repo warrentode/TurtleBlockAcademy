@@ -28,6 +28,7 @@ import org.jetbrains.annotations.NotNull;
 import java.util.stream.Collectors;
 
 import static com.github.warrentode.turtleblockacademy.TurtleBlockAcademy.MODID;
+import static com.github.warrentode.turtleblockacademy.blocks.furniture.PicnicBlanket.PICNIC_BLANKET_LIST;
 
 public class TBABlockLootTablesGen extends BlockLoot {
     @Override
@@ -35,6 +36,8 @@ public class TBABlockLootTablesGen extends BlockLoot {
         this.dropSelf(TBABlocks.CERTIFICATE_BLOCK.get());
 
         this.dropSelf(TBABlocks.FERMENTING_POT_BLOCK.get());
+
+        PICNIC_BLANKET_LIST.forEach(this::dropSelf);
 
         this.add(TBABlocks.CLOVE_BUSH.get(), (block) ->
                 applyExplosionDecay(block,

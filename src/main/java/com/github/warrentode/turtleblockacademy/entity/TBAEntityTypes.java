@@ -1,6 +1,5 @@
 package com.github.warrentode.turtleblockacademy.entity;
 
-import com.github.warrentode.turtleblockacademy.blocks.entity.SeatEntity;
 import com.github.warrentode.turtleblockacademy.entity.custom.Herobrine;
 import com.github.warrentode.turtleblockacademy.entity.custom.TreasureBeetle;
 import net.minecraft.world.entity.EntityType;

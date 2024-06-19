@@ -11,6 +11,7 @@ import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.DyeColor;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.Material;
@@ -1858,11 +1859,51 @@ public class TBABlocks {
     public static final RegistryObject<Block> BASKET_TINKER_SKYROOT_PINK =
             registerBlockWithoutBlockItem("basket_tinker_skyroot_pink", () -> basket(DyeColor.PINK));
 
+    // picnic blanket variants
+    public static final RegistryObject<Block> PICNIC_BLANKET_WHITE =
+            registerBlock("picnic_blanket_white", ()-> picnicBlanket(DyeColor.WHITE));
+    public static final RegistryObject<Block> PICNIC_BLANKET_ORANGE =
+            registerBlock("picnic_blanket_orange", ()-> picnicBlanket(DyeColor.ORANGE));
+    public static final RegistryObject<Block> PICNIC_BLANKET_MAGENTA =
+            registerBlock("picnic_blanket_magenta", ()-> picnicBlanket(DyeColor.MAGENTA));
+    public static final RegistryObject<Block> PICNIC_BLANKET_LIGHT_BLUE =
+            registerBlock("picnic_blanket_light_blue", ()-> picnicBlanket(DyeColor.LIGHT_BLUE));
+    public static final RegistryObject<Block> PICNIC_BLANKET_YELLOW =
+            registerBlock("picnic_blanket_yellow", ()-> picnicBlanket(DyeColor.YELLOW));
+    public static final RegistryObject<Block> PICNIC_BLANKET_LIME =
+            registerBlock("picnic_blanket_lime", ()-> picnicBlanket(DyeColor.LIME));
+    public static final RegistryObject<Block> PICNIC_BLANKET_PINK =
+            registerBlock("picnic_blanket_pink", ()-> picnicBlanket(DyeColor.PINK));
+    public static final RegistryObject<Block> PICNIC_BLANKET_GRAY =
+            registerBlock("picnic_blanket_gray", ()-> picnicBlanket(DyeColor.GRAY));
+    public static final RegistryObject<Block> PICNIC_BLANKET_LIGHT_GRAY =
+            registerBlock("picnic_blanket_light_gray", ()-> picnicBlanket(DyeColor.LIGHT_GRAY));
+    public static final RegistryObject<Block> PICNIC_BLANKET_CYAN =
+            registerBlock("picnic_blanket_cyan", ()-> picnicBlanket(DyeColor.CYAN));
+    public static final RegistryObject<Block> PICNIC_BLANKET_PURPLE =
+            registerBlock("picnic_blanket_purple", ()-> picnicBlanket(DyeColor.PURPLE));
+    public static final RegistryObject<Block> PICNIC_BLANKET_BLUE =
+            registerBlock("picnic_blanket_blue", ()-> picnicBlanket(DyeColor.BLUE));
+    public static final RegistryObject<Block> PICNIC_BLANKET_BROWN =
+            registerBlock("picnic_blanket_brown", ()-> picnicBlanket(DyeColor.BROWN));
+    public static final RegistryObject<Block> PICNIC_BLANKET_GREEN =
+            registerBlock("picnic_blanket_green", ()-> picnicBlanket(DyeColor.GREEN));
+    public static final RegistryObject<Block> PICNIC_BLANKET_RED =
+            registerBlock("picnic_blanket_red", ()-> picnicBlanket(DyeColor.RED));
+    public static final RegistryObject<Block> PICNIC_BLANKET_BLACK =
+            registerBlock("picnic_blanket_black", ()-> picnicBlanket(DyeColor.BLACK));
+
+    private static @NotNull PicnicBlanket picnicBlanket(DyeColor clothColor) {
+        return new PicnicBlanket(clothColor,  BlockBehaviour.
+                Properties.copy(Blocks.WHITE_CARPET)
+                .sound(SoundType.WOOL).strength(1)
+                .lightLevel((state) -> 6).noOcclusion());
+    }
 
     private static @NotNull BasketBlock basket(DyeColor clothColor) {
         return new BasketBlock(clothColor,  BlockBehaviour.Properties.of(Material.WOOD)
                 .sound(SoundType.WOOD).strength(1)
-                .lightLevel((state) -> BasketBlock.lightLvl).noOcclusion());
+                .lightLevel((state) -> 6).noOcclusion());
     }
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {

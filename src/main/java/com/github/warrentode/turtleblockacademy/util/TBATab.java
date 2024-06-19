@@ -1,6 +1,7 @@
 package com.github.warrentode.turtleblockacademy.util;
 
 import com.github.warrentode.turtleblockacademy.blocks.TBABlocks;
+import com.github.warrentode.turtleblockacademy.blocks.furniture.PicnicBlanket;
 import com.github.warrentode.turtleblockacademy.blocks.furniture.PlateBlock;
 import net.minecraft.core.NonNullList;
 import net.minecraft.world.item.*;
@@ -28,6 +29,8 @@ public class TBATab extends CreativeModeTab {
         List<Item> academyItems = new ArrayList<>();
         List<Item> bookItems = new ArrayList<>();
         List<Item> workstations = new ArrayList<>();
+        List<Item> textiles = new ArrayList<>();
+        List<Item> needles = new ArrayList<>();
         List<Item> eggStamps = new ArrayList<>();
         List<Item> edibles = new ArrayList<>();
         List<Item> seedItems = new ArrayList<>();
@@ -40,6 +43,7 @@ public class TBATab extends CreativeModeTab {
         List<Item> benches = new ArrayList<>();
         List<Item> lockers = new ArrayList<>();
         List<Item> bookcases = new ArrayList<>();
+        List<Item> picnicBlankets = new ArrayList<>();
         List<Item> plates = new ArrayList<>();
         List<Item> baskets = new ArrayList<>();
         List<Item> easterEggs = new ArrayList<>();
@@ -50,6 +54,15 @@ public class TBATab extends CreativeModeTab {
         for (Item item : ForgeRegistries.ITEMS) {
             String itemType = getItemType(item);
             switch (itemType) {
+                case "needles":
+                    needles.add(item);
+                    break;
+                case "textiles":
+                    textiles.add(item);
+                    break;
+                case "picnic_blankets":
+                    picnicBlankets.add(item);
+                    break;
                 case "academy_supplies":
                     academyItems.add(item);
                     break;
@@ -121,6 +134,12 @@ public class TBATab extends CreativeModeTab {
         for (Item item : workstations) {
             item.fillItemCategory(this, list);
         }
+        for (Item item : textiles) {
+            item.fillItemCategory(this, list);
+        }
+        for (Item item : needles) {
+            item.fillItemCategory(this, list);
+        }
         for (Item item : eggStamps) {
             item.fillItemCategory(this, list);
         }
@@ -155,6 +174,9 @@ public class TBATab extends CreativeModeTab {
             item.fillItemCategory(this, list);
         }
         for (Item item : bookcases) {
+            item.fillItemCategory(this, list);
+        }
+        for (Item item : picnicBlankets) {
             item.fillItemCategory(this, list);
         }
         for (Item item : plates) {
@@ -195,6 +217,14 @@ public class TBATab extends CreativeModeTab {
         else if (item.getDefaultInstance().is(TBATags.Items.INGREDIENTS)) {
             return "ingredients";
         }
+        // textiles
+        else if (item.getDefaultInstance().is(TBATags.Items.TEXTILES)) {
+            return "textiles";
+        }
+        // needles
+        else if (item.getDefaultInstance().is(TBATags.Items.NEEDLES)) {
+            return "needles";
+        }
         // block items
         else if (item instanceof BlockItem blockItem) {
             // workstations
@@ -225,6 +255,9 @@ public class TBATab extends CreativeModeTab {
             }
             else if (blockItem.getBlock() instanceof PlateBlock) {
                 return "plates";
+            }
+            else if (blockItem.getBlock() instanceof PicnicBlanket) {
+                return "picnic_blankets";
             }
             else if (blockItem.getBlock().defaultBlockState().is(TBATags.Blocks.BASKETS)) {
                 return "baskets";

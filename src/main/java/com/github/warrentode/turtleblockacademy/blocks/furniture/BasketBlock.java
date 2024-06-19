@@ -2,7 +2,7 @@ package com.github.warrentode.turtleblockacademy.blocks.furniture;
 
 import com.github.warrentode.turtleblockacademy.blocks.entity.BasketBlockEntity;
 import com.github.warrentode.turtleblockacademy.blocks.entity.TBABlockEntities;
-import com.github.warrentode.turtleblockacademy.util.CalendarUtil;
+import com.github.warrentode.turtleblockacademy.util.SeasonalParticleColors;
 import com.github.warrentode.turtleblockacademy.util.ShapeUtil;
 import com.github.warrentode.turtleblockacademy.util.TBATags;
 import net.minecraft.core.BlockPos;
@@ -10,7 +10,6 @@ import net.minecraft.core.Direction;
 import net.minecraft.core.particles.DustParticleOptions;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.sounds.SoundEvents;
-import net.minecraft.sounds.SoundSource;
 import net.minecraft.util.RandomSource;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
@@ -51,7 +50,6 @@ public class BasketBlock extends BaseEntityBlock {
     public static final DirectionProperty FACING = BlockStateProperties.HORIZONTAL_FACING;
     public static final BooleanProperty CONDITIONAL = BlockStateProperties.CONDITIONAL;
     private final DyeColor color;
-    public static int lightLvl = getLightLvl();
 
     private static final Map<Direction, VoxelShape> SHAPES = new EnumMap<>(Direction.class);
 
@@ -92,14 +90,6 @@ public class BasketBlock extends BaseEntityBlock {
     @Nullable
     public DyeColor getColor() {
         return this.color;
-    }
-
-    public static int getLightLvl() {
-        return lightLvl;
-    }
-
-    public static void setLightLvl(int value) {
-        lightLvl = value;
     }
 
     @Override
@@ -281,14 +271,12 @@ public class BasketBlock extends BaseEntityBlock {
     public void animateTick(@NotNull BlockState state, @NotNull Level level, @NotNull BlockPos pos, @NotNull RandomSource random) {
         if (state.getValue(BasketBlock.CONDITIONAL)) {
             double x = pos.getX() + 0.7D;
-            double y = pos.getY() + 0.6D;
+            double y = pos.getY() + 0.7D;
             double z = pos.getZ() + 0.7D;
 
             double v = random.triangle(0.0D, 0.5D);
             double v1 = random.triangle(0.0D, 0.1D);
             double v2 = random.triangle(0.0D, 0.5D);
-
-            double pitch = random.triangle(0.2, 0.9);
 
             float scale = 0.5f;
 
@@ -301,17 +289,13 @@ public class BasketBlock extends BaseEntityBlock {
             double zSpeed = random.triangle(zPos / 2, zPos * 2);
 
 
-            if (random.nextFloat() < 0.01F) {
-                level.playLocalSound(xPos, yPos, zPos,
-                        SoundEvents.AMETHYST_BLOCK_CHIME,
-                        SoundSource.BLOCKS, 0.25F,
-                        random.nextFloat() * (float) pitch, true);
+            if (random.nextFloat() < 0.05F) {
                 level.addParticle(new DustParticleOptions(
-                                CalendarUtil.getPrimarySeasonalColor(), scale),
+                                SeasonalParticleColors.getPrimarySeasonalParticleColor(), scale),
                         xPos, yPos, zPos, xSpeed, ySpeed, zSpeed);
                 level.addParticle(
                         new DustParticleOptions(
-                                CalendarUtil.getSecondarySeasonalColor(), scale),
+                                SeasonalParticleColors.getSecondarySeasonalParticleColor(), scale),
                         xPos, yPos, zPos, xSpeed, ySpeed, zSpeed);
             }
         }
