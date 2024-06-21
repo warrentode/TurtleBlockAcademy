@@ -1,0 +1,9 @@
+{
+  "parent": "turtleblockacademy:block/desk_chair",
+  "textures": {
+    "1": "unusualend:blocks/chorus_nest_planks",
+    "2": "minecraft:block/white_wool",
+    "3": "unusualend:blocks/chorus_nest_mosaic",
+    "particle": "unusualend:blocks/chorus_nest_planks"
+  }
+}

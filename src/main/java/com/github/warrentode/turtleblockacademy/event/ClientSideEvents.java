@@ -18,6 +18,7 @@ import net.minecraftforge.fml.common.Mod;
 import org.jetbrains.annotations.NotNull;
 
 import static com.github.warrentode.turtleblockacademy.TurtleBlockAcademy.MODID;
+import static com.github.warrentode.turtleblockacademy.blocks.furniture.DeskChairBlock.DESK_CHAIR_LIST;
 import static com.github.warrentode.turtleblockacademy.blocks.furniture.PicnicBlanket.PICNIC_BLANKET_LIST;
 import static com.github.warrentode.turtleblockacademy.items.food.eastereggs.EasterEggItem.EASTER_EGGS;
 
@@ -78,6 +79,28 @@ public class ClientSideEvents {
                     // return the appropriate color from block class
                     return picnicBlanket.getTintIndex();
                 }, picnicBlanket);
+            });
+
+            // Register block colors
+            DESK_CHAIR_LIST.forEach(deskChairBlock -> {
+                if (deskChairBlock.getClothColor() != null) {
+                    //noinspection deprecation
+                    event.getBlockColors().register((state, world, pos, tintIndex) -> {
+                        // return the appropriate color from block class
+                        return deskChairBlock.getTintIndex();
+                    }, deskChairBlock);
+                }
+            });
+
+            // Register item colors
+            DESK_CHAIR_LIST.forEach(deskChairBlock -> {
+                if (deskChairBlock.getClothColor() != null) {
+                    //noinspection deprecation
+                    event.getItemColors().register((stack, tintIndex) -> {
+                        // return the appropriate color from block class
+                        return deskChairBlock.getTintIndex();
+                    }, deskChairBlock);
+                }
             });
         }
     }

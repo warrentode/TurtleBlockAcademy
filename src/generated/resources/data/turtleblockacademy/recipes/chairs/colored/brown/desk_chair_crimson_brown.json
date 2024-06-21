@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "chairs",
+  "key": {
+    "#": {
+      "item": "minecraft:crimson_slab"
+    },
+    "L": {
+      "item": "minecraft:crimson_stem"
+    },
+    "S": {
+      "item": "minecraft:stripped_crimson_stem"
+    },
+    "W": {
+      "item": "minecraft:brown_carpet"
+    }
+  },
+  "pattern": [
+    "WW#",
+    "#S#",
+    "L L"
+  ],
+  "result": {
+    "count": 2,
+    "item": "turtleblockacademy:desk_chair_crimson_brown"
+  }
+}

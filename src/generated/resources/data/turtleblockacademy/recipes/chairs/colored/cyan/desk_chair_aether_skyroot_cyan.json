@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "chairs",
+  "key": {
+    "#": {
+      "item": "aether:skyroot_slab"
+    },
+    "L": {
+      "item": "aether:skyroot_log"
+    },
+    "S": {
+      "item": "aether:stripped_skyroot_log"
+    },
+    "W": {
+      "item": "minecraft:cyan_carpet"
+    }
+  },
+  "pattern": [
+    "WW#",
+    "#S#",
+    "L L"
+  ],
+  "result": {
+    "count": 2,
+    "item": "turtleblockacademy:desk_chair_aether_skyroot_cyan"
+  }
+}

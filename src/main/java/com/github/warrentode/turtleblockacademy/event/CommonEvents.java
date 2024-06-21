@@ -4,7 +4,6 @@ import com.aetherteam.aether.data.resources.registries.AetherDimensions;
 import com.github.warrentode.turtleblockacademy.commands.AcademyCommands;
 import com.github.warrentode.turtleblockacademy.entity.TBAEntityTypes;
 import com.github.warrentode.turtleblockacademy.util.CalendarUtil;
-import com.github.warrentode.turtleblockacademy.util.LogUtil;
 import com.github.warrentode.turtleblockacademy.world.dimension.TBADimensions;
 import com.github.warrentode.turtleblockacademy.world.spawner.herobrine.HerobrineSpawner;
 import net.minecraft.network.chat.Component;

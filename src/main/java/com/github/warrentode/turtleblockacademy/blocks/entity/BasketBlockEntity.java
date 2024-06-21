@@ -31,7 +31,6 @@ import java.util.Objects;
 public class BasketBlockEntity extends BlockEntity {
     public final ItemStackHandler inventory;
     public static final int INVENTORY_SIZE = 9;
-    public static final int MAX_STACK_SIZE = 1;
 
     private final ItemStackHandler basketHandler = new ItemStackHandler(INVENTORY_SIZE) {
         @Override

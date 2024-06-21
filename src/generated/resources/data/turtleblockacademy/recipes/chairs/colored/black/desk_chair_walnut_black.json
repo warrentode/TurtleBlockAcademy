@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "chairs",
+  "key": {
+    "#": {
+      "item": "ecologics:walnut_slab"
+    },
+    "L": {
+      "item": "ecologics:walnut_log"
+    },
+    "S": {
+      "item": "ecologics:stripped_walnut_log"
+    },
+    "W": {
+      "item": "minecraft:black_carpet"
+    }
+  },
+  "pattern": [
+    "WW#",
+    "#S#",
+    "L L"
+  ],
+  "result": {
+    "count": 2,
+    "item": "turtleblockacademy:desk_chair_walnut_black"
+  }
+}

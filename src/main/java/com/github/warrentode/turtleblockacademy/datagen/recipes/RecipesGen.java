@@ -39,6 +39,7 @@ import net.minecraftforge.common.crafting.ConditionalRecipe;
 import net.minecraftforge.common.crafting.conditions.IConditionBuilder;
 import org.jetbrains.annotations.Contract;
 import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 import slimeknights.tconstruct.fluids.TinkerFluids;
 import slimeknights.tconstruct.world.TinkerWorld;
 import umpaz.farmersrespite.common.registry.FRItems;
@@ -1812,8 +1813,1161 @@ public class RecipesGen extends RecipeProvider implements IConditionBuilder {
         plateRecipe(consumer, TBABlocks.PLATE_BLACK.get().asItem().getDefaultInstance(),
                 Items.BLACK_GLAZED_TERRACOTTA);
 
-        chairRecipe(consumer, TBABlocks.DESK_CHAIR_ACACIA.get().asItem().getDefaultInstance(),
+        chairRecipe(consumer, null,TBABlocks.DESK_CHAIR_ACACIA.get().asItem().getDefaultInstance(),
                 Items.ACACIA_LOG, Items.STRIPPED_ACACIA_LOG, Items.ACACIA_SLAB);
+        chairRecipe(consumer, DyeColor.WHITE,TBABlocks.DESK_CHAIR_ACACIA_WHITE.get().asItem().getDefaultInstance(),
+                Items.ACACIA_LOG, Items.STRIPPED_ACACIA_LOG, Items.ACACIA_SLAB);
+        chairRecipe(consumer, DyeColor.ORANGE,TBABlocks.DESK_CHAIR_ACACIA_ORANGE.get().asItem().getDefaultInstance(),
+                Items.ACACIA_LOG, Items.STRIPPED_ACACIA_LOG, Items.ACACIA_SLAB);
+        chairRecipe(consumer, DyeColor.MAGENTA,TBABlocks.DESK_CHAIR_ACACIA_MAGENTA.get().asItem().getDefaultInstance(),
+                Items.ACACIA_LOG, Items.STRIPPED_ACACIA_LOG, Items.ACACIA_SLAB);
+        chairRecipe(consumer, DyeColor.LIGHT_BLUE,TBABlocks.DESK_CHAIR_ACACIA_LIGHT_BLUE.get().asItem().getDefaultInstance(),
+                Items.ACACIA_LOG, Items.STRIPPED_ACACIA_LOG, Items.ACACIA_SLAB);
+        chairRecipe(consumer, DyeColor.YELLOW,TBABlocks.DESK_CHAIR_ACACIA_YELLOW.get().asItem().getDefaultInstance(),
+                Items.ACACIA_LOG, Items.STRIPPED_ACACIA_LOG, Items.ACACIA_SLAB);
+        chairRecipe(consumer, DyeColor.LIME,TBABlocks.DESK_CHAIR_ACACIA_LIME.get().asItem().getDefaultInstance(),
+                Items.ACACIA_LOG, Items.STRIPPED_ACACIA_LOG, Items.ACACIA_SLAB);
+        chairRecipe(consumer, DyeColor.PINK,TBABlocks.DESK_CHAIR_ACACIA_PINK.get().asItem().getDefaultInstance(),
+                Items.ACACIA_LOG, Items.STRIPPED_ACACIA_LOG, Items.ACACIA_SLAB);
+        chairRecipe(consumer, DyeColor.GRAY,TBABlocks.DESK_CHAIR_ACACIA_GRAY.get().asItem().getDefaultInstance(),
+                Items.ACACIA_LOG, Items.STRIPPED_ACACIA_LOG, Items.ACACIA_SLAB);
+        chairRecipe(consumer, DyeColor.LIGHT_GRAY,TBABlocks.DESK_CHAIR_ACACIA_LIGHT_GRAY.get().asItem().getDefaultInstance(),
+                Items.ACACIA_LOG, Items.STRIPPED_ACACIA_LOG, Items.ACACIA_SLAB);
+        chairRecipe(consumer, DyeColor.CYAN,TBABlocks.DESK_CHAIR_ACACIA_CYAN.get().asItem().getDefaultInstance(),
+                Items.ACACIA_LOG, Items.STRIPPED_ACACIA_LOG, Items.ACACIA_SLAB);
+        chairRecipe(consumer, DyeColor.PURPLE,TBABlocks.DESK_CHAIR_ACACIA_PURPLE.get().asItem().getDefaultInstance(),
+                Items.ACACIA_LOG, Items.STRIPPED_ACACIA_LOG, Items.ACACIA_SLAB);
+        chairRecipe(consumer, DyeColor.BLUE,TBABlocks.DESK_CHAIR_ACACIA_BLUE.get().asItem().getDefaultInstance(),
+                Items.ACACIA_LOG, Items.STRIPPED_ACACIA_LOG, Items.ACACIA_SLAB);
+        chairRecipe(consumer, DyeColor.BROWN,TBABlocks.DESK_CHAIR_ACACIA_BROWN.get().asItem().getDefaultInstance(),
+                Items.ACACIA_LOG, Items.STRIPPED_ACACIA_LOG, Items.ACACIA_SLAB);
+        chairRecipe(consumer, DyeColor.GREEN,TBABlocks.DESK_CHAIR_ACACIA_GREEN.get().asItem().getDefaultInstance(),
+                Items.ACACIA_LOG, Items.STRIPPED_ACACIA_LOG, Items.ACACIA_SLAB);
+        chairRecipe(consumer, DyeColor.RED,TBABlocks.DESK_CHAIR_ACACIA_RED.get().asItem().getDefaultInstance(),
+                Items.ACACIA_LOG, Items.STRIPPED_ACACIA_LOG, Items.ACACIA_SLAB);
+        chairRecipe(consumer, DyeColor.BLACK,TBABlocks.DESK_CHAIR_ACACIA_BLACK.get().asItem().getDefaultInstance(),
+                Items.ACACIA_LOG, Items.STRIPPED_ACACIA_LOG, Items.ACACIA_SLAB);
+
+        chairRecipe(consumer, null,TBABlocks.DESK_CHAIR_BIRCH.get().asItem().getDefaultInstance(),
+                Items.BIRCH_LOG, Items.STRIPPED_BIRCH_LOG, Items.BIRCH_SLAB);
+        chairRecipe(consumer, DyeColor.WHITE,TBABlocks.DESK_CHAIR_BIRCH_WHITE.get().asItem().getDefaultInstance(),
+                Items.BIRCH_LOG, Items.STRIPPED_BIRCH_LOG, Items.BIRCH_SLAB);
+        chairRecipe(consumer, DyeColor.ORANGE,TBABlocks.DESK_CHAIR_BIRCH_ORANGE.get().asItem().getDefaultInstance(),
+                Items.BIRCH_LOG, Items.STRIPPED_BIRCH_LOG, Items.BIRCH_SLAB);
+        chairRecipe(consumer, DyeColor.MAGENTA,TBABlocks.DESK_CHAIR_BIRCH_MAGENTA.get().asItem().getDefaultInstance(),
+                Items.BIRCH_LOG, Items.STRIPPED_BIRCH_LOG, Items.BIRCH_SLAB);
+        chairRecipe(consumer, DyeColor.LIGHT_BLUE,TBABlocks.DESK_CHAIR_BIRCH_LIGHT_BLUE.get().asItem().getDefaultInstance(),
+                Items.BIRCH_LOG, Items.STRIPPED_BIRCH_LOG, Items.BIRCH_SLAB);
+        chairRecipe(consumer, DyeColor.YELLOW,TBABlocks.DESK_CHAIR_BIRCH_YELLOW.get().asItem().getDefaultInstance(),
+                Items.BIRCH_LOG, Items.STRIPPED_BIRCH_LOG, Items.BIRCH_SLAB);
+        chairRecipe(consumer, DyeColor.LIME,TBABlocks.DESK_CHAIR_BIRCH_LIME.get().asItem().getDefaultInstance(),
+                Items.BIRCH_LOG, Items.STRIPPED_BIRCH_LOG, Items.BIRCH_SLAB);
+        chairRecipe(consumer, DyeColor.PINK,TBABlocks.DESK_CHAIR_BIRCH_PINK.get().asItem().getDefaultInstance(),
+                Items.BIRCH_LOG, Items.STRIPPED_BIRCH_LOG, Items.BIRCH_SLAB);
+        chairRecipe(consumer, DyeColor.GRAY,TBABlocks.DESK_CHAIR_BIRCH_GRAY.get().asItem().getDefaultInstance(),
+                Items.BIRCH_LOG, Items.STRIPPED_BIRCH_LOG, Items.BIRCH_SLAB);
+        chairRecipe(consumer, DyeColor.LIGHT_GRAY,TBABlocks.DESK_CHAIR_BIRCH_LIGHT_GRAY.get().asItem().getDefaultInstance(),
+                Items.BIRCH_LOG, Items.STRIPPED_BIRCH_LOG, Items.BIRCH_SLAB);
+        chairRecipe(consumer, DyeColor.CYAN,TBABlocks.DESK_CHAIR_BIRCH_CYAN.get().asItem().getDefaultInstance(),
+                Items.BIRCH_LOG, Items.STRIPPED_BIRCH_LOG, Items.BIRCH_SLAB);
+        chairRecipe(consumer, DyeColor.PURPLE,TBABlocks.DESK_CHAIR_BIRCH_PURPLE.get().asItem().getDefaultInstance(),
+                Items.BIRCH_LOG, Items.STRIPPED_BIRCH_LOG, Items.BIRCH_SLAB);
+        chairRecipe(consumer, DyeColor.BLUE,TBABlocks.DESK_CHAIR_BIRCH_BLUE.get().asItem().getDefaultInstance(),
+                Items.BIRCH_LOG, Items.STRIPPED_BIRCH_LOG, Items.BIRCH_SLAB);
+        chairRecipe(consumer, DyeColor.BROWN,TBABlocks.DESK_CHAIR_BIRCH_BROWN.get().asItem().getDefaultInstance(),
+                Items.BIRCH_LOG, Items.STRIPPED_BIRCH_LOG, Items.BIRCH_SLAB);
+        chairRecipe(consumer, DyeColor.GREEN,TBABlocks.DESK_CHAIR_BIRCH_GREEN.get().asItem().getDefaultInstance(),
+                Items.BIRCH_LOG, Items.STRIPPED_BIRCH_LOG, Items.BIRCH_SLAB);
+        chairRecipe(consumer, DyeColor.RED,TBABlocks.DESK_CHAIR_BIRCH_RED.get().asItem().getDefaultInstance(),
+                Items.BIRCH_LOG, Items.STRIPPED_BIRCH_LOG, Items.BIRCH_SLAB);
+        chairRecipe(consumer, DyeColor.BLACK,TBABlocks.DESK_CHAIR_BIRCH_BLACK.get().asItem().getDefaultInstance(),
+                Items.BIRCH_LOG, Items.STRIPPED_BIRCH_LOG, Items.BIRCH_SLAB);
+
+        chairRecipe(consumer, null,TBABlocks.DESK_CHAIR_DARK_OAK.get().asItem().getDefaultInstance(),
+                Items.DARK_OAK_LOG, Items.STRIPPED_DARK_OAK_LOG, Items.DARK_OAK_SLAB);
+        chairRecipe(consumer, DyeColor.WHITE,TBABlocks.DESK_CHAIR_DARK_OAK_WHITE.get().asItem().getDefaultInstance(),
+                Items.DARK_OAK_LOG, Items.STRIPPED_DARK_OAK_LOG, Items.DARK_OAK_SLAB);
+        chairRecipe(consumer, DyeColor.ORANGE,TBABlocks.DESK_CHAIR_DARK_OAK_ORANGE.get().asItem().getDefaultInstance(),
+                Items.DARK_OAK_LOG, Items.STRIPPED_DARK_OAK_LOG, Items.DARK_OAK_SLAB);
+        chairRecipe(consumer, DyeColor.MAGENTA,TBABlocks.DESK_CHAIR_DARK_OAK_MAGENTA.get().asItem().getDefaultInstance(),
+                Items.DARK_OAK_LOG, Items.STRIPPED_DARK_OAK_LOG, Items.DARK_OAK_SLAB);
+        chairRecipe(consumer, DyeColor.LIGHT_BLUE,TBABlocks.DESK_CHAIR_DARK_OAK_LIGHT_BLUE.get().asItem().getDefaultInstance(),
+                Items.DARK_OAK_LOG, Items.STRIPPED_DARK_OAK_LOG, Items.DARK_OAK_SLAB);
+        chairRecipe(consumer, DyeColor.YELLOW,TBABlocks.DESK_CHAIR_DARK_OAK_YELLOW.get().asItem().getDefaultInstance(),
+                Items.DARK_OAK_LOG, Items.STRIPPED_DARK_OAK_LOG, Items.DARK_OAK_SLAB);
+        chairRecipe(consumer, DyeColor.LIME,TBABlocks.DESK_CHAIR_DARK_OAK_LIME.get().asItem().getDefaultInstance(),
+                Items.DARK_OAK_LOG, Items.STRIPPED_DARK_OAK_LOG, Items.DARK_OAK_SLAB);
+        chairRecipe(consumer, DyeColor.PINK,TBABlocks.DESK_CHAIR_DARK_OAK_PINK.get().asItem().getDefaultInstance(),
+                Items.DARK_OAK_LOG, Items.STRIPPED_DARK_OAK_LOG, Items.DARK_OAK_SLAB);
+        chairRecipe(consumer, DyeColor.GRAY,TBABlocks.DESK_CHAIR_DARK_OAK_GRAY.get().asItem().getDefaultInstance(),
+                Items.DARK_OAK_LOG, Items.STRIPPED_DARK_OAK_LOG, Items.DARK_OAK_SLAB);
+        chairRecipe(consumer, DyeColor.LIGHT_GRAY,TBABlocks.DESK_CHAIR_DARK_OAK_LIGHT_GRAY.get().asItem().getDefaultInstance(),
+                Items.DARK_OAK_LOG, Items.STRIPPED_DARK_OAK_LOG, Items.DARK_OAK_SLAB);
+        chairRecipe(consumer, DyeColor.CYAN,TBABlocks.DESK_CHAIR_DARK_OAK_CYAN.get().asItem().getDefaultInstance(),
+                Items.DARK_OAK_LOG, Items.STRIPPED_DARK_OAK_LOG, Items.DARK_OAK_SLAB);
+        chairRecipe(consumer, DyeColor.PURPLE,TBABlocks.DESK_CHAIR_DARK_OAK_PURPLE.get().asItem().getDefaultInstance(),
+                Items.DARK_OAK_LOG, Items.STRIPPED_DARK_OAK_LOG, Items.DARK_OAK_SLAB);
+        chairRecipe(consumer, DyeColor.BLUE,TBABlocks.DESK_CHAIR_DARK_OAK_BLUE.get().asItem().getDefaultInstance(),
+                Items.DARK_OAK_LOG, Items.STRIPPED_DARK_OAK_LOG, Items.DARK_OAK_SLAB);
+        chairRecipe(consumer, DyeColor.BROWN,TBABlocks.DESK_CHAIR_DARK_OAK_BROWN.get().asItem().getDefaultInstance(),
+                Items.DARK_OAK_LOG, Items.STRIPPED_DARK_OAK_LOG, Items.DARK_OAK_SLAB);
+        chairRecipe(consumer, DyeColor.GREEN,TBABlocks.DESK_CHAIR_DARK_OAK_GREEN.get().asItem().getDefaultInstance(),
+                Items.DARK_OAK_LOG, Items.STRIPPED_DARK_OAK_LOG, Items.DARK_OAK_SLAB);
+        chairRecipe(consumer, DyeColor.RED,TBABlocks.DESK_CHAIR_DARK_OAK_RED.get().asItem().getDefaultInstance(),
+                Items.DARK_OAK_LOG, Items.STRIPPED_DARK_OAK_LOG, Items.DARK_OAK_SLAB);
+        chairRecipe(consumer, DyeColor.BLACK,TBABlocks.DESK_CHAIR_DARK_OAK_BLACK.get().asItem().getDefaultInstance(),
+                Items.DARK_OAK_LOG, Items.STRIPPED_DARK_OAK_LOG, Items.DARK_OAK_SLAB);
+
+        chairRecipe(consumer, null,TBABlocks.DESK_CHAIR_JUNGLE.get().asItem().getDefaultInstance(),
+                Items.JUNGLE_LOG, Items.STRIPPED_JUNGLE_LOG, Items.JUNGLE_SLAB);
+        chairRecipe(consumer, DyeColor.WHITE,TBABlocks.DESK_CHAIR_JUNGLE_WHITE.get().asItem().getDefaultInstance(),
+                Items.JUNGLE_LOG, Items.STRIPPED_JUNGLE_LOG, Items.JUNGLE_SLAB);
+        chairRecipe(consumer, DyeColor.ORANGE,TBABlocks.DESK_CHAIR_JUNGLE_ORANGE.get().asItem().getDefaultInstance(),
+                Items.JUNGLE_LOG, Items.STRIPPED_JUNGLE_LOG, Items.JUNGLE_SLAB);
+        chairRecipe(consumer, DyeColor.MAGENTA,TBABlocks.DESK_CHAIR_JUNGLE_MAGENTA.get().asItem().getDefaultInstance(),
+                Items.JUNGLE_LOG, Items.STRIPPED_JUNGLE_LOG, Items.JUNGLE_SLAB);
+        chairRecipe(consumer, DyeColor.LIGHT_BLUE,TBABlocks.DESK_CHAIR_JUNGLE_LIGHT_BLUE.get().asItem().getDefaultInstance(),
+                Items.JUNGLE_LOG, Items.STRIPPED_JUNGLE_LOG, Items.JUNGLE_SLAB);
+        chairRecipe(consumer, DyeColor.YELLOW,TBABlocks.DESK_CHAIR_JUNGLE_YELLOW.get().asItem().getDefaultInstance(),
+                Items.JUNGLE_LOG, Items.STRIPPED_JUNGLE_LOG, Items.JUNGLE_SLAB);
+        chairRecipe(consumer, DyeColor.LIME,TBABlocks.DESK_CHAIR_JUNGLE_LIME.get().asItem().getDefaultInstance(),
+                Items.JUNGLE_LOG, Items.STRIPPED_JUNGLE_LOG, Items.JUNGLE_SLAB);
+        chairRecipe(consumer, DyeColor.PINK,TBABlocks.DESK_CHAIR_JUNGLE_PINK.get().asItem().getDefaultInstance(),
+                Items.JUNGLE_LOG, Items.STRIPPED_JUNGLE_LOG, Items.JUNGLE_SLAB);
+        chairRecipe(consumer, DyeColor.GRAY,TBABlocks.DESK_CHAIR_JUNGLE_GRAY.get().asItem().getDefaultInstance(),
+                Items.JUNGLE_LOG, Items.STRIPPED_JUNGLE_LOG, Items.JUNGLE_SLAB);
+        chairRecipe(consumer, DyeColor.LIGHT_GRAY,TBABlocks.DESK_CHAIR_JUNGLE_LIGHT_GRAY.get().asItem().getDefaultInstance(),
+                Items.JUNGLE_LOG, Items.STRIPPED_JUNGLE_LOG, Items.JUNGLE_SLAB);
+        chairRecipe(consumer, DyeColor.CYAN,TBABlocks.DESK_CHAIR_JUNGLE_CYAN.get().asItem().getDefaultInstance(),
+                Items.JUNGLE_LOG, Items.STRIPPED_JUNGLE_LOG, Items.JUNGLE_SLAB);
+        chairRecipe(consumer, DyeColor.PURPLE,TBABlocks.DESK_CHAIR_JUNGLE_PURPLE.get().asItem().getDefaultInstance(),
+                Items.JUNGLE_LOG, Items.STRIPPED_JUNGLE_LOG, Items.JUNGLE_SLAB);
+        chairRecipe(consumer, DyeColor.BLUE,TBABlocks.DESK_CHAIR_JUNGLE_BLUE.get().asItem().getDefaultInstance(),
+                Items.JUNGLE_LOG, Items.STRIPPED_JUNGLE_LOG, Items.JUNGLE_SLAB);
+        chairRecipe(consumer, DyeColor.BROWN,TBABlocks.DESK_CHAIR_JUNGLE_BROWN.get().asItem().getDefaultInstance(),
+                Items.JUNGLE_LOG, Items.STRIPPED_JUNGLE_LOG, Items.JUNGLE_SLAB);
+        chairRecipe(consumer, DyeColor.GREEN,TBABlocks.DESK_CHAIR_JUNGLE_GREEN.get().asItem().getDefaultInstance(),
+                Items.JUNGLE_LOG, Items.STRIPPED_JUNGLE_LOG, Items.JUNGLE_SLAB);
+        chairRecipe(consumer, DyeColor.RED,TBABlocks.DESK_CHAIR_JUNGLE_RED.get().asItem().getDefaultInstance(),
+                Items.JUNGLE_LOG, Items.STRIPPED_JUNGLE_LOG, Items.JUNGLE_SLAB);
+        chairRecipe(consumer, DyeColor.BLACK,TBABlocks.DESK_CHAIR_JUNGLE_BLACK.get().asItem().getDefaultInstance(),
+                Items.JUNGLE_LOG, Items.STRIPPED_JUNGLE_LOG, Items.JUNGLE_SLAB);
+
+        chairRecipe(consumer, null,TBABlocks.DESK_CHAIR_MANGROVE.get().asItem().getDefaultInstance(),
+                Items.MANGROVE_LOG, Items.STRIPPED_MANGROVE_LOG, Items.MANGROVE_SLAB);
+        chairRecipe(consumer, DyeColor.WHITE,TBABlocks.DESK_CHAIR_MANGROVE_WHITE.get().asItem().getDefaultInstance(),
+                Items.MANGROVE_LOG, Items.STRIPPED_MANGROVE_LOG, Items.MANGROVE_SLAB);
+        chairRecipe(consumer, DyeColor.ORANGE,TBABlocks.DESK_CHAIR_MANGROVE_ORANGE.get().asItem().getDefaultInstance(),
+                Items.MANGROVE_LOG, Items.STRIPPED_MANGROVE_LOG, Items.MANGROVE_SLAB);
+        chairRecipe(consumer, DyeColor.MAGENTA,TBABlocks.DESK_CHAIR_MANGROVE_MAGENTA.get().asItem().getDefaultInstance(),
+                Items.MANGROVE_LOG, Items.STRIPPED_MANGROVE_LOG, Items.MANGROVE_SLAB);
+        chairRecipe(consumer, DyeColor.LIGHT_BLUE,TBABlocks.DESK_CHAIR_MANGROVE_LIGHT_BLUE.get().asItem().getDefaultInstance(),
+                Items.MANGROVE_LOG, Items.STRIPPED_MANGROVE_LOG, Items.MANGROVE_SLAB);
+        chairRecipe(consumer, DyeColor.YELLOW,TBABlocks.DESK_CHAIR_MANGROVE_YELLOW.get().asItem().getDefaultInstance(),
+                Items.MANGROVE_LOG, Items.STRIPPED_MANGROVE_LOG, Items.MANGROVE_SLAB);
+        chairRecipe(consumer, DyeColor.LIME,TBABlocks.DESK_CHAIR_MANGROVE_LIME.get().asItem().getDefaultInstance(),
+                Items.MANGROVE_LOG, Items.STRIPPED_MANGROVE_LOG, Items.MANGROVE_SLAB);
+        chairRecipe(consumer, DyeColor.PINK,TBABlocks.DESK_CHAIR_MANGROVE_PINK.get().asItem().getDefaultInstance(),
+                Items.MANGROVE_LOG, Items.STRIPPED_MANGROVE_LOG, Items.MANGROVE_SLAB);
+        chairRecipe(consumer, DyeColor.GRAY,TBABlocks.DESK_CHAIR_MANGROVE_GRAY.get().asItem().getDefaultInstance(),
+                Items.MANGROVE_LOG, Items.STRIPPED_MANGROVE_LOG, Items.MANGROVE_SLAB);
+        chairRecipe(consumer, DyeColor.LIGHT_GRAY,TBABlocks.DESK_CHAIR_MANGROVE_LIGHT_GRAY.get().asItem().getDefaultInstance(),
+                Items.MANGROVE_LOG, Items.STRIPPED_MANGROVE_LOG, Items.MANGROVE_SLAB);
+        chairRecipe(consumer, DyeColor.CYAN,TBABlocks.DESK_CHAIR_MANGROVE_CYAN.get().asItem().getDefaultInstance(),
+                Items.MANGROVE_LOG, Items.STRIPPED_MANGROVE_LOG, Items.MANGROVE_SLAB);
+        chairRecipe(consumer, DyeColor.PURPLE,TBABlocks.DESK_CHAIR_MANGROVE_PURPLE.get().asItem().getDefaultInstance(),
+                Items.MANGROVE_LOG, Items.STRIPPED_MANGROVE_LOG, Items.MANGROVE_SLAB);
+        chairRecipe(consumer, DyeColor.BLUE,TBABlocks.DESK_CHAIR_MANGROVE_BLUE.get().asItem().getDefaultInstance(),
+                Items.MANGROVE_LOG, Items.STRIPPED_MANGROVE_LOG, Items.MANGROVE_SLAB);
+        chairRecipe(consumer, DyeColor.BROWN,TBABlocks.DESK_CHAIR_MANGROVE_BROWN.get().asItem().getDefaultInstance(),
+                Items.MANGROVE_LOG, Items.STRIPPED_MANGROVE_LOG, Items.MANGROVE_SLAB);
+        chairRecipe(consumer, DyeColor.GREEN,TBABlocks.DESK_CHAIR_MANGROVE_GREEN.get().asItem().getDefaultInstance(),
+                Items.MANGROVE_LOG, Items.STRIPPED_MANGROVE_LOG, Items.MANGROVE_SLAB);
+        chairRecipe(consumer, DyeColor.RED,TBABlocks.DESK_CHAIR_MANGROVE_RED.get().asItem().getDefaultInstance(),
+                Items.MANGROVE_LOG, Items.STRIPPED_MANGROVE_LOG, Items.MANGROVE_SLAB);
+        chairRecipe(consumer, DyeColor.BLACK,TBABlocks.DESK_CHAIR_MANGROVE_BLACK.get().asItem().getDefaultInstance(),
+                Items.MANGROVE_LOG, Items.STRIPPED_MANGROVE_LOG, Items.MANGROVE_SLAB);
+
+        chairRecipe(consumer, null,TBABlocks.DESK_CHAIR_OAK.get().asItem().getDefaultInstance(),
+                Items.OAK_LOG, Items.STRIPPED_OAK_LOG, Items.OAK_SLAB);
+        chairRecipe(consumer, DyeColor.WHITE,TBABlocks.DESK_CHAIR_OAK_WHITE.get().asItem().getDefaultInstance(),
+                Items.OAK_LOG, Items.STRIPPED_OAK_LOG, Items.OAK_SLAB);
+        chairRecipe(consumer, DyeColor.ORANGE,TBABlocks.DESK_CHAIR_OAK_ORANGE.get().asItem().getDefaultInstance(),
+                Items.OAK_LOG, Items.STRIPPED_OAK_LOG, Items.OAK_SLAB);
+        chairRecipe(consumer, DyeColor.MAGENTA,TBABlocks.DESK_CHAIR_OAK_MAGENTA.get().asItem().getDefaultInstance(),
+                Items.OAK_LOG, Items.STRIPPED_OAK_LOG, Items.OAK_SLAB);
+        chairRecipe(consumer, DyeColor.LIGHT_BLUE,TBABlocks.DESK_CHAIR_OAK_LIGHT_BLUE.get().asItem().getDefaultInstance(),
+                Items.OAK_LOG, Items.STRIPPED_OAK_LOG, Items.OAK_SLAB);
+        chairRecipe(consumer, DyeColor.YELLOW,TBABlocks.DESK_CHAIR_OAK_YELLOW.get().asItem().getDefaultInstance(),
+                Items.OAK_LOG, Items.STRIPPED_OAK_LOG, Items.OAK_SLAB);
+        chairRecipe(consumer, DyeColor.LIME,TBABlocks.DESK_CHAIR_OAK_LIME.get().asItem().getDefaultInstance(),
+                Items.OAK_LOG, Items.STRIPPED_OAK_LOG, Items.OAK_SLAB);
+        chairRecipe(consumer, DyeColor.PINK,TBABlocks.DESK_CHAIR_OAK_PINK.get().asItem().getDefaultInstance(),
+                Items.OAK_LOG, Items.STRIPPED_OAK_LOG, Items.OAK_SLAB);
+        chairRecipe(consumer, DyeColor.GRAY,TBABlocks.DESK_CHAIR_OAK_GRAY.get().asItem().getDefaultInstance(),
+                Items.OAK_LOG, Items.STRIPPED_OAK_LOG, Items.OAK_SLAB);
+        chairRecipe(consumer, DyeColor.LIGHT_GRAY,TBABlocks.DESK_CHAIR_OAK_LIGHT_GRAY.get().asItem().getDefaultInstance(),
+                Items.OAK_LOG, Items.STRIPPED_OAK_LOG, Items.OAK_SLAB);
+        chairRecipe(consumer, DyeColor.CYAN,TBABlocks.DESK_CHAIR_OAK_CYAN.get().asItem().getDefaultInstance(),
+                Items.OAK_LOG, Items.STRIPPED_OAK_LOG, Items.OAK_SLAB);
+        chairRecipe(consumer, DyeColor.PURPLE,TBABlocks.DESK_CHAIR_OAK_PURPLE.get().asItem().getDefaultInstance(),
+                Items.OAK_LOG, Items.STRIPPED_OAK_LOG, Items.OAK_SLAB);
+        chairRecipe(consumer, DyeColor.BLUE,TBABlocks.DESK_CHAIR_OAK_BLUE.get().asItem().getDefaultInstance(),
+                Items.OAK_LOG, Items.STRIPPED_OAK_LOG, Items.OAK_SLAB);
+        chairRecipe(consumer, DyeColor.BROWN,TBABlocks.DESK_CHAIR_OAK_BROWN.get().asItem().getDefaultInstance(),
+                Items.OAK_LOG, Items.STRIPPED_OAK_LOG, Items.OAK_SLAB);
+        chairRecipe(consumer, DyeColor.GREEN,TBABlocks.DESK_CHAIR_OAK_GREEN.get().asItem().getDefaultInstance(),
+                Items.OAK_LOG, Items.STRIPPED_OAK_LOG, Items.OAK_SLAB);
+        chairRecipe(consumer, DyeColor.RED,TBABlocks.DESK_CHAIR_OAK_RED.get().asItem().getDefaultInstance(),
+                Items.OAK_LOG, Items.STRIPPED_OAK_LOG, Items.OAK_SLAB);
+        chairRecipe(consumer, DyeColor.BLACK,TBABlocks.DESK_CHAIR_OAK_BLACK.get().asItem().getDefaultInstance(),
+                Items.OAK_LOG, Items.STRIPPED_OAK_LOG, Items.OAK_SLAB);
+
+        chairRecipe(consumer, null,TBABlocks.DESK_CHAIR_SPRUCE.get().asItem().getDefaultInstance(),
+                Items.SPRUCE_LOG, Items.STRIPPED_SPRUCE_LOG, Items.SPRUCE_SLAB);
+        chairRecipe(consumer, DyeColor.WHITE,TBABlocks.DESK_CHAIR_SPRUCE_WHITE.get().asItem().getDefaultInstance(),
+                Items.SPRUCE_LOG, Items.STRIPPED_SPRUCE_LOG, Items.SPRUCE_SLAB);
+        chairRecipe(consumer, DyeColor.ORANGE,TBABlocks.DESK_CHAIR_SPRUCE_ORANGE.get().asItem().getDefaultInstance(),
+                Items.SPRUCE_LOG, Items.STRIPPED_SPRUCE_LOG, Items.SPRUCE_SLAB);
+        chairRecipe(consumer, DyeColor.MAGENTA,TBABlocks.DESK_CHAIR_SPRUCE_MAGENTA.get().asItem().getDefaultInstance(),
+                Items.SPRUCE_LOG, Items.STRIPPED_SPRUCE_LOG, Items.SPRUCE_SLAB);
+        chairRecipe(consumer, DyeColor.LIGHT_BLUE,TBABlocks.DESK_CHAIR_SPRUCE_LIGHT_BLUE.get().asItem().getDefaultInstance(),
+                Items.SPRUCE_LOG, Items.STRIPPED_SPRUCE_LOG, Items.SPRUCE_SLAB);
+        chairRecipe(consumer, DyeColor.YELLOW,TBABlocks.DESK_CHAIR_SPRUCE_YELLOW.get().asItem().getDefaultInstance(),
+                Items.SPRUCE_LOG, Items.STRIPPED_SPRUCE_LOG, Items.SPRUCE_SLAB);
+        chairRecipe(consumer, DyeColor.LIME,TBABlocks.DESK_CHAIR_SPRUCE_LIME.get().asItem().getDefaultInstance(),
+                Items.SPRUCE_LOG, Items.STRIPPED_SPRUCE_LOG, Items.SPRUCE_SLAB);
+        chairRecipe(consumer, DyeColor.PINK,TBABlocks.DESK_CHAIR_SPRUCE_PINK.get().asItem().getDefaultInstance(),
+                Items.SPRUCE_LOG, Items.STRIPPED_SPRUCE_LOG, Items.SPRUCE_SLAB);
+        chairRecipe(consumer, DyeColor.GRAY,TBABlocks.DESK_CHAIR_SPRUCE_GRAY.get().asItem().getDefaultInstance(),
+                Items.SPRUCE_LOG, Items.STRIPPED_SPRUCE_LOG, Items.SPRUCE_SLAB);
+        chairRecipe(consumer, DyeColor.LIGHT_GRAY,TBABlocks.DESK_CHAIR_SPRUCE_LIGHT_GRAY.get().asItem().getDefaultInstance(),
+                Items.SPRUCE_LOG, Items.STRIPPED_SPRUCE_LOG, Items.SPRUCE_SLAB);
+        chairRecipe(consumer, DyeColor.CYAN,TBABlocks.DESK_CHAIR_SPRUCE_CYAN.get().asItem().getDefaultInstance(),
+                Items.SPRUCE_LOG, Items.STRIPPED_SPRUCE_LOG, Items.SPRUCE_SLAB);
+        chairRecipe(consumer, DyeColor.PURPLE,TBABlocks.DESK_CHAIR_SPRUCE_PURPLE.get().asItem().getDefaultInstance(),
+                Items.SPRUCE_LOG, Items.STRIPPED_SPRUCE_LOG, Items.SPRUCE_SLAB);
+        chairRecipe(consumer, DyeColor.BLUE,TBABlocks.DESK_CHAIR_SPRUCE_BLUE.get().asItem().getDefaultInstance(),
+                Items.SPRUCE_LOG, Items.STRIPPED_SPRUCE_LOG, Items.SPRUCE_SLAB);
+        chairRecipe(consumer, DyeColor.BROWN,TBABlocks.DESK_CHAIR_SPRUCE_BROWN.get().asItem().getDefaultInstance(),
+                Items.SPRUCE_LOG, Items.STRIPPED_SPRUCE_LOG, Items.SPRUCE_SLAB);
+        chairRecipe(consumer, DyeColor.GREEN,TBABlocks.DESK_CHAIR_SPRUCE_GREEN.get().asItem().getDefaultInstance(),
+                Items.SPRUCE_LOG, Items.STRIPPED_SPRUCE_LOG, Items.SPRUCE_SLAB);
+        chairRecipe(consumer, DyeColor.RED,TBABlocks.DESK_CHAIR_SPRUCE_RED.get().asItem().getDefaultInstance(),
+                Items.SPRUCE_LOG, Items.STRIPPED_SPRUCE_LOG, Items.SPRUCE_SLAB);
+        chairRecipe(consumer, DyeColor.BLACK,TBABlocks.DESK_CHAIR_SPRUCE_BLACK.get().asItem().getDefaultInstance(),
+                Items.SPRUCE_LOG, Items.STRIPPED_SPRUCE_LOG, Items.SPRUCE_SLAB);
+
+        chairRecipe(consumer, null,TBABlocks.DESK_CHAIR_CRIMSON.get().asItem().getDefaultInstance(),
+                Items.CRIMSON_STEM, Items.STRIPPED_CRIMSON_STEM, Items.CRIMSON_SLAB);
+        chairRecipe(consumer, DyeColor.WHITE,TBABlocks.DESK_CHAIR_CRIMSON_WHITE.get().asItem().getDefaultInstance(),
+                Items.CRIMSON_STEM, Items.STRIPPED_CRIMSON_STEM, Items.CRIMSON_SLAB);
+        chairRecipe(consumer, DyeColor.ORANGE,TBABlocks.DESK_CHAIR_CRIMSON_ORANGE.get().asItem().getDefaultInstance(),
+                Items.CRIMSON_STEM, Items.STRIPPED_CRIMSON_STEM, Items.CRIMSON_SLAB);
+        chairRecipe(consumer, DyeColor.MAGENTA,TBABlocks.DESK_CHAIR_CRIMSON_MAGENTA.get().asItem().getDefaultInstance(),
+                Items.CRIMSON_STEM, Items.STRIPPED_CRIMSON_STEM, Items.CRIMSON_SLAB);
+        chairRecipe(consumer, DyeColor.LIGHT_BLUE,TBABlocks.DESK_CHAIR_CRIMSON_LIGHT_BLUE.get().asItem().getDefaultInstance(),
+                Items.CRIMSON_STEM, Items.STRIPPED_CRIMSON_STEM, Items.CRIMSON_SLAB);
+        chairRecipe(consumer, DyeColor.YELLOW,TBABlocks.DESK_CHAIR_CRIMSON_YELLOW.get().asItem().getDefaultInstance(),
+                Items.CRIMSON_STEM, Items.STRIPPED_CRIMSON_STEM, Items.CRIMSON_SLAB);
+        chairRecipe(consumer, DyeColor.LIME,TBABlocks.DESK_CHAIR_CRIMSON_LIME.get().asItem().getDefaultInstance(),
+                Items.CRIMSON_STEM, Items.STRIPPED_CRIMSON_STEM, Items.CRIMSON_SLAB);
+        chairRecipe(consumer, DyeColor.PINK,TBABlocks.DESK_CHAIR_CRIMSON_PINK.get().asItem().getDefaultInstance(),
+                Items.CRIMSON_STEM, Items.STRIPPED_CRIMSON_STEM, Items.CRIMSON_SLAB);
+        chairRecipe(consumer, DyeColor.GRAY,TBABlocks.DESK_CHAIR_CRIMSON_GRAY.get().asItem().getDefaultInstance(),
+                Items.CRIMSON_STEM, Items.STRIPPED_CRIMSON_STEM, Items.CRIMSON_SLAB);
+        chairRecipe(consumer, DyeColor.LIGHT_GRAY,TBABlocks.DESK_CHAIR_CRIMSON_LIGHT_GRAY.get().asItem().getDefaultInstance(),
+                Items.CRIMSON_STEM, Items.STRIPPED_CRIMSON_STEM, Items.CRIMSON_SLAB);
+        chairRecipe(consumer, DyeColor.CYAN,TBABlocks.DESK_CHAIR_CRIMSON_CYAN.get().asItem().getDefaultInstance(),
+                Items.CRIMSON_STEM, Items.STRIPPED_CRIMSON_STEM, Items.CRIMSON_SLAB);
+        chairRecipe(consumer, DyeColor.PURPLE,TBABlocks.DESK_CHAIR_CRIMSON_PURPLE.get().asItem().getDefaultInstance(),
+                Items.CRIMSON_STEM, Items.STRIPPED_CRIMSON_STEM, Items.CRIMSON_SLAB);
+        chairRecipe(consumer, DyeColor.BLUE,TBABlocks.DESK_CHAIR_CRIMSON_BLUE.get().asItem().getDefaultInstance(),
+                Items.CRIMSON_STEM, Items.STRIPPED_CRIMSON_STEM, Items.CRIMSON_SLAB);
+        chairRecipe(consumer, DyeColor.BROWN,TBABlocks.DESK_CHAIR_CRIMSON_BROWN.get().asItem().getDefaultInstance(),
+                Items.CRIMSON_STEM, Items.STRIPPED_CRIMSON_STEM, Items.CRIMSON_SLAB);
+        chairRecipe(consumer, DyeColor.GREEN,TBABlocks.DESK_CHAIR_CRIMSON_GREEN.get().asItem().getDefaultInstance(),
+                Items.CRIMSON_STEM, Items.STRIPPED_CRIMSON_STEM, Items.CRIMSON_SLAB);
+        chairRecipe(consumer, DyeColor.RED,TBABlocks.DESK_CHAIR_CRIMSON_RED.get().asItem().getDefaultInstance(),
+                Items.CRIMSON_STEM, Items.STRIPPED_CRIMSON_STEM, Items.CRIMSON_SLAB);
+        chairRecipe(consumer, DyeColor.BLACK,TBABlocks.DESK_CHAIR_CRIMSON_BLACK.get().asItem().getDefaultInstance(),
+                Items.CRIMSON_STEM, Items.STRIPPED_CRIMSON_STEM, Items.CRIMSON_SLAB);
+
+        chairRecipe(consumer, null,TBABlocks.DESK_CHAIR_WARPED.get().asItem().getDefaultInstance(),
+                Items.WARPED_STEM, Items.STRIPPED_WARPED_STEM, Items.WARPED_SLAB);
+        chairRecipe(consumer, DyeColor.WHITE,TBABlocks.DESK_CHAIR_WARPED_WHITE.get().asItem().getDefaultInstance(),
+                Items.WARPED_STEM, Items.STRIPPED_WARPED_STEM, Items.WARPED_SLAB);
+        chairRecipe(consumer, DyeColor.ORANGE,TBABlocks.DESK_CHAIR_WARPED_ORANGE.get().asItem().getDefaultInstance(),
+                Items.WARPED_STEM, Items.STRIPPED_WARPED_STEM, Items.WARPED_SLAB);
+        chairRecipe(consumer, DyeColor.MAGENTA,TBABlocks.DESK_CHAIR_WARPED_MAGENTA.get().asItem().getDefaultInstance(),
+                Items.WARPED_STEM, Items.STRIPPED_WARPED_STEM, Items.WARPED_SLAB);
+        chairRecipe(consumer, DyeColor.LIGHT_BLUE,TBABlocks.DESK_CHAIR_WARPED_LIGHT_BLUE.get().asItem().getDefaultInstance(),
+                Items.WARPED_STEM, Items.STRIPPED_WARPED_STEM, Items.WARPED_SLAB);
+        chairRecipe(consumer, DyeColor.YELLOW,TBABlocks.DESK_CHAIR_WARPED_YELLOW.get().asItem().getDefaultInstance(),
+                Items.WARPED_STEM, Items.STRIPPED_WARPED_STEM, Items.WARPED_SLAB);
+        chairRecipe(consumer, DyeColor.LIME,TBABlocks.DESK_CHAIR_WARPED_LIME.get().asItem().getDefaultInstance(),
+                Items.WARPED_STEM, Items.STRIPPED_WARPED_STEM, Items.WARPED_SLAB);
+        chairRecipe(consumer, DyeColor.PINK,TBABlocks.DESK_CHAIR_WARPED_PINK.get().asItem().getDefaultInstance(),
+                Items.WARPED_STEM, Items.STRIPPED_WARPED_STEM, Items.WARPED_SLAB);
+        chairRecipe(consumer, DyeColor.GRAY,TBABlocks.DESK_CHAIR_WARPED_GRAY.get().asItem().getDefaultInstance(),
+                Items.WARPED_STEM, Items.STRIPPED_WARPED_STEM, Items.WARPED_SLAB);
+        chairRecipe(consumer, DyeColor.LIGHT_GRAY,TBABlocks.DESK_CHAIR_WARPED_LIGHT_GRAY.get().asItem().getDefaultInstance(),
+                Items.WARPED_STEM, Items.STRIPPED_WARPED_STEM, Items.WARPED_SLAB);
+        chairRecipe(consumer, DyeColor.CYAN,TBABlocks.DESK_CHAIR_WARPED_CYAN.get().asItem().getDefaultInstance(),
+                Items.WARPED_STEM, Items.STRIPPED_WARPED_STEM, Items.WARPED_SLAB);
+        chairRecipe(consumer, DyeColor.PURPLE,TBABlocks.DESK_CHAIR_WARPED_PURPLE.get().asItem().getDefaultInstance(),
+                Items.WARPED_STEM, Items.STRIPPED_WARPED_STEM, Items.WARPED_SLAB);
+        chairRecipe(consumer, DyeColor.BLUE,TBABlocks.DESK_CHAIR_WARPED_BLUE.get().asItem().getDefaultInstance(),
+                Items.WARPED_STEM, Items.STRIPPED_WARPED_STEM, Items.WARPED_SLAB);
+        chairRecipe(consumer, DyeColor.BROWN,TBABlocks.DESK_CHAIR_WARPED_BROWN.get().asItem().getDefaultInstance(),
+                Items.WARPED_STEM, Items.STRIPPED_WARPED_STEM, Items.WARPED_SLAB);
+        chairRecipe(consumer, DyeColor.GREEN,TBABlocks.DESK_CHAIR_WARPED_GREEN.get().asItem().getDefaultInstance(),
+                Items.WARPED_STEM, Items.STRIPPED_WARPED_STEM, Items.WARPED_SLAB);
+        chairRecipe(consumer, DyeColor.RED,TBABlocks.DESK_CHAIR_WARPED_RED.get().asItem().getDefaultInstance(),
+                Items.WARPED_STEM, Items.STRIPPED_WARPED_STEM, Items.WARPED_SLAB);
+        chairRecipe(consumer, DyeColor.BLACK,TBABlocks.DESK_CHAIR_WARPED_BLACK.get().asItem().getDefaultInstance(),
+                Items.WARPED_STEM, Items.STRIPPED_WARPED_STEM, Items.WARPED_SLAB);
+
+        chairRecipe(consumer, null,TBABlocks.DESK_CHAIR_FIR.get().asItem().getDefaultInstance(),
+                BOPBlocks.FIR_LOG.get(), BOPBlocks.STRIPPED_FIR_LOG.get(), BOPBlocks.FIR_SLAB.get());
+        chairRecipe(consumer, DyeColor.WHITE,TBABlocks.DESK_CHAIR_FIR_WHITE.get().asItem().getDefaultInstance(),
+                BOPBlocks.FIR_LOG.get(), BOPBlocks.STRIPPED_FIR_LOG.get(), BOPBlocks.FIR_SLAB.get());
+        chairRecipe(consumer, DyeColor.ORANGE,TBABlocks.DESK_CHAIR_FIR_ORANGE.get().asItem().getDefaultInstance(),
+                BOPBlocks.FIR_LOG.get(), BOPBlocks.STRIPPED_FIR_LOG.get(), BOPBlocks.FIR_SLAB.get());
+        chairRecipe(consumer, DyeColor.MAGENTA,TBABlocks.DESK_CHAIR_FIR_MAGENTA.get().asItem().getDefaultInstance(),
+                BOPBlocks.FIR_LOG.get(), BOPBlocks.STRIPPED_FIR_LOG.get(), BOPBlocks.FIR_SLAB.get());
+        chairRecipe(consumer, DyeColor.LIGHT_BLUE,TBABlocks.DESK_CHAIR_FIR_LIGHT_BLUE.get().asItem().getDefaultInstance(),
+                BOPBlocks.FIR_LOG.get(), BOPBlocks.STRIPPED_FIR_LOG.get(), BOPBlocks.FIR_SLAB.get());
+        chairRecipe(consumer, DyeColor.YELLOW,TBABlocks.DESK_CHAIR_FIR_YELLOW.get().asItem().getDefaultInstance(),
+                BOPBlocks.FIR_LOG.get(), BOPBlocks.STRIPPED_FIR_LOG.get(), BOPBlocks.FIR_SLAB.get());
+        chairRecipe(consumer, DyeColor.LIME,TBABlocks.DESK_CHAIR_FIR_LIME.get().asItem().getDefaultInstance(),
+                BOPBlocks.FIR_LOG.get(), BOPBlocks.STRIPPED_FIR_LOG.get(), BOPBlocks.FIR_SLAB.get());
+        chairRecipe(consumer, DyeColor.PINK,TBABlocks.DESK_CHAIR_FIR_PINK.get().asItem().getDefaultInstance(),
+                BOPBlocks.FIR_LOG.get(), BOPBlocks.STRIPPED_FIR_LOG.get(), BOPBlocks.FIR_SLAB.get());
+        chairRecipe(consumer, DyeColor.GRAY,TBABlocks.DESK_CHAIR_FIR_GRAY.get().asItem().getDefaultInstance(),
+                BOPBlocks.FIR_LOG.get(), BOPBlocks.STRIPPED_FIR_LOG.get(), BOPBlocks.FIR_SLAB.get());
+        chairRecipe(consumer, DyeColor.LIGHT_GRAY,TBABlocks.DESK_CHAIR_FIR_LIGHT_GRAY.get().asItem().getDefaultInstance(),
+                BOPBlocks.FIR_LOG.get(), BOPBlocks.STRIPPED_FIR_LOG.get(), BOPBlocks.FIR_SLAB.get());
+        chairRecipe(consumer, DyeColor.CYAN,TBABlocks.DESK_CHAIR_FIR_CYAN.get().asItem().getDefaultInstance(),
+                BOPBlocks.FIR_LOG.get(), BOPBlocks.STRIPPED_FIR_LOG.get(), BOPBlocks.FIR_SLAB.get());
+        chairRecipe(consumer, DyeColor.PURPLE,TBABlocks.DESK_CHAIR_FIR_PURPLE.get().asItem().getDefaultInstance(),
+                BOPBlocks.FIR_LOG.get(), BOPBlocks.STRIPPED_FIR_LOG.get(), BOPBlocks.FIR_SLAB.get());
+        chairRecipe(consumer, DyeColor.BLUE,TBABlocks.DESK_CHAIR_FIR_BLUE.get().asItem().getDefaultInstance(),
+                BOPBlocks.FIR_LOG.get(), BOPBlocks.STRIPPED_FIR_LOG.get(), BOPBlocks.FIR_SLAB.get());
+        chairRecipe(consumer, DyeColor.BROWN,TBABlocks.DESK_CHAIR_FIR_BROWN.get().asItem().getDefaultInstance(),
+                BOPBlocks.FIR_LOG.get(), BOPBlocks.STRIPPED_FIR_LOG.get(), BOPBlocks.FIR_SLAB.get());
+        chairRecipe(consumer, DyeColor.GREEN,TBABlocks.DESK_CHAIR_FIR_GREEN.get().asItem().getDefaultInstance(),
+                BOPBlocks.FIR_LOG.get(), BOPBlocks.STRIPPED_FIR_LOG.get(), BOPBlocks.FIR_SLAB.get());
+        chairRecipe(consumer, DyeColor.RED,TBABlocks.DESK_CHAIR_FIR_RED.get().asItem().getDefaultInstance(),
+                BOPBlocks.FIR_LOG.get(), BOPBlocks.STRIPPED_FIR_LOG.get(), BOPBlocks.FIR_SLAB.get());
+        chairRecipe(consumer, DyeColor.BLACK,TBABlocks.DESK_CHAIR_FIR_BLACK.get().asItem().getDefaultInstance(),
+                BOPBlocks.FIR_LOG.get(), BOPBlocks.STRIPPED_FIR_LOG.get(), BOPBlocks.FIR_SLAB.get());
+
+        chairRecipe(consumer, null,TBABlocks.DESK_CHAIR_REDWOOD.get().asItem().getDefaultInstance(),
+                BOPBlocks.REDWOOD_LOG.get(), BOPBlocks.STRIPPED_REDWOOD_LOG.get(), BOPBlocks.REDWOOD_SLAB.get());
+        chairRecipe(consumer, DyeColor.WHITE,TBABlocks.DESK_CHAIR_REDWOOD_WHITE.get().asItem().getDefaultInstance(),
+                BOPBlocks.REDWOOD_LOG.get(), BOPBlocks.STRIPPED_REDWOOD_LOG.get(), BOPBlocks.REDWOOD_SLAB.get());
+        chairRecipe(consumer, DyeColor.ORANGE,TBABlocks.DESK_CHAIR_REDWOOD_ORANGE.get().asItem().getDefaultInstance(),
+                BOPBlocks.REDWOOD_LOG.get(), BOPBlocks.STRIPPED_REDWOOD_LOG.get(), BOPBlocks.REDWOOD_SLAB.get());
+        chairRecipe(consumer, DyeColor.MAGENTA,TBABlocks.DESK_CHAIR_REDWOOD_MAGENTA.get().asItem().getDefaultInstance(),
+                BOPBlocks.REDWOOD_LOG.get(), BOPBlocks.STRIPPED_REDWOOD_LOG.get(), BOPBlocks.REDWOOD_SLAB.get());
+        chairRecipe(consumer, DyeColor.LIGHT_BLUE,TBABlocks.DESK_CHAIR_REDWOOD_LIGHT_BLUE.get().asItem().getDefaultInstance(),
+                BOPBlocks.REDWOOD_LOG.get(), BOPBlocks.STRIPPED_REDWOOD_LOG.get(), BOPBlocks.REDWOOD_SLAB.get());
+        chairRecipe(consumer, DyeColor.YELLOW,TBABlocks.DESK_CHAIR_REDWOOD_YELLOW.get().asItem().getDefaultInstance(),
+                BOPBlocks.REDWOOD_LOG.get(), BOPBlocks.STRIPPED_REDWOOD_LOG.get(), BOPBlocks.REDWOOD_SLAB.get());
+        chairRecipe(consumer, DyeColor.LIME,TBABlocks.DESK_CHAIR_REDWOOD_LIME.get().asItem().getDefaultInstance(),
+                BOPBlocks.REDWOOD_LOG.get(), BOPBlocks.STRIPPED_REDWOOD_LOG.get(), BOPBlocks.REDWOOD_SLAB.get());
+        chairRecipe(consumer, DyeColor.PINK,TBABlocks.DESK_CHAIR_REDWOOD_PINK.get().asItem().getDefaultInstance(),
+                BOPBlocks.REDWOOD_LOG.get(), BOPBlocks.STRIPPED_REDWOOD_LOG.get(), BOPBlocks.REDWOOD_SLAB.get());
+        chairRecipe(consumer, DyeColor.GRAY,TBABlocks.DESK_CHAIR_REDWOOD_GRAY.get().asItem().getDefaultInstance(),
+                BOPBlocks.REDWOOD_LOG.get(), BOPBlocks.STRIPPED_REDWOOD_LOG.get(), BOPBlocks.REDWOOD_SLAB.get());
+        chairRecipe(consumer, DyeColor.LIGHT_GRAY,TBABlocks.DESK_CHAIR_REDWOOD_LIGHT_GRAY.get().asItem().getDefaultInstance(),
+                BOPBlocks.REDWOOD_LOG.get(), BOPBlocks.STRIPPED_REDWOOD_LOG.get(), BOPBlocks.REDWOOD_SLAB.get());
+        chairRecipe(consumer, DyeColor.CYAN,TBABlocks.DESK_CHAIR_REDWOOD_CYAN.get().asItem().getDefaultInstance(),
+                BOPBlocks.REDWOOD_LOG.get(), BOPBlocks.STRIPPED_REDWOOD_LOG.get(), BOPBlocks.REDWOOD_SLAB.get());
+        chairRecipe(consumer, DyeColor.PURPLE,TBABlocks.DESK_CHAIR_REDWOOD_PURPLE.get().asItem().getDefaultInstance(),
+                BOPBlocks.REDWOOD_LOG.get(), BOPBlocks.STRIPPED_REDWOOD_LOG.get(), BOPBlocks.REDWOOD_SLAB.get());
+        chairRecipe(consumer, DyeColor.BLUE,TBABlocks.DESK_CHAIR_REDWOOD_BLUE.get().asItem().getDefaultInstance(),
+                BOPBlocks.REDWOOD_LOG.get(), BOPBlocks.STRIPPED_REDWOOD_LOG.get(), BOPBlocks.REDWOOD_SLAB.get());
+        chairRecipe(consumer, DyeColor.BROWN,TBABlocks.DESK_CHAIR_REDWOOD_BROWN.get().asItem().getDefaultInstance(),
+                BOPBlocks.REDWOOD_LOG.get(), BOPBlocks.STRIPPED_REDWOOD_LOG.get(), BOPBlocks.REDWOOD_SLAB.get());
+        chairRecipe(consumer, DyeColor.GREEN,TBABlocks.DESK_CHAIR_REDWOOD_GREEN.get().asItem().getDefaultInstance(),
+                BOPBlocks.REDWOOD_LOG.get(), BOPBlocks.STRIPPED_REDWOOD_LOG.get(), BOPBlocks.REDWOOD_SLAB.get());
+        chairRecipe(consumer, DyeColor.RED,TBABlocks.DESK_CHAIR_REDWOOD_RED.get().asItem().getDefaultInstance(),
+                BOPBlocks.REDWOOD_LOG.get(), BOPBlocks.STRIPPED_REDWOOD_LOG.get(), BOPBlocks.REDWOOD_SLAB.get());
+        chairRecipe(consumer, DyeColor.BLACK,TBABlocks.DESK_CHAIR_REDWOOD_BLACK.get().asItem().getDefaultInstance(),
+                BOPBlocks.REDWOOD_LOG.get(), BOPBlocks.STRIPPED_REDWOOD_LOG.get(), BOPBlocks.REDWOOD_SLAB.get());
+
+        chairRecipe(consumer, null,TBABlocks.DESK_CHAIR_CHERRY.get().asItem().getDefaultInstance(),
+                BOPBlocks.CHERRY_LOG.get(), BOPBlocks.STRIPPED_CHERRY_LOG.get(), BOPBlocks.CHERRY_SLAB.get());
+        chairRecipe(consumer, DyeColor.WHITE,TBABlocks.DESK_CHAIR_CHERRY_WHITE.get().asItem().getDefaultInstance(),
+                BOPBlocks.CHERRY_LOG.get(), BOPBlocks.STRIPPED_CHERRY_LOG.get(), BOPBlocks.CHERRY_SLAB.get());
+        chairRecipe(consumer, DyeColor.ORANGE,TBABlocks.DESK_CHAIR_CHERRY_ORANGE.get().asItem().getDefaultInstance(),
+                BOPBlocks.CHERRY_LOG.get(), BOPBlocks.STRIPPED_CHERRY_LOG.get(), BOPBlocks.CHERRY_SLAB.get());
+        chairRecipe(consumer, DyeColor.MAGENTA,TBABlocks.DESK_CHAIR_CHERRY_MAGENTA.get().asItem().getDefaultInstance(),
+                BOPBlocks.CHERRY_LOG.get(), BOPBlocks.STRIPPED_CHERRY_LOG.get(), BOPBlocks.CHERRY_SLAB.get());
+        chairRecipe(consumer, DyeColor.LIGHT_BLUE,TBABlocks.DESK_CHAIR_CHERRY_LIGHT_BLUE.get().asItem().getDefaultInstance(),
+                BOPBlocks.CHERRY_LOG.get(), BOPBlocks.STRIPPED_CHERRY_LOG.get(), BOPBlocks.CHERRY_SLAB.get());
+        chairRecipe(consumer, DyeColor.YELLOW,TBABlocks.DESK_CHAIR_CHERRY_YELLOW.get().asItem().getDefaultInstance(),
+                BOPBlocks.CHERRY_LOG.get(), BOPBlocks.STRIPPED_CHERRY_LOG.get(), BOPBlocks.CHERRY_SLAB.get());
+        chairRecipe(consumer, DyeColor.LIME,TBABlocks.DESK_CHAIR_CHERRY_LIME.get().asItem().getDefaultInstance(),
+                BOPBlocks.CHERRY_LOG.get(), BOPBlocks.STRIPPED_CHERRY_LOG.get(), BOPBlocks.CHERRY_SLAB.get());
+        chairRecipe(consumer, DyeColor.PINK,TBABlocks.DESK_CHAIR_CHERRY_PINK.get().asItem().getDefaultInstance(),
+                BOPBlocks.CHERRY_LOG.get(), BOPBlocks.STRIPPED_CHERRY_LOG.get(), BOPBlocks.CHERRY_SLAB.get());
+        chairRecipe(consumer, DyeColor.GRAY,TBABlocks.DESK_CHAIR_CHERRY_GRAY.get().asItem().getDefaultInstance(),
+                BOPBlocks.CHERRY_LOG.get(), BOPBlocks.STRIPPED_CHERRY_LOG.get(), BOPBlocks.CHERRY_SLAB.get());
+        chairRecipe(consumer, DyeColor.LIGHT_GRAY,TBABlocks.DESK_CHAIR_CHERRY_LIGHT_GRAY.get().asItem().getDefaultInstance(),
+                BOPBlocks.CHERRY_LOG.get(), BOPBlocks.STRIPPED_CHERRY_LOG.get(), BOPBlocks.CHERRY_SLAB.get());
+        chairRecipe(consumer, DyeColor.CYAN,TBABlocks.DESK_CHAIR_CHERRY_CYAN.get().asItem().getDefaultInstance(),
+                BOPBlocks.CHERRY_LOG.get(), BOPBlocks.STRIPPED_CHERRY_LOG.get(), BOPBlocks.CHERRY_SLAB.get());
+        chairRecipe(consumer, DyeColor.PURPLE,TBABlocks.DESK_CHAIR_CHERRY_PURPLE.get().asItem().getDefaultInstance(),
+                BOPBlocks.CHERRY_LOG.get(), BOPBlocks.STRIPPED_CHERRY_LOG.get(), BOPBlocks.CHERRY_SLAB.get());
+        chairRecipe(consumer, DyeColor.BLUE,TBABlocks.DESK_CHAIR_CHERRY_BLUE.get().asItem().getDefaultInstance(),
+                BOPBlocks.CHERRY_LOG.get(), BOPBlocks.STRIPPED_CHERRY_LOG.get(), BOPBlocks.CHERRY_SLAB.get());
+        chairRecipe(consumer, DyeColor.BROWN,TBABlocks.DESK_CHAIR_CHERRY_BROWN.get().asItem().getDefaultInstance(),
+                BOPBlocks.CHERRY_LOG.get(), BOPBlocks.STRIPPED_CHERRY_LOG.get(), BOPBlocks.CHERRY_SLAB.get());
+        chairRecipe(consumer, DyeColor.GREEN,TBABlocks.DESK_CHAIR_CHERRY_GREEN.get().asItem().getDefaultInstance(),
+                BOPBlocks.CHERRY_LOG.get(), BOPBlocks.STRIPPED_CHERRY_LOG.get(), BOPBlocks.CHERRY_SLAB.get());
+        chairRecipe(consumer, DyeColor.RED,TBABlocks.DESK_CHAIR_CHERRY_RED.get().asItem().getDefaultInstance(),
+                BOPBlocks.CHERRY_LOG.get(), BOPBlocks.STRIPPED_CHERRY_LOG.get(), BOPBlocks.CHERRY_SLAB.get());
+        chairRecipe(consumer, DyeColor.BLACK,TBABlocks.DESK_CHAIR_CHERRY_BLACK.get().asItem().getDefaultInstance(),
+                BOPBlocks.CHERRY_LOG.get(), BOPBlocks.STRIPPED_CHERRY_LOG.get(), BOPBlocks.CHERRY_SLAB.get());
+
+        chairRecipe(consumer, null,TBABlocks.DESK_CHAIR_MAHOGANY.get().asItem().getDefaultInstance(),
+                BOPBlocks.MAHOGANY_LOG.get(), BOPBlocks.STRIPPED_MAHOGANY_LOG.get(), BOPBlocks.MAHOGANY_SLAB.get());
+        chairRecipe(consumer, DyeColor.WHITE,TBABlocks.DESK_CHAIR_MAHOGANY_WHITE.get().asItem().getDefaultInstance(),
+                BOPBlocks.MAHOGANY_LOG.get(), BOPBlocks.STRIPPED_MAHOGANY_LOG.get(), BOPBlocks.MAHOGANY_SLAB.get());
+        chairRecipe(consumer, DyeColor.ORANGE,TBABlocks.DESK_CHAIR_MAHOGANY_ORANGE.get().asItem().getDefaultInstance(),
+                BOPBlocks.MAHOGANY_LOG.get(), BOPBlocks.STRIPPED_MAHOGANY_LOG.get(), BOPBlocks.MAHOGANY_SLAB.get());
+        chairRecipe(consumer, DyeColor.MAGENTA,TBABlocks.DESK_CHAIR_MAHOGANY_MAGENTA.get().asItem().getDefaultInstance(),
+                BOPBlocks.MAHOGANY_LOG.get(), BOPBlocks.STRIPPED_MAHOGANY_LOG.get(), BOPBlocks.MAHOGANY_SLAB.get());
+        chairRecipe(consumer, DyeColor.LIGHT_BLUE,TBABlocks.DESK_CHAIR_MAHOGANY_LIGHT_BLUE.get().asItem().getDefaultInstance(),
+                BOPBlocks.MAHOGANY_LOG.get(), BOPBlocks.STRIPPED_MAHOGANY_LOG.get(), BOPBlocks.MAHOGANY_SLAB.get());
+        chairRecipe(consumer, DyeColor.YELLOW,TBABlocks.DESK_CHAIR_MAHOGANY_YELLOW.get().asItem().getDefaultInstance(),
+                BOPBlocks.MAHOGANY_LOG.get(), BOPBlocks.STRIPPED_MAHOGANY_LOG.get(), BOPBlocks.MAHOGANY_SLAB.get());
+        chairRecipe(consumer, DyeColor.LIME,TBABlocks.DESK_CHAIR_MAHOGANY_LIME.get().asItem().getDefaultInstance(),
+                BOPBlocks.MAHOGANY_LOG.get(), BOPBlocks.STRIPPED_MAHOGANY_LOG.get(), BOPBlocks.MAHOGANY_SLAB.get());
+        chairRecipe(consumer, DyeColor.PINK,TBABlocks.DESK_CHAIR_MAHOGANY_PINK.get().asItem().getDefaultInstance(),
+                BOPBlocks.MAHOGANY_LOG.get(), BOPBlocks.STRIPPED_MAHOGANY_LOG.get(), BOPBlocks.MAHOGANY_SLAB.get());
+        chairRecipe(consumer, DyeColor.GRAY,TBABlocks.DESK_CHAIR_MAHOGANY_GRAY.get().asItem().getDefaultInstance(),
+                BOPBlocks.MAHOGANY_LOG.get(), BOPBlocks.STRIPPED_MAHOGANY_LOG.get(), BOPBlocks.MAHOGANY_SLAB.get());
+        chairRecipe(consumer, DyeColor.LIGHT_GRAY,TBABlocks.DESK_CHAIR_MAHOGANY_LIGHT_GRAY.get().asItem().getDefaultInstance(),
+                BOPBlocks.MAHOGANY_LOG.get(), BOPBlocks.STRIPPED_MAHOGANY_LOG.get(), BOPBlocks.MAHOGANY_SLAB.get());
+        chairRecipe(consumer, DyeColor.CYAN,TBABlocks.DESK_CHAIR_MAHOGANY_CYAN.get().asItem().getDefaultInstance(),
+                BOPBlocks.MAHOGANY_LOG.get(), BOPBlocks.STRIPPED_MAHOGANY_LOG.get(), BOPBlocks.MAHOGANY_SLAB.get());
+        chairRecipe(consumer, DyeColor.PURPLE,TBABlocks.DESK_CHAIR_MAHOGANY_PURPLE.get().asItem().getDefaultInstance(),
+                BOPBlocks.MAHOGANY_LOG.get(), BOPBlocks.STRIPPED_MAHOGANY_LOG.get(), BOPBlocks.MAHOGANY_SLAB.get());
+        chairRecipe(consumer, DyeColor.BLUE,TBABlocks.DESK_CHAIR_MAHOGANY_BLUE.get().asItem().getDefaultInstance(),
+                BOPBlocks.MAHOGANY_LOG.get(), BOPBlocks.STRIPPED_MAHOGANY_LOG.get(), BOPBlocks.MAHOGANY_SLAB.get());
+        chairRecipe(consumer, DyeColor.BROWN,TBABlocks.DESK_CHAIR_MAHOGANY_BROWN.get().asItem().getDefaultInstance(),
+                BOPBlocks.MAHOGANY_LOG.get(), BOPBlocks.STRIPPED_MAHOGANY_LOG.get(), BOPBlocks.MAHOGANY_SLAB.get());
+        chairRecipe(consumer, DyeColor.GREEN,TBABlocks.DESK_CHAIR_MAHOGANY_GREEN.get().asItem().getDefaultInstance(),
+                BOPBlocks.MAHOGANY_LOG.get(), BOPBlocks.STRIPPED_MAHOGANY_LOG.get(), BOPBlocks.MAHOGANY_SLAB.get());
+        chairRecipe(consumer, DyeColor.RED,TBABlocks.DESK_CHAIR_MAHOGANY_RED.get().asItem().getDefaultInstance(),
+                BOPBlocks.MAHOGANY_LOG.get(), BOPBlocks.STRIPPED_MAHOGANY_LOG.get(), BOPBlocks.MAHOGANY_SLAB.get());
+        chairRecipe(consumer, DyeColor.BLACK,TBABlocks.DESK_CHAIR_MAHOGANY_BLACK.get().asItem().getDefaultInstance(),
+                BOPBlocks.MAHOGANY_LOG.get(), BOPBlocks.STRIPPED_MAHOGANY_LOG.get(), BOPBlocks.MAHOGANY_SLAB.get());
+
+        chairRecipe(consumer, null,TBABlocks.DESK_CHAIR_JACARANDA.get().asItem().getDefaultInstance(),
+                BOPBlocks.JACARANDA_LOG.get(), BOPBlocks.STRIPPED_JACARANDA_LOG.get(), BOPBlocks.JACARANDA_SLAB.get());
+        chairRecipe(consumer, DyeColor.WHITE,TBABlocks.DESK_CHAIR_JACARANDA_WHITE.get().asItem().getDefaultInstance(),
+                BOPBlocks.JACARANDA_LOG.get(), BOPBlocks.STRIPPED_JACARANDA_LOG.get(), BOPBlocks.JACARANDA_SLAB.get());
+        chairRecipe(consumer, DyeColor.ORANGE,TBABlocks.DESK_CHAIR_JACARANDA_ORANGE.get().asItem().getDefaultInstance(),
+                BOPBlocks.JACARANDA_LOG.get(), BOPBlocks.STRIPPED_JACARANDA_LOG.get(), BOPBlocks.JACARANDA_SLAB.get());
+        chairRecipe(consumer, DyeColor.MAGENTA,TBABlocks.DESK_CHAIR_JACARANDA_MAGENTA.get().asItem().getDefaultInstance(),
+                BOPBlocks.JACARANDA_LOG.get(), BOPBlocks.STRIPPED_JACARANDA_LOG.get(), BOPBlocks.JACARANDA_SLAB.get());
+        chairRecipe(consumer, DyeColor.LIGHT_BLUE,TBABlocks.DESK_CHAIR_JACARANDA_LIGHT_BLUE.get().asItem().getDefaultInstance(),
+                BOPBlocks.JACARANDA_LOG.get(), BOPBlocks.STRIPPED_JACARANDA_LOG.get(), BOPBlocks.JACARANDA_SLAB.get());
+        chairRecipe(consumer, DyeColor.YELLOW,TBABlocks.DESK_CHAIR_JACARANDA_YELLOW.get().asItem().getDefaultInstance(),
+                BOPBlocks.JACARANDA_LOG.get(), BOPBlocks.STRIPPED_JACARANDA_LOG.get(), BOPBlocks.JACARANDA_SLAB.get());
+        chairRecipe(consumer, DyeColor.LIME,TBABlocks.DESK_CHAIR_JACARANDA_LIME.get().asItem().getDefaultInstance(),
+                BOPBlocks.JACARANDA_LOG.get(), BOPBlocks.STRIPPED_JACARANDA_LOG.get(), BOPBlocks.JACARANDA_SLAB.get());
+        chairRecipe(consumer, DyeColor.PINK,TBABlocks.DESK_CHAIR_JACARANDA_PINK.get().asItem().getDefaultInstance(),
+                BOPBlocks.JACARANDA_LOG.get(), BOPBlocks.STRIPPED_JACARANDA_LOG.get(), BOPBlocks.JACARANDA_SLAB.get());
+        chairRecipe(consumer, DyeColor.GRAY,TBABlocks.DESK_CHAIR_JACARANDA_GRAY.get().asItem().getDefaultInstance(),
+                BOPBlocks.JACARANDA_LOG.get(), BOPBlocks.STRIPPED_JACARANDA_LOG.get(), BOPBlocks.JACARANDA_SLAB.get());
+        chairRecipe(consumer, DyeColor.LIGHT_GRAY,TBABlocks.DESK_CHAIR_JACARANDA_LIGHT_GRAY.get().asItem().getDefaultInstance(),
+                BOPBlocks.JACARANDA_LOG.get(), BOPBlocks.STRIPPED_JACARANDA_LOG.get(), BOPBlocks.JACARANDA_SLAB.get());
+        chairRecipe(consumer, DyeColor.CYAN,TBABlocks.DESK_CHAIR_JACARANDA_CYAN.get().asItem().getDefaultInstance(),
+                BOPBlocks.JACARANDA_LOG.get(), BOPBlocks.STRIPPED_JACARANDA_LOG.get(), BOPBlocks.JACARANDA_SLAB.get());
+        chairRecipe(consumer, DyeColor.PURPLE,TBABlocks.DESK_CHAIR_JACARANDA_PURPLE.get().asItem().getDefaultInstance(),
+                BOPBlocks.JACARANDA_LOG.get(), BOPBlocks.STRIPPED_JACARANDA_LOG.get(), BOPBlocks.JACARANDA_SLAB.get());
+        chairRecipe(consumer, DyeColor.BLUE,TBABlocks.DESK_CHAIR_JACARANDA_BLUE.get().asItem().getDefaultInstance(),
+                BOPBlocks.JACARANDA_LOG.get(), BOPBlocks.STRIPPED_JACARANDA_LOG.get(), BOPBlocks.JACARANDA_SLAB.get());
+        chairRecipe(consumer, DyeColor.BROWN,TBABlocks.DESK_CHAIR_JACARANDA_BROWN.get().asItem().getDefaultInstance(),
+                BOPBlocks.JACARANDA_LOG.get(), BOPBlocks.STRIPPED_JACARANDA_LOG.get(), BOPBlocks.JACARANDA_SLAB.get());
+        chairRecipe(consumer, DyeColor.GREEN,TBABlocks.DESK_CHAIR_JACARANDA_GREEN.get().asItem().getDefaultInstance(),
+                BOPBlocks.JACARANDA_LOG.get(), BOPBlocks.STRIPPED_JACARANDA_LOG.get(), BOPBlocks.JACARANDA_SLAB.get());
+        chairRecipe(consumer, DyeColor.RED,TBABlocks.DESK_CHAIR_JACARANDA_RED.get().asItem().getDefaultInstance(),
+                BOPBlocks.JACARANDA_LOG.get(), BOPBlocks.STRIPPED_JACARANDA_LOG.get(), BOPBlocks.JACARANDA_SLAB.get());
+        chairRecipe(consumer, DyeColor.BLACK,TBABlocks.DESK_CHAIR_JACARANDA_BLACK.get().asItem().getDefaultInstance(),
+                BOPBlocks.JACARANDA_LOG.get(), BOPBlocks.STRIPPED_JACARANDA_LOG.get(), BOPBlocks.JACARANDA_SLAB.get());
+
+        chairRecipe(consumer, null,TBABlocks.DESK_CHAIR_PALM.get().asItem().getDefaultInstance(),
+                BOPBlocks.PALM_LOG.get(), BOPBlocks.STRIPPED_PALM_LOG.get(), BOPBlocks.PALM_SLAB.get());
+        chairRecipe(consumer, DyeColor.WHITE,TBABlocks.DESK_CHAIR_PALM_WHITE.get().asItem().getDefaultInstance(),
+                BOPBlocks.PALM_LOG.get(), BOPBlocks.STRIPPED_PALM_LOG.get(), BOPBlocks.PALM_SLAB.get());
+        chairRecipe(consumer, DyeColor.ORANGE,TBABlocks.DESK_CHAIR_PALM_ORANGE.get().asItem().getDefaultInstance(),
+                BOPBlocks.PALM_LOG.get(), BOPBlocks.STRIPPED_PALM_LOG.get(), BOPBlocks.PALM_SLAB.get());
+        chairRecipe(consumer, DyeColor.MAGENTA,TBABlocks.DESK_CHAIR_PALM_MAGENTA.get().asItem().getDefaultInstance(),
+                BOPBlocks.PALM_LOG.get(), BOPBlocks.STRIPPED_PALM_LOG.get(), BOPBlocks.PALM_SLAB.get());
+        chairRecipe(consumer, DyeColor.LIGHT_BLUE,TBABlocks.DESK_CHAIR_PALM_LIGHT_BLUE.get().asItem().getDefaultInstance(),
+                BOPBlocks.PALM_LOG.get(), BOPBlocks.STRIPPED_PALM_LOG.get(), BOPBlocks.PALM_SLAB.get());
+        chairRecipe(consumer, DyeColor.YELLOW,TBABlocks.DESK_CHAIR_PALM_YELLOW.get().asItem().getDefaultInstance(),
+                BOPBlocks.PALM_LOG.get(), BOPBlocks.STRIPPED_PALM_LOG.get(), BOPBlocks.PALM_SLAB.get());
+        chairRecipe(consumer, DyeColor.LIME,TBABlocks.DESK_CHAIR_PALM_LIME.get().asItem().getDefaultInstance(),
+                BOPBlocks.PALM_LOG.get(), BOPBlocks.STRIPPED_PALM_LOG.get(), BOPBlocks.PALM_SLAB.get());
+        chairRecipe(consumer, DyeColor.PINK,TBABlocks.DESK_CHAIR_PALM_PINK.get().asItem().getDefaultInstance(),
+                BOPBlocks.PALM_LOG.get(), BOPBlocks.STRIPPED_PALM_LOG.get(), BOPBlocks.PALM_SLAB.get());
+        chairRecipe(consumer, DyeColor.GRAY,TBABlocks.DESK_CHAIR_PALM_GRAY.get().asItem().getDefaultInstance(),
+                BOPBlocks.PALM_LOG.get(), BOPBlocks.STRIPPED_PALM_LOG.get(), BOPBlocks.PALM_SLAB.get());
+        chairRecipe(consumer, DyeColor.LIGHT_GRAY,TBABlocks.DESK_CHAIR_PALM_LIGHT_GRAY.get().asItem().getDefaultInstance(),
+                BOPBlocks.PALM_LOG.get(), BOPBlocks.STRIPPED_PALM_LOG.get(), BOPBlocks.PALM_SLAB.get());
+        chairRecipe(consumer, DyeColor.CYAN,TBABlocks.DESK_CHAIR_PALM_CYAN.get().asItem().getDefaultInstance(),
+                BOPBlocks.PALM_LOG.get(), BOPBlocks.STRIPPED_PALM_LOG.get(), BOPBlocks.PALM_SLAB.get());
+        chairRecipe(consumer, DyeColor.PURPLE,TBABlocks.DESK_CHAIR_PALM_PURPLE.get().asItem().getDefaultInstance(),
+                BOPBlocks.PALM_LOG.get(), BOPBlocks.STRIPPED_PALM_LOG.get(), BOPBlocks.PALM_SLAB.get());
+        chairRecipe(consumer, DyeColor.BLUE,TBABlocks.DESK_CHAIR_PALM_BLUE.get().asItem().getDefaultInstance(),
+                BOPBlocks.PALM_LOG.get(), BOPBlocks.STRIPPED_PALM_LOG.get(), BOPBlocks.PALM_SLAB.get());
+        chairRecipe(consumer, DyeColor.BROWN,TBABlocks.DESK_CHAIR_PALM_BROWN.get().asItem().getDefaultInstance(),
+                BOPBlocks.PALM_LOG.get(), BOPBlocks.STRIPPED_PALM_LOG.get(), BOPBlocks.PALM_SLAB.get());
+        chairRecipe(consumer, DyeColor.GREEN,TBABlocks.DESK_CHAIR_PALM_GREEN.get().asItem().getDefaultInstance(),
+                BOPBlocks.PALM_LOG.get(), BOPBlocks.STRIPPED_PALM_LOG.get(), BOPBlocks.PALM_SLAB.get());
+        chairRecipe(consumer, DyeColor.RED,TBABlocks.DESK_CHAIR_PALM_RED.get().asItem().getDefaultInstance(),
+                BOPBlocks.PALM_LOG.get(), BOPBlocks.STRIPPED_PALM_LOG.get(), BOPBlocks.PALM_SLAB.get());
+        chairRecipe(consumer, DyeColor.BLACK,TBABlocks.DESK_CHAIR_PALM_BLACK.get().asItem().getDefaultInstance(),
+                BOPBlocks.PALM_LOG.get(), BOPBlocks.STRIPPED_PALM_LOG.get(), BOPBlocks.PALM_SLAB.get());
+
+        chairRecipe(consumer, null,TBABlocks.DESK_CHAIR_WILLOW.get().asItem().getDefaultInstance(),
+                BOPBlocks.WILLOW_LOG.get(), BOPBlocks.STRIPPED_WILLOW_LOG.get(), BOPBlocks.WILLOW_SLAB.get());
+        chairRecipe(consumer, DyeColor.WHITE,TBABlocks.DESK_CHAIR_WILLOW_WHITE.get().asItem().getDefaultInstance(),
+                BOPBlocks.WILLOW_LOG.get(), BOPBlocks.STRIPPED_WILLOW_LOG.get(), BOPBlocks.WILLOW_SLAB.get());
+        chairRecipe(consumer, DyeColor.ORANGE,TBABlocks.DESK_CHAIR_WILLOW_ORANGE.get().asItem().getDefaultInstance(),
+                BOPBlocks.WILLOW_LOG.get(), BOPBlocks.STRIPPED_WILLOW_LOG.get(), BOPBlocks.WILLOW_SLAB.get());
+        chairRecipe(consumer, DyeColor.MAGENTA,TBABlocks.DESK_CHAIR_WILLOW_MAGENTA.get().asItem().getDefaultInstance(),
+                BOPBlocks.WILLOW_LOG.get(), BOPBlocks.STRIPPED_WILLOW_LOG.get(), BOPBlocks.WILLOW_SLAB.get());
+        chairRecipe(consumer, DyeColor.LIGHT_BLUE,TBABlocks.DESK_CHAIR_WILLOW_LIGHT_BLUE.get().asItem().getDefaultInstance(),
+                BOPBlocks.WILLOW_LOG.get(), BOPBlocks.STRIPPED_WILLOW_LOG.get(), BOPBlocks.WILLOW_SLAB.get());
+        chairRecipe(consumer, DyeColor.YELLOW,TBABlocks.DESK_CHAIR_WILLOW_YELLOW.get().asItem().getDefaultInstance(),
+                BOPBlocks.WILLOW_LOG.get(), BOPBlocks.STRIPPED_WILLOW_LOG.get(), BOPBlocks.WILLOW_SLAB.get());
+        chairRecipe(consumer, DyeColor.LIME,TBABlocks.DESK_CHAIR_WILLOW_LIME.get().asItem().getDefaultInstance(),
+                BOPBlocks.WILLOW_LOG.get(), BOPBlocks.STRIPPED_WILLOW_LOG.get(), BOPBlocks.WILLOW_SLAB.get());
+        chairRecipe(consumer, DyeColor.PINK,TBABlocks.DESK_CHAIR_WILLOW_PINK.get().asItem().getDefaultInstance(),
+                BOPBlocks.WILLOW_LOG.get(), BOPBlocks.STRIPPED_WILLOW_LOG.get(), BOPBlocks.WILLOW_SLAB.get());
+        chairRecipe(consumer, DyeColor.GRAY,TBABlocks.DESK_CHAIR_WILLOW_GRAY.get().asItem().getDefaultInstance(),
+                BOPBlocks.WILLOW_LOG.get(), BOPBlocks.STRIPPED_WILLOW_LOG.get(), BOPBlocks.WILLOW_SLAB.get());
+        chairRecipe(consumer, DyeColor.LIGHT_GRAY,TBABlocks.DESK_CHAIR_WILLOW_LIGHT_GRAY.get().asItem().getDefaultInstance(),
+                BOPBlocks.WILLOW_LOG.get(), BOPBlocks.STRIPPED_WILLOW_LOG.get(), BOPBlocks.WILLOW_SLAB.get());
+        chairRecipe(consumer, DyeColor.CYAN,TBABlocks.DESK_CHAIR_WILLOW_CYAN.get().asItem().getDefaultInstance(),
+                BOPBlocks.WILLOW_LOG.get(), BOPBlocks.STRIPPED_WILLOW_LOG.get(), BOPBlocks.WILLOW_SLAB.get());
+        chairRecipe(consumer, DyeColor.PURPLE,TBABlocks.DESK_CHAIR_WILLOW_PURPLE.get().asItem().getDefaultInstance(),
+                BOPBlocks.WILLOW_LOG.get(), BOPBlocks.STRIPPED_WILLOW_LOG.get(), BOPBlocks.WILLOW_SLAB.get());
+        chairRecipe(consumer, DyeColor.BLUE,TBABlocks.DESK_CHAIR_WILLOW_BLUE.get().asItem().getDefaultInstance(),
+                BOPBlocks.WILLOW_LOG.get(), BOPBlocks.STRIPPED_WILLOW_LOG.get(), BOPBlocks.WILLOW_SLAB.get());
+        chairRecipe(consumer, DyeColor.BROWN,TBABlocks.DESK_CHAIR_WILLOW_BROWN.get().asItem().getDefaultInstance(),
+                BOPBlocks.WILLOW_LOG.get(), BOPBlocks.STRIPPED_WILLOW_LOG.get(), BOPBlocks.WILLOW_SLAB.get());
+        chairRecipe(consumer, DyeColor.GREEN,TBABlocks.DESK_CHAIR_WILLOW_GREEN.get().asItem().getDefaultInstance(),
+                BOPBlocks.WILLOW_LOG.get(), BOPBlocks.STRIPPED_WILLOW_LOG.get(), BOPBlocks.WILLOW_SLAB.get());
+        chairRecipe(consumer, DyeColor.RED,TBABlocks.DESK_CHAIR_WILLOW_RED.get().asItem().getDefaultInstance(),
+                BOPBlocks.WILLOW_LOG.get(), BOPBlocks.STRIPPED_WILLOW_LOG.get(), BOPBlocks.WILLOW_SLAB.get());
+        chairRecipe(consumer, DyeColor.BLACK,TBABlocks.DESK_CHAIR_WILLOW_BLACK.get().asItem().getDefaultInstance(),
+                BOPBlocks.WILLOW_LOG.get(), BOPBlocks.STRIPPED_WILLOW_LOG.get(), BOPBlocks.WILLOW_SLAB.get());
+
+        chairRecipe(consumer, null,TBABlocks.DESK_CHAIR_DEAD.get().asItem().getDefaultInstance(),
+                BOPBlocks.DEAD_LOG.get(), BOPBlocks.STRIPPED_DEAD_LOG.get(), BOPBlocks.DEAD_SLAB.get());
+        chairRecipe(consumer, DyeColor.WHITE,TBABlocks.DESK_CHAIR_DEAD_WHITE.get().asItem().getDefaultInstance(),
+                BOPBlocks.DEAD_LOG.get(), BOPBlocks.STRIPPED_DEAD_LOG.get(), BOPBlocks.DEAD_SLAB.get());
+        chairRecipe(consumer, DyeColor.ORANGE,TBABlocks.DESK_CHAIR_DEAD_ORANGE.get().asItem().getDefaultInstance(),
+                BOPBlocks.DEAD_LOG.get(), BOPBlocks.STRIPPED_DEAD_LOG.get(), BOPBlocks.DEAD_SLAB.get());
+        chairRecipe(consumer, DyeColor.MAGENTA,TBABlocks.DESK_CHAIR_DEAD_MAGENTA.get().asItem().getDefaultInstance(),
+                BOPBlocks.DEAD_LOG.get(), BOPBlocks.STRIPPED_DEAD_LOG.get(), BOPBlocks.DEAD_SLAB.get());
+        chairRecipe(consumer, DyeColor.LIGHT_BLUE,TBABlocks.DESK_CHAIR_DEAD_LIGHT_BLUE.get().asItem().getDefaultInstance(),
+                BOPBlocks.DEAD_LOG.get(), BOPBlocks.STRIPPED_DEAD_LOG.get(), BOPBlocks.DEAD_SLAB.get());
+        chairRecipe(consumer, DyeColor.YELLOW,TBABlocks.DESK_CHAIR_DEAD_YELLOW.get().asItem().getDefaultInstance(),
+                BOPBlocks.DEAD_LOG.get(), BOPBlocks.STRIPPED_DEAD_LOG.get(), BOPBlocks.DEAD_SLAB.get());
+        chairRecipe(consumer, DyeColor.LIME,TBABlocks.DESK_CHAIR_DEAD_LIME.get().asItem().getDefaultInstance(),
+                BOPBlocks.DEAD_LOG.get(), BOPBlocks.STRIPPED_DEAD_LOG.get(), BOPBlocks.DEAD_SLAB.get());
+        chairRecipe(consumer, DyeColor.PINK,TBABlocks.DESK_CHAIR_DEAD_PINK.get().asItem().getDefaultInstance(),
+                BOPBlocks.DEAD_LOG.get(), BOPBlocks.STRIPPED_DEAD_LOG.get(), BOPBlocks.DEAD_SLAB.get());
+        chairRecipe(consumer, DyeColor.GRAY,TBABlocks.DESK_CHAIR_DEAD_GRAY.get().asItem().getDefaultInstance(),
+                BOPBlocks.DEAD_LOG.get(), BOPBlocks.STRIPPED_DEAD_LOG.get(), BOPBlocks.DEAD_SLAB.get());
+        chairRecipe(consumer, DyeColor.LIGHT_GRAY,TBABlocks.DESK_CHAIR_DEAD_LIGHT_GRAY.get().asItem().getDefaultInstance(),
+                BOPBlocks.DEAD_LOG.get(), BOPBlocks.STRIPPED_DEAD_LOG.get(), BOPBlocks.DEAD_SLAB.get());
+        chairRecipe(consumer, DyeColor.CYAN,TBABlocks.DESK_CHAIR_DEAD_CYAN.get().asItem().getDefaultInstance(),
+                BOPBlocks.DEAD_LOG.get(), BOPBlocks.STRIPPED_DEAD_LOG.get(), BOPBlocks.DEAD_SLAB.get());
+        chairRecipe(consumer, DyeColor.PURPLE,TBABlocks.DESK_CHAIR_DEAD_PURPLE.get().asItem().getDefaultInstance(),
+                BOPBlocks.DEAD_LOG.get(), BOPBlocks.STRIPPED_DEAD_LOG.get(), BOPBlocks.DEAD_SLAB.get());
+        chairRecipe(consumer, DyeColor.BLUE,TBABlocks.DESK_CHAIR_DEAD_BLUE.get().asItem().getDefaultInstance(),
+                BOPBlocks.DEAD_LOG.get(), BOPBlocks.STRIPPED_DEAD_LOG.get(), BOPBlocks.DEAD_SLAB.get());
+        chairRecipe(consumer, DyeColor.BROWN,TBABlocks.DESK_CHAIR_DEAD_BROWN.get().asItem().getDefaultInstance(),
+                BOPBlocks.DEAD_LOG.get(), BOPBlocks.STRIPPED_DEAD_LOG.get(), BOPBlocks.DEAD_SLAB.get());
+        chairRecipe(consumer, DyeColor.GREEN,TBABlocks.DESK_CHAIR_DEAD_GREEN.get().asItem().getDefaultInstance(),
+                BOPBlocks.DEAD_LOG.get(), BOPBlocks.STRIPPED_DEAD_LOG.get(), BOPBlocks.DEAD_SLAB.get());
+        chairRecipe(consumer, DyeColor.RED,TBABlocks.DESK_CHAIR_DEAD_RED.get().asItem().getDefaultInstance(),
+                BOPBlocks.DEAD_LOG.get(), BOPBlocks.STRIPPED_DEAD_LOG.get(), BOPBlocks.DEAD_SLAB.get());
+        chairRecipe(consumer, DyeColor.BLACK,TBABlocks.DESK_CHAIR_DEAD_BLACK.get().asItem().getDefaultInstance(),
+                BOPBlocks.DEAD_LOG.get(), BOPBlocks.STRIPPED_DEAD_LOG.get(), BOPBlocks.DEAD_SLAB.get());
+
+        chairRecipe(consumer, null,TBABlocks.DESK_CHAIR_MAGIC.get().asItem().getDefaultInstance(),
+                BOPBlocks.MAGIC_LOG.get(), BOPBlocks.STRIPPED_MAGIC_LOG.get(), BOPBlocks.MAGIC_SLAB.get());
+        chairRecipe(consumer, DyeColor.WHITE,TBABlocks.DESK_CHAIR_MAGIC_WHITE.get().asItem().getDefaultInstance(),
+                BOPBlocks.MAGIC_LOG.get(), BOPBlocks.STRIPPED_MAGIC_LOG.get(), BOPBlocks.MAGIC_SLAB.get());
+        chairRecipe(consumer, DyeColor.ORANGE,TBABlocks.DESK_CHAIR_MAGIC_ORANGE.get().asItem().getDefaultInstance(),
+                BOPBlocks.MAGIC_LOG.get(), BOPBlocks.STRIPPED_MAGIC_LOG.get(), BOPBlocks.MAGIC_SLAB.get());
+        chairRecipe(consumer, DyeColor.MAGENTA,TBABlocks.DESK_CHAIR_MAGIC_MAGENTA.get().asItem().getDefaultInstance(),
+                BOPBlocks.MAGIC_LOG.get(), BOPBlocks.STRIPPED_MAGIC_LOG.get(), BOPBlocks.MAGIC_SLAB.get());
+        chairRecipe(consumer, DyeColor.LIGHT_BLUE,TBABlocks.DESK_CHAIR_MAGIC_LIGHT_BLUE.get().asItem().getDefaultInstance(),
+                BOPBlocks.MAGIC_LOG.get(), BOPBlocks.STRIPPED_MAGIC_LOG.get(), BOPBlocks.MAGIC_SLAB.get());
+        chairRecipe(consumer, DyeColor.YELLOW,TBABlocks.DESK_CHAIR_MAGIC_YELLOW.get().asItem().getDefaultInstance(),
+                BOPBlocks.MAGIC_LOG.get(), BOPBlocks.STRIPPED_MAGIC_LOG.get(), BOPBlocks.MAGIC_SLAB.get());
+        chairRecipe(consumer, DyeColor.LIME,TBABlocks.DESK_CHAIR_MAGIC_LIME.get().asItem().getDefaultInstance(),
+                BOPBlocks.MAGIC_LOG.get(), BOPBlocks.STRIPPED_MAGIC_LOG.get(), BOPBlocks.MAGIC_SLAB.get());
+        chairRecipe(consumer, DyeColor.PINK,TBABlocks.DESK_CHAIR_MAGIC_PINK.get().asItem().getDefaultInstance(),
+                BOPBlocks.MAGIC_LOG.get(), BOPBlocks.STRIPPED_MAGIC_LOG.get(), BOPBlocks.MAGIC_SLAB.get());
+        chairRecipe(consumer, DyeColor.GRAY,TBABlocks.DESK_CHAIR_MAGIC_GRAY.get().asItem().getDefaultInstance(),
+                BOPBlocks.MAGIC_LOG.get(), BOPBlocks.STRIPPED_MAGIC_LOG.get(), BOPBlocks.MAGIC_SLAB.get());
+        chairRecipe(consumer, DyeColor.LIGHT_GRAY,TBABlocks.DESK_CHAIR_MAGIC_LIGHT_GRAY.get().asItem().getDefaultInstance(),
+                BOPBlocks.MAGIC_LOG.get(), BOPBlocks.STRIPPED_MAGIC_LOG.get(), BOPBlocks.MAGIC_SLAB.get());
+        chairRecipe(consumer, DyeColor.CYAN,TBABlocks.DESK_CHAIR_MAGIC_CYAN.get().asItem().getDefaultInstance(),
+                BOPBlocks.MAGIC_LOG.get(), BOPBlocks.STRIPPED_MAGIC_LOG.get(), BOPBlocks.MAGIC_SLAB.get());
+        chairRecipe(consumer, DyeColor.PURPLE,TBABlocks.DESK_CHAIR_MAGIC_PURPLE.get().asItem().getDefaultInstance(),
+                BOPBlocks.MAGIC_LOG.get(), BOPBlocks.STRIPPED_MAGIC_LOG.get(), BOPBlocks.MAGIC_SLAB.get());
+        chairRecipe(consumer, DyeColor.BLUE,TBABlocks.DESK_CHAIR_MAGIC_BLUE.get().asItem().getDefaultInstance(),
+                BOPBlocks.MAGIC_LOG.get(), BOPBlocks.STRIPPED_MAGIC_LOG.get(), BOPBlocks.MAGIC_SLAB.get());
+        chairRecipe(consumer, DyeColor.BROWN,TBABlocks.DESK_CHAIR_MAGIC_BROWN.get().asItem().getDefaultInstance(),
+                BOPBlocks.MAGIC_LOG.get(), BOPBlocks.STRIPPED_MAGIC_LOG.get(), BOPBlocks.MAGIC_SLAB.get());
+        chairRecipe(consumer, DyeColor.GREEN,TBABlocks.DESK_CHAIR_MAGIC_GREEN.get().asItem().getDefaultInstance(),
+                BOPBlocks.MAGIC_LOG.get(), BOPBlocks.STRIPPED_MAGIC_LOG.get(), BOPBlocks.MAGIC_SLAB.get());
+        chairRecipe(consumer, DyeColor.RED,TBABlocks.DESK_CHAIR_MAGIC_RED.get().asItem().getDefaultInstance(),
+                BOPBlocks.MAGIC_LOG.get(), BOPBlocks.STRIPPED_MAGIC_LOG.get(), BOPBlocks.MAGIC_SLAB.get());
+        chairRecipe(consumer, DyeColor.BLACK,TBABlocks.DESK_CHAIR_MAGIC_BLACK.get().asItem().getDefaultInstance(),
+                BOPBlocks.MAGIC_LOG.get(), BOPBlocks.STRIPPED_MAGIC_LOG.get(), BOPBlocks.MAGIC_SLAB.get());
+
+        chairRecipe(consumer, null,TBABlocks.DESK_CHAIR_UMBRAN.get().asItem().getDefaultInstance(),
+                BOPBlocks.UMBRAN_LOG.get(), BOPBlocks.STRIPPED_UMBRAN_LOG.get(), BOPBlocks.UMBRAN_SLAB.get());
+        chairRecipe(consumer, DyeColor.WHITE,TBABlocks.DESK_CHAIR_UMBRAN_WHITE.get().asItem().getDefaultInstance(),
+                BOPBlocks.UMBRAN_LOG.get(), BOPBlocks.STRIPPED_UMBRAN_LOG.get(), BOPBlocks.UMBRAN_SLAB.get());
+        chairRecipe(consumer, DyeColor.ORANGE,TBABlocks.DESK_CHAIR_UMBRAN_ORANGE.get().asItem().getDefaultInstance(),
+                BOPBlocks.UMBRAN_LOG.get(), BOPBlocks.STRIPPED_UMBRAN_LOG.get(), BOPBlocks.UMBRAN_SLAB.get());
+        chairRecipe(consumer, DyeColor.MAGENTA,TBABlocks.DESK_CHAIR_UMBRAN_MAGENTA.get().asItem().getDefaultInstance(),
+                BOPBlocks.UMBRAN_LOG.get(), BOPBlocks.STRIPPED_UMBRAN_LOG.get(), BOPBlocks.UMBRAN_SLAB.get());
+        chairRecipe(consumer, DyeColor.LIGHT_BLUE,TBABlocks.DESK_CHAIR_UMBRAN_LIGHT_BLUE.get().asItem().getDefaultInstance(),
+                BOPBlocks.UMBRAN_LOG.get(), BOPBlocks.STRIPPED_UMBRAN_LOG.get(), BOPBlocks.UMBRAN_SLAB.get());
+        chairRecipe(consumer, DyeColor.YELLOW,TBABlocks.DESK_CHAIR_UMBRAN_YELLOW.get().asItem().getDefaultInstance(),
+                BOPBlocks.UMBRAN_LOG.get(), BOPBlocks.STRIPPED_UMBRAN_LOG.get(), BOPBlocks.UMBRAN_SLAB.get());
+        chairRecipe(consumer, DyeColor.LIME,TBABlocks.DESK_CHAIR_UMBRAN_LIME.get().asItem().getDefaultInstance(),
+                BOPBlocks.UMBRAN_LOG.get(), BOPBlocks.STRIPPED_UMBRAN_LOG.get(), BOPBlocks.UMBRAN_SLAB.get());
+        chairRecipe(consumer, DyeColor.PINK,TBABlocks.DESK_CHAIR_UMBRAN_PINK.get().asItem().getDefaultInstance(),
+                BOPBlocks.UMBRAN_LOG.get(), BOPBlocks.STRIPPED_UMBRAN_LOG.get(), BOPBlocks.UMBRAN_SLAB.get());
+        chairRecipe(consumer, DyeColor.GRAY,TBABlocks.DESK_CHAIR_UMBRAN_GRAY.get().asItem().getDefaultInstance(),
+                BOPBlocks.UMBRAN_LOG.get(), BOPBlocks.STRIPPED_UMBRAN_LOG.get(), BOPBlocks.UMBRAN_SLAB.get());
+        chairRecipe(consumer, DyeColor.LIGHT_GRAY,TBABlocks.DESK_CHAIR_UMBRAN_LIGHT_GRAY.get().asItem().getDefaultInstance(),
+                BOPBlocks.UMBRAN_LOG.get(), BOPBlocks.STRIPPED_UMBRAN_LOG.get(), BOPBlocks.UMBRAN_SLAB.get());
+        chairRecipe(consumer, DyeColor.CYAN,TBABlocks.DESK_CHAIR_UMBRAN_CYAN.get().asItem().getDefaultInstance(),
+                BOPBlocks.UMBRAN_LOG.get(), BOPBlocks.STRIPPED_UMBRAN_LOG.get(), BOPBlocks.UMBRAN_SLAB.get());
+        chairRecipe(consumer, DyeColor.PURPLE,TBABlocks.DESK_CHAIR_UMBRAN_PURPLE.get().asItem().getDefaultInstance(),
+                BOPBlocks.UMBRAN_LOG.get(), BOPBlocks.STRIPPED_UMBRAN_LOG.get(), BOPBlocks.UMBRAN_SLAB.get());
+        chairRecipe(consumer, DyeColor.BLUE,TBABlocks.DESK_CHAIR_UMBRAN_BLUE.get().asItem().getDefaultInstance(),
+                BOPBlocks.UMBRAN_LOG.get(), BOPBlocks.STRIPPED_UMBRAN_LOG.get(), BOPBlocks.UMBRAN_SLAB.get());
+        chairRecipe(consumer, DyeColor.BROWN,TBABlocks.DESK_CHAIR_UMBRAN_BROWN.get().asItem().getDefaultInstance(),
+                BOPBlocks.UMBRAN_LOG.get(), BOPBlocks.STRIPPED_UMBRAN_LOG.get(), BOPBlocks.UMBRAN_SLAB.get());
+        chairRecipe(consumer, DyeColor.GREEN,TBABlocks.DESK_CHAIR_UMBRAN_GREEN.get().asItem().getDefaultInstance(),
+                BOPBlocks.UMBRAN_LOG.get(), BOPBlocks.STRIPPED_UMBRAN_LOG.get(), BOPBlocks.UMBRAN_SLAB.get());
+        chairRecipe(consumer, DyeColor.RED,TBABlocks.DESK_CHAIR_UMBRAN_RED.get().asItem().getDefaultInstance(),
+                BOPBlocks.UMBRAN_LOG.get(), BOPBlocks.STRIPPED_UMBRAN_LOG.get(), BOPBlocks.UMBRAN_SLAB.get());
+        chairRecipe(consumer, DyeColor.BLACK,TBABlocks.DESK_CHAIR_UMBRAN_BLACK.get().asItem().getDefaultInstance(),
+                BOPBlocks.UMBRAN_LOG.get(), BOPBlocks.STRIPPED_UMBRAN_LOG.get(), BOPBlocks.UMBRAN_SLAB.get());
+
+        chairRecipe(consumer, null,TBABlocks.DESK_CHAIR_HELLBARK.get().asItem().getDefaultInstance(),
+                BOPBlocks.HELLBARK_LOG.get(), BOPBlocks.STRIPPED_HELLBARK_LOG.get(), BOPBlocks.HELLBARK_SLAB.get());
+        chairRecipe(consumer, DyeColor.WHITE,TBABlocks.DESK_CHAIR_HELLBARK_WHITE.get().asItem().getDefaultInstance(),
+                BOPBlocks.HELLBARK_LOG.get(), BOPBlocks.STRIPPED_HELLBARK_LOG.get(), BOPBlocks.HELLBARK_SLAB.get());
+        chairRecipe(consumer, DyeColor.ORANGE,TBABlocks.DESK_CHAIR_HELLBARK_ORANGE.get().asItem().getDefaultInstance(),
+                BOPBlocks.HELLBARK_LOG.get(), BOPBlocks.STRIPPED_HELLBARK_LOG.get(), BOPBlocks.HELLBARK_SLAB.get());
+        chairRecipe(consumer, DyeColor.MAGENTA,TBABlocks.DESK_CHAIR_HELLBARK_MAGENTA.get().asItem().getDefaultInstance(),
+                BOPBlocks.HELLBARK_LOG.get(), BOPBlocks.STRIPPED_HELLBARK_LOG.get(), BOPBlocks.HELLBARK_SLAB.get());
+        chairRecipe(consumer, DyeColor.LIGHT_BLUE,TBABlocks.DESK_CHAIR_HELLBARK_LIGHT_BLUE.get().asItem().getDefaultInstance(),
+                BOPBlocks.HELLBARK_LOG.get(), BOPBlocks.STRIPPED_HELLBARK_LOG.get(), BOPBlocks.HELLBARK_SLAB.get());
+        chairRecipe(consumer, DyeColor.YELLOW,TBABlocks.DESK_CHAIR_HELLBARK_YELLOW.get().asItem().getDefaultInstance(),
+                BOPBlocks.HELLBARK_LOG.get(), BOPBlocks.STRIPPED_HELLBARK_LOG.get(), BOPBlocks.HELLBARK_SLAB.get());
+        chairRecipe(consumer, DyeColor.LIME,TBABlocks.DESK_CHAIR_HELLBARK_LIME.get().asItem().getDefaultInstance(),
+                BOPBlocks.HELLBARK_LOG.get(), BOPBlocks.STRIPPED_HELLBARK_LOG.get(), BOPBlocks.HELLBARK_SLAB.get());
+        chairRecipe(consumer, DyeColor.PINK,TBABlocks.DESK_CHAIR_HELLBARK_PINK.get().asItem().getDefaultInstance(),
+                BOPBlocks.HELLBARK_LOG.get(), BOPBlocks.STRIPPED_HELLBARK_LOG.get(), BOPBlocks.HELLBARK_SLAB.get());
+        chairRecipe(consumer, DyeColor.GRAY,TBABlocks.DESK_CHAIR_HELLBARK_GRAY.get().asItem().getDefaultInstance(),
+                BOPBlocks.HELLBARK_LOG.get(), BOPBlocks.STRIPPED_HELLBARK_LOG.get(), BOPBlocks.HELLBARK_SLAB.get());
+        chairRecipe(consumer, DyeColor.LIGHT_GRAY,TBABlocks.DESK_CHAIR_HELLBARK_LIGHT_GRAY.get().asItem().getDefaultInstance(),
+                BOPBlocks.HELLBARK_LOG.get(), BOPBlocks.STRIPPED_HELLBARK_LOG.get(), BOPBlocks.HELLBARK_SLAB.get());
+        chairRecipe(consumer, DyeColor.CYAN,TBABlocks.DESK_CHAIR_HELLBARK_CYAN.get().asItem().getDefaultInstance(),
+                BOPBlocks.HELLBARK_LOG.get(), BOPBlocks.STRIPPED_HELLBARK_LOG.get(), BOPBlocks.HELLBARK_SLAB.get());
+        chairRecipe(consumer, DyeColor.PURPLE,TBABlocks.DESK_CHAIR_HELLBARK_PURPLE.get().asItem().getDefaultInstance(),
+                BOPBlocks.HELLBARK_LOG.get(), BOPBlocks.STRIPPED_HELLBARK_LOG.get(), BOPBlocks.HELLBARK_SLAB.get());
+        chairRecipe(consumer, DyeColor.BLUE,TBABlocks.DESK_CHAIR_HELLBARK_BLUE.get().asItem().getDefaultInstance(),
+                BOPBlocks.HELLBARK_LOG.get(), BOPBlocks.STRIPPED_HELLBARK_LOG.get(), BOPBlocks.HELLBARK_SLAB.get());
+        chairRecipe(consumer, DyeColor.BROWN,TBABlocks.DESK_CHAIR_HELLBARK_BROWN.get().asItem().getDefaultInstance(),
+                BOPBlocks.HELLBARK_LOG.get(), BOPBlocks.STRIPPED_HELLBARK_LOG.get(), BOPBlocks.HELLBARK_SLAB.get());
+        chairRecipe(consumer, DyeColor.GREEN,TBABlocks.DESK_CHAIR_HELLBARK_GREEN.get().asItem().getDefaultInstance(),
+                BOPBlocks.HELLBARK_LOG.get(), BOPBlocks.STRIPPED_HELLBARK_LOG.get(), BOPBlocks.HELLBARK_SLAB.get());
+        chairRecipe(consumer, DyeColor.RED,TBABlocks.DESK_CHAIR_HELLBARK_RED.get().asItem().getDefaultInstance(),
+                BOPBlocks.HELLBARK_LOG.get(), BOPBlocks.STRIPPED_HELLBARK_LOG.get(), BOPBlocks.HELLBARK_SLAB.get());
+        chairRecipe(consumer, DyeColor.BLACK,TBABlocks.DESK_CHAIR_HELLBARK_BLACK.get().asItem().getDefaultInstance(),
+                BOPBlocks.HELLBARK_LOG.get(), BOPBlocks.STRIPPED_HELLBARK_LOG.get(), BOPBlocks.HELLBARK_SLAB.get());
+
+        chairRecipe(consumer, null,TBABlocks.DESK_CHAIR_COCONUT.get().asItem().getDefaultInstance(),
+                samebutdifferent.ecologics.registry.ModBlocks.COCONUT_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.STRIPPED_COCONUT_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.COCONUT_SLAB.get());
+        chairRecipe(consumer, DyeColor.WHITE,TBABlocks.DESK_CHAIR_COCONUT_WHITE.get().asItem().getDefaultInstance(),
+                samebutdifferent.ecologics.registry.ModBlocks.COCONUT_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.STRIPPED_COCONUT_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.COCONUT_SLAB.get());
+        chairRecipe(consumer, DyeColor.ORANGE,TBABlocks.DESK_CHAIR_COCONUT_ORANGE.get().asItem().getDefaultInstance(),
+                samebutdifferent.ecologics.registry.ModBlocks.COCONUT_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.STRIPPED_COCONUT_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.COCONUT_SLAB.get());
+        chairRecipe(consumer, DyeColor.MAGENTA,TBABlocks.DESK_CHAIR_COCONUT_MAGENTA.get().asItem().getDefaultInstance(),
+                samebutdifferent.ecologics.registry.ModBlocks.COCONUT_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.STRIPPED_COCONUT_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.COCONUT_SLAB.get());
+        chairRecipe(consumer, DyeColor.LIGHT_BLUE,TBABlocks.DESK_CHAIR_COCONUT_LIGHT_BLUE.get().asItem().getDefaultInstance(),
+                samebutdifferent.ecologics.registry.ModBlocks.COCONUT_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.STRIPPED_COCONUT_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.COCONUT_SLAB.get());
+        chairRecipe(consumer, DyeColor.YELLOW,TBABlocks.DESK_CHAIR_COCONUT_YELLOW.get().asItem().getDefaultInstance(),
+                samebutdifferent.ecologics.registry.ModBlocks.COCONUT_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.STRIPPED_COCONUT_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.COCONUT_SLAB.get());
+        chairRecipe(consumer, DyeColor.LIME,TBABlocks.DESK_CHAIR_COCONUT_LIME.get().asItem().getDefaultInstance(),
+                samebutdifferent.ecologics.registry.ModBlocks.COCONUT_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.STRIPPED_COCONUT_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.COCONUT_SLAB.get());
+        chairRecipe(consumer, DyeColor.PINK,TBABlocks.DESK_CHAIR_COCONUT_PINK.get().asItem().getDefaultInstance(),
+                samebutdifferent.ecologics.registry.ModBlocks.COCONUT_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.STRIPPED_COCONUT_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.COCONUT_SLAB.get());
+        chairRecipe(consumer, DyeColor.GRAY,TBABlocks.DESK_CHAIR_COCONUT_GRAY.get().asItem().getDefaultInstance(),
+                samebutdifferent.ecologics.registry.ModBlocks.COCONUT_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.STRIPPED_COCONUT_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.COCONUT_SLAB.get());
+        chairRecipe(consumer, DyeColor.LIGHT_GRAY,TBABlocks.DESK_CHAIR_COCONUT_LIGHT_GRAY.get().asItem().getDefaultInstance(),
+                samebutdifferent.ecologics.registry.ModBlocks.COCONUT_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.STRIPPED_COCONUT_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.COCONUT_SLAB.get());
+        chairRecipe(consumer, DyeColor.CYAN,TBABlocks.DESK_CHAIR_COCONUT_CYAN.get().asItem().getDefaultInstance(),
+                samebutdifferent.ecologics.registry.ModBlocks.COCONUT_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.STRIPPED_COCONUT_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.COCONUT_SLAB.get());
+        chairRecipe(consumer, DyeColor.PURPLE,TBABlocks.DESK_CHAIR_COCONUT_PURPLE.get().asItem().getDefaultInstance(),
+                samebutdifferent.ecologics.registry.ModBlocks.COCONUT_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.STRIPPED_COCONUT_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.COCONUT_SLAB.get());
+        chairRecipe(consumer, DyeColor.BLUE,TBABlocks.DESK_CHAIR_COCONUT_BLUE.get().asItem().getDefaultInstance(),
+                samebutdifferent.ecologics.registry.ModBlocks.COCONUT_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.STRIPPED_COCONUT_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.COCONUT_SLAB.get());
+        chairRecipe(consumer, DyeColor.BROWN,TBABlocks.DESK_CHAIR_COCONUT_BROWN.get().asItem().getDefaultInstance(),
+                samebutdifferent.ecologics.registry.ModBlocks.COCONUT_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.STRIPPED_COCONUT_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.COCONUT_SLAB.get());
+        chairRecipe(consumer, DyeColor.GREEN,TBABlocks.DESK_CHAIR_COCONUT_GREEN.get().asItem().getDefaultInstance(),
+                samebutdifferent.ecologics.registry.ModBlocks.COCONUT_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.STRIPPED_COCONUT_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.COCONUT_SLAB.get());
+        chairRecipe(consumer, DyeColor.RED,TBABlocks.DESK_CHAIR_COCONUT_RED.get().asItem().getDefaultInstance(),
+                samebutdifferent.ecologics.registry.ModBlocks.COCONUT_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.STRIPPED_COCONUT_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.COCONUT_SLAB.get());
+        chairRecipe(consumer, DyeColor.BLACK,TBABlocks.DESK_CHAIR_COCONUT_BLACK.get().asItem().getDefaultInstance(),
+                samebutdifferent.ecologics.registry.ModBlocks.COCONUT_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.STRIPPED_COCONUT_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.COCONUT_SLAB.get());
+
+        chairRecipe(consumer, null,TBABlocks.DESK_CHAIR_WALNUT.get().asItem().getDefaultInstance(),
+                samebutdifferent.ecologics.registry.ModBlocks.WALNUT_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.STRIPPED_WALNUT_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.WALNUT_SLAB.get());
+        chairRecipe(consumer, DyeColor.WHITE,TBABlocks.DESK_CHAIR_WALNUT_WHITE.get().asItem().getDefaultInstance(),
+                samebutdifferent.ecologics.registry.ModBlocks.WALNUT_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.STRIPPED_WALNUT_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.WALNUT_SLAB.get());
+        chairRecipe(consumer, DyeColor.ORANGE,TBABlocks.DESK_CHAIR_WALNUT_ORANGE.get().asItem().getDefaultInstance(),
+                samebutdifferent.ecologics.registry.ModBlocks.WALNUT_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.STRIPPED_WALNUT_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.WALNUT_SLAB.get());
+        chairRecipe(consumer, DyeColor.MAGENTA,TBABlocks.DESK_CHAIR_WALNUT_MAGENTA.get().asItem().getDefaultInstance(),
+                samebutdifferent.ecologics.registry.ModBlocks.WALNUT_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.STRIPPED_WALNUT_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.WALNUT_SLAB.get());
+        chairRecipe(consumer, DyeColor.LIGHT_BLUE,TBABlocks.DESK_CHAIR_WALNUT_LIGHT_BLUE.get().asItem().getDefaultInstance(),
+                samebutdifferent.ecologics.registry.ModBlocks.WALNUT_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.STRIPPED_WALNUT_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.WALNUT_SLAB.get());
+        chairRecipe(consumer, DyeColor.YELLOW,TBABlocks.DESK_CHAIR_WALNUT_YELLOW.get().asItem().getDefaultInstance(),
+                samebutdifferent.ecologics.registry.ModBlocks.WALNUT_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.STRIPPED_WALNUT_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.WALNUT_SLAB.get());
+        chairRecipe(consumer, DyeColor.LIME,TBABlocks.DESK_CHAIR_WALNUT_LIME.get().asItem().getDefaultInstance(),
+                samebutdifferent.ecologics.registry.ModBlocks.WALNUT_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.STRIPPED_WALNUT_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.WALNUT_SLAB.get());
+        chairRecipe(consumer, DyeColor.PINK,TBABlocks.DESK_CHAIR_WALNUT_PINK.get().asItem().getDefaultInstance(),
+                samebutdifferent.ecologics.registry.ModBlocks.WALNUT_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.STRIPPED_WALNUT_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.WALNUT_SLAB.get());
+        chairRecipe(consumer, DyeColor.GRAY,TBABlocks.DESK_CHAIR_WALNUT_GRAY.get().asItem().getDefaultInstance(),
+                samebutdifferent.ecologics.registry.ModBlocks.WALNUT_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.STRIPPED_WALNUT_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.WALNUT_SLAB.get());
+        chairRecipe(consumer, DyeColor.LIGHT_GRAY,TBABlocks.DESK_CHAIR_WALNUT_LIGHT_GRAY.get().asItem().getDefaultInstance(),
+                samebutdifferent.ecologics.registry.ModBlocks.WALNUT_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.STRIPPED_WALNUT_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.WALNUT_SLAB.get());
+        chairRecipe(consumer, DyeColor.CYAN,TBABlocks.DESK_CHAIR_WALNUT_CYAN.get().asItem().getDefaultInstance(),
+                samebutdifferent.ecologics.registry.ModBlocks.WALNUT_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.STRIPPED_WALNUT_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.WALNUT_SLAB.get());
+        chairRecipe(consumer, DyeColor.PURPLE,TBABlocks.DESK_CHAIR_WALNUT_PURPLE.get().asItem().getDefaultInstance(),
+                samebutdifferent.ecologics.registry.ModBlocks.WALNUT_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.STRIPPED_WALNUT_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.WALNUT_SLAB.get());
+        chairRecipe(consumer, DyeColor.BLUE,TBABlocks.DESK_CHAIR_WALNUT_BLUE.get().asItem().getDefaultInstance(),
+                samebutdifferent.ecologics.registry.ModBlocks.WALNUT_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.STRIPPED_WALNUT_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.WALNUT_SLAB.get());
+        chairRecipe(consumer, DyeColor.BROWN,TBABlocks.DESK_CHAIR_WALNUT_BROWN.get().asItem().getDefaultInstance(),
+                samebutdifferent.ecologics.registry.ModBlocks.WALNUT_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.STRIPPED_WALNUT_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.WALNUT_SLAB.get());
+        chairRecipe(consumer, DyeColor.GREEN,TBABlocks.DESK_CHAIR_WALNUT_GREEN.get().asItem().getDefaultInstance(),
+                samebutdifferent.ecologics.registry.ModBlocks.WALNUT_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.STRIPPED_WALNUT_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.WALNUT_SLAB.get());
+        chairRecipe(consumer, DyeColor.RED,TBABlocks.DESK_CHAIR_WALNUT_RED.get().asItem().getDefaultInstance(),
+                samebutdifferent.ecologics.registry.ModBlocks.WALNUT_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.STRIPPED_WALNUT_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.WALNUT_SLAB.get());
+        chairRecipe(consumer, DyeColor.BLACK,TBABlocks.DESK_CHAIR_WALNUT_BLACK.get().asItem().getDefaultInstance(),
+                samebutdifferent.ecologics.registry.ModBlocks.WALNUT_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.STRIPPED_WALNUT_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.WALNUT_SLAB.get());
+
+        chairRecipe(consumer, null,TBABlocks.DESK_CHAIR_AZALEA.get().asItem().getDefaultInstance(),
+                samebutdifferent.ecologics.registry.ModBlocks.AZALEA_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.STRIPPED_AZALEA_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.AZALEA_SLAB.get());
+        chairRecipe(consumer, DyeColor.WHITE,TBABlocks.DESK_CHAIR_AZALEA_WHITE.get().asItem().getDefaultInstance(),
+                samebutdifferent.ecologics.registry.ModBlocks.AZALEA_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.STRIPPED_AZALEA_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.AZALEA_SLAB.get());
+        chairRecipe(consumer, DyeColor.ORANGE,TBABlocks.DESK_CHAIR_AZALEA_ORANGE.get().asItem().getDefaultInstance(),
+                samebutdifferent.ecologics.registry.ModBlocks.AZALEA_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.STRIPPED_AZALEA_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.AZALEA_SLAB.get());
+        chairRecipe(consumer, DyeColor.MAGENTA,TBABlocks.DESK_CHAIR_AZALEA_MAGENTA.get().asItem().getDefaultInstance(),
+                samebutdifferent.ecologics.registry.ModBlocks.AZALEA_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.STRIPPED_AZALEA_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.AZALEA_SLAB.get());
+        chairRecipe(consumer, DyeColor.LIGHT_BLUE,TBABlocks.DESK_CHAIR_AZALEA_LIGHT_BLUE.get().asItem().getDefaultInstance(),
+                samebutdifferent.ecologics.registry.ModBlocks.AZALEA_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.STRIPPED_AZALEA_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.AZALEA_SLAB.get());
+        chairRecipe(consumer, DyeColor.YELLOW,TBABlocks.DESK_CHAIR_AZALEA_YELLOW.get().asItem().getDefaultInstance(),
+                samebutdifferent.ecologics.registry.ModBlocks.AZALEA_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.STRIPPED_AZALEA_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.AZALEA_SLAB.get());
+        chairRecipe(consumer, DyeColor.LIME,TBABlocks.DESK_CHAIR_AZALEA_LIME.get().asItem().getDefaultInstance(),
+                samebutdifferent.ecologics.registry.ModBlocks.AZALEA_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.STRIPPED_AZALEA_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.AZALEA_SLAB.get());
+        chairRecipe(consumer, DyeColor.PINK,TBABlocks.DESK_CHAIR_AZALEA_PINK.get().asItem().getDefaultInstance(),
+                samebutdifferent.ecologics.registry.ModBlocks.AZALEA_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.STRIPPED_AZALEA_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.AZALEA_SLAB.get());
+        chairRecipe(consumer, DyeColor.GRAY,TBABlocks.DESK_CHAIR_AZALEA_GRAY.get().asItem().getDefaultInstance(),
+                samebutdifferent.ecologics.registry.ModBlocks.AZALEA_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.STRIPPED_AZALEA_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.AZALEA_SLAB.get());
+        chairRecipe(consumer, DyeColor.LIGHT_GRAY,TBABlocks.DESK_CHAIR_AZALEA_LIGHT_GRAY.get().asItem().getDefaultInstance(),
+                samebutdifferent.ecologics.registry.ModBlocks.AZALEA_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.STRIPPED_AZALEA_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.AZALEA_SLAB.get());
+        chairRecipe(consumer, DyeColor.CYAN,TBABlocks.DESK_CHAIR_AZALEA_CYAN.get().asItem().getDefaultInstance(),
+                samebutdifferent.ecologics.registry.ModBlocks.AZALEA_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.STRIPPED_AZALEA_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.AZALEA_SLAB.get());
+        chairRecipe(consumer, DyeColor.PURPLE,TBABlocks.DESK_CHAIR_AZALEA_PURPLE.get().asItem().getDefaultInstance(),
+                samebutdifferent.ecologics.registry.ModBlocks.AZALEA_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.STRIPPED_AZALEA_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.AZALEA_SLAB.get());
+        chairRecipe(consumer, DyeColor.BLUE,TBABlocks.DESK_CHAIR_AZALEA_BLUE.get().asItem().getDefaultInstance(),
+                samebutdifferent.ecologics.registry.ModBlocks.AZALEA_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.STRIPPED_AZALEA_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.AZALEA_SLAB.get());
+        chairRecipe(consumer, DyeColor.BROWN,TBABlocks.DESK_CHAIR_AZALEA_BROWN.get().asItem().getDefaultInstance(),
+                samebutdifferent.ecologics.registry.ModBlocks.AZALEA_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.STRIPPED_AZALEA_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.AZALEA_SLAB.get());
+        chairRecipe(consumer, DyeColor.GREEN,TBABlocks.DESK_CHAIR_AZALEA_GREEN.get().asItem().getDefaultInstance(),
+                samebutdifferent.ecologics.registry.ModBlocks.AZALEA_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.STRIPPED_AZALEA_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.AZALEA_SLAB.get());
+        chairRecipe(consumer, DyeColor.RED,TBABlocks.DESK_CHAIR_AZALEA_RED.get().asItem().getDefaultInstance(),
+                samebutdifferent.ecologics.registry.ModBlocks.AZALEA_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.STRIPPED_AZALEA_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.AZALEA_SLAB.get());
+        chairRecipe(consumer, DyeColor.BLACK,TBABlocks.DESK_CHAIR_AZALEA_BLACK.get().asItem().getDefaultInstance(),
+                samebutdifferent.ecologics.registry.ModBlocks.AZALEA_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.STRIPPED_AZALEA_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.AZALEA_SLAB.get());
+
+        chairRecipe(consumer, null,TBABlocks.DESK_CHAIR_FLOWERING_AZALEA.get().asItem().getDefaultInstance(),
+                samebutdifferent.ecologics.registry.ModBlocks.FLOWERING_AZALEA_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.STRIPPED_AZALEA_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.FLOWERING_AZALEA_SLAB.get());
+        chairRecipe(consumer, DyeColor.WHITE,TBABlocks.DESK_CHAIR_FLOWERING_AZALEA_WHITE.get().asItem().getDefaultInstance(),
+                samebutdifferent.ecologics.registry.ModBlocks.FLOWERING_AZALEA_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.STRIPPED_AZALEA_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.FLOWERING_AZALEA_SLAB.get());
+        chairRecipe(consumer, DyeColor.ORANGE,TBABlocks.DESK_CHAIR_FLOWERING_AZALEA_ORANGE.get().asItem().getDefaultInstance(),
+                samebutdifferent.ecologics.registry.ModBlocks.FLOWERING_AZALEA_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.STRIPPED_AZALEA_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.FLOWERING_AZALEA_SLAB.get());
+        chairRecipe(consumer, DyeColor.MAGENTA,TBABlocks.DESK_CHAIR_FLOWERING_AZALEA_MAGENTA.get().asItem().getDefaultInstance(),
+                samebutdifferent.ecologics.registry.ModBlocks.FLOWERING_AZALEA_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.STRIPPED_AZALEA_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.FLOWERING_AZALEA_SLAB.get());
+        chairRecipe(consumer, DyeColor.LIGHT_BLUE,TBABlocks.DESK_CHAIR_FLOWERING_AZALEA_LIGHT_BLUE.get().asItem().getDefaultInstance(),
+                samebutdifferent.ecologics.registry.ModBlocks.FLOWERING_AZALEA_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.STRIPPED_AZALEA_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.FLOWERING_AZALEA_SLAB.get());
+        chairRecipe(consumer, DyeColor.YELLOW,TBABlocks.DESK_CHAIR_FLOWERING_AZALEA_YELLOW.get().asItem().getDefaultInstance(),
+                samebutdifferent.ecologics.registry.ModBlocks.FLOWERING_AZALEA_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.STRIPPED_AZALEA_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.FLOWERING_AZALEA_SLAB.get());
+        chairRecipe(consumer, DyeColor.LIME,TBABlocks.DESK_CHAIR_FLOWERING_AZALEA_LIME.get().asItem().getDefaultInstance(),
+                samebutdifferent.ecologics.registry.ModBlocks.FLOWERING_AZALEA_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.STRIPPED_AZALEA_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.FLOWERING_AZALEA_SLAB.get());
+        chairRecipe(consumer, DyeColor.PINK,TBABlocks.DESK_CHAIR_FLOWERING_AZALEA_PINK.get().asItem().getDefaultInstance(),
+                samebutdifferent.ecologics.registry.ModBlocks.FLOWERING_AZALEA_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.STRIPPED_AZALEA_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.FLOWERING_AZALEA_SLAB.get());
+        chairRecipe(consumer, DyeColor.GRAY,TBABlocks.DESK_CHAIR_FLOWERING_AZALEA_GRAY.get().asItem().getDefaultInstance(),
+                samebutdifferent.ecologics.registry.ModBlocks.FLOWERING_AZALEA_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.STRIPPED_AZALEA_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.FLOWERING_AZALEA_SLAB.get());
+        chairRecipe(consumer, DyeColor.LIGHT_GRAY,TBABlocks.DESK_CHAIR_FLOWERING_AZALEA_LIGHT_GRAY.get().asItem().getDefaultInstance(),
+                samebutdifferent.ecologics.registry.ModBlocks.FLOWERING_AZALEA_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.STRIPPED_AZALEA_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.FLOWERING_AZALEA_SLAB.get());
+        chairRecipe(consumer, DyeColor.CYAN,TBABlocks.DESK_CHAIR_FLOWERING_AZALEA_CYAN.get().asItem().getDefaultInstance(),
+                samebutdifferent.ecologics.registry.ModBlocks.FLOWERING_AZALEA_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.STRIPPED_AZALEA_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.FLOWERING_AZALEA_SLAB.get());
+        chairRecipe(consumer, DyeColor.PURPLE,TBABlocks.DESK_CHAIR_FLOWERING_AZALEA_PURPLE.get().asItem().getDefaultInstance(),
+                samebutdifferent.ecologics.registry.ModBlocks.FLOWERING_AZALEA_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.STRIPPED_AZALEA_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.FLOWERING_AZALEA_SLAB.get());
+        chairRecipe(consumer, DyeColor.BLUE,TBABlocks.DESK_CHAIR_FLOWERING_AZALEA_BLUE.get().asItem().getDefaultInstance(),
+                samebutdifferent.ecologics.registry.ModBlocks.FLOWERING_AZALEA_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.STRIPPED_AZALEA_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.FLOWERING_AZALEA_SLAB.get());
+        chairRecipe(consumer, DyeColor.BROWN,TBABlocks.DESK_CHAIR_FLOWERING_AZALEA_BROWN.get().asItem().getDefaultInstance(),
+                samebutdifferent.ecologics.registry.ModBlocks.FLOWERING_AZALEA_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.STRIPPED_AZALEA_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.FLOWERING_AZALEA_SLAB.get());
+        chairRecipe(consumer, DyeColor.GREEN,TBABlocks.DESK_CHAIR_FLOWERING_AZALEA_GREEN.get().asItem().getDefaultInstance(),
+                samebutdifferent.ecologics.registry.ModBlocks.FLOWERING_AZALEA_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.STRIPPED_AZALEA_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.FLOWERING_AZALEA_SLAB.get());
+        chairRecipe(consumer, DyeColor.RED,TBABlocks.DESK_CHAIR_FLOWERING_AZALEA_RED.get().asItem().getDefaultInstance(),
+                samebutdifferent.ecologics.registry.ModBlocks.FLOWERING_AZALEA_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.STRIPPED_AZALEA_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.FLOWERING_AZALEA_SLAB.get());
+        chairRecipe(consumer, DyeColor.BLACK,TBABlocks.DESK_CHAIR_FLOWERING_AZALEA_BLACK.get().asItem().getDefaultInstance(),
+                samebutdifferent.ecologics.registry.ModBlocks.FLOWERING_AZALEA_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.STRIPPED_AZALEA_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.FLOWERING_AZALEA_SLAB.get());
+
+        chairRecipe(consumer, null,TBABlocks.DESK_CHAIR_GOLDEN_OAK.get().asItem().getDefaultInstance(),
+                AetherBlocks.GOLDEN_OAK_LOG.get(), AetherBlocks.STRIPPED_SKYROOT_LOG.get(), AetherBlocks.SKYROOT_SLAB.get());
+        chairRecipe(consumer, DyeColor.WHITE,TBABlocks.DESK_CHAIR_GOLDEN_OAK_WHITE.get().asItem().getDefaultInstance(),
+                AetherBlocks.GOLDEN_OAK_LOG.get(), AetherBlocks.STRIPPED_SKYROOT_LOG.get(), AetherBlocks.SKYROOT_SLAB.get());
+        chairRecipe(consumer, DyeColor.ORANGE,TBABlocks.DESK_CHAIR_GOLDEN_OAK_ORANGE.get().asItem().getDefaultInstance(),
+                AetherBlocks.GOLDEN_OAK_LOG.get(), AetherBlocks.STRIPPED_SKYROOT_LOG.get(), AetherBlocks.SKYROOT_SLAB.get());
+        chairRecipe(consumer, DyeColor.MAGENTA,TBABlocks.DESK_CHAIR_GOLDEN_OAK_MAGENTA.get().asItem().getDefaultInstance(),
+                AetherBlocks.GOLDEN_OAK_LOG.get(), AetherBlocks.STRIPPED_SKYROOT_LOG.get(), AetherBlocks.SKYROOT_SLAB.get());
+        chairRecipe(consumer, DyeColor.LIGHT_BLUE,TBABlocks.DESK_CHAIR_GOLDEN_OAK_LIGHT_BLUE.get().asItem().getDefaultInstance(),
+                AetherBlocks.GOLDEN_OAK_LOG.get(), AetherBlocks.STRIPPED_SKYROOT_LOG.get(), AetherBlocks.SKYROOT_SLAB.get());
+        chairRecipe(consumer, DyeColor.YELLOW,TBABlocks.DESK_CHAIR_GOLDEN_OAK_YELLOW.get().asItem().getDefaultInstance(),
+                AetherBlocks.GOLDEN_OAK_LOG.get(), AetherBlocks.STRIPPED_SKYROOT_LOG.get(), AetherBlocks.SKYROOT_SLAB.get());
+        chairRecipe(consumer, DyeColor.LIME,TBABlocks.DESK_CHAIR_GOLDEN_OAK_LIME.get().asItem().getDefaultInstance(),
+                AetherBlocks.GOLDEN_OAK_LOG.get(), AetherBlocks.STRIPPED_SKYROOT_LOG.get(), AetherBlocks.SKYROOT_SLAB.get());
+        chairRecipe(consumer, DyeColor.PINK,TBABlocks.DESK_CHAIR_GOLDEN_OAK_PINK.get().asItem().getDefaultInstance(),
+                AetherBlocks.GOLDEN_OAK_LOG.get(), AetherBlocks.STRIPPED_SKYROOT_LOG.get(), AetherBlocks.SKYROOT_SLAB.get());
+        chairRecipe(consumer, DyeColor.GRAY,TBABlocks.DESK_CHAIR_GOLDEN_OAK_GRAY.get().asItem().getDefaultInstance(),
+                AetherBlocks.GOLDEN_OAK_LOG.get(), AetherBlocks.STRIPPED_SKYROOT_LOG.get(), AetherBlocks.SKYROOT_SLAB.get());
+        chairRecipe(consumer, DyeColor.LIGHT_GRAY,TBABlocks.DESK_CHAIR_GOLDEN_OAK_LIGHT_GRAY.get().asItem().getDefaultInstance(),
+                AetherBlocks.GOLDEN_OAK_LOG.get(), AetherBlocks.STRIPPED_SKYROOT_LOG.get(), AetherBlocks.SKYROOT_SLAB.get());
+        chairRecipe(consumer, DyeColor.CYAN,TBABlocks.DESK_CHAIR_GOLDEN_OAK_CYAN.get().asItem().getDefaultInstance(),
+                AetherBlocks.GOLDEN_OAK_LOG.get(), AetherBlocks.STRIPPED_SKYROOT_LOG.get(), AetherBlocks.SKYROOT_SLAB.get());
+        chairRecipe(consumer, DyeColor.PURPLE,TBABlocks.DESK_CHAIR_GOLDEN_OAK_PURPLE.get().asItem().getDefaultInstance(),
+                AetherBlocks.GOLDEN_OAK_LOG.get(), AetherBlocks.STRIPPED_SKYROOT_LOG.get(), AetherBlocks.SKYROOT_SLAB.get());
+        chairRecipe(consumer, DyeColor.BLUE,TBABlocks.DESK_CHAIR_GOLDEN_OAK_BLUE.get().asItem().getDefaultInstance(),
+                AetherBlocks.GOLDEN_OAK_LOG.get(), AetherBlocks.STRIPPED_SKYROOT_LOG.get(), AetherBlocks.SKYROOT_SLAB.get());
+        chairRecipe(consumer, DyeColor.BROWN,TBABlocks.DESK_CHAIR_GOLDEN_OAK_BROWN.get().asItem().getDefaultInstance(),
+                AetherBlocks.GOLDEN_OAK_LOG.get(), AetherBlocks.STRIPPED_SKYROOT_LOG.get(), AetherBlocks.SKYROOT_SLAB.get());
+        chairRecipe(consumer, DyeColor.GREEN,TBABlocks.DESK_CHAIR_GOLDEN_OAK_GREEN.get().asItem().getDefaultInstance(),
+                AetherBlocks.GOLDEN_OAK_LOG.get(), AetherBlocks.STRIPPED_SKYROOT_LOG.get(), AetherBlocks.SKYROOT_SLAB.get());
+        chairRecipe(consumer, DyeColor.RED,TBABlocks.DESK_CHAIR_GOLDEN_OAK_RED.get().asItem().getDefaultInstance(),
+                AetherBlocks.GOLDEN_OAK_LOG.get(), AetherBlocks.STRIPPED_SKYROOT_LOG.get(), AetherBlocks.SKYROOT_SLAB.get());
+        chairRecipe(consumer, DyeColor.BLACK,TBABlocks.DESK_CHAIR_GOLDEN_OAK_BLACK.get().asItem().getDefaultInstance(),
+                AetherBlocks.GOLDEN_OAK_LOG.get(), AetherBlocks.STRIPPED_SKYROOT_LOG.get(), AetherBlocks.SKYROOT_SLAB.get());
+
+        chairRecipe(consumer, null,TBABlocks.DESK_CHAIR_AETHER_SKYROOT.get().asItem().getDefaultInstance(),
+                AetherBlocks.SKYROOT_LOG.get(), AetherBlocks.STRIPPED_SKYROOT_LOG.get(), AetherBlocks.SKYROOT_SLAB.get());
+        chairRecipe(consumer, DyeColor.WHITE,TBABlocks.DESK_CHAIR_AETHER_SKYROOT_WHITE.get().asItem().getDefaultInstance(),
+                AetherBlocks.SKYROOT_LOG.get(), AetherBlocks.STRIPPED_SKYROOT_LOG.get(), AetherBlocks.SKYROOT_SLAB.get());
+        chairRecipe(consumer, DyeColor.ORANGE,TBABlocks.DESK_CHAIR_AETHER_SKYROOT_ORANGE.get().asItem().getDefaultInstance(),
+                AetherBlocks.SKYROOT_LOG.get(), AetherBlocks.STRIPPED_SKYROOT_LOG.get(), AetherBlocks.SKYROOT_SLAB.get());
+        chairRecipe(consumer, DyeColor.MAGENTA,TBABlocks.DESK_CHAIR_AETHER_SKYROOT_MAGENTA.get().asItem().getDefaultInstance(),
+                AetherBlocks.SKYROOT_LOG.get(), AetherBlocks.STRIPPED_SKYROOT_LOG.get(), AetherBlocks.SKYROOT_SLAB.get());
+        chairRecipe(consumer, DyeColor.LIGHT_BLUE,TBABlocks.DESK_CHAIR_AETHER_SKYROOT_LIGHT_BLUE.get().asItem().getDefaultInstance(),
+                AetherBlocks.SKYROOT_LOG.get(), AetherBlocks.STRIPPED_SKYROOT_LOG.get(), AetherBlocks.SKYROOT_SLAB.get());
+        chairRecipe(consumer, DyeColor.YELLOW,TBABlocks.DESK_CHAIR_AETHER_SKYROOT_YELLOW.get().asItem().getDefaultInstance(),
+                AetherBlocks.SKYROOT_LOG.get(), AetherBlocks.STRIPPED_SKYROOT_LOG.get(), AetherBlocks.SKYROOT_SLAB.get());
+        chairRecipe(consumer, DyeColor.LIME,TBABlocks.DESK_CHAIR_AETHER_SKYROOT_LIME.get().asItem().getDefaultInstance(),
+                AetherBlocks.SKYROOT_LOG.get(), AetherBlocks.STRIPPED_SKYROOT_LOG.get(), AetherBlocks.SKYROOT_SLAB.get());
+        chairRecipe(consumer, DyeColor.PINK,TBABlocks.DESK_CHAIR_AETHER_SKYROOT_PINK.get().asItem().getDefaultInstance(),
+                AetherBlocks.SKYROOT_LOG.get(), AetherBlocks.STRIPPED_SKYROOT_LOG.get(), AetherBlocks.SKYROOT_SLAB.get());
+        chairRecipe(consumer, DyeColor.GRAY,TBABlocks.DESK_CHAIR_AETHER_SKYROOT_GRAY.get().asItem().getDefaultInstance(),
+                AetherBlocks.SKYROOT_LOG.get(), AetherBlocks.STRIPPED_SKYROOT_LOG.get(), AetherBlocks.SKYROOT_SLAB.get());
+        chairRecipe(consumer, DyeColor.LIGHT_GRAY,TBABlocks.DESK_CHAIR_AETHER_SKYROOT_LIGHT_GRAY.get().asItem().getDefaultInstance(),
+                AetherBlocks.SKYROOT_LOG.get(), AetherBlocks.STRIPPED_SKYROOT_LOG.get(), AetherBlocks.SKYROOT_SLAB.get());
+        chairRecipe(consumer, DyeColor.CYAN,TBABlocks.DESK_CHAIR_AETHER_SKYROOT_CYAN.get().asItem().getDefaultInstance(),
+                AetherBlocks.SKYROOT_LOG.get(), AetherBlocks.STRIPPED_SKYROOT_LOG.get(), AetherBlocks.SKYROOT_SLAB.get());
+        chairRecipe(consumer, DyeColor.PURPLE,TBABlocks.DESK_CHAIR_AETHER_SKYROOT_PURPLE.get().asItem().getDefaultInstance(),
+                AetherBlocks.SKYROOT_LOG.get(), AetherBlocks.STRIPPED_SKYROOT_LOG.get(), AetherBlocks.SKYROOT_SLAB.get());
+        chairRecipe(consumer, DyeColor.BLUE,TBABlocks.DESK_CHAIR_AETHER_SKYROOT_BLUE.get().asItem().getDefaultInstance(),
+                AetherBlocks.SKYROOT_LOG.get(), AetherBlocks.STRIPPED_SKYROOT_LOG.get(), AetherBlocks.SKYROOT_SLAB.get());
+        chairRecipe(consumer, DyeColor.BROWN,TBABlocks.DESK_CHAIR_AETHER_SKYROOT_BROWN.get().asItem().getDefaultInstance(),
+                AetherBlocks.SKYROOT_LOG.get(), AetherBlocks.STRIPPED_SKYROOT_LOG.get(), AetherBlocks.SKYROOT_SLAB.get());
+        chairRecipe(consumer, DyeColor.GREEN,TBABlocks.DESK_CHAIR_AETHER_SKYROOT_GREEN.get().asItem().getDefaultInstance(),
+                AetherBlocks.SKYROOT_LOG.get(), AetherBlocks.STRIPPED_SKYROOT_LOG.get(), AetherBlocks.SKYROOT_SLAB.get());
+        chairRecipe(consumer, DyeColor.RED,TBABlocks.DESK_CHAIR_AETHER_SKYROOT_RED.get().asItem().getDefaultInstance(),
+                AetherBlocks.SKYROOT_LOG.get(), AetherBlocks.STRIPPED_SKYROOT_LOG.get(), AetherBlocks.SKYROOT_SLAB.get());
+        chairRecipe(consumer, DyeColor.BLACK,TBABlocks.DESK_CHAIR_AETHER_SKYROOT_BLACK.get().asItem().getDefaultInstance(),
+                AetherBlocks.SKYROOT_LOG.get(), AetherBlocks.STRIPPED_SKYROOT_LOG.get(), AetherBlocks.SKYROOT_SLAB.get());
+
+        chairRecipe(consumer, null,TBABlocks.DESK_CHAIR_PREAM.get().asItem().getDefaultInstance(),
+                PhantasmModBlocks.PREAM_LOG.get(), PhantasmModBlocks.STRIPPED_PREAM_LOG.get(), PhantasmModBlocks.PREAM_SLAB.get());
+        chairRecipe(consumer, DyeColor.WHITE,TBABlocks.DESK_CHAIR_PREAM_WHITE.get().asItem().getDefaultInstance(),
+                PhantasmModBlocks.PREAM_LOG.get(), PhantasmModBlocks.STRIPPED_PREAM_LOG.get(), PhantasmModBlocks.PREAM_SLAB.get());
+        chairRecipe(consumer, DyeColor.ORANGE,TBABlocks.DESK_CHAIR_PREAM_ORANGE.get().asItem().getDefaultInstance(),
+                PhantasmModBlocks.PREAM_LOG.get(), PhantasmModBlocks.STRIPPED_PREAM_LOG.get(), PhantasmModBlocks.PREAM_SLAB.get());
+        chairRecipe(consumer, DyeColor.MAGENTA,TBABlocks.DESK_CHAIR_PREAM_MAGENTA.get().asItem().getDefaultInstance(),
+                PhantasmModBlocks.PREAM_LOG.get(), PhantasmModBlocks.STRIPPED_PREAM_LOG.get(), PhantasmModBlocks.PREAM_SLAB.get());
+        chairRecipe(consumer, DyeColor.LIGHT_BLUE,TBABlocks.DESK_CHAIR_PREAM_LIGHT_BLUE.get().asItem().getDefaultInstance(),
+                PhantasmModBlocks.PREAM_LOG.get(), PhantasmModBlocks.STRIPPED_PREAM_LOG.get(), PhantasmModBlocks.PREAM_SLAB.get());
+        chairRecipe(consumer, DyeColor.YELLOW,TBABlocks.DESK_CHAIR_PREAM_YELLOW.get().asItem().getDefaultInstance(),
+                PhantasmModBlocks.PREAM_LOG.get(), PhantasmModBlocks.STRIPPED_PREAM_LOG.get(), PhantasmModBlocks.PREAM_SLAB.get());
+        chairRecipe(consumer, DyeColor.LIME,TBABlocks.DESK_CHAIR_PREAM_LIME.get().asItem().getDefaultInstance(),
+                PhantasmModBlocks.PREAM_LOG.get(), PhantasmModBlocks.STRIPPED_PREAM_LOG.get(), PhantasmModBlocks.PREAM_SLAB.get());
+        chairRecipe(consumer, DyeColor.PINK,TBABlocks.DESK_CHAIR_PREAM_PINK.get().asItem().getDefaultInstance(),
+                PhantasmModBlocks.PREAM_LOG.get(), PhantasmModBlocks.STRIPPED_PREAM_LOG.get(), PhantasmModBlocks.PREAM_SLAB.get());
+        chairRecipe(consumer, DyeColor.GRAY,TBABlocks.DESK_CHAIR_PREAM_GRAY.get().asItem().getDefaultInstance(),
+                PhantasmModBlocks.PREAM_LOG.get(), PhantasmModBlocks.STRIPPED_PREAM_LOG.get(), PhantasmModBlocks.PREAM_SLAB.get());
+        chairRecipe(consumer, DyeColor.LIGHT_GRAY,TBABlocks.DESK_CHAIR_PREAM_LIGHT_GRAY.get().asItem().getDefaultInstance(),
+                PhantasmModBlocks.PREAM_LOG.get(), PhantasmModBlocks.STRIPPED_PREAM_LOG.get(), PhantasmModBlocks.PREAM_SLAB.get());
+        chairRecipe(consumer, DyeColor.CYAN,TBABlocks.DESK_CHAIR_PREAM_CYAN.get().asItem().getDefaultInstance(),
+                PhantasmModBlocks.PREAM_LOG.get(), PhantasmModBlocks.STRIPPED_PREAM_LOG.get(), PhantasmModBlocks.PREAM_SLAB.get());
+        chairRecipe(consumer, DyeColor.PURPLE,TBABlocks.DESK_CHAIR_PREAM_PURPLE.get().asItem().getDefaultInstance(),
+                PhantasmModBlocks.PREAM_LOG.get(), PhantasmModBlocks.STRIPPED_PREAM_LOG.get(), PhantasmModBlocks.PREAM_SLAB.get());
+        chairRecipe(consumer, DyeColor.BLUE,TBABlocks.DESK_CHAIR_PREAM_BLUE.get().asItem().getDefaultInstance(),
+                PhantasmModBlocks.PREAM_LOG.get(), PhantasmModBlocks.STRIPPED_PREAM_LOG.get(), PhantasmModBlocks.PREAM_SLAB.get());
+        chairRecipe(consumer, DyeColor.BROWN,TBABlocks.DESK_CHAIR_PREAM_BROWN.get().asItem().getDefaultInstance(),
+                PhantasmModBlocks.PREAM_LOG.get(), PhantasmModBlocks.STRIPPED_PREAM_LOG.get(), PhantasmModBlocks.PREAM_SLAB.get());
+        chairRecipe(consumer, DyeColor.GREEN,TBABlocks.DESK_CHAIR_PREAM_GREEN.get().asItem().getDefaultInstance(),
+                PhantasmModBlocks.PREAM_LOG.get(), PhantasmModBlocks.STRIPPED_PREAM_LOG.get(), PhantasmModBlocks.PREAM_SLAB.get());
+        chairRecipe(consumer, DyeColor.RED,TBABlocks.DESK_CHAIR_PREAM_RED.get().asItem().getDefaultInstance(),
+                PhantasmModBlocks.PREAM_LOG.get(), PhantasmModBlocks.STRIPPED_PREAM_LOG.get(), PhantasmModBlocks.PREAM_SLAB.get());
+        chairRecipe(consumer, DyeColor.BLACK,TBABlocks.DESK_CHAIR_PREAM_BLACK.get().asItem().getDefaultInstance(),
+                PhantasmModBlocks.PREAM_LOG.get(), PhantasmModBlocks.STRIPPED_PREAM_LOG.get(), PhantasmModBlocks.PREAM_SLAB.get());
+
+        chairRecipe(consumer, null,TBABlocks.DESK_CHAIR_EBONY.get().asItem().getDefaultInstance(),
+                PhantasmModBlocks.EBONY_WOOD.get(), PhantasmModBlocks.STRIPPED_EBONY_WOOD.get(), PhantasmModBlocks.EBONY_SLAB.get());
+        chairRecipe(consumer, DyeColor.WHITE,TBABlocks.DESK_CHAIR_EBONY_WHITE.get().asItem().getDefaultInstance(),
+                PhantasmModBlocks.EBONY_WOOD.get(), PhantasmModBlocks.STRIPPED_EBONY_WOOD.get(), PhantasmModBlocks.EBONY_SLAB.get());
+        chairRecipe(consumer, DyeColor.ORANGE,TBABlocks.DESK_CHAIR_EBONY_ORANGE.get().asItem().getDefaultInstance(),
+                PhantasmModBlocks.EBONY_WOOD.get(), PhantasmModBlocks.STRIPPED_EBONY_WOOD.get(), PhantasmModBlocks.EBONY_SLAB.get());
+        chairRecipe(consumer, DyeColor.MAGENTA,TBABlocks.DESK_CHAIR_EBONY_MAGENTA.get().asItem().getDefaultInstance(),
+                PhantasmModBlocks.EBONY_WOOD.get(), PhantasmModBlocks.STRIPPED_EBONY_WOOD.get(), PhantasmModBlocks.EBONY_SLAB.get());
+        chairRecipe(consumer, DyeColor.LIGHT_BLUE,TBABlocks.DESK_CHAIR_EBONY_LIGHT_BLUE.get().asItem().getDefaultInstance(),
+                PhantasmModBlocks.EBONY_WOOD.get(), PhantasmModBlocks.STRIPPED_EBONY_WOOD.get(), PhantasmModBlocks.EBONY_SLAB.get());
+        chairRecipe(consumer, DyeColor.YELLOW,TBABlocks.DESK_CHAIR_EBONY_YELLOW.get().asItem().getDefaultInstance(),
+                PhantasmModBlocks.EBONY_WOOD.get(), PhantasmModBlocks.STRIPPED_EBONY_WOOD.get(), PhantasmModBlocks.EBONY_SLAB.get());
+        chairRecipe(consumer, DyeColor.LIME,TBABlocks.DESK_CHAIR_EBONY_LIME.get().asItem().getDefaultInstance(),
+                PhantasmModBlocks.EBONY_WOOD.get(), PhantasmModBlocks.STRIPPED_EBONY_WOOD.get(), PhantasmModBlocks.EBONY_SLAB.get());
+        chairRecipe(consumer, DyeColor.PINK,TBABlocks.DESK_CHAIR_EBONY_PINK.get().asItem().getDefaultInstance(),
+                PhantasmModBlocks.EBONY_WOOD.get(), PhantasmModBlocks.STRIPPED_EBONY_WOOD.get(), PhantasmModBlocks.EBONY_SLAB.get());
+        chairRecipe(consumer, DyeColor.GRAY,TBABlocks.DESK_CHAIR_EBONY_GRAY.get().asItem().getDefaultInstance(),
+                PhantasmModBlocks.EBONY_WOOD.get(), PhantasmModBlocks.STRIPPED_EBONY_WOOD.get(), PhantasmModBlocks.EBONY_SLAB.get());
+        chairRecipe(consumer, DyeColor.LIGHT_GRAY,TBABlocks.DESK_CHAIR_EBONY_LIGHT_GRAY.get().asItem().getDefaultInstance(),
+                PhantasmModBlocks.EBONY_WOOD.get(), PhantasmModBlocks.STRIPPED_EBONY_WOOD.get(), PhantasmModBlocks.EBONY_SLAB.get());
+        chairRecipe(consumer, DyeColor.CYAN,TBABlocks.DESK_CHAIR_EBONY_CYAN.get().asItem().getDefaultInstance(),
+                PhantasmModBlocks.EBONY_WOOD.get(), PhantasmModBlocks.STRIPPED_EBONY_WOOD.get(), PhantasmModBlocks.EBONY_SLAB.get());
+        chairRecipe(consumer, DyeColor.PURPLE,TBABlocks.DESK_CHAIR_EBONY_PURPLE.get().asItem().getDefaultInstance(),
+                PhantasmModBlocks.EBONY_WOOD.get(), PhantasmModBlocks.STRIPPED_EBONY_WOOD.get(), PhantasmModBlocks.EBONY_SLAB.get());
+        chairRecipe(consumer, DyeColor.BLUE,TBABlocks.DESK_CHAIR_EBONY_BLUE.get().asItem().getDefaultInstance(),
+                PhantasmModBlocks.EBONY_WOOD.get(), PhantasmModBlocks.STRIPPED_EBONY_WOOD.get(), PhantasmModBlocks.EBONY_SLAB.get());
+        chairRecipe(consumer, DyeColor.BROWN,TBABlocks.DESK_CHAIR_EBONY_BROWN.get().asItem().getDefaultInstance(),
+                PhantasmModBlocks.EBONY_WOOD.get(), PhantasmModBlocks.STRIPPED_EBONY_WOOD.get(), PhantasmModBlocks.EBONY_SLAB.get());
+        chairRecipe(consumer, DyeColor.GREEN,TBABlocks.DESK_CHAIR_EBONY_GREEN.get().asItem().getDefaultInstance(),
+                PhantasmModBlocks.EBONY_WOOD.get(), PhantasmModBlocks.STRIPPED_EBONY_WOOD.get(), PhantasmModBlocks.EBONY_SLAB.get());
+        chairRecipe(consumer, DyeColor.RED,TBABlocks.DESK_CHAIR_EBONY_RED.get().asItem().getDefaultInstance(),
+                PhantasmModBlocks.EBONY_WOOD.get(), PhantasmModBlocks.STRIPPED_EBONY_WOOD.get(), PhantasmModBlocks.EBONY_SLAB.get());
+        chairRecipe(consumer, DyeColor.BLACK,TBABlocks.DESK_CHAIR_EBONY_BLACK.get().asItem().getDefaultInstance(),
+                PhantasmModBlocks.EBONY_WOOD.get(), PhantasmModBlocks.STRIPPED_EBONY_WOOD.get(), PhantasmModBlocks.EBONY_SLAB.get());
+
+        chairRecipe(consumer, null,TBABlocks.DESK_CHAIR_CHORUS_NEST.get().asItem().getDefaultInstance(),
+                UnusualendModBlocks.CHORUS_NEST_PLANKS.get(), UnusualendModBlocks.STRIPPED_CHORUS_NEST_PLANKS.get(), UnusualendModBlocks.CHORUS_NEST_SLAB.get());
+        chairRecipe(consumer, DyeColor.WHITE,TBABlocks.DESK_CHAIR_CHORUS_NEST_WHITE.get().asItem().getDefaultInstance(),
+                UnusualendModBlocks.CHORUS_NEST_PLANKS.get(), UnusualendModBlocks.STRIPPED_CHORUS_NEST_PLANKS.get(), UnusualendModBlocks.CHORUS_NEST_SLAB.get());
+        chairRecipe(consumer, DyeColor.ORANGE,TBABlocks.DESK_CHAIR_CHORUS_NEST_ORANGE.get().asItem().getDefaultInstance(),
+                UnusualendModBlocks.CHORUS_NEST_PLANKS.get(), UnusualendModBlocks.STRIPPED_CHORUS_NEST_PLANKS.get(), UnusualendModBlocks.CHORUS_NEST_SLAB.get());
+        chairRecipe(consumer, DyeColor.MAGENTA,TBABlocks.DESK_CHAIR_CHORUS_NEST_MAGENTA.get().asItem().getDefaultInstance(),
+                UnusualendModBlocks.CHORUS_NEST_PLANKS.get(), UnusualendModBlocks.STRIPPED_CHORUS_NEST_PLANKS.get(), UnusualendModBlocks.CHORUS_NEST_SLAB.get());
+        chairRecipe(consumer, DyeColor.LIGHT_BLUE,TBABlocks.DESK_CHAIR_CHORUS_NEST_LIGHT_BLUE.get().asItem().getDefaultInstance(),
+                UnusualendModBlocks.CHORUS_NEST_PLANKS.get(), UnusualendModBlocks.STRIPPED_CHORUS_NEST_PLANKS.get(), UnusualendModBlocks.CHORUS_NEST_SLAB.get());
+        chairRecipe(consumer, DyeColor.YELLOW,TBABlocks.DESK_CHAIR_CHORUS_NEST_YELLOW.get().asItem().getDefaultInstance(),
+                UnusualendModBlocks.CHORUS_NEST_PLANKS.get(), UnusualendModBlocks.STRIPPED_CHORUS_NEST_PLANKS.get(), UnusualendModBlocks.CHORUS_NEST_SLAB.get());
+        chairRecipe(consumer, DyeColor.LIME,TBABlocks.DESK_CHAIR_CHORUS_NEST_LIME.get().asItem().getDefaultInstance(),
+                UnusualendModBlocks.CHORUS_NEST_PLANKS.get(), UnusualendModBlocks.STRIPPED_CHORUS_NEST_PLANKS.get(), UnusualendModBlocks.CHORUS_NEST_SLAB.get());
+        chairRecipe(consumer, DyeColor.PINK,TBABlocks.DESK_CHAIR_CHORUS_NEST_PINK.get().asItem().getDefaultInstance(),
+                UnusualendModBlocks.CHORUS_NEST_PLANKS.get(), UnusualendModBlocks.STRIPPED_CHORUS_NEST_PLANKS.get(), UnusualendModBlocks.CHORUS_NEST_SLAB.get());
+        chairRecipe(consumer, DyeColor.GRAY,TBABlocks.DESK_CHAIR_CHORUS_NEST_GRAY.get().asItem().getDefaultInstance(),
+                UnusualendModBlocks.CHORUS_NEST_PLANKS.get(), UnusualendModBlocks.STRIPPED_CHORUS_NEST_PLANKS.get(), UnusualendModBlocks.CHORUS_NEST_SLAB.get());
+        chairRecipe(consumer, DyeColor.LIGHT_GRAY,TBABlocks.DESK_CHAIR_CHORUS_NEST_LIGHT_GRAY.get().asItem().getDefaultInstance(),
+                UnusualendModBlocks.CHORUS_NEST_PLANKS.get(), UnusualendModBlocks.STRIPPED_CHORUS_NEST_PLANKS.get(), UnusualendModBlocks.CHORUS_NEST_SLAB.get());
+        chairRecipe(consumer, DyeColor.CYAN,TBABlocks.DESK_CHAIR_CHORUS_NEST_CYAN.get().asItem().getDefaultInstance(),
+                UnusualendModBlocks.CHORUS_NEST_PLANKS.get(), UnusualendModBlocks.STRIPPED_CHORUS_NEST_PLANKS.get(), UnusualendModBlocks.CHORUS_NEST_SLAB.get());
+        chairRecipe(consumer, DyeColor.PURPLE,TBABlocks.DESK_CHAIR_CHORUS_NEST_PURPLE.get().asItem().getDefaultInstance(),
+                UnusualendModBlocks.CHORUS_NEST_PLANKS.get(), UnusualendModBlocks.STRIPPED_CHORUS_NEST_PLANKS.get(), UnusualendModBlocks.CHORUS_NEST_SLAB.get());
+        chairRecipe(consumer, DyeColor.BLUE,TBABlocks.DESK_CHAIR_CHORUS_NEST_BLUE.get().asItem().getDefaultInstance(),
+                UnusualendModBlocks.CHORUS_NEST_PLANKS.get(), UnusualendModBlocks.STRIPPED_CHORUS_NEST_PLANKS.get(), UnusualendModBlocks.CHORUS_NEST_SLAB.get());
+        chairRecipe(consumer, DyeColor.BROWN,TBABlocks.DESK_CHAIR_CHORUS_NEST_BROWN.get().asItem().getDefaultInstance(),
+                UnusualendModBlocks.CHORUS_NEST_PLANKS.get(), UnusualendModBlocks.STRIPPED_CHORUS_NEST_PLANKS.get(), UnusualendModBlocks.CHORUS_NEST_SLAB.get());
+        chairRecipe(consumer, DyeColor.GREEN,TBABlocks.DESK_CHAIR_CHORUS_NEST_GREEN.get().asItem().getDefaultInstance(),
+                UnusualendModBlocks.CHORUS_NEST_PLANKS.get(), UnusualendModBlocks.STRIPPED_CHORUS_NEST_PLANKS.get(), UnusualendModBlocks.CHORUS_NEST_SLAB.get());
+        chairRecipe(consumer, DyeColor.RED,TBABlocks.DESK_CHAIR_CHORUS_NEST_RED.get().asItem().getDefaultInstance(),
+                UnusualendModBlocks.CHORUS_NEST_PLANKS.get(), UnusualendModBlocks.STRIPPED_CHORUS_NEST_PLANKS.get(), UnusualendModBlocks.CHORUS_NEST_SLAB.get());
+        chairRecipe(consumer, DyeColor.BLACK,TBABlocks.DESK_CHAIR_CHORUS_NEST_BLACK.get().asItem().getDefaultInstance(),
+                UnusualendModBlocks.CHORUS_NEST_PLANKS.get(), UnusualendModBlocks.STRIPPED_CHORUS_NEST_PLANKS.get(), UnusualendModBlocks.CHORUS_NEST_SLAB.get());
+
+        chairRecipe(consumer, null,TBABlocks.DESK_CHAIR_BLOODSHROOM.get().asItem().getDefaultInstance(),
+                TinkerWorld.bloodshroom.getLog(), TinkerWorld.bloodshroom.getStrippedLog(), TinkerWorld.bloodshroom.getSlab());
+        chairRecipe(consumer, DyeColor.WHITE,TBABlocks.DESK_CHAIR_BLOODSHROOM_WHITE.get().asItem().getDefaultInstance(),
+                TinkerWorld.bloodshroom.getLog(), TinkerWorld.bloodshroom.getStrippedLog(), TinkerWorld.bloodshroom.getSlab());
+        chairRecipe(consumer, DyeColor.ORANGE,TBABlocks.DESK_CHAIR_BLOODSHROOM_ORANGE.get().asItem().getDefaultInstance(),
+                TinkerWorld.bloodshroom.getLog(), TinkerWorld.bloodshroom.getStrippedLog(), TinkerWorld.bloodshroom.getSlab());
+        chairRecipe(consumer, DyeColor.MAGENTA,TBABlocks.DESK_CHAIR_BLOODSHROOM_MAGENTA.get().asItem().getDefaultInstance(),
+                TinkerWorld.bloodshroom.getLog(), TinkerWorld.bloodshroom.getStrippedLog(), TinkerWorld.bloodshroom.getSlab());
+        chairRecipe(consumer, DyeColor.LIGHT_BLUE,TBABlocks.DESK_CHAIR_BLOODSHROOM_LIGHT_BLUE.get().asItem().getDefaultInstance(),
+                TinkerWorld.bloodshroom.getLog(), TinkerWorld.bloodshroom.getStrippedLog(), TinkerWorld.bloodshroom.getSlab());
+        chairRecipe(consumer, DyeColor.YELLOW,TBABlocks.DESK_CHAIR_BLOODSHROOM_YELLOW.get().asItem().getDefaultInstance(),
+                TinkerWorld.bloodshroom.getLog(), TinkerWorld.bloodshroom.getStrippedLog(), TinkerWorld.bloodshroom.getSlab());
+        chairRecipe(consumer, DyeColor.LIME,TBABlocks.DESK_CHAIR_BLOODSHROOM_LIME.get().asItem().getDefaultInstance(),
+                TinkerWorld.bloodshroom.getLog(), TinkerWorld.bloodshroom.getStrippedLog(), TinkerWorld.bloodshroom.getSlab());
+        chairRecipe(consumer, DyeColor.PINK,TBABlocks.DESK_CHAIR_BLOODSHROOM_PINK.get().asItem().getDefaultInstance(),
+                TinkerWorld.bloodshroom.getLog(), TinkerWorld.bloodshroom.getStrippedLog(), TinkerWorld.bloodshroom.getSlab());
+        chairRecipe(consumer, DyeColor.GRAY,TBABlocks.DESK_CHAIR_BLOODSHROOM_GRAY.get().asItem().getDefaultInstance(),
+                TinkerWorld.bloodshroom.getLog(), TinkerWorld.bloodshroom.getStrippedLog(), TinkerWorld.bloodshroom.getSlab());
+        chairRecipe(consumer, DyeColor.LIGHT_GRAY,TBABlocks.DESK_CHAIR_BLOODSHROOM_LIGHT_GRAY.get().asItem().getDefaultInstance(),
+                TinkerWorld.bloodshroom.getLog(), TinkerWorld.bloodshroom.getStrippedLog(), TinkerWorld.bloodshroom.getSlab());
+        chairRecipe(consumer, DyeColor.CYAN,TBABlocks.DESK_CHAIR_BLOODSHROOM_CYAN.get().asItem().getDefaultInstance(),
+                TinkerWorld.bloodshroom.getLog(), TinkerWorld.bloodshroom.getStrippedLog(), TinkerWorld.bloodshroom.getSlab());
+        chairRecipe(consumer, DyeColor.PURPLE,TBABlocks.DESK_CHAIR_BLOODSHROOM_PURPLE.get().asItem().getDefaultInstance(),
+                TinkerWorld.bloodshroom.getLog(), TinkerWorld.bloodshroom.getStrippedLog(), TinkerWorld.bloodshroom.getSlab());
+        chairRecipe(consumer, DyeColor.BLUE,TBABlocks.DESK_CHAIR_BLOODSHROOM_BLUE.get().asItem().getDefaultInstance(),
+                TinkerWorld.bloodshroom.getLog(), TinkerWorld.bloodshroom.getStrippedLog(), TinkerWorld.bloodshroom.getSlab());
+        chairRecipe(consumer, DyeColor.BROWN,TBABlocks.DESK_CHAIR_BLOODSHROOM_BROWN.get().asItem().getDefaultInstance(),
+                TinkerWorld.bloodshroom.getLog(), TinkerWorld.bloodshroom.getStrippedLog(), TinkerWorld.bloodshroom.getSlab());
+        chairRecipe(consumer, DyeColor.GREEN,TBABlocks.DESK_CHAIR_BLOODSHROOM_GREEN.get().asItem().getDefaultInstance(),
+                TinkerWorld.bloodshroom.getLog(), TinkerWorld.bloodshroom.getStrippedLog(), TinkerWorld.bloodshroom.getSlab());
+        chairRecipe(consumer, DyeColor.RED,TBABlocks.DESK_CHAIR_BLOODSHROOM_RED.get().asItem().getDefaultInstance(),
+                TinkerWorld.bloodshroom.getLog(), TinkerWorld.bloodshroom.getStrippedLog(), TinkerWorld.bloodshroom.getSlab());
+        chairRecipe(consumer, DyeColor.BLACK,TBABlocks.DESK_CHAIR_BLOODSHROOM_BLACK.get().asItem().getDefaultInstance(),
+                TinkerWorld.bloodshroom.getLog(), TinkerWorld.bloodshroom.getStrippedLog(), TinkerWorld.bloodshroom.getSlab());
+
+        chairRecipe(consumer, null,TBABlocks.DESK_CHAIR_ENDERBARK.get().asItem().getDefaultInstance(),
+                TinkerWorld.enderbark.getLog(), TinkerWorld.enderbark.getStrippedLog(), TinkerWorld.enderbark.getSlab());
+        chairRecipe(consumer, DyeColor.WHITE,TBABlocks.DESK_CHAIR_ENDERBARK_WHITE.get().asItem().getDefaultInstance(),
+                TinkerWorld.enderbark.getLog(), TinkerWorld.enderbark.getStrippedLog(), TinkerWorld.enderbark.getSlab());
+        chairRecipe(consumer, DyeColor.ORANGE,TBABlocks.DESK_CHAIR_ENDERBARK_ORANGE.get().asItem().getDefaultInstance(),
+                TinkerWorld.enderbark.getLog(), TinkerWorld.enderbark.getStrippedLog(), TinkerWorld.enderbark.getSlab());
+        chairRecipe(consumer, DyeColor.MAGENTA,TBABlocks.DESK_CHAIR_ENDERBARK_MAGENTA.get().asItem().getDefaultInstance(),
+                TinkerWorld.enderbark.getLog(), TinkerWorld.enderbark.getStrippedLog(), TinkerWorld.enderbark.getSlab());
+        chairRecipe(consumer, DyeColor.LIGHT_BLUE,TBABlocks.DESK_CHAIR_ENDERBARK_LIGHT_BLUE.get().asItem().getDefaultInstance(),
+                TinkerWorld.enderbark.getLog(), TinkerWorld.enderbark.getStrippedLog(), TinkerWorld.enderbark.getSlab());
+        chairRecipe(consumer, DyeColor.YELLOW,TBABlocks.DESK_CHAIR_ENDERBARK_YELLOW.get().asItem().getDefaultInstance(),
+                TinkerWorld.enderbark.getLog(), TinkerWorld.enderbark.getStrippedLog(), TinkerWorld.enderbark.getSlab());
+        chairRecipe(consumer, DyeColor.LIME,TBABlocks.DESK_CHAIR_ENDERBARK_LIME.get().asItem().getDefaultInstance(),
+                TinkerWorld.enderbark.getLog(), TinkerWorld.enderbark.getStrippedLog(), TinkerWorld.enderbark.getSlab());
+        chairRecipe(consumer, DyeColor.PINK,TBABlocks.DESK_CHAIR_ENDERBARK_PINK.get().asItem().getDefaultInstance(),
+                TinkerWorld.enderbark.getLog(), TinkerWorld.enderbark.getStrippedLog(), TinkerWorld.enderbark.getSlab());
+        chairRecipe(consumer, DyeColor.GRAY,TBABlocks.DESK_CHAIR_ENDERBARK_GRAY.get().asItem().getDefaultInstance(),
+                TinkerWorld.enderbark.getLog(), TinkerWorld.enderbark.getStrippedLog(), TinkerWorld.enderbark.getSlab());
+        chairRecipe(consumer, DyeColor.LIGHT_GRAY,TBABlocks.DESK_CHAIR_ENDERBARK_LIGHT_GRAY.get().asItem().getDefaultInstance(),
+                TinkerWorld.enderbark.getLog(), TinkerWorld.enderbark.getStrippedLog(), TinkerWorld.enderbark.getSlab());
+        chairRecipe(consumer, DyeColor.CYAN,TBABlocks.DESK_CHAIR_ENDERBARK_CYAN.get().asItem().getDefaultInstance(),
+                TinkerWorld.enderbark.getLog(), TinkerWorld.enderbark.getStrippedLog(), TinkerWorld.enderbark.getSlab());
+        chairRecipe(consumer, DyeColor.PURPLE,TBABlocks.DESK_CHAIR_ENDERBARK_PURPLE.get().asItem().getDefaultInstance(),
+                TinkerWorld.enderbark.getLog(), TinkerWorld.enderbark.getStrippedLog(), TinkerWorld.enderbark.getSlab());
+        chairRecipe(consumer, DyeColor.BLUE,TBABlocks.DESK_CHAIR_ENDERBARK_BLUE.get().asItem().getDefaultInstance(),
+                TinkerWorld.enderbark.getLog(), TinkerWorld.enderbark.getStrippedLog(), TinkerWorld.enderbark.getSlab());
+        chairRecipe(consumer, DyeColor.BROWN,TBABlocks.DESK_CHAIR_ENDERBARK_BROWN.get().asItem().getDefaultInstance(),
+                TinkerWorld.enderbark.getLog(), TinkerWorld.enderbark.getStrippedLog(), TinkerWorld.enderbark.getSlab());
+        chairRecipe(consumer, DyeColor.GREEN,TBABlocks.DESK_CHAIR_ENDERBARK_GREEN.get().asItem().getDefaultInstance(),
+                TinkerWorld.enderbark.getLog(), TinkerWorld.enderbark.getStrippedLog(), TinkerWorld.enderbark.getSlab());
+        chairRecipe(consumer, DyeColor.RED,TBABlocks.DESK_CHAIR_ENDERBARK_RED.get().asItem().getDefaultInstance(),
+                TinkerWorld.enderbark.getLog(), TinkerWorld.enderbark.getStrippedLog(), TinkerWorld.enderbark.getSlab());
+        chairRecipe(consumer, DyeColor.BLACK,TBABlocks.DESK_CHAIR_ENDERBARK_BLACK.get().asItem().getDefaultInstance(),
+                TinkerWorld.enderbark.getLog(), TinkerWorld.enderbark.getStrippedLog(), TinkerWorld.enderbark.getSlab());
+
+        chairRecipe(consumer, null,TBABlocks.DESK_CHAIR_GREENHEART.get().asItem().getDefaultInstance(),
+                TinkerWorld.greenheart.getLog(), TinkerWorld.greenheart.getStrippedLog(), TinkerWorld.greenheart.getSlab());
+        chairRecipe(consumer, DyeColor.WHITE,TBABlocks.DESK_CHAIR_GREENHEART_WHITE.get().asItem().getDefaultInstance(),
+                TinkerWorld.greenheart.getLog(), TinkerWorld.greenheart.getStrippedLog(), TinkerWorld.greenheart.getSlab());
+        chairRecipe(consumer, DyeColor.ORANGE,TBABlocks.DESK_CHAIR_GREENHEART_ORANGE.get().asItem().getDefaultInstance(),
+                TinkerWorld.greenheart.getLog(), TinkerWorld.greenheart.getStrippedLog(), TinkerWorld.greenheart.getSlab());
+        chairRecipe(consumer, DyeColor.MAGENTA,TBABlocks.DESK_CHAIR_GREENHEART_MAGENTA.get().asItem().getDefaultInstance(),
+                TinkerWorld.greenheart.getLog(), TinkerWorld.greenheart.getStrippedLog(), TinkerWorld.greenheart.getSlab());
+        chairRecipe(consumer, DyeColor.LIGHT_BLUE,TBABlocks.DESK_CHAIR_GREENHEART_LIGHT_BLUE.get().asItem().getDefaultInstance(),
+                TinkerWorld.greenheart.getLog(), TinkerWorld.greenheart.getStrippedLog(), TinkerWorld.greenheart.getSlab());
+        chairRecipe(consumer, DyeColor.YELLOW,TBABlocks.DESK_CHAIR_GREENHEART_YELLOW.get().asItem().getDefaultInstance(),
+                TinkerWorld.greenheart.getLog(), TinkerWorld.greenheart.getStrippedLog(), TinkerWorld.greenheart.getSlab());
+        chairRecipe(consumer, DyeColor.LIME,TBABlocks.DESK_CHAIR_GREENHEART_LIME.get().asItem().getDefaultInstance(),
+                TinkerWorld.greenheart.getLog(), TinkerWorld.greenheart.getStrippedLog(), TinkerWorld.greenheart.getSlab());
+        chairRecipe(consumer, DyeColor.PINK,TBABlocks.DESK_CHAIR_GREENHEART_PINK.get().asItem().getDefaultInstance(),
+                TinkerWorld.greenheart.getLog(), TinkerWorld.greenheart.getStrippedLog(), TinkerWorld.greenheart.getSlab());
+        chairRecipe(consumer, DyeColor.GRAY,TBABlocks.DESK_CHAIR_GREENHEART_GRAY.get().asItem().getDefaultInstance(),
+                TinkerWorld.greenheart.getLog(), TinkerWorld.greenheart.getStrippedLog(), TinkerWorld.greenheart.getSlab());
+        chairRecipe(consumer, DyeColor.LIGHT_GRAY,TBABlocks.DESK_CHAIR_GREENHEART_LIGHT_GRAY.get().asItem().getDefaultInstance(),
+                TinkerWorld.greenheart.getLog(), TinkerWorld.greenheart.getStrippedLog(), TinkerWorld.greenheart.getSlab());
+        chairRecipe(consumer, DyeColor.CYAN,TBABlocks.DESK_CHAIR_GREENHEART_CYAN.get().asItem().getDefaultInstance(),
+                TinkerWorld.greenheart.getLog(), TinkerWorld.greenheart.getStrippedLog(), TinkerWorld.greenheart.getSlab());
+        chairRecipe(consumer, DyeColor.PURPLE,TBABlocks.DESK_CHAIR_GREENHEART_PURPLE.get().asItem().getDefaultInstance(),
+                TinkerWorld.greenheart.getLog(), TinkerWorld.greenheart.getStrippedLog(), TinkerWorld.greenheart.getSlab());
+        chairRecipe(consumer, DyeColor.BLUE,TBABlocks.DESK_CHAIR_GREENHEART_BLUE.get().asItem().getDefaultInstance(),
+                TinkerWorld.greenheart.getLog(), TinkerWorld.greenheart.getStrippedLog(), TinkerWorld.greenheart.getSlab());
+        chairRecipe(consumer, DyeColor.BROWN,TBABlocks.DESK_CHAIR_GREENHEART_BROWN.get().asItem().getDefaultInstance(),
+                TinkerWorld.greenheart.getLog(), TinkerWorld.greenheart.getStrippedLog(), TinkerWorld.greenheart.getSlab());
+        chairRecipe(consumer, DyeColor.GREEN,TBABlocks.DESK_CHAIR_GREENHEART_GREEN.get().asItem().getDefaultInstance(),
+                TinkerWorld.greenheart.getLog(), TinkerWorld.greenheart.getStrippedLog(), TinkerWorld.greenheart.getSlab());
+        chairRecipe(consumer, DyeColor.RED,TBABlocks.DESK_CHAIR_GREENHEART_RED.get().asItem().getDefaultInstance(),
+                TinkerWorld.greenheart.getLog(), TinkerWorld.greenheart.getStrippedLog(), TinkerWorld.greenheart.getSlab());
+        chairRecipe(consumer, DyeColor.BLACK,TBABlocks.DESK_CHAIR_GREENHEART_BLACK.get().asItem().getDefaultInstance(),
+                TinkerWorld.greenheart.getLog(), TinkerWorld.greenheart.getStrippedLog(), TinkerWorld.greenheart.getSlab());
+
+        chairRecipe(consumer, null,TBABlocks.DESK_CHAIR_TINKER_SKYROOT.get().asItem().getDefaultInstance(),
+                TinkerWorld.skyroot.getLog(), TinkerWorld.skyroot.getStrippedLog(), TinkerWorld.skyroot.getSlab());
+        chairRecipe(consumer, DyeColor.WHITE,TBABlocks.DESK_CHAIR_TINKER_SKYROOT_WHITE.get().asItem().getDefaultInstance(),
+                TinkerWorld.skyroot.getLog(), TinkerWorld.skyroot.getStrippedLog(), TinkerWorld.skyroot.getSlab());
+        chairRecipe(consumer, DyeColor.ORANGE,TBABlocks.DESK_CHAIR_TINKER_SKYROOT_ORANGE.get().asItem().getDefaultInstance(),
+                TinkerWorld.skyroot.getLog(), TinkerWorld.skyroot.getStrippedLog(), TinkerWorld.skyroot.getSlab());
+        chairRecipe(consumer, DyeColor.MAGENTA,TBABlocks.DESK_CHAIR_TINKER_SKYROOT_MAGENTA.get().asItem().getDefaultInstance(),
+                TinkerWorld.skyroot.getLog(), TinkerWorld.skyroot.getStrippedLog(), TinkerWorld.skyroot.getSlab());
+        chairRecipe(consumer, DyeColor.LIGHT_BLUE,TBABlocks.DESK_CHAIR_TINKER_SKYROOT_LIGHT_BLUE.get().asItem().getDefaultInstance(),
+                TinkerWorld.skyroot.getLog(), TinkerWorld.skyroot.getStrippedLog(), TinkerWorld.skyroot.getSlab());
+        chairRecipe(consumer, DyeColor.YELLOW,TBABlocks.DESK_CHAIR_TINKER_SKYROOT_YELLOW.get().asItem().getDefaultInstance(),
+                TinkerWorld.skyroot.getLog(), TinkerWorld.skyroot.getStrippedLog(), TinkerWorld.skyroot.getSlab());
+        chairRecipe(consumer, DyeColor.LIME,TBABlocks.DESK_CHAIR_TINKER_SKYROOT_LIME.get().asItem().getDefaultInstance(),
+                TinkerWorld.skyroot.getLog(), TinkerWorld.skyroot.getStrippedLog(), TinkerWorld.skyroot.getSlab());
+        chairRecipe(consumer, DyeColor.PINK,TBABlocks.DESK_CHAIR_TINKER_SKYROOT_PINK.get().asItem().getDefaultInstance(),
+                TinkerWorld.skyroot.getLog(), TinkerWorld.skyroot.getStrippedLog(), TinkerWorld.skyroot.getSlab());
+        chairRecipe(consumer, DyeColor.GRAY,TBABlocks.DESK_CHAIR_TINKER_SKYROOT_GRAY.get().asItem().getDefaultInstance(),
+                TinkerWorld.skyroot.getLog(), TinkerWorld.skyroot.getStrippedLog(), TinkerWorld.skyroot.getSlab());
+        chairRecipe(consumer, DyeColor.LIGHT_GRAY,TBABlocks.DESK_CHAIR_TINKER_SKYROOT_LIGHT_GRAY.get().asItem().getDefaultInstance(),
+                TinkerWorld.skyroot.getLog(), TinkerWorld.skyroot.getStrippedLog(), TinkerWorld.skyroot.getSlab());
+        chairRecipe(consumer, DyeColor.CYAN,TBABlocks.DESK_CHAIR_TINKER_SKYROOT_CYAN.get().asItem().getDefaultInstance(),
+                TinkerWorld.skyroot.getLog(), TinkerWorld.skyroot.getStrippedLog(), TinkerWorld.skyroot.getSlab());
+        chairRecipe(consumer, DyeColor.PURPLE,TBABlocks.DESK_CHAIR_TINKER_SKYROOT_PURPLE.get().asItem().getDefaultInstance(),
+                TinkerWorld.skyroot.getLog(), TinkerWorld.skyroot.getStrippedLog(), TinkerWorld.skyroot.getSlab());
+        chairRecipe(consumer, DyeColor.BLUE,TBABlocks.DESK_CHAIR_TINKER_SKYROOT_BLUE.get().asItem().getDefaultInstance(),
+                TinkerWorld.skyroot.getLog(), TinkerWorld.skyroot.getStrippedLog(), TinkerWorld.skyroot.getSlab());
+        chairRecipe(consumer, DyeColor.BROWN,TBABlocks.DESK_CHAIR_TINKER_SKYROOT_BROWN.get().asItem().getDefaultInstance(),
+                TinkerWorld.skyroot.getLog(), TinkerWorld.skyroot.getStrippedLog(), TinkerWorld.skyroot.getSlab());
+        chairRecipe(consumer, DyeColor.GREEN,TBABlocks.DESK_CHAIR_TINKER_SKYROOT_GREEN.get().asItem().getDefaultInstance(),
+                TinkerWorld.skyroot.getLog(), TinkerWorld.skyroot.getStrippedLog(), TinkerWorld.skyroot.getSlab());
+        chairRecipe(consumer, DyeColor.RED,TBABlocks.DESK_CHAIR_TINKER_SKYROOT_RED.get().asItem().getDefaultInstance(),
+                TinkerWorld.skyroot.getLog(), TinkerWorld.skyroot.getStrippedLog(), TinkerWorld.skyroot.getSlab());
+        chairRecipe(consumer, DyeColor.BLACK,TBABlocks.DESK_CHAIR_TINKER_SKYROOT_BLACK.get().asItem().getDefaultInstance(),
+                TinkerWorld.skyroot.getLog(), TinkerWorld.skyroot.getStrippedLog(), TinkerWorld.skyroot.getSlab());
+
         benchRecipe(consumer, TBABlocks.PARK_BENCH_ACACIA.get().asItem().getDefaultInstance(),
                 Items.ACACIA_LOG, Items.ACACIA_SLAB);
         deskRecipe(consumer, TBABlocks.SCHOOL_DESK_ACACIA.get().asItem().getDefaultInstance(),
@@ -1827,8 +2981,6 @@ public class RecipesGen extends RecipeProvider implements IConditionBuilder {
         bookcaseRecipe(consumer, TBABlocks.BOOKCASE_ACACIA.get().asItem().getDefaultInstance(),
                 Items.ACACIA_LOG, Items.STRIPPED_ACACIA_LOG, Items.ACACIA_SLAB);
 
-        chairRecipe(consumer, TBABlocks.DESK_CHAIR_BIRCH.get().asItem().getDefaultInstance(),
-                Items.BIRCH_LOG, Items.STRIPPED_BIRCH_LOG, Items.BIRCH_SLAB);
         benchRecipe(consumer, TBABlocks.PARK_BENCH_BIRCH.get().asItem().getDefaultInstance(),
                 Items.BIRCH_LOG, Items.BIRCH_SLAB);
         deskRecipe(consumer, TBABlocks.SCHOOL_DESK_BIRCH.get().asItem().getDefaultInstance(),
@@ -1842,8 +2994,6 @@ public class RecipesGen extends RecipeProvider implements IConditionBuilder {
         bookcaseRecipe(consumer, TBABlocks.BOOKCASE_BIRCH.get().asItem().getDefaultInstance(),
                 Items.BIRCH_LOG, Items.STRIPPED_BIRCH_LOG, Items.BIRCH_SLAB);
 
-        chairRecipe(consumer, TBABlocks.DESK_CHAIR_DARK_OAK.get().asItem().getDefaultInstance(),
-                Items.DARK_OAK_LOG, Items.STRIPPED_DARK_OAK_LOG, Items.DARK_OAK_SLAB);
         benchRecipe(consumer, TBABlocks.PARK_BENCH_DARK_OAK.get().asItem().getDefaultInstance(),
                 Items.DARK_OAK_LOG, Items.DARK_OAK_SLAB);
         deskRecipe(consumer, TBABlocks.SCHOOL_DESK_DARK_OAK.get().asItem().getDefaultInstance(),
@@ -1857,8 +3007,6 @@ public class RecipesGen extends RecipeProvider implements IConditionBuilder {
         bookcaseRecipe(consumer, TBABlocks.BOOKCASE_DARK_OAK.get().asItem().getDefaultInstance(),
                 Items.DARK_OAK_LOG, Items.STRIPPED_DARK_OAK_LOG, Items.DARK_OAK_SLAB);
 
-        chairRecipe(consumer, TBABlocks.DESK_CHAIR_JUNGLE.get().asItem().getDefaultInstance(),
-                Items.JUNGLE_LOG, Items.STRIPPED_JUNGLE_LOG, Items.JUNGLE_SLAB);
         benchRecipe(consumer, TBABlocks.PARK_BENCH_JUNGLE.get().asItem().getDefaultInstance(),
                 Items.JUNGLE_LOG, Items.JUNGLE_SLAB);
         deskRecipe(consumer, TBABlocks.SCHOOL_DESK_JUNGLE.get().asItem().getDefaultInstance(),
@@ -1872,8 +3020,6 @@ public class RecipesGen extends RecipeProvider implements IConditionBuilder {
         bookcaseRecipe(consumer, TBABlocks.BOOKCASE_JUNGLE.get().asItem().getDefaultInstance(),
                 Items.JUNGLE_LOG, Items.STRIPPED_JUNGLE_LOG, Items.JUNGLE_SLAB);
 
-        chairRecipe(consumer, TBABlocks.DESK_CHAIR_MANGROVE.get().asItem().getDefaultInstance(),
-                Items.MANGROVE_LOG, Items.STRIPPED_MANGROVE_LOG, Items.MANGROVE_SLAB);
         benchRecipe(consumer, TBABlocks.PARK_BENCH_MANGROVE.get().asItem().getDefaultInstance(),
                 Items.MANGROVE_LOG, Items.MANGROVE_SLAB);
         deskRecipe(consumer, TBABlocks.SCHOOL_DESK_MANGROVE.get().asItem().getDefaultInstance(),
@@ -1887,8 +3033,6 @@ public class RecipesGen extends RecipeProvider implements IConditionBuilder {
         bookcaseRecipe(consumer, TBABlocks.BOOKCASE_MANGROVE.get().asItem().getDefaultInstance(),
                 Items.MANGROVE_LOG, Items.STRIPPED_MANGROVE_LOG, Items.MANGROVE_SLAB);
 
-        chairRecipe(consumer, TBABlocks.DESK_CHAIR_OAK.get().asItem().getDefaultInstance(),
-                Items.OAK_LOG, Items.STRIPPED_OAK_LOG, Items.OAK_SLAB);
         benchRecipe(consumer, TBABlocks.PARK_BENCH_OAK.get().asItem().getDefaultInstance(),
                 Items.OAK_LOG, Items.OAK_SLAB);
         deskRecipe(consumer, TBABlocks.SCHOOL_DESK_OAK.get().asItem().getDefaultInstance(),
@@ -1902,8 +3046,6 @@ public class RecipesGen extends RecipeProvider implements IConditionBuilder {
         bookcaseRecipe(consumer, TBABlocks.BOOKCASE_OAK.get().asItem().getDefaultInstance(),
                 Items.OAK_LOG, Items.STRIPPED_OAK_LOG, Items.OAK_SLAB);
 
-        chairRecipe(consumer, TBABlocks.DESK_CHAIR_SPRUCE.get().asItem().getDefaultInstance(),
-                Items.SPRUCE_LOG, Items.STRIPPED_SPRUCE_LOG, Items.SPRUCE_SLAB);
         benchRecipe(consumer, TBABlocks.PARK_BENCH_SPRUCE.get().asItem().getDefaultInstance(),
                 Items.SPRUCE_LOG, Items.SPRUCE_SLAB);
         deskRecipe(consumer, TBABlocks.SCHOOL_DESK_SPRUCE.get().asItem().getDefaultInstance(),
@@ -1917,8 +3059,6 @@ public class RecipesGen extends RecipeProvider implements IConditionBuilder {
         bookcaseRecipe(consumer, TBABlocks.BOOKCASE_SPRUCE.get().asItem().getDefaultInstance(),
                 Items.SPRUCE_LOG, Items.STRIPPED_SPRUCE_LOG, Items.SPRUCE_SLAB);
 
-        chairRecipe(consumer, TBABlocks.DESK_CHAIR_CRIMSON.get().asItem().getDefaultInstance(),
-                Items.CRIMSON_STEM, Items.STRIPPED_CRIMSON_STEM, Items.CRIMSON_SLAB);
         benchRecipe(consumer, TBABlocks.PARK_BENCH_CRIMSON.get().asItem().getDefaultInstance(),
                 Items.CRIMSON_STEM, Items.CRIMSON_SLAB);
         deskRecipe(consumer, TBABlocks.SCHOOL_DESK_CRIMSON.get().asItem().getDefaultInstance(),
@@ -1932,8 +3072,6 @@ public class RecipesGen extends RecipeProvider implements IConditionBuilder {
         bookcaseRecipe(consumer, TBABlocks.BOOKCASE_CRIMSON.get().asItem().getDefaultInstance(),
                 Items.CRIMSON_STEM, Items.STRIPPED_CRIMSON_STEM, Items.CRIMSON_SLAB);
 
-        chairRecipe(consumer, TBABlocks.DESK_CHAIR_WARPED.get().asItem().getDefaultInstance(),
-                Items.WARPED_STEM, Items.STRIPPED_WARPED_STEM, Items.WARPED_SLAB);
         benchRecipe(consumer, TBABlocks.PARK_BENCH_WARPED.get().asItem().getDefaultInstance(),
                 Items.WARPED_STEM, Items.WARPED_SLAB);
         deskRecipe(consumer, TBABlocks.SCHOOL_DESK_WARPED.get().asItem().getDefaultInstance(),
@@ -1947,8 +3085,6 @@ public class RecipesGen extends RecipeProvider implements IConditionBuilder {
         bookcaseRecipe(consumer, TBABlocks.BOOKCASE_WARPED.get().asItem().getDefaultInstance(),
                 Items.WARPED_STEM, Items.STRIPPED_WARPED_STEM, Items.WARPED_SLAB);
 
-        chairRecipe(consumer, TBABlocks.DESK_CHAIR_FIR.get().asItem().getDefaultInstance(),
-                BOPBlocks.FIR_LOG.get(), BOPBlocks.STRIPPED_FIR_LOG.get(), BOPBlocks.FIR_SLAB.get());
         benchRecipe(consumer, TBABlocks.PARK_BENCH_FIR.get().asItem().getDefaultInstance(),
                 BOPBlocks.FIR_LOG.get(), BOPBlocks.FIR_SLAB.get());
         deskRecipe(consumer, TBABlocks.SCHOOL_DESK_FIR.get().asItem().getDefaultInstance(),
@@ -1962,8 +3098,6 @@ public class RecipesGen extends RecipeProvider implements IConditionBuilder {
         bookcaseRecipe(consumer, TBABlocks.BOOKCASE_FIR.get().asItem().getDefaultInstance(),
                 BOPBlocks.FIR_LOG.get(), BOPBlocks.STRIPPED_FIR_LOG.get(), BOPBlocks.FIR_SLAB.get());
 
-        chairRecipe(consumer, TBABlocks.DESK_CHAIR_REDWOOD.get().asItem().getDefaultInstance(),
-                BOPBlocks.REDWOOD_LOG.get(), BOPBlocks.STRIPPED_REDWOOD_LOG.get(), BOPBlocks.REDWOOD_SLAB.get());
         benchRecipe(consumer, TBABlocks.PARK_BENCH_REDWOOD.get().asItem().getDefaultInstance(),
                 BOPBlocks.REDWOOD_LOG.get(), BOPBlocks.REDWOOD_SLAB.get());
         deskRecipe(consumer, TBABlocks.SCHOOL_DESK_REDWOOD.get().asItem().getDefaultInstance(),
@@ -1977,8 +3111,6 @@ public class RecipesGen extends RecipeProvider implements IConditionBuilder {
         bookcaseRecipe(consumer, TBABlocks.BOOKCASE_REDWOOD.get().asItem().getDefaultInstance(),
                 BOPBlocks.REDWOOD_LOG.get(), BOPBlocks.STRIPPED_REDWOOD_LOG.get(), BOPBlocks.REDWOOD_SLAB.get());
 
-        chairRecipe(consumer, TBABlocks.DESK_CHAIR_CHERRY.get().asItem().getDefaultInstance(),
-                BOPBlocks.CHERRY_LOG.get(), BOPBlocks.STRIPPED_CHERRY_LOG.get(), BOPBlocks.CHERRY_SLAB.get());
         benchRecipe(consumer, TBABlocks.PARK_BENCH_CHERRY.get().asItem().getDefaultInstance(),
                 BOPBlocks.CHERRY_LOG.get(), BOPBlocks.CHERRY_SLAB.get());
         deskRecipe(consumer, TBABlocks.SCHOOL_DESK_CHERRY.get().asItem().getDefaultInstance(),
@@ -1992,8 +3124,6 @@ public class RecipesGen extends RecipeProvider implements IConditionBuilder {
         bookcaseRecipe(consumer, TBABlocks.BOOKCASE_CHERRY.get().asItem().getDefaultInstance(),
                 BOPBlocks.CHERRY_LOG.get(), BOPBlocks.STRIPPED_CHERRY_LOG.get(), BOPBlocks.CHERRY_SLAB.get());
 
-        chairRecipe(consumer, TBABlocks.DESK_CHAIR_MAHOGANY.get().asItem().getDefaultInstance(),
-                BOPBlocks.MAHOGANY_LOG.get(), BOPBlocks.STRIPPED_MAHOGANY_LOG.get(), BOPBlocks.MAHOGANY_SLAB.get());
         benchRecipe(consumer, TBABlocks.PARK_BENCH_MAHOGANY.get().asItem().getDefaultInstance(),
                 BOPBlocks.MAHOGANY_LOG.get(), BOPBlocks.MAHOGANY_SLAB.get());
         deskRecipe(consumer, TBABlocks.SCHOOL_DESK_MAHOGANY.get().asItem().getDefaultInstance(),
@@ -2007,8 +3137,6 @@ public class RecipesGen extends RecipeProvider implements IConditionBuilder {
         bookcaseRecipe(consumer, TBABlocks.BOOKCASE_MAHOGANY.get().asItem().getDefaultInstance(),
                 BOPBlocks.MAHOGANY_LOG.get(), BOPBlocks.STRIPPED_MAHOGANY_LOG.get(), BOPBlocks.MAHOGANY_SLAB.get());
 
-        chairRecipe(consumer, TBABlocks.DESK_CHAIR_JACARANDA.get().asItem().getDefaultInstance(),
-                BOPBlocks.JACARANDA_LOG.get(), BOPBlocks.STRIPPED_JACARANDA_LOG.get(), BOPBlocks.JACARANDA_SLAB.get());
         benchRecipe(consumer, TBABlocks.PARK_BENCH_JACARANDA.get().asItem().getDefaultInstance(),
                 BOPBlocks.JACARANDA_LOG.get(), BOPBlocks.JACARANDA_SLAB.get());
         deskRecipe(consumer, TBABlocks.SCHOOL_DESK_JACARANDA.get().asItem().getDefaultInstance(),
@@ -2022,8 +3150,6 @@ public class RecipesGen extends RecipeProvider implements IConditionBuilder {
         bookcaseRecipe(consumer, TBABlocks.BOOKCASE_JACARANDA.get().asItem().getDefaultInstance(),
                 BOPBlocks.JACARANDA_LOG.get(), BOPBlocks.STRIPPED_JACARANDA_LOG.get(), BOPBlocks.JACARANDA_SLAB.get());
 
-        chairRecipe(consumer, TBABlocks.DESK_CHAIR_PALM.get().asItem().getDefaultInstance(),
-                BOPBlocks.PALM_LOG.get(), BOPBlocks.STRIPPED_PALM_LOG.get(), BOPBlocks.PALM_SLAB.get());
         benchRecipe(consumer, TBABlocks.PARK_BENCH_PALM.get().asItem().getDefaultInstance(),
                 BOPBlocks.PALM_LOG.get(), BOPBlocks.PALM_SLAB.get());
         deskRecipe(consumer, TBABlocks.SCHOOL_DESK_PALM.get().asItem().getDefaultInstance(),
@@ -2037,8 +3163,6 @@ public class RecipesGen extends RecipeProvider implements IConditionBuilder {
         bookcaseRecipe(consumer, TBABlocks.BOOKCASE_PALM.get().asItem().getDefaultInstance(),
                 BOPBlocks.PALM_LOG.get(), BOPBlocks.STRIPPED_PALM_LOG.get(), BOPBlocks.PALM_SLAB.get());
 
-        chairRecipe(consumer, TBABlocks.DESK_CHAIR_WILLOW.get().asItem().getDefaultInstance(),
-                BOPBlocks.WILLOW_LOG.get(), BOPBlocks.STRIPPED_WILLOW_LOG.get(), BOPBlocks.WILLOW_SLAB.get());
         benchRecipe(consumer, TBABlocks.PARK_BENCH_WILLOW.get().asItem().getDefaultInstance(),
                 BOPBlocks.WILLOW_LOG.get(), BOPBlocks.WILLOW_SLAB.get());
         deskRecipe(consumer, TBABlocks.SCHOOL_DESK_WILLOW.get().asItem().getDefaultInstance(),
@@ -2052,8 +3176,6 @@ public class RecipesGen extends RecipeProvider implements IConditionBuilder {
         bookcaseRecipe(consumer, TBABlocks.BOOKCASE_WILLOW.get().asItem().getDefaultInstance(),
                 BOPBlocks.WILLOW_LOG.get(), BOPBlocks.STRIPPED_WILLOW_LOG.get(), BOPBlocks.WILLOW_SLAB.get());
 
-        chairRecipe(consumer, TBABlocks.DESK_CHAIR_DEAD.get().asItem().getDefaultInstance(),
-                BOPBlocks.DEAD_LOG.get(), BOPBlocks.STRIPPED_DEAD_LOG.get(), BOPBlocks.DEAD_SLAB.get());
         benchRecipe(consumer, TBABlocks.PARK_BENCH_DEAD.get().asItem().getDefaultInstance(),
                 BOPBlocks.DEAD_LOG.get(), BOPBlocks.DEAD_SLAB.get());
         deskRecipe(consumer, TBABlocks.SCHOOL_DESK_DEAD.get().asItem().getDefaultInstance(),
@@ -2067,8 +3189,6 @@ public class RecipesGen extends RecipeProvider implements IConditionBuilder {
         bookcaseRecipe(consumer, TBABlocks.BOOKCASE_DEAD.get().asItem().getDefaultInstance(),
                 BOPBlocks.DEAD_LOG.get(), BOPBlocks.STRIPPED_DEAD_LOG.get(), BOPBlocks.DEAD_SLAB.get());
 
-        chairRecipe(consumer, TBABlocks.DESK_CHAIR_MAGIC.get().asItem().getDefaultInstance(),
-                BOPBlocks.MAGIC_LOG.get(), BOPBlocks.STRIPPED_MAGIC_LOG.get(), BOPBlocks.MAGIC_SLAB.get());
         benchRecipe(consumer, TBABlocks.PARK_BENCH_MAGIC.get().asItem().getDefaultInstance(),
                 BOPBlocks.MAGIC_LOG.get(), BOPBlocks.MAGIC_SLAB.get());
         deskRecipe(consumer, TBABlocks.SCHOOL_DESK_MAGIC.get().asItem().getDefaultInstance(),
@@ -2082,8 +3202,6 @@ public class RecipesGen extends RecipeProvider implements IConditionBuilder {
         bookcaseRecipe(consumer, TBABlocks.BOOKCASE_MAGIC.get().asItem().getDefaultInstance(),
                 BOPBlocks.MAGIC_LOG.get(), BOPBlocks.STRIPPED_MAGIC_LOG.get(), BOPBlocks.MAGIC_SLAB.get());
 
-        chairRecipe(consumer, TBABlocks.DESK_CHAIR_UMBRAN.get().asItem().getDefaultInstance(),
-                BOPBlocks.UMBRAN_LOG.get(), BOPBlocks.STRIPPED_UMBRAN_LOG.get(), BOPBlocks.UMBRAN_SLAB.get());
         benchRecipe(consumer, TBABlocks.PARK_BENCH_UMBRAN.get().asItem().getDefaultInstance(),
                 BOPBlocks.UMBRAN_LOG.get(), BOPBlocks.UMBRAN_SLAB.get());
         deskRecipe(consumer, TBABlocks.SCHOOL_DESK_UMBRAN.get().asItem().getDefaultInstance(),
@@ -2097,8 +3215,6 @@ public class RecipesGen extends RecipeProvider implements IConditionBuilder {
         bookcaseRecipe(consumer, TBABlocks.BOOKCASE_UMBRAN.get().asItem().getDefaultInstance(),
                 BOPBlocks.UMBRAN_LOG.get(), BOPBlocks.STRIPPED_UMBRAN_LOG.get(), BOPBlocks.UMBRAN_SLAB.get());
 
-        chairRecipe(consumer, TBABlocks.DESK_CHAIR_HELLBARK.get().asItem().getDefaultInstance(),
-                BOPBlocks.HELLBARK_LOG.get(), BOPBlocks.STRIPPED_HELLBARK_LOG.get(), BOPBlocks.HELLBARK_SLAB.get());
         benchRecipe(consumer, TBABlocks.PARK_BENCH_HELLBARK.get().asItem().getDefaultInstance(),
                 BOPBlocks.HELLBARK_LOG.get(), BOPBlocks.HELLBARK_SLAB.get());
         deskRecipe(consumer, TBABlocks.SCHOOL_DESK_HELLBARK.get().asItem().getDefaultInstance(),
@@ -2112,8 +3228,6 @@ public class RecipesGen extends RecipeProvider implements IConditionBuilder {
         bookcaseRecipe(consumer, TBABlocks.BOOKCASE_HELLBARK.get().asItem().getDefaultInstance(),
                 BOPBlocks.HELLBARK_LOG.get(), BOPBlocks.STRIPPED_HELLBARK_LOG.get(), BOPBlocks.HELLBARK_SLAB.get());
 
-        chairRecipe(consumer, TBABlocks.DESK_CHAIR_COCONUT.get().asItem().getDefaultInstance(),
-                samebutdifferent.ecologics.registry.ModBlocks.COCONUT_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.STRIPPED_COCONUT_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.COCONUT_SLAB.get());
         benchRecipe(consumer, TBABlocks.PARK_BENCH_COCONUT.get().asItem().getDefaultInstance(),
                 samebutdifferent.ecologics.registry.ModBlocks.COCONUT_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.COCONUT_SLAB.get());
         deskRecipe(consumer, TBABlocks.SCHOOL_DESK_COCONUT.get().asItem().getDefaultInstance(),
@@ -2127,8 +3241,6 @@ public class RecipesGen extends RecipeProvider implements IConditionBuilder {
         bookcaseRecipe(consumer, TBABlocks.BOOKCASE_COCONUT.get().asItem().getDefaultInstance(),
                 samebutdifferent.ecologics.registry.ModBlocks.COCONUT_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.STRIPPED_COCONUT_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.COCONUT_SLAB.get());
 
-        chairRecipe(consumer, TBABlocks.DESK_CHAIR_WALNUT.get().asItem().getDefaultInstance(),
-                samebutdifferent.ecologics.registry.ModBlocks.WALNUT_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.STRIPPED_WALNUT_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.WALNUT_SLAB.get());
         benchRecipe(consumer, TBABlocks.PARK_BENCH_WALNUT.get().asItem().getDefaultInstance(),
                 samebutdifferent.ecologics.registry.ModBlocks.WALNUT_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.WALNUT_SLAB.get());
         deskRecipe(consumer, TBABlocks.SCHOOL_DESK_WALNUT.get().asItem().getDefaultInstance(),
@@ -2142,8 +3254,6 @@ public class RecipesGen extends RecipeProvider implements IConditionBuilder {
         bookcaseRecipe(consumer, TBABlocks.BOOKCASE_WALNUT.get().asItem().getDefaultInstance(),
                 samebutdifferent.ecologics.registry.ModBlocks.WALNUT_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.STRIPPED_WALNUT_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.WALNUT_SLAB.get());
 
-        chairRecipe(consumer, TBABlocks.DESK_CHAIR_AZALEA.get().asItem().getDefaultInstance(),
-                samebutdifferent.ecologics.registry.ModBlocks.AZALEA_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.STRIPPED_AZALEA_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.AZALEA_SLAB.get());
         benchRecipe(consumer, TBABlocks.PARK_BENCH_AZALEA.get().asItem().getDefaultInstance(),
                 samebutdifferent.ecologics.registry.ModBlocks.AZALEA_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.AZALEA_SLAB.get());
         deskRecipe(consumer, TBABlocks.SCHOOL_DESK_AZALEA.get().asItem().getDefaultInstance(),
@@ -2157,8 +3267,6 @@ public class RecipesGen extends RecipeProvider implements IConditionBuilder {
         bookcaseRecipe(consumer, TBABlocks.BOOKCASE_AZALEA.get().asItem().getDefaultInstance(),
                 samebutdifferent.ecologics.registry.ModBlocks.AZALEA_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.STRIPPED_AZALEA_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.AZALEA_SLAB.get());
 
-        chairRecipe(consumer, TBABlocks.DESK_CHAIR_FLOWERING_AZALEA.get().asItem().getDefaultInstance(),
-                samebutdifferent.ecologics.registry.ModBlocks.FLOWERING_AZALEA_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.STRIPPED_AZALEA_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.FLOWERING_AZALEA_SLAB.get());
         benchRecipe(consumer, TBABlocks.PARK_BENCH_FLOWERING_AZALEA.get().asItem().getDefaultInstance(),
                 samebutdifferent.ecologics.registry.ModBlocks.FLOWERING_AZALEA_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.FLOWERING_AZALEA_SLAB.get());
         deskRecipe(consumer, TBABlocks.SCHOOL_DESK_FLOWERING_AZALEA.get().asItem().getDefaultInstance(),
@@ -2172,8 +3280,6 @@ public class RecipesGen extends RecipeProvider implements IConditionBuilder {
         bookcaseRecipe(consumer, TBABlocks.BOOKCASE_FLOWERING_AZALEA.get().asItem().getDefaultInstance(),
                 samebutdifferent.ecologics.registry.ModBlocks.FLOWERING_AZALEA_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.STRIPPED_AZALEA_LOG.get(), samebutdifferent.ecologics.registry.ModBlocks.FLOWERING_AZALEA_SLAB.get());
 
-        chairRecipe(consumer, TBABlocks.DESK_CHAIR_GOLDEN_OAK.get().asItem().getDefaultInstance(),
-                AetherBlocks.GOLDEN_OAK_LOG.get(), AetherBlocks.STRIPPED_SKYROOT_LOG.get(), AetherBlocks.SKYROOT_SLAB.get());
         benchRecipe(consumer, TBABlocks.PARK_BENCH_GOLDEN_OAK.get().asItem().getDefaultInstance(),
                 AetherBlocks.GOLDEN_OAK_LOG.get(), AetherBlocks.SKYROOT_SLAB.get());
         deskRecipe(consumer, TBABlocks.SCHOOL_DESK_GOLDEN_OAK.get().asItem().getDefaultInstance(),
@@ -2187,8 +3293,6 @@ public class RecipesGen extends RecipeProvider implements IConditionBuilder {
         bookcaseRecipe(consumer, TBABlocks.BOOKCASE_GOLDEN_OAK.get().asItem().getDefaultInstance(),
                 AetherBlocks.GOLDEN_OAK_LOG.get(), AetherBlocks.STRIPPED_SKYROOT_LOG.get(), AetherBlocks.SKYROOT_SLAB.get());
 
-        chairRecipe(consumer, TBABlocks.DESK_CHAIR_AETHER_SKYROOT.get().asItem().getDefaultInstance(),
-                AetherBlocks.SKYROOT_LOG.get(), AetherBlocks.STRIPPED_SKYROOT_LOG.get(), AetherBlocks.SKYROOT_SLAB.get());
         benchRecipe(consumer, TBABlocks.PARK_BENCH_AETHER_SKYROOT.get().asItem().getDefaultInstance(),
                 AetherBlocks.SKYROOT_LOG.get(), AetherBlocks.SKYROOT_SLAB.get());
         deskRecipe(consumer, TBABlocks.SCHOOL_DESK_AETHER_SKYROOT.get().asItem().getDefaultInstance(),
@@ -2202,8 +3306,6 @@ public class RecipesGen extends RecipeProvider implements IConditionBuilder {
         bookcaseRecipe(consumer, TBABlocks.BOOKCASE_AETHER_SKYROOT.get().asItem().getDefaultInstance(),
                 AetherBlocks.SKYROOT_LOG.get(), AetherBlocks.STRIPPED_SKYROOT_LOG.get(), AetherBlocks.SKYROOT_SLAB.get());
 
-        chairRecipe(consumer, TBABlocks.DESK_CHAIR_PREAM.get().asItem().getDefaultInstance(),
-                PhantasmModBlocks.PREAM_LOG.get(), PhantasmModBlocks.STRIPPED_PREAM_LOG.get(), PhantasmModBlocks.PREAM_SLAB.get());
         benchRecipe(consumer, TBABlocks.PARK_BENCH_PREAM.get().asItem().getDefaultInstance(),
                 PhantasmModBlocks.PREAM_LOG.get(), PhantasmModBlocks.PREAM_SLAB.get());
         deskRecipe(consumer, TBABlocks.SCHOOL_DESK_PREAM.get().asItem().getDefaultInstance(),
@@ -2217,8 +3319,6 @@ public class RecipesGen extends RecipeProvider implements IConditionBuilder {
         bookcaseRecipe(consumer, TBABlocks.BOOKCASE_PREAM.get().asItem().getDefaultInstance(),
                 PhantasmModBlocks.PREAM_LOG.get(), PhantasmModBlocks.STRIPPED_PREAM_LOG.get(), PhantasmModBlocks.PREAM_SLAB.get());
 
-        chairRecipe(consumer, TBABlocks.DESK_CHAIR_EBONY.get().asItem().getDefaultInstance(),
-                PhantasmModBlocks.EBONY_WOOD.get(), PhantasmModBlocks.STRIPPED_EBONY_WOOD.get(), PhantasmModBlocks.EBONY_SLAB.get());
         benchRecipe(consumer, TBABlocks.PARK_BENCH_EBONY.get().asItem().getDefaultInstance(),
                 PhantasmModBlocks.EBONY_WOOD.get(), PhantasmModBlocks.EBONY_SLAB.get());
         deskRecipe(consumer, TBABlocks.SCHOOL_DESK_EBONY.get().asItem().getDefaultInstance(),
@@ -2232,8 +3332,6 @@ public class RecipesGen extends RecipeProvider implements IConditionBuilder {
         bookcaseRecipe(consumer, TBABlocks.BOOKCASE_EBONY.get().asItem().getDefaultInstance(),
                 PhantasmModBlocks.EBONY_WOOD.get(), PhantasmModBlocks.STRIPPED_EBONY_WOOD.get(), PhantasmModBlocks.EBONY_SLAB.get());
 
-        chairRecipe(consumer, TBABlocks.DESK_CHAIR_CHORUS_NEST.get().asItem().getDefaultInstance(),
-                UnusualendModBlocks.CHORUS_NEST_PLANKS.get(), UnusualendModBlocks.STRIPPED_CHORUS_NEST_PLANKS.get(), UnusualendModBlocks.CHORUS_NEST_SLAB.get());
         benchRecipe(consumer, TBABlocks.PARK_BENCH_CHORUS_NEST.get().asItem().getDefaultInstance(),
                 UnusualendModBlocks.CHORUS_NEST_PLANKS.get(), UnusualendModBlocks.CHORUS_NEST_SLAB.get());
         deskRecipe(consumer, TBABlocks.SCHOOL_DESK_CHORUS_NEST.get().asItem().getDefaultInstance(),
@@ -2247,8 +3345,6 @@ public class RecipesGen extends RecipeProvider implements IConditionBuilder {
         bookcaseRecipe(consumer, TBABlocks.BOOKCASE_CHORUS_NEST.get().asItem().getDefaultInstance(),
                 UnusualendModBlocks.CHORUS_NEST_PLANKS.get(), UnusualendModBlocks.STRIPPED_CHORUS_NEST_PLANKS.get(), UnusualendModBlocks.CHORUS_NEST_SLAB.get());
 
-        chairRecipe(consumer, TBABlocks.DESK_CHAIR_BLOODSHROOM.get().asItem().getDefaultInstance(),
-                TinkerWorld.bloodshroom.getLog(), TinkerWorld.bloodshroom.getStrippedLog(), TinkerWorld.bloodshroom.getSlab());
         benchRecipe(consumer, TBABlocks.PARK_BENCH_BLOODSHROOM.get().asItem().getDefaultInstance(),
                 TinkerWorld.bloodshroom.getLog(), TinkerWorld.bloodshroom.getSlab());
         deskRecipe(consumer, TBABlocks.SCHOOL_DESK_BLOODSHROOM.get().asItem().getDefaultInstance(),
@@ -2262,8 +3358,6 @@ public class RecipesGen extends RecipeProvider implements IConditionBuilder {
         bookcaseRecipe(consumer, TBABlocks.BOOKCASE_BLOODSHROOM.get().asItem().getDefaultInstance(),
                 TinkerWorld.bloodshroom.getLog(), TinkerWorld.bloodshroom.getStrippedLog(), TinkerWorld.bloodshroom.getSlab());
 
-        chairRecipe(consumer, TBABlocks.DESK_CHAIR_ENDERBARK.get().asItem().getDefaultInstance(),
-                TinkerWorld.enderbark.getLog(), TinkerWorld.enderbark.getStrippedLog(), TinkerWorld.enderbark.getSlab());
         benchRecipe(consumer, TBABlocks.PARK_BENCH_ENDERBARK.get().asItem().getDefaultInstance(),
                 TinkerWorld.enderbark.getLog(), TinkerWorld.enderbark.getSlab());
         deskRecipe(consumer, TBABlocks.SCHOOL_DESK_ENDERBARK.get().asItem().getDefaultInstance(),
@@ -2277,8 +3371,6 @@ public class RecipesGen extends RecipeProvider implements IConditionBuilder {
         bookcaseRecipe(consumer, TBABlocks.BOOKCASE_ENDERBARK.get().asItem().getDefaultInstance(),
                 TinkerWorld.enderbark.getLog(), TinkerWorld.enderbark.getStrippedLog(), TinkerWorld.enderbark.getSlab());
 
-        chairRecipe(consumer, TBABlocks.DESK_CHAIR_GREENHEART.get().asItem().getDefaultInstance(),
-                TinkerWorld.greenheart.getLog(), TinkerWorld.greenheart.getStrippedLog(), TinkerWorld.greenheart.getSlab());
         benchRecipe(consumer, TBABlocks.PARK_BENCH_GREENHEART.get().asItem().getDefaultInstance(),
                 TinkerWorld.greenheart.getLog(), TinkerWorld.greenheart.getSlab());
         deskRecipe(consumer, TBABlocks.SCHOOL_DESK_GREENHEART.get().asItem().getDefaultInstance(),
@@ -2292,8 +3384,6 @@ public class RecipesGen extends RecipeProvider implements IConditionBuilder {
         bookcaseRecipe(consumer, TBABlocks.BOOKCASE_GREENHEART.get().asItem().getDefaultInstance(),
                 TinkerWorld.greenheart.getLog(), TinkerWorld.greenheart.getStrippedLog(), TinkerWorld.greenheart.getSlab());
 
-        chairRecipe(consumer, TBABlocks.DESK_CHAIR_TINKER_SKYROOT.get().asItem().getDefaultInstance(),
-                TinkerWorld.skyroot.getLog(), TinkerWorld.skyroot.getStrippedLog(), TinkerWorld.skyroot.getSlab());
         benchRecipe(consumer, TBABlocks.PARK_BENCH_TINKER_SKYROOT.get().asItem().getDefaultInstance(),
                 TinkerWorld.skyroot.getLog(), TinkerWorld.skyroot.getSlab());
         deskRecipe(consumer, TBABlocks.SCHOOL_DESK_TINKER_SKYROOT.get().asItem().getDefaultInstance(),
@@ -2857,18 +3947,244 @@ public class RecipesGen extends RecipeProvider implements IConditionBuilder {
                         "bookcases/" + result.getItem()));
     }
 
-    private void chairRecipe(Consumer<FinishedRecipe> consumer, @NotNull ItemStack result, ItemLike log, ItemLike strippedLog, ItemLike slab) {
-        ShapedRecipeBuilder.shaped(result.getItem(), 2)
-                .group("chairs")
-                .pattern("  #")
-                .pattern("#S#")
-                .pattern("L L")
-                .define('#', Ingredient.of(slab))
-                .define('S', Ingredient.of(strippedLog))
-                .define('L', Ingredient.of(log))
-                .unlockedBy("has_log", has(log))
-                .save(consumer, new ResourceLocation(MODID,
-                        "chairs/" + result.getItem()));
+    private void chairRecipe(Consumer<FinishedRecipe> consumer, @Nullable DyeColor color, @NotNull ItemStack result, ItemLike log, ItemLike strippedLog, ItemLike slab) {
+        if (color == null) {
+            ShapedRecipeBuilder.shaped(result.getItem(), 2)
+                    .group("chairs")
+                    .pattern("  #")
+                    .pattern("#S#")
+                    .pattern("L L")
+                    .define('#', Ingredient.of(slab))
+                    .define('S', Ingredient.of(strippedLog))
+                    .define('L', Ingredient.of(log))
+                    .unlockedBy("has_log", has(log))
+                    .save(consumer, new ResourceLocation(MODID,
+                            "chairs/" + result.getItem()));
+        }
+        else if (color == DyeColor.WHITE) {
+            ShapedRecipeBuilder.shaped(result.getItem(), 2)
+                    .group("chairs")
+                    .pattern("WW#")
+                    .pattern("#S#")
+                    .pattern("L L")
+                    .define('W', Ingredient.of(Items.WHITE_CARPET))
+                    .define('#', Ingredient.of(slab))
+                    .define('S', Ingredient.of(strippedLog))
+                    .define('L', Ingredient.of(log))
+                    .unlockedBy("has_log", has(log))
+                    .save(consumer, new ResourceLocation(MODID,
+                            "chairs/colored/white/" + result.getItem()));
+        }
+        else if (color == DyeColor.ORANGE) {
+            ShapedRecipeBuilder.shaped(result.getItem(), 2)
+                    .group("chairs")
+                    .pattern("WW#")
+                    .pattern("#S#")
+                    .pattern("L L")
+                    .define('W', Ingredient.of(Items.ORANGE_CARPET))
+                    .define('#', Ingredient.of(slab))
+                    .define('S', Ingredient.of(strippedLog))
+                    .define('L', Ingredient.of(log))
+                    .unlockedBy("has_log", has(log))
+                    .save(consumer, new ResourceLocation(MODID,
+                            "chairs/colored/orange/" + result.getItem()));
+        }
+        else if (color == DyeColor.MAGENTA) {
+            ShapedRecipeBuilder.shaped(result.getItem(), 2)
+                    .group("chairs")
+                    .pattern("WW#")
+                    .pattern("#S#")
+                    .pattern("L L")
+                    .define('W', Ingredient.of(Items.MAGENTA_CARPET))
+                    .define('#', Ingredient.of(slab))
+                    .define('S', Ingredient.of(strippedLog))
+                    .define('L', Ingredient.of(log))
+                    .unlockedBy("has_log", has(log))
+                    .save(consumer, new ResourceLocation(MODID,
+                            "chairs/colored/magenta/" + result.getItem()));
+        }
+        else if (color == DyeColor.LIGHT_BLUE) {
+            ShapedRecipeBuilder.shaped(result.getItem(), 2)
+                    .group("chairs")
+                    .pattern("WW#")
+                    .pattern("#S#")
+                    .pattern("L L")
+                    .define('W', Ingredient.of(Items.LIGHT_BLUE_CARPET))
+                    .define('#', Ingredient.of(slab))
+                    .define('S', Ingredient.of(strippedLog))
+                    .define('L', Ingredient.of(log))
+                    .unlockedBy("has_log", has(log))
+                    .save(consumer, new ResourceLocation(MODID,
+                            "chairs/colored/light_blue/" + result.getItem()));
+        }
+        else if (color == DyeColor.YELLOW) {
+            ShapedRecipeBuilder.shaped(result.getItem(), 2)
+                    .group("chairs")
+                    .pattern("WW#")
+                    .pattern("#S#")
+                    .pattern("L L")
+                    .define('W', Ingredient.of(Items.YELLOW_CARPET))
+                    .define('#', Ingredient.of(slab))
+                    .define('S', Ingredient.of(strippedLog))
+                    .define('L', Ingredient.of(log))
+                    .unlockedBy("has_log", has(log))
+                    .save(consumer, new ResourceLocation(MODID,
+                            "chairs/colored/yellow/" + result.getItem()));
+        }
+        else if (color == DyeColor.LIME) {
+            ShapedRecipeBuilder.shaped(result.getItem(), 2)
+                    .group("chairs")
+                    .pattern("WW#")
+                    .pattern("#S#")
+                    .pattern("L L")
+                    .define('W', Ingredient.of(Items.LIME_CARPET))
+                    .define('#', Ingredient.of(slab))
+                    .define('S', Ingredient.of(strippedLog))
+                    .define('L', Ingredient.of(log))
+                    .unlockedBy("has_log", has(log))
+                    .save(consumer, new ResourceLocation(MODID,
+                            "chairs/colored/lime/" + result.getItem()));
+        }
+        else if (color == DyeColor.PINK) {
+            ShapedRecipeBuilder.shaped(result.getItem(), 2)
+                    .group("chairs")
+                    .pattern("WW#")
+                    .pattern("#S#")
+                    .pattern("L L")
+                    .define('W', Ingredient.of(Items.PINK_CARPET))
+                    .define('#', Ingredient.of(slab))
+                    .define('S', Ingredient.of(strippedLog))
+                    .define('L', Ingredient.of(log))
+                    .unlockedBy("has_log", has(log))
+                    .save(consumer, new ResourceLocation(MODID,
+                            "chairs/colored/pink/" + result.getItem()));
+        }
+        else if (color == DyeColor.GRAY) {
+            ShapedRecipeBuilder.shaped(result.getItem(), 2)
+                    .group("chairs")
+                    .pattern("WW#")
+                    .pattern("#S#")
+                    .pattern("L L")
+                    .define('W', Ingredient.of(Items.GRAY_CARPET))
+                    .define('#', Ingredient.of(slab))
+                    .define('S', Ingredient.of(strippedLog))
+                    .define('L', Ingredient.of(log))
+                    .unlockedBy("has_log", has(log))
+                    .save(consumer, new ResourceLocation(MODID,
+                            "chairs/colored/gray/" + result.getItem()));
+        }
+        else if (color == DyeColor.LIGHT_GRAY) {
+            ShapedRecipeBuilder.shaped(result.getItem(), 2)
+                    .group("chairs")
+                    .pattern("WW#")
+                    .pattern("#S#")
+                    .pattern("L L")
+                    .define('W', Ingredient.of(Items.LIGHT_GRAY_CARPET))
+                    .define('#', Ingredient.of(slab))
+                    .define('S', Ingredient.of(strippedLog))
+                    .define('L', Ingredient.of(log))
+                    .unlockedBy("has_log", has(log))
+                    .save(consumer, new ResourceLocation(MODID,
+                            "chairs/colored/light_gray/" + result.getItem()));
+        }
+        else if (color == DyeColor.CYAN) {
+            ShapedRecipeBuilder.shaped(result.getItem(), 2)
+                    .group("chairs")
+                    .pattern("WW#")
+                    .pattern("#S#")
+                    .pattern("L L")
+                    .define('W', Ingredient.of(Items.CYAN_CARPET))
+                    .define('#', Ingredient.of(slab))
+                    .define('S', Ingredient.of(strippedLog))
+                    .define('L', Ingredient.of(log))
+                    .unlockedBy("has_log", has(log))
+                    .save(consumer, new ResourceLocation(MODID,
+                            "chairs/colored/cyan/" + result.getItem()));
+        }
+        else if (color == DyeColor.PURPLE) {
+            ShapedRecipeBuilder.shaped(result.getItem(), 2)
+                    .group("chairs")
+                    .pattern("WW#")
+                    .pattern("#S#")
+                    .pattern("L L")
+                    .define('W', Ingredient.of(Items.PURPLE_CARPET))
+                    .define('#', Ingredient.of(slab))
+                    .define('S', Ingredient.of(strippedLog))
+                    .define('L', Ingredient.of(log))
+                    .unlockedBy("has_log", has(log))
+                    .save(consumer, new ResourceLocation(MODID,
+                            "chairs/colored/purple/" + result.getItem()));
+        }
+        else if (color == DyeColor.BLUE) {
+            ShapedRecipeBuilder.shaped(result.getItem(), 2)
+                    .group("chairs")
+                    .pattern("WW#")
+                    .pattern("#S#")
+                    .pattern("L L")
+                    .define('W', Ingredient.of(Items.BLUE_CARPET))
+                    .define('#', Ingredient.of(slab))
+                    .define('S', Ingredient.of(strippedLog))
+                    .define('L', Ingredient.of(log))
+                    .unlockedBy("has_log", has(log))
+                    .save(consumer, new ResourceLocation(MODID,
+                            "chairs/colored/blue/" + result.getItem()));
+        }
+        else if (color == DyeColor.BROWN) {
+            ShapedRecipeBuilder.shaped(result.getItem(), 2)
+                    .group("chairs")
+                    .pattern("WW#")
+                    .pattern("#S#")
+                    .pattern("L L")
+                    .define('W', Ingredient.of(Items.BROWN_CARPET))
+                    .define('#', Ingredient.of(slab))
+                    .define('S', Ingredient.of(strippedLog))
+                    .define('L', Ingredient.of(log))
+                    .unlockedBy("has_log", has(log))
+                    .save(consumer, new ResourceLocation(MODID,
+                            "chairs/colored/brown/" + result.getItem()));
+        }
+        else if (color == DyeColor.GREEN) {
+            ShapedRecipeBuilder.shaped(result.getItem(), 2)
+                    .group("chairs")
+                    .pattern("WW#")
+                    .pattern("#S#")
+                    .pattern("L L")
+                    .define('W', Ingredient.of(Items.GREEN_CARPET))
+                    .define('#', Ingredient.of(slab))
+                    .define('S', Ingredient.of(strippedLog))
+                    .define('L', Ingredient.of(log))
+                    .unlockedBy("has_log", has(log))
+                    .save(consumer, new ResourceLocation(MODID,
+                            "chairs/colored/green/" + result.getItem()));
+        }
+        else if (color == DyeColor.RED) {
+            ShapedRecipeBuilder.shaped(result.getItem(), 2)
+                    .group("chairs")
+                    .pattern("WW#")
+                    .pattern("#S#")
+                    .pattern("L L")
+                    .define('W', Ingredient.of(Items.RED_CARPET))
+                    .define('#', Ingredient.of(slab))
+                    .define('S', Ingredient.of(strippedLog))
+                    .define('L', Ingredient.of(log))
+                    .unlockedBy("has_log", has(log))
+                    .save(consumer, new ResourceLocation(MODID,
+                            "chairs/colored/red/" + result.getItem()));
+        }
+        else if (color == DyeColor.BLACK) {
+            ShapedRecipeBuilder.shaped(result.getItem(), 2)
+                    .group("chairs")
+                    .pattern("WW#")
+                    .pattern("#S#")
+                    .pattern("L L")
+                    .define('W', Ingredient.of(Items.BLACK_CARPET))
+                    .define('#', Ingredient.of(slab))
+                    .define('S', Ingredient.of(strippedLog))
+                    .define('L', Ingredient.of(log))
+                    .unlockedBy("has_log", has(log))
+                    .save(consumer, new ResourceLocation(MODID,
+                            "chairs/colored/black/" + result.getItem()));
+        }
     }
 
     private void benchRecipe(Consumer<FinishedRecipe> consumer, @NotNull ItemStack result, ItemLike log, ItemLike slab) {

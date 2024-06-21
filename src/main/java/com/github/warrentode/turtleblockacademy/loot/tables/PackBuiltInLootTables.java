@@ -18,6 +18,8 @@ public class PackBuiltInLootTables {
     public static final ResourceLocation TREASURE_BEETLE_LOOT = register(MODID + ":" + "entity/treasure_beetle");
     public static final ResourceLocation CAMP_CHEST = register(MODID + ":" + "chests/camp_chest");
 
+    public static final ResourceLocation EASTER_EGG_LOOT = register(MODID + ":" + "chests/easter_eggs");
+
     // randomized map loot tables
     public static final ResourceLocation MASTER_MAPBOX = register(MODID + ":" + "chests/maps/master_mapbox");
     public static final ResourceLocation END_MAPBOX = register(MODID + ":" + "chests/maps/end_mapbox");

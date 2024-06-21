@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "turtleblockacademy:block/desk_chair_azalea_purple",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "turtleblockacademy:block/desk_chair_azalea_purple"
+    },
+    "facing=south": {
+      "model": "turtleblockacademy:block/desk_chair_azalea_purple",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "turtleblockacademy:block/desk_chair_azalea_purple",
+      "y": 270
+    }
+  }
+}

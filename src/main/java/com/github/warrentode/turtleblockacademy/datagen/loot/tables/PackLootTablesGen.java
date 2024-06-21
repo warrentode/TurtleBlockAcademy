@@ -65,6 +65,9 @@ import static vectorwing.farmersdelight.common.registry.ModItems.CANVAS_RUG;
 public class PackLootTablesGen implements Consumer<BiConsumer<ResourceLocation, LootTable.Builder>> {
     @Override
     public void accept(@NotNull BiConsumer<ResourceLocation, LootTable.Builder> consumer) {
+        consumer.accept(PackBuiltInLootTables.EASTER_EGG_LOOT, LootTable.lootTable()
+                .withPool(LootPool.lootPool().setRolls(ConstantValue.exactly(1))
+                        .add(TagEntry.expandTag(TBATags.Items.EASTER_EGGS))));
         consumer.accept(PackBuiltInLootTables.TREASURE_BEETLE_LOOT, LootTable.lootTable()
                 .withPool(LootPool.lootPool()
                         .setRolls(ConstantValue.exactly(1))

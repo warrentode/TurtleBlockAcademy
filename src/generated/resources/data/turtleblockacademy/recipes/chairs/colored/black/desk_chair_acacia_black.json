@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "chairs",
+  "key": {
+    "#": {
+      "item": "minecraft:acacia_slab"
+    },
+    "L": {
+      "item": "minecraft:acacia_log"
+    },
+    "S": {
+      "item": "minecraft:stripped_acacia_log"
+    },
+    "W": {
+      "item": "minecraft:black_carpet"
+    }
+  },
+  "pattern": [
+    "WW#",
+    "#S#",
+    "L L"
+  ],
+  "result": {
+    "count": 2,
+    "item": "turtleblockacademy:desk_chair_acacia_black"
+  }
+}

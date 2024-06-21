@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "chairs",
+  "key": {
+    "#": {
+      "item": "unusualend:chorus_nest_slab"
+    },
+    "L": {
+      "item": "unusualend:chorus_nest_planks"
+    },
+    "S": {
+      "item": "unusualend:stripped_chorus_nest_planks"
+    },
+    "W": {
+      "item": "minecraft:gray_carpet"
+    }
+  },
+  "pattern": [
+    "WW#",
+    "#S#",
+    "L L"
+  ],
+  "result": {
+    "count": 2,
+    "item": "turtleblockacademy:desk_chair_chorus_nest_gray"
+  }
+}
