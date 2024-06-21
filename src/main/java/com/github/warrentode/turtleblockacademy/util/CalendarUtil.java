@@ -1,5 +1,6 @@
 package com.github.warrentode.turtleblockacademy.util;
 
+import com.github.warrentode.turtleblockacademy.config.AcademyConfig;
 import net.minecraft.server.MinecraftServer;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.level.Level;
@@ -9,10 +10,21 @@ import sereneseasons.api.season.Season;
 import sereneseasons.api.season.SeasonHelper;
 
 import java.util.Calendar;
+import java.util.List;
 import java.util.Objects;
 
 public class CalendarUtil {
     public static Boolean isSeason;
+    private static final Calendar calendar;
+    private static final int month;
+    private static final int date;
+
+    static {
+        calendar = Calendar.getInstance();
+        // Convert zero-based month to one-based month
+        month = calendar.get(Calendar.MONTH) + 1;
+        date = calendar.get(Calendar.DATE);
+    }
 
     public static boolean check(String season) {
         if (ModList.get().isLoaded("sereneseasons")) {
@@ -20,34 +32,34 @@ public class CalendarUtil {
             //noinspection ConstantValue
             if (minecraftServer != null) {
                 ServerLevel serverLevel = minecraftServer.createCommandSourceStack().getLevel();
-                if (Objects.equals(season, "ANNIVERSARY")) {
-                    return isSeason = CalendarUtil.isAnniversary(serverLevel);
-                }
                 if (Objects.equals(season, "BIRTHDAY")) {
                     return isSeason = CalendarUtil.isBirthday(serverLevel);
                 }
-                if (Objects.equals(season, "HALLOWEEN")) {
+                else if (Objects.equals(season, "ANNIVERSARY")) {
+                    return isSeason = CalendarUtil.isAnniversary(serverLevel);
+                }
+                else if (Objects.equals(season, "HALLOWEEN")) {
                     return isSeason = CalendarUtil.isHalloween(serverLevel);
                 }
-                if (Objects.equals(season, "CHRISTMAS")) {
+                else if (Objects.equals(season, "CHRISTMAS")) {
                     return isSeason = CalendarUtil.isChristmas(serverLevel);
                 }
-                if (Objects.equals(season, "EASTER")) {
+                else if (Objects.equals(season, "EASTER")) {
                     return isSeason = CalendarUtil.isEaster(serverLevel);
                 }
-                if (Objects.equals(season, "NEW_YEAR")) {
+                else if (Objects.equals(season, "NEW_YEAR")) {
                     return isSeason = CalendarUtil.isNewYear(serverLevel);
                 }
-                if (Objects.equals(season, "SPRING")) {
+                else if (Objects.equals(season, "SPRING")) {
                     return isSeason = CalendarUtil.isSpring(serverLevel);
                 }
-                if (Objects.equals(season, "SUMMER")) {
+                else if (Objects.equals(season, "SUMMER")) {
                     return isSeason = CalendarUtil.isSummer(serverLevel);
                 }
-                if (Objects.equals(season, "AUTUMN")) {
+                else if (Objects.equals(season, "AUTUMN")) {
                     return isSeason = CalendarUtil.isAutumn(serverLevel);
                 }
-                if (Objects.equals(season, "WINTER")) {
+                else if (Objects.equals(season, "WINTER")) {
                     return isSeason = CalendarUtil.isWinter(serverLevel);
                 }
             }
@@ -61,10 +73,6 @@ public class CalendarUtil {
             return subSeason == Season.SubSeason.EARLY_SPRING;
         }
         else if (!ModList.get().isLoaded("sereneseasons") || level.dimension() != Level.OVERWORLD) {
-            Calendar calendar = Calendar.getInstance();
-            int month = calendar.get(Calendar.MONTH);
-            int date = calendar.get(Calendar.DATE);
-
             // week of the blog's first post on Patreon anniversary
             return month == Calendar.JANUARY && (date >= 21 && date <= 27);
         }
@@ -79,10 +87,6 @@ public class CalendarUtil {
             return subSeason == Season.SubSeason.MID_SPRING;
         }
         else if (!ModList.get().isLoaded("sereneseasons") || level.dimension() != Level.OVERWORLD) {
-            Calendar calendar = Calendar.getInstance();
-            int month = calendar.get(Calendar.MONTH);
-            int date = calendar.get(Calendar.DATE);
-
             return (month == Calendar.MARCH && date >= 19) || month == Calendar.APRIL;
         }
         else {
@@ -96,9 +100,6 @@ public class CalendarUtil {
             return subSeason == Season.SubSeason.MID_AUTUMN;
         }
         else if (!ModList.get().isLoaded("sereneseasons") || level.dimension() != Level.OVERWORLD) {
-            Calendar calendar = Calendar.getInstance();
-            int month = calendar.get(Calendar.MONTH);
-
             return month == Calendar.OCTOBER;
         }
         else {
@@ -112,9 +113,6 @@ public class CalendarUtil {
             return subSeason == Season.SubSeason.EARLY_WINTER;
         }
         else if (!ModList.get().isLoaded("sereneseasons") || level.dimension() != Level.OVERWORLD) {
-            Calendar calendar = Calendar.getInstance();
-            int month = calendar.get(Calendar.MONTH);
-
             return month == Calendar.DECEMBER;
         }
         else {
@@ -123,21 +121,26 @@ public class CalendarUtil {
     }
 
     public static boolean isBirthday(ServerLevel level) {
-        if (ModList.get().isLoaded("sereneseasons") && level.dimension() == Level.OVERWORLD) {
+        if (isConfigBirthday(month, date)) {
+            return true;
+        }
+        else if (ModList.get().isLoaded("sereneseasons") && level.dimension() == Level.OVERWORLD) {
             Season.SubSeason subSeason = SeasonHelper.getSeasonState(level).getSubSeason();
             return subSeason == Season.SubSeason.MID_WINTER;
         }
         else if (!ModList.get().isLoaded("sereneseasons") || level.dimension() != Level.OVERWORLD) {
-            Calendar calendar = Calendar.getInstance();
-            int month = calendar.get(Calendar.MONTH);
-            int date = calendar.get(Calendar.DATE);
-
-            // week of todecoins' birthday
-            return month == Calendar.DECEMBER && (date >= 19 && date <= 21);
+            // week of mod's birthday
+            return month == Calendar.APRIL && (date >= 14 && date <= 20);
         }
         else {
             return false;
         }
+    }
+
+    private static boolean isConfigBirthday(int month, int date) {
+        String currentDate = String.format("%02d-%02d", month, date);
+        List<? extends String> birthdays = AcademyConfig.getBirthdays();
+        return birthdays.contains(currentDate);
     }
 
     public static boolean isNewYear(ServerLevel level) {
@@ -146,10 +149,6 @@ public class CalendarUtil {
             return subSeason == Season.SubSeason.LATE_WINTER;
         }
         else if (!ModList.get().isLoaded("sereneseasons") || level.dimension() != Level.OVERWORLD) {
-            Calendar calendar = Calendar.getInstance();
-            int month = calendar.get(Calendar.MONTH);
-            int date = calendar.get(Calendar.DATE);
-
             // Georgian and lunisolar calendar time frames
             return (month == Calendar.DECEMBER && date == 31) || (month == Calendar.JANUARY && date == 1)
                     || ((month == Calendar.FEBRUARY && date <= 20) || (month == Calendar.JANUARY && date >= 21));
@@ -167,10 +166,6 @@ public class CalendarUtil {
                     || subSeason == Season.SubSeason.LATE_SPRING;
         }
         else if (!ModList.get().isLoaded("sereneseasons") || level.dimension() != Level.OVERWORLD) {
-            Calendar calendar = Calendar.getInstance();
-            int month = calendar.get(Calendar.MONTH);
-            int date = calendar.get(Calendar.DATE);
-
             return (month == Calendar.MARCH && date >= 20) || (month == Calendar.JUNE && date <= 20);
         }
         else {
@@ -186,10 +181,6 @@ public class CalendarUtil {
                     || subSeason == Season.SubSeason.LATE_SUMMER;
         }
         else if (!ModList.get().isLoaded("sereneseasons") || level.dimension() != Level.OVERWORLD) {
-            Calendar calendar = Calendar.getInstance();
-            int month = calendar.get(Calendar.MONTH);
-            int date = calendar.get(Calendar.DATE);
-
             return (month == Calendar.JUNE && date >= 20) || (month == Calendar.SEPTEMBER && date <= 20);
         }
         else {
@@ -205,10 +196,6 @@ public class CalendarUtil {
                     || subSeason == Season.SubSeason.LATE_AUTUMN;
         }
         else if (!ModList.get().isLoaded("sereneseasons") || level.dimension() != Level.OVERWORLD) {
-            Calendar calendar = Calendar.getInstance();
-            int month = calendar.get(Calendar.MONTH);
-            int date = calendar.get(Calendar.DATE);
-
             return (month == Calendar.SEPTEMBER && date >= 20) || (month == Calendar.DECEMBER && date <= 20);
         }
         else {
@@ -224,10 +211,6 @@ public class CalendarUtil {
                     || subSeason == Season.SubSeason.LATE_WINTER;
         }
         else if (!ModList.get().isLoaded("sereneseasons") || level.dimension() != Level.OVERWORLD) {
-            Calendar calendar = Calendar.getInstance();
-            int month = calendar.get(Calendar.MONTH);
-            int date = calendar.get(Calendar.DATE);
-
             return (month == Calendar.DECEMBER && date >= 20) || (month == Calendar.MARCH && date <= 20);
         }
         else {

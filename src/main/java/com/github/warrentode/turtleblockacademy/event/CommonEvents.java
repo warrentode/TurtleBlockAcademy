@@ -3,14 +3,19 @@ package com.github.warrentode.turtleblockacademy.event;
 import com.aetherteam.aether.data.resources.registries.AetherDimensions;
 import com.github.warrentode.turtleblockacademy.commands.AcademyCommands;
 import com.github.warrentode.turtleblockacademy.entity.TBAEntityTypes;
+import com.github.warrentode.turtleblockacademy.util.CalendarUtil;
+import com.github.warrentode.turtleblockacademy.util.LogUtil;
 import com.github.warrentode.turtleblockacademy.world.dimension.TBADimensions;
 import com.github.warrentode.turtleblockacademy.world.spawner.herobrine.HerobrineSpawner;
+import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.MinecraftServer;
 import net.minecraft.server.level.ServerLevel;
+import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.level.dimension.BuiltinDimensionTypes;
 import net.minecraftforge.event.RegisterCommandsEvent;
 import net.minecraftforge.event.TickEvent;
+import net.minecraftforge.event.entity.player.PlayerEvent;
 import net.minecraftforge.event.server.ServerStartingEvent;
 import net.minecraftforge.event.server.ServerStoppedEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -30,6 +35,19 @@ public class CommonEvents {
         @SubscribeEvent
         public static void registerCommands(@NotNull RegisterCommandsEvent event) {
             AcademyCommands.register(event.getDispatcher());
+        }
+    }
+
+    @Mod.EventBusSubscriber(modid = MODID, bus = Mod.EventBusSubscriber.Bus.FORGE)
+    public static class PlayerLoginHandler {
+        @SubscribeEvent
+        public static void onPlayerLogin(@NotNull PlayerEvent.PlayerLoggedInEvent event) {
+            ServerPlayer player = (ServerPlayer) event.getEntity();
+            if (player != null) {
+                if (CalendarUtil.check("BIRTHDAY")) {
+                    player.sendSystemMessage(Component.translatable("message." + MODID + ".birthday_message"));
+                }
+            }
         }
     }
 

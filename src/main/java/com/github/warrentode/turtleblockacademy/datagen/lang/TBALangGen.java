@@ -57,6 +57,7 @@ public class TBALangGen extends LanguageProvider {
 
     private void addMessages() {
         add("message." + MODID + ".registered", "You are now registered as a student of Turtle Block Academy");
+        add("message." + MODID + ".birthday_message", "Today is someone's birthday! Let's celebrate!");
     }
 
     private void addAdvancements() {
