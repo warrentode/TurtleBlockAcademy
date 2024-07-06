@@ -96,6 +96,36 @@ public class TBALangGen extends LanguageProvider {
                 "Unpasteurized fermented foods are probiotic and when stored well,\nthey promote good gut bacterial health.\nTo reflect this, these pickles will remove one negative effect when consumed.");
         add("tooltip.turtleblockacademy.easter_egg_item_custom_tooltip",
                 "In China, children celebrate the spring equinox by trying to balance their decorated eggs on their ends.\nSuccess is believed to bring good luck for the year.");
+        add("tooltip.turtleblockacademy.easter_egg_item_custom_tooltip1",
+                "The largest Easter egg ever made was over 25 feet high and weighed over 8,000 pounds.\nIt was built out of chocolate and marshmallow and supported by an internal steel frame.");
+        add("tooltip.turtleblockacademy.easter_egg_item_custom_tooltip2",
+                "In the United States, the White House Easter Egg Roll, is an annual event held the Monday after Easter.");
+        add("tooltip.turtleblockacademy.easter_egg_item_custom_tooltip3",
+                "Bosnia celebrates spring each year with Cimburijada, or the Festival of Scrambled Eggs.");
+        add("tooltip.turtleblockacademy.easter_egg_item_custom_tooltip4",
+                "Egypt celebrates spring each year with Sham el Nessim, which translates to \"smelling the breeze\",\nby decorating hard-boiled eggs and writing wishes on them.");
+        add("tooltip.turtleblockacademy.easter_egg_item_custom_tooltip5",
+                "The egg is considered to be an ancient symbol of fertility, which is associated with spring.");
+        add("tooltip.turtleblockacademy.easter_egg_item_custom_tooltip6",
+                "The general consensus is that eggs being used for celebrating spring stems from pagan origins.");
+        add("tooltip.turtleblockacademy.easter_egg_item_custom_tooltip7",
+                "Purim, a Jewish holiday, doesn't use eggs to celebrate but is held in spring to honor the day\ntheir people where spared from execution within the ancient Persian empire.");
+        add("tooltip.turtleblockacademy.easter_egg_item_custom_tooltip8",
+                "Passover, a Jewish holiday celebrated for seven to eight days, doesn't use eggs to celebrate but is held in spring to honor their people's\nfreedom from slavery in ancient Egypt.");
+        add("tooltip.turtleblockacademy.easter_egg_item_custom_tooltip9",
+                "Holi, a Hindu holiday known as the festival of colors, doesn't use eggs but uses bright colors instead to celebrate the end of winter, love, and the triumph of good over evil.");
+        add("tooltip.turtleblockacademy.easter_egg_item_custom_tooltip10",
+                "Nowruz, meaning \"New Day\", marks the Persian New Year and is celebrated by spring cleaning and feasting.");
+        add("tooltip.turtleblockacademy.easter_egg_item_custom_tooltip11",
+                "Songkran is the Thai New Year and is celebrated for three days with traditions that use water,\nsuch as cleaning, sprinkling Buddha statues with water, and even friendly water fights.");
+        add("tooltip.turtleblockacademy.easter_egg_item_custom_tooltip12",
+                "Las Fallas is held in Spain from March 1st to March 19th and is considered as an UNESCO World Heritage event since 2016.\nThey celebrate with parades, fireworks, and colorful sculptures.");
+        add("tooltip.turtleblockacademy.easter_egg_item_custom_tooltip13",
+                "Hola Mohalla is held the day after Holi by Sikh community in India to demonstrate martial skills and instill courage.");
+        add("tooltip.turtleblockacademy.easter_egg_item_custom_tooltip14",
+                "The National Cherry Blossom Festival is held every year in Washington D.C. to celebrate the blooming\nof the city's cherry blossom trees, which were a gift from Japan in 1912.");
+        add("tooltip.turtleblockacademy.easter_egg_item_custom_tooltip15",
+                "Walpurgis Night, also known as May Eve, is named after Saint Walpurga,\nan 8th-century abbess who was known for her healing powers.\nIt's celebrated in Germany with bonfires and Maypole dancing\nwhile in Sweden it's celebrated with feasting and bonfire dancing");
     }
 
     private void fillTooltipKeys(String key, String name) {

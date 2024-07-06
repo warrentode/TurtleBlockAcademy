@@ -812,7 +812,54 @@ public class EasterEggItem extends Item {
 
     public void appendHoverText(@NotNull ItemStack stack, @Nullable Level level, @NotNull List<Component> tooltips, @NotNull TooltipFlag isAdvanced) {
         if (Screen.hasShiftDown()) {
-            tooltips.add(Component.translatable("tooltip.turtleblockacademy.easter_egg_item_custom_tooltip"));
+            if (baseColor == DyeColor.WHITE) {
+                tooltips.add(Component.translatable("tooltip.turtleblockacademy.easter_egg_item_custom_tooltip"));
+            }
+            else if (baseColor == DyeColor.ORANGE) {
+                tooltips.add(Component.translatable("tooltip.turtleblockacademy.easter_egg_item_custom_tooltip1"));
+            }
+            else if (baseColor == DyeColor.MAGENTA) {
+                tooltips.add(Component.translatable("tooltip.turtleblockacademy.easter_egg_item_custom_tooltip2"));
+            }
+            else if (baseColor == DyeColor.LIGHT_BLUE) {
+                tooltips.add(Component.translatable("tooltip.turtleblockacademy.easter_egg_item_custom_tooltip3"));
+            }
+            else if (baseColor == DyeColor.YELLOW) {
+                tooltips.add(Component.translatable("tooltip.turtleblockacademy.easter_egg_item_custom_tooltip4"));
+            }
+            else if (baseColor == DyeColor.LIME) {
+                tooltips.add(Component.translatable("tooltip.turtleblockacademy.easter_egg_item_custom_tooltip5"));
+            }
+            else if (baseColor == DyeColor.PINK) {
+                tooltips.add(Component.translatable("tooltip.turtleblockacademy.easter_egg_item_custom_tooltip6"));
+            }
+            else if (baseColor == DyeColor.GRAY) {
+                tooltips.add(Component.translatable("tooltip.turtleblockacademy.easter_egg_item_custom_tooltip7"));
+            }
+            else if (baseColor == DyeColor.LIGHT_GRAY) {
+                tooltips.add(Component.translatable("tooltip.turtleblockacademy.easter_egg_item_custom_tooltip8"));
+            }
+            else if (baseColor == DyeColor.CYAN) {
+                tooltips.add(Component.translatable("tooltip.turtleblockacademy.easter_egg_item_custom_tooltip9"));
+            }
+            else if (baseColor == DyeColor.PURPLE) {
+                tooltips.add(Component.translatable("tooltip.turtleblockacademy.easter_egg_item_custom_tooltip10"));
+            }
+            else if (baseColor == DyeColor.BLUE) {
+                tooltips.add(Component.translatable("tooltip.turtleblockacademy.easter_egg_item_custom_tooltip11"));
+            }
+            else if (baseColor == DyeColor.BROWN) {
+                tooltips.add(Component.translatable("tooltip.turtleblockacademy.easter_egg_item_custom_tooltip12"));
+            }
+            else if (baseColor == DyeColor.GREEN) {
+                tooltips.add(Component.translatable("tooltip.turtleblockacademy.easter_egg_item_custom_tooltip13"));
+            }
+            else if (baseColor == DyeColor.RED) {
+                tooltips.add(Component.translatable("tooltip.turtleblockacademy.easter_egg_item_custom_tooltip14"));
+            }
+            else {
+                tooltips.add(Component.translatable("tooltip.turtleblockacademy.easter_egg_item_custom_tooltip15"));
+            }
         }
         else {
             tooltips.add(Component.translatable("tooltips.shift.hover").withStyle(ChatFormatting.GRAY));
