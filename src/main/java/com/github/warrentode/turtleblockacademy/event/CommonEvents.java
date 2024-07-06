@@ -90,8 +90,8 @@ public class CommonEvents {
         public static void onPlayerLogin(@NotNull PlayerEvent.PlayerLoggedInEvent event) {
             ServerPlayer player = (ServerPlayer) event.getEntity();
             if (player != null) {
-                if (CalendarUtil.check("BIRTHDAY")) {
-                    player.sendSystemMessage(Component.translatable("message." + MODID + ".birthday_message"));
+                if (CalendarUtil.check("BIRTHDAY") && CalendarUtil.isCustomBirthday == true) {
+                    player.sendSystemMessage(Component.translatable(AcademyConfig.getBirthdayMessage()));
                 }
             }
         }

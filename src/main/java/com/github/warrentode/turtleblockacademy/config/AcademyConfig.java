@@ -14,6 +14,7 @@ public class AcademyConfig {
 
     public static final ForgeConfigSpec.ConfigValue<String> ACADEMIC_YEAR;
     public static final ForgeConfigSpec.ConfigValue<List<? extends String>> BIRTHDAYS;
+    public static final ForgeConfigSpec.ConfigValue<String> BIRTHDAY_LOGIN_MESSAGE;
     public static final ForgeConfigSpec.ConfigValue<Integer> EASTER_EGG_CHANCE;
 
     static {
@@ -24,8 +25,12 @@ public class AcademyConfig {
 
         BIRTHDAYS = BUILDER.comment("List of birthdays")
                 .comment("A list of custom birthdays to celebrate. Default is the mod's birthday. Format: MM-DD")
-                .defineList("birthdays", List.of("04-17"),
+                .defineList("Birthdays", List.of("04-17"),
                         AcademyConfig::validateBirthday);
+
+        BIRTHDAY_LOGIN_MESSAGE = BUILDER.comment("Birthday Message")
+                .comment("Login message for Custom Birthdays")
+                .define("Birthday_Message", "message." + MODID + ".birthday_message");
 
         EASTER_EGG_CHANCE = BUILDER.comment("Colored Egg Chance")
                 .comment("1 out of X chance for Rabbit to lay Colored Egg on Easter")
@@ -54,6 +59,15 @@ public class AcademyConfig {
         }
         else {
             return BIRTHDAYS.get();
+        }
+    }
+
+    public static String getBirthdayMessage() {
+        if (Objects.equals(BIRTHDAY_LOGIN_MESSAGE.get(), BIRTHDAY_LOGIN_MESSAGE.getDefault())) {
+            return BIRTHDAY_LOGIN_MESSAGE.getDefault();
+        }
+        else {
+            return BIRTHDAY_LOGIN_MESSAGE.get();
         }
     }
 

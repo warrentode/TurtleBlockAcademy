@@ -15,6 +15,7 @@ import java.util.Objects;
 
 public class CalendarUtil {
     public static Boolean isSeason;
+    public static Boolean isCustomBirthday;
     private static final Calendar calendar;
     private static final int month;
     private static final int date;
@@ -122,17 +123,21 @@ public class CalendarUtil {
 
     public static boolean isBirthday(ServerLevel level) {
         if (isConfigBirthday(month, date)) {
+            isCustomBirthday = true;
             return true;
         }
         else if (ModList.get().isLoaded("sereneseasons") && level.dimension() == Level.OVERWORLD) {
             Season.SubSeason subSeason = SeasonHelper.getSeasonState(level).getSubSeason();
+            isCustomBirthday = false;
             return subSeason == Season.SubSeason.MID_WINTER;
         }
         else if (!ModList.get().isLoaded("sereneseasons") || level.dimension() != Level.OVERWORLD) {
             // week of mod's birthday
+            isCustomBirthday = false;
             return month == Calendar.APRIL && (date >= 14 && date <= 20);
         }
         else {
+            isCustomBirthday = true;
             return false;
         }
     }
