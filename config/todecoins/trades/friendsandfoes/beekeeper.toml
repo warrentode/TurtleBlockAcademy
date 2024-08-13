@@ -1,0 +1,64 @@
+
+["Beekeeper Trade Settings"]
+
+	["Beekeeper Trade Settings"."Beekeeper Level One Trade One"]
+		# Beekeeper 1 Trade Request 1 Table
+		beekeeper_1_trade_request_1_table = "turtleblockacademy:trade_loot_tables/flower_buy_trade_table"
+		# Beekeeper 1 Trade Offer 1 Table
+		beekeeper_1_trade_offer_1_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+
+	["Beekeeper Trade Settings"."Beekeeper Level One Trade Two"]
+		# Beekeeper 1 Trade Request 2 Table
+		beekeeper_1_trade_request_2_table = "todecoins:trade_tables/glass/glass_bottle_table"
+		# Beekeeper 1 Trade Offer 2 Table
+		beekeeper_1_trade_offer_2_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+
+	["Beekeeper Trade Settings"."Beekeeper Level Two Trade One"]
+		# Beekeeper 2 Trade Request 1 Table
+		beekeeper_2_trade_request_1_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+		# Beekeeper 2 Trade Offer 1 Table
+		beekeeper_2_trade_offer_1_table = "todecoins:trade_tables/food/bottled_honey_table"
+
+	["Beekeeper Trade Settings"."Beekeeper Level Two Trade Two"]
+		# Beekeeper 2 Trade Request 2 Table
+		beekeeper_2_trade_request_2_table = "todecoins:trade_tables/tools/shears_table"
+		# Beekeeper 2 Trade Offer 2 Table
+		beekeeper_2_trade_offer_2_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+
+	["Beekeeper Trade Settings"."Beekeeper Level Three Trade One"]
+		# Beekeeper 3 Trade Request 1 Table
+		beekeeper_3_trade_request_1_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+		# Beekeeper 3 Trade Offer 1 Table
+		beekeeper_3_trade_offer_1_table = "todecoins:trade_tables/beekeeping/honey_block_table"
+
+	["Beekeeper Trade Settings"."Beekeeper Level Three Trade Two"]
+		# Beekeeper 3 Trade Request 2 Table
+		beekeeper_3_trade_request_2_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+		# Beekeeper 3 Trade Offer 2 Table
+		beekeeper_3_trade_offer_2_table = "todecoins:trade_tables/beekeeping/honey_comb_table"
+
+	["Beekeeper Trade Settings"."Beekeeper Level Four Trade One"]
+		# Beekeeper 4 Trade Request 1 Table
+		beekeeper_4_trade_request_1_table = "todecoins:trade_tables/textiles/tagged_string_table"
+		beekeeper_4_trade_request_1_count = 16
+		# Beekeeper 4 Trade Offer 1 Table
+		beekeeper_4_trade_offer_1_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+
+	["Beekeeper Trade Settings"."Beekeeper Level Four Trade Two"]
+		# Beekeeper 4 Trade Request 2 Table
+		beekeeper_4_trade_request_2_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+		# Beekeeper 4 Trade Offer 2 Table
+		beekeeper_4_trade_offer_2_table = "todecoins:trade_tables/decor/tagged_candle_table"
+		beekeeper_4_trade_offer_2_count = 4
+
+	["Beekeeper Trade Settings"."Beekeeper Level Five Trade One"]
+		# Beekeeper 5 Trade Request 1 Table
+		beekeeper_5_trade_request_1_table = "todecoins:trade_tables/currency/five_emerald_value_currency"
+		# Beekeeper 5 Trade Offer 1 Table
+		beekeeper_5_trade_offer_1_table = "todecoins:trade_tables/beekeeping/beehive_table"
+
+	["Beekeeper Trade Settings"."Beekeeper Level Five Trade Two"]
+		# Beekeeper 5 Trade Request 2 Table
+		beekeeper_5_trade_request_2_table = "todecoins:trade_tables/currency/five_emerald_value_currency"
+		# Beekeeper 5 Trade Offer 2 Table
+		beekeeper_5_trade_offer_2_table = "todecoins:trade_tables/beekeeping/bee_egg_table"

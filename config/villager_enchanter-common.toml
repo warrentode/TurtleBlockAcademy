@@ -1,0 +1,9 @@
+#The price of Enchant Refresh Book
+#附魔刷新书的绿宝石价格
+#Range: 1 ~ 64
+bookPrice = 16
+#The maximum number of transactions for the Enchant Refresh Book
+#附魔刷新书的最大交易数
+#Range: > 1
+bookTradeCount = 4
+

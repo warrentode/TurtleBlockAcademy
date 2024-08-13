@@ -1,0 +1,96 @@
+
+["Fisherman Trade Settings"]
+
+	["Fisherman Trade Settings"."Fisherman Level One Trade One"]
+		# Fisherman 1 Trade Request 1 Table
+		fisherman_1_trade_request_1_table = "todecoins:trade_tables/textiles/tagged_string_table"
+		fisherman_1_trade_request_1_count = 16
+		# Fisherman 1 Trade Offer 1 Table
+		fisherman_1_trade_offer_1_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+
+	["Fisherman Trade Settings"."Fisherman Level One Trade Two"]
+		# Fisherman 1 Trade Request 2 Table
+		fisherman_1_trade_request_2_table = "todecoins:trade_tables/misc/one_emerald_value_fuel_table"
+		# Fisherman 1 Trade Offer 2 Table
+		fisherman_1_trade_offer_2_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+
+	["Fisherman Trade Settings"."Fisherman Level One Trade Three"]
+		# Fisherman 1 Trade Request 3 Table
+		fisherman_1_trade_request_3_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+		# Fisherman 1 Trade Offer 3 Table
+		fisherman_1_trade_offer_3_table = "todecoins:trade_tables/food/tagged_prepared_seafood_table"
+		fisherman_1_trade_offer_3_count = 6
+
+	["Fisherman Trade Settings"."Fisherman Level One Trade Four"]
+		# Rare Trade
+		# Fisherman 1 Trade Request 4 Table
+		fisherman_1_trade_request_4_table = "todecoins:trade_tables/currency/three_emerald_value_currency"
+		# Fisherman 1 Trade Offer 4 Table
+		fisherman_1_trade_offer_4_table = "todecoins:trade_tables/tools/fish_bucket_table"
+
+	["Fisherman Trade Settings"."Fisherman Level Two Trade One"]
+		# Fisherman 2 Trade Request 1 Table
+		fisherman_2_trade_request_1_table = "todecoins:trade_tables/food/tagged_raw_seafood_table"
+		fisherman_2_trade_request_1_count = 6
+		# Fisherman 2 Trade Offer 1 Table
+		fisherman_2_trade_offer_1_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+
+	["Fisherman Trade Settings"."Fisherman Level Two Trade Three"]
+		# Fisherman 2 Trade Request 2 Table
+		fisherman_2_trade_request_2_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+		# Fisherman 2 Trade Offer 2 Table
+		fisherman_2_trade_offer_2_table = "todecoins:trade_tables/food/tagged_prepared_seafood_table"
+		fisherman_2_trade_offer_2_count = 6
+		# Fisherman 2 Trade Request 3 Table
+		fisherman_2_trade_request_3_table = "todecoins:trade_tables/currency/two_emerald_value_currency"
+		# Fisherman 2 Trade Offer 3 Table
+		fisherman_2_trade_offer_3_table = "todecoins:trade_tables/decor/campfire_table"
+
+	["Fisherman Trade Settings"."Fisherman Level Three Trade One"]
+		# Fisherman 3 Trade Request 1 Table
+		fisherman_3_trade_request_1_table = "todecoins:trade_tables/food/tagged_raw_seafood_table"
+		fisherman_3_trade_request_1_count = 6
+		# Fisherman 3 Trade Offer 1 Table
+		fisherman_3_trade_offer_1_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+
+	["Fisherman Trade Settings"."Fisherman Level Three Trade Two"]
+		# Fisherman 3 Trade Request 2 Table
+		fisherman_3_trade_request_2_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+		# Fisherman 3 Trade Offer 2 Table
+		fisherman_3_trade_offer_2_table = "todecoins:trade_tables/misc/fishing_gear_table"
+
+	["Fisherman Trade Settings"."Fisherman Level Four Trade One"]
+		# Fisherman 4 Trade Request 1 Table
+		fisherman_4_trade_request_1_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+		# Fisherman 4 Trade Offer 1 Table
+		# Available if Supplementaries is Loaded
+		fisherman_4_trade_offer_1_table = "todecoins:trade_tables/misc/tagged_ash_table"
+		fisherman_4_trade_offer_1_count = 18
+
+	["Fisherman Trade Settings"."Fisherman Level Four Trade Two"]
+		# Rare Trade
+		# Fisherman 4 Trade Request 2 Table
+		fisherman_4_trade_request_2_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+		# Fisherman 4 Trade Offer 2 Table
+		fisherman_4_trade_offer_2_table = "todecoins:trade_tables/tools/fishing_rod_table"
+
+	["Fisherman Trade Settings"."Fisherman Level Four Trade Three"]
+		# Fisherman 4 Trade Request 3 Table
+		fisherman_4_trade_request_3_table = "todecoins:trade_tables/food/tagged_raw_seafood_table"
+		fisherman_4_trade_request_3_count = 6
+		# Fisherman 4 Trade Offer 3 Table
+		fisherman_4_trade_offer_3_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+
+	["Fisherman Trade Settings"."Fisherman Level Five Trade One"]
+		# Fisherman 5 Trade Request 1 Table
+		fisherman_5_trade_request_1_table = "todecoins:trade_tables/food/tagged_raw_seafood_table"
+		fisherman_5_trade_request_1_count = 6
+		# Fisherman 5 Trade Offer 1 Table
+		fisherman_5_trade_offer_1_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+
+	["Fisherman Trade Settings"."Fisherman Level Five Trade Two"]
+		# Fisherman 5 Trade Request 2 Table
+		fisherman_5_trade_request_2_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+		# Fisherman 5 Trade Offer 2 Table
+		fisherman_5_trade_offer_2_table = "todecoins:trade_tables/misc/fishing_gear_table"
+

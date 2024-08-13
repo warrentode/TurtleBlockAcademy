@@ -1,0 +1,63 @@
+
+["Potter Trade Settings"]
+
+	["Potter Trade Settings"."Potter Level One Trade One"]
+		# Potter 1 Trade Request 1 Table
+		potter_1_trade_request_1_table = "todecoins:trade_tables/misc/clay_table"
+		# Potter 1 Trade Offer 1 Table
+		potter_1_trade_offer_1_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+
+	["Potter Trade Settings"."Potter Level One Trade Two"]
+		# Potter 1 Trade Request 2 Table
+		potter_1_trade_request_2_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+		# Potter 1 Trade Offer 2 Table
+		potter_1_trade_offer_2_table = "todecoins:trade_tables/decor/flower_pot_table"
+
+	["Potter Trade Settings"."Potter Level Two Trade One"]
+		# Potter 2 Trade Request 1 Table
+		potter_2_trade_request_1_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+		# Potter 2 Trade Offer 1 Table
+		potter_2_trade_offer_1_table = "todecoins:trade_tables/blocks/terracotta/terracotta_blocks"
+
+	["Potter Trade Settings"."Potter Level Two Trade Two"]
+		# Potter 2 Trade Request 2 Table
+		potter_2_trade_request_2_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+		# Potter 2 Trade Offer 2 Table
+		potter_2_trade_offer_2_table = "todecoins:trade_tables/blocks/terracotta/terracotta_blocks"
+
+	["Potter Trade Settings"."Potter Level Three Trade One"]
+		# Potter 3 Trade Request 1 Table
+		potter_3_trade_request_1_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+		# Potter 3 Trade Offer 1 Table
+		potter_3_trade_offer_1_table = "todecoins:trade_tables/blocks/terracotta/glazed_terracotta_blocks"
+
+	["Potter Trade Settings"."Potter Level Three Trade Two"]
+		# Potter 3 Trade Request 2 Table
+		potter_3_trade_request_2_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+		# Potter 3 Trade Offer 2 Table
+		potter_3_trade_offer_2_table = "todecoins:trade_tables/blocks/terracotta/glazed_terracotta_blocks"
+
+	["Potter Trade Settings"."Potter Level Four Trade One"]
+		# Potter 4 Trade Request 1 Table
+		potter_4_trade_request_1_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+		# Potter 4 Trade Offer 1 Table
+		potter_4_trade_offer_1_table = "todecoins:trade_tables/blocks/terracotta/terracotta_blocks"
+
+	["Potter Trade Settings"."Potter Level Four Trade Two"]
+		# Potter 4 Trade Request 2 Table
+		potter_4_trade_request_2_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+		# Potter 4 Trade Offer 2 Table
+		potter_4_trade_offer_2_table = "todecoins:trade_tables/blocks/terracotta/terracotta_blocks"
+
+	["Potter Trade Settings"."Potter Level Five Trade One"]
+		# Potter 5 Trade Request 1 Table
+		potter_5_trade_request_1_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+		# Potter 5 Trade Offer 1 Table
+		potter_5_trade_offer_1_table = "todecoins:trade_tables/blocks/terracotta/glazed_terracotta_blocks"
+
+	["Potter Trade Settings"."Potter Level Five Trade Two"]
+		# Potter 5 Trade Request 2 Table
+		potter_5_trade_request_2_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+		# Potter 5 Trade Offer 2 Table
+		potter_5_trade_offer_2_table = "todecoins:trade_tables/blocks/terracotta/glazed_terracotta_blocks"
+

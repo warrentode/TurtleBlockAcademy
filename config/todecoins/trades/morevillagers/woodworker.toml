@@ -1,0 +1,63 @@
+
+[" Woodworker Trade Settings"]
+
+	[" Woodworker Trade Settings"." Woodworker Level One Trade One"]
+		# Woodworker 1 Trade Request 1 Table
+		woodworker_1_trade_request_1_table = "turtleblockacademy:trade_loot_tables/sapling_buy_trade_table"
+		# Woodworker 1 Trade Offer 1 Table
+		woodworker_1_trade_offer_1_table = "todecoins:trade_tables/currency/six_emerald_value_currency"
+
+	[" Woodworker Trade Settings"." Woodworker Level One Trade Two"]
+		# Woodworker 1 Trade Request 2 Table
+		woodworker_1_trade_request_2_table = "todecoins:trade_tables/currency/six_emerald_value_currency"
+		# Woodworker 1 Trade Offer 2 Table
+		woodworker_1_trade_offer_2_table = "turtleblockacademy:trade_loot_tables/sapling_sell_trade_table"
+
+	[" Woodworker Trade Settings"." Woodworker Level Two Trade One"]
+		# Woodworker 2 Trade Request 1 Table
+		woodworker_2_trade_request_1_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+		# Woodworker 2 Trade Offer 1 Table
+		woodworker_2_trade_offer_1_table = "turtleblockacademy:trade_loot_tables/log_sell_trade_table"
+
+	[" Woodworker Trade Settings"." Woodworker Level Two Trade Two"]
+		# Woodworker 2 Trade Request 2 Table
+		woodworker_2_trade_request_2_table = "turtleblockacademy:trade_loot_tables/log_buy_trade_table"
+		# Woodworker 2 Trade Offer 2 Table
+		woodworker_2_trade_offer_2_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+
+	[" Woodworker Trade Settings"." Woodworker Level Three Trade One"]
+		# Woodworker 3 Trade Request 1 Table
+		woodworker_3_trade_request_1_table = "turtleblockacademy:trade_loot_tables/sapling_buy_trade_table"
+		# Woodworker 3 Trade Offer 1 Table
+		woodworker_3_trade_offer_1_table = "todecoins:trade_tables/currency/six_emerald_value_currency"
+
+	[" Woodworker Trade Settings"." Woodworker Level Three Trade Two"]
+		# Woodworker 3 Trade Request 2 Table
+		woodworker_3_trade_request_2_table = "todecoins:trade_tables/currency/six_emerald_value_currency"
+		# Woodworker 3 Trade Offer 2 Table
+		woodworker_3_trade_offer_2_table = "turtleblockacademy:trade_loot_tables/sapling_sell_trade_table"
+
+	[" Woodworker Trade Settings"." Woodworker Level Four Trade One"]
+		# Woodworker 4 Trade Request 1 Table
+		woodworker_4_trade_request_1_table = "turtleblockacademy:trade_loot_tables/log_buy_trade_table"
+		# Woodworker 4 Trade Offer 1 Table
+		woodworker_4_trade_offer_1_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+
+	[" Woodworker Trade Settings"." Woodworker Level Four Trade Two"]
+		# Woodworker 4 Trade Request 2 Table
+		woodworker_4_trade_request_2_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+		# Woodworker 4 Trade Offer 2 Table
+		woodworker_4_trade_offer_2_table = "turtleblockacademy:trade_loot_tables/log_sell_trade_table"
+
+	[" Woodworker Trade Settings"." Woodworker Level Five Trade One"]
+		# Rare Trade
+		# Woodworker 5 Trade Request 1 Table
+		woodworker_5_trade_request_1_table = "todecoins:trade_tables/currency/sixteen_emerald_table"
+		# Woodworker 5 Trade Offer 1 Table
+		woodworker_5_trade_offer_1_table = "todecoins:trade_tables/tools/iron_tier_lumber_tools_table"
+
+	[" Woodworker Trade Settings"." Woodworker Level Five Trade Two"]
+		# Woodworker 5 Trade Request 2 Table
+		woodworker_5_trade_request_2_table = "todecoins:trade_tables/currency/four_emerald_value_currency"
+		# Woodworker 5 Trade Offer 2 Table
+		woodworker_5_trade_offer_2_table = "todecoins:trade_tables/tools/diamond_tier_lumber_tools_table"

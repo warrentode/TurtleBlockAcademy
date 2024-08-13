@@ -1,0 +1,71 @@
+
+["Farmer Trade Settings"]
+
+	["Farmer Trade Settings"."Farmer Level One Trade One"]
+		# Farmer 1 Trade Request 1 Table
+		farmer_1_trade_request_1_table = "todecoins:trade_tables/food/tagged_veggies_and_grains_table"
+		farmer_1_trade_request_1_count = 24
+		# Farmer 1 Trade Offer 1 Table
+		farmer_1_trade_offer_1_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+
+	["Farmer Trade Settings"."Farmer Level One Trade Two"]
+		# Farmer 1 Trade Request 2 Table
+		farmer_1_trade_request_2_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+		# Farmer 1 Trade Offer 2 Table
+		farmer_1_trade_offer_2_table = "todecoins:trade_tables/food/tagged_crops_table"
+		farmer_1_trade_offer_2_count = 6
+
+	["Farmer Trade Settings"."Farmer Level Two Trade One"]
+		# Farmer 2 Trade Request 1 Table
+		farmer_2_trade_request_1_table = "todecoins:trade_tables/food/tagged_gourds_table"
+		farmer_2_trade_request_1_count = 6
+		# Farmer 2 Trade Offer 1 Table
+		farmer_2_trade_offer_1_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+
+	["Farmer Trade Settings"."Farmer Level Two Trade Two"]
+		# Farmer 2 Trade Request 2 Table
+		farmer_2_trade_request_2_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+		# Farmer 2 Trade Offer 2 Table
+		farmer_2_trade_offer_2_table = "todecoins:trade_tables/food/tagged_pies_table"
+		farmer_2_trade_offer_2_count = 4
+
+	["Farmer Trade Settings"."Farmer Level Three Trade One"]
+		# Farmer 3 Trade Request 1 Table
+		farmer_3_trade_request_1_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+		# Farmer 3 Trade Offer 1 Table
+		farmer_3_trade_offer_1_table = "todecoins:trade_tables/food/tagged_fruits_table"
+		farmer_3_trade_offer_1_count = 6
+
+	["Farmer Trade Settings"."Farmer Level Three Trade Two"]
+		# Farmer 3 Trade Request 2 Table
+		farmer_3_trade_request_2_count = "todecoins:trade_tables/currency/single_emerald_value_currency"
+		# Farmer 3 Trade Offer 2 Table
+		farmer_3_trade_offer_2_table = "todecoins:trade_tables/food/tagged_cookies_table"
+		farmer_3_trade_offer_2_count = 8
+
+	["Farmer Trade Settings"."Farmer Level Four Trade One"]
+		# Farmer 4 Trade Request 1 Table
+		farmer_4_trade_request_1_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+		# Farmer 4 Trade Offer 1 Table
+		farmer_4_trade_offer_1_table = "todecoins:trade_tables/food/tagged_cakes_table"
+		farmer_4_trade_offer_1_count = 1
+
+	["Farmer Trade Settings"."Farmer Level Four Trade Two"]
+		# Farmer 4 Trade Request 2 Table
+		# Suspicious Stew Trade - adds all registered mob effects
+		farmer_4_trade_request_2_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+
+	["Farmer Trade Settings"."Farmer Level Five Trade One"]
+		# Rare Trade
+		# Farmer 5 Trade Request 1 Table
+		farmer_5_trade_request_1_table = "todecoins:trade_tables/currency/five_emerald_value_currency"
+		# Farmer 5 Trade Offer 1 Table
+		farmer_5_trade_offer_1_table = "todecoins:trade_tables/food/golden_food_table"
+
+	["Farmer Trade Settings"."Farmer Level Five Trade Two"]
+		# Rare Trade
+		# Farmer 5 Trade Request 2 Table
+		farmer_5_trade_request_2_table = "todecoins:trade_tables/currency/five_emerald_value_currency"
+		# Farmer 5 Trade Offer 2 Table
+		farmer_5_trade_offer_2_table = "todecoins:trade_tables/food/golden_food_table"
+

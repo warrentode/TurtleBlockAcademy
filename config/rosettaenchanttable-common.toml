@@ -1,0 +1,10 @@
+
+#net.minecraft.scalar.rosettaenchanttable.mod_RosettaEnchantTable
+[configuration]
+	#Integer: 0
+	offsetX = 0
+	#Integer: 0
+	offsetY = 0
+	#Boolean: false
+	showAllResult = true
+

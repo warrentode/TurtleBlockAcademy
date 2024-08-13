@@ -1,0 +1,63 @@
+
+[" Hunter Trade Settings"]
+
+	[" Hunter Trade Settings"." Hunter Level One Trade One"]
+		# Hunter 1 Trade Request 1 Table
+		hunter_1_trade_request_1_table = "todecoins:trade_tables/mob_parts/one_emerald_value_mob_parts_table"
+		# Hunter 1 Trade Offer 1 Table
+		hunter_1_trade_offer_1_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+
+	[" Hunter Trade Settings"." Hunter Level One Trade Two"]
+		# Hunter 1 Trade Request 2 Table
+		hunter_1_trade_request_2_table = "todecoins:trade_tables/currency/four_emerald_value_currency"
+		# Hunter 1 Trade Offer 2 Table
+		hunter_1_trade_offer_2_table = "todecoins:trade_tables/mob_parts/slimeball_tag_table"
+
+	[" Hunter Trade Settings"." Hunter Level Two Trade One"]
+		# Hunter 2 Trade Request 1 Table
+		hunter_2_trade_request_1_table = "todecoins:trade_tables/mob_parts/one_emerald_value_mob_parts_table"
+		# Hunter 2 Trade Offer 1 Table
+		hunter_2_trade_offer_1_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+
+	[" Hunter Trade Settings"." Hunter Level Two Trade Two"]
+		# Hunter 2 Trade Request 2 Table
+		hunter_2_trade_request_2_table = "todecoins:trade_tables/mob_parts/five_emerald_value_mob_parts_table"
+		# Hunter 2 Trade Offer 2 Table
+		hunter_2_trade_offer_2_table = "todecoins:trade_tables/currency/five_emerald_value_currency"
+
+	[" Hunter Trade Settings"." Hunter Level Three Trade One"]
+		# Hunter 3 Trade Request 1 Table
+		hunter_3_trade_request_1_table = "todecoins:trade_tables/mob_parts/one_emerald_value_mob_parts_table"
+		# Hunter 3 Trade Offer 1 Table
+		hunter_3_trade_offer_1_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+
+	[" Hunter Trade Settings"." Hunter Level Three Trade Two"]
+		# Hunter 3 Trade Request 2 Table
+		hunter_3_trade_request_2_table = "todecoins:trade_tables/currency/five_emerald_value_currency"
+		# Hunter 3 Trade Offer 2 Table
+		hunter_3_trade_offer_2_table = "todecoins:trade_tables/mob_parts/five_emerald_value_mob_parts_table"
+
+	[" Hunter Trade Settings"." Hunter Level Four Trade One"]
+		# Hunter 4 Trade Request 1 Table
+		hunter_4_trade_request_1_table = "todecoins:trade_tables/mob_parts/one_emerald_value_mob_parts_table"
+		# Hunter 4 Trade Offer 1 Table
+		hunter_4_trade_offer_1_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+
+	[" Hunter Trade Settings"." Hunter Level Four Trade Two"]
+		# Hunter 4 Trade Request 2 Table
+		hunter_4_trade_request_2_table = "todecoins:trade_tables/currency/five_emerald_value_currency"
+		# Hunter 4 Trade Offer 2 Table
+		hunter_4_trade_offer_2_table = "todecoins:trade_tables/mob_parts/five_emerald_value_mob_parts_table"
+
+	[" Hunter Trade Settings"." Hunter Level Five Trade One"]
+		# Hunter 5 Trade Request 1 Table
+		hunter_5_trade_request_1_table = "todecoins:trade_tables/currency/ten_emerald_value_currency"
+		# Hunter 5 Trade Offer 1 Table
+		hunter_5_trade_offer_1_table = "todecoins:trade_tables/mob_parts/ten_emerald_value_mob_parts_table"
+
+	[" Hunter Trade Settings"." Hunter Level Five Trade Two"]
+		# Hunter 5 Trade Request 2 Table
+		hunter_5_trade_request_2_table = "todecoins:trade_tables/currency/ten_emerald_value_currency"
+		# Hunter 5 Trade Offer 2 Table
+		hunter_5_trade_offer_2_table = "todecoins:trade_tables/mob_parts/ten_emerald_value_mob_parts_table"
+

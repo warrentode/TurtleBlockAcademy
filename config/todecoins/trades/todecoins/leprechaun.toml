@@ -1,0 +1,134 @@
+
+["Leprechaun Trade Settings"]
+
+	["Leprechaun Trade Settings"."Leprechaun Level One Trade One"]
+		# Leprechaun 1 Trade Request 1 Table
+		leprechaun_1_trade_request_1_table = "todecoins:trade_tables/currency/two_pot_of_gold_value_currency"
+		# Leprechaun 1 Trade Offer 1 Table
+		leprechaun_1_trade_offer_1_table = "todecoins:trade_tables/currency/two_pot_of_gold_table"
+
+	["Leprechaun Trade Settings"."Leprechaun Level One Trade Two"]
+		# Leprechaun 1 Trade Request 2 Table
+		leprechaun_1_trade_request_2_table = "todecoins:trade_tables/currency/two_pot_of_gold_table"
+		# Leprechaun 1 Trade Offer 2 Table
+		leprechaun_1_trade_offer_2_table = "todecoins:trade_tables/currency/two_pot_of_gold_value_currency"
+
+	["Leprechaun Trade Settings"."Leprechaun Level Two Trade One"]
+		# Rare Trade
+		# Leprechaun 2 Trade Request 1 Table
+		leprechaun_2_trade_request_1_table = "todecoins:trade_tables/gems/two_pot_of_gold_value_gems"
+		# Leprechaun 2 Trade Offer 1 Table
+		leprechaun_2_trade_offer_1_table = "todecoins:trade_tables/currency/two_pot_of_gold_table"
+
+	["Leprechaun Trade Settings"."Leprechaun Level Two Trade Two"]
+		# Rare Trade
+		# Leprechaun 2 Trade Request 2 Table
+		leprechaun_2_trade_request_2_table = "todecoins:trade_tables/misc/two_pot_of_gold_value_items"
+		# Leprechaun 2 Trade Offer 2 Table
+		leprechaun_2_trade_offer_2_table = "todecoins:trade_tables/currency/two_pot_of_gold_table"
+
+	["Leprechaun Trade Settings"."Leprechaun Level Two Trade Three"]
+		# Rare Trade
+		# Leprechaun 2 Trade Request 3 Table
+		leprechaun_2_trade_request_3_table = "todecoins:trade_tables/currency/four_pot_of_gold_table"
+		# Leprechaun 2 Trade Offer 3 Table
+		leprechaun_2_trade_offer_3_table = "todecoins:trade_tables/currency/four_pot_of_gold_value_currency"
+
+	["Leprechaun Trade Settings"."Leprechaun Level Two Trade Four"]
+		# Rare Trade
+		# Leprechaun 2 Trade Request 4 Table
+		leprechaun_2_trade_request_4_table = "todecoins:trade_tables/currency/four_pot_of_gold_table"
+		# Leprechaun 2 Trade Offer 4 Table
+		leprechaun_2_trade_offer_4_table = "todecoins:trade_tables/gems/four_pot_of_gold_value_gems"
+
+	["Leprechaun Trade Settings"."Leprechaun Level Two Trade Five"]
+		# Rare Trade
+		# Leprechaun 2 Trade Request 5 Table
+		leprechaun_2_trade_request_5_table = "todecoins:trade_tables/currency/four_pot_of_gold_table"
+		# Leprechaun 2 Trade Offer 5 Table
+		leprechaun_2_trade_offer_5_table = "todecoins:trade_tables/misc/four_pot_of_gold_value_items"
+
+	["Leprechaun Trade Settings"."Leprechaun Level Two Trade Six"]
+		# Rare Trade
+		# Leprechaun 2 Trade Request 6 Table
+		leprechaun_2_trade_request_6_table = "todecoins:trade_tables/currency/four_pot_of_gold_table"
+		# Leprechaun 2 Trade Offer 6 Table
+		leprechaun_2_trade_offer_6_table = "todecoins:trade_tables/currency/four_pot_of_gold_value_currency"
+
+	["Leprechaun Trade Settings"."Leprechaun Level Three Trade One"]
+		# Rare Trade
+		# Leprechaun 3 Trade Request 1 Table
+		leprechaun_3_trade_request_1_table = "todecoins:trade_tables/currency/thirty_pot_of_gold_table"
+		# Leprechaun 3 Trade Offer 1 Table
+		leprechaun_3_trade_offer_1_table = "todecoins:trade_tables/misc/thirty_pot_of_gold_value_items"
+
+	["Leprechaun Trade Settings"."Leprechaun Level Three Trade Two"]
+		# Rare Trade
+		# Leprechaun 3 Trade Request 2 Table
+		leprechaun_3_trade_request_2_table = "todecoins:trade_tables/currency/thirty_pot_of_gold_table"
+		# Leprechaun 3 Trade Offer 2 Table
+		leprechaun_3_trade_offer_2_table = "todecoins:trade_tables/currency/thirty_pot_of_gold_value_currency"
+
+	["Leprechaun Trade Settings"."Leprechaun Level Three Trade Three"]
+		# Rare Trade
+		# Leprechaun 3 Trade Request 3 Table
+		leprechaun_3_trade_request_3_table = "todecoins:trade_tables/currency/thirty_pot_of_gold_table"
+		# Leprechaun 3 Trade Offer 3 Table
+		leprechaun_3_trade_offer_3_table = "todecoins:trade_tables/gems/thirty_pot_of_gold_value_gems"
+
+	["Leprechaun Trade Settings"."Leprechaun Level Three Trade Four"]
+		# Rare Trade
+		# Leprechaun 3 Trade Request 4 Table
+		leprechaun_3_trade_request_4_table = "todecoins:trade_tables/currency/sixty_pot_of_gold_table"
+		# Leprechaun 3 Trade Offer 4 Table
+		leprechaun_3_trade_offer_4_table = "todecoins:trade_tables/currency/sixty_pot_of_gold_value_currency"
+
+	["Leprechaun Trade Settings"."Leprechaun Level Three Trade Five"]
+		# Rare Trade
+		# Leprechaun 3 Trade Request 5 Table
+		leprechaun_3_trade_request_5_table = "todecoins:trade_tables/currency/sixty_pot_of_gold_table"
+		# Leprechaun 3 Trade Offer 5 Table
+		leprechaun_3_trade_offer_5_table = "todecoins:trade_tables/misc/sixty_pot_of_gold_value_items"
+
+	["Leprechaun Trade Settings"."Leprechaun Level Three Trade Six"]
+		# Rare Trade
+		# Leprechaun 3 Trade Request 6 Table
+		leprechaun_3_trade_request_6_table = "todecoins:trade_tables/currency/sixty_pot_of_gold_table"
+		# Leprechaun 3 Trade Offer 6 Table
+		leprechaun_3_trade_offer_6_table = "todecoins:trade_tables/gems/sixty_pot_of_gold_value_gems"
+
+	["Leprechaun Trade Settings"."Leprechaun Level Four Trade One"]
+		# Rare Trade
+		# Leprechaun 4 Trade Request 1 Table
+		leprechaun_4_trade_request_1_table = "todecoins:trade_tables/currency/single_lucky_coin_value_currency"
+		# Leprechaun 4 Trade Offer 1 Table
+		leprechaun_4_trade_offer_1_table = "todecoins:trade_tables/currency/one_lucky_coin_table"
+
+	["Leprechaun Trade Settings"."Leprechaun Level Four Trade Two"]
+		# Rare Trade
+		# Leprechaun 4 Trade Request 2 Table
+		leprechaun_4_trade_request_2_table = "todecoins:trade_tables/currency/one_lucky_coin_table"
+		# Leprechaun 4 Trade Offer 2 Table
+		leprechaun_4_trade_offer_2_table = "todecoins:trade_tables/currency/single_lucky_coin_value_currency"
+
+	["Leprechaun Trade Settings"."Leprechaun Level Five Trade One"]
+		# Rare Trade
+		# Leprechaun 5 Trade Request 1 Table
+		leprechaun_5_trade_request_1_table = "todecoins:trade_tables/gems/single_lucky_coin_value_gems"
+		# Leprechaun 5 Trade Offer 1 Table
+		leprechaun_5_trade_offer_1_table = "todecoins:trade_tables/currency/one_lucky_coin_table"
+
+	["Leprechaun Trade Settings"."Leprechaun Level Five Trade Two"]
+		# Rare Trade
+		# Leprechaun 5 Trade Request 2 Table
+		leprechaun_5_trade_request_2_table = "todecoins:trade_tables/misc/single_lucky_coin_value_items"
+		# Leprechaun 5 Trade Offer 2 Table
+		leprechaun_5_trade_offer_2_table = "todecoins:trade_tables/currency/three_lucky_coin_table"
+
+	["Leprechaun Trade Settings"."Leprechaun Level Five Trade Three"]
+		# Rare Trade
+		# Leprechaun 5 Trade Request 3 Table
+		leprechaun_5_trade_request_3_table = "todecoins:trade_tables/misc/twenty_seven_lucky_coin_value_items"
+		# Leprechaun 5 Trade Offer 3 Table
+		leprechaun_5_trade_offer_3_table = "todecoins:trade_tables/currency/twenty_seven_lucky_coin_table"
+

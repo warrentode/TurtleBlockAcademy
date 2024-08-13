@@ -1,0 +1,95 @@
+
+["Retired Trader Trade Settings"]
+
+	["Retired Trader Trade Settings"."Retired Trader Level One Trade One"]
+		# Retired Trader 1 Trade Request 1 Table
+		retired_trader_1_trade_request_1_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+		# Retired Trader 1 Trade Offer 1 Table
+		retired_trader_1_trade_offer_1_table = "turtleblockacademy:trade_loot_tables/flower_sell_trade_table"
+
+	["Retired Trader Trade Settings"."Retired Trader Level One Trade Two"]
+		# Retired Trader 1 Trade Request 2 Table
+		retired_trader_1_trade_request_2_table = "todecoins:trade_tables/currency/five_emerald_value_currency"
+		# Retired Trader 1 Trade Offer 2 Table
+		retired_trader_1_trade_offer_2_table = "turtleblockacademy:trade_loot_tables/sapling_sell_trade_table"
+
+	["Retired Trader Trade Settings"."Retired Trader Level One Trade Three"]
+		# Retired Trader 1 Trade Request 3 Table
+		retired_trader_1_trade_request_3_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+		# Retired Trader 1 Trade Offer 3 Table
+		retired_trader_1_trade_offer_3_table = "todecoins:trade_tables/wandering_trader/common_offers"
+
+	["Retired Trader Trade Settings"."Retired Trader Level Two Trade One"]
+		# Retired Trader 2 Trade Request 1 Table
+		retired_trader_2_trade_request_1_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+		# Retired Trader 2 Trade Offer 1 Table
+		retired_trader_2_trade_offer_1_table = "todecoins:trade_tables/food/seed_tag_table"
+		retired_trader_2_trade_offer_1_count = 1
+
+	["Retired Trader Trade Settings"."Retired Trader Level Two Trade Two"]
+		# Retired Trader 2 Trade Request 2 Table
+		retired_trader_2_trade_request_2_table = "todecoins:trade_tables/currency/four_emerald_value_currency"
+		# Retired Trader 2 Trade Offer 2 Table
+		retired_trader_2_trade_offer_2_table = "todecoins:trade_tables/mob_parts/slimeball_tag_table"
+		retired_trader_2_trade_offer_2_count = 1
+
+	["Retired Trader Trade Settings"."Retired Trader Level Two Trade Three"]
+		# Retired Trader 2 Trade Request 3 Table
+		retired_trader_2_trade_request_3_table = "todecoins:trade_tables/currency/three_emerald_value_currency"
+		# Retired Trader 2 Trade Offer 3 Table
+		retired_trader_2_trade_offer_3_table = "todecoins:trade_tables/blocks/coral_block_tag_table"
+		retired_trader_2_trade_offer_3_count = 1
+
+	["Retired Trader Trade Settings"."Retired Trader Level Three Trade One"]
+		# Retired Trader 3 Trade Request 1 Table
+		retired_trader_3_trade_request_1_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+		# Retired Trader 3 Trade Offer 1 Table
+		retired_trader_3_trade_offer_1_table = "todecoins:trade_tables/blocks/sand_tag_table"
+		retired_trader_3_trade_offer_1_count = 6
+
+	["Retired Trader Trade Settings"."Retired Trader Level Three Trade Two"]
+		# Retired Trader 3 Trade Request 2 Table
+		retired_trader_3_trade_request_2_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+		# Retired Trader 3 Trade Offer 2 Table
+		retired_trader_3_trade_offer_2_table = "todecoins:trade_tables/gems/single_emerald_value_gems"
+
+	["Retired Trader Trade Settings"."Retired Trader Level Three Trade Three"]
+		# Rare Trade
+		# Retired Trader 3 Trade Request 3 Table
+		retired_trader_3_trade_request_3_table = "todecoins:trade_tables/currency/three_emerald_value_currency"
+		# Retired Trader 3 Trade Offer 3 Table
+		retired_trader_3_trade_offer_3_table = "todecoins:trade_tables/tools/fish_bucket_table"
+
+	["Retired Trader Trade Settings"."Retired Trader Level Four Trade One"]
+		# Retired Trader 4 Trade Request 1 Table
+		retired_trader_4_trade_request_1_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+		# Retired Trader 4 Trade Offer 1 Table
+		retired_trader_4_trade_offer_1_table = "todecoins:trade_tables/textiles/tagged_dyes_table"
+		retired_trader_4_trade_offer_1_count = 3
+
+	["Retired Trader Trade Settings"."Retired Trader Level Four Trade Two"]
+		# Retired Trader 4 Trade Request 2 Table
+		retired_trader_4_trade_request_2_table = "todecoins:trade_tables/currency/five_emerald_value_currency"
+		# Retired Trader 4 Trade Offer 2 Table
+		retired_trader_4_trade_offer_2_table = "todecoins:trade_tables/misc/seashell_table"
+
+	["Retired Trader Trade Settings"."Retired Trader Level Four Trade Three"]
+		# Rare Trade
+		# Retired Trader 4 Trade Request 3 Table
+		retired_trader_4_trade_request_3_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+		# Retired Trader 4 Trade Offer 3 Table
+		retired_trader_4_trade_offer_3_table = "todecoins:trade_tables/blocks/special_dirt_blocks_table"
+
+	["Retired Trader Trade Settings"."Retired Trader Level Five Trade One"]
+		# Rare Trade
+		# Retired Trader 5 Trade Request 1 Table
+		retired_trader_5_trade_request_1_table = "todecoins:trade_tables/currency/six_emerald_value_currency"
+		# Retired Trader 5 Trade Offer 1 Table
+		retired_trader_5_trade_offer_1_table = "todecoins:trade_tables/blocks/ice_table"
+
+	["Retired Trader Trade Settings"."Retired Trader Level Five Trade Two"]
+		# Rare Trade
+		# Retired Trader 5 Trade Request 2 Table
+		retired_trader_5_trade_request_2_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+		# Retired Trader 5 Trade Offer 2 Table
+		retired_trader_5_trade_offer_2_table = "todecoins:trade_tables/wandering_trader/rare_offers"

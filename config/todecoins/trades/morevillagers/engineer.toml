@@ -1,0 +1,63 @@
+
+[" Engineer Trade Settings"]
+
+	[" Engineer Trade Settings"." Engineer Level One Trade One"]
+		# Engineer 1 Trade Request 1 Table
+		engineer_1_trade_request_1_table = "todecoins:trade_tables/currency/nine_emerald_value_currency"
+		# Engineer 1 Trade Offer 1 Table
+		engineer_1_trade_offer_1_table = "todecoins:trade_tables/misc/nine_emerald_value_redstone"
+
+	[" Engineer Trade Settings"." Engineer Level One Trade Two"]
+		# Engineer 1 Trade Request 2 Table
+		engineer_1_trade_request_2_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+		# Engineer 1 Trade Offer 2 Table
+		engineer_1_trade_offer_2_table = "todecoins:trade_tables/misc/redstone_torch_table"
+
+	[" Engineer Trade Settings"." Engineer Level Two Trade One"]
+		# Engineer 2 Trade Request 1 Table
+		engineer_2_trade_request_1_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+		# Engineer 2 Trade Offer 1 Table
+		engineer_2_trade_offer_1_table = "todecoins:trade_tables/misc/redstone_components_table"
+
+	[" Engineer Trade Settings"." Engineer Level Two Trade Two"]
+		# Engineer 2 Trade Request 2 Table
+		engineer_2_trade_request_2_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+		# Engineer 2 Trade Offer 2 Table
+		engineer_2_trade_offer_2_table = "todecoins:trade_tables/misc/redstone_components_table"
+
+	[" Engineer Trade Settings"." Engineer Level Three Trade One"]
+		# Engineer 3 Trade Request 1 Table
+		engineer_3_trade_request_1_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+		# Engineer 3 Trade Offer 1 Table
+		engineer_3_trade_offer_1_table = "todecoins:trade_tables/misc/redstone_components_table"
+
+	[" Engineer Trade Settings"." Engineer Level Three Trade Two"]
+		# Engineer 3 Trade Request 2 Table
+		engineer_3_trade_request_2_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+		# Engineer 3 Trade Offer 2 Table
+		engineer_3_trade_offer_2_table = "todecoins:trade_tables/misc/redstone_components_table"
+
+	[" Engineer Trade Settings"." Engineer Level Four Trade One"]
+		# Engineer 4 Trade Request 1 Table
+		engineer_4_trade_request_1_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+		# Engineer 4 Trade Offer 1 Table
+		engineer_4_trade_offer_1_table = "todecoins:trade_tables/misc/redstone_components_table"
+
+	[" Engineer Trade Settings"." Engineer Level Four Trade Two"]
+		# Engineer 4 Trade Request 2 Table
+		engineer_4_trade_request_2_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+		# Engineer 4 Trade Offer 2 Table
+		engineer_4_trade_offer_2_table = "todecoins:trade_tables/misc/redstone_components_table"
+
+	[" Engineer Trade Settings"." Engineer Level Five Trade One"]
+		# Engineer 5 Trade Request 1 Table
+		engineer_5_trade_request_1_table = "todecoins:trade_tables/metals/single_emerald_value_metals"
+		# Engineer 5 Trade Offer 1 Table
+		engineer_5_trade_offer_1_table = "todecoins:trade_tables/misc/redstone_components_table"
+
+	[" Engineer Trade Settings"." Engineer Level Five Trade Two"]
+		# Engineer 5 Trade Request 2 Table
+		engineer_5_trade_request_2_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+		# Engineer 5 Trade Offer 2 Table
+		engineer_5_trade_offer_2_table = "todecoins:trade_tables/misc/redstone_components_table"
+

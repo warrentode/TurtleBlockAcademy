@@ -1,0 +1,75 @@
+
+["Weaponsmith Trade Settings"]
+
+	["Weaponsmith Trade Settings"."Weaponsmith Level One Trade One"]
+		# Weaponsmith 1 Trade Request 1 Table
+		weaponsmith_1_trade_request_1_table = "todecoins:trade_tables/misc/one_emerald_value_fuel_table"
+		# Weaponsmith 1 Trade Offer 1 Table
+		weaponsmith_1_trade_offer_1_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+
+	["Weaponsmith Trade Settings"."Weaponsmith Level One Trade Two"]
+		# Weaponsmith 1 Trade Request 2 Table
+		weaponsmith_1_trade_request_2_table = "todecoins:trade_tables/currency/three_emerald_value_currency"
+		# Weaponsmith 1 Trade Offer 2 Table
+		weaponsmith_1_trade_offer_2_table = "todecoins:trade_tables/weapons/iron_tier_weapons"
+
+	["Weaponsmith Trade Settings"."Weaponsmith Level Two Trade One"]
+		# Weaponsmith 2 Trade Request 1 Table
+		weaponsmith_2_trade_request_1_table = "todecoins:trade_tables/metals/single_emerald_value_metals"
+		# Weaponsmith 2 Trade Offer 1 Table
+		weaponsmith_2_trade_offer_1_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+
+	["Weaponsmith Trade Settings"."Weaponsmith Level Two Trade Two"]
+		# Rare Trade
+		# Weaponsmith 2 Trade Request 2 Table
+		weaponsmith_2_trade_request_2_table = "todecoins:trade_tables/currency/thirty_six_emerald_value_currency"
+		# Weaponsmith 2 Trade Offer 2 Table
+		weaponsmith_2_trade_offer_2_table = "todecoins:trade_tables/misc/bell_table"
+
+	["Weaponsmith Trade Settings"."Weaponsmith Level Three Trade One"]
+		# Weaponsmith 3 Trade Request 1 Table
+		weaponsmith_3_trade_request_1_table = "todecoins:trade_tables/misc/flint_buy_table"
+		# Weaponsmith 3 Trade Offer 1 Table
+		weaponsmith_3_trade_offer_1_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+
+	["Weaponsmith Trade Settings"."Weaponsmith Level Three Trade Two"]
+		# Weaponsmith 3 Trade Request 2 Table
+		weaponsmith_3_trade_request_2_table = "todecoins:trade_tables/gems/equipment_gems_table"
+		# Weaponsmith 3 Trade Offer 2 Table
+		weaponsmith_3_trade_offer_2_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+
+	["Weaponsmith Trade Settings"."Weaponsmith Level Four Trade One"]
+		# Rare Trade
+		# Weaponsmith 4 Trade Request 1 Table
+		weaponsmith_4_trade_request_1_table = "todecoins:trade_tables/currency/twenty_emerald_value_currency"
+		# Weaponsmith 4 Trade Offer 1 Table
+		weaponsmith_4_trade_offer_1_table = "todecoins:trade_tables/weapons/gold_tier_weapons"
+
+	["Weaponsmith Trade Settings"."Weaponsmith Level Four Trade Two"]
+		# Available if Supplementaries is Loaded
+		# Weaponsmith 4 Trade Request 2 Table
+		weaponsmith_4_trade_request_2_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+		# Weaponsmith 4 Trade Offer 2 Table
+		weaponsmith_4_trade_offer_2_table = "todecoins:trade_tables/misc/tagged_ash_table"
+		weaponsmith_4_trade_offer_2_count = 18
+
+	["Weaponsmith Trade Settings"."Weaponsmith Level Four Trade Three"]
+		# Weaponsmith 4 Trade Request 3 Table
+		weaponsmith_4_trade_request_3_table = "todecoins:trade_tables/currency/eight_emerald_value_currency"
+		# Weaponsmith 4 Trade Offer 3 Table
+		weaponsmith_4_trade_offer_3_table = "todecoins:trade_tables/misc/anvil_table"
+
+	["Weaponsmith Trade Settings"."Weaponsmith Level Five Trade One"]
+		# Rare Trade
+		# Weaponsmith 5 Trade Request 1 Table
+		weaponsmith_5_trade_request_1_table = "todecoins:trade_tables/currency/twenty_six_emerald_value_currency"
+		# Weaponsmith 5 Trade Offer 1 Table
+		weaponsmith_5_trade_offer_1_table = "todecoins:trade_tables/weapons/diamond_tier_weapons"
+
+	["Weaponsmith Trade Settings"."Weaponsmith Level Five Trade Two"]
+		# Rare Trade
+		# Weaponsmith 5 Trade Request 2 Table
+		weaponsmith_5_trade_request_2_table = "todecoins:trade_tables/currency/single_lucky_coin_bag_value_currency"
+		# Weaponsmith 5 Trade Offer 2 Table
+		weaponsmith_5_trade_offer_2_table = "todecoins:trade_tables/weapons/netherite_tier_weapons"
+

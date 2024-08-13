@@ -1,0 +1,98 @@
+
+["Librarian Trade Settings"]
+
+	["Librarian Trade Settings"."Librarian Level One Trade One"]
+		# Librarian 1 Trade Request 1 Table
+		librarian_1_trade_request_1_table = "todecoins:trade_tables/currency/smallest_coin"
+		# Librarian 1 Trade Offer 1 Table
+		librarian_1_trade_offer_1_table = "todecoins:trade_tables/library/guide_books"
+
+	["Librarian Trade Settings"."Librarian Level One Trade Two"]
+		# Librarian 1 Trade Request 2 Table
+		librarian_1_trade_request_2_table = "todecoins:trade_tables/library/paper_table"
+		# Librarian 1 Trade Offer 2 Table
+		librarian_1_trade_offer_2_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+
+	["Librarian Trade Settings"."Librarian Level One Trade Three"]
+		# Rare Trade
+		# Librarian 1 Trade Request 2 Table
+		librarian_1_trade_request_3_table = "todecoins:trade_tables/currency/thirty_six_emerald_value_currency"
+
+	["Librarian Trade Settings"."Librarian Level One Trade Four"]
+		# Librarian 1 Trade Request 4 Table
+		librarian_1_trade_request_4_table = "todecoins:trade_tables/currency/nine_emerald_value_currency"
+		# Librarian 1 Trade Offer 4 Table
+		librarian_1_trade_offer_4_table = "todecoins:trade_tables/library/bookshelf_table"
+
+	["Librarian Trade Settings"."Librarian Level Two Trade One"]
+		# Librarian 2 Trade Request 1 Table
+		librarian_2_trade_request_1_table = "todecoins:trade_tables/library/book_table"
+		# Librarian 2 Trade Offer 1 Table
+		librarian_2_trade_offer_1_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+
+	["Librarian Trade Settings"."Librarian Level Two Trade Two"]
+		# Rare Trade
+		# Librarian 2 Trade Request 2 Table
+		librarian_2_trade_request_2_table = "todecoins:trade_tables/currency/thirty_six_emerald_value_currency"
+
+	["Librarian Trade Settings"."Librarian Level Two Trade Three"]
+		# Librarian 2 Trade Request 3 Table
+		librarian_2_trade_request_3_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+		# Librarian 2 Trade Offer 3 Table
+		librarian_2_trade_offer_3_table = "todecoins:trade_tables/decor/lantern_table"
+
+	["Librarian Trade Settings"."Librarian Level Three Trade One"]
+		# Rare Trade
+		# Librarian 3 Trade Request 1 Table
+		librarian_3_trade_request_1_table = "todecoins:trade_tables/currency/thirty_six_emerald_value_currency"
+
+	["Librarian Trade Settings"."Librarian Level Three Trade Two"]
+		# Librarian 3 Trade Request 2 Table
+		librarian_3_trade_request_2_table = "todecoins:trade_tables/library/tagged_ink_table"
+		librarian_3_trade_request_2_count = 3
+		# Librarian 3 Trade Offer 2 Table
+		librarian_3_trade_offer_2_table = "todecoins:trade_tables/currency/four_emerald_value_currency"
+
+	["Librarian Trade Settings"."Librarian Level Three Trade Three"]
+		# Librarian 3 Trade Request 3 Table
+		librarian_3_trade_request_3_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+		# Librarian 3 Trade Offer 3 Table
+		librarian_3_trade_offer_3_table = "todecoins:trade_tables/glass/tagged_glass_table"
+		librarian_3_trade_request_3_count = 1
+
+	["Librarian Trade Settings"."Librarian Level Four Trade One"]
+		# Librarian 4 Trade Request 1 Table
+		librarian_4_trade_request_1_table = "todecoins:trade_tables/library/book_table"
+		# Librarian 4 Trade Offer 1 Table
+		librarian_4_trade_offer_1_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+
+	["Librarian Trade Settings"."Librarian Level Four Trade Two"]
+		# Rare Trade
+		# Librarian 4 Trade Request 2 Table
+		librarian_4_trade_request_2_table = "todecoins:trade_tables/currency/thirty_six_emerald_value_currency"
+
+	["Librarian Trade Settings"."Librarian Level Four Trade Three"]
+		# Librarian 4 Trade Request 3 Table
+		librarian_4_trade_request_3_table = "todecoins:trade_tables/currency/five_emerald_value_currency"
+		# Librarian 4 Trade Offer 3 Table
+		librarian_4_trade_offer_3_table = "todecoins:trade_tables/tools/clock_table"
+
+	["Librarian Trade Settings"."Librarian Level Five Trade One"]
+		# Librarian 5 Trade Request 1 Table
+		librarian_5_trade_request_1_table = "todecoins:trade_tables/currency/four_emerald_value_currency"
+		# Librarian 5 Trade Offer 1 Table
+		librarian_5_trade_offer_1_table = "todecoins:trade_tables/library/tagged_ink_table"
+		librarian_5_trade_offer_1_count = 1
+
+	["Librarian Trade Settings"."Librarian Level Five Trade Two"]
+		# Librarian 5 Trade Request 2 Table
+		librarian_5_trade_request_2_table = "todecoins:trade_tables/currency/four_emerald_value_currency"
+		# Librarian 5 Trade Offer 2 Table
+		librarian_5_trade_offer_2_table = "todecoins:trade_tables/tools/compass_table"
+
+	["Librarian Trade Settings"."Librarian Level Five Trade Three"]
+		# Librarian 5 Trade Request 3 Table
+		librarian_5_trade_request_3_table = "todecoins:trade_tables/currency/twenty_emerald_value_currency"
+		# Librarian 5 Trade Offer 2 Table
+		librarian_5_trade_offer_2_table = "todecoins:trade_tables/misc/name_tag_table"
+

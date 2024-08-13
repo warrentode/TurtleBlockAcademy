@@ -1,0 +1,64 @@
+
+[" Sawmill Trade Settings"]
+
+	[" Sawmill Trade Settings"." Sawmill Level One Trade One"]
+		# Sawmill 1 Trade Request 1 Table
+		sawmill_1_trade_request_1_table = "todecoins:trade_tables/decor/sapling_buy_table"
+		# Sawmill 1 Trade Offer 1 Table
+		sawmill_1_trade_offer_1_table = "todecoins:trade_tables/currency/six_emerald_value_currency"
+
+	[" Sawmill Trade Settings"." Sawmill Level One Trade Two"]
+		# Sawmill 1 Trade Request 2 Table
+		sawmill_1_trade_request_2_table = "todecoins:trade_tables/currency/six_emerald_value_currency"
+		# Sawmill 1 Trade Offer 2 Table
+		sawmill_1_trade_offer_2_table = "todecoins:trade_tables/decor/sapling_sell_table"
+
+	[" Sawmill Trade Settings"." Sawmill Level Two Trade One"]
+		# Sawmill 2 Trade Request 1 Table
+		sawmill_2_trade_request_1_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+		# Sawmill 2 Trade Offer 1 Table
+		sawmill_2_trade_offer_1_table = "todecoins:trade_tables/blocks/logs_sell_table"
+
+	[" Sawmill Trade Settings"." Sawmill Level Two Trade Two"]
+		# Sawmill 2 Trade Request 2 Table
+		sawmill_2_trade_request_2_table = "todecoins:trade_tables/blocks/logs_buy_table"
+		# Sawmill 2 Trade Offer 2 Table
+		sawmill_2_trade_offer_2_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+
+	[" Sawmill Trade Settings"." Sawmill Level Three Trade One"]
+		# Sawmill 3 Trade Request 1 Table
+		sawmill_3_trade_request_1_table = "todecoins:trade_tables/decor/sapling_buy_table"
+		# Sawmill 3 Trade Offer 1 Table
+		sawmill_3_trade_offer_1_table = "todecoins:trade_tables/currency/six_emerald_value_currency"
+
+	[" Sawmill Trade Settings"." Sawmill Level Three Trade Two"]
+		# Sawmill 3 Trade Request 2 Table
+		sawmill_3_trade_request_2_table = "todecoins:trade_tables/currency/six_emerald_value_currency"
+		# Sawmill 3 Trade Offer 2 Table
+		sawmill_3_trade_offer_2_table = "todecoins:trade_tables/decor/sapling_sell_table"
+
+	[" Sawmill Trade Settings"." Sawmill Level Four Trade One"]
+		# Sawmill 4 Trade Request 1 Table
+		sawmill_4_trade_request_1_table = "todecoins:trade_tables/blocks/logs_buy_table"
+		# Sawmill 4 Trade Offer 1 Table
+		sawmill_4_trade_offer_1_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+
+	[" Sawmill Trade Settings"." Sawmill Level Four Trade Two"]
+		# Sawmill 4 Trade Request 2 Table
+		sawmill_4_trade_request_2_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+		# Sawmill 4 Trade Offer 2 Table
+		sawmill_4_trade_offer_2_table = "todecoins:trade_tables/blocks/logs_sell_table"
+
+	[" Sawmill Trade Settings"." Sawmill Level Five Trade One"]
+		# Rare Trade
+		# Sawmill 5 Trade Request 1 Table
+		sawmill_5_trade_request_1_table = "todecoins:trade_tables/currency/sixteen_emerald_table"
+		# Sawmill 5 Trade Offer 1 Table
+		sawmill_5_trade_offer_1_table = "todecoins:trade_tables/tools/iron_tier_lumber_tools_table"
+
+	[" Sawmill Trade Settings"." Sawmill Level Five Trade Two"]
+		# Sawmill 5 Trade Request 2 Table
+		sawmill_5_trade_request_2_table = "todecoins:trade_tables/currency/four_emerald_value_currency"
+		# Sawmill 5 Trade Offer 2 Table
+		sawmill_5_trade_offer_2_table = "todecoins:trade_tables/tools/diamond_tier_lumber_tools_table"
+

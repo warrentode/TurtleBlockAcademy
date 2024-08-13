@@ -1,0 +1,70 @@
+
+[" Enderian Trade Settings"]
+
+	[" Enderian Trade Settings"." Enderian Level One Trade One"]
+		# Enderian 1 Trade Request 1 Table
+		enderian_1_trade_request_1_table = "todecoins:trade_tables/currency/endonian_coin_table"
+		# Enderian 1 Trade Offer 1 Table
+		enderian_1_trade_offer_1_table = "todecoins:trade_tables/blocks/end_blocks_table"
+
+	[" Enderian Trade Settings"." Enderian Level One Trade Two"]
+		# Enderian 1 Trade Request 2 Table
+		enderian_1_trade_request_2_table = "todecoins:trade_tables/currency/endonian_coin_table"
+		# Enderian 1 Trade Offer 2 Table
+		enderian_1_trade_offer_2_table = "todecoins:trade_tables/misc/end_rod_table"
+
+	[" Enderian Trade Settings"." Enderian Level Two Trade One"]
+		# Enderian 2 Trade Request 1 Table
+		enderian_2_trade_request_1_table = "todecoins:trade_tables/currency/five_endonian_coin_table"
+		# Enderian 2 Trade Offer 1 Table
+		enderian_2_trade_offer_1_table = "todecoins:trade_tables/misc/ender_pearl_table"
+
+	[" Enderian Trade Settings"." Enderian Level Two Trade Two"]
+		# Enderian 2 Trade Request 2 Table
+		enderian_2_trade_request_2_table = "todecoins:trade_tables/currency/endonian_coin_table"
+		# Enderian 2 Trade Offer 2 Table
+		enderian_2_trade_offer_2_table = "todecoins:trade_tables/misc/firework_rocket_table"
+
+	[" Enderian Trade Settings"." Enderian Level Three Trade One"]
+		# Enderian 3 Trade Request 1 Table
+		enderian_3_trade_request_1_table = "todecoins:trade_tables/currency/endonian_coin_table"
+		# Enderian 3 Trade Offer 1 Table
+		enderian_3_trade_offer_1_table = "todecoins:trade_tables/misc/dragon_breath_table"
+
+	[" Enderian Trade Settings"." Enderian Level Three Trade Two"]
+		# Enderian 3 Trade Request 2 Table
+		enderian_3_trade_request_2_table = "todecoins:trade_tables/currency/emerald_quarter_half_note_value_currency"
+		# Enderian 3 Trade Offer 2 Table
+		enderian_3_trade_offer_2_table = "todecoins:trade_tables/currency/thirty_two_emerald_table"
+
+	[" Enderian Trade Settings"." Enderian Level Four Trade One"]
+		# Enderian 4 Trade Request 1 Table
+		enderian_4_trade_request_1_table = "todecoins:trade_tables/currency/sixty_four_emerald_table"
+		# Enderian 4 Trade Offer 1 Table
+		enderian_4_trade_offer_1_table = "todecoins:trade_tables/currency/emerald_bank_note_value_currency"
+
+	[" Enderian Trade Settings"." Enderian Level Four Trade Two"]
+		# Rare Trade
+		# Enderian 4 Trade Request 2 Table
+		enderian_4_trade_request_2_table = "todecoins:trade_tables/currency/fourteen_endonian_coin_table"
+		# Enderian 4 Trade Secondary Request 2 Table
+		enderian_4_trade_secondary_request_2_table = "todecoins:trade_tables/tools/compass_table"
+		# Enderian 4 Trade Request 2 Structure Tag
+		enderian_4_trade_secondary_request_2_structure_tag = "turtleblockacademy:worldgen/structure/end_poi"
+		# Enderian 4 Trade Request 2 Map Name
+		enderian_4_trade_secondary_request_2_map_name = "End Explorer Map"
+		# Enderian 4 Trade Request 2 Map Marker
+		enderian_4_trade_secondary_request_2_map_marker = "BLUE_MARKER"
+
+	[" Enderian Trade Settings"." Enderian Level Five Trade One"]
+		# Enderian 5 Trade Request 1 Table
+		enderian_5_trade_request_1_table = "todecoins:trade_tables/currency/thirty_two_endonian_coin_table"
+		# Enderian 5 Trade Offer 1 Table
+		enderian_5_trade_offer_1_table = "todecoins:trade_tables/misc/shulker_shell_table"
+
+	[" Enderian Trade Settings"." Enderian Level Five Trade Two"]
+		# Enderian 5 Trade Request 2 Table
+		enderian_5_trade_request_2_table = "todecoins:trade_tables/currency/fifty_endonian_coin_table"
+		# Enderian 5 Trade Offer 2 Table
+		enderian_5_trade_offer_2_table = "todecoins:trade_tables/misc/dragon_head_table"
+

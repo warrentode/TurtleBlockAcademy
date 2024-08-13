@@ -1,0 +1,101 @@
+
+["Wandering Trader Trade Settings"]
+
+	["Wandering Trader Trade Settings"."Wandering Trader Common Trade One"]
+		# Wandering Trader Request 1 Table
+		wandering_trader_request_1_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+		# Wandering Trader Offer 1 Table
+		wandering_trader_offer_1_table = "turtleblockacademy:trade_loot_tables/flower_sell_trade_table"
+
+	["Wandering Trader Trade Settings"."Wandering Trader Common Trade Two"]
+		# Wandering Trader Request 2 Table
+		wandering_trader_request_2_table = "todecoins:trade_tables/currency/five_emerald_value_currency"
+		# Wandering Trader Offer 2 Table
+		wandering_trader_offer_2_table = "turtleblockacademy:trade_loot_tables/spaling_sell_trade_table"
+
+	["Wandering Trader Trade Settings"."Wandering Trader Common Trade Three"]
+		# Wandering Trader Request 3 Table
+		wandering_trader_request_3_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+		# Wandering Trader Offer 3 Tag Table
+		wandering_trader_offer_3_tag_table = "todecoins:trade_tables/food/seed_tag_table"
+		# Wandering Trader Offer 3 Count Override
+		#Range: 1 ~ 64
+		wandering_trader_offer_3_table_override = 1
+
+	["Wandering Trader Trade Settings"."Wandering Trader Common Trade Four"]
+		# Wandering Trader Request 4 Table
+		wandering_trader_request_4_table = "todecoins:trade_tables/currency/four_emerald_value_currency"
+		# Wandering Trader Offer 4 Tag Table
+		wandering_trader_offer_4_tag_table = "todecoins:trade_tables/mob_parts/slimeball_tag_table"
+		# Wandering Trader Offer 4 Count Override
+		#Range: 1 ~ 64
+		wandering_trader_offer_4_table_override = 1
+
+	["Wandering Trader Trade Settings"."Wandering Trader Common Trade Five"]
+		# Wandering Trader Request 5 Table
+		wandering_trader_request_5_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+		# Wandering Trader Offer 5 Tag Table
+		wandering_trader_offer_5_table = "todecoins:trade_tables/gems/single_emerald_value_gems"
+
+	["Wandering Trader Trade Settings"."Wandering Trader Common Trade Six"]
+		# Wandering Trader Request 6 Table
+		wandering_trader_request_6_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+		# Wandering Trader Offer 6 Tag Table
+		wandering_trader_offer_6_tag_table = "todecoins:trade_tables/blocks/sand_tag_table"
+		# Wandering Trader Offer 6 Count Override
+		#Range: 1 ~ 64
+		wandering_trader_offer_6_table_override = 6
+
+	["Wandering Trader Trade Settings"."Wandering Trader Common Trade Seven"]
+		# Wandering Trader Offer 7 Table
+		wandering_trader_request_7_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+		# Wandering Trader Request 7 Tag Table
+		wandering_trader_offer_7_tag_table = "todecoins:trade_tables/textiles/tagged_dyes_table"
+		# Wandering Trader Offer 7 Count Override
+		#Range: 1 ~ 64
+		wandering_trader_offer_7_table_override = 1
+
+	["Wandering Trader Trade Settings"."Wandering Trader Common Trade Eight"]
+		# Wandering Trader Request 8 Table
+		wandering_trader_request_8_table = "todecoins:trade_tables/currency/five_emerald_value_currency"
+		# Wandering Trader Offer 8 Table
+		wandering_trader_offer_8_table = "todecoins:trade_tables/misc/seashell_table"
+
+	["Wandering Trader Trade Settings"."Wandering Trader Common Trade Nine"]
+		# Wandering Trader Request 9 Table
+		wandering_trader_request_9_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+		# Wandering Trader Offer 9 Table
+		wandering_trader_offer_9_table = "todecoins:trade_tables/wandering_trader/common_offers"
+
+	["Wandering Trader Trade Settings"."Wandering Trader Common Trade Ten"]
+		# Wandering Trader Request 10 Table
+		wandering_trader_request_10_table = "todecoins:trade_tables/currency/three_emerald_value_currency"
+		# Wandering Trader Offer 10 Tag Table
+		wandering_trader_offer_10_tag_table = "todecoins:trade_tables/blocks/coral_block_tag_table"
+		# Wandering Trader Offer 10 Count Override
+		#Range: 1 ~ 64
+		wandering_trader_offer_10_table_override = 1
+
+	["Wandering Trader Trade Settings"."Wandering Trader Rare Trade One"]
+		# Wandering Trader Rare Request 1 Table
+		wandering_trader_rare_request_1_table = "todecoins:trade_tables/currency/three_emerald_value_currency"
+		# Wandering Trader Rare Offer 1 Table
+		wandering_trader_rare_offer_1_table = "todecoins:trade_tables/tools/fish_bucket_table"
+
+	["Wandering Trader Trade Settings"."Wandering Trader Rare Trade Two"]
+		# Wandering Trader Rare Request 2 Table
+		wandering_trader_rare_request_2_table = "todecoins:trade_tables/currency/six_emerald_value_currency"
+		# Wandering Trader Rare Offer 2 Table
+		wandering_trader_rare_offer_2_table = "todecoins:trade_tables/blocks/ice_table"
+
+	["Wandering Trader Trade Settings"."Wandering Trader Rare Trade Three"]
+		# Wandering Trader Rare Request 3 Table
+		wandering_trader_rare_request_3_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+		# Wandering Trader Rare Offer 3 Table
+		wandering_trader_rare_offer_3_table = "todecoins:trade_tables/blocks/special_dirt_blocks_table"
+
+	["Wandering Trader Trade Settings"."Wandering Trader Rare Trade Four"]
+		# Wandering Trader Rare Request 4 Table
+		wandering_trader_rare_request_4_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+		# Wandering Trader Rare Offer 4 Table
+		wandering_trader_rare_offer_4_table = "todecoins:trade_tables/wandering_trader/rare_offers"

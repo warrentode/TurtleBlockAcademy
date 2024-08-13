@@ -1,0 +1,64 @@
+
+["Numismatist Trade Settings"]
+
+	# All these Trades use the Rare Max Trades Setting
+	["Numismatist Trade Settings"."Numismatist Common Trade One"]
+		# Numismatist Trade Request 1 Table
+		numismatist_trade_request_1_table = "todecoins:chests/collectible/seasonal/numismatist_request_list"
+		# Numismatist Trade Offer 1 Table
+		numismatist_trade_offer_1_table = "todecoins:chests/collectible/seasonal/mystery_coin_pack"
+
+	["Numismatist Trade Settings"."Numismatist Common Trade Two"]
+		# Numismatist Trade Request 2 Table
+		numismatist_trade_request_2_table = "todecoins:chests/collectible/seasonal/mystery_coin_pack"
+		# Numismatist Trade Offer 2 Table
+		numismatist_trade_offer_2_table = "todecoins:chests/collectible/seasonal/numismatist_request_list"
+
+	["Numismatist Trade Settings"."Numismatist Common Trade Three"]
+		# Numismatist Trade Request 3A Table
+		numismatist_trade_request_3a_table = "todecoins:chests/collectible/seasonal/mystery_coin_pack"
+		# Numismatist Trade Request 3B Table
+		numismatist_trade_request_3b_table = "todecoins:trade_tables/tools/compass_table"
+		# Numismatist Trade 2 Structure Tag
+		numismatist_trade_3_structure_tag = "forge:worldgen/structure/village"
+		# Numismatist Trade 3 Map Name
+		numismatist_trade_3_map_name = "Merchant Map"
+		# Numismatist Trade 3 Map Marker
+		numismatist_trade_3_map_marker = "MANSION"
+
+	["Numismatist Trade Settings"."Numismatist Common Trade Four"]
+		# Numismatist Trade Request 4A Table
+		numismatist_trade_request_4a_table = "todecoins:chests/collectible/seasonal/mystery_coin_pack"
+		# Numismatist Trade Request 4B Table
+		numismatist_trade_request_4b_table = "todecoins:chests/collectible/seasonal/numismatist_request_list"
+		# Numismatist Trade Offer 4 Table
+		numismatist_trade_offer_4_table = "todecoins:trade_tables/numismatist/container_offers"
+
+	["Numismatist Trade Settings"."Numismatist Common Trade Five"]
+		# Numismatist Loot Box Display Name
+		# sorry, I don't know how to make a single item/block customizable in a config file
+		numismatist_trade_loot_box_display_name = "tooltips.collectible_coin_pack"
+		# Numismatist Trade Loot Box Loot Table
+		# recommend blacklisting this loot table in lootr
+		numismatist_trade_loot_box_loot_table = "todecoins:chests/collectible/seasonal/mystery_coin_pack"
+		# Numismatist Trade Request 5A Table
+		numismatist_trade_request_5a_table = "todecoins:chests/collectible/seasonal/mystery_coin_pack"
+		# Numismatist Trade Request 5B Table
+		numismatist_trade_request_5b_table = "todecoins:chests/collectible/seasonal/numismatist_request_list"
+
+	["Numismatist Trade Settings"."Numismatist Rare Trade One"]
+		# Numismatist Trade Rare Offers Table
+		numismatist_trade_offers_table = "todecoins:trade_tables/numismatist/rare_offers"
+		# Numismatist Trade Rare Request 1A Table
+		numismatist_trade_rare_request_1a_table = "todecoins:chests/collectible/seasonal/mystery_coin_pack"
+		# Numismatist Trade Rare Request 1B Table
+		numismatist_trade_rare_request_1b_table = "todecoins:chests/collectible/seasonal/numismatist_request_list"
+
+	["Numismatist Trade Settings"."Numismatist Rare Trade Two"]
+		# Numismatist Trade Rare Request 2A Table
+		# for enchanted book offer
+		numismatist_trade_rare_request_2a_table = "todecoins:chests/collectible/seasonal/mystery_coin_pack"
+		# Numismatist Trade Rare Request 2B Table
+		# for enchanted book offer
+		numismatist_trade_rare_request_2b_table = "todecoins:chests/collectible/seasonal/numismatist_request_list"
+

@@ -1,0 +1,90 @@
+
+["Cartographer Trade Settings"]
+
+	["Cartographer Trade Settings"."Cartographer Level One Trade One"]
+		# Cartographer 1 Trade Request 1 Table
+		cartographer_1_trade_request_1_table = "todecoins:trade_tables/library/paper_table"
+		# Cartographer 1 Trade Offer 1 Table
+		cartographer_1_trade_offer_1_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+
+	["Cartographer Trade Settings"."Cartographer Level One Trade Two"]
+		# Cartographer 1 Trade Request 2 Table
+		cartographer_1_trade_request_2_table = "todecoins:trade_tables/currency/seven_emerald_value_currency"
+		# Cartographer 1 Trade Offer 2 Table
+		cartographer_1_trade_offer_2_table = "todecoins:trade_tables/misc/blank_map_table"
+
+	["Cartographer Trade Settings"."Cartographer Level Two Trade One"]
+		# Cartographer 2 Trade Request 1 Table
+		cartographer_2_trade_request_1_table = "todecoins:trade_tables/glass/tagged_glass_panes_table"
+		cartographer_2_trade_request_1_count = 16
+		# Cartographer 2 Trade Offer 1 Table
+		cartographer_2_trade_offer_1_table = "todecoins:trade_tables/currency/emerald_quarter_bank_note_value_currency"
+
+	["Cartographer Trade Settings"."Cartographer Level Two Trade Two"]
+		# Rare Trade
+		# Cartographer 2 Trade Request 2 Table
+		cartographer_2_trade_request_2_table = "todecoins:trade_tables/currency/fourteen_emerald_value_currency"
+		# Cartographer 2 Trade Secondary Request 2 Table
+		cartographer_2_trade_secondary_request_2_table = "todecoins:trade_tables/tools/compass_table"
+		# Cartographer 2 Trade Request 2 Structure Tag
+		cartographer_2_trade_secondary_request_2_structure_tag = "turtleblockacademy:worldgen/structure/overworld_poi"
+		# Cartographer 2 Trade Request 2 Map Name
+		cartographer_2_trade_secondary_request_2_map_name = "Overworld Explorer Map"
+		# Cartographer 2 Trade Request 2 Map Marker
+		cartographer_2_trade_secondary_request_2_map_marker = "TARGET_X"
+		# Cartographer 2 Trade Offer 2 Table
+		cartographer_2_trade_offer_2_table = "todecoins:trade_tables/currency/fourteen_emerald_value_currency"
+
+	["Cartographer Trade Settings"."Cartographer Level Three Trade One"]
+		# Cartographer 3 Trade Request 1 Table
+		cartographer_3_trade_request_1_table = "todecoins:trade_tables/tools/compass_table"
+		# Cartographer 3 Trade Offer 1 Table
+		cartographer_3_trade_offer_1_table = "todecoins:trade_tables/currency/four_emerald_value_currency"
+
+	["Cartographer Trade Settings"."Cartographer Level Three Trade Two"]
+		# Rare Trade
+		# Cartographer 3 Trade Request 2 Table
+		cartographer_3_trade_request_2_table = "todecoins:trade_tables/currency/fourteen_emerald_value_currency"
+		# Cartographer 3 Trade Secondary Request 2 Table
+		cartographer_3_trade_secondary_request_2_table = "todecoins:trade_tables/tools/compass_table"
+		# Cartographer 3 Trade Request 2 Structure Tag
+		cartographer_3_trade_secondary_request_2_structure_tag = "turtleblockacademy:worldgen/structure/overworld_poi"
+		# Cartographer 3 Trade Request 2 Map Name
+		cartographer_3_trade_secondary_request_2_map_name = "Overworld Explorer Map"
+		# Cartographer 3 Trade Request 2 Map Marker
+		cartographer_3_trade_secondary_request_2_map_marker = "TARGET_X"
+		# Cartographer 3 Trade Offer 2 Table
+		cartographer_3_trade_offer_2_table = "todecoins:trade_tables/currency/fourteen_emerald_value_currency"
+
+	["Cartographer Trade Settings"."Cartographer Level Four Trade One"]
+		# Cartographer 4 Trade Request 1 Table
+		cartographer_4_trade_request_1_table = "todecoins:trade_tables/currency/seven_emerald_value_currency"
+		# Cartographer 4 Trade Offer 1 Table
+		cartographer_4_trade_offer_1_table = "todecoins:trade_tables/decor/item_frame_table"
+
+	["Cartographer Trade Settings"."Cartographer Level Four Trade Two"]
+		# Cartographer 4 Trade Request 2 Table
+		cartographer_4_trade_request_2_table = "todecoins:trade_tables/currency/three_emerald_value_currency"
+		# Cartographer 4 Trade Offer 2 Table
+		cartographer_4_trade_offer_2_table = "todecoins:trade_tables/decor/tagged_banner_table"
+		cartographer_4_trade_offer_2_count = 3
+
+	["Cartographer Trade Settings"."Cartographer Level Five Trade One"]
+		# Cartographer 5 Trade Request 1 Table
+		cartographer_5_trade_request_1_table = "todecoins:trade_tables/currency/eight_emerald_value_currency"
+		# Cartographer 5 Trade Offer 1 Table
+		cartographer_5_trade_offer_1_table = "todecoins:trade_tables/misc/banner_pattern_table"
+
+	["Cartographer Trade Settings"."Cartographer Level Five Trade Two"]
+		# Rare Trade
+		# Cartographer 5 Trade Request 2 Table
+		cartographer_5_trade_request_2_table = "todecoins:trade_tables/currency/fourteen_emerald_value_currency"
+		# Cartographer 5 Trade Secondary Request 2 Table
+		cartographer_5_trade_secondary_request_2_table = "todecoins:trade_tables/tools/compass_table"
+		# Cartographer 5 Trade Request 2 Structure Tag
+		cartographer_5_trade_secondary_request_2_structure_tag = "turtleblockacademy:worldgen/structure/overworld_poi"
+		# Cartographer 5 Trade Request 2 Map Name
+		cartographer_5_trade_secondary_request_2_map_name = "Overworld Explorer Map"
+		# Cartographer 5 Trade Request 2 Map Marker
+		cartographer_5_trade_secondary_request_2_map_marker = "TARGET_X"
+

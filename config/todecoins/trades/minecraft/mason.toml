@@ -1,0 +1,63 @@
+
+["Mason Trade Settings"]
+
+	["Mason Trade Settings"."Mason Level One Trade One"]
+		# Mason 1 Trade Request 1 Table
+		mason_1_trade_request_1_table = "todecoins:trade_tables/misc/clay_table"
+		# Mason 1 Trade Offer 1 Table
+		mason_1_trade_offer_1_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+
+	["Mason Trade Settings"."Mason Level One Trade Two"]
+		# Mason 1 Trade Request 2 Table
+		mason_1_trade_request_2_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+		# Mason 1 Trade Offer 2 Table
+		mason_1_trade_offer_2_table = "todecoins:trade_tables/blocks/stone/overworld_brick"
+
+	["Mason Trade Settings"."Mason Level Two Trade One"]
+		# Mason 2 Trade Request 1 Table
+		mason_2_trade_request_1_table = "todecoins:trade_tables/blocks/stone/overworld_stone_blocks"
+		# Mason 2 Trade Offer 1 Table
+		mason_2_trade_offer_1_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+
+	["Mason Trade Settings"."Mason Level Two Trade Two"]
+		# Mason 2 Trade Request 2 Table
+		mason_2_trade_request_2_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+		# Mason 2 Trade Offer 2 Table
+		mason_2_trade_offer_2_table = "todecoins:trade_tables/blocks/stone/overworld_brick_blocks"
+
+	["Mason Trade Settings"."Mason Level Three Trade One"]
+		# Mason 3 Trade Request 1 Table
+		mason_3_trade_request_1_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+		# Mason 3 Trade Offer 1 Table
+		mason_3_trade_offer_1_table = "todecoins:trade_tables/blocks/stone/overworld_polished_stone_blocks"
+
+	["Mason Trade Settings"."Mason Level Three Trade Two"]
+		# Mason 3 Trade Request 2 Table
+		mason_3_trade_request_2_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+		# Mason 3 Trade Offer 2 Table
+		mason_3_trade_offer_2_table = "todecoins:trade_tables/gems/single_emerald_value_gems"
+
+	["Mason Trade Settings"."Mason Level Four Trade One"]
+		# Mason 4 Trade Request 1 Table
+		mason_4_trade_request_1_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+		# Mason 4 Trade Offer 1 Table
+		mason_4_trade_offer_1_table = "todecoins:trade_tables/blocks/terracotta/terracotta_blocks"
+
+	["Mason Trade Settings"."Mason Level Four Trade Two"]
+		# Mason 4 Trade Request 2 Table
+		mason_4_trade_request_2_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+		# Mason 4 Trade Offer 2 Table
+		mason_4_trade_offer_2_table = "todecoins:trade_tables/blocks/stone/overworld_other_stone_blocks"
+
+	["Mason Trade Settings"."Mason Level Five Trade One"]
+		# Mason 5 Trade Request 1 Table
+		mason_5_trade_request_1_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+		# Mason 5 Trade Offer 1 Table
+		mason_5_trade_offer_1_table = "todecoins:trade_tables/blocks/terracotta/glazed_terracotta_blocks"
+
+	["Mason Trade Settings"."Mason Level Five Trade Two"]
+		# Mason 5 Trade Request 2 Table
+		mason_5_trade_request_2_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+		# Mason 5 Trade Offer 2 Table
+		mason_5_trade_offer_2_table = "todecoins:trade_tables/blocks/stone/overworld_other_stone_blocks"
+
