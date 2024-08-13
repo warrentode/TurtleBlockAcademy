@@ -93,6 +93,10 @@ public class HerobrineSpawner implements CustomSpawner {
         else if (this.random.nextInt(OneInXChanceToSpawn) != 0) {
             return false;
         }
+        // hoping this will prevent mutliple herobrine entities from spawning near a player
+        else if (!player.level.getEntitiesOfClass(Herobrine.class, player.getBoundingBox().inflate(32, 32, 32)).isEmpty()) {
+            return false;
+        }
         else {
             BlockPos playerPos = player.blockPosition();
             int maxDistance = 16;

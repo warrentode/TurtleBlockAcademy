@@ -4,7 +4,9 @@ import biomesoplenty.api.biome.BOPBiomes;
 import com.aetherteam.aether.data.resources.registries.AetherDimensions;
 import com.catastrophe573.dimdungeons.DimDungeons;
 import com.github.warrentode.turtleblockacademy.datagen.loot.tables.*;
+import com.github.warrentode.turtleblockacademy.loot.conditions.BiomeTagCondition;
 import com.github.warrentode.turtleblockacademy.loot.conditions.SeasonalCondition;
+import com.github.warrentode.turtleblockacademy.util.TBATags;
 import com.github.warrentode.turtleblockacademy.world.dimension.TBADimensions;
 import com.google.common.collect.ImmutableList;
 import com.mojang.datafixers.util.Pair;
@@ -101,6 +103,37 @@ public class TBALootProviders extends LootTableProvider {
             .setStructure(Structures.VILLAGE_SAVANNA.unwrapKey().orElseThrow()));
     public static final LootItemCondition.Builder IN_VILLAGE_DESERT = LocationCheck.checkLocation(LocationPredicate.Builder.location()
             .setStructure(Structures.VILLAGE_DESERT.unwrapKey().orElseThrow()));
+
+    // biome tag checks
+    public static final LootItemCondition.Builder HAS_SPRUCE = BiomeTagCondition.tag().set(TBATags.Biomes.HAS_SPRUCE);
+    public static final LootItemCondition.Builder HAS_BIRCH = BiomeTagCondition.tag().set(TBATags.Biomes.HAS_BIRCH);
+    public static final LootItemCondition.Builder HAS_JUNGLE = BiomeTagCondition.tag().set(TBATags.Biomes.HAS_JUNGLE);
+    public static final LootItemCondition.Builder HAS_ACACIA = BiomeTagCondition.tag().set(TBATags.Biomes.HAS_ACACIA);
+    public static final LootItemCondition.Builder HAS_DARK_OAK = BiomeTagCondition.tag().set(TBATags.Biomes.HAS_DARK_OAK);
+    public static final LootItemCondition.Builder HAS_MANGROVE = BiomeTagCondition.tag().set(TBATags.Biomes.HAS_MANGROVE);
+    public static final LootItemCondition.Builder HAS_WARPED_FUNGUS = BiomeTagCondition.tag().set(TBATags.Biomes.HAS_WARPED_FUNGUS);
+    public static final LootItemCondition.Builder HAS_CRIMSON_FUNGUS = BiomeTagCondition.tag().set(TBATags.Biomes.HAS_CRIMSON_FUNGUS);
+    public static final LootItemCondition.Builder HAS_FIR = BiomeTagCondition.tag().set(TBATags.Biomes.HAS_FIR);
+    public static final LootItemCondition.Builder HAS_REDWOOD = BiomeTagCondition.tag().set(TBATags.Biomes.HAS_REDWOOD);
+    public static final LootItemCondition.Builder HAS_CHERRY = BiomeTagCondition.tag().set(TBATags.Biomes.HAS_CHERRY);
+    public static final LootItemCondition.Builder HAS_MAHOGANY = BiomeTagCondition.tag().set(TBATags.Biomes.HAS_MAHOGANY);
+    public static final LootItemCondition.Builder HAS_JACARANDA = BiomeTagCondition.tag().set(TBATags.Biomes.HAS_JACARANDA);
+    public static final LootItemCondition.Builder HAS_PALM = BiomeTagCondition.tag().set(TBATags.Biomes.HAS_PALM);
+    public static final LootItemCondition.Builder HAS_WILLOW = BiomeTagCondition.tag().set(TBATags.Biomes.HAS_WILLOW);
+    public static final LootItemCondition.Builder HAS_DEAD = BiomeTagCondition.tag().set(TBATags.Biomes.HAS_DEAD);
+    public static final LootItemCondition.Builder HAS_MAGIC = BiomeTagCondition.tag().set(TBATags.Biomes.HAS_MAGIC);
+    public static final LootItemCondition.Builder HAS_UMBRAN = BiomeTagCondition.tag().set(TBATags.Biomes.HAS_UMBRAN);
+    public static final LootItemCondition.Builder HAS_HELLBARK = BiomeTagCondition.tag().set(TBATags.Biomes.HAS_HELLBARK);
+    public static final LootItemCondition.Builder HAS_COCONUT = BiomeTagCondition.tag().set(TBATags.Biomes.HAS_COCONUT);
+    public static final LootItemCondition.Builder HAS_AZALEA = BiomeTagCondition.tag().set(TBATags.Biomes.HAS_AZALEA);
+    public static final LootItemCondition.Builder HAS_CHORUS_NEST = BiomeTagCondition.tag().set(TBATags.Biomes.HAS_CHORUS_NEST);
+    public static final LootItemCondition.Builder HAS_EBONY = BiomeTagCondition.tag().set(TBATags.Biomes.HAS_EBONY);
+    public static final LootItemCondition.Builder HAS_PREAM = BiomeTagCondition.tag().set(TBATags.Biomes.HAS_PREAM);
+    public static final LootItemCondition.Builder HAS_AETHER_SKYROOT = BiomeTagCondition.tag().set(TBATags.Biomes.HAS_AETHER_SKYROOT);
+    public static final LootItemCondition.Builder HAS_GOLDEN_OAK = BiomeTagCondition.tag().set(TBATags.Biomes.HAS_GOLDEN_OAK);
+    public static final LootItemCondition.Builder HAS_BLOODSHROOM = BiomeTagCondition.tag().set(TBATags.Biomes.HAS_BLOODSHROOM);
+    public static final LootItemCondition.Builder HAS_ENDERBARK = BiomeTagCondition.tag().set(TBATags.Biomes.HAS_ENDERBARK);
+    public static final LootItemCondition.Builder HAS_GREENHEART = BiomeTagCondition.tag().set(TBATags.Biomes.HAS_GREENHEART);
 
     // individual biome checks
     // BOP BIOMES

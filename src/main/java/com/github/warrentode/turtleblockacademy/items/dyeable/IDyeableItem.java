@@ -11,6 +11,7 @@ import java.util.List;
 
 // modified version of the vanilla DyeableLeatherItem class
 public interface IDyeableItem {
+    @SuppressWarnings("SameReturnValue")
     static ItemStack getInstance() {
         return dyeableInstance;
     }

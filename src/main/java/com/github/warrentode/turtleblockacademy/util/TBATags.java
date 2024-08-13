@@ -396,6 +396,66 @@ public class TBATags {
         TagKey<Biome> HAS_SWET_POOLS = packBiomeTag(MODID,"has_structure/swet_pools");
         TagKey<Biome> HAS_CAMP_UNDERGROUND = packBiomeTag(MODID,"has_structure/camp_underground");
         TagKey<Biome> HAS_NETHER_FOSSIL = packBiomeTag(MODID,"has_structure/nether_fossil");
+
+        // flower biomes
+        TagKey<Biome> HAS_SUNFLOWER = packBiomeTag("forge", "has_sunflower");
+        TagKey<Biome> HAS_PEONY = packBiomeTag("forge", "has_peony");
+        TagKey<Biome> HAS_ROSE_BUSH = packBiomeTag("forge", "has_rose_bush");
+        TagKey<Biome> HAS_LILAC = packBiomeTag("forge", "has_lilac");
+        TagKey<Biome> HAS_BUTTERCUP = packBiomeTag("forge", "has_buttercup");
+        TagKey<Biome> HAS_LILY_OF_THE_VALLEY = packBiomeTag("forge", "has_lily_of_the_valley");
+        TagKey<Biome> HAS_CORNFLOWER = packBiomeTag("forge", "has_cornflower");
+        TagKey<Biome> HAS_OXEYE_DAISY = packBiomeTag("forge", "has_oxeye_daisy");
+        TagKey<Biome> HAS_PINK_TULIP = packBiomeTag("forge", "has_pink_tulip");
+        TagKey<Biome> HAS_WHITE_TULIP = packBiomeTag("forge", "has_white_tulip");
+        TagKey<Biome> HAS_ORANGE_TULIP = packBiomeTag("forge", "has_orange_tulip");
+        TagKey<Biome> HAS_RED_TULIP = packBiomeTag("forge", "has_red_tulip");
+        TagKey<Biome> HAS_AZURE_BLUET = packBiomeTag("forge", "has_azure_bluet");
+        TagKey<Biome> HAS_ALLIUM = packBiomeTag("forge", "has_allium");
+        TagKey<Biome> HAS_BLUE_ORCHID = packBiomeTag("forge", "has_blue_orchid");
+        // tree biomes
+        TagKey<Biome> HAS_SPRUCE = packBiomeTag("forge", "has_spruce");
+        TagKey<Biome> HAS_MANGROVE = packBiomeTag("forge", "has_mangrove");
+        TagKey<Biome> HAS_ACACIA = packBiomeTag("forge", "has_acacia");
+        TagKey<Biome> HAS_JUNGLE = packBiomeTag("forge", "has_jungle");
+        TagKey<Biome> HAS_BIRCH = packBiomeTag("forge", "has_birch");
+        TagKey<Biome> HAS_DARK_OAK = packBiomeTag("forge", "has_dark_oak");
+        TagKey<Biome> NETHER_BIOMES = packBiomeTag("forge", "nether_biomes");
+        TagKey<Biome> HAS_WARPED_FUNGUS = packBiomeTag("forge", "has_warped_fungus");
+        TagKey<Biome> HAS_CRIMSON_FUNGUS = packBiomeTag("forge", "has_crimson_fungus");
+        TagKey<Biome> HAS_FIR = packBiomeTag("forge", "has_fir");
+        TagKey<Biome> HAS_REDWOOD = packBiomeTag("forge", "has_redwood");
+        TagKey<Biome> HAS_CHERRY = packBiomeTag("forge", "has_cherry");
+        TagKey<Biome> HAS_MAHOGANY = packBiomeTag("forge", "has_mahogany");
+        TagKey<Biome> HAS_JACARANDA = packBiomeTag("forge", "has_jacaranda");
+        TagKey<Biome> HAS_PALM = packBiomeTag("forge", "has_palm");
+        TagKey<Biome> HAS_WILLOW = packBiomeTag("forge", "has_willow");
+        TagKey<Biome> HAS_DEAD = packBiomeTag("forge", "has_dead");
+        TagKey<Biome> HAS_MAGIC = packBiomeTag("forge", "has_magic");
+        TagKey<Biome> HAS_UMBRAN = packBiomeTag("forge", "has_umbran");
+        TagKey<Biome> HAS_HELLBARK = packBiomeTag("forge", "has_hellbark");
+        TagKey<Biome> HAS_COCONUT = packBiomeTag("forge", "has_coconut");
+        TagKey<Biome> HAS_AZALEA = packBiomeTag("forge", "has_azalea");
+        TagKey<Biome> HAS_CHORUS_NEST = packBiomeTag("forge", "has_chorus_nest");
+        TagKey<Biome> HAS_EBONY = packBiomeTag("forge", "has_ebony");
+        TagKey<Biome> HAS_PREAM = packBiomeTag("forge", "has_pream");
+        TagKey<Biome> HAS_AETHER_SKYROOT = packBiomeTag("forge", "has_aether_skyroot");
+        TagKey<Biome> HAS_GOLDEN_OAK = packBiomeTag("forge", "has_golden_oak");
+        TagKey<Biome> HAS_BLOODSHROOM = packBiomeTag("forge", "has_bloodshroom");
+        TagKey<Biome> HAS_ENDERBARK = packBiomeTag("forge", "has_enderbark");
+        TagKey<Biome> HAS_GREENHEART = packBiomeTag("forge", "has_greenheart");
+        TagKey<Biome> HAS_TINKER_SKYROOT = packBiomeTag("forge", "has_tinker_skyroot");
+        // block biomes
+        TagKey<Biome> HAS_SANDSTONE = packBiomeTag("forge", "has_sandstone");
+        TagKey<Biome> HAS_RED_SANDSTONE = packBiomeTag("forge", "has_red_sandstone");
+        TagKey<Biome> HAS_MOSSY_STONE = packBiomeTag("forge", "has_mossy_stone");
+        TagKey<Biome> HAS_MUD = packBiomeTag("forge", "has_mud");
+        // entity biomes
+        TagKey<Biome> HAS_PUFFERFISH = packBiomeTag("forge", "has_pufferfish");
+        TagKey<Biome> HAS_TROPICAL_FISH = packBiomeTag("forge", "has_tropical_fish");
+        TagKey<Biome> HAS_SALMON = packBiomeTag("forge", "has_salmon");
+        TagKey<Biome> HAS_FROGS = packBiomeTag("forge", "has_frogs");
+        TagKey<Biome> HAS_AXOLOTL = packBiomeTag("forge", "has_axolotl");
     }
 
     private static @NotNull TagKey<Biome> packBiomeTag(String modid, String name) {

@@ -44,6 +44,7 @@ import net.minecraft.world.level.storage.loot.providers.number.UniformGenerator;
 import org.jetbrains.annotations.NotNull;
 import samebutdifferent.ecologics.registry.ModBlocks;
 import sereneseasons.api.SSItems;
+import slimeknights.tconstruct.world.TinkerWorld;
 import vazkii.patchouli.common.item.PatchouliItems;
 
 import java.util.function.BiConsumer;
@@ -650,6 +651,14 @@ public class PackLootTablesGen implements Consumer<BiConsumer<ResourceLocation, 
                         .add(LootItem.lootTableItem(SKYROOT_LOG.get()).when(IN_AETHER.or(IN_DUNGEON).or(IN_MINING))
                                 .apply(SetItemCountFunction.setCount(UniformGenerator.between(5, 9))))
                         .add(LootItem.lootTableItem(GOLDEN_OAK_LOG.get()).when(IN_AETHER.or(IN_DUNGEON).or(IN_MINING))
+                                .apply(SetItemCountFunction.setCount(UniformGenerator.between(5, 9))))
+                        .add(LootItem.lootTableItem(TinkerWorld.bloodshroom.getLog()).when(IN_NETHER.or(IN_DUNGEON).or(IN_MINING))
+                                .apply(SetItemCountFunction.setCount(UniformGenerator.between(5, 9))))
+                        .add(LootItem.lootTableItem(TinkerWorld.enderbark.getLog()).when(IN_END.or(IN_DUNGEON).or(IN_MINING))
+                                .apply(SetItemCountFunction.setCount(UniformGenerator.between(5, 9))))
+                        .add(LootItem.lootTableItem(TinkerWorld.greenheart.getLog()).when(IN_OVERWORLD.or(IN_DUNGEON).or(IN_MINING))
+                                .apply(SetItemCountFunction.setCount(UniformGenerator.between(5, 9))))
+                        .add(LootItem.lootTableItem(TinkerWorld.skyroot.getLog()).when(IN_OVERWORLD.or(IN_DUNGEON).or(IN_MINING))
                                 .apply(SetItemCountFunction.setCount(UniformGenerator.between(5, 9))))
                 )
         );
