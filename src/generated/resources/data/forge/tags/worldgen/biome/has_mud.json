@@ -1,0 +1,13 @@
+{
+  "values": [
+    {
+      "id": "biomesoplenty:glowing_grotto",
+      "required": false
+    },
+    {
+      "id": "biomesoplenty:wetland",
+      "required": false
+    },
+    "minecraft:mangrove_swamp"
+  ]
+}

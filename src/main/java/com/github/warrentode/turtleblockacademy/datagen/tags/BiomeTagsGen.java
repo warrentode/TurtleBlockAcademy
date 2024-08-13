@@ -22,6 +22,97 @@ public class BiomeTagsGen extends BiomeTagsProvider {
 
     @Override
     protected void addTags() {
+        tag(TBATags.Biomes.HAS_ORANGE_AUTUMN)
+                .addOptional(BOPBiomes.SEASONAL_FOREST.location())
+                .addOptional(BOPBiomes.PUMPKIN_PATCH.location());
+        tag(TBATags.Biomes.HAS_YELLOW_AUTUMN)
+                .addOptional(BOPBiomes.SEASONAL_FOREST.location())
+                .addOptional(BOPBiomes.SEASONAL_ORCHARD.location());
+        tag(TBATags.Biomes.HAS_ORIGIN)
+                .addOptional(BOPBiomes.ORIGIN_VALLEY.location());
+        tag(TBATags.Biomes.HAS_MAPLE)
+                .addOptional(BOPBiomes.BOG.location())
+                .addOptional(BOPBiomes.MAPLE_WOODS.location())
+                .addOptional(BOPBiomes.SEASONAL_FOREST.location())
+                .addOptional(BOPBiomes.SNOWY_MAPLE_WOODS.location())
+                .addOptional(BOPBiomes.TUNDRA.location());
+        tag(TBATags.Biomes.HAS_RAINBOW_BIRCH)
+                .addOptional(BOPBiomes.AURORAL_GARDEN.location());
+        tag(TBATags.Biomes.HAS_FLOWERING_OAK)
+                .addOptional(BOPBiomes.LAVENDER_FIELD.location())
+                .addOptional(BOPBiomes.LAVENDER_FOREST.location())
+                .addOptional(BOPBiomes.MEDITERRANEAN_FOREST.location())
+                .addOptional(BOPBiomes.MYSTIC_GROVE.location())
+                .addOptional(BOPBiomes.ORCHARD.location())
+                .addOptional(BOPBiomes.TROPICS.location())
+                .addOptional(BOPBiomes.BAMBOO_GROVE.location())
+                .addOptional(BOPBiomes.CHERRY_BLOSSOM_GROVE.location());
+        tag(TBATags.Biomes.HAS_BURNING_BLOSSOM)
+                .addOptional(BOPBiomes.UNDERGROWTH.location());
+        tag(TBATags.Biomes.HAS_ICY_IRIS)
+                .addOptional(BOPBiomes.AURORAL_GARDEN.location());
+        tag(TBATags.Biomes.HAS_LAVENDER)
+                .addOptional(BOPBiomes.LAVENDER_FIELD.location())
+                .addOptional(BOPBiomes.LAVENDER_FOREST.location());
+        tag(TBATags.Biomes.HAS_PINK_DAFFODIL)
+                .addOptional(BOPBiomes.BAMBOO_GROVE.location())
+                .addOptional(BOPBiomes.CHERRY_BLOSSOM_GROVE.location())
+                .addOptional(BOPBiomes.MYSTIC_GROVE.location());
+        tag(TBATags.Biomes.HAS_GLOWFLOWER)
+                .addOptional(BOPBiomes.MYSTIC_GROVE.location());
+        tag(TBATags.Biomes.HAS_AZURE_BLUET)
+                .add(Biomes.SUNFLOWER_PLAINS)
+                .add(Biomes.PLAINS)
+                .add(Biomes.MEADOW)
+                .addOptional(BOPBiomes.CLOVER_PATCH.location())
+                .addOptional(BOPBiomes.FIELD.location())
+                .addOptional(BOPBiomes.FORESTED_FIELD.location())
+                .addOptional(BOPBiomes.MYSTIC_GROVE.location());
+        tag(TBATags.Biomes.HAS_WITHER_ROSE)
+                .add(Biomes.SOUL_SAND_VALLEY)
+                .add(Biomes.BASALT_DELTAS)
+                .add(Biomes.CRIMSON_FOREST)
+                .add(Biomes.WARPED_FOREST)
+                .add(Biomes.NETHER_WASTES)
+                .addOptional(BOPBiomes.UNDERGROWTH.location())
+                .addOptional(BOPBiomes.WITHERED_ABYSS.location())
+                .addOptional(BOPBiomes.OMINOUS_WOODS.location());
+        tag(TBATags.Biomes.HAS_ROSE)
+                .addOptional(BOPBiomes.ORIGIN_VALLEY.location());
+        tag(TBATags.Biomes.HAS_ORANGE_COSMOS)
+                .addOptional(BOPBiomes.RAINFOREST.location());
+        tag(TBATags.Biomes.HAS_VIOLET)
+                .addOptional(BOPBiomes.AURORAL_GARDEN.location())
+                .addOptional(BOPBiomes.HIGHLAND_MOOR.location())
+                .addOptional(BOPBiomes.SNOWY_CONIFEROUS_FOREST.location())
+                .addOptional(BOPBiomes.SNOWY_FIR_CLEARING.location());
+        tag(TBATags.Biomes.HAS_PINK_HIBISCUS)
+                .addOptional(BOPBiomes.TROPICS.location());
+        tag(TBATags.Biomes.HAS_BLUE_HYDRANGEA)
+                .addOptional(BOPBiomes.MYSTIC_GROVE.location())
+                .addOptional(BOPBiomes.TROPICS.location());
+        tag(TBATags.Biomes.HAS_WILTED_LILY)
+                .addOptional(BOPBiomes.WOODED_WASTELAND.location());
+        tag(TBATags.Biomes.HAS_CATTAIL)
+                .addOptional(BOPBiomes.WETLAND.location());
+        tag(TBATags.Biomes.HAS_WILDFLOWER)
+                .addOptional(BOPBiomes.WOODED_SCRUBLAND.location())
+                .addOptional(BOPBiomes.SCRUBLAND.location())
+                .addOptional(BOPBiomes.LUSH_DESERT.location());
+        tag(TBATags.Biomes.HAS_GOLDENROD)
+                .addOptional(BOPBiomes.PRAIRIE.location())
+                .addOptional(BOPBiomes.OLD_GROWTH_WOODLAND.location())
+                .addOptional(BOPBiomes.WOODLAND.location());
+        tag(TBATags.Biomes.HAS_WHITE_FLOWER)
+                .addOptional(AetherBiomes.SKYROOT_WOODLAND.location())
+                .addOptional(AetherBiomes.SKYROOT_MEADOW.location())
+                .addOptional(AetherBiomes.SKYROOT_GROVE.location())
+                .addOptional(AetherBiomes.SKYROOT_FOREST.location());
+        tag(TBATags.Biomes.HAS_PURPLE_FLOWER)
+                .addOptional(AetherBiomes.SKYROOT_WOODLAND.location())
+                .addOptional(AetherBiomes.SKYROOT_MEADOW.location())
+                .addOptional(AetherBiomes.SKYROOT_GROVE.location())
+                .addOptional(AetherBiomes.SKYROOT_FOREST.location());
         tag(TBATags.Biomes.HAS_GREENHEART)
                 .add(Biomes.OCEAN)
                 .add(Biomes.COLD_OCEAN)
@@ -77,11 +168,14 @@ public class BiomeTagsGen extends BiomeTagsProvider {
         tag(TBATags.Biomes.HAS_MAGIC)
                 .addOptional(BOPBiomes.MYSTIC_GROVE.location());
         tag(TBATags.Biomes.HAS_DEAD)
+                .addOptional(BOPBiomes.TUNDRA.location())
+                .addOptional(BOPBiomes.WOODED_WASTELAND.location())
                 .addOptional(BOPBiomes.OMINOUS_WOODS.location())
                 .addOptional(BOPBiomes.MUSKEG.location())
                 .addOptional(BOPBiomes.OLD_GROWTH_DEAD_FOREST.location())
                 .addOptional(BOPBiomes.DEAD_FOREST.location());
         tag(TBATags.Biomes.HAS_WILLOW)
+                .addOptional(BOPBiomes.WETLAND.location())
                 .addOptional(BOPBiomes.BAYOU.location());
         tag(TBATags.Biomes.HAS_PALM)
                 .addOptional(BOPBiomes.TROPICS.location());
@@ -106,18 +200,33 @@ public class BiomeTagsGen extends BiomeTagsProvider {
                 .add(Biomes.SUNFLOWER_PLAINS)
                 .add(Biomes.ICE_SPIKES);
         tag(TBATags.Biomes.HAS_PEONY)
+                .addOptional(BOPBiomes.CHERRY_BLOSSOM_GROVE.location())
+                .addOptional(BOPBiomes.MEDITERRANEAN_FOREST.location())
                 .add(Biomes.OLD_GROWTH_BIRCH_FOREST)
                 .add(Biomes.FOREST)
                 .add(Biomes.DARK_FOREST)
                 .add(Biomes.FLOWER_FOREST)
                 .add(Biomes.BIRCH_FOREST);
         tag(TBATags.Biomes.HAS_ROSE_BUSH)
+                .addOptional(BOPBiomes.TROPICS.location())
+                .addOptional(BOPBiomes.FIELD.location())
+                .addOptional(BOPBiomes.FORESTED_FIELD.location())
+                .addOptional(BOPBiomes.LUSH_SAVANNA.location())
+                .addOptional(BOPBiomes.OLD_GROWTH_WOODLAND.location())
+                .addOptional(BOPBiomes.ORCHARD.location())
+                .addOptional(BOPBiomes.WOODLAND.location())
                 .add(Biomes.OLD_GROWTH_BIRCH_FOREST)
                 .add(Biomes.FOREST)
                 .add(Biomes.DARK_FOREST)
                 .add(Biomes.FLOWER_FOREST)
                 .add(Biomes.BIRCH_FOREST);
         tag(TBATags.Biomes.HAS_LILAC)
+                .addOptional(BOPBiomes.BAMBOO_GROVE.location())
+                .addOptional(BOPBiomes.CHERRY_BLOSSOM_GROVE.location())
+                .addOptional(BOPBiomes.FIELD.location())
+                .addOptional(BOPBiomes.FORESTED_FIELD.location())
+                .addOptional(BOPBiomes.MYSTIC_GROVE.location())
+                .addOptional(BOPBiomes.ROCKY_SHRUBLAND.location())
                 .add(Biomes.OLD_GROWTH_BIRCH_FOREST)
                 .add(Biomes.FOREST)
                 .add(Biomes.DARK_FOREST)
@@ -128,6 +237,11 @@ public class BiomeTagsGen extends BiomeTagsProvider {
                 .add(Biomes.MEADOW)
                 .add(Biomes.SUNFLOWER_PLAINS);
         tag(TBATags.Biomes.HAS_LILY_OF_THE_VALLEY)
+                .addOptional(BOPBiomes.HIGHLAND.location())
+                .addOptional(BOPBiomes.BAMBOO_GROVE.location())
+                .addOptional(BOPBiomes.CHERRY_BLOSSOM_GROVE.location())
+                .addOptional(BOPBiomes.FIELD.location())
+                .addOptional(BOPBiomes.HIGHLAND_MOOR.location())
                 .add(Biomes.OLD_GROWTH_BIRCH_FOREST)
                 .add(Biomes.FOREST)
                 .add(Biomes.DARK_FOREST)
@@ -140,6 +254,14 @@ public class BiomeTagsGen extends BiomeTagsProvider {
                 .add(Biomes.SUNFLOWER_PLAINS)
                 .add(Biomes.MEADOW);
         tag(TBATags.Biomes.HAS_OXEYE_DAISY)
+                .addOptional(BOPBiomes.FLOODPLAIN.location())
+                .addOptional(BOPBiomes.CONIFEROUS_FOREST.location())
+                .addOptional(BOPBiomes.FIR_CLEARING.location())
+                .addOptional(BOPBiomes.FLOODPLAIN.location())
+                .addOptional(BOPBiomes.MEDITERRANEAN_FOREST.location())
+                .addOptional(BOPBiomes.OLD_GROWTH_WOODLAND.location())
+                .addOptional(BOPBiomes.ORCHARD.location())
+                .addOptional(BOPBiomes.WOODLAND.location())
                 .add(Biomes.DRIPSTONE_CAVES)
                 .add(Biomes.DEEP_DARK)
                 .add(Biomes.PLAINS)
@@ -177,28 +299,58 @@ public class BiomeTagsGen extends BiomeTagsProvider {
                 .add(Biomes.SUNFLOWER_PLAINS)
                 .add(Biomes.MEADOW);
         tag(TBATags.Biomes.HAS_ALLIUM)
+                .addOptional(BOPBiomes.DRYLAND.location())
+                .addOptional(BOPBiomes.SHRUBLAND.location())
+                .addOptional(BOPBiomes.SCRUBLAND.location())
+                .addOptional(BOPBiomes.HIGHLAND.location())
+                .addOptional(BOPBiomes.HIGHLAND_MOOR.location())
+                .addOptional(BOPBiomes.MYSTIC_GROVE.location())
+                .addOptional(BOPBiomes.ORIGIN_VALLEY.location())
+                .addOptional(BOPBiomes.ROCKY_SHRUBLAND.location())
+                .addOptional(BOPBiomes.WOODED_SCRUBLAND.location())
                 .add(Biomes.FLOWER_FOREST)
                 .add(Biomes.MEADOW);
         tag(TBATags.Biomes.HAS_BLUE_ORCHID)
+                .addOptional(BOPBiomes.HIGHLAND.location())
                 .add(Biomes.SWAMP);
         tag(TBATags.Biomes.HAS_DARK_OAK)
+                .addOptional(BOPBiomes.PUMPKIN_PATCH.location())
+                .addOptional(BOPBiomes.SEASONAL_FOREST.location())
+                .addOptional(BOPBiomes.VOLCANIC_PLAINS.location())
                 .add(Biomes.DARK_FOREST);
         tag(TBATags.Biomes.HAS_BIRCH)
+                .addOptional(BOPBiomes.HIGHLAND_MOOR.location())
                 .add(Biomes.OLD_GROWTH_BIRCH_FOREST)
                 .add(Biomes.BIRCH_FOREST)
                 .add(Biomes.FLOWER_FOREST)
                 .add(Biomes.FOREST);
         tag(TBATags.Biomes.HAS_JUNGLE)
+                .addOptional(BOPBiomes.FUNGAL_JUNGLE.location())
+                .addOptional(BOPBiomes.RAINFOREST.location())
+                .addOptional(BOPBiomes.ROCKY_RAINFOREST.location())
+                .addOptional(BOPBiomes.TROPICS.location())
                 .add(Biomes.SPARSE_JUNGLE)
                 .add(Biomes.BAMBOO_JUNGLE)
                 .add(Biomes.JUNGLE);
         tag(TBATags.Biomes.HAS_ACACIA)
+                .addOptional(BOPBiomes.WOODED_WASTELAND.location())
                 .add(Biomes.WINDSWEPT_SAVANNA)
                 .add(Biomes.SAVANNA_PLATEAU)
                 .add(Biomes.SAVANNA);
         tag(TBATags.Biomes.HAS_MANGROVE)
                 .add(Biomes.MANGROVE_SWAMP);
         tag(TBATags.Biomes.HAS_SPRUCE)
+                .addOptional(BOPBiomes.SNOWY_FIR_CLEARING.location())
+                .addOptional(BOPBiomes.SNOWY_CONIFEROUS_FOREST.location())
+                .addOptional(BOPBiomes.OLD_GROWTH_DEAD_FOREST.location())
+                .addOptional(BOPBiomes.FIELD.location())
+                .addOptional(BOPBiomes.MAPLE_WOODS.location())
+                .addOptional(BOPBiomes.FORESTED_FIELD.location())
+                .addOptional(BOPBiomes.JADE_CLIFFS.location())
+                .addOptional(BOPBiomes.MEDITERRANEAN_FOREST.location())
+                .addOptional(BOPBiomes.SNOWY_MAPLE_WOODS.location())
+                .addOptional(BOPBiomes.WETLAND.location())
+                .addOptional(BOPBiomes.WOODED_SCRUBLAND.location())
                 .add(Biomes.TAIGA)
                 .add(Biomes.FROZEN_RIVER)
                 .add(Biomes.SNOWY_BEACH)
@@ -225,6 +377,7 @@ public class BiomeTagsGen extends BiomeTagsProvider {
         tag(TBATags.Biomes.HAS_CRIMSON_FUNGUS)
                 .add(Biomes.CRIMSON_FOREST);
         tag(TBATags.Biomes.HAS_SANDSTONE)
+                .addOptional(BOPBiomes.WASTELAND.location())
                 .add(Biomes.SNOWY_BEACH)
                 .add(Biomes.BEACH)
                 .add(Biomes.DESERT);
@@ -233,6 +386,7 @@ public class BiomeTagsGen extends BiomeTagsProvider {
                 .add(Biomes.ERODED_BADLANDS)
                 .add(Biomes.BADLANDS);
         tag(TBATags.Biomes.HAS_MOSSY_STONE)
+                .addOptional(BOPBiomes.TUNDRA.location())
                 .add(Biomes.TAIGA)
                 .add(Biomes.OLD_GROWTH_PINE_TAIGA)
                 .add(Biomes.OLD_GROWTH_SPRUCE_TAIGA);
@@ -254,11 +408,14 @@ public class BiomeTagsGen extends BiomeTagsProvider {
                 .add(Biomes.FROZEN_OCEAN)
                 .add(Biomes.DEEP_FROZEN_OCEAN);
         tag(TBATags.Biomes.HAS_FROGS)
+                .addOptional(BOPBiomes.BOG.location())
                 .add(Biomes.SWAMP)
                 .add(Biomes.MANGROVE_SWAMP);
         tag(TBATags.Biomes.HAS_AXOLOTL)
                 .add(Biomes.LUSH_CAVES);
         tag(TBATags.Biomes.HAS_MUD)
+                .addOptional(BOPBiomes.GLOWING_GROTTO.location())
+                .addOptional(BOPBiomes.WETLAND.location())
                 .add(Biomes.MANGROVE_SWAMP);
         tag(TBATags.Biomes.IS_ARID)
                 .add(Biomes.DESERT)

@@ -1,0 +1,11 @@
+{
+  "values": [
+    {
+      "id": "biomesoplenty:wasteland",
+      "required": false
+    },
+    "minecraft:snowy_beach",
+    "minecraft:beach",
+    "minecraft:desert"
+  ]
+}

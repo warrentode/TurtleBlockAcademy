@@ -1,0 +1,41 @@
+{
+  "values": [
+    {
+      "id": "biomesoplenty:floodplain",
+      "required": false
+    },
+    {
+      "id": "biomesoplenty:coniferous_forest",
+      "required": false
+    },
+    {
+      "id": "biomesoplenty:fir_clearing",
+      "required": false
+    },
+    {
+      "id": "biomesoplenty:floodplain",
+      "required": false
+    },
+    {
+      "id": "biomesoplenty:mediterranean_forest",
+      "required": false
+    },
+    {
+      "id": "biomesoplenty:old_growth_woodland",
+      "required": false
+    },
+    {
+      "id": "biomesoplenty:orchard",
+      "required": false
+    },
+    {
+      "id": "biomesoplenty:woodland",
+      "required": false
+    },
+    "minecraft:dripstone_caves",
+    "minecraft:deep_dark",
+    "minecraft:plains",
+    "minecraft:sunflower_plains",
+    "minecraft:meadow"
+  ]
+}

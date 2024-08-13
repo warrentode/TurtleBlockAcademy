@@ -12,8 +12,12 @@ public class TradeLootTables {
     private static final Set<ResourceLocation> LOCATIONS = Sets.newHashSet();
     private static final Set<ResourceLocation> IMMUTABLE_LOCATIONS = Collections.unmodifiableSet(LOCATIONS);
 
-    public static final ResourceLocation LOG_TRADE_TABLE = register(MODID + ":" + "trade_loot_tables/log_trade_table");
-    public static final ResourceLocation FLOWER_TRADE_TABLE = register(MODID + ":" + "trade_loot_tables/flower_trade_table");
+    public static final ResourceLocation LOG_BUY_TRADE_TABLE = register(MODID + ":" + "trade_loot_tables/log_buy_trade_table");
+    public static final ResourceLocation LOG_SELL_TRADE_TABLE = register(MODID + ":" + "trade_loot_tables/log_sell_trade_table");
+    public static final ResourceLocation SAPLING_BUY_TRADE_TABLE = register(MODID + ":" + "trade_loot_tables/sapling_buy_trade_table");
+    public static final ResourceLocation SAPLING_SELL_TRADE_TABLE = register(MODID + ":" + "trade_loot_tables/sapling_sell_trade_table");
+    public static final ResourceLocation FLOWER_SELL_TRADE_TABLE = register(MODID + ":" + "trade_loot_tables/flower_sell_trade_table");
+    public static final ResourceLocation FLOWER_BUY_TRADE_TABLE = register(MODID + ":" + "trade_loot_tables/flower_buy_trade_table");
 
     private static ResourceLocation register(String path) {
         return register(new ResourceLocation(path));

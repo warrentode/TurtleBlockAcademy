@@ -90,7 +90,7 @@
               "function": "minecraft:set_count"
             }
           ],
-          "name": "minecraft:frogspawn"
+          "name": "minecraft:tadpole_bucket"
         }
       ],
       "rolls": 1.0

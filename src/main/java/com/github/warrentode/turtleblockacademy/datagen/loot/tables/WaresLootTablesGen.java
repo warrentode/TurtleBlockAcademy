@@ -968,6 +968,8 @@ public class WaresLootTablesGen implements Consumer<BiConsumer<ResourceLocation,
                                 .apply(SetItemCountFunction.setCount(ConstantValue.exactly(6))))
                         .add(LootItem.lootTableItem(BOPBlocks.GLOWING_MOSS_CARPET.get())
                                 .apply(SetItemCountFunction.setCount(ConstantValue.exactly(3))))
+                        .add(LootItem.lootTableItem(Blocks.MUD)
+                                .apply(SetItemCountFunction.setCount(ConstantValue.exactly(6))))
                 )
         );
         consumer.accept(WaresLootTables.WARES_FUNGAL_JUNGLE_PRODUCTS, LootTable.lootTable()
@@ -1571,7 +1573,7 @@ public class WaresLootTablesGen implements Consumer<BiConsumer<ResourceLocation,
                                 .apply(SetItemCountFunction.setCount(ConstantValue.exactly(6))))
                         .add(LootItem.lootTableItem(Items.LILY_PAD)
                                 .apply(SetItemCountFunction.setCount(ConstantValue.exactly(2))))
-                        .add(LootItem.lootTableItem(Items.FROGSPAWN)
+                        .add(LootItem.lootTableItem(Items.TADPOLE_BUCKET)
                                 .apply(SetItemCountFunction.setCount(ConstantValue.exactly(1))))
                 )
         );

@@ -1,0 +1,17 @@
+{
+  "values": [
+    {
+      "id": "biomesoplenty:pumpkin_patch",
+      "required": false
+    },
+    {
+      "id": "biomesoplenty:seasonal_forest",
+      "required": false
+    },
+    {
+      "id": "biomesoplenty:volcanic_plains",
+      "required": false
+    },
+    "minecraft:dark_forest"
+  ]
+}

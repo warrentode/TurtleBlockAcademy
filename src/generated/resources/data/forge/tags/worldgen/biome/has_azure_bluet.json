@@ -1,0 +1,23 @@
+{
+  "values": [
+    "minecraft:sunflower_plains",
+    "minecraft:plains",
+    "minecraft:meadow",
+    {
+      "id": "biomesoplenty:clover_patch",
+      "required": false
+    },
+    {
+      "id": "biomesoplenty:field",
+      "required": false
+    },
+    {
+      "id": "biomesoplenty:forested_field",
+      "required": false
+    },
+    {
+      "id": "biomesoplenty:mystic_grove",
+      "required": false
+    }
+  ]
+}

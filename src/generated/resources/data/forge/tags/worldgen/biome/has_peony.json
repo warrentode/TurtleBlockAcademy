@@ -1,0 +1,17 @@
+{
+  "values": [
+    {
+      "id": "biomesoplenty:cherry_blossom_grove",
+      "required": false
+    },
+    {
+      "id": "biomesoplenty:mediterranean_forest",
+      "required": false
+    },
+    "minecraft:old_growth_birch_forest",
+    "minecraft:forest",
+    "minecraft:dark_forest",
+    "minecraft:flower_forest",
+    "minecraft:birch_forest"
+  ]
+}

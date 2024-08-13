@@ -69,6 +69,17 @@
             }
           ],
           "name": "biomesoplenty:glowing_moss_carpet"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "add": false,
+              "count": 6.0,
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "minecraft:mud"
         }
       ],
       "rolls": 1.0

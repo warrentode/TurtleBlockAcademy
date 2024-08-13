@@ -1,0 +1,9 @@
+{
+  "values": [
+    {
+      "id": "biomesoplenty:highland",
+      "required": false
+    },
+    "minecraft:swamp"
+  ]
+}

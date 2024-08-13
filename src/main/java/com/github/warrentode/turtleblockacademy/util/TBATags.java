@@ -413,6 +413,23 @@ public class TBATags {
         TagKey<Biome> HAS_AZURE_BLUET = packBiomeTag("forge", "has_azure_bluet");
         TagKey<Biome> HAS_ALLIUM = packBiomeTag("forge", "has_allium");
         TagKey<Biome> HAS_BLUE_ORCHID = packBiomeTag("forge", "has_blue_orchid");
+        TagKey<Biome> HAS_PURPLE_FLOWER = packBiomeTag("forge", "has_purple_flower");
+        TagKey<Biome> HAS_WHITE_FLOWER = packBiomeTag("forge", "has_white_flower");
+        TagKey<Biome> HAS_GOLDENROD = packBiomeTag("forge", "has_goldenrod");
+        TagKey<Biome> HAS_WILDFLOWER = packBiomeTag("forge", "has_wildflower");
+        TagKey<Biome> HAS_CATTAIL = packBiomeTag("forge", "has_cattail");
+        TagKey<Biome> HAS_WILTED_LILY = packBiomeTag("forge", "has_wilted_lily");
+        TagKey<Biome> HAS_BLUE_HYDRANGEA = packBiomeTag("forge", "has_blue_hydrangea");
+        TagKey<Biome> HAS_PINK_HIBISCUS = packBiomeTag("forge", "has_pink_hibiscus");
+        TagKey<Biome> HAS_VIOLET = packBiomeTag("forge", "has_violet");
+        TagKey<Biome> HAS_ORANGE_COSMOS = packBiomeTag("forge", "has_orange_cosmos");
+        TagKey<Biome> HAS_ROSE = packBiomeTag("forge", "has_rose");
+        TagKey<Biome> HAS_WITHER_ROSE = packBiomeTag("forge", "has_wither_rose");
+        TagKey<Biome> HAS_GLOWFLOWER = packBiomeTag("forge", "has_glowflower");
+        TagKey<Biome> HAS_PINK_DAFFODIL = packBiomeTag("forge", "has_pink_daffodil");
+        TagKey<Biome> HAS_LAVENDER = packBiomeTag("forge", "has_lavender");
+        TagKey<Biome> HAS_ICY_IRIS = packBiomeTag("forge", "has_icy_iris");
+        TagKey<Biome> HAS_BURNING_BLOSSOM = packBiomeTag("forge", "has_burning_blossom");
         // tree biomes
         TagKey<Biome> HAS_SPRUCE = packBiomeTag("forge", "has_spruce");
         TagKey<Biome> HAS_MANGROVE = packBiomeTag("forge", "has_mangrove");
@@ -445,6 +462,12 @@ public class TBATags {
         TagKey<Biome> HAS_ENDERBARK = packBiomeTag("forge", "has_enderbark");
         TagKey<Biome> HAS_GREENHEART = packBiomeTag("forge", "has_greenheart");
         TagKey<Biome> HAS_TINKER_SKYROOT = packBiomeTag("forge", "has_tinker_skyroot");
+        TagKey<Biome> HAS_FLOWERING_OAK = packBiomeTag("forge", "has_flowering_oak");
+        TagKey<Biome> HAS_RAINBOW_BIRCH = packBiomeTag("forge", "has_rainbow_birch");
+        TagKey<Biome> HAS_MAPLE = packBiomeTag("forge", "has_maple");
+        TagKey<Biome> HAS_ORIGIN = packBiomeTag("forge", "has_origin");
+        TagKey<Biome> HAS_YELLOW_AUTUMN = packBiomeTag("forge", "has_yellow_autumn");
+        TagKey<Biome> HAS_ORANGE_AUTUMN = packBiomeTag("forge", "has_orange_autumn");
         // block biomes
         TagKey<Biome> HAS_SANDSTONE = packBiomeTag("forge", "has_sandstone");
         TagKey<Biome> HAS_RED_SANDSTONE = packBiomeTag("forge", "has_red_sandstone");
