@@ -1,0 +1,621 @@
+{
+  "profession": "chefsdelight:delightchef",
+  "removeOtherTrades": true,
+  "trades": [
+    {
+      "multiOffer": [
+        {
+          "itemKey": "minecraft:emerald",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:copper_coin_bag",
+          "amount": 18,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:iron_coin_bag",
+          "amount": 8,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:gold_coin_bag",
+          "amount": 6,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:nether_gold_coin",
+          "amount": 3,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:endonian_coin",
+          "amount": 1,
+          "priceModifier": 0
+        }
+      ],
+      "multiRequest": [
+        {
+          "itemKey": "minecraft:milk_bucket",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "aether:skyroot_milk_bucket",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "farmersdelight:milk_bottle",
+          "amount": 1,
+          "priceModifier": 0
+        }
+      ],
+      "tradeExp": 1,
+      "maxUses": 16,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 1,
+      "UTID": "chefsdelight:delightchef_emerald_for_milk_bucket"
+    },
+    {
+      "multiOffer": [
+        {
+          "itemKey": "delightful:bone_knife",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "delightful:lapis_lazuli_knife",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "delightful:amethyst_knife",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "delightful:emerald_knife",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "delightful:copper_knife",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "delightful:crystalline_knife",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "ends_delight:purpur_knife",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "ends_delight:end_stone_knife",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "farmersdelight:flint_knife",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "farmersdelight:iron_knife",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "farmersdelight:diamond_knife",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "farmersdelight:golden_knife",
+          "amount": 1,
+          "priceModifier": 0
+        }
+      ],
+      "multiRequest": [
+        {
+          "itemKey": "minecraft:emerald",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:copper_coin_bag",
+          "amount": 18,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:iron_coin_bag",
+          "amount": 8,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:gold_coin_bag",
+          "amount": 6,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:nether_gold_coin",
+          "amount": 3,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:endonian_coin",
+          "amount": 1,
+          "priceModifier": 0
+        }
+      ],
+      "tradeExp": 1,
+      "maxUses": 12,
+      "priceMultiplier": 0.2,
+      "demand": 0,
+      "tradeLevel": 1,
+      "UTID": "chefsdelight:delightchef_flint_knife_for_emerald"
+    },
+    {
+      "multiOffer": [
+        {
+          "itemKey": "minecraft:emerald",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:copper_coin_bag",
+          "amount": 18,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:iron_coin_bag",
+          "amount": 8,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:gold_coin_bag",
+          "amount": 6,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:nether_gold_coin",
+          "amount": 3,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:endonian_coin",
+          "amount": 1,
+          "priceModifier": 0
+        }
+      ],
+      "request": {
+        "itemKey": "minecraft:egg",
+        "amount": 16,
+        "priceModifier": 0
+      },
+      "tradeExp": 10,
+      "maxUses": 16,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 2,
+      "UTID": "chefsdelight:delightchef_emerald_for_egg"
+    },
+    {
+      "multiOffer": [
+        {
+          "itemKey": "minecraft:cake",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "farmersrespite:coffee_cake",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "kawaiidishes:cheese_cake",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "kawaiidishes:chocolate_cheese_cake",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "kawaiidishes:honey_cheese_cake",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "farmersdelight:sweet_berry_cheesecake",
+          "amount": 1,
+          "priceModifier": 0
+        }
+      ],
+      "multiRequest": [
+        {
+          "itemKey": "minecraft:emerald",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:copper_coin_bag",
+          "amount": 18,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:iron_coin_bag",
+          "amount": 8,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:gold_coin_bag",
+          "amount": 6,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:nether_gold_coin",
+          "amount": 3,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:endonian_coin",
+          "amount": 1,
+          "priceModifier": 0
+        }
+      ],
+      "tradeExp": 5,
+      "maxUses": 16,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 2,
+      "UTID": "chefsdelight:delightchef_multioffer_cake_for_emerald"
+    },
+    {
+      "multiOffer": [
+        {
+          "itemKey": "minecraft:pumpkin_pie",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "farmersrespite:rose_hip_pie",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "farmersdelight:apple_pie",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "farmersdelight:chocolate_pie",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "delightful:salmonberry_pie",
+          "amount": 1,
+          "priceModifier": 0
+        }
+      ],
+      "multiRequest": [
+        {
+          "itemKey": "minecraft:emerald",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:copper_coin_bag",
+          "amount": 18,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:iron_coin_bag",
+          "amount": 8,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:gold_coin_bag",
+          "amount": 6,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:nether_gold_coin",
+          "amount": 3,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:endonian_coin",
+          "amount": 1,
+          "priceModifier": 0
+        }
+      ],
+      "tradeExp": 10,
+      "maxUses": 16,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 3,
+      "UTID": "chefsdelight:delightchef_multioffer_pumpkin_pie_for_emerald"
+    },
+    {
+      "multiOffer": [
+        {
+          "itemKey": "minecraft:emerald",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:copper_coin_bag",
+          "amount": 18,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:iron_coin_bag",
+          "amount": 8,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:gold_coin_bag",
+          "amount": 6,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:nether_gold_coin",
+          "amount": 3,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:endonian_coin",
+          "amount": 1,
+          "priceModifier": 0
+        }
+      ],
+      "request": {
+        "itemKey": "minecraft:sugar",
+        "amount": 16,
+        "priceModifier": 0
+      },
+      "tradeExp": 20,
+      "maxUses": 16,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 3,
+      "UTID": "chefsdelight:delightchef_emerald_for_sugar"
+    },
+    {
+      "multiOffer": [
+        {
+          "itemKey": "farmersdelight:roast_chicken_block",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "festive_delight:festive_chicken_block",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "farmersdelight:stuffed_pumpkin_block",
+          "amount": 1,
+          "priceModifier": 0
+        }
+      ],
+      "multiRequest": [
+        {
+          "itemKey": "minecraft:emerald",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:copper_coin_bag",
+          "amount": 18,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:iron_coin_bag",
+          "amount": 8,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:gold_coin_bag",
+          "amount": 6,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:nether_gold_coin",
+          "amount": 3,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:endonian_coin",
+          "amount": 1,
+          "priceModifier": 0
+        }
+      ],
+      "tradeExp": 15,
+      "maxUses": 16,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 4,
+      "UTID": "chefsdelight:delightchef_multioffer_roast_chicken_block_for_emerald"
+    },
+    {
+      "multiOffer": [
+        {
+          "itemKey": "minecraft:emerald",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:copper_coin_bag",
+          "amount": 18,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:iron_coin_bag",
+          "amount": 8,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:gold_coin_bag",
+          "amount": 6,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:nether_gold_coin",
+          "amount": 3,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:endonian_coin",
+          "amount": 1,
+          "priceModifier": 0
+        }
+      ],
+      "multiRequest": [
+        {
+          "itemKey": "minecraft:chicken",
+          "amount": 14,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "minecraft:pumpkin",
+          "amount": 6
+        }
+      ],
+      "tradeExp": 30,
+      "maxUses": 16,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 4,
+      "UTID": "chefsdelight:delightchef_emerald_for_multirequest_chicken"
+    },
+    {
+      "multiOffer": [
+        {
+          "itemKey": "farmersdelight:shepherds_pie_block",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "farmersdelight:rice_roll_medley_block",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "farmersdelight:honey_glazed_ham_block",
+          "amount": 1,
+          "priceModifier": 0
+        }
+      ],
+      "multiRequest": [
+        {
+          "itemKey": "minecraft:emerald",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:copper_coin_bag",
+          "amount": 18,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:iron_coin_bag",
+          "amount": 8,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:gold_coin_bag",
+          "amount": 6,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:nether_gold_coin",
+          "amount": 3,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:endonian_coin",
+          "amount": 1,
+          "priceModifier": 0
+        }
+      ],
+      "tradeExp": 30,
+      "maxUses": 16,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 5,
+      "UTID": "chefsdelight:delightchef_multioffer_shepherds_pie_block_for_emerald"
+    },
+    {
+      "multiOffer": [
+        {
+          "itemKey": "minecraft:emerald",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:copper_coin_bag",
+          "amount": 18,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:iron_coin_bag",
+          "amount": 8,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:gold_coin_bag",
+          "amount": 6,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:nether_gold_coin",
+          "amount": 3,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:endonian_coin",
+          "amount": 1,
+          "priceModifier": 0
+        }
+      ],
+      "multiRequest": [
+        {
+          "itemKey": "minecraft:cod",
+          "amount": 15
+        },
+        {
+          "itemKey": "minecraft:salmon",
+          "amount": 13
+        },
+        {
+          "itemKey": "minecraft:mutton",
+          "amount": 7
+        },
+        {
+          "itemKey": "farmersdelight:ham",
+          "amount": 7
+        },
+        {
+          "itemKey": "minecraft:dried_kelp_block",
+          "amount": 10
+        }
+      ],
+      "tradeExp": 30,
+      "maxUses": 16,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 5,
+      "UTID": "chefsdelight:delightchef_emerald_for_multirequest_cod"
+    }
+  ]
+}

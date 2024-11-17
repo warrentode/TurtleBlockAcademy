@@ -1,4 +1,4 @@
-// 1.19.2	2024-08-13T03:14:52.5905692	LootTables
+// 1.19.2	2024-11-16T19:59:42.9328855	LootTables
 e2401b7cbcd222542356afa83d2ea98f28f151a8 data/dimdungeons/loot_tables/chests/kit_basic_supplies.json
 87a0cbf6a892b17ac0de9da47bde823b2367a6cc data/dimdungeons/loot_tables/chests/kit_blackstone.json
 3da5b95edb2c52fcbf8b6f6adbed631a2a63e509 data/dimdungeons/loot_tables/chests/kit_brick_set.json
@@ -1387,6 +1387,7 @@ a16ddd0684eeee60562d3b0ff010ba324ea2693a data/turtleblockacademy/loot_tables/blo
 7396575f059e867505d89e13c862ecfd5de3d995 data/turtleblockacademy/loot_tables/chests/bonus_sand_drops.json
 d54cd9db5c857d67125a687ea96cbc06a5d32970 data/turtleblockacademy/loot_tables/chests/camp_chest.json
 15d37cdabe57c95917cffafe9176fa2c66cddbb6 data/turtleblockacademy/loot_tables/chests/cookery_deco.json
+11fd00bfd3ec321c691ecc799859538c74866b25 data/turtleblockacademy/loot_tables/chests/deco_all.json
 3f1851b56641a7bfc7fde08ff087da479b97efc1 data/turtleblockacademy/loot_tables/chests/diamond_tier_gear.json
 bb11222a25956e8f5ca99f1793defddd140258ec data/turtleblockacademy/loot_tables/chests/dungeon_rewards.json
 4c6e37cb849310ba7ef21f259670d1815b650321 data/turtleblockacademy/loot_tables/chests/easter_eggs.json

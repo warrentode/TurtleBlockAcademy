@@ -1,0 +1,101 @@
+
+["Miner Trade Settings"]
+
+	["Miner Trade Settings"."Miner Level One Trade One"]
+		# Miner 1 Trade Request 1 Table
+		miner_1_trade_request_1_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+		# Miner 1 Trade Offer 1 Table
+		miner_1_trade_offer_1_table = "todecoins:trade_tables/blocks/stone/overworld_stone_blocks"
+
+	["Miner Trade Settings"."Miner Level One Trade TWo"]
+		# Miner 1 Trade Request 2 Table
+		miner_1_trade_request_2_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+		# Miner 1 Trade Offer 2 Table
+		miner_1_trade_offer_2_table = "todecoins:trade_tables/metals/single_emerald_value_metals"
+
+	["Miner Trade Settings"."Miner Level One Trade Three"]
+		# Miner 1 Trade Request 3 Table
+		miner_1_trade_request_3_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+		# Miner 1 Trade Offer 2 Table
+		miner_1_trade_offer_2_table = "todecoins:trade_tables/decor/torch_table"
+
+	["Miner Trade Settings"."Miner Level One Trade Four"]
+		# Miner 1 Trade Request 4 Table
+		miner_1_trade_request_4_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+		# Miner 1 Trade Offer 4 Table
+		miner_1_trade_offer_4_table = "todecoins:trade_tables/armor/helmets/goggles_tag"
+		#Range: 1 ~ 64
+		miner_1_trade_offer_4_count = 1
+
+	["Miner Trade Settings"."Miner Level One Trade Five"]
+		# Miner 1 Trade Request 5 Table
+		miner_1_trade_request_5_table = "todecoins:trade_tables/currency/two_emerald_value_currency"
+		# Miner 1 Trade Offer 5 Table
+		miner_1_trade_offer_5_table = "todecoins:trade_tables/misc/mining_equipment_tag_table"
+		#Range: 1 ~ 64
+		miner_1_trade_offer_5_count = 1
+
+	["Miner Trade Settings"."Miner Level Two Trade One"]
+		# Miner 2 Trade Request 1 Table
+		miner_2_trade_request_1_table = "todecoins:trade_tables/currency/two_emerald_value_currency"
+		# Miner 2 Trade Offer 1 Table
+		miner_2_trade_offer_1_table = "todecoins:trade_tables/misc/mining_equipment_tag_table"
+		#Range: 1 ~ 64
+		miner_2_trade_offer_1_count = 1
+
+	["Miner Trade Settings"."Miner Level Two Trade TWo"]
+		# Miner 2 Trade Request 2 Table
+		miner_2_trade_request_2_table = "todecoins:trade_tables/currency/two_emerald_value_currency"
+		# Miner 2 Trade Offer 2 Table
+		miner_2_trade_offer_2_table = "todecoins:trade_tables/misc/mining_equipment_tag_table"
+		#Range: 1 ~ 64
+		miner_2_trade_offer_2_count = 1
+
+	["Miner Trade Settings"."Miner Level Three Trade One"]
+		# Miner 3 Trade Request 1 Table
+		miner_3_trade_request_1_table = "todecoins:trade_tables/currency/two_emerald_value_currency"
+		# Miner 3 Trade Offer 1 Table
+		miner_3_trade_offer_1_table = "todecoins:trade_tables/misc/mining_equipment_tag_table"
+		#Range: 1 ~ 64
+		miner_3_trade_offer_1_count = 1
+
+	["Miner Trade Settings"."Miner Level Three Trade TWo"]
+		# Miner 3 Trade Request 2 Table
+		miner_3_trade_request_2_table = "todecoins:trade_tables/currency/two_emerald_value_currency"
+		# Miner 3 Trade Offer 2 Table
+		miner_3_trade_offer_2_table = "todecoins:trade_tables/misc/mining_equipment_tag_table"
+		#Range: 1 ~ 64
+		miner_3_trade_offer_2_count = 1
+
+	["Miner Trade Settings"."Miner Level Four Trade One"]
+		# Miner 4 Trade Request 1 Table
+		miner_4_trade_request_1_table = "todecoins:trade_tables/currency/two_emerald_value_currency"
+		# Miner 4 Trade Offer 1 Table
+		miner_4_trade_offer_1_table = "todecoins:trade_tables/misc/mining_equipment_tag_table"
+		#Range: 1 ~ 64
+		miner_4_trade_offer_1_count = 1
+
+	["Miner Trade Settings"."Miner Level Four Trade TWo"]
+		# Miner 4 Trade Request 2 Table
+		miner_4_trade_request_2_table = "todecoins:trade_tables/currency/two_emerald_value_currency"
+		# Miner 4 Trade Offer 2 Table
+		miner_4_trade_offer_2_table = "todecoins:trade_tables/misc/mining_equipment_tag_table"
+		#Range: 1 ~ 64
+		miner_4_trade_offer_2_count = 1
+
+	["Miner Trade Settings"."Miner Level Five Trade One"]
+		# Miner 5 Trade Request 1 Table
+		miner_5_trade_request_1_table = "todecoins:trade_tables/currency/two_emerald_value_currency"
+		# Miner 5 Trade Offer 1 Table
+		miner_5_trade_offer_1_table = "todecoins:trade_tables/misc/mining_equipment_tag_table"
+		#Range: 1 ~ 64
+		miner_5_trade_offer_1_count = 1
+
+	["Miner Trade Settings"."Miner Level Five Trade TWo"]
+		# Miner 5 Trade Request 2 Table
+		miner_5_trade_request_2_table = "todecoins:trade_tables/currency/two_emerald_value_currency"
+		# Miner 5 Trade Offer 2 Table
+		miner_5_trade_offer_2_table = "todecoins:trade_tables/misc/mining_equipment_tag_table"
+		#Range: 1 ~ 64
+		miner_5_trade_offer_2_count = 1
+

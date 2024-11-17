@@ -1,0 +1,72 @@
+
+["Chef Trade Settings"]
+
+	["Chef Trade Settings"."Chef Level One Trade One"]
+		# Chef 1 Trade Request 1 Table
+		chef_1_trade_request_1_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+		# Chef 1 Trade Offer 1 Table
+		chef_1_trade_offer_1_table = "todecoins:trade_tables/misc/cooking_tools_table"
+
+	["Chef Trade Settings"."Chef Level One Trade Two"]
+		# Chef 1 Trade Request 2 Table
+		chef_1_trade_request_2_table = "todecoins:trade_tables/food/ingredients_tag_table"
+		chef_1_trade_request_2_count = 16
+		# Chef 1 Trade Offer 2 Table
+		chef_1_trade_offer_2_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+
+	["Chef Trade Settings"."Chef Level Two Trade One"]
+		# Chef 2 Trade Request 1 Table
+		chef_2_trade_request_1_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+		# Chef 2 Trade Offer 1 Table
+		chef_2_trade_offer_1_table = "todecoins:trade_tables/food/tagged_cooked_meats_table"
+		chef_2_trade_offer_1_count = 6
+
+	["Chef Trade Settings"."Chef Level Two Trade Two"]
+		# Chef 2 Trade Request 2 Table
+		chef_2_trade_request_2_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+		# Chef 2 Trade Offer 2 Table
+		chef_2_trade_offer_2_table = "todecoins:trade_tables/food/tagged_cookies_table"
+		chef_2_trade_offer_2_count = 8
+
+	["Chef Trade Settings"."Chef Level Three Trade One"]
+		# Chef 3 Trade Request 1 Table
+		chef_3_trade_request_1_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+		# Chef 3 Trade Offer 1 Table
+		chef_3_trade_offer_1_table = "todecoins:trade_tables/food/tagged_prepared_seafood_table"
+		chef_3_trade_offer_1_count = 6
+
+	["Chef Trade Settings"."Chef Level Three Trade Two"]
+		# Chef 3 Trade Request 2 Table
+		chef_3_trade_request_2_count = "todecoins:trade_tables/currency/single_emerald_value_currency"
+		# Chef 3 Trade Offer 2 Table
+		chef_3_trade_offer_2_table = "todecoins:trade_tables/food/soup_tag_table"
+		chef_3_trade_offer_2_count = 1
+
+	["Chef Trade Settings"."Chef Level Four Trade One"]
+		# Chef 4 Trade Request 1 Table
+		chef_4_trade_request_1_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+		# Chef 4 Trade Offer 1 Table
+		chef_4_trade_offer_1_table = "todecoins:trade_tables/food/tagged_cakes_table"
+		chef_4_trade_offer_1_count = 1
+
+	["Chef Trade Settings"."Chef Level Four Trade Two"]
+		# Chef 4 Trade Request 2 Table
+		chef_4_trade_request_2_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+		# Chef 4 Trade Offer 2 Table
+		chef_4_trade_offer_2_table = "todecoins:trade_tables/food/tagged_pies_table"
+		chef_3_trade_offer_2_count = 4
+
+	["Chef Trade Settings"."Chef Level Five Trade One"]
+		# Rare Trade
+		# Chef 5 Trade Request 1 Table
+		chef_5_trade_request_1_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+		# Chef 5 Trade Offer 1 Table
+		chef_5_trade_offer_1_table = "todecoins:trade_tables/food/feast_blocks_table"
+
+	["Chef Trade Settings"."Chef Level Five Trade Two"]
+		# Rare Trade
+		# Chef 5 Trade Request 2 Table
+		chef_5_trade_request_2_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+		# Chef 5 Trade Offer 2 Table
+		chef_5_trade_offer_2_table = "todecoins:trade_tables/food/feast_blocks_table"
+

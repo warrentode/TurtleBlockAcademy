@@ -1,0 +1,691 @@
+{
+  "profession": "friendsandfoes:beekeeper",
+  "removeOtherTrades": true,
+  "trades": [
+    {
+      "multiOffer": [
+		{
+			"itemKey": "minecraft:emerald",
+			"amount": 1,
+			"priceModifier": 0
+		},
+        {
+          "itemKey": "todecoins:copper_coin_bag",
+          "amount": 18,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:iron_coin_bag",
+          "amount": 8,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:gold_coin_bag",
+          "amount": 6,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:nether_gold_coin",
+          "amount": 3,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:endonian_coin",
+          "amount": 1,
+          "priceModifier": 0
+        }
+      ],
+      "multiRequest": [
+        {
+          "itemKey": "minecraft:poppy",
+          "amount": 12
+        },
+        {
+          "itemKey": "minecraft:dandelion",
+          "amount": 12
+        },
+        {
+          "itemKey": "minecraft:blue_orchid",
+          "amount": 12
+        },
+        {
+          "itemKey": "minecraft:allium",
+          "amount": 12
+        },
+        {
+          "itemKey": "minecraft:azure_bluet",
+          "amount": 12
+        },
+        {
+          "itemKey": "minecraft:red_tulip",
+          "amount": 12
+        },
+        {
+          "itemKey": "minecraft:orange_tulip",
+          "amount": 12
+        },
+        {
+          "itemKey": "minecraft:white_tulip",
+          "amount": 12
+        },
+        {
+          "itemKey": "minecraft:pink_tulip",
+          "amount": 12
+        },
+        {
+          "itemKey": "minecraft:oxeye_daisy",
+          "amount": 12
+        },
+        {
+          "itemKey": "minecraft:cornflower",
+          "amount": 12
+        },
+        {
+          "itemKey": "minecraft:lily_of_the_valley",
+          "amount": 12
+        },
+        {
+          "itemKey": "minecraft:sunflower",
+          "amount": 12
+        },
+        {
+          "itemKey": "minecraft:lilac",
+          "amount": 12
+        },
+        {
+          "itemKey": "minecraft:rose_bush",
+          "amount": 12
+        },
+        {
+          "itemKey": "minecraft:peony",
+          "amount": 12
+        },
+        {
+          "itemKey": "friendsandfoes:buttercup",
+          "amount": 12
+        },
+        {
+          "itemKey": "biomesoplenty:rose",
+          "amount": 12
+        },
+        {
+          "itemKey": "biomesoplenty:violet",
+          "amount": 12
+        },
+        {
+          "itemKey": "biomesoplenty:wildflower",
+          "amount": 12
+        },
+        {
+          "itemKey": "biomesoplenty:lavender",
+          "amount": 12
+        },
+        {
+          "itemKey": "biomesoplenty:orange_cosmos",
+          "amount": 12
+        },
+        {
+          "itemKey": "biomesoplenty:pink_daffodil",
+          "amount": 12
+        },
+        {
+          "itemKey": "biomesoplenty:pink_hibiscus",
+          "amount": 12
+        },
+        {
+          "itemKey": "biomesoplenty:glowflower",
+          "amount": 12
+        },
+        {
+          "itemKey": "biomesoplenty:wilted_lily",
+          "amount": 12
+        },
+        {
+          "itemKey": "biomesoplenty:burning_blossom",
+          "amount": 12
+        },
+        {
+          "itemKey": "biomesoplenty:tall_lavender",
+          "amount": 12
+        },
+        {
+          "itemKey": "biomesoplenty:blue_hydrangea",
+          "amount": 12
+        },
+        {
+          "itemKey": "biomesoplenty:goldenrod",
+          "amount": 12
+        },
+        {
+          "itemKey": "biomesoplenty:icy_iris",
+          "amount": 12
+        },
+        {
+          "itemKey": "ecologics:azalea_flower",
+          "amount": 12
+        }
+      ],
+      "tradeExp": 2,
+      "maxUses": 16,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 1,
+      "UTID": "friendsandfoes:beekeeper_emerald_for_multirequest_poppy"
+    },
+    {
+      "offer": {
+        "itemKey": "minecraft:bone_meal",
+        "amount": 3
+      },
+      "multiRequest": [
+		{
+			"itemKey": "minecraft:emerald",
+			"amount": 1,
+			"priceModifier": 0
+		},
+        {
+          "itemKey": "todecoins:copper_coin_bag",
+          "amount": 18,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:iron_coin_bag",
+          "amount": 8,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:gold_coin_bag",
+          "amount": 6,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:nether_gold_coin",
+          "amount": 3,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:endonian_coin",
+          "amount": 1,
+          "priceModifier": 0
+        }
+      ],
+      "tradeExp": 1,
+      "maxUses": 16,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 1,
+      "UTID": "friendsandfoes:beekeeper_bone_meal_for_emerald"
+    },
+    {
+      "multiOffer": [
+		{
+			"itemKey": "minecraft:emerald",
+			"amount": 1,
+			"priceModifier": 0
+		},
+        {
+          "itemKey": "todecoins:copper_coin_bag",
+          "amount": 18,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:iron_coin_bag",
+          "amount": 8,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:gold_coin_bag",
+          "amount": 6,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:nether_gold_coin",
+          "amount": 3,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:endonian_coin",
+          "amount": 1,
+          "priceModifier": 0
+        }
+      ],
+      "multiRequest": [
+        {
+          "itemKey": "minecraft:shears",
+          "amount": 1
+        },
+        {
+          "itemKey": "minecraft:glass_bottle",
+          "amount": 9
+        }
+      ],
+      "tradeExp": 10,
+      "maxUses": 16,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 2,
+      "UTID": "friendsandfoes:beekeeper_emerald_for_multirequest_shears"
+    },
+    {
+      "multiOffer": [
+        {
+          "itemKey": "minecraft:candle",
+          "amount": 1
+        },
+        {
+          "itemKey": "minecraft:white_candle",
+          "amount": 1
+        },
+        {
+          "itemKey": "minecraft:light_gray_candle",
+          "amount": 1
+        },
+        {
+          "itemKey": "minecraft:black_candle",
+          "amount": 1
+        },
+        {
+          "itemKey": "minecraft:brown_candle",
+          "amount": 1
+        },
+        {
+          "itemKey": "minecraft:red_candle",
+          "amount": 1
+        },
+        {
+          "itemKey": "minecraft:orange_candle",
+          "amount": 1
+        },
+        {
+          "itemKey": "minecraft:yellow_candle",
+          "amount": 1
+        },
+        {
+          "itemKey": "minecraft:lime_candle",
+          "amount": 1
+        },
+        {
+          "itemKey": "minecraft:green_candle",
+          "amount": 1
+        },
+        {
+          "itemKey": "minecraft:cyan_candle",
+          "amount": 1
+        },
+        {
+          "itemKey": "minecraft:light_blue_candle",
+          "amount": 1
+        },
+        {
+          "itemKey": "minecraft:blue_candle",
+          "amount": 1
+        },
+        {
+          "itemKey": "minecraft:pink_candle",
+          "amount": 1
+        },
+        {
+          "itemKey": "minecraft:magenta_candle",
+          "amount": 1
+        },
+        {
+          "itemKey": "minecraft:purple_candle",
+          "amount": 1
+        }
+      ],
+      "multiRequest": [
+		{
+			"itemKey": "minecraft:emerald",
+			"amount": 1,
+			"priceModifier": 0
+		},
+        {
+          "itemKey": "todecoins:copper_coin_bag",
+          "amount": 18,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:iron_coin_bag",
+          "amount": 8,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:gold_coin_bag",
+          "amount": 6,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:nether_gold_coin",
+          "amount": 3,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:endonian_coin",
+          "amount": 1,
+          "priceModifier": 0
+        }
+      ],
+      "tradeExp": 5,
+      "maxUses": 16,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 2,
+      "UTID": "friendsandfoes:beekeeper_multioffer_candle_for_emerald"
+    },
+    {
+      "multiOffer": [
+		{
+			"itemKey": "minecraft:emerald",
+			"amount": 1,
+			"priceModifier": 0
+		},
+        {
+          "itemKey": "todecoins:copper_coin_bag",
+          "amount": 18,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:iron_coin_bag",
+          "amount": 8,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:gold_coin_bag",
+          "amount": 6,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:nether_gold_coin",
+          "amount": 3,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:endonian_coin",
+          "amount": 1,
+          "priceModifier": 0
+        }
+      ],
+      "multiRequest": [
+        {
+          "itemKey": "minecraft:honey_block",
+          "amount": 1
+        },
+        {
+          "itemKey": "minecraft:honey_bottle",
+          "amount": 4
+        }
+      ],
+      "tradeExp": 20,
+      "maxUses": 16,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 3,
+      "UTID": "friendsandfoes:beekeeper_emerald_for_multirequest_honey_block"
+    },
+    {
+      "offer": {
+        "itemKey": "minecraft:honey_bottle",
+        "amount": 1
+      },
+      "multiRequest": [
+		{
+			"itemKey": "minecraft:emerald",
+			"amount": 1,
+			"priceModifier": 0
+		},
+        {
+          "itemKey": "todecoins:copper_coin_bag",
+          "amount": 18,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:iron_coin_bag",
+          "amount": 8,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:gold_coin_bag",
+          "amount": 6,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:nether_gold_coin",
+          "amount": 3,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:endonian_coin",
+          "amount": 1,
+          "priceModifier": 0
+        }
+      ],
+      "tradeExp": 10,
+      "maxUses": 16,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 3,
+      "UTID": "friendsandfoes:beekeeper_honey_bottle_for_emerald"
+    },
+    {
+      "multiOffer": [
+		{
+			"itemKey": "minecraft:emerald",
+			"amount": 1,
+			"priceModifier": 0
+		},
+        {
+          "itemKey": "todecoins:copper_coin_bag",
+          "amount": 18,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:iron_coin_bag",
+          "amount": 8,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:gold_coin_bag",
+          "amount": 6,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:nether_gold_coin",
+          "amount": 3,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:endonian_coin",
+          "amount": 1,
+          "priceModifier": 0
+        }
+      ],
+      "multiRequest": [
+        {
+          "itemKey": "minecraft:honeycomb_block",
+          "amount": 1
+        },
+        {
+          "itemKey": "minecraft:honeycomb",
+          "amount": 4
+        }
+      ],
+      "tradeExp": 30,
+      "maxUses": 16,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 4,
+      "UTID": "friendsandfoes:beekeeper_emerald_for_multirequest_honeycomb_block"
+    },
+    {
+      "offer": {
+        "itemKey": "minecraft:honeycomb",
+        "amount": 1
+      },
+      "multiRequest": [
+		{
+			"itemKey": "minecraft:emerald",
+			"amount": 1,
+			"priceModifier": 0
+		},
+        {
+          "itemKey": "todecoins:copper_coin_bag",
+          "amount": 18,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:iron_coin_bag",
+          "amount": 8,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:gold_coin_bag",
+          "amount": 6,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:nether_gold_coin",
+          "amount": 3,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:endonian_coin",
+          "amount": 1,
+          "priceModifier": 0
+        }
+      ],
+      "tradeExp": 15,
+      "maxUses": 16,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 4,
+      "UTID": "friendsandfoes:beekeeper_honeycomb_for_emerald"
+    },
+    {
+      "multiOffer": [
+        {
+          "itemKey": "minecraft:beehive",
+          "amount": 1
+        },
+        {
+          "itemKey": "friendsandfoes:acacia_beehive",
+          "amount": 1
+        },
+        {
+          "itemKey": "friendsandfoes:birch_beehive",
+          "amount": 1
+        },
+        {
+          "itemKey": "friendsandfoes:crimson_beehive",
+          "amount": 1
+        },
+        {
+          "itemKey": "friendsandfoes:dark_oak_beehive",
+          "amount": 1
+        },
+        {
+          "itemKey": "friendsandfoes:jungle_beehive",
+          "amount": 1
+        },
+        {
+          "itemKey": "friendsandfoes:mangrove_beehive",
+          "amount": 1
+        },
+        {
+          "itemKey": "friendsandfoes:spruce_beehive",
+          "amount": 1
+        },
+        {
+          "itemKey": "friendsandfoes:warped_beehive",
+          "amount": 1
+        }
+      ],
+      "multiRequest": [
+		{
+			"itemKey": "minecraft:emerald",
+			"amount": 1,
+			"priceModifier": 0
+		},
+        {
+          "itemKey": "todecoins:copper_coin_bag",
+          "amount": 18,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:iron_coin_bag",
+          "amount": 8,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:gold_coin_bag",
+          "amount": 6,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:nether_gold_coin",
+          "amount": 3,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:endonian_coin",
+          "amount": 1,
+          "priceModifier": 0
+        }
+      ],
+      "tradeExp": 30,
+      "maxUses": 16,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 5,
+      "UTID": "friendsandfoes:beekeeper_multioffer_beehive_for_emerald"
+    },
+    {
+      "offer": {
+        "itemKey": "minecraft:bee_spawn_egg",
+        "amount": 1
+      },
+      "multiRequest": [
+		{
+			"itemKey": "minecraft:emerald",
+			"amount": 32,
+			"priceModifier": 0
+		},
+        {
+          "itemKey": "todecoins:pot_of_gold",
+          "amount": 21,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:nether_gold_coin_bag",
+          "amount": 11,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:emerald_quarter_bank_note",
+          "amount": 2,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:netherite_coin",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:emerald_half_bank_note",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:endonian_coin",
+          "amount": 32,
+          "priceModifier": 0
+        }
+      ],
+      "tradeExp": 30,
+      "maxUses": 3,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 5,
+      "UTID": "friendsandfoes:beekeeper_bee_spawn_egg_for_emerald"
+    }
+  ]
+}

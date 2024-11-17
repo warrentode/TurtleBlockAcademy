@@ -696,6 +696,21 @@ public class PackLootTablesGen implements Consumer<BiConsumer<ResourceLocation, 
                         .add(LootTableReference.lootTableReference(PackBuiltInLootTables.WEAPONSMITH_GIFT))
                 ));
 
+        consumer.accept(PackBuiltInLootTables.DECO_ALL, LootTable.lootTable()
+                .withPool(LootPool.lootPool().setRolls(ConstantValue.exactly(12))
+                        .add(TagEntry.expandTag(TBATags.Items.GARDEN_ITEMS))
+                        .add(TagEntry.expandTag(TBATags.Items.PATIO_ITEMS))
+                        .add(LootTableReference.lootTableReference(PackBuiltInLootTables.PLUSHIES))
+                        .add(LootTableReference.lootTableReference(PackBuiltInLootTables.BATH_DECO))
+                        .add(LootTableReference.lootTableReference(PackBuiltInLootTables.ART_DECO))
+                        .add(LootTableReference.lootTableReference(PackBuiltInLootTables.COOKERY_DECO))
+                        .add(LootTableReference.lootTableReference(PackBuiltInLootTables.GARDEN_DECO))
+                        .add(LootTableReference.lootTableReference(PackBuiltInLootTables.SCIENCE_DECO))
+                        .add(LootTableReference.lootTableReference(PackBuiltInLootTables.HOLIDAY_DECO))
+                        .add(LootTableReference.lootTableReference(PackBuiltInLootTables.MISC_DECO))
+                )
+        );
+
         consumer.accept(PackBuiltInLootTables.PLUSHIES, LootTable.lootTable()
                 .withPool(LootPool.lootPool().setRolls(ConstantValue.exactly(1))
                         .add(LootItem.lootTableItem(MoaDecorToysModItems.ZORRO.get()))

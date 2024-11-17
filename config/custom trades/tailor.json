@@ -1,0 +1,596 @@
+{
+  "profession": "sewingkit:tailor",
+  "removeOtherTrades": true,
+  "trades": [
+    {
+      "multiOffer": [
+        {
+          "itemKey": "minecraft:emerald",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:copper_coin_bag",
+          "amount": 18,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:iron_coin_bag",
+          "amount": 8,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:gold_coin_bag",
+          "amount": 6,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:nether_gold_coin",
+          "amount": 3,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:endonian_coin",
+          "amount": 1,
+          "priceModifier": 0
+        }
+      ],
+      "multiRequest": [
+        {
+          "itemKey": "minecraft:string",
+          "amount": 14,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "supplementaries:flax",
+          "amount": 20,
+          "priceModifier": 0
+        }
+      ],
+      "tradeExp": 2,
+      "maxUses": 16,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 1,
+      "UTID": "sewingkit:tailor_emerald_for_multirequest_string"
+    },
+    {
+      "multiOffer": [
+        {
+          "itemKey": "sewingkit:file",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "sewingkit:wood_sewing_needle",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "sewingkit:stone_sewing_needle",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "sewingkit:bone_sewing_needle",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "sewingkit:iron_sewing_needle",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "sewingkit:gold_sewing_needle",
+          "amount": 1,
+          "priceModifier": 0
+        }
+      ],
+      "multiRequest": [
+        {
+          "itemKey": "minecraft:emerald",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:copper_coin_bag",
+          "amount": 18,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:iron_coin_bag",
+          "amount": 8,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:gold_coin_bag",
+          "amount": 6,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:nether_gold_coin",
+          "amount": 3,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:endonian_coin",
+          "amount": 1,
+          "priceModifier": 0
+        }
+      ],
+      "tradeExp": 1,
+      "maxUses": 16,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 1,
+      "UTID": "sewingkit:tailor_multioffer_file_for_emerald"
+    },
+    {
+      "multiOffer": [
+        {
+          "itemKey": "minecraft:emerald",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:copper_coin_bag",
+          "amount": 18,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:iron_coin_bag",
+          "amount": 8,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:gold_coin_bag",
+          "amount": 6,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:nether_gold_coin",
+          "amount": 3,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:endonian_coin",
+          "amount": 1,
+          "priceModifier": 0
+        }
+      ],
+      "multiRequest": [
+        {
+          "itemKey": "minecraft:leather",
+          "amount": 6,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "sewingkit:leather_strip",
+          "amount": 6,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "sewingkit:leather_sheet",
+          "amount": 6,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "minecraft:white_wool",
+          "amount": 18,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "sewingkit:wool_roll",
+          "amount": 18,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "sewingkit:wool_trim",
+          "amount": 18,
+          "priceModifier": 0
+        }
+      ],
+      "tradeExp": 5,
+      "maxUses": 16,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 2,
+      "UTID": "sewingkit:tailor_emerald_for_multirequest_leather"
+    },
+    {
+      "multiOffer": [
+        {
+          "itemKey": "nomadictents:yurt_section",
+          "amount": 1
+        },
+        {
+          "itemKey": "nomadictents:tepee_section",
+          "amount": 1
+        },
+        {
+          "itemKey": "nomadictents:indlu_section",
+          "amount": 1
+        },
+        {
+          "itemKey": "nomadictents:bedouin_section",
+          "amount": 1
+        },
+        {
+          "itemKey": "nomadictents:shamiyana_section",
+          "amount": 1
+        }
+      ],
+      "multiRequest": [
+        {
+          "itemKey": "minecraft:emerald",
+          "amount": 6,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:iron_coin_bag",
+          "amount": 48,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:gold_coin_bag",
+          "amount": 36,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:pot_of_gold",
+          "amount": 4,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:nether_gold_coin",
+          "amount": 18,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:nether_gold_coin_bag",
+          "amount": 2,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:endonian_coin",
+          "amount": 6,
+          "priceModifier": 0
+        }
+      ],
+      "tradeExp": 2,
+      "maxUses": 16,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 2,
+      "UTID": "sewingkit:tailor_multioffer_yurt_section_for_emerald"
+    },
+    {
+      "multiOffer": [
+        {
+          "itemKey": "sewingkit:wool_hat",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "kawaiidishes:white_headband",
+          "amount": 1,
+          "priceModifier": 0
+        }
+      ],
+      "multiRequest": [
+        {
+          "itemKey": "minecraft:emerald",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:copper_coin_bag",
+          "amount": 18,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:iron_coin_bag",
+          "amount": 8,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:gold_coin_bag",
+          "amount": 6,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:nether_gold_coin",
+          "amount": 3,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:endonian_coin",
+          "amount": 1,
+          "priceModifier": 0
+        }
+      ],
+      "tradeExp": 10,
+      "maxUses": 12,
+      "priceMultiplier": 0.2,
+      "demand": 0,
+      "tradeLevel": 3,
+      "UTID": "sewingkit:tailor_multioffer_wool_hat_for_emerald"
+    },
+    {
+      "multiOffer": [
+        {
+          "itemKey": "sewingkit:wool_shoes",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "kawaiidishes:dark_brown_shoes",
+          "amount": 1,
+          "priceModifier": 0
+        }
+      ],
+      "multiRequest": [
+        {
+          "itemKey": "minecraft:emerald",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:copper_coin_bag",
+          "amount": 18,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:iron_coin_bag",
+          "amount": 8,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:gold_coin_bag",
+          "amount": 6,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:nether_gold_coin",
+          "amount": 3,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:endonian_coin",
+          "amount": 1,
+          "priceModifier": 0
+        }
+      ],
+      "tradeExp": 10,
+      "maxUses": 12,
+      "priceMultiplier": 0.2,
+      "demand": 0,
+      "tradeLevel": 3,
+      "UTID": "sewingkit:tailor_multioffer_wool_shoes_for_emerald"
+    },
+    {
+      "multiOffer": [
+        {
+          "itemKey": "sewingkit:wool_pants",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "kawaiidishes:white_thigh_highs",
+          "amount": 1,
+          "priceModifier": 0
+        }
+      ],
+      "multiRequest": [
+        {
+          "itemKey": "minecraft:emerald",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:copper_coin_bag",
+          "amount": 18,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:iron_coin_bag",
+          "amount": 8,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:gold_coin_bag",
+          "amount": 6,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:nether_gold_coin",
+          "amount": 3,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:endonian_coin",
+          "amount": 1,
+          "priceModifier": 0
+        }
+      ],
+      "tradeExp": 15,
+      "maxUses": 12,
+      "priceMultiplier": 0.2,
+      "demand": 0,
+      "tradeLevel": 4,
+      "UTID": "sewingkit:tailor_multioffer_wool_pants_for_emerald"
+    },
+    {
+      "multiOffer": [
+        {
+          "itemKey": "sewingkit:wool_shirt",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "kawaiidishes:white_maid_dress",
+          "amount": 1,
+          "priceModifier": 0
+        }
+      ],
+      "multiRequest": [
+        {
+          "itemKey": "minecraft:emerald",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:copper_coin_bag",
+          "amount": 18,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:iron_coin_bag",
+          "amount": 8,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:gold_coin_bag",
+          "amount": 6,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:nether_gold_coin",
+          "amount": 3,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:endonian_coin",
+          "amount": 1,
+          "priceModifier": 0
+        }
+      ],
+      "tradeExp": 15,
+      "maxUses": 12,
+      "priceMultiplier": 0.2,
+      "demand": 0,
+      "tradeLevel": 4,
+      "UTID": "sewingkit:tailor_multioffer_wool_shirt_for_emerald"
+    },
+    {
+      "multiOffer": [
+        {
+          "itemKey": "kawaiidishes:white_cat_tail",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "kawaiidishes:white_bunny_tail",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "kawaiidishes:white_fox_tail",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "kawaiidishes:black_devil_tail",
+          "amount": 1,
+          "priceModifier": 0
+        }
+      ],
+      "multiRequest": [
+        {
+          "itemKey": "minecraft:emerald",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:copper_coin_bag",
+          "amount": 18,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:iron_coin_bag",
+          "amount": 8,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:gold_coin_bag",
+          "amount": 6,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:nether_gold_coin",
+          "amount": 3,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:endonian_coin",
+          "amount": 1,
+          "priceModifier": 0
+        }
+      ],
+      "tradeExp": 30,
+      "maxUses": 12,
+      "priceMultiplier": 0.2,
+      "demand": 0,
+      "tradeLevel": 5,
+      "UTID": "sewingkit:tailor_multioffer_white_cat_tail_for_emerald"
+    },
+    {
+      "multiOffer": [
+        {
+          "itemKey": "kawaiidishes:bunny_suit_white_tail",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "kawaiidishes:bunny_suit_black_tail",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "kawaiidishes:bunny_suit_caramel_tail",
+          "amount": 1,
+          "priceModifier": 0
+        }
+      ],
+      "multiRequest": [
+        {
+          "itemKey": "minecraft:emerald",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:copper_coin_bag",
+          "amount": 18,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:iron_coin_bag",
+          "amount": 8,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:gold_coin_bag",
+          "amount": 6,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:nether_gold_coin",
+          "amount": 3,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:endonian_coin",
+          "amount": 1,
+          "priceModifier": 0
+        }
+      ],
+      "tradeExp": 30,
+      "maxUses": 12,
+      "priceMultiplier": 0.2,
+      "demand": 0,
+      "tradeLevel": 5,
+      "UTID": "sewingkit:tailor_multioffer_bunny_suit_white_tail_for_emerald"
+    }
+  ]
+}

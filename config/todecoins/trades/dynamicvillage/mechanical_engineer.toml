@@ -1,0 +1,105 @@
+
+["Mechanical Engineer Trade Settings"]
+
+	["Mechanical Engineer Trade Settings"."Mechanical Engineer Level One Trade One"]
+		# Mechanical Engineer 1 Trade Request 1 Table
+		mechanical_engineer_1_trade_request_1_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+		# Mechanical Engineer 1 Trade Offer 1 Table
+		mechanical_engineer_1_trade_offer_1_table = "todecoins:trade_tables/misc/create_ingots_tag_table"
+		#Range: 1 ~ 64
+		mechanical_engineer_1_trade_offer_1_count = 3
+
+	["Mechanical Engineer Trade Settings"."Mechanical Engineer Level One Trade TWo"]
+		# Mechanical Engineer 1 Trade Request 2 Table
+		mechanical_engineer_1_trade_request_2_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+		# Mechanical Engineer 1 Trade Offer 2 Table
+		mechanical_engineer_1_trade_offer_2_table = "todecoins:trade_tables/misc/zinc_materials_tag_table"
+		#Range: 1 ~ 64
+		mechanical_engineer_1_trade_offer_2_count = 4
+
+	["Mechanical Engineer Trade Settings"."Mechanical Engineer Level One Trade Three"]
+		# Mechanical Engineer 1 Trade Request 3 Table
+		mechanical_engineer_1_trade_request_3_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+		# Mechanical Engineer 1 Trade Offer 2 Table
+		mechanical_engineer_1_trade_offer_2_table = "todecoins:trade_tables/tools/wrench"
+		#Range: 1 ~ 64
+		mechanical_engineer_1_trade_offer_2_count = 1
+
+	["Mechanical Engineer Trade Settings"."Mechanical Engineer Level One Trade Four"]
+		# Mechanical Engineer 1 Trade Request 4 Table
+		mechanical_engineer_1_trade_request_4_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+		# Mechanical Engineer 1 Trade Offer 4 Table
+		mechanical_engineer_1_trade_offer_4_table = "todecoins:trade_tables/armor/helmets/goggles_tag"
+
+	["Mechanical Engineer Trade Settings"."Mechanical Engineer Level One Trade Five"]
+		# Mechanical Engineer 1 Trade Request 5 Table
+		mechanical_engineer_1_trade_request_5_table = "todecoins:trade_tables/currency/two_emerald_value_currency"
+		# Mechanical Engineer 1 Trade Offer 5 Table
+		mechanical_engineer_1_trade_offer_5_table = "todecoins:trade_tables/misc/mechanical_equipment_tag_table"
+		#Range: 1 ~ 64
+		mechanical_engineer_1_trade_offer_5_count = 1
+
+	["Mechanical Engineer Trade Settings"."Mechanical Engineer Level Two Trade One"]
+		# Mechanical Engineer 2 Trade Request 1 Table
+		mechanical_engineer_2_trade_request_1_table = "todecoins:trade_tables/currency/two_emerald_value_currency"
+		# Mechanical Engineer 2 Trade Offer 1 Table
+		mechanical_engineer_2_trade_offer_1_table = "todecoins:trade_tables/misc/mechanical_equipment_tag_table"
+		#Range: 1 ~ 64
+		mechanical_engineer_2_trade_offer_1_count = 1
+
+	["Mechanical Engineer Trade Settings"."Mechanical Engineer Level Two Trade TWo"]
+		# Mechanical Engineer 2 Trade Request 2 Table
+		mechanical_engineer_2_trade_request_2_table = "todecoins:trade_tables/currency/two_emerald_value_currency"
+		# Mechanical Engineer 2 Trade Offer 2 Table
+		mechanical_engineer_2_trade_offer_2_table = "todecoins:trade_tables/misc/mechanical_equipment_tag_table"
+		#Range: 1 ~ 64
+		mechanical_engineer_2_trade_offer_2_count = 1
+
+	["Mechanical Engineer Trade Settings"."Mechanical Engineer Level Three Trade One"]
+		# Mechanical Engineer 3 Trade Request 1 Table
+		mechanical_engineer_3_trade_request_1_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+		# Mechanical Engineer 3 Trade Offer 1 Table
+		mechanical_engineer_3_trade_offer_1_table = "todecoins:trade_tables/tools/engineer_tools"
+		#Range: 1 ~ 64
+		mechanical_engineer_3_trade_offer_1_count = 1
+
+	["Mechanical Engineer Trade Settings"."Mechanical Engineer Level Three Trade TWo"]
+		# Mechanical Engineer 3 Trade Request 2 Table
+		mechanical_engineer_3_trade_request_2_table = "todecoins:trade_tables/currency/two_emerald_value_currency"
+		# Mechanical Engineer 3 Trade Offer 2 Table
+		mechanical_engineer_3_trade_offer_2_table = "todecoins:trade_tables/misc/mechanical_equipment_tag_table"
+		#Range: 1 ~ 64
+		mechanical_engineer_3_trade_offer_2_count = 1
+
+	["Mechanical Engineer Trade Settings"."Mechanical Engineer Level Four Trade One"]
+		# Mechanical Engineer 4 Trade Request 1 Table
+		mechanical_engineer_4_trade_request_1_table = "todecoins:trade_tables/currency/two_emerald_value_currency"
+		# Mechanical Engineer 4 Trade Offer 1 Table
+		mechanical_engineer_4_trade_offer_1_table = "todecoins:trade_tables/misc/mechanical_equipment_tag_table"
+		#Range: 1 ~ 64
+		mechanical_engineer_4_trade_offer_1_count = 1
+
+	["Mechanical Engineer Trade Settings"."Mechanical Engineer Level Four Trade TWo"]
+		# Mechanical Engineer 4 Trade Request 2 Table
+		mechanical_engineer_4_trade_request_2_table = "todecoins:trade_tables/currency/two_emerald_value_currency"
+		# Mechanical Engineer 4 Trade Offer 2 Table
+		mechanical_engineer_4_trade_offer_2_table = "todecoins:trade_tables/misc/mechanical_equipment_tag_table"
+		#Range: 1 ~ 64
+		mechanical_engineer_4_trade_offer_2_count = 1
+
+	["Mechanical Engineer Trade Settings"."Mechanical Engineer Level Five Trade One"]
+		# Mechanical Engineer 5 Trade Request 1 Table
+		mechanical_engineer_5_trade_request_1_table = "todecoins:trade_tables/currency/two_emerald_value_currency"
+		# Mechanical Engineer 5 Trade Offer 1 Table
+		mechanical_engineer_5_trade_offer_1_table = "todecoins:trade_tables/misc/mechanical_equipment_tag_table"
+		#Range: 1 ~ 64
+		mechanical_engineer_5_trade_offer_1_count = 1
+
+	["Mechanical Engineer Trade Settings"."Mechanical Engineer Level Five Trade TWo"]
+		# Mechanical Engineer 5 Trade Request 2 Table
+		mechanical_engineer_5_trade_request_2_table = "todecoins:trade_tables/currency/two_emerald_value_currency"
+		# Mechanical Engineer 5 Trade Offer 2 Table
+		mechanical_engineer_5_trade_offer_2_table = "todecoins:trade_tables/misc/mechanical_equipment_tag_table"
+		#Range: 1 ~ 64
+		mechanical_engineer_5_trade_offer_2_count = 1
+

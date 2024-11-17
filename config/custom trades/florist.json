@@ -1,0 +1,694 @@
+{
+  "profession": "morevillagers:florist",
+  "removeOtherTrades": true,
+  "trades": [
+    {
+      "multiOffer": [
+        {
+          "itemKey": "minecraft:dandelion",
+          "amount": 1
+        },
+        {
+          "itemKey": "minecraft:poppy",
+          "amount": 1
+        },
+        {
+          "itemKey": "minecraft:blue_orchid",
+          "amount": 1
+        },
+        {
+          "itemKey": "minecraft:allium",
+          "amount": 1
+        },
+        {
+          "itemKey": "minecraft:azure_bluet",
+          "amount": 1
+        },
+        {
+          "itemKey": "minecraft:red_tulip",
+          "amount": 1
+        },
+        {
+          "itemKey": "minecraft:orange_tulip",
+          "amount": 1
+        },
+        {
+          "itemKey": "minecraft:white_tulip",
+          "amount": 1
+        },
+        {
+          "itemKey": "minecraft:pink_tulip",
+          "amount": 1
+        },
+        {
+          "itemKey": "minecraft:oxeye_daisy",
+          "amount": 1
+        },
+        {
+          "itemKey": "minecraft:cornflower",
+          "amount": 1
+        },
+        {
+          "itemKey": "minecraft:lily_of_the_valley",
+          "amount": 1
+        },
+        {
+          "itemKey": "minecraft:sunflower",
+          "amount": 1
+        },
+        {
+          "itemKey": "minecraft:lilac",
+          "amount": 1
+        },
+        {
+          "itemKey": "minecraft:rose_bush",
+          "amount": 1
+        },
+        {
+          "itemKey": "minecraft:peony",
+          "amount": 1
+        },
+        {
+          "itemKey": "friendsandfoes:buttercup",
+          "amount": 1
+        },
+        {
+          "itemKey": "biomesoplenty:rose",
+          "amount": 1
+        },
+        {
+          "itemKey": "biomesoplenty:violet",
+          "amount": 1
+        },
+        {
+          "itemKey": "biomesoplenty:wildflower",
+          "amount": 1
+        },
+        {
+          "itemKey": "biomesoplenty:orange_cosmos",
+          "amount": 1
+        },
+        {
+          "itemKey": "biomesoplenty:pink_daffodil",
+          "amount": 1
+        },
+        {
+          "itemKey": "biomesoplenty:pink_hibiscus",
+          "amount": 1
+        },
+        {
+          "itemKey": "biomesoplenty:glowflower",
+          "amount": 1
+        },
+        {
+          "itemKey": "biomesoplenty:wilted_lily",
+          "amount": 1
+        },
+        {
+          "itemKey": "biomesoplenty:burning_blossom",
+          "amount": 1
+        },
+        {
+          "itemKey": "biomesoplenty:tall_lavender",
+          "amount": 1
+        },
+        {
+          "itemKey": "biomesoplenty:blue_hydrangea",
+          "amount": 1
+        },
+        {
+          "itemKey": "biomesoplenty:goldenrod",
+          "amount": 1
+        },
+        {
+          "itemKey": "biomesoplenty:icy_iris",
+          "amount": 1
+        },
+        {
+          "itemKey": "ecologics:azalea_flower",
+          "amount": 1
+        },
+        {
+          "itemKey": "aether:purple_flower",
+          "amount": 1
+        },
+        {
+          "itemKey": "aether:white_flower",
+          "amount": 1
+        },
+        {
+          "itemKey": "nethersdelight:mimicarnation",
+          "amount": 1
+        }
+      ],
+      "multiRequest": [
+        {
+          "itemKey": "minecraft:emerald",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:copper_coin_bag",
+          "amount": 18,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:iron_coin_bag",
+          "amount": 8,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:gold_coin_bag",
+          "amount": 6,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:nether_gold_coin",
+          "amount": 3,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:endonian_coin",
+          "amount": 1,
+          "priceModifier": 0
+        }
+      ],
+      "tradeExp": 2,
+      "maxUses": 16,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 1,
+      "UTID": "morevillagers:florist_multioffer_dandelion_for_emerald"
+    },
+    {
+      "multiOffer": [
+        {
+          "itemKey": "minecraft:emerald",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:copper_coin_bag",
+          "amount": 18,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:iron_coin_bag",
+          "amount": 8,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:gold_coin_bag",
+          "amount": 6,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:nether_gold_coin",
+          "amount": 3,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:endonian_coin",
+          "amount": 1,
+          "priceModifier": 0
+        }
+      ],
+      "multiRequest": [
+        {
+          "itemKey": "delightful:acorn",
+          "amount": 2
+        },
+        {
+          "itemKey": "ecologics:walnut",
+          "amount": 2
+        },
+        {
+          "itemKey": "delightful:green_tea_leaf",
+          "amount": 2
+        },
+        {
+          "itemKey": "farmersrespite:green_tea_leaves",
+          "amount": 2
+        },
+        {
+          "itemKey": "farmersrespite:yellow_tea_leaves",
+          "amount": 2
+        },
+        {
+          "itemKey": "farmersrespite:black_tea_leaves",
+          "amount": 2
+        },
+        {
+          "itemKey": "minecraft:bone_meal",
+          "amount": 3
+        }
+      ],
+      "tradeExp": 2,
+      "maxUses": 16,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 1,
+      "UTID": "morevillagers:florist_emerald_for_multirequest_acorn"
+    },
+    {
+      "multiOffer": [
+        {
+          "itemKey": "supplementaries:flower_box",
+          "amount": 2
+        },
+        {
+          "itemKey": "minecraft:flower_pot",
+          "amount": 3
+        },
+        {
+          "itemKey": "beautify:hanging_pot",
+          "amount": 1,
+          "priceModifier": 0
+        }
+      ],
+      "multiRequest": [
+        {
+          "itemKey": "minecraft:emerald",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:copper_coin_bag",
+          "amount": 18,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:iron_coin_bag",
+          "amount": 8,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:gold_coin_bag",
+          "amount": 6,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:nether_gold_coin",
+          "amount": 3,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:endonian_coin",
+          "amount": 1,
+          "priceModifier": 0
+        }
+      ],
+      "tradeExp": 5,
+      "maxUses": 16,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 2,
+      "UTID": "morevillagers:florist_multioffer_flower_box_for_emerald"
+    },
+    {
+      "multiOffer": [
+        {
+          "itemKey": "kawaiidishes:coffee_fruit",
+          "amount": 2
+        },
+        {
+          "itemKey": "delightful:salmonberries",
+          "amount": 2,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "minecraft:sweet_berries",
+          "amount": 2,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "minecraft:glow_berries",
+          "amount": 2,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "aether:blue_berry",
+          "amount": 2,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "wildberries:blueberries",
+          "amount": 2,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "wildberries:raspberry",
+          "amount": 2,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "wildberries:blackberry",
+          "amount": 2,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "wildberries:cranberries",
+          "amount": 2,
+          "priceModifier": 0
+        }
+      ],
+      "multiRequest": [
+        {
+          "itemKey": "minecraft:emerald",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:copper_coin_bag",
+          "amount": 18,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:iron_coin_bag",
+          "amount": 8,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:gold_coin_bag",
+          "amount": 6,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:nether_gold_coin",
+          "amount": 3,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:endonian_coin",
+          "amount": 1,
+          "priceModifier": 0
+        }
+      ],
+      "tradeExp": 5,
+      "maxUses": 16,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 2,
+      "UTID": "morevillagers:florist_multioffer_coffee_fruit_for_emerald"
+    },
+    {
+      "multiOffer": [
+        {
+          "itemKey": "delightful:matcha_latte",
+          "amount": 1
+        },
+        {
+          "itemKey": "delightful:berry_matcha_latte",
+          "amount": 1
+        },
+        {
+          "itemKey": "delightful:jelly_bottle",
+          "amount": 1
+        },
+        {
+          "itemKey": "delightful:glow_jelly_bottle",
+          "amount": 1
+        },
+        {
+          "itemKey": "delightful:nut_butter_bottle",
+          "amount": 1
+        },
+        {
+          "itemKey": "delightful:lavender_tea",
+          "amount": 1
+        },
+        {
+          "itemKey": "farmersrespite:dandelion_tea",
+          "amount": 1
+        },
+        {
+          "itemKey": "farmersrespite:rose_hip_tea",
+          "amount": 1
+        },
+        {
+          "itemKey": "delightful:azalea_tea",
+          "amount": 1
+        },
+        {
+          "itemKey": "unusualend:chorus_tea",
+          "amount": 1
+        }
+      ],
+      "multiRequest": [
+        {
+          "itemKey": "minecraft:emerald",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:copper_coin_bag",
+          "amount": 18,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:iron_coin_bag",
+          "amount": 8,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:gold_coin_bag",
+          "amount": 6,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:nether_gold_coin",
+          "amount": 3,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:endonian_coin",
+          "amount": 1,
+          "priceModifier": 0
+        }
+      ],
+      "tradeExp": 10,
+      "maxUses": 16,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 3,
+      "UTID": "morevillagers:florist_multioffer_matcha_latte_for_emerald"
+    },
+    {
+      "offer": {
+        "itemKey": "minecraft:chest",
+        "amount": 1,
+        "priceModifier": 0,
+        "advancedNBTData": "{BlockEntityTag:{LootTable:\"lootbags:loot_bags/swamp_map_sale\"},display:{Lore:[\u0027\"Swamp Map Box\"\u0027]}}"
+      },
+      "multiRequest": [
+        {
+          "itemKey": "minecraft:emerald",
+          "amount": 14,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "minecraft:emerald_block",
+          "amount": 2,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:pot_of_gold",
+          "amount": 9,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:nether_gold_coin",
+          "amount": 42,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:nether_gold_coin_bag",
+          "amount": 5,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:endonian_coin",
+          "amount": 14,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:endonian_coin_bag",
+          "amount": 2,
+          "priceModifier": 0
+        }
+      ],
+      "additionalRequest": {
+        "itemKey": "minecraft:compass",
+        "amount": 1
+      },
+      "tradeExp": 15,
+      "maxUses": 12,
+      "priceMultiplier": 0.2,
+      "demand": 0,
+      "tradeLevel": 4,
+      "UTID": "morevillagers:florist_chest_for_emerald_and_compass"
+    },
+    {
+      "multiOffer": [
+        {
+          "itemKey": "biomesoplenty:flowering_oak_sapling",
+          "amount": 2
+        },
+        {
+          "itemKey": "biomesoplenty:white_cherry_sapling",
+          "amount": 2
+        },
+        {
+          "itemKey": "biomesoplenty:pink_cherry_sapling",
+          "amount": 2
+        },
+        {
+          "itemKey": "biomesoplenty:jacaranda_sapling",
+          "amount": 2
+        }
+      ],
+      "multiRequest": [
+        {
+          "itemKey": "minecraft:emerald",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:copper_coin_bag",
+          "amount": 18,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:iron_coin_bag",
+          "amount": 8,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:gold_coin_bag",
+          "amount": 6,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:nether_gold_coin",
+          "amount": 3,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:endonian_coin",
+          "amount": 1,
+          "priceModifier": 0
+        }
+      ],
+      "tradeExp": 30,
+      "maxUses": 16,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 4,
+      "UTID": "morevillagers:florist_multioffer_flowering_oak_sapling_for_emerald"
+    },
+    {
+      "offer": {
+        "itemKey": "minecraft:chest",
+        "amount": 1,
+        "priceModifier": 0,
+        "advancedNBTData": "{BlockEntityTag:{LootTable:\"lootbags:loot_bags/jungle_map_sale\"},display:{Lore:[\u0027\"Jungle Map Box\"\u0027]}}"
+      },
+      "multiRequest": [
+        {
+          "itemKey": "minecraft:emerald",
+          "amount": 14,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "minecraft:emerald_block",
+          "amount": 2,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:pot_of_gold",
+          "amount": 9,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:nether_gold_coin",
+          "amount": 42,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:nether_gold_coin_bag",
+          "amount": 5,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:endonian_coin",
+          "amount": 14,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:endonian_coin_bag",
+          "amount": 2,
+          "priceModifier": 0
+        }
+      ],
+      "additionalRequest": {
+        "itemKey": "minecraft:compass",
+        "amount": 1
+      },
+      "tradeExp": 30,
+      "maxUses": 12,
+      "priceMultiplier": 0.2,
+      "demand": 0,
+      "tradeLevel": 5,
+      "UTID": "morevillagers:florist_chest_for_emerald_and_compass"
+    },
+    {
+      "offer": {
+        "itemKey": "minecraft:flowering_azalea",
+        "amount": 1
+      },
+      "multiRequest": [
+        {
+          "itemKey": "minecraft:emerald",
+          "amount": 6,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:iron_coin_bag",
+          "amount": 48,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:gold_coin_bag",
+          "amount": 36,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:pot_of_gold",
+          "amount": 4,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:nether_gold_coin",
+          "amount": 18,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:nether_gold_coin_bag",
+          "amount": 2,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:endonian_coin",
+          "amount": 6,
+          "priceModifier": 0
+        }
+      ],
+      "tradeExp": 30,
+      "maxUses": 16,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 5,
+      "UTID": "morevillagers:florist_flowering_azalea_for_emerald"
+    }
+  ]
+}

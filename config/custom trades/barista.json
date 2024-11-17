@@ -1,0 +1,1140 @@
+{
+  "profession": "kawaiidishes:barista",
+  "removeOtherTrades": true,
+  "trades": [
+    {
+      "multiOffer": [
+		{
+			"itemKey": "minecraft:emerald",
+			"amount": 1,
+			"priceModifier": 0
+		},
+        {
+          "itemKey": "todecoins:copper_coin_bag",
+          "amount": 18,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:iron_coin_bag",
+          "amount": 8,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:gold_coin_bag",
+          "amount": 6,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:nether_gold_coin",
+          "amount": 3,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:endonian_coin",
+          "amount": 1,
+          "priceModifier": 0
+        }
+      ],
+      "multiRequest": [
+        {
+          "itemKey": "kawaiidishes:roasted_cocoa_beans",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "kawaiidishes:roasted_coffee_beans",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "farmersrespite:coffee_beans",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "farmersrespite:green_tea_leaves",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "farmersrespite:yellow_tea_leaves",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "farmersrespite:black_tea_leaves",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "delightful:green_tea_leaf",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "unusualend:chorus_petal",
+          "amount": 1,
+          "priceModifier": 0
+        }
+      ],
+      "tradeExp": 2,
+      "maxUses": 16,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 1,
+      "UTID": "kawaiidishes:barista_emerald_for_multirequest_roasted_cocoa_beans"
+    },
+    {
+      "multiOffer": [
+        {
+          "itemKey": "kawaiidishes:mug",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "minecraft:glass_bottle",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "drinkbeer:empty_beer_mug",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "kawaiidishes:glass_cup",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "kawaiidishes:milkshake_cup",
+          "amount": 1,
+          "priceModifier": 0
+        }
+      ],
+      "multiRequest": [
+		{
+			"itemKey": "minecraft:emerald",
+			"amount": 1,
+			"priceModifier": 0
+		},
+        {
+          "itemKey": "todecoins:copper_coin_bag",
+          "amount": 18,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:iron_coin_bag",
+          "amount": 8,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:gold_coin_bag",
+          "amount": 6,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:nether_gold_coin",
+          "amount": 3,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:endonian_coin",
+          "amount": 1,
+          "priceModifier": 0
+        }
+      ],
+      "tradeExp": 1,
+      "maxUses": 16,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 1,
+      "UTID": "kawaiidishes:barista_multioffer_mug_for_emerald"
+    },
+    {
+      "multiOffer": [
+		{
+			"itemKey": "minecraft:emerald",
+			"amount": 1,
+			"priceModifier": 0
+		},
+        {
+          "itemKey": "todecoins:copper_coin_bag",
+          "amount": 18,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:iron_coin_bag",
+          "amount": 8,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:gold_coin_bag",
+          "amount": 6,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:nether_gold_coin",
+          "amount": 3,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:endonian_coin",
+          "amount": 1,
+          "priceModifier": 0
+        }
+      ],
+      "multiRequest": [
+        {
+          "itemKey": "kawaiidishes:coffee_powder",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "kawaiidishes:cocoa_powder",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "festive_delight:cinnamon_powder",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "delightful:matcha",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "minecraft:sweet_berries",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "minecraft:glow_berries",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "minecraft:honey_bottle",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "minecraft:dandelion",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "biomesoplenty:lavender",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "ecologics:azalea_flower",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "farmersrespite:rose_hips",
+          "amount": 1,
+          "priceModifier": 0
+        }
+      ],
+      "tradeExp": 10,
+      "maxUses": 16,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 2,
+      "UTID": "kawaiidishes:barista_emerald_for_multirequest_coffee_powder"
+    },
+    {
+      "multiOffer": [
+		{
+			"itemKey": "minecraft:emerald",
+			"amount": 1,
+			"priceModifier": 0
+		},
+        {
+          "itemKey": "todecoins:copper_coin_bag",
+          "amount": 18,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:iron_coin_bag",
+          "amount": 8,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:gold_coin_bag",
+          "amount": 6,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:nether_gold_coin",
+          "amount": 3,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:endonian_coin",
+          "amount": 1,
+          "priceModifier": 0
+        }
+      ],
+      "multiRequest": [
+        {
+          "itemKey": "kawaiidishes:coffee_powder",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "kawaiidishes:cocoa_powder",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "festive_delight:cinnamon_powder",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "delightful:matcha",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "minecraft:sweet_berries",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "minecraft:glow_berries",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "minecraft:honey_bottle",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "minecraft:dandelion",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "biomesoplenty:lavender",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "ecologics:azalea_flower",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "farmersrespite:rose_hips",
+          "amount": 1,
+          "priceModifier": 0
+        }
+      ],
+      "tradeExp": 10,
+      "maxUses": 16,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 2,
+      "UTID": "kawaiidishes:barista_emerald_for_multirequest_coffee_powder"
+    },
+    {
+      "multiOffer": [
+        {
+          "itemKey": "kawaiidishes:honey_cookie",
+          "amount": 6,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "kawaiidishes:sweet_berry_cookie",
+          "amount": 6,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "kawaiidishes:chocolate_cookie",
+          "amount": 6,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "kawaiidishes:golden_cookie",
+          "amount": 6,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "farmersrespite:green_tea_cookie",
+          "amount": 6,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "minecraft:cookie",
+          "amount": 6,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "farmersdelight:sweet_berry_cookie",
+          "amount": 6,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "farmersdelight:honey_cookie",
+          "amount": 6,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "farmersrespite:nether_wart_sourdough",
+          "amount": 6,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "farmersrespite:coffee_cake_slice",
+          "amount": 6,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "farmersrespite:rose_hip_pie_slice",
+          "amount": 6,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "kawaiidishes:white_chocolate_bar",
+          "amount": 6,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "kawaiidishes:dark_chocolate_bar",
+          "amount": 6,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "festive_delight:gingerbread_man",
+          "amount": 6,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "kawaiidishes:milk_chocolate_bar",
+          "amount": 6,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "farmersdelight:cake_slice",
+          "amount": 6,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "farmersdelight:apple_pie_slice",
+          "amount": 6,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "farmersdelight:sweet_berry_cheesecake_slice",
+          "amount": 6,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "farmersdelight:chocolate_pie_slice",
+          "amount": 6,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "delightful:salmonberry_pie_slice",
+          "amount": 6,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "delightful:pumpkin_pie_slice",
+          "amount": 6,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "unusualend:chorus_pie",
+          "amount": 6,
+          "priceModifier": 0
+        }
+      ],
+      "multiRequest": [
+		{
+			"itemKey": "minecraft:emerald",
+			"amount": 1,
+			"priceModifier": 0
+		},
+        {
+          "itemKey": "todecoins:copper_coin_bag",
+          "amount": 18,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:iron_coin_bag",
+          "amount": 8,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:gold_coin_bag",
+          "amount": 6,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:nether_gold_coin",
+          "amount": 3,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:endonian_coin",
+          "amount": 1,
+          "priceModifier": 0
+        }
+      ],
+      "tradeExp": 10,
+      "maxUses": 16,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 3,
+      "UTID": "kawaiidishes:barista_multioffer_honey_cookie_for_emerald"
+    },
+    {
+      "multiOffer": [
+        {
+          "itemKey": "kawaiidishes:brigadeiro",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "kawaiidishes:beijinho",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "drinkbeer:spice_blaze_paprika",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "drinkbeer:spice_dried_eglia_bud",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "drinkbeer:spice_smoked_eglia_bud",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "drinkbeer:spice_amethyst_nigella_seeds",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "drinkbeer:spice_citrine_nigella_seeds",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "drinkbeer:spice_ice_mint",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "drinkbeer:spice_ice_patchouli",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "drinkbeer:spice_storm_shards",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "drinkbeer:spice_roasted_red_pine_nuts",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "drinkbeer:spice_glace_goji_berries",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "drinkbeer:spice_frozen_persimmon",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "drinkbeer:spice_roasted_pecans",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "drinkbeer:spice_silver_needle_white_tea",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "drinkbeer:spice_golden_cinnamon_powder",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "drinkbeer:spice_dried_selaginella",
+          "amount": 1,
+          "priceModifier": 0
+        }
+      ],
+      "multiRequest": [
+		{
+			"itemKey": "minecraft:emerald",
+			"amount": 1,
+			"priceModifier": 0
+		},
+        {
+          "itemKey": "todecoins:copper_coin_bag",
+          "amount": 18,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:iron_coin_bag",
+          "amount": 8,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:gold_coin_bag",
+          "amount": 6,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:nether_gold_coin",
+          "amount": 3,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:endonian_coin",
+          "amount": 1,
+          "priceModifier": 0
+        }
+      ],
+      "tradeExp": 20,
+      "maxUses": 16,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 3,
+      "UTID": "kawaiidishes:barista_multioffer_brigadeiro_for_emerald"
+    },
+    {
+      "multiOffer": [
+        {
+          "itemKey": "kawaiidishes:doppio_coffee",
+          "amount": 1,
+          "priceModifier": 0,
+          "advancedNBTData": "{mainEffect:{Ambient:0b,Amplifier:0b,CurativeItems:[{Count:1b,id:\"minecraft:milk_bucket\"}],Duration:300,Id:41,ShowIcon:1b,ShowParticles:1b,\"forge:id\":\"kawaiidishes:kawaii\"},secondaryEffect:{Ambient:0b,Amplifier:1b,CurativeItems:[{Count:1b,id:\"minecraft:milk_bucket\"}],Duration:600,Id:1,ShowIcon:1b,ShowParticles:1b,\"forge:id\":\"minecraft:speed\"}}"
+        },
+        {
+          "itemKey": "kawaiidishes:american_coffee",
+          "amount": 1,
+          "priceModifier": 0,
+          "advancedNBTData": "{mainEffect:{Ambient:0b,Amplifier:0b,CurativeItems:[{Count:1b,id:\"minecraft:milk_bucket\"}],Duration:300,Id:41,ShowIcon:1b,ShowParticles:1b,\"forge:id\":\"kawaiidishes:kawaii\"},secondaryEffect:{Ambient:0b,Amplifier:0b,CurativeItems:[{Count:1b,id:\"minecraft:milk_bucket\"}],Duration:600,Id:1,ShowIcon:1b,ShowParticles:1b,\"forge:id\":\"minecraft:speed\"}}"
+        },
+        {
+          "itemKey": "kawaiidishes:expresso_coffee",
+          "amount": 1,
+          "priceModifier": 0,
+          "advancedNBTData": "{mainEffect:{Ambient:0b,Amplifier:0b,CurativeItems:[{Count:1b,id:\"minecraft:milk_bucket\"}],Duration:300,Id:41,ShowIcon:1b,ShowParticles:1b,\"forge:id\":\"kawaiidishes:kawaii\"},secondaryEffect:{Ambient:0b,Amplifier:0b,CurativeItems:[{Count:1b,id:\"minecraft:milk_bucket\"}],Duration:300,Id:16,ShowIcon:1b,ShowParticles:1b,\"forge:id\":\"minecraft:night_vision\"}}"
+        },
+        {
+          "itemKey": "kawaiidishes:latte_coffee",
+          "amount": 1,
+          "priceModifier": 0,
+          "advancedNBTData": "{mainEffect:{Ambient:0b,Amplifier:0b,CurativeItems:[{Count:1b,id:\"minecraft:milk_bucket\"}],Duration:300,Id:41,ShowIcon:1b,ShowParticles:1b,\"forge:id\":\"kawaiidishes:kawaii\"},secondaryEffect:{Ambient:0b,Amplifier:0b,CurativeItems:[{Count:1b,id:\"minecraft:milk_bucket\"}],Duration:600,Id:3,ShowIcon:1b,ShowParticles:1b,\"forge:id\":\"minecraft:haste\"}}"
+        },
+        {
+          "itemKey": "kawaiidishes:mocha_coffee",
+          "amount": 1,
+          "priceModifier": 0,
+          "advancedNBTData": "{mainEffect:{Ambient:0b,Amplifier:0b,CurativeItems:[{Count:1b,id:\"minecraft:milk_bucket\"}],Duration:300,Id:41,ShowIcon:1b,ShowParticles:1b,\"forge:id\":\"kawaiidishes:kawaii\"},secondaryEffect:{Ambient:0b,Amplifier:1b,CurativeItems:[{Count:1b,id:\"minecraft:milk_bucket\"}],Duration:600,Id:10,ShowIcon:1b,ShowParticles:1b,\"forge:id\":\"minecraft:regeneration\"}}"
+        },
+        {
+          "itemKey": "kawaiidishes:cappuccino_coffee",
+          "amount": 1,
+          "priceModifier": 0,
+          "advancedNBTData": "{mainEffect:{Ambient:0b,Amplifier:0b,CurativeItems:[{Count:1b,id:\"minecraft:milk_bucket\"}],Duration:300,Id:41,ShowIcon:1b,ShowParticles:1b,\"forge:id\":\"kawaiidishes:kawaii\"},secondaryEffect:{Ambient:0b,Amplifier:1b,CurativeItems:[{Count:1b,id:\"minecraft:milk_bucket\"}],Duration:1200,Id:3,ShowIcon:1b,ShowParticles:1b,\"forge:id\":\"minecraft:haste\"}}"
+        },
+        {
+          "itemKey": "kawaiidishes:macchiato_coffee",
+          "amount": 1,
+          "priceModifier": 0,
+          "advancedNBTData": "{mainEffect:{Ambient:0b,Amplifier:0b,CurativeItems:[{Count:1b,id:\"minecraft:milk_bucket\"}],Duration:300,Id:41,ShowIcon:1b,ShowParticles:1b,\"forge:id\":\"kawaiidishes:kawaii\"},secondaryEffect:{Ambient:0b,Amplifier:1b,CurativeItems:[{Count:1b,id:\"minecraft:milk_bucket\"}],Duration:600,Id:22,ShowIcon:1b,ShowParticles:1b,\"forge:id\":\"minecraft:absorption\"}}"
+        }
+      ],
+      "multiRequest": [
+		{
+			"itemKey": "minecraft:emerald",
+			"amount": 1,
+			"priceModifier": 0
+		},
+        {
+          "itemKey": "todecoins:copper_coin_bag",
+          "amount": 18,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:iron_coin_bag",
+          "amount": 8,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:gold_coin_bag",
+          "amount": 6,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:nether_gold_coin",
+          "amount": 3,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:endonian_coin",
+          "amount": 1,
+          "priceModifier": 0
+        }
+      ],
+      "additionalRequest": {
+        "itemKey": "kawaiidishes:mug",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "tradeExp": 15,
+      "maxUses": 16,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 4,
+      "UTID": "kawaiidishes:barista_multioffer_doppio_coffee_for_emerald_and_mug"
+    },
+    {
+      "multiOffer": [
+        {
+          "itemKey": "farmersrespite:green_tea",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "farmersrespite:yellow_tea",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "farmersrespite:black_tea",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "farmersrespite:rose_hip_tea",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "farmersrespite:dandelion_tea",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "farmersrespite:purulent_tea",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "farmersrespite:gamblers_tea",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "farmersrespite:coffee",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "farmersdelight:milk_bottle",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "farmersdelight:hot_cocoa",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "farmersdelight:apple_cider",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "farmersdelight:melon_juice",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "delightful:azalea_tea",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "delightful:lavender_tea",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "delightful:prickly_pear_juice",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "delightful:ender_nectar",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "delightful:matcha_latte",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "delightful:berry_matcha_latte",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "unusualend:chorus_tea",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "fastfooddelight:cola_soda",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "fastfooddelight:orange_soda",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "fastfooddelight:lemon_soda",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "fastfooddelight:creaming_soda",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "fastfooddelight:iced_tea",
+          "amount": 1,
+          "priceModifier": 0
+        }
+      ],
+      "multiRequest": [
+		{
+			"itemKey": "minecraft:emerald",
+			"amount": 1,
+			"priceModifier": 0
+		},
+        {
+          "itemKey": "todecoins:copper_coin_bag",
+          "amount": 18,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:iron_coin_bag",
+          "amount": 8,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:gold_coin_bag",
+          "amount": 6,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:nether_gold_coin",
+          "amount": 3,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:endonian_coin",
+          "amount": 1,
+          "priceModifier": 0
+        }
+      ],
+      "additionalRequest": {
+        "itemKey": "minecraft:glass_bottle",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "tradeExp": 15,
+      "maxUses": 16,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 4,
+      "UTID": "kawaiidishes:barista_multioffer_green_tea_for_emerald_and_glass_bottle"
+    },
+    {
+      "multiOffer": [
+        {
+          "itemKey": "kawaiidishes:sweet_berry_ice_cream",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "kawaiidishes:chocolate_ice_cream",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "kawaiidishes:cream_ice_cream",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "kawaiidishes:napolitano_ice_cream",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "kawaiidishes:coffee_ice_cream",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "kawaiidishes:mocha_ice_cream",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "kawaiidishes:glow_berry_ice_cream",
+          "amount": 1,
+          "priceModifier": 0
+        }
+      ],
+      "multiRequest": [
+		{
+			"itemKey": "minecraft:emerald",
+			"amount": 1,
+			"priceModifier": 0
+		},
+        {
+          "itemKey": "todecoins:copper_coin_bag",
+          "amount": 18,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:iron_coin_bag",
+          "amount": 8,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:gold_coin_bag",
+          "amount": 6,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:nether_gold_coin",
+          "amount": 3,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:endonian_coin",
+          "amount": 1,
+          "priceModifier": 0
+        }
+      ],
+      "additionalRequest": {
+        "itemKey": "kawaiidishes:glass_cup",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "tradeExp": 15,
+      "maxUses": 16,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 4,
+      "UTID": "kawaiidishes:barista_multioffer_sweet_berry_ice_cream_for_emerald_and_glass_cup"
+    },
+    {
+      "multiOffer": [
+        {
+          "itemKey": "drinkbeer:beer_mug",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "drinkbeer:beer_mug_blaze_stout",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "drinkbeer:beer_mug_blaze_milk_stout",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "drinkbeer:beer_mug_apple_lambic",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "drinkbeer:beer_mug_sweet_berry_kriek",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "drinkbeer:beer_mug_haars_icey_pale_lager",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "drinkbeer:beer_mug_pumpkin_kvass",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "drinkbeer:beer_mug_night_howl_kvass",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "drinkbeer:beer_mug_frothy_pink_eggnog",
+          "amount": 1,
+          "priceModifier": 0
+        }
+      ],
+      "multiRequest": [
+		{
+			"itemKey": "minecraft:emerald",
+			"amount": 1,
+			"priceModifier": 0
+		},
+        {
+          "itemKey": "todecoins:copper_coin_bag",
+          "amount": 18,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:iron_coin_bag",
+          "amount": 8,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:gold_coin_bag",
+          "amount": 6,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:nether_gold_coin",
+          "amount": 3,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:endonian_coin",
+          "amount": 1,
+          "priceModifier": 0
+        }
+      ],
+      "additionalRequest": {
+        "itemKey": "drinkbeer:empty_beer_mug",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "tradeExp": 30,
+      "maxUses": 16,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 5,
+      "UTID": "kawaiidishes:barista_multioffer_beer_mug_for_emerald_and_empty_beer_mug"
+    },
+    {
+      "multiOffer": [
+        {
+          "itemKey": "kawaiidishes:sweet_berry_milkshake",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "kawaiidishes:chocolate_milkshake",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "kawaiidishes:cream_milkshake",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "kawaiidishes:napolitano_milkshake",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "kawaiidishes:coffee_milkshake",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "kawaiidishes:mocha_milkshake",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "kawaiidishes:glow_berry_milkshake",
+          "amount": 1,
+          "priceModifier": 0
+        }
+      ],
+      "multiRequest": [
+		{
+			"itemKey": "minecraft:emerald",
+			"amount": 1,
+			"priceModifier": 0
+		},
+        {
+          "itemKey": "todecoins:copper_coin_bag",
+          "amount": 18,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:iron_coin_bag",
+          "amount": 8,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:gold_coin_bag",
+          "amount": 6,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:nether_gold_coin",
+          "amount": 3,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:endonian_coin",
+          "amount": 1,
+          "priceModifier": 0
+        }
+      ],
+      "additionalRequest": {
+        "itemKey": "kawaiidishes:milkshake_cup",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "tradeExp": 30,
+      "maxUses": 16,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 5,
+      "UTID": "kawaiidishes:barista_multioffer_sweet_berry_milkshake_for_emerald_and_milkshake_cup"
+    }
+  ]
+}

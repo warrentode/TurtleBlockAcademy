@@ -46,7 +46,7 @@ public class TBAItems {
             ITEMS.register("silk_thread",
                     () -> new Item(basicItem()));
     public static final RegistryObject<Item> COPPER_NEEDLE =
-            ITEMS.register("copper_needle",
+            ITEMS.register("copper_sewing_needle",
                     () -> new Item(basicItem().defaultDurability(64)));
 
     // BASIC ITEMS

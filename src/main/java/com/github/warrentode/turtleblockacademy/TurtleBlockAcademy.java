@@ -52,9 +52,12 @@ public class TurtleBlockAcademy {
     public static final Logger LOGGER = LogManager.getLogger();
 
     public TurtleBlockAcademy() {
-        ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, AcademyConfig.SPEC,
-                MODID + "-common.toml");
+        // the .get() method used here is being removed as of forge version 1.21
+        //noinspection removal
+        ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, AcademyConfig.SPEC,MODID + "-common.toml");
+        //noinspection removal
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
+
         MinecraftForge.EVENT_BUS.register(this);
         modEventBus.addListener(this::commonSetup);
 

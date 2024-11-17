@@ -1,0 +1,720 @@
+{
+  "profession": "morevillagers:miner",
+  "removeOtherTrades": true,
+  "trades": [
+    {
+      "multiOffer": [
+        {
+          "itemKey": "additional_lights:al_torch_acacia_planks",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "additional_lights:al_torch_birch_planks",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "additional_lights:al_torch_dark_oak_planks",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "additional_lights:al_torch_jungle_planks",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "additional_lights:al_torch_oak_planks",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "additional_lights:al_torch_spruce_planks",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "additional_lights:al_torch_packed_ice",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "additional_lights:al_torch_blackstone",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "additional_lights:al_torch_cobblestone",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "additional_lights:al_torch_mossy_cobblestone",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "additional_lights:al_torch_sandstone",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "additional_lights:al_torch_stone",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "additional_lights:al_torch_diamond_block",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "additional_lights:al_torch_gold_block",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "additional_lights:al_torch_end_stone",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "additional_lights:al_torch_end_stone_bricks",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "additional_lights:al_torch_glass",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "additional_lights:al_torch_iron_block",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "additional_lights:al_torch_magenta_wool",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "additional_lights:al_torch_pink_wool",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "additional_lights:al_torch_nether_bricks",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "additional_lights:al_torch_red_nether_bricks",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "additional_lights:al_torch_smooth_stone",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "additional_lights:al_torch_stone_bricks",
+          "amount": 1,
+          "priceModifier": 0
+        }
+      ],
+      "multiRequest": [
+        {
+          "itemKey": "minecraft:emerald",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:copper_coin_bag",
+          "amount": 18,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:iron_coin_bag",
+          "amount": 8,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:gold_coin_bag",
+          "amount": 6,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:nether_gold_coin",
+          "amount": 3,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:endonian_coin",
+          "amount": 1,
+          "priceModifier": 0
+        }
+      ],
+      "tradeExp": 1,
+      "maxUses": 16,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 1,
+      "UTID": "morevillagers:miner_multioffer_al_torch_acacia_planks_for_emerald"
+    },
+    {
+      "multiOffer": [
+        {
+          "itemKey": "chalk:black_chalk",
+          "amount": 1
+        },
+        {
+          "itemKey": "chalk:blue_chalk",
+          "amount": 1
+        },
+        {
+          "itemKey": "chalk:brown_chalk",
+          "amount": 1
+        },
+        {
+          "itemKey": "chalk:cyan_chalk",
+          "amount": 1
+        },
+        {
+          "itemKey": "chalk:gray_chalk",
+          "amount": 1
+        },
+        {
+          "itemKey": "chalk:green_chalk",
+          "amount": 1
+        },
+        {
+          "itemKey": "chalk:light_blue_chalk",
+          "amount": 1
+        },
+        {
+          "itemKey": "chalk:light_gray_chalk",
+          "amount": 1
+        },
+        {
+          "itemKey": "chalk:lime_chalk",
+          "amount": 1
+        },
+        {
+          "itemKey": "chalk:magenta_chalk",
+          "amount": 1
+        },
+        {
+          "itemKey": "chalk:orange_chalk",
+          "amount": 1
+        },
+        {
+          "itemKey": "chalk:pink_chalk",
+          "amount": 1
+        },
+        {
+          "itemKey": "chalk:purple_chalk",
+          "amount": 1
+        },
+        {
+          "itemKey": "chalk:red_chalk",
+          "amount": 1
+        },
+        {
+          "itemKey": "chalk:white_chalk",
+          "amount": 1
+        },
+        {
+          "itemKey": "chalk:yellow_chalk",
+          "amount": 1
+        }
+      ],
+      "multiRequest": [
+        {
+          "itemKey": "minecraft:emerald",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:copper_coin_bag",
+          "amount": 18,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:iron_coin_bag",
+          "amount": 8,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:gold_coin_bag",
+          "amount": 6,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:nether_gold_coin",
+          "amount": 3,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:endonian_coin",
+          "amount": 1,
+          "priceModifier": 0
+        }
+      ],
+      "tradeExp": 1,
+      "maxUses": 16,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 1,
+      "UTID": "morevillagers:miner_multioffer_black_chalk_for_emerald"
+    },
+    {
+      "multiOffer": [
+        {
+          "itemKey": "minecraft:emerald",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:copper_coin_bag",
+          "amount": 18,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:iron_coin_bag",
+          "amount": 8,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:gold_coin_bag",
+          "amount": 6,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:nether_gold_coin",
+          "amount": 3,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:endonian_coin",
+          "amount": 1,
+          "priceModifier": 0
+        }
+      ],
+      "multiRequest": [
+        {
+          "itemKey": "minecraft:raw_copper",
+          "amount": 18
+        },
+        {
+          "itemKey": "minecraft:raw_iron",
+          "amount": 8
+        }
+      ],
+      "tradeExp": 10,
+      "maxUses": 12,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 2,
+      "UTID": "morevillagers:miner_emerald_for_multirequest_raw_copper"
+    },
+    {
+      "multiOffer": [
+        {
+          "itemKey": "supplementaries:bomb",
+          "amount": 2
+        },
+        {
+          "itemKey": "supplementaries:bomb_blue",
+          "amount": 1
+        }
+      ],
+      "multiRequest": [
+        {
+          "itemKey": "minecraft:emerald",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:copper_coin_bag",
+          "amount": 18,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:iron_coin_bag",
+          "amount": 8,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:gold_coin_bag",
+          "amount": 6,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:nether_gold_coin",
+          "amount": 3,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:endonian_coin",
+          "amount": 1,
+          "priceModifier": 0
+        }
+      ],
+      "tradeExp": 2,
+      "maxUses": 16,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 2,
+      "UTID": "morevillagers:miner_multioffer_bomb_for_emerald"
+    },
+    {
+      "multiOffer": [
+        {
+          "itemKey": "farmersdelight:rope",
+          "amount": 4
+        },
+        {
+          "itemKey": "beautify:rope",
+          "amount": 4
+        }
+      ],
+      "multiRequest": [
+        {
+          "itemKey": "minecraft:emerald",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:copper_coin_bag",
+          "amount": 18,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:iron_coin_bag",
+          "amount": 8,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:gold_coin_bag",
+          "amount": 6,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:nether_gold_coin",
+          "amount": 3,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:endonian_coin",
+          "amount": 1,
+          "priceModifier": 0
+        }
+      ],
+      "tradeExp": 10,
+      "maxUses": 16,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 3,
+      "UTID": "morevillagers:miner_multioffer_rope_for_emerald"
+    },
+    {
+      "multiOffer": [
+        {
+          "itemKey": "minecraft:emerald",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:copper_coin_bag",
+          "amount": 18,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:iron_coin_bag",
+          "amount": 8,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:gold_coin_bag",
+          "amount": 6,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:nether_gold_coin",
+          "amount": 3,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:endonian_coin",
+          "amount": 1,
+          "priceModifier": 0
+        }
+      ],
+      "multiRequest": [
+        {
+          "itemKey": "minecraft:deepslate",
+          "amount": 16
+        },
+        {
+          "itemKey": "minecraft:raw_gold",
+          "amount": 6
+        }
+      ],
+      "tradeExp": 20,
+      "maxUses": 16,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 3,
+      "UTID": "morevillagers:miner_emerald_for_multirequest_deepslate"
+    },
+    {
+      "multiOffer": [
+        {
+          "itemKey": "minecraft:smooth_basalt",
+          "amount": 16
+        },
+        {
+          "itemKey": "minecraft:calcite",
+          "amount": 16
+        },
+        {
+          "itemKey": "minecraft:amethyst_shard",
+          "amount": 4,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "minecraft:dripstone_block",
+          "amount": 16
+        }
+      ],
+      "multiRequest": [
+        {
+          "itemKey": "minecraft:emerald",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:copper_coin_bag",
+          "amount": 18,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:iron_coin_bag",
+          "amount": 8,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:gold_coin_bag",
+          "amount": 6,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:nether_gold_coin",
+          "amount": 3,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:endonian_coin",
+          "amount": 1,
+          "priceModifier": 0
+        }
+      ],
+      "tradeExp": 15,
+      "maxUses": 16,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 4,
+      "UTID": "morevillagers:miner_multioffer_smooth_basalt_for_emerald"
+    },
+    {
+      "multiOffer": [
+        {
+          "itemKey": "minecraft:andesite",
+          "amount": 16
+        },
+        {
+          "itemKey": "minecraft:granite",
+          "amount": 16
+        },
+        {
+          "itemKey": "minecraft:diorite",
+          "amount": 16
+        }
+      ],
+      "multiRequest": [
+        {
+          "itemKey": "minecraft:emerald",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:copper_coin_bag",
+          "amount": 18,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:iron_coin_bag",
+          "amount": 8,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:gold_coin_bag",
+          "amount": 6,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:nether_gold_coin",
+          "amount": 3,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:endonian_coin",
+          "amount": 1,
+          "priceModifier": 0
+        }
+      ],
+      "tradeExp": 15,
+      "maxUses": 16,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 4,
+      "UTID": "morevillagers:miner_multioffer_andesite_for_emerald"
+    },
+    {
+      "offer": {
+        "itemKey": "minecraft:chest",
+        "amount": 1,
+        "priceModifier": 0,
+        "advancedNBTData": "{BlockEntityTag:{LootTable:\"lootbags:loot_bags/underground_map_sale\"},display:{Lore:[\u0027\"Cave Map Box\"\u0027]}}"
+      },
+      "multiRequest": [
+        {
+          "itemKey": "minecraft:emerald",
+          "amount": 14,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "minecraft:emerald_block",
+          "amount": 2,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:pot_of_gold",
+          "amount": 9,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:nether_gold_coin",
+          "amount": 42,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:nether_gold_coin_bag",
+          "amount": 5,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:endonian_coin",
+          "amount": 14,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:endonian_coin_bag",
+          "amount": 2,
+          "priceModifier": 0
+        }
+      ],
+      "additionalRequest": {
+        "itemKey": "minecraft:compass",
+        "amount": 1
+      },
+      "tradeExp": 30,
+      "maxUses": 12,
+      "priceMultiplier": 0.2,
+      "demand": 0,
+      "tradeLevel": 5,
+      "UTID": "morevillagers:miner_chest_for_emerald_and_compass"
+    },
+    {
+      "offer": {
+        "itemKey": "minecraft:diamond_pickaxe",
+        "amount": 1,
+        "priceModifier": 0,
+        "enchantments": [
+          {
+            "enchantmentKey": "random",
+            "enchantmentLevel": -1,
+            "maxEnchantmentLevel": 10
+          }
+        ],
+        "blacklistedEnchantments": [
+          "minecraft:vanishing_curse",
+          "minecraft:binding_curse"
+        ]
+      },
+      "multiRequest": [
+        {
+          "itemKey": "minecraft:emerald",
+          "amount": 18,
+          "range": 14,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "minecraft:emerald_block",
+          "amount": 2,
+          "range": 2,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:pot_of_gold",
+          "amount": 12,
+          "range": 9,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:nether_gold_coin_bag",
+          "amount": 6,
+          "range": 5,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:netherite_coin",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:emerald_half_bank_note",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:emerald_quarter_bank_note",
+          "amount": 1,
+          "range": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:endonian_coin",
+          "amount": 18,
+          "range": 14,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:endonian_coin_bag",
+          "amount": 2,
+          "range": 2,
+          "priceModifier": 0
+        }
+      ],
+      "tradeExp": 30,
+      "maxUses": 3,
+      "priceMultiplier": 0.2,
+      "demand": 0,
+      "tradeLevel": 5,
+      "UTID": "morevillagers:miner_diamond_pickaxe_for_emerald"
+    }
+  ]
+}

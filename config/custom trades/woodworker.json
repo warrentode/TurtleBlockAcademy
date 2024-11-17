@@ -1,0 +1,709 @@
+{
+  "profession": "morevillagers:woodworker",
+  "removeOtherTrades": true,
+  "trades": [
+    {
+      "multiOffer": [
+        {
+          "itemKey": "biomesoplenty:dead_log",
+          "amount": 6
+        },
+        {
+          "itemKey": "minecraft:oak_log",
+          "amount": 6
+        },
+        {
+          "itemKey": "minecraft:spruce_log",
+          "amount": 6
+        }
+      ],
+      "multiRequest": [
+        {
+          "itemKey": "minecraft:emerald",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:copper_coin_bag",
+          "amount": 18,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:iron_coin_bag",
+          "amount": 8,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:gold_coin_bag",
+          "amount": 6,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:nether_gold_coin",
+          "amount": 3,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:endonian_coin",
+          "amount": 1,
+          "priceModifier": 0
+        }
+      ],
+      "tradeExp": 2,
+      "maxUses": 12,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 1,
+      "UTID": "morevillagers:woodworker_multioffer_dead_log_for_multirequest_emerald"
+    },
+    {
+      "multiOffer": [
+        {
+          "itemKey": "minecraft:acacia_log",
+          "amount": 6
+        },
+        {
+          "itemKey": "minecraft:birch_log",
+          "amount": 6
+        },
+        {
+          "itemKey": "aether:skyroot_log",
+          "amount": 6
+        }
+      ],
+      "multiRequest": [
+        {
+          "itemKey": "minecraft:emerald",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:copper_coin_bag",
+          "amount": 18,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:iron_coin_bag",
+          "amount": 8,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:gold_coin_bag",
+          "amount": 6,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:nether_gold_coin",
+          "amount": 3,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:endonian_coin",
+          "amount": 1,
+          "priceModifier": 0
+        }
+      ],
+      "tradeExp": 2,
+      "maxUses": 12,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 1,
+      "UTID": "morevillagers:woodworker_multioffer_acacia_log_for_multirequest_emerald"
+    },
+    {
+      "multiOffer": [
+        {
+          "itemKey": "biomesoplenty:magic_log",
+          "amount": 6
+        },
+        {
+          "itemKey": "minecraft:dark_oak_log",
+          "amount": 6
+        },
+        {
+          "itemKey": "minecraft:jungle_log",
+          "amount": 6
+        }
+      ],
+      "multiRequest": [
+        {
+          "itemKey": "minecraft:emerald",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:copper_coin_bag",
+          "amount": 18,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:iron_coin_bag",
+          "amount": 8,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:gold_coin_bag",
+          "amount": 6,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:nether_gold_coin",
+          "amount": 3,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:endonian_coin",
+          "amount": 1,
+          "priceModifier": 0
+        }
+      ],
+      "tradeExp": 10,
+      "maxUses": 12,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 2,
+      "UTID": "morevillagers:woodworker_multioffer_magic_log_for_multirequest_emerald"
+    },
+    {
+      "multiOffer": [
+        {
+          "itemKey": "biomesoplenty:umbran_log",
+          "amount": 6
+        },
+        {
+          "itemKey": "minecraft:mangrove_log",
+          "amount": 6
+        },
+        {
+          "itemKey": "biomesoplenty:willow_log",
+          "amount": 6
+        }
+      ],
+      "multiRequest": [
+        {
+          "itemKey": "minecraft:emerald",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:copper_coin_bag",
+          "amount": 18,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:iron_coin_bag",
+          "amount": 8,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:gold_coin_bag",
+          "amount": 6,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:nether_gold_coin",
+          "amount": 3,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:endonian_coin",
+          "amount": 1,
+          "priceModifier": 0
+        }
+      ],
+      "tradeExp": 10,
+      "maxUses": 12,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 2,
+      "UTID": "morevillagers:woodworker_multioffer_umbran_log_for_multirequest_emerald"
+    },
+    {
+      "multiOffer": [
+        {
+          "itemKey": "biomesoplenty:hellbark_log",
+          "amount": 6
+        },
+        {
+          "itemKey": "minecraft:warped_stem",
+          "amount": 6
+        },
+        {
+          "itemKey": "minecraft:crimson_stem",
+          "amount": 6
+        }
+      ],
+      "multiRequest": [
+        {
+          "itemKey": "minecraft:emerald",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:copper_coin_bag",
+          "amount": 18,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:iron_coin_bag",
+          "amount": 8,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:gold_coin_bag",
+          "amount": 6,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:nether_gold_coin",
+          "amount": 3,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:endonian_coin",
+          "amount": 1,
+          "priceModifier": 0
+        }
+      ],
+      "tradeExp": 10,
+      "maxUses": 12,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 2,
+      "UTID": "morevillagers:woodworker_multioffer_hellbark_log_for_multirequest_emerald"
+    },
+    {
+      "multiOffer": [
+        {
+          "itemKey": "aether:golden_oak_log",
+          "amount": 6
+        },
+        {
+          "itemKey": "ecologics:flowering_azalea_log",
+          "amount": 6
+        },
+        {
+          "itemKey": "ecologics:azalea_log",
+          "amount": 6
+        }
+      ],
+      "multiRequest": [
+        {
+          "itemKey": "minecraft:emerald",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:copper_coin_bag",
+          "amount": 18,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:iron_coin_bag",
+          "amount": 8,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:gold_coin_bag",
+          "amount": 6,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:nether_gold_coin",
+          "amount": 3,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:endonian_coin",
+          "amount": 1,
+          "priceModifier": 0
+        }
+      ],
+      "tradeExp": 20,
+      "maxUses": 12,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 3,
+      "UTID": "morevillagers:woodworker_multioffer_golden_oak_log_for_multirequest_emerald"
+    },
+    {
+      "multiOffer": [
+        {
+          "itemKey": "phantasm:pream_log",
+          "amount": 6
+        },
+        {
+          "itemKey": "ecologics:walnut_log",
+          "amount": 6
+        },
+        {
+          "itemKey": "biomesoplenty:cherry_log",
+          "amount": 6
+        }
+      ],
+      "multiRequest": [
+        {
+          "itemKey": "minecraft:emerald",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:copper_coin_bag",
+          "amount": 18,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:iron_coin_bag",
+          "amount": 8,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:gold_coin_bag",
+          "amount": 6,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:nether_gold_coin",
+          "amount": 3,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:endonian_coin",
+          "amount": 1,
+          "priceModifier": 0
+        }
+      ],
+      "tradeExp": 20,
+      "maxUses": 12,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 3,
+      "UTID": "morevillagers:woodworker_multioffer_pream_log_for_multirequest_emerald"
+    },
+    {
+      "multiOffer": [
+        {
+          "itemKey": "biomesoplenty:fir_log",
+          "amount": 6
+        },
+        {
+          "itemKey": "biomesoplenty:redwood_log",
+          "amount": 6
+        }
+      ],
+      "multiRequest": [
+        {
+          "itemKey": "minecraft:emerald",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:copper_coin_bag",
+          "amount": 18,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:iron_coin_bag",
+          "amount": 8,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:gold_coin_bag",
+          "amount": 6,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:nether_gold_coin",
+          "amount": 3,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:endonian_coin",
+          "amount": 1,
+          "priceModifier": 0
+        }
+      ],
+      "tradeExp": 30,
+      "maxUses": 12,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 4,
+      "UTID": "morevillagers:woodworker_multioffer_fir_log_for_multirequest_emerald"
+    },
+    {
+      "multiOffer": [
+        {
+          "itemKey": "phantasm:ebony_wood",
+          "amount": 3
+        },
+        {
+          "itemKey": "biomesoplenty:mahogany_log",
+          "amount": 6
+        },
+        {
+          "itemKey": "biomesoplenty:jacaranda_log",
+          "amount": 6
+        }
+      ],
+      "multiRequest": [
+        {
+          "itemKey": "minecraft:emerald",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:copper_coin_bag",
+          "amount": 18,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:iron_coin_bag",
+          "amount": 8,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:gold_coin_bag",
+          "amount": 6,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:nether_gold_coin",
+          "amount": 3,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:endonian_coin",
+          "amount": 1,
+          "priceModifier": 0
+        }
+      ],
+      "tradeExp": 30,
+      "maxUses": 12,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 4,
+      "UTID": "morevillagers:woodworker_multioffer_ebony_wood_for_multirequest_emerald"
+    },
+    {
+      "multiOffer": [
+        {
+          "itemKey": "biomesoplenty:palm_log",
+          "amount": 6
+        },
+        {
+          "itemKey": "ecologics:coconut_log",
+          "amount": 6
+        }
+      ],
+      "multiRequest": [
+        {
+          "itemKey": "minecraft:emerald",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:copper_coin_bag",
+          "amount": 18,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:iron_coin_bag",
+          "amount": 8,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:gold_coin_bag",
+          "amount": 6,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:nether_gold_coin",
+          "amount": 3,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:endonian_coin",
+          "amount": 1,
+          "priceModifier": 0
+        }
+      ],
+      "tradeExp": 30,
+      "maxUses": 12,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 5,
+      "UTID": "morevillagers:woodworker_multioffer_palm_log_for_multirequest_emerald"
+    },
+    {
+      "multiOffer": [
+        {
+          "itemKey": "minecraft:emerald",
+          "amount": 6,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:iron_coin_bag",
+          "amount": 48,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:gold_coin_bag",
+          "amount": 36,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:pot_of_gold",
+          "amount": 4,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:nether_gold_coin",
+          "amount": 18,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:nether_gold_coin_bag",
+          "amount": 2,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:endonian_coin",
+          "amount": 6,
+          "priceModifier": 0
+        }
+      ],
+      "multiRequest": [
+        {
+          "itemKey": "minecraft:oak_sapling",
+          "amount": 1
+        },
+        {
+          "itemKey": "minecraft:spruce_sapling",
+          "amount": 1
+        },
+        {
+          "itemKey": "minecraft:birch_sapling",
+          "amount": 1
+        },
+        {
+          "itemKey": "minecraft:jungle_sapling",
+          "amount": 1
+        },
+        {
+          "itemKey": "minecraft:acacia_sapling",
+          "amount": 1
+        },
+        {
+          "itemKey": "minecraft:dark_oak_sapling",
+          "amount": 1
+        },
+        {
+          "itemKey": "minecraft:mangrove_propagule",
+          "amount": 1
+        },
+        {
+          "itemKey": "biomesoplenty:origin_sapling",
+          "amount": 1
+        },
+        {
+          "itemKey": "biomesoplenty:flowering_oak_sapling",
+          "amount": 1
+        },
+        {
+          "itemKey": "biomesoplenty:rainbow_birch_sapling",
+          "amount": 1
+        },
+        {
+          "itemKey": "biomesoplenty:yellow_autumn_sapling",
+          "amount": 1
+        },
+        {
+          "itemKey": "biomesoplenty:orange_autumn_sapling",
+          "amount": 1
+        },
+        {
+          "itemKey": "biomesoplenty:maple_sapling",
+          "amount": 1
+        },
+        {
+          "itemKey": "biomesoplenty:fir_sapling",
+          "amount": 1
+        },
+        {
+          "itemKey": "biomesoplenty:redwood_sapling",
+          "amount": 1
+        },
+        {
+          "itemKey": "biomesoplenty:white_cherry_sapling",
+          "amount": 1
+        },
+        {
+          "itemKey": "biomesoplenty:pink_cherry_sapling",
+          "amount": 1
+        },
+        {
+          "itemKey": "biomesoplenty:mahogany_sapling",
+          "amount": 1
+        },
+        {
+          "itemKey": "biomesoplenty:jacaranda_sapling",
+          "amount": 1
+        },
+        {
+          "itemKey": "biomesoplenty:palm_sapling",
+          "amount": 1
+        },
+        {
+          "itemKey": "biomesoplenty:willow_sapling",
+          "amount": 1
+        },
+        {
+          "itemKey": "biomesoplenty:dead_sapling",
+          "amount": 1
+        },
+        {
+          "itemKey": "biomesoplenty:magic_sapling",
+          "amount": 1
+        },
+        {
+          "itemKey": "biomesoplenty:umbran_sapling",
+          "amount": 1
+        },
+        {
+          "itemKey": "biomesoplenty:hellbark_sapling",
+          "amount": 1
+        },
+        {
+          "itemKey": "aether:skyroot_sapling",
+          "amount": 1
+        },
+        {
+          "itemKey": "aether:golden_oak_sapling",
+          "amount": 1
+        },
+        {
+          "itemKey": "ecologics:coconut_seedling",
+          "amount": 1
+        },
+        {
+          "itemKey": "ecologics:walnut_sapling",
+          "amount": 1
+        },
+        {
+          "itemKey": "minecraft:azalea",
+          "amount": 1
+        },
+        {
+          "itemKey": "minecraft:flowering_azalea",
+          "amount": 1
+        }
+      ],
+      "tradeExp": 30,
+      "maxUses": 12,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 5,
+      "UTID": "morevillagers:woodworker_multioffer_emerald_for_multirequest_oak_sapling"
+    }
+  ]
+}

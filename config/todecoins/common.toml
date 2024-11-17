@@ -9,7 +9,7 @@
 	default_base_xp_per_level = 5
 	# Default Max Uses per Trade
 	#Range: > 1
-	default_max_uses_per_trade = 12
+	default_max_uses_per_trade = 16
 	# Default Max Uses per Rare Trade
 	#Range: > 1
 	default_max_uses_per_rare_trade = 3
@@ -27,3 +27,5 @@
 	# Max Wandering Trader Common Trades per Level
 	#Range: > 0
 	max_wanderer_common_trades = 5
+	# Allow Treasure Enchantments in Trades
+	allow_treasure_enchantments = false

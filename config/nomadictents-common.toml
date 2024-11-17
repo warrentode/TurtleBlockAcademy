@@ -12,7 +12,7 @@
 	#Dimensions in which tents cannot be used.
 	#Accepts dimension id or mod id with wildcard.
 	#Example: ["minecraft:the_nether", "rftoolsdim:*"]
-	dimension_blacklist = ["dimdungeons:*"]
+	dimension_blacklist = ["dimdungeons:*", "lobby:*"]
 
 [permissions]
 	#When true, only the player who placed the tent can enter it
@@ -48,4 +48,3 @@
 	#The number of progress stages added by one use of the tent mallet
 	#Range: 1 ~ 7
 	mallet_effectiveness = 7
-

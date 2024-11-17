@@ -3,10 +3,11 @@
   "group": "needles",
   "ingredients": [
     {
-      "tag": "forge:nuggets/copper"
+      "tag": "forge:ingots/copper"
     }
   ],
   "result": {
-    "item": "turtleblockacademy:copper_needle"
+    "count": 9,
+    "item": "turtleblockacademy:copper_sewing_needle"
   }
 }

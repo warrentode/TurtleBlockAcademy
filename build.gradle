@@ -148,8 +148,8 @@ dependencies {
     minecraft "net.minecraftforge:forge:${mc_version}-${forge_version}"
 
     // addresses vulnerabilities with imported external libraries
-    implementation 'io.netty:netty-codec:4.1.104.Final'
-    implementation 'io.netty:netty-handler:4.1.104.Final'
+    implementation 'io.netty:netty-codec:5.0.0.Alpha2'
+    implementation 'io.netty:netty-handler:5.0.0.Alpha2'
     implementation 'com.google.guava:guava:33.0.0-jre'
     implementation 'org.apache.logging.log4j:log4j-core:2.17.1'
     implementation 'org.apache.commons:commons-compress:1.26.1'
@@ -233,7 +233,7 @@ dependencies {
     implementation fg.deobf("curse.maven:mantle-74924:5339977")
     implementation fg.deobf("curse.maven:tinkers-construct-74072:5340027")
 
-    // runtimeOnly(fg.deobf("curse.maven:create-328085:4835190"))
+    implementation fg.deobf("curse.maven:create-328085:4835190")
 
     // patchouli
     implementation fg.deobf("curse.maven:patchouli-306770:4031402")

@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "turtleblockacademy:copper_needle_from_nugget"
+        "recipe": "turtleblockacademy:copper_sewing_needle_from_ingot"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -26,7 +26,7 @@
   ],
   "rewards": {
     "recipes": [
-      "turtleblockacademy:copper_needle_from_nugget"
+      "turtleblockacademy:copper_sewing_needle_from_ingot"
     ]
   }
 }

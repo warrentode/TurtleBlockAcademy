@@ -1,0 +1,125 @@
+
+["Barista Trade Settings"]
+
+	["Barista Trade Settings"."Barista Level One Trade One"]
+		# Barista 1 Trade Request 1 Table
+		barista_1_trade_request_1_table = "todecoins:trade_tables/food/coffee_ingredients_tag_table"
+		barista_1_trade_request_1_count = 12
+		# Barista 1 Trade Offer 1 Table
+		barista_1_trade_offer_1_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+
+	["Barista Trade Settings"."Barista Level One Trade Two"]
+		# Barista 1 Trade Request 2 Table
+		barista_1_trade_request_2_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+		# Barista 1 Trade Offer 2 Table
+		barista_1_trade_offer_2_table = "todecoins:trade_tables/food/drinks_tag_table"
+		barista_1_trade_offer_2_count = 12
+
+	["Barista Trade Settings"."Barista Level One Trade Three"]
+		# Barista 1 Trade Request 3 Table
+		barista_1_trade_request_3_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+		# Barista 1 Trade Offer 3 Table
+		barista_1_trade_offer_3_table = "todecoins:trade_tables/food/dessert_tag_table"
+		barista_1_trade_offer_3_count = 6
+
+	["Barista Trade Settings"."Barista Level One Trade Four"]
+		# Barista 1 Trade Offer 4 Table
+		barista_1_trade_offer_4_table = "todecoins:trade_tables/misc/cups_tag_table"
+		barista_1_trade_offer_4_count = 9
+		# Barista 1 Trade Request 4 Table
+		barista_1_trade_request_4_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+
+	["Barista Trade Settings"."Barista Level Two Trade One"]
+		# Barista 2 Trade Request 1 Table
+		barista_2_trade_request_1_table = "todecoins:trade_tables/food/coffee_ingredients_tag_table"
+		barista_2_trade_request_1_count = 12
+		# Barista 2 Trade Offer 1 Table
+		barista_2_trade_offer_1_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+
+	["Barista Trade Settings"."Barista Level Two Trade Two"]
+		# Barista 2 Trade Request 2 Table
+		barista_2_trade_request_2_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+		# Barista 2 Trade Offer 2 Table
+		barista_2_trade_offer_2_table = "todecoins:trade_tables/food/drinks_tag_table"
+		barista_2_trade_offer_2_count = 12
+		# Barista 3 Trade Request 2 Table
+		barista_3_trade_request_2_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+		# Barista 3 Trade Offer 2 Table
+		barista_3_trade_offer_2_table = "todecoins:trade_tables/food/drinks_tag_table"
+		barista_3_trade_offer_2_count = 12
+		# Barista 4 Trade Request 2 Table
+		barista_4_trade_request_2_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+		# Barista 4 Trade Offer 2 Table
+		barista_4_trade_offer_2_table = "todecoins:trade_tables/food/drinks_tag_table"
+		barista_4_trade_offer_2_count = 12
+		# Barista 5 Trade Request 2 Table
+		barista_5_trade_request_2_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+		# Barista 5 Trade Offer 2 Table
+		barista_5_trade_offer_2_table = "todecoins:trade_tables/food/drinks_tag_table"
+		barista_5_trade_offer_2_count = 12
+
+	["Barista Trade Settings"."Barista Level Two Trade Three"]
+		# Barista 2 Trade Request 3 Table
+		barista_2_trade_request_3_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+		# Barista 2 Trade Offer 3 Table
+		barista_2_trade_offer_3_table = "todecoins:trade_tables/food/dessert_tag_table"
+		barista_2_trade_offer_3_count = 6
+		# Barista 3 Trade Request 3 Table
+		barista_3_trade_request_3_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+		# Barista 3 Trade Offer 3 Table
+		barista_3_trade_offer_3_table = "todecoins:trade_tables/food/dessert_tag_table"
+		barista_3_trade_offer_3_count = 6
+		# Barista 4 Trade Request 3 Table
+		barista_4_trade_request_3_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+		# Barista 4 Trade Offer 3 Table
+		barista_4_trade_offer_3_table = "todecoins:trade_tables/food/dessert_tag_table"
+		barista_4_trade_offer_3_count = 6
+		# Barista 5 Trade Request 3 Table
+		barista_5_trade_request_3_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+		# Barista 5 Trade Offer 3 Table
+		barista_5_trade_offer_3_table = "todecoins:trade_tables/food/dessert_tag_table"
+		barista_5_trade_offer_3_count = 6
+
+	["Barista Trade Settings"."Barista Level Two Trade Four"]
+		# Barista 2 Trade Offer 4 Table
+		barista_2_trade_offer_4_table = "todecoins:trade_tables/misc/cups_tag_table"
+		barista_2_trade_offer_4_count = 9
+		# Barista 2 Trade Request 4 Table
+		barista_2_trade_request_4_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+		# Barista 3 Trade Request 4 Table
+		barista_3_trade_request_4_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+		# Barista 3 Trade Offer 4 Table
+		barista_3_trade_offer_4_table = "todecoins:trade_tables/misc/cups_tag_table"
+		barista_3_trade_offer_4_count = 9
+		# Barista 4 Trade Offer 4 Table
+		barista_4_trade_offer_4_table = "todecoins:trade_tables/misc/cups_tag_table"
+		barista_4_trade_offer_4_count = 9
+		# Barista 4 Trade Request 4 Table
+		barista_4_trade_request_4_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+		# Barista 5 Trade Offer 4 Table
+		barista_5_trade_offer_4_table = "todecoins:trade_tables/misc/cups_tag_table"
+		barista_5_trade_offer_4_count = 9
+		# Barista 5 Trade Request 4 Table
+		barista_5_trade_request_4_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+
+	["Barista Trade Settings"."Barista Level Three Trade One"]
+		# Barista 3 Trade Request 1 Table
+		barista_3_trade_request_1_table = "todecoins:trade_tables/food/coffee_ingredients_tag_table"
+		barista_3_trade_request_1_count = 12
+		# Barista 3 Trade Offer 1 Table
+		barista_3_trade_offer_1_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+
+	["Barista Trade Settings"."Barista Level Four Trade One"]
+		# Barista 4 Trade Request 1 Table
+		barista_4_trade_request_1_table = "todecoins:trade_tables/food/coffee_ingredients_tag_table"
+		barista_4_trade_request_1_count = 12
+		# Barista 4 Trade Offer 1 Table
+		barista_4_trade_offer_1_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+
+	["Barista Trade Settings"."Barista Level Five Trade One"]
+		# Barista 5 Trade Request 1 Table
+		barista_5_trade_request_1_table = "todecoins:trade_tables/food/coffee_ingredients_tag_table"
+		barista_5_trade_request_1_count = 12
+		# Barista 5 Trade Offer 1 Table
+		barista_5_trade_offer_1_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+
