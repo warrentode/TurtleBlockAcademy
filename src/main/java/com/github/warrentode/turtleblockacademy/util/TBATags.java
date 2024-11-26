@@ -136,6 +136,7 @@ public class TBATags {
         public static final TagKey<Item> SHELL = packItemTag("forge", "gems/shell");
 
         public static final TagKey<Item> CROPS = packItemTag("forge", "crops");
+        public static final TagKey<Item> TEA_CROP = packItemTag("forge", "crops/tea");
         public static final TagKey<Item> DILL = packItemTag("forge", "crops/dill");
         public static final TagKey<Item> SHROOMS = packItemTag("forge", "crops/shrooms");
         public static final TagKey<Item> CARROTS = packItemTag("forge", "crops/carrots");

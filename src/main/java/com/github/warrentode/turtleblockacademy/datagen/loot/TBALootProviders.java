@@ -41,6 +41,7 @@ public class TBALootProviders extends LootTableProvider {
             Pair.of(DimDungeonLootTablesGen::new, LootContextParamSets.CHEST),
             Pair.of(PackLootTablesGen::new, LootContextParamSets.CHEST),
             Pair.of(KitchenLootTablesGen::new, LootContextParamSets.CHEST),
+            Pair.of(TradeLootTablesGen::new, LootContextParamSets.CHEST),
             Pair.of(TBABlockLootTablesGen::new, LootContextParamSets.BLOCK)
     );
 

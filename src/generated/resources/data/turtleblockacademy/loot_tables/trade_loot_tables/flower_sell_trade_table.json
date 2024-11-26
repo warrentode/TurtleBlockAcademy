@@ -1,0 +1,665 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "turtleblockacademy:biometag_condition",
+                "tag": "forge:has_sunflower"
+              }
+            }
+          ],
+          "functions": [
+            {
+              "add": false,
+              "count": 1.0,
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "minecraft:sunflower"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "turtleblockacademy:biometag_condition",
+                "tag": "forge:has_peony"
+              }
+            }
+          ],
+          "functions": [
+            {
+              "add": false,
+              "count": 1.0,
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "minecraft:peony"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "turtleblockacademy:biometag_condition",
+                "tag": "forge:has_rose_bush"
+              }
+            }
+          ],
+          "functions": [
+            {
+              "add": false,
+              "count": 1.0,
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "minecraft:rose_bush"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "turtleblockacademy:biometag_condition",
+                "tag": "forge:has_lilac"
+              }
+            }
+          ],
+          "functions": [
+            {
+              "add": false,
+              "count": 1.0,
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "minecraft:lilac"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "turtleblockacademy:biometag_condition",
+                "tag": "forge:has_buttercup"
+              }
+            }
+          ],
+          "functions": [
+            {
+              "add": false,
+              "count": 1.0,
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "friendsandfoes:buttercup"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "turtleblockacademy:biometag_condition",
+                "tag": "forge:has_lily_of_the_valley"
+              }
+            }
+          ],
+          "functions": [
+            {
+              "add": false,
+              "count": 1.0,
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "minecraft:lily_of_the_valley"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "turtleblockacademy:biometag_condition",
+                "tag": "forge:has_cornflower"
+              }
+            }
+          ],
+          "functions": [
+            {
+              "add": false,
+              "count": 1.0,
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "minecraft:cornflower"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "turtleblockacademy:biometag_condition",
+                "tag": "forge:has_oxeye_daisy"
+              }
+            }
+          ],
+          "functions": [
+            {
+              "add": false,
+              "count": 1.0,
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "minecraft:oxeye_daisy"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "turtleblockacademy:biometag_condition",
+                "tag": "forge:has_pink_tulip"
+              }
+            }
+          ],
+          "functions": [
+            {
+              "add": false,
+              "count": 1.0,
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "minecraft:pink_tulip"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "turtleblockacademy:biometag_condition",
+                "tag": "forge:has_white_tulip"
+              }
+            }
+          ],
+          "functions": [
+            {
+              "add": false,
+              "count": 1.0,
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "minecraft:white_tulip"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "turtleblockacademy:biometag_condition",
+                "tag": "forge:has_orange_tulip"
+              }
+            }
+          ],
+          "functions": [
+            {
+              "add": false,
+              "count": 1.0,
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "minecraft:orange_tulip"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "turtleblockacademy:biometag_condition",
+                "tag": "forge:has_red_tulip"
+              }
+            }
+          ],
+          "functions": [
+            {
+              "add": false,
+              "count": 1.0,
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "minecraft:red_tulip"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "turtleblockacademy:biometag_condition",
+                "tag": "forge:has_azure_bluet"
+              }
+            }
+          ],
+          "functions": [
+            {
+              "add": false,
+              "count": 1.0,
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "minecraft:azure_bluet"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "turtleblockacademy:biometag_condition",
+                "tag": "forge:has_allium"
+              }
+            }
+          ],
+          "functions": [
+            {
+              "add": false,
+              "count": 1.0,
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "minecraft:allium"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "turtleblockacademy:biometag_condition",
+                "tag": "forge:has_blue_orchid"
+              }
+            }
+          ],
+          "functions": [
+            {
+              "add": false,
+              "count": 1.0,
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "minecraft:blue_orchid"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "turtleblockacademy:modloaded_condition",
+              "modid": "aether"
+            },
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "turtleblockacademy:biometag_condition",
+                "tag": "forge:has_purple_flower"
+              }
+            }
+          ],
+          "functions": [
+            {
+              "add": false,
+              "count": 1.0,
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "aether:purple_flower"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "turtleblockacademy:modloaded_condition",
+              "modid": "aether"
+            },
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "turtleblockacademy:biometag_condition",
+                "tag": "forge:has_purple_flower"
+              }
+            }
+          ],
+          "functions": [
+            {
+              "add": false,
+              "count": 1.0,
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "aether:white_flower"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "turtleblockacademy:modloaded_condition",
+              "modid": "biomesoplenty"
+            },
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "turtleblockacademy:biometag_condition",
+                "tag": "forge:has_goldenrod"
+              }
+            }
+          ],
+          "functions": [
+            {
+              "add": false,
+              "count": 1.0,
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "biomesoplenty:goldenrod"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "turtleblockacademy:modloaded_condition",
+              "modid": "biomesoplenty"
+            },
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "turtleblockacademy:biometag_condition",
+                "tag": "forge:has_wildflower"
+              }
+            }
+          ],
+          "functions": [
+            {
+              "add": false,
+              "count": 1.0,
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "biomesoplenty:wildflower"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "turtleblockacademy:modloaded_condition",
+              "modid": "biomesoplenty"
+            },
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "turtleblockacademy:biometag_condition",
+                "tag": "forge:has_cattail"
+              }
+            }
+          ],
+          "functions": [
+            {
+              "add": false,
+              "count": 1.0,
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "biomesoplenty:cattail"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "turtleblockacademy:modloaded_condition",
+              "modid": "biomesoplenty"
+            },
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "turtleblockacademy:biometag_condition",
+                "tag": "forge:has_wilted_lily"
+              }
+            }
+          ],
+          "functions": [
+            {
+              "add": false,
+              "count": 1.0,
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "biomesoplenty:wilted_lily"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "turtleblockacademy:modloaded_condition",
+              "modid": "biomesoplenty"
+            },
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "turtleblockacademy:biometag_condition",
+                "tag": "forge:has_violet"
+              }
+            }
+          ],
+          "functions": [
+            {
+              "add": false,
+              "count": 1.0,
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "biomesoplenty:violet"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "turtleblockacademy:modloaded_condition",
+              "modid": "biomesoplenty"
+            },
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "turtleblockacademy:biometag_condition",
+                "tag": "forge:has_rose"
+              }
+            }
+          ],
+          "functions": [
+            {
+              "add": false,
+              "count": 1.0,
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "biomesoplenty:rose"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "turtleblockacademy:biometag_condition",
+                "tag": "forge:has_wither_rose"
+              }
+            }
+          ],
+          "functions": [
+            {
+              "add": false,
+              "count": 1.0,
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "minecraft:wither_rose"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "turtleblockacademy:modloaded_condition",
+              "modid": "biomesoplenty"
+            },
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "turtleblockacademy:biometag_condition",
+                "tag": "forge:has_glowflower"
+              }
+            }
+          ],
+          "functions": [
+            {
+              "add": false,
+              "count": 1.0,
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "biomesoplenty:glowflower"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "turtleblockacademy:modloaded_condition",
+              "modid": "biomesoplenty"
+            },
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "turtleblockacademy:biometag_condition",
+                "tag": "forge:has_lavender"
+              }
+            }
+          ],
+          "functions": [
+            {
+              "add": false,
+              "count": 1.0,
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "biomesoplenty:lavender"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "turtleblockacademy:modloaded_condition",
+              "modid": "biomesoplenty"
+            },
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "turtleblockacademy:biometag_condition",
+                "tag": "forge:has_lavender"
+              }
+            }
+          ],
+          "functions": [
+            {
+              "add": false,
+              "count": 1.0,
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "biomesoplenty:tall_lavender"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "turtleblockacademy:modloaded_condition",
+              "modid": "biomesoplenty"
+            },
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "turtleblockacademy:biometag_condition",
+                "tag": "forge:has_icy_iris"
+              }
+            }
+          ],
+          "functions": [
+            {
+              "add": false,
+              "count": 1.0,
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "biomesoplenty:icy_iris"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "turtleblockacademy:modloaded_condition",
+              "modid": "biomesoplenty"
+            },
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "turtleblockacademy:biometag_condition",
+                "tag": "forge:has_burning_blossom"
+              }
+            }
+          ],
+          "functions": [
+            {
+              "add": false,
+              "count": 1.0,
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "biomesoplenty:burning_blossom"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "add": false,
+              "count": 1.0,
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "minecraft:poppy"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "add": false,
+              "count": 1.0,
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "minecraft:dandelion"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ]
+}

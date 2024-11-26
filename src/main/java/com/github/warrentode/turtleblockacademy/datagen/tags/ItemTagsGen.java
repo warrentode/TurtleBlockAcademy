@@ -1477,6 +1477,7 @@ public class ItemTagsGen extends ItemTagsProvider {
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("wildberries:raspberry")))
                 .addOptional(Objects.requireNonNull(ResourceLocation.tryParse("wildberries:blueberries")));
         tag(TBATags.Items.CROPS)
+                .addTag(TBATags.Items.TEA_CROP)
                 .addTag(TBATags.Items.DILL)
                 .addTag(TBATags.Items.CUCUMBERS)
                 .addTag(TBATags.Items.CLOVES)
