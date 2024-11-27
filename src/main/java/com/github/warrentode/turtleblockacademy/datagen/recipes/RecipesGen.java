@@ -1258,7 +1258,7 @@ public class RecipesGen extends RecipeProvider implements IConditionBuilder {
                         .pattern("#C#")
                         .pattern("###")
                         .define('B', TBATags.Items.BRICK)
-                        .define('S', Tags.Items.LEATHER)
+                        .define('S', Items.WOODEN_SHOVEL)
                         .define('#', TBATags.Items.COPPER_INGOT)
                         .define('C', TBATags.Items.WATER_BUCKETS)
                         .unlockedBy("has_copper_ingot",
