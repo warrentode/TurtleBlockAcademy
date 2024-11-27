@@ -3,7 +3,7 @@
   "color": "purple",
   "name": "Ingots Kit Bag",
   "output": {
-    "table": "dimdungeons:chests/kit_concrete"
+    "table": "dimdungeons:chests/kit_ingots"
   },
   "rarity": "EPIC"
 }

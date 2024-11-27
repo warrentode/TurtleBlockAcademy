@@ -256,7 +256,7 @@ public class LootBagRecipesGen {
                 "Ingots Kit Bag",
                 "purple",
                 LootType.EPIC.name(),
-                DimDungeonLootTables.KIT_CONCRETE).build(consumer);
+                DimDungeonLootTables.KIT_INGOTS).build(consumer);
         LootBagRecipeBuilder.writeRecipe(
                 "ufo_bag",
                 "UFO Bag",
