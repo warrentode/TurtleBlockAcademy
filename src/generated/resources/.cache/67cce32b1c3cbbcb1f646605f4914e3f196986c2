@@ -1,4 +1,4 @@
-// 1.19.2	2024-11-26T14:17:35.6340343	LootTables
+// 1.19.2	2024-11-27T10:34:21.6434484	LootTables
 e2401b7cbcd222542356afa83d2ea98f28f151a8 data/dimdungeons/loot_tables/chests/kit_basic_supplies.json
 87a0cbf6a892b17ac0de9da47bde823b2367a6cc data/dimdungeons/loot_tables/chests/kit_blackstone.json
 3da5b95edb2c52fcbf8b6f6adbed631a2a63e509 data/dimdungeons/loot_tables/chests/kit_brick_set.json
@@ -34,8 +34,9 @@ b8f66f75ad197c883def685e412eeeb637b304d4 data/lootbags/loot_tables/loot_bags/bac
 861d101b26dd0fbc95645beb323e98bdc34d4e58 data/lootbags/loot_tables/loot_bags/cagerium_lootbag.json
 51bb4b87de0616305af68fcba23657ef918b3184 data/lootbags/loot_tables/loot_bags/christmas_lootbag.json
 8a8811ea61665cf222de7d8b3838c7293ae74a69 data/lootbags/loot_tables/loot_bags/deco_bag.json
-a3fa7d964e857a725651f36071747d7a9d9201a2 data/lootbags/loot_tables/loot_bags/easter_lootbag.json
+de6212aea885ab330ce0c21e5a6d71dc179f6315 data/lootbags/loot_tables/loot_bags/easter_lootbag.json
 0c0441a19d7dbac88bfa56e2278c7a551563c7bf data/lootbags/loot_tables/loot_bags/end_map_sale.json
+ded49d5208332b4d3ba1b62fcfb3aaff426fe3a1 data/lootbags/loot_tables/loot_bags/holiday_lootbag.json
 6924e2bd8be3750cd854623fe7d517dfa17a42aa data/lootbags/loot_tables/loot_bags/jungle_map_sale.json
 783b2b99516d35b4a80eda985653ff05e3cab070 data/lootbags/loot_tables/loot_bags/lootbag_currency.json
 fd3124d6f680c54ead96cfc20480fdfa466f28a8 data/lootbags/loot_tables/loot_bags/master_map_sale.json
@@ -1451,7 +1452,7 @@ d94bf98bef02ef96088f56a9ad8a42b0c9393173 data/turtleblockacademy/loot_tables/tra
 a89798256dbc389a3ce1013493b0bba42d0dd1bd data/turtleblockacademy/loot_tables/trade_loot_tables/log_sell_trade_table.json
 9ee37b3708b1d456a16381a4d221b0b5a4f1dad4 data/turtleblockacademy/loot_tables/trade_loot_tables/sapling_buy_trade_table.json
 c2231f0e9f73ddb1b8c6f218f71def7498a98d3d data/turtleblockacademy/loot_tables/trade_loot_tables/sapling_sell_trade_table.json
-d6c04ac54c1318584da742ec963e3893e2737f52 data/wares/loot_tables/agreement/seasonal_shopper.json
+78f124dc26732020565eb2a9afeb745a1266fcf2 data/wares/loot_tables/agreement/seasonal_shopper.json
 aed8dbe0372b11b4ad25f89d7ae5aa5e39e63e9c data/wares/loot_tables/agreement/village/bounties.json
 61d2a860603e40d4c061db6e843448d82e81bae7 data/wares/loot_tables/agreement/village/crops.json
 8730fa004f8279f526a0bb6060898de16cf92944 data/wares/loot_tables/agreement/village/currency.json

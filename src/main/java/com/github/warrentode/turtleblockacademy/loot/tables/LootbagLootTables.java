@@ -10,6 +10,7 @@ public class LootbagLootTables {
     private static final Set<ResourceLocation> LOCATIONS = Sets.newHashSet();
     private static final Set<ResourceLocation> IMMUTABLE_LOCATIONS = Collections.unmodifiableSet(LOCATIONS);
 
+    public static final ResourceLocation HOLIDAY_LOOTBAG = register("holiday_lootbag");
     public static final ResourceLocation BIRTHDAY_LOOTBAG = register("birthday_lootbag");
     public static final ResourceLocation HALLOWEEN_LOOTBAG = register("trick_or_treat_lootbag");
     public static final ResourceLocation CHRISTMAS_LOOTBAG = register("christmas_lootbag");

@@ -176,35 +176,11 @@ public class LootBagRecipesGen {
                 PackBuiltInLootTables.IRON_TIER_GEAR).build(consumer);
 
         LootBagRecipeBuilder.writeRecipe(
-                "anniversary_bag",
-                "Anniversary Bag",
+                "holiday_bag",
+                "Holiday Bag",
                 "blue",
                 LootType.UNCOMMON.name(),
-                LootbagLootTables.ANNIVERSARY_LOOTBAG).build(consumer);
-        LootBagRecipeBuilder.writeRecipe(
-                "birthday_bag",
-                "Birthday Bag",
-                "blue",
-                LootType.UNCOMMON.name(),
-                LootbagLootTables.BIRTHDAY_LOOTBAG).build(consumer);
-        LootBagRecipeBuilder.writeRecipe(
-                "christmas_bag",
-                "Christmas Bag",
-                "blue",
-                LootType.UNCOMMON.name(),
-                LootbagLootTables.CHRISTMAS_LOOTBAG).build(consumer);
-        LootBagRecipeBuilder.writeRecipe(
-                "easter_bag",
-                "Easter Bag",
-                "blue",
-                LootType.UNCOMMON.name(),
-                LootbagLootTables.EASTER_LOOTBAG).build(consumer);
-        LootBagRecipeBuilder.writeRecipe(
-                "trick_or_treat_bag",
-                "Trick or Treat Bag",
-                "blue",
-                LootType.UNCOMMON.name(),
-                LootbagLootTables.HALLOWEEN_LOOTBAG).build(consumer);
+                LootbagLootTables.HOLIDAY_LOOTBAG).build(consumer);
 
         // rare
         LootBagRecipeBuilder.writeRecipe(

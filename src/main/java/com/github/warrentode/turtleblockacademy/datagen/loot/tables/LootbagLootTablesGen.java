@@ -1,9 +1,6 @@
 package com.github.warrentode.turtleblockacademy.datagen.loot.tables;
 
-import com.github.warrentode.turtleblockacademy.loot.tables.DimDungeonLootTables;
-import com.github.warrentode.turtleblockacademy.loot.tables.KitchenLootTables;
-import com.github.warrentode.turtleblockacademy.loot.tables.LootbagLootTables;
-import com.github.warrentode.turtleblockacademy.loot.tables.PackBuiltInLootTables;
+import com.github.warrentode.turtleblockacademy.loot.tables.*;
 import com.github.warrentode.turtleblockacademy.util.TBATags;
 import net.minecraft.Util;
 import net.minecraft.nbt.CompoundTag;
@@ -28,7 +25,7 @@ import java.util.Objects;
 import java.util.function.BiConsumer;
 import java.util.function.Consumer;
 
-import static com.github.warrentode.turtleblockacademy.datagen.loot.TBALootProviders.IN_MINING;
+import static com.github.warrentode.turtleblockacademy.datagen.loot.TBALootProviders.*;
 
 
 public class LootbagLootTablesGen implements Consumer<BiConsumer<ResourceLocation, LootTable.Builder>> {
@@ -149,7 +146,7 @@ public class LootbagLootTablesGen implements Consumer<BiConsumer<ResourceLocatio
                         .add(LootTableReference.lootTableReference(KitchenLootTables.FESTIVEDELIGHT_EDIBLES))
                 )
                 .withPool(LootPool.lootPool().setRolls(ConstantValue.exactly(2))
-                        .add(TagEntry.expandTag(TBATags.Items.EGGS)))
+                        .add(TagEntry.expandTag(TBATags.Items.EASTER_EGGS)))
         );
 
         consumer.accept(LootbagLootTables.ANNIVERSARY_LOOTBAG, LootTable.lootTable()
@@ -191,6 +188,18 @@ public class LootbagLootTablesGen implements Consumer<BiConsumer<ResourceLocatio
                 .withPool(LootPool.lootPool().setRolls(ConstantValue.exactly(3))
                         .add(TagEntry.expandTag(TBATags.Items.CAKES)))
         );
+
+        consumer.accept(LootbagLootTables.HOLIDAY_LOOTBAG, LootTable.lootTable()
+                .withPool(LootPool.lootPool().setRolls(ConstantValue.exactly(1))
+                        .add(LootTableReference.lootTableReference(LootbagLootTables.BIRTHDAY_LOOTBAG).when(BIRTHDAY_EVENT))
+                        .add(LootTableReference.lootTableReference(LootbagLootTables.HALLOWEEN_LOOTBAG).when(HALLOWEEN_EVENT))
+                        .add(LootTableReference.lootTableReference(LootbagLootTables.CHRISTMAS_LOOTBAG).when(CHRISTMAS_EVENT))
+                        .add(LootTableReference.lootTableReference(LootbagLootTables.ANNIVERSARY_LOOTBAG).when(ANNIVERSARY_EVENT))
+                        .add(LootTableReference.lootTableReference(LootbagLootTables.EASTER_LOOTBAG).when(EASTER_EVENT))
+                        .add(LootTableReference.lootTableReference(LootbagLootTables.NEW_YEAR_LOOTBAG).when(NEW_YEAR_EVENT))
+                        // default
+                        .add(LootTableReference.lootTableReference(WaresLootTables.SEASONAL_SHOPPER))
+                ));
 
         //noinspection deprecation
         consumer.accept(LootbagLootTables.RATIONS_BAG_DROP, LootTable.lootTable()
