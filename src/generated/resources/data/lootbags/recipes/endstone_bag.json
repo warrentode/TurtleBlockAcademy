@@ -1,9 +1,0 @@
-{
-  "type": "lootbags:loot",
-  "color": "white",
-  "name": "End Stones Kit Bag",
-  "output": {
-    "table": "turtleblockacademy:chests/kits/kit_end_stones"
-  },
-  "rarity": "COMMON"
-}

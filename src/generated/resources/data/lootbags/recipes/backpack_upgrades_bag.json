@@ -1,9 +1,0 @@
-{
-  "type": "lootbags:loot",
-  "color": "gold",
-  "name": "Backpack Upgrades Bag",
-  "output": {
-    "table": "lootbags:loot_bags/backpack_upgrade_lootbag"
-  },
-  "rarity": "RARE"
-}

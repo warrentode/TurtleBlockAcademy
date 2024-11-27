@@ -77,12 +77,6 @@ public class LootbagLootTablesGen implements Consumer<BiConsumer<ResourceLocatio
                         .add(TagEntry.expandTag(TBATags.Items.SHULKER_BOXES)))
         );
 
-        consumer.accept(LootbagLootTables.BACKPACK_UPGRADES, LootTable.lootTable()
-                .withPool(LootPool.lootPool().setRolls(ConstantValue.exactly(1))
-                        .setBonusRolls(ConstantValue.exactly(0))
-                        .add(TagEntry.expandTag(TBATags.Items.BACKPACK_UPGRADES)))
-        );
-
         consumer.accept(LootbagLootTables.RATIONS, LootTable.lootTable()
                 .withPool(LootPool.lootPool().setRolls(ConstantValue.exactly(1)).setBonusRolls(ConstantValue.exactly(0))
                         .when(LootItemRandomChanceCondition.randomChance(0.25F))

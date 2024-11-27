@@ -2,6 +2,7 @@ package com.github.warrentode.turtleblockacademy.datagen.loot.tables;
 
 import biomesoplenty.api.block.BOPBlocks;
 import com.github.warrentode.turtleblockacademy.loot.tables.KitLootTables;
+import com.github.warrentode.turtleblockacademy.loot.tables.LootbagLootTables;
 import com.github.warrentode.turtleblockacademy.loot.tables.PackBuiltInLootTables;
 import com.github.warrentode.turtleblockacademy.util.TBATags;
 import net.mcreator.festivedelight.init.FestiveDelightModBlocks;
@@ -64,6 +65,33 @@ public class KitLootTablesGen implements Consumer<BiConsumer<ResourceLocation, L
                         .add(LootTableReference.lootTableReference(KitLootTables.KIT_BASIC_SUPPLIES))
                         .add(LootTableReference.lootTableReference(KitLootTables.KIT_DECOR))
                         .add(LootTableReference.lootTableReference(KitLootTables.KIT_CHRISTMAS_BLOCKS))
+                )
+        );
+        consumer.accept(KitLootTables.KIT_RANDOM_BAG, LootTable.lootTable()
+                .withPool(LootPool.lootPool()
+                        .setRolls(ConstantValue.exactly(1))
+                        .add(LootTableReference.lootTableReference(KitLootTables.KIT_LOGS))
+                        .add(LootTableReference.lootTableReference(KitLootTables.KIT_WOOL))
+                        .add(LootTableReference.lootTableReference(KitLootTables.KIT_CONCRETE))
+                        .add(LootTableReference.lootTableReference(KitLootTables.KIT_GLASS))
+                        .add(LootTableReference.lootTableReference(KitLootTables.KIT_SAND))
+                        .add(LootTableReference.lootTableReference(KitLootTables.KIT_REDSTONE))
+                        .add(LootTableReference.lootTableReference(KitLootTables.KIT_TERRACOTTA))
+                        .add(LootTableReference.lootTableReference(KitLootTables.KIT_GLAZED_TERRACOTTA))
+                        .add(LootTableReference.lootTableReference(KitLootTables.KIT_STONE))
+                        .add(LootTableReference.lootTableReference(KitLootTables.KIT_SANDSTONE))
+                        .add(LootTableReference.lootTableReference(KitLootTables.KIT_BLACKSTONE))
+                        .add(LootTableReference.lootTableReference(KitLootTables.KIT_DEEPSLATE))
+                        .add(LootTableReference.lootTableReference(KitLootTables.KIT_PRISMARINE))
+                        .add(LootTableReference.lootTableReference(KitLootTables.KIT_END_STONES))
+                        .add(LootTableReference.lootTableReference(KitLootTables.KIT_PURPUR_STONES))
+                        .add(LootTableReference.lootTableReference(KitLootTables.KIT_CREATURE_STONES))
+                        .add(LootTableReference.lootTableReference(KitLootTables.KIT_OBSIDIAN))
+                        .add(LootTableReference.lootTableReference(KitLootTables.KIT_CRYSTAL))
+                        .add(LootTableReference.lootTableReference(KitLootTables.KIT_BRICK_SET))
+                        .add(LootTableReference.lootTableReference(KitLootTables.KIT_QUARTZ))
+                        .add(LootTableReference.lootTableReference(KitLootTables.KIT_CHRISTMAS_BLOCKS))
+                        .add(LootTableReference.lootTableReference(KitLootTables.KIT_REDSTONE))
                 )
         );
 

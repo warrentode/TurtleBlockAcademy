@@ -1,9 +1,9 @@
 {
   "type": "lootbags:loot",
-  "color": "blue",
+  "color": "purple",
   "name": "Shulker Boxes Bag",
   "output": {
     "table": "lootbags:loot_bags/shulker_boxes_lootbag"
   },
-  "rarity": "UNCOMMON"
+  "rarity": "EPIC"
 }

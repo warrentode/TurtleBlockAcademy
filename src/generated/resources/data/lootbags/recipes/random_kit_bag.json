@@ -1,0 +1,9 @@
+{
+  "type": "lootbags:loot",
+  "color": "blue",
+  "name": "Random Builder's Kit Bag",
+  "output": {
+    "table": "turtleblockacademy:chests/kits/kit_random_bag"
+  },
+  "rarity": "UNCOMMON"
+}

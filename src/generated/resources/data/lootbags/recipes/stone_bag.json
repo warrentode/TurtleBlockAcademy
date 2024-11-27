@@ -1,9 +1,0 @@
-{
-  "type": "lootbags:loot",
-  "color": "white",
-  "name": "Stone Kit Bag",
-  "output": {
-    "table": "turtleblockacademy:chests/kits/kit_stone"
-  },
-  "rarity": "COMMON"
-}

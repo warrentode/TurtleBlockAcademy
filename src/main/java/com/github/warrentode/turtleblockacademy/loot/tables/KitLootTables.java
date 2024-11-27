@@ -12,6 +12,7 @@ public class KitLootTables {
     private static final Set<ResourceLocation> LOCATIONS = Sets.newHashSet();
 
     public static final ResourceLocation KIT_RANDOM = register("dimdungeons" + ":" + "chests/kit_random");
+    public static final ResourceLocation KIT_RANDOM_BAG = register(MODID + ":" + "chests/kits/kit_random_bag");
 
     public static final ResourceLocation KIT_CONCRETE = register(MODID + ":" + "chests/kits/kit_concrete");
     public static final ResourceLocation KIT_GLASS = register(MODID + ":" + "chests/kits/kit_glass");

@@ -1,9 +1,0 @@
-{
-  "type": "lootbags:loot",
-  "color": "white",
-  "name": "Winter Block Kit Bag",
-  "output": {
-    "table": "turtleblockacademy:chests/kits/kit_winter_blocks"
-  },
-  "rarity": "COMMON"
-}

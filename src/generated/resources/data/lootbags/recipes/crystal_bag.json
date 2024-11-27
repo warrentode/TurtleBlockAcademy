@@ -1,9 +1,0 @@
-{
-  "type": "lootbags:loot",
-  "color": "gold",
-  "name": "Crystal Kit Bag",
-  "output": {
-    "table": "turtleblockacademy:chests/kits/kit_crystal"
-  },
-  "rarity": "RARE"
-}

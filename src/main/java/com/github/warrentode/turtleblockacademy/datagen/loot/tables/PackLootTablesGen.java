@@ -76,7 +76,7 @@ public class PackLootTablesGen implements Consumer<BiConsumer<ResourceLocation, 
                 )
                 .withPool(LootPool.lootPool()
                         .setRolls(ConstantValue.exactly(1))
-                        .add(LootTableReference.lootTableReference(LootbagLootTables.ARTIFACTS_GIFTS))
+                        .add(LootTableReference.lootTableReference(LootbagLootTables.ARTIFACTS_BAG))
                 )
                 .withPool(LootPool.lootPool()
                         .setRolls(ConstantValue.exactly(1))
@@ -115,7 +115,7 @@ public class PackLootTablesGen implements Consumer<BiConsumer<ResourceLocation, 
                 .withPool(LootPool.lootPool()
                         .setRolls(ConstantValue.exactly(1))
                         .setBonusRolls(ConstantValue.exactly(0))
-                        .add(LootTableReference.lootTableReference(LootbagLootTables.ARTIFACTS_GIFTS)
+                        .add(LootTableReference.lootTableReference(LootbagLootTables.ARTIFACTS_BAG)
                                 .when(LootItemRandomChanceCondition.randomChance(0.25F))))
                 .withPool(LootPool.lootPool()
                         .setRolls(ConstantValue.exactly(1))
@@ -126,7 +126,7 @@ public class PackLootTablesGen implements Consumer<BiConsumer<ResourceLocation, 
                         .setBonusRolls(ConstantValue.exactly(0))
                         .add(LootTableReference.lootTableReference(PackBuiltInLootTables.SPAWN_STARTER_BONUS))));
 
-        consumer.accept(LootbagLootTables.ARTIFACTS_GIFTS, LootTable.lootTable()
+        consumer.accept(LootbagLootTables.ARTIFACTS_BAG, LootTable.lootTable()
                 .withPool(LootPool.lootPool().setRolls(ConstantValue.exactly(1))
                         .add(LootItem.lootTableItem(artifacts.common.init.ModItems.UMBRELLA.get()))
                         .add(LootItem.lootTableItem(artifacts.common.init.ModItems.EVERLASTING_BEEF.get()))
@@ -675,7 +675,7 @@ public class PackLootTablesGen implements Consumer<BiConsumer<ResourceLocation, 
                 .withPool(LootPool.lootPool().setRolls(ConstantValue.exactly(1))
                         .add(LootItem.lootTableItem(AetherItems.LIFE_SHARD.get())
                                 .when(LootItemRandomChanceCondition.randomChance(0.01F)))
-                        .add(LootTableReference.lootTableReference(LootbagLootTables.REFINED_STORAGE_GIFTS)
+                        .add(LootTableReference.lootTableReference(LootbagLootTables.REFINED_STORAGE_KIT)
                                 .when(LootItemRandomChanceCondition.randomChance(0.1F)))
                         .add(LootTableReference.lootTableReference(PackBuiltInLootTables.PLUSHIES)
                                 .when(LootItemRandomChanceCondition.randomChance(0.5F)))
@@ -1141,7 +1141,7 @@ public class PackLootTablesGen implements Consumer<BiConsumer<ResourceLocation, 
                         .add(LootItem.lootTableItem(BANDERINES_ROSA.get()))
                 ));
 
-        consumer.accept(LootbagLootTables.REFINED_STORAGE_GIFTS, LootTable.lootTable()
+        consumer.accept(LootbagLootTables.REFINED_STORAGE_KIT, LootTable.lootTable()
                 .withPool(LootPool.lootPool()
                         .setRolls(ConstantValue.exactly(1))
                         .setBonusRolls(ConstantValue.exactly(0))

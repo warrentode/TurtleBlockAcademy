@@ -1,9 +1,0 @@
-{
-  "type": "lootbags:loot",
-  "color": "white",
-  "name": "Wool Kit Bag",
-  "output": {
-    "table": "turtleblockacademy:chests/kits/kit_wool"
-  },
-  "rarity": "COMMON"
-}
