@@ -3,7 +3,6 @@ package com.github.warrentode.turtleblockacademy.datagen.recipes.recipe;
 import com.github.warrentode.turtleblockacademy.datagen.recipes.builder.LootBagRecipeBuilder;
 import com.github.warrentode.turtleblockacademy.loot.tables.KitLootTables;
 import com.github.warrentode.turtleblockacademy.loot.tables.LootbagLootTables;
-import com.github.warrentode.turtleblockacademy.loot.tables.PackBuiltInLootTables;
 import net.minecraft.data.recipes.FinishedRecipe;
 import tech.thatgravyboat.lootbags.api.LootType;
 

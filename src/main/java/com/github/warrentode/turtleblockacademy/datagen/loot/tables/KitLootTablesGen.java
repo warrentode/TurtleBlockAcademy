@@ -2,7 +2,6 @@ package com.github.warrentode.turtleblockacademy.datagen.loot.tables;
 
 import biomesoplenty.api.block.BOPBlocks;
 import com.github.warrentode.turtleblockacademy.loot.tables.KitLootTables;
-import com.github.warrentode.turtleblockacademy.loot.tables.LootbagLootTables;
 import com.github.warrentode.turtleblockacademy.loot.tables.PackBuiltInLootTables;
 import com.github.warrentode.turtleblockacademy.util.TBATags;
 import net.mcreator.festivedelight.init.FestiveDelightModBlocks;
