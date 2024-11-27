@@ -225,12 +225,6 @@ public class LootBagRecipesGen {
                 LootType.RARE.name(),
                 PackBuiltInLootTables.GEMS).build(consumer);
         LootBagRecipeBuilder.writeRecipe(
-                "music_discs_bag",
-                "Music Discs Bag",
-                "gold",
-                LootType.RARE.name(),
-                LootbagLootTables.MUSIC_DISCS).build(consumer);
-        LootBagRecipeBuilder.writeRecipe(
                 "backpack_upgrades_bag",
                 "Backpack Upgrades Bag",
                 "gold",
@@ -257,12 +251,6 @@ public class LootBagRecipesGen {
                 LootType.EPIC.name(),
                 KitLootTables.KIT_INGOTS).build(consumer);
         LootBagRecipeBuilder.writeRecipe(
-                "ufo_bag",
-                "UFO Bag",
-                "purple",
-                LootType.EPIC.name(),
-                LootbagLootTables.UFO_BAG).build(consumer);
-        LootBagRecipeBuilder.writeRecipe(
                 "mystery_coin_pack",
                 "Mystery Coin Pack",
                 "purple",
@@ -276,12 +264,6 @@ public class LootBagRecipesGen {
                 "limegreen",
                 LootType.LEGENDARY.name(),
                 LootbagLootTables.ARTIFACTS_GIFTS).build(consumer);
-        LootBagRecipeBuilder.writeRecipe(
-                "cagerium_bag",
-                "Cagerium Kit Bag",
-                "limegreen",
-                LootType.LEGENDARY.name(),
-                LootbagLootTables.CAGERIUM_KIT).build(consumer);
         LootBagRecipeBuilder.writeRecipe(
                 "netherite_gear_bag",
                 "Netherite Tier Gear Bag",

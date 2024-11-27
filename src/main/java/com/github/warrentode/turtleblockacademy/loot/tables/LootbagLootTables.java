@@ -23,12 +23,9 @@ public class LootbagLootTables {
     public static final ResourceLocation RATIONS = register("rations_lootbag");
     public static final ResourceLocation LUCKY_LOOTBAG = register("lucky_lootbag");
 
-    public static final ResourceLocation CAGERIUM_KIT = register("cagerium_lootbag");
     public static final ResourceLocation TINKERS_KIT = register("tinkers_lootbag");
-    public static final ResourceLocation UFO_BAG = register("ufo_lootbag");
     public static final ResourceLocation SHULKER_BOXES = register("shulker_boxes_lootbag");
     public static final ResourceLocation BACKPACK_UPGRADES = register("backpack_upgrade_lootbag");
-    public static final ResourceLocation MUSIC_DISCS = register("music_disc_lootbag");
     public static final ResourceLocation MYSTERY_COIN_PACK = register("mystery_coin_pack");
     public static final ResourceLocation PLUSHIE_BAG = register("plushie_bag");
     public static final ResourceLocation DECO_BAG = register("deco_bag");

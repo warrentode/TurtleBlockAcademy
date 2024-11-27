@@ -61,21 +61,6 @@ public class LootbagLootTablesGen implements Consumer<BiConsumer<ResourceLocatio
                 )
         );
 
-        consumer.accept(LootbagLootTables.CAGERIUM_KIT, LootTable.lootTable()
-                .withPool(LootPool.lootPool().setRolls(ConstantValue.exactly(1))
-                        .setBonusRolls(ConstantValue.exactly(1))
-                        .add(TagEntry.expandTag(TBATags.Items.CAGERIUM_BLOCKS).setWeight(1)
-                                .when(LootItemRandomChanceCondition.randomChance(0.1F)))
-                        .add(TagEntry.expandTag(TBATags.Items.CAGERIUM_ITEMS).setWeight(1)
-                                .when(LootItemRandomChanceCondition.randomChance(0.1F)))
-                ));
-
-        consumer.accept(LootbagLootTables.UFO_BAG, LootTable.lootTable()
-                .withPool(LootPool.lootPool().setRolls(ConstantValue.exactly(1)).setBonusRolls(ConstantValue.exactly(0))
-                        .add(LootTableReference.lootTableReference(PackBuiltInLootTables.UFO))
-                )
-        );
-
         consumer.accept(LootbagLootTables.TINKERS_KIT, LootTable.lootTable()
                 .withPool(LootPool.lootPool().setRolls(ConstantValue.exactly(1))
                         .add(LootItem.lootTableItem(TinkerWorld.rawCobalt)
@@ -84,11 +69,6 @@ public class LootbagLootTablesGen implements Consumer<BiConsumer<ResourceLocatio
                         .add(LootItem.lootTableItem(Objects.requireNonNull(TinkerFluids.blazingBlood.getBucket()))
                                 .when(LootItemRandomChanceCondition.randomChance(0.1F))
                                 .apply(SetItemCountFunction.setCount(UniformGenerator.between(1, 4))))
-                ));
-
-        consumer.accept(LootbagLootTables.MUSIC_DISCS, LootTable.lootTable()
-                .withPool(LootPool.lootPool().setRolls(ConstantValue.exactly(1))
-                        .add(TagEntry.expandTag(TBATags.Items.MUSIC_DISCS))
                 ));
 
         consumer.accept(LootbagLootTables.SHULKER_BOXES, LootTable.lootTable()
