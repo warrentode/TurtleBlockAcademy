@@ -38,14 +38,6 @@ public class LootbagLootTables {
     public static final ResourceLocation LOOTBAG_CURRENCY = register("lootbag_currency");
 
     public static final ResourceLocation MASTER_MAP_SALE = register("master_map_sale");
-    public static final ResourceLocation END_MAP_SALE = register("end_map_sale");
-    public static final ResourceLocation NETHER_MAP_SALE = register("nether_map_sale");
-    public static final ResourceLocation OCEAN_MAP_SALE = register("ocean_map_sale");
-    public static final ResourceLocation SCOUT_MAP_SALE = register("scout_map_sale");
-    public static final ResourceLocation SWAMP_MAP_SALE = register("swamp_map_sale");
-    public static final ResourceLocation TREASURE_MAP_SALE = register("treasure_map_sale");
-    public static final ResourceLocation UNDERGROUND_MAP_SALE = register("underground_map_sale");
-    public static final ResourceLocation JUNGLE_MAP_SALE = register("jungle_map_sale");
 
     private static ResourceLocation register(String path) {
         return register(new ResourceLocation("lootbags", "loot_bags/" + path));

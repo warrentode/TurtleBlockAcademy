@@ -289,60 +289,12 @@ public class LootBagRecipesGen {
                 LootType.LEGENDARY.name(),
                 PackBuiltInLootTables.NETHERITE_TIER_GEAR).build(consumer);
 
-        // map bags for villager trades
-        LootBagRecipeBuilder.writeRecipe(
-                "end_map_bag",
-                "End Map Bag",
-                "white",
-                LootType.COMMON.name(),
-                LootbagLootTables.END_MAP_SALE).build(consumer);
-        LootBagRecipeBuilder.writeRecipe(
-                "jungle_map_bag",
-                "Jungle Map Bag",
-                "white",
-                LootType.COMMON.name(),
-                LootbagLootTables.JUNGLE_MAP_SALE).build(consumer);
+        // structure map bags
         LootBagRecipeBuilder.writeRecipe(
                 "master_map_bag",
                 "Map Bag",
                 "white",
                 LootType.COMMON.name(),
                 LootbagLootTables.MASTER_MAP_SALE).build(consumer);
-        LootBagRecipeBuilder.writeRecipe(
-                "nether_map_bag",
-                "Nether Map Bag",
-                "white",
-                LootType.COMMON.name(),
-                LootbagLootTables.NETHER_MAP_SALE).build(consumer);
-        LootBagRecipeBuilder.writeRecipe(
-                "ocean_map_bag",
-                "Ocean Map Bag",
-                "white",
-                LootType.COMMON.name(),
-                LootbagLootTables.OCEAN_MAP_SALE).build(consumer);
-        LootBagRecipeBuilder.writeRecipe(
-                "scout_map_bag",
-                "Scout Map Bag",
-                "white",
-                LootType.COMMON.name(),
-                LootbagLootTables.SCOUT_MAP_SALE).build(consumer);
-        LootBagRecipeBuilder.writeRecipe(
-                "swamp_map_bag",
-                "Swamp Map Bag",
-                "white",
-                LootType.COMMON.name(),
-                LootbagLootTables.SWAMP_MAP_SALE).build(consumer);
-        LootBagRecipeBuilder.writeRecipe(
-                "treasure_map_bag",
-                "Treasure Map Bag",
-                "white",
-                LootType.COMMON.name(),
-                LootbagLootTables.TREASURE_MAP_SALE).build(consumer);
-        LootBagRecipeBuilder.writeRecipe(
-                "underground_map_bag",
-                "Underground Map Bag",
-                "white",
-                LootType.COMMON.name(),
-                LootbagLootTables.UNDERGROUND_MAP_SALE).build(consumer);
     }
 }

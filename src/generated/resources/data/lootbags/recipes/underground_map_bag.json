@@ -1,9 +1,0 @@
-{
-  "type": "lootbags:loot",
-  "color": "white",
-  "name": "Underground Map Bag",
-  "output": {
-    "table": "lootbags:loot_bags/underground_map_sale"
-  },
-  "rarity": "COMMON"
-}

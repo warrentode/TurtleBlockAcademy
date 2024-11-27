@@ -1,9 +1,0 @@
-{
-  "type": "lootbags:loot",
-  "color": "white",
-  "name": "Jungle Map Bag",
-  "output": {
-    "table": "lootbags:loot_bags/jungle_map_sale"
-  },
-  "rarity": "COMMON"
-}

@@ -216,46 +216,6 @@ public class LootbagLootTablesGen implements Consumer<BiConsumer<ResourceLocatio
                 )
         );
 
-        consumer.accept(LootbagLootTables.END_MAP_SALE, LootTable.lootTable()
-                .withPool(LootPool.lootPool().setRolls(ConstantValue.exactly(1))
-                        .add(LootTableReference.lootTableReference(PackBuiltInLootTables.END_MAPBOX))
-                )
-        );
-        consumer.accept(LootbagLootTables.NETHER_MAP_SALE, LootTable.lootTable()
-                .withPool(LootPool.lootPool().setRolls(ConstantValue.exactly(1))
-                        .add(LootTableReference.lootTableReference(PackBuiltInLootTables.NETHER_MAPBOX))
-                )
-        );
-        consumer.accept(LootbagLootTables.OCEAN_MAP_SALE, LootTable.lootTable()
-                .withPool(LootPool.lootPool().setRolls(ConstantValue.exactly(1))
-                        .add(LootTableReference.lootTableReference(PackBuiltInLootTables.OCEAN_MAPS))
-                )
-        );
-        consumer.accept(LootbagLootTables.SCOUT_MAP_SALE, LootTable.lootTable()
-                .withPool(LootPool.lootPool().setRolls(ConstantValue.exactly(1))
-                        .add(LootTableReference.lootTableReference(PackBuiltInLootTables.SCOUT_MAPS))
-                )
-        );
-        consumer.accept(LootbagLootTables.SWAMP_MAP_SALE, LootTable.lootTable()
-                .withPool(LootPool.lootPool().setRolls(ConstantValue.exactly(1))
-                        .add(LootTableReference.lootTableReference(PackBuiltInLootTables.SWAMP_MAPS))
-                )
-        );
-        consumer.accept(LootbagLootTables.TREASURE_MAP_SALE, LootTable.lootTable()
-                .withPool(LootPool.lootPool().setRolls(ConstantValue.exactly(1))
-                        .add(LootTableReference.lootTableReference(PackBuiltInLootTables.TREASURE_MAPS))
-                )
-        );
-        consumer.accept(LootbagLootTables.UNDERGROUND_MAP_SALE, LootTable.lootTable()
-                .withPool(LootPool.lootPool().setRolls(ConstantValue.exactly(1))
-                        .add(LootTableReference.lootTableReference(PackBuiltInLootTables.UNDERGROUND_MAPS))
-                )
-        );
-        consumer.accept(LootbagLootTables.JUNGLE_MAP_SALE, LootTable.lootTable()
-                .withPool(LootPool.lootPool().setRolls(ConstantValue.exactly(1))
-                        .add(LootTableReference.lootTableReference(PackBuiltInLootTables.JUNGLE_MAPS))
-                )
-        );
         consumer.accept(LootbagLootTables.MASTER_MAP_SALE, LootTable.lootTable()
                 .withPool(LootPool.lootPool().setRolls(ConstantValue.exactly(1))
                         .add(LootTableReference.lootTableReference(PackBuiltInLootTables.MASTER_MAPBOX))
