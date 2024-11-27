@@ -1,4 +1,4 @@
-// 1.19.2	2024-11-27T12:04:18.4663977	LootTables
+// 1.19.2	2024-11-27T18:40:57.8458462	LootTables
 e45912867e166601791be36d7d3c386061314fc4 data/dimdungeons/loot_tables/chests/kit_random.json
 70e0cca7ec20a56e211b0f651e481ef9ffa70b8f data/lootbags/loot_tables/loot_bags/anniversary_lootbag.json
 73a6ba02ddd1f384ed4cf7ba6d42a68c877e2c35 data/lootbags/loot_tables/loot_bags/artifacts_lootbag.json
@@ -1375,7 +1375,7 @@ d19329ccd646cda5d4fac0df8b2b97507bc352c9 data/turtleblockacademy/loot_tables/che
 1cbac7914bcee29c579860ba88d7aca839c0b067 data/turtleblockacademy/loot_tables/chests/kitchen/minersdelight_edibles.json
 bd2d716cab9965c56dc5d978500f2f71b75b8117 data/turtleblockacademy/loot_tables/chests/kitchen/nethersdelight_edibles.json
 c5b4d91d6dac784937709eebbb99da3bbe22d8fa data/turtleblockacademy/loot_tables/chests/kitchen/oceansdelight_edibles.json
-6a0a816f1482c6bd226578c4bd4b217ad754103b data/turtleblockacademy/loot_tables/chests/kitchen/phantasm_edibles.json
+5d15018f124ab4782442d49f343ddf45087d704f data/turtleblockacademy/loot_tables/chests/kitchen/phantasm_edibles.json
 2223acadf59292b3e71f4cf85b7a20eecbdf6f60 data/turtleblockacademy/loot_tables/chests/kitchen/snowyspirit_edibles.json
 c34340d065b5ceec2d42e692544df9147d1185be data/turtleblockacademy/loot_tables/chests/kitchen/supplementaries_edibles.json
 31f2e4919922f724e64a36e51bef6a8e72e86211 data/turtleblockacademy/loot_tables/chests/kitchen/turtleblockacademy_edibles.json
