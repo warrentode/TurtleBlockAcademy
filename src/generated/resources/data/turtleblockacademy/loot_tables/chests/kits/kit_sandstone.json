@@ -9,244 +9,224 @@
           "functions": [
             {
               "add": false,
-              "count": {
-                "type": "minecraft:uniform",
-                "max": 9.0,
-                "min": 5.0
-              },
+              "count": 64.0,
               "function": "minecraft:set_count"
             }
           ],
-          "name": "minecraft:black_wool"
+          "name": "minecraft:sandstone"
         },
         {
           "type": "minecraft:item",
           "functions": [
             {
               "add": false,
-              "count": {
-                "type": "minecraft:uniform",
-                "max": 9.0,
-                "min": 5.0
-              },
+              "count": 64.0,
               "function": "minecraft:set_count"
             }
           ],
-          "name": "minecraft:blue_wool"
+          "name": "minecraft:chiseled_sandstone"
         },
         {
           "type": "minecraft:item",
           "functions": [
             {
               "add": false,
-              "count": {
-                "type": "minecraft:uniform",
-                "max": 9.0,
-                "min": 5.0
-              },
+              "count": 64.0,
               "function": "minecraft:set_count"
             }
           ],
-          "name": "minecraft:brown_wool"
+          "name": "minecraft:cut_sandstone"
         },
         {
           "type": "minecraft:item",
           "functions": [
             {
               "add": false,
-              "count": {
-                "type": "minecraft:uniform",
-                "max": 9.0,
-                "min": 5.0
-              },
+              "count": 64.0,
               "function": "minecraft:set_count"
             }
           ],
-          "name": "minecraft:cyan_wool"
+          "name": "minecraft:smooth_sandstone"
         },
         {
           "type": "minecraft:item",
           "functions": [
             {
               "add": false,
-              "count": {
-                "type": "minecraft:uniform",
-                "max": 9.0,
-                "min": 5.0
-              },
+              "count": 64.0,
               "function": "minecraft:set_count"
             }
           ],
-          "name": "minecraft:green_wool"
+          "name": "minecraft:red_sandstone"
         },
         {
           "type": "minecraft:item",
           "functions": [
             {
               "add": false,
-              "count": {
-                "type": "minecraft:uniform",
-                "max": 9.0,
-                "min": 5.0
-              },
+              "count": 64.0,
               "function": "minecraft:set_count"
             }
           ],
-          "name": "minecraft:gray_wool"
+          "name": "minecraft:chiseled_red_sandstone"
         },
         {
           "type": "minecraft:item",
           "functions": [
             {
               "add": false,
-              "count": {
-                "type": "minecraft:uniform",
-                "max": 9.0,
-                "min": 5.0
-              },
+              "count": 64.0,
               "function": "minecraft:set_count"
             }
           ],
-          "name": "minecraft:lime_wool"
+          "name": "minecraft:cut_red_sandstone"
         },
         {
           "type": "minecraft:item",
           "functions": [
             {
               "add": false,
-              "count": {
-                "type": "minecraft:uniform",
-                "max": 9.0,
-                "min": 5.0
-              },
+              "count": 64.0,
               "function": "minecraft:set_count"
             }
           ],
-          "name": "minecraft:magenta_wool"
+          "name": "minecraft:smooth_red_sandstone"
         },
         {
           "type": "minecraft:item",
           "functions": [
             {
               "add": false,
-              "count": {
-                "type": "minecraft:uniform",
-                "max": 9.0,
-                "min": 5.0
-              },
+              "count": 64.0,
               "function": "minecraft:set_count"
             }
           ],
-          "name": "minecraft:orange_wool"
+          "name": "biomesoplenty:white_sandstone"
         },
         {
           "type": "minecraft:item",
           "functions": [
             {
               "add": false,
-              "count": {
-                "type": "minecraft:uniform",
-                "max": 9.0,
-                "min": 5.0
-              },
+              "count": 64.0,
               "function": "minecraft:set_count"
             }
           ],
-          "name": "minecraft:pink_wool"
+          "name": "biomesoplenty:smooth_white_sandstone"
         },
         {
           "type": "minecraft:item",
           "functions": [
             {
               "add": false,
-              "count": {
-                "type": "minecraft:uniform",
-                "max": 9.0,
-                "min": 5.0
-              },
+              "count": 64.0,
               "function": "minecraft:set_count"
             }
           ],
-          "name": "minecraft:purple_wool"
+          "name": "biomesoplenty:cut_white_sandstone"
         },
         {
           "type": "minecraft:item",
           "functions": [
             {
               "add": false,
-              "count": {
-                "type": "minecraft:uniform",
-                "max": 9.0,
-                "min": 5.0
-              },
+              "count": 64.0,
               "function": "minecraft:set_count"
             }
           ],
-          "name": "minecraft:red_wool"
+          "name": "biomesoplenty:chiseled_white_sandstone"
         },
         {
           "type": "minecraft:item",
           "functions": [
             {
               "add": false,
-              "count": {
-                "type": "minecraft:uniform",
-                "max": 9.0,
-                "min": 5.0
-              },
+              "count": 64.0,
               "function": "minecraft:set_count"
             }
           ],
-          "name": "minecraft:light_blue_wool"
+          "name": "biomesoplenty:orange_sandstone"
         },
         {
           "type": "minecraft:item",
           "functions": [
             {
               "add": false,
-              "count": {
-                "type": "minecraft:uniform",
-                "max": 9.0,
-                "min": 5.0
-              },
+              "count": 64.0,
               "function": "minecraft:set_count"
             }
           ],
-          "name": "minecraft:light_gray_wool"
+          "name": "biomesoplenty:smooth_orange_sandstone"
         },
         {
           "type": "minecraft:item",
           "functions": [
             {
               "add": false,
-              "count": {
-                "type": "minecraft:uniform",
-                "max": 9.0,
-                "min": 5.0
-              },
+              "count": 64.0,
               "function": "minecraft:set_count"
             }
           ],
-          "name": "minecraft:white_wool"
+          "name": "biomesoplenty:cut_orange_sandstone"
         },
         {
           "type": "minecraft:item",
           "functions": [
             {
               "add": false,
-              "count": {
-                "type": "minecraft:uniform",
-                "max": 9.0,
-                "min": 5.0
-              },
+              "count": 64.0,
               "function": "minecraft:set_count"
             }
           ],
-          "name": "minecraft:yellow_wool"
+          "name": "biomesoplenty:chiseled_orange_sandstone"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "add": false,
+              "count": 64.0,
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "biomesoplenty:black_sandstone"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "add": false,
+              "count": 64.0,
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "biomesoplenty:smooth_black_sandstone"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "add": false,
+              "count": 64.0,
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "biomesoplenty:cut_black_sandstone"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "add": false,
+              "count": 64.0,
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "biomesoplenty:chiseled_black_sandstone"
         }
       ],
-      "name": "dimdungeons:kit_wool",
-      "rolls": 27.0
+      "name": "turtleblockacademy:kit_sandstone",
+      "rolls": 1.0
     }
   ]
 }

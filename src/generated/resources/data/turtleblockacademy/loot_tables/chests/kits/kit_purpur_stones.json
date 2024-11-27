@@ -9,169 +9,147 @@
           "functions": [
             {
               "add": false,
-              "count": {
-                "type": "minecraft:uniform",
-                "max": 9.0,
-                "min": 5.0
-              },
+              "count": 64.0,
               "function": "minecraft:set_count"
             }
           ],
-          "name": "unusualend:bolok_scale_block"
+          "name": "phantasm:raw_purpur"
         },
         {
           "type": "minecraft:item",
           "functions": [
             {
               "add": false,
-              "count": {
-                "type": "minecraft:uniform",
-                "max": 9.0,
-                "min": 5.0
-              },
+              "count": 64.0,
               "function": "minecraft:set_count"
             }
           ],
-          "name": "unusualend:polished_gneiss"
+          "name": "phantasm:raw_purpur_bricks"
         },
         {
           "type": "minecraft:item",
           "functions": [
             {
               "add": false,
-              "count": {
-                "type": "minecraft:uniform",
-                "max": 9.0,
-                "min": 5.0
-              },
+              "count": 64.0,
               "function": "minecraft:set_count"
             }
           ],
-          "name": "unusualend:gneiss_bricks"
+          "name": "phantasm:cracked_raw_purpur_bricks"
         },
         {
           "type": "minecraft:item",
           "functions": [
             {
               "add": false,
-              "count": {
-                "type": "minecraft:uniform",
-                "max": 9.0,
-                "min": 5.0
-              },
+              "count": 64.0,
               "function": "minecraft:set_count"
             }
           ],
-          "name": "unusualend:endermite_moult_block"
+          "name": "phantasm:chiseled_raw_purpur"
         },
         {
           "type": "minecraft:item",
           "functions": [
             {
               "add": false,
-              "count": {
-                "type": "minecraft:uniform",
-                "max": 9.0,
-                "min": 5.0
-              },
+              "count": 64.0,
               "function": "minecraft:set_count"
             }
           ],
-          "name": "unusualend:endermite_moult_bricks"
+          "name": "phantasm:raw_purpur_pillar"
         },
         {
           "type": "minecraft:item",
           "functions": [
             {
               "add": false,
-              "count": {
-                "type": "minecraft:uniform",
-                "max": 9.0,
-                "min": 5.0
-              },
+              "count": 64.0,
               "function": "minecraft:set_count"
             }
           ],
-          "name": "unusualend:gloopstone"
+          "name": "phantasm:raw_purpur_tiles"
         },
         {
           "type": "minecraft:item",
           "functions": [
             {
               "add": false,
-              "count": {
-                "type": "minecraft:uniform",
-                "max": 9.0,
-                "min": 5.0
-              },
+              "count": 64.0,
               "function": "minecraft:set_count"
             }
           ],
-          "name": "unusualend:polished_gloopstone"
+          "name": "unusualend:raw_purpur_block"
         },
         {
           "type": "minecraft:item",
           "functions": [
             {
               "add": false,
-              "count": {
-                "type": "minecraft:uniform",
-                "max": 9.0,
-                "min": 5.0
-              },
+              "count": 64.0,
               "function": "minecraft:set_count"
             }
           ],
-          "name": "unusualend:gloopstone_bricks"
+          "name": "unusualend:polished_purpur"
         },
         {
           "type": "minecraft:item",
           "functions": [
             {
               "add": false,
-              "count": {
-                "type": "minecraft:uniform",
-                "max": 9.0,
-                "min": 5.0
-              },
+              "count": 64.0,
               "function": "minecraft:set_count"
             }
           ],
-          "name": "unusualend:shiny_crystal_block"
+          "name": "unusualend:polished_purpur_tiles"
         },
         {
           "type": "minecraft:item",
           "functions": [
             {
               "add": false,
-              "count": {
-                "type": "minecraft:uniform",
-                "max": 9.0,
-                "min": 5.0
-              },
+              "count": 64.0,
               "function": "minecraft:set_count"
             }
           ],
-          "name": "unusualend:shiny_crystal_tiles"
+          "name": "unusualend:polished_purpur_bricks"
         },
         {
           "type": "minecraft:item",
           "functions": [
             {
               "add": false,
-              "count": {
-                "type": "minecraft:uniform",
-                "max": 9.0,
-                "min": 5.0
-              },
+              "count": 64.0,
               "function": "minecraft:set_count"
             }
           ],
-          "name": "unusualend:shiny_crystal_bricks"
+          "name": "unusualend:chiseled_polished_purpur_tiles"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "add": false,
+              "count": 64.0,
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "unusualend:polished_purpur_tiles_lantern"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "add": false,
+              "count": 64.0,
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "phantasm:purpur_lamp"
         }
       ],
-      "name": "dimdungeons:kit_creature_stones",
-      "rolls": 27.0
+      "name": "turtleblockacademy:kit_purpur_stones",
+      "rolls": 1.0
     }
   ]
 }

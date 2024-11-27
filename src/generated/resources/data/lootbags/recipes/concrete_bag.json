@@ -3,7 +3,7 @@
   "color": "white",
   "name": "Concrete Kit Bag",
   "output": {
-    "table": "dimdungeons:chests/kit_concrete"
+    "table": "turtleblockacademy:chests/kits/kit_concrete"
   },
   "rarity": "COMMON"
 }

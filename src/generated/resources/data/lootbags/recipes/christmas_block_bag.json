@@ -3,7 +3,7 @@
   "color": "white",
   "name": "Christmas Block Kit Bag",
   "output": {
-    "table": "dimdungeons:chests/kit_christmas_blocks"
+    "table": "turtleblockacademy:chests/kits/kit_christmas_blocks"
   },
   "rarity": "COMMON"
 }

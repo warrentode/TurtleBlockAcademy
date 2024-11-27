@@ -3,7 +3,7 @@
   "color": "purple",
   "name": "Ingots Kit Bag",
   "output": {
-    "table": "dimdungeons:chests/kit_ingots"
+    "table": "turtleblockacademy:chests/kits/kit_ingots"
   },
   "rarity": "EPIC"
 }

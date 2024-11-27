@@ -3,7 +3,7 @@
   "color": "white",
   "name": "Glazed Terracotta Kit Bag",
   "output": {
-    "table": "dimdungeons:chests/kit_glazed_terracotta"
+    "table": "turtleblockacademy:chests/kits/kit_glazed_terracotta"
   },
   "rarity": "COMMON"
 }

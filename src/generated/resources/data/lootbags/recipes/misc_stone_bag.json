@@ -3,7 +3,7 @@
   "color": "white",
   "name": "Misc. Stone Kit Bag",
   "output": {
-    "table": "dimdungeons:chests/kit_misc_stone"
+    "table": "turtleblockacademy:chests/kits/kit_misc_stone"
   },
   "rarity": "COMMON"
 }

@@ -3,7 +3,7 @@
   "color": "white",
   "name": "Redstone Kit Bag",
   "output": {
-    "table": "dimdungeons:chests/kit_redstone"
+    "table": "turtleblockacademy:chests/kits/kit_redstone"
   },
   "rarity": "COMMON"
 }

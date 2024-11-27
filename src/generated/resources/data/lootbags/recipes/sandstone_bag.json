@@ -3,7 +3,7 @@
   "color": "white",
   "name": "Sandstone Kit Bag",
   "output": {
-    "table": "dimdungeons:chests/kit_sandstone"
+    "table": "turtleblockacademy:chests/kits/kit_sandstone"
   },
   "rarity": "COMMON"
 }

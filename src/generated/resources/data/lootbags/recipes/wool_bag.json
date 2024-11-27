@@ -3,7 +3,7 @@
   "color": "white",
   "name": "Wool Kit Bag",
   "output": {
-    "table": "dimdungeons:chests/kit_wool"
+    "table": "turtleblockacademy:chests/kits/kit_wool"
   },
   "rarity": "COMMON"
 }

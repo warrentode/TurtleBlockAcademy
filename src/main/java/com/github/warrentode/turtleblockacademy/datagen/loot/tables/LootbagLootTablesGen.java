@@ -106,7 +106,7 @@ public class LootbagLootTablesGen implements Consumer<BiConsumer<ResourceLocatio
         consumer.accept(LootbagLootTables.RATIONS, LootTable.lootTable()
                 .withPool(LootPool.lootPool().setRolls(ConstantValue.exactly(1)).setBonusRolls(ConstantValue.exactly(0))
                         .when(LootItemRandomChanceCondition.randomChance(0.25F))
-                        .add(LootTableReference.lootTableReference(DimDungeonLootTables.KIT_BASIC_SUPPLIES)))
+                        .add(LootTableReference.lootTableReference(KitLootTables.KIT_BASIC_SUPPLIES)))
                 .withPool(LootPool.lootPool().setRolls(ConstantValue.exactly(1)).setBonusRolls(ConstantValue.exactly(0))
                         .add(LootTableReference.lootTableReference(KitchenLootTables.KITCHEN)))
                 .withPool(LootPool.lootPool().setRolls(ConstantValue.exactly(1)).setBonusRolls(ConstantValue.exactly(0))

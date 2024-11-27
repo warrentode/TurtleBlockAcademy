@@ -3,7 +3,7 @@
   "color": "gold",
   "name": "Creature Stone Kit Bag",
   "output": {
-    "table": "dimdungeons:chests/kit_creature_stones"
+    "table": "turtleblockacademy:chests/kits/kit_creature_stones"
   },
   "rarity": "RARE"
 }

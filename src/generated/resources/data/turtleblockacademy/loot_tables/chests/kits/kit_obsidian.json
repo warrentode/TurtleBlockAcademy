@@ -9,109 +9,81 @@
           "functions": [
             {
               "add": false,
-              "count": {
-                "type": "minecraft:uniform",
-                "max": 9.0,
-                "min": 5.0
-              },
+              "count": 64.0,
               "function": "minecraft:set_count"
             }
           ],
-          "name": "minecraft:coal_block"
+          "name": "minecraft:obsidian"
         },
         {
           "type": "minecraft:item",
           "functions": [
             {
               "add": false,
-              "count": {
-                "type": "minecraft:uniform",
-                "max": 9.0,
-                "min": 5.0
-              },
+              "count": 64.0,
               "function": "minecraft:set_count"
             }
           ],
-          "name": "supplementaries:flint_block"
+          "name": "minecraft:crying_obsidian"
         },
         {
           "type": "minecraft:item",
           "functions": [
             {
               "add": false,
-              "count": {
-                "type": "minecraft:uniform",
-                "max": 9.0,
-                "min": 5.0
-              },
+              "count": 64.0,
               "function": "minecraft:set_count"
             }
           ],
-          "name": "supplementaries:feather_block"
+          "name": "phantasm:smooth_obsidian"
         },
         {
           "type": "minecraft:item",
           "functions": [
             {
               "add": false,
-              "count": {
-                "type": "minecraft:uniform",
-                "max": 9.0,
-                "min": 5.0
-              },
+              "count": 64.0,
               "function": "minecraft:set_count"
             }
           ],
-          "name": "minecraft:iron_ingot"
+          "name": "phantasm:smooth_obsidian_bricks"
         },
         {
           "type": "minecraft:item",
           "functions": [
             {
               "add": false,
-              "count": {
-                "type": "minecraft:uniform",
-                "max": 9.0,
-                "min": 5.0
-              },
+              "count": 64.0,
               "function": "minecraft:set_count"
             }
           ],
-          "name": "farmersdelight:rope"
+          "name": "phantasm:smooth_obsidian_pillar"
         },
         {
           "type": "minecraft:item",
           "functions": [
             {
               "add": false,
-              "count": {
-                "type": "minecraft:uniform",
-                "max": 9.0,
-                "min": 5.0
-              },
+              "count": 64.0,
               "function": "minecraft:set_count"
             }
           ],
-          "name": "supplementaries:rope"
+          "name": "phantasm:chiseled_smooth_obsidian"
         },
         {
           "type": "minecraft:item",
           "functions": [
             {
               "add": false,
-              "count": {
-                "type": "minecraft:uniform",
-                "max": 9.0,
-                "min": 5.0
-              },
+              "count": 64.0,
               "function": "minecraft:set_count"
             }
           ],
-          "name": "minecraft:torch"
+          "name": "phantasm:smooth_obsidian_lamp"
         }
       ],
-      "name": "dimdungeons:kit_basic_supplies",
-      "rolls": 27.0
+      "name": "turtleblockacademy:kit_obsidian",
+      "rolls": 1.0
     }
   ]
 }

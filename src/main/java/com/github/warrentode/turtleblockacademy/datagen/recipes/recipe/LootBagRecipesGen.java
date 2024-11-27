@@ -1,7 +1,7 @@
 package com.github.warrentode.turtleblockacademy.datagen.recipes.recipe;
 
 import com.github.warrentode.turtleblockacademy.datagen.recipes.builder.LootBagRecipeBuilder;
-import com.github.warrentode.turtleblockacademy.loot.tables.DimDungeonLootTables;
+import com.github.warrentode.turtleblockacademy.loot.tables.KitLootTables;
 import com.github.warrentode.turtleblockacademy.loot.tables.LootbagLootTables;
 import com.github.warrentode.turtleblockacademy.loot.tables.PackBuiltInLootTables;
 import net.minecraft.data.recipes.FinishedRecipe;
@@ -27,121 +27,121 @@ public class LootBagRecipesGen {
                 "Concrete Kit Bag",
                 "white",
                 LootType.COMMON.name(),
-                DimDungeonLootTables.KIT_CONCRETE).build(consumer);
+                KitLootTables.KIT_CONCRETE).build(consumer);
         LootBagRecipeBuilder.writeRecipe(
                 "glass_bag",
                 "Glass Kit Bag",
                 "white",
                 LootType.COMMON.name(),
-                DimDungeonLootTables.KIT_GLASS).build(consumer);
+                KitLootTables.KIT_GLASS).build(consumer);
         LootBagRecipeBuilder.writeRecipe(
                 "redstone_bag",
                 "Redstone Kit Bag",
                 "white",
                 LootType.COMMON.name(),
-                DimDungeonLootTables.KIT_REDSTONE).build(consumer);
+                KitLootTables.KIT_REDSTONE).build(consumer);
         LootBagRecipeBuilder.writeRecipe(
                 "wool_bag",
                 "Wool Kit Bag",
                 "white",
                 LootType.COMMON.name(),
-                DimDungeonLootTables.KIT_WOOL).build(consumer);
+                KitLootTables.KIT_WOOL).build(consumer);
         LootBagRecipeBuilder.writeRecipe(
                 "terracotta_bag",
                 "Terracotta Kit Bag",
                 "white",
                 LootType.COMMON.name(),
-                DimDungeonLootTables.KIT_TERRACOTTA).build(consumer);
+                KitLootTables.KIT_TERRACOTTA).build(consumer);
         LootBagRecipeBuilder.writeRecipe(
                 "glazed_terracotta_bag",
                 "Glazed Terracotta Kit Bag",
                 "white",
                 LootType.COMMON.name(),
-                DimDungeonLootTables.KIT_GLAZED_TERRACOTTA).build(consumer);
+                KitLootTables.KIT_GLAZED_TERRACOTTA).build(consumer);
         LootBagRecipeBuilder.writeRecipe(
                 "stone_bag",
                 "Stone Kit Bag",
                 "white",
                 LootType.COMMON.name(),
-                DimDungeonLootTables.KIT_STONE).build(consumer);
+                KitLootTables.KIT_STONE).build(consumer);
         LootBagRecipeBuilder.writeRecipe(
                 "sandstone_bag",
                 "Sandstone Kit Bag",
                 "white",
                 LootType.COMMON.name(),
-                DimDungeonLootTables.KIT_SANDSTONE).build(consumer);
+                KitLootTables.KIT_SANDSTONE).build(consumer);
         LootBagRecipeBuilder.writeRecipe(
                 "misc_stone_bag",
                 "Misc. Stone Kit Bag",
                 "white",
                 LootType.COMMON.name(),
-                DimDungeonLootTables.KIT_MISC_STONE).build(consumer);
+                KitLootTables.KIT_MISC_STONE).build(consumer);
         LootBagRecipeBuilder.writeRecipe(
                 "blackstone_bag",
                 "Blackstone Kit Bag",
                 "white",
                 LootType.COMMON.name(),
-                DimDungeonLootTables.KIT_BLACKSTONE).build(consumer);
+                KitLootTables.KIT_BLACKSTONE).build(consumer);
         LootBagRecipeBuilder.writeRecipe(
                 "deepslate_bag",
                 "Deepslate Kit Bag",
                 "white",
                 LootType.COMMON.name(),
-                DimDungeonLootTables.KIT_DEEPSLATE).build(consumer);
+                KitLootTables.KIT_DEEPSLATE).build(consumer);
         LootBagRecipeBuilder.writeRecipe(
                 "endstone_bag",
                 "End Stones Kit Bag",
                 "white",
                 LootType.COMMON.name(),
-                DimDungeonLootTables.KIT_END_STONES).build(consumer);
+                KitLootTables.KIT_END_STONES).build(consumer);
         LootBagRecipeBuilder.writeRecipe(
                 "purpur_bag",
                 "Purpur Kit Bag",
                 "white",
                 LootType.COMMON.name(),
-                DimDungeonLootTables.KIT_PURPUR_STONES).build(consumer);
+                KitLootTables.KIT_PURPUR_STONES).build(consumer);
         LootBagRecipeBuilder.writeRecipe(
                 "bricks_bag",
                 "Bricks Kit Bag",
                 "white",
                 LootType.COMMON.name(),
-                DimDungeonLootTables.KIT_BRICK_SET).build(consumer);
+                KitLootTables.KIT_BRICK_SET).build(consumer);
         LootBagRecipeBuilder.writeRecipe(
                 "quartz_bag",
                 "Quartz Kit Bag",
                 "white",
                 LootType.COMMON.name(),
-                DimDungeonLootTables.KIT_QUARTZ).build(consumer);
+                KitLootTables.KIT_QUARTZ).build(consumer);
         LootBagRecipeBuilder.writeRecipe(
                 "christmas_block_bag",
                 "Christmas Block Kit Bag",
                 "white",
                 LootType.COMMON.name(),
-                DimDungeonLootTables.KIT_CHRISTMAS_BLOCKS).build(consumer);
+                KitLootTables.KIT_CHRISTMAS_BLOCKS).build(consumer);
         LootBagRecipeBuilder.writeRecipe(
                 "winter_block_bag",
                 "Winter Block Kit Bag",
                 "white",
                 LootType.COMMON.name(),
-                DimDungeonLootTables.KIT_WINTER_BLOCKS).build(consumer);
+                KitLootTables.KIT_WINTER_BLOCKS).build(consumer);
         LootBagRecipeBuilder.writeRecipe(
                 "logs_bag",
                 "Logs Kit Bag",
                 "white",
                 LootType.COMMON.name(),
-                DimDungeonLootTables.KIT_LOGS).build(consumer);
+                KitLootTables.KIT_LOGS).build(consumer);
         LootBagRecipeBuilder.writeRecipe(
                 "sand_bag",
                 "Sand Kit Bag",
                 "white",
                 LootType.COMMON.name(),
-                DimDungeonLootTables.KIT_SAND).build(consumer);
+                KitLootTables.KIT_SAND).build(consumer);
         LootBagRecipeBuilder.writeRecipe(
                 "basic_supplies_bag",
                 "Basic Supplies Kit Bag",
                 "white",
                 LootType.COMMON.name(),
-                DimDungeonLootTables.KIT_BASIC_SUPPLIES).build(consumer);
+                KitLootTables.KIT_BASIC_SUPPLIES).build(consumer);
         LootBagRecipeBuilder.writeRecipe(
                 "leather_gear_bag",
                 "Leather Tier Gear Bag",
@@ -174,7 +174,6 @@ public class LootBagRecipesGen {
                 "blue",
                 LootType.UNCOMMON.name(),
                 PackBuiltInLootTables.IRON_TIER_GEAR).build(consumer);
-
         LootBagRecipeBuilder.writeRecipe(
                 "holiday_bag",
                 "Holiday Bag",
@@ -188,25 +187,25 @@ public class LootBagRecipesGen {
                 "Prismarine Kit Bag",
                 "gold",
                 LootType.RARE.name(),
-                DimDungeonLootTables.KIT_PRISMARINE).build(consumer);
+                KitLootTables.KIT_PRISMARINE).build(consumer);
         LootBagRecipeBuilder.writeRecipe(
                 "creature_stone_bag",
                 "Creature Stone Kit Bag",
                 "gold",
                 LootType.RARE.name(),
-                DimDungeonLootTables.KIT_CREATURE_STONES).build(consumer);
+                KitLootTables.KIT_CREATURE_STONES).build(consumer);
         LootBagRecipeBuilder.writeRecipe(
                 "obsidian_bag",
                 "Obsidian Kit Bag",
                 "gold",
                 LootType.RARE.name(),
-                DimDungeonLootTables.KIT_OBSIDIAN).build(consumer);
+                KitLootTables.KIT_OBSIDIAN).build(consumer);
         LootBagRecipeBuilder.writeRecipe(
                 "crystal_bag",
                 "Crystal Kit Bag",
                 "gold",
                 LootType.RARE.name(),
-                DimDungeonLootTables.KIT_CRYSTAL).build(consumer);
+                KitLootTables.KIT_CRYSTAL).build(consumer);
         LootBagRecipeBuilder.writeRecipe(
                 "refined_storage_bag",
                 "Refined Storage Bag",
@@ -256,7 +255,7 @@ public class LootBagRecipesGen {
                 "Ingots Kit Bag",
                 "purple",
                 LootType.EPIC.name(),
-                DimDungeonLootTables.KIT_INGOTS).build(consumer);
+                KitLootTables.KIT_INGOTS).build(consumer);
         LootBagRecipeBuilder.writeRecipe(
                 "ufo_bag",
                 "UFO Bag",

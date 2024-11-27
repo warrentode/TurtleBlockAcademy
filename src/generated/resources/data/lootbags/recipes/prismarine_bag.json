@@ -3,7 +3,7 @@
   "color": "gold",
   "name": "Prismarine Kit Bag",
   "output": {
-    "table": "dimdungeons:chests/kit_prismarine"
+    "table": "turtleblockacademy:chests/kits/kit_prismarine"
   },
   "rarity": "RARE"
 }

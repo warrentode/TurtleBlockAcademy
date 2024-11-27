@@ -3,7 +3,7 @@
   "color": "white",
   "name": "Glass Kit Bag",
   "output": {
-    "table": "dimdungeons:chests/kit_glass"
+    "table": "turtleblockacademy:chests/kits/kit_glass"
   },
   "rarity": "COMMON"
 }

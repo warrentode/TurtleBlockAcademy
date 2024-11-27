@@ -9,11 +9,7 @@
           "functions": [
             {
               "add": false,
-              "count": {
-                "type": "minecraft:uniform",
-                "max": 9.0,
-                "min": 5.0
-              },
+              "count": 64.0,
               "function": "minecraft:set_count"
             }
           ],
@@ -24,11 +20,7 @@
           "functions": [
             {
               "add": false,
-              "count": {
-                "type": "minecraft:uniform",
-                "max": 9.0,
-                "min": 5.0
-              },
+              "count": 64.0,
               "function": "minecraft:set_count"
             }
           ],
@@ -39,11 +31,7 @@
           "functions": [
             {
               "add": false,
-              "count": {
-                "type": "minecraft:uniform",
-                "max": 9.0,
-                "min": 5.0
-              },
+              "count": 64.0,
               "function": "minecraft:set_count"
             }
           ],
@@ -54,18 +42,14 @@
           "functions": [
             {
               "add": false,
-              "count": {
-                "type": "minecraft:uniform",
-                "max": 9.0,
-                "min": 5.0
-              },
+              "count": 64.0,
               "function": "minecraft:set_count"
             }
           ],
           "name": "minecraft:sea_lantern"
         }
       ],
-      "name": "dimdungeons:kit_sea_stones",
+      "name": "turtleblockacademy:kit_sea_stones",
       "rolls": 1.0
     }
   ]

@@ -9,105 +9,114 @@
           "functions": [
             {
               "add": false,
-              "count": {
-                "type": "minecraft:uniform",
-                "max": 9.0,
-                "min": 5.0
-              },
+              "count": 64.0,
               "function": "minecraft:set_count"
             }
           ],
-          "name": "minecraft:blackstone"
+          "name": "minecraft:redstone",
+          "weight": 20
         },
         {
           "type": "minecraft:item",
           "functions": [
             {
               "add": false,
-              "count": {
-                "type": "minecraft:uniform",
-                "max": 9.0,
-                "min": 5.0
-              },
+              "count": 8.0,
               "function": "minecraft:set_count"
             }
           ],
-          "name": "minecraft:gilded_blackstone"
+          "name": "minecraft:piston"
         },
         {
           "type": "minecraft:item",
           "functions": [
             {
               "add": false,
-              "count": {
-                "type": "minecraft:uniform",
-                "max": 9.0,
-                "min": 5.0
-              },
+              "count": 8.0,
               "function": "minecraft:set_count"
             }
           ],
-          "name": "minecraft:polished_blackstone"
+          "name": "minecraft:sticky_piston"
         },
         {
           "type": "minecraft:item",
           "functions": [
             {
               "add": false,
-              "count": {
-                "type": "minecraft:uniform",
-                "max": 9.0,
-                "min": 5.0
-              },
+              "count": 16.0,
               "function": "minecraft:set_count"
             }
           ],
-          "name": "minecraft:chiseled_polished_blackstone"
+          "name": "minecraft:redstone_torch",
+          "weight": 2
         },
         {
           "type": "minecraft:item",
           "functions": [
             {
               "add": false,
-              "count": {
-                "type": "minecraft:uniform",
-                "max": 9.0,
-                "min": 5.0
-              },
+              "count": 8.0,
               "function": "minecraft:set_count"
             }
           ],
-          "name": "minecraft:polished_blackstone_bricks"
+          "name": "minecraft:hopper",
+          "weight": 4
         },
         {
           "type": "minecraft:item",
           "functions": [
             {
               "add": false,
-              "count": {
-                "type": "minecraft:uniform",
-                "max": 9.0,
-                "min": 5.0
-              },
+              "count": 8.0,
               "function": "minecraft:set_count"
             }
           ],
-          "name": "minecraft:cracked_polished_blackstone_bricks"
+          "name": "minecraft:repeater",
+          "weight": 2
         },
         {
           "type": "minecraft:item",
           "functions": [
             {
               "add": false,
-              "count": {
-                "type": "minecraft:uniform",
-                "max": 9.0,
-                "min": 5.0
-              },
+              "count": 8.0,
               "function": "minecraft:set_count"
             }
           ],
-          "name": "supplementaries:blackstone_lamp"
+          "name": "minecraft:comparator"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "add": false,
+              "count": 8.0,
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "minecraft:daylight_detector"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "add": false,
+              "count": 8.0,
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "minecraft:redstone_lamp"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "add": false,
+              "count": 8.0,
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "minecraft:observer"
         },
         {
           "type": "minecraft:tag",
@@ -115,19 +124,15 @@
           "functions": [
             {
               "add": false,
-              "count": {
-                "type": "minecraft:uniform",
-                "max": 9.0,
-                "min": 5.0
-              },
+              "count": 4.0,
               "function": "minecraft:set_count"
             }
           ],
-          "name": "supplementaries:blackstone_tile"
+          "name": "goldenhopper:golden_hopper"
         }
       ],
-      "name": "dimdungeons:kit_blackstone",
-      "rolls": 27.0
+      "name": "turtleblockacademy:kit_redstone",
+      "rolls": 1.0
     }
   ]
 }

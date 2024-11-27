@@ -3,7 +3,7 @@
   "color": "white",
   "name": "Terracotta Kit Bag",
   "output": {
-    "table": "dimdungeons:chests/kit_terracotta"
+    "table": "turtleblockacademy:chests/kits/kit_terracotta"
   },
   "rarity": "COMMON"
 }

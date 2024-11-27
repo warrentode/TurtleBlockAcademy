@@ -3,7 +3,7 @@
   "color": "white",
   "name": "Winter Block Kit Bag",
   "output": {
-    "table": "dimdungeons:chests/kit_winter_blocks"
+    "table": "turtleblockacademy:chests/kits/kit_winter_blocks"
   },
   "rarity": "COMMON"
 }

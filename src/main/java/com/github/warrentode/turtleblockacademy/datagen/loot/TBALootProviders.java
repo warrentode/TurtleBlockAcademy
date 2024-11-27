@@ -38,7 +38,7 @@ public class TBALootProviders extends LootTableProvider {
             loot_tables = ImmutableList.of(
             Pair.of(WaresLootTablesGen::new, LootContextParamSets.CHEST),
             Pair.of(LootbagLootTablesGen::new, LootContextParamSets.CHEST),
-            Pair.of(DimDungeonLootTablesGen::new, LootContextParamSets.CHEST),
+            Pair.of(KitLootTablesGen::new, LootContextParamSets.CHEST),
             Pair.of(PackLootTablesGen::new, LootContextParamSets.CHEST),
             Pair.of(KitchenLootTablesGen::new, LootContextParamSets.CHEST),
             Pair.of(TradeLootTablesGen::new, LootContextParamSets.CHEST),

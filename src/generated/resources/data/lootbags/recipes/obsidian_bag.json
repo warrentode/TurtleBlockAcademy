@@ -3,7 +3,7 @@
   "color": "gold",
   "name": "Obsidian Kit Bag",
   "output": {
-    "table": "dimdungeons:chests/kit_obsidian"
+    "table": "turtleblockacademy:chests/kits/kit_obsidian"
   },
   "rarity": "RARE"
 }

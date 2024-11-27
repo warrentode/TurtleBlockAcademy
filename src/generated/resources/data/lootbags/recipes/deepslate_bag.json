@@ -3,7 +3,7 @@
   "color": "white",
   "name": "Deepslate Kit Bag",
   "output": {
-    "table": "dimdungeons:chests/kit_deepslate"
+    "table": "turtleblockacademy:chests/kits/kit_deepslate"
   },
   "rarity": "COMMON"
 }

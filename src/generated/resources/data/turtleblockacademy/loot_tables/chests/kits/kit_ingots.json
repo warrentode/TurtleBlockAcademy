@@ -17,7 +17,8 @@
               "function": "minecraft:set_count"
             }
           ],
-          "name": "ecologics:ice_bricks"
+          "name": "minecraft:copper_ingot",
+          "weight": 30
         },
         {
           "type": "minecraft:item",
@@ -32,7 +33,8 @@
               "function": "minecraft:set_count"
             }
           ],
-          "name": "ecologics:snow_bricks"
+          "name": "minecraft:iron_ingot",
+          "weight": 20
         },
         {
           "type": "minecraft:item",
@@ -47,55 +49,50 @@
               "function": "minecraft:set_count"
             }
           ],
-          "name": "minecraft:ice"
+          "name": "minecraft:gold_ingot",
+          "weight": 15
         },
         {
           "type": "minecraft:item",
-          "functions": [
-            {
-              "add": false,
-              "count": {
-                "type": "minecraft:uniform",
-                "max": 9.0,
-                "min": 5.0
-              },
-              "function": "minecraft:set_count"
-            }
-          ],
-          "name": "minecraft:packed_ice"
+          "name": "refinedstorage:quartz_enriched_iron",
+          "weight": 5
         },
         {
           "type": "minecraft:item",
-          "functions": [
-            {
-              "add": false,
-              "count": {
-                "type": "minecraft:uniform",
-                "max": 9.0,
-                "min": 5.0
-              },
-              "function": "minecraft:set_count"
-            }
-          ],
-          "name": "minecraft:blue_ice"
+          "name": "minecraft:netherite_ingot"
         },
         {
-          "type": "minecraft:item",
-          "functions": [
-            {
-              "add": false,
-              "count": {
-                "type": "minecraft:uniform",
-                "max": 9.0,
-                "min": 5.0
-              },
-              "function": "minecraft:set_count"
-            }
-          ],
-          "name": "ecologics:thin_ice"
+          "type": "minecraft:tag",
+          "expand": true,
+          "name": "todecoins:endonian_ingot"
         }
       ],
-      "name": "dimdungeons:kit_winter_blocks",
+      "functions": [
+        {
+          "add": false,
+          "count": {
+            "type": "minecraft:uniform",
+            "max": 5.0,
+            "min": 1.0
+          },
+          "function": "minecraft:set_count"
+        },
+        {
+          "add": false,
+          "count": 1.0,
+          "function": "minecraft:set_count"
+        },
+        {
+          "add": false,
+          "count": {
+            "type": "minecraft:uniform",
+            "max": 5.0,
+            "min": 1.0
+          },
+          "function": "minecraft:set_count"
+        }
+      ],
+      "name": "turtleblockacademy:kit_ingots",
       "rolls": 27.0
     }
   ]

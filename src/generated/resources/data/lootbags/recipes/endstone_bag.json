@@ -3,7 +3,7 @@
   "color": "white",
   "name": "End Stones Kit Bag",
   "output": {
-    "table": "dimdungeons:chests/kit_end_stones"
+    "table": "turtleblockacademy:chests/kits/kit_end_stones"
   },
   "rarity": "COMMON"
 }

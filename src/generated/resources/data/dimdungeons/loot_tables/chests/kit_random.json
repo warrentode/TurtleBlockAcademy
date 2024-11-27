@@ -6,108 +6,102 @@
       "entries": [
         {
           "type": "minecraft:loot_table",
-          "name": "dimdungeons:chests/kit_logs"
+          "name": "turtleblockacademy:chests/kits/kit_logs"
         },
         {
           "type": "minecraft:loot_table",
-          "name": "dimdungeons:chests/kit_wool"
+          "name": "turtleblockacademy:chests/kits/kit_wool"
         },
         {
           "type": "minecraft:loot_table",
-          "name": "dimdungeons:chests/kit_concrete"
+          "name": "turtleblockacademy:chests/kits/kit_concrete"
         },
         {
           "type": "minecraft:loot_table",
-          "name": "dimdungeons:chests/kit_glass"
+          "name": "turtleblockacademy:chests/kits/kit_glass"
         },
         {
           "type": "minecraft:loot_table",
-          "name": "dimdungeons:chests/kit_sand"
+          "name": "turtleblockacademy:chests/kits/kit_sand"
         },
         {
           "type": "minecraft:loot_table",
-          "name": "dimdungeons:chests/kit_ingots"
+          "name": "turtleblockacademy:chests/kits/kit_ingots"
         },
         {
           "type": "minecraft:loot_table",
-          "name": "dimdungeons:chests/kit_redstone"
+          "name": "turtleblockacademy:chests/kits/kit_redstone"
         },
         {
           "type": "minecraft:loot_table",
-          "name": "dimdungeons:chests/kit_terracotta"
+          "name": "turtleblockacademy:chests/kits/kit_terracotta"
         },
         {
           "type": "minecraft:loot_table",
-          "name": "dimdungeons:chests/kit_glazed_terracotta"
+          "name": "turtleblockacademy:chests/kits/kit_glazed_terracotta"
         },
         {
           "type": "minecraft:loot_table",
-          "name": "dimdungeons:chests/kit_stone"
+          "name": "turtleblockacademy:chests/kits/kit_stone"
         },
         {
           "type": "minecraft:loot_table",
-          "name": "dimdungeons:chests/kit_sandstone"
+          "name": "turtleblockacademy:chests/kits/kit_sandstone"
         },
         {
           "type": "minecraft:loot_table",
-          "name": "dimdungeons:chests/kit_blackstone"
+          "name": "turtleblockacademy:chests/kits/kit_blackstone"
         },
         {
           "type": "minecraft:loot_table",
-          "name": "dimdungeons:chests/kit_deepslate"
+          "name": "turtleblockacademy:chests/kits/kit_deepslate"
         },
         {
           "type": "minecraft:loot_table",
-          "name": "dimdungeons:chests/kit_prismarine"
+          "name": "turtleblockacademy:chests/kits/kit_prismarine"
         },
         {
           "type": "minecraft:loot_table",
-          "name": "dimdungeons:chests/kit_end_stones"
+          "name": "turtleblockacademy:chests/kits/kit_end_stones"
         },
         {
           "type": "minecraft:loot_table",
-          "name": "dimdungeons:chests/kit_purpur_stones"
+          "name": "turtleblockacademy:chests/kits/kit_purpur_stones"
         },
         {
           "type": "minecraft:loot_table",
-          "name": "dimdungeons:chests/kit_creature_stones"
+          "name": "turtleblockacademy:chests/kits/kit_creature_stones"
         },
         {
           "type": "minecraft:loot_table",
-          "name": "dimdungeons:chests/kit_obsidian"
+          "name": "turtleblockacademy:chests/kits/kit_obsidian"
         },
         {
           "type": "minecraft:loot_table",
-          "name": "dimdungeons:chests/kit_crystal"
+          "name": "turtleblockacademy:chests/kits/kit_crystal"
         },
         {
           "type": "minecraft:loot_table",
-          "name": "dimdungeons:chests/kit_brick_set"
+          "name": "turtleblockacademy:chests/kits/kit_brick_set"
         },
         {
           "type": "minecraft:loot_table",
-          "name": "dimdungeons:chests/kit_quartz"
+          "name": "turtleblockacademy:chests/kits/kit_quartz"
         },
         {
           "type": "minecraft:loot_table",
-          "name": "dimdungeons:chests/kit_basic_supplies"
+          "name": "turtleblockacademy:chests/kits/kit_basic_supplies"
         },
         {
           "type": "minecraft:loot_table",
-          "name": "dimdungeons:chests/kit_decor"
+          "name": "turtleblockacademy:chests/kits/kit_decor"
         },
         {
           "type": "minecraft:loot_table",
-          "conditions": [
-            {
-              "condition": "turtleblockacademy:seasonal_condition",
-              "season": "CHRISTMAS"
-            }
-          ],
-          "name": "dimdungeons:chests/kit_christmas_blocks"
+          "name": "turtleblockacademy:chests/kits/kit_christmas_blocks"
         }
       ],
-      "rolls": 1.0
+      "rolls": 27.0
     }
   ]
 }

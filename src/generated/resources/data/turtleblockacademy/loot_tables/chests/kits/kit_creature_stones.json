@@ -9,152 +9,125 @@
           "functions": [
             {
               "add": false,
-              "count": 1.0,
+              "count": 64.0,
               "function": "minecraft:set_count"
             }
           ],
-          "name": "minecraft:redstone",
-          "weight": 20
+          "name": "unusualend:bolok_scale_block"
         },
         {
           "type": "minecraft:item",
           "functions": [
             {
               "add": false,
-              "count": 1.0,
+              "count": 64.0,
               "function": "minecraft:set_count"
             }
           ],
-          "name": "minecraft:piston"
+          "name": "unusualend:polished_gneiss"
         },
         {
           "type": "minecraft:item",
           "functions": [
             {
               "add": false,
-              "count": 1.0,
+              "count": 64.0,
               "function": "minecraft:set_count"
             }
           ],
-          "name": "minecraft:sticky_piston"
+          "name": "unusualend:gneiss_bricks"
         },
         {
           "type": "minecraft:item",
           "functions": [
             {
               "add": false,
-              "count": 1.0,
+              "count": 64.0,
               "function": "minecraft:set_count"
             }
           ],
-          "name": "minecraft:redstone_torch",
-          "weight": 2
+          "name": "unusualend:endermite_moult_block"
         },
         {
           "type": "minecraft:item",
           "functions": [
             {
               "add": false,
-              "count": 1.0,
+              "count": 64.0,
               "function": "minecraft:set_count"
             }
           ],
-          "name": "minecraft:hopper",
-          "weight": 4
+          "name": "unusualend:endermite_moult_bricks"
         },
         {
           "type": "minecraft:item",
           "functions": [
             {
               "add": false,
-              "count": 1.0,
+              "count": 64.0,
               "function": "minecraft:set_count"
             }
           ],
-          "name": "minecraft:repeater",
-          "weight": 2
+          "name": "unusualend:gloopstone"
         },
         {
           "type": "minecraft:item",
           "functions": [
             {
               "add": false,
-              "count": 1.0,
+              "count": 64.0,
               "function": "minecraft:set_count"
             }
           ],
-          "name": "minecraft:comparator"
+          "name": "unusualend:polished_gloopstone"
         },
         {
           "type": "minecraft:item",
           "functions": [
             {
               "add": false,
-              "count": 1.0,
+              "count": 64.0,
               "function": "minecraft:set_count"
             }
           ],
-          "name": "minecraft:daylight_detector"
+          "name": "unusualend:gloopstone_bricks"
         },
         {
           "type": "minecraft:item",
           "functions": [
             {
               "add": false,
-              "count": 1.0,
+              "count": 64.0,
               "function": "minecraft:set_count"
             }
           ],
-          "name": "minecraft:redstone_lamp"
+          "name": "unusualend:shiny_crystal_block"
         },
         {
           "type": "minecraft:item",
           "functions": [
             {
               "add": false,
-              "count": 1.0,
+              "count": 64.0,
               "function": "minecraft:set_count"
             }
           ],
-          "name": "minecraft:observer"
+          "name": "unusualend:shiny_crystal_tiles"
         },
         {
           "type": "minecraft:item",
           "functions": [
             {
               "add": false,
-              "count": 1.0,
+              "count": 64.0,
               "function": "minecraft:set_count"
             }
           ],
-          "name": "minecraft:sticky_piston"
-        },
-        {
-          "type": "minecraft:tag",
-          "expand": true,
-          "functions": [
-            {
-              "add": false,
-              "count": 1.0,
-              "function": "minecraft:set_count"
-            }
-          ],
-          "name": "goldenhopper:golden_hopper"
-        },
-        {
-          "type": "minecraft:item",
-          "functions": [
-            {
-              "add": false,
-              "count": 1.0,
-              "function": "minecraft:set_count"
-            }
-          ],
-          "name": "sereneseasons:season_sensor"
+          "name": "unusualend:shiny_crystal_bricks"
         }
       ],
-      "name": "dimdungeons:kit_redstone",
-      "rolls": 27.0
+      "name": "turtleblockacademy:kit_creature_stones",
+      "rolls": 1.0
     }
   ]
 }

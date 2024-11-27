@@ -3,7 +3,7 @@
   "color": "white",
   "name": "Logs Kit Bag",
   "output": {
-    "table": "dimdungeons:chests/kit_logs"
+    "table": "turtleblockacademy:chests/kits/kit_logs"
   },
   "rarity": "COMMON"
 }

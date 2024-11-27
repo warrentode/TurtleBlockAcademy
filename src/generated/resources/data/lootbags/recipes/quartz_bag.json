@@ -3,7 +3,7 @@
   "color": "white",
   "name": "Quartz Kit Bag",
   "output": {
-    "table": "dimdungeons:chests/kit_quartz"
+    "table": "turtleblockacademy:chests/kits/kit_quartz"
   },
   "rarity": "COMMON"
 }
