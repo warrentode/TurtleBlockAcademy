@@ -2,6 +2,7 @@ package com.github.warrentode.turtleblockacademy.datagen.lang;
 
 import com.github.warrentode.turtleblockacademy.blocks.TBABlocks;
 import com.github.warrentode.turtleblockacademy.items.TBAItems;
+import com.github.warrentode.turtleblockacademy.world.biome.TBABiomes;
 import net.minecraft.data.DataGenerator;
 import net.minecraftforge.common.data.LanguageProvider;
 
@@ -24,35 +25,45 @@ public class TBALangGen extends LanguageProvider {
         addSubtitles();
         addEntityTypes();
         addEasterEggs();
+        addBiomeDimensionNames();
+    }
+
+    private void addBiomeDimensionNames() {
+        add("biome." + MODID + "." + TBABiomes.TBA_UNDERDEEP.location().getPath(), "Under Deep");
+        add("biome." + MODID + "." + TBABiomes.TBA_NETHER_CORRUPTION.location().getPath(), "Nether Corruption");
+        add("biome." + MODID + "." + TBABiomes.TBA_ENDER_EROSION.location().getPath(), "Ender Erosion");
+        add("biome." + MODID + "." + TBABiomes.TBA_AETHER_INCURSION.location().getPath(), "Aether Incursion");
+        add("biome." + MODID + "." + TBABiomes.TBA_SLIME_CAVES.location().getPath(), "Slime Caves");
+        add("biome.nomadictents.tent", "Tent");
     }
 
     private void addEntityTypes() {
-        add("entity.turtleblockacademy.treasure_beetle", "Treasure Beetle");
-        add("entity.turtleblockacademy.herobrine", "Herobrine");
+        add("entity." + MODID + ".treasure_beetle", "Treasure Beetle");
+        add("entity." + MODID + ".herobrine", "Herobrine");
     }
 
     private void addSubtitles() {
-        add("subtitles.turtleblockacademy.desk_open", "Desk Drawer Opens");
-        add("subtitles.turtleblockacademy.desk_close", "Desk Drawer Closes");
-        add("subtitles.turtleblockacademy.locker_open", "Locker Opens");
-        add("subtitles.turtleblockacademy.locker_close", "Locker Closes");
-        add("subtitles.turtleblockacademy.bookcase_open", "Bookcase Opens");
-        add("subtitles.turtleblockacademy.bookcase_close", "Bookcase Closes");
-        add("subtitles.turtleblockacademy.treasure_beetle_hurts", "Treasure Beetle Hurts");
-        add("subtitles.turtleblockacademy.treasure_beetle_ambient", "Treasure Beetle Hisses");
-        add("subtitles.turtleblockacademy.treasure_beetle_death", "Treasure Beetle Dies");
-        add("subtitles.turtleblockacademy.treasure_beetle_step", "Treasure Beetle Crawls");
-        add("subtitles.turtleblockacademy.treasure_beetle_item_drop", "Treasure Beetle Drops Treasure");
-        add("subtitles.turtleblockacademy.herobrine_ambient", "You feel you're being watched...");
+        add("subtitles." + MODID + ".desk_open", "Desk Drawer Opens");
+        add("subtitles." + MODID + ".desk_close", "Desk Drawer Closes");
+        add("subtitles." + MODID + ".locker_open", "Locker Opens");
+        add("subtitles." + MODID + ".locker_close", "Locker Closes");
+        add("subtitles." + MODID + ".bookcase_open", "Bookcase Opens");
+        add("subtitles." + MODID + ".bookcase_close", "Bookcase Closes");
+        add("subtitles." + MODID + ".treasure_beetle_hurts", "Treasure Beetle Hurts");
+        add("subtitles." + MODID + ".treasure_beetle_ambient", "Treasure Beetle Hisses");
+        add("subtitles." + MODID + ".treasure_beetle_death", "Treasure Beetle Dies");
+        add("subtitles." + MODID + ".treasure_beetle_step", "Treasure Beetle Crawls");
+        add("subtitles." + MODID + ".treasure_beetle_item_drop", "Treasure Beetle Drops Treasure");
+        add("subtitles." + MODID + ".herobrine_ambient", "You feel you're being watched...");
     }
 
     private void addContainers() {
-        add("container.turtleblockacademy.desk", "School Desk");
-        add("container.turtleblockacademy.storage", "Storage");
-        add("container.turtleblockacademy.fermenting_pot", "Fermenting Pot");
-        add("container.turtleblockacademy.recipe_book.fermenting", "Showing Fermentable");
-        add("container.turtleblockacademy.basket", "Basket");
-        add("container.turtleblockacademy.basket.contents", "Basket Contents");
+        add("container." + MODID + ".desk", "School Desk");
+        add("container." + MODID + ".storage", "Storage");
+        add("container." + MODID + ".fermenting_pot", "Fermenting Pot");
+        add("container." + MODID + ".recipe_book.fermenting", "Showing Fermentable");
+        add("container." + MODID + ".basket", "Basket");
+        add("container." + MODID + ".basket.contents", "Basket Contents");
     }
 
     private void addMessages() {
@@ -88,48 +99,48 @@ public class TBALangGen extends LanguageProvider {
         add("tooltips.shift.hover", "Press SHIFT for more info...");
         fillTooltipKeys("student_card_blank", "Blank Student Card - Use to Register as Student");
         fillTooltipKeys("certificate_blank", "Blank Certificate");
-        add("tooltip.turtleblockacademy.pickled_item_custom.beet_pickles",
+        add("tooltip." + MODID + ".pickled_item_custom.beet_pickles",
                 "Did you know that vinegar helps fabrics hold on to natural pigments longer?\nBe careful not to spill your pickled beets onto your clothes!");
-        add("tooltip.turtleblockacademy.pickled_item_custom.dill_pickle",
+        add("tooltip." + MODID + ".pickled_item_custom.dill_pickle",
                 "Did you know that the United States has a national pickle day on November 14th?");
-        add("tooltip.turtleblockacademy.pickled_item_effect",
+        add("tooltip." + MODID + ".pickled_item_effect",
                 "Unpasteurized fermented foods are probiotic and when stored well,\nthey promote good gut bacterial health.\nTo reflect this, these pickles will remove one negative effect when consumed.");
-        add("tooltip.turtleblockacademy.easter_egg_item_custom_tooltip",
+        add("tooltip." + MODID + ".easter_egg_item_custom_tooltip",
                 "In China, children celebrate the spring equinox by trying to balance their decorated eggs on their ends.\nSuccess is believed to bring good luck for the year.");
-        add("tooltip.turtleblockacademy.easter_egg_item_custom_tooltip1",
+        add("tooltip." + MODID + ".easter_egg_item_custom_tooltip1",
                 "The largest Easter egg ever made was over 25 feet high and weighed over 8,000 pounds.\nIt was built out of chocolate and marshmallow and supported by an internal steel frame.");
-        add("tooltip.turtleblockacademy.easter_egg_item_custom_tooltip2",
+        add("tooltip." + MODID + ".easter_egg_item_custom_tooltip2",
                 "In the United States, the White House Easter Egg Roll, is an annual event held the Monday after Easter.");
-        add("tooltip.turtleblockacademy.easter_egg_item_custom_tooltip3",
+        add("tooltip." + MODID + ".easter_egg_item_custom_tooltip3",
                 "Bosnia celebrates spring each year with Cimburijada, or the Festival of Scrambled Eggs.");
-        add("tooltip.turtleblockacademy.easter_egg_item_custom_tooltip4",
+        add("tooltip." + MODID + ".easter_egg_item_custom_tooltip4",
                 "Egypt celebrates spring each year with Sham el Nessim, which translates to \"smelling the breeze\",\nby decorating hard-boiled eggs and writing wishes on them.");
-        add("tooltip.turtleblockacademy.easter_egg_item_custom_tooltip5",
+        add("tooltip." + MODID + ".easter_egg_item_custom_tooltip5",
                 "The egg is considered to be an ancient symbol of fertility, which is associated with spring.");
-        add("tooltip.turtleblockacademy.easter_egg_item_custom_tooltip6",
+        add("tooltip." + MODID + ".easter_egg_item_custom_tooltip6",
                 "The general consensus is that eggs being used for celebrating spring stems from pagan origins.");
-        add("tooltip.turtleblockacademy.easter_egg_item_custom_tooltip7",
+        add("tooltip." + MODID + ".easter_egg_item_custom_tooltip7",
                 "Purim, a Jewish holiday, doesn't use eggs to celebrate but is held in spring to honor the day\ntheir people where spared from execution within the ancient Persian empire.");
-        add("tooltip.turtleblockacademy.easter_egg_item_custom_tooltip8",
+        add("tooltip." + MODID + ".easter_egg_item_custom_tooltip8",
                 "Passover, a Jewish holiday celebrated for seven to eight days, doesn't use eggs to celebrate but is held in spring to honor their people's\nfreedom from slavery in ancient Egypt.");
-        add("tooltip.turtleblockacademy.easter_egg_item_custom_tooltip9",
+        add("tooltip." + MODID + ".easter_egg_item_custom_tooltip9",
                 "Holi, a Hindu holiday known as the festival of colors, doesn't use eggs but uses bright colors instead to celebrate the end of winter, love, and the triumph of good over evil.");
-        add("tooltip.turtleblockacademy.easter_egg_item_custom_tooltip10",
+        add("tooltip." + MODID + ".easter_egg_item_custom_tooltip10",
                 "Nowruz, meaning \"New Day\", marks the Persian New Year and is celebrated by spring cleaning and feasting.");
-        add("tooltip.turtleblockacademy.easter_egg_item_custom_tooltip11",
+        add("tooltip." + MODID + ".easter_egg_item_custom_tooltip11",
                 "Songkran is the Thai New Year and is celebrated for three days with traditions that use water,\nsuch as cleaning, sprinkling Buddha statues with water, and even friendly water fights.");
-        add("tooltip.turtleblockacademy.easter_egg_item_custom_tooltip12",
+        add("tooltip." + MODID + ".easter_egg_item_custom_tooltip12",
                 "Las Fallas is held in Spain from March 1st to March 19th and is considered as an UNESCO World Heritage event since 2016.\nThey celebrate with parades, fireworks, and colorful sculptures.");
-        add("tooltip.turtleblockacademy.easter_egg_item_custom_tooltip13",
+        add("tooltip." + MODID + ".easter_egg_item_custom_tooltip13",
                 "Hola Mohalla is held the day after Holi by Sikh community in India to demonstrate martial skills and instill courage.");
-        add("tooltip.turtleblockacademy.easter_egg_item_custom_tooltip14",
+        add("tooltip." + MODID + ".easter_egg_item_custom_tooltip14",
                 "The National Cherry Blossom Festival is held every year in Washington D.C. to celebrate the blooming\nof the city's cherry blossom trees, which were a gift from Japan in 1912.");
-        add("tooltip.turtleblockacademy.easter_egg_item_custom_tooltip15",
+        add("tooltip." + MODID + ".easter_egg_item_custom_tooltip15",
                 "Walpurgis Night, also known as May Eve, is named after Saint Walpurga,\nan 8th-century abbess who was known for her healing powers.\nIt's celebrated in Germany with bonfires and Maypole dancing\nwhile in Sweden it's celebrated with feasting and bonfire dancing");
     }
 
     private void fillTooltipKeys(String key, String name) {
-        add("tooltips.turtleblockacademy." + key, name);
+        add("tooltips." + MODID + "." + key, name);
     }
 
     private void addItems() {
@@ -2587,6 +2598,6 @@ public class TBALangGen extends LanguageProvider {
     }
 
     private void addItemGroups() {
-        add("itemGroup.turtleblockacademy", "Turtle Block Academy Tab");
+        add("itemGroup." + MODID, "Turtle Block Academy Tab");
     }
 }
