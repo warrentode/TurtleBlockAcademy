@@ -361,7 +361,7 @@ public class RecipesGen extends RecipeProvider implements IConditionBuilder {
 
     private void minecraftRecipes(Consumer<FinishedRecipe> consumer) {
         ConditionalRecipe.builder()
-                .addCondition(not(modLoaded("hostiledelight")))
+                .addCondition(modLoaded("hostiledelight"))
                 .addRecipe(ShapelessRecipeBuilder.shapeless(HostiledelightModItems.CANDIEDSLIME.get(), 1)
                         .requires(TBATags.Items.SUGAR)
                         .requires(TBATags.Items.SUGAR)
@@ -369,7 +369,7 @@ public class RecipesGen extends RecipeProvider implements IConditionBuilder {
                         .unlockedBy("has_slime_balls", has(TBATags.Items.SLIME_BALLS))
                         ::save)
                 .build(consumer, new ResourceLocation("hostiledelight",
-                        HostiledelightModItems.CANDIEDSLIME.get().asItem().toString() + "_alt"));
+                        HostiledelightModItems.CANDIEDSLIME.get().asItem() + "_alt"));
         ShapelessRecipeBuilder.shapeless(TBAItems.PEELED_EGG.get(), 1)
                 .requires(TBATags.Items.BOILED_EGGS)
                 .unlockedBy("has_boiled_eggs", has(TBATags.Items.BOILED_EGGS))

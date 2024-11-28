@@ -4,11 +4,8 @@
     {
       "conditions": [
         {
-          "type": "forge:not",
-          "value": {
-            "type": "forge:mod_loaded",
-            "modid": "hostiledelight"
-          }
+          "type": "forge:mod_loaded",
+          "modid": "hostiledelight"
         }
       ],
       "recipe": {
