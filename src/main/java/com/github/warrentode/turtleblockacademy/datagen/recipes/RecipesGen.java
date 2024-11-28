@@ -359,22 +359,15 @@ public class RecipesGen extends RecipeProvider implements IConditionBuilder {
     }
 
     private void minecraftRecipes(Consumer<FinishedRecipe> consumer) {
-        ConditionalRecipe.builder()
-                .addCondition(not(modLoaded("eggdelight")))
-                .addRecipe(ShapelessRecipeBuilder.shapeless(TBAItems.PEELED_EGG.get(), 1)
-                        .requires(TBATags.Items.BOILED_EGGS)
-                        .unlockedBy("has_boiled_eggs", has(TBATags.Items.BOILED_EGGS))
-                        ::save)
-                .build(consumer, new ResourceLocation(MODID,
-                        TBAItems.PEELED_EGG.get().asItem().toString()));
-        ConditionalRecipe.builder()
-                .addCondition(not(modLoaded("eggdelight")))
-                .addRecipe(ShapelessRecipeBuilder.shapeless(TBAItems.PEELED_EGG.get(), 1)
-                        .requires(TBATags.Items.EASTER_EGGS)
-                        .unlockedBy("has_easter_eggs",
-                                has(TBATags.Items.EASTER_EGGS))
-                        ::save)
-                .build(consumer, new ResourceLocation(MODID,
+        ShapelessRecipeBuilder.shapeless(TBAItems.PEELED_EGG.get(), 1)
+                .requires(TBATags.Items.BOILED_EGGS)
+                .unlockedBy("has_boiled_eggs", has(TBATags.Items.BOILED_EGGS))
+                .save(consumer, new ResourceLocation(MODID,
+                                TBAItems.PEELED_EGG.get().asItem().toString()));
+        ShapelessRecipeBuilder.shapeless(TBAItems.PEELED_EGG.get(), 1)
+                .requires(TBATags.Items.EASTER_EGGS)
+                .unlockedBy("has_easter_eggs", has(TBATags.Items.EASTER_EGGS))
+                .save(consumer, new ResourceLocation(MODID,
                         TBAItems.PEELED_EGG.get().asItem() + "_from_easter_egg"));
 
         ShapelessRecipeBuilder.shapeless(TBAItems.CUCUMBER_SEEDS.get(), 1)
