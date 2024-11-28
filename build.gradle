@@ -196,6 +196,7 @@ dependencies {
     implementation fg.deobf("curse.maven:storage-delight-forge-979761:5211383")
     implementation fg.deobf("curse.maven:miners-delight-plus-689630:4738272")
     implementation fg.deobf("curse.maven:delightful-637529:4541459")
+    implementation fg.deobf("curse.maven:unusual-delight-896557:4913229")
 
     implementation fg.deobf('software.bernie.geckolib:geckolib-forge-1.19:3.1.40')
     implementation fg.deobf("curse.maven:kawaii-dishes-694309:4644365")

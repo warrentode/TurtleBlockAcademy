@@ -17,6 +17,7 @@ import decor.delight.init.DecorationDelightModBlocks;
 import net.akaneo.fastfooddelight.common.registry.FFItems;
 import net.brnbrd.delightful.common.item.DelightfulItems;
 import net.mcreator.festivedelight.init.FestiveDelightModItems;
+import net.mcreator.hostiledelight.init.HostiledelightModItems;
 import net.mcreator.phantasm.init.PhantasmModBlocks;
 import net.mcreator.unusualend.init.UnusualendModBlocks;
 import net.mcreator.unusualend.init.UnusualendModItems;
@@ -359,6 +360,16 @@ public class RecipesGen extends RecipeProvider implements IConditionBuilder {
     }
 
     private void minecraftRecipes(Consumer<FinishedRecipe> consumer) {
+        ConditionalRecipe.builder()
+                .addCondition(not(modLoaded("hostiledelight")))
+                .addRecipe(ShapelessRecipeBuilder.shapeless(HostiledelightModItems.CANDIEDSLIME.get(), 1)
+                        .requires(TBATags.Items.SUGAR)
+                        .requires(TBATags.Items.SUGAR)
+                        .requires(TBATags.Items.SLIME_BALLS)
+                        .unlockedBy("has_slime_balls", has(TBATags.Items.SLIME_BALLS))
+                        ::save)
+                .build(consumer, new ResourceLocation("hostiledelight",
+                        HostiledelightModItems.CANDIEDSLIME.get().asItem().toString() + "_alt"));
         ShapelessRecipeBuilder.shapeless(TBAItems.PEELED_EGG.get(), 1)
                 .requires(TBATags.Items.BOILED_EGGS)
                 .unlockedBy("has_boiled_eggs", has(TBATags.Items.BOILED_EGGS))
