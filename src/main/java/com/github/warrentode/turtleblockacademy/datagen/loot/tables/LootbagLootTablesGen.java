@@ -63,11 +63,9 @@ public class LootbagLootTablesGen implements Consumer<BiConsumer<ResourceLocatio
 
         consumer.accept(LootbagLootTables.TINKERS_KIT, LootTable.lootTable()
                 .withPool(LootPool.lootPool().setRolls(ConstantValue.exactly(1))
-                        .add(LootItem.lootTableItem(TinkerWorld.rawCobalt)
-                                .when(LootItemRandomChanceCondition.randomChance(0.1F))
+                        .add(LootItem.lootTableItem(TinkerWorld.rawCobalt).setWeight(5)
                                 .apply(SetItemCountFunction.setCount(UniformGenerator.between(1, 4))))
-                        .add(LootItem.lootTableItem(Objects.requireNonNull(TinkerFluids.blazingBlood.getBucket()))
-                                .when(LootItemRandomChanceCondition.randomChance(0.1F))
+                        .add(LootItem.lootTableItem(Objects.requireNonNull(TinkerFluids.blazingBlood.getBucket())).setWeight(1)
                                 .apply(SetItemCountFunction.setCount(UniformGenerator.between(1, 4))))
                 ));
 

@@ -6,12 +6,6 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "conditions": [
-            {
-              "chance": 0.1,
-              "condition": "minecraft:random_chance"
-            }
-          ],
           "functions": [
             {
               "add": false,
@@ -23,16 +17,11 @@
               "function": "minecraft:set_count"
             }
           ],
-          "name": "tconstruct:raw_cobalt"
+          "name": "tconstruct:raw_cobalt",
+          "weight": 5
         },
         {
           "type": "minecraft:item",
-          "conditions": [
-            {
-              "chance": 0.1,
-              "condition": "minecraft:random_chance"
-            }
-          ],
           "functions": [
             {
               "add": false,

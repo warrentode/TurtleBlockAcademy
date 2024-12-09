@@ -72,15 +72,6 @@ public class TBALootModifierGenProvider extends GlobalLootModifierProvider {
                 },
                 PackBuiltInLootTables.UFO, 1.0F
         ));
-        add("add_bonus_dungeon_loot", new AddLootTableModifier(
-                new LootItemCondition[]{
-                        AlternativeLootItemCondition
-                                .alternative(LootTableIdCondition.builder(BuiltInLootTables.SIMPLE_DUNGEON))
-                                .or(LootTableIdCondition.builder(BuiltInLootTables.ABANDONED_MINESHAFT))
-                                .build()
-                },
-                PackBuiltInLootTables.DUNGEON_REWARDS, 1.0F
-        ));
         add("add_venison_drops", new AddItemLootModifier(
                 new LootItemCondition[]{
                         LootItemKilledByPlayerCondition.killedByPlayer().build(),

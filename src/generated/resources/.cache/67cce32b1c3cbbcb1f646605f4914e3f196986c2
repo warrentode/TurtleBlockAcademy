@@ -1,4 +1,4 @@
-// 1.19.2	2024-11-27T18:40:57.8458462	LootTables
+// 1.19.2	2024-12-08T21:55:06.7032646	LootTables
 e45912867e166601791be36d7d3c386061314fc4 data/dimdungeons/loot_tables/chests/kit_random.json
 70e0cca7ec20a56e211b0f651e481ef9ffa70b8f data/lootbags/loot_tables/loot_bags/anniversary_lootbag.json
 73a6ba02ddd1f384ed4cf7ba6d42a68c877e2c35 data/lootbags/loot_tables/loot_bags/artifacts_lootbag.json
@@ -13,9 +13,9 @@ a4c0a867588aa057abe3093ba93cf6dbd76810b7 data/lootbags/loot_tables/loot_bags/new
 3613c4af418b99ae31b4bad5aafec13c4194aab0 data/lootbags/loot_tables/loot_bags/plushie_bag.json
 9e23f63c31602bb0ceaa23e490592e982a3f3caf data/lootbags/loot_tables/loot_bags/rations_bag_drop.json
 6e98370b2b306943d243e70dc3818762ecf7e53f data/lootbags/loot_tables/loot_bags/rations_lootbag.json
-9cd0201c5b7b427167f00abd7024404b33f75aeb data/lootbags/loot_tables/loot_bags/refined_storage_lootbag.json
+b758364be47a457e856976a76f427b8e2c8823a1 data/lootbags/loot_tables/loot_bags/refined_storage_lootbag.json
 4d9f1ff4acf9aed12e80b9fe2a52f72cca1b6346 data/lootbags/loot_tables/loot_bags/shulker_boxes_lootbag.json
-e0d412a7bb55e1eae7a14cf692bd6d9170f37429 data/lootbags/loot_tables/loot_bags/tinkers_lootbag.json
+d80df0e3ff94239ffe259bf21068ce95097c8808 data/lootbags/loot_tables/loot_bags/tinkers_lootbag.json
 409d9f5c48a65c610d94e93113d97c896cabe583 data/lootbags/loot_tables/loot_bags/trick_or_treat_lootbag.json
 8b8760b48d60a0d9c25863ec4cd4a73ef99fef2a data/minecraft/loot_tables/entities/ender_dragon.json
 c9bb544f4a28a835f4626aeead39d518c16f9039 data/minecraft/loot_tables/gameplay/cat_morning_gift.json
