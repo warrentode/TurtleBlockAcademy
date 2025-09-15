@@ -36,7 +36,7 @@
         {
           "type": "minecraft:tag",
           "expand": true,
-          "name": "forge:eggs"
+          "name": "turtleblockacademy:easter_eggs"
         }
       ],
       "rolls": 2.0

@@ -22,7 +22,7 @@
               "condition": "minecraft:random_chance"
             }
           ],
-          "name": "lootbags:loot_bags/refined_storage_gifts"
+          "name": "lootbags:loot_bags/refined_storage_lootbag"
         },
         {
           "type": "minecraft:loot_table",

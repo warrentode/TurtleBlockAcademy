@@ -1,0 +1,8 @@
+{
+  "parent": "turtleblockacademy:item/template_thread",
+  "textures": {
+    "layer0": "turtleblockacademy:item/silk_thread",
+    "layer1": "turtleblockacademy:item/spool",
+    "particle": "turtleblockacademy:item/silk_thread"
+  }
+}

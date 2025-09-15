@@ -1,0 +1,1343 @@
+{
+    "profession": "mimi:instrumentalist",
+    "removeOtherTrades": true,
+    "trades": [
+        {
+            "multiOffer": [
+                {
+                    "itemKey": "minecraft:music_disc_5",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "minecraft:music_disc_11",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "minecraft:music_disc_13",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "minecraft:music_disc_blocks",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "minecraft:music_disc_cat",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "minecraft:music_disc_chirp",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "minecraft:music_disc_far",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "minecraft:music_disc_mall",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "minecraft:music_disc_mellohi",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "minecraft:music_disc_otherside",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "minecraft:music_disc_pigstep",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "minecraft:music_disc_stal",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "minecraft:music_disc_strad",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "minecraft:music_disc_wait",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "minecraft:music_disc_ward",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "biomesoplenty:music_disc_wanderer",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "ecologics:music_disc_coconut",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "snowyspirit:winter_disc",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "supplementaries:pancake",
+                    "amount": 1
+                },
+                {
+                    "itemKey": "todevillagers:chakra_dream_music_disc",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "unusualend:music_disc_endstone_golem_theme",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "unusualend:music_disc_flying_ships",
+                    "amount": 1,
+                    "priceModifier": 0
+                }
+            ],
+            "request": {
+                "itemKey": "todecoins:pot_of_gold",
+                "amount": 8
+            },
+            "tradeExp": 1,
+            "maxUses": 16,
+            "priceMultiplier": 0.2,
+            "demand": 0,
+            "tradeLevel": 1,
+            "UTID": "mimi:instrumentalist_multioffer_music_disc_5_for_pot_of_gold"
+        },
+        {
+            "multiOffer": [
+                {
+                    "itemKey": "minecraft:note_block",
+                    "amount": 2,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "minecraft:jukebox",
+                    "amount": 1,
+                    "priceModifier": 0
+                }
+            ],
+            "request": {
+                "itemKey": "todecoins:copper_coin_bag",
+                "amount": 18,
+                "priceModifier": 0
+            },
+            "tradeExp": 2,
+            "maxUses": 16,
+            "priceMultiplier": 0.05,
+            "demand": 0,
+            "tradeLevel": 1,
+            "UTID": "mimi:instrumentalist_multioffer_note_block_for_copper_coin_bag"
+        },
+        {
+            "multiOffer": [
+                {
+                    "itemKey": "mimi:banjo",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "mimi:acguitar",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "mimi:acguitar2",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "mimi:acguitar3",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "mimi:elecguitar",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "mimi:elecguitar2",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "mimi:elecguitar3",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "mimi:elecguitar4",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "mimi:elecguitar5",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "mimi:bassguitar",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "mimi:bassguitar2",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "mimi:bassguitar3",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "mimi:violin",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "mimi:microphone",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "mimi:microphone2",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "mimi:microphone3",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "mimi:microphone4",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "mimi:microphone5",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "mimi:microphone6",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "mimi:trumpet",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "mimi:trumpet2",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "mimi:frenchhorn",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "mimi:saxophone",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "mimi:saxophone2",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "mimi:saxophone3",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "mimi:saxophone4",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "mimi:bassguitar",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "mimi:clarinet",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "mimi:flute",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "mimi:ocarina",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "mimi:synlead",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "mimi:synlead2",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "mimi:synlead3",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "mimi:synlead4",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "mimi:kalimba",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "mimi:bagpipe",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "mimi:oboe",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "mimi:accordion",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "mimi:accordion2",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "mimi:harmonica",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "mimi:handbell",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "mimi:witchpipe",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "mimi:bonelute",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "mimi:glockenspiel",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "mimi:musicbox",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "mimi:bassoon",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "mimi:woodblock",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "mimi:bottle",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "mimi:panflute",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "mimi:recorder",
+                    "amount": 1,
+                    "priceModifier": 0
+                }
+            ],
+            "request": {
+                "itemKey": "todecoins:copper_coin_bag",
+                "amount": 18,
+                "priceModifier": 0
+            },
+            "tradeExp": 5,
+            "maxUses": 16,
+            "priceMultiplier": 0.05,
+            "demand": 0,
+            "tradeLevel": 2,
+            "UTID": "mimi:instrumentalist_multioffer_banjo_for_copper_coin_bag"
+        },
+        {
+            "multiOffer": [
+                {
+                    "itemKey": "mimi:floppydisk",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "mimi:switchboard",
+                    "amount": 1,
+                    "priceModifier": 0
+                }
+            ],
+            "request": {
+                "itemKey": "todecoins:copper_coin_bag",
+                "amount": 18,
+                "priceModifier": 0
+            },
+            "tradeExp": 5,
+            "maxUses": 32,
+            "priceMultiplier": 0.05,
+            "demand": 0,
+            "tradeLevel": 2,
+            "UTID": "mimi:instrumentalist_multioffer_floppydisk_for_copper_coin_bag"
+        },
+        {
+            "multiOffer": [
+                {
+                    "itemKey": "mimi:piano",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "mimi:piano2",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "mimi:piano3",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "mimi:piano4",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "mimi:drums",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "mimi:drums2",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "mimi:drums3",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "mimi:drums4",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "mimi:drums5",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "mimi:organ",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "mimi:organ2",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "mimi:organ3",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "mimi:organ4",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "mimi:organ5",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "mimi:steeldrum",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "mimi:xylophone",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "mimi:vibraphone",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "mimi:marimba",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "mimi:celesta",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "mimi:tubularbells",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "mimi:harpsichord",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "mimi:keyboard",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "mimi:keyboard2",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "mimi:keyboard3",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "mimi:keyboard4",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "mimi:keyboard5",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "mimi:prophet",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "mimi:prophet2",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "mimi:prophet3",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "mimi:prophet4",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "mimi:prophet5",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "mimi:prophet6",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "mimi:prophet7",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "mimi:prophet8",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "mimi:prophet9",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "mimi:edrums",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "mimi:edrums2",
+                    "amount": 1,
+                    "priceModifier": 0
+                }
+            ],
+            "request": {
+                "itemKey": "todecoins:copper_coin_bag",
+                "amount": 18,
+                "priceModifier": 0
+            },
+            "tradeExp": 10,
+            "maxUses": 16,
+            "priceMultiplier": 0.05,
+            "demand": 0,
+            "tradeLevel": 3,
+            "UTID": "mimi:instrumentalist_multioffer_piano_for_copper_coin_bag"
+        },
+        {
+            "multiOffer": [
+                {
+                    "itemKey": "mimi:transmitter",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "mimi:filecaster",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "mimi:broadcaster",
+                    "amount": 1,
+                    "priceModifier": 0
+                }
+            ],
+            "request": {
+                "itemKey": "todecoins:copper_coin_bag",
+                "amount": 18,
+                "priceModifier": 0
+            },
+            "tradeExp": 10,
+            "maxUses": 16,
+            "priceMultiplier": 0.05,
+            "demand": 0,
+            "tradeLevel": 3,
+            "UTID": "mimi:instrumentalist_multioffer_transmitter_for_copper_coin_bag"
+        },
+        {
+            "multiOffer": [
+                {
+                    "itemKey": "mimi:banjo",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "mimi:acguitar",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "mimi:acguitar2",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "mimi:acguitar3",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "mimi:elecguitar",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "mimi:elecguitar2",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "mimi:elecguitar3",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "mimi:elecguitar4",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "mimi:elecguitar5",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "mimi:bassguitar",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "mimi:bassguitar2",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "mimi:bassguitar3",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "mimi:violin",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "mimi:microphone",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "mimi:microphone2",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "mimi:microphone3",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "mimi:microphone4",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "mimi:microphone5",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "mimi:microphone6",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "mimi:trumpet",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "mimi:trumpet2",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "mimi:frenchhorn",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "mimi:saxophone",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "mimi:saxophone2",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "mimi:saxophone3",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "mimi:saxophone4",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "mimi:bassguitar",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "mimi:clarinet",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "mimi:flute",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "mimi:ocarina",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "mimi:synlead",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "mimi:synlead2",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "mimi:synlead3",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "mimi:synlead4",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "mimi:kalimba",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "mimi:bagpipe",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "mimi:oboe",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "mimi:accordion",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "mimi:accordion2",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "mimi:harmonica",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "mimi:handbell",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "mimi:witchpipe",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "mimi:bonelute",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "mimi:glockenspiel",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "mimi:musicbox",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "mimi:bassoon",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "mimi:woodblock",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "mimi:bottle",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "mimi:panflute",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "mimi:recorder",
+                    "amount": 1,
+                    "priceModifier": 0
+                }
+            ],
+            "request": {
+                "itemKey": "todecoins:copper_coin_bag",
+                "amount": 18,
+                "priceModifier": 0
+            },
+            "tradeExp": 15,
+            "maxUses": 16,
+            "priceMultiplier": 0.05,
+            "demand": 0,
+            "tradeLevel": 4,
+            "UTID": "mimi:instrumentalist_multioffer_banjo_for_copper_coin_bag"
+        },
+        {
+            "multiOffer": [
+                {
+                    "itemKey": "mimi:floppydisk",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "mimi:switchboard",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "mimi:transmitter",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "mimi:filecaster",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "mimi:broadcaster",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "mimi:receiver",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "mimi:listener",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "mimi:mechanicalmaestro",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "mimi:conductor",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "mimi:diskwriter",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "mimi:deviceconfig",
+                    "amount": 1,
+                    "priceModifier": 0
+                }
+            ],
+            "request": {
+                "itemKey": "todecoins:copper_coin_bag",
+                "amount": 18,
+                "priceModifier": 0
+            },
+            "tradeExp": 15,
+            "maxUses": 16,
+            "priceMultiplier": 0.05,
+            "demand": 0,
+            "tradeLevel": 4,
+            "UTID": "mimi:instrumentalist_multioffer_floppydisk_for_copper_coin_bag"
+        },
+        {
+            "multiOffer": [
+                {
+                    "itemKey": "minecraft:music_disc_5",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "minecraft:music_disc_11",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "minecraft:music_disc_13",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "minecraft:music_disc_blocks",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "minecraft:music_disc_cat",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "minecraft:music_disc_chirp",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "minecraft:music_disc_far",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "minecraft:music_disc_mall",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "minecraft:music_disc_mellohi",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "minecraft:music_disc_otherside",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "minecraft:music_disc_pigstep",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "minecraft:music_disc_stal",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "minecraft:music_disc_strad",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "minecraft:music_disc_wait",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "minecraft:music_disc_ward",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "biomesoplenty:music_disc_wanderer",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "ecologics:music_disc_coconut",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "snowyspirit:winter_disc",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "supplementaries:pancake",
+                    "amount": 1
+                },
+                {
+                    "itemKey": "todevillagers:chakra_dream_music_disc",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "unusualend:music_disc_endstone_golem_theme",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "unusualend:music_disc_flying_ships",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "minecraft:disc_fragment_5",
+                    "amount": 3,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "unusualend:disc_fragment_flying_ships",
+                    "amount": 3,
+                    "priceModifier": 0
+                }
+            ],
+            "request": {
+                "itemKey": "todecoins:copper_coin_bag",
+                "amount": 18,
+                "priceModifier": 0
+            },
+            "tradeExp": 30,
+            "maxUses": 16,
+            "priceMultiplier": 0.2,
+            "demand": 0,
+            "tradeLevel": 5,
+            "UTID": "mimi:instrumentalist_multioffer_music_disc_5_for_copper_coin_bag"
+        },
+        {
+            "multiOffer": [
+                {
+                    "itemKey": "mimi:piano",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "mimi:piano2",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "mimi:piano3",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "mimi:piano4",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "mimi:drums",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "mimi:drums2",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "mimi:drums3",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "mimi:drums4",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "mimi:drums5",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "mimi:organ",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "mimi:organ2",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "mimi:organ3",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "mimi:organ4",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "mimi:organ5",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "mimi:steeldrum",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "mimi:xylophone",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "mimi:vibraphone",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "mimi:marimba",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "mimi:celesta",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "mimi:tubularbells",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "mimi:harpsichord",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "mimi:keyboard",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "mimi:keyboard2",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "mimi:keyboard3",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "mimi:keyboard4",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "mimi:keyboard5",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "mimi:prophet",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "mimi:prophet2",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "mimi:prophet3",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "mimi:prophet4",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "mimi:prophet5",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "mimi:prophet6",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "mimi:prophet7",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "mimi:prophet8",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "mimi:prophet9",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "mimi:edrums",
+                    "amount": 1,
+                    "priceModifier": 0
+                },
+                {
+                    "itemKey": "mimi:edrums2",
+                    "amount": 1,
+                    "priceModifier": 0
+                }
+            ],
+            "request": {
+                "itemKey": "todecoins:copper_coin_bag",
+                "amount": 18,
+                "priceModifier": 0
+            },
+            "tradeExp": 30,
+            "maxUses": 16,
+            "priceMultiplier": 0.05,
+            "demand": 0,
+            "tradeLevel": 5,
+            "UTID": "mimi:instrumentalist_multioffer_piano_for_copper_coin_bag"
+        }
+    ]
+}

@@ -16,7 +16,7 @@
       "entries": [
         {
           "type": "minecraft:loot_table",
-          "name": "lootbags:loot_bags/artifacts_gifts"
+          "name": "lootbags:loot_bags/artifacts_lootbag"
         }
       ],
       "rolls": 1.0

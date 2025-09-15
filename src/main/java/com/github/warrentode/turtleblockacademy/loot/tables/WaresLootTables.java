@@ -10,8 +10,9 @@ public class WaresLootTables {
     private static final Set<ResourceLocation> LOCATIONS = Sets.newHashSet();
     private static final Set<ResourceLocation> IMMUTABLE_LOCATIONS = Collections.unmodifiableSet(LOCATIONS);
 
-    // wares loot tables
     public static final ResourceLocation SEASONAL_SHOPPER = register("wares" + ":" + "agreement/seasonal_shopper");
+
+    // wares loot tables
     public static final ResourceLocation WARES_AETHER_PRODUCTS = register("wares" + ":" + "agreement/village/regional_products/aether_products");
     public static final ResourceLocation WARES_WOODLAND_PRODUCTS = register("wares" + ":" + "agreement/village/regional_products/woodland_products");
     public static final ResourceLocation WARES_WOODED_SCRUBLAND_PRODUCTS = register("wares" + ":" + "agreement/village/regional_products/wooded_scrubland_products");

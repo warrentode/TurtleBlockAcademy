@@ -1,0 +1,10 @@
+{
+  "values": [
+    {
+      "id": "biomesoplenty:bog",
+      "required": false
+    },
+    "minecraft:swamp",
+    "minecraft:mangrove_swamp"
+  ]
+}

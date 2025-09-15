@@ -1,0 +1,64 @@
+
+[" Carpenter Trade Settings"]
+
+	[" Carpenter Trade Settings"." Carpenter Level One Trade One"]
+		# Carpenter 1 Trade Request 1 Table
+		carpenter_1_trade_request_1_table = "todecoins:trade_tables/decor/sapling_buy_table"
+		# Carpenter 1 Trade Offer 1 Table
+		carpenter_1_trade_offer_1_table = "todecoins:trade_tables/currency/six_emerald_value_currency"
+
+	[" Carpenter Trade Settings"." Carpenter Level One Trade Two"]
+		# Carpenter 1 Trade Request 2 Table
+		carpenter_1_trade_request_2_table = "todecoins:trade_tables/currency/six_emerald_value_currency"
+		# Carpenter 1 Trade Offer 2 Table
+		carpenter_1_trade_offer_2_table = "todecoins:trade_tables/decor/sapling_sell_table"
+
+	[" Carpenter Trade Settings"." Carpenter Level Two Trade One"]
+		# Carpenter 2 Trade Request 1 Table
+		carpenter_2_trade_request_1_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+		# Carpenter 2 Trade Offer 1 Table
+		carpenter_2_trade_offer_1_table = "todecoins:trade_tables/blocks/logs_sell_table"
+
+	[" Carpenter Trade Settings"." Carpenter Level Two Trade Two"]
+		# Carpenter 2 Trade Request 2 Table
+		carpenter_2_trade_request_2_table = "todecoins:trade_tables/blocks/logs_buy_table"
+		# Carpenter 2 Trade Offer 2 Table
+		carpenter_2_trade_offer_2_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+
+	[" Carpenter Trade Settings"." Carpenter Level Three Trade One"]
+		# Carpenter 3 Trade Request 1 Table
+		carpenter_3_trade_request_1_table = "todecoins:trade_tables/decor/sapling_buy_table"
+		# Carpenter 3 Trade Offer 1 Table
+		carpenter_3_trade_offer_1_table = "todecoins:trade_tables/currency/six_emerald_value_currency"
+
+	[" Carpenter Trade Settings"." Carpenter Level Three Trade Two"]
+		# Carpenter 3 Trade Request 2 Table
+		carpenter_3_trade_request_2_table = "todecoins:trade_tables/currency/six_emerald_value_currency"
+		# Carpenter 3 Trade Offer 2 Table
+		carpenter_3_trade_offer_2_table = "todecoins:trade_tables/decor/sapling_sell_table"
+
+	[" Carpenter Trade Settings"." Carpenter Level Four Trade One"]
+		# Carpenter 4 Trade Request 1 Table
+		carpenter_4_trade_request_1_table = "todecoins:trade_tables/blocks/logs_buy_table"
+		# Carpenter 4 Trade Offer 1 Table
+		carpenter_4_trade_offer_1_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+
+	[" Carpenter Trade Settings"." Carpenter Level Four Trade Two"]
+		# Carpenter 4 Trade Request 2 Table
+		carpenter_4_trade_request_2_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+		# Carpenter 4 Trade Offer 2 Table
+		carpenter_4_trade_offer_2_table = "todecoins:trade_tables/blocks/logs_sell_table"
+
+	[" Carpenter Trade Settings"." Carpenter Level Five Trade One"]
+		# Rare Trade
+		# Carpenter 5 Trade Request 1 Table
+		carpenter_5_trade_request_1_table = "todecoins:trade_tables/currency/sixteen_emerald_table"
+		# Carpenter 5 Trade Offer 1 Table
+		carpenter_5_trade_offer_1_table = "todecoins:trade_tables/tools/iron_tier_lumber_tools_table"
+
+	[" Carpenter Trade Settings"." Carpenter Level Five Trade Two"]
+		# Carpenter 5 Trade Request 2 Table
+		carpenter_5_trade_request_2_table = "todecoins:trade_tables/currency/four_emerald_value_currency"
+		# Carpenter 5 Trade Offer 2 Table
+		carpenter_5_trade_offer_2_table = "todecoins:trade_tables/tools/diamond_tier_lumber_tools_table"
+

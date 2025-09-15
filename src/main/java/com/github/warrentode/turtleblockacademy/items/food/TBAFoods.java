@@ -41,8 +41,6 @@ public class TBAFoods {
             .effect(() -> new MobEffectInstance(MobEffects.ABSORPTION,
                     1200, 0), 1.0F).build();
 
-    public static final FoodProperties EASTER_EGGS = (new FoodProperties.Builder())
-            .nutrition(1).saturationMod(0.1F).alwaysEat()
-            .effect(() -> new MobEffectInstance(ModEffects.COMFORT.get(),
-                    100, 0), 1.0F).build();
+    public static final FoodProperties PEELED_EGGS = (new FoodProperties.Builder())
+            .nutrition(4).saturationMod(0.7F).build();
 }

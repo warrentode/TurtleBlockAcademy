@@ -1,0 +1,16 @@
+{
+  "type": "turtleblockacademy:shaped_remainder",
+  "group": "thread",
+  "key": {
+    "F": {
+      "tag": "forge:webbing"
+    }
+  },
+  "pattern": [
+    "FFF",
+    "FFF"
+  ],
+  "result": {
+    "item": "turtleblockacademy:silk_thread"
+  }
+}

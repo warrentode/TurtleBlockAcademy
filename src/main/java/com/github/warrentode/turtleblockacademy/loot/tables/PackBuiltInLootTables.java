@@ -18,6 +18,8 @@ public class PackBuiltInLootTables {
     public static final ResourceLocation TREASURE_BEETLE_LOOT = register(MODID + ":" + "entity/treasure_beetle");
     public static final ResourceLocation CAMP_CHEST = register(MODID + ":" + "chests/camp_chest");
 
+    public static final ResourceLocation EASTER_EGG_LOOT = register(MODID + ":" + "chests/easter_eggs");
+
     // randomized map loot tables
     public static final ResourceLocation MASTER_MAPBOX = register(MODID + ":" + "chests/maps/master_mapbox");
     public static final ResourceLocation END_MAPBOX = register(MODID + ":" + "chests/maps/end_mapbox");
@@ -49,6 +51,8 @@ public class PackBuiltInLootTables {
     public static final ResourceLocation LOG_SET = register(MODID + ":" + "chests/log_set");
     public static final ResourceLocation GIFTS = register(MODID + ":" + "chests/gifts");
 
+    // decor loot tables
+    public static final ResourceLocation DECO_ALL = register(MODID + ":" + "chests/deco_all");
     public static final ResourceLocation PLUSHIES = register(MODID + ":" + "chests/plushies");
     public static final ResourceLocation BATH_DECO = register(MODID + ":" + "chests/bath_deco");
     public static final ResourceLocation ART_DECO = register(MODID + ":" + "chests/art_deco");
@@ -57,6 +61,7 @@ public class PackBuiltInLootTables {
     public static final ResourceLocation SCIENCE_DECO = register(MODID + ":" + "chests/science_deco");
     public static final ResourceLocation HOLIDAY_DECO = register(MODID + ":" + "chests/holiday_deco");
     public static final ResourceLocation MISC_DECO = register(MODID + ":" + "chests/misc_deco");
+
     public static final ResourceLocation BONUS_SAND_DROPS = register(MODID + ":" + "chests/bonus_sand_drops");
 
     // misc tables

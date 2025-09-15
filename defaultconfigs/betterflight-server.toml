@@ -1,0 +1,38 @@
+
+[betterflight]
+	#Maximum points of charge in a 'full' elytra meter.
+	#Range: 3 ~ 255
+	MaxCharge = 100
+	#Meter point cost to take off.
+	#Range: 0 ~ 255
+	TakeOffCost = 3
+	#Meter point cost to flap wings.
+	#Range: 0 ~ 255
+	FlapCost = 1
+	#Time, in ticks, it takes to recharge 1 point on the meter while in the air.
+	#Range: 5 ~ 600
+	RechargeTicksInAir = 100
+	#Time, in ticks, it takes to recharge 1 point on the meter while on the ground.
+	#Range: 5 ~ 600
+	RechargeTicksOnGround = 20
+	#Time, in ticks, players can flare per point on the meter.
+	#Range: 5 ~ 600
+	FlareTicksPerChargePoint = 20
+	#How much food it costs to recharge a point on the meter.
+	#Range: 0.0 ~ 20.0
+	ExhaustionPerChargePoint = 4.0
+	#Minimum food required on hunger bar to recharge elytra meter. (6 = same as sprint)
+	#Range: 0 ~ 20
+	MinFood = 6
+	#Time, in ticks, players must wait between wing flaps.
+	#Range: 5 ~ 200
+	CooldownTicks = 20
+	#Height above which flapping begins to be less effective. (Must be less than hardCeiling).
+	#Range: 0 ~ 10000
+	softCeiling = 320
+	#Height above which flapping no longer provides any thrust.
+	#Range: 0 ~ 10000
+	hardCeiling = 400
+	#A list of modid:itemname registry keys that count as an Elytra.
+	elytraItems = ["minecraft:elytra", "mekanism:hdpe_elytra", "alexsmobs:tarantula_hawk_elytra", "tconstruct:slime_chestplate", "customizableelytra:customizable_elytra"]
+

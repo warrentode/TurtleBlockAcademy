@@ -1,9 +1,0 @@
-{
-  "type": "lootbags:loot",
-  "color": "blue",
-  "name": "Christmas Bag",
-  "output": {
-    "table": "lootbags:loot_bags/christmas_lootbag"
-  },
-  "rarity": "UNCOMMON"
-}

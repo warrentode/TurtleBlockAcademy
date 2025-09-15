@@ -1,0 +1,263 @@
+{
+  "profession": "todecoins:leprechaun",
+  "removeOtherTrades": false,
+  "trades": [
+    {
+      "offer": {
+        "itemKey": "todecoins:emerald_quarter_bank_note",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "todecoins:pot_of_gold",
+        "amount": 11,
+        "priceModifier": 0
+      },
+      "tradeExp": 2,
+      "maxUses": 3,
+      "priceMultiplier": 0.2,
+      "demand": 0,
+      "tradeLevel": 1,
+      "UTID": "todecoins:leprechaun_emerald_quarter_bank_note_for_pot_of_gold"
+    },
+    {
+      "offer": {
+        "itemKey": "todecoins:pot_of_gold",
+        "amount": 11,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "todecoins:emerald_quarter_bank_note",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "tradeExp": 1,
+      "maxUses": 3,
+      "priceMultiplier": 0.2,
+      "demand": 0,
+      "tradeLevel": 1,
+      "UTID": "todecoins:leprechaun_pot_of_gold_for_emerald_quarter_bank_note"
+    },
+    {
+      "offer": {
+        "itemKey": "todecoins:emerald_half_bank_note",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "todecoins:pot_of_gold",
+        "amount": 21,
+        "priceModifier": 0
+      },
+      "tradeExp": 10,
+      "maxUses": 3,
+      "priceMultiplier": 0.2,
+      "demand": 0,
+      "tradeLevel": 2,
+      "UTID": "todecoins:leprechaun_emerald_half_bank_note_for_pot_of_gold"
+    },
+    {
+      "offer": {
+        "itemKey": "todecoins:pot_of_gold",
+        "amount": 21,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "todecoins:emerald_half_bank_note",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "tradeExp": 5,
+      "maxUses": 3,
+      "priceMultiplier": 0.2,
+      "demand": 0,
+      "tradeLevel": 2,
+      "UTID": "todecoins:leprechaun_pot_of_gold_for_emerald_half_bank_note"
+    },
+    {
+      "offer": {
+        "itemKey": "todecoins:emerald_bank_note",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "todecoins:pot_of_gold",
+        "amount": 43,
+        "priceModifier": 0
+      },
+      "tradeExp": 20,
+      "maxUses": 3,
+      "priceMultiplier": 0.2,
+      "demand": 0,
+      "tradeLevel": 3,
+      "UTID": "todecoins:leprechaun_emerald_bank_note_for_pot_of_gold"
+    },
+    {
+      "offer": {
+        "itemKey": "todecoins:pot_of_gold",
+        "amount": 43,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "todecoins:emerald_bank_note",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "tradeExp": 10,
+      "maxUses": 3,
+      "priceMultiplier": 0.2,
+      "demand": 0,
+      "tradeLevel": 3,
+      "UTID": "todecoins:leprechaun_pot_of_gold_for_emerald_bank_note"
+    },
+    {
+      "offer": {
+        "itemKey": "minecraft:prismarine_shard",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "todecoins:emerald_quarter_bank_note",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "tradeExp": 15,
+      "maxUses": 3,
+      "priceMultiplier": 0.2,
+      "demand": 0,
+      "tradeLevel": 4,
+      "UTID": "todecoins:leprechaun_prismarine_shard_for_emerald_quarter_bank_note"
+    },
+    {
+      "offer": {
+        "itemKey": "minecraft:redstone_block",
+        "amount": 2,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "todecoins:emerald_quarter_bank_note",
+        "amount": 2,
+        "priceModifier": 0
+      },
+      "tradeExp": 15,
+      "maxUses": 3,
+      "priceMultiplier": 0.2,
+      "demand": 0,
+      "tradeLevel": 4,
+      "UTID": "todecoins:leprechaun_redstone_block_for_emerald_quarter_bank_note"
+    },
+    {
+      "offer": {
+        "itemKey": "minecraft:dragon_head",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "todecoins:emerald_half_bank_note",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "tradeExp": 15,
+      "maxUses": 3,
+      "priceMultiplier": 0.2,
+      "demand": 0,
+      "tradeLevel": 4,
+      "UTID": "todecoins:leprechaun_dragon_head_for_emerald_half_bank_note"
+    },
+    {
+      "offer": {
+        "itemKey": "minecraft:prismarine",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "todecoins:emerald_half_bank_note",
+        "amount": 4,
+        "priceModifier": 0
+      },
+      "tradeExp": 15,
+      "maxUses": 3,
+      "priceMultiplier": 0.2,
+      "demand": 0,
+      "tradeLevel": 4,
+      "UTID": "todecoins:leprechaun_prismarine_for_emerald_half_bank_note"
+    },
+    {
+      "offer": {
+        "itemKey": "todecoins:emerald_bank_note",
+        "amount": 3,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "todecoins:emerald_half_bank_note",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "additionalRequest": {
+        "itemKey": "minecraft:sea_lantern",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "tradeExp": 15,
+      "maxUses": 3,
+      "priceMultiplier": 0.2,
+      "demand": 0,
+      "tradeLevel": 4,
+      "UTID": "todecoins:leprechaun_emerald_bank_note_for_emerald_half_bank_note_and_sea_lantern"
+    },
+    {
+      "offer": {
+        "itemKey": "minecraft:nether_star",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "todecoins:emerald_bank_note",
+        "amount": 9,
+        "priceModifier": 0
+      },
+      "tradeExp": 15,
+      "maxUses": 3,
+      "priceMultiplier": 0.2,
+      "demand": 0,
+      "tradeLevel": 4,
+      "UTID": "todecoins:leprechaun_nether_star_for_emerald_bank_note"
+    },
+    {
+      "offer": {
+        "itemKey": "todecoins:lucky_coin",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "todecoins:emerald_bank_note",
+        "amount": 3,
+        "priceModifier": 0
+      },
+      "tradeExp": 15,
+      "maxUses": 1,
+      "priceMultiplier": 0.2,
+      "demand": 0,
+      "tradeLevel": 5,
+      "UTID": "todecoins:leprechaun_lucky_coin_for_emerald_bank_note"
+    },
+    {
+      "offer": {
+        "itemKey": "todecoins:netherite_coin",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "request": {
+        "itemKey": "todecoins:emerald_half_bank_note",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "tradeExp": 15,
+      "maxUses": 3,
+      "priceMultiplier": 0.2,
+      "demand": 0,
+      "tradeLevel": 5,
+      "UTID": "todecoins:leprechaun_netherite_coin_for_emerald_half_bank_note"
+    }
+  ]
+}

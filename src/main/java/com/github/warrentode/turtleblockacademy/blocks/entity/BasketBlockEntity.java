@@ -1,7 +1,7 @@
 package com.github.warrentode.turtleblockacademy.blocks.entity;
 
 import com.github.warrentode.turtleblockacademy.blocks.furniture.BasketBlock;
-import com.github.warrentode.turtleblockacademy.util.CalendarUtil;
+import com.github.warrentode.turtleblockacademy.util.SeasonalParticleColors;
 import com.github.warrentode.turtleblockacademy.util.TBATags;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -32,7 +32,7 @@ public class BasketBlockEntity extends BlockEntity {
     public final ItemStackHandler inventory;
     public static final int INVENTORY_SIZE = 9;
 
-    private final ItemStackHandler itemHandler = new ItemStackHandler(INVENTORY_SIZE) {
+    private final ItemStackHandler basketHandler = new ItemStackHandler(INVENTORY_SIZE) {
         @Override
         protected void onContentsChanged(int slot) {
             if (level != null) {
@@ -50,11 +50,11 @@ public class BasketBlockEntity extends BlockEntity {
 
     public BasketBlockEntity(BlockPos pos, BlockState state) {
         super(TBABlockEntities.BASKET_BLOCK_ENTITY.get(), pos, state);
-        this.inventory = itemHandler;
+        this.inventory = basketHandler;
     }
 
     @Override
-    public @NotNull <T> LazyOptional<T> getCapability(@NotNull Capability<T> cap, @org.jetbrains.annotations.Nullable Direction side) {
+    public @NotNull <T> LazyOptional<T> getCapability(@NotNull Capability<T> cap, @Nullable Direction side) {
         if (cap == ForgeCapabilities.ITEM_HANDLER) {
             return lazyItemHandler.cast();
         }
@@ -65,7 +65,7 @@ public class BasketBlockEntity extends BlockEntity {
     @Override
     public void onLoad() {
         super.onLoad();
-        lazyItemHandler = LazyOptional.of(() -> itemHandler);
+        lazyItemHandler = LazyOptional.of(() -> basketHandler);
     }
 
     @Override
@@ -77,7 +77,7 @@ public class BasketBlockEntity extends BlockEntity {
     @Override
     public void saveAdditional(@NotNull CompoundTag tag) {
         super.saveAdditional(tag);
-        tag.put("inventory", itemHandler.serializeNBT());
+        tag.put("inventory", basketHandler.serializeNBT());
     }
 
     @NotNull
@@ -102,6 +102,14 @@ public class BasketBlockEntity extends BlockEntity {
         this.saveAdditional(tag);
         if (!tag.isEmpty()) {
             stack.addTagElement("BlockEntityTag", tag);
+        }
+    }
+
+    public void loadFromItem(@NotNull ItemStack stack) {
+        CompoundTag tag = stack.getTag();
+        // 10 is the NBT type ID for CompoundTag
+        if (tag != null && tag.contains("BlockEntityTag", 10)) {
+            this.load(tag.getCompound("BlockEntityTag"));
         }
     }
 
@@ -178,16 +186,9 @@ public class BasketBlockEntity extends BlockEntity {
             return;
         }
 
+        SeasonalParticleColors.eventCheck();
+
         state = state.setValue(BasketBlock.CONDITIONAL, !basketEntity.isEmpty());
         BasketBlock.resetBlockState(level, pos, state, state.getValue(BasketBlock.CONDITIONAL));
-
-        if (CalendarUtil.check("ANNIVERSARY") || CalendarUtil.check("BIRTHDAY")
-                || CalendarUtil.check("HALLOWEEN") || CalendarUtil.check("CHRISTMAS")
-                || CalendarUtil.check("EASTER") || CalendarUtil.check("NEW_YEAR")) {
-            BasketBlock.setLightLvl(15);
-        }
-        else {
-            BasketBlock.setLightLvl(0);
-        }
     }
 }

@@ -1,3 +1,13 @@
+==================================================================================
+Unless specifically stated otherwise elsewhere within this mod, this license
+otherwise applies to this mod, it's just the default - I chose this license because
+it's my hope and desire to keep the code I write open source, so I'm
+hoping this is the correct one to go with
+
+Aside from that, I don't particularly need credit, and consider this permission to
+make use of what you find in here within the guidelines of the license.
+==================================================================================
+
 GNU GENERAL PUBLIC LICENSE
                        Version 3, 29 June 2007
 

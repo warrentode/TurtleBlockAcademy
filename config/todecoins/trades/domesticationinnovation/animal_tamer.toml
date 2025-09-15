@@ -1,0 +1,102 @@
+
+["Animal Tamer Trade Settings"]
+
+	["Animal Tamer Trade Settings"."Animal Tamer Level One Trade One"]
+		# Animal Tamer 1 Trade Request 1 Table
+		animal_tamer_1_trade_request_1_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+		# Animal Tamer 1 Trade Offer 1 Table
+		animal_tamer_1_trade_offer_1_table = "todecoins:trade_tables/misc/pet_supplies_tag_table"
+
+	["Animal Tamer Trade Settings"."Animal Tamer Level One Trade Two"]
+		# Animal Tamer 1 Trade Request 2 Table
+		animal_tamer_1_trade_request_2_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+		# Animal Tamer 1 Trade Offer 2 Table
+		animal_tamer_1_trade_offer_2_table = "todecoins:trade_tables/food/pet_food_tag_table"
+		animal_tamer_1_trade_offer_2_count = 3
+
+	["Animal Tamer Trade Settings"."Animal Tamer Level One Trade Three"]
+		# Rare Trade
+		# Animal Tamer 1 Trade Request 3 Table
+		animal_tamer_1_trade_request_3_table = "todecoins:trade_tables/currency/nine_emerald_value_currency"
+		# Animal Tamer 1 Trade Offer 3 Table
+		animal_tamer_1_trade_offer_3_table = "todecoins:trade_tables/misc/enchantable_pet_gear_tag_table"
+
+	["Animal Tamer Trade Settings"."Animal Tamer Level Two Trade One"]
+		# Animal Tamer 2 Trade Request 1 Table
+		animal_tamer_2_trade_request_1_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+		# Animal Tamer 2 Trade Offer 1 Table
+		animal_tamer_2_trade_offer_1_table = "todecoins:trade_tables/misc/pet_supplies_tag_table"
+
+	["Animal Tamer Trade Settings"."Animal Tamer Level Two Trade Two"]
+		# Animal Tamer 2 Trade Request 2 Table
+		animal_tamer_2_trade_request_2_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+		animal_tamer_2_trade_request_2_count = 3
+
+	["Animal Tamer Trade Settings"."Animal Tamer Level Two Trade Three"]
+		# Rare Trade
+		# Animal Tamer 2 Trade Request 3 Table
+		animal_tamer_2_trade_request_3_table = "todecoins:trade_tables/currency/nine_emerald_value_currency"
+		# Animal Tamer 2 Trade Offer 3 Table
+		animal_tamer_2_trade_offer_3_table = "todecoins:trade_tables/misc/enchantable_pet_gear_tag_table"
+
+	["Animal Tamer Trade Settings"."Animal Tamer Level Three Trade One"]
+		# Animal Tamer 3 Trade Request 1 Table
+		animal_tamer_3_trade_request_1_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+		# Animal Tamer 3 Trade Offer 1 Table
+		animal_tamer_3_trade_offer_1_table = "todecoins:trade_tables/food/pet_food_tag_table"
+		animal_tamer_3_trade_offer_1_count = 3
+
+	["Animal Tamer Trade Settings"."Animal Tamer Level Three Trade Two"]
+		# Animal Tamer 3 Trade Request 2 Table
+		animal_tamer_3_trade_request_2_count = "todecoins:trade_tables/currency/single_emerald_value_currency"
+		# Animal Tamer 3 Trade Offer 2 Table
+		animal_tamer_3_trade_offer_2_table = "todecoins:trade_tables/misc/pet_supplies_tag_table"
+
+	["Animal Tamer Trade Settings"."Animal Tamer Level Three Trade Three"]
+		# Rare Trade
+		# Animal Tamer 3 Trade Request 3 Table
+		animal_tamer_3_trade_request_3_table = "todecoins:trade_tables/currency/nine_emerald_value_currency"
+		# Animal Tamer 3 Trade Offer 3 Table
+		animal_tamer_3_trade_offer_3_table = "todecoins:trade_tables/misc/enchantable_pet_gear_tag_table"
+
+	["Animal Tamer Trade Settings"."Animal Tamer Level Four Trade One"]
+		# Animal Tamer 4 Trade Request 1 Table
+		animal_tamer_4_trade_request_1_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+		# Animal Tamer 4 Trade Offer 1 Table
+		animal_tamer_4_trade_offer_1_table = "todecoins:trade_tables/food/pet_food_tag_table"
+		animal_tamer_4_trade_offer_1_count = 1
+
+	["Animal Tamer Trade Settings"."Animal Tamer Level Four Trade Two"]
+		# Animal Tamer 4 Trade Request 2 Table
+		animal_tamer_4_trade_request_2_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+		# Animal Tamer 4 Trade Offer 2 Table
+		animal_tamer_4_trade_offer_2_table = "todecoins:trade_tables/misc/pet_supplies_tag_table"
+
+	["Animal Tamer Trade Settings"."Animal Tamer Level Four Trade Three"]
+		# Rare Trade
+		# Animal Tamer 4 Trade Request 3 Table
+		animal_tamer_4_trade_request_3_table = "todecoins:trade_tables/currency/nine_emerald_value_currency"
+		# Animal Tamer 4 Trade Offer 3 Table
+		animal_tamer_4_trade_offer_3_table = "todecoins:trade_tables/misc/enchantable_pet_gear_tag_table"
+
+	["Animal Tamer Trade Settings"."Animal Tamer Level Five Trade One"]
+		# Animal Tamer 5 Trade Request 1 Table
+		animal_tamer_5_trade_request_1_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+		# Animal Tamer 5 Trade Offer 1 Table
+		animal_tamer_5_trade_offer_1_table = "todecoins:trade_tables/misc/pet_supplies_tag_table"
+
+	["Animal Tamer Trade Settings"."Animal Tamer Level Five Trade Two"]
+		# Rare Trade
+		# Animal Tamer 5 Trade Request 2 Table
+		animal_tamer_5_trade_request_2_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+		# Animal Tamer 5 Trade Offer 2 Table
+		animal_tamer_5_trade_offer_2_table = "todecoins:trade_tables/food/pet_food_tag_table"
+		animal_tamer_5_trade_offer_2_count = 3
+
+	["Animal Tamer Trade Settings"."Animal Tamer Level Five Trade Three"]
+		# Rare Trade
+		# Animal Tamer 5 Trade Request 3 Table
+		animal_tamer_5_trade_request_3_table = "todecoins:trade_tables/currency/nine_emerald_value_currency"
+		# Animal Tamer 5 Trade Offer 3 Table
+		animal_tamer_5_trade_offer_3_table = "todecoins:trade_tables/misc/enchantable_pet_gear_tag_table"
+

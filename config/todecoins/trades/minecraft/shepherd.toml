@@ -1,0 +1,77 @@
+
+["Shepherd Trade Settings"]
+
+	["Shepherd Trade Settings"."Shepherd Level One Trade One"]
+		# Shepherd 1 Trade Request 1 Table
+		shepherd_1_trade_request_1_table = "todecoins:trade_tables/textiles/tagged_wool_table"
+		shepherd_1_trade_offer_1_count = 18
+		# Shepherd 1 Trade Offer 1 Table
+		shepherd_1_trade_offer_1_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+
+	["Shepherd Trade Settings"."Shepherd Level One Trade Two"]
+		# Shepherd 1 Trade Request 2 Table
+		shepherd_1_trade_request_2_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+		# Shepherd 1 Trade Offer 2 Table
+		shepherd_1_trade_offer_2_table = "todecoins:trade_tables/tools/shears_table"
+
+	["Shepherd Trade Settings"."Shepherd Level Two Trade One"]
+		# Shepherd 2 Trade Request 1 Table
+		shepherd_2_trade_request_1_table = "todecoins:trade_tables/textiles/tagged_dyes_table"
+		shepherd_2_trade_offer_1_count = 6
+		# Shepherd 2 Trade Offer 1 Table
+		shepherd_2_trade_offer_1_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+
+	["Shepherd Trade Settings"."Shepherd Level Two Trade Two"]
+		# Shepherd 2 Trade Request 2 Table
+		shepherd_2_trade_request_2_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+		# Shepherd 2 Trade Offer 2 Table
+		shepherd_2_trade_offer_2_table = "todecoins:trade_tables/textiles/tagged_wool_table"
+		shepherd_2_trade_offer_2_count = 1
+
+	["Shepherd Trade Settings"."Shepherd Level Two Trade Three"]
+		# Shepherd 2 Trade Request 3 Table
+		shepherd_2_trade_request_3_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+		# Shepherd 2 Trade Offer 3 Table
+		shepherd_2_trade_offer_3_table = "todecoins:trade_tables/decor/tagged_wool_carpets_table"
+		shepherd_2_trade_offer_3_count = 3
+
+	["Shepherd Trade Settings"."Shepherd Level Three Trade One"]
+		# Shepherd 3 Trade Request 1 Table
+		shepherd_3_trade_request_1_table = "todecoins:trade_tables/textiles/tagged_dyes_table"
+		shepherd_3_trade_offer_1_count = 6
+		# Shepherd 2 Trade Offer 1 Table
+		shepherd_2_trade_offer_1_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+
+	["Shepherd Trade Settings"."Shepherd Level Three Trade Two"]
+		# Shepherd 3 Trade Request 2 Table
+		shepherd_3_trade_request_2_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+		# Shepherd 3 Trade Offer 2 Table
+		shepherd_3_trade_offer_2_table = "todecoins:trade_tables/decor/tagged_beds_table"
+
+	["Shepherd Trade Settings"."Shepherd Level Four Trade One"]
+		# Shepherd 4 Trade Request 1 Table
+		shepherd_4_trade_request_1_table = "todecoins:trade_tables/textiles/tagged_dyes_table"
+		shepherd_4_trade_offer_1_count = 6
+		# Shepherd 4 Trade Offer 1 Table
+		shepherd_4_trade_offer_1_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+
+	["Shepherd Trade Settings"."Shepherd Level Four Trade Two"]
+		# Shepherd 4 Trade Request 2 Table
+		shepherd_4_trade_request_2_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+		# Shepherd 4 Trade Offer 2 Table
+		shepherd_4_trade_offer_2_table = "todecoins:trade_tables/misc/banner_pattern_table"
+		shepherd_4_trade_offer_2_count = 3
+
+	["Shepherd Trade Settings"."Shepherd Level Five Trade One"]
+		# Shepherd 5 Trade Request 1 Table
+		shepherd_5_trade_request_1_table = "todecoins:trade_tables/textiles/tagged_dyes_table"
+		shepherd_5_trade_offer_1_count = 6
+		# Shepherd 5 Trade Offer 1 Table
+		shepherd_5_trade_offer_1_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+
+	["Shepherd Trade Settings"."Shepherd Level Five Trade Two"]
+		# Shepherd 5 Trade Request 2 Table
+		shepherd_5_trade_request_2_table = "todecoins:trade_tables/currency/two_emerald_value_currency"
+		# Shepherd 5 Trade Offer 2 Table
+		shepherd_5_trade_offer_2_table = "todecoins:trade_tables/decor/paintings_table"
+

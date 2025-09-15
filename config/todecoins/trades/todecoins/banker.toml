@@ -1,0 +1,75 @@
+
+["Banker Trade Settings"]
+
+	["Banker Trade Settings"."Banker Level One Trade One"]
+		# Banker 1 Trade Request 1 Table
+		banker_1_trade_request_1_table = "todecoins:trade_tables/currency/one_emerald_table"
+		# Banker 1 Trade Offer 1 Table
+		banker_1_trade_offer_1_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+
+	["Banker Trade Settings"."Banker Level One Trade Two"]
+		# Banker 1 Trade Request 2 Table
+		banker_1_trade_request_2_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+		# Banker 1 Trade Offer 2 Table
+		banker_1_trade_offer_2_table = "todecoins:trade_tables/currency/one_emerald_table"
+
+	["Banker Trade Settings"."Banker Level Two Trade One"]
+		# Banker 2 Trade Request 1 Table
+		banker_2_trade_request_1_table = "todecoins:trade_tables/currency/sixteen_emerald_table"
+		# Banker 2 Trade Offer 1 Table
+		banker_2_trade_offer_1_table = "todecoins:trade_tables/currency/emerald_quarter_bank_note_value_currency"
+
+	["Banker Trade Settings"."Banker Level Two Trade Two"]
+		# Banker 2 Trade Request 2 Table
+		banker_2_trade_request_2_table = "todecoins:trade_tables/currency/emerald_quarter_bank_note_value_currency"
+		# Banker 2 Trade Offer 2 Table
+		banker_2_trade_offer_2_table = "todecoins:trade_tables/currency/sixteen_emerald_table"
+
+	["Banker Trade Settings"."Banker Level Three Trade One"]
+		# Banker 3 Trade Request 1 Table
+		banker_3_trade_request_1_table = "todecoins:trade_tables/currency/thirty_two_emerald_table"
+		# Banker 3 Trade Offer 1 Table
+		banker_3_trade_offer_1_table = "todecoins:trade_tables/currency/emerald_quarter_half_note_value_currency"
+
+	["Banker Trade Settings"."Banker Level Three Trade Two"]
+		# Banker 3 Trade Request 2 Table
+		banker_3_trade_request_2_table = "todecoins:trade_tables/currency/emerald_quarter_half_note_value_currency"
+		# Banker 3 Trade Offer 2 Table
+		banker_3_trade_offer_2_table = "todecoins:trade_tables/currency/thirty_two_emerald_table"
+
+	["Banker Trade Settings"."Banker Level Four Trade One"]
+		# Banker 4 Trade Request 1 Table
+		banker_4_trade_request_1_table = "todecoins:trade_tables/currency/sixty_four_emerald_table"
+		# Banker 4 Trade Offer 1 Table
+		banker_4_trade_offer_1_table = "todecoins:trade_tables/currency/emerald_bank_note_value_currency"
+
+	["Banker Trade Settings"."Banker Level Four Trade Two"]
+		# Banker 4 Trade Request 2 Table
+		banker_4_trade_request_2_table = "todecoins:trade_tables/currency/emerald_bank_note_value_currency"
+		# Banker 4 Trade Offer 2 Table
+		banker_4_trade_offer_2_table = "todecoins:trade_tables/currency/sixty_four_emerald_table"
+
+	["Banker Trade Settings"."Banker Level Five Trade One"]
+		# Banker 5 Trade Request 1 Table
+		banker_5_trade_request_1_table = "todecoins:trade_tables/metals/single_emerald_value_metals"
+		# Banker 5 Trade Offer 1 Table
+		banker_5_trade_offer_1_table = "todecoins:trade_tables/currency/one_emerald_table"
+
+	["Banker Trade Settings"."Banker Level Five Trade Two"]
+		# Banker 5 Trade Request 2 Table
+		banker_5_trade_request_2_table = "todecoins:trade_tables/gems/single_emerald_value_gems"
+		# Banker 5 Trade Offer 2 Table
+		banker_5_trade_offer_2_table = "todecoins:trade_tables/currency/one_emerald_table"
+
+	["Banker Trade Settings"."Banker Level Five Trade Three"]
+		# Banker 5 Trade Request 3 Table
+		banker_5_trade_request_3_table = "todecoins:trade_tables/metals/emerald_bank_note_value_metals"
+		# Banker 5 Trade Offer 3 Table
+		banker_5_trade_offer_3_table = "todecoins:trade_tables/currency/emerald_bank_note_value_currency"
+
+	["Banker Trade Settings"."Banker Level Five Trade Four"]
+		# Banker 5 Trade Request 4 Table
+		banker_5_trade_request_4_table = "todecoins:trade_tables/gems/emerald_bank_note_value_gems"
+		# Banker 5 Trade Offer 4 Table
+		banker_5_trade_offer_4_table = "todecoins:trade_tables/currency/emerald_bank_note_value_currency"
+

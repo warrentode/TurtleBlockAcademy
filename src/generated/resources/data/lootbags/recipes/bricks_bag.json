@@ -1,9 +1,0 @@
-{
-  "type": "lootbags:loot",
-  "color": "white",
-  "name": "Bricks Kit Bag",
-  "output": {
-    "table": "dimdungeons:chests/kit_brick_set"
-  },
-  "rarity": "COMMON"
-}

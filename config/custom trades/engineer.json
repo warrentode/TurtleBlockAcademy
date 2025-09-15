@@ -1,0 +1,609 @@
+{
+  "profession": "morevillagers:engineer",
+  "removeOtherTrades": true,
+  "trades": [
+    {
+      "multiOffer": [
+        {
+          "itemKey": "minecraft:emerald",
+          "amount": 14,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "minecraft:emerald_block",
+          "amount": 2,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:pot_of_gold",
+          "amount": 9,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:nether_gold_coin",
+          "amount": 42,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:nether_gold_coin_bag",
+          "amount": 5,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:endonian_coin",
+          "amount": 14,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:endonian_coin_bag",
+          "amount": 2,
+          "priceModifier": 0
+        }
+      ],
+      "request": {
+        "itemKey": "minecraft:redstone_block",
+        "amount": 2
+      },
+      "tradeExp": 2,
+      "maxUses": 16,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 1,
+      "UTID": "morevillagers:engineer_emerald_for_redstone_block"
+    },
+    {
+      "offer": {
+        "itemKey": "minecraft:repeater",
+        "amount": 3
+      },
+      "multiRequest": [
+        {
+          "itemKey": "minecraft:emerald",
+          "amount": 3,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:copper_coin_bag",
+          "amount": 54,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:iron_coin_bag",
+          "amount": 24,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:gold_coin_bag",
+          "amount": 18,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:pot_of_gold",
+          "amount": 2,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:nether_gold_coin",
+          "amount": 9,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:nether_gold_coin_bag",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:endonian_coin",
+          "amount": 3,
+          "priceModifier": 0
+        }
+      ],
+      "tradeExp": 1,
+      "maxUses": 16,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 1,
+      "UTID": "morevillagers:engineer_repeater_for_emerald"
+    },
+    {
+      "multiOffer": [
+        {
+          "itemKey": "minecraft:emerald",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:copper_coin_bag",
+          "amount": 18,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:iron_coin_bag",
+          "amount": 8,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:gold_coin_bag",
+          "amount": 6,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:nether_gold_coin",
+          "amount": 3,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:endonian_coin",
+          "amount": 1,
+          "priceModifier": 0
+        }
+      ],
+      "request": {
+        "itemKey": "minecraft:redstone_torch",
+        "amount": 12
+      },
+      "tradeExp": 2,
+      "maxUses": 12,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 1,
+      "UTID": "morevillagers:engineer_emerald_for_redstone_torch"
+    },
+    {
+      "multiOffer": [
+        {
+          "itemKey": "sereneseasons:season_sensor",
+          "amount": 2
+        },
+        {
+          "itemKey": "supplementaries:sconce_lever",
+          "amount": 1
+        },
+        {
+          "itemKey": "supplementaries:clock_block",
+          "amount": 1
+        },
+        {
+          "itemKey": "supplementaries:hourglass",
+          "amount": 1
+        },
+        {
+          "itemKey": "supplementaries:redstone_illuminator",
+          "amount": 1
+        },
+        {
+          "itemKey": "supplementaries:turn_table",
+          "amount": 1
+        },
+        {
+          "itemKey": "supplementaries:speaker_block",
+          "amount": 1
+        },
+        {
+          "itemKey": "supplementaries:pulley_block",
+          "amount": 1
+        },
+        {
+          "itemKey": "supplementaries:bellows",
+          "amount": 1
+        },
+        {
+          "itemKey": "supplementaries:relayer",
+          "amount": 1
+        },
+        {
+          "itemKey": "supplementaries:wind_vane",
+          "amount": 1
+        },
+        {
+          "itemKey": "supplementaries:crystal_display",
+          "amount": 1
+        },
+        {
+          "itemKey": "supplementaries:crank",
+          "amount": 1
+        },
+        {
+          "itemKey": "supplementaries:spring_launcher",
+          "amount": 1
+        },
+        {
+          "itemKey": "supplementaries:cog_block",
+          "amount": 1
+        },
+        {
+          "itemKey": "minecraft:dropper",
+          "amount": 3
+        },
+        {
+          "itemKey": "minecraft:dispenser",
+          "amount": 1
+        }
+      ],
+      "multiRequest": [
+        {
+          "itemKey": "minecraft:emerald",
+          "amount": 32,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "minecraft:emerald_block",
+          "amount": 4,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:pot_of_gold",
+          "amount": 21,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:nether_gold_coin_bag",
+          "amount": 11,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:netherite_coin",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:emerald_quarter_bank_note",
+          "amount": 2,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:emerald_half_bank_note",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:endonian_coin",
+          "amount": 32,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:endonian_coin_bag",
+          "amount": 4,
+          "priceModifier": 0
+        }
+      ],
+      "tradeExp": 10,
+      "maxUses": 16,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 2,
+      "UTID": "morevillagers:engineer_multioffer_season_sensor_for_emerald"
+    },
+    {
+      "offer": {
+        "itemKey": "minecraft:redstone_lamp",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "multiRequest": [
+        {
+          "itemKey": "minecraft:emerald",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:copper_coin_bag",
+          "amount": 18,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:iron_coin_bag",
+          "amount": 8,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:gold_coin_bag",
+          "amount": 6,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:nether_gold_coin",
+          "amount": 3,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:endonian_coin",
+          "amount": 1,
+          "priceModifier": 0
+        }
+      ],
+      "tradeExp": 10,
+      "maxUses": 16,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 3,
+      "UTID": "morevillagers:engineer_redstone_lamp_for_emerald"
+    },
+    {
+      "offer": {
+        "itemKey": "minecraft:observer",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "multiRequest": [
+        {
+          "itemKey": "minecraft:emerald",
+          "amount": 4,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:iron_coin_bag",
+          "amount": 32,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:gold_coin_bag",
+          "amount": 24,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:pot_of_gold",
+          "amount": 3,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:nether_gold_coin",
+          "amount": 12,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:nether_gold_coin_bag",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:endonian_coin",
+          "amount": 4,
+          "priceModifier": 0
+        }
+      ],
+      "tradeExp": 10,
+      "maxUses": 16,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 3,
+      "UTID": "morevillagers:engineer_observer_for_emerald"
+    },
+    {
+      "offer": {
+        "itemKey": "minecraft:comparator",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "multiRequest": [
+        {
+          "itemKey": "minecraft:emerald",
+          "amount": 5,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:iron_coin_bag",
+          "amount": 40,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:gold_coin_bag",
+          "amount": 30,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:pot_of_gold",
+          "amount": 3,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:nether_gold_coin",
+          "amount": 15,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:nether_gold_coin_bag",
+          "amount": 2,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:endonian_coin",
+          "amount": 5,
+          "priceModifier": 0
+        }
+      ],
+      "tradeExp": 10,
+      "maxUses": 16,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 3,
+      "UTID": "morevillagers:engineer_comparator_for_emerald"
+    },
+    {
+      "offer": {
+        "itemKey": "minecraft:piston",
+        "amount": 1
+      },
+      "multiRequest": [
+        {
+          "itemKey": "minecraft:emerald",
+          "amount": 5,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:iron_coin_bag",
+          "amount": 40,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:gold_coin_bag",
+          "amount": 30,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:pot_of_gold",
+          "amount": 3,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:nether_gold_coin",
+          "amount": 15,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:nether_gold_coin_bag",
+          "amount": 2,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:endonian_coin",
+          "amount": 5,
+          "priceModifier": 0
+        }
+      ],
+      "tradeExp": 30,
+      "maxUses": 16,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 4,
+      "UTID": "morevillagers:engineer_piston_for_emerald"
+    },
+    {
+      "offer": {
+        "itemKey": "minecraft:sticky_piston",
+        "amount": 1
+      },
+      "multiRequest": [
+        {
+          "itemKey": "minecraft:emerald",
+          "amount": 6,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:iron_coin_bag",
+          "amount": 48,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:gold_coin_bag",
+          "amount": 36,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:pot_of_gold",
+          "amount": 4,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:nether_gold_coin",
+          "amount": 18,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:nether_gold_coin_bag",
+          "amount": 2,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:endonian_coin",
+          "amount": 6,
+          "priceModifier": 0
+        }
+      ],
+      "tradeExp": 30,
+      "maxUses": 16,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 4,
+      "UTID": "morevillagers:engineer_sticky_piston_for_emerald"
+    },
+    {
+      "offer": {
+        "itemKey": "minecraft:daylight_detector",
+        "amount": 2
+      },
+      "multiRequest": [
+        {
+          "itemKey": "minecraft:emerald",
+          "amount": 5,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:iron_coin_bag",
+          "amount": 40,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:gold_coin_bag",
+          "amount": 30,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:pot_of_gold",
+          "amount": 3,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:nether_gold_coin",
+          "amount": 15,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:nether_gold_coin_bag",
+          "amount": 2,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:endonian_coin",
+          "amount": 5,
+          "priceModifier": 0
+        }
+      ],
+      "tradeExp": 30,
+      "maxUses": 16,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 5,
+      "UTID": "morevillagers:engineer_daylight_detector_for_emerald"
+    },
+    {
+      "offer": {
+        "itemKey": "minecraft:hopper",
+        "amount": 1
+      },
+      "multiRequest": [
+        {
+          "itemKey": "minecraft:emerald",
+          "amount": 7,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:iron_coin_bag",
+          "amount": 56,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:gold_coin_bag",
+          "amount": 42,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:nether_gold_coin",
+          "amount": 21,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:endonian_coin",
+          "amount": 7,
+          "priceModifier": 0
+        }
+      ],
+      "tradeExp": 30,
+      "maxUses": 16,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 5,
+      "UTID": "morevillagers:engineer_hopper_for_emerald"
+    }
+  ]
+}

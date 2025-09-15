@@ -1,0 +1,72 @@
+
+["Oceanographer Trade Settings"]
+
+	["Oceanographer Trade Settings"."Oceanographer Level One Trade One"]
+		# Oceanographer 1 Trade Request 1 Table
+		oceanographer_1_trade_request_1_table = "todecoins:trade_tables/currency/emerald_quarter_bank_note_value_currency"
+		# Oceanographer 1 Trade Offer 1 Table
+		oceanographer_1_trade_offer_1_table = "todecoins:trade_tables/gems/prismarine_shard_table"
+
+	["Oceanographer Trade Settings"."Oceanographer Level One Trade Two"]
+		# Oceanographer 1 Trade Request 2 Table
+		oceanographer_1_trade_request_2_table = "todecoins:trade_tables/currency/one_lucky_coin_table"
+		# Oceanographer 1 Trade Offer 2 Table
+		oceanographer_1_trade_offer_2_table = "todecoins:trade_tables/blocks/sea_lantern_table"
+
+	["Oceanographer Trade Settings"."Oceanographer Level Two Trade One"]
+		# Oceanographer 2 Trade Request 1 Table
+		oceanographer_2_trade_request_1_table = "todecoins:trade_tables/currency/emerald_bank_note_value_currency"
+		# Oceanographer 2 Trade Offer 1 Table
+		oceanographer_2_trade_offer_1_table = "todecoins:trade_tables/blocks/ocean_blocks_table"
+
+	["Oceanographer Trade Settings"."Oceanographer Level Two Trade Two"]
+		# Oceanographer 2 Trade Request 2 Table
+		oceanographer_2_trade_request_2_table = "todecoins:trade_tables/currency/three_emerald_value_currency"
+		# Oceanographer 2 Trade Offer 2 Table
+		oceanographer_2_trade_offer_2_table = "todecoins:trade_tables/blocks/coral_block_tag_table"
+		oceanographer_2_trade_offer_2_count = 1
+
+	["Oceanographer Trade Settings"."Oceanographer Level Three Trade One"]
+		# Rare Trade
+		# Oceanographer 3 Trade Request 1 Table
+		oceanographer_3_trade_request_1_table = "todecoins:trade_tables/currency/fourteen_emerald_value_currency"
+		# Oceanographer 3 Trade Secondary Request 1 Table
+		oceanographer_3_trade_secondary_request_1_table = "todecoins:trade_tables/tools/compass_table"
+		# Oceanographer 3 Trade Request 1 Structure Tag
+		oceanographer_3_trade_secondary_request_1_structure_tag = "turtleblockacademy:worldgen/structure/ocean_poi"
+		# Oceanographer 3 Trade Request 1 Map Name
+		oceanographer_3_trade_secondary_request_1_map_name = "Ocean Explorer Map"
+		# Oceanographer 3 Trade Request 1 Map Marker
+		oceanographer_3_trade_secondary_request_1_map_marker = "MONUMENT"
+
+	["Oceanographer Trade Settings"."Oceanographer Level Three Trade Two"]
+		# Oceanographer 3 Trade Request 2 Table
+		oceanographer_3_trade_request_2_table = "todecoins:trade_tables/currency/five_emerald_value_currency"
+		# Oceanographer 3 Trade Offer 2 Table
+		oceanographer_3_trade_offer_2_table = "todecoins:trade_tables/misc/seashell_table"
+
+	["Oceanographer Trade Settings"."Oceanographer Level Four Trade One"]
+		# Oceanographer 4 Trade Request 1 Table
+		oceanographer_4_trade_request_1_table = "todecoins:trade_tables/currency/eight_emerald_value_currency"
+		# Oceanographer 4 Trade Offer 1 Table
+		oceanographer_4_trade_offer_1_table = "todecoins:trade_tables/misc/heart_of_the_sea_table"
+
+	["Oceanographer Trade Settings"."Oceanographer Level Four Trade Two"]
+		# Oceanographer 4 Trade Request 2 Table
+		oceanographer_4_trade_request_2_table = "todecoins:trade_tables/currency/emerald_quarter_half_note_value_currency"
+		# Oceanographer 4 Trade Offer 2 Table
+		oceanographer_4_trade_offer_2_table = "todecoins:trade_tables/weapons/trident"
+
+	["Oceanographer Trade Settings"."Oceanographer Level Five Trade One"]
+		# Rare Trade
+		# Oceanographer 5 Trade Request 1 Table
+		oceanographer_5_trade_request_1_table = "todecoins:trade_tables/currency/one_lucky_coin_table"
+		# Oceanographer 5 Trade Offer 1 Table
+		oceanographer_5_trade_offer_1_table = "todecoins:trade_tables/weapons/trident"
+
+	["Oceanographer Trade Settings"."Oceanographer Level Five Trade Two"]
+		# Oceanographer 5 Trade Request 2 Table
+		oceanographer_5_trade_request_2_table = "todecoins:trade_tables/currency/emerald_bank_note_value_currency"
+		# Oceanographer 5 Trade Offer 2 Table
+		oceanographer_5_trade_offer_2_table = "todecoins:trade_tables/blocks/ocean_blocks_table"
+

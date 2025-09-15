@@ -1,0 +1,77 @@
+
+["Leatherworker Trade Settings"]
+
+	["Leatherworker Trade Settings"."Leatherworker Level One Trade One"]
+		# Leatherworker 1 Trade Request 1 Table
+		leatherworker_1_trade_request_1_table = "todecoins:trade_tables/textiles/tagged_leather_table"
+		leatherworker_1_trade_request_1_count = 6
+		# Leatherworker 1 Trade Offer 1 Table
+		leatherworker_1_trade_offer_1_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+
+	["Leatherworker Trade Settings"."Leatherworker Level One Trade Two"]
+		# Leatherworker 1 Trade Request 2 Table
+		leatherworker_1_trade_request_2_table = "todecoins:trade_tables/currency/five_emerald_value_currency"
+		# Leatherworker 1 Trade Offer 2 Table
+		leatherworker_1_trade_offer_2_table = "todecoins:trade_tables/armor/leggings/leather_tier_leggings"
+
+	["Leatherworker Trade Settings"."Leatherworker Level One Trade Three"]
+		# Leatherworker 1 Trade Request 3 Table
+		leatherworker_1_trade_request_3_table = "todecoins:trade_tables/currency/seven_emerald_value_currency"
+		# Leatherworker 1 Trade Offer 3 Table
+		leatherworker_1_trade_offer_3_table = "todecoins:trade_tables/armor/chestplate/leather_tier_chestplates"
+
+	["Leatherworker Trade Settings"."Leatherworker Level Two Trade One"]
+		# Leatherworker 2 Trade Request 1 Table
+		leatherworker_2_trade_request_1_table = "todecoins:trade_tables/misc/flint_buy_table"
+		# Leatherworker 2 Trade Offer 1 Table
+		leatherworker_2_trade_offer_1_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+
+	["Leatherworker Trade Settings"."Leatherworker Level Two Trade Two"]
+		# Leatherworker 2 Trade Request 2 Table
+		leatherworker_2_trade_request_2_table = "todecoins:trade_tables/currency/three_emerald_value_currency"
+		# Leatherworker 2 Trade Offer 2 Table
+		leatherworker_2_trade_offer_2_table = "todecoins:trade_tables/armor/helmets/leather_tier_helmets"
+
+	["Leatherworker Trade Settings"."Leatherworker Level Two Trade Three"]
+		# Leatherworker 2 Trade Request 3 Table
+		leatherworker_2_trade_request_3_table = "todecoins:trade_tables/currency/four_emerald_value_currency"
+		# Leatherworker 2 Trade Offer 3 Table
+		leatherworker_2_trade_offer_3_table = "todecoins:trade_tables/armor/boots/leather_tier_boots"
+
+	["Leatherworker Trade Settings"."Leatherworker Level Three Trade One"]
+		# Leatherworker 3 Trade Request 1 Table
+		leatherworker_3_trade_request_1_table = "todecoins:trade_tables/textiles/tagged_leather_table"
+		leatherworker_3_trade_request_1_count = 6
+		# Leatherworker 3 Trade Offer 1 Table
+		leatherworker_3_trade_offer_1_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+
+	["Leatherworker Trade Settings"."Leatherworker Level Three Trade Two"]
+		# Leatherworker 3 Trade Request 2 Table
+		leatherworker_3_trade_request_2_table = "todecoins:trade_tables/currency/seven_emerald_value_currency"
+		# Leatherworker 3 Trade Offer 2 Table
+		leatherworker_3_trade_offer_2_table = "todecoins:trade_tables/armor/chestplate/leather_tier_chestplates"
+
+	["Leatherworker Trade Settings"."Leatherworker Level Four Trade One"]
+		# Leatherworker 4 Trade Request 1 Table
+		leatherworker_4_trade_request_1_table = "todecoins:trade_tables/mob_parts/scute_table"
+		# Leatherworker 4 Trade Offer 1 Table
+		leatherworker_4_trade_offer_1_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+
+	["Leatherworker Trade Settings"."Leatherworker Level Four Trade Two"]
+		# Leatherworker 4 Trade Request 2 Table
+		leatherworker_4_trade_request_2_table = "todecoins:trade_tables/currency/six_emerald_value_currency"
+		# Leatherworker 4 Trade Offer 2 Table
+		leatherworker_4_trade_offer_2_table = "todecoins:trade_tables/horse_gear/leather_tier_horse_armor"
+
+	["Leatherworker Trade Settings"."Leatherworker Level Five Trade One"]
+		# Leatherworker 5 Trade Request 1 Table
+		leatherworker_5_trade_request_1_table = "todecoins:trade_tables/currency/six_emerald_value_currency"
+		# Leatherworker 5 Trade Offer 1 Table
+		leatherworker_5_trade_offer_1_table = "todecoins:trade_tables/horse_gear/saddle_table"
+
+	["Leatherworker Trade Settings"."Leatherworker Level Five Trade Two"]
+		# Leatherworker 5 Trade Request 2 Table
+		leatherworker_5_trade_request_2_table = "todecoins:trade_tables/currency/five_emerald_value_currency"
+		# Leatherworker 5 Trade Offer 2 Table
+		leatherworker_5_trade_offer_2_table = "todecoins:trade_tables/armor/helmets/leather_tier_helmets"
+

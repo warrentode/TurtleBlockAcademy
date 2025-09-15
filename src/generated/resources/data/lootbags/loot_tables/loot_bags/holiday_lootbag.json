@@ -1,0 +1,75 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "conditions": [
+            {
+              "condition": "turtleblockacademy:seasonal_condition",
+              "season": "BIRTHDAY"
+            }
+          ],
+          "name": "lootbags:loot_bags/birthday_lootbag"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "conditions": [
+            {
+              "condition": "turtleblockacademy:seasonal_condition",
+              "season": "HALLOWEEN"
+            }
+          ],
+          "name": "lootbags:loot_bags/trick_or_treat_lootbag"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "conditions": [
+            {
+              "condition": "turtleblockacademy:seasonal_condition",
+              "season": "CHRISTMAS"
+            }
+          ],
+          "name": "lootbags:loot_bags/christmas_lootbag"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "conditions": [
+            {
+              "condition": "turtleblockacademy:seasonal_condition",
+              "season": "ANNIVERSARY"
+            }
+          ],
+          "name": "lootbags:loot_bags/anniversary_lootbag"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "conditions": [
+            {
+              "condition": "turtleblockacademy:seasonal_condition",
+              "season": "EASTER"
+            }
+          ],
+          "name": "lootbags:loot_bags/easter_lootbag"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "conditions": [
+            {
+              "condition": "turtleblockacademy:seasonal_condition",
+              "season": "NEW_YEAR"
+            }
+          ],
+          "name": "lootbags:loot_bags/new_year_lootbag"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "wares:agreement/seasonal_shopper"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ]
+}

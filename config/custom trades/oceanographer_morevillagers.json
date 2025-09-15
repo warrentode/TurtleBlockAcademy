@@ -1,0 +1,594 @@
+{
+  "profession": "morevillagers:oceanographer",
+  "removeOtherTrades": true,
+  "trades": [
+    {
+      "multiOffer": [
+        {
+          "itemKey": "ecologics:seashell",
+          "amount": 2
+        },
+        {
+          "itemKey": "minecraft:kelp",
+          "amount": 1
+        }
+      ],
+      "multiRequest": [
+        {
+          "itemKey": "minecraft:emerald",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:copper_coin_bag",
+          "amount": 18,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:iron_coin_bag",
+          "amount": 8,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:gold_coin_bag",
+          "amount": 6,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:nether_gold_coin",
+          "amount": 3,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:endonian_coin",
+          "amount": 1,
+          "priceModifier": 0
+        }
+      ],
+      "tradeExp": 1,
+      "maxUses": 16,
+      "priceMultiplier": 0.2,
+      "demand": 0,
+      "tradeLevel": 1,
+      "UTID": "morevillagers:oceanographer_multioffer_seashell_for_emerald"
+    },
+    {
+      "multiOffer": [
+        {
+          "itemKey": "minecraft:tube_coral_block",
+          "amount": 1
+        },
+        {
+          "itemKey": "minecraft:brain_coral_block",
+          "amount": 1
+        },
+        {
+          "itemKey": "minecraft:bubble_coral_block",
+          "amount": 1
+        },
+        {
+          "itemKey": "minecraft:fire_coral_block",
+          "amount": 1
+        },
+        {
+          "itemKey": "minecraft:horn_coral_block",
+          "amount": 1
+        }
+      ],
+      "multiRequest": [
+        {
+          "itemKey": "minecraft:emerald",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:copper_coin_bag",
+          "amount": 18,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:iron_coin_bag",
+          "amount": 8,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:gold_coin_bag",
+          "amount": 6,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:nether_gold_coin",
+          "amount": 3,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:endonian_coin",
+          "amount": 1,
+          "priceModifier": 0
+        }
+      ],
+      "tradeExp": 1,
+      "maxUses": 16,
+      "priceMultiplier": 0.2,
+      "demand": 0,
+      "tradeLevel": 1,
+      "UTID": "morevillagers:oceanographer_multioffer_tube_coral_block_for_emerald"
+    },
+    {
+      "offer": {
+        "itemKey": "minecraft:sea_pickle",
+        "amount": 1
+      },
+      "multiRequest": [
+        {
+          "itemKey": "minecraft:emerald",
+          "amount": 2,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:copper_coin_bag",
+          "amount": 36,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:iron_coin_bag",
+          "amount": 16,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:gold_coin_bag",
+          "amount": 12,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:pot_of_gold",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:nether_gold_coin",
+          "amount": 6,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:endonian_coin",
+          "amount": 2,
+          "priceModifier": 0
+        }
+      ],
+      "tradeExp": 5,
+      "maxUses": 3,
+      "priceMultiplier": 0.2,
+      "demand": 0,
+      "tradeLevel": 2,
+      "UTID": "morevillagers:oceanographer_sea_pickle_for_emerald"
+    },
+    {
+      "offer": {
+        "itemKey": "minecraft:sponge",
+        "amount": 1
+      },
+      "multiRequest": [
+        {
+          "itemKey": "minecraft:emerald",
+          "amount": 16,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:endonian_coin",
+          "amount": 16,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:nether_gold_coin",
+          "amount": 48,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:emerald_quarter_bank_note",
+          "amount": 1,
+          "priceModifier": 0
+        }
+      ],
+      "tradeExp": 5,
+      "maxUses": 3,
+      "priceMultiplier": 0.2,
+      "demand": 0,
+      "tradeLevel": 2,
+      "UTID": "morevillagers:oceanographer_sponge_for_emerald"
+    },
+    {
+      "offer": {
+        "itemKey": "minecraft:prismarine_bricks",
+        "amount": 1
+      },
+      "multiRequest": [
+        {
+          "itemKey": "minecraft:emerald_block",
+          "amount": 16,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:nether_gold_coin_bag",
+          "amount": 48,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:netherite_coin",
+          "amount": 5,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:emerald_quarter_bank_note",
+          "amount": 9,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:emerald_half_bank_note",
+          "amount": 5,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:emerald_bank_note",
+          "amount": 2,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:endonian_coin_bag",
+          "amount": 16,
+          "priceModifier": 0
+        }
+      ],
+      "tradeExp": 10,
+      "maxUses": 3,
+      "priceMultiplier": 0.2,
+      "demand": 0,
+      "tradeLevel": 3,
+      "UTID": "morevillagers:oceanographer_prismarine_bricks_for_emerald_block"
+    },
+    {
+      "offer": {
+        "itemKey": "minecraft:chest",
+        "amount": 1,
+        "priceModifier": 0,
+        "advancedNBTData": "{BlockEntityTag:{LootTable:\"lootbags:loot_bags/nether_map_sale\"},display:{Lore:[\u0027\"Ocean Map Box\"\u0027]}}"
+      },
+      "multiRequest": [
+        {
+          "itemKey": "minecraft:emerald",
+          "amount": 14,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "minecraft:emerald_block",
+          "amount": 2,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:pot_of_gold",
+          "amount": 9,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:nether_gold_coin",
+          "amount": 42,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:nether_gold_coin_bag",
+          "amount": 5,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:endonian_coin",
+          "amount": 14,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:endonian_coin_bag",
+          "amount": 2,
+          "priceModifier": 0
+        }
+      ],
+      "additionalRequest": {
+        "itemKey": "minecraft:compass",
+        "amount": 1
+      },
+      "tradeExp": 10,
+      "maxUses": 12,
+      "priceMultiplier": 0.2,
+      "demand": 0,
+      "tradeLevel": 3,
+      "UTID": "morevillagers:oceanographer_chest_for_emerald_and_compass"
+    },
+    {
+      "offer": {
+        "itemKey": "minecraft:nautilus_shell",
+        "amount": 1
+      },
+      "multiRequest": [
+        {
+          "itemKey": "minecraft:emerald",
+          "amount": 5,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:iron_coin_bag",
+          "amount": 40,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:gold_coin_bag",
+          "amount": 30,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:pot_of_gold",
+          "amount": 3,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:nether_gold_coin",
+          "amount": 15,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:nether_gold_coin_bag",
+          "amount": 2,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:endonian_coin",
+          "amount": 5,
+          "priceModifier": 0
+        }
+      ],
+      "tradeExp": 15,
+      "maxUses": 12,
+      "priceMultiplier": 0.2,
+      "demand": 0,
+      "tradeLevel": 4,
+      "UTID": "morevillagers:oceanographer_nautilus_shell_for_emerald"
+    },
+    {
+      "offer": {
+        "itemKey": "minecraft:heart_of_the_sea",
+        "amount": 1
+      },
+      "multiRequest": [
+        {
+          "itemKey": "minecraft:emerald",
+          "amount": 8,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:iron_coin_bag",
+          "amount": 64,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:gold_coin_bag",
+          "amount": 48,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:pot_of_gold",
+          "amount": 5,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:nether_gold_coin",
+          "amount": 24,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:nether_gold_coin_bag",
+          "amount": 3,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:endonian_coin",
+          "amount": 8,
+          "priceModifier": 0
+        }
+      ],
+      "tradeExp": 15,
+      "maxUses": 12,
+      "priceMultiplier": 0.2,
+      "demand": 0,
+      "tradeLevel": 4,
+      "UTID": "morevillagers:oceanographer_heart_of_the_sea_for_emerald"
+    },
+    {
+      "offer": {
+        "itemKey": "minecraft:trident",
+        "amount": 1,
+        "priceModifier": 0,
+        "enchantments": [
+          {
+            "enchantmentKey": "random",
+            "enchantmentLevel": -1,
+            "maxEnchantmentLevel": 10
+          }
+        ],
+        "blacklistedEnchantments": [
+          "minecraft:vanishing_curse",
+          "minecraft:binding_curse"
+        ]
+      },
+      "multiRequest": [
+        {
+          "itemKey": "minecraft:emerald",
+          "amount": 18,
+          "range": 14,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "minecraft:emerald_block",
+          "amount": 2,
+          "range": 2,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:pot_of_gold",
+          "amount": 12,
+          "range": 9,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:nether_gold_coin_bag",
+          "amount": 6,
+          "range": 5,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:netherite_coin",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:emerald_half_bank_note",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:emerald_quarter_bank_note",
+          "amount": 1,
+          "range": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:endonian_coin",
+          "amount": 18,
+          "range": 14,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:endonian_coin_bag",
+          "amount": 2,
+          "range": 2,
+          "priceModifier": 0
+        }
+      ],
+      "tradeExp": 30,
+      "maxUses": 3,
+      "priceMultiplier": 0.2,
+      "demand": 0,
+      "tradeLevel": 5,
+      "UTID": "morevillagers:oceanographer_trident_for_emerald"
+    },
+    {
+      "offer": {
+        "itemKey": "minecraft:prismarine",
+        "amount": 1
+      },
+      "multiRequest": [
+        {
+          "itemKey": "minecraft:emerald",
+          "amount": 64,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "minecraft:emerald_block",
+          "amount": 7,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:pot_of_gold",
+          "amount": 43,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:nether_gold_coin_bag",
+          "amount": 21,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:netherite_coin",
+          "amount": 2,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:emerald_half_bank_note",
+          "amount": 2,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:emerald_quarter_bank_note",
+          "amount": 4,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:emerald_bank_note",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:endonian_coin",
+          "amount": 64,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:endonian_coin_bag",
+          "amount": 7,
+          "priceModifier": 0
+        }
+      ],
+      "tradeExp": 30,
+      "maxUses": 3,
+      "priceMultiplier": 0.2,
+      "demand": 0,
+      "tradeLevel": 5,
+      "UTID": "morevillagers:oceanographer_prismarine_for_emerald"
+    },
+    {
+      "offer": {
+        "itemKey": "minecraft:sea_lantern",
+        "amount": 1
+      },
+      "multiRequest": [
+        {
+          "itemKey": "minecraft:emerald_block",
+          "amount": 22,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:netherite_coin",
+          "amount": 6,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:emerald_half_bank_note",
+          "amount": 6,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:emerald_quarter_bank_note",
+          "amount": 12,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:emerald_bank_note",
+          "amount": 3,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:lucky_coin",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:endonian_coin_bag",
+          "amount": 22,
+          "priceModifier": 0
+        }
+      ],
+      "tradeExp": 30,
+      "maxUses": 3,
+      "priceMultiplier": 0.2,
+      "demand": 0,
+      "tradeLevel": 5,
+      "UTID": "morevillagers:oceanographer_sea_lantern_for_emerald_block"
+    }
+  ]
+}

@@ -3,7 +3,7 @@
   "color": "limegreen",
   "name": "Artifacts Kit Bag",
   "output": {
-    "table": "lootbags:loot_bags/artifacts_gifts"
+    "table": "lootbags:loot_bags/artifacts_lootbag"
   },
   "rarity": "LEGENDARY"
 }

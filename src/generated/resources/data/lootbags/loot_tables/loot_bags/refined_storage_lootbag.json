@@ -1,0 +1,166 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "add": false,
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 9.0,
+                "min": 5.0
+              },
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "minecraft:slime_ball",
+          "weight": 15
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "add": false,
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 9.0,
+                "min": 5.0
+              },
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "refinedstorage:silicon",
+          "weight": 15
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "add": false,
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 9.0,
+                "min": 5.0
+              },
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "refinedstorage:processor_binding",
+          "weight": 15
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "add": false,
+              "count": {
+                "type": "minecraft:uniform",
+                "max": 9.0,
+                "min": 5.0
+              },
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "refinedstorage:quartz_enriched_iron",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "refinedstorage:filter",
+          "weight": 5
+        },
+        {
+          "type": "minecraft:item",
+          "name": "refinedstorage:pattern",
+          "weight": 5
+        },
+        {
+          "type": "minecraft:item",
+          "name": "refinedstorage:1k_storage_disk",
+          "weight": 15
+        },
+        {
+          "type": "minecraft:item",
+          "name": "refinedstorage:4k_storage_disk",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "refinedstorage:16k_storage_disk",
+          "weight": 5
+        },
+        {
+          "type": "minecraft:item",
+          "name": "refinedstorage:64k_storage_disk"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "refinedstorage:64k_fluid_storage_disk",
+          "weight": 15
+        },
+        {
+          "type": "minecraft:item",
+          "name": "refinedstorage:256k_fluid_storage_disk",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "refinedstorage:1024k_fluid_storage_disk",
+          "weight": 5
+        },
+        {
+          "type": "minecraft:item",
+          "name": "refinedstorage:4096k_fluid_storage_disk"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "refinedstorage:speed_upgrade",
+          "weight": 5
+        },
+        {
+          "type": "minecraft:item",
+          "name": "refinedstorage:range_upgrade",
+          "weight": 5
+        },
+        {
+          "type": "minecraft:item",
+          "name": "refinedstorage:crafting_upgrade",
+          "weight": 5
+        },
+        {
+          "type": "minecraft:item",
+          "name": "refinedstorage:stack_upgrade",
+          "weight": 5
+        },
+        {
+          "type": "minecraft:item",
+          "name": "refinedstorage:silk_touch_upgrade",
+          "weight": 5
+        },
+        {
+          "type": "minecraft:item",
+          "name": "refinedstorage:fortune_1_upgrade",
+          "weight": 5
+        },
+        {
+          "type": "minecraft:item",
+          "name": "refinedstorage:fortune_2_upgrade"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "refinedstorage:fortune_3_upgrade"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "refinedstorage:regulator_upgrade",
+          "weight": 5
+        }
+      ],
+      "rolls": 1.0
+    }
+  ]
+}

@@ -1,0 +1,676 @@
+{
+  "profession": "domesticationinnovation:animal_tamer",
+  "removeOtherTrades": true,
+  "trades": [
+    {
+      "multiOffer": [
+        {
+          "itemKey": "domesticationinnovation:deed_of_ownership",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "domesticationinnovation:collar_tag",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "domesticationinnovation:feather_on_a_stick",
+          "amount": 1,
+          "priceModifier": 0
+        }
+      ],
+      "multiRequest": [
+		{
+			"itemKey": "minecraft:emerald",
+			"amount": 1,
+			"priceModifier": 0
+		},
+        {
+          "itemKey": "todecoins:copper_coin_bag",
+          "amount": 18,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:iron_coin_bag",
+          "amount": 8,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:gold_coin_bag",
+          "amount": 6,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:nether_gold_coin",
+          "amount": 3,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:endonian_coin",
+          "amount": 1,
+          "priceModifier": 0
+        }
+      ],
+      "tradeExp": 1,
+      "maxUses": 6,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 1,
+      "UTID": "domesticationinnovation:animal_tamer_multioffer_deed_of_ownership_for_emerald"
+    },
+    {
+      "multiOffer": [
+		{
+			"itemKey": "minecraft:emerald",
+			"amount": 1,
+			"priceModifier": 0
+		},
+        {
+          "itemKey": "todecoins:copper_coin_bag",
+          "amount": 18,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:iron_coin_bag",
+          "amount": 8,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:gold_coin_bag",
+          "amount": 6,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:nether_gold_coin",
+          "amount": 3,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:endonian_coin",
+          "amount": 1,
+          "priceModifier": 0
+        }
+      ],
+      "multiRequest": [
+        {
+          "itemKey": "minecraft:tropical_fish",
+          "amount": 2,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "minecraft:bone",
+          "amount": 20,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "minecraft:cod",
+          "amount": 15,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "minecraft:apple",
+          "amount": 12,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "minecraft:carrot",
+          "amount": 22,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "minecraft:feather",
+          "amount": 24,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "minecraft:string",
+          "amount": 14,
+          "priceModifier": 0
+        }
+      ],
+      "tradeExp": 2,
+      "maxUses": 16,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 1,
+      "UTID": "domesticationinnovation:animal_tamer_emerald_for_multirequest_tropical_fish"
+    },
+    {
+      "multiOffer": [
+        {
+          "itemKey": "domesticationinnovation:pet_bed_black",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "domesticationinnovation:pet_bed_blue",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "domesticationinnovation:pet_bed_brown",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "domesticationinnovation:pet_bed_cyan",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "domesticationinnovation:pet_bed_gray",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "domesticationinnovation:pet_bed_green",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "domesticationinnovation:pet_bed_light_blue",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "domesticationinnovation:pet_bed_light_gray",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "domesticationinnovation:pet_bed_lime",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "domesticationinnovation:pet_bed_magenta",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "domesticationinnovation:pet_bed_orange",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "domesticationinnovation:pet_bed_pink",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "domesticationinnovation:pet_bed_purple",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "domesticationinnovation:pet_bed_red",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "domesticationinnovation:pet_bed_white",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "domesticationinnovation:pet_bed_yellow",
+          "amount": 1,
+          "priceModifier": 0
+        }
+      ],
+      "multiRequest": [
+		{
+			"itemKey": "minecraft:emerald",
+			"amount": 1,
+			"priceModifier": 0
+		},
+        {
+          "itemKey": "todecoins:copper_coin_bag",
+          "amount": 18,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:iron_coin_bag",
+          "amount": 8,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:gold_coin_bag",
+          "amount": 6,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:nether_gold_coin",
+          "amount": 3,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:endonian_coin",
+          "amount": 1,
+          "priceModifier": 0
+        }
+      ],
+      "tradeExp": 5,
+      "maxUses": 6,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 2,
+      "UTID": "domesticationinnovation:animal_tamer_multioffer_pet_bed_black_for_emerald"
+    },
+    {
+      "multiOffer": [
+        {
+          "itemKey": "supplementaries:flute",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "domesticationinnovation:wayward_lantern",
+          "amount": 1,
+          "priceModifier": 0
+        }
+      ],
+      "multiRequest": [
+		{
+			"itemKey": "minecraft:emerald",
+			"amount": 1,
+			"priceModifier": 0
+		},
+        {
+          "itemKey": "todecoins:copper_coin_bag",
+          "amount": 18,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:iron_coin_bag",
+          "amount": 8,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:gold_coin_bag",
+          "amount": 6,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:nether_gold_coin",
+          "amount": 3,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:endonian_coin",
+          "amount": 1,
+          "priceModifier": 0
+        }
+      ],
+      "tradeExp": 5,
+      "maxUses": 16,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 2,
+      "UTID": "domesticationinnovation:animal_tamer_multioffer_flute_for_emerald"
+    },
+    {
+      "offer": {
+        "itemKey": "domesticationinnovation:collar_tag",
+        "amount": 1,
+        "priceModifier": 0,
+        "enchantments": [
+          {
+            "enchantmentKey": "random",
+            "enchantmentLevel": -1,
+            "maxEnchantmentLevel": 10
+          }
+        ],
+        "blacklistedEnchantments": [
+          "minecraft:vanishing_curse",
+          "minecraft:binding_curse",
+          "domesticationinnovation:blight_curse",
+          "domesticationinnovation:immaturity_curse",
+          "domesticationinnovation:infamy_curse",
+          "domesticationinnovation:undead_curse"
+        ]
+      },
+      "multiRequest": [
+		{
+			"itemKey": "minecraft:emerald",
+			"amount": 1,
+			"priceModifier": 0
+		},
+        {
+          "itemKey": "todecoins:copper_coin_bag",
+          "amount": 18,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:iron_coin_bag",
+          "amount": 8,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:gold_coin_bag",
+          "amount": 6,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:nether_gold_coin",
+          "amount": 3,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:endonian_coin",
+          "amount": 1,
+          "priceModifier": 0
+        }
+      ],
+      "tradeExp": 10,
+      "maxUses": 3,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 3,
+      "UTID": "domesticationinnovation:animal_tamer_collar_tag_for_emerald"
+    },
+    {
+      "multiOffer": [
+        {
+          "itemKey": "domesticationinnovation:rotten_apple",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "minecraft:carrot_on_a_stick",
+          "amount": 1,
+          "priceModifier": 0,
+          "advancedNBTData": "{Damage:0}"
+        },
+        {
+          "itemKey": "domesticationinnovation:feather_on_a_stick",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "minecraft:lead",
+          "amount": 2,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "minecraft:leather_horse_armor",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "domesticationinnovation:drum",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "minecraft:tropical_fish",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "minecraft:bone",
+          "amount": 10,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "minecraft:cod",
+          "amount": 7,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "minecraft:golden_carrot",
+          "amount": 1,
+          "priceModifier": 0
+        }
+      ],
+      "multiRequest": [
+		{
+			"itemKey": "minecraft:emerald",
+			"amount": 1,
+			"priceModifier": 0
+		},
+        {
+          "itemKey": "todecoins:copper_coin_bag",
+          "amount": 18,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:iron_coin_bag",
+          "amount": 8,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:gold_coin_bag",
+          "amount": 6,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:nether_gold_coin",
+          "amount": 3,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:endonian_coin",
+          "amount": 1,
+          "priceModifier": 0
+        }
+      ],
+      "tradeExp": 10,
+      "maxUses": 3,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 3,
+      "UTID": "domesticationinnovation:animal_tamer_multioffer_rotten_apple_for_emerald"
+    },
+    {
+      "multiOffer": [
+        {
+          "itemKey": "farmingforblockheads:chicken_nest",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "supplementaries:sugar_cube",
+          "amount": 6,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "supplementaries:fodder",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "farmersdelight:dog_food",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "farmersdelight:horse_feed",
+          "amount": 1,
+          "priceModifier": 0
+        }
+      ],
+      "multiRequest": [
+		{
+			"itemKey": "minecraft:emerald",
+			"amount": 1,
+			"priceModifier": 0
+		},
+        {
+          "itemKey": "todecoins:copper_coin_bag",
+          "amount": 18,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:iron_coin_bag",
+          "amount": 8,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:gold_coin_bag",
+          "amount": 6,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:nether_gold_coin",
+          "amount": 3,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:endonian_coin",
+          "amount": 1,
+          "priceModifier": 0
+        }
+      ],
+      "tradeExp": 15,
+      "maxUses": 16,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 4,
+      "UTID": "domesticationinnovation:animal_tamer_multioffer_chicken_nest_for_emerald"
+    },
+    {
+      "offer": {
+        "itemKey": "minecraft:iron_horse_armor",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "multiRequest": [
+		{
+			"itemKey": "minecraft:emerald",
+			"amount": 2,
+			"priceModifier": 0
+		},
+        {
+          "itemKey": "todecoins:copper_coin_bag",
+          "amount": 36,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:iron_coin_bag",
+          "amount": 16,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:gold_coin_bag",
+          "amount": 12,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:nether_gold_coin",
+          "amount": 6,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:endonian_coin",
+          "amount": 2,
+          "priceModifier": 0
+        }
+      ],
+      "tradeExp": 15,
+      "maxUses": 16,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 4,
+      "UTID": "domesticationinnovation:animal_tamer_iron_horse_armor_for_emerald"
+    },
+    {
+      "multiOffer": [
+        {
+          "itemKey": "leashed:diamond_lead",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "minecraft:scute",
+          "amount": 1,
+          "priceModifier": 0
+        }
+      ],
+      "multiRequest": [
+		{
+			"itemKey": "minecraft:emerald",
+			"amount": 1,
+			"priceModifier": 0
+		},
+        {
+          "itemKey": "todecoins:copper_coin_bag",
+          "amount": 18,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:iron_coin_bag",
+          "amount": 8,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:gold_coin_bag",
+          "amount": 6,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:nether_gold_coin",
+          "amount": 3,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:endonian_coin",
+          "amount": 1,
+          "priceModifier": 0
+        }
+      ],
+      "tradeExp": 30,
+      "maxUses": 16,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 5,
+      "UTID": "domesticationinnovation:animal_tamer_multioffer_diamond_lead_for_emerald"
+    },
+    {
+      "offer": {
+        "itemKey": "minecraft:golden_horse_armor",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "multiRequest": [
+		{
+			"itemKey": "minecraft:emerald",
+			"amount": 3,
+			"priceModifier": 0
+		},
+        {
+          "itemKey": "todecoins:copper_coin_bag",
+          "amount": 54,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:iron_coin_bag",
+          "amount": 24,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:gold_coin_bag",
+          "amount": 18,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:nether_gold_coin",
+          "amount": 9,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:endonian_coin",
+          "amount": 3,
+          "priceModifier": 0
+        }
+      ],
+      "tradeExp": 30,
+      "maxUses": 3,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 5,
+      "UTID": "domesticationinnovation:animal_tamer_golden_horse_armor_for_emerald"
+    }
+  ]
+}

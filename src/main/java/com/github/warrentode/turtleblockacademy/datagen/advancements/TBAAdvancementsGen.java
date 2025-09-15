@@ -5,9 +5,9 @@ import com.aetherteam.aether.data.resources.registries.AetherBiomes;
 import com.aetherteam.aether.data.resources.registries.AetherDimensions;
 import com.aetherteam.aether.item.AetherItems;
 import com.catastrophe573.dimdungeons.DimDungeons;
-import com.github.warrentode.turtleblockacademy.TurtleBlockAcademy;
 import com.github.warrentode.turtleblockacademy.blocks.TBABlocks;
 import com.github.warrentode.turtleblockacademy.loot.tables.PackBuiltInLootTables;
+import com.github.warrentode.turtleblockacademy.util.LogUtil;
 import com.github.warrentode.turtleblockacademy.util.TBATags;
 import com.github.warrentode.turtleblockacademy.world.dimension.TBADimensions;
 import com.google.common.collect.ImmutableList;
@@ -71,7 +71,7 @@ public class TBAAdvancementsGen extends AdvancementProvider {
                     DataProvider.saveStable(cache, advancement.deconstruct().serializeToJson(), path1);
                 }
                 catch (IOException ioException) {
-                    TurtleBlockAcademy.LOGGER.error("This is Principal Herobrine speaking, we couldn't save this advancement: {}", path1, ioException);
+                    LogUtil.error("This is Principal Herobrine speaking, we couldn't save this advancement: {}", path1, ioException);
                 }
             }
         };

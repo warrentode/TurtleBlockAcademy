@@ -24,7 +24,7 @@ import java.util.Objects;
 
 public class BasketEntityRenderer implements BlockEntityRenderer<BasketBlockEntity> {
     private static final float ITEM_SIZE = 0.40F;
-    private static final float BASKET_BOTTOM = 0.3F;
+    private static final float BASKET_BOTTOM = 0.2F;
     private static final double X_START = 0.25D;
     private static final double Z_START = 0.23D;
 
@@ -58,7 +58,7 @@ public class BasketEntityRenderer implements BlockEntityRenderer<BasketBlockEnti
                 int column = j % ITEMS_PER_ROW;
                 double ITEM_HORIZONTAL_SPACING = 0.25D;
                 double offsetX = X_START + column * ITEM_HORIZONTAL_SPACING;
-                double ITEM_VERTICAL_SPACING = 0.23D;
+                double ITEM_VERTICAL_SPACING = 0.25D;
                 double offsetZ = Z_START + row * ITEM_VERTICAL_SPACING;
 
                 poseStack.translate(offsetX, BASKET_BOTTOM, offsetZ);

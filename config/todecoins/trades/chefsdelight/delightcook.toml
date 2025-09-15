@@ -1,0 +1,75 @@
+
+["Cook Trade Settings"]
+
+	["Cook Trade Settings"."Cook Level One Trade One"]
+		# Cook 1 Trade Offer 1 Table
+		cook_1_trade_offer_1_table = "todecoins:trade_tables/food/ingredients_tag_table"
+		cook_1_trade_request_1_count = 16
+		# Cook 1 Trade Request 1 Table
+		cook_1_trade_request_1_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+
+	["Cook Trade Settings"."Cook Level One Trade Two"]
+		# Cook 1 Trade Request 2 Table
+		cook_1_trade_request_2_table = "todecoins:trade_tables/food/ingredients_tag_table"
+		cook_1_trade_request_2_count = 16
+		# Cook 1 Trade Offer 2 Table
+		cook_1_trade_offer_2_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+
+	["Cook Trade Settings"."Cook Level Two Trade One"]
+		# Cook 2 Trade Request 1 Table
+		cook_2_trade_request_1_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+		# Cook 2 Trade Offer 1 Table
+		cook_2_trade_offer_1_table = "todecoins:trade_tables/food/sandwich_tag_table"
+		cook_2_trade_offer_1_count = 6
+
+	["Cook Trade Settings"."Cook Level Two Trade Two"]
+		# Cook 2 Trade Request 2 Table
+		cook_2_trade_request_2_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+		# Cook 2 Trade Offer 2 Table
+		cook_2_trade_offer_2_table = "todecoins:trade_tables/food/side_dish_tag_table"
+		cook_2_trade_offer_2_count = 6
+
+	["Cook Trade Settings"."Cook Level Three Trade One"]
+		# Cook 3 Trade Request 1 Table
+		cook_3_trade_request_1_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+		# Cook 3 Trade Offer 1 Table
+		cook_3_trade_offer_1_table = "todecoins:trade_tables/food/soup_tag_table"
+		cook_3_trade_offer_1_count = 1
+
+	["Cook Trade Settings"."Cook Level Three Trade Two"]
+		# Cook 3 Trade Request 2 Table
+		cook_3_trade_request_2_count = "todecoins:trade_tables/currency/single_emerald_value_currency"
+		# Cook 3 Trade Offer 2 Table
+		cook_3_trade_offer_2_table = "todecoins:trade_tables/food/plated_foods_tag_table"
+		cook_3_trade_offer_2_count = 6
+
+	["Cook Trade Settings"."Cook Level Four Trade One"]
+		# Cook 4 Trade Request 1 Table
+		cook_4_trade_request_1_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+		# Cook 4 Trade Offer 1 Table
+		cook_4_trade_offer_1_table = "todecoins:trade_tables/food/dessert_tag_table"
+		cook_4_trade_offer_1_count = 4
+
+	["Cook Trade Settings"."Cook Level Four Trade Two"]
+		# Cook 4 Trade Request 2 Table
+		cook_4_trade_request_2_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+		# Cook 4 Trade Offer 2 Table
+		cook_4_trade_offer_2_table = "todecoins:trade_tables/food/dessert_tag_table"
+		cook_3_trade_offer_2_count = 4
+
+	["Cook Trade Settings"."Cook Level Five Trade One"]
+		# Rare Trade
+		# Cook 5 Trade Request 1 Table
+		cook_5_trade_request_1_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+		# Cook 5 Trade Offer 1 Table
+		cook_5_trade_offer_1_table = "todecoins:trade_tables/food/ingredients_tag_table"
+		cook_5_trade_offer_1_count = 9
+
+	["Cook Trade Settings"."Cook Level Five Trade Two"]
+		# Rare Trade
+		# Cook 5 Trade Request 2 Table
+		cook_5_trade_request_2_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+		# Cook 5 Trade Offer 2 Table
+		cook_5_trade_offer_2_table = "todecoins:trade_tables/food/ingredients_tag_table"
+		cook_5_trade_offer_2_count = 9
+

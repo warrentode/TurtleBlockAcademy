@@ -1,9 +1,0 @@
-{
-  "type": "lootbags:loot",
-  "color": "white",
-  "name": "Swamp Map Bag",
-  "output": {
-    "table": "lootbags:loot_bags/swamp_map_sale"
-  },
-  "rarity": "COMMON"
-}

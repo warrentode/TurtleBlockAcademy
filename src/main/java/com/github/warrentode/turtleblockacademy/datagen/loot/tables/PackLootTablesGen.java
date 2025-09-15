@@ -10,6 +10,7 @@ import com.github.warrentode.turtleblockacademy.loot.tables.LootbagLootTables;
 import com.github.warrentode.turtleblockacademy.loot.tables.PackBuiltInLootTables;
 import com.github.warrentode.turtleblockacademy.util.TBATags;
 import com.refinedmods.refinedstorage.RSItems;
+import com.refinedmods.refinedstorage.apiimpl.storage.FluidStorageType;
 import com.refinedmods.refinedstorage.apiimpl.storage.ItemStorageType;
 import com.refinedmods.refinedstorage.item.UpgradeItem;
 import io.github.mortuusars.salt.Salt;
@@ -44,6 +45,7 @@ import net.minecraft.world.level.storage.loot.providers.number.UniformGenerator;
 import org.jetbrains.annotations.NotNull;
 import samebutdifferent.ecologics.registry.ModBlocks;
 import sereneseasons.api.SSItems;
+import slimeknights.tconstruct.world.TinkerWorld;
 import vazkii.patchouli.common.item.PatchouliItems;
 
 import java.util.function.BiConsumer;
@@ -65,6 +67,9 @@ import static vectorwing.farmersdelight.common.registry.ModItems.CANVAS_RUG;
 public class PackLootTablesGen implements Consumer<BiConsumer<ResourceLocation, LootTable.Builder>> {
     @Override
     public void accept(@NotNull BiConsumer<ResourceLocation, LootTable.Builder> consumer) {
+        consumer.accept(PackBuiltInLootTables.EASTER_EGG_LOOT, LootTable.lootTable()
+                .withPool(LootPool.lootPool().setRolls(ConstantValue.exactly(1))
+                        .add(TagEntry.expandTag(TBATags.Items.EASTER_EGGS))));
         consumer.accept(PackBuiltInLootTables.TREASURE_BEETLE_LOOT, LootTable.lootTable()
                 .withPool(LootPool.lootPool()
                         .setRolls(ConstantValue.exactly(1))
@@ -72,7 +77,7 @@ public class PackLootTablesGen implements Consumer<BiConsumer<ResourceLocation, 
                 )
                 .withPool(LootPool.lootPool()
                         .setRolls(ConstantValue.exactly(1))
-                        .add(LootTableReference.lootTableReference(LootbagLootTables.ARTIFACTS_GIFTS))
+                        .add(LootTableReference.lootTableReference(LootbagLootTables.ARTIFACTS_BAG))
                 )
                 .withPool(LootPool.lootPool()
                         .setRolls(ConstantValue.exactly(1))
@@ -111,7 +116,7 @@ public class PackLootTablesGen implements Consumer<BiConsumer<ResourceLocation, 
                 .withPool(LootPool.lootPool()
                         .setRolls(ConstantValue.exactly(1))
                         .setBonusRolls(ConstantValue.exactly(0))
-                        .add(LootTableReference.lootTableReference(LootbagLootTables.ARTIFACTS_GIFTS)
+                        .add(LootTableReference.lootTableReference(LootbagLootTables.ARTIFACTS_BAG)
                                 .when(LootItemRandomChanceCondition.randomChance(0.25F))))
                 .withPool(LootPool.lootPool()
                         .setRolls(ConstantValue.exactly(1))
@@ -122,7 +127,7 @@ public class PackLootTablesGen implements Consumer<BiConsumer<ResourceLocation, 
                         .setBonusRolls(ConstantValue.exactly(0))
                         .add(LootTableReference.lootTableReference(PackBuiltInLootTables.SPAWN_STARTER_BONUS))));
 
-        consumer.accept(LootbagLootTables.ARTIFACTS_GIFTS, LootTable.lootTable()
+        consumer.accept(LootbagLootTables.ARTIFACTS_BAG, LootTable.lootTable()
                 .withPool(LootPool.lootPool().setRolls(ConstantValue.exactly(1))
                         .add(LootItem.lootTableItem(artifacts.common.init.ModItems.UMBRELLA.get()))
                         .add(LootItem.lootTableItem(artifacts.common.init.ModItems.EVERLASTING_BEEF.get()))
@@ -648,6 +653,14 @@ public class PackLootTablesGen implements Consumer<BiConsumer<ResourceLocation, 
                                 .apply(SetItemCountFunction.setCount(UniformGenerator.between(5, 9))))
                         .add(LootItem.lootTableItem(GOLDEN_OAK_LOG.get()).when(IN_AETHER.or(IN_DUNGEON).or(IN_MINING))
                                 .apply(SetItemCountFunction.setCount(UniformGenerator.between(5, 9))))
+                        .add(LootItem.lootTableItem(TinkerWorld.bloodshroom.getLog()).when(IN_NETHER.or(IN_DUNGEON).or(IN_MINING))
+                                .apply(SetItemCountFunction.setCount(UniformGenerator.between(5, 9))))
+                        .add(LootItem.lootTableItem(TinkerWorld.enderbark.getLog()).when(IN_END.or(IN_DUNGEON).or(IN_MINING))
+                                .apply(SetItemCountFunction.setCount(UniformGenerator.between(5, 9))))
+                        .add(LootItem.lootTableItem(TinkerWorld.greenheart.getLog()).when(IN_OVERWORLD.or(IN_DUNGEON).or(IN_MINING))
+                                .apply(SetItemCountFunction.setCount(UniformGenerator.between(5, 9))))
+                        .add(LootItem.lootTableItem(TinkerWorld.skyroot.getLog()).when(IN_OVERWORLD.or(IN_DUNGEON).or(IN_MINING))
+                                .apply(SetItemCountFunction.setCount(UniformGenerator.between(5, 9))))
                 )
         );
 
@@ -663,7 +676,7 @@ public class PackLootTablesGen implements Consumer<BiConsumer<ResourceLocation, 
                 .withPool(LootPool.lootPool().setRolls(ConstantValue.exactly(1))
                         .add(LootItem.lootTableItem(AetherItems.LIFE_SHARD.get())
                                 .when(LootItemRandomChanceCondition.randomChance(0.01F)))
-                        .add(LootTableReference.lootTableReference(LootbagLootTables.REFINED_STORAGE_GIFTS)
+                        .add(LootTableReference.lootTableReference(LootbagLootTables.REFINED_STORAGE_KIT)
                                 .when(LootItemRandomChanceCondition.randomChance(0.1F)))
                         .add(LootTableReference.lootTableReference(PackBuiltInLootTables.PLUSHIES)
                                 .when(LootItemRandomChanceCondition.randomChance(0.5F)))
@@ -683,6 +696,21 @@ public class PackLootTablesGen implements Consumer<BiConsumer<ResourceLocation, 
                         .add(LootTableReference.lootTableReference(PackBuiltInLootTables.TOOLSMITH_GIFT))
                         .add(LootTableReference.lootTableReference(PackBuiltInLootTables.WEAPONSMITH_GIFT))
                 ));
+
+        consumer.accept(PackBuiltInLootTables.DECO_ALL, LootTable.lootTable()
+                .withPool(LootPool.lootPool().setRolls(ConstantValue.exactly(12))
+                        .add(TagEntry.expandTag(TBATags.Items.GARDEN_ITEMS))
+                        .add(TagEntry.expandTag(TBATags.Items.PATIO_ITEMS))
+                        .add(LootTableReference.lootTableReference(PackBuiltInLootTables.PLUSHIES))
+                        .add(LootTableReference.lootTableReference(PackBuiltInLootTables.BATH_DECO))
+                        .add(LootTableReference.lootTableReference(PackBuiltInLootTables.ART_DECO))
+                        .add(LootTableReference.lootTableReference(PackBuiltInLootTables.COOKERY_DECO))
+                        .add(LootTableReference.lootTableReference(PackBuiltInLootTables.GARDEN_DECO))
+                        .add(LootTableReference.lootTableReference(PackBuiltInLootTables.SCIENCE_DECO))
+                        .add(LootTableReference.lootTableReference(PackBuiltInLootTables.HOLIDAY_DECO))
+                        .add(LootTableReference.lootTableReference(PackBuiltInLootTables.MISC_DECO))
+                )
+        );
 
         consumer.accept(PackBuiltInLootTables.PLUSHIES, LootTable.lootTable()
                 .withPool(LootPool.lootPool().setRolls(ConstantValue.exactly(1))
@@ -1114,33 +1142,37 @@ public class PackLootTablesGen implements Consumer<BiConsumer<ResourceLocation, 
                         .add(LootItem.lootTableItem(BANDERINES_ROSA.get()))
                 ));
 
-        consumer.accept(LootbagLootTables.REFINED_STORAGE_GIFTS, LootTable.lootTable()
+        consumer.accept(LootbagLootTables.REFINED_STORAGE_KIT, LootTable.lootTable()
                 .withPool(LootPool.lootPool()
                         .setRolls(ConstantValue.exactly(1))
                         .setBonusRolls(ConstantValue.exactly(0))
                         .add(LootItem.lootTableItem(Items.SLIME_BALL).setWeight(10)
+                                .apply(SetItemCountFunction.setCount(UniformGenerator.between(5, 9))).setWeight(15))
+                        .add(LootItem.lootTableItem(SILICON.get()).setWeight(15)
                                 .apply(SetItemCountFunction.setCount(UniformGenerator.between(5, 9))))
-                        .add(LootItem.lootTableItem(SILICON.get()).setWeight(10)
-                                .apply(SetItemCountFunction.setCount(UniformGenerator.between(5, 9))))
-                        .add(LootItem.lootTableItem(PROCESSOR_BINDING.get()).setWeight(10)
+                        .add(LootItem.lootTableItem(PROCESSOR_BINDING.get()).setWeight(15)
                                 .apply(SetItemCountFunction.setCount(UniformGenerator.between(5, 9))))
                         .add(LootItem.lootTableItem(QUARTZ_ENRICHED_IRON.get()).setWeight(10)
                                 .apply(SetItemCountFunction.setCount(UniformGenerator.between(5, 9))))
-                        .add(LootItem.lootTableItem(RSItems.FILTER.get()))
-                        .add(LootItem.lootTableItem(RSItems.PATTERN.get()))
-                        .add(LootItem.lootTableItem(RSItems.ITEM_STORAGE_DISKS.get(ItemStorageType.ONE_K).get()))
-                        .add(LootItem.lootTableItem(RSItems.ITEM_STORAGE_DISKS.get(ItemStorageType.FOUR_K).get()))
-                        .add(LootItem.lootTableItem(RSItems.ITEM_STORAGE_DISKS.get(ItemStorageType.SIXTEEN_K).get()))
-                        .add(LootItem.lootTableItem(RSItems.ITEM_STORAGE_DISKS.get(ItemStorageType.SIXTY_FOUR_K).get()))
-                        .add(LootItem.lootTableItem(RSItems.UPGRADE_ITEMS.get(UpgradeItem.Type.SPEED).get()))
-                        .add(LootItem.lootTableItem(RSItems.UPGRADE_ITEMS.get(UpgradeItem.Type.RANGE).get()))
-                        .add(LootItem.lootTableItem(RSItems.UPGRADE_ITEMS.get(UpgradeItem.Type.CRAFTING).get()))
-                        .add(LootItem.lootTableItem(RSItems.UPGRADE_ITEMS.get(UpgradeItem.Type.STACK).get()))
-                        .add(LootItem.lootTableItem(RSItems.UPGRADE_ITEMS.get(UpgradeItem.Type.SILK_TOUCH).get()))
-                        .add(LootItem.lootTableItem(RSItems.UPGRADE_ITEMS.get(UpgradeItem.Type.FORTUNE_1).get()))
-                        .add(LootItem.lootTableItem(RSItems.UPGRADE_ITEMS.get(UpgradeItem.Type.FORTUNE_2).get()))
-                        .add(LootItem.lootTableItem(RSItems.UPGRADE_ITEMS.get(UpgradeItem.Type.FORTUNE_3).get()))
-                        .add(LootItem.lootTableItem(RSItems.UPGRADE_ITEMS.get(UpgradeItem.Type.REGULATOR).get()))
+                        .add(LootItem.lootTableItem(RSItems.FILTER.get()).setWeight(5))
+                        .add(LootItem.lootTableItem(RSItems.PATTERN.get()).setWeight(5))
+                        .add(LootItem.lootTableItem(RSItems.ITEM_STORAGE_DISKS.get(ItemStorageType.ONE_K).get()).setWeight(15))
+                        .add(LootItem.lootTableItem(RSItems.ITEM_STORAGE_DISKS.get(ItemStorageType.FOUR_K).get()).setWeight(10))
+                        .add(LootItem.lootTableItem(RSItems.ITEM_STORAGE_DISKS.get(ItemStorageType.SIXTEEN_K).get()).setWeight(5))
+                        .add(LootItem.lootTableItem(RSItems.ITEM_STORAGE_DISKS.get(ItemStorageType.SIXTY_FOUR_K).get()).setWeight(1))
+                        .add(LootItem.lootTableItem(FLUID_STORAGE_DISKS.get(FluidStorageType.SIXTY_FOUR_K).get()).setWeight(15))
+                        .add(LootItem.lootTableItem(FLUID_STORAGE_DISKS.get(FluidStorageType.TWO_HUNDRED_FIFTY_SIX_K).get()).setWeight(10))
+                        .add(LootItem.lootTableItem(FLUID_STORAGE_DISKS.get(FluidStorageType.THOUSAND_TWENTY_FOUR_K).get()).setWeight(5))
+                        .add(LootItem.lootTableItem(FLUID_STORAGE_DISKS.get(FluidStorageType.FOUR_THOUSAND_NINETY_SIX_K).get()).setWeight(1))
+                        .add(LootItem.lootTableItem(RSItems.UPGRADE_ITEMS.get(UpgradeItem.Type.SPEED).get()).setWeight(5))
+                        .add(LootItem.lootTableItem(RSItems.UPGRADE_ITEMS.get(UpgradeItem.Type.RANGE).get()).setWeight(5))
+                        .add(LootItem.lootTableItem(RSItems.UPGRADE_ITEMS.get(UpgradeItem.Type.CRAFTING).get()).setWeight(5))
+                        .add(LootItem.lootTableItem(RSItems.UPGRADE_ITEMS.get(UpgradeItem.Type.STACK).get()).setWeight(5))
+                        .add(LootItem.lootTableItem(RSItems.UPGRADE_ITEMS.get(UpgradeItem.Type.SILK_TOUCH).get()).setWeight(5))
+                        .add(LootItem.lootTableItem(RSItems.UPGRADE_ITEMS.get(UpgradeItem.Type.FORTUNE_1).get()).setWeight(5))
+                        .add(LootItem.lootTableItem(RSItems.UPGRADE_ITEMS.get(UpgradeItem.Type.FORTUNE_2).get()).setWeight(1))
+                        .add(LootItem.lootTableItem(RSItems.UPGRADE_ITEMS.get(UpgradeItem.Type.FORTUNE_3).get()).setWeight(1))
+                        .add(LootItem.lootTableItem(RSItems.UPGRADE_ITEMS.get(UpgradeItem.Type.REGULATOR).get()).setWeight(5))
                 )
         );
         consumer.accept(PackBuiltInLootTables.ART_DECO, LootTable.lootTable()

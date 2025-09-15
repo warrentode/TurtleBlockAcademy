@@ -1,0 +1,817 @@
+{
+  "profession": "minecraft:armorer",
+  "removeOtherTrades": true,
+  "trades": [
+    {
+      "multiOffer": [
+		{
+			"itemKey": "minecraft:emerald",
+			"amount": 1,
+			"priceModifier": 0
+		},
+        {
+          "itemKey": "todecoins:copper_coin_bag",
+          "amount": 18,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:iron_coin_bag",
+          "amount": 8,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:gold_coin_bag",
+          "amount": 6,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:nether_gold_coin",
+          "amount": 3,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:endonian_coin",
+          "amount": 1,
+          "priceModifier": 0
+        }
+      ],
+      "request": {
+        "itemKey": "minecraft:coal",
+        "amount": 15,
+        "priceModifier": 0
+      },
+      "tradeExp": 2,
+      "maxUses": 16,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 1,
+      "UTID": "minecraft:armorer_emerald_for_coal"
+    },
+    {
+      "offer": {
+        "itemKey": "minecraft:iron_helmet",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "multiRequest": [
+		{
+			"itemKey": "minecraft:emerald",
+			"amount": 5,
+			"priceModifier": 0
+		},
+        {
+          "itemKey": "todecoins:iron_coin_bag",
+          "amount": 40,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:gold_coin_bag",
+          "amount": 30,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:nether_gold_coin",
+          "amount": 15,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:endonian_coin",
+          "amount": 5,
+          "priceModifier": 0
+        }
+      ],
+      "tradeExp": 1,
+      "maxUses": 12,
+      "priceMultiplier": 0.2,
+      "demand": 0,
+      "tradeLevel": 1,
+      "UTID": "minecraft:armorer_iron_helmet_for_emerald"
+    },
+    {
+      "offer": {
+        "itemKey": "minecraft:iron_chestplate",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "multiRequest": [
+		{
+			"itemKey": "minecraft:emerald",
+			"amount": 3,
+			"priceModifier": 0
+		},
+        {
+          "itemKey": "todecoins:copper_coin_bag",
+          "amount": 54,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:iron_coin_bag",
+          "amount": 24,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:gold_coin_bag",
+          "amount": 18,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:nether_gold_coin",
+          "amount": 9,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:endonian_coin",
+          "amount": 3,
+          "priceModifier": 0
+        }
+      ],
+      "tradeExp": 1,
+      "maxUses": 12,
+      "priceMultiplier": 0.2,
+      "demand": 0,
+      "tradeLevel": 1,
+      "UTID": "minecraft:armorer_iron_chestplate_for_emerald"
+    },
+    {
+      "offer": {
+        "itemKey": "minecraft:iron_leggings",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "multiRequest": [
+		{
+			"itemKey": "minecraft:emerald",
+			"amount": 7,
+			"priceModifier": 0
+		},
+        {
+          "itemKey": "todecoins:iron_coin_bag",
+          "amount": 56,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:gold_coin_bag",
+          "amount": 42,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:nether_gold_coin",
+          "amount": 21,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:endonian_coin",
+          "amount": 7,
+          "priceModifier": 0
+        }
+      ],
+      "tradeExp": 1,
+      "maxUses": 12,
+      "priceMultiplier": 0.2,
+      "demand": 0,
+      "tradeLevel": 1,
+      "UTID": "minecraft:armorer_iron_leggings_for_emerald"
+    },
+    {
+      "offer": {
+        "itemKey": "minecraft:iron_boots",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "multiRequest": [
+		{
+			"itemKey": "minecraft:emerald",
+			"amount": 4,
+			"priceModifier": 0
+		},
+        {
+          "itemKey": "todecoins:iron_coin_bag",
+          "amount": 32,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:gold_coin_bag",
+          "amount": 24,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:nether_gold_coin",
+          "amount": 12,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:endonian_coin",
+          "amount": 4,
+          "priceModifier": 0
+        }
+      ],
+      "tradeExp": 1,
+      "maxUses": 12,
+      "priceMultiplier": 0.2,
+      "demand": 0,
+      "tradeLevel": 1,
+      "UTID": "minecraft:armorer_iron_boots_for_emerald"
+    },
+    {
+      "multiOffer": [
+		{
+			"itemKey": "minecraft:emerald",
+			"amount": 1,
+			"priceModifier": 0
+		},
+        {
+          "itemKey": "todecoins:copper_coin_bag",
+          "amount": 18,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:iron_coin_bag",
+          "amount": 8,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:gold_coin_bag",
+          "amount": 6,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:nether_gold_coin",
+          "amount": 3,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:endonian_coin",
+          "amount": 1,
+          "priceModifier": 0
+        }
+      ],
+      "request": {
+        "itemKey": "minecraft:iron_ingot",
+        "amount": 4,
+        "priceModifier": 0
+      },
+      "tradeExp": 10,
+      "maxUses": 12,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 2,
+      "UTID": "minecraft:armorer_emerald_for_iron_ingot"
+    },
+    {
+      "offer": {
+        "itemKey": "minecraft:bell",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "multiRequest": [
+		{
+			"itemKey": "minecraft:emerald",
+			"amount": 36,
+			"priceModifier": 0
+		},
+        {
+          "itemKey": "todecoins:pot_of_gold",
+          "amount": 24,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:nether_gold_coin_bag",
+          "amount": 12,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:endonian_coin",
+          "amount": 36,
+          "priceModifier": 0
+        }
+      ],
+      "tradeExp": 5,
+      "maxUses": 12,
+      "priceMultiplier": 0.2,
+      "demand": 0,
+      "tradeLevel": 2,
+      "UTID": "minecraft:armorer_bell_for_emerald"
+    },
+    {
+      "offer": {
+        "itemKey": "minecraft:chainmail_leggings",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "multiRequest": [
+		{
+			"itemKey": "minecraft:emerald",
+			"amount": 3,
+			"priceModifier": 0
+		},
+        {
+          "itemKey": "todecoins:copper_coin_bag",
+          "amount": 54,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:iron_coin_bag",
+          "amount": 24,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:gold_coin_bag",
+          "amount": 18,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:nether_gold_coin",
+          "amount": 9,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:endonian_coin",
+          "amount": 3,
+          "priceModifier": 0
+        }
+      ],
+      "tradeExp": 5,
+      "maxUses": 12,
+      "priceMultiplier": 0.2,
+      "demand": 0,
+      "tradeLevel": 2,
+      "UTID": "minecraft:armorer_chainmail_leggings_for_emerald"
+    },
+    {
+      "offer": {
+        "itemKey": "minecraft:chainmail_boots",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "multiRequest": [
+		{
+			"itemKey": "minecraft:emerald",
+			"amount": 1,
+			"priceModifier": 0
+		},
+        {
+          "itemKey": "todecoins:copper_coin_bag",
+          "amount": 18,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:iron_coin_bag",
+          "amount": 8,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:gold_coin_bag",
+          "amount": 6,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:nether_gold_coin",
+          "amount": 3,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:endonian_coin",
+          "amount": 1,
+          "priceModifier": 0
+        }
+      ],
+      "tradeExp": 5,
+      "maxUses": 12,
+      "priceMultiplier": 0.2,
+      "demand": 0,
+      "tradeLevel": 2,
+      "UTID": "minecraft:armorer_chainmail_boots_for_emerald"
+    },
+    {
+      "multiOffer": [
+		{
+			"itemKey": "minecraft:emerald",
+			"amount": 1,
+			"priceModifier": 0
+		},
+        {
+          "itemKey": "todecoins:copper_coin_bag",
+          "amount": 18,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:iron_coin_bag",
+          "amount": 8,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:gold_coin_bag",
+          "amount": 6,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:nether_gold_coin",
+          "amount": 3,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:endonian_coin",
+          "amount": 1,
+          "priceModifier": 0
+        }
+      ],
+      "request": {
+        "itemKey": "minecraft:lava_bucket",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "tradeExp": 20,
+      "maxUses": 12,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 3,
+      "UTID": "minecraft:armorer_emerald_for_lava_bucket"
+    },
+    {
+      "multiOffer": [
+		{
+			"itemKey": "minecraft:emerald",
+			"amount": 1,
+			"priceModifier": 0
+		},
+        {
+          "itemKey": "todecoins:copper_coin_bag",
+          "amount": 18,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:iron_coin_bag",
+          "amount": 8,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:gold_coin_bag",
+          "amount": 6,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:nether_gold_coin",
+          "amount": 3,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:endonian_coin",
+          "amount": 1,
+          "priceModifier": 0
+        }
+      ],
+      "request": {
+        "itemKey": "minecraft:diamond",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "tradeExp": 20,
+      "maxUses": 12,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 3,
+      "UTID": "minecraft:armorer_emerald_for_diamond"
+    },
+    {
+      "offer": {
+        "itemKey": "minecraft:chainmail_helmet",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "multiRequest": [
+		{
+			"itemKey": "minecraft:emerald",
+			"amount": 1,
+			"priceModifier": 0
+		},
+        {
+          "itemKey": "todecoins:copper_coin_bag",
+          "amount": 18,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:iron_coin_bag",
+          "amount": 8,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:gold_coin_bag",
+          "amount": 6,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:nether_gold_coin",
+          "amount": 3,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:endonian_coin",
+          "amount": 1,
+          "priceModifier": 0
+        }
+      ],
+      "tradeExp": 10,
+      "maxUses": 12,
+      "priceMultiplier": 0.2,
+      "demand": 0,
+      "tradeLevel": 3,
+      "UTID": "minecraft:armorer_chainmail_helmet_for_emerald"
+    },
+    {
+      "offer": {
+        "itemKey": "minecraft:chainmail_chestplate",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "multiRequest": [
+		{
+			"itemKey": "minecraft:emerald",
+			"amount": 4,
+			"priceModifier": 0
+		},
+        {
+          "itemKey": "todecoins:iron_coin_bag",
+          "amount": 32,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:gold_coin_bag",
+          "amount": 24,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:nether_gold_coin",
+          "amount": 12,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:endonian_coin",
+          "amount": 4,
+          "priceModifier": 0
+        }
+      ],
+      "tradeExp": 10,
+      "maxUses": 12,
+      "priceMultiplier": 0.2,
+      "demand": 0,
+      "tradeLevel": 3,
+      "UTID": "minecraft:armorer_chainmail_chestplate_for_emerald"
+    },
+    {
+      "offer": {
+        "itemKey": "minecraft:shield",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "multiRequest": [
+		{
+			"itemKey": "minecraft:emerald",
+			"amount": 5,
+			"priceModifier": 0
+		},
+        {
+          "itemKey": "todecoins:iron_coin_bag",
+          "amount": 40,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:gold_coin_bag",
+          "amount": 30,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:nether_gold_coin",
+          "amount": 15,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:endonian_coin",
+          "amount": 5,
+          "priceModifier": 0
+        }
+      ],
+      "tradeExp": 10,
+      "maxUses": 12,
+      "priceMultiplier": 0.2,
+      "demand": 0,
+      "tradeLevel": 3,
+      "UTID": "minecraft:armorer_shield_for_emerald"
+    },
+    {
+      "offer": {
+        "itemKey": "minecraft:diamond_leggings",
+        "amount": 1,
+        "priceModifier": 0,
+        "enchantments": [
+          {
+            "enchantmentKey": "random",
+            "enchantmentLevel": -1,
+            "maxEnchantmentLevel": 10
+          }
+        ],
+        "blacklistedEnchantments": [
+          "minecraft:vanishing_curse",
+          "minecraft:binding_curse",
+          "domesticationinnovation:blight_curse",
+          "domesticationinnovation:immaturity_curse",
+          "domesticationinnovation:infamy_curse",
+          "domesticationinnovation:undead_curse"
+        ]
+      },
+      "multiRequest": [
+		{
+			"itemKey": "minecraft:emerald",
+			"amount": 18,
+			"amountRange": 15,
+			"priceModifier": 0
+		},
+		{
+			"itemKey": "todecoins:pot_of_gold",
+			"amount": 12,
+			"amountRange": 10,
+			"priceModifier": 0
+		},
+		{
+			"itemKey": "todecoins:nether_gold_coin_bag",
+			"amount": 6,
+			"amountRange": 5,
+			"priceModifier": 0
+		},
+        {
+          "itemKey": "todecoins:endonian_coin",
+			"amount": 15,
+			"amountRange": 20,
+          "priceModifier": 0
+        }
+      ],
+      "tradeExp": 10,
+      "maxUses": 3,
+      "priceMultiplier": 0.2,
+      "demand": 0,
+      "tradeLevel": 4,
+      "UTID": "minecraft:armorer_diamond_leggings_for_emerald"
+    },
+    {
+      "offer": {
+        "itemKey": "minecraft:diamond_boots",
+        "amount": 1,
+        "priceModifier": 0,
+        "enchantments": [
+          {
+            "enchantmentKey": "random",
+            "enchantmentLevel": -1,
+            "maxEnchantmentLevel": 10
+          }
+        ],
+        "blacklistedEnchantments": [
+          "minecraft:vanishing_curse",
+          "minecraft:binding_curse",
+          "domesticationinnovation:blight_curse",
+          "domesticationinnovation:immaturity_curse",
+          "domesticationinnovation:infamy_curse",
+          "domesticationinnovation:undead_curse"
+        ]
+      },
+      "multiRequest": [
+		{
+			"itemKey": "minecraft:emerald",
+			"amount": 12,
+			"amountRange": 15,
+			"priceModifier": 0
+		},
+		{
+			"itemKey": "todecoins:pot_of_gold",
+			"amount": 8,
+			"amountRange": 10,
+			"priceModifier": 0
+		},
+		{
+			"itemKey": "todecoins:nether_gold_coin",
+			"amount": 4,
+			"amountRange": 5,
+			"priceModifier": 0
+		},
+        {
+          "itemKey": "todecoins:endonian_coin",
+			"amount": 12,
+			"amountRange": 15,
+          "priceModifier": 0
+        }
+      ],
+      "tradeExp": 10,
+      "maxUses": 3,
+      "priceMultiplier": 0.2,
+      "demand": 0,
+      "tradeLevel": 4,
+      "UTID": "minecraft:armorer_diamond_boots_for_emerald"
+    },
+    {
+      "offer": {
+        "itemKey": "minecraft:diamond_helmet",
+        "amount": 1,
+        "priceModifier": 0,
+        "enchantments": [
+          {
+            "enchantmentKey": "random",
+            "enchantmentLevel": -1,
+            "maxEnchantmentLevel": 10
+          }
+        ],
+        "blacklistedEnchantments": [
+          "minecraft:vanishing_curse",
+          "minecraft:binding_curse",
+          "domesticationinnovation:blight_curse",
+          "domesticationinnovation:immaturity_curse",
+          "domesticationinnovation:infamy_curse",
+          "domesticationinnovation:undead_curse"
+        ]
+      },
+      "multiRequest": [
+		{
+			"itemKey": "minecraft:emerald",
+			"amount": 12,
+			"amountRange": 15,
+			"priceModifier": 0
+		},
+		{
+			"itemKey": "todecoins:pot_of_gold",
+			"amount": 8,
+			"amountRange": 10,
+			"priceModifier": 0
+		},
+		{
+			"itemKey": "todecoins:nether_gold_coin",
+			"amount": 4,
+			"amountRange": 5,
+			"priceModifier": 0
+		},
+        {
+          "itemKey": "todecoins:endonian_coin",
+			"amount": 12,
+			"amountRange": 15,
+          "priceModifier": 0
+        }
+      ],
+      "tradeExp": 10,
+      "maxUses": 3,
+      "priceMultiplier": 0.2,
+      "demand": 0,
+      "tradeLevel": 5,
+      "UTID": "minecraft:armorer_diamond_helmet_for_emerald"
+    },
+    {
+      "offer": {
+        "itemKey": "minecraft:diamond_chestplate",
+        "amount": 1,
+        "priceModifier": 0,
+        "enchantments": [
+          {
+            "enchantmentKey": "random",
+            "enchantmentLevel": -1,
+            "maxEnchantmentLevel": 10
+          }
+        ],
+        "blacklistedEnchantments": [
+          "minecraft:vanishing_curse",
+          "minecraft:binding_curse",
+          "domesticationinnovation:blight_curse",
+          "domesticationinnovation:immaturity_curse",
+          "domesticationinnovation:infamy_curse",
+          "domesticationinnovation:undead_curse"
+        ]
+      },
+      "multiRequest": [
+		{
+			"itemKey": "minecraft:emerald",
+			"amount": 21,
+			"amountRange": 15,
+			"priceModifier": 0
+		},
+		{
+			"itemKey": "todecoins:pot_of_gold",
+			"amount": 14,
+			"amountRange": 10,
+			"priceModifier": 0
+		},
+		{
+			"itemKey": "todecoins:nether_gold_coin_bag",
+			"amount": 7,
+			"amountRange": 5,
+			"priceModifier": 0
+		},
+        {
+          "itemKey": "todecoins:endonian_coin",
+			"amount": 21,
+			"amountRange": 15,
+          "priceModifier": 0
+        }
+      ],
+      "tradeExp": 10,
+      "maxUses": 3,
+      "priceMultiplier": 0.2,
+      "demand": 0,
+      "tradeLevel": 5,
+      "UTID": "minecraft:armorer_diamond_chestplate_for_emerald"
+    }
+  ]
+}

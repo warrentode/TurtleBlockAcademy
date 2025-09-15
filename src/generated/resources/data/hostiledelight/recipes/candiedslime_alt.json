@@ -1,0 +1,30 @@
+{
+  "type": "forge:conditional",
+  "recipes": [
+    {
+      "conditions": [
+        {
+          "type": "forge:mod_loaded",
+          "modid": "hostiledelight"
+        }
+      ],
+      "recipe": {
+        "type": "minecraft:crafting_shapeless",
+        "ingredients": [
+          {
+            "tag": "forge:sugar"
+          },
+          {
+            "tag": "forge:sugar"
+          },
+          {
+            "tag": "forge:slime_balls"
+          }
+        ],
+        "result": {
+          "item": "hostiledelight:candiedslime"
+        }
+      }
+    }
+  ]
+}

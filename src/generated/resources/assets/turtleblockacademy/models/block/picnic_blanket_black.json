@@ -1,0 +1,7 @@
+{
+  "parent": "turtleblockacademy:block/template_picnic_blanket",
+  "textures": {
+    "0": "turtleblockacademy:block/checkered_cloth",
+    "particle": "turtleblockacademy:block/checkered_cloth"
+  }
+}

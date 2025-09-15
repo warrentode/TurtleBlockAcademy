@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "turtleblockacademy:block/desk_chair_golden_oak_green",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "turtleblockacademy:block/desk_chair_golden_oak_green"
+    },
+    "facing=south": {
+      "model": "turtleblockacademy:block/desk_chair_golden_oak_green",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "turtleblockacademy:block/desk_chair_golden_oak_green",
+      "y": 270
+    }
+  }
+}

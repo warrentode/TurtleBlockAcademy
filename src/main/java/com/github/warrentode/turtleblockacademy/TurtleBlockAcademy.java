@@ -2,14 +2,15 @@ package com.github.warrentode.turtleblockacademy;
 
 import com.github.warrentode.turtleblockacademy.blocks.TBABlocks;
 import com.github.warrentode.turtleblockacademy.blocks.entity.TBABlockEntities;
-import com.github.warrentode.turtleblockacademy.blocks.entity.gui.FermentingPotScreen;
-import com.github.warrentode.turtleblockacademy.blocks.entity.gui.SchoolDeskScreen;
+import com.github.warrentode.turtleblockacademy.blocks.entity.gui.basket.BasketScreen;
+import com.github.warrentode.turtleblockacademy.blocks.entity.gui.fermentingpot.FermentingPotScreen;
+import com.github.warrentode.turtleblockacademy.blocks.entity.gui.desk.SchoolDeskScreen;
 import com.github.warrentode.turtleblockacademy.blocks.entity.gui.TBAMenuTypes;
 import com.github.warrentode.turtleblockacademy.config.AcademyConfig;
 import com.github.warrentode.turtleblockacademy.entity.TBAEntityTypes;
 import com.github.warrentode.turtleblockacademy.entity.TBAPOIs;
 import com.github.warrentode.turtleblockacademy.entity.client.HerobrineRenderer;
-import com.github.warrentode.turtleblockacademy.entity.client.SeatEntityRenderer;
+import com.github.warrentode.turtleblockacademy.blocks.entity.renderer.SeatEntityRenderer;
 import com.github.warrentode.turtleblockacademy.entity.client.TreasureBeetleRenderer;
 import com.github.warrentode.turtleblockacademy.items.TBAItems;
 import com.github.warrentode.turtleblockacademy.loot.serializers.TBALootItemConditions;
@@ -26,6 +27,7 @@ import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.entity.SpawnPlacements;
 import net.minecraft.world.entity.monster.Monster;
+import net.minecraft.world.level.block.ComposterBlock;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.levelgen.Heightmap;
 import net.minecraftforge.api.distmarker.Dist;
@@ -50,9 +52,12 @@ public class TurtleBlockAcademy {
     public static final Logger LOGGER = LogManager.getLogger();
 
     public TurtleBlockAcademy() {
-        ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, AcademyConfig.SPEC,
-                MODID + "-common.toml");
+        // the .get() method used here is being removed as of forge version 1.21
+        //noinspection removal
+        ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, AcademyConfig.SPEC,MODID + "-common.toml");
+        //noinspection removal
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
+
         MinecraftForge.EVENT_BUS.register(this);
         modEventBus.addListener(this::commonSetup);
 
@@ -90,6 +95,7 @@ public class TurtleBlockAcademy {
                     SpawnPlacements.Type.ON_GROUND,
                     Heightmap.Types.MOTION_BLOCKING_NO_LEAVES,
                     Monster::checkMonsterSpawnRules);
+            registerCompostable();
         });
     }
 
@@ -107,6 +113,8 @@ public class TurtleBlockAcademy {
                     TBAMenuTypes.SCHOOL_DESK_MENU.get(), SchoolDeskScreen::new));
             event.enqueueWork(() -> MenuScreens.register(
                     TBAMenuTypes.FERMENTING_POT_MENU.get(), FermentingPotScreen::new));
+            event.enqueueWork(() -> MenuScreens.register(
+                    TBAMenuTypes.BASKET_MENU.get(), BasketScreen::new));
 
             EntityRenderers.register(TBAEntityTypes.SEAT_ENTITY.get(),
                     SeatEntityRenderer::new);
@@ -121,5 +129,18 @@ public class TurtleBlockAcademy {
         public static void onRegisterRecipeBookCategories(RegisterRecipeBookCategoriesEvent event) {
             FermentingRecipeCategories.init(event);
         }
+    }
+
+    private void registerCompostable() {
+        ComposterBlock.COMPOSTABLES.put(TBAItems.CLOVE_SEEDS.get(), 0.3F);
+        ComposterBlock.COMPOSTABLES.put(TBAItems.CUCUMBER_SEEDS.get(), 0.3F);
+        ComposterBlock.COMPOSTABLES.put(TBAItems.DILL_SEEDS.get(), 0.3F);
+        ComposterBlock.COMPOSTABLES.put(TBAItems.CLOVES.get(), 0.3F);
+        ComposterBlock.COMPOSTABLES.put(TBAItems.CUCUMBER.get(), 0.3F);
+        ComposterBlock.COMPOSTABLES.put(TBAItems.DILL_HERB.get(), 0.3F);
+        ComposterBlock.COMPOSTABLES.put(TBAItems.DRIED_CLOVES.get(), 0.3F);
+        ComposterBlock.COMPOSTABLES.put(TBABlocks.CLOVE_BUSH.get(), 0.65F);
+        ComposterBlock.COMPOSTABLES.put(TBABlocks.CUCUMBER_BUSH.get(), 0.65F);
+        ComposterBlock.COMPOSTABLES.put(TBABlocks.DILL_BUSH.get(), 0.65F);
     }
 }

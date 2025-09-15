@@ -1,0 +1,11 @@
+{
+  "values": [
+    {
+      "id": "biomesoplenty:wooded_wasteland",
+      "required": false
+    },
+    "minecraft:windswept_savanna",
+    "minecraft:savanna_plateau",
+    "minecraft:savanna"
+  ]
+}

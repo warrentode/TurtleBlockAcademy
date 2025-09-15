@@ -1,0 +1,12 @@
+{
+  "values": [
+    {
+      "id": "minecraft:meat_soup",
+      "required": false
+    },
+    "minecraft:beetroot_soup",
+    "minecraft:rabbit_stew",
+    "minecraft:mushroom_stew",
+    "minecraft:suspicious_stew"
+  ]
+}

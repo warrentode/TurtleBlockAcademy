@@ -6,7 +6,7 @@ public class EasterEggProperties {
 
     public enum Layer {
         BLANK(()-> "blank"),
-        CHECKERED(()-> "checkered"),
+        FLOWER(()-> "flower"),
         CREEPER(()-> "creeper");
 
         public static final Layer[] EGG_LAYERS = values();

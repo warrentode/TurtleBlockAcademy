@@ -1,0 +1,98 @@
+
+["Enchanter Trade Settings"]
+
+	["Enchanter Trade Settings"."Enchanter Level One Trade One"]
+		# Rare Trade
+		# Enchanter 1 Trade Request 1 Table
+		enchanter_1_trade_request_1_table = "todecoins:trade_tables/currency/emerald_quarter_bank_note_value_currency"
+		# Enchanter 1 Trade Offer 1 Table
+		enchanter_1_trade_offer_1_table = "todecoins:trade_tables/library/refresh_book_table"
+		enchanter_1_trade_offer_1_count = 1
+
+	["Enchanter Trade Settings"."Enchanter Level One Trade Two"]
+		# Rare Trade
+		# Enchanter 1 Trade Request 2 Table
+		enchanter_1_trade_request_2_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+		# Enchanter 1 Trade Offer 2 Table
+		enchanter_1_trade_offer_2_table = "todecoins:trade_tables/gems/enchanting_gems_table"
+
+	["Enchanter Trade Settings"."Enchanter Level One Trade Three"]
+		# Rare Trade
+		# Enchanter 1 Trade Request 2 Table
+		enchanter_1_trade_request_3_table = "todecoins:trade_tables/currency/thirty_six_emerald_value_currency"
+
+	["Enchanter Trade Settings"."Enchanter Level Two Trade One"]
+		# Enchanter 2 Trade Request 1 Table
+		enchanter_2_trade_request_1_table = "todecoins:trade_tables/library/book_table"
+		# Enchanter 2 Trade Offer 1 Table
+		enchanter_2_trade_offer_1_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+
+	["Enchanter Trade Settings"."Enchanter Level Two Trade Two"]
+		# Rare Trade
+		# Enchanter 2 Trade Request 2 Table
+		enchanter_2_trade_request_2_table = "todecoins:trade_tables/currency/thirty_six_emerald_value_currency"
+
+	["Enchanter Trade Settings"."Enchanter Level Two Trade Three"]
+		# Rare Trade
+		# Enchanter 2 Trade Request 3 Table
+		enchanter_2_trade_request_3_table = "todecoins:trade_tables/currency/emerald_quarter_bank_note_value_currency"
+		# Enchanter 2 Trade Offer 3 Table
+		enchanter_2_trade_offer_3_table = "todecoins:trade_tables/library/refresh_book_table"
+		enchanter_1_trade_offer_1_count = 1
+
+	["Enchanter Trade Settings"."Enchanter Level Three Trade One"]
+		# Rare Trade
+		# Enchanter 3 Trade Request 1 Table
+		enchanter_3_trade_request_1_table = "todecoins:trade_tables/currency/thirty_six_emerald_value_currency"
+
+	["Enchanter Trade Settings"."Enchanter Level Three Trade Two"]
+		# Rare Trade
+		# Enchanter 3 Trade Request 2 Table
+		enchanter_3_trade_request_2_table = "todecoins:trade_tables/currency/emerald_quarter_bank_note_value_currency"
+		# Enchanter 3 Trade Offer 2 Table
+		enchanter_3_trade_offer_2_table = "todecoins:trade_tables/library/refresh_book_table"
+		enchanter_3_trade_offer_2_count = 1
+
+	["Enchanter Trade Settings"."Enchanter Level Three Trade Three"]
+		# Enchanter 3 Trade Request 3 Table
+		enchanter_3_trade_request_3_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+		# Enchanter 3 Trade Offer 3 Table
+		enchanter_3_trade_offer_3_table = "todecoins:trade_tables/gems/enchanting_gems_table"
+
+	["Enchanter Trade Settings"."Enchanter Level Four Trade One"]
+		# Enchanter 4 Trade Request 1 Table
+		enchanter_4_trade_request_1_table = "todecoins:trade_tables/library/book_table"
+		# Enchanter 4 Trade Offer 1 Table
+		enchanter_4_trade_offer_1_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+
+	["Enchanter Trade Settings"."Enchanter Level Four Trade Two"]
+		# Rare Trade
+		# Enchanter 4 Trade Request 2 Table
+		enchanter_4_trade_request_2_table = "todecoins:trade_tables/currency/thirty_six_emerald_value_currency"
+
+	["Enchanter Trade Settings"."Enchanter Level Four Trade Three"]
+		# Rare Trade
+		# Enchanter 4 Trade Request 3 Table
+		enchanter_4_trade_request_3_table = "todecoins:trade_tables/currency/emerald_quarter_bank_note_value_currency"
+		# Enchanter 4 Trade Offer 3 Table
+		enchanter_4_trade_offer_3_table = "todecoins:trade_tables/library/refresh_book_table"
+		enchanter_4_trade_offer_3_count = 1
+
+	["Enchanter Trade Settings"."Enchanter Level Five Trade One"]
+		# Enchanter 5 Trade Request 1 Table
+		enchanter_5_trade_request_1_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+		# Enchanter 5 Trade Offer 1 Table
+		enchanter_5_trade_offer_1_table = "todecoins:trade_tables/gems/enchanting_gems_table"
+
+	["Enchanter Trade Settings"."Enchanter Level Five Trade Two"]
+		# Rare Trade
+		# Enchanter 5 Trade Request 2 Table
+		enchanter_5_trade_request_2_table = "todecoins:trade_tables/currency/emerald_quarter_bank_note_value_currency"
+		# Enchanter 5 Trade Offer 2 Table
+		enchanter_5_trade_offer_2_table = "todecoins:trade_tables/library/refresh_book_table"
+		enchanter_5_trade_offer_2_count = 1
+
+	["Enchanter Trade Settings"."Enchanter Level Five Trade Three"]
+		# Enchanter 5 Trade Request 3 Table
+		enchanter_5_trade_request_3_table = "todecoins:trade_tables/currency/thirty_six_emerald_value_currency"
+

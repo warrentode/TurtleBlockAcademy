@@ -1,5 +1,7 @@
 package com.github.warrentode.turtleblockacademy.blocks.entity.gui;
-
+import com.github.warrentode.turtleblockacademy.blocks.entity.gui.basket.BasketMenu;
+import com.github.warrentode.turtleblockacademy.blocks.entity.gui.desk.SchoolDeskMenu;
+import com.github.warrentode.turtleblockacademy.blocks.entity.gui.fermentingpot.FermentingPotMenu;
 import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.inventory.MenuType;
 import net.minecraftforge.common.extensions.IForgeMenuType;
@@ -21,8 +23,14 @@ public class TBAMenuTypes {
     public static final RegistryObject<MenuType<FermentingPotMenu>> FERMENTING_POT_MENU =
             registerMenuType(FermentingPotMenu::new, "fermenting_pot_menu");
 
+    public static final RegistryObject<MenuType<BasketMenu>> BASKET_MENU =
+            registerSimpleMenuType("basket_menu", new MenuType<>(BasketMenu::new));
 
-    private static <T extends AbstractContainerMenu> RegistryObject<MenuType<T>> registerMenuType(IContainerFactory<T> factory, @SuppressWarnings("SameParameterValue") String name) {
+    private static RegistryObject<MenuType<BasketMenu>> registerSimpleMenuType(String name, MenuType<BasketMenu> type) {
+        return MENUS.register(name, () -> type);
+    }
+
+    private static <T extends AbstractContainerMenu> RegistryObject<MenuType<T>> registerMenuType(IContainerFactory<T> factory, String name) {
         return MENUS.register(name, () -> IForgeMenuType.create(factory));
     }
 

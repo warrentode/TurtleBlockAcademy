@@ -1,0 +1,12 @@
+{
+  "values": [
+    {
+      "id": "biomesoplenty:highland_moor",
+      "required": false
+    },
+    "minecraft:old_growth_birch_forest",
+    "minecraft:birch_forest",
+    "minecraft:flower_forest",
+    "minecraft:forest"
+  ]
+}

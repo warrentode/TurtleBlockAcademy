@@ -1,0 +1,106 @@
+
+["Alchemist Trade Settings"]
+
+	["Alchemist Trade Settings"."Alchemist Level One Trade One"]
+		# Alchemist 1 Trade Request 1 Table
+		alchemist_1_trade_request_1_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+		# Alchemist 1 Trade Offer 1 Table
+		alchemist_1_trade_offer_1_table = "todecoins:trade_tables/brewing/one_emerald_value_potion_ingredients_table"
+
+	["Alchemist Trade Settings"."Alchemist Level One Trade Two"]
+		# Alchemist 1 Trade Request 2 Table
+		alchemist_1_trade_request_2_table = "todecoins:trade_tables/currency/five_emerald_value_currency"
+		# Alchemist 1 Trade Offer 2 Table
+		alchemist_1_trade_offer_2_table = "todecoins:trade_tables/brewing/five_emerald_value_potion_ingredients_table"
+
+	["Alchemist Trade Settings"."Alchemist Level One Trade Three"]
+		# Alchemist 1 Trade Request 3 Table
+		alchemist_1_trade_request_3_table = "todecoins:trade_tables/currency/ten_emerald_value_currency"
+		# Alchemist 1 Trade Offer 2 Table
+		alchemist_1_trade_offer_2_table = "todecoins:trade_tables/brewing/ten_emerald_value_potion_ingredients_table"
+
+	["Alchemist Trade Settings"."Alchemist Level One Trade Four"]
+		# Alchemist 1 Trade Request 4 Table
+		alchemist_1_trade_request_1_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+		# Alchemist 1 Trade Offer 4 Table
+		alchemist_1_trade_offer_4_table = "todecoins:trade_tables/glass/glass_bottle_table"
+
+	["Alchemist Trade Settings"."Alchemist Level Two Trade One"]
+		# Alchemist 2 Trade Request 1 Table
+		alchemist_2_trade_request_1_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+		# Alchemist 2 Trade Offer 1 Table
+		alchemist_2_trade_offer_1_table = "todecoins:trade_tables/brewing/one_emerald_value_potion_ingredients_table"
+
+	["Alchemist Trade Settings"."Alchemist Level Two Trade Two"]
+		# Alchemist 2 Trade Request 2 Table
+		alchemist_2_trade_request_2_table = "todecoins:trade_tables/currency/five_emerald_value_currency"
+		# Alchemist 2 Trade Offer 2 Table
+		alchemist_2_trade_offer_2_table = "todecoins:trade_tables/brewing/five_emerald_value_potion_ingredients_table"
+
+	["Alchemist Trade Settings"."Alchemist Level Two Trade Three"]
+		# Alchemist 2 Trade Request 3 Table
+		alchemist_2_trade_request_3_table = "todecoins:trade_tables/currency/ten_emerald_value_currency"
+		# Alchemist 2 Trade Offer 2 Table
+		alchemist_2_trade_offer_2_table = "todecoins:trade_tables/brewing/ten_emerald_value_potion_ingredients_table"
+
+	["Alchemist Trade Settings"."Alchemist Level Two Trade Four"]
+		# Alchemist 2 Trade Request 4 Table
+		alchemist_2_trade_request_1_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+		# Alchemist 2 Trade Offer 4 Table
+		alchemist_2_trade_offer_4_table = "todecoins:trade_tables/glass/glass_bottle_table"
+
+	["Alchemist Trade Settings"."Alchemist Level Three Trade One"]
+		# Alchemist 3 Trade Request 1 Table
+		alchemist_3_trade_request_1_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+		# Alchemist 3 Trade Offer 1 Table
+		alchemist_3_trade_offer_1_table = "todecoins:trade_tables/brewing/one_emerald_value_potion_ingredients_table"
+
+	["Alchemist Trade Settings"."Alchemist Level Three Trade Two"]
+		# Alchemist 3 Trade Request 2 Table
+		alchemist_3_trade_request_2_table = "todecoins:trade_tables/currency/five_emerald_value_currency"
+		# Alchemist 3 Trade Offer 2 Table
+		alchemist_3_trade_offer_2_table = "todecoins:trade_tables/brewing/five_emerald_value_potion_ingredients_table"
+
+	["Alchemist Trade Settings"."Alchemist Level Three Trade Three"]
+		# Alchemist 3 Trade Request 3 Table
+		alchemist_3_trade_request_3_table = "todecoins:trade_tables/currency/ten_emerald_value_currency"
+		# Alchemist 3 Trade Offer 2 Table
+		alchemist_3_trade_offer_2_table = "todecoins:trade_tables/brewing/ten_emerald_value_potion_ingredients_table"
+
+	["Alchemist Trade Settings"."Alchemist Level Three Trade Four"]
+		# Alchemist 3 Trade Request 4 Table
+		alchemist_3_trade_request_1_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+		# Alchemist 3 Trade Offer 4 Table
+		alchemist_3_trade_offer_4_table = "todecoins:trade_tables/glass/glass_bottle_table"
+
+	["Alchemist Trade Settings"."Alchemist Level Four Trade One"]
+		# Alchemist 4 Trade Request 1 Table
+		alchemist_4_trade_request_1_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+		# Alchemist 4 Trade Offer 1 Table
+		alchemist_4_trade_offer_1_table = "todecoins:trade_tables/brewing/one_emerald_value_potion_ingredients_table"
+
+	["Alchemist Trade Settings"."Alchemist Level Four Trade Two"]
+		# Alchemist 4 Trade Request 2 Table
+		alchemist_4_trade_request_2_table = "todecoins:trade_tables/currency/five_emerald_value_currency"
+		# Alchemist 4 Trade Offer 2 Table
+		alchemist_4_trade_offer_2_table = "todecoins:trade_tables/brewing/five_emerald_value_potion_ingredients_table"
+
+	["Alchemist Trade Settings"."Alchemist Level Four Trade Three"]
+		# Alchemist 4 Trade Request 3 Table
+		alchemist_4_trade_request_3_table = "todecoins:trade_tables/currency/ten_emerald_value_currency"
+		# Alchemist 4 Trade Offer 2 Table
+		alchemist_4_trade_offer_2_table = "todecoins:trade_tables/brewing/ten_emerald_value_potion_ingredients_table"
+
+	["Alchemist Trade Settings"."Alchemist Level Four Trade Four"]
+		# Alchemist 4 Trade Request 4 Table
+		alchemist_4_trade_request_1_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+		# Alchemist 4 Trade Offer 4 Table
+		alchemist_4_trade_offer_4_table = "todecoins:trade_tables/glass/glass_bottle_table"
+
+	["Alchemist Trade Settings"."Alchemist Level Five Potion Trade"]
+		# All Level Five Trades are This
+		# All Potion Effects Added
+		# Alchemist 5 Trade Request 1 Table
+		alchemist_5_trade_request_1_table = "todecoins:trade_tables/currency/emerald_quarter_bank_note_value_currency"
+		potion_duration = 300
+

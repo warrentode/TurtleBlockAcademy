@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "forge:cooked_meats/boiled_eggs"
+    }
+  ],
+  "result": {
+    "item": "turtleblockacademy:peeled_egg"
+  }
+}

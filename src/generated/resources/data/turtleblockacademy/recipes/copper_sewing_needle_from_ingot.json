@@ -1,0 +1,13 @@
+{
+  "type": "turtleblockacademy:shapeless_remainder",
+  "group": "needles",
+  "ingredients": [
+    {
+      "tag": "forge:ingots/copper"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "turtleblockacademy:copper_sewing_needle"
+  }
+}

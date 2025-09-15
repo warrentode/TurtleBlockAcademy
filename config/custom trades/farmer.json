@@ -1,0 +1,475 @@
+{
+  "profession": "minecraft:farmer",
+  "removeOtherTrades": true,
+  "trades": [
+    {
+      "multiOffer": [
+        {
+          "itemKey": "minecraft:emerald",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:copper_coin_bag",
+          "amount": 18,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:iron_coin_bag",
+          "amount": 8,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:gold_coin_bag",
+          "amount": 6,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:nether_gold_coin",
+          "amount": 3,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:endonian_coin",
+          "amount": 1,
+          "priceModifier": 0
+        }
+      ],
+      "request": {
+        "itemKey": "minecraft:wheat",
+        "amount": 20
+      },
+      "tradeExp": 2,
+      "maxUses": 16,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 1,
+      "UTID": "minecraft:farmer_emerald_for_wheat"
+    },
+    {
+      "multiOffer": [
+        {
+          "itemKey": "minecraft:emerald",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:copper_coin_bag",
+          "amount": 18,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:iron_coin_bag",
+          "amount": 8,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:gold_coin_bag",
+          "amount": 6,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:nether_gold_coin",
+          "amount": 3,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:endonian_coin",
+          "amount": 1,
+          "priceModifier": 0
+        }
+      ],
+      "request": {
+        "itemKey": "minecraft:potato",
+        "amount": 26
+      },
+      "tradeExp": 2,
+      "maxUses": 16,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 1,
+      "UTID": "minecraft:farmer_emerald_for_potato"
+    },
+    {
+      "multiOffer": [
+        {
+          "itemKey": "minecraft:emerald",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:copper_coin_bag",
+          "amount": 18,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:iron_coin_bag",
+          "amount": 8,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:gold_coin_bag",
+          "amount": 6,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:nether_gold_coin",
+          "amount": 3,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:endonian_coin",
+          "amount": 1,
+          "priceModifier": 0
+        }
+      ],
+      "request": {
+        "itemKey": "minecraft:carrot",
+        "amount": 22
+      },
+      "tradeExp": 5,
+      "maxUses": 16,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 2,
+      "UTID": "minecraft:farmer_emerald_for_carrot"
+    },
+    {
+      "multiOffer": [
+        {
+          "itemKey": "minecraft:emerald",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:copper_coin_bag",
+          "amount": 18,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:iron_coin_bag",
+          "amount": 8,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:gold_coin_bag",
+          "amount": 6,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:nether_gold_coin",
+          "amount": 3,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:endonian_coin",
+          "amount": 1,
+          "priceModifier": 0
+        }
+      ],
+      "request": {
+        "itemKey": "minecraft:beetroot",
+        "amount": 15
+      },
+      "tradeExp": 5,
+      "maxUses": 16,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 2,
+      "UTID": "minecraft:farmer_emerald_for_beetroot"
+    },
+    {
+      "multiOffer": [
+        {
+          "itemKey": "minecraft:emerald",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:copper_coin_bag",
+          "amount": 18,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:iron_coin_bag",
+          "amount": 8,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:gold_coin_bag",
+          "amount": 6,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:nether_gold_coin",
+          "amount": 3,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:endonian_coin",
+          "amount": 1,
+          "priceModifier": 0
+        }
+      ],
+      "request": {
+        "itemKey": "farmersdelight:cabbage",
+        "amount": 16
+      },
+      "tradeExp": 10,
+      "maxUses": 12,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 3,
+      "UTID": "minecraft:farmer_emerald_for_cabbage"
+    },
+    {
+      "multiOffer": [
+        {
+          "itemKey": "minecraft:emerald",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:copper_coin_bag",
+          "amount": 18,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:iron_coin_bag",
+          "amount": 8,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:gold_coin_bag",
+          "amount": 6,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:nether_gold_coin",
+          "amount": 3,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:endonian_coin",
+          "amount": 1,
+          "priceModifier": 0
+        }
+      ],
+      "request": {
+        "itemKey": "farmersdelight:onion",
+        "amount": 26
+      },
+      "tradeExp": 10,
+      "maxUses": 12,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 3,
+      "UTID": "minecraft:farmer_emerald_for_onion"
+    },
+    {
+      "multiOffer": [
+        {
+          "itemKey": "minecraft:emerald",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:copper_coin_bag",
+          "amount": 18,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:iron_coin_bag",
+          "amount": 8,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:gold_coin_bag",
+          "amount": 6,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:nether_gold_coin",
+          "amount": 3,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:endonian_coin",
+          "amount": 1,
+          "priceModifier": 0
+        }
+      ],
+      "multiRequest": [
+        {
+          "itemKey": "farmersdelight:rice",
+          "amount": 20
+        },
+        {
+          "itemKey": "farmersdelight:tomato",
+          "amount": 26
+        }
+      ],
+      "tradeExp": 15,
+      "maxUses": 12,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 4,
+      "UTID": "minecraft:farmer_emerald_for_multirequest_rice"
+    },
+    {
+      "multiOffer": [
+        {
+          "itemKey": "minecraft:emerald",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:copper_coin_bag",
+          "amount": 18,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:iron_coin_bag",
+          "amount": 8,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:gold_coin_bag",
+          "amount": 6,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:nether_gold_coin",
+          "amount": 3,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:endonian_coin",
+          "amount": 1,
+          "priceModifier": 0
+        }
+      ],
+      "multiRequest": [
+        {
+          "itemKey": "minecraft:pumpkin",
+          "amount": 6
+        },
+        {
+          "itemKey": "minecraft:melon",
+          "amount": 4
+        }
+      ],
+      "tradeExp": 30,
+      "maxUses": 12,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 5,
+      "UTID": "minecraft:farmer_emerald_for_multirequest_pumpkin"
+    },
+    {
+      "multiOffer": [
+        {
+          "itemKey": "minecraft:emerald",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:copper_coin_bag",
+          "amount": 18,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:iron_coin_bag",
+          "amount": 8,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:gold_coin_bag",
+          "amount": 6,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:nether_gold_coin",
+          "amount": 3,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:endonian_coin",
+          "amount": 1,
+          "priceModifier": 0
+        }
+      ],
+      "multiRequest": [
+        {
+          "itemKey": "hauntedharvest:corn",
+          "amount": 20
+        },
+        {
+          "itemKey": "supplementaries:flax",
+          "amount": 20
+        }
+      ],
+      "tradeExp": 15,
+      "maxUses": 12,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 4,
+      "UTID": "minecraft:farmer_emerald_for_multirequest_corn"
+    },
+    {
+      "multiOffer": [
+        {
+          "itemKey": "minecraft:glistering_melon_slice",
+          "amount": 3
+        },
+        {
+          "itemKey": "minecraft:golden_carrot",
+          "amount": 3
+        }
+      ],
+      "multiRequest": [
+        {
+          "itemKey": "minecraft:emerald",
+          "amount": 4,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:iron_coin_bag",
+          "amount": 32,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:gold_coin_bag",
+          "amount": 24,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:pot_of_gold",
+          "amount": 3,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:nether_gold_coin",
+          "amount": 12,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:nether_gold_coin_bag",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:endonian_coin",
+          "amount": 4,
+          "priceModifier": 0
+        }
+      ],
+      "tradeExp": 24,
+      "maxUses": 12,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 5,
+      "UTID": "minecraft:farmer_multioffer_glistering_melon_slice_for_emerald"
+    }
+  ]
+}

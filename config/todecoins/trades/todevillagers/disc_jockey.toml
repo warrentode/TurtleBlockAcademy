@@ -1,0 +1,73 @@
+
+["DiscJockey Trade Settings"]
+
+	["DiscJockey Trade Settings"."DiscJockey Level One Trade One"]
+		# DiscJockey 1 Trade Request 1 Table
+		disc_jockey_1_trade_request_1_table = "todecoins:trade_tables/gems/single_emerald_value_gems"
+		# DiscJockey 1 Trade Offer 1 Table
+		disc_jockey_1_trade_offer_1_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+
+	["DiscJockey Trade Settings"."DiscJockey Level One Trade Two"]
+		# DiscJockey 1 Trade Request 2 Table
+		disc_jockey_1_trade_request_2_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+		# DiscJockey 1 Trade Offer 2 Table
+		disc_jockey_1_trade_offer_2_table = "todecoins:trade_tables/gems/single_emerald_value_gems"
+
+	["DiscJockey Trade Settings"."DiscJockey Level One Trade Three"]
+		# DiscJockey 1 Trade Request 3 Table
+		disc_jockey_1_trade_request_3_table = "todecoins:trade_tables/music/disc_fragments_table"
+		# DiscJockey 1 Trade Offer 3 Table
+		disc_jockey_1_trade_offer_3_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+
+	["DiscJockey Trade Settings"."DiscJockey Level Two Trade One"]
+		# Rare Trade
+		# DiscJockey 2 Trade Request 1 Table
+		disc_jockey_2_trade_request_1_table = "todecoins:trade_tables/currency/twenty_six_emerald_value_currency"
+		# DiscJockey 2 Trade Offer 1 Table
+		disc_jockey_2_trade_offer_1_table = "todecoins:trade_tables/music/music_disc_tag_table"
+
+	["DiscJockey Trade Settings"."DiscJockey Level Two Trade Two"]
+		# DiscJockey 2 Trade Request 2 Table
+		disc_jockey_2_trade_request_2_table = "todecoins:trade_tables/gems/single_emerald_value_gems"
+		# DiscJockey 2 Trade Offer 2 Table
+		disc_jockey_2_trade_offer_2_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+
+	["DiscJockey Trade Settings"."DiscJockey Level Three Trade One"]
+		# Rare Trade
+		# DiscJockey 3 Trade Request 1 Table
+		disc_jockey_3_trade_request_1_table = "todecoins:trade_tables/currency/twenty_six_emerald_value_currency"
+		# DiscJockey 3 Trade Offer 1 Table
+		disc_jockey_3_trade_offer_1_table = "todecoins:trade_tables/music/music_disc_tag_table"
+
+	["DiscJockey Trade Settings"."DiscJockey Level Three Trade Two"]
+		# DiscJockey 3 Trade Request 2 Table
+		disc_jockey_3_trade_request_2_table = "todecoins:trade_tables/gems/single_emerald_value_gems"
+		# DiscJockey 3 Trade Offer 2 Table
+		disc_jockey_3_trade_offer_2_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+
+	["DiscJockey Trade Settings"."DiscJockey Level Four Trade One"]
+		# Rare Trade
+		# DiscJockey 4 Trade Request 1 Table
+		disc_jockey_4_trade_request_1_table = "todecoins:trade_tables/currency/twenty_six_emerald_value_currency"
+		# DiscJockey 4 Trade Offer 1 Table
+		disc_jockey_4_trade_offer_1_table = "todecoins:trade_tables/music/music_disc_tag_table"
+
+	["DiscJockey Trade Settings"."DiscJockey Level Four Trade Two"]
+		# DiscJockey 4 Trade Request 2 Table
+		disc_jockey_4_trade_request_2_table = "todecoins:trade_tables/gems/single_emerald_value_gems"
+		# DiscJockey 4 Trade Offer 2 Table
+		disc_jockey_4_trade_offer_2_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+
+	["DiscJockey Trade Settings"."DiscJockey Level Five Trade One"]
+		# Rare Trade
+		# DiscJockey 5 Trade Request 1 Table
+		disc_jockey_5_trade_request_1_table = "todecoins:trade_tables/currency/twenty_emerald_value_currency"
+		# DiscJockey 5 Trade Offer 1 Table
+		disc_jockey_5_trade_offer_1_table = "todecoins:trade_tables/music/music_disc_tag_table"
+
+	["DiscJockey Trade Settings"."DiscJockey Level Five Trade Two"]
+		# DiscJockey 5 Trade Request 2 Table
+		disc_jockey_5_trade_request_2_table = "todecoins:trade_tables/gems/single_emerald_value_gems"
+		# DiscJockey 5 Trade Offer 2 Table
+		disc_jockey_5_trade_offer_2_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+

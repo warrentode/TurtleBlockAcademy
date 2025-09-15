@@ -1,0 +1,824 @@
+{
+  "profession": "todevillagers:disc_jockey",
+  "removeOtherTrades": false,
+  "trades": [
+    {
+      "multiOffer": [
+        {
+          "itemKey": "minecraft:emerald",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:copper_coin_bag",
+          "amount": 18,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:iron_coin_bag",
+          "amount": 8,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:gold_coin_bag",
+          "amount": 6,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:nether_gold_coin",
+          "amount": 3,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:endonian_coin",
+          "amount": 1,
+          "priceModifier": 0
+        }
+      ],
+      "request": {
+        "itemKey": "minecraft:redstone",
+        "amount": 2,
+        "priceModifier": 0
+      },
+      "tradeExp": 2,
+      "maxUses": 12,
+      "priceMultiplier": 0.02,
+      "demand": 0,
+      "tradeLevel": 1,
+      "UTID": "todevillagers:disc_jockey_multioffer_emerald_for_redstone"
+    },
+    {
+      "multiOffer": [
+        {
+          "itemKey": "minecraft:emerald",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:copper_coin_bag",
+          "amount": 18,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:iron_coin_bag",
+          "amount": 8,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:gold_coin_bag",
+          "amount": 6,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:nether_gold_coin",
+          "amount": 3,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:endonian_coin",
+          "amount": 1,
+          "priceModifier": 0
+        }
+      ],
+      "multiRequest": [
+        {
+          "itemKey": "minecraft:disc_fragment_5",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "unusualend:disc_fragment_flying_ships",
+          "amount": 1,
+          "priceModifier": 0
+        }
+      ],
+      "tradeExp": 2,
+      "maxUses": 12,
+      "priceMultiplier": 0.02,
+      "demand": 0,
+      "tradeLevel": 1,
+      "UTID": "todevillagers:disc_jockey_multioffer_emerald_for_multirequest_disc_fragment_5"
+    },
+    {
+      "offer": {
+        "itemKey": "minecraft:amethyst_shard",
+        "amount": 4,
+        "priceModifier": 0
+      },
+      "multiRequest": [
+        {
+          "itemKey": "minecraft:emerald",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:copper_coin_bag",
+          "amount": 18,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:iron_coin_bag",
+          "amount": 8,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:gold_coin_bag",
+          "amount": 6,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:nether_gold_coin",
+          "amount": 3,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:endonian_coin",
+          "amount": 1,
+          "priceModifier": 0
+        }
+      ],
+      "tradeExp": 2,
+      "maxUses": 12,
+      "priceMultiplier": 0.02,
+      "demand": 0,
+      "tradeLevel": 1,
+      "UTID": "todevillagers:disc_jockey_amethyst_shard_for_multirequest_emerald"
+    },
+    {
+      "multiOffer": [
+        {
+          "itemKey": "decoration_delight:cookin_disc",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "minecraft:music_disc_chirp",
+          "amount": 1
+        },
+        {
+          "itemKey": "minecraft:music_disc_far",
+          "amount": 1
+        },
+        {
+          "itemKey": "minecraft:music_disc_wait",
+          "amount": 1
+        },
+        {
+          "itemKey": "minecraft:music_disc_mellohi",
+          "amount": 1
+        },
+        {
+          "itemKey": "minecraft:music_disc_cat",
+          "amount": 1
+        },
+        {
+          "itemKey": "minecraft:music_disc_stal",
+          "amount": 1
+        }
+      ],
+      "multiRequest": [
+        {
+          "itemKey": "minecraft:emerald",
+          "amount": 32,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "minecraft:emerald_block",
+          "amount": 4,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:pot_of_gold",
+          "amount": 21,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:nether_gold_coin_bag",
+          "amount": 11,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:netherite_coin",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:emerald_half_bank_note",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:emerald_quarter_bank_note",
+          "amount": 2,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:endonian_coin",
+          "amount": 32,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:endonian_coin_bag",
+          "amount": 4,
+          "priceModifier": 0
+        }
+      ],
+      "tradeExp": 30,
+      "maxUses": 3,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 2,
+      "UTID": "todevillagers:disc_jockey_multioffer_cookin_disc_for_multirequest_emerald"
+    },
+    {
+      "multiOffer": [
+        {
+          "itemKey": "minecraft:emerald",
+          "amount": 32,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "minecraft:emerald_block",
+          "amount": 4,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:pot_of_gold",
+          "amount": 21,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:nether_gold_coin_bag",
+          "amount": 11,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:netherite_coin",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:emerald_half_bank_note",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:emerald_quarter_bank_note",
+          "amount": 2,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:endonian_coin",
+          "amount": 32,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:endonian_coin_bag",
+          "amount": 4,
+          "priceModifier": 0
+        }
+      ],
+      "multiRequest": [
+        {
+          "itemKey": "decoration_delight:cookin_disc",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "minecraft:music_disc_chirp",
+          "amount": 1
+        },
+        {
+          "itemKey": "minecraft:music_disc_far",
+          "amount": 1
+        },
+        {
+          "itemKey": "minecraft:music_disc_wait",
+          "amount": 1
+        },
+        {
+          "itemKey": "minecraft:music_disc_mellohi",
+          "amount": 1
+        },
+        {
+          "itemKey": "minecraft:music_disc_cat",
+          "amount": 1
+        },
+        {
+          "itemKey": "minecraft:music_disc_stal",
+          "amount": 1
+        }
+      ],
+      "tradeExp": 30,
+      "maxUses": 3,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 2,
+      "UTID": "todevillagers:disc_jockey_multioffer_emerald_for_multirequest_cookin_disc"
+    },
+    {
+      "multiOffer": [
+        {
+          "itemKey": "unusualend:music_disc_endstone_golem_theme",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "unusualend:music_disc_flying_ships",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todevillagers:chakra_dream_music_disc",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "snowyspirit:winter_disc",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "ecologics:music_disc_coconut",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "minecraft:music_disc_13",
+          "amount": 1
+        },
+        {
+          "itemKey": "minecraft:music_disc_blocks",
+          "amount": 1
+        }
+      ],
+      "multiRequest": [
+        {
+          "itemKey": "minecraft:emerald",
+          "amount": 32,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "minecraft:emerald_block",
+          "amount": 4,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:pot_of_gold",
+          "amount": 21,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:nether_gold_coin_bag",
+          "amount": 11,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:netherite_coin",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:emerald_half_bank_note",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:emerald_quarter_bank_note",
+          "amount": 2,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:endonian_coin",
+          "amount": 32,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:endonian_coin_bag",
+          "amount": 4,
+          "priceModifier": 0
+        }
+      ],
+      "tradeExp": 30,
+      "maxUses": 3,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 3,
+      "UTID": "todevillagers:disc_jockey_multioffer_music_disc_endstone_golem_theme_for_multirequest_emerald"
+    },
+    {
+      "multiOffer": [
+        {
+          "itemKey": "minecraft:emerald",
+          "amount": 32,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "minecraft:emerald_block",
+          "amount": 4,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:pot_of_gold",
+          "amount": 21,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:nether_gold_coin_bag",
+          "amount": 11,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:netherite_coin",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:emerald_half_bank_note",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:emerald_quarter_bank_note",
+          "amount": 2,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:endonian_coin",
+          "amount": 32,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:endonian_coin_bag",
+          "amount": 4,
+          "priceModifier": 0
+        }
+      ],
+      "multiRequest": [
+        {
+          "itemKey": "unusualend:music_disc_endstone_golem_theme",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "unusualend:music_disc_flying_ships",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todevillagers:chakra_dream_music_disc",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "snowyspirit:winter_disc",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "ecologics:music_disc_coconut",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "minecraft:music_disc_13",
+          "amount": 1
+        },
+        {
+          "itemKey": "minecraft:music_disc_blocks",
+          "amount": 1
+        }
+      ],
+      "tradeExp": 30,
+      "maxUses": 3,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 3,
+      "UTID": "todevillagers:disc_jockey_multioffer_emerald_for_multirequest_music_disc_endstone_golem_theme"
+    },
+    {
+      "multiOffer": [
+        {
+          "itemKey": "aether:music_disc_chinchilla",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "aether:music_disc_high",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "biomesoplenty:music_disc_wanderer",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "minecraft:music_disc_mall",
+          "amount": 1
+        },
+        {
+          "itemKey": "aether:music_disc_aether_tune",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "aether:music_disc_ascending_dawn",
+          "amount": 1,
+          "priceModifier": 0
+        }
+      ],
+      "multiRequest": [
+        {
+          "itemKey": "minecraft:emerald",
+          "amount": 32,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "minecraft:emerald_block",
+          "amount": 4,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:pot_of_gold",
+          "amount": 21,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:nether_gold_coin_bag",
+          "amount": 11,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:netherite_coin",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:emerald_half_bank_note",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:emerald_quarter_bank_note",
+          "amount": 2,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:endonian_coin",
+          "amount": 32,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:endonian_coin_bag",
+          "amount": 4,
+          "priceModifier": 0
+        }
+      ],
+      "tradeExp": 30,
+      "maxUses": 3,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 4,
+      "UTID": "todevillagers:disc_jockey_multioffer_music_disc_chinchilla_for_multirequest_emerald"
+    },
+    {
+      "multiOffer": [
+        {
+          "itemKey": "minecraft:emerald",
+          "amount": 32,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "minecraft:emerald_block",
+          "amount": 4,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:pot_of_gold",
+          "amount": 21,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:nether_gold_coin_bag",
+          "amount": 11,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:netherite_coin",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:emerald_half_bank_note",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:emerald_quarter_bank_note",
+          "amount": 2,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:endonian_coin",
+          "amount": 32,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:endonian_coin_bag",
+          "amount": 4,
+          "priceModifier": 0
+        }
+      ],
+      "multiRequest": [
+        {
+          "itemKey": "aether:music_disc_chinchilla",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "aether:music_disc_high",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "biomesoplenty:music_disc_wanderer",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "minecraft:music_disc_mall",
+          "amount": 1
+        },
+        {
+          "itemKey": "aether:music_disc_aether_tune",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "aether:music_disc_ascending_dawn",
+          "amount": 1,
+          "priceModifier": 0
+        }
+      ],
+      "tradeExp": 30,
+      "maxUses": 3,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 4,
+      "UTID": "todevillagers:disc_jockey_multioffer_emerald_for_multirequest_music_disc_chinchilla"
+    },
+    {
+      "multiOffer": [
+        {
+          "itemKey": "minecraft:music_disc_strad",
+          "amount": 1
+        },
+        {
+          "itemKey": "minecraft:music_disc_5",
+          "amount": 1
+        },
+        {
+          "itemKey": "minecraft:music_disc_11",
+          "amount": 1
+        },
+        {
+          "itemKey": "minecraft:music_disc_pigstep",
+          "amount": 1
+        },
+        {
+          "itemKey": "minecraft:music_disc_ward",
+          "amount": 1
+        },
+        {
+          "itemKey": "minecraft:music_disc_otherside",
+          "amount": 1
+        }
+      ],
+      "multiRequest": [
+        {
+          "itemKey": "minecraft:emerald",
+          "amount": 4,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:iron_coin_bag",
+          "amount": 32,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:gold_coin_bag",
+          "amount": 24,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:pot_of_gold",
+          "amount": 3,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:nether_gold_coin",
+          "amount": 12,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:nether_gold_coin_bag",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:endonian_coin",
+          "amount": 4,
+          "priceModifier": 0
+        }
+      ],
+      "tradeExp": 30,
+      "maxUses": 3,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 5,
+      "UTID": "todevillagers:disc_jockey_multioffer_music_disc_strad_for_multirequest_emerald"
+    },
+    {
+      "multiOffer": [
+        {
+          "itemKey": "minecraft:emerald",
+          "amount": 32,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "minecraft:emerald_block",
+          "amount": 4,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:pot_of_gold",
+          "amount": 21,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:nether_gold_coin_bag",
+          "amount": 11,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:netherite_coin",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:emerald_half_bank_note",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:emerald_quarter_bank_note",
+          "amount": 2,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:endonian_coin",
+          "amount": 32,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:endonian_coin_bag",
+          "amount": 4,
+          "priceModifier": 0
+        }
+      ],
+      "multiRequest": [
+        {
+          "itemKey": "minecraft:music_disc_strad",
+          "amount": 1
+        },
+        {
+          "itemKey": "minecraft:music_disc_5",
+          "amount": 1
+        },
+        {
+          "itemKey": "minecraft:music_disc_11",
+          "amount": 1
+        },
+        {
+          "itemKey": "minecraft:music_disc_pigstep",
+          "amount": 1
+        },
+        {
+          "itemKey": "minecraft:music_disc_ward",
+          "amount": 1
+        },
+        {
+          "itemKey": "minecraft:music_disc_otherside",
+          "amount": 1
+        }
+      ],
+      "tradeExp": 30,
+      "maxUses": 3,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 5,
+      "UTID": "todevillagers:disc_jockey_multioffer_emerald_for_multirequest_music_disc_strad"
+    }
+  ]
+}

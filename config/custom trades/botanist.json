@@ -1,0 +1,1075 @@
+{
+  "profession": "beautify:botanist",
+  "removeOtherTrades": true,
+  "trades": [
+    {
+      "multiOffer": [
+        {
+          "itemKey": "chimes:amethyst_chimes",
+          "amount": 1
+        },
+        {
+          "itemKey": "chimes:bamboo_chimes",
+          "amount": 1
+        },
+        {
+          "itemKey": "chimes:carved_bamboo_chimes",
+          "amount": 1
+        },
+        {
+          "itemKey": "chimes:copper_chimes",
+          "amount": 1
+        },
+        {
+          "itemKey": "chimes:iron_chimes",
+          "amount": 1
+        },
+        {
+          "itemKey": "chimes:glass_bells",
+          "amount": 1
+        }
+      ],
+      "multiRequest": [
+		{
+			"itemKey": "minecraft:emerald",
+			"amount": 1,
+			"priceModifier": 0
+		},
+        {
+          "itemKey": "todecoins:copper_coin_bag",
+          "amount": 18,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:iron_coin_bag",
+          "amount": 8,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:gold_coin_bag",
+          "amount": 6,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:nether_gold_coin",
+          "amount": 3,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:endonian_coin",
+          "amount": 1,
+          "priceModifier": 0
+        }
+      ],
+      "tradeExp": 1,
+      "maxUses": 16,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 1,
+      "UTID": "beautify:botanist_multioffer_chimes_for_emerald"
+    },
+    {
+      "multiOffer": [
+        {
+          "itemKey": "beautify:lamp_bamboo",
+          "amount": 1
+        },
+        {
+          "itemKey": "beautify:lamp_jar",
+          "amount": 1
+        },
+        {
+          "itemKey": "additional_lights:al_lamp_acacia_planks",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "additional_lights:al_lamp_birch_planks",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "additional_lights:al_lamp_dark_oak_planks",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "additional_lights:al_lamp_jungle_planks",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "additional_lights:al_lamp_oak_planks",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "additional_lights:al_lamp_spruce_planks",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "additional_lights:al_lamp_end_stone",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "additional_lights:al_lamp_end_stone",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "additional_lights:al_lamp_glass",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "additional_lights:al_lamp_blackstone",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "additional_lights:al_lamp_cobblestone",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "additional_lights:al_lamp_mossy_cobblestone",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "additional_lights:al_lamp_sandstone",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "additional_lights:al_lamp_stone",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "additional_lights:al_lamp_nether_bricks",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "additional_lights:al_lamp_red_nether_bricks",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "additional_lights:al_lamp_diamond_block",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "additional_lights:al_lamp_gold_block",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "additional_lights:al_lamp_packed_ice",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "additional_lights:al_lamp_magenta_wool",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "additional_lights:al_lamp_pink_wool",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "additional_lights:al_lamp_iron_block",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "beautify:lamp_light_bulb",
+          "amount": 1
+        }
+      ],
+      "multiRequest": [
+        {
+          "itemKey": "minecraft:emerald",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:copper_coin_bag",
+          "amount": 18,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:iron_coin_bag",
+          "amount": 8,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:gold_coin_bag",
+          "amount": 6,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:nether_gold_coin",
+          "amount": 3,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:endonian_coin",
+          "amount": 1,
+          "priceModifier": 0
+        }
+      ],
+      "tradeExp": 1,
+      "maxUses": 12,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 1,
+      "UTID": "beautify:botanist_multioffer_lamps_for_emerald"
+    },
+    {
+      "multiOffer": [
+        {
+          "itemKey": "sereneseasons:calendar",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "supplementaries:flower_box",
+          "amount": 2
+        },
+        {
+          "itemKey": "supplementaries:planter",
+          "amount": 2
+        },
+        {
+          "itemKey": "supplementaries:planter_rich",
+          "amount": 1
+        },
+        {
+          "itemKey": "supplementaries:urn",
+          "amount": 1
+        },
+        {
+          "itemKey": "ecologics:pot",
+          "amount": 1
+        },
+        {
+          "itemKey": "minecraft:flower_pot",
+          "amount": 3
+        },
+        {
+          "itemKey": "beautify:hanging_pot",
+          "amount": 1,
+          "priceModifier": 0
+        }
+      ],
+      "multiRequest": [
+		{
+			"itemKey": "minecraft:emerald",
+			"amount": 1,
+			"priceModifier": 0
+		},
+        {
+          "itemKey": "todecoins:copper_coin_bag",
+          "amount": 18,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:iron_coin_bag",
+          "amount": 8,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:gold_coin_bag",
+          "amount": 6,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:nether_gold_coin",
+          "amount": 3,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:endonian_coin",
+          "amount": 1,
+          "priceModifier": 0
+        }
+      ],
+      "tradeExp": 5,
+      "maxUses": 16,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 2,
+      "UTID": "beautify:botanist_multioffer_calendar_for_emerald"
+    },
+    {
+      "multiOffer": [
+        {
+          "itemKey": "beautify:oak_trellis",
+          "amount": 2,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "beautify:spruce_trellis",
+          "amount": 2,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "beautify:birch_trellis",
+          "amount": 2,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "beautify:jungle_trellis",
+          "amount": 2,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "beautify:acacia_trellis",
+          "amount": 2,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "beautify:dark_oak_trellis",
+          "amount": 2,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "beautify:mangrove_trellis",
+          "amount": 2,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "beautify:crimson_trellis",
+          "amount": 2,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "beautify:warped_trellis",
+          "amount": 2,
+          "priceModifier": 0
+        }
+      ],
+      "multiRequest": [
+		{
+			"itemKey": "minecraft:emerald",
+			"amount": 2,
+			"priceModifier": 0
+		},
+        {
+          "itemKey": "todecoins:copper_coin_bag",
+          "amount": 36,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:iron_coin_bag",
+          "amount": 16,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:gold_coin_bag",
+          "amount": 12,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:pot_of_gold",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:nether_gold_coin",
+          "amount": 6,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:endonian_coin",
+          "amount": 2,
+          "priceModifier": 0
+        }
+      ],
+      "tradeExp": 5,
+      "maxUses": 16,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 2,
+      "UTID": "beautify:botanist_multioffer_oak_trellis_for_emerald"
+    },
+    {
+      "multiOffer": [
+        {
+          "itemKey": "minecraft:big_dripleaf",
+          "amount": 3,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "minecraft:moss_block",
+          "amount": 2,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "biomesoplenty:glowing_moss_block",
+          "amount": 2,
+          "priceModifier": 0
+        }
+      ],
+      "multiRequest": [
+		{
+			"itemKey": "minecraft:emerald",
+			"amount": 3,
+			"priceModifier": 0
+		},
+        {
+          "itemKey": "todecoins:copper_coin_bag",
+          "amount": 54,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:iron_coin_bag",
+          "amount": 24,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:gold_coin_bag",
+          "amount": 18,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:pot_of_gold",
+          "amount": 2,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:nether_gold_coin",
+          "amount": 9,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:nether_gold_coin_bag",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:endonian_coin",
+          "amount": 3,
+          "priceModifier": 0
+        }
+      ],
+      "tradeExp": 5,
+      "maxUses": 12,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 2,
+      "UTID": "beautify:botanist_multioffer_big_dripleaf_for_emerald"
+    },
+    {
+      "multiOffer": [
+        {
+          "itemKey": "minecraft:spore_blossom",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "minecraft:small_dripleaf",
+          "amount": 4,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "minecraft:lily_pad",
+          "amount": 4,
+          "priceModifier": 0
+        }
+      ],
+      "multiRequest": [
+		{
+			"itemKey": "minecraft:emerald",
+			"amount": 4,
+			"priceModifier": 0
+		},
+        {
+          "itemKey": "todecoins:iron_coin_bag",
+          "amount": 32,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:gold_coin_bag",
+          "amount": 24,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:pot_of_gold",
+          "amount": 3,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:nether_gold_coin",
+          "amount": 12,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:nether_gold_coin_bag",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:endonian_coin",
+          "amount": 4,
+          "priceModifier": 0
+        }
+      ],
+      "tradeExp": 10,
+      "maxUses": 12,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 3,
+      "UTID": "beautify:botanist_multioffer_spore_blossom_for_emerald"
+    },
+    {
+      "multiOffer": [
+        {
+          "itemKey": "beautify:iron_blinds",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "beautify:acacia_blinds",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "beautify:birch_blinds",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "beautify:crimson_blinds",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "beautify:dark_oak_blinds",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "beautify:jungle_blinds",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "beautify:mangrove_blinds",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "beautify:oak_blinds",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "beautify:spruce_blinds",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "beautify:warped_blinds",
+          "amount": 1,
+          "priceModifier": 0
+        }
+      ],
+      "multiRequest": [
+		{
+			"itemKey": "minecraft:emerald",
+			"amount": 3,
+			"priceModifier": 0
+		},
+        {
+          "itemKey": "todecoins:copper_coin_bag",
+          "amount": 54,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:iron_coin_bag",
+          "amount": 24,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:gold_coin_bag",
+          "amount": 18,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:pot_of_gold",
+          "amount": 2,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:nether_gold_coin",
+          "amount": 9,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:nether_gold_coin_bag",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:endonian_coin",
+          "amount": 3,
+          "priceModifier": 0
+        }
+      ],
+      "tradeExp": 10,
+      "maxUses": 16,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 3,
+      "UTID": "beautify:botanist_multioffer_iron_blinds_for_emerald"
+    },
+    {
+      "multiOffer": [
+        {
+          "itemKey": "beautify:quartz_picture_frame",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "beautify:acacia_picture_frame",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "beautify:birch_picture_frame",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "beautify:crimson_picture_frame",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "beautify:dark_oak_picture_frame",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "beautify:jungle_picture_frame",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "beautify:mangrove_picture_frame",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "beautify:oak_picture_frame",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "beautify:spruce_picture_frame",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "beautify:warped_picture_frame",
+          "amount": 1,
+          "priceModifier": 0
+        }
+      ],
+      "multiRequest": [
+		{
+			"itemKey": "minecraft:emerald",
+			"amount": 3,
+			"priceModifier": 0
+		},
+        {
+          "itemKey": "todecoins:copper_coin_bag",
+          "amount": 54,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:iron_coin_bag",
+          "amount": 24,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:gold_coin_bag",
+          "amount": 18,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:pot_of_gold",
+          "amount": 2,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:nether_gold_coin",
+          "amount": 9,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:nether_gold_coin_bag",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:endonian_coin",
+          "amount": 3,
+          "priceModifier": 0
+        }
+      ],
+      "tradeExp": 10,
+      "maxUses": 16,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 3,
+      "UTID": "beautify:botanist_multioffer_quartz_picture_frame_for_emerald"
+    },
+    {
+      "multiOffer": [
+        {
+          "itemKey": "supplementaries:sconce",
+          "amount": 1
+        },
+        {
+          "itemKey": "supplementaries:candle_holder",
+          "amount": 1
+        },
+        {
+          "itemKey": "beautify:lamp_candleabra",
+          "amount": 1
+        },
+        {
+          "itemKey": "beautify:lamp_candleabra_white",
+          "amount": 1
+        },
+        {
+          "itemKey": "beautify:lamp_candleabra_light_gray",
+          "amount": 1
+        },
+        {
+          "itemKey": "beautify:lamp_candleabra_gray",
+          "amount": 1
+        },
+        {
+          "itemKey": "beautify:lamp_candleabra_black",
+          "amount": 1
+        },
+        {
+          "itemKey": "beautify:lamp_candleabra_brown",
+          "amount": 1
+        },
+        {
+          "itemKey": "beautify:lamp_candleabra_red",
+          "amount": 1
+        },
+        {
+          "itemKey": "beautify:lamp_candleabra_orange",
+          "amount": 1
+        },
+        {
+          "itemKey": "beautify:lamp_candleabra_yellow",
+          "amount": 1
+        },
+        {
+          "itemKey": "beautify:lamp_candleabra_lime",
+          "amount": 1
+        },
+        {
+          "itemKey": "beautify:lamp_candleabra_green",
+          "amount": 1
+        },
+        {
+          "itemKey": "beautify:lamp_candleabra_cyan",
+          "amount": 1
+        },
+        {
+          "itemKey": "beautify:lamp_candleabra_light_blue",
+          "amount": 1
+        },
+        {
+          "itemKey": "beautify:lamp_candleabra_blue",
+          "amount": 1
+        },
+        {
+          "itemKey": "beautify:lamp_candleabra_pink",
+          "amount": 1
+        },
+        {
+          "itemKey": "beautify:lamp_candleabra_magenta",
+          "amount": 1
+        },
+        {
+          "itemKey": "beautify:lamp_candleabra_purple",
+          "amount": 1
+        }
+      ],
+      "multiRequest": [
+		{
+			"itemKey": "minecraft:emerald",
+			"amount": 1,
+			"priceModifier": 0
+		},
+        {
+          "itemKey": "todecoins:copper_coin_bag",
+          "amount": 18,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:iron_coin_bag",
+          "amount": 8,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:gold_coin_bag",
+          "amount": 6,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:nether_gold_coin",
+          "amount": 3,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:endonian_coin",
+          "amount": 1,
+          "priceModifier": 0
+        }
+      ],
+      "tradeExp": 15,
+      "maxUses": 16,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 4,
+      "UTID": "beautify:botanist_multioffer_sconce_for_emerald"
+    },
+    {
+      "multiOffer": [
+        {
+          "itemKey": "minecraft:rooted_dirt",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "minecraft:hanging_roots",
+          "amount": 3,
+          "priceModifier": 0
+        }
+      ],
+      "multiRequest": [
+		{
+			"itemKey": "minecraft:emerald",
+			"amount": 3,
+			"priceModifier": 0
+		},
+        {
+          "itemKey": "todecoins:copper_coin_bag",
+          "amount": 54,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:iron_coin_bag",
+          "amount": 24,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:gold_coin_bag",
+          "amount": 18,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:pot_of_gold",
+          "amount": 2,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:nether_gold_coin",
+          "amount": 9,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:nether_gold_coin_bag",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:endonian_coin",
+          "amount": 3,
+          "priceModifier": 0
+        }
+      ],
+      "tradeExp": 15,
+      "maxUses": 16,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 4,
+      "UTID": "beautify:botanist_multioffer_rooted_dirt_for_emerald"
+    },
+    {
+      "multiOffer": [
+        {
+          "itemKey": "botanypots:white_concrete_hopper_botany_pot",
+          "amount": 1
+        },
+        {
+          "itemKey": "botanypots:orange_concrete_hopper_botany_pot",
+          "amount": 1
+        },
+        {
+          "itemKey": "botanypots:magenta_concrete_hopper_botany_pot",
+          "amount": 1
+        },
+        {
+          "itemKey": "botanypots:light_blue_concrete_hopper_botany_pot",
+          "amount": 1
+        },
+        {
+          "itemKey": "botanypots:yellow_concrete_hopper_botany_pot",
+          "amount": 1
+        },
+        {
+          "itemKey": "botanypots:lime_concrete_hopper_botany_pot",
+          "amount": 1
+        },
+        {
+          "itemKey": "botanypots:pink_concrete_hopper_botany_pot",
+          "amount": 1
+        },
+        {
+          "itemKey": "botanypots:gray_concrete_hopper_botany_pot",
+          "amount": 1
+        }
+      ],
+      "multiRequest": [
+		{
+			"itemKey": "minecraft:emerald",
+			"amount": 15,
+			"priceModifier": 0
+		},
+		{
+			"itemKey": "minecraft:emerald_block",
+			"amount": 2,
+			"priceModifier": 0
+		},
+        {
+          "itemKey": "todecoins:pot_of_gold",
+          "amount": 10,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:nether_gold_coin",
+          "amount": 45,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:nether_gold_coin_bag",
+          "amount": 5,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:endonian_coin",
+          "amount": 15,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:endonian_coin_bag",
+          "amount": 2,
+          "priceModifier": 0
+        }
+      ],
+      "tradeExp": 30,
+      "maxUses": 16,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 5,
+      "UTID": "beautify:botanist_multioffer_white_concrete_hopper_botany_pot_for_emerald"
+    },
+    {
+      "multiOffer": [
+        {
+          "itemKey": "botanypots:light_gray_concrete_hopper_botany_pot",
+          "amount": 1
+        },
+        {
+          "itemKey": "botanypots:cyan_concrete_hopper_botany_pot",
+          "amount": 1
+        },
+        {
+          "itemKey": "botanypots:purple_concrete_hopper_botany_pot",
+          "amount": 1
+        },
+        {
+          "itemKey": "botanypots:blue_concrete_hopper_botany_pot",
+          "amount": 1
+        },
+        {
+          "itemKey": "botanypots:brown_concrete_hopper_botany_pot",
+          "amount": 1
+        },
+        {
+          "itemKey": "botanypots:green_concrete_hopper_botany_pot",
+          "amount": 1
+        },
+        {
+          "itemKey": "botanypots:red_concrete_hopper_botany_pot",
+          "amount": 1
+        },
+        {
+          "itemKey": "botanypots:black_concrete_hopper_botany_pot",
+          "amount": 1
+        }
+      ],
+      "multiRequest": [
+		{
+			"itemKey": "minecraft:emerald",
+			"amount": 15,
+			"priceModifier": 0
+		},
+		{
+			"itemKey": "minecraft:emerald_block",
+			"amount": 2,
+			"priceModifier": 0
+		},
+        {
+          "itemKey": "todecoins:pot_of_gold",
+          "amount": 10,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:nether_gold_coin",
+          "amount": 45,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:nether_gold_coin_bag",
+          "amount": 5,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:endonian_coin",
+          "amount": 15,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:endonian_coin_bag",
+          "amount": 2,
+          "priceModifier": 0
+        }
+      ],
+      "tradeExp": 30,
+      "maxUses": 16,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 5,
+      "UTID": "beautify:botanist_multioffer_light_gray_concrete_hopper_botany_pot_for_emerald"
+    }
+  ]
+}

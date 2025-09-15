@@ -1,0 +1,69 @@
+
+["Cleric Trade Settings"]
+
+	["Cleric Trade Settings"."Cleric Level One Trade One"]
+		# Cleric 1 Trade Request 1 Table
+		cleric_1_trade_request_1_table = "todecoins:trade_tables/mob_parts/one_emerald_value_mob_parts_table"
+		# Cleric 1 Trade Offer 1 Table
+		cleric_1_trade_offer_1_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+
+	["Cleric Trade Settings"."Cleric Level One Trade Two"]
+		# Cleric 1 Trade Request 2 Table
+		cleric_1_trade_request_2_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+		# Cleric 1 Trade Offer 2 Table
+		cleric_1_trade_offer_2_table = "todecoins:trade_tables/gems/enchanting_gems_table"
+
+	["Cleric Trade Settings"."Cleric Level Two Trade One"]
+		# Cleric 2 Trade Request 1 Table
+		cleric_2_trade_request_1_table = "todecoins:trade_tables/metals/single_emerald_value_metals"
+		# Cleric 2 Trade Offer 1 Table
+		cleric_2_trade_offer_1_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+
+	["Cleric Trade Settings"."Cleric Level Two Trade Two"]
+		# Cleric 2 Trade Request 2 Table
+		cleric_2_trade_request_2_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+		# Cleric 2 Trade Offer 2 Table
+		cleric_2_trade_offer_2_table = "todecoins:trade_tables/gems/enchanting_gems_table"
+
+	["Cleric Trade Settings"."Cleric Level Three Trade One"]
+		# Cleric 3 Trade Request 1 Table
+		cleric_3_trade_request_1_table = "todecoins:trade_tables/mob_parts/one_emerald_value_mob_parts_table"
+		# Cleric 3 Trade Offer 1 Table
+		cleric_3_trade_offer_1_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+
+	["Cleric Trade Settings"."Cleric Level Three Trade Two"]
+		# Cleric 3 Trade Request 2 Table
+		cleric_3_trade_request_2_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+		# Cleric 3 Trade Offer 2 Table
+		cleric_3_trade_offer_2_table = "todecoins:trade_tables/gems/enchanting_gems_table"
+
+	["Cleric Trade Settings"."Cleric Level Four Trade One"]
+		# Cleric 4 Trade Request 1 Table
+		cleric_4_trade_request_1_table = "todecoins:trade_tables/mob_parts/scute_table"
+		# Cleric 4 Trade Offer 1 Table
+		cleric_4_trade_offer_1_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+
+	["Cleric Trade Settings"."Cleric Level Four Trade Two"]
+		# Cleric 4 Trade Request 2 Table
+		cleric_4_trade_request_2_table = "todecoins:trade_tables/glass/glass_bottle_table"
+		# Cleric 4 Trade Offer 2 Table
+		cleric_4_trade_offer_2_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+
+	["Cleric Trade Settings"."Cleric Level Four Trade Three"]
+		# Cleric 4 Trade Request 3 Table
+		cleric_4_trade_request_3_table = "todecoins:trade_tables/currency/five_emerald_value_currency"
+		# Cleric 4 Trade Offer 3 Table
+		cleric_4_trade_offer_3_table = "todecoins:trade_tables/gems/five_emerald_value_gems"
+
+	["Cleric Trade Settings"."Cleric Level Five Trade One"]
+		# Cleric 5 Trade Request 1 Table
+		cleric_5_trade_request_1_table = "todecoins:trade_tables/brewing/potion_ingredients_table"
+		# Cleric 5 Trade Offer 1 Table
+		cleric_5_trade_offer_1_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+
+	["Cleric Trade Settings"."Cleric Level Five Trade Two"]
+		# Cleric 5 Trade Request 2 Table
+		cleric_5_trade_request_2_table = "todecoins:trade_tables/currency/three_emerald_value_currency"
+		# Cleric 5 Trade Offer 2 Table
+		cleric_5_trade_offer_2_table = "todecoins:trade_tables/brewing/experience_bottle_table"
+

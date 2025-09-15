@@ -1,9 +1,0 @@
-{
-  "type": "lootbags:loot",
-  "color": "gold",
-  "name": "Music Discs Bag",
-  "output": {
-    "table": "lootbags:loot_bags/music_disc_lootbag"
-  },
-  "rarity": "RARE"
-}

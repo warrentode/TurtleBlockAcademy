@@ -1,0 +1,14 @@
+{
+  "values": [
+    "#turtleblockacademy:needles",
+    "#forge:egg_stamps",
+    {
+      "id": "#todevillagers:glassblower_tools",
+      "required": false
+    },
+    {
+      "id": "#todecoins:currency_stamps",
+      "required": false
+    }
+  ]
+}

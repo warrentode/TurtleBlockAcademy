@@ -1,0 +1,31 @@
+
+["General Trade Settings"]
+	# Use Loot Table Trades?
+	use_loot_table_trades = true
+	# Replace Trade with Configured Loot Table Trades?
+	replace_trades = true
+	# Default Base XP per Level
+	#Range: > 0
+	default_base_xp_per_level = 5
+	# Default Max Uses per Trade
+	#Range: > 1
+	default_max_uses_per_trade = 16
+	# Default Max Uses per Rare Trade
+	#Range: > 1
+	default_max_uses_per_rare_trade = 3
+	# Default Price Multiplier
+	#Range: 0.0 ~ 1.7976931348623157E308
+	default_common_price_multiplier = 0.05
+	# Default Price Multiplier
+	#Range: 0.0 ~ 1.7976931348623157E308
+	default_rare_price_multiplier = 0.2
+	# Reset Villager Trades on Restock?
+	reset_trades_on_restock = true
+	# Max Villager Trades per Level
+	#Range: > 0
+	max_villager_trades_per_level = 2
+	# Max Wandering Trader Common Trades per Level
+	#Range: > 0
+	max_wanderer_common_trades = 5
+	# Allow Treasure Enchantments in Trades
+	allow_treasure_enchantments = false

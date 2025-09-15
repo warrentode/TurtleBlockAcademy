@@ -1,0 +1,70 @@
+
+["Netherian Trade Settings"]
+
+	["Netherian Trade Settings"."Netherian Level One Trade One"]
+		# Netherian 1 Trade Request 1 Table
+		netherian_1_trade_request_1_table = "todecoins:trade_tables/currency/three_nether_gold_coin_table"
+		# Netherian 1 Trade Offer 1 Table
+		netherian_1_trade_offer_1_table = "todecoins:trade_tables/decor/soul_lights_table"
+
+	["Netherian Trade Settings"."Netherian Level One Trade Two"]
+		# Netherian 1 Trade Request 2 Table
+		netherian_1_trade_request_2_table = "todecoins:trade_tables/metals/single_emerald_value_gold"
+		# Netherian 1 Trade Offer 2 Table
+		netherian_1_trade_offer_2_table = "todecoins:trade_tables/currency/three_nether_gold_coin_table"
+
+	["Netherian Trade Settings"."Netherian Level Two Trade One"]
+		# Netherian 2 Trade Request 1 Table
+		netherian_2_trade_request_1_table = "todecoins:trade_tables/currency/three_nether_gold_coin_table"
+		# Netherian 2 Trade Offer 1 Table
+		netherian_2_trade_offer_1_table = "todecoins:trade_tables/blocks/nether_blocks_table"
+
+	["Netherian Trade Settings"."Netherian Level Two Trade Two"]
+		# Netherian 2 Trade Request 2 Table
+		netherian_2_trade_request_2_table = "todecoins:trade_tables/currency/three_nether_gold_coin_table"
+		# Netherian 2 Trade Offer 2 Table
+		netherian_2_trade_offer_2_table = "todecoins:trade_tables/brewing/nether_wart_table"
+
+	["Netherian Trade Settings"."Netherian Level Three Trade One"]
+		# Netherian 3 Trade Request 1 Table
+		netherian_3_trade_request_1_table = "todecoins:trade_tables/currency/thirty_nether_gold_coin_table"
+		# Netherian 3 Trade Offer 1 Table
+		netherian_3_trade_offer_1_table = "todecoins:trade_tables/brewing/ghast_tear_table"
+
+	["Netherian Trade Settings"."Netherian Level Three Trade Two"]
+		# Rare Trade
+		# Netherian 3 Trade Request 2 Table
+		netherian_3_trade_request_2_table = "todecoins:trade_tables/currency/forty_two_nether_gold_coin_table"
+		# Netherian 3 Trade Secondary Request 2 Table
+		netherian_3_trade_secondary_request_2_table = "todecoins:trade_tables/tools/compass_table"
+		# Netherian 3 Trade Request 2 Structure Tag
+		netherian_3_trade_secondary_request_2_structure_tag = "turtleblockacademy:worldgen/structure/nether_poi"
+		# Netherian 3 Trade Request 2 Map Name
+		netherian_3_trade_secondary_request_2_map_name = "Nether Explorer Map"
+		# Netherian 3 Trade Request 2 Map Marker
+		netherian_5_trade_secondary_request_2_map_marker = "RED_MARKER"
+
+	["Netherian Trade Settings"."Netherian Level Four Trade One"]
+		# Netherian 4 Trade Request 1 Table
+		netherian_4_trade_request_1_table = "todecoins:trade_tables/currency/nine_nether_gold_coin_table"
+		# Netherian 4 Trade Offer 1 Table
+		netherian_4_trade_offer_1_table = "todecoins:trade_tables/metals/three_emerald_value_gold"
+
+	["Netherian Trade Settings"."Netherian Level Four Trade Two"]
+		# Netherian 4 Trade Request 2 Table
+		netherian_4_trade_request_2_table = "todecoins:trade_tables/currency/three_nether_gold_coin_table"
+		# Netherian 4 Trade Offer 2 Table
+		netherian_4_trade_offer_2_table = "todecoins:trade_tables/blocks/nether_blocks_table"
+
+	["Netherian Trade Settings"."Netherian Level Five Trade One"]
+		# Netherian 5 Trade Request 1 Table
+		netherian_5_trade_request_1_table = "todecoins:trade_tables/currency/three_nether_gold_coin_table"
+		# Netherian 5 Trade Offer 1 Table
+		netherian_5_trade_offer_1_table = "todecoins:trade_tables/blocks/nether_blocks_table"
+
+	["Netherian Trade Settings"."Netherian Level Five Trade Two"]
+		# Netherian 5 Trade Request 2 Table
+		netherian_5_trade_request_2_table = "todecoins:trade_tables/currency/eighteen_netherite_coin_value_currency"
+		# Netherian 5 Trade Offer 2 Table
+		netherian_5_trade_offer_2_table = "todecoins:trade_tables/misc/nether_star_table"
+

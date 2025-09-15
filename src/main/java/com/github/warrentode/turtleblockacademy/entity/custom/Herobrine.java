@@ -91,12 +91,10 @@ public class Herobrine extends PathfinderMob implements Npc {
     }
 
     @Override
-    protected void doPush(@NotNull Entity entityIn) {
-    }
+    protected void doPush(@NotNull Entity entityIn) {}
 
     @Override
-    protected void pushEntities() {
-    }
+    protected void pushEntities() {}
 
     @Override
     public boolean canBeAffected(@NotNull MobEffectInstance mobEffectInstance) {

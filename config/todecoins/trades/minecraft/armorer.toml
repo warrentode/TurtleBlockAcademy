@@ -1,0 +1,129 @@
+
+["Armorer Trade Settings"]
+
+	["Armorer Trade Settings"."Armorer Level One Trade One"]
+		# Armorer 1 Trade Request 1 Table
+		armorer_1_trade_request_1_table = "todecoins:trade_tables/misc/one_emerald_value_fuel_table"
+		# Armorer 1 Trade Offer 1 Table
+		armorer_1_trade_offer_1_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+
+	["Armorer Trade Settings"."Armorer Level One Trade Two"]
+		# Armorer 1 Trade Request 2 Table
+		armorer_1_trade_request_2_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+		# Armorer 1 Trade Offer 2 Table
+		armorer_1_trade_offer_2_table = "todecoins:trade_tables/armor/helmets/chainmail_tier_helmets"
+
+	["Armorer Trade Settings"."Armorer Level One Trade Three"]
+		# Armorer 1 Trade Request 3 Table
+		armorer_1_trade_request_3_table = "todecoins:trade_tables/currency/four_emerald_value_currency"
+		# Armorer 1 Trade Offer 3 Table
+		armorer_1_trade_offer_3_table = "todecoins:trade_tables/armor/chestplate/chainmail_tier_chestplates"
+
+	["Armorer Trade Settings"."Armorer Level One Trade Four"]
+		# Armorer 1 Trade Request 4 Table
+		armorer_1_trade_request_4_table = "todecoins:trade_tables/currency/three_emerald_value_currency"
+		# Armorer 1 Trade Offer 4 Table
+		armorer_1_trade_offer_4_table = "todecoins:trade_tables/armor/leggings/chainmail_tier_leggings"
+
+	["Armorer Trade Settings"."Armorer Level One Trade Five"]
+		# Armorer 1 Trade Request 5 Table
+		armorer_1_trade_request_5_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+		# Armorer 1 Trade Offer 4 Table
+		armorer_1_trade_offer_4_table = "todecoins:trade_tables/armor/boots/chainmail_tier_boots"
+
+	["Armorer Trade Settings"."Armorer Level Two Trade One"]
+		# Armorer 2 Trade Request 1 Table
+		armorer_2_trade_request_1_table = "todecoins:trade_tables/metals/single_emerald_value_metals"
+		# Armorer 2 Trade Offer 1 Table
+		armorer_2_trade_offer_1_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+
+	["Armorer Trade Settings"."Armorer Level Two Trade Two"]
+		# Armorer 2 Trade Request 2 Table
+		armorer_2_trade_request_2_table = "todecoins:trade_tables/currency/thirty_six_emerald_value_currency"
+		# Armorer 2 Trade Offer 2 Table
+		armorer_2_trade_offer_2_table = "todecoins:trade_tables/misc/bell_table"
+
+	["Armorer Trade Settings"."Armorer Level Two Trade Three"]
+		# Armorer 2 Trade Request 3 Table
+		armorer_2_trade_request_3_table = "todecoins:trade_tables/currency/seven_emerald_value_currency"
+		# Armorer 2 Trade Offer 3 Table
+		armorer_2_trade_offer_3_table = "todecoins:trade_tables/armor/leggings/iron_tier_leggings"
+
+	["Armorer Trade Settings"."Armorer Level Two Trade Four"]
+		# Armorer 2 Trade Request 4 Table
+		armorer_2_trade_request_4_table = "todecoins:trade_tables/currency/four_emerald_value_currency"
+		# Armorer 2 Trade Offer 4 Table
+		armorer_2_trade_offer_4_table = "todecoins:trade_tables/armor/boots/iron_tier_boots"
+
+	["Armorer Trade Settings"."Armorer Level Three Trade One"]
+		# Armorer 3 Trade Request 1 Table
+		armorer_3_trade_request_1_table = "todecoins:trade_tables/misc/one_emerald_value_fuel_table"
+		# Armorer 3 Trade Offer 1 Table
+		armorer_3_trade_offer_1_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+
+	["Armorer Trade Settings"."Armorer Level Three Trade Two"]
+		# Armorer 3 Trade Request 2 Table
+		armorer_3_trade_request_2_table = "todecoins:trade_tables/gems/equipment_gems_table"
+		# Armorer 3 Trade Offer 2 Table
+		armorer_3_trade_offer_2_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+
+	["Armorer Trade Settings"."Armorer Level Three Trade Three"]
+		# Armorer 3 Trade Request 3 Table
+		armorer_3_trade_request_3_table = "todecoins:trade_tables/currency/five_emerald_value_currency"
+		# Armorer 3 Trade Offer 3 Table
+		armorer_3_trade_offer_3_table = "todecoins:trade_tables/armor/helmets/iron_tier_helmets"
+
+	["Armorer Trade Settings"."Armorer Level Three Trade Four"]
+		# Armorer 3 Trade Request 4 Table
+		armorer_3_trade_request_4_table = "todecoins:trade_tables/currency/nine_emerald_value_currency"
+		# Armorer 3 Trade Offer 4 Table
+		armorer_3_trade_offer_4_table = "todecoins:trade_tables/armor/chestplate/iron_tier_chestplates"
+
+	["Armorer Trade Settings"."Armorer Level Three Trade Five"]
+		# Armorer 3 Trade Request 5 Table
+		armorer_3_trade_request_5_table = "todecoins:trade_tables/currency/five_emerald_value_currency"
+		# Armorer 3 Trade Offer 5 Table
+		armorer_3_trade_offer_5_table = "todecoins:trade_tables/armor/shield_table"
+
+	["Armorer Trade Settings"."Armorer Level Three Trade Six"]
+		# Armorer 3 Trade Request 6 Table
+		armorer_3_trade_request_6_table = "todecoins:trade_tables/currency/nine_emerald_value_currency"
+		# Armorer 3 Trade Offer 6 Table
+		armorer_3_trade_offer_6_table = "todecoins:trade_tables/horse_gear/iron_tier_horse_armor"
+
+	["Armorer Trade Settings"."Armorer Level Four Trade One"]
+		# Rare Trade
+		# Armorer 4 Trade Request 1 Table
+		armorer_4_trade_request_1_table = "todecoins:trade_tables/currency/twenty_six_emerald_value_currency"
+		# Armorer 4 Trade Offer 1 Table
+		armorer_4_trade_offer_1_table = "todecoins:trade_tables/armor/leggings/diamond_tier_leggings"
+
+	["Armorer Trade Settings"."Armorer Level Four Trade Two"]
+		# Rare Trade
+		# Armorer 4 Trade Request 2 Table
+		armorer_4_trade_request_2_table = "todecoins:trade_tables/currency/twenty_emerald_value_currency"
+		# Armorer 4 Trade Offer 2 Table
+		armorer_4_trade_offer_2_table = "todecoins:trade_tables/armor/boots/diamond_tier_boots"
+
+	["Armorer Trade Settings"."Armorer Level Four Trade Three"]
+		# Available if Supplementaries mod is Loaded
+		# Armorer 4 Trade Request 3 Table
+		armorer_4_trade_request_3_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+		# Armorer 4 Trade Offer 3 Table
+		armorer_4_trade_offer_3_table = "todecoins:trade_tables/misc/tagged_ash_table"
+		armorer_4_trade_offer_3_count = 18
+
+	["Armorer Trade Settings"."Armorer Level Five Trade One"]
+		# Rare Trade
+		# Armorer 5 Trade Request 1 Table
+		armorer_5_trade_request_1_table = "todecoins:trade_tables/currency/twenty_emerald_value_currency"
+		# Armorer 5 Trade Offer 1 Table
+		armorer_5_trade_offer_1_table = "todecoins:trade_tables/armor/helmets/diamond_tier_helmets"
+
+	["Armorer Trade Settings"."Armorer Level Five Trade Two"]
+		# Rare Trade
+		# Armorer 5 Trade Request 2 Table
+		armorer_5_trade_request_2_table = "todecoins:trade_tables/currency/twenty_six_emerald_value_currency"
+		# Armorer 5 Trade Offer 2 Table
+		armorer_5_trade_offer_2_table = "todecoins:trade_tables/armor/chestplate/diamond_tier_chestplates"
+

@@ -1,0 +1,73 @@
+
+["Musician Trade Settings"]
+
+	["Musician Trade Settings"."Musician Level One Trade One"]
+		# Musician 1 Trade Request 1 Table
+		musician_1_trade_request_1_table = "todecoins:trade_tables/gems/single_emerald_value_gems"
+		# Musician 1 Trade Offer 1 Table
+		musician_1_trade_offer_1_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+
+	["Musician Trade Settings"."Musician Level One Trade Two"]
+		# Musician 1 Trade Request 2 Table
+		musician_1_trade_request_2_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+		# Musician 1 Trade Offer 2 Table
+		musician_1_trade_offer_2_table = "todecoins:trade_tables/gems/single_emerald_value_gems"
+
+	["Musician Trade Settings"."Musician Level One Trade Three"]
+		# Musician 1 Trade Request 3 Table
+		musician_1_trade_request_3_table = "todecoins:trade_tables/music/disc_fragments_table"
+		# Musician 1 Trade Offer 3 Table
+		musician_1_trade_offer_3_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+
+	["Musician Trade Settings"."Musician Level Two Trade One"]
+		# Rare Trade
+		# Musician 2 Trade Request 1 Table
+		musician_2_trade_request_1_table = "todecoins:trade_tables/currency/twenty_six_emerald_value_currency"
+		# Musician 2 Trade Offer 1 Table
+		musician_2_trade_offer_1_table = "todecoins:trade_tables/music/music_disc_tag_table"
+
+	["Musician Trade Settings"."Musician Level Two Trade Two"]
+		# Musician 2 Trade Request 2 Table
+		musician_2_trade_request_2_table = "todecoins:trade_tables/gems/single_emerald_value_gems"
+		# Musician 2 Trade Offer 2 Table
+		musician_2_trade_offer_2_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+
+	["Musician Trade Settings"."Musician Level Three Trade One"]
+		# Rare Trade
+		# Musician 3 Trade Request 1 Table
+		musician_3_trade_request_1_table = "todecoins:trade_tables/currency/twenty_six_emerald_value_currency"
+		# Musician 3 Trade Offer 1 Table
+		musician_3_trade_offer_1_table = "todecoins:trade_tables/music/music_disc_tag_table"
+
+	["Musician Trade Settings"."Musician Level Three Trade Two"]
+		# Musician 3 Trade Request 2 Table
+		musician_3_trade_request_2_table = "todecoins:trade_tables/gems/single_emerald_value_gems"
+		# Musician 3 Trade Offer 2 Table
+		musician_3_trade_offer_2_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+
+	["Musician Trade Settings"."Musician Level Four Trade One"]
+		# Rare Trade
+		# Musician 4 Trade Request 1 Table
+		musician_4_trade_request_1_table = "todecoins:trade_tables/currency/twenty_six_emerald_value_currency"
+		# Musician 4 Trade Offer 1 Table
+		musician_4_trade_offer_1_table = "todecoins:trade_tables/music/music_disc_tag_table"
+
+	["Musician Trade Settings"."Musician Level Four Trade Two"]
+		# Musician 4 Trade Request 2 Table
+		musician_4_trade_request_2_table = "todecoins:trade_tables/gems/single_emerald_value_gems"
+		# Musician 4 Trade Offer 2 Table
+		musician_4_trade_offer_2_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+
+	["Musician Trade Settings"."Musician Level Five Trade One"]
+		# Rare Trade
+		# Musician 5 Trade Request 1 Table
+		musician_5_trade_request_1_table = "todecoins:trade_tables/currency/twenty_emerald_value_currency"
+		# Musician 5 Trade Offer 1 Table
+		musician_5_trade_offer_1_table = "todecoins:trade_tables/music/music_disc_tag_table"
+
+	["Musician Trade Settings"."Musician Level Five Trade Two"]
+		# Musician 5 Trade Request 2 Table
+		musician_5_trade_request_2_table = "todecoins:trade_tables/gems/single_emerald_value_gems"
+		# Musician 5 Trade Offer 2 Table
+		musician_5_trade_offer_2_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+

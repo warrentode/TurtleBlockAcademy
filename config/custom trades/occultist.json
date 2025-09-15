@@ -1,0 +1,1188 @@
+{
+  "profession": "villagersplus:occultist",
+  "removeOtherTrades": true,
+  "trades": [
+    {
+      "multiOffer": [
+        {
+          "itemKey": "minecraft:small_amethyst_bud",
+          "amount": 4,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "minecraft:medium_amethyst_bud",
+          "amount": 2,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "minecraft:large_amethyst_bud",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "minecraft:amethyst_cluster",
+          "amount": 1,
+          "priceModifier": 0
+        }
+      ],
+      "multiRequest": [
+        {
+          "itemKey": "minecraft:emerald",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:copper_coin_bag",
+          "amount": 18,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:iron_coin_bag",
+          "amount": 8,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:gold_coin_bag",
+          "amount": 6,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:nether_gold_coin",
+          "amount": 3,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:endonian_coin",
+          "amount": 1,
+          "priceModifier": 0
+        }
+      ],
+      "tradeExp": 1,
+      "maxUses": 12,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 1,
+      "UTID": "villagersplus:occultist_multioffer_small_amethyst_bud_for_emerald"
+    },
+    {
+      "multiOffer": [
+        {
+          "itemKey": "minecraft:emerald",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:copper_coin_bag",
+          "amount": 18,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:iron_coin_bag",
+          "amount": 8,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:gold_coin_bag",
+          "amount": 6,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:nether_gold_coin",
+          "amount": 3,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:endonian_coin",
+          "amount": 1,
+          "priceModifier": 0
+        }
+      ],
+      "multiRequest": [
+        {
+          "itemKey": "minecraft:amethyst_shard",
+          "amount": 4,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "biomesoplenty:rose_quartz_shard",
+          "amount": 4,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "minecraft:glow_ink_sac",
+          "amount": 1,
+          "priceModifier": 0
+        }
+      ],
+      "tradeExp": 2,
+      "maxUses": 12,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 1,
+      "UTID": "villagersplus:occultist_emerald_for_multirequest_amethyst_shard"
+    },
+    {
+      "offer": {
+        "itemKey": "minecraft:glowstone_dust",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "multiRequest": [
+        {
+          "itemKey": "minecraft:emerald",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:copper_coin_bag",
+          "amount": 18,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:iron_coin_bag",
+          "amount": 8,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:gold_coin_bag",
+          "amount": 6,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:nether_gold_coin",
+          "amount": 3,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:endonian_coin",
+          "amount": 1,
+          "priceModifier": 0
+        }
+      ],
+      "tradeExp": 5,
+      "maxUses": 12,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 2,
+      "UTID": "villagersplus:occultist_glowstone_dust_for_emerald"
+    },
+    {
+      "multiOffer": [
+        {
+          "itemKey": "additional_lights:fire_pit_l_cobblestone",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "additional_lights:fire_pit_l_cut_sandstone",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "additional_lights:fire_pit_l_diamond_block",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "additional_lights:fire_pit_l_end_stone",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "additional_lights:fire_pit_l_end_stone_bricks",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "additional_lights:fire_pit_l_gold_block",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "additional_lights:fire_pit_l_iron_block",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "additional_lights:fire_pit_l_magenta_wool",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "additional_lights:fire_pit_l_mossy_cobblestone",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "additional_lights:fire_pit_l_mossy_stone_bricks",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "additional_lights:fire_pit_l_nether_bricks",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "additional_lights:fire_pit_l_packed_ice",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "additional_lights:fire_pit_l_pink_wool",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "additional_lights:fire_pit_l_polished_andesite",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "additional_lights:fire_pit_l_polished_blackstone",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "additional_lights:fire_pit_l_polished_diorite",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "additional_lights:fire_pit_l_polished_granite",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "additional_lights:fire_pit_l_red_nether_bricks",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "additional_lights:fire_pit_l_sandstone",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "additional_lights:fire_pit_l_smooth_stone",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "additional_lights:fire_pit_l_stone",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "additional_lights:fire_pit_l_stone_bricks",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "additional_lights:fire_pit_s_cobblestone",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "additional_lights:fire_pit_s_cut_sandstone",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "additional_lights:fire_pit_s_diamond_block",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "additional_lights:fire_pit_s_end_stone",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "additional_lights:fire_pit_s_end_stone_bricks",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "additional_lights:fire_pit_s_gold_block",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "additional_lights:fire_pit_s_iron_block",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "additional_lights:fire_pit_s_magenta_wool",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "additional_lights:fire_pit_s_mossy_cobblestone",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "additional_lights:fire_pit_s_mossy_stone_bricks",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "additional_lights:fire_pit_s_nether_bricks",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "additional_lights:fire_pit_s_packed_ice",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "additional_lights:fire_pit_s_pink_wool",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "additional_lights:fire_pit_s_polished_andesite",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "additional_lights:fire_pit_s_polished_blackstone",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "additional_lights:fire_pit_s_polished_diorite",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "additional_lights:fire_pit_s_polished_granite",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "additional_lights:fire_pit_s_red_nether_bricks",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "additional_lights:fire_pit_s_sandstone",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "additional_lights:fire_pit_s_smooth_stone",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "additional_lights:fire_pit_s_stone",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "additional_lights:fire_pit_s_stone_bricks",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "additional_lights:standing_torch_l_cobblestone",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "additional_lights:standing_torch_l_cut_sandstone",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "additional_lights:standing_torch_l_diamond_block",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "additional_lights:standing_torch_l_end_stone",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "additional_lights:standing_torch_l_end_stone_bricks",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "additional_lights:standing_torch_l_gold_block",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "additional_lights:standing_torch_l_iron_block",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "additional_lights:standing_torch_l_magenta_wool",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "additional_lights:standing_torch_l_mossy_cobblestone",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "additional_lights:standing_torch_l_mossy_stone_bricks",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "additional_lights:standing_torch_l_nether_bricks",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "additional_lights:standing_torch_l_packed_ice",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "additional_lights:standing_torch_l_pink_wool",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "additional_lights:standing_torch_l_polished_andesite",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "additional_lights:standing_torch_l_polished_blackstone",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "additional_lights:standing_torch_l_polished_diorite",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "additional_lights:standing_torch_l_polished_granite",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "additional_lights:standing_torch_l_red_nether_bricks",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "additional_lights:standing_torch_l_sandstone",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "additional_lights:standing_torch_l_smooth_stone",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "additional_lights:standing_torch_l_stone",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "additional_lights:standing_torch_l_stone_bricks",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "additional_lights:standing_torch_s_cobblestone",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "additional_lights:standing_torch_s_cut_sandstone",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "additional_lights:standing_torch_s_diamond_block",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "additional_lights:standing_torch_s_end_stone",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "additional_lights:standing_torch_s_end_stone_bricks",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "additional_lights:standing_torch_s_gold_block",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "additional_lights:standing_torch_s_iron_block",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "additional_lights:standing_torch_s_magenta_wool",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "additional_lights:standing_torch_s_mossy_cobblestone",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "additional_lights:standing_torch_s_mossy_stone_bricks",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "additional_lights:standing_torch_s_nether_bricks",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "additional_lights:standing_torch_s_packed_ice",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "additional_lights:standing_torch_s_pink_wool",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "additional_lights:standing_torch_s_polished_andesite",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "additional_lights:standing_torch_s_polished_blackstone",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "additional_lights:standing_torch_s_polished_diorite",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "additional_lights:standing_torch_s_polished_granite",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "additional_lights:standing_torch_s_red_nether_bricks",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "additional_lights:standing_torch_s_sandstone",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "additional_lights:standing_torch_s_smooth_stone",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "additional_lights:standing_torch_s_stone",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "additional_lights:standing_torch_s_stone_bricks",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "minecraft:soul_lantern",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "minecraft:soul_torch",
+          "amount": 1,
+          "priceModifier": 0
+        }
+      ],
+      "multiRequest": [
+        {
+          "itemKey": "minecraft:emerald",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:copper_coin_bag",
+          "amount": 18,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:iron_coin_bag",
+          "amount": 8,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:gold_coin_bag",
+          "amount": 6,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:nether_gold_coin",
+          "amount": 3,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:endonian_coin",
+          "amount": 1,
+          "priceModifier": 0
+        }
+      ],
+      "tradeExp": 5,
+      "maxUses": 16,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 2,
+      "UTID": "villagersplus:occultist_multioffer_fire_pit_l_cobblestone_for_emerald"
+    },
+    {
+      "multiOffer": [
+        {
+          "itemKey": "minecraft:candle",
+          "amount": 1
+        },
+        {
+          "itemKey": "minecraft:white_candle",
+          "amount": 1
+        },
+        {
+          "itemKey": "minecraft:light_gray_candle",
+          "amount": 1
+        },
+        {
+          "itemKey": "minecraft:black_candle",
+          "amount": 1
+        },
+        {
+          "itemKey": "minecraft:brown_candle",
+          "amount": 1
+        },
+        {
+          "itemKey": "minecraft:red_candle",
+          "amount": 1
+        },
+        {
+          "itemKey": "minecraft:orange_candle",
+          "amount": 1
+        },
+        {
+          "itemKey": "minecraft:yellow_candle",
+          "amount": 1
+        },
+        {
+          "itemKey": "minecraft:lime_candle",
+          "amount": 1
+        },
+        {
+          "itemKey": "minecraft:green_candle",
+          "amount": 1
+        },
+        {
+          "itemKey": "minecraft:cyan_candle",
+          "amount": 1
+        },
+        {
+          "itemKey": "minecraft:light_blue_candle",
+          "amount": 1
+        },
+        {
+          "itemKey": "minecraft:blue_candle",
+          "amount": 1
+        },
+        {
+          "itemKey": "minecraft:pink_candle",
+          "amount": 1
+        },
+        {
+          "itemKey": "minecraft:magenta_candle",
+          "amount": 1
+        },
+        {
+          "itemKey": "minecraft:purple_candle",
+          "amount": 1
+        },
+        {
+          "itemKey": "beautify:lamp_candleabra",
+          "amount": 1
+        },
+        {
+          "itemKey": "beautify:lamp_candleabra_white",
+          "amount": 1
+        },
+        {
+          "itemKey": "beautify:lamp_candleabra_light_gray",
+          "amount": 1
+        },
+        {
+          "itemKey": "beautify:lamp_candleabra_gray",
+          "amount": 1
+        },
+        {
+          "itemKey": "beautify:lamp_candleabra_black",
+          "amount": 1
+        },
+        {
+          "itemKey": "beautify:lamp_candleabra_brown",
+          "amount": 1
+        },
+        {
+          "itemKey": "beautify:lamp_candleabra_red",
+          "amount": 1
+        },
+        {
+          "itemKey": "beautify:lamp_candleabra_orange",
+          "amount": 1
+        },
+        {
+          "itemKey": "beautify:lamp_candleabra_yellow",
+          "amount": 1
+        },
+        {
+          "itemKey": "beautify:lamp_candleabra_lime",
+          "amount": 1
+        },
+        {
+          "itemKey": "beautify:lamp_candleabra_green",
+          "amount": 1
+        },
+        {
+          "itemKey": "beautify:lamp_candleabra_cyan",
+          "amount": 1
+        },
+        {
+          "itemKey": "beautify:lamp_candleabra_light_blue",
+          "amount": 1
+        },
+        {
+          "itemKey": "beautify:lamp_candleabra_blue",
+          "amount": 1
+        },
+        {
+          "itemKey": "beautify:lamp_candleabra_pink",
+          "amount": 1
+        },
+        {
+          "itemKey": "beautify:lamp_candleabra_magenta",
+          "amount": 1
+        },
+        {
+          "itemKey": "beautify:lamp_candleabra_purple",
+          "amount": 1
+        },
+        {
+          "itemKey": "supplementaries:candle_holder",
+          "amount": 1
+        },
+        {
+          "itemKey": "supplementaries:candle_holder_white",
+          "amount": 1
+        },
+        {
+          "itemKey": "supplementaries:candle_holder_light_gray",
+          "amount": 1
+        },
+        {
+          "itemKey": "supplementaries:candle_holder_gray",
+          "amount": 1
+        },
+        {
+          "itemKey": "supplementaries:candle_holder_black",
+          "amount": 1
+        },
+        {
+          "itemKey": "supplementaries:candle_holder_brown",
+          "amount": 1
+        },
+        {
+          "itemKey": "supplementaries:candle_holder_red",
+          "amount": 1
+        },
+        {
+          "itemKey": "supplementaries:candle_holder_orange",
+          "amount": 1
+        },
+        {
+          "itemKey": "supplementaries:candle_holder_yellow",
+          "amount": 1
+        },
+        {
+          "itemKey": "supplementaries:candle_holder_lime",
+          "amount": 1
+        },
+        {
+          "itemKey": "supplementaries:candle_holder_green",
+          "amount": 1
+        },
+        {
+          "itemKey": "supplementaries:candle_holder_cyan",
+          "amount": 1
+        },
+        {
+          "itemKey": "supplementaries:candle_holder_light_blue",
+          "amount": 1
+        },
+        {
+          "itemKey": "supplementaries:candle_holder_blue",
+          "amount": 1
+        },
+        {
+          "itemKey": "supplementaries:candle_holder_pink",
+          "amount": 1
+        },
+        {
+          "itemKey": "supplementaries:candle_holder_magenta",
+          "amount": 1
+        },
+        {
+          "itemKey": "supplementaries:candle_holder_purple",
+          "amount": 1
+        }
+      ],
+      "multiRequest": [
+        {
+          "itemKey": "minecraft:emerald",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:copper_coin_bag",
+          "amount": 18,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:iron_coin_bag",
+          "amount": 8,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:gold_coin_bag",
+          "amount": 6,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:nether_gold_coin",
+          "amount": 3,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:endonian_coin",
+          "amount": 1,
+          "priceModifier": 0
+        }
+      ],
+      "tradeExp": 5,
+      "maxUses": 16,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 3,
+      "UTID": "villagersplus:occultist_multioffer_candle_for_emerald"
+    },
+    {
+      "multiOffer": [
+        {
+          "itemKey": "minecraft:emerald",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:copper_coin_bag",
+          "amount": 18,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:iron_coin_bag",
+          "amount": 8,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:gold_coin_bag",
+          "amount": 6,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:nether_gold_coin",
+          "amount": 3,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:endonian_coin",
+          "amount": 1,
+          "priceModifier": 0
+        }
+      ],
+      "multiRequest": [
+        {
+          "itemKey": "minecraft:soul_sand",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "minecraft:soul_soil",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "minecraft:podzol",
+          "amount": 1
+        },
+        {
+          "itemKey": "minecraft:crimson_nylium",
+          "amount": 1
+        },
+        {
+          "itemKey": "minecraft:warped_nylium",
+          "amount": 1
+        }
+      ],
+      "tradeExp": 5,
+      "maxUses": 16,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 3,
+      "UTID": "villagersplus:occultist_emerald_for_multirequest_soul_sand"
+    },
+    {
+      "multiOffer": [
+        {
+          "itemKey": "supplementaries:sconce",
+          "amount": 1
+        },
+        {
+          "itemKey": "supplementaries:sconce_soul",
+          "amount": 1
+        },
+        {
+          "itemKey": "supplementaries:sconce_green",
+          "amount": 1
+        },
+        {
+          "itemKey": "supplementaries:sconce_lever",
+          "amount": 1
+        }
+      ],
+      "multiRequest": [
+        {
+          "itemKey": "minecraft:emerald",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:copper_coin_bag",
+          "amount": 18,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:iron_coin_bag",
+          "amount": 8,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:gold_coin_bag",
+          "amount": 6,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:nether_gold_coin",
+          "amount": 3,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:endonian_coin",
+          "amount": 1,
+          "priceModifier": 0
+        }
+      ],
+      "tradeExp": 15,
+      "maxUses": 16,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 4,
+      "UTID": "villagersplus:occultist_multioffer_sconce_for_emerald"
+    },
+    {
+      "multiOffer": [
+        {
+          "itemKey": "minecraft:quartz",
+          "amount": 4,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "biomesoplenty:small_rose_quartz_bud",
+          "amount": 4,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "biomesoplenty:medium_rose_quartz_bud",
+          "amount": 2,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "biomesoplenty:large_rose_quartz_bud",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "biomesoplenty:rose_quartz_cluster",
+          "amount": 1,
+          "priceModifier": 0
+        }
+      ],
+      "multiRequest": [
+        {
+          "itemKey": "minecraft:emerald",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:copper_coin_bag",
+          "amount": 18,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:iron_coin_bag",
+          "amount": 8,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:gold_coin_bag",
+          "amount": 6,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:nether_gold_coin",
+          "amount": 3,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:endonian_coin",
+          "amount": 1,
+          "priceModifier": 0
+        }
+      ],
+      "tradeExp": 30,
+      "maxUses": 16,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 4,
+      "UTID": "villagersplus:occultist_multioffer_quartz_for_emerald"
+    },
+    {
+      "offer": {
+        "itemKey": "minecraft:spectral_arrow",
+        "amount": 3,
+        "priceModifier": 0
+      },
+      "multiRequest": [
+        {
+          "itemKey": "minecraft:emerald",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:copper_coin_bag",
+          "amount": 18,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:iron_coin_bag",
+          "amount": 8,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:gold_coin_bag",
+          "amount": 6,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:nether_gold_coin",
+          "amount": 3,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:endonian_coin",
+          "amount": 1,
+          "priceModifier": 0
+        }
+      ],
+      "additionalRequest": {
+        "itemKey": "minecraft:arrow",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "tradeExp": 30,
+      "maxUses": 16,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 5,
+      "UTID": "villagersplus:occultist_spectral_arrow_for_emerald_and_arrow"
+    },
+    {
+      "offer": {
+        "itemKey": "minecraft:experience_bottle",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "multiRequest": [
+        {
+          "itemKey": "minecraft:emerald",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:copper_coin_bag",
+          "amount": 18,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:iron_coin_bag",
+          "amount": 8,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:gold_coin_bag",
+          "amount": 6,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:nether_gold_coin",
+          "amount": 3,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:endonian_coin",
+          "amount": 1,
+          "priceModifier": 0
+        }
+      ],
+      "tradeExp": 30,
+      "maxUses": 16,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 5,
+      "UTID": "villagersplus:occultist_experience_bottle_for_emerald"
+    }
+  ]
+}

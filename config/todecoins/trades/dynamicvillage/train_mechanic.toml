@@ -1,0 +1,83 @@
+
+["Train Mechanic Trade Settings"]
+
+	["Train Mechanic Trade Settings"."Train Mechanic Level One Trade One"]
+		# Train Mechanic 1 Trade Request 1 Table
+		train_mechanic_1_trade_request_1_table = "todecoins:trade_tables/currency/two_emerald_value_currency"
+		# Train Mechanic 1 Trade Offer 1 Table
+		train_mechanic_1_trade_offer_1_table = "todecoins:trade_tables/misc/train_equipment_tag_table"
+		#Range: 1 ~ 64
+		train_mechanic_1_trade_offer_1_count = 1
+
+	["Train Mechanic Trade Settings"."Train Mechanic Level One Trade TWo"]
+		# Train Mechanic 1 Trade Request 2 Table
+		train_mechanic_1_trade_request_2_table = "todecoins:trade_tables/currency/two_emerald_value_currency"
+		# Train Mechanic 1 Trade Offer 2 Table
+		train_mechanic_1_trade_offer_2_table = "todecoins:trade_tables/misc/train_equipment_tag_table"
+		#Range: 1 ~ 64
+		train_mechanic_1_trade_offer_2_count = 1
+
+	["Train Mechanic Trade Settings"."Train Mechanic Level Two Trade One"]
+		# Train Mechanic 2 Trade Request 1 Table
+		train_mechanic_2_trade_request_1_table = "todecoins:trade_tables/currency/two_emerald_value_currency"
+		# Train Mechanic 2 Trade Offer 1 Table
+		train_mechanic_2_trade_offer_1_table = "todecoins:trade_tables/misc/train_equipment_tag_table"
+		#Range: 1 ~ 64
+		train_mechanic_2_trade_offer_1_count = 1
+
+	["Train Mechanic Trade Settings"."Train Mechanic Level Two Trade TWo"]
+		# Train Mechanic 2 Trade Request 2 Table
+		train_mechanic_2_trade_request_2_table = "todecoins:trade_tables/currency/two_emerald_value_currency"
+		# Train Mechanic 2 Trade Offer 2 Table
+		train_mechanic_2_trade_offer_2_table = "todecoins:trade_tables/misc/train_equipment_tag_table"
+		#Range: 1 ~ 64
+		train_mechanic_2_trade_offer_2_count = 1
+
+	["Train Mechanic Trade Settings"."Train Mechanic Level Three Trade One"]
+		# Train Mechanic 3 Trade Request 1 Table
+		train_mechanic_3_trade_request_1_table = "todecoins:trade_tables/currency/two_emerald_value_currency"
+		# Train Mechanic 3 Trade Offer 1 Table
+		train_mechanic_3_trade_offer_1_table = "todecoins:trade_tables/misc/train_equipment_tag_table"
+		#Range: 1 ~ 64
+		train_mechanic_3_trade_offer_1_count = 1
+
+	["Train Mechanic Trade Settings"."Train Mechanic Level Three Trade TWo"]
+		# Train Mechanic 3 Trade Request 2 Table
+		train_mechanic_3_trade_request_2_table = "todecoins:trade_tables/currency/two_emerald_value_currency"
+		# Train Mechanic 3 Trade Offer 2 Table
+		train_mechanic_3_trade_offer_2_table = "todecoins:trade_tables/misc/train_equipment_tag_table"
+		#Range: 1 ~ 64
+		train_mechanic_3_trade_offer_2_count = 1
+
+	["Train Mechanic Trade Settings"."Train Mechanic Level Four Trade One"]
+		# Train Mechanic 4 Trade Request 1 Table
+		train_mechanic_4_trade_request_1_table = "todecoins:trade_tables/currency/two_emerald_value_currency"
+		# Train Mechanic 4 Trade Offer 1 Table
+		train_mechanic_4_trade_offer_1_table = "todecoins:trade_tables/misc/train_equipment_tag_table"
+		#Range: 1 ~ 64
+		train_mechanic_4_trade_offer_1_count = 1
+
+	["Train Mechanic Trade Settings"."Train Mechanic Level Four Trade TWo"]
+		# Train Mechanic 4 Trade Request 2 Table
+		train_mechanic_4_trade_request_2_table = "todecoins:trade_tables/currency/two_emerald_value_currency"
+		# Train Mechanic 4 Trade Offer 2 Table
+		train_mechanic_4_trade_offer_2_table = "todecoins:trade_tables/misc/train_equipment_tag_table"
+		#Range: 1 ~ 64
+		train_mechanic_4_trade_offer_2_count = 1
+
+	["Train Mechanic Trade Settings"."Train Mechanic Level Five Trade One"]
+		# Train Mechanic 5 Trade Request 1 Table
+		train_mechanic_5_trade_request_1_table = "todecoins:trade_tables/currency/two_emerald_value_currency"
+		# Train Mechanic 5 Trade Offer 1 Table
+		train_mechanic_5_trade_offer_1_table = "todecoins:trade_tables/misc/train_equipment_tag_table"
+		#Range: 1 ~ 64
+		train_mechanic_5_trade_offer_1_count = 1
+
+	["Train Mechanic Trade Settings"."Train Mechanic Level Five Trade TWo"]
+		# Train Mechanic 5 Trade Request 2 Table
+		train_mechanic_5_trade_request_2_table = "todecoins:trade_tables/currency/two_emerald_value_currency"
+		# Train Mechanic 5 Trade Offer 2 Table
+		train_mechanic_5_trade_offer_2_table = "todecoins:trade_tables/misc/train_equipment_tag_table"
+		#Range: 1 ~ 64
+		train_mechanic_5_trade_offer_2_count = 1
+

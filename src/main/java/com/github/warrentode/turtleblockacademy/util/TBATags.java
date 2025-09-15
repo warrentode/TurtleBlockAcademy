@@ -14,6 +14,8 @@ import static com.github.warrentode.turtleblockacademy.TurtleBlockAcademy.MODID;
 
 public class TBATags {
     public static class Blocks {
+        public static final TagKey<Block> PICNIC_BLANKETS = packBlockTag(MODID, "picnic_blankets");
+        public static final TagKey<Block> FURNITURE = packBlockTag("forge", "furniture");
         public static final TagKey<Block> BASKETS = packBlockTag(MODID, "baskets");
         public static final TagKey<Block> TBA_MINING_PORTAL_FRAME_BLOCKS = packBlockTag(MODID, "mining_portal_frame_blocks");
 
@@ -48,29 +50,21 @@ public class TBATags {
     }
 
     public static class Items {
+        public static final TagKey<Item> ACADEMY_SUPPLIES = packItemTag(MODID, "academy_supplies");
+        public static final TagKey<Item> BUCKET_REMAINDERS = packItemTag("forge", "bucket_remainders");
+        public static final TagKey<Item> BOWL_REMAINDERS = packItemTag("forge", "bowl_remainders");
+        public static final TagKey<Item> BOTTLE_REMAINDERS = packItemTag("forge", "bottle_remainders");
+        public static final TagKey<Item> MATCHING_ITEM_REMAINDERS = packItemTag("forge", "matching_item_remainders");
+        public static final TagKey<Item> EGG_STAMPS = packItemTag("forge", "egg_stamps");
+
+        public static final TagKey<Item> SLIME_BALLS = packItemTag("forge", "slime_balls");
+
         public static final TagKey<Item> SEEDS = packItemTag("forge", "seeds");
         public static final TagKey<Item> DYES = packItemTag("forge", "dye");
         public static final TagKey<Item> EASTER_EGGS = packItemTag(MODID, "easter_eggs");
         public static final TagKey<Item> BASKET_ITEMS = packItemTag(MODID, "basket_items");
         public static final TagKey<Item> CHALK = packItemTag("forge", "chalks");
         public static final TagKey<Item> SUPPLEMENTARIES_KEY = packItemTag("supplementaries", "key");
-
-        public static final TagKey<Item> BLOODSHROOM_LOG = packItemTag("tconstruct", "bloodshroom_log");
-        public static final TagKey<Item> BLOODSHROOM_STRIPPED_LOG = packItemTag("tconstruct", "stripped_bloodshroom_log");
-        public static final TagKey<Item> BLOODSHROOM_PLANKS = packItemTag("tconstruct", "bloodshroom_planks");
-        public static final TagKey<Item> BLOODSHROOM_SLAB = packItemTag("tconstruct", "bloodshroom_slab");
-        public static final TagKey<Item> ENDERBARK_LOG = packItemTag("tconstruct", "enderbark_log");
-        public static final TagKey<Item> ENDERBARK_STRIPPED_LOG = packItemTag("tconstruct", "stripped_enderbark_log");
-        public static final TagKey<Item> ENDERBARK_PLANKS = packItemTag("tconstruct", "enderbark_planks");
-        public static final TagKey<Item> ENDERBARK_SLAB = packItemTag("tconstruct", "enderbark_slab");
-        public static final TagKey<Item> GREENHEART_LOG = packItemTag("tconstruct", "greenheart_log");
-        public static final TagKey<Item> GREENHEART_STRIPPED_LOG = packItemTag("tconstruct", "stripped_greenheart_log");
-        public static final TagKey<Item> GREENHEART_PLANKS = packItemTag("tconstruct", "greenheart_planks");
-        public static final TagKey<Item> GREENHEART_SLAB = packItemTag("tconstruct", "greenheart_slab");
-        public static final TagKey<Item> TINKER_SKYROOT_LOG = packItemTag("tconstruct", "skyroot_log");
-        public static final TagKey<Item> TINKER_SKYROOT_STRIPPED_LOG = packItemTag("tconstruct", "stripped_skyroot_log");
-        public static final TagKey<Item> TINKER_SKYROOT_PLANKS = packItemTag("tconstruct", "skyroot_planks");
-        public static final TagKey<Item> TINKER_SKYROOT_SLAB = packItemTag("tconstruct", "skyroot_slab");
 
         public static final TagKey<Item> FORGE_BOOKS = packItemTag("forge", "books");
         public static final TagKey<Item> PATCHOULI_BOOKS = packItemTag("patchouli", "books");
@@ -118,6 +112,7 @@ public class TBATags {
         public static final TagKey<Item> IRON_INGOT = packItemTag("forge", "ingots/iron");
 
         public static final TagKey<Item> COPPER_INGOT = packItemTag("forge", "ingots/copper");
+        public static final TagKey<Item> COPPER_NUGGET = packItemTag("forge", "nuggets/copper");
 
         public static final TagKey<Item> GOLD_NUGGET = packItemTag("forge", "nuggets/gold");
 
@@ -141,6 +136,7 @@ public class TBATags {
         public static final TagKey<Item> SHELL = packItemTag("forge", "gems/shell");
 
         public static final TagKey<Item> CROPS = packItemTag("forge", "crops");
+        public static final TagKey<Item> TEA_CROP = packItemTag("forge", "crops/tea");
         public static final TagKey<Item> DILL = packItemTag("forge", "crops/dill");
         public static final TagKey<Item> SHROOMS = packItemTag("forge", "crops/shrooms");
         public static final TagKey<Item> CARROTS = packItemTag("forge", "crops/carrots");
@@ -188,6 +184,8 @@ public class TBATags {
         public static final TagKey<Item> COOKED_CHICKEN = packItemTag("forge", "cooked_meats/cooked_chicken");
         public static final TagKey<Item> COOKED_MUTTON = packItemTag("forge", "cooked_meats/cooked_mutton");
 
+        public static final TagKey<Item> BOILED_EGGS = packItemTag("forge", "cooked_meats/boiled_eggs");
+
         public static final TagKey<Item> WILDBERRIES_EDIBLES = packItemTag("wildberries", "edibles");
 
         public static final TagKey<Item> BLUEBERRIES = packItemTag("forge", "blueberries");
@@ -217,6 +215,8 @@ public class TBATags {
         public static final TagKey<Item> BREAD = packItemTag("forge", "ingredients/bread");
         public static final TagKey<Item> SWEETENED_CHUNK = packItemTag("rottenleather", "sweetened_chunk");
         public static final TagKey<Item> APPLE_CIDERS = packItemTag(MODID, "apple_ciders");
+        public static final TagKey<Item> DILL_INGREDIENTS = packItemTag("forge", "ingredients/dill");
+        public static final TagKey<Item> CLOVE_INGREDIENTS = packItemTag("forge", "ingredients/clove");
 
         public static final TagKey<Item> GLAZES = packItemTag("forge", "ingredients/glazes");
         public static final TagKey<Item> ALCOHOL = packItemTag("forge", "ingredients/alcohol");
@@ -268,6 +268,8 @@ public class TBATags {
         public static final TagKey<Item> TEXTILES = packItemTag("forge", "textiles");
         public static final TagKey<Item> BARK = packItemTag("forge", "textiles/bark");
         public static final TagKey<Item> STRING = packItemTag("forge", "textiles/string");
+        public static final TagKey<Item> FABRIC_TEXTILES = packItemTag("forge", "textiles/fabric");
+        public static final TagKey<Item> THREAD = packItemTag("forge", "textiles/thread");
 
         public static final TagKey<Item> NUGGETS = packItemTag("forge", "nuggets");
         public static final TagKey<Item> INGOTS = packItemTag("forge", "ingots");
@@ -378,6 +380,89 @@ public class TBATags {
         TagKey<Biome> HAS_SWET_POOLS = packBiomeTag(MODID,"has_structure/swet_pools");
         TagKey<Biome> HAS_CAMP_UNDERGROUND = packBiomeTag(MODID,"has_structure/camp_underground");
         TagKey<Biome> HAS_NETHER_FOSSIL = packBiomeTag(MODID,"has_structure/nether_fossil");
+
+        // flower biomes
+        TagKey<Biome> HAS_SUNFLOWER = packBiomeTag("forge", "has_sunflower");
+        TagKey<Biome> HAS_PEONY = packBiomeTag("forge", "has_peony");
+        TagKey<Biome> HAS_ROSE_BUSH = packBiomeTag("forge", "has_rose_bush");
+        TagKey<Biome> HAS_LILAC = packBiomeTag("forge", "has_lilac");
+        TagKey<Biome> HAS_BUTTERCUP = packBiomeTag("forge", "has_buttercup");
+        TagKey<Biome> HAS_LILY_OF_THE_VALLEY = packBiomeTag("forge", "has_lily_of_the_valley");
+        TagKey<Biome> HAS_CORNFLOWER = packBiomeTag("forge", "has_cornflower");
+        TagKey<Biome> HAS_OXEYE_DAISY = packBiomeTag("forge", "has_oxeye_daisy");
+        TagKey<Biome> HAS_PINK_TULIP = packBiomeTag("forge", "has_pink_tulip");
+        TagKey<Biome> HAS_WHITE_TULIP = packBiomeTag("forge", "has_white_tulip");
+        TagKey<Biome> HAS_ORANGE_TULIP = packBiomeTag("forge", "has_orange_tulip");
+        TagKey<Biome> HAS_RED_TULIP = packBiomeTag("forge", "has_red_tulip");
+        TagKey<Biome> HAS_AZURE_BLUET = packBiomeTag("forge", "has_azure_bluet");
+        TagKey<Biome> HAS_ALLIUM = packBiomeTag("forge", "has_allium");
+        TagKey<Biome> HAS_BLUE_ORCHID = packBiomeTag("forge", "has_blue_orchid");
+        TagKey<Biome> HAS_PURPLE_FLOWER = packBiomeTag("forge", "has_purple_flower");
+        TagKey<Biome> HAS_WHITE_FLOWER = packBiomeTag("forge", "has_white_flower");
+        TagKey<Biome> HAS_GOLDENROD = packBiomeTag("forge", "has_goldenrod");
+        TagKey<Biome> HAS_WILDFLOWER = packBiomeTag("forge", "has_wildflower");
+        TagKey<Biome> HAS_CATTAIL = packBiomeTag("forge", "has_cattail");
+        TagKey<Biome> HAS_WILTED_LILY = packBiomeTag("forge", "has_wilted_lily");
+        TagKey<Biome> HAS_BLUE_HYDRANGEA = packBiomeTag("forge", "has_blue_hydrangea");
+        TagKey<Biome> HAS_PINK_HIBISCUS = packBiomeTag("forge", "has_pink_hibiscus");
+        TagKey<Biome> HAS_VIOLET = packBiomeTag("forge", "has_violet");
+        TagKey<Biome> HAS_ORANGE_COSMOS = packBiomeTag("forge", "has_orange_cosmos");
+        TagKey<Biome> HAS_ROSE = packBiomeTag("forge", "has_rose");
+        TagKey<Biome> HAS_WITHER_ROSE = packBiomeTag("forge", "has_wither_rose");
+        TagKey<Biome> HAS_GLOWFLOWER = packBiomeTag("forge", "has_glowflower");
+        TagKey<Biome> HAS_PINK_DAFFODIL = packBiomeTag("forge", "has_pink_daffodil");
+        TagKey<Biome> HAS_LAVENDER = packBiomeTag("forge", "has_lavender");
+        TagKey<Biome> HAS_ICY_IRIS = packBiomeTag("forge", "has_icy_iris");
+        TagKey<Biome> HAS_BURNING_BLOSSOM = packBiomeTag("forge", "has_burning_blossom");
+        // tree biomes
+        TagKey<Biome> HAS_SPRUCE = packBiomeTag("forge", "has_spruce");
+        TagKey<Biome> HAS_MANGROVE = packBiomeTag("forge", "has_mangrove");
+        TagKey<Biome> HAS_ACACIA = packBiomeTag("forge", "has_acacia");
+        TagKey<Biome> HAS_JUNGLE = packBiomeTag("forge", "has_jungle");
+        TagKey<Biome> HAS_BIRCH = packBiomeTag("forge", "has_birch");
+        TagKey<Biome> HAS_DARK_OAK = packBiomeTag("forge", "has_dark_oak");
+        TagKey<Biome> NETHER_BIOMES = packBiomeTag("forge", "nether_biomes");
+        TagKey<Biome> HAS_WARPED_FUNGUS = packBiomeTag("forge", "has_warped_fungus");
+        TagKey<Biome> HAS_CRIMSON_FUNGUS = packBiomeTag("forge", "has_crimson_fungus");
+        TagKey<Biome> HAS_FIR = packBiomeTag("forge", "has_fir");
+        TagKey<Biome> HAS_REDWOOD = packBiomeTag("forge", "has_redwood");
+        TagKey<Biome> HAS_CHERRY = packBiomeTag("forge", "has_cherry");
+        TagKey<Biome> HAS_MAHOGANY = packBiomeTag("forge", "has_mahogany");
+        TagKey<Biome> HAS_JACARANDA = packBiomeTag("forge", "has_jacaranda");
+        TagKey<Biome> HAS_PALM = packBiomeTag("forge", "has_palm");
+        TagKey<Biome> HAS_WILLOW = packBiomeTag("forge", "has_willow");
+        TagKey<Biome> HAS_DEAD = packBiomeTag("forge", "has_dead");
+        TagKey<Biome> HAS_MAGIC = packBiomeTag("forge", "has_magic");
+        TagKey<Biome> HAS_UMBRAN = packBiomeTag("forge", "has_umbran");
+        TagKey<Biome> HAS_HELLBARK = packBiomeTag("forge", "has_hellbark");
+        TagKey<Biome> HAS_COCONUT = packBiomeTag("forge", "has_coconut");
+        TagKey<Biome> HAS_AZALEA = packBiomeTag("forge", "has_azalea");
+        TagKey<Biome> HAS_CHORUS_NEST = packBiomeTag("forge", "has_chorus_nest");
+        TagKey<Biome> HAS_EBONY = packBiomeTag("forge", "has_ebony");
+        TagKey<Biome> HAS_PREAM = packBiomeTag("forge", "has_pream");
+        TagKey<Biome> HAS_AETHER_SKYROOT = packBiomeTag("forge", "has_aether_skyroot");
+        TagKey<Biome> HAS_GOLDEN_OAK = packBiomeTag("forge", "has_golden_oak");
+        TagKey<Biome> HAS_BLOODSHROOM = packBiomeTag("forge", "has_bloodshroom");
+        TagKey<Biome> HAS_ENDERBARK = packBiomeTag("forge", "has_enderbark");
+        TagKey<Biome> HAS_GREENHEART = packBiomeTag("forge", "has_greenheart");
+        TagKey<Biome> HAS_TINKER_SKYROOT = packBiomeTag("forge", "has_tinker_skyroot");
+        TagKey<Biome> HAS_FLOWERING_OAK = packBiomeTag("forge", "has_flowering_oak");
+        TagKey<Biome> HAS_RAINBOW_BIRCH = packBiomeTag("forge", "has_rainbow_birch");
+        TagKey<Biome> HAS_MAPLE = packBiomeTag("forge", "has_maple");
+        TagKey<Biome> HAS_ORIGIN = packBiomeTag("forge", "has_origin");
+        TagKey<Biome> HAS_YELLOW_AUTUMN = packBiomeTag("forge", "has_yellow_autumn");
+        TagKey<Biome> HAS_ORANGE_AUTUMN = packBiomeTag("forge", "has_orange_autumn");
+        // block biomes
+        TagKey<Biome> HAS_SANDSTONE = packBiomeTag("forge", "has_sandstone");
+        TagKey<Biome> HAS_RED_SANDSTONE = packBiomeTag("forge", "has_red_sandstone");
+        TagKey<Biome> HAS_MOSSY_STONE = packBiomeTag("forge", "has_mossy_stone");
+        TagKey<Biome> HAS_MUD = packBiomeTag("forge", "has_mud");
+        // entity biomes
+        TagKey<Biome> HAS_PUFFERFISH = packBiomeTag("forge", "has_pufferfish");
+        TagKey<Biome> HAS_TROPICAL_FISH = packBiomeTag("forge", "has_tropical_fish");
+        TagKey<Biome> HAS_SALMON = packBiomeTag("forge", "has_salmon");
+        TagKey<Biome> HAS_FROGS = packBiomeTag("forge", "has_frogs");
+        TagKey<Biome> HAS_AXOLOTL = packBiomeTag("forge", "has_axolotl");
     }
 
     private static @NotNull TagKey<Biome> packBiomeTag(String modid, String name) {

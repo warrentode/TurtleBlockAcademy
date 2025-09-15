@@ -1,0 +1,108 @@
+
+["Tailor Trade Settings"]
+
+	["Tailor Trade Settings"."Tailor Level One Trade One"]
+		# Tailor 1 Trade Request 1 Table
+		tailor_1_trade_request_1_table = "todecoins:trade_tables/textiles/tagged_leather_table"
+		tailor_1_trade_request_1_count = 6
+		# Tailor 1 Trade Offer 1 Table
+		tailor_1_trade_offer_1_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+
+	["Tailor Trade Settings"."Tailor Level One Trade Two"]
+		# Tailor 1 Trade Request 2 Table
+		tailor_1_trade_request_2_table = "todecoins:trade_tables/textiles/tagged_wool_table"
+		tailor_1_trade_offer_1_count = 18
+		# Tailor 1 Trade Offer 2 Table
+		tailor_1_trade_offer_2_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+
+	["Tailor Trade Settings"."Tailor Level One Trade Three"]
+		# Tailor 1 Trade Request 3 Table
+		tailor_1_trade_request_3_table = "todecoins:trade_tables/textiles/tagged_string_table"
+		tailor_1_trade_request_3_count = 16
+		# Tailor 1 Trade Offer 3 Table
+		tailor_1_trade_offer_3_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+
+	["Tailor Trade Settings"."Tailor Level One Trade Four"]
+		# Tailor 1 Trade Request 4 Table
+		tailor_1_trade_request_4_table = "todecoins:trade_tables/textiles/tagged_dyes_table"
+		tailor_1_trade_offer_4_count = 6
+		# Tailor 1 Trade Offer 4 Table
+		tailor_1_trade_offer_4_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+
+	["Tailor Trade Settings"."Tailor Level Two Trade One"]
+		# Dyed Armor Trade
+		# Tailor 2 Trade Request 1 Table
+		tailor_2_trade_request_1_table = "todecoins:trade_tables/currency/five_emerald_value_currency"
+		# Tailor 2 Trade Offer 1 Table
+		tailor_2_trade_offer_1_table = "todecoins:trade_tables/armor/leggings/dyeable"
+
+	["Tailor Trade Settings"."Tailor Level Two Trade Two"]
+		# Dyed Armor Trade
+		# Tailor 2 Trade Request 2 Table
+		tailor_2_trade_request_2_table = "todecoins:trade_tables/currency/three_emerald_value_currency"
+		# Tailor 2 Trade Offer 2 Table
+		tailor_2_trade_offer_2_table = "todecoins:trade_tables/armor/helmets/dyeable"
+
+	["Tailor Trade Settings"."Tailor Level Two Trade Three"]
+		# Dyed Armor Trade
+		# Tailor 2 Trade Request 3 Table
+		tailor_2_trade_request_3_table = "todecoins:trade_tables/currency/four_emerald_value_currency"
+		# Tailor 2 Trade Offer 3 Table
+		tailor_2_trade_offer_3_table = "todecoins:trade_tables/armor/boots/dyeable"
+
+	["Tailor Trade Settings"."Tailor Level Two Trade Four"]
+		# Dyed Armor Trade
+		# Tailor 2 Trade Request 4 Table
+		tailor_2_trade_request_4_table = "todecoins:trade_tables/currency/four_emerald_value_currency"
+		# Tailor 2 Trade Offer 4 Table
+		tailor_2_trade_offer_4_table = "todecoins:trade_tables/armor/boots/dyeable"
+
+	["Tailor Trade Settings"."Tailor Level Three Trade One"]
+		# Tailor 3 Trade Request 1 Table
+		tailor_3_trade_request_1_table = "todecoins:trade_tables/textiles/tagged_dyes_table"
+		tailor_3_trade_request_1_count = 3
+		# Tailor 3 Trade Offer 1 Table
+		tailor_3_trade_offer_1_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+
+	["Tailor Trade Settings"."Tailor Level Three Trade Two"]
+		# Tailor 3 Trade Request 2 Table
+		tailor_3_trade_request_2_table = "todecoins:trade_tables/currency/emerald_quarter_bank_note_value_currency"
+		# Tailor 3 Trade Offer 2 Table
+		tailor_3_trade_offer_2_table = "todecoins:trade_tables/misc/patterns_tag_table"
+		tailor_3_trade_offer_2_count = 1
+
+	["Tailor Trade Settings"."Tailor Level Four Trade One"]
+		# Tailor 4 Trade Request 1 Table
+		tailor_4_trade_request_1_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+		# Tailor 4 Trade Offer 1 Table
+		tailor_4_trade_offer_1_table = "todecoins:trade_tables/misc/textiles_tag_table"
+		tailor_4_trade_offer_1_count = 6
+
+	["Tailor Trade Settings"."Tailor Level Four Trade Two"]
+		# Tailor 4 Trade Request 2 Table
+		tailor_4_trade_request_2_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+		# Tailor 4 Trade Offer 2 Table
+		tailor_4_trade_offer_2_table = "todecoins:trade_tables/misc/tailor_tools_table"
+		tailor_4_trade_offer_2_count = 1
+
+	["Tailor Trade Settings"."Tailor Level Five Trade One"]
+		# Tailor 5 Trade Request 1 Table
+		tailor_5_trade_request_1_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+		# Tailor 5 Trade Offer 1 Table
+		tailor_5_trade_offer_1_table = "todecoins:trade_tables/misc/textiles_tag_table"
+		tailor_5_trade_offer_1_count = 6
+
+	["Tailor Trade Settings"."Tailor Level Five Trade Two"]
+		# Tailor 5 Trade Request 2 Table
+		tailor_5_trade_request_2_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+		# Tailor 5 Trade Offer 2 Table
+		tailor_5_trade_offer_2_table = "todecoins:trade_tables/misc/tailor_tools_table"
+		tailor_5_trade_offer_2_count = 1
+
+	["Tailor Trade Settings"."Tailor Level Five Trade Three"]
+		# Tailor 5 Trade Request 3 Table
+		tailor_5_trade_request_3_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+		# Tailor 5 Trade Offer 3 Table
+		tailor_5_trade_offer_3_table = "todecoins:trade_tables/misc/patterns_tag_table"
+		tailor_5_trade_offer_3_count = 1
+

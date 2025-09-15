@@ -1,0 +1,8 @@
+{
+  "parent": "turtleblockacademy:item/template_egg_stamp",
+  "textures": {
+    "layer0": "minecraft:block/oak_planks",
+    "layer1": "minecraft:block/honeycomb_block",
+    "layer2": "turtleblockacademy:item/stamp_design_creeper"
+  }
+}

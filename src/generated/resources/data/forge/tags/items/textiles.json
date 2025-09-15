@@ -1,5 +1,7 @@
 {
   "values": [
+    "#forge:textiles/thread",
+    "#forge:textiles/fabric",
     "#forge:textiles/bark",
     "#forge:textiles/string"
   ]

@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "chairs",
+  "key": {
+    "#": {
+      "item": "minecraft:mangrove_slab"
+    },
+    "L": {
+      "item": "minecraft:mangrove_log"
+    },
+    "S": {
+      "item": "minecraft:stripped_mangrove_log"
+    },
+    "W": {
+      "item": "minecraft:white_carpet"
+    }
+  },
+  "pattern": [
+    "WW#",
+    "#S#",
+    "L L"
+  ],
+  "result": {
+    "count": 2,
+    "item": "turtleblockacademy:desk_chair_mangrove_white"
+  }
+}

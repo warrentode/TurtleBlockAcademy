@@ -1,9 +1,0 @@
-{
-  "type": "lootbags:loot",
-  "color": "blue",
-  "name": "Trick or Treat Bag",
-  "output": {
-    "table": "lootbags:loot_bags/trick_or_treat_lootbag"
-  },
-  "rarity": "UNCOMMON"
-}

@@ -1,0 +1,62 @@
+
+[" Florist Trade Settings"]
+
+	[" Florist Trade Settings"." Florist Level One Trade One"]
+		# Florist 1 Trade Request 1 Table
+		florist_1_trade_request_1_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+		# Florist 1 Trade Offer 1 Table
+		florist_1_trade_offer_1_table = "todecoins:trade_tables/decor/flower_pot_table"
+
+	[" Florist Trade Settings"." Florist Level One Trade Two"]
+		# Florist 1 Trade Request 2 Table
+		florist_1_trade_request_2_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+		# Florist 1 Trade Offer 2 Table
+		florist_1_trade_offer_2_table = "todecoins:trade_tables/misc/bone_meal_table"
+
+	[" Florist Trade Settings"." Florist Level Two Trade One"]
+		# Florist 2 Trade Request 1 Table
+		florist_2_trade_request_1_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+		# Florist 2 Trade Offer 1 Table
+		florist_2_trade_offer_1_table = "turtleblockacademy:trade_loot_tables/flower_sell_trade_table"
+
+	[" Florist Trade Settings"." Florist Level Two Trade Two"]
+		# Florist 2 Trade Request 2 Table
+		florist_2_trade_request_2_table = "turtleblockacademy:trade_loot_tables/flower_buy_trade_table"
+		# Florist 2 Trade Offer 2 Table
+		florist_2_trade_offer_2_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+
+	[" Florist Trade Settings"." Florist Level Three Trade One"]
+		# Florist 3 Trade Request 1 Table
+		florist_3_trade_request_1_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+		# Florist 3 Trade Offer 1 Table
+		florist_3_trade_offer_1_table = "turtleblockacademy:trade_loot_tables/flower_sell_trade_table"
+
+	[" Florist Trade Settings"." Florist Level Three Trade Two"]
+		# Florist 3 Trade Request 2 Table
+		florist_3_trade_request_2_table = "turtleblockacademy:trade_loot_tables/flower_buy_trade_table"
+		# Florist 3 Trade Offer 2 Table
+		florist_3_trade_offer_2_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+
+	[" Florist Trade Settings"." Florist Level Four Trade One"]
+		# Florist 4 Trade Request 1 Table
+		florist_4_trade_request_1_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+		# Florist 4 Trade Offer 1 Table
+		florist_4_trade_offer_1_table = "turtleblockacademy:trade_loot_tables/flower_sell_trade_table"
+
+	[" Florist Trade Settings"." Florist Level Four Trade Two"]
+		# Florist 4 Trade Request 2 Table
+		florist_4_trade_request_2_table = "turtleblockacademy:trade_loot_tables/flower_buy_trade_table"
+		# Florist 4 Trade Offer 2 Table
+		florist_4_trade_offer_2_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+
+	[" Florist Trade Settings"." Florist Level Five Trade One"]
+		# Florist 5 Trade Request 1 Table
+		florist_5_trade_request_1_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+		# Florist 5 Trade Offer 1 Table
+		florist_5_trade_offer_1_table = "turtleblockacademy:trade_loot_tables/flower_sell_trade_table"
+
+	[" Florist Trade Settings"." Florist Level Five Trade Two"]
+		# Florist 5 Trade Request 2 Table
+		florist_5_trade_request_2_table = "todecoins:trade_tables/misc/flint_buy_table"
+		# Florist 5 Trade Offer 2 Table
+		florist_5_trade_offer_2_table = "todecoins:trade_tables/currency/single_emerald_value_currency"

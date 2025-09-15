@@ -1,0 +1,8 @@
+{
+    "parent": "item/generated",
+    "loader": "forge:item_layers",
+    "textures": {
+        "layer0": "turtleblockacademy:item/egg_colored.png",
+        "layer1": "turtleblockacademy:item/egg_stamp.png"
+    }
+}

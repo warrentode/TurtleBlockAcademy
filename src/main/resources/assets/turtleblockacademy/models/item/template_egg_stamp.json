@@ -1,0 +1,103 @@
+{
+  "textures": {
+    "layer0": "block/oak_planks",
+    "layer1": "block/honeycomb_block",
+    "layer2": "turtleblockacademy:item/creeper_stamp_black"
+  },
+  "elements": [
+    {
+      "name": "stamp_handle",
+      "from": [7, 1.6, 7],
+      "to": [9, 3.6, 9],
+      "rotation": {"angle": 0, "axis": "y", "origin": [8, 1.25, 8]},
+      "faces": {
+        "north": {"uv": [0, 0, 16, 16], "texture": "#layer0"},
+        "east": {"uv": [0, 0, 16, 16], "texture": "#layer0"},
+        "south": {"uv": [0, 0, 16, 16], "texture": "#layer0"},
+        "west": {"uv": [0, 0, 16, 16], "texture": "#layer0"},
+        "up": {"uv": [0, 0, 16, 16], "texture": "#layer0"},
+        "down": {"uv": [0, 0, 16, 16], "texture": "#layer0"}
+      }
+    },
+    {
+      "name": "stamp_base",
+      "from": [5, 0.6, 6],
+      "to": [11, 1.6, 10],
+      "rotation": {"angle": 0, "axis": "y", "origin": [8, 1.25, 8]},
+      "faces": {
+        "north": {"uv": [0, 0, 16, 16], "texture": "#layer0"},
+        "east": {"uv": [0, 0, 16, 16], "texture": "#layer0"},
+        "south": {"uv": [0, 0, 16, 16], "texture": "#layer0"},
+        "west": {"uv": [0, 0, 16, 16], "texture": "#layer0"},
+        "up": {"uv": [0, 0, 16, 16], "texture": "#layer0"},
+        "down": {"uv": [0, 0, 16, 16], "texture": "#layer0"}
+      }
+    },
+    {
+      "name": "stamp_pad",
+      "from": [5.25, 0.1, 6.25],
+      "to": [10.75, 0.6, 9.75],
+      "rotation": {"angle": 0, "axis": "y", "origin": [8, 0.25, 8]},
+      "faces": {
+        "north": {"uv": [0, 0, 16, 16], "texture": "#layer1"},
+        "east": {"uv": [0, 0, 16, 16], "texture": "#layer1"},
+        "south": {"uv": [0, 0, 16, 16], "texture": "#layer1"},
+        "west": {"uv": [0, 0, 16, 16], "texture": "#layer1"},
+        "up": {"uv": [0, 0, 16, 16], "texture": "#layer1"},
+        "down": {"uv": [0, 0, 16, 16], "texture": "#layer1"}
+      }
+    },
+    {
+      "name": "design",
+      "from": [5.25, 0, 6.25],
+      "to": [10.75, 0.1, 9.75],
+      "faces": {
+        "down": {"uv": [12, 6, 4, 12], "texture": "#layer2", "cullface": "down"}
+      }
+    }
+  ],
+  "display": {
+    "thirdperson_righthand": {
+      "rotation": [120, 180, 0],
+      "translation": [0, -3, 4]
+    },
+    "thirdperson_lefthand": {
+      "rotation": [120, 180, 0],
+      "translation": [0, -3, 4]
+    },
+    "firstperson_righthand": {
+      "rotation": [120, 0, 0],
+      "translation": [5, -3, 4]
+    },
+    "firstperson_lefthand": {
+      "rotation": [120, 0, 0],
+      "translation": [5, -3, 4]
+    },
+    "ground": {
+      "rotation": [120, 180, 0],
+      "translation": [0, 0, 4]
+    },
+    "gui": {
+      "rotation": [-50, 10, -20],
+      "translation": [3.25, 4.75, 1],
+      "scale": [1.5, 1.5, 1.5]
+    },
+    "head": {
+      "translation": [0, 14.5, 0]
+    },
+    "fixed": {
+      "rotation": [90, 170, -5],
+      "translation": [-1, 0.5, 10.75],
+      "scale": [1.5, 1.5, 1.5]
+    }
+  },
+  "groups": [
+    {
+      "name": "VoxelShapes",
+      "origin": [8, 8, 8],
+      "color": 0,
+      "nbt": "{}",
+      "children": [0, 1, 2, 3]
+    }
+  ]
+}

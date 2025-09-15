@@ -21,7 +21,7 @@
             "tag": "turtleblockacademy:water_buckets"
           },
           "S": {
-            "tag": "forge:leather"
+            "item": "minecraft:wooden_shovel"
           }
         },
         "pattern": [

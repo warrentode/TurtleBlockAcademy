@@ -1,9 +1,0 @@
-{
-  "type": "lootbags:loot",
-  "color": "white",
-  "name": "Ocean Map Bag",
-  "output": {
-    "table": "lootbags:loot_bags/ocean_map_sale"
-  },
-  "rarity": "COMMON"
-}

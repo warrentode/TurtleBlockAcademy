@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "chairs",
+  "key": {
+    "#": {
+      "item": "biomesoplenty:mahogany_slab"
+    },
+    "L": {
+      "item": "biomesoplenty:mahogany_log"
+    },
+    "S": {
+      "item": "biomesoplenty:stripped_mahogany_log"
+    },
+    "W": {
+      "item": "minecraft:yellow_carpet"
+    }
+  },
+  "pattern": [
+    "WW#",
+    "#S#",
+    "L L"
+  ],
+  "result": {
+    "count": 2,
+    "item": "turtleblockacademy:desk_chair_mahogany_yellow"
+  }
+}

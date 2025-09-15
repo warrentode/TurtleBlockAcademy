@@ -1,0 +1,87 @@
+
+["Hydraulic Engineer Trade Settings"]
+
+	["Hydraulic Engineer Trade Settings"."Hydraulic Engineer Level One Trade One"]
+		# Hydraulic Engineer 1 Trade Request 1 Table
+		hydraulic_engineer_1_trade_request_1_table = "todecoins:trade_tables/currency/two_emerald_value_currency"
+		# Hydraulic Engineer 1 Trade Offer 1 Table
+		hydraulic_engineer_1_trade_offer_1_table = "todecoins:trade_tables/misc/copper_materials_tag_table"
+		#Range: 1 ~ 64
+		hydraulic_engineer_1_trade_offer_1_count = 8
+
+	["Hydraulic Engineer Trade Settings"."Hydraulic Engineer Level One Trade TWo"]
+		# Hydraulic Engineer 1 Trade Request 2 Table
+		hydraulic_engineer_1_trade_request_2_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+		# Hydraulic Engineer 1 Trade Offer 2 Table
+		hydraulic_engineer_1_trade_offer_2_table = "todecoins:trade_tables/food/dried_kelp_table"
+
+	["Hydraulic Engineer Trade Settings"."Hydraulic Engineer Level One Trade Three"]
+		# Hydraulic Engineer 1 Trade Request 3 Table
+		hydraulic_engineer_1_trade_request_3_table = "todecoins:trade_tables/currency/two_emerald_value_currency"
+		#Range: 1 ~ 64
+		hydraulic_engineer_1_trade_offer_2_table = 1
+
+	["Hydraulic Engineer Trade Settings"."Hydraulic Engineer Level One Trade Four"]
+		# Hydraulic Engineer 1 Trade Request 4 Table
+		hydraulic_engineer_1_trade_request_4_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+		# Hydraulic Engineer 1 Trade Offer 4 Table
+		hydraulic_engineer_1_trade_offer_4_table = "todecoins:trade_tables/metals/single_emerald_value_metals"
+
+	["Hydraulic Engineer Trade Settings"."Hydraulic Engineer Level One Trade Five"]
+		# Hydraulic Engineer 1 Trade Request 5 Table
+		hydraulic_engineer_1_trade_request_5_table = "todecoins:trade_tables/currency/four_emerald_value_currency"
+		# Hydraulic Engineer 1 Trade Offer 5 Table
+		hydraulic_engineer_1_trade_offer_5_table = "todecoins:trade_tables/misc/copper_diving_gear_tag_table"
+
+	["Hydraulic Engineer Trade Settings"."Hydraulic Engineer Level Two Trade One"]
+		# Hydraulic Engineer 2 Trade Request 1 Table
+		hydraulic_engineer_2_trade_request_1_table = "todecoins:trade_tables/currency/two_emerald_value_currency"
+		# Hydraulic Engineer 2 Trade Offer 1 Table
+		hydraulic_engineer_2_trade_offer_1_table = "todecoins:trade_tables/misc/copper_materials_tag_table"
+		#Range: 1 ~ 64
+		hydraulic_engineer_2_trade_offer_1_count = 8
+
+	["Hydraulic Engineer Trade Settings"."Hydraulic Engineer Level Two Trade TWo"]
+		# Hydraulic Engineer 2 Trade Request 2 Table
+		hydraulic_engineer_2_trade_request_2_table = "todecoins:trade_tables/currency/two_emerald_value_currency"
+		#Range: 1 ~ 64
+		hydraulic_engineer_2_trade_offer_2_table = 1
+
+	["Hydraulic Engineer Trade Settings"."Hydraulic Engineer Level Three Trade One"]
+		# Hydraulic Engineer 3 Trade Request 1 Table
+		hydraulic_engineer_3_trade_request_1_table = "todecoins:trade_tables/currency/two_emerald_value_currency"
+		# Hydraulic Engineer 3 Trade Offer 1 Table
+		hydraulic_engineer_3_trade_offer_1_table = "todecoins:trade_tables/misc/copper_materials_tag_table"
+		#Range: 1 ~ 64
+		hydraulic_engineer_3_trade_offer_1_count = 8
+
+	["Hydraulic Engineer Trade Settings"."Hydraulic Engineer Level Three Trade TWo"]
+		# Hydraulic Engineer 3 Trade Request 2 Table
+		hydraulic_engineer_3_trade_request_2_table = "todecoins:trade_tables/currency/two_emerald_value_currency"
+		#Range: 1 ~ 64
+		hydraulic_engineer_3_trade_offer_2_table = 1
+
+	["Hydraulic Engineer Trade Settings"."Hydraulic Engineer Level Four Trade One"]
+		# Hydraulic Engineer 4 Trade Request 1 Table
+		hydraulic_engineer_4_trade_request_1_table = "todecoins:trade_tables/currency/two_emerald_value_currency"
+		#Range: 1 ~ 64
+		hydraulic_engineer_4_trade_offer_1_table = 1
+
+	["Hydraulic Engineer Trade Settings"."Hydraulic Engineer Level Four Trade TWo"]
+		# Hydraulic Engineer 4 Trade Request 2 Table
+		hydraulic_engineer_4_trade_request_2_table = "todecoins:trade_tables/currency/two_emerald_value_currency"
+		#Range: 1 ~ 64
+		hydraulic_engineer_4_trade_offer_2_table = 1
+
+	["Hydraulic Engineer Trade Settings"."Hydraulic Engineer Level Five Trade One"]
+		# Hydraulic Engineer 5 Trade Request 1 Table
+		hydraulic_engineer_5_trade_request_1_table = "todecoins:trade_tables/currency/two_emerald_value_currency"
+		#Range: 1 ~ 64
+		hydraulic_engineer_5_trade_offer_1_table = 1
+
+	["Hydraulic Engineer Trade Settings"."Hydraulic Engineer Level Five Trade TWo"]
+		# Hydraulic Engineer 5 Trade Request 2 Table
+		hydraulic_engineer_5_trade_request_2_table = "todecoins:trade_tables/currency/four_emerald_value_currency"
+		# Hydraulic Engineer 5 Trade Offer 2 Table
+		hydraulic_engineer_5_trade_offer_2_table = "todecoins:trade_tables/misc/copper_diving_gear_tag_table"
+

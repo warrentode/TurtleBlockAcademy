@@ -69,17 +69,11 @@
           "type": "minecraft:tag",
           "conditions": [
             {
-              "condition": "minecraft:alternative",
-              "terms": [
-                {
-                  "condition": "turtleblockacademy:seasonal_condition",
-                  "season": "SPRING"
-                },
-                {
-                  "condition": "turtleblockacademy:seasonal_condition",
-                  "season": "SUMMER"
-                }
-              ]
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "turtleblockacademy:seasonal_condition",
+                "season": "WINTER"
+              }
             }
           ],
           "expand": true,
@@ -89,29 +83,15 @@
           "type": "minecraft:tag",
           "conditions": [
             {
-              "condition": "minecraft:alternative",
-              "terms": [
-                {
-                  "condition": "turtleblockacademy:seasonal_condition",
-                  "season": "SPRING"
-                },
-                {
-                  "condition": "turtleblockacademy:seasonal_condition",
-                  "season": "SUMMER"
-                },
-                {
-                  "condition": "turtleblockacademy:seasonal_condition",
-                  "season": "AUTUMN"
-                }
-              ]
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "turtleblockacademy:seasonal_condition",
+                "season": "WINTER"
+              }
             }
           ],
           "expand": true,
           "name": "justoutdoorstuffs:patio_items"
-        },
-        {
-          "type": "minecraft:loot_table",
-          "name": "turtleblockacademy:chests/kitchen"
         },
         {
           "type": "minecraft:loot_table",
@@ -123,37 +103,6 @@
         },
         {
           "type": "minecraft:loot_table",
-          "conditions": [
-            {
-              "condition": "minecraft:alternative",
-              "terms": [
-                {
-                  "condition": "turtleblockacademy:seasonal_condition",
-                  "season": "EASTER"
-                },
-                {
-                  "condition": "turtleblockacademy:seasonal_condition",
-                  "season": "BIRTHDAY"
-                },
-                {
-                  "condition": "turtleblockacademy:seasonal_condition",
-                  "season": "CHRISTMAS"
-                },
-                {
-                  "condition": "turtleblockacademy:seasonal_condition",
-                  "season": "ANNIVERSARY"
-                },
-                {
-                  "condition": "turtleblockacademy:seasonal_condition",
-                  "season": "HALLOWEEN"
-                },
-                {
-                  "condition": "turtleblockacademy:seasonal_condition",
-                  "season": "NEW_YEAR"
-                }
-              ]
-            }
-          ],
           "name": "turtleblockacademy:chests/holiday_deco"
         }
       ],

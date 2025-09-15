@@ -1,9 +1,0 @@
-{
-  "type": "lootbags:loot",
-  "color": "white",
-  "name": "Sandstone Kit Bag",
-  "output": {
-    "table": "dimdungeons:chests/kit_sandstone"
-  },
-  "rarity": "COMMON"
-}

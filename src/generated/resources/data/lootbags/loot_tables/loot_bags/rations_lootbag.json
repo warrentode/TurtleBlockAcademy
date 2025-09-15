@@ -12,7 +12,7 @@
       "entries": [
         {
           "type": "minecraft:loot_table",
-          "name": "dimdungeons:chests/kit_basic_supplies"
+          "name": "turtleblockacademy:chests/kits/kit_basic_supplies"
         }
       ],
       "rolls": 1.0

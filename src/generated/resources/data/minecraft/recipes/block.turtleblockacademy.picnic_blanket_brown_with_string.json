@@ -1,0 +1,22 @@
+{
+  "type": "turtleblockacademy:shaped_remainder",
+  "key": {
+    "C": {
+      "item": "minecraft:brown_carpet"
+    },
+    "N": {
+      "tag": "turtleblockacademy:needles"
+    },
+    "T": {
+      "tag": "forge:textiles/string"
+    }
+  },
+  "pattern": [
+    "NCC",
+    "TCC"
+  ],
+  "result": {
+    "count": 4,
+    "item": "turtleblockacademy:picnic_blanket_brown"
+  }
+}

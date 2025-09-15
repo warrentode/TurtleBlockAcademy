@@ -11,6 +11,7 @@ import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.DyeColor;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.Material;
@@ -19,6 +20,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 import java.util.function.Supplier;
 
@@ -166,32 +168,1687 @@ public class TBABlocks {
                     .sound(SoundType.WOOD).strength(1).noOcclusion()));
 
     public static final RegistryObject<Block> DESK_CHAIR_OAK = registerBlock("desk_chair_oak",
-            () -> new DeskChairBlock(BlockBehaviour.Properties.of(Material.WOOD)
-                    .sound(SoundType.WOOD).strength(1).noOcclusion()));
+            () -> deskChairBlock(null));
+    public static final RegistryObject<Block> DESK_CHAIR_OAK_WHITE =
+            registerBlock("desk_chair_oak_white",
+            () -> deskChairBlock(DyeColor.WHITE));
+    public static final RegistryObject<Block> DESK_CHAIR_OAK_ORANGE =
+            registerBlock("desk_chair_oak_orange",
+                    () -> deskChairBlock(DyeColor.ORANGE));
+    public static final RegistryObject<Block> DESK_CHAIR_OAK_MAGENTA =
+            registerBlock("desk_chair_oak_magenta",
+                    () -> deskChairBlock(DyeColor.MAGENTA));
+    public static final RegistryObject<Block> DESK_CHAIR_OAK_LIGHT_BLUE =
+            registerBlock("desk_chair_oak_light_blue",
+                    () -> deskChairBlock(DyeColor.LIGHT_BLUE));
+    public static final RegistryObject<Block> DESK_CHAIR_OAK_YELLOW =
+            registerBlock("desk_chair_oak_yellow",
+                    () -> deskChairBlock(DyeColor.YELLOW));
+    public static final RegistryObject<Block> DESK_CHAIR_OAK_LIME =
+            registerBlock("desk_chair_oak_lime",
+                    () -> deskChairBlock(DyeColor.LIME));
+    public static final RegistryObject<Block> DESK_CHAIR_OAK_PINK =
+            registerBlock("desk_chair_oak_pink",
+                    () -> deskChairBlock(DyeColor.PINK));
+    public static final RegistryObject<Block> DESK_CHAIR_OAK_GRAY =
+            registerBlock("desk_chair_oak_gray",
+                    () -> deskChairBlock(DyeColor.GRAY));
+    public static final RegistryObject<Block> DESK_CHAIR_OAK_LIGHT_GRAY =
+            registerBlock("desk_chair_oak_light_gray",
+                    () -> deskChairBlock(DyeColor.LIGHT_GRAY));
+    public static final RegistryObject<Block> DESK_CHAIR_OAK_CYAN =
+            registerBlock("desk_chair_oak_cyan",
+                    () -> deskChairBlock(DyeColor.CYAN));
+    public static final RegistryObject<Block> DESK_CHAIR_OAK_PURPLE =
+            registerBlock("desk_chair_oak_purple",
+                    () -> deskChairBlock(DyeColor.PURPLE));
+    public static final RegistryObject<Block> DESK_CHAIR_OAK_BLUE =
+            registerBlock("desk_chair_oak_blue",
+                    () -> deskChairBlock(DyeColor.BLUE));
+    public static final RegistryObject<Block> DESK_CHAIR_OAK_BROWN =
+            registerBlock("desk_chair_oak_brown",
+                    () -> deskChairBlock(DyeColor.BROWN));
+    public static final RegistryObject<Block> DESK_CHAIR_OAK_GREEN =
+            registerBlock("desk_chair_oak_green",
+                    () -> deskChairBlock(DyeColor.GREEN));
+    public static final RegistryObject<Block> DESK_CHAIR_OAK_RED =
+            registerBlock("desk_chair_oak_red",
+                    () -> deskChairBlock(DyeColor.RED));
+    public static final RegistryObject<Block> DESK_CHAIR_OAK_BLACK =
+            registerBlock("desk_chair_oak_black",
+                    () -> deskChairBlock(DyeColor.BLACK));
+
     public static final RegistryObject<Block> DESK_CHAIR_BIRCH = registerBlock("desk_chair_birch",
-            () -> new DeskChairBlock(BlockBehaviour.Properties.of(Material.WOOD)
-                    .sound(SoundType.WOOD).strength(1).noOcclusion()));
+            () -> deskChairBlock(null));
+    public static final RegistryObject<Block> DESK_CHAIR_BIRCH_WHITE =
+            registerBlock("desk_chair_birch_white",
+                    () -> deskChairBlock(DyeColor.WHITE));
+    public static final RegistryObject<Block> DESK_CHAIR_BIRCH_ORANGE =
+            registerBlock("desk_chair_birch_orange",
+                    () -> deskChairBlock(DyeColor.ORANGE));
+    public static final RegistryObject<Block> DESK_CHAIR_BIRCH_MAGENTA =
+            registerBlock("desk_chair_birch_magenta",
+                    () -> deskChairBlock(DyeColor.MAGENTA));
+    public static final RegistryObject<Block> DESK_CHAIR_BIRCH_LIGHT_BLUE =
+            registerBlock("desk_chair_birch_light_blue",
+                    () -> deskChairBlock(DyeColor.LIGHT_BLUE));
+    public static final RegistryObject<Block> DESK_CHAIR_BIRCH_YELLOW =
+            registerBlock("desk_chair_birch_yellow",
+                    () -> deskChairBlock(DyeColor.YELLOW));
+    public static final RegistryObject<Block> DESK_CHAIR_BIRCH_LIME =
+            registerBlock("desk_chair_birch_lime",
+                    () -> deskChairBlock(DyeColor.LIME));
+    public static final RegistryObject<Block> DESK_CHAIR_BIRCH_PINK =
+            registerBlock("desk_chair_birch_pink",
+                    () -> deskChairBlock(DyeColor.PINK));
+    public static final RegistryObject<Block> DESK_CHAIR_BIRCH_GRAY =
+            registerBlock("desk_chair_birch_gray",
+                    () -> deskChairBlock(DyeColor.GRAY));
+    public static final RegistryObject<Block> DESK_CHAIR_BIRCH_LIGHT_GRAY =
+            registerBlock("desk_chair_birch_light_gray",
+                    () -> deskChairBlock(DyeColor.LIGHT_GRAY));
+    public static final RegistryObject<Block> DESK_CHAIR_BIRCH_CYAN =
+            registerBlock("desk_chair_birch_cyan",
+                    () -> deskChairBlock(DyeColor.CYAN));
+    public static final RegistryObject<Block> DESK_CHAIR_BIRCH_PURPLE =
+            registerBlock("desk_chair_birch_purple",
+                    () -> deskChairBlock(DyeColor.PURPLE));
+    public static final RegistryObject<Block> DESK_CHAIR_BIRCH_BLUE =
+            registerBlock("desk_chair_birch_blue",
+                    () -> deskChairBlock(DyeColor.BLUE));
+    public static final RegistryObject<Block> DESK_CHAIR_BIRCH_BROWN =
+            registerBlock("desk_chair_birch_brown",
+                    () -> deskChairBlock(DyeColor.BROWN));
+    public static final RegistryObject<Block> DESK_CHAIR_BIRCH_GREEN =
+            registerBlock("desk_chair_birch_green",
+                    () -> deskChairBlock(DyeColor.GREEN));
+    public static final RegistryObject<Block> DESK_CHAIR_BIRCH_RED =
+            registerBlock("desk_chair_birch_red",
+                    () -> deskChairBlock(DyeColor.RED));
+    public static final RegistryObject<Block> DESK_CHAIR_BIRCH_BLACK =
+            registerBlock("desk_chair_birch_black",
+                    () -> deskChairBlock(DyeColor.BLACK));
+
     public static final RegistryObject<Block> DESK_CHAIR_SPRUCE = registerBlock("desk_chair_spruce",
-            () -> new DeskChairBlock(BlockBehaviour.Properties.of(Material.WOOD)
-                    .sound(SoundType.WOOD).strength(1).noOcclusion()));
+            () -> deskChairBlock(null));
+    public static final RegistryObject<Block> DESK_CHAIR_SPRUCE_WHITE =
+            registerBlock("desk_chair_spruce_white",
+                    () -> deskChairBlock(DyeColor.WHITE));
+    public static final RegistryObject<Block> DESK_CHAIR_SPRUCE_ORANGE =
+            registerBlock("desk_chair_spruce_orange",
+                    () -> deskChairBlock(DyeColor.ORANGE));
+    public static final RegistryObject<Block> DESK_CHAIR_SPRUCE_MAGENTA =
+            registerBlock("desk_chair_spruce_magenta",
+                    () -> deskChairBlock(DyeColor.MAGENTA));
+    public static final RegistryObject<Block> DESK_CHAIR_SPRUCE_LIGHT_BLUE =
+            registerBlock("desk_chair_spruce_light_blue",
+                    () -> deskChairBlock(DyeColor.LIGHT_BLUE));
+    public static final RegistryObject<Block> DESK_CHAIR_SPRUCE_YELLOW =
+            registerBlock("desk_chair_spruce_yellow",
+                    () -> deskChairBlock(DyeColor.YELLOW));
+    public static final RegistryObject<Block> DESK_CHAIR_SPRUCE_LIME =
+            registerBlock("desk_chair_spruce_lime",
+                    () -> deskChairBlock(DyeColor.LIME));
+    public static final RegistryObject<Block> DESK_CHAIR_SPRUCE_PINK =
+            registerBlock("desk_chair_spruce_pink",
+                    () -> deskChairBlock(DyeColor.PINK));
+    public static final RegistryObject<Block> DESK_CHAIR_SPRUCE_GRAY =
+            registerBlock("desk_chair_spruce_gray",
+                    () -> deskChairBlock(DyeColor.GRAY));
+    public static final RegistryObject<Block> DESK_CHAIR_SPRUCE_LIGHT_GRAY =
+            registerBlock("desk_chair_spruce_light_gray",
+                    () -> deskChairBlock(DyeColor.LIGHT_GRAY));
+    public static final RegistryObject<Block> DESK_CHAIR_SPRUCE_CYAN =
+            registerBlock("desk_chair_spruce_cyan",
+                    () -> deskChairBlock(DyeColor.CYAN));
+    public static final RegistryObject<Block> DESK_CHAIR_SPRUCE_PURPLE =
+            registerBlock("desk_chair_spruce_purple",
+                    () -> deskChairBlock(DyeColor.PURPLE));
+    public static final RegistryObject<Block> DESK_CHAIR_SPRUCE_BLUE =
+            registerBlock("desk_chair_spruce_blue",
+                    () -> deskChairBlock(DyeColor.BLUE));
+    public static final RegistryObject<Block> DESK_CHAIR_SPRUCE_BROWN =
+            registerBlock("desk_chair_spruce_brown",
+                    () -> deskChairBlock(DyeColor.BROWN));
+    public static final RegistryObject<Block> DESK_CHAIR_SPRUCE_GREEN =
+            registerBlock("desk_chair_spruce_green",
+                    () -> deskChairBlock(DyeColor.GREEN));
+    public static final RegistryObject<Block> DESK_CHAIR_SPRUCE_RED =
+            registerBlock("desk_chair_spruce_red",
+                    () -> deskChairBlock(DyeColor.RED));
+    public static final RegistryObject<Block> DESK_CHAIR_SPRUCE_BLACK =
+            registerBlock("desk_chair_spruce_black",
+                    () -> deskChairBlock(DyeColor.BLACK));
+
     public static final RegistryObject<Block> DESK_CHAIR_JUNGLE = registerBlock("desk_chair_jungle",
-            () -> new DeskChairBlock(BlockBehaviour.Properties.of(Material.WOOD)
-                    .sound(SoundType.WOOD).strength(1).noOcclusion()));
+            () -> deskChairBlock(null));
+    public static final RegistryObject<Block> DESK_CHAIR_JUNGLE_WHITE =
+            registerBlock("desk_chair_jungle_white",
+                    () -> deskChairBlock(DyeColor.WHITE));
+    public static final RegistryObject<Block> DESK_CHAIR_JUNGLE_ORANGE =
+            registerBlock("desk_chair_jungle_orange",
+                    () -> deskChairBlock(DyeColor.ORANGE));
+    public static final RegistryObject<Block> DESK_CHAIR_JUNGLE_MAGENTA =
+            registerBlock("desk_chair_jungle_magenta",
+                    () -> deskChairBlock(DyeColor.MAGENTA));
+    public static final RegistryObject<Block> DESK_CHAIR_JUNGLE_LIGHT_BLUE =
+            registerBlock("desk_chair_jungle_light_blue",
+                    () -> deskChairBlock(DyeColor.LIGHT_BLUE));
+    public static final RegistryObject<Block> DESK_CHAIR_JUNGLE_YELLOW =
+            registerBlock("desk_chair_jungle_yellow",
+                    () -> deskChairBlock(DyeColor.YELLOW));
+    public static final RegistryObject<Block> DESK_CHAIR_JUNGLE_LIME =
+            registerBlock("desk_chair_jungle_lime",
+                    () -> deskChairBlock(DyeColor.LIME));
+    public static final RegistryObject<Block> DESK_CHAIR_JUNGLE_PINK =
+            registerBlock("desk_chair_jungle_pink",
+                    () -> deskChairBlock(DyeColor.PINK));
+    public static final RegistryObject<Block> DESK_CHAIR_JUNGLE_GRAY =
+            registerBlock("desk_chair_jungle_gray",
+                    () -> deskChairBlock(DyeColor.GRAY));
+    public static final RegistryObject<Block> DESK_CHAIR_JUNGLE_LIGHT_GRAY =
+            registerBlock("desk_chair_jungle_light_gray",
+                    () -> deskChairBlock(DyeColor.LIGHT_GRAY));
+    public static final RegistryObject<Block> DESK_CHAIR_JUNGLE_CYAN =
+            registerBlock("desk_chair_jungle_cyan",
+                    () -> deskChairBlock(DyeColor.CYAN));
+    public static final RegistryObject<Block> DESK_CHAIR_JUNGLE_PURPLE =
+            registerBlock("desk_chair_jungle_purple",
+                    () -> deskChairBlock(DyeColor.PURPLE));
+    public static final RegistryObject<Block> DESK_CHAIR_JUNGLE_BLUE =
+            registerBlock("desk_chair_jungle_blue",
+                    () -> deskChairBlock(DyeColor.BLUE));
+    public static final RegistryObject<Block> DESK_CHAIR_JUNGLE_BROWN =
+            registerBlock("desk_chair_jungle_brown",
+                    () -> deskChairBlock(DyeColor.BROWN));
+    public static final RegistryObject<Block> DESK_CHAIR_JUNGLE_GREEN =
+            registerBlock("desk_chair_jungle_green",
+                    () -> deskChairBlock(DyeColor.GREEN));
+    public static final RegistryObject<Block> DESK_CHAIR_JUNGLE_RED =
+            registerBlock("desk_chair_jungle_red",
+                    () -> deskChairBlock(DyeColor.RED));
+    public static final RegistryObject<Block> DESK_CHAIR_JUNGLE_BLACK =
+            registerBlock("desk_chair_jungle_black",
+                    () -> deskChairBlock(DyeColor.BLACK));
+
     public static final RegistryObject<Block> DESK_CHAIR_ACACIA = registerBlock("desk_chair_acacia",
-            () -> new DeskChairBlock(BlockBehaviour.Properties.of(Material.WOOD)
-                    .sound(SoundType.WOOD).strength(1).noOcclusion()));
+            () -> deskChairBlock(null));
+    public static final RegistryObject<Block> DESK_CHAIR_ACACIA_WHITE =
+            registerBlock("desk_chair_acacia_white",
+                    () -> deskChairBlock(DyeColor.WHITE));
+    public static final RegistryObject<Block> DESK_CHAIR_ACACIA_ORANGE =
+            registerBlock("desk_chair_acacia_orange",
+                    () -> deskChairBlock(DyeColor.ORANGE));
+    public static final RegistryObject<Block> DESK_CHAIR_ACACIA_MAGENTA =
+            registerBlock("desk_chair_acacia_magenta",
+                    () -> deskChairBlock(DyeColor.MAGENTA));
+    public static final RegistryObject<Block> DESK_CHAIR_ACACIA_LIGHT_BLUE =
+            registerBlock("desk_chair_acacia_light_blue",
+                    () -> deskChairBlock(DyeColor.LIGHT_BLUE));
+    public static final RegistryObject<Block> DESK_CHAIR_ACACIA_YELLOW =
+            registerBlock("desk_chair_acacia_yellow",
+                    () -> deskChairBlock(DyeColor.YELLOW));
+    public static final RegistryObject<Block> DESK_CHAIR_ACACIA_LIME =
+            registerBlock("desk_chair_acacia_lime",
+                    () -> deskChairBlock(DyeColor.LIME));
+    public static final RegistryObject<Block> DESK_CHAIR_ACACIA_PINK =
+            registerBlock("desk_chair_acacia_pink",
+                    () -> deskChairBlock(DyeColor.PINK));
+    public static final RegistryObject<Block> DESK_CHAIR_ACACIA_GRAY =
+            registerBlock("desk_chair_acacia_gray",
+                    () -> deskChairBlock(DyeColor.GRAY));
+    public static final RegistryObject<Block> DESK_CHAIR_ACACIA_LIGHT_GRAY =
+            registerBlock("desk_chair_acacia_light_gray",
+                    () -> deskChairBlock(DyeColor.LIGHT_GRAY));
+    public static final RegistryObject<Block> DESK_CHAIR_ACACIA_CYAN =
+            registerBlock("desk_chair_acacia_cyan",
+                    () -> deskChairBlock(DyeColor.CYAN));
+    public static final RegistryObject<Block> DESK_CHAIR_ACACIA_PURPLE =
+            registerBlock("desk_chair_acacia_purple",
+                    () -> deskChairBlock(DyeColor.PURPLE));
+    public static final RegistryObject<Block> DESK_CHAIR_ACACIA_BLUE =
+            registerBlock("desk_chair_acacia_blue",
+                    () -> deskChairBlock(DyeColor.BLUE));
+    public static final RegistryObject<Block> DESK_CHAIR_ACACIA_BROWN =
+            registerBlock("desk_chair_acacia_brown",
+                    () -> deskChairBlock(DyeColor.BROWN));
+    public static final RegistryObject<Block> DESK_CHAIR_ACACIA_GREEN =
+            registerBlock("desk_chair_acacia_green",
+                    () -> deskChairBlock(DyeColor.GREEN));
+    public static final RegistryObject<Block> DESK_CHAIR_ACACIA_RED =
+            registerBlock("desk_chair_acacia_red",
+                    () -> deskChairBlock(DyeColor.RED));
+    public static final RegistryObject<Block> DESK_CHAIR_ACACIA_BLACK =
+            registerBlock("desk_chair_acacia_black",
+                    () -> deskChairBlock(DyeColor.BLACK));
+
     public static final RegistryObject<Block> DESK_CHAIR_DARK_OAK = registerBlock("desk_chair_dark_oak",
-            () -> new DeskChairBlock(BlockBehaviour.Properties.of(Material.WOOD)
-                    .sound(SoundType.WOOD).strength(1).noOcclusion()));
+            () -> deskChairBlock(null));
+    public static final RegistryObject<Block> DESK_CHAIR_DARK_OAK_WHITE =
+            registerBlock("desk_chair_dark_oak_white",
+                    () -> deskChairBlock(DyeColor.WHITE));
+    public static final RegistryObject<Block> DESK_CHAIR_DARK_OAK_ORANGE =
+            registerBlock("desk_chair_dark_oak_orange",
+                    () -> deskChairBlock(DyeColor.ORANGE));
+    public static final RegistryObject<Block> DESK_CHAIR_DARK_OAK_MAGENTA =
+            registerBlock("desk_chair_dark_oak_magenta",
+                    () -> deskChairBlock(DyeColor.MAGENTA));
+    public static final RegistryObject<Block> DESK_CHAIR_DARK_OAK_LIGHT_BLUE =
+            registerBlock("desk_chair_dark_oak_light_blue",
+                    () -> deskChairBlock(DyeColor.LIGHT_BLUE));
+    public static final RegistryObject<Block> DESK_CHAIR_DARK_OAK_YELLOW =
+            registerBlock("desk_chair_dark_oak_yellow",
+                    () -> deskChairBlock(DyeColor.YELLOW));
+    public static final RegistryObject<Block> DESK_CHAIR_DARK_OAK_LIME =
+            registerBlock("desk_chair_dark_oak_lime",
+                    () -> deskChairBlock(DyeColor.LIME));
+    public static final RegistryObject<Block> DESK_CHAIR_DARK_OAK_PINK =
+            registerBlock("desk_chair_dark_oak_pink",
+                    () -> deskChairBlock(DyeColor.PINK));
+    public static final RegistryObject<Block> DESK_CHAIR_DARK_OAK_GRAY =
+            registerBlock("desk_chair_dark_oak_gray",
+                    () -> deskChairBlock(DyeColor.GRAY));
+    public static final RegistryObject<Block> DESK_CHAIR_DARK_OAK_LIGHT_GRAY =
+            registerBlock("desk_chair_dark_oak_light_gray",
+                    () -> deskChairBlock(DyeColor.LIGHT_GRAY));
+    public static final RegistryObject<Block> DESK_CHAIR_DARK_OAK_CYAN =
+            registerBlock("desk_chair_dark_oak_cyan",
+                    () -> deskChairBlock(DyeColor.CYAN));
+    public static final RegistryObject<Block> DESK_CHAIR_DARK_OAK_PURPLE =
+            registerBlock("desk_chair_dark_oak_purple",
+                    () -> deskChairBlock(DyeColor.PURPLE));
+    public static final RegistryObject<Block> DESK_CHAIR_DARK_OAK_BLUE =
+            registerBlock("desk_chair_dark_oak_blue",
+                    () -> deskChairBlock(DyeColor.BLUE));
+    public static final RegistryObject<Block> DESK_CHAIR_DARK_OAK_BROWN =
+            registerBlock("desk_chair_dark_oak_brown",
+                    () -> deskChairBlock(DyeColor.BROWN));
+    public static final RegistryObject<Block> DESK_CHAIR_DARK_OAK_GREEN =
+            registerBlock("desk_chair_dark_oak_green",
+                    () -> deskChairBlock(DyeColor.GREEN));
+    public static final RegistryObject<Block> DESK_CHAIR_DARK_OAK_RED =
+            registerBlock("desk_chair_dark_oak_red",
+                    () -> deskChairBlock(DyeColor.RED));
+    public static final RegistryObject<Block> DESK_CHAIR_DARK_OAK_BLACK =
+            registerBlock("desk_chair_dark_oak_black",
+                    () -> deskChairBlock(DyeColor.BLACK));
+
     public static final RegistryObject<Block> DESK_CHAIR_MANGROVE = registerBlock("desk_chair_mangrove",
-            () -> new DeskChairBlock(BlockBehaviour.Properties.of(Material.WOOD)
-                    .sound(SoundType.WOOD).strength(1).noOcclusion()));
+            () -> deskChairBlock(null));
+    public static final RegistryObject<Block> DESK_CHAIR_MANGROVE_WHITE =
+            registerBlock("desk_chair_mangrove_white",
+                    () -> deskChairBlock(DyeColor.WHITE));
+    public static final RegistryObject<Block> DESK_CHAIR_MANGROVE_ORANGE =
+            registerBlock("desk_chair_mangrove_orange",
+                    () -> deskChairBlock(DyeColor.ORANGE));
+    public static final RegistryObject<Block> DESK_CHAIR_MANGROVE_MAGENTA =
+            registerBlock("desk_chair_mangrove_magenta",
+                    () -> deskChairBlock(DyeColor.MAGENTA));
+    public static final RegistryObject<Block> DESK_CHAIR_MANGROVE_LIGHT_BLUE =
+            registerBlock("desk_chair_mangrove_light_blue",
+                    () -> deskChairBlock(DyeColor.LIGHT_BLUE));
+    public static final RegistryObject<Block> DESK_CHAIR_MANGROVE_YELLOW =
+            registerBlock("desk_chair_mangrove_yellow",
+                    () -> deskChairBlock(DyeColor.YELLOW));
+    public static final RegistryObject<Block> DESK_CHAIR_MANGROVE_LIME =
+            registerBlock("desk_chair_mangrove_lime",
+                    () -> deskChairBlock(DyeColor.LIME));
+    public static final RegistryObject<Block> DESK_CHAIR_MANGROVE_PINK =
+            registerBlock("desk_chair_mangrove_pink",
+                    () -> deskChairBlock(DyeColor.PINK));
+    public static final RegistryObject<Block> DESK_CHAIR_MANGROVE_GRAY =
+            registerBlock("desk_chair_mangrove_gray",
+                    () -> deskChairBlock(DyeColor.GRAY));
+    public static final RegistryObject<Block> DESK_CHAIR_MANGROVE_LIGHT_GRAY =
+            registerBlock("desk_chair_mangrove_light_gray",
+                    () -> deskChairBlock(DyeColor.LIGHT_GRAY));
+    public static final RegistryObject<Block> DESK_CHAIR_MANGROVE_CYAN =
+            registerBlock("desk_chair_mangrove_cyan",
+                    () -> deskChairBlock(DyeColor.CYAN));
+    public static final RegistryObject<Block> DESK_CHAIR_MANGROVE_PURPLE =
+            registerBlock("desk_chair_mangrove_purple",
+                    () -> deskChairBlock(DyeColor.PURPLE));
+    public static final RegistryObject<Block> DESK_CHAIR_MANGROVE_BLUE =
+            registerBlock("desk_chair_mangrove_blue",
+                    () -> deskChairBlock(DyeColor.BLUE));
+    public static final RegistryObject<Block> DESK_CHAIR_MANGROVE_BROWN =
+            registerBlock("desk_chair_mangrove_brown",
+                    () -> deskChairBlock(DyeColor.BROWN));
+    public static final RegistryObject<Block> DESK_CHAIR_MANGROVE_GREEN =
+            registerBlock("desk_chair_mangrove_green",
+                    () -> deskChairBlock(DyeColor.GREEN));
+    public static final RegistryObject<Block> DESK_CHAIR_MANGROVE_RED =
+            registerBlock("desk_chair_mangrove_red",
+                    () -> deskChairBlock(DyeColor.RED));
+    public static final RegistryObject<Block> DESK_CHAIR_MANGROVE_BLACK =
+            registerBlock("desk_chair_mangrove_black",
+                    () -> deskChairBlock(DyeColor.BLACK));
+
     public static final RegistryObject<Block> DESK_CHAIR_CRIMSON = registerBlock("desk_chair_crimson",
-            () -> new DeskChairBlock(BlockBehaviour.Properties.of(Material.WOOD)
-                    .sound(SoundType.WOOD).strength(1).noOcclusion()));
+            () -> deskChairBlock(null));
+    public static final RegistryObject<Block> DESK_CHAIR_CRIMSON_WHITE =
+            registerBlock("desk_chair_crimson_white",
+                    () -> deskChairBlock(DyeColor.WHITE));
+    public static final RegistryObject<Block> DESK_CHAIR_CRIMSON_ORANGE =
+            registerBlock("desk_chair_crimson_orange",
+                    () -> deskChairBlock(DyeColor.ORANGE));
+    public static final RegistryObject<Block> DESK_CHAIR_CRIMSON_MAGENTA =
+            registerBlock("desk_chair_crimson_magenta",
+                    () -> deskChairBlock(DyeColor.MAGENTA));
+    public static final RegistryObject<Block> DESK_CHAIR_CRIMSON_LIGHT_BLUE =
+            registerBlock("desk_chair_crimson_light_blue",
+                    () -> deskChairBlock(DyeColor.LIGHT_BLUE));
+    public static final RegistryObject<Block> DESK_CHAIR_CRIMSON_YELLOW =
+            registerBlock("desk_chair_crimson_yellow",
+                    () -> deskChairBlock(DyeColor.YELLOW));
+    public static final RegistryObject<Block> DESK_CHAIR_CRIMSON_LIME =
+            registerBlock("desk_chair_crimson_lime",
+                    () -> deskChairBlock(DyeColor.LIME));
+    public static final RegistryObject<Block> DESK_CHAIR_CRIMSON_PINK =
+            registerBlock("desk_chair_crimson_pink",
+                    () -> deskChairBlock(DyeColor.PINK));
+    public static final RegistryObject<Block> DESK_CHAIR_CRIMSON_GRAY =
+            registerBlock("desk_chair_crimson_gray",
+                    () -> deskChairBlock(DyeColor.GRAY));
+    public static final RegistryObject<Block> DESK_CHAIR_CRIMSON_LIGHT_GRAY =
+            registerBlock("desk_chair_crimson_light_gray",
+                    () -> deskChairBlock(DyeColor.LIGHT_GRAY));
+    public static final RegistryObject<Block> DESK_CHAIR_CRIMSON_CYAN =
+            registerBlock("desk_chair_crimson_cyan",
+                    () -> deskChairBlock(DyeColor.CYAN));
+    public static final RegistryObject<Block> DESK_CHAIR_CRIMSON_PURPLE =
+            registerBlock("desk_chair_crimson_purple",
+                    () -> deskChairBlock(DyeColor.PURPLE));
+    public static final RegistryObject<Block> DESK_CHAIR_CRIMSON_BLUE =
+            registerBlock("desk_chair_crimson_blue",
+                    () -> deskChairBlock(DyeColor.BLUE));
+    public static final RegistryObject<Block> DESK_CHAIR_CRIMSON_BROWN =
+            registerBlock("desk_chair_crimson_brown",
+                    () -> deskChairBlock(DyeColor.BROWN));
+    public static final RegistryObject<Block> DESK_CHAIR_CRIMSON_GREEN =
+            registerBlock("desk_chair_crimson_green",
+                    () -> deskChairBlock(DyeColor.GREEN));
+    public static final RegistryObject<Block> DESK_CHAIR_CRIMSON_RED =
+            registerBlock("desk_chair_crimson_red",
+                    () -> deskChairBlock(DyeColor.RED));
+    public static final RegistryObject<Block> DESK_CHAIR_CRIMSON_BLACK =
+            registerBlock("desk_chair_crimson_black",
+                    () -> deskChairBlock(DyeColor.BLACK));
+
     public static final RegistryObject<Block> DESK_CHAIR_WARPED = registerBlock("desk_chair_warped",
-            () -> new DeskChairBlock(BlockBehaviour.Properties.of(Material.WOOD)
-                    .sound(SoundType.WOOD).strength(1).noOcclusion()));
+            () -> deskChairBlock(null));
+    public static final RegistryObject<Block> DESK_CHAIR_WARPED_WHITE =
+            registerBlock("desk_chair_warped_white",
+                    () -> deskChairBlock(DyeColor.WHITE));
+    public static final RegistryObject<Block> DESK_CHAIR_WARPED_ORANGE =
+            registerBlock("desk_chair_warped_orange",
+                    () -> deskChairBlock(DyeColor.ORANGE));
+    public static final RegistryObject<Block> DESK_CHAIR_WARPED_MAGENTA =
+            registerBlock("desk_chair_warped_magenta",
+                    () -> deskChairBlock(DyeColor.MAGENTA));
+    public static final RegistryObject<Block> DESK_CHAIR_WARPED_LIGHT_BLUE =
+            registerBlock("desk_chair_warped_light_blue",
+                    () -> deskChairBlock(DyeColor.LIGHT_BLUE));
+    public static final RegistryObject<Block> DESK_CHAIR_WARPED_YELLOW =
+            registerBlock("desk_chair_warped_yellow",
+                    () -> deskChairBlock(DyeColor.YELLOW));
+    public static final RegistryObject<Block> DESK_CHAIR_WARPED_LIME =
+            registerBlock("desk_chair_warped_lime",
+                    () -> deskChairBlock(DyeColor.LIME));
+    public static final RegistryObject<Block> DESK_CHAIR_WARPED_PINK =
+            registerBlock("desk_chair_warped_pink",
+                    () -> deskChairBlock(DyeColor.PINK));
+    public static final RegistryObject<Block> DESK_CHAIR_WARPED_GRAY =
+            registerBlock("desk_chair_warped_gray",
+                    () -> deskChairBlock(DyeColor.GRAY));
+    public static final RegistryObject<Block> DESK_CHAIR_WARPED_LIGHT_GRAY =
+            registerBlock("desk_chair_warped_light_gray",
+                    () -> deskChairBlock(DyeColor.LIGHT_GRAY));
+    public static final RegistryObject<Block> DESK_CHAIR_WARPED_CYAN =
+            registerBlock("desk_chair_warped_cyan",
+                    () -> deskChairBlock(DyeColor.CYAN));
+    public static final RegistryObject<Block> DESK_CHAIR_WARPED_PURPLE =
+            registerBlock("desk_chair_warped_purple",
+                    () -> deskChairBlock(DyeColor.PURPLE));
+    public static final RegistryObject<Block> DESK_CHAIR_WARPED_BLUE =
+            registerBlock("desk_chair_warped_blue",
+                    () -> deskChairBlock(DyeColor.BLUE));
+    public static final RegistryObject<Block> DESK_CHAIR_WARPED_BROWN =
+            registerBlock("desk_chair_warped_brown",
+                    () -> deskChairBlock(DyeColor.BROWN));
+    public static final RegistryObject<Block> DESK_CHAIR_WARPED_GREEN =
+            registerBlock("desk_chair_warped_green",
+                    () -> deskChairBlock(DyeColor.GREEN));
+    public static final RegistryObject<Block> DESK_CHAIR_WARPED_RED =
+            registerBlock("desk_chair_warped_red",
+                    () -> deskChairBlock(DyeColor.RED));
+    public static final RegistryObject<Block> DESK_CHAIR_WARPED_BLACK =
+            registerBlock("desk_chair_warped_black",
+                    () -> deskChairBlock(DyeColor.BLACK));
+
+    public static final RegistryObject<Block> DESK_CHAIR_FIR = registerBlock("desk_chair_fir",
+            () -> deskChairBlock(null));
+    public static final RegistryObject<Block> DESK_CHAIR_FIR_WHITE =
+            registerBlock("desk_chair_fir_white",
+                    () -> deskChairBlock(DyeColor.WHITE));
+    public static final RegistryObject<Block> DESK_CHAIR_FIR_ORANGE =
+            registerBlock("desk_chair_fir_orange",
+                    () -> deskChairBlock(DyeColor.ORANGE));
+    public static final RegistryObject<Block> DESK_CHAIR_FIR_MAGENTA =
+            registerBlock("desk_chair_fir_magenta",
+                    () -> deskChairBlock(DyeColor.MAGENTA));
+    public static final RegistryObject<Block> DESK_CHAIR_FIR_LIGHT_BLUE =
+            registerBlock("desk_chair_fir_light_blue",
+                    () -> deskChairBlock(DyeColor.LIGHT_BLUE));
+    public static final RegistryObject<Block> DESK_CHAIR_FIR_YELLOW =
+            registerBlock("desk_chair_fir_yellow",
+                    () -> deskChairBlock(DyeColor.YELLOW));
+    public static final RegistryObject<Block> DESK_CHAIR_FIR_LIME =
+            registerBlock("desk_chair_fir_lime",
+                    () -> deskChairBlock(DyeColor.LIME));
+    public static final RegistryObject<Block> DESK_CHAIR_FIR_PINK =
+            registerBlock("desk_chair_fir_pink",
+                    () -> deskChairBlock(DyeColor.PINK));
+    public static final RegistryObject<Block> DESK_CHAIR_FIR_GRAY =
+            registerBlock("desk_chair_fir_gray",
+                    () -> deskChairBlock(DyeColor.GRAY));
+    public static final RegistryObject<Block> DESK_CHAIR_FIR_LIGHT_GRAY =
+            registerBlock("desk_chair_fir_light_gray",
+                    () -> deskChairBlock(DyeColor.LIGHT_GRAY));
+    public static final RegistryObject<Block> DESK_CHAIR_FIR_CYAN =
+            registerBlock("desk_chair_fir_cyan",
+                    () -> deskChairBlock(DyeColor.CYAN));
+    public static final RegistryObject<Block> DESK_CHAIR_FIR_PURPLE =
+            registerBlock("desk_chair_fir_purple",
+                    () -> deskChairBlock(DyeColor.PURPLE));
+    public static final RegistryObject<Block> DESK_CHAIR_FIR_BLUE =
+            registerBlock("desk_chair_fir_blue",
+                    () -> deskChairBlock(DyeColor.BLUE));
+    public static final RegistryObject<Block> DESK_CHAIR_FIR_BROWN =
+            registerBlock("desk_chair_fir_brown",
+                    () -> deskChairBlock(DyeColor.BROWN));
+    public static final RegistryObject<Block> DESK_CHAIR_FIR_GREEN =
+            registerBlock("desk_chair_fir_green",
+                    () -> deskChairBlock(DyeColor.GREEN));
+    public static final RegistryObject<Block> DESK_CHAIR_FIR_RED =
+            registerBlock("desk_chair_fir_red",
+                    () -> deskChairBlock(DyeColor.RED));
+    public static final RegistryObject<Block> DESK_CHAIR_FIR_BLACK =
+            registerBlock("desk_chair_fir_black",
+                    () -> deskChairBlock(DyeColor.BLACK));
+
+    public static final RegistryObject<Block> DESK_CHAIR_REDWOOD = registerBlock("desk_chair_redwood",
+            () -> deskChairBlock(null));
+    public static final RegistryObject<Block> DESK_CHAIR_REDWOOD_WHITE =
+            registerBlock("desk_chair_redwood_white",
+                    () -> deskChairBlock(DyeColor.WHITE));
+    public static final RegistryObject<Block> DESK_CHAIR_REDWOOD_ORANGE =
+            registerBlock("desk_chair_redwood_orange",
+                    () -> deskChairBlock(DyeColor.ORANGE));
+    public static final RegistryObject<Block> DESK_CHAIR_REDWOOD_MAGENTA =
+            registerBlock("desk_chair_redwood_magenta",
+                    () -> deskChairBlock(DyeColor.MAGENTA));
+    public static final RegistryObject<Block> DESK_CHAIR_REDWOOD_LIGHT_BLUE =
+            registerBlock("desk_chair_redwood_light_blue",
+                    () -> deskChairBlock(DyeColor.LIGHT_BLUE));
+    public static final RegistryObject<Block> DESK_CHAIR_REDWOOD_YELLOW =
+            registerBlock("desk_chair_redwood_yellow",
+                    () -> deskChairBlock(DyeColor.YELLOW));
+    public static final RegistryObject<Block> DESK_CHAIR_REDWOOD_LIME =
+            registerBlock("desk_chair_redwood_lime",
+                    () -> deskChairBlock(DyeColor.LIME));
+    public static final RegistryObject<Block> DESK_CHAIR_REDWOOD_PINK =
+            registerBlock("desk_chair_redwood_pink",
+                    () -> deskChairBlock(DyeColor.PINK));
+    public static final RegistryObject<Block> DESK_CHAIR_REDWOOD_GRAY =
+            registerBlock("desk_chair_redwood_gray",
+                    () -> deskChairBlock(DyeColor.GRAY));
+    public static final RegistryObject<Block> DESK_CHAIR_REDWOOD_LIGHT_GRAY =
+            registerBlock("desk_chair_redwood_light_gray",
+                    () -> deskChairBlock(DyeColor.LIGHT_GRAY));
+    public static final RegistryObject<Block> DESK_CHAIR_REDWOOD_CYAN =
+            registerBlock("desk_chair_redwood_cyan",
+                    () -> deskChairBlock(DyeColor.CYAN));
+    public static final RegistryObject<Block> DESK_CHAIR_REDWOOD_PURPLE =
+            registerBlock("desk_chair_redwood_purple",
+                    () -> deskChairBlock(DyeColor.PURPLE));
+    public static final RegistryObject<Block> DESK_CHAIR_REDWOOD_BLUE =
+            registerBlock("desk_chair_redwood_blue",
+                    () -> deskChairBlock(DyeColor.BLUE));
+    public static final RegistryObject<Block> DESK_CHAIR_REDWOOD_BROWN =
+            registerBlock("desk_chair_redwood_brown",
+                    () -> deskChairBlock(DyeColor.BROWN));
+    public static final RegistryObject<Block> DESK_CHAIR_REDWOOD_GREEN =
+            registerBlock("desk_chair_redwood_green",
+                    () -> deskChairBlock(DyeColor.GREEN));
+    public static final RegistryObject<Block> DESK_CHAIR_REDWOOD_RED =
+            registerBlock("desk_chair_redwood_red",
+                    () -> deskChairBlock(DyeColor.RED));
+    public static final RegistryObject<Block> DESK_CHAIR_REDWOOD_BLACK =
+            registerBlock("desk_chair_redwood_black",
+                    () -> deskChairBlock(DyeColor.BLACK));
+
+    public static final RegistryObject<Block> DESK_CHAIR_CHERRY = registerBlock("desk_chair_cherry",
+            () -> deskChairBlock(null));
+    public static final RegistryObject<Block> DESK_CHAIR_CHERRY_WHITE =
+            registerBlock("desk_chair_cherry_white",
+                    () -> deskChairBlock(DyeColor.WHITE));
+    public static final RegistryObject<Block> DESK_CHAIR_CHERRY_ORANGE =
+            registerBlock("desk_chair_cherry_orange",
+                    () -> deskChairBlock(DyeColor.ORANGE));
+    public static final RegistryObject<Block> DESK_CHAIR_CHERRY_MAGENTA =
+            registerBlock("desk_chair_cherry_magenta",
+                    () -> deskChairBlock(DyeColor.MAGENTA));
+    public static final RegistryObject<Block> DESK_CHAIR_CHERRY_LIGHT_BLUE =
+            registerBlock("desk_chair_cherry_light_blue",
+                    () -> deskChairBlock(DyeColor.LIGHT_BLUE));
+    public static final RegistryObject<Block> DESK_CHAIR_CHERRY_YELLOW =
+            registerBlock("desk_chair_cherry_yellow",
+                    () -> deskChairBlock(DyeColor.YELLOW));
+    public static final RegistryObject<Block> DESK_CHAIR_CHERRY_LIME =
+            registerBlock("desk_chair_cherry_lime",
+                    () -> deskChairBlock(DyeColor.LIME));
+    public static final RegistryObject<Block> DESK_CHAIR_CHERRY_PINK =
+            registerBlock("desk_chair_cherry_pink",
+                    () -> deskChairBlock(DyeColor.PINK));
+    public static final RegistryObject<Block> DESK_CHAIR_CHERRY_GRAY =
+            registerBlock("desk_chair_cherry_gray",
+                    () -> deskChairBlock(DyeColor.GRAY));
+    public static final RegistryObject<Block> DESK_CHAIR_CHERRY_LIGHT_GRAY =
+            registerBlock("desk_chair_cherry_light_gray",
+                    () -> deskChairBlock(DyeColor.LIGHT_GRAY));
+    public static final RegistryObject<Block> DESK_CHAIR_CHERRY_CYAN =
+            registerBlock("desk_chair_cherry_cyan",
+                    () -> deskChairBlock(DyeColor.CYAN));
+    public static final RegistryObject<Block> DESK_CHAIR_CHERRY_PURPLE =
+            registerBlock("desk_chair_cherry_purple",
+                    () -> deskChairBlock(DyeColor.PURPLE));
+    public static final RegistryObject<Block> DESK_CHAIR_CHERRY_BLUE =
+            registerBlock("desk_chair_cherry_blue",
+                    () -> deskChairBlock(DyeColor.BLUE));
+    public static final RegistryObject<Block> DESK_CHAIR_CHERRY_BROWN =
+            registerBlock("desk_chair_cherry_brown",
+                    () -> deskChairBlock(DyeColor.BROWN));
+    public static final RegistryObject<Block> DESK_CHAIR_CHERRY_GREEN =
+            registerBlock("desk_chair_cherry_green",
+                    () -> deskChairBlock(DyeColor.GREEN));
+    public static final RegistryObject<Block> DESK_CHAIR_CHERRY_RED =
+            registerBlock("desk_chair_cherry_red",
+                    () -> deskChairBlock(DyeColor.RED));
+    public static final RegistryObject<Block> DESK_CHAIR_CHERRY_BLACK =
+            registerBlock("desk_chair_cherry_black",
+                    () -> deskChairBlock(DyeColor.BLACK));
+
+    public static final RegistryObject<Block> DESK_CHAIR_MAHOGANY = registerBlock("desk_chair_mahogany",
+            () -> deskChairBlock(null));
+    public static final RegistryObject<Block> DESK_CHAIR_MAHOGANY_WHITE =
+            registerBlock("desk_chair_mahogany_white",
+                    () -> deskChairBlock(DyeColor.WHITE));
+    public static final RegistryObject<Block> DESK_CHAIR_MAHOGANY_ORANGE =
+            registerBlock("desk_chair_mahogany_orange",
+                    () -> deskChairBlock(DyeColor.ORANGE));
+    public static final RegistryObject<Block> DESK_CHAIR_MAHOGANY_MAGENTA =
+            registerBlock("desk_chair_mahogany_magenta",
+                    () -> deskChairBlock(DyeColor.MAGENTA));
+    public static final RegistryObject<Block> DESK_CHAIR_MAHOGANY_LIGHT_BLUE =
+            registerBlock("desk_chair_mahogany_light_blue",
+                    () -> deskChairBlock(DyeColor.LIGHT_BLUE));
+    public static final RegistryObject<Block> DESK_CHAIR_MAHOGANY_YELLOW =
+            registerBlock("desk_chair_mahogany_yellow",
+                    () -> deskChairBlock(DyeColor.YELLOW));
+    public static final RegistryObject<Block> DESK_CHAIR_MAHOGANY_LIME =
+            registerBlock("desk_chair_mahogany_lime",
+                    () -> deskChairBlock(DyeColor.LIME));
+    public static final RegistryObject<Block> DESK_CHAIR_MAHOGANY_PINK =
+            registerBlock("desk_chair_mahogany_pink",
+                    () -> deskChairBlock(DyeColor.PINK));
+    public static final RegistryObject<Block> DESK_CHAIR_MAHOGANY_GRAY =
+            registerBlock("desk_chair_mahogany_gray",
+                    () -> deskChairBlock(DyeColor.GRAY));
+    public static final RegistryObject<Block> DESK_CHAIR_MAHOGANY_LIGHT_GRAY =
+            registerBlock("desk_chair_mahogany_light_gray",
+                    () -> deskChairBlock(DyeColor.LIGHT_GRAY));
+    public static final RegistryObject<Block> DESK_CHAIR_MAHOGANY_CYAN =
+            registerBlock("desk_chair_mahogany_cyan",
+                    () -> deskChairBlock(DyeColor.CYAN));
+    public static final RegistryObject<Block> DESK_CHAIR_MAHOGANY_PURPLE =
+            registerBlock("desk_chair_mahogany_purple",
+                    () -> deskChairBlock(DyeColor.PURPLE));
+    public static final RegistryObject<Block> DESK_CHAIR_MAHOGANY_BLUE =
+            registerBlock("desk_chair_mahogany_blue",
+                    () -> deskChairBlock(DyeColor.BLUE));
+    public static final RegistryObject<Block> DESK_CHAIR_MAHOGANY_BROWN =
+            registerBlock("desk_chair_mahogany_brown",
+                    () -> deskChairBlock(DyeColor.BROWN));
+    public static final RegistryObject<Block> DESK_CHAIR_MAHOGANY_GREEN =
+            registerBlock("desk_chair_mahogany_green",
+                    () -> deskChairBlock(DyeColor.GREEN));
+    public static final RegistryObject<Block> DESK_CHAIR_MAHOGANY_RED =
+            registerBlock("desk_chair_mahogany_red",
+                    () -> deskChairBlock(DyeColor.RED));
+    public static final RegistryObject<Block> DESK_CHAIR_MAHOGANY_BLACK =
+            registerBlock("desk_chair_mahogany_black",
+                    () -> deskChairBlock(DyeColor.BLACK));
+
+    public static final RegistryObject<Block> DESK_CHAIR_JACARANDA = registerBlock("desk_chair_jacaranda",
+            () -> deskChairBlock(null));
+    public static final RegistryObject<Block> DESK_CHAIR_JACARANDA_WHITE =
+            registerBlock("desk_chair_jacaranda_white",
+                    () -> deskChairBlock(DyeColor.WHITE));
+    public static final RegistryObject<Block> DESK_CHAIR_JACARANDA_ORANGE =
+            registerBlock("desk_chair_jacaranda_orange",
+                    () -> deskChairBlock(DyeColor.ORANGE));
+    public static final RegistryObject<Block> DESK_CHAIR_JACARANDA_MAGENTA =
+            registerBlock("desk_chair_jacaranda_magenta",
+                    () -> deskChairBlock(DyeColor.MAGENTA));
+    public static final RegistryObject<Block> DESK_CHAIR_JACARANDA_LIGHT_BLUE =
+            registerBlock("desk_chair_jacaranda_light_blue",
+                    () -> deskChairBlock(DyeColor.LIGHT_BLUE));
+    public static final RegistryObject<Block> DESK_CHAIR_JACARANDA_YELLOW =
+            registerBlock("desk_chair_jacaranda_yellow",
+                    () -> deskChairBlock(DyeColor.YELLOW));
+    public static final RegistryObject<Block> DESK_CHAIR_JACARANDA_LIME =
+            registerBlock("desk_chair_jacaranda_lime",
+                    () -> deskChairBlock(DyeColor.LIME));
+    public static final RegistryObject<Block> DESK_CHAIR_JACARANDA_PINK =
+            registerBlock("desk_chair_jacaranda_pink",
+                    () -> deskChairBlock(DyeColor.PINK));
+    public static final RegistryObject<Block> DESK_CHAIR_JACARANDA_GRAY =
+            registerBlock("desk_chair_jacaranda_gray",
+                    () -> deskChairBlock(DyeColor.GRAY));
+    public static final RegistryObject<Block> DESK_CHAIR_JACARANDA_LIGHT_GRAY =
+            registerBlock("desk_chair_jacaranda_light_gray",
+                    () -> deskChairBlock(DyeColor.LIGHT_GRAY));
+    public static final RegistryObject<Block> DESK_CHAIR_JACARANDA_CYAN =
+            registerBlock("desk_chair_jacaranda_cyan",
+                    () -> deskChairBlock(DyeColor.CYAN));
+    public static final RegistryObject<Block> DESK_CHAIR_JACARANDA_PURPLE =
+            registerBlock("desk_chair_jacaranda_purple",
+                    () -> deskChairBlock(DyeColor.PURPLE));
+    public static final RegistryObject<Block> DESK_CHAIR_JACARANDA_BLUE =
+            registerBlock("desk_chair_jacaranda_blue",
+                    () -> deskChairBlock(DyeColor.BLUE));
+    public static final RegistryObject<Block> DESK_CHAIR_JACARANDA_BROWN =
+            registerBlock("desk_chair_jacaranda_brown",
+                    () -> deskChairBlock(DyeColor.BROWN));
+    public static final RegistryObject<Block> DESK_CHAIR_JACARANDA_GREEN =
+            registerBlock("desk_chair_jacaranda_green",
+                    () -> deskChairBlock(DyeColor.GREEN));
+    public static final RegistryObject<Block> DESK_CHAIR_JACARANDA_RED =
+            registerBlock("desk_chair_jacaranda_red",
+                    () -> deskChairBlock(DyeColor.RED));
+    public static final RegistryObject<Block> DESK_CHAIR_JACARANDA_BLACK =
+            registerBlock("desk_chair_jacaranda_black",
+                    () -> deskChairBlock(DyeColor.BLACK));
+
+    public static final RegistryObject<Block> DESK_CHAIR_PALM = registerBlock("desk_chair_palm",
+            () -> deskChairBlock(null));
+    public static final RegistryObject<Block> DESK_CHAIR_PALM_WHITE =
+            registerBlock("desk_chair_palm_white",
+                    () -> deskChairBlock(DyeColor.WHITE));
+    public static final RegistryObject<Block> DESK_CHAIR_PALM_ORANGE =
+            registerBlock("desk_chair_palm_orange",
+                    () -> deskChairBlock(DyeColor.ORANGE));
+    public static final RegistryObject<Block> DESK_CHAIR_PALM_MAGENTA =
+            registerBlock("desk_chair_palm_magenta",
+                    () -> deskChairBlock(DyeColor.MAGENTA));
+    public static final RegistryObject<Block> DESK_CHAIR_PALM_LIGHT_BLUE =
+            registerBlock("desk_chair_palm_light_blue",
+                    () -> deskChairBlock(DyeColor.LIGHT_BLUE));
+    public static final RegistryObject<Block> DESK_CHAIR_PALM_YELLOW =
+            registerBlock("desk_chair_palm_yellow",
+                    () -> deskChairBlock(DyeColor.YELLOW));
+    public static final RegistryObject<Block> DESK_CHAIR_PALM_LIME =
+            registerBlock("desk_chair_palm_lime",
+                    () -> deskChairBlock(DyeColor.LIME));
+    public static final RegistryObject<Block> DESK_CHAIR_PALM_PINK =
+            registerBlock("desk_chair_palm_pink",
+                    () -> deskChairBlock(DyeColor.PINK));
+    public static final RegistryObject<Block> DESK_CHAIR_PALM_GRAY =
+            registerBlock("desk_chair_palm_gray",
+                    () -> deskChairBlock(DyeColor.GRAY));
+    public static final RegistryObject<Block> DESK_CHAIR_PALM_LIGHT_GRAY =
+            registerBlock("desk_chair_palm_light_gray",
+                    () -> deskChairBlock(DyeColor.LIGHT_GRAY));
+    public static final RegistryObject<Block> DESK_CHAIR_PALM_CYAN =
+            registerBlock("desk_chair_palm_cyan",
+                    () -> deskChairBlock(DyeColor.CYAN));
+    public static final RegistryObject<Block> DESK_CHAIR_PALM_PURPLE =
+            registerBlock("desk_chair_palm_purple",
+                    () -> deskChairBlock(DyeColor.PURPLE));
+    public static final RegistryObject<Block> DESK_CHAIR_PALM_BLUE =
+            registerBlock("desk_chair_palm_blue",
+                    () -> deskChairBlock(DyeColor.BLUE));
+    public static final RegistryObject<Block> DESK_CHAIR_PALM_BROWN =
+            registerBlock("desk_chair_palm_brown",
+                    () -> deskChairBlock(DyeColor.BROWN));
+    public static final RegistryObject<Block> DESK_CHAIR_PALM_GREEN =
+            registerBlock("desk_chair_palm_green",
+                    () -> deskChairBlock(DyeColor.GREEN));
+    public static final RegistryObject<Block> DESK_CHAIR_PALM_RED =
+            registerBlock("desk_chair_palm_red",
+                    () -> deskChairBlock(DyeColor.RED));
+    public static final RegistryObject<Block> DESK_CHAIR_PALM_BLACK =
+            registerBlock("desk_chair_palm_black",
+                    () -> deskChairBlock(DyeColor.BLACK));
+
+    public static final RegistryObject<Block> DESK_CHAIR_WILLOW = registerBlock("desk_chair_willow",
+            () -> deskChairBlock(null));
+    public static final RegistryObject<Block> DESK_CHAIR_WILLOW_WHITE =
+            registerBlock("desk_chair_willow_white",
+                    () -> deskChairBlock(DyeColor.WHITE));
+    public static final RegistryObject<Block> DESK_CHAIR_WILLOW_ORANGE =
+            registerBlock("desk_chair_willow_orange",
+                    () -> deskChairBlock(DyeColor.ORANGE));
+    public static final RegistryObject<Block> DESK_CHAIR_WILLOW_MAGENTA =
+            registerBlock("desk_chair_willow_magenta",
+                    () -> deskChairBlock(DyeColor.MAGENTA));
+    public static final RegistryObject<Block> DESK_CHAIR_WILLOW_LIGHT_BLUE =
+            registerBlock("desk_chair_willow_light_blue",
+                    () -> deskChairBlock(DyeColor.LIGHT_BLUE));
+    public static final RegistryObject<Block> DESK_CHAIR_WILLOW_YELLOW =
+            registerBlock("desk_chair_willow_yellow",
+                    () -> deskChairBlock(DyeColor.YELLOW));
+    public static final RegistryObject<Block> DESK_CHAIR_WILLOW_LIME =
+            registerBlock("desk_chair_willow_lime",
+                    () -> deskChairBlock(DyeColor.LIME));
+    public static final RegistryObject<Block> DESK_CHAIR_WILLOW_PINK =
+            registerBlock("desk_chair_willow_pink",
+                    () -> deskChairBlock(DyeColor.PINK));
+    public static final RegistryObject<Block> DESK_CHAIR_WILLOW_GRAY =
+            registerBlock("desk_chair_willow_gray",
+                    () -> deskChairBlock(DyeColor.GRAY));
+    public static final RegistryObject<Block> DESK_CHAIR_WILLOW_LIGHT_GRAY =
+            registerBlock("desk_chair_willow_light_gray",
+                    () -> deskChairBlock(DyeColor.LIGHT_GRAY));
+    public static final RegistryObject<Block> DESK_CHAIR_WILLOW_CYAN =
+            registerBlock("desk_chair_willow_cyan",
+                    () -> deskChairBlock(DyeColor.CYAN));
+    public static final RegistryObject<Block> DESK_CHAIR_WILLOW_PURPLE =
+            registerBlock("desk_chair_willow_purple",
+                    () -> deskChairBlock(DyeColor.PURPLE));
+    public static final RegistryObject<Block> DESK_CHAIR_WILLOW_BLUE =
+            registerBlock("desk_chair_willow_blue",
+                    () -> deskChairBlock(DyeColor.BLUE));
+    public static final RegistryObject<Block> DESK_CHAIR_WILLOW_BROWN =
+            registerBlock("desk_chair_willow_brown",
+                    () -> deskChairBlock(DyeColor.BROWN));
+    public static final RegistryObject<Block> DESK_CHAIR_WILLOW_GREEN =
+            registerBlock("desk_chair_willow_green",
+                    () -> deskChairBlock(DyeColor.GREEN));
+    public static final RegistryObject<Block> DESK_CHAIR_WILLOW_RED =
+            registerBlock("desk_chair_willow_red",
+                    () -> deskChairBlock(DyeColor.RED));
+    public static final RegistryObject<Block> DESK_CHAIR_WILLOW_BLACK =
+            registerBlock("desk_chair_willow_black",
+                    () -> deskChairBlock(DyeColor.BLACK));
+
+    public static final RegistryObject<Block> DESK_CHAIR_DEAD = registerBlock("desk_chair_dead",
+            () -> deskChairBlock(null));
+    public static final RegistryObject<Block> DESK_CHAIR_DEAD_WHITE =
+            registerBlock("desk_chair_dead_white",
+                    () -> deskChairBlock(DyeColor.WHITE));
+    public static final RegistryObject<Block> DESK_CHAIR_DEAD_ORANGE =
+            registerBlock("desk_chair_dead_orange",
+                    () -> deskChairBlock(DyeColor.ORANGE));
+    public static final RegistryObject<Block> DESK_CHAIR_DEAD_MAGENTA =
+            registerBlock("desk_chair_dead_magenta",
+                    () -> deskChairBlock(DyeColor.MAGENTA));
+    public static final RegistryObject<Block> DESK_CHAIR_DEAD_LIGHT_BLUE =
+            registerBlock("desk_chair_dead_light_blue",
+                    () -> deskChairBlock(DyeColor.LIGHT_BLUE));
+    public static final RegistryObject<Block> DESK_CHAIR_DEAD_YELLOW =
+            registerBlock("desk_chair_dead_yellow",
+                    () -> deskChairBlock(DyeColor.YELLOW));
+    public static final RegistryObject<Block> DESK_CHAIR_DEAD_LIME =
+            registerBlock("desk_chair_dead_lime",
+                    () -> deskChairBlock(DyeColor.LIME));
+    public static final RegistryObject<Block> DESK_CHAIR_DEAD_PINK =
+            registerBlock("desk_chair_dead_pink",
+                    () -> deskChairBlock(DyeColor.PINK));
+    public static final RegistryObject<Block> DESK_CHAIR_DEAD_GRAY =
+            registerBlock("desk_chair_dead_gray",
+                    () -> deskChairBlock(DyeColor.GRAY));
+    public static final RegistryObject<Block> DESK_CHAIR_DEAD_LIGHT_GRAY =
+            registerBlock("desk_chair_dead_light_gray",
+                    () -> deskChairBlock(DyeColor.LIGHT_GRAY));
+    public static final RegistryObject<Block> DESK_CHAIR_DEAD_CYAN =
+            registerBlock("desk_chair_dead_cyan",
+                    () -> deskChairBlock(DyeColor.CYAN));
+    public static final RegistryObject<Block> DESK_CHAIR_DEAD_PURPLE =
+            registerBlock("desk_chair_dead_purple",
+                    () -> deskChairBlock(DyeColor.PURPLE));
+    public static final RegistryObject<Block> DESK_CHAIR_DEAD_BLUE =
+            registerBlock("desk_chair_dead_blue",
+                    () -> deskChairBlock(DyeColor.BLUE));
+    public static final RegistryObject<Block> DESK_CHAIR_DEAD_BROWN =
+            registerBlock("desk_chair_dead_brown",
+                    () -> deskChairBlock(DyeColor.BROWN));
+    public static final RegistryObject<Block> DESK_CHAIR_DEAD_GREEN =
+            registerBlock("desk_chair_dead_green",
+                    () -> deskChairBlock(DyeColor.GREEN));
+    public static final RegistryObject<Block> DESK_CHAIR_DEAD_RED =
+            registerBlock("desk_chair_dead_red",
+                    () -> deskChairBlock(DyeColor.RED));
+    public static final RegistryObject<Block> DESK_CHAIR_DEAD_BLACK =
+            registerBlock("desk_chair_dead_black",
+                    () -> deskChairBlock(DyeColor.BLACK));
+
+    public static final RegistryObject<Block> DESK_CHAIR_MAGIC = registerBlock("desk_chair_magic",
+            () -> deskChairBlock(null));
+    public static final RegistryObject<Block> DESK_CHAIR_MAGIC_WHITE =
+            registerBlock("desk_chair_magic_white",
+                    () -> deskChairBlock(DyeColor.WHITE));
+    public static final RegistryObject<Block> DESK_CHAIR_MAGIC_ORANGE =
+            registerBlock("desk_chair_magic_orange",
+                    () -> deskChairBlock(DyeColor.ORANGE));
+    public static final RegistryObject<Block> DESK_CHAIR_MAGIC_MAGENTA =
+            registerBlock("desk_chair_magic_magenta",
+                    () -> deskChairBlock(DyeColor.MAGENTA));
+    public static final RegistryObject<Block> DESK_CHAIR_MAGIC_LIGHT_BLUE =
+            registerBlock("desk_chair_magic_light_blue",
+                    () -> deskChairBlock(DyeColor.LIGHT_BLUE));
+    public static final RegistryObject<Block> DESK_CHAIR_MAGIC_YELLOW =
+            registerBlock("desk_chair_magic_yellow",
+                    () -> deskChairBlock(DyeColor.YELLOW));
+    public static final RegistryObject<Block> DESK_CHAIR_MAGIC_LIME =
+            registerBlock("desk_chair_magic_lime",
+                    () -> deskChairBlock(DyeColor.LIME));
+    public static final RegistryObject<Block> DESK_CHAIR_MAGIC_PINK =
+            registerBlock("desk_chair_magic_pink",
+                    () -> deskChairBlock(DyeColor.PINK));
+    public static final RegistryObject<Block> DESK_CHAIR_MAGIC_GRAY =
+            registerBlock("desk_chair_magic_gray",
+                    () -> deskChairBlock(DyeColor.GRAY));
+    public static final RegistryObject<Block> DESK_CHAIR_MAGIC_LIGHT_GRAY =
+            registerBlock("desk_chair_magic_light_gray",
+                    () -> deskChairBlock(DyeColor.LIGHT_GRAY));
+    public static final RegistryObject<Block> DESK_CHAIR_MAGIC_CYAN =
+            registerBlock("desk_chair_magic_cyan",
+                    () -> deskChairBlock(DyeColor.CYAN));
+    public static final RegistryObject<Block> DESK_CHAIR_MAGIC_PURPLE =
+            registerBlock("desk_chair_magic_purple",
+                    () -> deskChairBlock(DyeColor.PURPLE));
+    public static final RegistryObject<Block> DESK_CHAIR_MAGIC_BLUE =
+            registerBlock("desk_chair_magic_blue",
+                    () -> deskChairBlock(DyeColor.BLUE));
+    public static final RegistryObject<Block> DESK_CHAIR_MAGIC_BROWN =
+            registerBlock("desk_chair_magic_brown",
+                    () -> deskChairBlock(DyeColor.BROWN));
+    public static final RegistryObject<Block> DESK_CHAIR_MAGIC_GREEN =
+            registerBlock("desk_chair_magic_green",
+                    () -> deskChairBlock(DyeColor.GREEN));
+    public static final RegistryObject<Block> DESK_CHAIR_MAGIC_RED =
+            registerBlock("desk_chair_magic_red",
+                    () -> deskChairBlock(DyeColor.RED));
+    public static final RegistryObject<Block> DESK_CHAIR_MAGIC_BLACK =
+            registerBlock("desk_chair_magic_black",
+                    () -> deskChairBlock(DyeColor.BLACK));
+
+    public static final RegistryObject<Block> DESK_CHAIR_UMBRAN = registerBlock("desk_chair_umbran",
+            () -> deskChairBlock(null));
+    public static final RegistryObject<Block> DESK_CHAIR_UMBRAN_WHITE =
+            registerBlock("desk_chair_umbran_white",
+                    () -> deskChairBlock(DyeColor.WHITE));
+    public static final RegistryObject<Block> DESK_CHAIR_UMBRAN_ORANGE =
+            registerBlock("desk_chair_umbran_orange",
+                    () -> deskChairBlock(DyeColor.ORANGE));
+    public static final RegistryObject<Block> DESK_CHAIR_UMBRAN_MAGENTA =
+            registerBlock("desk_chair_umbran_magenta",
+                    () -> deskChairBlock(DyeColor.MAGENTA));
+    public static final RegistryObject<Block> DESK_CHAIR_UMBRAN_LIGHT_BLUE =
+            registerBlock("desk_chair_umbran_light_blue",
+                    () -> deskChairBlock(DyeColor.LIGHT_BLUE));
+    public static final RegistryObject<Block> DESK_CHAIR_UMBRAN_YELLOW =
+            registerBlock("desk_chair_umbran_yellow",
+                    () -> deskChairBlock(DyeColor.YELLOW));
+    public static final RegistryObject<Block> DESK_CHAIR_UMBRAN_LIME =
+            registerBlock("desk_chair_umbran_lime",
+                    () -> deskChairBlock(DyeColor.LIME));
+    public static final RegistryObject<Block> DESK_CHAIR_UMBRAN_PINK =
+            registerBlock("desk_chair_umbran_pink",
+                    () -> deskChairBlock(DyeColor.PINK));
+    public static final RegistryObject<Block> DESK_CHAIR_UMBRAN_GRAY =
+            registerBlock("desk_chair_umbran_gray",
+                    () -> deskChairBlock(DyeColor.GRAY));
+    public static final RegistryObject<Block> DESK_CHAIR_UMBRAN_LIGHT_GRAY =
+            registerBlock("desk_chair_umbran_light_gray",
+                    () -> deskChairBlock(DyeColor.LIGHT_GRAY));
+    public static final RegistryObject<Block> DESK_CHAIR_UMBRAN_CYAN =
+            registerBlock("desk_chair_umbran_cyan",
+                    () -> deskChairBlock(DyeColor.CYAN));
+    public static final RegistryObject<Block> DESK_CHAIR_UMBRAN_PURPLE =
+            registerBlock("desk_chair_umbran_purple",
+                    () -> deskChairBlock(DyeColor.PURPLE));
+    public static final RegistryObject<Block> DESK_CHAIR_UMBRAN_BLUE =
+            registerBlock("desk_chair_umbran_blue",
+                    () -> deskChairBlock(DyeColor.BLUE));
+    public static final RegistryObject<Block> DESK_CHAIR_UMBRAN_BROWN =
+            registerBlock("desk_chair_umbran_brown",
+                    () -> deskChairBlock(DyeColor.BROWN));
+    public static final RegistryObject<Block> DESK_CHAIR_UMBRAN_GREEN =
+            registerBlock("desk_chair_umbran_green",
+                    () -> deskChairBlock(DyeColor.GREEN));
+    public static final RegistryObject<Block> DESK_CHAIR_UMBRAN_RED =
+            registerBlock("desk_chair_umbran_red",
+                    () -> deskChairBlock(DyeColor.RED));
+    public static final RegistryObject<Block> DESK_CHAIR_UMBRAN_BLACK =
+            registerBlock("desk_chair_umbran_black",
+                    () -> deskChairBlock(DyeColor.BLACK));
+
+    public static final RegistryObject<Block> DESK_CHAIR_HELLBARK = registerBlock("desk_chair_hellbark",
+            () -> deskChairBlock(null));
+    public static final RegistryObject<Block> DESK_CHAIR_HELLBARK_WHITE =
+            registerBlock("desk_chair_hellbark_white",
+                    () -> deskChairBlock(DyeColor.WHITE));
+    public static final RegistryObject<Block> DESK_CHAIR_HELLBARK_ORANGE =
+            registerBlock("desk_chair_hellbark_orange",
+                    () -> deskChairBlock(DyeColor.ORANGE));
+    public static final RegistryObject<Block> DESK_CHAIR_HELLBARK_MAGENTA =
+            registerBlock("desk_chair_hellbark_magenta",
+                    () -> deskChairBlock(DyeColor.MAGENTA));
+    public static final RegistryObject<Block> DESK_CHAIR_HELLBARK_LIGHT_BLUE =
+            registerBlock("desk_chair_hellbark_light_blue",
+                    () -> deskChairBlock(DyeColor.LIGHT_BLUE));
+    public static final RegistryObject<Block> DESK_CHAIR_HELLBARK_YELLOW =
+            registerBlock("desk_chair_hellbark_yellow",
+                    () -> deskChairBlock(DyeColor.YELLOW));
+    public static final RegistryObject<Block> DESK_CHAIR_HELLBARK_LIME =
+            registerBlock("desk_chair_hellbark_lime",
+                    () -> deskChairBlock(DyeColor.LIME));
+    public static final RegistryObject<Block> DESK_CHAIR_HELLBARK_PINK =
+            registerBlock("desk_chair_hellbark_pink",
+                    () -> deskChairBlock(DyeColor.PINK));
+    public static final RegistryObject<Block> DESK_CHAIR_HELLBARK_GRAY =
+            registerBlock("desk_chair_hellbark_gray",
+                    () -> deskChairBlock(DyeColor.GRAY));
+    public static final RegistryObject<Block> DESK_CHAIR_HELLBARK_LIGHT_GRAY =
+            registerBlock("desk_chair_hellbark_light_gray",
+                    () -> deskChairBlock(DyeColor.LIGHT_GRAY));
+    public static final RegistryObject<Block> DESK_CHAIR_HELLBARK_CYAN =
+            registerBlock("desk_chair_hellbark_cyan",
+                    () -> deskChairBlock(DyeColor.CYAN));
+    public static final RegistryObject<Block> DESK_CHAIR_HELLBARK_PURPLE =
+            registerBlock("desk_chair_hellbark_purple",
+                    () -> deskChairBlock(DyeColor.PURPLE));
+    public static final RegistryObject<Block> DESK_CHAIR_HELLBARK_BLUE =
+            registerBlock("desk_chair_hellbark_blue",
+                    () -> deskChairBlock(DyeColor.BLUE));
+    public static final RegistryObject<Block> DESK_CHAIR_HELLBARK_BROWN =
+            registerBlock("desk_chair_hellbark_brown",
+                    () -> deskChairBlock(DyeColor.BROWN));
+    public static final RegistryObject<Block> DESK_CHAIR_HELLBARK_GREEN =
+            registerBlock("desk_chair_hellbark_green",
+                    () -> deskChairBlock(DyeColor.GREEN));
+    public static final RegistryObject<Block> DESK_CHAIR_HELLBARK_RED =
+            registerBlock("desk_chair_hellbark_red",
+                    () -> deskChairBlock(DyeColor.RED));
+    public static final RegistryObject<Block> DESK_CHAIR_HELLBARK_BLACK =
+            registerBlock("desk_chair_hellbark_black",
+                    () -> deskChairBlock(DyeColor.BLACK));
+
+    public static final RegistryObject<Block> DESK_CHAIR_COCONUT = registerBlock("desk_chair_coconut",
+            () -> deskChairBlock(null));
+    public static final RegistryObject<Block> DESK_CHAIR_COCONUT_WHITE =
+            registerBlock("desk_chair_coconut_white",
+                    () -> deskChairBlock(DyeColor.WHITE));
+    public static final RegistryObject<Block> DESK_CHAIR_COCONUT_ORANGE =
+            registerBlock("desk_chair_coconut_orange",
+                    () -> deskChairBlock(DyeColor.ORANGE));
+    public static final RegistryObject<Block> DESK_CHAIR_COCONUT_MAGENTA =
+            registerBlock("desk_chair_coconut_magenta",
+                    () -> deskChairBlock(DyeColor.MAGENTA));
+    public static final RegistryObject<Block> DESK_CHAIR_COCONUT_LIGHT_BLUE =
+            registerBlock("desk_chair_coconut_light_blue",
+                    () -> deskChairBlock(DyeColor.LIGHT_BLUE));
+    public static final RegistryObject<Block> DESK_CHAIR_COCONUT_YELLOW =
+            registerBlock("desk_chair_coconut_yellow",
+                    () -> deskChairBlock(DyeColor.YELLOW));
+    public static final RegistryObject<Block> DESK_CHAIR_COCONUT_LIME =
+            registerBlock("desk_chair_coconut_lime",
+                    () -> deskChairBlock(DyeColor.LIME));
+    public static final RegistryObject<Block> DESK_CHAIR_COCONUT_PINK =
+            registerBlock("desk_chair_coconut_pink",
+                    () -> deskChairBlock(DyeColor.PINK));
+    public static final RegistryObject<Block> DESK_CHAIR_COCONUT_GRAY =
+            registerBlock("desk_chair_coconut_gray",
+                    () -> deskChairBlock(DyeColor.GRAY));
+    public static final RegistryObject<Block> DESK_CHAIR_COCONUT_LIGHT_GRAY =
+            registerBlock("desk_chair_coconut_light_gray",
+                    () -> deskChairBlock(DyeColor.LIGHT_GRAY));
+    public static final RegistryObject<Block> DESK_CHAIR_COCONUT_CYAN =
+            registerBlock("desk_chair_coconut_cyan",
+                    () -> deskChairBlock(DyeColor.CYAN));
+    public static final RegistryObject<Block> DESK_CHAIR_COCONUT_PURPLE =
+            registerBlock("desk_chair_coconut_purple",
+                    () -> deskChairBlock(DyeColor.PURPLE));
+    public static final RegistryObject<Block> DESK_CHAIR_COCONUT_BLUE =
+            registerBlock("desk_chair_coconut_blue",
+                    () -> deskChairBlock(DyeColor.BLUE));
+    public static final RegistryObject<Block> DESK_CHAIR_COCONUT_BROWN =
+            registerBlock("desk_chair_coconut_brown",
+                    () -> deskChairBlock(DyeColor.BROWN));
+    public static final RegistryObject<Block> DESK_CHAIR_COCONUT_GREEN =
+            registerBlock("desk_chair_coconut_green",
+                    () -> deskChairBlock(DyeColor.GREEN));
+    public static final RegistryObject<Block> DESK_CHAIR_COCONUT_RED =
+            registerBlock("desk_chair_coconut_red",
+                    () -> deskChairBlock(DyeColor.RED));
+    public static final RegistryObject<Block> DESK_CHAIR_COCONUT_BLACK =
+            registerBlock("desk_chair_coconut_black",
+                    () -> deskChairBlock(DyeColor.BLACK));
+
+    public static final RegistryObject<Block> DESK_CHAIR_WALNUT = registerBlock("desk_chair_walnut",
+            () -> deskChairBlock(null));
+    public static final RegistryObject<Block> DESK_CHAIR_WALNUT_WHITE =
+            registerBlock("desk_chair_walnut_white",
+                    () -> deskChairBlock(DyeColor.WHITE));
+    public static final RegistryObject<Block> DESK_CHAIR_WALNUT_ORANGE =
+            registerBlock("desk_chair_walnut_orange",
+                    () -> deskChairBlock(DyeColor.ORANGE));
+    public static final RegistryObject<Block> DESK_CHAIR_WALNUT_MAGENTA =
+            registerBlock("desk_chair_walnut_magenta",
+                    () -> deskChairBlock(DyeColor.MAGENTA));
+    public static final RegistryObject<Block> DESK_CHAIR_WALNUT_LIGHT_BLUE =
+            registerBlock("desk_chair_walnut_light_blue",
+                    () -> deskChairBlock(DyeColor.LIGHT_BLUE));
+    public static final RegistryObject<Block> DESK_CHAIR_WALNUT_YELLOW =
+            registerBlock("desk_chair_walnut_yellow",
+                    () -> deskChairBlock(DyeColor.YELLOW));
+    public static final RegistryObject<Block> DESK_CHAIR_WALNUT_LIME =
+            registerBlock("desk_chair_walnut_lime",
+                    () -> deskChairBlock(DyeColor.LIME));
+    public static final RegistryObject<Block> DESK_CHAIR_WALNUT_PINK =
+            registerBlock("desk_chair_walnut_pink",
+                    () -> deskChairBlock(DyeColor.PINK));
+    public static final RegistryObject<Block> DESK_CHAIR_WALNUT_GRAY =
+            registerBlock("desk_chair_walnut_gray",
+                    () -> deskChairBlock(DyeColor.GRAY));
+    public static final RegistryObject<Block> DESK_CHAIR_WALNUT_LIGHT_GRAY =
+            registerBlock("desk_chair_walnut_light_gray",
+                    () -> deskChairBlock(DyeColor.LIGHT_GRAY));
+    public static final RegistryObject<Block> DESK_CHAIR_WALNUT_CYAN =
+            registerBlock("desk_chair_walnut_cyan",
+                    () -> deskChairBlock(DyeColor.CYAN));
+    public static final RegistryObject<Block> DESK_CHAIR_WALNUT_PURPLE =
+            registerBlock("desk_chair_walnut_purple",
+                    () -> deskChairBlock(DyeColor.PURPLE));
+    public static final RegistryObject<Block> DESK_CHAIR_WALNUT_BLUE =
+            registerBlock("desk_chair_walnut_blue",
+                    () -> deskChairBlock(DyeColor.BLUE));
+    public static final RegistryObject<Block> DESK_CHAIR_WALNUT_BROWN =
+            registerBlock("desk_chair_walnut_brown",
+                    () -> deskChairBlock(DyeColor.BROWN));
+    public static final RegistryObject<Block> DESK_CHAIR_WALNUT_GREEN =
+            registerBlock("desk_chair_walnut_green",
+                    () -> deskChairBlock(DyeColor.GREEN));
+    public static final RegistryObject<Block> DESK_CHAIR_WALNUT_RED =
+            registerBlock("desk_chair_walnut_red",
+                    () -> deskChairBlock(DyeColor.RED));
+    public static final RegistryObject<Block> DESK_CHAIR_WALNUT_BLACK =
+            registerBlock("desk_chair_walnut_black",
+                    () -> deskChairBlock(DyeColor.BLACK));
+
+    public static final RegistryObject<Block> DESK_CHAIR_AZALEA = registerBlock("desk_chair_azalea",
+            () -> deskChairBlock(null));
+    public static final RegistryObject<Block> DESK_CHAIR_AZALEA_WHITE =
+            registerBlock("desk_chair_azalea_white",
+                    () -> deskChairBlock(DyeColor.WHITE));
+    public static final RegistryObject<Block> DESK_CHAIR_AZALEA_ORANGE =
+            registerBlock("desk_chair_azalea_orange",
+                    () -> deskChairBlock(DyeColor.ORANGE));
+    public static final RegistryObject<Block> DESK_CHAIR_AZALEA_MAGENTA =
+            registerBlock("desk_chair_azalea_magenta",
+                    () -> deskChairBlock(DyeColor.MAGENTA));
+    public static final RegistryObject<Block> DESK_CHAIR_AZALEA_LIGHT_BLUE =
+            registerBlock("desk_chair_azalea_light_blue",
+                    () -> deskChairBlock(DyeColor.LIGHT_BLUE));
+    public static final RegistryObject<Block> DESK_CHAIR_AZALEA_YELLOW =
+            registerBlock("desk_chair_azalea_yellow",
+                    () -> deskChairBlock(DyeColor.YELLOW));
+    public static final RegistryObject<Block> DESK_CHAIR_AZALEA_LIME =
+            registerBlock("desk_chair_azalea_lime",
+                    () -> deskChairBlock(DyeColor.LIME));
+    public static final RegistryObject<Block> DESK_CHAIR_AZALEA_PINK =
+            registerBlock("desk_chair_azalea_pink",
+                    () -> deskChairBlock(DyeColor.PINK));
+    public static final RegistryObject<Block> DESK_CHAIR_AZALEA_GRAY =
+            registerBlock("desk_chair_azalea_gray",
+                    () -> deskChairBlock(DyeColor.GRAY));
+    public static final RegistryObject<Block> DESK_CHAIR_AZALEA_LIGHT_GRAY =
+            registerBlock("desk_chair_azalea_light_gray",
+                    () -> deskChairBlock(DyeColor.LIGHT_GRAY));
+    public static final RegistryObject<Block> DESK_CHAIR_AZALEA_CYAN =
+            registerBlock("desk_chair_azalea_cyan",
+                    () -> deskChairBlock(DyeColor.CYAN));
+    public static final RegistryObject<Block> DESK_CHAIR_AZALEA_PURPLE =
+            registerBlock("desk_chair_azalea_purple",
+                    () -> deskChairBlock(DyeColor.PURPLE));
+    public static final RegistryObject<Block> DESK_CHAIR_AZALEA_BLUE =
+            registerBlock("desk_chair_azalea_blue",
+                    () -> deskChairBlock(DyeColor.BLUE));
+    public static final RegistryObject<Block> DESK_CHAIR_AZALEA_BROWN =
+            registerBlock("desk_chair_azalea_brown",
+                    () -> deskChairBlock(DyeColor.BROWN));
+    public static final RegistryObject<Block> DESK_CHAIR_AZALEA_GREEN =
+            registerBlock("desk_chair_azalea_green",
+                    () -> deskChairBlock(DyeColor.GREEN));
+    public static final RegistryObject<Block> DESK_CHAIR_AZALEA_RED =
+            registerBlock("desk_chair_azalea_red",
+                    () -> deskChairBlock(DyeColor.RED));
+    public static final RegistryObject<Block> DESK_CHAIR_AZALEA_BLACK =
+            registerBlock("desk_chair_azalea_black",
+                    () -> deskChairBlock(DyeColor.BLACK));
+
+    public static final RegistryObject<Block> DESK_CHAIR_FLOWERING_AZALEA = registerBlock("desk_chair_flowering_azalea",
+            () -> deskChairBlock(null));
+    public static final RegistryObject<Block> DESK_CHAIR_FLOWERING_AZALEA_WHITE =
+            registerBlock("desk_chair_flowering_azalea_white",
+                    () -> deskChairBlock(DyeColor.WHITE));
+    public static final RegistryObject<Block> DESK_CHAIR_FLOWERING_AZALEA_ORANGE =
+            registerBlock("desk_chair_flowering_azalea_orange",
+                    () -> deskChairBlock(DyeColor.ORANGE));
+    public static final RegistryObject<Block> DESK_CHAIR_FLOWERING_AZALEA_MAGENTA =
+            registerBlock("desk_chair_flowering_azalea_magenta",
+                    () -> deskChairBlock(DyeColor.MAGENTA));
+    public static final RegistryObject<Block> DESK_CHAIR_FLOWERING_AZALEA_LIGHT_BLUE =
+            registerBlock("desk_chair_flowering_azalea_light_blue",
+                    () -> deskChairBlock(DyeColor.LIGHT_BLUE));
+    public static final RegistryObject<Block> DESK_CHAIR_FLOWERING_AZALEA_YELLOW =
+            registerBlock("desk_chair_flowering_azalea_yellow",
+                    () -> deskChairBlock(DyeColor.YELLOW));
+    public static final RegistryObject<Block> DESK_CHAIR_FLOWERING_AZALEA_LIME =
+            registerBlock("desk_chair_flowering_azalea_lime",
+                    () -> deskChairBlock(DyeColor.LIME));
+    public static final RegistryObject<Block> DESK_CHAIR_FLOWERING_AZALEA_PINK =
+            registerBlock("desk_chair_flowering_azalea_pink",
+                    () -> deskChairBlock(DyeColor.PINK));
+    public static final RegistryObject<Block> DESK_CHAIR_FLOWERING_AZALEA_GRAY =
+            registerBlock("desk_chair_flowering_azalea_gray",
+                    () -> deskChairBlock(DyeColor.GRAY));
+    public static final RegistryObject<Block> DESK_CHAIR_FLOWERING_AZALEA_LIGHT_GRAY =
+            registerBlock("desk_chair_flowering_azalea_light_gray",
+                    () -> deskChairBlock(DyeColor.LIGHT_GRAY));
+    public static final RegistryObject<Block> DESK_CHAIR_FLOWERING_AZALEA_CYAN =
+            registerBlock("desk_chair_flowering_azalea_cyan",
+                    () -> deskChairBlock(DyeColor.CYAN));
+    public static final RegistryObject<Block> DESK_CHAIR_FLOWERING_AZALEA_PURPLE =
+            registerBlock("desk_chair_flowering_azalea_purple",
+                    () -> deskChairBlock(DyeColor.PURPLE));
+    public static final RegistryObject<Block> DESK_CHAIR_FLOWERING_AZALEA_BLUE =
+            registerBlock("desk_chair_flowering_azalea_blue",
+                    () -> deskChairBlock(DyeColor.BLUE));
+    public static final RegistryObject<Block> DESK_CHAIR_FLOWERING_AZALEA_BROWN =
+            registerBlock("desk_chair_flowering_azalea_brown",
+                    () -> deskChairBlock(DyeColor.BROWN));
+    public static final RegistryObject<Block> DESK_CHAIR_FLOWERING_AZALEA_GREEN =
+            registerBlock("desk_chair_flowering_azalea_green",
+                    () -> deskChairBlock(DyeColor.GREEN));
+    public static final RegistryObject<Block> DESK_CHAIR_FLOWERING_AZALEA_RED =
+            registerBlock("desk_chair_flowering_azalea_red",
+                    () -> deskChairBlock(DyeColor.RED));
+    public static final RegistryObject<Block> DESK_CHAIR_FLOWERING_AZALEA_BLACK =
+            registerBlock("desk_chair_flowering_azalea_black",
+                    () -> deskChairBlock(DyeColor.BLACK));
+
+    public static final RegistryObject<Block> DESK_CHAIR_GOLDEN_OAK = registerBlock("desk_chair_golden_oak",
+            () -> deskChairBlock(null));
+    public static final RegistryObject<Block> DESK_CHAIR_GOLDEN_OAK_WHITE =
+            registerBlock("desk_chair_golden_oak_white",
+                    () -> deskChairBlock(DyeColor.WHITE));
+    public static final RegistryObject<Block> DESK_CHAIR_GOLDEN_OAK_ORANGE =
+            registerBlock("desk_chair_golden_oak_orange",
+                    () -> deskChairBlock(DyeColor.ORANGE));
+    public static final RegistryObject<Block> DESK_CHAIR_GOLDEN_OAK_MAGENTA =
+            registerBlock("desk_chair_golden_oak_magenta",
+                    () -> deskChairBlock(DyeColor.MAGENTA));
+    public static final RegistryObject<Block> DESK_CHAIR_GOLDEN_OAK_LIGHT_BLUE =
+            registerBlock("desk_chair_golden_oak_light_blue",
+                    () -> deskChairBlock(DyeColor.LIGHT_BLUE));
+    public static final RegistryObject<Block> DESK_CHAIR_GOLDEN_OAK_YELLOW =
+            registerBlock("desk_chair_golden_oak_yellow",
+                    () -> deskChairBlock(DyeColor.YELLOW));
+    public static final RegistryObject<Block> DESK_CHAIR_GOLDEN_OAK_LIME =
+            registerBlock("desk_chair_golden_oak_lime",
+                    () -> deskChairBlock(DyeColor.LIME));
+    public static final RegistryObject<Block> DESK_CHAIR_GOLDEN_OAK_PINK =
+            registerBlock("desk_chair_golden_oak_pink",
+                    () -> deskChairBlock(DyeColor.PINK));
+    public static final RegistryObject<Block> DESK_CHAIR_GOLDEN_OAK_GRAY =
+            registerBlock("desk_chair_golden_oak_gray",
+                    () -> deskChairBlock(DyeColor.GRAY));
+    public static final RegistryObject<Block> DESK_CHAIR_GOLDEN_OAK_LIGHT_GRAY =
+            registerBlock("desk_chair_golden_oak_light_gray",
+                    () -> deskChairBlock(DyeColor.LIGHT_GRAY));
+    public static final RegistryObject<Block> DESK_CHAIR_GOLDEN_OAK_CYAN =
+            registerBlock("desk_chair_golden_oak_cyan",
+                    () -> deskChairBlock(DyeColor.CYAN));
+    public static final RegistryObject<Block> DESK_CHAIR_GOLDEN_OAK_PURPLE =
+            registerBlock("desk_chair_golden_oak_purple",
+                    () -> deskChairBlock(DyeColor.PURPLE));
+    public static final RegistryObject<Block> DESK_CHAIR_GOLDEN_OAK_BLUE =
+            registerBlock("desk_chair_golden_oak_blue",
+                    () -> deskChairBlock(DyeColor.BLUE));
+    public static final RegistryObject<Block> DESK_CHAIR_GOLDEN_OAK_BROWN =
+            registerBlock("desk_chair_golden_oak_brown",
+                    () -> deskChairBlock(DyeColor.BROWN));
+    public static final RegistryObject<Block> DESK_CHAIR_GOLDEN_OAK_GREEN =
+            registerBlock("desk_chair_golden_oak_green",
+                    () -> deskChairBlock(DyeColor.GREEN));
+    public static final RegistryObject<Block> DESK_CHAIR_GOLDEN_OAK_RED =
+            registerBlock("desk_chair_golden_oak_red",
+                    () -> deskChairBlock(DyeColor.RED));
+    public static final RegistryObject<Block> DESK_CHAIR_GOLDEN_OAK_BLACK =
+            registerBlock("desk_chair_golden_oak_black",
+                    () -> deskChairBlock(DyeColor.BLACK));
+
+    public static final RegistryObject<Block> DESK_CHAIR_AETHER_SKYROOT = registerBlock("desk_chair_aether_skyroot",
+            () -> deskChairBlock(null));
+    public static final RegistryObject<Block> DESK_CHAIR_AETHER_SKYROOT_WHITE =
+            registerBlock("desk_chair_aether_skyroot_white",
+                    () -> deskChairBlock(DyeColor.WHITE));
+    public static final RegistryObject<Block> DESK_CHAIR_AETHER_SKYROOT_ORANGE =
+            registerBlock("desk_chair_aether_skyroot_orange",
+                    () -> deskChairBlock(DyeColor.ORANGE));
+    public static final RegistryObject<Block> DESK_CHAIR_AETHER_SKYROOT_MAGENTA =
+            registerBlock("desk_chair_aether_skyroot_magenta",
+                    () -> deskChairBlock(DyeColor.MAGENTA));
+    public static final RegistryObject<Block> DESK_CHAIR_AETHER_SKYROOT_LIGHT_BLUE =
+            registerBlock("desk_chair_aether_skyroot_light_blue",
+                    () -> deskChairBlock(DyeColor.LIGHT_BLUE));
+    public static final RegistryObject<Block> DESK_CHAIR_AETHER_SKYROOT_YELLOW =
+            registerBlock("desk_chair_aether_skyroot_yellow",
+                    () -> deskChairBlock(DyeColor.YELLOW));
+    public static final RegistryObject<Block> DESK_CHAIR_AETHER_SKYROOT_LIME =
+            registerBlock("desk_chair_aether_skyroot_lime",
+                    () -> deskChairBlock(DyeColor.LIME));
+    public static final RegistryObject<Block> DESK_CHAIR_AETHER_SKYROOT_PINK =
+            registerBlock("desk_chair_aether_skyroot_pink",
+                    () -> deskChairBlock(DyeColor.PINK));
+    public static final RegistryObject<Block> DESK_CHAIR_AETHER_SKYROOT_GRAY =
+            registerBlock("desk_chair_aether_skyroot_gray",
+                    () -> deskChairBlock(DyeColor.GRAY));
+    public static final RegistryObject<Block> DESK_CHAIR_AETHER_SKYROOT_LIGHT_GRAY =
+            registerBlock("desk_chair_aether_skyroot_light_gray",
+                    () -> deskChairBlock(DyeColor.LIGHT_GRAY));
+    public static final RegistryObject<Block> DESK_CHAIR_AETHER_SKYROOT_CYAN =
+            registerBlock("desk_chair_aether_skyroot_cyan",
+                    () -> deskChairBlock(DyeColor.CYAN));
+    public static final RegistryObject<Block> DESK_CHAIR_AETHER_SKYROOT_PURPLE =
+            registerBlock("desk_chair_aether_skyroot_purple",
+                    () -> deskChairBlock(DyeColor.PURPLE));
+    public static final RegistryObject<Block> DESK_CHAIR_AETHER_SKYROOT_BLUE =
+            registerBlock("desk_chair_aether_skyroot_blue",
+                    () -> deskChairBlock(DyeColor.BLUE));
+    public static final RegistryObject<Block> DESK_CHAIR_AETHER_SKYROOT_BROWN =
+            registerBlock("desk_chair_aether_skyroot_brown",
+                    () -> deskChairBlock(DyeColor.BROWN));
+    public static final RegistryObject<Block> DESK_CHAIR_AETHER_SKYROOT_GREEN =
+            registerBlock("desk_chair_aether_skyroot_green",
+                    () -> deskChairBlock(DyeColor.GREEN));
+    public static final RegistryObject<Block> DESK_CHAIR_AETHER_SKYROOT_RED =
+            registerBlock("desk_chair_aether_skyroot_red",
+                    () -> deskChairBlock(DyeColor.RED));
+    public static final RegistryObject<Block> DESK_CHAIR_AETHER_SKYROOT_BLACK =
+            registerBlock("desk_chair_aether_skyroot_black",
+                    () -> deskChairBlock(DyeColor.BLACK));
+
+    public static final RegistryObject<Block> DESK_CHAIR_PREAM = registerBlock("desk_chair_pream",
+            () -> deskChairBlock(null));
+    public static final RegistryObject<Block> DESK_CHAIR_PREAM_WHITE =
+            registerBlock("desk_chair_pream_white",
+                    () -> deskChairBlock(DyeColor.WHITE));
+    public static final RegistryObject<Block> DESK_CHAIR_PREAM_ORANGE =
+            registerBlock("desk_chair_pream_orange",
+                    () -> deskChairBlock(DyeColor.ORANGE));
+    public static final RegistryObject<Block> DESK_CHAIR_PREAM_MAGENTA =
+            registerBlock("desk_chair_pream_magenta",
+                    () -> deskChairBlock(DyeColor.MAGENTA));
+    public static final RegistryObject<Block> DESK_CHAIR_PREAM_LIGHT_BLUE =
+            registerBlock("desk_chair_pream_light_blue",
+                    () -> deskChairBlock(DyeColor.LIGHT_BLUE));
+    public static final RegistryObject<Block> DESK_CHAIR_PREAM_YELLOW =
+            registerBlock("desk_chair_pream_yellow",
+                    () -> deskChairBlock(DyeColor.YELLOW));
+    public static final RegistryObject<Block> DESK_CHAIR_PREAM_LIME =
+            registerBlock("desk_chair_pream_lime",
+                    () -> deskChairBlock(DyeColor.LIME));
+    public static final RegistryObject<Block> DESK_CHAIR_PREAM_PINK =
+            registerBlock("desk_chair_pream_pink",
+                    () -> deskChairBlock(DyeColor.PINK));
+    public static final RegistryObject<Block> DESK_CHAIR_PREAM_GRAY =
+            registerBlock("desk_chair_pream_gray",
+                    () -> deskChairBlock(DyeColor.GRAY));
+    public static final RegistryObject<Block> DESK_CHAIR_PREAM_LIGHT_GRAY =
+            registerBlock("desk_chair_pream_light_gray",
+                    () -> deskChairBlock(DyeColor.LIGHT_GRAY));
+    public static final RegistryObject<Block> DESK_CHAIR_PREAM_CYAN =
+            registerBlock("desk_chair_pream_cyan",
+                    () -> deskChairBlock(DyeColor.CYAN));
+    public static final RegistryObject<Block> DESK_CHAIR_PREAM_PURPLE =
+            registerBlock("desk_chair_pream_purple",
+                    () -> deskChairBlock(DyeColor.PURPLE));
+    public static final RegistryObject<Block> DESK_CHAIR_PREAM_BLUE =
+            registerBlock("desk_chair_pream_blue",
+                    () -> deskChairBlock(DyeColor.BLUE));
+    public static final RegistryObject<Block> DESK_CHAIR_PREAM_BROWN =
+            registerBlock("desk_chair_pream_brown",
+                    () -> deskChairBlock(DyeColor.BROWN));
+    public static final RegistryObject<Block> DESK_CHAIR_PREAM_GREEN =
+            registerBlock("desk_chair_pream_green",
+                    () -> deskChairBlock(DyeColor.GREEN));
+    public static final RegistryObject<Block> DESK_CHAIR_PREAM_RED =
+            registerBlock("desk_chair_pream_red",
+                    () -> deskChairBlock(DyeColor.RED));
+    public static final RegistryObject<Block> DESK_CHAIR_PREAM_BLACK =
+            registerBlock("desk_chair_pream_black",
+                    () -> deskChairBlock(DyeColor.BLACK));
+
+    public static final RegistryObject<Block> DESK_CHAIR_EBONY = registerBlock("desk_chair_ebony",
+            () -> deskChairBlock(null));
+    public static final RegistryObject<Block> DESK_CHAIR_EBONY_WHITE =
+            registerBlock("desk_chair_ebony_white",
+                    () -> deskChairBlock(DyeColor.WHITE));
+    public static final RegistryObject<Block> DESK_CHAIR_EBONY_ORANGE =
+            registerBlock("desk_chair_ebony_orange",
+                    () -> deskChairBlock(DyeColor.ORANGE));
+    public static final RegistryObject<Block> DESK_CHAIR_EBONY_MAGENTA =
+            registerBlock("desk_chair_ebony_magenta",
+                    () -> deskChairBlock(DyeColor.MAGENTA));
+    public static final RegistryObject<Block> DESK_CHAIR_EBONY_LIGHT_BLUE =
+            registerBlock("desk_chair_ebony_light_blue",
+                    () -> deskChairBlock(DyeColor.LIGHT_BLUE));
+    public static final RegistryObject<Block> DESK_CHAIR_EBONY_YELLOW =
+            registerBlock("desk_chair_ebony_yellow",
+                    () -> deskChairBlock(DyeColor.YELLOW));
+    public static final RegistryObject<Block> DESK_CHAIR_EBONY_LIME =
+            registerBlock("desk_chair_ebony_lime",
+                    () -> deskChairBlock(DyeColor.LIME));
+    public static final RegistryObject<Block> DESK_CHAIR_EBONY_PINK =
+            registerBlock("desk_chair_ebony_pink",
+                    () -> deskChairBlock(DyeColor.PINK));
+    public static final RegistryObject<Block> DESK_CHAIR_EBONY_GRAY =
+            registerBlock("desk_chair_ebony_gray",
+                    () -> deskChairBlock(DyeColor.GRAY));
+    public static final RegistryObject<Block> DESK_CHAIR_EBONY_LIGHT_GRAY =
+            registerBlock("desk_chair_ebony_light_gray",
+                    () -> deskChairBlock(DyeColor.LIGHT_GRAY));
+    public static final RegistryObject<Block> DESK_CHAIR_EBONY_CYAN =
+            registerBlock("desk_chair_ebony_cyan",
+                    () -> deskChairBlock(DyeColor.CYAN));
+    public static final RegistryObject<Block> DESK_CHAIR_EBONY_PURPLE =
+            registerBlock("desk_chair_ebony_purple",
+                    () -> deskChairBlock(DyeColor.PURPLE));
+    public static final RegistryObject<Block> DESK_CHAIR_EBONY_BLUE =
+            registerBlock("desk_chair_ebony_blue",
+                    () -> deskChairBlock(DyeColor.BLUE));
+    public static final RegistryObject<Block> DESK_CHAIR_EBONY_BROWN =
+            registerBlock("desk_chair_ebony_brown",
+                    () -> deskChairBlock(DyeColor.BROWN));
+    public static final RegistryObject<Block> DESK_CHAIR_EBONY_GREEN =
+            registerBlock("desk_chair_ebony_green",
+                    () -> deskChairBlock(DyeColor.GREEN));
+    public static final RegistryObject<Block> DESK_CHAIR_EBONY_RED =
+            registerBlock("desk_chair_ebony_red",
+                    () -> deskChairBlock(DyeColor.RED));
+    public static final RegistryObject<Block> DESK_CHAIR_EBONY_BLACK =
+            registerBlock("desk_chair_ebony_black",
+                    () -> deskChairBlock(DyeColor.BLACK));
+
+    public static final RegistryObject<Block> DESK_CHAIR_CHORUS_NEST = registerBlock("desk_chair_chorus_nest",
+            () -> deskChairBlock(null));
+    public static final RegistryObject<Block> DESK_CHAIR_CHORUS_NEST_WHITE =
+            registerBlock("desk_chair_chorus_nest_white",
+                    () -> deskChairBlock(DyeColor.WHITE));
+    public static final RegistryObject<Block> DESK_CHAIR_CHORUS_NEST_ORANGE =
+            registerBlock("desk_chair_chorus_nest_orange",
+                    () -> deskChairBlock(DyeColor.ORANGE));
+    public static final RegistryObject<Block> DESK_CHAIR_CHORUS_NEST_MAGENTA =
+            registerBlock("desk_chair_chorus_nest_magenta",
+                    () -> deskChairBlock(DyeColor.MAGENTA));
+    public static final RegistryObject<Block> DESK_CHAIR_CHORUS_NEST_LIGHT_BLUE =
+            registerBlock("desk_chair_chorus_nest_light_blue",
+                    () -> deskChairBlock(DyeColor.LIGHT_BLUE));
+    public static final RegistryObject<Block> DESK_CHAIR_CHORUS_NEST_YELLOW =
+            registerBlock("desk_chair_chorus_nest_yellow",
+                    () -> deskChairBlock(DyeColor.YELLOW));
+    public static final RegistryObject<Block> DESK_CHAIR_CHORUS_NEST_LIME =
+            registerBlock("desk_chair_chorus_nest_lime",
+                    () -> deskChairBlock(DyeColor.LIME));
+    public static final RegistryObject<Block> DESK_CHAIR_CHORUS_NEST_PINK =
+            registerBlock("desk_chair_chorus_nest_pink",
+                    () -> deskChairBlock(DyeColor.PINK));
+    public static final RegistryObject<Block> DESK_CHAIR_CHORUS_NEST_GRAY =
+            registerBlock("desk_chair_chorus_nest_gray",
+                    () -> deskChairBlock(DyeColor.GRAY));
+    public static final RegistryObject<Block> DESK_CHAIR_CHORUS_NEST_LIGHT_GRAY =
+            registerBlock("desk_chair_chorus_nest_light_gray",
+                    () -> deskChairBlock(DyeColor.LIGHT_GRAY));
+    public static final RegistryObject<Block> DESK_CHAIR_CHORUS_NEST_CYAN =
+            registerBlock("desk_chair_chorus_nest_cyan",
+                    () -> deskChairBlock(DyeColor.CYAN));
+    public static final RegistryObject<Block> DESK_CHAIR_CHORUS_NEST_PURPLE =
+            registerBlock("desk_chair_chorus_nest_purple",
+                    () -> deskChairBlock(DyeColor.PURPLE));
+    public static final RegistryObject<Block> DESK_CHAIR_CHORUS_NEST_BLUE =
+            registerBlock("desk_chair_chorus_nest_blue",
+                    () -> deskChairBlock(DyeColor.BLUE));
+    public static final RegistryObject<Block> DESK_CHAIR_CHORUS_NEST_BROWN =
+            registerBlock("desk_chair_chorus_nest_brown",
+                    () -> deskChairBlock(DyeColor.BROWN));
+    public static final RegistryObject<Block> DESK_CHAIR_CHORUS_NEST_GREEN =
+            registerBlock("desk_chair_chorus_nest_green",
+                    () -> deskChairBlock(DyeColor.GREEN));
+    public static final RegistryObject<Block> DESK_CHAIR_CHORUS_NEST_RED =
+            registerBlock("desk_chair_chorus_nest_red",
+                    () -> deskChairBlock(DyeColor.RED));
+    public static final RegistryObject<Block> DESK_CHAIR_CHORUS_NEST_BLACK =
+            registerBlock("desk_chair_chorus_nest_black",
+                    () -> deskChairBlock(DyeColor.BLACK));
+
+    public static final RegistryObject<Block> DESK_CHAIR_BLOODSHROOM = registerBlock("desk_chair_bloodshroom",
+            () -> deskChairBlock(null));
+    public static final RegistryObject<Block> DESK_CHAIR_BLOODSHROOM_WHITE =
+            registerBlock("desk_chair_bloodshroom_white",
+                    () -> deskChairBlock(DyeColor.WHITE));
+    public static final RegistryObject<Block> DESK_CHAIR_BLOODSHROOM_ORANGE =
+            registerBlock("desk_chair_bloodshroom_orange",
+                    () -> deskChairBlock(DyeColor.ORANGE));
+    public static final RegistryObject<Block> DESK_CHAIR_BLOODSHROOM_MAGENTA =
+            registerBlock("desk_chair_bloodshroom_magenta",
+                    () -> deskChairBlock(DyeColor.MAGENTA));
+    public static final RegistryObject<Block> DESK_CHAIR_BLOODSHROOM_LIGHT_BLUE =
+            registerBlock("desk_chair_bloodshroom_light_blue",
+                    () -> deskChairBlock(DyeColor.LIGHT_BLUE));
+    public static final RegistryObject<Block> DESK_CHAIR_BLOODSHROOM_YELLOW =
+            registerBlock("desk_chair_bloodshroom_yellow",
+                    () -> deskChairBlock(DyeColor.YELLOW));
+    public static final RegistryObject<Block> DESK_CHAIR_BLOODSHROOM_LIME =
+            registerBlock("desk_chair_bloodshroom_lime",
+                    () -> deskChairBlock(DyeColor.LIME));
+    public static final RegistryObject<Block> DESK_CHAIR_BLOODSHROOM_PINK =
+            registerBlock("desk_chair_bloodshroom_pink",
+                    () -> deskChairBlock(DyeColor.PINK));
+    public static final RegistryObject<Block> DESK_CHAIR_BLOODSHROOM_GRAY =
+            registerBlock("desk_chair_bloodshroom_gray",
+                    () -> deskChairBlock(DyeColor.GRAY));
+    public static final RegistryObject<Block> DESK_CHAIR_BLOODSHROOM_LIGHT_GRAY =
+            registerBlock("desk_chair_bloodshroom_light_gray",
+                    () -> deskChairBlock(DyeColor.LIGHT_GRAY));
+    public static final RegistryObject<Block> DESK_CHAIR_BLOODSHROOM_CYAN =
+            registerBlock("desk_chair_bloodshroom_cyan",
+                    () -> deskChairBlock(DyeColor.CYAN));
+    public static final RegistryObject<Block> DESK_CHAIR_BLOODSHROOM_PURPLE =
+            registerBlock("desk_chair_bloodshroom_purple",
+                    () -> deskChairBlock(DyeColor.PURPLE));
+    public static final RegistryObject<Block> DESK_CHAIR_BLOODSHROOM_BLUE =
+            registerBlock("desk_chair_bloodshroom_blue",
+                    () -> deskChairBlock(DyeColor.BLUE));
+    public static final RegistryObject<Block> DESK_CHAIR_BLOODSHROOM_BROWN =
+            registerBlock("desk_chair_bloodshroom_brown",
+                    () -> deskChairBlock(DyeColor.BROWN));
+    public static final RegistryObject<Block> DESK_CHAIR_BLOODSHROOM_GREEN =
+            registerBlock("desk_chair_bloodshroom_green",
+                    () -> deskChairBlock(DyeColor.GREEN));
+    public static final RegistryObject<Block> DESK_CHAIR_BLOODSHROOM_RED =
+            registerBlock("desk_chair_bloodshroom_red",
+                    () -> deskChairBlock(DyeColor.RED));
+    public static final RegistryObject<Block> DESK_CHAIR_BLOODSHROOM_BLACK =
+            registerBlock("desk_chair_bloodshroom_black",
+                    () -> deskChairBlock(DyeColor.BLACK));
+
+    public static final RegistryObject<Block> DESK_CHAIR_ENDERBARK = registerBlock("desk_chair_enderbark",
+            () -> deskChairBlock(null));
+    public static final RegistryObject<Block> DESK_CHAIR_ENDERBARK_WHITE =
+            registerBlock("desk_chair_enderbark_white",
+                    () -> deskChairBlock(DyeColor.WHITE));
+    public static final RegistryObject<Block> DESK_CHAIR_ENDERBARK_ORANGE =
+            registerBlock("desk_chair_enderbark_orange",
+                    () -> deskChairBlock(DyeColor.ORANGE));
+    public static final RegistryObject<Block> DESK_CHAIR_ENDERBARK_MAGENTA =
+            registerBlock("desk_chair_enderbark_magenta",
+                    () -> deskChairBlock(DyeColor.MAGENTA));
+    public static final RegistryObject<Block> DESK_CHAIR_ENDERBARK_LIGHT_BLUE =
+            registerBlock("desk_chair_enderbark_light_blue",
+                    () -> deskChairBlock(DyeColor.LIGHT_BLUE));
+    public static final RegistryObject<Block> DESK_CHAIR_ENDERBARK_YELLOW =
+            registerBlock("desk_chair_enderbark_yellow",
+                    () -> deskChairBlock(DyeColor.YELLOW));
+    public static final RegistryObject<Block> DESK_CHAIR_ENDERBARK_LIME =
+            registerBlock("desk_chair_enderbark_lime",
+                    () -> deskChairBlock(DyeColor.LIME));
+    public static final RegistryObject<Block> DESK_CHAIR_ENDERBARK_PINK =
+            registerBlock("desk_chair_enderbark_pink",
+                    () -> deskChairBlock(DyeColor.PINK));
+    public static final RegistryObject<Block> DESK_CHAIR_ENDERBARK_GRAY =
+            registerBlock("desk_chair_enderbark_gray",
+                    () -> deskChairBlock(DyeColor.GRAY));
+    public static final RegistryObject<Block> DESK_CHAIR_ENDERBARK_LIGHT_GRAY =
+            registerBlock("desk_chair_enderbark_light_gray",
+                    () -> deskChairBlock(DyeColor.LIGHT_GRAY));
+    public static final RegistryObject<Block> DESK_CHAIR_ENDERBARK_CYAN =
+            registerBlock("desk_chair_enderbark_cyan",
+                    () -> deskChairBlock(DyeColor.CYAN));
+    public static final RegistryObject<Block> DESK_CHAIR_ENDERBARK_PURPLE =
+            registerBlock("desk_chair_enderbark_purple",
+                    () -> deskChairBlock(DyeColor.PURPLE));
+    public static final RegistryObject<Block> DESK_CHAIR_ENDERBARK_BLUE =
+            registerBlock("desk_chair_enderbark_blue",
+                    () -> deskChairBlock(DyeColor.BLUE));
+    public static final RegistryObject<Block> DESK_CHAIR_ENDERBARK_BROWN =
+            registerBlock("desk_chair_enderbark_brown",
+                    () -> deskChairBlock(DyeColor.BROWN));
+    public static final RegistryObject<Block> DESK_CHAIR_ENDERBARK_GREEN =
+            registerBlock("desk_chair_enderbark_green",
+                    () -> deskChairBlock(DyeColor.GREEN));
+    public static final RegistryObject<Block> DESK_CHAIR_ENDERBARK_RED =
+            registerBlock("desk_chair_enderbark_red",
+                    () -> deskChairBlock(DyeColor.RED));
+    public static final RegistryObject<Block> DESK_CHAIR_ENDERBARK_BLACK =
+            registerBlock("desk_chair_enderbark_black",
+                    () -> deskChairBlock(DyeColor.BLACK));
+
+    public static final RegistryObject<Block> DESK_CHAIR_GREENHEART = registerBlock("desk_chair_greenheart",
+            () -> deskChairBlock(null));
+    public static final RegistryObject<Block> DESK_CHAIR_GREENHEART_WHITE =
+            registerBlock("desk_chair_greenheart_white",
+                    () -> deskChairBlock(DyeColor.WHITE));
+    public static final RegistryObject<Block> DESK_CHAIR_GREENHEART_ORANGE =
+            registerBlock("desk_chair_greenheart_orange",
+                    () -> deskChairBlock(DyeColor.ORANGE));
+    public static final RegistryObject<Block> DESK_CHAIR_GREENHEART_MAGENTA =
+            registerBlock("desk_chair_greenheart_magenta",
+                    () -> deskChairBlock(DyeColor.MAGENTA));
+    public static final RegistryObject<Block> DESK_CHAIR_GREENHEART_LIGHT_BLUE =
+            registerBlock("desk_chair_greenheart_light_blue",
+                    () -> deskChairBlock(DyeColor.LIGHT_BLUE));
+    public static final RegistryObject<Block> DESK_CHAIR_GREENHEART_YELLOW =
+            registerBlock("desk_chair_greenheart_yellow",
+                    () -> deskChairBlock(DyeColor.YELLOW));
+    public static final RegistryObject<Block> DESK_CHAIR_GREENHEART_LIME =
+            registerBlock("desk_chair_greenheart_lime",
+                    () -> deskChairBlock(DyeColor.LIME));
+    public static final RegistryObject<Block> DESK_CHAIR_GREENHEART_PINK =
+            registerBlock("desk_chair_greenheart_pink",
+                    () -> deskChairBlock(DyeColor.PINK));
+    public static final RegistryObject<Block> DESK_CHAIR_GREENHEART_GRAY =
+            registerBlock("desk_chair_greenheart_gray",
+                    () -> deskChairBlock(DyeColor.GRAY));
+    public static final RegistryObject<Block> DESK_CHAIR_GREENHEART_LIGHT_GRAY =
+            registerBlock("desk_chair_greenheart_light_gray",
+                    () -> deskChairBlock(DyeColor.LIGHT_GRAY));
+    public static final RegistryObject<Block> DESK_CHAIR_GREENHEART_CYAN =
+            registerBlock("desk_chair_greenheart_cyan",
+                    () -> deskChairBlock(DyeColor.CYAN));
+    public static final RegistryObject<Block> DESK_CHAIR_GREENHEART_PURPLE =
+            registerBlock("desk_chair_greenheart_purple",
+                    () -> deskChairBlock(DyeColor.PURPLE));
+    public static final RegistryObject<Block> DESK_CHAIR_GREENHEART_BLUE =
+            registerBlock("desk_chair_greenheart_blue",
+                    () -> deskChairBlock(DyeColor.BLUE));
+    public static final RegistryObject<Block> DESK_CHAIR_GREENHEART_BROWN =
+            registerBlock("desk_chair_greenheart_brown",
+                    () -> deskChairBlock(DyeColor.BROWN));
+    public static final RegistryObject<Block> DESK_CHAIR_GREENHEART_GREEN =
+            registerBlock("desk_chair_greenheart_green",
+                    () -> deskChairBlock(DyeColor.GREEN));
+    public static final RegistryObject<Block> DESK_CHAIR_GREENHEART_RED =
+            registerBlock("desk_chair_greenheart_red",
+                    () -> deskChairBlock(DyeColor.RED));
+    public static final RegistryObject<Block> DESK_CHAIR_GREENHEART_BLACK =
+            registerBlock("desk_chair_greenheart_black",
+                    () -> deskChairBlock(DyeColor.BLACK));
+
+    public static final RegistryObject<Block> DESK_CHAIR_TINKER_SKYROOT = registerBlock("desk_chair_tinker_skyroot",
+            () -> deskChairBlock(null));
+    public static final RegistryObject<Block> DESK_CHAIR_TINKER_SKYROOT_WHITE =
+            registerBlock("desk_chair_tinker_skyroot_white",
+                    () -> deskChairBlock(DyeColor.WHITE));
+    public static final RegistryObject<Block> DESK_CHAIR_TINKER_SKYROOT_ORANGE =
+            registerBlock("desk_chair_tinker_skyroot_orange",
+                    () -> deskChairBlock(DyeColor.ORANGE));
+    public static final RegistryObject<Block> DESK_CHAIR_TINKER_SKYROOT_MAGENTA =
+            registerBlock("desk_chair_tinker_skyroot_magenta",
+                    () -> deskChairBlock(DyeColor.MAGENTA));
+    public static final RegistryObject<Block> DESK_CHAIR_TINKER_SKYROOT_LIGHT_BLUE =
+            registerBlock("desk_chair_tinker_skyroot_light_blue",
+                    () -> deskChairBlock(DyeColor.LIGHT_BLUE));
+    public static final RegistryObject<Block> DESK_CHAIR_TINKER_SKYROOT_YELLOW =
+            registerBlock("desk_chair_tinker_skyroot_yellow",
+                    () -> deskChairBlock(DyeColor.YELLOW));
+    public static final RegistryObject<Block> DESK_CHAIR_TINKER_SKYROOT_LIME =
+            registerBlock("desk_chair_tinker_skyroot_lime",
+                    () -> deskChairBlock(DyeColor.LIME));
+    public static final RegistryObject<Block> DESK_CHAIR_TINKER_SKYROOT_PINK =
+            registerBlock("desk_chair_tinker_skyroot_pink",
+                    () -> deskChairBlock(DyeColor.PINK));
+    public static final RegistryObject<Block> DESK_CHAIR_TINKER_SKYROOT_GRAY =
+            registerBlock("desk_chair_tinker_skyroot_gray",
+                    () -> deskChairBlock(DyeColor.GRAY));
+    public static final RegistryObject<Block> DESK_CHAIR_TINKER_SKYROOT_LIGHT_GRAY =
+            registerBlock("desk_chair_tinker_skyroot_light_gray",
+                    () -> deskChairBlock(DyeColor.LIGHT_GRAY));
+    public static final RegistryObject<Block> DESK_CHAIR_TINKER_SKYROOT_CYAN =
+            registerBlock("desk_chair_tinker_skyroot_cyan",
+                    () -> deskChairBlock(DyeColor.CYAN));
+    public static final RegistryObject<Block> DESK_CHAIR_TINKER_SKYROOT_PURPLE =
+            registerBlock("desk_chair_tinker_skyroot_purple",
+                    () -> deskChairBlock(DyeColor.PURPLE));
+    public static final RegistryObject<Block> DESK_CHAIR_TINKER_SKYROOT_BLUE =
+            registerBlock("desk_chair_tinker_skyroot_blue",
+                    () -> deskChairBlock(DyeColor.BLUE));
+    public static final RegistryObject<Block> DESK_CHAIR_TINKER_SKYROOT_BROWN =
+            registerBlock("desk_chair_tinker_skyroot_brown",
+                    () -> deskChairBlock(DyeColor.BROWN));
+    public static final RegistryObject<Block> DESK_CHAIR_TINKER_SKYROOT_GREEN =
+            registerBlock("desk_chair_tinker_skyroot_green",
+                    () -> deskChairBlock(DyeColor.GREEN));
+    public static final RegistryObject<Block> DESK_CHAIR_TINKER_SKYROOT_RED =
+            registerBlock("desk_chair_tinker_skyroot_red",
+                    () -> deskChairBlock(DyeColor.RED));
+    public static final RegistryObject<Block> DESK_CHAIR_TINKER_SKYROOT_BLACK =
+            registerBlock("desk_chair_tinker_skyroot_black",
+                    () -> deskChairBlock(DyeColor.BLACK));
 
     public static final RegistryObject<Block> LOCKER_OAK = registerBlock("locker_oak",
             () -> new SchoolLockerBlock(BlockBehaviour.Properties.of(Material.WOOD)
@@ -283,9 +1940,6 @@ public class TBABlocks {
     public static final RegistryObject<Block> SCHOOL_DESK_CABINET_FIR = registerBlock("school_desk_cabinet_fir",
             () -> new SchoolDeskCabinetBlock(BlockBehaviour.Properties.of(Material.WOOD)
                     .sound(SoundType.WOOD).strength(1).noOcclusion()));
-    public static final RegistryObject<Block> DESK_CHAIR_FIR = registerBlock("desk_chair_fir",
-            () -> new DeskChairBlock(BlockBehaviour.Properties.of(Material.WOOD)
-                    .sound(SoundType.WOOD).strength(1).noOcclusion()));
     public static final RegistryObject<Block> LOCKER_FIR = registerBlock("locker_fir",
             () -> new SchoolLockerBlock(BlockBehaviour.Properties.of(Material.WOOD)
                     .sound(SoundType.WOOD).strength(1).noOcclusion()));
@@ -301,9 +1955,6 @@ public class TBABlocks {
                     .sound(SoundType.WOOD).strength(1).noOcclusion()));
     public static final RegistryObject<Block> SCHOOL_DESK_CABINET_REDWOOD = registerBlock("school_desk_cabinet_redwood",
             () -> new SchoolDeskCabinetBlock(BlockBehaviour.Properties.of(Material.WOOD)
-                    .sound(SoundType.WOOD).strength(1).noOcclusion()));
-    public static final RegistryObject<Block> DESK_CHAIR_REDWOOD = registerBlock("desk_chair_redwood",
-            () -> new DeskChairBlock(BlockBehaviour.Properties.of(Material.WOOD)
                     .sound(SoundType.WOOD).strength(1).noOcclusion()));
     public static final RegistryObject<Block> LOCKER_REDWOOD = registerBlock("locker_redwood",
             () -> new SchoolLockerBlock(BlockBehaviour.Properties.of(Material.WOOD)
@@ -321,9 +1972,6 @@ public class TBABlocks {
     public static final RegistryObject<Block> SCHOOL_DESK_CABINET_CHERRY = registerBlock("school_desk_cabinet_cherry",
             () -> new SchoolDeskCabinetBlock(BlockBehaviour.Properties.of(Material.WOOD)
                     .sound(SoundType.WOOD).strength(1).noOcclusion()));
-    public static final RegistryObject<Block> DESK_CHAIR_CHERRY = registerBlock("desk_chair_cherry",
-            () -> new DeskChairBlock(BlockBehaviour.Properties.of(Material.WOOD)
-                    .sound(SoundType.WOOD).strength(1).noOcclusion()));
     public static final RegistryObject<Block> LOCKER_CHERRY = registerBlock("locker_cherry",
             () -> new SchoolLockerBlock(BlockBehaviour.Properties.of(Material.WOOD)
                     .sound(SoundType.WOOD).strength(1).noOcclusion()));
@@ -339,9 +1987,6 @@ public class TBABlocks {
                     .sound(SoundType.WOOD).strength(1).noOcclusion()));
     public static final RegistryObject<Block> SCHOOL_DESK_CABINET_MAHOGANY = registerBlock("school_desk_cabinet_mahogany",
             () -> new SchoolDeskCabinetBlock(BlockBehaviour.Properties.of(Material.WOOD)
-                    .sound(SoundType.WOOD).strength(1).noOcclusion()));
-    public static final RegistryObject<Block> DESK_CHAIR_MAHOGANY = registerBlock("desk_chair_mahogany",
-            () -> new DeskChairBlock(BlockBehaviour.Properties.of(Material.WOOD)
                     .sound(SoundType.WOOD).strength(1).noOcclusion()));
     public static final RegistryObject<Block> LOCKER_MAHOGANY = registerBlock("locker_mahogany",
             () -> new SchoolLockerBlock(BlockBehaviour.Properties.of(Material.WOOD)
@@ -359,9 +2004,6 @@ public class TBABlocks {
     public static final RegistryObject<Block> SCHOOL_DESK_CABINET_JACARANDA = registerBlock("school_desk_cabinet_jacaranda",
             () -> new SchoolDeskCabinetBlock(BlockBehaviour.Properties.of(Material.WOOD)
                     .sound(SoundType.WOOD).strength(1).noOcclusion()));
-    public static final RegistryObject<Block> DESK_CHAIR_JACARANDA = registerBlock("desk_chair_jacaranda",
-            () -> new DeskChairBlock(BlockBehaviour.Properties.of(Material.WOOD)
-                    .sound(SoundType.WOOD).strength(1).noOcclusion()));
     public static final RegistryObject<Block> LOCKER_JACARANDA = registerBlock("locker_jacaranda",
             () -> new SchoolLockerBlock(BlockBehaviour.Properties.of(Material.WOOD)
                     .sound(SoundType.WOOD).strength(1).noOcclusion()));
@@ -377,9 +2019,6 @@ public class TBABlocks {
                     .sound(SoundType.WOOD).strength(1).noOcclusion()));
     public static final RegistryObject<Block> SCHOOL_DESK_CABINET_PALM = registerBlock("school_desk_cabinet_palm",
             () -> new SchoolDeskCabinetBlock(BlockBehaviour.Properties.of(Material.WOOD)
-                    .sound(SoundType.WOOD).strength(1).noOcclusion()));
-    public static final RegistryObject<Block> DESK_CHAIR_PALM = registerBlock("desk_chair_palm",
-            () -> new DeskChairBlock(BlockBehaviour.Properties.of(Material.WOOD)
                     .sound(SoundType.WOOD).strength(1).noOcclusion()));
     public static final RegistryObject<Block> LOCKER_PALM = registerBlock("locker_palm",
             () -> new SchoolLockerBlock(BlockBehaviour.Properties.of(Material.WOOD)
@@ -397,9 +2036,6 @@ public class TBABlocks {
     public static final RegistryObject<Block> SCHOOL_DESK_CABINET_WILLOW = registerBlock("school_desk_cabinet_willow",
             () -> new SchoolDeskCabinetBlock(BlockBehaviour.Properties.of(Material.WOOD)
                     .sound(SoundType.WOOD).strength(1).noOcclusion()));
-    public static final RegistryObject<Block> DESK_CHAIR_WILLOW = registerBlock("desk_chair_willow",
-            () -> new DeskChairBlock(BlockBehaviour.Properties.of(Material.WOOD)
-                    .sound(SoundType.WOOD).strength(1).noOcclusion()));
     public static final RegistryObject<Block> LOCKER_WILLOW = registerBlock("locker_willow",
             () -> new SchoolLockerBlock(BlockBehaviour.Properties.of(Material.WOOD)
                     .sound(SoundType.WOOD).strength(1).noOcclusion()));
@@ -415,9 +2051,6 @@ public class TBABlocks {
                     .sound(SoundType.WOOD).strength(1).noOcclusion()));
     public static final RegistryObject<Block> SCHOOL_DESK_CABINET_DEAD = registerBlock("school_desk_cabinet_dead",
             () -> new SchoolDeskCabinetBlock(BlockBehaviour.Properties.of(Material.WOOD)
-                    .sound(SoundType.WOOD).strength(1).noOcclusion()));
-    public static final RegistryObject<Block> DESK_CHAIR_DEAD = registerBlock("desk_chair_dead",
-            () -> new DeskChairBlock(BlockBehaviour.Properties.of(Material.WOOD)
                     .sound(SoundType.WOOD).strength(1).noOcclusion()));
     public static final RegistryObject<Block> LOCKER_DEAD = registerBlock("locker_dead",
             () -> new SchoolLockerBlock(BlockBehaviour.Properties.of(Material.WOOD)
@@ -435,9 +2068,6 @@ public class TBABlocks {
     public static final RegistryObject<Block> SCHOOL_DESK_CABINET_MAGIC = registerBlock("school_desk_cabinet_magic",
             () -> new SchoolDeskCabinetBlock(BlockBehaviour.Properties.of(Material.WOOD)
                     .sound(SoundType.WOOD).strength(1).noOcclusion()));
-    public static final RegistryObject<Block> DESK_CHAIR_MAGIC = registerBlock("desk_chair_magic",
-            () -> new DeskChairBlock(BlockBehaviour.Properties.of(Material.WOOD)
-                    .sound(SoundType.WOOD).strength(1).noOcclusion()));
     public static final RegistryObject<Block> LOCKER_MAGIC = registerBlock("locker_magic",
             () -> new SchoolLockerBlock(BlockBehaviour.Properties.of(Material.WOOD)
                     .sound(SoundType.WOOD).strength(1).noOcclusion()));
@@ -453,9 +2083,6 @@ public class TBABlocks {
                     .sound(SoundType.WOOD).strength(1).noOcclusion()));
     public static final RegistryObject<Block> SCHOOL_DESK_CABINET_UMBRAN = registerBlock("school_desk_cabinet_umbran",
             () -> new SchoolDeskCabinetBlock(BlockBehaviour.Properties.of(Material.WOOD)
-                    .sound(SoundType.WOOD).strength(1).noOcclusion()));
-    public static final RegistryObject<Block> DESK_CHAIR_UMBRAN = registerBlock("desk_chair_umbran",
-            () -> new DeskChairBlock(BlockBehaviour.Properties.of(Material.WOOD)
                     .sound(SoundType.WOOD).strength(1).noOcclusion()));
     public static final RegistryObject<Block> LOCKER_UMBRAN = registerBlock("locker_umbran",
             () -> new SchoolLockerBlock(BlockBehaviour.Properties.of(Material.WOOD)
@@ -473,9 +2100,6 @@ public class TBABlocks {
     public static final RegistryObject<Block> SCHOOL_DESK_CABINET_HELLBARK = registerBlock("school_desk_cabinet_hellbark",
             () -> new SchoolDeskCabinetBlock(BlockBehaviour.Properties.of(Material.WOOD)
                     .sound(SoundType.WOOD).strength(1).noOcclusion()));
-    public static final RegistryObject<Block> DESK_CHAIR_HELLBARK = registerBlock("desk_chair_hellbark",
-            () -> new DeskChairBlock(BlockBehaviour.Properties.of(Material.WOOD)
-                    .sound(SoundType.WOOD).strength(1).noOcclusion()));
     public static final RegistryObject<Block> LOCKER_HELLBARK = registerBlock("locker_hellbark",
             () -> new SchoolLockerBlock(BlockBehaviour.Properties.of(Material.WOOD)
                     .sound(SoundType.WOOD).strength(1).noOcclusion()));
@@ -491,9 +2115,6 @@ public class TBABlocks {
                     .sound(SoundType.WOOD).strength(1).noOcclusion()));
     public static final RegistryObject<Block> SCHOOL_DESK_CABINET_COCONUT = registerBlock("school_desk_cabinet_coconut",
             () -> new SchoolDeskCabinetBlock(BlockBehaviour.Properties.of(Material.WOOD)
-                    .sound(SoundType.WOOD).strength(1).noOcclusion()));
-    public static final RegistryObject<Block> DESK_CHAIR_COCONUT = registerBlock("desk_chair_coconut",
-            () -> new DeskChairBlock(BlockBehaviour.Properties.of(Material.WOOD)
                     .sound(SoundType.WOOD).strength(1).noOcclusion()));
     public static final RegistryObject<Block> LOCKER_COCONUT = registerBlock("locker_coconut",
             () -> new SchoolLockerBlock(BlockBehaviour.Properties.of(Material.WOOD)
@@ -511,9 +2132,6 @@ public class TBABlocks {
     public static final RegistryObject<Block> SCHOOL_DESK_CABINET_WALNUT = registerBlock("school_desk_cabinet_walnut",
             () -> new SchoolDeskCabinetBlock(BlockBehaviour.Properties.of(Material.WOOD)
                     .sound(SoundType.WOOD).strength(1).noOcclusion()));
-    public static final RegistryObject<Block> DESK_CHAIR_WALNUT = registerBlock("desk_chair_walnut",
-            () -> new DeskChairBlock(BlockBehaviour.Properties.of(Material.WOOD)
-                    .sound(SoundType.WOOD).strength(1).noOcclusion()));
     public static final RegistryObject<Block> LOCKER_WALNUT = registerBlock("locker_walnut",
             () -> new SchoolLockerBlock(BlockBehaviour.Properties.of(Material.WOOD)
                     .sound(SoundType.WOOD).strength(1).noOcclusion()));
@@ -529,9 +2147,6 @@ public class TBABlocks {
                     .sound(SoundType.WOOD).strength(1).noOcclusion()));
     public static final RegistryObject<Block> SCHOOL_DESK_CABINET_AZALEA = registerBlock("school_desk_cabinet_azalea",
             () -> new SchoolDeskCabinetBlock(BlockBehaviour.Properties.of(Material.WOOD)
-                    .sound(SoundType.WOOD).strength(1).noOcclusion()));
-    public static final RegistryObject<Block> DESK_CHAIR_AZALEA = registerBlock("desk_chair_azalea",
-            () -> new DeskChairBlock(BlockBehaviour.Properties.of(Material.WOOD)
                     .sound(SoundType.WOOD).strength(1).noOcclusion()));
     public static final RegistryObject<Block> LOCKER_AZALEA = registerBlock("locker_azalea",
             () -> new SchoolLockerBlock(BlockBehaviour.Properties.of(Material.WOOD)
@@ -549,9 +2164,6 @@ public class TBABlocks {
     public static final RegistryObject<Block> SCHOOL_DESK_CABINET_FLOWERING_AZALEA = registerBlock("school_desk_cabinet_flowering_azalea",
             () -> new SchoolDeskCabinetBlock(BlockBehaviour.Properties.of(Material.WOOD)
                     .sound(SoundType.WOOD).strength(1).noOcclusion()));
-    public static final RegistryObject<Block> DESK_CHAIR_FLOWERING_AZALEA = registerBlock("desk_chair_flowering_azalea",
-            () -> new DeskChairBlock(BlockBehaviour.Properties.of(Material.WOOD)
-                    .sound(SoundType.WOOD).strength(1).noOcclusion()));
     public static final RegistryObject<Block> LOCKER_FLOWERING_AZALEA = registerBlock("locker_flowering_azalea",
             () -> new SchoolLockerBlock(BlockBehaviour.Properties.of(Material.WOOD)
                     .sound(SoundType.WOOD).strength(1).noOcclusion()));
@@ -567,9 +2179,6 @@ public class TBABlocks {
                     .sound(SoundType.WOOD).strength(1).noOcclusion()));
     public static final RegistryObject<Block> SCHOOL_DESK_CABINET_GOLDEN_OAK = registerBlock("school_desk_cabinet_golden_oak",
             () -> new SchoolDeskCabinetBlock(BlockBehaviour.Properties.of(Material.WOOD)
-                    .sound(SoundType.WOOD).strength(1).noOcclusion()));
-    public static final RegistryObject<Block> DESK_CHAIR_GOLDEN_OAK = registerBlock("desk_chair_golden_oak",
-            () -> new DeskChairBlock(BlockBehaviour.Properties.of(Material.WOOD)
                     .sound(SoundType.WOOD).strength(1).noOcclusion()));
     public static final RegistryObject<Block> LOCKER_GOLDEN_OAK = registerBlock("locker_golden_oak",
             () -> new SchoolLockerBlock(BlockBehaviour.Properties.of(Material.WOOD)
@@ -587,9 +2196,6 @@ public class TBABlocks {
     public static final RegistryObject<Block> SCHOOL_DESK_CABINET_AETHER_SKYROOT = registerBlock("school_desk_cabinet_aether_skyroot",
             () -> new SchoolDeskCabinetBlock(BlockBehaviour.Properties.of(Material.WOOD)
                     .sound(SoundType.WOOD).strength(1).noOcclusion()));
-    public static final RegistryObject<Block> DESK_CHAIR_AETHER_SKYROOT = registerBlock("desk_chair_aether_skyroot",
-            () -> new DeskChairBlock(BlockBehaviour.Properties.of(Material.WOOD)
-                    .sound(SoundType.WOOD).strength(1).noOcclusion()));
     public static final RegistryObject<Block> LOCKER_AETHER_SKYROOT = registerBlock("locker_aether_skyroot",
             () -> new SchoolLockerBlock(BlockBehaviour.Properties.of(Material.WOOD)
                     .sound(SoundType.WOOD).strength(1).noOcclusion()));
@@ -605,9 +2211,6 @@ public class TBABlocks {
                     .sound(SoundType.WOOD).strength(1).noOcclusion()));
     public static final RegistryObject<Block> SCHOOL_DESK_CABINET_PREAM = registerBlock("school_desk_cabinet_pream",
             () -> new SchoolDeskCabinetBlock(BlockBehaviour.Properties.of(Material.WOOD)
-                    .sound(SoundType.WOOD).strength(1).noOcclusion()));
-    public static final RegistryObject<Block> DESK_CHAIR_PREAM = registerBlock("desk_chair_pream",
-            () -> new DeskChairBlock(BlockBehaviour.Properties.of(Material.WOOD)
                     .sound(SoundType.WOOD).strength(1).noOcclusion()));
     public static final RegistryObject<Block> LOCKER_PREAM = registerBlock("locker_pream",
             () -> new SchoolLockerBlock(BlockBehaviour.Properties.of(Material.WOOD)
@@ -625,9 +2228,6 @@ public class TBABlocks {
     public static final RegistryObject<Block> SCHOOL_DESK_CABINET_EBONY = registerBlock("school_desk_cabinet_ebony",
             () -> new SchoolDeskCabinetBlock(BlockBehaviour.Properties.of(Material.WOOD)
                     .sound(SoundType.WOOD).strength(1).noOcclusion()));
-    public static final RegistryObject<Block> DESK_CHAIR_EBONY = registerBlock("desk_chair_ebony",
-            () -> new DeskChairBlock(BlockBehaviour.Properties.of(Material.WOOD)
-                    .sound(SoundType.WOOD).strength(1).noOcclusion()));
     public static final RegistryObject<Block> LOCKER_EBONY = registerBlock("locker_ebony",
             () -> new SchoolLockerBlock(BlockBehaviour.Properties.of(Material.WOOD)
                     .sound(SoundType.WOOD).strength(1).noOcclusion()));
@@ -643,9 +2243,6 @@ public class TBABlocks {
                     .sound(SoundType.WOOD).strength(1).noOcclusion()));
     public static final RegistryObject<Block> SCHOOL_DESK_CABINET_CHORUS_NEST = registerBlock("school_desk_cabinet_chorus_nest",
             () -> new SchoolDeskCabinetBlock(BlockBehaviour.Properties.of(Material.WOOD)
-                    .sound(SoundType.WOOD).strength(1).noOcclusion()));
-    public static final RegistryObject<Block> DESK_CHAIR_CHORUS_NEST = registerBlock("desk_chair_chorus_nest",
-            () -> new DeskChairBlock(BlockBehaviour.Properties.of(Material.WOOD)
                     .sound(SoundType.WOOD).strength(1).noOcclusion()));
     public static final RegistryObject<Block> LOCKER_CHORUS_NEST = registerBlock("locker_chorus_nest",
             () -> new SchoolLockerBlock(BlockBehaviour.Properties.of(Material.WOOD)
@@ -663,9 +2260,6 @@ public class TBABlocks {
     public static final RegistryObject<Block> SCHOOL_DESK_CABINET_BLOODSHROOM = registerBlock("school_desk_cabinet_bloodshroom",
             () -> new SchoolDeskCabinetBlock(BlockBehaviour.Properties.of(Material.WOOD)
                     .sound(SoundType.WOOD).strength(1).noOcclusion()));
-    public static final RegistryObject<Block> DESK_CHAIR_BLOODSHROOM = registerBlock("desk_chair_bloodshroom",
-            () -> new DeskChairBlock(BlockBehaviour.Properties.of(Material.WOOD)
-                    .sound(SoundType.WOOD).strength(1).noOcclusion()));
     public static final RegistryObject<Block> LOCKER_BLOODSHROOM = registerBlock("locker_bloodshroom",
             () -> new SchoolLockerBlock(BlockBehaviour.Properties.of(Material.WOOD)
                     .sound(SoundType.WOOD).strength(1).noOcclusion()));
@@ -681,9 +2275,6 @@ public class TBABlocks {
                     .sound(SoundType.WOOD).strength(1).noOcclusion()));
     public static final RegistryObject<Block> SCHOOL_DESK_CABINET_ENDERBARK = registerBlock("school_desk_cabinet_enderbark",
             () -> new SchoolDeskCabinetBlock(BlockBehaviour.Properties.of(Material.WOOD)
-                    .sound(SoundType.WOOD).strength(1).noOcclusion()));
-    public static final RegistryObject<Block> DESK_CHAIR_ENDERBARK = registerBlock("desk_chair_enderbark",
-            () -> new DeskChairBlock(BlockBehaviour.Properties.of(Material.WOOD)
                     .sound(SoundType.WOOD).strength(1).noOcclusion()));
     public static final RegistryObject<Block> LOCKER_ENDERBARK = registerBlock("locker_enderbark",
             () -> new SchoolLockerBlock(BlockBehaviour.Properties.of(Material.WOOD)
@@ -701,9 +2292,6 @@ public class TBABlocks {
     public static final RegistryObject<Block> SCHOOL_DESK_CABINET_GREENHEART = registerBlock("school_desk_cabinet_greenheart",
             () -> new SchoolDeskCabinetBlock(BlockBehaviour.Properties.of(Material.WOOD)
                     .sound(SoundType.WOOD).strength(1).noOcclusion()));
-    public static final RegistryObject<Block> DESK_CHAIR_GREENHEART = registerBlock("desk_chair_greenheart",
-            () -> new DeskChairBlock(BlockBehaviour.Properties.of(Material.WOOD)
-                    .sound(SoundType.WOOD).strength(1).noOcclusion()));
     public static final RegistryObject<Block> LOCKER_GREENHEART = registerBlock("locker_greenheart",
             () -> new SchoolLockerBlock(BlockBehaviour.Properties.of(Material.WOOD)
                     .sound(SoundType.WOOD).strength(1).noOcclusion()));
@@ -719,9 +2307,6 @@ public class TBABlocks {
                     .sound(SoundType.WOOD).strength(1).noOcclusion()));
     public static final RegistryObject<Block> SCHOOL_DESK_CABINET_TINKER_SKYROOT = registerBlock("school_desk_cabinet_tinker_skyroot",
             () -> new SchoolDeskCabinetBlock(BlockBehaviour.Properties.of(Material.WOOD)
-                    .sound(SoundType.WOOD).strength(1).noOcclusion()));
-    public static final RegistryObject<Block> DESK_CHAIR_TINKER_SKYROOT = registerBlock("desk_chair_tinker_skyroot",
-            () -> new DeskChairBlock(BlockBehaviour.Properties.of(Material.WOOD)
                     .sound(SoundType.WOOD).strength(1).noOcclusion()));
     public static final RegistryObject<Block> LOCKER_TINKER_SKYROOT = registerBlock("locker_tinker_skyroot",
             () -> new SchoolLockerBlock(BlockBehaviour.Properties.of(Material.WOOD)
@@ -834,1035 +2419,1080 @@ public class TBABlocks {
                     .sound(SoundType.WOOD).strength(1).noOcclusion()));
 
     public static final RegistryObject<Block> BASKET_OAK_WHITE =
-            registerBlock("basket_oak_white", () -> basket(DyeColor.WHITE));
+            registerBlockWithoutBlockItem("basket_oak_white", () -> basket(DyeColor.WHITE));
     public static final RegistryObject<Block> BASKET_OAK_LIGHT_GRAY =
-            registerBlock("basket_oak_light_gray", () -> basket(DyeColor.LIGHT_GRAY));
+            registerBlockWithoutBlockItem("basket_oak_light_gray", () -> basket(DyeColor.LIGHT_GRAY));
     public static final RegistryObject<Block> BASKET_OAK_GRAY =
-            registerBlock("basket_oak_gray", () -> basket(DyeColor.GRAY));
+            registerBlockWithoutBlockItem("basket_oak_gray", () -> basket(DyeColor.GRAY));
     public static final RegistryObject<Block> BASKET_OAK_BLACK =
-            registerBlock("basket_oak_black", () -> basket(DyeColor.BLACK));
+            registerBlockWithoutBlockItem("basket_oak_black", () -> basket(DyeColor.BLACK));
     public static final RegistryObject<Block> BASKET_OAK_BROWN =
-            registerBlock("basket_oak_brown", () -> basket(DyeColor.BROWN));
+            registerBlockWithoutBlockItem("basket_oak_brown", () -> basket(DyeColor.BROWN));
     public static final RegistryObject<Block> BASKET_OAK_RED =
-            registerBlock("basket_oak_red", () -> basket(DyeColor.RED));
+            registerBlockWithoutBlockItem("basket_oak_red", () -> basket(DyeColor.RED));
     public static final RegistryObject<Block> BASKET_OAK_ORANGE =
-            registerBlock("basket_oak_orange", () -> basket(DyeColor.ORANGE));
+            registerBlockWithoutBlockItem("basket_oak_orange", () -> basket(DyeColor.ORANGE));
     public static final RegistryObject<Block> BASKET_OAK_YELLOW =
-            registerBlock("basket_oak_yellow", () -> basket(DyeColor.YELLOW));
+            registerBlockWithoutBlockItem("basket_oak_yellow", () -> basket(DyeColor.YELLOW));
     public static final RegistryObject<Block> BASKET_OAK_LIME =
-            registerBlock("basket_oak_lime", () -> basket(DyeColor.LIME));
+            registerBlockWithoutBlockItem("basket_oak_lime", () -> basket(DyeColor.LIME));
     public static final RegistryObject<Block> BASKET_OAK_GREEN =
-            registerBlock("basket_oak_green", () -> basket(DyeColor.GREEN));
+            registerBlockWithoutBlockItem("basket_oak_green", () -> basket(DyeColor.GREEN));
     public static final RegistryObject<Block> BASKET_OAK_CYAN =
-            registerBlock("basket_oak_cyan", () -> basket(DyeColor.CYAN));
+            registerBlockWithoutBlockItem("basket_oak_cyan", () -> basket(DyeColor.CYAN));
     public static final RegistryObject<Block> BASKET_OAK_LIGHT_BLUE =
-            registerBlock("basket_oak_light_blue", () -> basket(DyeColor.LIGHT_BLUE));
+            registerBlockWithoutBlockItem("basket_oak_light_blue", () -> basket(DyeColor.LIGHT_BLUE));
     public static final RegistryObject<Block> BASKET_OAK_BLUE =
-            registerBlock("basket_oak_blue", () -> basket(DyeColor.BLUE));
+            registerBlockWithoutBlockItem("basket_oak_blue", () -> basket(DyeColor.BLUE));
     public static final RegistryObject<Block> BASKET_OAK_PURPLE =
-            registerBlock("basket_oak_purple", () -> basket(DyeColor.PURPLE));
+            registerBlockWithoutBlockItem("basket_oak_purple", () -> basket(DyeColor.PURPLE));
     public static final RegistryObject<Block> BASKET_OAK_MAGENTA =
-            registerBlock("basket_oak_magenta", () -> basket(DyeColor.MAGENTA));
+            registerBlockWithoutBlockItem("basket_oak_magenta", () -> basket(DyeColor.MAGENTA));
     public static final RegistryObject<Block> BASKET_OAK_PINK =
-            registerBlock("basket_oak_pink", () -> basket(DyeColor.PINK));
+            registerBlockWithoutBlockItem("basket_oak_pink", () -> basket(DyeColor.PINK));
     public static final RegistryObject<Block> BASKET_BIRCH_WHITE =
-            registerBlock("basket_birch_white", () -> basket(DyeColor.WHITE));
+            registerBlockWithoutBlockItem("basket_birch_white", () -> basket(DyeColor.WHITE));
     public static final RegistryObject<Block> BASKET_BIRCH_LIGHT_GRAY =
-            registerBlock("basket_birch_light_gray", () -> basket(DyeColor.LIGHT_GRAY));
+            registerBlockWithoutBlockItem("basket_birch_light_gray", () -> basket(DyeColor.LIGHT_GRAY));
     public static final RegistryObject<Block> BASKET_BIRCH_GRAY =
-            registerBlock("basket_birch_gray", () -> basket(DyeColor.GRAY));
+            registerBlockWithoutBlockItem("basket_birch_gray", () -> basket(DyeColor.GRAY));
     public static final RegistryObject<Block> BASKET_BIRCH_BLACK =
-            registerBlock("basket_birch_black", () -> basket(DyeColor.BLACK));
+            registerBlockWithoutBlockItem("basket_birch_black", () -> basket(DyeColor.BLACK));
     public static final RegistryObject<Block> BASKET_BIRCH_BROWN =
-            registerBlock("basket_birch_brown", () -> basket(DyeColor.BROWN));
+            registerBlockWithoutBlockItem("basket_birch_brown", () -> basket(DyeColor.BROWN));
     public static final RegistryObject<Block> BASKET_BIRCH_RED =
-            registerBlock("basket_birch_red", () -> basket(DyeColor.RED));
+            registerBlockWithoutBlockItem("basket_birch_red", () -> basket(DyeColor.RED));
     public static final RegistryObject<Block> BASKET_BIRCH_ORANGE =
-            registerBlock("basket_birch_orange", () -> basket(DyeColor.ORANGE));
+            registerBlockWithoutBlockItem("basket_birch_orange", () -> basket(DyeColor.ORANGE));
     public static final RegistryObject<Block> BASKET_BIRCH_YELLOW =
-            registerBlock("basket_birch_yellow", () -> basket(DyeColor.YELLOW));
+            registerBlockWithoutBlockItem("basket_birch_yellow", () -> basket(DyeColor.YELLOW));
     public static final RegistryObject<Block> BASKET_BIRCH_LIME =
-            registerBlock("basket_birch_lime", () -> basket(DyeColor.LIME));
+            registerBlockWithoutBlockItem("basket_birch_lime", () -> basket(DyeColor.LIME));
     public static final RegistryObject<Block> BASKET_BIRCH_GREEN =
-            registerBlock("basket_birch_green", () -> basket(DyeColor.GREEN));
+            registerBlockWithoutBlockItem("basket_birch_green", () -> basket(DyeColor.GREEN));
     public static final RegistryObject<Block> BASKET_BIRCH_CYAN =
-            registerBlock("basket_birch_cyan", () -> basket(DyeColor.CYAN));
+            registerBlockWithoutBlockItem("basket_birch_cyan", () -> basket(DyeColor.CYAN));
     public static final RegistryObject<Block> BASKET_BIRCH_LIGHT_BLUE =
-            registerBlock("basket_birch_light_blue", () -> basket(DyeColor.LIGHT_BLUE));
+            registerBlockWithoutBlockItem("basket_birch_light_blue", () -> basket(DyeColor.LIGHT_BLUE));
     public static final RegistryObject<Block> BASKET_BIRCH_BLUE =
-            registerBlock("basket_birch_blue", () -> basket(DyeColor.BLUE));
+            registerBlockWithoutBlockItem("basket_birch_blue", () -> basket(DyeColor.BLUE));
     public static final RegistryObject<Block> BASKET_BIRCH_PURPLE =
-            registerBlock("basket_birch_purple", () -> basket(DyeColor.PURPLE));
+            registerBlockWithoutBlockItem("basket_birch_purple", () -> basket(DyeColor.PURPLE));
     public static final RegistryObject<Block> BASKET_BIRCH_MAGENTA =
-            registerBlock("basket_birch_magenta", () -> basket(DyeColor.MAGENTA));
+            registerBlockWithoutBlockItem("basket_birch_magenta", () -> basket(DyeColor.MAGENTA));
     public static final RegistryObject<Block> BASKET_BIRCH_PINK =
-            registerBlock("basket_birch_pink", () -> basket(DyeColor.PINK));
+            registerBlockWithoutBlockItem("basket_birch_pink", () -> basket(DyeColor.PINK));
     public static final RegistryObject<Block> BASKET_SPRUCE_WHITE =
-            registerBlock("basket_spruce_white", () -> basket(DyeColor.WHITE));
+            registerBlockWithoutBlockItem("basket_spruce_white", () -> basket(DyeColor.WHITE));
     public static final RegistryObject<Block> BASKET_SPRUCE_LIGHT_GRAY =
-            registerBlock("basket_spruce_light_gray", () -> basket(DyeColor.LIGHT_GRAY));
+            registerBlockWithoutBlockItem("basket_spruce_light_gray", () -> basket(DyeColor.LIGHT_GRAY));
     public static final RegistryObject<Block> BASKET_SPRUCE_GRAY =
-            registerBlock("basket_spruce_gray", () -> basket(DyeColor.GRAY));
+            registerBlockWithoutBlockItem("basket_spruce_gray", () -> basket(DyeColor.GRAY));
     public static final RegistryObject<Block> BASKET_SPRUCE_BLACK =
-            registerBlock("basket_spruce_black", () -> basket(DyeColor.BLACK));
+            registerBlockWithoutBlockItem("basket_spruce_black", () -> basket(DyeColor.BLACK));
     public static final RegistryObject<Block> BASKET_SPRUCE_BROWN =
-            registerBlock("basket_spruce_brown", () -> basket(DyeColor.BROWN));
+            registerBlockWithoutBlockItem("basket_spruce_brown", () -> basket(DyeColor.BROWN));
     public static final RegistryObject<Block> BASKET_SPRUCE_RED =
-            registerBlock("basket_spruce_red", () -> basket(DyeColor.RED));
+            registerBlockWithoutBlockItem("basket_spruce_red", () -> basket(DyeColor.RED));
     public static final RegistryObject<Block> BASKET_SPRUCE_ORANGE =
-            registerBlock("basket_spruce_orange", () -> basket(DyeColor.ORANGE));
+            registerBlockWithoutBlockItem("basket_spruce_orange", () -> basket(DyeColor.ORANGE));
     public static final RegistryObject<Block> BASKET_SPRUCE_YELLOW =
-            registerBlock("basket_spruce_yellow", () -> basket(DyeColor.YELLOW));
+            registerBlockWithoutBlockItem("basket_spruce_yellow", () -> basket(DyeColor.YELLOW));
     public static final RegistryObject<Block> BASKET_SPRUCE_LIME =
-            registerBlock("basket_spruce_lime", () -> basket(DyeColor.LIME));
+            registerBlockWithoutBlockItem("basket_spruce_lime", () -> basket(DyeColor.LIME));
     public static final RegistryObject<Block> BASKET_SPRUCE_GREEN =
-            registerBlock("basket_spruce_green", () -> basket(DyeColor.GREEN));
+            registerBlockWithoutBlockItem("basket_spruce_green", () -> basket(DyeColor.GREEN));
     public static final RegistryObject<Block> BASKET_SPRUCE_CYAN =
-            registerBlock("basket_spruce_cyan", () -> basket(DyeColor.CYAN));
+            registerBlockWithoutBlockItem("basket_spruce_cyan", () -> basket(DyeColor.CYAN));
     public static final RegistryObject<Block> BASKET_SPRUCE_LIGHT_BLUE =
-            registerBlock("basket_spruce_light_blue", () -> basket(DyeColor.LIGHT_BLUE));
+            registerBlockWithoutBlockItem("basket_spruce_light_blue", () -> basket(DyeColor.LIGHT_BLUE));
     public static final RegistryObject<Block> BASKET_SPRUCE_BLUE =
-            registerBlock("basket_spruce_blue", () -> basket(DyeColor.BLUE));
+            registerBlockWithoutBlockItem("basket_spruce_blue", () -> basket(DyeColor.BLUE));
     public static final RegistryObject<Block> BASKET_SPRUCE_PURPLE =
-            registerBlock("basket_spruce_purple", () -> basket(DyeColor.PURPLE));
+            registerBlockWithoutBlockItem("basket_spruce_purple", () -> basket(DyeColor.PURPLE));
     public static final RegistryObject<Block> BASKET_SPRUCE_MAGENTA =
-            registerBlock("basket_spruce_magenta", () -> basket(DyeColor.MAGENTA));
+            registerBlockWithoutBlockItem("basket_spruce_magenta", () -> basket(DyeColor.MAGENTA));
     public static final RegistryObject<Block> BASKET_SPRUCE_PINK =
-            registerBlock("basket_spruce_pink", () -> basket(DyeColor.PINK));
+            registerBlockWithoutBlockItem("basket_spruce_pink", () -> basket(DyeColor.PINK));
     public static final RegistryObject<Block> BASKET_JUNGLE_WHITE =
-            registerBlock("basket_jungle_white", () -> basket(DyeColor.WHITE));
+            registerBlockWithoutBlockItem("basket_jungle_white", () -> basket(DyeColor.WHITE));
     public static final RegistryObject<Block> BASKET_JUNGLE_LIGHT_GRAY =
-            registerBlock("basket_jungle_light_gray", () -> basket(DyeColor.LIGHT_GRAY));
+            registerBlockWithoutBlockItem("basket_jungle_light_gray", () -> basket(DyeColor.LIGHT_GRAY));
     public static final RegistryObject<Block> BASKET_JUNGLE_GRAY =
-            registerBlock("basket_jungle_gray", () -> basket(DyeColor.GRAY));
+            registerBlockWithoutBlockItem("basket_jungle_gray", () -> basket(DyeColor.GRAY));
     public static final RegistryObject<Block> BASKET_JUNGLE_BLACK =
-            registerBlock("basket_jungle_black", () -> basket(DyeColor.BLACK));
+            registerBlockWithoutBlockItem("basket_jungle_black", () -> basket(DyeColor.BLACK));
     public static final RegistryObject<Block> BASKET_JUNGLE_BROWN =
-            registerBlock("basket_jungle_brown", () -> basket(DyeColor.BROWN));
+            registerBlockWithoutBlockItem("basket_jungle_brown", () -> basket(DyeColor.BROWN));
     public static final RegistryObject<Block> BASKET_JUNGLE_RED =
-            registerBlock("basket_jungle_red", () -> basket(DyeColor.RED));
+            registerBlockWithoutBlockItem("basket_jungle_red", () -> basket(DyeColor.RED));
     public static final RegistryObject<Block> BASKET_JUNGLE_ORANGE =
-            registerBlock("basket_jungle_orange", () -> basket(DyeColor.ORANGE));
+            registerBlockWithoutBlockItem("basket_jungle_orange", () -> basket(DyeColor.ORANGE));
     public static final RegistryObject<Block> BASKET_JUNGLE_YELLOW =
-            registerBlock("basket_jungle_yellow", () -> basket(DyeColor.YELLOW));
+            registerBlockWithoutBlockItem("basket_jungle_yellow", () -> basket(DyeColor.YELLOW));
     public static final RegistryObject<Block> BASKET_JUNGLE_LIME =
-            registerBlock("basket_jungle_lime", () -> basket(DyeColor.LIME));
+            registerBlockWithoutBlockItem("basket_jungle_lime", () -> basket(DyeColor.LIME));
     public static final RegistryObject<Block> BASKET_JUNGLE_GREEN =
-            registerBlock("basket_jungle_green", () -> basket(DyeColor.GREEN));
+            registerBlockWithoutBlockItem("basket_jungle_green", () -> basket(DyeColor.GREEN));
     public static final RegistryObject<Block> BASKET_JUNGLE_CYAN =
-            registerBlock("basket_jungle_cyan", () -> basket(DyeColor.CYAN));
+            registerBlockWithoutBlockItem("basket_jungle_cyan", () -> basket(DyeColor.CYAN));
     public static final RegistryObject<Block> BASKET_JUNGLE_LIGHT_BLUE =
-            registerBlock("basket_jungle_light_blue", () -> basket(DyeColor.LIGHT_BLUE));
+            registerBlockWithoutBlockItem("basket_jungle_light_blue", () -> basket(DyeColor.LIGHT_BLUE));
     public static final RegistryObject<Block> BASKET_JUNGLE_BLUE =
-            registerBlock("basket_jungle_blue", () -> basket(DyeColor.BLUE));
+            registerBlockWithoutBlockItem("basket_jungle_blue", () -> basket(DyeColor.BLUE));
     public static final RegistryObject<Block> BASKET_JUNGLE_PURPLE =
-            registerBlock("basket_jungle_purple", () -> basket(DyeColor.PURPLE));
+            registerBlockWithoutBlockItem("basket_jungle_purple", () -> basket(DyeColor.PURPLE));
     public static final RegistryObject<Block> BASKET_JUNGLE_MAGENTA =
-            registerBlock("basket_jungle_magenta", () -> basket(DyeColor.MAGENTA));
+            registerBlockWithoutBlockItem("basket_jungle_magenta", () -> basket(DyeColor.MAGENTA));
     public static final RegistryObject<Block> BASKET_JUNGLE_PINK =
-            registerBlock("basket_jungle_pink", () -> basket(DyeColor.PINK));
+            registerBlockWithoutBlockItem("basket_jungle_pink", () -> basket(DyeColor.PINK));
     public static final RegistryObject<Block> BASKET_ACACIA_WHITE =
-            registerBlock("basket_acacia_white", () -> basket(DyeColor.WHITE));
+            registerBlockWithoutBlockItem("basket_acacia_white", () -> basket(DyeColor.WHITE));
     public static final RegistryObject<Block> BASKET_ACACIA_LIGHT_GRAY =
-            registerBlock("basket_acacia_light_gray", () -> basket(DyeColor.LIGHT_GRAY));
+            registerBlockWithoutBlockItem("basket_acacia_light_gray", () -> basket(DyeColor.LIGHT_GRAY));
     public static final RegistryObject<Block> BASKET_ACACIA_GRAY =
-            registerBlock("basket_acacia_gray", () -> basket(DyeColor.GRAY));
+            registerBlockWithoutBlockItem("basket_acacia_gray", () -> basket(DyeColor.GRAY));
     public static final RegistryObject<Block> BASKET_ACACIA_BLACK =
-            registerBlock("basket_acacia_black", () -> basket(DyeColor.BLACK));
+            registerBlockWithoutBlockItem("basket_acacia_black", () -> basket(DyeColor.BLACK));
     public static final RegistryObject<Block> BASKET_ACACIA_BROWN =
-            registerBlock("basket_acacia_brown", () -> basket(DyeColor.BROWN));
+            registerBlockWithoutBlockItem("basket_acacia_brown", () -> basket(DyeColor.BROWN));
     public static final RegistryObject<Block> BASKET_ACACIA_RED =
-            registerBlock("basket_acacia_red", () -> basket(DyeColor.RED));
+            registerBlockWithoutBlockItem("basket_acacia_red", () -> basket(DyeColor.RED));
     public static final RegistryObject<Block> BASKET_ACACIA_ORANGE =
-            registerBlock("basket_acacia_orange", () -> basket(DyeColor.ORANGE));
+            registerBlockWithoutBlockItem("basket_acacia_orange", () -> basket(DyeColor.ORANGE));
     public static final RegistryObject<Block> BASKET_ACACIA_YELLOW =
-            registerBlock("basket_acacia_yellow", () -> basket(DyeColor.YELLOW));
+            registerBlockWithoutBlockItem("basket_acacia_yellow", () -> basket(DyeColor.YELLOW));
     public static final RegistryObject<Block> BASKET_ACACIA_LIME =
-            registerBlock("basket_acacia_lime", () -> basket(DyeColor.LIME));
+            registerBlockWithoutBlockItem("basket_acacia_lime", () -> basket(DyeColor.LIME));
     public static final RegistryObject<Block> BASKET_ACACIA_GREEN =
-            registerBlock("basket_acacia_green", () -> basket(DyeColor.GREEN));
+            registerBlockWithoutBlockItem("basket_acacia_green", () -> basket(DyeColor.GREEN));
     public static final RegistryObject<Block> BASKET_ACACIA_CYAN =
-            registerBlock("basket_acacia_cyan", () -> basket(DyeColor.CYAN));
+            registerBlockWithoutBlockItem("basket_acacia_cyan", () -> basket(DyeColor.CYAN));
     public static final RegistryObject<Block> BASKET_ACACIA_LIGHT_BLUE =
-            registerBlock("basket_acacia_light_blue", () -> basket(DyeColor.LIGHT_BLUE));
+            registerBlockWithoutBlockItem("basket_acacia_light_blue", () -> basket(DyeColor.LIGHT_BLUE));
     public static final RegistryObject<Block> BASKET_ACACIA_BLUE =
-            registerBlock("basket_acacia_blue", () -> basket(DyeColor.BLUE));
+            registerBlockWithoutBlockItem("basket_acacia_blue", () -> basket(DyeColor.BLUE));
     public static final RegistryObject<Block> BASKET_ACACIA_PURPLE =
-            registerBlock("basket_acacia_purple", () -> basket(DyeColor.PURPLE));
+            registerBlockWithoutBlockItem("basket_acacia_purple", () -> basket(DyeColor.PURPLE));
     public static final RegistryObject<Block> BASKET_ACACIA_MAGENTA =
-            registerBlock("basket_acacia_magenta", () -> basket(DyeColor.MAGENTA));
+            registerBlockWithoutBlockItem("basket_acacia_magenta", () -> basket(DyeColor.MAGENTA));
     public static final RegistryObject<Block> BASKET_ACACIA_PINK =
-            registerBlock("basket_acacia_pink", () -> basket(DyeColor.PINK));
+            registerBlockWithoutBlockItem("basket_acacia_pink", () -> basket(DyeColor.PINK));
     public static final RegistryObject<Block> BASKET_DARK_OAK_WHITE =
-            registerBlock("basket_dark_oak_white", () -> basket(DyeColor.WHITE));
+            registerBlockWithoutBlockItem("basket_dark_oak_white", () -> basket(DyeColor.WHITE));
     public static final RegistryObject<Block> BASKET_DARK_OAK_LIGHT_GRAY =
-            registerBlock("basket_dark_oak_light_gray", () -> basket(DyeColor.LIGHT_GRAY));
+            registerBlockWithoutBlockItem("basket_dark_oak_light_gray", () -> basket(DyeColor.LIGHT_GRAY));
     public static final RegistryObject<Block> BASKET_DARK_OAK_GRAY =
-            registerBlock("basket_dark_oak_gray", () -> basket(DyeColor.GRAY));
+            registerBlockWithoutBlockItem("basket_dark_oak_gray", () -> basket(DyeColor.GRAY));
     public static final RegistryObject<Block> BASKET_DARK_OAK_BLACK =
-            registerBlock("basket_dark_oak_black", () -> basket(DyeColor.BLACK));
+            registerBlockWithoutBlockItem("basket_dark_oak_black", () -> basket(DyeColor.BLACK));
     public static final RegistryObject<Block> BASKET_DARK_OAK_BROWN =
-            registerBlock("basket_dark_oak_brown", () -> basket(DyeColor.BROWN));
+            registerBlockWithoutBlockItem("basket_dark_oak_brown", () -> basket(DyeColor.BROWN));
     public static final RegistryObject<Block> BASKET_DARK_OAK_RED =
-            registerBlock("basket_dark_oak_red", () -> basket(DyeColor.RED));
+            registerBlockWithoutBlockItem("basket_dark_oak_red", () -> basket(DyeColor.RED));
     public static final RegistryObject<Block> BASKET_DARK_OAK_ORANGE =
-            registerBlock("basket_dark_oak_orange", () -> basket(DyeColor.ORANGE));
+            registerBlockWithoutBlockItem("basket_dark_oak_orange", () -> basket(DyeColor.ORANGE));
     public static final RegistryObject<Block> BASKET_DARK_OAK_YELLOW =
-            registerBlock("basket_dark_oak_yellow", () -> basket(DyeColor.YELLOW));
+            registerBlockWithoutBlockItem("basket_dark_oak_yellow", () -> basket(DyeColor.YELLOW));
     public static final RegistryObject<Block> BASKET_DARK_OAK_LIME =
-            registerBlock("basket_dark_oak_lime", () -> basket(DyeColor.LIME));
+            registerBlockWithoutBlockItem("basket_dark_oak_lime", () -> basket(DyeColor.LIME));
     public static final RegistryObject<Block> BASKET_DARK_OAK_GREEN =
-            registerBlock("basket_dark_oak_green", () -> basket(DyeColor.GREEN));
+            registerBlockWithoutBlockItem("basket_dark_oak_green", () -> basket(DyeColor.GREEN));
     public static final RegistryObject<Block> BASKET_DARK_OAK_CYAN =
-            registerBlock("basket_dark_oak_cyan", () -> basket(DyeColor.CYAN));
+            registerBlockWithoutBlockItem("basket_dark_oak_cyan", () -> basket(DyeColor.CYAN));
     public static final RegistryObject<Block> BASKET_DARK_OAK_LIGHT_BLUE =
-            registerBlock("basket_dark_oak_light_blue", () -> basket(DyeColor.LIGHT_BLUE));
+            registerBlockWithoutBlockItem("basket_dark_oak_light_blue", () -> basket(DyeColor.LIGHT_BLUE));
     public static final RegistryObject<Block> BASKET_DARK_OAK_BLUE =
-            registerBlock("basket_dark_oak_blue", () -> basket(DyeColor.BLUE));
+            registerBlockWithoutBlockItem("basket_dark_oak_blue", () -> basket(DyeColor.BLUE));
     public static final RegistryObject<Block> BASKET_DARK_OAK_PURPLE =
-            registerBlock("basket_dark_oak_purple", () -> basket(DyeColor.PURPLE));
+            registerBlockWithoutBlockItem("basket_dark_oak_purple", () -> basket(DyeColor.PURPLE));
     public static final RegistryObject<Block> BASKET_DARK_OAK_MAGENTA =
-            registerBlock("basket_dark_oak_magenta", () -> basket(DyeColor.MAGENTA));
+            registerBlockWithoutBlockItem("basket_dark_oak_magenta", () -> basket(DyeColor.MAGENTA));
     public static final RegistryObject<Block> BASKET_DARK_OAK_PINK =
-            registerBlock("basket_dark_oak_pink", () -> basket(DyeColor.PINK));
+            registerBlockWithoutBlockItem("basket_dark_oak_pink", () -> basket(DyeColor.PINK));
     public static final RegistryObject<Block> BASKET_MANGROVE_WHITE =
-            registerBlock("basket_mangrove_white", () -> basket(DyeColor.WHITE));
+            registerBlockWithoutBlockItem("basket_mangrove_white", () -> basket(DyeColor.WHITE));
     public static final RegistryObject<Block> BASKET_MANGROVE_LIGHT_GRAY =
-            registerBlock("basket_mangrove_light_gray", () -> basket(DyeColor.LIGHT_GRAY));
+            registerBlockWithoutBlockItem("basket_mangrove_light_gray", () -> basket(DyeColor.LIGHT_GRAY));
     public static final RegistryObject<Block> BASKET_MANGROVE_GRAY =
-            registerBlock("basket_mangrove_gray", () -> basket(DyeColor.GRAY));
+            registerBlockWithoutBlockItem("basket_mangrove_gray", () -> basket(DyeColor.GRAY));
     public static final RegistryObject<Block> BASKET_MANGROVE_BLACK =
-            registerBlock("basket_mangrove_black", () -> basket(DyeColor.BLACK));
+            registerBlockWithoutBlockItem("basket_mangrove_black", () -> basket(DyeColor.BLACK));
     public static final RegistryObject<Block> BASKET_MANGROVE_BROWN =
-            registerBlock("basket_mangrove_brown", () -> basket(DyeColor.BROWN));
+            registerBlockWithoutBlockItem("basket_mangrove_brown", () -> basket(DyeColor.BROWN));
     public static final RegistryObject<Block> BASKET_MANGROVE_RED =
-            registerBlock("basket_mangrove_red", () -> basket(DyeColor.RED));
+            registerBlockWithoutBlockItem("basket_mangrove_red", () -> basket(DyeColor.RED));
     public static final RegistryObject<Block> BASKET_MANGROVE_ORANGE =
-            registerBlock("basket_mangrove_orange", () -> basket(DyeColor.ORANGE));
+            registerBlockWithoutBlockItem("basket_mangrove_orange", () -> basket(DyeColor.ORANGE));
     public static final RegistryObject<Block> BASKET_MANGROVE_YELLOW =
-            registerBlock("basket_mangrove_yellow", () -> basket(DyeColor.YELLOW));
+            registerBlockWithoutBlockItem("basket_mangrove_yellow", () -> basket(DyeColor.YELLOW));
     public static final RegistryObject<Block> BASKET_MANGROVE_LIME =
-            registerBlock("basket_mangrove_lime", () -> basket(DyeColor.LIME));
+            registerBlockWithoutBlockItem("basket_mangrove_lime", () -> basket(DyeColor.LIME));
     public static final RegistryObject<Block> BASKET_MANGROVE_GREEN =
-            registerBlock("basket_mangrove_green", () -> basket(DyeColor.GREEN));
+            registerBlockWithoutBlockItem("basket_mangrove_green", () -> basket(DyeColor.GREEN));
     public static final RegistryObject<Block> BASKET_MANGROVE_CYAN =
-            registerBlock("basket_mangrove_cyan", () -> basket(DyeColor.CYAN));
+            registerBlockWithoutBlockItem("basket_mangrove_cyan", () -> basket(DyeColor.CYAN));
     public static final RegistryObject<Block> BASKET_MANGROVE_LIGHT_BLUE =
-            registerBlock("basket_mangrove_light_blue", () -> basket(DyeColor.LIGHT_BLUE));
+            registerBlockWithoutBlockItem("basket_mangrove_light_blue", () -> basket(DyeColor.LIGHT_BLUE));
     public static final RegistryObject<Block> BASKET_MANGROVE_BLUE =
-            registerBlock("basket_mangrove_blue", () -> basket(DyeColor.BLUE));
+            registerBlockWithoutBlockItem("basket_mangrove_blue", () -> basket(DyeColor.BLUE));
     public static final RegistryObject<Block> BASKET_MANGROVE_PURPLE =
-            registerBlock("basket_mangrove_purple", () -> basket(DyeColor.PURPLE));
+            registerBlockWithoutBlockItem("basket_mangrove_purple", () -> basket(DyeColor.PURPLE));
     public static final RegistryObject<Block> BASKET_MANGROVE_MAGENTA =
-            registerBlock("basket_mangrove_magenta", () -> basket(DyeColor.MAGENTA));
+            registerBlockWithoutBlockItem("basket_mangrove_magenta", () -> basket(DyeColor.MAGENTA));
     public static final RegistryObject<Block> BASKET_MANGROVE_PINK =
-            registerBlock("basket_mangrove_pink", () -> basket(DyeColor.PINK));
+            registerBlockWithoutBlockItem("basket_mangrove_pink", () -> basket(DyeColor.PINK));
     public static final RegistryObject<Block> BASKET_CRIMSON_WHITE =
-            registerBlock("basket_crimson_white", () -> basket(DyeColor.WHITE));
+            registerBlockWithoutBlockItem("basket_crimson_white", () -> basket(DyeColor.WHITE));
     public static final RegistryObject<Block> BASKET_CRIMSON_LIGHT_GRAY =
-            registerBlock("basket_crimson_light_gray", () -> basket(DyeColor.LIGHT_GRAY));
+            registerBlockWithoutBlockItem("basket_crimson_light_gray", () -> basket(DyeColor.LIGHT_GRAY));
     public static final RegistryObject<Block> BASKET_CRIMSON_GRAY =
-            registerBlock("basket_crimson_gray", () -> basket(DyeColor.GRAY));
+            registerBlockWithoutBlockItem("basket_crimson_gray", () -> basket(DyeColor.GRAY));
     public static final RegistryObject<Block> BASKET_CRIMSON_BLACK =
-            registerBlock("basket_crimson_black", () -> basket(DyeColor.BLACK));
+            registerBlockWithoutBlockItem("basket_crimson_black", () -> basket(DyeColor.BLACK));
     public static final RegistryObject<Block> BASKET_CRIMSON_BROWN =
-            registerBlock("basket_crimson_brown", () -> basket(DyeColor.BROWN));
+            registerBlockWithoutBlockItem("basket_crimson_brown", () -> basket(DyeColor.BROWN));
     public static final RegistryObject<Block> BASKET_CRIMSON_RED =
-            registerBlock("basket_crimson_red", () -> basket(DyeColor.RED));
+            registerBlockWithoutBlockItem("basket_crimson_red", () -> basket(DyeColor.RED));
     public static final RegistryObject<Block> BASKET_CRIMSON_ORANGE =
-            registerBlock("basket_crimson_orange", () -> basket(DyeColor.ORANGE));
+            registerBlockWithoutBlockItem("basket_crimson_orange", () -> basket(DyeColor.ORANGE));
     public static final RegistryObject<Block> BASKET_CRIMSON_YELLOW =
-            registerBlock("basket_crimson_yellow", () -> basket(DyeColor.YELLOW));
+            registerBlockWithoutBlockItem("basket_crimson_yellow", () -> basket(DyeColor.YELLOW));
     public static final RegistryObject<Block> BASKET_CRIMSON_LIME =
-            registerBlock("basket_crimson_lime", () -> basket(DyeColor.LIME));
+            registerBlockWithoutBlockItem("basket_crimson_lime", () -> basket(DyeColor.LIME));
     public static final RegistryObject<Block> BASKET_CRIMSON_GREEN =
-            registerBlock("basket_crimson_green", () -> basket(DyeColor.GREEN));
+            registerBlockWithoutBlockItem("basket_crimson_green", () -> basket(DyeColor.GREEN));
     public static final RegistryObject<Block> BASKET_CRIMSON_CYAN =
-            registerBlock("basket_crimson_cyan", () -> basket(DyeColor.CYAN));
+            registerBlockWithoutBlockItem("basket_crimson_cyan", () -> basket(DyeColor.CYAN));
     public static final RegistryObject<Block> BASKET_CRIMSON_LIGHT_BLUE =
-            registerBlock("basket_crimson_light_blue", () -> basket(DyeColor.LIGHT_BLUE));
+            registerBlockWithoutBlockItem("basket_crimson_light_blue", () -> basket(DyeColor.LIGHT_BLUE));
     public static final RegistryObject<Block> BASKET_CRIMSON_BLUE =
-            registerBlock("basket_crimson_blue", () -> basket(DyeColor.BLUE));
+            registerBlockWithoutBlockItem("basket_crimson_blue", () -> basket(DyeColor.BLUE));
     public static final RegistryObject<Block> BASKET_CRIMSON_PURPLE =
-            registerBlock("basket_crimson_purple", () -> basket(DyeColor.PURPLE));
+            registerBlockWithoutBlockItem("basket_crimson_purple", () -> basket(DyeColor.PURPLE));
     public static final RegistryObject<Block> BASKET_CRIMSON_MAGENTA =
-            registerBlock("basket_crimson_magenta", () -> basket(DyeColor.MAGENTA));
+            registerBlockWithoutBlockItem("basket_crimson_magenta", () -> basket(DyeColor.MAGENTA));
     public static final RegistryObject<Block> BASKET_CRIMSON_PINK =
-            registerBlock("basket_crimson_pink", () -> basket(DyeColor.PINK));
+            registerBlockWithoutBlockItem("basket_crimson_pink", () -> basket(DyeColor.PINK));
     public static final RegistryObject<Block> BASKET_WARPED_WHITE =
-            registerBlock("basket_warped_white", () -> basket(DyeColor.WHITE));
+            registerBlockWithoutBlockItem("basket_warped_white", () -> basket(DyeColor.WHITE));
     public static final RegistryObject<Block> BASKET_WARPED_LIGHT_GRAY =
-            registerBlock("basket_warped_light_gray", () -> basket(DyeColor.LIGHT_GRAY));
+            registerBlockWithoutBlockItem("basket_warped_light_gray", () -> basket(DyeColor.LIGHT_GRAY));
     public static final RegistryObject<Block> BASKET_WARPED_GRAY =
-            registerBlock("basket_warped_gray", () -> basket(DyeColor.GRAY));
+            registerBlockWithoutBlockItem("basket_warped_gray", () -> basket(DyeColor.GRAY));
     public static final RegistryObject<Block> BASKET_WARPED_BLACK =
-            registerBlock("basket_warped_black", () -> basket(DyeColor.BLACK));
+            registerBlockWithoutBlockItem("basket_warped_black", () -> basket(DyeColor.BLACK));
     public static final RegistryObject<Block> BASKET_WARPED_BROWN =
-            registerBlock("basket_warped_brown", () -> basket(DyeColor.BROWN));
+            registerBlockWithoutBlockItem("basket_warped_brown", () -> basket(DyeColor.BROWN));
     public static final RegistryObject<Block> BASKET_WARPED_RED =
-            registerBlock("basket_warped_red", () -> basket(DyeColor.RED));
+            registerBlockWithoutBlockItem("basket_warped_red", () -> basket(DyeColor.RED));
     public static final RegistryObject<Block> BASKET_WARPED_ORANGE =
-            registerBlock("basket_warped_orange", () -> basket(DyeColor.ORANGE));
+            registerBlockWithoutBlockItem("basket_warped_orange", () -> basket(DyeColor.ORANGE));
     public static final RegistryObject<Block> BASKET_WARPED_YELLOW =
-            registerBlock("basket_warped_yellow", () -> basket(DyeColor.YELLOW));
+            registerBlockWithoutBlockItem("basket_warped_yellow", () -> basket(DyeColor.YELLOW));
     public static final RegistryObject<Block> BASKET_WARPED_LIME =
-            registerBlock("basket_warped_lime", () -> basket(DyeColor.LIME));
+            registerBlockWithoutBlockItem("basket_warped_lime", () -> basket(DyeColor.LIME));
     public static final RegistryObject<Block> BASKET_WARPED_GREEN =
-            registerBlock("basket_warped_green", () -> basket(DyeColor.GREEN));
+            registerBlockWithoutBlockItem("basket_warped_green", () -> basket(DyeColor.GREEN));
     public static final RegistryObject<Block> BASKET_WARPED_CYAN =
-            registerBlock("basket_warped_cyan", () -> basket(DyeColor.CYAN));
+            registerBlockWithoutBlockItem("basket_warped_cyan", () -> basket(DyeColor.CYAN));
     public static final RegistryObject<Block> BASKET_WARPED_LIGHT_BLUE =
-            registerBlock("basket_warped_light_blue", () -> basket(DyeColor.LIGHT_BLUE));
+            registerBlockWithoutBlockItem("basket_warped_light_blue", () -> basket(DyeColor.LIGHT_BLUE));
     public static final RegistryObject<Block> BASKET_WARPED_BLUE =
-            registerBlock("basket_warped_blue", () -> basket(DyeColor.BLUE));
+            registerBlockWithoutBlockItem("basket_warped_blue", () -> basket(DyeColor.BLUE));
     public static final RegistryObject<Block> BASKET_WARPED_PURPLE =
-            registerBlock("basket_warped_purple", () -> basket(DyeColor.PURPLE));
+            registerBlockWithoutBlockItem("basket_warped_purple", () -> basket(DyeColor.PURPLE));
     public static final RegistryObject<Block> BASKET_WARPED_MAGENTA =
-            registerBlock("basket_warped_magenta", () -> basket(DyeColor.MAGENTA));
+            registerBlockWithoutBlockItem("basket_warped_magenta", () -> basket(DyeColor.MAGENTA));
     public static final RegistryObject<Block> BASKET_WARPED_PINK =
-            registerBlock("basket_warped_pink", () -> basket(DyeColor.PINK));
+            registerBlockWithoutBlockItem("basket_warped_pink", () -> basket(DyeColor.PINK));
     public static final RegistryObject<Block> BASKET_FIR_WHITE =
-            registerBlock("basket_fir_white", () -> basket(DyeColor.WHITE));
+            registerBlockWithoutBlockItem("basket_fir_white", () -> basket(DyeColor.WHITE));
     public static final RegistryObject<Block> BASKET_FIR_LIGHT_GRAY =
-            registerBlock("basket_fir_light_gray", () -> basket(DyeColor.LIGHT_GRAY));
+            registerBlockWithoutBlockItem("basket_fir_light_gray", () -> basket(DyeColor.LIGHT_GRAY));
     public static final RegistryObject<Block> BASKET_FIR_GRAY =
-            registerBlock("basket_fir_gray", () -> basket(DyeColor.GRAY));
+            registerBlockWithoutBlockItem("basket_fir_gray", () -> basket(DyeColor.GRAY));
     public static final RegistryObject<Block> BASKET_FIR_BLACK =
-            registerBlock("basket_fir_black", () -> basket(DyeColor.BLACK));
+            registerBlockWithoutBlockItem("basket_fir_black", () -> basket(DyeColor.BLACK));
     public static final RegistryObject<Block> BASKET_FIR_BROWN =
-            registerBlock("basket_fir_brown", () -> basket(DyeColor.BROWN));
+            registerBlockWithoutBlockItem("basket_fir_brown", () -> basket(DyeColor.BROWN));
     public static final RegistryObject<Block> BASKET_FIR_RED =
-            registerBlock("basket_fir_red", () -> basket(DyeColor.RED));
+            registerBlockWithoutBlockItem("basket_fir_red", () -> basket(DyeColor.RED));
     public static final RegistryObject<Block> BASKET_FIR_ORANGE =
-            registerBlock("basket_fir_orange", () -> basket(DyeColor.ORANGE));
+            registerBlockWithoutBlockItem("basket_fir_orange", () -> basket(DyeColor.ORANGE));
     public static final RegistryObject<Block> BASKET_FIR_YELLOW =
-            registerBlock("basket_fir_yellow", () -> basket(DyeColor.YELLOW));
+            registerBlockWithoutBlockItem("basket_fir_yellow", () -> basket(DyeColor.YELLOW));
     public static final RegistryObject<Block> BASKET_FIR_LIME =
-            registerBlock("basket_fir_lime", () -> basket(DyeColor.LIME));
+            registerBlockWithoutBlockItem("basket_fir_lime", () -> basket(DyeColor.LIME));
     public static final RegistryObject<Block> BASKET_FIR_GREEN =
-            registerBlock("basket_fir_green", () -> basket(DyeColor.GREEN));
+            registerBlockWithoutBlockItem("basket_fir_green", () -> basket(DyeColor.GREEN));
     public static final RegistryObject<Block> BASKET_FIR_CYAN =
-            registerBlock("basket_fir_cyan", () -> basket(DyeColor.CYAN));
+            registerBlockWithoutBlockItem("basket_fir_cyan", () -> basket(DyeColor.CYAN));
     public static final RegistryObject<Block> BASKET_FIR_LIGHT_BLUE =
-            registerBlock("basket_fir_light_blue", () -> basket(DyeColor.LIGHT_BLUE));
+            registerBlockWithoutBlockItem("basket_fir_light_blue", () -> basket(DyeColor.LIGHT_BLUE));
     public static final RegistryObject<Block> BASKET_FIR_BLUE =
-            registerBlock("basket_fir_blue", () -> basket(DyeColor.BLUE));
+            registerBlockWithoutBlockItem("basket_fir_blue", () -> basket(DyeColor.BLUE));
     public static final RegistryObject<Block> BASKET_FIR_PURPLE =
-            registerBlock("basket_fir_purple", () -> basket(DyeColor.PURPLE));
+            registerBlockWithoutBlockItem("basket_fir_purple", () -> basket(DyeColor.PURPLE));
     public static final RegistryObject<Block> BASKET_FIR_MAGENTA =
-            registerBlock("basket_fir_magenta", () -> basket(DyeColor.MAGENTA));
+            registerBlockWithoutBlockItem("basket_fir_magenta", () -> basket(DyeColor.MAGENTA));
     public static final RegistryObject<Block> BASKET_FIR_PINK =
-            registerBlock("basket_fir_pink", () -> basket(DyeColor.PINK));
+            registerBlockWithoutBlockItem("basket_fir_pink", () -> basket(DyeColor.PINK));
     public static final RegistryObject<Block> BASKET_REDWOOD_WHITE =
-            registerBlock("basket_redwood_white", () -> basket(DyeColor.WHITE));
+            registerBlockWithoutBlockItem("basket_redwood_white", () -> basket(DyeColor.WHITE));
     public static final RegistryObject<Block> BASKET_REDWOOD_LIGHT_GRAY =
-            registerBlock("basket_redwood_light_gray", () -> basket(DyeColor.LIGHT_GRAY));
+            registerBlockWithoutBlockItem("basket_redwood_light_gray", () -> basket(DyeColor.LIGHT_GRAY));
     public static final RegistryObject<Block> BASKET_REDWOOD_GRAY =
-            registerBlock("basket_redwood_gray", () -> basket(DyeColor.GRAY));
+            registerBlockWithoutBlockItem("basket_redwood_gray", () -> basket(DyeColor.GRAY));
     public static final RegistryObject<Block> BASKET_REDWOOD_BLACK =
-            registerBlock("basket_redwood_black", () -> basket(DyeColor.BLACK));
+            registerBlockWithoutBlockItem("basket_redwood_black", () -> basket(DyeColor.BLACK));
     public static final RegistryObject<Block> BASKET_REDWOOD_BROWN =
-            registerBlock("basket_redwood_brown", () -> basket(DyeColor.BROWN));
+            registerBlockWithoutBlockItem("basket_redwood_brown", () -> basket(DyeColor.BROWN));
     public static final RegistryObject<Block> BASKET_REDWOOD_RED =
-            registerBlock("basket_redwood_red", () -> basket(DyeColor.RED));
+            registerBlockWithoutBlockItem("basket_redwood_red", () -> basket(DyeColor.RED));
     public static final RegistryObject<Block> BASKET_REDWOOD_ORANGE =
-            registerBlock("basket_redwood_orange", () -> basket(DyeColor.ORANGE));
+            registerBlockWithoutBlockItem("basket_redwood_orange", () -> basket(DyeColor.ORANGE));
     public static final RegistryObject<Block> BASKET_REDWOOD_YELLOW =
-            registerBlock("basket_redwood_yellow", () -> basket(DyeColor.YELLOW));
+            registerBlockWithoutBlockItem("basket_redwood_yellow", () -> basket(DyeColor.YELLOW));
     public static final RegistryObject<Block> BASKET_REDWOOD_LIME =
-            registerBlock("basket_redwood_lime", () -> basket(DyeColor.LIME));
+            registerBlockWithoutBlockItem("basket_redwood_lime", () -> basket(DyeColor.LIME));
     public static final RegistryObject<Block> BASKET_REDWOOD_GREEN =
-            registerBlock("basket_redwood_green", () -> basket(DyeColor.GREEN));
+            registerBlockWithoutBlockItem("basket_redwood_green", () -> basket(DyeColor.GREEN));
     public static final RegistryObject<Block> BASKET_REDWOOD_CYAN =
-            registerBlock("basket_redwood_cyan", () -> basket(DyeColor.CYAN));
+            registerBlockWithoutBlockItem("basket_redwood_cyan", () -> basket(DyeColor.CYAN));
     public static final RegistryObject<Block> BASKET_REDWOOD_LIGHT_BLUE =
-            registerBlock("basket_redwood_light_blue", () -> basket(DyeColor.LIGHT_BLUE));
+            registerBlockWithoutBlockItem("basket_redwood_light_blue", () -> basket(DyeColor.LIGHT_BLUE));
     public static final RegistryObject<Block> BASKET_REDWOOD_BLUE =
-            registerBlock("basket_redwood_blue", () -> basket(DyeColor.BLUE));
+            registerBlockWithoutBlockItem("basket_redwood_blue", () -> basket(DyeColor.BLUE));
     public static final RegistryObject<Block> BASKET_REDWOOD_PURPLE =
-            registerBlock("basket_redwood_purple", () -> basket(DyeColor.PURPLE));
+            registerBlockWithoutBlockItem("basket_redwood_purple", () -> basket(DyeColor.PURPLE));
     public static final RegistryObject<Block> BASKET_REDWOOD_MAGENTA =
-            registerBlock("basket_redwood_magenta", () -> basket(DyeColor.MAGENTA));
+            registerBlockWithoutBlockItem("basket_redwood_magenta", () -> basket(DyeColor.MAGENTA));
     public static final RegistryObject<Block> BASKET_REDWOOD_PINK =
-            registerBlock("basket_redwood_pink", () -> basket(DyeColor.PINK));
+            registerBlockWithoutBlockItem("basket_redwood_pink", () -> basket(DyeColor.PINK));
     public static final RegistryObject<Block> BASKET_CHERRY_WHITE =
-            registerBlock("basket_cherry_white", () -> basket(DyeColor.WHITE));
+            registerBlockWithoutBlockItem("basket_cherry_white", () -> basket(DyeColor.WHITE));
     public static final RegistryObject<Block> BASKET_CHERRY_LIGHT_GRAY =
-            registerBlock("basket_cherry_light_gray", () -> basket(DyeColor.LIGHT_GRAY));
+            registerBlockWithoutBlockItem("basket_cherry_light_gray", () -> basket(DyeColor.LIGHT_GRAY));
     public static final RegistryObject<Block> BASKET_CHERRY_GRAY =
-            registerBlock("basket_cherry_gray", () -> basket(DyeColor.GRAY));
+            registerBlockWithoutBlockItem("basket_cherry_gray", () -> basket(DyeColor.GRAY));
     public static final RegistryObject<Block> BASKET_CHERRY_BLACK =
-            registerBlock("basket_cherry_black", () -> basket(DyeColor.BLACK));
+            registerBlockWithoutBlockItem("basket_cherry_black", () -> basket(DyeColor.BLACK));
     public static final RegistryObject<Block> BASKET_CHERRY_BROWN =
-            registerBlock("basket_cherry_brown", () -> basket(DyeColor.BROWN));
+            registerBlockWithoutBlockItem("basket_cherry_brown", () -> basket(DyeColor.BROWN));
     public static final RegistryObject<Block> BASKET_CHERRY_RED =
-            registerBlock("basket_cherry_red", () -> basket(DyeColor.RED));
+            registerBlockWithoutBlockItem("basket_cherry_red", () -> basket(DyeColor.RED));
     public static final RegistryObject<Block> BASKET_CHERRY_ORANGE =
-            registerBlock("basket_cherry_orange", () -> basket(DyeColor.ORANGE));
+            registerBlockWithoutBlockItem("basket_cherry_orange", () -> basket(DyeColor.ORANGE));
     public static final RegistryObject<Block> BASKET_CHERRY_YELLOW =
-            registerBlock("basket_cherry_yellow", () -> basket(DyeColor.YELLOW));
+            registerBlockWithoutBlockItem("basket_cherry_yellow", () -> basket(DyeColor.YELLOW));
     public static final RegistryObject<Block> BASKET_CHERRY_LIME =
-            registerBlock("basket_cherry_lime", () -> basket(DyeColor.LIME));
+            registerBlockWithoutBlockItem("basket_cherry_lime", () -> basket(DyeColor.LIME));
     public static final RegistryObject<Block> BASKET_CHERRY_GREEN =
-            registerBlock("basket_cherry_green", () -> basket(DyeColor.GREEN));
+            registerBlockWithoutBlockItem("basket_cherry_green", () -> basket(DyeColor.GREEN));
     public static final RegistryObject<Block> BASKET_CHERRY_CYAN =
-            registerBlock("basket_cherry_cyan", () -> basket(DyeColor.CYAN));
+            registerBlockWithoutBlockItem("basket_cherry_cyan", () -> basket(DyeColor.CYAN));
     public static final RegistryObject<Block> BASKET_CHERRY_LIGHT_BLUE =
-            registerBlock("basket_cherry_light_blue", () -> basket(DyeColor.LIGHT_BLUE));
+            registerBlockWithoutBlockItem("basket_cherry_light_blue", () -> basket(DyeColor.LIGHT_BLUE));
     public static final RegistryObject<Block> BASKET_CHERRY_BLUE =
-            registerBlock("basket_cherry_blue", () -> basket(DyeColor.BLUE));
+            registerBlockWithoutBlockItem("basket_cherry_blue", () -> basket(DyeColor.BLUE));
     public static final RegistryObject<Block> BASKET_CHERRY_PURPLE =
-            registerBlock("basket_cherry_purple", () -> basket(DyeColor.PURPLE));
+            registerBlockWithoutBlockItem("basket_cherry_purple", () -> basket(DyeColor.PURPLE));
     public static final RegistryObject<Block> BASKET_CHERRY_MAGENTA =
-            registerBlock("basket_cherry_magenta", () -> basket(DyeColor.MAGENTA));
+            registerBlockWithoutBlockItem("basket_cherry_magenta", () -> basket(DyeColor.MAGENTA));
     public static final RegistryObject<Block> BASKET_CHERRY_PINK =
-            registerBlock("basket_cherry_pink", () -> basket(DyeColor.PINK));
+            registerBlockWithoutBlockItem("basket_cherry_pink", () -> basket(DyeColor.PINK));
     public static final RegistryObject<Block> BASKET_MAHOGANY_WHITE =
-            registerBlock("basket_mahogany_white", () -> basket(DyeColor.WHITE));
+            registerBlockWithoutBlockItem("basket_mahogany_white", () -> basket(DyeColor.WHITE));
     public static final RegistryObject<Block> BASKET_MAHOGANY_LIGHT_GRAY =
-            registerBlock("basket_mahogany_light_gray", () -> basket(DyeColor.LIGHT_GRAY));
+            registerBlockWithoutBlockItem("basket_mahogany_light_gray", () -> basket(DyeColor.LIGHT_GRAY));
     public static final RegistryObject<Block> BASKET_MAHOGANY_GRAY =
-            registerBlock("basket_mahogany_gray", () -> basket(DyeColor.GRAY));
+            registerBlockWithoutBlockItem("basket_mahogany_gray", () -> basket(DyeColor.GRAY));
     public static final RegistryObject<Block> BASKET_MAHOGANY_BLACK =
-            registerBlock("basket_mahogany_black", () -> basket(DyeColor.BLACK));
+            registerBlockWithoutBlockItem("basket_mahogany_black", () -> basket(DyeColor.BLACK));
     public static final RegistryObject<Block> BASKET_MAHOGANY_BROWN =
-            registerBlock("basket_mahogany_brown", () -> basket(DyeColor.BROWN));
+            registerBlockWithoutBlockItem("basket_mahogany_brown", () -> basket(DyeColor.BROWN));
     public static final RegistryObject<Block> BASKET_MAHOGANY_RED =
-            registerBlock("basket_mahogany_red", () -> basket(DyeColor.RED));
+            registerBlockWithoutBlockItem("basket_mahogany_red", () -> basket(DyeColor.RED));
     public static final RegistryObject<Block> BASKET_MAHOGANY_ORANGE =
-            registerBlock("basket_mahogany_orange", () -> basket(DyeColor.ORANGE));
+            registerBlockWithoutBlockItem("basket_mahogany_orange", () -> basket(DyeColor.ORANGE));
     public static final RegistryObject<Block> BASKET_MAHOGANY_YELLOW =
-            registerBlock("basket_mahogany_yellow", () -> basket(DyeColor.YELLOW));
+            registerBlockWithoutBlockItem("basket_mahogany_yellow", () -> basket(DyeColor.YELLOW));
     public static final RegistryObject<Block> BASKET_MAHOGANY_LIME =
-            registerBlock("basket_mahogany_lime", () -> basket(DyeColor.LIME));
+            registerBlockWithoutBlockItem("basket_mahogany_lime", () -> basket(DyeColor.LIME));
     public static final RegistryObject<Block> BASKET_MAHOGANY_GREEN =
-            registerBlock("basket_mahogany_green", () -> basket(DyeColor.GREEN));
+            registerBlockWithoutBlockItem("basket_mahogany_green", () -> basket(DyeColor.GREEN));
     public static final RegistryObject<Block> BASKET_MAHOGANY_CYAN =
-            registerBlock("basket_mahogany_cyan", () -> basket(DyeColor.CYAN));
+            registerBlockWithoutBlockItem("basket_mahogany_cyan", () -> basket(DyeColor.CYAN));
     public static final RegistryObject<Block> BASKET_MAHOGANY_LIGHT_BLUE =
-            registerBlock("basket_mahogany_light_blue", () -> basket(DyeColor.LIGHT_BLUE));
+            registerBlockWithoutBlockItem("basket_mahogany_light_blue", () -> basket(DyeColor.LIGHT_BLUE));
     public static final RegistryObject<Block> BASKET_MAHOGANY_BLUE =
-            registerBlock("basket_mahogany_blue", () -> basket(DyeColor.BLUE));
+            registerBlockWithoutBlockItem("basket_mahogany_blue", () -> basket(DyeColor.BLUE));
     public static final RegistryObject<Block> BASKET_MAHOGANY_PURPLE =
-            registerBlock("basket_mahogany_purple", () -> basket(DyeColor.PURPLE));
+            registerBlockWithoutBlockItem("basket_mahogany_purple", () -> basket(DyeColor.PURPLE));
     public static final RegistryObject<Block> BASKET_MAHOGANY_MAGENTA =
-            registerBlock("basket_mahogany_magenta", () -> basket(DyeColor.MAGENTA));
+            registerBlockWithoutBlockItem("basket_mahogany_magenta", () -> basket(DyeColor.MAGENTA));
     public static final RegistryObject<Block> BASKET_MAHOGANY_PINK =
-            registerBlock("basket_mahogany_pink", () -> basket(DyeColor.PINK));
+            registerBlockWithoutBlockItem("basket_mahogany_pink", () -> basket(DyeColor.PINK));
     public static final RegistryObject<Block> BASKET_JACARANDA_WHITE =
-            registerBlock("basket_jacaranda_white", () -> basket(DyeColor.WHITE));
+            registerBlockWithoutBlockItem("basket_jacaranda_white", () -> basket(DyeColor.WHITE));
     public static final RegistryObject<Block> BASKET_JACARANDA_LIGHT_GRAY =
-            registerBlock("basket_jacaranda_light_gray", () -> basket(DyeColor.LIGHT_GRAY));
+            registerBlockWithoutBlockItem("basket_jacaranda_light_gray", () -> basket(DyeColor.LIGHT_GRAY));
     public static final RegistryObject<Block> BASKET_JACARANDA_GRAY =
-            registerBlock("basket_jacaranda_gray", () -> basket(DyeColor.GRAY));
+            registerBlockWithoutBlockItem("basket_jacaranda_gray", () -> basket(DyeColor.GRAY));
     public static final RegistryObject<Block> BASKET_JACARANDA_BLACK =
-            registerBlock("basket_jacaranda_black", () -> basket(DyeColor.BLACK));
+            registerBlockWithoutBlockItem("basket_jacaranda_black", () -> basket(DyeColor.BLACK));
     public static final RegistryObject<Block> BASKET_JACARANDA_BROWN =
-            registerBlock("basket_jacaranda_brown", () -> basket(DyeColor.BROWN));
+            registerBlockWithoutBlockItem("basket_jacaranda_brown", () -> basket(DyeColor.BROWN));
     public static final RegistryObject<Block> BASKET_JACARANDA_RED =
-            registerBlock("basket_jacaranda_red", () -> basket(DyeColor.RED));
+            registerBlockWithoutBlockItem("basket_jacaranda_red", () -> basket(DyeColor.RED));
     public static final RegistryObject<Block> BASKET_JACARANDA_ORANGE =
-            registerBlock("basket_jacaranda_orange", () -> basket(DyeColor.ORANGE));
+            registerBlockWithoutBlockItem("basket_jacaranda_orange", () -> basket(DyeColor.ORANGE));
     public static final RegistryObject<Block> BASKET_JACARANDA_YELLOW =
-            registerBlock("basket_jacaranda_yellow", () -> basket(DyeColor.YELLOW));
+            registerBlockWithoutBlockItem("basket_jacaranda_yellow", () -> basket(DyeColor.YELLOW));
     public static final RegistryObject<Block> BASKET_JACARANDA_LIME =
-            registerBlock("basket_jacaranda_lime", () -> basket(DyeColor.LIME));
+            registerBlockWithoutBlockItem("basket_jacaranda_lime", () -> basket(DyeColor.LIME));
     public static final RegistryObject<Block> BASKET_JACARANDA_GREEN =
-            registerBlock("basket_jacaranda_green", () -> basket(DyeColor.GREEN));
+            registerBlockWithoutBlockItem("basket_jacaranda_green", () -> basket(DyeColor.GREEN));
     public static final RegistryObject<Block> BASKET_JACARANDA_CYAN =
-            registerBlock("basket_jacaranda_cyan", () -> basket(DyeColor.CYAN));
+            registerBlockWithoutBlockItem("basket_jacaranda_cyan", () -> basket(DyeColor.CYAN));
     public static final RegistryObject<Block> BASKET_JACARANDA_LIGHT_BLUE =
-            registerBlock("basket_jacaranda_light_blue", () -> basket(DyeColor.LIGHT_BLUE));
+            registerBlockWithoutBlockItem("basket_jacaranda_light_blue", () -> basket(DyeColor.LIGHT_BLUE));
     public static final RegistryObject<Block> BASKET_JACARANDA_BLUE =
-            registerBlock("basket_jacaranda_blue", () -> basket(DyeColor.BLUE));
+            registerBlockWithoutBlockItem("basket_jacaranda_blue", () -> basket(DyeColor.BLUE));
     public static final RegistryObject<Block> BASKET_JACARANDA_PURPLE =
-            registerBlock("basket_jacaranda_purple", () -> basket(DyeColor.PURPLE));
+            registerBlockWithoutBlockItem("basket_jacaranda_purple", () -> basket(DyeColor.PURPLE));
     public static final RegistryObject<Block> BASKET_JACARANDA_MAGENTA =
-            registerBlock("basket_jacaranda_magenta", () -> basket(DyeColor.MAGENTA));
+            registerBlockWithoutBlockItem("basket_jacaranda_magenta", () -> basket(DyeColor.MAGENTA));
     public static final RegistryObject<Block> BASKET_JACARANDA_PINK =
-            registerBlock("basket_jacaranda_pink", () -> basket(DyeColor.PINK));
+            registerBlockWithoutBlockItem("basket_jacaranda_pink", () -> basket(DyeColor.PINK));
     public static final RegistryObject<Block> BASKET_PALM_WHITE =
-            registerBlock("basket_palm_white", () -> basket(DyeColor.WHITE));
+            registerBlockWithoutBlockItem("basket_palm_white", () -> basket(DyeColor.WHITE));
     public static final RegistryObject<Block> BASKET_PALM_LIGHT_GRAY =
-            registerBlock("basket_palm_light_gray", () -> basket(DyeColor.LIGHT_GRAY));
+            registerBlockWithoutBlockItem("basket_palm_light_gray", () -> basket(DyeColor.LIGHT_GRAY));
     public static final RegistryObject<Block> BASKET_PALM_GRAY =
-            registerBlock("basket_palm_gray", () -> basket(DyeColor.GRAY));
+            registerBlockWithoutBlockItem("basket_palm_gray", () -> basket(DyeColor.GRAY));
     public static final RegistryObject<Block> BASKET_PALM_BLACK =
-            registerBlock("basket_palm_black", () -> basket(DyeColor.BLACK));
+            registerBlockWithoutBlockItem("basket_palm_black", () -> basket(DyeColor.BLACK));
     public static final RegistryObject<Block> BASKET_PALM_BROWN =
-            registerBlock("basket_palm_brown", () -> basket(DyeColor.BROWN));
+            registerBlockWithoutBlockItem("basket_palm_brown", () -> basket(DyeColor.BROWN));
     public static final RegistryObject<Block> BASKET_PALM_RED =
-            registerBlock("basket_palm_red", () -> basket(DyeColor.RED));
+            registerBlockWithoutBlockItem("basket_palm_red", () -> basket(DyeColor.RED));
     public static final RegistryObject<Block> BASKET_PALM_ORANGE =
-            registerBlock("basket_palm_orange", () -> basket(DyeColor.ORANGE));
+            registerBlockWithoutBlockItem("basket_palm_orange", () -> basket(DyeColor.ORANGE));
     public static final RegistryObject<Block> BASKET_PALM_YELLOW =
-            registerBlock("basket_palm_yellow", () -> basket(DyeColor.YELLOW));
+            registerBlockWithoutBlockItem("basket_palm_yellow", () -> basket(DyeColor.YELLOW));
     public static final RegistryObject<Block> BASKET_PALM_LIME =
-            registerBlock("basket_palm_lime", () -> basket(DyeColor.LIME));
+            registerBlockWithoutBlockItem("basket_palm_lime", () -> basket(DyeColor.LIME));
     public static final RegistryObject<Block> BASKET_PALM_GREEN =
-            registerBlock("basket_palm_green", () -> basket(DyeColor.GREEN));
+            registerBlockWithoutBlockItem("basket_palm_green", () -> basket(DyeColor.GREEN));
     public static final RegistryObject<Block> BASKET_PALM_CYAN =
-            registerBlock("basket_palm_cyan", () -> basket(DyeColor.CYAN));
+            registerBlockWithoutBlockItem("basket_palm_cyan", () -> basket(DyeColor.CYAN));
     public static final RegistryObject<Block> BASKET_PALM_LIGHT_BLUE =
-            registerBlock("basket_palm_light_blue", () -> basket(DyeColor.LIGHT_BLUE));
+            registerBlockWithoutBlockItem("basket_palm_light_blue", () -> basket(DyeColor.LIGHT_BLUE));
     public static final RegistryObject<Block> BASKET_PALM_BLUE =
-            registerBlock("basket_palm_blue", () -> basket(DyeColor.BLUE));
+            registerBlockWithoutBlockItem("basket_palm_blue", () -> basket(DyeColor.BLUE));
     public static final RegistryObject<Block> BASKET_PALM_PURPLE =
-            registerBlock("basket_palm_purple", () -> basket(DyeColor.PURPLE));
+            registerBlockWithoutBlockItem("basket_palm_purple", () -> basket(DyeColor.PURPLE));
     public static final RegistryObject<Block> BASKET_PALM_MAGENTA =
-            registerBlock("basket_palm_magenta", () -> basket(DyeColor.MAGENTA));
+            registerBlockWithoutBlockItem("basket_palm_magenta", () -> basket(DyeColor.MAGENTA));
     public static final RegistryObject<Block> BASKET_PALM_PINK =
-            registerBlock("basket_palm_pink", () -> basket(DyeColor.PINK));
+            registerBlockWithoutBlockItem("basket_palm_pink", () -> basket(DyeColor.PINK));
     public static final RegistryObject<Block> BASKET_WILLOW_WHITE =
-            registerBlock("basket_willow_white", () -> basket(DyeColor.WHITE));
+            registerBlockWithoutBlockItem("basket_willow_white", () -> basket(DyeColor.WHITE));
     public static final RegistryObject<Block> BASKET_WILLOW_LIGHT_GRAY =
-            registerBlock("basket_willow_light_gray", () -> basket(DyeColor.LIGHT_GRAY));
+            registerBlockWithoutBlockItem("basket_willow_light_gray", () -> basket(DyeColor.LIGHT_GRAY));
     public static final RegistryObject<Block> BASKET_WILLOW_GRAY =
-            registerBlock("basket_willow_gray", () -> basket(DyeColor.GRAY));
+            registerBlockWithoutBlockItem("basket_willow_gray", () -> basket(DyeColor.GRAY));
     public static final RegistryObject<Block> BASKET_WILLOW_BLACK =
-            registerBlock("basket_willow_black", () -> basket(DyeColor.BLACK));
+            registerBlockWithoutBlockItem("basket_willow_black", () -> basket(DyeColor.BLACK));
     public static final RegistryObject<Block> BASKET_WILLOW_BROWN =
-            registerBlock("basket_willow_brown", () -> basket(DyeColor.BROWN));
+            registerBlockWithoutBlockItem("basket_willow_brown", () -> basket(DyeColor.BROWN));
     public static final RegistryObject<Block> BASKET_WILLOW_RED =
-            registerBlock("basket_willow_red", () -> basket(DyeColor.RED));
+            registerBlockWithoutBlockItem("basket_willow_red", () -> basket(DyeColor.RED));
     public static final RegistryObject<Block> BASKET_WILLOW_ORANGE =
-            registerBlock("basket_willow_orange", () -> basket(DyeColor.ORANGE));
+            registerBlockWithoutBlockItem("basket_willow_orange", () -> basket(DyeColor.ORANGE));
     public static final RegistryObject<Block> BASKET_WILLOW_YELLOW =
-            registerBlock("basket_willow_yellow", () -> basket(DyeColor.YELLOW));
+            registerBlockWithoutBlockItem("basket_willow_yellow", () -> basket(DyeColor.YELLOW));
     public static final RegistryObject<Block> BASKET_WILLOW_LIME =
-            registerBlock("basket_willow_lime", () -> basket(DyeColor.LIME));
+            registerBlockWithoutBlockItem("basket_willow_lime", () -> basket(DyeColor.LIME));
     public static final RegistryObject<Block> BASKET_WILLOW_GREEN =
-            registerBlock("basket_willow_green", () -> basket(DyeColor.GREEN));
+            registerBlockWithoutBlockItem("basket_willow_green", () -> basket(DyeColor.GREEN));
     public static final RegistryObject<Block> BASKET_WILLOW_CYAN =
-            registerBlock("basket_willow_cyan", () -> basket(DyeColor.CYAN));
+            registerBlockWithoutBlockItem("basket_willow_cyan", () -> basket(DyeColor.CYAN));
     public static final RegistryObject<Block> BASKET_WILLOW_LIGHT_BLUE =
-            registerBlock("basket_willow_light_blue", () -> basket(DyeColor.LIGHT_BLUE));
+            registerBlockWithoutBlockItem("basket_willow_light_blue", () -> basket(DyeColor.LIGHT_BLUE));
     public static final RegistryObject<Block> BASKET_WILLOW_BLUE =
-            registerBlock("basket_willow_blue", () -> basket(DyeColor.BLUE));
+            registerBlockWithoutBlockItem("basket_willow_blue", () -> basket(DyeColor.BLUE));
     public static final RegistryObject<Block> BASKET_WILLOW_PURPLE =
-            registerBlock("basket_willow_purple", () -> basket(DyeColor.PURPLE));
+            registerBlockWithoutBlockItem("basket_willow_purple", () -> basket(DyeColor.PURPLE));
     public static final RegistryObject<Block> BASKET_WILLOW_MAGENTA =
-            registerBlock("basket_willow_magenta", () -> basket(DyeColor.MAGENTA));
+            registerBlockWithoutBlockItem("basket_willow_magenta", () -> basket(DyeColor.MAGENTA));
     public static final RegistryObject<Block> BASKET_WILLOW_PINK =
-            registerBlock("basket_willow_pink", () -> basket(DyeColor.PINK));
+            registerBlockWithoutBlockItem("basket_willow_pink", () -> basket(DyeColor.PINK));
     public static final RegistryObject<Block> BASKET_DEAD_WHITE =
-            registerBlock("basket_dead_white", () -> basket(DyeColor.WHITE));
+            registerBlockWithoutBlockItem("basket_dead_white", () -> basket(DyeColor.WHITE));
     public static final RegistryObject<Block> BASKET_DEAD_LIGHT_GRAY =
-            registerBlock("basket_dead_light_gray", () -> basket(DyeColor.LIGHT_GRAY));
+            registerBlockWithoutBlockItem("basket_dead_light_gray", () -> basket(DyeColor.LIGHT_GRAY));
     public static final RegistryObject<Block> BASKET_DEAD_GRAY =
-            registerBlock("basket_dead_gray", () -> basket(DyeColor.GRAY));
+            registerBlockWithoutBlockItem("basket_dead_gray", () -> basket(DyeColor.GRAY));
     public static final RegistryObject<Block> BASKET_DEAD_BLACK =
-            registerBlock("basket_dead_black", () -> basket(DyeColor.BLACK));
+            registerBlockWithoutBlockItem("basket_dead_black", () -> basket(DyeColor.BLACK));
     public static final RegistryObject<Block> BASKET_DEAD_BROWN =
-            registerBlock("basket_dead_brown", () -> basket(DyeColor.BROWN));
+            registerBlockWithoutBlockItem("basket_dead_brown", () -> basket(DyeColor.BROWN));
     public static final RegistryObject<Block> BASKET_DEAD_RED =
-            registerBlock("basket_dead_red", () -> basket(DyeColor.RED));
+            registerBlockWithoutBlockItem("basket_dead_red", () -> basket(DyeColor.RED));
     public static final RegistryObject<Block> BASKET_DEAD_ORANGE =
-            registerBlock("basket_dead_orange", () -> basket(DyeColor.ORANGE));
+            registerBlockWithoutBlockItem("basket_dead_orange", () -> basket(DyeColor.ORANGE));
     public static final RegistryObject<Block> BASKET_DEAD_YELLOW =
-            registerBlock("basket_dead_yellow", () -> basket(DyeColor.YELLOW));
+            registerBlockWithoutBlockItem("basket_dead_yellow", () -> basket(DyeColor.YELLOW));
     public static final RegistryObject<Block> BASKET_DEAD_LIME =
-            registerBlock("basket_dead_lime", () -> basket(DyeColor.LIME));
+            registerBlockWithoutBlockItem("basket_dead_lime", () -> basket(DyeColor.LIME));
     public static final RegistryObject<Block> BASKET_DEAD_GREEN =
-            registerBlock("basket_dead_green", () -> basket(DyeColor.GREEN));
+            registerBlockWithoutBlockItem("basket_dead_green", () -> basket(DyeColor.GREEN));
     public static final RegistryObject<Block> BASKET_DEAD_CYAN =
-            registerBlock("basket_dead_cyan", () -> basket(DyeColor.CYAN));
+            registerBlockWithoutBlockItem("basket_dead_cyan", () -> basket(DyeColor.CYAN));
     public static final RegistryObject<Block> BASKET_DEAD_LIGHT_BLUE =
-            registerBlock("basket_dead_light_blue", () -> basket(DyeColor.LIGHT_BLUE));
+            registerBlockWithoutBlockItem("basket_dead_light_blue", () -> basket(DyeColor.LIGHT_BLUE));
     public static final RegistryObject<Block> BASKET_DEAD_BLUE =
-            registerBlock("basket_dead_blue", () -> basket(DyeColor.BLUE));
+            registerBlockWithoutBlockItem("basket_dead_blue", () -> basket(DyeColor.BLUE));
     public static final RegistryObject<Block> BASKET_DEAD_PURPLE =
-            registerBlock("basket_dead_purple", () -> basket(DyeColor.PURPLE));
+            registerBlockWithoutBlockItem("basket_dead_purple", () -> basket(DyeColor.PURPLE));
     public static final RegistryObject<Block> BASKET_DEAD_MAGENTA =
-            registerBlock("basket_dead_magenta", () -> basket(DyeColor.MAGENTA));
+            registerBlockWithoutBlockItem("basket_dead_magenta", () -> basket(DyeColor.MAGENTA));
     public static final RegistryObject<Block> BASKET_DEAD_PINK =
-            registerBlock("basket_dead_pink", () -> basket(DyeColor.PINK));
+            registerBlockWithoutBlockItem("basket_dead_pink", () -> basket(DyeColor.PINK));
     public static final RegistryObject<Block> BASKET_MAGIC_WHITE =
-            registerBlock("basket_magic_white", () -> basket(DyeColor.WHITE));
+            registerBlockWithoutBlockItem("basket_magic_white", () -> basket(DyeColor.WHITE));
     public static final RegistryObject<Block> BASKET_MAGIC_LIGHT_GRAY =
-            registerBlock("basket_magic_light_gray", () -> basket(DyeColor.LIGHT_GRAY));
+            registerBlockWithoutBlockItem("basket_magic_light_gray", () -> basket(DyeColor.LIGHT_GRAY));
     public static final RegistryObject<Block> BASKET_MAGIC_GRAY =
-            registerBlock("basket_magic_gray", () -> basket(DyeColor.GRAY));
+            registerBlockWithoutBlockItem("basket_magic_gray", () -> basket(DyeColor.GRAY));
     public static final RegistryObject<Block> BASKET_MAGIC_BLACK =
-            registerBlock("basket_magic_black", () -> basket(DyeColor.BLACK));
+            registerBlockWithoutBlockItem("basket_magic_black", () -> basket(DyeColor.BLACK));
     public static final RegistryObject<Block> BASKET_MAGIC_BROWN =
-            registerBlock("basket_magic_brown", () -> basket(DyeColor.BROWN));
+            registerBlockWithoutBlockItem("basket_magic_brown", () -> basket(DyeColor.BROWN));
     public static final RegistryObject<Block> BASKET_MAGIC_RED =
-            registerBlock("basket_magic_red", () -> basket(DyeColor.RED));
+            registerBlockWithoutBlockItem("basket_magic_red", () -> basket(DyeColor.RED));
     public static final RegistryObject<Block> BASKET_MAGIC_ORANGE =
-            registerBlock("basket_magic_orange", () -> basket(DyeColor.ORANGE));
+            registerBlockWithoutBlockItem("basket_magic_orange", () -> basket(DyeColor.ORANGE));
     public static final RegistryObject<Block> BASKET_MAGIC_YELLOW =
-            registerBlock("basket_magic_yellow", () -> basket(DyeColor.YELLOW));
+            registerBlockWithoutBlockItem("basket_magic_yellow", () -> basket(DyeColor.YELLOW));
     public static final RegistryObject<Block> BASKET_MAGIC_LIME =
-            registerBlock("basket_magic_lime", () -> basket(DyeColor.LIME));
+            registerBlockWithoutBlockItem("basket_magic_lime", () -> basket(DyeColor.LIME));
     public static final RegistryObject<Block> BASKET_MAGIC_GREEN =
-            registerBlock("basket_magic_green", () -> basket(DyeColor.GREEN));
+            registerBlockWithoutBlockItem("basket_magic_green", () -> basket(DyeColor.GREEN));
     public static final RegistryObject<Block> BASKET_MAGIC_CYAN =
-            registerBlock("basket_magic_cyan", () -> basket(DyeColor.CYAN));
+            registerBlockWithoutBlockItem("basket_magic_cyan", () -> basket(DyeColor.CYAN));
     public static final RegistryObject<Block> BASKET_MAGIC_LIGHT_BLUE =
-            registerBlock("basket_magic_light_blue", () -> basket(DyeColor.LIGHT_BLUE));
+            registerBlockWithoutBlockItem("basket_magic_light_blue", () -> basket(DyeColor.LIGHT_BLUE));
     public static final RegistryObject<Block> BASKET_MAGIC_BLUE =
-            registerBlock("basket_magic_blue", () -> basket(DyeColor.BLUE));
+            registerBlockWithoutBlockItem("basket_magic_blue", () -> basket(DyeColor.BLUE));
     public static final RegistryObject<Block> BASKET_MAGIC_PURPLE =
-            registerBlock("basket_magic_purple", () -> basket(DyeColor.PURPLE));
+            registerBlockWithoutBlockItem("basket_magic_purple", () -> basket(DyeColor.PURPLE));
     public static final RegistryObject<Block> BASKET_MAGIC_MAGENTA =
-            registerBlock("basket_magic_magenta", () -> basket(DyeColor.MAGENTA));
+            registerBlockWithoutBlockItem("basket_magic_magenta", () -> basket(DyeColor.MAGENTA));
     public static final RegistryObject<Block> BASKET_MAGIC_PINK =
-            registerBlock("basket_magic_pink", () -> basket(DyeColor.PINK));
+            registerBlockWithoutBlockItem("basket_magic_pink", () -> basket(DyeColor.PINK));
     public static final RegistryObject<Block> BASKET_UMBRAN_WHITE =
-            registerBlock("basket_umbran_white", () -> basket(DyeColor.WHITE));
+            registerBlockWithoutBlockItem("basket_umbran_white", () -> basket(DyeColor.WHITE));
     public static final RegistryObject<Block> BASKET_UMBRAN_LIGHT_GRAY =
-            registerBlock("basket_umbran_light_gray", () -> basket(DyeColor.LIGHT_GRAY));
+            registerBlockWithoutBlockItem("basket_umbran_light_gray", () -> basket(DyeColor.LIGHT_GRAY));
     public static final RegistryObject<Block> BASKET_UMBRAN_GRAY =
-            registerBlock("basket_umbran_gray", () -> basket(DyeColor.GRAY));
+            registerBlockWithoutBlockItem("basket_umbran_gray", () -> basket(DyeColor.GRAY));
     public static final RegistryObject<Block> BASKET_UMBRAN_BLACK =
-            registerBlock("basket_umbran_black", () -> basket(DyeColor.BLACK));
+            registerBlockWithoutBlockItem("basket_umbran_black", () -> basket(DyeColor.BLACK));
     public static final RegistryObject<Block> BASKET_UMBRAN_BROWN =
-            registerBlock("basket_umbran_brown", () -> basket(DyeColor.BROWN));
+            registerBlockWithoutBlockItem("basket_umbran_brown", () -> basket(DyeColor.BROWN));
     public static final RegistryObject<Block> BASKET_UMBRAN_RED =
-            registerBlock("basket_umbran_red", () -> basket(DyeColor.RED));
+            registerBlockWithoutBlockItem("basket_umbran_red", () -> basket(DyeColor.RED));
     public static final RegistryObject<Block> BASKET_UMBRAN_ORANGE =
-            registerBlock("basket_umbran_orange", () -> basket(DyeColor.ORANGE));
+            registerBlockWithoutBlockItem("basket_umbran_orange", () -> basket(DyeColor.ORANGE));
     public static final RegistryObject<Block> BASKET_UMBRAN_YELLOW =
-            registerBlock("basket_umbran_yellow", () -> basket(DyeColor.YELLOW));
+            registerBlockWithoutBlockItem("basket_umbran_yellow", () -> basket(DyeColor.YELLOW));
     public static final RegistryObject<Block> BASKET_UMBRAN_LIME =
-            registerBlock("basket_umbran_lime", () -> basket(DyeColor.LIME));
+            registerBlockWithoutBlockItem("basket_umbran_lime", () -> basket(DyeColor.LIME));
     public static final RegistryObject<Block> BASKET_UMBRAN_GREEN =
-            registerBlock("basket_umbran_green", () -> basket(DyeColor.GREEN));
+            registerBlockWithoutBlockItem("basket_umbran_green", () -> basket(DyeColor.GREEN));
     public static final RegistryObject<Block> BASKET_UMBRAN_CYAN =
-            registerBlock("basket_umbran_cyan", () -> basket(DyeColor.CYAN));
+            registerBlockWithoutBlockItem("basket_umbran_cyan", () -> basket(DyeColor.CYAN));
     public static final RegistryObject<Block> BASKET_UMBRAN_LIGHT_BLUE =
-            registerBlock("basket_umbran_light_blue", () -> basket(DyeColor.LIGHT_BLUE));
+            registerBlockWithoutBlockItem("basket_umbran_light_blue", () -> basket(DyeColor.LIGHT_BLUE));
     public static final RegistryObject<Block> BASKET_UMBRAN_BLUE =
-            registerBlock("basket_umbran_blue", () -> basket(DyeColor.BLUE));
+            registerBlockWithoutBlockItem("basket_umbran_blue", () -> basket(DyeColor.BLUE));
     public static final RegistryObject<Block> BASKET_UMBRAN_PURPLE =
-            registerBlock("basket_umbran_purple", () -> basket(DyeColor.PURPLE));
+            registerBlockWithoutBlockItem("basket_umbran_purple", () -> basket(DyeColor.PURPLE));
     public static final RegistryObject<Block> BASKET_UMBRAN_MAGENTA =
-            registerBlock("basket_umbran_magenta", () -> basket(DyeColor.MAGENTA));
+            registerBlockWithoutBlockItem("basket_umbran_magenta", () -> basket(DyeColor.MAGENTA));
     public static final RegistryObject<Block> BASKET_UMBRAN_PINK =
-            registerBlock("basket_umbran_pink", () -> basket(DyeColor.PINK));
+            registerBlockWithoutBlockItem("basket_umbran_pink", () -> basket(DyeColor.PINK));
     public static final RegistryObject<Block> BASKET_HELLBARK_WHITE =
-            registerBlock("basket_hellbark_white", () -> basket(DyeColor.WHITE));
+            registerBlockWithoutBlockItem("basket_hellbark_white", () -> basket(DyeColor.WHITE));
     public static final RegistryObject<Block> BASKET_HELLBARK_LIGHT_GRAY =
-            registerBlock("basket_hellbark_light_gray", () -> basket(DyeColor.LIGHT_GRAY));
+            registerBlockWithoutBlockItem("basket_hellbark_light_gray", () -> basket(DyeColor.LIGHT_GRAY));
     public static final RegistryObject<Block> BASKET_HELLBARK_GRAY =
-            registerBlock("basket_hellbark_gray", () -> basket(DyeColor.GRAY));
+            registerBlockWithoutBlockItem("basket_hellbark_gray", () -> basket(DyeColor.GRAY));
     public static final RegistryObject<Block> BASKET_HELLBARK_BLACK =
-            registerBlock("basket_hellbark_black", () -> basket(DyeColor.BLACK));
+            registerBlockWithoutBlockItem("basket_hellbark_black", () -> basket(DyeColor.BLACK));
     public static final RegistryObject<Block> BASKET_HELLBARK_BROWN =
-            registerBlock("basket_hellbark_brown", () -> basket(DyeColor.BROWN));
+            registerBlockWithoutBlockItem("basket_hellbark_brown", () -> basket(DyeColor.BROWN));
     public static final RegistryObject<Block> BASKET_HELLBARK_RED =
-            registerBlock("basket_hellbark_red", () -> basket(DyeColor.RED));
+            registerBlockWithoutBlockItem("basket_hellbark_red", () -> basket(DyeColor.RED));
     public static final RegistryObject<Block> BASKET_HELLBARK_ORANGE =
-            registerBlock("basket_hellbark_orange", () -> basket(DyeColor.ORANGE));
+            registerBlockWithoutBlockItem("basket_hellbark_orange", () -> basket(DyeColor.ORANGE));
     public static final RegistryObject<Block> BASKET_HELLBARK_YELLOW =
-            registerBlock("basket_hellbark_yellow", () -> basket(DyeColor.YELLOW));
+            registerBlockWithoutBlockItem("basket_hellbark_yellow", () -> basket(DyeColor.YELLOW));
     public static final RegistryObject<Block> BASKET_HELLBARK_LIME =
-            registerBlock("basket_hellbark_lime", () -> basket(DyeColor.LIME));
+            registerBlockWithoutBlockItem("basket_hellbark_lime", () -> basket(DyeColor.LIME));
     public static final RegistryObject<Block> BASKET_HELLBARK_GREEN =
-            registerBlock("basket_hellbark_green", () -> basket(DyeColor.GREEN));
+            registerBlockWithoutBlockItem("basket_hellbark_green", () -> basket(DyeColor.GREEN));
     public static final RegistryObject<Block> BASKET_HELLBARK_CYAN =
-            registerBlock("basket_hellbark_cyan", () -> basket(DyeColor.CYAN));
+            registerBlockWithoutBlockItem("basket_hellbark_cyan", () -> basket(DyeColor.CYAN));
     public static final RegistryObject<Block> BASKET_HELLBARK_LIGHT_BLUE =
-            registerBlock("basket_hellbark_light_blue", () -> basket(DyeColor.LIGHT_BLUE));
+            registerBlockWithoutBlockItem("basket_hellbark_light_blue", () -> basket(DyeColor.LIGHT_BLUE));
     public static final RegistryObject<Block> BASKET_HELLBARK_BLUE =
-            registerBlock("basket_hellbark_blue", () -> basket(DyeColor.BLUE));
+            registerBlockWithoutBlockItem("basket_hellbark_blue", () -> basket(DyeColor.BLUE));
     public static final RegistryObject<Block> BASKET_HELLBARK_PURPLE =
-            registerBlock("basket_hellbark_purple", () -> basket(DyeColor.PURPLE));
+            registerBlockWithoutBlockItem("basket_hellbark_purple", () -> basket(DyeColor.PURPLE));
     public static final RegistryObject<Block> BASKET_HELLBARK_MAGENTA =
-            registerBlock("basket_hellbark_magenta", () -> basket(DyeColor.MAGENTA));
+            registerBlockWithoutBlockItem("basket_hellbark_magenta", () -> basket(DyeColor.MAGENTA));
     public static final RegistryObject<Block> BASKET_HELLBARK_PINK =
-            registerBlock("basket_hellbark_pink", () -> basket(DyeColor.PINK));
+            registerBlockWithoutBlockItem("basket_hellbark_pink", () -> basket(DyeColor.PINK));
     public static final RegistryObject<Block> BASKET_COCONUT_WHITE =
-            registerBlock("basket_coconut_white", () -> basket(DyeColor.WHITE));
+            registerBlockWithoutBlockItem("basket_coconut_white", () -> basket(DyeColor.WHITE));
     public static final RegistryObject<Block> BASKET_COCONUT_LIGHT_GRAY =
-            registerBlock("basket_coconut_light_gray", () -> basket(DyeColor.LIGHT_GRAY));
+            registerBlockWithoutBlockItem("basket_coconut_light_gray", () -> basket(DyeColor.LIGHT_GRAY));
     public static final RegistryObject<Block> BASKET_COCONUT_GRAY =
-            registerBlock("basket_coconut_gray", () -> basket(DyeColor.GRAY));
+            registerBlockWithoutBlockItem("basket_coconut_gray", () -> basket(DyeColor.GRAY));
     public static final RegistryObject<Block> BASKET_COCONUT_BLACK =
-            registerBlock("basket_coconut_black", () -> basket(DyeColor.BLACK));
+            registerBlockWithoutBlockItem("basket_coconut_black", () -> basket(DyeColor.BLACK));
     public static final RegistryObject<Block> BASKET_COCONUT_BROWN =
-            registerBlock("basket_coconut_brown", () -> basket(DyeColor.BROWN));
+            registerBlockWithoutBlockItem("basket_coconut_brown", () -> basket(DyeColor.BROWN));
     public static final RegistryObject<Block> BASKET_COCONUT_RED =
-            registerBlock("basket_coconut_red", () -> basket(DyeColor.RED));
+            registerBlockWithoutBlockItem("basket_coconut_red", () -> basket(DyeColor.RED));
     public static final RegistryObject<Block> BASKET_COCONUT_ORANGE =
-            registerBlock("basket_coconut_orange", () -> basket(DyeColor.ORANGE));
+            registerBlockWithoutBlockItem("basket_coconut_orange", () -> basket(DyeColor.ORANGE));
     public static final RegistryObject<Block> BASKET_COCONUT_YELLOW =
-            registerBlock("basket_coconut_yellow", () -> basket(DyeColor.YELLOW));
+            registerBlockWithoutBlockItem("basket_coconut_yellow", () -> basket(DyeColor.YELLOW));
     public static final RegistryObject<Block> BASKET_COCONUT_LIME =
-            registerBlock("basket_coconut_lime", () -> basket(DyeColor.LIME));
+            registerBlockWithoutBlockItem("basket_coconut_lime", () -> basket(DyeColor.LIME));
     public static final RegistryObject<Block> BASKET_COCONUT_GREEN =
-            registerBlock("basket_coconut_green", () -> basket(DyeColor.GREEN));
+            registerBlockWithoutBlockItem("basket_coconut_green", () -> basket(DyeColor.GREEN));
     public static final RegistryObject<Block> BASKET_COCONUT_CYAN =
-            registerBlock("basket_coconut_cyan", () -> basket(DyeColor.CYAN));
+            registerBlockWithoutBlockItem("basket_coconut_cyan", () -> basket(DyeColor.CYAN));
     public static final RegistryObject<Block> BASKET_COCONUT_LIGHT_BLUE =
-            registerBlock("basket_coconut_light_blue", () -> basket(DyeColor.LIGHT_BLUE));
+            registerBlockWithoutBlockItem("basket_coconut_light_blue", () -> basket(DyeColor.LIGHT_BLUE));
     public static final RegistryObject<Block> BASKET_COCONUT_BLUE =
-            registerBlock("basket_coconut_blue", () -> basket(DyeColor.BLUE));
+            registerBlockWithoutBlockItem("basket_coconut_blue", () -> basket(DyeColor.BLUE));
     public static final RegistryObject<Block> BASKET_COCONUT_PURPLE =
-            registerBlock("basket_coconut_purple", () -> basket(DyeColor.PURPLE));
+            registerBlockWithoutBlockItem("basket_coconut_purple", () -> basket(DyeColor.PURPLE));
     public static final RegistryObject<Block> BASKET_COCONUT_MAGENTA =
-            registerBlock("basket_coconut_magenta", () -> basket(DyeColor.MAGENTA));
+            registerBlockWithoutBlockItem("basket_coconut_magenta", () -> basket(DyeColor.MAGENTA));
     public static final RegistryObject<Block> BASKET_COCONUT_PINK =
-            registerBlock("basket_coconut_pink", () -> basket(DyeColor.PINK));
+            registerBlockWithoutBlockItem("basket_coconut_pink", () -> basket(DyeColor.PINK));
     public static final RegistryObject<Block> BASKET_WALNUT_WHITE =
-            registerBlock("basket_walnut_white", () -> basket(DyeColor.WHITE));
+            registerBlockWithoutBlockItem("basket_walnut_white", () -> basket(DyeColor.WHITE));
     public static final RegistryObject<Block> BASKET_WALNUT_LIGHT_GRAY =
-            registerBlock("basket_walnut_light_gray", () -> basket(DyeColor.LIGHT_GRAY));
+            registerBlockWithoutBlockItem("basket_walnut_light_gray", () -> basket(DyeColor.LIGHT_GRAY));
     public static final RegistryObject<Block> BASKET_WALNUT_GRAY =
-            registerBlock("basket_walnut_gray", () -> basket(DyeColor.GRAY));
+            registerBlockWithoutBlockItem("basket_walnut_gray", () -> basket(DyeColor.GRAY));
     public static final RegistryObject<Block> BASKET_WALNUT_BLACK =
-            registerBlock("basket_walnut_black", () -> basket(DyeColor.BLACK));
+            registerBlockWithoutBlockItem("basket_walnut_black", () -> basket(DyeColor.BLACK));
     public static final RegistryObject<Block> BASKET_WALNUT_BROWN =
-            registerBlock("basket_walnut_brown", () -> basket(DyeColor.BROWN));
+            registerBlockWithoutBlockItem("basket_walnut_brown", () -> basket(DyeColor.BROWN));
     public static final RegistryObject<Block> BASKET_WALNUT_RED =
-            registerBlock("basket_walnut_red", () -> basket(DyeColor.RED));
+            registerBlockWithoutBlockItem("basket_walnut_red", () -> basket(DyeColor.RED));
     public static final RegistryObject<Block> BASKET_WALNUT_ORANGE =
-            registerBlock("basket_walnut_orange", () -> basket(DyeColor.ORANGE));
+            registerBlockWithoutBlockItem("basket_walnut_orange", () -> basket(DyeColor.ORANGE));
     public static final RegistryObject<Block> BASKET_WALNUT_YELLOW =
-            registerBlock("basket_walnut_yellow", () -> basket(DyeColor.YELLOW));
+            registerBlockWithoutBlockItem("basket_walnut_yellow", () -> basket(DyeColor.YELLOW));
     public static final RegistryObject<Block> BASKET_WALNUT_LIME =
-            registerBlock("basket_walnut_lime", () -> basket(DyeColor.LIME));
+            registerBlockWithoutBlockItem("basket_walnut_lime", () -> basket(DyeColor.LIME));
     public static final RegistryObject<Block> BASKET_WALNUT_GREEN =
-            registerBlock("basket_walnut_green", () -> basket(DyeColor.GREEN));
+            registerBlockWithoutBlockItem("basket_walnut_green", () -> basket(DyeColor.GREEN));
     public static final RegistryObject<Block> BASKET_WALNUT_CYAN =
-            registerBlock("basket_walnut_cyan", () -> basket(DyeColor.CYAN));
+            registerBlockWithoutBlockItem("basket_walnut_cyan", () -> basket(DyeColor.CYAN));
     public static final RegistryObject<Block> BASKET_WALNUT_LIGHT_BLUE =
-            registerBlock("basket_walnut_light_blue", () -> basket(DyeColor.LIGHT_BLUE));
+            registerBlockWithoutBlockItem("basket_walnut_light_blue", () -> basket(DyeColor.LIGHT_BLUE));
     public static final RegistryObject<Block> BASKET_WALNUT_BLUE =
-            registerBlock("basket_walnut_blue", () -> basket(DyeColor.BLUE));
+            registerBlockWithoutBlockItem("basket_walnut_blue", () -> basket(DyeColor.BLUE));
     public static final RegistryObject<Block> BASKET_WALNUT_PURPLE =
-            registerBlock("basket_walnut_purple", () -> basket(DyeColor.PURPLE));
+            registerBlockWithoutBlockItem("basket_walnut_purple", () -> basket(DyeColor.PURPLE));
     public static final RegistryObject<Block> BASKET_WALNUT_MAGENTA =
-            registerBlock("basket_walnut_magenta", () -> basket(DyeColor.MAGENTA));
+            registerBlockWithoutBlockItem("basket_walnut_magenta", () -> basket(DyeColor.MAGENTA));
     public static final RegistryObject<Block> BASKET_WALNUT_PINK =
-            registerBlock("basket_walnut_pink", () -> basket(DyeColor.PINK));
+            registerBlockWithoutBlockItem("basket_walnut_pink", () -> basket(DyeColor.PINK));
     public static final RegistryObject<Block> BASKET_AZALEA_WHITE =
-            registerBlock("basket_azalea_white", () -> basket(DyeColor.WHITE));
+            registerBlockWithoutBlockItem("basket_azalea_white", () -> basket(DyeColor.WHITE));
     public static final RegistryObject<Block> BASKET_AZALEA_LIGHT_GRAY =
-            registerBlock("basket_azalea_light_gray", () -> basket(DyeColor.LIGHT_GRAY));
+            registerBlockWithoutBlockItem("basket_azalea_light_gray", () -> basket(DyeColor.LIGHT_GRAY));
     public static final RegistryObject<Block> BASKET_AZALEA_GRAY =
-            registerBlock("basket_azalea_gray", () -> basket(DyeColor.GRAY));
+            registerBlockWithoutBlockItem("basket_azalea_gray", () -> basket(DyeColor.GRAY));
     public static final RegistryObject<Block> BASKET_AZALEA_BLACK =
-            registerBlock("basket_azalea_black", () -> basket(DyeColor.BLACK));
+            registerBlockWithoutBlockItem("basket_azalea_black", () -> basket(DyeColor.BLACK));
     public static final RegistryObject<Block> BASKET_AZALEA_BROWN =
-            registerBlock("basket_azalea_brown", () -> basket(DyeColor.BROWN));
+            registerBlockWithoutBlockItem("basket_azalea_brown", () -> basket(DyeColor.BROWN));
     public static final RegistryObject<Block> BASKET_AZALEA_RED =
-            registerBlock("basket_azalea_red", () -> basket(DyeColor.RED));
+            registerBlockWithoutBlockItem("basket_azalea_red", () -> basket(DyeColor.RED));
     public static final RegistryObject<Block> BASKET_AZALEA_ORANGE =
-            registerBlock("basket_azalea_orange", () -> basket(DyeColor.ORANGE));
+            registerBlockWithoutBlockItem("basket_azalea_orange", () -> basket(DyeColor.ORANGE));
     public static final RegistryObject<Block> BASKET_AZALEA_YELLOW =
-            registerBlock("basket_azalea_yellow", () -> basket(DyeColor.YELLOW));
+            registerBlockWithoutBlockItem("basket_azalea_yellow", () -> basket(DyeColor.YELLOW));
     public static final RegistryObject<Block> BASKET_AZALEA_LIME =
-            registerBlock("basket_azalea_lime", () -> basket(DyeColor.LIME));
+            registerBlockWithoutBlockItem("basket_azalea_lime", () -> basket(DyeColor.LIME));
     public static final RegistryObject<Block> BASKET_AZALEA_GREEN =
-            registerBlock("basket_azalea_green", () -> basket(DyeColor.GREEN));
+            registerBlockWithoutBlockItem("basket_azalea_green", () -> basket(DyeColor.GREEN));
     public static final RegistryObject<Block> BASKET_AZALEA_CYAN =
-            registerBlock("basket_azalea_cyan", () -> basket(DyeColor.CYAN));
+            registerBlockWithoutBlockItem("basket_azalea_cyan", () -> basket(DyeColor.CYAN));
     public static final RegistryObject<Block> BASKET_AZALEA_LIGHT_BLUE =
-            registerBlock("basket_azalea_light_blue", () -> basket(DyeColor.LIGHT_BLUE));
+            registerBlockWithoutBlockItem("basket_azalea_light_blue", () -> basket(DyeColor.LIGHT_BLUE));
     public static final RegistryObject<Block> BASKET_AZALEA_BLUE =
-            registerBlock("basket_azalea_blue", () -> basket(DyeColor.BLUE));
+            registerBlockWithoutBlockItem("basket_azalea_blue", () -> basket(DyeColor.BLUE));
     public static final RegistryObject<Block> BASKET_AZALEA_PURPLE =
-            registerBlock("basket_azalea_purple", () -> basket(DyeColor.PURPLE));
+            registerBlockWithoutBlockItem("basket_azalea_purple", () -> basket(DyeColor.PURPLE));
     public static final RegistryObject<Block> BASKET_AZALEA_MAGENTA =
-            registerBlock("basket_azalea_magenta", () -> basket(DyeColor.MAGENTA));
+            registerBlockWithoutBlockItem("basket_azalea_magenta", () -> basket(DyeColor.MAGENTA));
     public static final RegistryObject<Block> BASKET_AZALEA_PINK =
-            registerBlock("basket_azalea_pink", () -> basket(DyeColor.PINK));
+            registerBlockWithoutBlockItem("basket_azalea_pink", () -> basket(DyeColor.PINK));
     public static final RegistryObject<Block> BASKET_FLOWERING_AZALEA_WHITE =
-            registerBlock("basket_flowering_azalea_white", () -> basket(DyeColor.WHITE));
+            registerBlockWithoutBlockItem("basket_flowering_azalea_white", () -> basket(DyeColor.WHITE));
     public static final RegistryObject<Block> BASKET_FLOWERING_AZALEA_LIGHT_GRAY =
-            registerBlock("basket_flowering_azalea_light_gray", () -> basket(DyeColor.LIGHT_GRAY));
+            registerBlockWithoutBlockItem("basket_flowering_azalea_light_gray", () -> basket(DyeColor.LIGHT_GRAY));
     public static final RegistryObject<Block> BASKET_FLOWERING_AZALEA_GRAY =
-            registerBlock("basket_flowering_azalea_gray", () -> basket(DyeColor.GRAY));
+            registerBlockWithoutBlockItem("basket_flowering_azalea_gray", () -> basket(DyeColor.GRAY));
     public static final RegistryObject<Block> BASKET_FLOWERING_AZALEA_BLACK =
-            registerBlock("basket_flowering_azalea_black", () -> basket(DyeColor.BLACK));
+            registerBlockWithoutBlockItem("basket_flowering_azalea_black", () -> basket(DyeColor.BLACK));
     public static final RegistryObject<Block> BASKET_FLOWERING_AZALEA_BROWN =
-            registerBlock("basket_flowering_azalea_brown", () -> basket(DyeColor.BROWN));
+            registerBlockWithoutBlockItem("basket_flowering_azalea_brown", () -> basket(DyeColor.BROWN));
     public static final RegistryObject<Block> BASKET_FLOWERING_AZALEA_RED =
-            registerBlock("basket_flowering_azalea_red", () -> basket(DyeColor.RED));
+            registerBlockWithoutBlockItem("basket_flowering_azalea_red", () -> basket(DyeColor.RED));
     public static final RegistryObject<Block> BASKET_FLOWERING_AZALEA_ORANGE =
-            registerBlock("basket_flowering_azalea_orange", () -> basket(DyeColor.ORANGE));
+            registerBlockWithoutBlockItem("basket_flowering_azalea_orange", () -> basket(DyeColor.ORANGE));
     public static final RegistryObject<Block> BASKET_FLOWERING_AZALEA_YELLOW =
-            registerBlock("basket_flowering_azalea_yellow", () -> basket(DyeColor.YELLOW));
+            registerBlockWithoutBlockItem("basket_flowering_azalea_yellow", () -> basket(DyeColor.YELLOW));
     public static final RegistryObject<Block> BASKET_FLOWERING_AZALEA_LIME =
-            registerBlock("basket_flowering_azalea_lime", () -> basket(DyeColor.LIME));
+            registerBlockWithoutBlockItem("basket_flowering_azalea_lime", () -> basket(DyeColor.LIME));
     public static final RegistryObject<Block> BASKET_FLOWERING_AZALEA_GREEN =
-            registerBlock("basket_flowering_azalea_green", () -> basket(DyeColor.GREEN));
+            registerBlockWithoutBlockItem("basket_flowering_azalea_green", () -> basket(DyeColor.GREEN));
     public static final RegistryObject<Block> BASKET_FLOWERING_AZALEA_CYAN =
-            registerBlock("basket_flowering_azalea_cyan", () -> basket(DyeColor.CYAN));
+            registerBlockWithoutBlockItem("basket_flowering_azalea_cyan", () -> basket(DyeColor.CYAN));
     public static final RegistryObject<Block> BASKET_FLOWERING_AZALEA_LIGHT_BLUE =
-            registerBlock("basket_flowering_azalea_light_blue", () -> basket(DyeColor.LIGHT_BLUE));
+            registerBlockWithoutBlockItem("basket_flowering_azalea_light_blue", () -> basket(DyeColor.LIGHT_BLUE));
     public static final RegistryObject<Block> BASKET_FLOWERING_AZALEA_BLUE =
-            registerBlock("basket_flowering_azalea_blue", () -> basket(DyeColor.BLUE));
+            registerBlockWithoutBlockItem("basket_flowering_azalea_blue", () -> basket(DyeColor.BLUE));
     public static final RegistryObject<Block> BASKET_FLOWERING_AZALEA_PURPLE =
-            registerBlock("basket_flowering_azalea_purple", () -> basket(DyeColor.PURPLE));
+            registerBlockWithoutBlockItem("basket_flowering_azalea_purple", () -> basket(DyeColor.PURPLE));
     public static final RegistryObject<Block> BASKET_FLOWERING_AZALEA_MAGENTA =
-            registerBlock("basket_flowering_azalea_magenta", () -> basket(DyeColor.MAGENTA));
+            registerBlockWithoutBlockItem("basket_flowering_azalea_magenta", () -> basket(DyeColor.MAGENTA));
     public static final RegistryObject<Block> BASKET_FLOWERING_AZALEA_PINK =
-            registerBlock("basket_flowering_azalea_pink", () -> basket(DyeColor.PINK));
+            registerBlockWithoutBlockItem("basket_flowering_azalea_pink", () -> basket(DyeColor.PINK));
     public static final RegistryObject<Block> BASKET_AETHER_SKYROOT_WHITE =
-            registerBlock("basket_aether_skyroot_white", () -> basket(DyeColor.WHITE));
+            registerBlockWithoutBlockItem("basket_aether_skyroot_white", () -> basket(DyeColor.WHITE));
     public static final RegistryObject<Block> BASKET_AETHER_SKYROOT_LIGHT_GRAY =
-            registerBlock("basket_aether_skyroot_light_gray", () -> basket(DyeColor.LIGHT_GRAY));
+            registerBlockWithoutBlockItem("basket_aether_skyroot_light_gray", () -> basket(DyeColor.LIGHT_GRAY));
     public static final RegistryObject<Block> BASKET_AETHER_SKYROOT_GRAY =
-            registerBlock("basket_aether_skyroot_gray", () -> basket(DyeColor.GRAY));
+            registerBlockWithoutBlockItem("basket_aether_skyroot_gray", () -> basket(DyeColor.GRAY));
     public static final RegistryObject<Block> BASKET_AETHER_SKYROOT_BLACK =
-            registerBlock("basket_aether_skyroot_black", () -> basket(DyeColor.BLACK));
+            registerBlockWithoutBlockItem("basket_aether_skyroot_black", () -> basket(DyeColor.BLACK));
     public static final RegistryObject<Block> BASKET_AETHER_SKYROOT_BROWN =
-            registerBlock("basket_aether_skyroot_brown", () -> basket(DyeColor.BROWN));
+            registerBlockWithoutBlockItem("basket_aether_skyroot_brown", () -> basket(DyeColor.BROWN));
     public static final RegistryObject<Block> BASKET_AETHER_SKYROOT_RED =
-            registerBlock("basket_aether_skyroot_red", () -> basket(DyeColor.RED));
+            registerBlockWithoutBlockItem("basket_aether_skyroot_red", () -> basket(DyeColor.RED));
     public static final RegistryObject<Block> BASKET_AETHER_SKYROOT_ORANGE =
-            registerBlock("basket_aether_skyroot_orange", () -> basket(DyeColor.ORANGE));
+            registerBlockWithoutBlockItem("basket_aether_skyroot_orange", () -> basket(DyeColor.ORANGE));
     public static final RegistryObject<Block> BASKET_AETHER_SKYROOT_YELLOW =
-            registerBlock("basket_aether_skyroot_yellow", () -> basket(DyeColor.YELLOW));
+            registerBlockWithoutBlockItem("basket_aether_skyroot_yellow", () -> basket(DyeColor.YELLOW));
     public static final RegistryObject<Block> BASKET_AETHER_SKYROOT_LIME =
-            registerBlock("basket_aether_skyroot_lime", () -> basket(DyeColor.LIME));
+            registerBlockWithoutBlockItem("basket_aether_skyroot_lime", () -> basket(DyeColor.LIME));
     public static final RegistryObject<Block> BASKET_AETHER_SKYROOT_GREEN =
-            registerBlock("basket_aether_skyroot_green", () -> basket(DyeColor.GREEN));
+            registerBlockWithoutBlockItem("basket_aether_skyroot_green", () -> basket(DyeColor.GREEN));
     public static final RegistryObject<Block> BASKET_AETHER_SKYROOT_CYAN =
-            registerBlock("basket_aether_skyroot_cyan", () -> basket(DyeColor.CYAN));
+            registerBlockWithoutBlockItem("basket_aether_skyroot_cyan", () -> basket(DyeColor.CYAN));
     public static final RegistryObject<Block> BASKET_AETHER_SKYROOT_LIGHT_BLUE =
-            registerBlock("basket_aether_skyroot_light_blue", () -> basket(DyeColor.LIGHT_BLUE));
+            registerBlockWithoutBlockItem("basket_aether_skyroot_light_blue", () -> basket(DyeColor.LIGHT_BLUE));
     public static final RegistryObject<Block> BASKET_AETHER_SKYROOT_BLUE =
-            registerBlock("basket_aether_skyroot_blue", () -> basket(DyeColor.BLUE));
+            registerBlockWithoutBlockItem("basket_aether_skyroot_blue", () -> basket(DyeColor.BLUE));
     public static final RegistryObject<Block> BASKET_AETHER_SKYROOT_PURPLE =
-            registerBlock("basket_aether_skyroot_purple", () -> basket(DyeColor.PURPLE));
+            registerBlockWithoutBlockItem("basket_aether_skyroot_purple", () -> basket(DyeColor.PURPLE));
     public static final RegistryObject<Block> BASKET_AETHER_SKYROOT_MAGENTA =
-            registerBlock("basket_aether_skyroot_magenta", () -> basket(DyeColor.MAGENTA));
+            registerBlockWithoutBlockItem("basket_aether_skyroot_magenta", () -> basket(DyeColor.MAGENTA));
     public static final RegistryObject<Block> BASKET_AETHER_SKYROOT_PINK =
-            registerBlock("basket_aether_skyroot_pink", () -> basket(DyeColor.PINK));
+            registerBlockWithoutBlockItem("basket_aether_skyroot_pink", () -> basket(DyeColor.PINK));
     public static final RegistryObject<Block> BASKET_PREAM_WHITE =
-            registerBlock("basket_pream_white", () -> basket(DyeColor.WHITE));
+            registerBlockWithoutBlockItem("basket_pream_white", () -> basket(DyeColor.WHITE));
     public static final RegistryObject<Block> BASKET_PREAM_LIGHT_GRAY =
-            registerBlock("basket_pream_light_gray", () -> basket(DyeColor.LIGHT_GRAY));
+            registerBlockWithoutBlockItem("basket_pream_light_gray", () -> basket(DyeColor.LIGHT_GRAY));
     public static final RegistryObject<Block> BASKET_PREAM_GRAY =
-            registerBlock("basket_pream_gray", () -> basket(DyeColor.GRAY));
+            registerBlockWithoutBlockItem("basket_pream_gray", () -> basket(DyeColor.GRAY));
     public static final RegistryObject<Block> BASKET_PREAM_BLACK =
-            registerBlock("basket_pream_black", () -> basket(DyeColor.BLACK));
+            registerBlockWithoutBlockItem("basket_pream_black", () -> basket(DyeColor.BLACK));
     public static final RegistryObject<Block> BASKET_PREAM_BROWN =
-            registerBlock("basket_pream_brown", () -> basket(DyeColor.BROWN));
+            registerBlockWithoutBlockItem("basket_pream_brown", () -> basket(DyeColor.BROWN));
     public static final RegistryObject<Block> BASKET_PREAM_RED =
-            registerBlock("basket_pream_red", () -> basket(DyeColor.RED));
+            registerBlockWithoutBlockItem("basket_pream_red", () -> basket(DyeColor.RED));
     public static final RegistryObject<Block> BASKET_PREAM_ORANGE =
-            registerBlock("basket_pream_orange", () -> basket(DyeColor.ORANGE));
+            registerBlockWithoutBlockItem("basket_pream_orange", () -> basket(DyeColor.ORANGE));
     public static final RegistryObject<Block> BASKET_PREAM_YELLOW =
-            registerBlock("basket_pream_yellow", () -> basket(DyeColor.YELLOW));
+            registerBlockWithoutBlockItem("basket_pream_yellow", () -> basket(DyeColor.YELLOW));
     public static final RegistryObject<Block> BASKET_PREAM_LIME =
-            registerBlock("basket_pream_lime", () -> basket(DyeColor.LIME));
+            registerBlockWithoutBlockItem("basket_pream_lime", () -> basket(DyeColor.LIME));
     public static final RegistryObject<Block> BASKET_PREAM_GREEN =
-            registerBlock("basket_pream_green", () -> basket(DyeColor.GREEN));
+            registerBlockWithoutBlockItem("basket_pream_green", () -> basket(DyeColor.GREEN));
     public static final RegistryObject<Block> BASKET_PREAM_CYAN =
-            registerBlock("basket_pream_cyan", () -> basket(DyeColor.CYAN));
+            registerBlockWithoutBlockItem("basket_pream_cyan", () -> basket(DyeColor.CYAN));
     public static final RegistryObject<Block> BASKET_PREAM_LIGHT_BLUE =
-            registerBlock("basket_pream_light_blue", () -> basket(DyeColor.LIGHT_BLUE));
+            registerBlockWithoutBlockItem("basket_pream_light_blue", () -> basket(DyeColor.LIGHT_BLUE));
     public static final RegistryObject<Block> BASKET_PREAM_BLUE =
-            registerBlock("basket_pream_blue", () -> basket(DyeColor.BLUE));
+            registerBlockWithoutBlockItem("basket_pream_blue", () -> basket(DyeColor.BLUE));
     public static final RegistryObject<Block> BASKET_PREAM_PURPLE =
-            registerBlock("basket_pream_purple", () -> basket(DyeColor.PURPLE));
+            registerBlockWithoutBlockItem("basket_pream_purple", () -> basket(DyeColor.PURPLE));
     public static final RegistryObject<Block> BASKET_PREAM_MAGENTA =
-            registerBlock("basket_pream_magenta", () -> basket(DyeColor.MAGENTA));
+            registerBlockWithoutBlockItem("basket_pream_magenta", () -> basket(DyeColor.MAGENTA));
     public static final RegistryObject<Block> BASKET_PREAM_PINK =
-            registerBlock("basket_pream_pink", () -> basket(DyeColor.PINK));
+            registerBlockWithoutBlockItem("basket_pream_pink", () -> basket(DyeColor.PINK));
     public static final RegistryObject<Block> BASKET_EBONY_WHITE =
-            registerBlock("basket_ebony_white", () -> basket(DyeColor.WHITE));
+            registerBlockWithoutBlockItem("basket_ebony_white", () -> basket(DyeColor.WHITE));
     public static final RegistryObject<Block> BASKET_EBONY_LIGHT_GRAY =
-            registerBlock("basket_ebony_light_gray", () -> basket(DyeColor.LIGHT_GRAY));
+            registerBlockWithoutBlockItem("basket_ebony_light_gray", () -> basket(DyeColor.LIGHT_GRAY));
     public static final RegistryObject<Block> BASKET_EBONY_GRAY =
-            registerBlock("basket_ebony_gray", () -> basket(DyeColor.GRAY));
+            registerBlockWithoutBlockItem("basket_ebony_gray", () -> basket(DyeColor.GRAY));
     public static final RegistryObject<Block> BASKET_EBONY_BLACK =
-            registerBlock("basket_ebony_black", () -> basket(DyeColor.BLACK));
+            registerBlockWithoutBlockItem("basket_ebony_black", () -> basket(DyeColor.BLACK));
     public static final RegistryObject<Block> BASKET_EBONY_BROWN =
-            registerBlock("basket_ebony_brown", () -> basket(DyeColor.BROWN));
+            registerBlockWithoutBlockItem("basket_ebony_brown", () -> basket(DyeColor.BROWN));
     public static final RegistryObject<Block> BASKET_EBONY_RED =
-            registerBlock("basket_ebony_red", () -> basket(DyeColor.RED));
+            registerBlockWithoutBlockItem("basket_ebony_red", () -> basket(DyeColor.RED));
     public static final RegistryObject<Block> BASKET_EBONY_ORANGE =
-            registerBlock("basket_ebony_orange", () -> basket(DyeColor.ORANGE));
+            registerBlockWithoutBlockItem("basket_ebony_orange", () -> basket(DyeColor.ORANGE));
     public static final RegistryObject<Block> BASKET_EBONY_YELLOW =
-            registerBlock("basket_ebony_yellow", () -> basket(DyeColor.YELLOW));
+            registerBlockWithoutBlockItem("basket_ebony_yellow", () -> basket(DyeColor.YELLOW));
     public static final RegistryObject<Block> BASKET_EBONY_LIME =
-            registerBlock("basket_ebony_lime", () -> basket(DyeColor.LIME));
+            registerBlockWithoutBlockItem("basket_ebony_lime", () -> basket(DyeColor.LIME));
     public static final RegistryObject<Block> BASKET_EBONY_GREEN =
-            registerBlock("basket_ebony_green", () -> basket(DyeColor.GREEN));
+            registerBlockWithoutBlockItem("basket_ebony_green", () -> basket(DyeColor.GREEN));
     public static final RegistryObject<Block> BASKET_EBONY_CYAN =
-            registerBlock("basket_ebony_cyan", () -> basket(DyeColor.CYAN));
+            registerBlockWithoutBlockItem("basket_ebony_cyan", () -> basket(DyeColor.CYAN));
     public static final RegistryObject<Block> BASKET_EBONY_LIGHT_BLUE =
-            registerBlock("basket_ebony_light_blue", () -> basket(DyeColor.LIGHT_BLUE));
+            registerBlockWithoutBlockItem("basket_ebony_light_blue", () -> basket(DyeColor.LIGHT_BLUE));
     public static final RegistryObject<Block> BASKET_EBONY_BLUE =
-            registerBlock("basket_ebony_blue", () -> basket(DyeColor.BLUE));
+            registerBlockWithoutBlockItem("basket_ebony_blue", () -> basket(DyeColor.BLUE));
     public static final RegistryObject<Block> BASKET_EBONY_PURPLE =
-            registerBlock("basket_ebony_purple", () -> basket(DyeColor.PURPLE));
+            registerBlockWithoutBlockItem("basket_ebony_purple", () -> basket(DyeColor.PURPLE));
     public static final RegistryObject<Block> BASKET_EBONY_MAGENTA =
-            registerBlock("basket_ebony_magenta", () -> basket(DyeColor.MAGENTA));
+            registerBlockWithoutBlockItem("basket_ebony_magenta", () -> basket(DyeColor.MAGENTA));
     public static final RegistryObject<Block> BASKET_EBONY_PINK =
-            registerBlock("basket_ebony_pink", () -> basket(DyeColor.PINK));
+            registerBlockWithoutBlockItem("basket_ebony_pink", () -> basket(DyeColor.PINK));
     public static final RegistryObject<Block> BASKET_CHORUS_NEST_WHITE =
-            registerBlock("basket_chorus_nest_white", () -> basket(DyeColor.WHITE));
+            registerBlockWithoutBlockItem("basket_chorus_nest_white", () -> basket(DyeColor.WHITE));
     public static final RegistryObject<Block> BASKET_CHORUS_NEST_LIGHT_GRAY =
-            registerBlock("basket_chorus_nest_light_gray", () -> basket(DyeColor.LIGHT_GRAY));
+            registerBlockWithoutBlockItem("basket_chorus_nest_light_gray", () -> basket(DyeColor.LIGHT_GRAY));
     public static final RegistryObject<Block> BASKET_CHORUS_NEST_GRAY =
-            registerBlock("basket_chorus_nest_gray", () -> basket(DyeColor.GRAY));
+            registerBlockWithoutBlockItem("basket_chorus_nest_gray", () -> basket(DyeColor.GRAY));
     public static final RegistryObject<Block> BASKET_CHORUS_NEST_BLACK =
-            registerBlock("basket_chorus_nest_black", () -> basket(DyeColor.BLACK));
+            registerBlockWithoutBlockItem("basket_chorus_nest_black", () -> basket(DyeColor.BLACK));
     public static final RegistryObject<Block> BASKET_CHORUS_NEST_BROWN =
-            registerBlock("basket_chorus_nest_brown", () -> basket(DyeColor.BROWN));
+            registerBlockWithoutBlockItem("basket_chorus_nest_brown", () -> basket(DyeColor.BROWN));
     public static final RegistryObject<Block> BASKET_CHORUS_NEST_RED =
-            registerBlock("basket_chorus_nest_red", () -> basket(DyeColor.RED));
+            registerBlockWithoutBlockItem("basket_chorus_nest_red", () -> basket(DyeColor.RED));
     public static final RegistryObject<Block> BASKET_CHORUS_NEST_ORANGE =
-            registerBlock("basket_chorus_nest_orange", () -> basket(DyeColor.ORANGE));
+            registerBlockWithoutBlockItem("basket_chorus_nest_orange", () -> basket(DyeColor.ORANGE));
     public static final RegistryObject<Block> BASKET_CHORUS_NEST_YELLOW =
-            registerBlock("basket_chorus_nest_yellow", () -> basket(DyeColor.YELLOW));
+            registerBlockWithoutBlockItem("basket_chorus_nest_yellow", () -> basket(DyeColor.YELLOW));
     public static final RegistryObject<Block> BASKET_CHORUS_NEST_LIME =
-            registerBlock("basket_chorus_nest_lime", () -> basket(DyeColor.LIME));
+            registerBlockWithoutBlockItem("basket_chorus_nest_lime", () -> basket(DyeColor.LIME));
     public static final RegistryObject<Block> BASKET_CHORUS_NEST_GREEN =
-            registerBlock("basket_chorus_nest_green", () -> basket(DyeColor.GREEN));
+            registerBlockWithoutBlockItem("basket_chorus_nest_green", () -> basket(DyeColor.GREEN));
     public static final RegistryObject<Block> BASKET_CHORUS_NEST_CYAN =
-            registerBlock("basket_chorus_nest_cyan", () -> basket(DyeColor.CYAN));
+            registerBlockWithoutBlockItem("basket_chorus_nest_cyan", () -> basket(DyeColor.CYAN));
     public static final RegistryObject<Block> BASKET_CHORUS_NEST_LIGHT_BLUE =
-            registerBlock("basket_chorus_nest_light_blue", () -> basket(DyeColor.LIGHT_BLUE));
+            registerBlockWithoutBlockItem("basket_chorus_nest_light_blue", () -> basket(DyeColor.LIGHT_BLUE));
     public static final RegistryObject<Block> BASKET_CHORUS_NEST_BLUE =
-            registerBlock("basket_chorus_nest_blue", () -> basket(DyeColor.BLUE));
+            registerBlockWithoutBlockItem("basket_chorus_nest_blue", () -> basket(DyeColor.BLUE));
     public static final RegistryObject<Block> BASKET_CHORUS_NEST_PURPLE =
-            registerBlock("basket_chorus_nest_purple", () -> basket(DyeColor.PURPLE));
+            registerBlockWithoutBlockItem("basket_chorus_nest_purple", () -> basket(DyeColor.PURPLE));
     public static final RegistryObject<Block> BASKET_CHORUS_NEST_MAGENTA =
-            registerBlock("basket_chorus_nest_magenta", () -> basket(DyeColor.MAGENTA));
+            registerBlockWithoutBlockItem("basket_chorus_nest_magenta", () -> basket(DyeColor.MAGENTA));
     public static final RegistryObject<Block> BASKET_CHORUS_NEST_PINK =
-            registerBlock("basket_chorus_nest_pink", () -> basket(DyeColor.PINK));
+            registerBlockWithoutBlockItem("basket_chorus_nest_pink", () -> basket(DyeColor.PINK));
     public static final RegistryObject<Block> BASKET_BLOODSHROOM_WHITE =
-            registerBlock("basket_bloodshroom_white", () -> basket(DyeColor.WHITE));
+            registerBlockWithoutBlockItem("basket_bloodshroom_white", () -> basket(DyeColor.WHITE));
     public static final RegistryObject<Block> BASKET_BLOODSHROOM_LIGHT_GRAY =
-            registerBlock("basket_bloodshroom_light_gray", () -> basket(DyeColor.LIGHT_GRAY));
+            registerBlockWithoutBlockItem("basket_bloodshroom_light_gray", () -> basket(DyeColor.LIGHT_GRAY));
     public static final RegistryObject<Block> BASKET_BLOODSHROOM_GRAY =
-            registerBlock("basket_bloodshroom_gray", () -> basket(DyeColor.GRAY));
+            registerBlockWithoutBlockItem("basket_bloodshroom_gray", () -> basket(DyeColor.GRAY));
     public static final RegistryObject<Block> BASKET_BLOODSHROOM_BLACK =
-            registerBlock("basket_bloodshroom_black", () -> basket(DyeColor.BLACK));
+            registerBlockWithoutBlockItem("basket_bloodshroom_black", () -> basket(DyeColor.BLACK));
     public static final RegistryObject<Block> BASKET_BLOODSHROOM_BROWN =
-            registerBlock("basket_bloodshroom_brown", () -> basket(DyeColor.BROWN));
+            registerBlockWithoutBlockItem("basket_bloodshroom_brown", () -> basket(DyeColor.BROWN));
     public static final RegistryObject<Block> BASKET_BLOODSHROOM_RED =
-            registerBlock("basket_bloodshroom_red", () -> basket(DyeColor.RED));
+            registerBlockWithoutBlockItem("basket_bloodshroom_red", () -> basket(DyeColor.RED));
     public static final RegistryObject<Block> BASKET_BLOODSHROOM_ORANGE =
-            registerBlock("basket_bloodshroom_orange", () -> basket(DyeColor.ORANGE));
+            registerBlockWithoutBlockItem("basket_bloodshroom_orange", () -> basket(DyeColor.ORANGE));
     public static final RegistryObject<Block> BASKET_BLOODSHROOM_YELLOW =
-            registerBlock("basket_bloodshroom_yellow", () -> basket(DyeColor.YELLOW));
+            registerBlockWithoutBlockItem("basket_bloodshroom_yellow", () -> basket(DyeColor.YELLOW));
     public static final RegistryObject<Block> BASKET_BLOODSHROOM_LIME =
-            registerBlock("basket_bloodshroom_lime", () -> basket(DyeColor.LIME));
+            registerBlockWithoutBlockItem("basket_bloodshroom_lime", () -> basket(DyeColor.LIME));
     public static final RegistryObject<Block> BASKET_BLOODSHROOM_GREEN =
-            registerBlock("basket_bloodshroom_green", () -> basket(DyeColor.GREEN));
+            registerBlockWithoutBlockItem("basket_bloodshroom_green", () -> basket(DyeColor.GREEN));
     public static final RegistryObject<Block> BASKET_BLOODSHROOM_CYAN =
-            registerBlock("basket_bloodshroom_cyan", () -> basket(DyeColor.CYAN));
+            registerBlockWithoutBlockItem("basket_bloodshroom_cyan", () -> basket(DyeColor.CYAN));
     public static final RegistryObject<Block> BASKET_BLOODSHROOM_LIGHT_BLUE =
-            registerBlock("basket_bloodshroom_light_blue", () -> basket(DyeColor.LIGHT_BLUE));
+            registerBlockWithoutBlockItem("basket_bloodshroom_light_blue", () -> basket(DyeColor.LIGHT_BLUE));
     public static final RegistryObject<Block> BASKET_BLOODSHROOM_BLUE =
-            registerBlock("basket_bloodshroom_blue", () -> basket(DyeColor.BLUE));
+            registerBlockWithoutBlockItem("basket_bloodshroom_blue", () -> basket(DyeColor.BLUE));
     public static final RegistryObject<Block> BASKET_BLOODSHROOM_PURPLE =
-            registerBlock("basket_bloodshroom_purple", () -> basket(DyeColor.PURPLE));
+            registerBlockWithoutBlockItem("basket_bloodshroom_purple", () -> basket(DyeColor.PURPLE));
     public static final RegistryObject<Block> BASKET_BLOODSHROOM_MAGENTA =
-            registerBlock("basket_bloodshroom_magenta", () -> basket(DyeColor.MAGENTA));
+            registerBlockWithoutBlockItem("basket_bloodshroom_magenta", () -> basket(DyeColor.MAGENTA));
     public static final RegistryObject<Block> BASKET_BLOODSHROOM_PINK =
-            registerBlock("basket_bloodshroom_pink", () -> basket(DyeColor.PINK));
+            registerBlockWithoutBlockItem("basket_bloodshroom_pink", () -> basket(DyeColor.PINK));
     public static final RegistryObject<Block> BASKET_ENDERBARK_WHITE =
-            registerBlock("basket_enderbark_white", () -> basket(DyeColor.WHITE));
+            registerBlockWithoutBlockItem("basket_enderbark_white", () -> basket(DyeColor.WHITE));
     public static final RegistryObject<Block> BASKET_ENDERBARK_LIGHT_GRAY =
-            registerBlock("basket_enderbark_light_gray", () -> basket(DyeColor.LIGHT_GRAY));
+            registerBlockWithoutBlockItem("basket_enderbark_light_gray", () -> basket(DyeColor.LIGHT_GRAY));
     public static final RegistryObject<Block> BASKET_ENDERBARK_GRAY =
-            registerBlock("basket_enderbark_gray", () -> basket(DyeColor.GRAY));
+            registerBlockWithoutBlockItem("basket_enderbark_gray", () -> basket(DyeColor.GRAY));
     public static final RegistryObject<Block> BASKET_ENDERBARK_BLACK =
-            registerBlock("basket_enderbark_black", () -> basket(DyeColor.BLACK));
+            registerBlockWithoutBlockItem("basket_enderbark_black", () -> basket(DyeColor.BLACK));
     public static final RegistryObject<Block> BASKET_ENDERBARK_BROWN =
-            registerBlock("basket_enderbark_brown", () -> basket(DyeColor.BROWN));
+            registerBlockWithoutBlockItem("basket_enderbark_brown", () -> basket(DyeColor.BROWN));
     public static final RegistryObject<Block> BASKET_ENDERBARK_RED =
-            registerBlock("basket_enderbark_red", () -> basket(DyeColor.RED));
+            registerBlockWithoutBlockItem("basket_enderbark_red", () -> basket(DyeColor.RED));
     public static final RegistryObject<Block> BASKET_ENDERBARK_ORANGE =
-            registerBlock("basket_enderbark_orange", () -> basket(DyeColor.ORANGE));
+            registerBlockWithoutBlockItem("basket_enderbark_orange", () -> basket(DyeColor.ORANGE));
     public static final RegistryObject<Block> BASKET_ENDERBARK_YELLOW =
-            registerBlock("basket_enderbark_yellow", () -> basket(DyeColor.YELLOW));
+            registerBlockWithoutBlockItem("basket_enderbark_yellow", () -> basket(DyeColor.YELLOW));
     public static final RegistryObject<Block> BASKET_ENDERBARK_LIME =
-            registerBlock("basket_enderbark_lime", () -> basket(DyeColor.LIME));
+            registerBlockWithoutBlockItem("basket_enderbark_lime", () -> basket(DyeColor.LIME));
     public static final RegistryObject<Block> BASKET_ENDERBARK_GREEN =
-            registerBlock("basket_enderbark_green", () -> basket(DyeColor.GREEN));
+            registerBlockWithoutBlockItem("basket_enderbark_green", () -> basket(DyeColor.GREEN));
     public static final RegistryObject<Block> BASKET_ENDERBARK_CYAN =
-            registerBlock("basket_enderbark_cyan", () -> basket(DyeColor.CYAN));
+            registerBlockWithoutBlockItem("basket_enderbark_cyan", () -> basket(DyeColor.CYAN));
     public static final RegistryObject<Block> BASKET_ENDERBARK_LIGHT_BLUE =
-            registerBlock("basket_enderbark_light_blue", () -> basket(DyeColor.LIGHT_BLUE));
+            registerBlockWithoutBlockItem("basket_enderbark_light_blue", () -> basket(DyeColor.LIGHT_BLUE));
     public static final RegistryObject<Block> BASKET_ENDERBARK_BLUE =
-            registerBlock("basket_enderbark_blue", () -> basket(DyeColor.BLUE));
+            registerBlockWithoutBlockItem("basket_enderbark_blue", () -> basket(DyeColor.BLUE));
     public static final RegistryObject<Block> BASKET_ENDERBARK_PURPLE =
-            registerBlock("basket_enderbark_purple", () -> basket(DyeColor.PURPLE));
+            registerBlockWithoutBlockItem("basket_enderbark_purple", () -> basket(DyeColor.PURPLE));
     public static final RegistryObject<Block> BASKET_ENDERBARK_MAGENTA =
-            registerBlock("basket_enderbark_magenta", () -> basket(DyeColor.MAGENTA));
+            registerBlockWithoutBlockItem("basket_enderbark_magenta", () -> basket(DyeColor.MAGENTA));
     public static final RegistryObject<Block> BASKET_ENDERBARK_PINK =
-            registerBlock("basket_enderbark_pink", () -> basket(DyeColor.PINK));
+            registerBlockWithoutBlockItem("basket_enderbark_pink", () -> basket(DyeColor.PINK));
     public static final RegistryObject<Block> BASKET_GREENHEART_WHITE =
-            registerBlock("basket_greenheart_white", () -> basket(DyeColor.WHITE));
+            registerBlockWithoutBlockItem("basket_greenheart_white", () -> basket(DyeColor.WHITE));
     public static final RegistryObject<Block> BASKET_GREENHEART_LIGHT_GRAY =
-            registerBlock("basket_greenheart_light_gray", () -> basket(DyeColor.LIGHT_GRAY));
+            registerBlockWithoutBlockItem("basket_greenheart_light_gray", () -> basket(DyeColor.LIGHT_GRAY));
     public static final RegistryObject<Block> BASKET_GREENHEART_GRAY =
-            registerBlock("basket_greenheart_gray", () -> basket(DyeColor.GRAY));
+            registerBlockWithoutBlockItem("basket_greenheart_gray", () -> basket(DyeColor.GRAY));
     public static final RegistryObject<Block> BASKET_GREENHEART_BLACK =
-            registerBlock("basket_greenheart_black", () -> basket(DyeColor.BLACK));
+            registerBlockWithoutBlockItem("basket_greenheart_black", () -> basket(DyeColor.BLACK));
     public static final RegistryObject<Block> BASKET_GREENHEART_BROWN =
-            registerBlock("basket_greenheart_brown", () -> basket(DyeColor.BROWN));
+            registerBlockWithoutBlockItem("basket_greenheart_brown", () -> basket(DyeColor.BROWN));
     public static final RegistryObject<Block> BASKET_GREENHEART_RED =
-            registerBlock("basket_greenheart_red", () -> basket(DyeColor.RED));
+            registerBlockWithoutBlockItem("basket_greenheart_red", () -> basket(DyeColor.RED));
     public static final RegistryObject<Block> BASKET_GREENHEART_ORANGE =
-            registerBlock("basket_greenheart_orange", () -> basket(DyeColor.ORANGE));
+            registerBlockWithoutBlockItem("basket_greenheart_orange", () -> basket(DyeColor.ORANGE));
     public static final RegistryObject<Block> BASKET_GREENHEART_YELLOW =
-            registerBlock("basket_greenheart_yellow", () -> basket(DyeColor.YELLOW));
+            registerBlockWithoutBlockItem("basket_greenheart_yellow", () -> basket(DyeColor.YELLOW));
     public static final RegistryObject<Block> BASKET_GREENHEART_LIME =
-            registerBlock("basket_greenheart_lime", () -> basket(DyeColor.LIME));
+            registerBlockWithoutBlockItem("basket_greenheart_lime", () -> basket(DyeColor.LIME));
     public static final RegistryObject<Block> BASKET_GREENHEART_GREEN =
-            registerBlock("basket_greenheart_green", () -> basket(DyeColor.GREEN));
+            registerBlockWithoutBlockItem("basket_greenheart_green", () -> basket(DyeColor.GREEN));
     public static final RegistryObject<Block> BASKET_GREENHEART_CYAN =
-            registerBlock("basket_greenheart_cyan", () -> basket(DyeColor.CYAN));
+            registerBlockWithoutBlockItem("basket_greenheart_cyan", () -> basket(DyeColor.CYAN));
     public static final RegistryObject<Block> BASKET_GREENHEART_LIGHT_BLUE =
-            registerBlock("basket_greenheart_light_blue", () -> basket(DyeColor.LIGHT_BLUE));
+            registerBlockWithoutBlockItem("basket_greenheart_light_blue", () -> basket(DyeColor.LIGHT_BLUE));
     public static final RegistryObject<Block> BASKET_GREENHEART_BLUE =
-            registerBlock("basket_greenheart_blue", () -> basket(DyeColor.BLUE));
+            registerBlockWithoutBlockItem("basket_greenheart_blue", () -> basket(DyeColor.BLUE));
     public static final RegistryObject<Block> BASKET_GREENHEART_PURPLE =
-            registerBlock("basket_greenheart_purple", () -> basket(DyeColor.PURPLE));
+            registerBlockWithoutBlockItem("basket_greenheart_purple", () -> basket(DyeColor.PURPLE));
     public static final RegistryObject<Block> BASKET_GREENHEART_MAGENTA =
-            registerBlock("basket_greenheart_magenta", () -> basket(DyeColor.MAGENTA));
+            registerBlockWithoutBlockItem("basket_greenheart_magenta", () -> basket(DyeColor.MAGENTA));
     public static final RegistryObject<Block> BASKET_GREENHEART_PINK =
-            registerBlock("basket_greenheart_pink", () -> basket(DyeColor.PINK));
+            registerBlockWithoutBlockItem("basket_greenheart_pink", () -> basket(DyeColor.PINK));
     public static final RegistryObject<Block> BASKET_TINKER_SKYROOT_WHITE =
-            registerBlock("basket_tinker_skyroot_white", () -> basket(DyeColor.WHITE));
+            registerBlockWithoutBlockItem("basket_tinker_skyroot_white", () -> basket(DyeColor.WHITE));
     public static final RegistryObject<Block> BASKET_TINKER_SKYROOT_LIGHT_GRAY =
-            registerBlock("basket_tinker_skyroot_light_gray", () -> basket(DyeColor.LIGHT_GRAY));
+            registerBlockWithoutBlockItem("basket_tinker_skyroot_light_gray", () -> basket(DyeColor.LIGHT_GRAY));
     public static final RegistryObject<Block> BASKET_TINKER_SKYROOT_GRAY =
-            registerBlock("basket_tinker_skyroot_gray", () -> basket(DyeColor.GRAY));
+            registerBlockWithoutBlockItem("basket_tinker_skyroot_gray", () -> basket(DyeColor.GRAY));
     public static final RegistryObject<Block> BASKET_TINKER_SKYROOT_BLACK =
-            registerBlock("basket_tinker_skyroot_black", () -> basket(DyeColor.BLACK));
+            registerBlockWithoutBlockItem("basket_tinker_skyroot_black", () -> basket(DyeColor.BLACK));
     public static final RegistryObject<Block> BASKET_TINKER_SKYROOT_BROWN =
-            registerBlock("basket_tinker_skyroot_brown", () -> basket(DyeColor.BROWN));
+            registerBlockWithoutBlockItem("basket_tinker_skyroot_brown", () -> basket(DyeColor.BROWN));
     public static final RegistryObject<Block> BASKET_TINKER_SKYROOT_RED =
-            registerBlock("basket_tinker_skyroot_red", () -> basket(DyeColor.RED));
+            registerBlockWithoutBlockItem("basket_tinker_skyroot_red", () -> basket(DyeColor.RED));
     public static final RegistryObject<Block> BASKET_TINKER_SKYROOT_ORANGE =
-            registerBlock("basket_tinker_skyroot_orange", () -> basket(DyeColor.ORANGE));
+            registerBlockWithoutBlockItem("basket_tinker_skyroot_orange", () -> basket(DyeColor.ORANGE));
     public static final RegistryObject<Block> BASKET_TINKER_SKYROOT_YELLOW =
-            registerBlock("basket_tinker_skyroot_yellow", () -> basket(DyeColor.YELLOW));
+            registerBlockWithoutBlockItem("basket_tinker_skyroot_yellow", () -> basket(DyeColor.YELLOW));
     public static final RegistryObject<Block> BASKET_TINKER_SKYROOT_LIME =
-            registerBlock("basket_tinker_skyroot_lime", () -> basket(DyeColor.LIME));
+            registerBlockWithoutBlockItem("basket_tinker_skyroot_lime", () -> basket(DyeColor.LIME));
     public static final RegistryObject<Block> BASKET_TINKER_SKYROOT_GREEN =
-            registerBlock("basket_tinker_skyroot_green", () -> basket(DyeColor.GREEN));
+            registerBlockWithoutBlockItem("basket_tinker_skyroot_green", () -> basket(DyeColor.GREEN));
     public static final RegistryObject<Block> BASKET_TINKER_SKYROOT_CYAN =
-            registerBlock("basket_tinker_skyroot_cyan", () -> basket(DyeColor.CYAN));
+            registerBlockWithoutBlockItem("basket_tinker_skyroot_cyan", () -> basket(DyeColor.CYAN));
     public static final RegistryObject<Block> BASKET_TINKER_SKYROOT_LIGHT_BLUE =
-            registerBlock("basket_tinker_skyroot_light_blue", () -> basket(DyeColor.LIGHT_BLUE));
+            registerBlockWithoutBlockItem("basket_tinker_skyroot_light_blue", () -> basket(DyeColor.LIGHT_BLUE));
     public static final RegistryObject<Block> BASKET_TINKER_SKYROOT_BLUE =
-            registerBlock("basket_tinker_skyroot_blue", () -> basket(DyeColor.BLUE));
+            registerBlockWithoutBlockItem("basket_tinker_skyroot_blue", () -> basket(DyeColor.BLUE));
     public static final RegistryObject<Block> BASKET_TINKER_SKYROOT_PURPLE =
-            registerBlock("basket_tinker_skyroot_purple", () -> basket(DyeColor.PURPLE));
+            registerBlockWithoutBlockItem("basket_tinker_skyroot_purple", () -> basket(DyeColor.PURPLE));
     public static final RegistryObject<Block> BASKET_TINKER_SKYROOT_MAGENTA =
-            registerBlock("basket_tinker_skyroot_magenta", () -> basket(DyeColor.MAGENTA));
+            registerBlockWithoutBlockItem("basket_tinker_skyroot_magenta", () -> basket(DyeColor.MAGENTA));
     public static final RegistryObject<Block> BASKET_TINKER_SKYROOT_PINK =
-            registerBlock("basket_tinker_skyroot_pink", () -> basket(DyeColor.PINK));
+            registerBlockWithoutBlockItem("basket_tinker_skyroot_pink", () -> basket(DyeColor.PINK));
 
+    // picnic blanket variants
+    public static final RegistryObject<Block> PICNIC_BLANKET_WHITE =
+            registerBlock("picnic_blanket_white", ()-> picnicBlanket(DyeColor.WHITE));
+    public static final RegistryObject<Block> PICNIC_BLANKET_ORANGE =
+            registerBlock("picnic_blanket_orange", ()-> picnicBlanket(DyeColor.ORANGE));
+    public static final RegistryObject<Block> PICNIC_BLANKET_MAGENTA =
+            registerBlock("picnic_blanket_magenta", ()-> picnicBlanket(DyeColor.MAGENTA));
+    public static final RegistryObject<Block> PICNIC_BLANKET_LIGHT_BLUE =
+            registerBlock("picnic_blanket_light_blue", ()-> picnicBlanket(DyeColor.LIGHT_BLUE));
+    public static final RegistryObject<Block> PICNIC_BLANKET_YELLOW =
+            registerBlock("picnic_blanket_yellow", ()-> picnicBlanket(DyeColor.YELLOW));
+    public static final RegistryObject<Block> PICNIC_BLANKET_LIME =
+            registerBlock("picnic_blanket_lime", ()-> picnicBlanket(DyeColor.LIME));
+    public static final RegistryObject<Block> PICNIC_BLANKET_PINK =
+            registerBlock("picnic_blanket_pink", ()-> picnicBlanket(DyeColor.PINK));
+    public static final RegistryObject<Block> PICNIC_BLANKET_GRAY =
+            registerBlock("picnic_blanket_gray", ()-> picnicBlanket(DyeColor.GRAY));
+    public static final RegistryObject<Block> PICNIC_BLANKET_LIGHT_GRAY =
+            registerBlock("picnic_blanket_light_gray", ()-> picnicBlanket(DyeColor.LIGHT_GRAY));
+    public static final RegistryObject<Block> PICNIC_BLANKET_CYAN =
+            registerBlock("picnic_blanket_cyan", ()-> picnicBlanket(DyeColor.CYAN));
+    public static final RegistryObject<Block> PICNIC_BLANKET_PURPLE =
+            registerBlock("picnic_blanket_purple", ()-> picnicBlanket(DyeColor.PURPLE));
+    public static final RegistryObject<Block> PICNIC_BLANKET_BLUE =
+            registerBlock("picnic_blanket_blue", ()-> picnicBlanket(DyeColor.BLUE));
+    public static final RegistryObject<Block> PICNIC_BLANKET_BROWN =
+            registerBlock("picnic_blanket_brown", ()-> picnicBlanket(DyeColor.BROWN));
+    public static final RegistryObject<Block> PICNIC_BLANKET_GREEN =
+            registerBlock("picnic_blanket_green", ()-> picnicBlanket(DyeColor.GREEN));
+    public static final RegistryObject<Block> PICNIC_BLANKET_RED =
+            registerBlock("picnic_blanket_red", ()-> picnicBlanket(DyeColor.RED));
+    public static final RegistryObject<Block> PICNIC_BLANKET_BLACK =
+            registerBlock("picnic_blanket_black", ()-> picnicBlanket(DyeColor.BLACK));
+
+    private static @NotNull DeskChairBlock deskChairBlock(@Nullable DyeColor clothColor) {
+        return new DeskChairBlock(clothColor,BlockBehaviour.Properties.of(Material.WOOD)
+                .sound(SoundType.WOOD).strength(1).noOcclusion());
+    }
+
+    private static @NotNull PicnicBlanket picnicBlanket(DyeColor clothColor) {
+        return new PicnicBlanket(clothColor,  BlockBehaviour.
+                Properties.copy(Blocks.WHITE_CARPET)
+                .sound(SoundType.WOOL).strength(1)
+                .lightLevel((state) -> 6).noOcclusion());
+    }
 
     private static @NotNull BasketBlock basket(DyeColor clothColor) {
         return new BasketBlock(clothColor,  BlockBehaviour.Properties.of(Material.WOOD)
                 .sound(SoundType.WOOD).strength(1)
-                .lightLevel((state) -> BasketBlock.lightLvl).noOcclusion());
+                .lightLevel((state) -> 6).noOcclusion());
     }
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {

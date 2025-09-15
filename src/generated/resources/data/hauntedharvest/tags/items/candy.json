@@ -2,6 +2,14 @@
   "values": [
     "#supplementaries:chocolate_bars",
     {
+      "id": "snowyspirit:candy_cane",
+      "required": false
+    },
+    {
+      "id": "supplementaries:candy",
+      "required": false
+    },
+    {
       "id": "festive_delight:sugar_cane",
       "required": false
     },

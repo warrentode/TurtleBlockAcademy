@@ -1,0 +1,37 @@
+{
+  "values": [
+    {
+      "id": "biomesoplenty:tropics",
+      "required": false
+    },
+    {
+      "id": "biomesoplenty:field",
+      "required": false
+    },
+    {
+      "id": "biomesoplenty:forested_field",
+      "required": false
+    },
+    {
+      "id": "biomesoplenty:lush_savanna",
+      "required": false
+    },
+    {
+      "id": "biomesoplenty:old_growth_woodland",
+      "required": false
+    },
+    {
+      "id": "biomesoplenty:orchard",
+      "required": false
+    },
+    {
+      "id": "biomesoplenty:woodland",
+      "required": false
+    },
+    "minecraft:old_growth_birch_forest",
+    "minecraft:forest",
+    "minecraft:dark_forest",
+    "minecraft:flower_forest",
+    "minecraft:birch_forest"
+  ]
+}

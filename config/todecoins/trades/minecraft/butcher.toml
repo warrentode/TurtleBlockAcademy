@@ -1,0 +1,94 @@
+
+["Butcher Trade Settings"]
+
+	["Butcher Trade Settings"."Butcher Level One Trade One"]
+		# Butcher 1 Trade Request 1 Table
+		butcher_1_trade_request_1_table = "todecoins:trade_tables/food/tagged_raw_meats_table"
+		butcher_1_trade_request_1_count = 12
+		# Butcher 1 Trade Offer 1 Table
+		butcher_1_trade_offer_1_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+
+	["Butcher Trade Settings"."Butcher Level One Trade Two"]
+		# Butcher 1 Trade Request 2 Table
+		butcher_1_trade_request_2_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+		# Butcher 1 Trade Offer 2 Table
+		butcher_1_trade_offer_2_table = "todecoins:trade_tables/food/tagged_meat_soups_table"
+		butcher_1_trade_offer_2_count = 1
+
+	["Butcher Trade Settings"."Butcher Level Two Trade One"]
+		# Butcher 2 Trade Request 1 Table
+		butcher_2_trade_request_1_table = "todecoins:trade_tables/misc/one_emerald_value_fuel_table"
+		# Butcher 2 Trade Offer 1 Table
+		butcher_2_trade_offer_1_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+
+	["Butcher Trade Settings"."Butcher Level Two Trade Two"]
+		# Butcher 2 Trade Request 2 Table
+		butcher_2_trade_request_2_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+		# Butcher 2 Trade Offer 2 Table
+		butcher_2_trade_offer_2_table = "todecoins:trade_tables/food/tagged_cooked_meats_table"
+		butcher_2_trade_offer_2_count = 6
+
+	["Butcher Trade Settings"."Butcher Level Three Trade One"]
+		# Butcher 3 Trade Request 1 Table
+		butcher_3_trade_request_1_table = "todecoins:trade_tables/food/tagged_raw_meats_table"
+		butcher_3_trade_request_1_count = 12
+		# Butcher 3 Trade Offer 1 Table
+		butcher_3_trade_offer_1_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+
+	["Butcher Trade Settings"."Butcher Level Three Trade Two"]
+		# Available if Farmers Delight mod is Loaded
+		# Butcher 3 Trade Request 2 Table
+		butcher_3_trade_request_2_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+		# Butcher 3 Trade Offer 2 Table
+		butcher_3_trade_offer_2_table = "todecoins:trade_tables/tools/stone_tier_knives_table"
+
+	["Butcher Trade Settings"."Butcher Level Three Trade Three"]
+		# Butcher 3 Trade Request 3 Table
+		butcher_3_trade_request_3_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+		# Butcher 2 Trade Offer 2 Table
+		butcher_2_trade_offer_2_table = "todecoins:trade_tables/food/tagged_cooked_meats_table"
+		butcher_2_trade_offer_2_count = 6
+
+	["Butcher Trade Settings"."Butcher Level Four Trade One"]
+		# Butcher 4 Trade Request 1 Table
+		butcher_4_trade_request_1_table = "todecoins:trade_tables/misc/one_emerald_value_fuel_table"
+		# Butcher 4 Trade Offer 1 Table
+		butcher_4_trade_offer_1_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+
+	["Butcher Trade Settings"."Butcher Level Four Trade Two"]
+		# Available if Salt mod or Turtle Block Academy mod is Loaded
+		# Butcher 4 Trade Request 2 Table
+		butcher_4_trade_request_2_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+		# Butcher 4 Trade Offer 2 Table
+		butcher_4_trade_offer_2_table = "todecoins:trade_tables/food/tagged_salts_table"
+		butcher_4_trade_offer_2_count = 18
+
+	["Butcher Trade Settings"."Butcher Level Four Trade Three"]
+		# Available if Supplementaries mod is Loaded
+		# Butcher 4 Trade Request 3 Table
+		butcher_4_trade_request_3_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+		# Butcher 4 Trade Offer 3 Table
+		butcher_4_trade_offer_3_table = "todecoins:trade_tables/misc/tagged_ash_table"
+		butcher_4_trade_offer_3_count = 18
+
+	["Butcher Trade Settings"."Butcher Level Four Trade Four"]
+		# Butcher 4 Trade Request 4 Table
+		butcher_4_trade_request_4_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+		# Butcher 4 Trade Offer 4 Table
+		butcher_4_trade_offer_4_table = "todecoins:trade_tables/food/tagged_cooked_meats_table"
+		butcher_4_trade_offer_4_count = 6
+
+	["Butcher Trade Settings"."Butcher Level Five Trade One"]
+		# Butcher 5 Trade Request 1 Table
+		butcher_5_trade_request_1_table = "todecoins:trade_tables/food/tagged_fox_food_table"
+		butcher_5_trade_request_1_count = 8
+		# Butcher 5 Trade Offer 1 Table
+		butcher_5_trade_offer_1_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+
+	["Butcher Trade Settings"."Butcher Level Five Trade Two"]
+		# Butcher 5 Trade Request 2 Table
+		butcher_5_trade_request_2_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+		# Butcher 5 Trade Offer 2 Table
+		butcher_5_trade_offer_2_table = "todecoins:trade_tables/food/tagged_cooked_meats_table"
+		butcher_5_trade_offer_23_count = 6
+

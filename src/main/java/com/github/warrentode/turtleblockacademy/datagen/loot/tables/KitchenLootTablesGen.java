@@ -692,8 +692,6 @@ public class KitchenLootTablesGen implements Consumer<BiConsumer<ResourceLocatio
                 .withPool(LootPool.lootPool().setRolls(ConstantValue.exactly(1))
                         .setBonusRolls(ConstantValue.exactly(1.0F))
                         .when(ModCheckCondition.mod().isLoaded("phantasm"))
-                        .add(LootItem.lootTableItem(PhantasmModItems.CHORUS_FRUIT_SALAD.get())
-                                .apply(SetItemCountFunction.setCount(UniformGenerator.between(1, 4))))
                         .add(LootItem.lootTableItem(PhantasmModItems.PUTAC_BROCHETTE.get())
                                 .apply(SetItemCountFunction.setCount(UniformGenerator.between(1, 4))))
                 )

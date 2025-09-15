@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "forge:cooked_meats/boiled_eggs"
+    },
+    {
+      "tag": "forge:cooked_meats/boiled_eggs"
+    },
+    {
+      "tag": "forge:cooked_meats/boiled_eggs"
+    },
+    {
+      "tag": "forge:cooked_meats/boiled_eggs"
+    },
+    {
+      "tag": "forge:cooked_meats/boiled_eggs"
+    },
+    {
+      "tag": "forge:cooked_meats/boiled_eggs"
+    },
+    {
+      "tag": "forge:dyes/light_blue"
+    },
+    {
+      "item": "turtleblockacademy:vinegar_bottle"
+    },
+    {
+      "tag": "turtleblockacademy:water_buckets"
+    }
+  ],
+  "result": {
+    "count": 6,
+    "item": "turtleblockacademy:colored_egg_light_blue"
+  }
+}

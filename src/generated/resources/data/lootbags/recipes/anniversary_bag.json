@@ -1,9 +1,0 @@
-{
-  "type": "lootbags:loot",
-  "color": "blue",
-  "name": "Anniversary Bag",
-  "output": {
-    "table": "lootbags:loot_bags/anniversary_lootbag"
-  },
-  "rarity": "UNCOMMON"
-}

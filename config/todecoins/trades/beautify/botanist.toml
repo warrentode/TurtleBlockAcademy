@@ -1,0 +1,75 @@
+
+["Botanist Trade Settings"]
+
+	["Botanist Trade Settings"."Botanist Level One Trade One"]
+		# Botanist 1 Trade Request 1 Table
+		botanist_1_trade_request_1_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+		# Botanist 1 Trade Offer 1 Table
+		botanist_1_trade_offer_1_table = "todecoins:trade_tables/decor/flower_pot_table"
+
+	["Botanist Trade Settings"."Botanist Level One Trade Two"]
+		# Botanist 1 Trade Request 2 Table
+		botanist_1_trade_request_2_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+		# Botanist 1 Trade Offer 2 Table
+		botanist_1_trade_offer_2_table = "todecoins:trade_tables/decor/flower_sell_table"
+
+	["Botanist Trade Settings"."Botanist Level One Trade Three"]
+		# Botanist 1 Trade Request 3 Table
+		botanist_1_trade_request_3_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+		# Botanist 1 Trade Offer 3 Table
+		botanist_1_trade_offer_3_table = "todecoins:trade_tables/decor/decor_plants_table"
+
+	["Botanist Trade Settings"."Botanist Level Two Trade One"]
+		# Botanist 2 Trade Request 1 Table
+		botanist_2_trade_request_1_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+		# Botanist 2 Trade Offer 1 Table
+		botanist_2_trade_offer_1_table = "todecoins:trade_tables/decor/trellis_tag_table"
+		botanist_2_trade_offer_1_count = 2
+
+	["Botanist Trade Settings"."Botanist Level Two Trade Two"]
+		# Botanist 2 Trade Request 2 Table
+		botanist_2_trade_request_2_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+		# Botanist 2 Trade Offer 2 Table
+		botanist_2_trade_offer_2_table = "todecoins:trade_tables/blocks/special_dirt_blocks_table"
+
+	["Botanist Trade Settings"."Botanist Level Three Trade One"]
+		# Botanist 3 Trade Request 1 Table
+		botanist_3_trade_request_1_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+		# Botanist 3 Trade Offer 1 Table
+		botanist_3_trade_offer_1_table = "todecoins:trade_tables/decor/frames_table"
+		botanist_3_trade_offer_1_count = 2
+
+	["Botanist Trade Settings"."Botanist Level Three Trade Two"]
+		# Botanist 3 Trade Request 2 Table
+		botanist_3_trade_request_2_count = "todecoins:trade_tables/currency/single_emerald_value_currency"
+		# Botanist 3 Trade Offer 2 Table
+		botanist_3_trade_offer_2_table = "todecoins:trade_tables/decor/tagged_candle_table"
+		botanist_3_trade_offer_2_count = 4
+
+	["Botanist Trade Settings"."Botanist Level Four Trade One"]
+		# Botanist 4 Trade Request 1 Table
+		botanist_4_trade_request_1_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+		# Botanist 4 Trade Offer 1 Table
+		botanist_4_trade_offer_1_table = "todecoins:trade_tables/decor/lantern_table"
+
+	["Botanist Trade Settings"."Botanist Level Four Trade Two"]
+		# Botanist 4 Trade Request 2 Table
+		botanist_4_trade_request_2_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+		# Botanist 4 Trade Offer 2 Table
+		botanist_4_trade_offer_2_table = "todecoins:trade_tables/decor/tagged_candle_table"
+		botanist_3_trade_offer_2_count = 4
+
+	["Botanist Trade Settings"."Botanist Level Five Trade One"]
+		# Rare Trade
+		# Botanist 5 Trade Request 1 Table
+		botanist_5_trade_request_1_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+		# Botanist 5 Trade Offer 1 Table
+		botanist_5_trade_offer_1_table = "todecoins:trade_tables/blocks/special_dirt_blocks_table"
+
+	["Botanist Trade Settings"."Botanist Level Five Trade Two"]
+		# Rare Trade
+		# Botanist 5 Trade Request 2 Table
+		botanist_5_trade_request_2_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+		# Botanist 5 Trade Offer 2 Table
+		botanist_5_trade_offer_2_table = "todecoins:trade_tables/decor/flower_sell_table"
+

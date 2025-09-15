@@ -1,9 +1,0 @@
-{
-  "type": "lootbags:loot",
-  "color": "white",
-  "name": "Scout Map Bag",
-  "output": {
-    "table": "lootbags:loot_bags/scout_map_sale"
-  },
-  "rarity": "COMMON"
-}

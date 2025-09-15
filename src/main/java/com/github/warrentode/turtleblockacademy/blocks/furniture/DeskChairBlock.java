@@ -1,12 +1,13 @@
 package com.github.warrentode.turtleblockacademy.blocks.furniture;
 
-import com.github.warrentode.turtleblockacademy.blocks.entity.SeatEntity;
+import com.github.warrentode.turtleblockacademy.entity.SeatEntity;
 import com.github.warrentode.turtleblockacademy.util.ShapeUtil;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.item.DyeColor;
 import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.Level;
@@ -24,8 +25,11 @@ import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.VoxelShape;
 import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
+import java.util.ArrayList;
 import java.util.EnumMap;
+import java.util.List;
 import java.util.Map;
 import java.util.stream.Stream;
 
@@ -48,12 +52,30 @@ public class DeskChairBlock extends Block {
     ).reduce((v1, v2) -> Shapes.join(v1, v2, BooleanOp.OR)).get();
 
     public static final VoxelShape COLLISION_SHAPE = Shapes.or(SHAPE);
+    private final DyeColor clothColor;
+    public static final List<DeskChairBlock> DESK_CHAIR_LIST = new ArrayList<>();
 
-    public DeskChairBlock(Properties properties) {
+    public DeskChairBlock(DyeColor color, Properties properties) {
         super(properties);
+        this.clothColor = color;
         this.registerDefaultState(this.stateDefinition.any()
                 .setValue(FACING, Direction.NORTH));
         ShapeUtil.runCalculation(SHAPES, SHAPE);
+
+        DESK_CHAIR_LIST.add(this);
+    }
+
+    @Nullable
+    public DyeColor getClothColor() {
+        return this.clothColor;
+    }
+
+    public int getTintIndex() {
+        DyeColor clothTint = this.clothColor;
+        if (clothTint == null) {
+            return DyeColor.WHITE.getFireworkColor();
+        }
+        return clothTint.getFireworkColor();
     }
 
     @Override

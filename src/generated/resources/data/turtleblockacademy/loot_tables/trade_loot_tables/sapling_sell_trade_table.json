@@ -1,0 +1,1484 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "minecraft:alternative",
+              "terms": [
+                {
+                  "condition": "minecraft:inverted",
+                  "term": {
+                    "condition": "turtleblockacademy:biometag_condition",
+                    "tag": "forge:has_spruce"
+                  }
+                },
+                {
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                    "dimension": "dimdungeons:dungeon_dimension"
+                  }
+                },
+                {
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                    "dimension": "turtleblockacademy:mining_dimension"
+                  }
+                }
+              ]
+            }
+          ],
+          "functions": [
+            {
+              "add": false,
+              "count": 1.0,
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "minecraft:spruce_sapling"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "minecraft:alternative",
+              "terms": [
+                {
+                  "condition": "minecraft:inverted",
+                  "term": {
+                    "condition": "turtleblockacademy:biometag_condition",
+                    "tag": "forge:has_birch"
+                  }
+                },
+                {
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                    "dimension": "dimdungeons:dungeon_dimension"
+                  }
+                },
+                {
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                    "dimension": "turtleblockacademy:mining_dimension"
+                  }
+                }
+              ]
+            }
+          ],
+          "functions": [
+            {
+              "add": false,
+              "count": 1.0,
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "minecraft:birch_sapling"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "minecraft:alternative",
+              "terms": [
+                {
+                  "condition": "minecraft:inverted",
+                  "term": {
+                    "condition": "turtleblockacademy:biometag_condition",
+                    "tag": "forge:has_jungle"
+                  }
+                },
+                {
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                    "dimension": "dimdungeons:dungeon_dimension"
+                  }
+                },
+                {
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                    "dimension": "turtleblockacademy:mining_dimension"
+                  }
+                }
+              ]
+            }
+          ],
+          "functions": [
+            {
+              "add": false,
+              "count": 1.0,
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "minecraft:jungle_sapling"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "minecraft:alternative",
+              "terms": [
+                {
+                  "condition": "minecraft:inverted",
+                  "term": {
+                    "condition": "turtleblockacademy:biometag_condition",
+                    "tag": "forge:has_acacia"
+                  }
+                },
+                {
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                    "dimension": "dimdungeons:dungeon_dimension"
+                  }
+                },
+                {
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                    "dimension": "turtleblockacademy:mining_dimension"
+                  }
+                }
+              ]
+            }
+          ],
+          "functions": [
+            {
+              "add": false,
+              "count": 1.0,
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "minecraft:acacia_sapling"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "minecraft:alternative",
+              "terms": [
+                {
+                  "condition": "minecraft:inverted",
+                  "term": {
+                    "condition": "turtleblockacademy:biometag_condition",
+                    "tag": "forge:has_dark_oak"
+                  }
+                },
+                {
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                    "dimension": "dimdungeons:dungeon_dimension"
+                  }
+                },
+                {
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                    "dimension": "turtleblockacademy:mining_dimension"
+                  }
+                }
+              ]
+            }
+          ],
+          "functions": [
+            {
+              "add": false,
+              "count": 1.0,
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "minecraft:dark_oak_sapling"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "minecraft:alternative",
+              "terms": [
+                {
+                  "condition": "minecraft:inverted",
+                  "term": {
+                    "condition": "turtleblockacademy:biometag_condition",
+                    "tag": "forge:has_mangrove"
+                  }
+                },
+                {
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                    "dimension": "dimdungeons:dungeon_dimension"
+                  }
+                },
+                {
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                    "dimension": "turtleblockacademy:mining_dimension"
+                  }
+                }
+              ]
+            }
+          ],
+          "functions": [
+            {
+              "add": false,
+              "count": 1.0,
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "minecraft:mangrove_propagule"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "minecraft:alternative",
+              "terms": [
+                {
+                  "condition": "minecraft:inverted",
+                  "term": {
+                    "condition": "turtleblockacademy:biometag_condition",
+                    "tag": "forge:has_warped_fungus"
+                  }
+                },
+                {
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                    "dimension": "dimdungeons:dungeon_dimension"
+                  }
+                },
+                {
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                    "dimension": "turtleblockacademy:mining_dimension"
+                  }
+                }
+              ]
+            }
+          ],
+          "functions": [
+            {
+              "add": false,
+              "count": 1.0,
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "minecraft:warped_fungus"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "minecraft:alternative",
+              "terms": [
+                {
+                  "condition": "minecraft:inverted",
+                  "term": {
+                    "condition": "turtleblockacademy:biometag_condition",
+                    "tag": "forge:has_crimson_fungus"
+                  }
+                },
+                {
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                    "dimension": "dimdungeons:dungeon_dimension"
+                  }
+                },
+                {
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                    "dimension": "turtleblockacademy:mining_dimension"
+                  }
+                }
+              ]
+            }
+          ],
+          "functions": [
+            {
+              "add": false,
+              "count": 1.0,
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "minecraft:crimson_fungus"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "turtleblockacademy:modloaded_condition",
+              "modid": "biomesoplenty"
+            },
+            {
+              "condition": "minecraft:alternative",
+              "terms": [
+                {
+                  "condition": "minecraft:inverted",
+                  "term": {
+                    "condition": "turtleblockacademy:biometag_condition",
+                    "tag": "forge:has_fir"
+                  }
+                },
+                {
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                    "dimension": "dimdungeons:dungeon_dimension"
+                  }
+                },
+                {
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                    "dimension": "turtleblockacademy:mining_dimension"
+                  }
+                }
+              ]
+            }
+          ],
+          "functions": [
+            {
+              "add": false,
+              "count": 1.0,
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "biomesoplenty:fir_sapling"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "turtleblockacademy:modloaded_condition",
+              "modid": "biomesoplenty"
+            },
+            {
+              "condition": "minecraft:alternative",
+              "terms": [
+                {
+                  "condition": "minecraft:inverted",
+                  "term": {
+                    "condition": "turtleblockacademy:biometag_condition",
+                    "tag": "forge:has_redwood"
+                  }
+                },
+                {
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                    "dimension": "dimdungeons:dungeon_dimension"
+                  }
+                },
+                {
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                    "dimension": "turtleblockacademy:mining_dimension"
+                  }
+                }
+              ]
+            }
+          ],
+          "functions": [
+            {
+              "add": false,
+              "count": 1.0,
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "biomesoplenty:redwood_sapling"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "turtleblockacademy:modloaded_condition",
+              "modid": "biomesoplenty"
+            },
+            {
+              "condition": "minecraft:alternative",
+              "terms": [
+                {
+                  "condition": "minecraft:inverted",
+                  "term": {
+                    "condition": "turtleblockacademy:biometag_condition",
+                    "tag": "forge:has_cherry"
+                  }
+                },
+                {
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                    "dimension": "dimdungeons:dungeon_dimension"
+                  }
+                },
+                {
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                    "dimension": "turtleblockacademy:mining_dimension"
+                  }
+                }
+              ]
+            }
+          ],
+          "functions": [
+            {
+              "add": false,
+              "count": 1.0,
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "biomesoplenty:white_cherry_sapling"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "turtleblockacademy:modloaded_condition",
+              "modid": "biomesoplenty"
+            },
+            {
+              "condition": "minecraft:alternative",
+              "terms": [
+                {
+                  "condition": "minecraft:inverted",
+                  "term": {
+                    "condition": "turtleblockacademy:biometag_condition",
+                    "tag": "forge:has_cherry"
+                  }
+                },
+                {
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                    "dimension": "dimdungeons:dungeon_dimension"
+                  }
+                },
+                {
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                    "dimension": "turtleblockacademy:mining_dimension"
+                  }
+                }
+              ]
+            }
+          ],
+          "functions": [
+            {
+              "add": false,
+              "count": 1.0,
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "biomesoplenty:pink_cherry_sapling"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "turtleblockacademy:modloaded_condition",
+              "modid": "biomesoplenty"
+            },
+            {
+              "condition": "minecraft:alternative",
+              "terms": [
+                {
+                  "condition": "minecraft:inverted",
+                  "term": {
+                    "condition": "turtleblockacademy:biometag_condition",
+                    "tag": "forge:has_mahogany"
+                  }
+                },
+                {
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                    "dimension": "dimdungeons:dungeon_dimension"
+                  }
+                },
+                {
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                    "dimension": "turtleblockacademy:mining_dimension"
+                  }
+                }
+              ]
+            }
+          ],
+          "functions": [
+            {
+              "add": false,
+              "count": 1.0,
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "biomesoplenty:mahogany_sapling"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "turtleblockacademy:modloaded_condition",
+              "modid": "biomesoplenty"
+            },
+            {
+              "condition": "minecraft:alternative",
+              "terms": [
+                {
+                  "condition": "minecraft:inverted",
+                  "term": {
+                    "condition": "turtleblockacademy:biometag_condition",
+                    "tag": "forge:has_jacaranda"
+                  }
+                },
+                {
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                    "dimension": "dimdungeons:dungeon_dimension"
+                  }
+                },
+                {
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                    "dimension": "turtleblockacademy:mining_dimension"
+                  }
+                }
+              ]
+            }
+          ],
+          "functions": [
+            {
+              "add": false,
+              "count": 1.0,
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "biomesoplenty:jacaranda_sapling"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "turtleblockacademy:modloaded_condition",
+              "modid": "biomesoplenty"
+            },
+            {
+              "condition": "minecraft:alternative",
+              "terms": [
+                {
+                  "condition": "minecraft:inverted",
+                  "term": {
+                    "condition": "turtleblockacademy:biometag_condition",
+                    "tag": "forge:has_palm"
+                  }
+                },
+                {
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                    "dimension": "dimdungeons:dungeon_dimension"
+                  }
+                },
+                {
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                    "dimension": "turtleblockacademy:mining_dimension"
+                  }
+                }
+              ]
+            }
+          ],
+          "functions": [
+            {
+              "add": false,
+              "count": 1.0,
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "biomesoplenty:palm_sapling"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "turtleblockacademy:modloaded_condition",
+              "modid": "biomesoplenty"
+            },
+            {
+              "condition": "minecraft:alternative",
+              "terms": [
+                {
+                  "condition": "minecraft:inverted",
+                  "term": {
+                    "condition": "turtleblockacademy:biometag_condition",
+                    "tag": "forge:has_willow"
+                  }
+                },
+                {
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                    "dimension": "dimdungeons:dungeon_dimension"
+                  }
+                },
+                {
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                    "dimension": "turtleblockacademy:mining_dimension"
+                  }
+                }
+              ]
+            }
+          ],
+          "functions": [
+            {
+              "add": false,
+              "count": 1.0,
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "biomesoplenty:willow_sapling"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "turtleblockacademy:modloaded_condition",
+              "modid": "biomesoplenty"
+            },
+            {
+              "condition": "minecraft:alternative",
+              "terms": [
+                {
+                  "condition": "minecraft:inverted",
+                  "term": {
+                    "condition": "turtleblockacademy:biometag_condition",
+                    "tag": "forge:has_dead"
+                  }
+                },
+                {
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                    "dimension": "dimdungeons:dungeon_dimension"
+                  }
+                },
+                {
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                    "dimension": "turtleblockacademy:mining_dimension"
+                  }
+                }
+              ]
+            }
+          ],
+          "functions": [
+            {
+              "add": false,
+              "count": 1.0,
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "biomesoplenty:dead_sapling"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "turtleblockacademy:modloaded_condition",
+              "modid": "biomesoplenty"
+            },
+            {
+              "condition": "minecraft:alternative",
+              "terms": [
+                {
+                  "condition": "minecraft:inverted",
+                  "term": {
+                    "condition": "turtleblockacademy:biometag_condition",
+                    "tag": "forge:has_magic"
+                  }
+                },
+                {
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                    "dimension": "dimdungeons:dungeon_dimension"
+                  }
+                },
+                {
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                    "dimension": "turtleblockacademy:mining_dimension"
+                  }
+                }
+              ]
+            }
+          ],
+          "functions": [
+            {
+              "add": false,
+              "count": 1.0,
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "biomesoplenty:magic_sapling"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "turtleblockacademy:modloaded_condition",
+              "modid": "biomesoplenty"
+            },
+            {
+              "condition": "minecraft:alternative",
+              "terms": [
+                {
+                  "condition": "minecraft:inverted",
+                  "term": {
+                    "condition": "turtleblockacademy:biometag_condition",
+                    "tag": "forge:has_umbran"
+                  }
+                },
+                {
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                    "dimension": "dimdungeons:dungeon_dimension"
+                  }
+                },
+                {
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                    "dimension": "turtleblockacademy:mining_dimension"
+                  }
+                }
+              ]
+            }
+          ],
+          "functions": [
+            {
+              "add": false,
+              "count": 1.0,
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "biomesoplenty:umbran_sapling"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "turtleblockacademy:modloaded_condition",
+              "modid": "biomesoplenty"
+            },
+            {
+              "condition": "minecraft:alternative",
+              "terms": [
+                {
+                  "condition": "minecraft:inverted",
+                  "term": {
+                    "condition": "turtleblockacademy:biometag_condition",
+                    "tag": "forge:has_hellbark"
+                  }
+                },
+                {
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                    "dimension": "dimdungeons:dungeon_dimension"
+                  }
+                },
+                {
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                    "dimension": "turtleblockacademy:mining_dimension"
+                  }
+                }
+              ]
+            }
+          ],
+          "functions": [
+            {
+              "add": false,
+              "count": 1.0,
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "biomesoplenty:hellbark_sapling"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "minecraft:alternative",
+              "terms": [
+                {
+                  "condition": "minecraft:inverted",
+                  "term": {
+                    "condition": "turtleblockacademy:biometag_condition",
+                    "tag": "forge:has_coconut"
+                  }
+                },
+                {
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                    "dimension": "dimdungeons:dungeon_dimension"
+                  }
+                },
+                {
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                    "dimension": "turtleblockacademy:mining_dimension"
+                  }
+                }
+              ]
+            }
+          ],
+          "functions": [
+            {
+              "add": false,
+              "count": 1.0,
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "ecologics:coconut_seedling"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "minecraft:alternative",
+              "terms": [
+                {
+                  "condition": "minecraft:inverted",
+                  "term": {
+                    "condition": "turtleblockacademy:biometag_condition",
+                    "tag": "forge:has_azalea"
+                  }
+                },
+                {
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                    "dimension": "dimdungeons:dungeon_dimension"
+                  }
+                },
+                {
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                    "dimension": "turtleblockacademy:mining_dimension"
+                  }
+                }
+              ]
+            }
+          ],
+          "functions": [
+            {
+              "add": false,
+              "count": 1.0,
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "minecraft:azalea"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "minecraft:alternative",
+              "terms": [
+                {
+                  "condition": "minecraft:inverted",
+                  "term": {
+                    "condition": "turtleblockacademy:biometag_condition",
+                    "tag": "forge:has_azalea"
+                  }
+                },
+                {
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                    "dimension": "dimdungeons:dungeon_dimension"
+                  }
+                },
+                {
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                    "dimension": "turtleblockacademy:mining_dimension"
+                  }
+                }
+              ]
+            }
+          ],
+          "functions": [
+            {
+              "add": false,
+              "count": 1.0,
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "minecraft:flowering_azalea"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "minecraft:alternative",
+              "terms": [
+                {
+                  "condition": "minecraft:inverted",
+                  "term": {
+                    "condition": "turtleblockacademy:biometag_condition",
+                    "tag": "forge:has_ebony"
+                  }
+                },
+                {
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                    "dimension": "dimdungeons:dungeon_dimension"
+                  }
+                },
+                {
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                    "dimension": "turtleblockacademy:mining_dimension"
+                  }
+                }
+              ]
+            }
+          ],
+          "functions": [
+            {
+              "add": false,
+              "count": 1.0,
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "phantasm:putac_shroom"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "minecraft:alternative",
+              "terms": [
+                {
+                  "condition": "minecraft:inverted",
+                  "term": {
+                    "condition": "turtleblockacademy:biometag_condition",
+                    "tag": "forge:has_pream"
+                  }
+                },
+                {
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                    "dimension": "dimdungeons:dungeon_dimension"
+                  }
+                },
+                {
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                    "dimension": "turtleblockacademy:mining_dimension"
+                  }
+                }
+              ]
+            }
+          ],
+          "functions": [
+            {
+              "add": false,
+              "count": 1.0,
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "phantasm:pream_sapling"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "turtleblockacademy:modloaded_condition",
+              "modid": "aether"
+            },
+            {
+              "condition": "minecraft:alternative",
+              "terms": [
+                {
+                  "condition": "minecraft:inverted",
+                  "term": {
+                    "condition": "turtleblockacademy:biometag_condition",
+                    "tag": "forge:has_aether_skyroot"
+                  }
+                },
+                {
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                    "dimension": "dimdungeons:dungeon_dimension"
+                  }
+                },
+                {
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                    "dimension": "turtleblockacademy:mining_dimension"
+                  }
+                }
+              ]
+            }
+          ],
+          "functions": [
+            {
+              "add": false,
+              "count": 1.0,
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "aether:skyroot_sapling"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "turtleblockacademy:modloaded_condition",
+              "modid": "aether"
+            },
+            {
+              "condition": "minecraft:alternative",
+              "terms": [
+                {
+                  "condition": "minecraft:inverted",
+                  "term": {
+                    "condition": "turtleblockacademy:biometag_condition",
+                    "tag": "forge:has_golden_oak"
+                  }
+                },
+                {
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                    "dimension": "dimdungeons:dungeon_dimension"
+                  }
+                },
+                {
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                    "dimension": "turtleblockacademy:mining_dimension"
+                  }
+                }
+              ]
+            }
+          ],
+          "functions": [
+            {
+              "add": false,
+              "count": 1.0,
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "aether:golden_oak_sapling"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "turtleblockacademy:modloaded_condition",
+              "modid": "tconstruct"
+            },
+            {
+              "condition": "minecraft:alternative",
+              "terms": [
+                {
+                  "condition": "minecraft:inverted",
+                  "term": {
+                    "condition": "turtleblockacademy:biometag_condition",
+                    "tag": "forge:has_bloodshroom"
+                  }
+                },
+                {
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                    "dimension": "dimdungeons:dungeon_dimension"
+                  }
+                },
+                {
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                    "dimension": "turtleblockacademy:mining_dimension"
+                  }
+                }
+              ]
+            }
+          ],
+          "functions": [
+            {
+              "add": false,
+              "count": 1.0,
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "tconstruct:blood_slime_sapling"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "turtleblockacademy:modloaded_condition",
+              "modid": "tconstruct"
+            },
+            {
+              "condition": "minecraft:alternative",
+              "terms": [
+                {
+                  "condition": "minecraft:inverted",
+                  "term": {
+                    "condition": "turtleblockacademy:biometag_condition",
+                    "tag": "forge:has_enderbark"
+                  }
+                },
+                {
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                    "dimension": "dimdungeons:dungeon_dimension"
+                  }
+                },
+                {
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                    "dimension": "turtleblockacademy:mining_dimension"
+                  }
+                }
+              ]
+            }
+          ],
+          "functions": [
+            {
+              "add": false,
+              "count": 1.0,
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "tconstruct:ender_slime_sapling"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "turtleblockacademy:modloaded_condition",
+              "modid": "tconstruct"
+            },
+            {
+              "condition": "minecraft:alternative",
+              "terms": [
+                {
+                  "condition": "minecraft:inverted",
+                  "term": {
+                    "condition": "turtleblockacademy:biometag_condition",
+                    "tag": "forge:has_greenheart"
+                  }
+                },
+                {
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                    "dimension": "dimdungeons:dungeon_dimension"
+                  }
+                },
+                {
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                    "dimension": "turtleblockacademy:mining_dimension"
+                  }
+                }
+              ]
+            }
+          ],
+          "functions": [
+            {
+              "add": false,
+              "count": 1.0,
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "tconstruct:earth_slime_sapling"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "turtleblockacademy:modloaded_condition",
+              "modid": "biomesoplenty"
+            },
+            {
+              "condition": "minecraft:alternative",
+              "terms": [
+                {
+                  "condition": "minecraft:inverted",
+                  "term": {
+                    "condition": "turtleblockacademy:biometag_condition",
+                    "tag": "forge:has_flowering_oak"
+                  }
+                },
+                {
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                    "dimension": "dimdungeons:dungeon_dimension"
+                  }
+                },
+                {
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                    "dimension": "turtleblockacademy:mining_dimension"
+                  }
+                }
+              ]
+            }
+          ],
+          "functions": [
+            {
+              "add": false,
+              "count": 1.0,
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "biomesoplenty:flowering_oak_sapling"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "turtleblockacademy:modloaded_condition",
+              "modid": "biomesoplenty"
+            },
+            {
+              "condition": "minecraft:alternative",
+              "terms": [
+                {
+                  "condition": "minecraft:inverted",
+                  "term": {
+                    "condition": "turtleblockacademy:biometag_condition",
+                    "tag": "forge:has_rainbow_birch"
+                  }
+                },
+                {
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                    "dimension": "dimdungeons:dungeon_dimension"
+                  }
+                },
+                {
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                    "dimension": "turtleblockacademy:mining_dimension"
+                  }
+                }
+              ]
+            }
+          ],
+          "functions": [
+            {
+              "add": false,
+              "count": 1.0,
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "biomesoplenty:rainbow_birch_sapling"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "turtleblockacademy:modloaded_condition",
+              "modid": "biomesoplenty"
+            },
+            {
+              "condition": "minecraft:alternative",
+              "terms": [
+                {
+                  "condition": "minecraft:inverted",
+                  "term": {
+                    "condition": "turtleblockacademy:biometag_condition",
+                    "tag": "forge:has_maple"
+                  }
+                },
+                {
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                    "dimension": "dimdungeons:dungeon_dimension"
+                  }
+                },
+                {
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                    "dimension": "turtleblockacademy:mining_dimension"
+                  }
+                }
+              ]
+            }
+          ],
+          "functions": [
+            {
+              "add": false,
+              "count": 1.0,
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "biomesoplenty:maple_sapling"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "turtleblockacademy:modloaded_condition",
+              "modid": "biomesoplenty"
+            },
+            {
+              "condition": "minecraft:alternative",
+              "terms": [
+                {
+                  "condition": "minecraft:inverted",
+                  "term": {
+                    "condition": "turtleblockacademy:biometag_condition",
+                    "tag": "forge:has_origin"
+                  }
+                },
+                {
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                    "dimension": "dimdungeons:dungeon_dimension"
+                  }
+                },
+                {
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                    "dimension": "turtleblockacademy:mining_dimension"
+                  }
+                }
+              ]
+            }
+          ],
+          "functions": [
+            {
+              "add": false,
+              "count": 1.0,
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "biomesoplenty:origin_sapling"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "turtleblockacademy:modloaded_condition",
+              "modid": "biomesoplenty"
+            },
+            {
+              "condition": "minecraft:alternative",
+              "terms": [
+                {
+                  "condition": "minecraft:inverted",
+                  "term": {
+                    "condition": "turtleblockacademy:biometag_condition",
+                    "tag": "forge:has_yellow_autumn"
+                  }
+                },
+                {
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                    "dimension": "dimdungeons:dungeon_dimension"
+                  }
+                },
+                {
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                    "dimension": "turtleblockacademy:mining_dimension"
+                  }
+                }
+              ]
+            }
+          ],
+          "functions": [
+            {
+              "add": false,
+              "count": 1.0,
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "biomesoplenty:yellow_autumn_sapling"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "turtleblockacademy:modloaded_condition",
+              "modid": "biomesoplenty"
+            },
+            {
+              "condition": "minecraft:alternative",
+              "terms": [
+                {
+                  "condition": "minecraft:inverted",
+                  "term": {
+                    "condition": "turtleblockacademy:biometag_condition",
+                    "tag": "forge:has_orange_autumn"
+                  }
+                },
+                {
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                    "dimension": "dimdungeons:dungeon_dimension"
+                  }
+                },
+                {
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                    "dimension": "turtleblockacademy:mining_dimension"
+                  }
+                }
+              ]
+            }
+          ],
+          "functions": [
+            {
+              "add": false,
+              "count": 1.0,
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "biomesoplenty:orange_autumn_sapling"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "turtleblockacademy:modloaded_condition",
+              "modid": "tconstruct"
+            },
+            {
+              "chance": 0.1,
+              "condition": "minecraft:random_chance"
+            }
+          ],
+          "functions": [
+            {
+              "add": false,
+              "count": 1.0,
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "tconstruct:sky_slime_sapling"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "turtleblockacademy:modloaded_condition",
+              "modid": "ecologics"
+            }
+          ],
+          "functions": [
+            {
+              "add": false,
+              "count": 1.0,
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "ecologics:walnut_sapling"
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "add": false,
+              "count": 1.0,
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "minecraft:oak_sapling"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ]
+}

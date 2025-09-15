@@ -1,0 +1,73 @@
+
+["Fletcher Trade Settings"]
+
+	["Fletcher Trade Settings"."Fletcher Level One Trade One"]
+		# Fletcher 1 Trade Request 1 Table
+		fletcher_1_trade_request_1_table = "todecoins:trade_tables/misc/tagged_stick_table"
+		fletcher_1_trade_request_1_count = 16
+		# Fletcher 1 Trade Offer 1 Table
+		fletcher_1_trade_offer_1_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+
+	["Fletcher Trade Settings"."Fletcher Level One Trade Two"]
+		# Fletcher 1 Trade Request 2 Table
+		fletcher_1_trade_request_2_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+		# Fletcher 1 Trade Secondary Request 2 Table
+		fletcher_1_trade_secondary_request_2_table = "todecoins:trade_tables/blocks/gravel_table"
+		# Fletcher 1 Trade Offer 2 Table
+		fletcher_1_trade_offer_2_table = "todecoins:trade_tables/misc/flint_sell_table"
+
+	["Fletcher Trade Settings"."Fletcher Level Two Trade One"]
+		# Fletcher 2 Trade Request 1 Table
+		fletcher_2_trade_request_1_table = "todecoins:trade_tables/misc/flint_buy_table"
+		# Fletcher 2 Trade Offer 1 Table
+		fletcher_2_trade_offer_1_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+
+	["Fletcher Trade Settings"."Fletcher Level Two Trade Two"]
+		# Fletcher 2 Trade Request 2 Table
+		fletcher_2_trade_request_2_table = "todecoins:trade_tables/currency/three_emerald_value_currency"
+		# Fletcher 2 Trade Offer 2 Table
+		fletcher_2_trade_offer_2_table = "todecoins:trade_tables/weapons/bows"
+
+	["Fletcher Trade Settings"."Fletcher Level Three Trade One"]
+		# Fletcher 3 Trade Request 1 Table
+		fletcher_3_trade_request_1_table = "todecoins:trade_tables/textiles/tagged_string_table"
+		fletcher_3_trade_request_1_count = 16
+		# Fletcher 3 Trade Offer 1 Table
+		fletcher_3_trade_offer_1_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+
+	["Fletcher Trade Settings"."Fletcher Level Three Trade Two"]
+		# Fletcher 3 Trade Request 2 Table
+		fletcher_3_trade_request_2_table = "todecoins:trade_tables/textiles/feather_table"
+		# Fletcher 3 Trade Offer 2 Table
+		fletcher_3_trade_offer_2_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+
+	["Fletcher Trade Settings"."Fletcher Level Four Trade One"]
+		# Rare Trade
+		# Fletcher 4 Trade Request 1 Table
+		fletcher_4_trade_request_1_table = "todecoins:trade_tables/currency/seven_emerald_value_currency"
+		# Fletcher 4 Trade Offer 1 Table
+		fletcher_4_trade_offer_1_table = "todecoins:trade_tables/weapons/bows"
+
+	["Fletcher Trade Settings"."Fletcher Level Four Trade Two"]
+		# Fletcher 4 Trade Request 2 Table
+		# Available if Supplementaries mod is Loaded
+		fletcher_4_trade_request_2_table = "todecoins:trade_tables/currency/two_emerald_value_currency"
+		# Fletcher 4 Trade Offer 2 Table
+		# Available if Supplementaries mod is Loaded
+		fletcher_4_trade_offer_2_table = "todecoins:trade_tables/weapons/quivers"
+		fletcher_4_trade_offer_2_count = 1
+		# Fletcher 4 Trade Request 3 Table
+		fletcher_4_trade_request_3_table = "todecoins:trade_tables/tools/tripwire_hook_table"
+		# Fletcher 4 Trade Offer 3 Table
+		fletcher_4_trade_offer_3_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+
+	["Fletcher Trade Settings"."Fletcher Level Five Trade One"]
+		# Fletcher 5 Trade Request 1 Table
+		# Tipped Arrow Trade
+		fletcher_5_trade_request_1_table = "todecoins:trade_tables/currency/two_emerald_value_currency"
+
+	["Fletcher Trade Settings"."Fletcher Level Five Trade Two"]
+		# Fletcher 5 Trade Request 2 Table
+		# Tipped Arrow Trade
+		fletcher_5_trade_request_2_table = "todecoins:trade_tables/currency/two_emerald_value_currency"
+

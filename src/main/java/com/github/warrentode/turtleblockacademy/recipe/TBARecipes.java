@@ -26,6 +26,14 @@ public class TBARecipes {
 
     public static final RecipeBookType RECIPE_BOOK_FERMENTING = RecipeBookType.create("FERMENTING_BOOK");
 
+    public static final RegistryObject<RecipeSerializer<?>>
+            SHAPELESS_REMAINDER_SERIALIZER = SERIALIZERS.register("shapeless_remainder",
+            ShapelessRemainderRecipe.Serializer::new);
+
+    public static final RegistryObject<RecipeSerializer<?>>
+            SHAPED_REMAINDER_SERIALIZER = SERIALIZERS.register("shaped_remainder",
+            ShapedRemainderRecipe.Serializer::new);
+
     public static void register(IEventBus eventBus) {
         SERIALIZERS.register(eventBus);
         RECIPE_TYPE.register(eventBus);

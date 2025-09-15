@@ -1,6 +1,6 @@
 {
-  "parent": "minecraft:item/generated",
+  "parent": "turtleblockacademy:item/template_colored_egg",
   "textures": {
-    "layer0": "turtleblockacademy:item/colored_egg_orange"
+    "layer0": "turtleblockacademy:item/egg_colored"
   }
 }

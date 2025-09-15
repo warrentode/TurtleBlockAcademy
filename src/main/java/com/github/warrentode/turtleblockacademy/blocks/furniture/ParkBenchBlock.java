@@ -1,6 +1,6 @@
 package com.github.warrentode.turtleblockacademy.blocks.furniture;
 
-import com.github.warrentode.turtleblockacademy.blocks.entity.SeatEntity;
+import com.github.warrentode.turtleblockacademy.entity.SeatEntity;
 import com.github.warrentode.turtleblockacademy.util.ShapeUtil;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;

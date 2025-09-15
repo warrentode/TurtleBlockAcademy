@@ -1,0 +1,545 @@
+{
+  "profession": "villagersplus:alchemist",
+  "removeOtherTrades": true,
+  "trades": [
+    {
+      "multiOffer": [
+        {
+          "itemKey": "minecraft:brown_mushroom",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "minecraft:red_mushroom",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "minecraft:nether_wart",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "minecraft:sugar",
+          "amount": 1,
+          "priceModifier": 0
+        }
+      ],
+      "multiRequest": [
+		{
+			"itemKey": "minecraft:emerald",
+			"amount": 1,
+			"priceModifier": 0
+		},
+        {
+          "itemKey": "todecoins:copper_coin_bag",
+          "amount": 18,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:iron_coin_bag",
+          "amount": 8,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:gold_coin_bag",
+          "amount": 6,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:nether_gold_coin",
+          "amount": 3,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:endonian_coin",
+          "amount": 1,
+          "priceModifier": 0
+        }
+      ],
+      "tradeExp": 1,
+      "maxUses": 12,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 1,
+      "UTID": "villagersplus:alchemist_multioffer_brown_mushroom_for_emerald"
+    },
+    {
+      "offer": {
+        "itemKey": "minecraft:glass_bottle",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "multiRequest": [
+		{
+			"itemKey": "minecraft:emerald",
+			"amount": 1,
+			"priceModifier": 0
+		},
+        {
+          "itemKey": "todecoins:copper_coin_bag",
+          "amount": 18,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:iron_coin_bag",
+          "amount": 8,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:gold_coin_bag",
+          "amount": 6,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:nether_gold_coin",
+          "amount": 3,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:endonian_coin",
+          "amount": 1,
+          "priceModifier": 0
+        }
+      ],
+      "tradeExp": 2,
+      "maxUses": 12,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 2,
+      "UTID": "villagersplus:alchemist_glass_bottle_for_emerald"
+    },
+    {
+      "multiOffer": [
+        {
+          "itemKey": "minecraft:fermented_spider_eye",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "minecraft:pufferfish",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "minecraft:magma_cream",
+          "amount": 1,
+          "priceModifier": 0
+        }
+      ],
+      "multiRequest": [
+		{
+			"itemKey": "minecraft:emerald",
+			"amount": 1,
+			"priceModifier": 0
+		},
+        {
+          "itemKey": "todecoins:copper_coin_bag",
+          "amount": 18,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:iron_coin_bag",
+          "amount": 8,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:gold_coin_bag",
+          "amount": 6,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:nether_gold_coin",
+          "amount": 3,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:endonian_coin",
+          "amount": 1,
+          "priceModifier": 0
+        }
+      ],
+      "tradeExp": 5,
+      "maxUses": 12,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 2,
+      "UTID": "villagersplus:alchemist_multioffer_fermented_spider_eye_for_emerald"
+    },
+    {
+      "offer": {
+        "itemKey": "minecraft:potion",
+        "amount": 1,
+        "priceModifier": 0,
+        "effects": [
+          {
+            "effectKey": "random",
+            "duration": 1200,
+            "level": 0,
+            "isVisible": true,
+            "potionKey": "minecraft:empty"
+          }
+        ]
+      },
+      "multiRequest": [
+        {
+          "itemKey": "minecraft:emerald",
+          "amount": 5,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:iron_coin_bag",
+          "amount": 40,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:gold_coin_bag",
+          "amount": 30,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:nether_gold_coin",
+          "amount": 15,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:endonian_coin",
+          "amount": 5,
+          "priceModifier": 0
+        }
+      ],
+      "additionalRequest": {
+        "itemKey": "minecraft:potion",
+        "amount": 1,
+        "priceModifier": 0,
+        "advancedNBTData": "{Potion:\"minecraft:awkward\"}"
+      },
+      "tradeExp": 5,
+      "maxUses": 3,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 1,
+      "UTID": "villagersplus:alchemist_potion_for_emerald_and_water"
+    },
+    {
+      "offer": {
+        "itemKey": "minecraft:blaze_powder",
+        "amount": 2,
+        "priceModifier": 0
+      },
+      "multiRequest": [
+		{
+			"itemKey": "minecraft:emerald",
+			"amount": 5,
+			"priceModifier": 0
+		},
+        {
+          "itemKey": "todecoins:iron_coin_bag",
+          "amount": 40,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:gold_coin_bag",
+          "amount": 30,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:nether_gold_coin",
+          "amount": 15,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:endonian_coin",
+          "amount": 5,
+          "priceModifier": 0
+        }
+      ],
+      "tradeExp": 20,
+      "maxUses": 12,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 3,
+      "UTID": "villagersplus:alchemist_blaze_powder_for_emerald"
+    },
+    {
+      "multiOffer": [
+        {
+          "itemKey": "minecraft:phantom_membrane",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "minecraft:ghast_tear",
+          "amount": 1,
+          "priceModifier": 0
+        }
+      ],
+      "multiRequest": [
+		{
+			"itemKey": "minecraft:emerald",
+			"amount": 11,
+			"priceModifier": 0
+		},
+        {
+          "itemKey": "todecoins:nether_gold_coin",
+          "amount": 33,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:endonian_coin",
+          "amount": 11,
+          "priceModifier": 0
+        }
+	  ],
+      "tradeExp": 10,
+      "maxUses": 12,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 3,
+      "UTID": "villagersplus:alchemist_multioffer_phantom_membrane_for_emerald"
+    },
+    {
+      "multiOffer": [
+		{
+			"itemKey": "minecraft:emerald",
+			"amount": 5,
+			"priceModifier": 0
+		},
+        {
+          "itemKey": "todecoins:iron_coin_bag",
+          "amount": 40,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:gold_coin_bag",
+          "amount": 30,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:nether_gold_coin",
+          "amount": 15,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:endonian_coin",
+          "amount": 5,
+          "priceModifier": 0
+        }
+      ],
+      "multiRequest": [
+        {
+          "itemKey": "minecraft:ender_pearl",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "minecraft:blaze_rod",
+          "amount": 1,
+          "priceModifier": 0
+        }
+      ],
+      "tradeExp": 20,
+      "maxUses": 12,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 3,
+      "UTID": "villagersplus:alchemist_emerald_for_multirequest_ender_pearl"
+    },
+    {
+      "offer": {
+        "itemKey": "minecraft:gunpowder",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "multiRequest": [
+		{
+			"itemKey": "minecraft:emerald",
+			"amount": 1,
+			"priceModifier": 0
+		},
+        {
+          "itemKey": "todecoins:copper_coin_bag",
+          "amount": 18,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:iron_coin_bag",
+          "amount": 8,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:gold_coin_bag",
+          "amount": 6,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:nether_gold_coin",
+          "amount": 3,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:endonian_coin",
+          "amount": 1,
+          "priceModifier": 0
+        }
+      ],
+      "tradeExp": 15,
+      "maxUses": 4,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 4,
+      "UTID": "villagersplus:alchemist_gunpowder_for_emerald"
+    },
+    {
+      "offer": {
+        "itemKey": "minecraft:dragon_breath",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "multiRequest": [
+		{
+			"itemKey": "minecraft:emerald",
+			"amount": 64,
+			"priceModifier": 0
+		},
+        {
+          "itemKey": "todecoins:endonian_coin",
+          "amount": 64,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:emerald_quarter_bank_note",
+          "amount": 4,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:netherite_coin",
+          "amount": 2,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:emerald_half_bank_note",
+          "amount": 2,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:emerald_bank_note",
+          "amount": 1,
+          "priceModifier": 0
+        }
+      ],
+      "additionalMultiRequest": [
+		{
+			"itemKey": "minecraft:emerald",
+			"amount": 16,
+			"priceModifier": 0
+		},
+        {
+          "itemKey": "todecoins:endonian_coin",
+          "amount": 16,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:nether_gold_coin",
+          "amount": 48,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:emerald_quarter_bank_note",
+          "amount": 1,
+          "priceModifier": 0
+        }
+      ],
+      "tradeExp": 15,
+      "maxUses": 3,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 4,
+      "UTID": "villagersplus:alchemist_dragon_breath_for_endonian_coin_bag"
+    },
+    {
+      "offer": {
+        "itemKey": "minecraft:glistering_melon_slice",
+        "amount": 3
+      },
+      "multiRequest": [
+		{
+			"itemKey": "minecraft:emerald",
+			"amount": 4,
+			"priceModifier": 0
+		},
+        {
+          "itemKey": "todecoins:iron_coin_bag",
+          "amount": 32,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:gold_coin_bag",
+          "amount": 24,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:nether_gold_coin",
+          "amount": 12,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:endonian_coin",
+          "amount": 4,
+          "priceModifier": 0
+        }
+      ],
+      "tradeExp": 30,
+      "maxUses": 12,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 5,
+      "UTID": "villagersplus:alchemist_glistering_melon_slice_for_emerald"
+    },
+    {
+      "offer": {
+        "itemKey": "minecraft:rabbit_foot",
+        "amount": 1,
+        "priceModifier": 0
+      },
+      "multiRequest": [
+		{
+			"itemKey": "minecraft:emerald",
+			"amount": 1,
+			"priceModifier": 0
+		},
+        {
+          "itemKey": "todecoins:copper_coin_bag",
+          "amount": 18,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:iron_coin_bag",
+          "amount": 8,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:gold_coin_bag",
+          "amount": 6,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:nether_gold_coin",
+          "amount": 3,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:endonian_coin",
+          "amount": 1,
+          "priceModifier": 0
+        }
+      ],
+      "tradeExp": 30,
+      "maxUses": 12,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 5,
+      "UTID": "villagersplus:alchemist_rabbit_foot_for_emerald"
+    }
+  ]
+}

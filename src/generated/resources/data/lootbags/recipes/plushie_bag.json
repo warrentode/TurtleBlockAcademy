@@ -1,9 +1,9 @@
 {
   "type": "lootbags:loot",
-  "color": "white",
+  "color": "gold",
   "name": "Plushie Bag",
   "output": {
     "table": "lootbags:loot_bags/plushie_bag"
   },
-  "rarity": "COMMON"
+  "rarity": "RARE"
 }

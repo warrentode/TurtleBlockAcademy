@@ -1,0 +1,325 @@
+{
+  "profession": "minecraft:nitwit",
+  "removeOtherTrades": true,
+  "trades": [
+    {
+      "multiOffer": [
+        {
+          "itemKey": "minecraft:player_head",
+          "amount": 1,
+          "priceModifier": 0,
+          "advancedNBTData": "{SkullOwner:{Name:\"ToadieOdie\"}}"
+        },
+        {
+          "itemKey": "minecraft:player_head",
+          "amount": 1,
+          "priceModifier": 0,
+          "advancedNBTData": "{SkullOwner:{Name:\"Minepika94\"}}"
+        },
+        {
+          "itemKey": "minecraft:player_head",
+          "amount": 1,
+          "priceModifier": 0,
+          "advancedNBTData": "{SkullOwner:{Name:\"MikieSteve\"}}"
+        },
+        {
+          "itemKey": "minecraft:player_head",
+          "amount": 15,
+          "priceModifier": 0,
+          "advancedNBTData": "{SkullOwner:{Name:\"EnderDragonRobot\"}}"
+        },
+        {
+          "itemKey": "minecraft:player_head",
+          "amount": 1,
+          "priceModifier": 0,
+          "advancedNBTData": "{SkullOwner:{Name:\"MHF_Steve\"}}"
+        },
+        {
+          "itemKey": "minecraft:player_head",
+          "amount": 1,
+          "priceModifier": 0,
+          "advancedNBTData": "{SkullOwner:{Name:\"MHF_Alex\"}}"
+        },
+        {
+          "itemKey": "minecraft:player_head",
+          "amount": 1,
+          "priceModifier": 0,
+          "advancedNBTData": "{SkullOwner:{Name:\"MHF_Herobrine\"}}"
+        }
+      ],
+      "multiRequest": [
+        {
+          "itemKey": "minecraft:emerald",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:copper_coin_bag",
+          "amount": 18,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:iron_coin_bag",
+          "amount": 8,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:gold_coin_bag",
+          "amount": 6,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:nether_gold_coin",
+          "amount": 3,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:endonian_coin",
+          "amount": 1,
+          "priceModifier": 0
+        }
+      ],
+      "tradeExp": 30,
+      "maxUses": 1,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 1,
+      "UTID": "minecraft:nitwit_multioffer_player_head_for_emerald"
+    },
+    {
+      "multiOffer": [
+        {
+          "itemKey": "plushies:axolotl",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "plushies:bee",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "plushies:cat",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "plushies:cow",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "plushies:dolphin",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "plushies:dragon",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "plushies:enderman",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "plushies:frog",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "plushies:goat",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "plushies:llama",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "plushies:magma_cube",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "plushies:mooshroom",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "plushies:panda",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "plushies:parrot",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "plushies:red_fox",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "plushies:sheep",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "plushies:slime",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "plushies:snow_golem",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "plushies:turtle",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "plushies:warden",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "plushies:white_fox",
+          "amount": 1,
+          "priceModifier": 0
+        }
+      ],
+      "multiRequest": [
+        {
+          "itemKey": "minecraft:emerald",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:copper_coin_bag",
+          "amount": 18,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:iron_coin_bag",
+          "amount": 8,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:gold_coin_bag",
+          "amount": 6,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:nether_gold_coin",
+          "amount": 3,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:endonian_coin",
+          "amount": 1,
+          "priceModifier": 0
+        }
+      ],
+      "tradeExp": 30,
+      "maxUses": 1,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 1,
+      "UTID": "minecraft:nitwit_multioffer_axolotl_for_emerald"
+    },
+    {
+      "offer": {
+        "itemKey": "supplementaries:bubble_blower",
+        "amount": 1
+      },
+      "multiRequest": [
+        {
+          "itemKey": "minecraft:emerald",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:copper_coin_bag",
+          "amount": 18,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:iron_coin_bag",
+          "amount": 8,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:gold_coin_bag",
+          "amount": 6,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:nether_gold_coin",
+          "amount": 3,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:endonian_coin",
+          "amount": 1,
+          "priceModifier": 0
+        }
+      ],
+      "tradeExp": 30,
+      "maxUses": 1,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 1,
+      "UTID": "minecraft:nitwit_bubble_blower_for_emerald"
+    },
+    {
+      "offer": {
+        "itemKey": "supplementaries:soap",
+        "amount": 1
+      },
+      "multiRequest": [
+        {
+          "itemKey": "minecraft:emerald",
+          "amount": 1,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:copper_coin_bag",
+          "amount": 18,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:iron_coin_bag",
+          "amount": 8,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:gold_coin_bag",
+          "amount": 6,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:nether_gold_coin",
+          "amount": 3,
+          "priceModifier": 0
+        },
+        {
+          "itemKey": "todecoins:endonian_coin",
+          "amount": 1,
+          "priceModifier": 0
+        }
+      ],
+      "tradeExp": 30,
+      "maxUses": 1,
+      "priceMultiplier": 0.05,
+      "demand": 0,
+      "tradeLevel": 1,
+      "UTID": "minecraft:nitwit_soap_for_emerald"
+    }
+  ]
+}

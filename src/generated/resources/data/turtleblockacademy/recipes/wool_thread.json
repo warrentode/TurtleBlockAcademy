@@ -1,0 +1,16 @@
+{
+  "type": "turtleblockacademy:shaped_remainder",
+  "group": "thread",
+  "key": {
+    "F": {
+      "item": "minecraft:string"
+    }
+  },
+  "pattern": [
+    "FFF",
+    "FFF"
+  ],
+  "result": {
+    "item": "turtleblockacademy:wool_thread"
+  }
+}

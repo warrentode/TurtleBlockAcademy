@@ -160,7 +160,6 @@ public class TBABlockEntities {
     public static final RegistryObject<BlockEntityType<BasketBlockEntity>> BASKET_BLOCK_ENTITY =
             BLOCK_ENTITIES.register("basket_block_entity",
                     () -> BlockEntityType.Builder.of(BasketBlockEntity::new,
-
                                     TBABlocks.BASKET_OAK_WHITE.get(),
                                     TBABlocks.BASKET_OAK_LIGHT_GRAY.get(),
                                     TBABlocks.BASKET_OAK_GRAY.get(),

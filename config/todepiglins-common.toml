@@ -1,0 +1,64 @@
+
+#Common configuration settings
+[common]
+
+	#Piglin Merchant settings
+	[common.todepiglinmerchant]
+
+		[common.todepiglinmerchant.trades]
+
+			[common.todepiglinmerchant.trades.common]
+				#The minimum amount of common trades that a Piglin Merchant will have.
+				#Range: > 0
+				minAmount = 5
+				#The maximum amount of common trades that a Piglin Merchant can have.
+				#Range: > 0
+				maxAmount = 8
+				#The chance this trade rarity will be included in the Piglin Merchant's trades
+				#Range: 0.0 ~ 1.0
+				includeChance = 1.0
+
+			[common.todepiglinmerchant.trades.uncommon]
+				#The minimum amount of uncommon trades that a Piglin Merchant will have.
+				#Range: > 0
+				minAmount = 3
+				#The maximum amount of uncommon trades that a Piglin Merchant can have.
+				#Range: > 0
+				maxAmount = 6
+				#The chance this trade rarity will be included in the Piglin Merchant's trades
+				#Range: 0.0 ~ 1.0
+				includeChance = 0.5
+
+			[common.todepiglinmerchant.trades.rare]
+				#The minimum amount of rare trades that a Piglin Merchant will have.
+				#Range: > 0
+				minAmount = 1
+				#The maximum amount of rare trades that a Piglin Merchant can have.
+				#Range: > 0
+				maxAmount = 4
+				#The chance this trade rarity will be included in the Piglin Merchant's trades
+				#Range: 0.0 ~ 1.0
+				includeChance = 0.25
+
+			[common.todepiglinmerchant.trades.epic]
+				#The minimum amount of epic trades that a Piglin Merchant will have.
+				#Range: > 0
+				minAmount = 0
+				#The maximum amount of epic trades that a Piglin Merchant can have.
+				#Range: > 0
+				maxAmount = 2
+				#The chance this trade rarity will be included in the Piglin Merchant's trades
+				#Range: 0.0 ~ 1.0
+				includeChance = 0.125
+
+			[common.todepiglinmerchant.trades.legendary]
+				#The minimum amount of legendary trades that a Piglin Merchant will have.
+				#Range: > 0
+				minAmount = 0
+				#The maximum amount of legendary trades that a Piglin Merchant can have.
+				#Range: > 0
+				maxAmount = 1
+				#The chance this trade rarity will be included in the Piglin Merchant's trades
+				#Range: 0.0 ~ 1.0
+				includeChance = 0.0625
+

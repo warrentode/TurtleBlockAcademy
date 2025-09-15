@@ -1,0 +1,83 @@
+
+["Glassblower Trade Settings"]
+
+	["Glassblower Trade Settings"."Glassblower Level One Trade One"]
+		# Glassblower 1 Trade Request 1 Table
+		glassblower_1_trade_request_1_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+		# Glassblower 1 Trade Offer 1 Table
+		glassblower_1_trade_offer_1_table = "todecoins:trade_tables/glass/recyclable_glass_tag_table"
+		glassblower_1_trade_offer_1_count = 4
+
+	["Glassblower Trade Settings"."Glassblower Level One Trade Two"]
+		# Glassblower 1 Trade Request 2 Table
+		glassblower_1_trade_request_2_table = "todecoins:trade_tables/blocks/sand_tag_table"
+		glassblower_1_trade_request_2_count = 6
+		# Glassblower 1 Trade Offer 2 Table
+		glassblower_1_trade_offer_2_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+
+	["Glassblower Trade Settings"."Glassblower Level One Trade Three"]
+		# Glassblower 1 Trade Request 3 Table
+		glassblower_1_trade_request_3_table = "todecoins:trade_tables/misc/one_emerald_value_fuel_table"
+		# Glassblower 1 Trade Offer 3 Table
+		glassblower_1_trade_offer_3_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+
+	["Glassblower Trade Settings"."Glassblower Level Two Trade One"]
+		# Glassblower 2 Trade Request 1 Table
+		glassblower_2_trade_request_1_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+		# Glassblower 2 Trade Offer 1 Table
+		glassblower_2_trade_offer_1_table = "todecoins:trade_tables/glass/tagged_glass_table"
+		glassblower_2_trade_offer_1_count = 4
+
+	["Glassblower Trade Settings"."Glassblower Level Two Trade Two"]
+		# Glassblower 2 Trade Request 2 Table
+		glassblower_2_trade_request_2_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+		# Glassblower 2 Trade Offer 2 Table
+		glassblower_2_trade_offer_2_table = "todecoins:trade_tables/glass/tagged_glass_panes_table"
+		glassblower_2_trade_offer_2_count = 16
+
+	["Glassblower Trade Settings"."Glassblower Level Two Trade Three"]
+		# Glassblower 2 Trade Request 3 Table
+		glassblower_2_trade_request_3_table = "todecoins:trade_tables/currency/six_emerald_value_currency"
+		# Glassblower 2 Trade Offer 3 Table
+		glassblower_2_trade_offer_3_table = "todecoins:trade_tables/tools/glassblowing_tools_tag_table"
+
+	["Glassblower Trade Settings"."Glassblower Level Three Trade One"]
+		# Glassblower 3 Trade Request 1 Table
+		glassblower_3_trade_request_1_table = "todecoins:trade_tables/currency/six_emerald_value_currency"
+		# Glassblower 3 Trade Offer 1 Table
+		glassblower_3_trade_offer_1_table = "todecoins:trade_tables/tools/glassblowing_tools_tag_table"
+
+	["Glassblower Trade Settings"."Glassblower Level Three Trade Two"]
+		# Glassblower 3 Trade Request 2 Table
+		glassblower_3_trade_request_2_table = "todecoins:trade_tables/currency/emerald_quarter_half_note_value_currency"
+		# Glassblower 3 Trade Offer 2 Table
+		glassblower_3_trade_offer_2_table = "todecoins:trade_tables/currency/thirty_two_emerald_table"
+
+	["Glassblower Trade Settings"."Glassblower Level Four Trade One"]
+		# Glassblower 4 Trade Request 1 Table
+		glassblower_4_trade_request_1_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+		# Glassblower 4 Trade Offer 1 Table
+		glassblower_4_trade_offer_1_table = "todecoins:trade_tables/glass/tagged_glass_table"
+		glassblower_4_trade_offer_1_count = 4
+
+	["Glassblower Trade Settings"."Glassblower Level Four Trade Two"]
+		# Glassblower 4 Trade Request 2 Table
+		glassblower_4_trade_request_2_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+		# Glassblower 4 Trade Offer 2 Table
+		glassblower_4_trade_offer_2_table = "todecoins:trade_tables/glass/tagged_glass_table"
+		glassblower_4_trade_offer_2_count = 4
+
+	["Glassblower Trade Settings"."Glassblower Level Five Trade One"]
+		# Glassblower 5 Trade Request 1 Table
+		glassblower_5_trade_request_1_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+		# Glassblower 5 Trade Offer 1 Table
+		glassblower_5_trade_offer_1_table = "todecoins:trade_tables/glass/tagged_glass_table"
+		glassblower_5_trade_offer_1_count = 4
+
+	["Glassblower Trade Settings"."Glassblower Level Five Trade Two"]
+		# Glassblower 5 Trade Request 2 Table
+		glassblower_5_trade_request_2_table = "todecoins:trade_tables/currency/single_emerald_value_currency"
+		# Glassblower 5 Trade Offer 2 Table
+		glassblower_5_trade_offer_2_table = "todecoins:trade_tables/glass/tagged_glass_table"
+		glassblower_5_trade_offer_2_count = 4
+

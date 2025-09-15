@@ -1,9 +1,6 @@
 package com.github.warrentode.turtleblockacademy.datagen.loot.tables;
 
-import com.github.warrentode.turtleblockacademy.loot.tables.DimDungeonLootTables;
-import com.github.warrentode.turtleblockacademy.loot.tables.KitchenLootTables;
-import com.github.warrentode.turtleblockacademy.loot.tables.LootbagLootTables;
-import com.github.warrentode.turtleblockacademy.loot.tables.PackBuiltInLootTables;
+import com.github.warrentode.turtleblockacademy.loot.tables.*;
 import com.github.warrentode.turtleblockacademy.util.TBATags;
 import net.minecraft.Util;
 import net.minecraft.nbt.CompoundTag;
@@ -28,7 +25,7 @@ import java.util.Objects;
 import java.util.function.BiConsumer;
 import java.util.function.Consumer;
 
-import static com.github.warrentode.turtleblockacademy.datagen.loot.TBALootProviders.IN_MINING;
+import static com.github.warrentode.turtleblockacademy.datagen.loot.TBALootProviders.*;
 
 
 public class LootbagLootTablesGen implements Consumer<BiConsumer<ResourceLocation, LootTable.Builder>> {
@@ -64,34 +61,12 @@ public class LootbagLootTablesGen implements Consumer<BiConsumer<ResourceLocatio
                 )
         );
 
-        consumer.accept(LootbagLootTables.CAGERIUM_KIT, LootTable.lootTable()
-                .withPool(LootPool.lootPool().setRolls(ConstantValue.exactly(1))
-                        .setBonusRolls(ConstantValue.exactly(1))
-                        .add(TagEntry.expandTag(TBATags.Items.CAGERIUM_BLOCKS).setWeight(1)
-                                .when(LootItemRandomChanceCondition.randomChance(0.1F)))
-                        .add(TagEntry.expandTag(TBATags.Items.CAGERIUM_ITEMS).setWeight(1)
-                                .when(LootItemRandomChanceCondition.randomChance(0.1F)))
-                ));
-
-        consumer.accept(LootbagLootTables.UFO_BAG, LootTable.lootTable()
-                .withPool(LootPool.lootPool().setRolls(ConstantValue.exactly(1)).setBonusRolls(ConstantValue.exactly(0))
-                        .add(LootTableReference.lootTableReference(PackBuiltInLootTables.UFO))
-                )
-        );
-
         consumer.accept(LootbagLootTables.TINKERS_KIT, LootTable.lootTable()
                 .withPool(LootPool.lootPool().setRolls(ConstantValue.exactly(1))
-                        .add(LootItem.lootTableItem(TinkerWorld.rawCobalt)
-                                .when(LootItemRandomChanceCondition.randomChance(0.1F))
+                        .add(LootItem.lootTableItem(TinkerWorld.rawCobalt).setWeight(5)
                                 .apply(SetItemCountFunction.setCount(UniformGenerator.between(1, 4))))
-                        .add(LootItem.lootTableItem(Objects.requireNonNull(TinkerFluids.blazingBlood.getBucket()))
-                                .when(LootItemRandomChanceCondition.randomChance(0.1F))
+                        .add(LootItem.lootTableItem(Objects.requireNonNull(TinkerFluids.blazingBlood.getBucket())).setWeight(1)
                                 .apply(SetItemCountFunction.setCount(UniformGenerator.between(1, 4))))
-                ));
-
-        consumer.accept(LootbagLootTables.MUSIC_DISCS, LootTable.lootTable()
-                .withPool(LootPool.lootPool().setRolls(ConstantValue.exactly(1))
-                        .add(TagEntry.expandTag(TBATags.Items.MUSIC_DISCS))
                 ));
 
         consumer.accept(LootbagLootTables.SHULKER_BOXES, LootTable.lootTable()
@@ -100,16 +75,10 @@ public class LootbagLootTablesGen implements Consumer<BiConsumer<ResourceLocatio
                         .add(TagEntry.expandTag(TBATags.Items.SHULKER_BOXES)))
         );
 
-        consumer.accept(LootbagLootTables.BACKPACK_UPGRADES, LootTable.lootTable()
-                .withPool(LootPool.lootPool().setRolls(ConstantValue.exactly(1))
-                        .setBonusRolls(ConstantValue.exactly(0))
-                        .add(TagEntry.expandTag(TBATags.Items.BACKPACK_UPGRADES)))
-        );
-
         consumer.accept(LootbagLootTables.RATIONS, LootTable.lootTable()
                 .withPool(LootPool.lootPool().setRolls(ConstantValue.exactly(1)).setBonusRolls(ConstantValue.exactly(0))
                         .when(LootItemRandomChanceCondition.randomChance(0.25F))
-                        .add(LootTableReference.lootTableReference(DimDungeonLootTables.KIT_BASIC_SUPPLIES)))
+                        .add(LootTableReference.lootTableReference(KitLootTables.KIT_BASIC_SUPPLIES)))
                 .withPool(LootPool.lootPool().setRolls(ConstantValue.exactly(1)).setBonusRolls(ConstantValue.exactly(0))
                         .add(LootTableReference.lootTableReference(KitchenLootTables.KITCHEN)))
                 .withPool(LootPool.lootPool().setRolls(ConstantValue.exactly(1)).setBonusRolls(ConstantValue.exactly(0))
@@ -149,7 +118,7 @@ public class LootbagLootTablesGen implements Consumer<BiConsumer<ResourceLocatio
                         .add(LootTableReference.lootTableReference(KitchenLootTables.FESTIVEDELIGHT_EDIBLES))
                 )
                 .withPool(LootPool.lootPool().setRolls(ConstantValue.exactly(2))
-                        .add(TagEntry.expandTag(TBATags.Items.EGGS)))
+                        .add(TagEntry.expandTag(TBATags.Items.EASTER_EGGS)))
         );
 
         consumer.accept(LootbagLootTables.ANNIVERSARY_LOOTBAG, LootTable.lootTable()
@@ -192,6 +161,18 @@ public class LootbagLootTablesGen implements Consumer<BiConsumer<ResourceLocatio
                         .add(TagEntry.expandTag(TBATags.Items.CAKES)))
         );
 
+        consumer.accept(LootbagLootTables.HOLIDAY_LOOTBAG, LootTable.lootTable()
+                .withPool(LootPool.lootPool().setRolls(ConstantValue.exactly(1))
+                        .add(LootTableReference.lootTableReference(LootbagLootTables.BIRTHDAY_LOOTBAG).when(BIRTHDAY_EVENT))
+                        .add(LootTableReference.lootTableReference(LootbagLootTables.HALLOWEEN_LOOTBAG).when(HALLOWEEN_EVENT))
+                        .add(LootTableReference.lootTableReference(LootbagLootTables.CHRISTMAS_LOOTBAG).when(CHRISTMAS_EVENT))
+                        .add(LootTableReference.lootTableReference(LootbagLootTables.ANNIVERSARY_LOOTBAG).when(ANNIVERSARY_EVENT))
+                        .add(LootTableReference.lootTableReference(LootbagLootTables.EASTER_LOOTBAG).when(EASTER_EVENT))
+                        .add(LootTableReference.lootTableReference(LootbagLootTables.NEW_YEAR_LOOTBAG).when(NEW_YEAR_EVENT))
+                        // default
+                        .add(LootTableReference.lootTableReference(WaresLootTables.SEASONAL_SHOPPER))
+                ));
+
         //noinspection deprecation
         consumer.accept(LootbagLootTables.RATIONS_BAG_DROP, LootTable.lootTable()
                 .withPool(LootPool.lootPool()
@@ -207,46 +188,6 @@ public class LootbagLootTablesGen implements Consumer<BiConsumer<ResourceLocatio
                 )
         );
 
-        consumer.accept(LootbagLootTables.END_MAP_SALE, LootTable.lootTable()
-                .withPool(LootPool.lootPool().setRolls(ConstantValue.exactly(1))
-                        .add(LootTableReference.lootTableReference(PackBuiltInLootTables.END_MAPBOX))
-                )
-        );
-        consumer.accept(LootbagLootTables.NETHER_MAP_SALE, LootTable.lootTable()
-                .withPool(LootPool.lootPool().setRolls(ConstantValue.exactly(1))
-                        .add(LootTableReference.lootTableReference(PackBuiltInLootTables.NETHER_MAPBOX))
-                )
-        );
-        consumer.accept(LootbagLootTables.OCEAN_MAP_SALE, LootTable.lootTable()
-                .withPool(LootPool.lootPool().setRolls(ConstantValue.exactly(1))
-                        .add(LootTableReference.lootTableReference(PackBuiltInLootTables.OCEAN_MAPS))
-                )
-        );
-        consumer.accept(LootbagLootTables.SCOUT_MAP_SALE, LootTable.lootTable()
-                .withPool(LootPool.lootPool().setRolls(ConstantValue.exactly(1))
-                        .add(LootTableReference.lootTableReference(PackBuiltInLootTables.SCOUT_MAPS))
-                )
-        );
-        consumer.accept(LootbagLootTables.SWAMP_MAP_SALE, LootTable.lootTable()
-                .withPool(LootPool.lootPool().setRolls(ConstantValue.exactly(1))
-                        .add(LootTableReference.lootTableReference(PackBuiltInLootTables.SWAMP_MAPS))
-                )
-        );
-        consumer.accept(LootbagLootTables.TREASURE_MAP_SALE, LootTable.lootTable()
-                .withPool(LootPool.lootPool().setRolls(ConstantValue.exactly(1))
-                        .add(LootTableReference.lootTableReference(PackBuiltInLootTables.TREASURE_MAPS))
-                )
-        );
-        consumer.accept(LootbagLootTables.UNDERGROUND_MAP_SALE, LootTable.lootTable()
-                .withPool(LootPool.lootPool().setRolls(ConstantValue.exactly(1))
-                        .add(LootTableReference.lootTableReference(PackBuiltInLootTables.UNDERGROUND_MAPS))
-                )
-        );
-        consumer.accept(LootbagLootTables.JUNGLE_MAP_SALE, LootTable.lootTable()
-                .withPool(LootPool.lootPool().setRolls(ConstantValue.exactly(1))
-                        .add(LootTableReference.lootTableReference(PackBuiltInLootTables.JUNGLE_MAPS))
-                )
-        );
         consumer.accept(LootbagLootTables.MASTER_MAP_SALE, LootTable.lootTable()
                 .withPool(LootPool.lootPool().setRolls(ConstantValue.exactly(1))
                         .add(LootTableReference.lootTableReference(PackBuiltInLootTables.MASTER_MAPBOX))

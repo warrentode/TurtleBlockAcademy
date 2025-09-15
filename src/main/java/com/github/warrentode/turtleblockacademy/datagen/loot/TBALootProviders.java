@@ -4,7 +4,10 @@ import biomesoplenty.api.biome.BOPBiomes;
 import com.aetherteam.aether.data.resources.registries.AetherDimensions;
 import com.catastrophe573.dimdungeons.DimDungeons;
 import com.github.warrentode.turtleblockacademy.datagen.loot.tables.*;
+import com.github.warrentode.turtleblockacademy.loot.conditions.BiomeTagCondition;
+import com.github.warrentode.turtleblockacademy.loot.conditions.ModCheckCondition;
 import com.github.warrentode.turtleblockacademy.loot.conditions.SeasonalCondition;
+import com.github.warrentode.turtleblockacademy.util.TBATags;
 import com.github.warrentode.turtleblockacademy.world.dimension.TBADimensions;
 import com.google.common.collect.ImmutableList;
 import com.mojang.datafixers.util.Pair;
@@ -35,9 +38,10 @@ public class TBALootProviders extends LootTableProvider {
             loot_tables = ImmutableList.of(
             Pair.of(WaresLootTablesGen::new, LootContextParamSets.CHEST),
             Pair.of(LootbagLootTablesGen::new, LootContextParamSets.CHEST),
-            Pair.of(DimDungeonLootTablesGen::new, LootContextParamSets.CHEST),
+            Pair.of(KitLootTablesGen::new, LootContextParamSets.CHEST),
             Pair.of(PackLootTablesGen::new, LootContextParamSets.CHEST),
             Pair.of(KitchenLootTablesGen::new, LootContextParamSets.CHEST),
+            Pair.of(TradeLootTablesGen::new, LootContextParamSets.CHEST),
             Pair.of(TBABlockLootTablesGen::new, LootContextParamSets.BLOCK)
     );
 
@@ -55,6 +59,20 @@ public class TBALootProviders extends LootTableProvider {
     protected void validate(@NotNull Map<ResourceLocation, LootTable> map, @NotNull ValidationContext validationTracker) {
         map.forEach((id, table) -> LootTables.validate(validationTracker, id, table));
     }
+
+    // mod loaded checks
+    public static final LootItemCondition.Builder BOP_LOADED =
+            ModCheckCondition.mod().isLoaded("biomesoplenty");
+    public static final LootItemCondition.Builder TCONSTRUCT_LOADED =
+            ModCheckCondition.mod().isLoaded("tconstruct");
+    public static final LootItemCondition.Builder AETHER_LOADED =
+            ModCheckCondition.mod().isLoaded("aether");
+    public static final LootItemCondition.Builder ECOLOGICS_LOADED =
+            ModCheckCondition.mod().isLoaded("ecologics");
+    public static final LootItemCondition.Builder UNUSUALEND_LOADED =
+            ModCheckCondition.mod().isLoaded("unusualend");
+    public static final LootItemCondition.Builder PHANTASM_LOADED =
+            ModCheckCondition.mod().isLoaded("phantasm");
 
     // dimension checks
     public static final LootItemCondition.Builder IN_OVERWORLD =
@@ -101,6 +119,72 @@ public class TBALootProviders extends LootTableProvider {
             .setStructure(Structures.VILLAGE_SAVANNA.unwrapKey().orElseThrow()));
     public static final LootItemCondition.Builder IN_VILLAGE_DESERT = LocationCheck.checkLocation(LocationPredicate.Builder.location()
             .setStructure(Structures.VILLAGE_DESERT.unwrapKey().orElseThrow()));
+
+    // tree biome tag checks
+    public static final LootItemCondition.Builder HAS_SPRUCE = BiomeTagCondition.tag().set(TBATags.Biomes.HAS_SPRUCE);
+    public static final LootItemCondition.Builder HAS_BIRCH = BiomeTagCondition.tag().set(TBATags.Biomes.HAS_BIRCH);
+    public static final LootItemCondition.Builder HAS_JUNGLE = BiomeTagCondition.tag().set(TBATags.Biomes.HAS_JUNGLE);
+    public static final LootItemCondition.Builder HAS_ACACIA = BiomeTagCondition.tag().set(TBATags.Biomes.HAS_ACACIA);
+    public static final LootItemCondition.Builder HAS_DARK_OAK = BiomeTagCondition.tag().set(TBATags.Biomes.HAS_DARK_OAK);
+    public static final LootItemCondition.Builder HAS_MANGROVE = BiomeTagCondition.tag().set(TBATags.Biomes.HAS_MANGROVE);
+    public static final LootItemCondition.Builder HAS_WARPED_FUNGUS = BiomeTagCondition.tag().set(TBATags.Biomes.HAS_WARPED_FUNGUS);
+    public static final LootItemCondition.Builder HAS_CRIMSON_FUNGUS = BiomeTagCondition.tag().set(TBATags.Biomes.HAS_CRIMSON_FUNGUS);
+    public static final LootItemCondition.Builder HAS_FIR = BiomeTagCondition.tag().set(TBATags.Biomes.HAS_FIR);
+    public static final LootItemCondition.Builder HAS_REDWOOD = BiomeTagCondition.tag().set(TBATags.Biomes.HAS_REDWOOD);
+    public static final LootItemCondition.Builder HAS_CHERRY = BiomeTagCondition.tag().set(TBATags.Biomes.HAS_CHERRY);
+    public static final LootItemCondition.Builder HAS_MAHOGANY = BiomeTagCondition.tag().set(TBATags.Biomes.HAS_MAHOGANY);
+    public static final LootItemCondition.Builder HAS_JACARANDA = BiomeTagCondition.tag().set(TBATags.Biomes.HAS_JACARANDA);
+    public static final LootItemCondition.Builder HAS_PALM = BiomeTagCondition.tag().set(TBATags.Biomes.HAS_PALM);
+    public static final LootItemCondition.Builder HAS_WILLOW = BiomeTagCondition.tag().set(TBATags.Biomes.HAS_WILLOW);
+    public static final LootItemCondition.Builder HAS_DEAD = BiomeTagCondition.tag().set(TBATags.Biomes.HAS_DEAD);
+    public static final LootItemCondition.Builder HAS_MAGIC = BiomeTagCondition.tag().set(TBATags.Biomes.HAS_MAGIC);
+    public static final LootItemCondition.Builder HAS_UMBRAN = BiomeTagCondition.tag().set(TBATags.Biomes.HAS_UMBRAN);
+    public static final LootItemCondition.Builder HAS_HELLBARK = BiomeTagCondition.tag().set(TBATags.Biomes.HAS_HELLBARK);
+    public static final LootItemCondition.Builder HAS_COCONUT = BiomeTagCondition.tag().set(TBATags.Biomes.HAS_COCONUT);
+    public static final LootItemCondition.Builder HAS_AZALEA = BiomeTagCondition.tag().set(TBATags.Biomes.HAS_AZALEA);
+    public static final LootItemCondition.Builder HAS_CHORUS_NEST = BiomeTagCondition.tag().set(TBATags.Biomes.HAS_CHORUS_NEST);
+    public static final LootItemCondition.Builder HAS_EBONY = BiomeTagCondition.tag().set(TBATags.Biomes.HAS_EBONY);
+    public static final LootItemCondition.Builder HAS_PREAM = BiomeTagCondition.tag().set(TBATags.Biomes.HAS_PREAM);
+    public static final LootItemCondition.Builder HAS_AETHER_SKYROOT = BiomeTagCondition.tag().set(TBATags.Biomes.HAS_AETHER_SKYROOT);
+    public static final LootItemCondition.Builder HAS_GOLDEN_OAK = BiomeTagCondition.tag().set(TBATags.Biomes.HAS_GOLDEN_OAK);
+    public static final LootItemCondition.Builder HAS_BLOODSHROOM = BiomeTagCondition.tag().set(TBATags.Biomes.HAS_BLOODSHROOM);
+    public static final LootItemCondition.Builder HAS_ENDERBARK = BiomeTagCondition.tag().set(TBATags.Biomes.HAS_ENDERBARK);
+    public static final LootItemCondition.Builder HAS_GREENHEART = BiomeTagCondition.tag().set(TBATags.Biomes.HAS_GREENHEART);
+    public static final LootItemCondition.Builder HAS_FLOWERING_OAK = BiomeTagCondition.tag().set(TBATags.Biomes.HAS_FLOWERING_OAK);
+    public static final LootItemCondition.Builder HAS_RAINBOW_BIRCH = BiomeTagCondition.tag().set(TBATags.Biomes.HAS_RAINBOW_BIRCH);
+    public static final LootItemCondition.Builder HAS_MAPLE = BiomeTagCondition.tag().set(TBATags.Biomes.HAS_MAPLE);
+    public static final LootItemCondition.Builder HAS_ORIGIN = BiomeTagCondition.tag().set(TBATags.Biomes.HAS_ORIGIN);
+    public static final LootItemCondition.Builder HAS_YELLOW_AUTUMN = BiomeTagCondition.tag().set(TBATags.Biomes.HAS_YELLOW_AUTUMN);
+    public static final LootItemCondition.Builder HAS_ORANGE_AUTUMN = BiomeTagCondition.tag().set(TBATags.Biomes.HAS_ORANGE_AUTUMN);
+    // flower biome tag checks
+    public static final LootItemCondition.Builder HAS_SUNFLOWER = BiomeTagCondition.tag().set(TBATags.Biomes.HAS_SUNFLOWER);
+    public static final LootItemCondition.Builder HAS_PEONY = BiomeTagCondition.tag().set(TBATags.Biomes.HAS_PEONY);
+    public static final LootItemCondition.Builder HAS_ROSE_BUSH = BiomeTagCondition.tag().set(TBATags.Biomes.HAS_ROSE_BUSH);
+    public static final LootItemCondition.Builder HAS_LILAC = BiomeTagCondition.tag().set(TBATags.Biomes.HAS_LILAC);
+    public static final LootItemCondition.Builder HAS_BUTTERCUP = BiomeTagCondition.tag().set(TBATags.Biomes.HAS_BUTTERCUP);
+    public static final LootItemCondition.Builder HAS_LILY_OF_THE_VALLEY = BiomeTagCondition.tag().set(TBATags.Biomes.HAS_LILY_OF_THE_VALLEY);
+    public static final LootItemCondition.Builder HAS_CORNFLOWER = BiomeTagCondition.tag().set(TBATags.Biomes.HAS_CORNFLOWER);
+    public static final LootItemCondition.Builder HAS_OXEYE_DAISY = BiomeTagCondition.tag().set(TBATags.Biomes.HAS_OXEYE_DAISY);
+    public static final LootItemCondition.Builder HAS_PINK_TULIP = BiomeTagCondition.tag().set(TBATags.Biomes.HAS_PINK_TULIP);
+    public static final LootItemCondition.Builder HAS_WHITE_TULIP = BiomeTagCondition.tag().set(TBATags.Biomes.HAS_WHITE_TULIP);
+    public static final LootItemCondition.Builder HAS_ORANGE_TULIP = BiomeTagCondition.tag().set(TBATags.Biomes.HAS_ORANGE_TULIP);
+    public static final LootItemCondition.Builder HAS_RED_TULIP = BiomeTagCondition.tag().set(TBATags.Biomes.HAS_RED_TULIP);
+    public static final LootItemCondition.Builder HAS_AZURE_BLUET = BiomeTagCondition.tag().set(TBATags.Biomes.HAS_AZURE_BLUET);
+    public static final LootItemCondition.Builder HAS_ALLIUM = BiomeTagCondition.tag().set(TBATags.Biomes.HAS_ALLIUM);
+    public static final LootItemCondition.Builder HAS_BLUE_ORCHID = BiomeTagCondition.tag().set(TBATags.Biomes.HAS_BLUE_ORCHID);
+    public static final LootItemCondition.Builder HAS_PURPLE_FLOWER = BiomeTagCondition.tag().set(TBATags.Biomes.HAS_PURPLE_FLOWER);
+    public static final LootItemCondition.Builder HAS_WHITE_FLOWER = BiomeTagCondition.tag().set(TBATags.Biomes.HAS_PURPLE_FLOWER);
+    public static final LootItemCondition.Builder HAS_GOLDENROD = BiomeTagCondition.tag().set(TBATags.Biomes.HAS_GOLDENROD);
+    public static final LootItemCondition.Builder HAS_WILDFLOWER = BiomeTagCondition.tag().set(TBATags.Biomes.HAS_WILDFLOWER);
+    public static final LootItemCondition.Builder HAS_CATTAIL = BiomeTagCondition.tag().set(TBATags.Biomes.HAS_CATTAIL);
+    public static final LootItemCondition.Builder HAS_WILTED_LILY = BiomeTagCondition.tag().set(TBATags.Biomes.HAS_WILTED_LILY);
+    public static final LootItemCondition.Builder HAS_VIOLET = BiomeTagCondition.tag().set(TBATags.Biomes.HAS_VIOLET);
+    public static final LootItemCondition.Builder HAS_ROSE = BiomeTagCondition.tag().set(TBATags.Biomes.HAS_ROSE);
+    public static final LootItemCondition.Builder HAS_WITHER_ROSE = BiomeTagCondition.tag().set(TBATags.Biomes.HAS_WITHER_ROSE);
+    public static final LootItemCondition.Builder HAS_GLOWFLOWER = BiomeTagCondition.tag().set(TBATags.Biomes.HAS_GLOWFLOWER);
+    public static final LootItemCondition.Builder HAS_LAVENDER = BiomeTagCondition.tag().set(TBATags.Biomes.HAS_LAVENDER);
+    public static final LootItemCondition.Builder HAS_ICY_IRIS = BiomeTagCondition.tag().set(TBATags.Biomes.HAS_ICY_IRIS);
+    public static final LootItemCondition.Builder HAS_BURNING_BLOSSOM = BiomeTagCondition.tag().set(TBATags.Biomes.HAS_BURNING_BLOSSOM);
 
     // individual biome checks
     // BOP BIOMES

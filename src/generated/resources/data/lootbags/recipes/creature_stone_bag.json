@@ -1,9 +1,0 @@
-{
-  "type": "lootbags:loot",
-  "color": "gold",
-  "name": "Creature Stone Kit Bag",
-  "output": {
-    "table": "dimdungeons:chests/kit_creature_stones"
-  },
-  "rarity": "RARE"
-}
